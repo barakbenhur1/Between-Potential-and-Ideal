@@ -1,146 +1,57 @@
 <!doctype html>
 <html lang="he" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Open a discussion about Between Potential and Ideal by Barak Ben Hur." />
-    <title>פתח דיון · בין פוטנציאל לאידיאל</title>
-    <style>
-      :root {
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-        color: #0f172a;
-        background: #0b1020;
-      }
-      * { box-sizing: border-box; }
-      body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 20% 10%, rgba(252,211,77,.24), transparent 26%), radial-gradient(circle at 80% 15%, rgba(125,211,252,.18), transparent 30%), linear-gradient(135deg, #111827 0%, #172033 52%, #2b2119 100%); color: white; }
-      a { color: inherit; text-decoration: none; }
-      .wrap { width: min(1060px, calc(100% - 36px)); margin: 0 auto; padding: 28px 0 70px; }
-      .top { display: flex; justify-content: space-between; align-items: center; gap: 14px; border: 1px solid rgba(255,255,255,.16); background: rgba(255,255,255,.08); backdrop-filter: blur(16px); border-radius: 999px; padding: 12px 16px; }
-      .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
-      .mark { width: 44px; height: 44px; border-radius: 999px; display: grid; place-items: center; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); font-size: 26px; font-weight: 900; }
-      .brand small { display: block; color: rgba(255,255,255,.68); }
-      .brand strong { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-      .back { display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; background: white; color: #0f172a; min-height: 44px; padding: 10px 18px; font-weight: 900; }
-      .mini-counter { display: inline-flex; align-items: center; gap: 10px; border-radius: 999px; border: 1px solid rgba(255,255,255,.16); background: rgba(255,255,255,.08); padding: 10px 14px; color: rgba(255,255,255,.78); font-weight: 850; }
-      .mini-counter strong { color: #fde68a; font-size: 1.2rem; }
-      .hero { padding: 88px 0 28px; max-width: 820px; }
-      .kicker { color: #fcd34d; font-size: .9rem; font-weight: 950; text-transform: uppercase; letter-spacing: .18em; margin: 0 0 16px; }
-      h1 { margin: 0; font-size: clamp(3.2rem, 8vw, 6.8rem); line-height: .93; letter-spacing: -.055em; }
-      .lead { margin: 28px 0 0; color: rgba(255,255,255,.78); font-size: clamp(1.18rem, 2.2vw, 1.55rem); line-height: 1.65; max-width: 760px; }
-      .panel { margin-top: 36px; display: grid; grid-template-columns: .95fr 1.05fr; gap: 24px; align-items: stretch; }
-      .card { border: 1px solid rgba(255,255,255,.14); border-radius: 34px; background: rgba(255,255,255,.08); padding: 28px; box-shadow: 0 30px 70px rgba(0,0,0,.22); backdrop-filter: blur(16px); }
-      .card h2 { margin: 0; font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.05; }
-      .card p { color: rgba(255,255,255,.74); line-height: 1.75; font-size: 1.06rem; }
-      .email-box { direction: ltr; text-align: left; padding: 18px 20px; border-radius: 22px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.14); font-weight: 900; font-size: clamp(1.1rem, 2vw, 1.4rem); overflow-wrap: anywhere; }
-      .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
-      .button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; border-radius: 999px; padding: 13px 20px; font-weight: 950; cursor: pointer; border: 0; font: inherit; }
-      .primary { background: #fcd34d; color: #0f172a; }
-      .secondary { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.15); color: white; }
-      .status { min-height: 24px; margin-top: 14px; color: #fde68a; font-weight: 800; }
-      .note { margin-top: 30px; color: rgba(255,255,255,.62); line-height: 1.7; }
-      @media (max-width: 780px) {
-        .panel { grid-template-columns: 1fr; }
-        .top { align-items: flex-start; border-radius: 28px; flex-direction: column; }
-        .back, .button { width: 100%; }
-        .hero { padding-top: 54px; }
-      }
-    </style>
-  </head>
-  <body>
-    <main class="wrap">
-      <nav class="top" aria-label="ניווט">
-        <div class="brand">
-          <div class="mark">≋</div>
-          <div>
-            <small>ברק בן חור</small>
-            <strong>בין הפוטנציאל לאידיאל</strong>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Respond to Between Potential and Ideal by Barak Ben Hur." />
+  <title>Response · Between Potential and Ideal</title>
+  <link rel="stylesheet" href="styles.css?v=20260514-quiet-academic-v1" />
+  <style>
+    .response-page { padding-top: 56px; }
+    .response-card { border-top: 1px solid var(--line); padding: 36px 0; }
+    .contact-options { display: grid; gap: 1px; border: 1px solid var(--line); background: var(--line); margin-top: 24px; }
+    .contact-options a, .contact-options button { width: 100%; border: 0; text-align: inherit; cursor: pointer; display: block; padding: 18px; background: rgba(255,250,240,.72); color: var(--ink); text-decoration: none; }
+    .contact-options a:hover, .contact-options button:hover { background: rgba(255,255,255,.88); }
+    .contact-options strong { display: block; margin-bottom: 6px; font-size: 1.06rem; }
+    .contact-options small { color: var(--muted); font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    #copyStatus { color: var(--accent); font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  </style>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">B</span>
+        <span class="brand-copy"><strong>Between Potential and Ideal</strong><small>Barak Ben Hur</small></span>
+      </a>
+      <nav class="nav-links"><a href="index.html">Home</a></nav>
+    </header>
+    <main class="essay-page response-page">
+      <section class="language-block" data-lang-block="he" dir="rtl">
+        <p class="eyebrow">תגובה וביקורת</p>
+        <h1>שלח תגובה</h1>
+        <p class="intro">ביקורת רצינית, שאלות, התנגדויות או הצעות חידוד יתקבלו בברכה.</p>
+        <div class="response-card">
+          <h2>אפשרויות יצירת קשר</h2>
+          <p>אם כפתור מייל רגיל לא עובד בדפדפן שלך, אפשר לפתוח Gmail או להעתיק את הכתובת ידנית.</p>
+          <div class="contact-options">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=barakbenhur@gmail.com&su=%D7%AA%D7%92%D7%95%D7%91%D7%94%20%D7%9C%D7%AA%D7%99%D7%90%D7%95%D7%A8%D7%99%D7%94%3A%20%D7%91%D7%99%D7%9F%20%D7%A4%D7%95%D7%98%D7%A0%D7%A6%D7%99%D7%90%D7%9C%20%D7%9C%D7%90%D7%99%D7%93%D7%99%D7%90%D7%9C" target="_blank" rel="noopener"><strong>פתח Gmail</strong><small>נפתח בחלון חדש</small></a>
+            <a href="mailto:barakbenhur@gmail.com?subject=%D7%AA%D7%92%D7%95%D7%91%D7%94%20%D7%9C%D7%AA%D7%99%D7%90%D7%95%D7%A8%D7%99%D7%94%3A%20%D7%91%D7%99%D7%9F%20%D7%A4%D7%95%D7%98%D7%A0%D7%A6%D7%99%D7%90%D7%9C%20%D7%9C%D7%90%D7%99%D7%93%D7%99%D7%90%D7%9C"><strong>פתח אפליקציית מייל</strong><small>יעבוד אם מוגדרת אפליקציית מייל במחשב</small></a>
+            <button id="copyEmail" type="button"><strong>העתק אימייל</strong><small>barakbenhur@gmail.com</small></button>
           </div>
+          <p id="copyStatus" aria-live="polite"></p>
         </div>
-        <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center">
-          <div class="mini-counter"><span>מבקרים באתר</span><strong id="visitorCount">—</strong></div>
-          <a class="back" href="index.html">חזרה לאתר</a>
-        </div>
-      </nav>
-
-      <section class="hero">
-        <p class="kicker">דיון ותגובות</p>
-        <h1>פתח דיון אמיתי</h1>
-        <p class="lead">כאן הכפתור לא תלוי בגלילה, לא ב־JavaScript, ולא באפליקציית מייל שמוגדרת בדפדפן. זו עמודת תגובה ישירה עם Gmail, אפליקציית מייל, והעתקת כתובת.</p>
-      </section>
-
-      <section class="panel">
-        <article class="card">
-          <h2>שלח ביקורת, שאלה או חידוד</h2>
-          <p>אפשר לשלוח תגובה על הטיעון, להצביע על חולשה, לבקש הבהרה, או להציע ניסוח טוב יותר. עדיף לכתוב בצורה ישירה: מה לא ברור, מה לא משכנע, ומה צריך לבדוק לעומק.</p>
-          <div class="email-box">barakbenhur@gmail.com</div>
-          <div class="actions">
-            <a class="button primary" target="_blank" rel="noopener" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=barakbenhur@gmail.com&amp;su=%D7%AA%D7%92%D7%95%D7%91%D7%94%20%D7%9C%D7%AA%D7%99%D7%90%D7%95%D7%A8%D7%99%D7%94%3A%20%D7%91%D7%99%D7%9F%20%D7%A4%D7%95%D7%98%D7%A0%D7%A6%D7%99%D7%90%D7%9C%20%D7%9C%D7%90%D7%99%D7%93%D7%99%D7%90%D7%9C&amp;body=%D7%A7%D7%A8%D7%90%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%AA%D7%99%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%95%D7%99%D7%A9%20%D7%9C%D7%99%20%D7%AA%D7%92%D7%95%D7%91%D7%94%3A">פתח Gmail</a>
-            <a class="button secondary" href="mailto:barakbenhur@gmail.com?subject=%D7%AA%D7%92%D7%95%D7%91%D7%94%20%D7%9C%D7%AA%D7%99%D7%90%D7%95%D7%A8%D7%99%D7%94%3A%20%D7%91%D7%99%D7%9F%20%D7%A4%D7%95%D7%98%D7%A0%D7%A6%D7%99%D7%90%D7%9C%20%D7%9C%D7%90%D7%99%D7%93%D7%99%D7%90%D7%9C&amp;body=%D7%A7%D7%A8%D7%90%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%AA%D7%99%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%95%D7%99%D7%A9%20%D7%9C%D7%99%20%D7%AA%D7%92%D7%95%D7%91%D7%94%3A">פתח אפליקציית מייל</a>
-            <button class="button secondary" type="button" id="copyBtn">העתק אימייל</button>
-          </div>
-          <div class="status" id="status" aria-live="polite"></div>
-        </article>
-
-        <article class="card" dir="ltr" style="text-align:left">
-          <p class="kicker">Discussion</p>
-          <h2>Send a critique or response</h2>
-          <p>This page is intentionally simple: Gmail opens in a new tab, mailto opens a mail app when available, and the address can be copied manually.</p>
-          <div class="actions">
-            <a class="button primary" target="_blank" rel="noopener" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=barakbenhur@gmail.com&amp;su=Response%20to%20the%20theory%3A%20Between%20Potential%20and%20Ideal&amp;body=I%20read%20the%20theory%20and%20have%20a%20response%3A">Open Gmail</a>
-            <a class="button secondary" href="mailto:barakbenhur@gmail.com?subject=Response%20to%20the%20theory%3A%20Between%20Potential%20and%20Ideal&amp;body=I%20read%20the%20theory%20and%20have%20a%20response%3A">Open mail app</a>
-          </div>
-          <p class="note">If a browser blocks mail links, copy the email address and send manually.</p>
-        </article>
       </section>
     </main>
-
-    <script>
-
-      function getCounterValue(payload) {
-        if (!payload || typeof payload !== 'object') return null;
-        const candidates = [payload.value, payload.count, payload.data, payload.Count, payload.counter, payload.result];
-        for (const candidate of candidates) {
-          if (typeof candidate === 'number' || typeof candidate === 'string') return candidate;
-          if (candidate && typeof candidate === 'object') {
-            const nested = [candidate.value, candidate.count, candidate.data, candidate.Count];
-            for (const nestedCandidate of nested) {
-              if (typeof nestedCandidate === 'number' || typeof nestedCandidate === 'string') return nestedCandidate;
-            }
-          }
-        }
-        return null;
-      }
-      async function loadVisitorCounter() {
-        const counter = document.getElementById('visitorCount');
-        const storageKey = 'bpai-counted-at-v1';
-        const now = Date.now();
-        const oneDay = 24 * 60 * 60 * 1000;
-        const lastCounted = Number(localStorage.getItem(storageKey) || 0);
-        const shouldIncrement = !lastCounted || now - lastCounted > oneDay;
-        const action = shouldIncrement ? '/up' : '';
-        try {
-          const response = await fetch(`https://api.counterapi.dev/v1/between-potential-and-ideal/site-visits${action}`, { cache: 'no-store' });
-          if (!response.ok) throw new Error('counter failed');
-          const value = getCounterValue(await response.json());
-          if (value === null || value === undefined || value === '') throw new Error('counter value missing');
-          const parsed = Number(value);
-          counter.textContent = Number.isFinite(parsed) ? new Intl.NumberFormat('he-IL').format(parsed) : String(value);
-          if (shouldIncrement) localStorage.setItem(storageKey, String(now));
-        } catch (e) {
-          counter.textContent = '—';
-        }
-      }
-      loadVisitorCounter();
-
-      document.getElementById('copyBtn').addEventListener('click', async () => {
-        const status = document.getElementById('status');
-        try {
-          await navigator.clipboard.writeText('barakbenhur@gmail.com');
-          status.textContent = 'האימייל הועתק: barakbenhur@gmail.com';
-        } catch (e) {
-          status.textContent = 'העתק ידנית: barakbenhur@gmail.com';
-        }
-      });
-    </script>
-  </body>
+    <footer class="footer"><p>Between Potential and Ideal · Barak Ben Hur</p></footer>
+  </div>
+  <script>
+    const btn = document.getElementById('copyEmail');
+    const status = document.getElementById('copyStatus');
+    if (btn) btn.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText('barakbenhur@gmail.com'); status.textContent = 'האימייל הועתק'; }
+      catch (e) { status.textContent = 'barakbenhur@gmail.com'; }
+    });
+  </script>
+</body>
 </html>

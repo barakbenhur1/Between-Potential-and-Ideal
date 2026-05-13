@@ -1,11 +1,23 @@
 # Between Potential and Ideal / בין פוטנציאל לאידיאל
 
-Updated package with **five unique images** used exactly once in the theory materials:
+Quiet academic-style static site package.
 
-1. `01_fragmented_consciousness_cover.png` — cover image
-2. `02_navigation_between_banks.png` — schematic river / navigation between banks
-3. `03_iterative_reincarnation_model.png` — reincarnation model
-4. `04_ai_mirror_awareness.png` — AI mirror awareness
-5. `05_flow_toward_the_ideal.png` — cosmic river / flowing toward the ideal
+This update intentionally removes the marketing / landing-page feeling and keeps the site closer to a public essay, working note, or philosophical archive.
 
-The DOCX, PDF, Markdown, HTML, and site files were updated accordingly.
+Included:
+
+- `index.html` - main bilingual site
+- `discussion.html` - response/contact page
+- `styles.css` - quiet paper-like design
+- `script.js` - language toggle + visitor counter
+- `figures/` - five theory images
+- `files/` - Hebrew/English PDF, DOCX, Markdown, and Hebrew HTML
+
+Render settings:
+
+```txt
+Build command: echo static
+Publish directory: theory-site-static
+```
+
+Cache version: `20260514-quiet-academic-v1`
