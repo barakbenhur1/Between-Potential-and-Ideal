@@ -92,12 +92,30 @@ blockquote { margin: 0; font-size: clamp(1.45rem, 2.4vw, 2.4rem); line-height: 1
 .cta-section { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 32px; margin-block: 50px 86px; border: 1px solid rgba(148,163,184,.30); border-radius: 42px; background: white; padding: 44px; box-shadow: 0 20px 60px rgba(15,23,42,.07); }
 .cta-section p { max-width: 780px; margin: 20px 0 0; color: #475569; font-size: 1.1rem; line-height: 1.75; }
 .email-button { background: #0f172a; color: white; white-space: nowrap; }
+
+.discussion-section { padding: 10px 0 86px; }
+.discussion-panel { display: grid; grid-template-columns: .95fr 1.05fr; gap: 28px; align-items: stretch; border: 1px solid rgba(148,163,184,.32); border-radius: 42px; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); padding: 38px; box-shadow: 0 28px 80px rgba(15,23,42,.10); }
+.discussion-copy h2 { margin: 0; font-size: clamp(2.2rem, 4.8vw, 4.1rem); line-height: 1.02; letter-spacing: -.04em; }
+.discussion-copy p { color: #475569; font-size: 1.1rem; line-height: 1.75; margin: 18px 0 0; }
+.contact-card { border-radius: 32px; background: #0f172a; color: white; padding: 28px; display: flex; flex-direction: column; justify-content: space-between; gap: 24px; min-height: 260px; box-shadow: inset 0 1px 0 rgba(255,255,255,.08); }
+.contact-card p { margin: 0; color: rgba(255,255,255,.72); line-height: 1.7; }
+.email-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; border: 1px solid rgba(255,255,255,.14); border-radius: 22px; background: rgba(255,255,255,.07); padding: 12px; }
+.email-address { direction: ltr; text-align: left; font-weight: 900; color: #fde68a; overflow-wrap: anywhere; }
+.copy-button { border: 0; border-radius: 999px; min-height: 42px; padding: 10px 16px; background: #fcd34d; color: #0f172a; font-weight: 950; cursor: pointer; white-space: nowrap; transition: transform .2s ease, background .2s ease; }
+.copy-button:hover { transform: translateY(-2px); background: #fde68a; }
+.discussion-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.discussion-link { display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; min-height: 48px; padding: 12px 18px; font-weight: 950; transition: transform .2s ease, background .2s ease; }
+.discussion-link.primary-mail { background: #fcd34d; color: #0f172a; }
+.discussion-link.secondary-mail { border: 1px solid rgba(255,255,255,.16); background: rgba(255,255,255,.08); color: white; }
+.discussion-link:hover { transform: translateY(-2px); }
+.copy-status { min-height: 22px; color: #bbf7d0; font-size: .95rem; font-weight: 800; }
+
 footer { padding: 0 20px 42px; text-align: center; color: #64748b; font-size: 14px; }
 @media (max-width: 900px) {
-  .hero-grid, .motifs, .cta-section, .download-panel { grid-template-columns: 1fr; }
+  .hero-grid, .motifs, .cta-section, .download-panel, .discussion-panel { grid-template-columns: 1fr; }
   .hero-grid { padding-top: 64px; }
   .card-grid, .motif-grid, .figure-grid, .download-grid { grid-template-columns: 1fr; }
-  .motifs, .cta-section, .download-panel { padding: 30px; border-radius: 32px; }
+  .motifs, .cta-section, .download-panel, .discussion-panel { padding: 30px; border-radius: 32px; }
   .orb { max-width: 430px; }
 }
 @media (max-width: 560px) {
@@ -105,7 +123,8 @@ footer { padding: 0 20px 42px; text-align: center; color: #64748b; font-size: 14
   .topbar { border-radius: 28px; align-items: flex-start; }
   .brand strong { max-width: 160px; }
   .hero { padding-top: 14px; }
-  .actions, .primary, .secondary, .email-button, .download-link { width: 100%; }
+  .actions, .primary, .secondary, .email-button, .download-link, .discussion-link, .copy-button { width: 100%; }
+  .email-row { align-items: stretch; flex-direction: column; }
   .orb { padding: 18px; }
   .quote-card { padding: 30px; }
   .section-card { padding: 23px; }
@@ -139,7 +158,7 @@ footer { padding: 0 20px 42px; text-align: center; color: #64748b; font-size: 14
             <div class="actions">
               <a href="#theory" class="primary" id="primaryCta">☰ קרא את התיאוריה</a>
               <a href="#downloads" class="secondary" id="downloadCta">⬇ הורד PDF</a>
-              <a href="mailto:barakbenhur@gmail.com" class="secondary" id="secondaryCta">✉ פתח דיון</a>
+              <a href="#discussion" class="secondary" id="secondaryCta">✉ פתח דיון</a>
             </div>
           </div>
 
@@ -199,7 +218,31 @@ footer { padding: 0 20px 42px; text-align: center; color: #64748b; font-size: 14
           <h2 id="publishTitle"></h2>
           <p id="publishText"></p>
         </div>
-        <a href="mailto:barakbenhur@gmail.com" class="email-button" id="emailCta">✉ שלח תגובה</a>
+        <a href="#discussion" class="email-button" id="emailCta">✉ פתח אזור תגובה</a>
+      </section>
+
+      <section id="discussion" class="discussion-section container">
+        <div class="discussion-panel">
+          <div class="discussion-copy">
+            <p class="kicker" id="discussionKicker">דיון ותגובות</p>
+            <h2 id="discussionTitle">פתח דיון אמיתי</h2>
+            <p id="discussionText"></p>
+          </div>
+          <div class="contact-card">
+            <div>
+              <p id="discussionHelp"></p>
+            </div>
+            <div class="email-row">
+              <span class="email-address">barakbenhur@gmail.com</span>
+              <button class="copy-button" id="copyEmailButton" type="button">העתק אימייל</button>
+            </div>
+            <div class="discussion-actions">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=barakbenhur@gmail.com" target="_blank" rel="noopener" class="discussion-link primary-mail" id="gmailCta">פתח Gmail</a>
+              <a href="mailto:barakbenhur@gmail.com" class="discussion-link secondary-mail" id="mailAppCta">פתח אפליקציית מייל</a>
+            </div>
+            <div class="copy-status" id="copyStatus" aria-live="polite"></div>
+          </div>
+        </div>
       </section>
 
       <footer id="footerText"></footer>
@@ -255,7 +298,15 @@ const copy = {
     ],
     publishTitle: "מוכן לאנשים שיאתגרו את הרעיון",
     publishText: "האתר בנוי כמקום ראשי לתיאוריה: אפשר לשלוח אליו קוראים, פילוסופים, פורומים, קהילות, עורכים או אנשים שיכולים לתקוף את הטיעון ברצינות. המטרה אינה להגן על הטקסט מכל ביקורת, אלא להפוך אותו ברור מספיק כדי שביקורת טובה באמת תוכל להגיע.",
-    emailCta: "✉ שלח תגובה",
+    emailCta: "✉ פתח אזור תגובה",
+    discussionKicker: "דיון ותגובות",
+    discussionTitle: "פתח דיון אמיתי",
+    discussionText: "כפתור מייל רגיל לא תמיד עובד אם אין אפליקציית מייל מוגדרת בדפדפן. לכן הוספתי כאן שלוש אפשרויות אמינות: פתיחה ב-Gmail, פתיחה באפליקציית מייל, והעתקת הכתובת ידנית.",
+    discussionHelp: "שלח תגובה, ביקורת, שאלה או הצעה לחידוד התאוריה.",
+    gmailCta: "פתח Gmail",
+    mailAppCta: "פתח אפליקציית מייל",
+    copyEmailCta: "העתק אימייל",
+    copiedText: "האימייל הועתק",
     footer: "Between Potential and Ideal · Nihilism with Hope · Barak Ben Hur"
   },
   en: {
@@ -307,17 +358,36 @@ const copy = {
     ],
     publishTitle: "Ready for people who can challenge the idea",
     publishText: "This site is designed as the theory's home base: a place you can send to readers, philosophers, forums, communities, editors, or people who can attack the argument seriously. The goal is not to protect the text from criticism, but to make it clear enough for good criticism to arrive.",
-    emailCta: "✉ Send a response",
+    emailCta: "✉ Open response area",
+    discussionKicker: "Discussion and responses",
+    discussionTitle: "Start a real discussion",
+    discussionText: "A normal email button does not always work when the browser has no default mail app configured. This section gives readers three reliable options: open Gmail, open the mail app, or copy the address manually.",
+    discussionHelp: "Send a response, critique, question, or suggested refinement of the theory.",
+    gmailCta: "Open Gmail",
+    mailAppCta: "Open mail app",
+    copyEmailCta: "Copy email",
+    copiedText: "Email copied",
     footer: "Between Potential and Ideal · Nihilism with Hope · Barak Ben Hur"
   }
 };
 
 let lang = "he";
 const $ = (id) => document.getElementById(id);
+function subjectFor(language) {
+  return language === "he" ? "תגובה לתיאוריה: בין הפוטנציאל לאידיאל" : "Response to the theory: Between Potential and Ideal";
+}
+function bodyFor(language) {
+  return language === "he" ? "קראתי את התיאוריה ויש לי תגובה:" : "I read the theory and have a response:";
+}
 function mailtoFor(language) {
-  const subject = encodeURIComponent(language === "he" ? "תגובה לתיאוריה: בין הפוטנציאל לאידיאל" : "Response to the theory: Between Potential and Ideal");
-  const body = encodeURIComponent(language === "he" ? "קראתי את התיאוריה ויש לי תגובה:" : "I read the theory and have a response:");
+  const subject = encodeURIComponent(subjectFor(language));
+  const body = encodeURIComponent(bodyFor(language));
   return `mailto:barakbenhur@gmail.com?subject=${subject}&body=${body}`;
+}
+function gmailFor(language) {
+  const subject = encodeURIComponent(subjectFor(language));
+  const body = encodeURIComponent(bodyFor(language));
+  return `https://mail.google.com/mail/?view=cm&fs=1&to=barakbenhur@gmail.com&su=${subject}&body=${body}`;
 }
 function render() {
   const t = copy[lang];
@@ -334,7 +404,7 @@ function render() {
   $("primaryCta").textContent = t.primaryCta;
   $("downloadCta").textContent = t.downloadCta;
   $("secondaryCta").textContent = t.secondaryCta;
-  $("secondaryCta").href = mailtoFor(lang);
+  $("secondaryCta").href = "#discussion";
   $("coreQuote").textContent = `“${t.coreQuote}”`;
   $("essayKicker").textContent = t.essayKicker;
   $("essayTitle").textContent = t.essayTitle;
@@ -349,7 +419,17 @@ function render() {
   $("publishTitle").textContent = t.publishTitle;
   $("publishText").textContent = t.publishText;
   $("emailCta").textContent = t.emailCta;
-  $("emailCta").href = mailtoFor(lang);
+  $("emailCta").href = "#discussion";
+  $("discussionKicker").textContent = t.discussionKicker;
+  $("discussionTitle").textContent = t.discussionTitle;
+  $("discussionText").textContent = t.discussionText;
+  $("discussionHelp").textContent = t.discussionHelp;
+  $("gmailCta").textContent = t.gmailCta;
+  $("gmailCta").href = gmailFor(lang);
+  $("mailAppCta").textContent = t.mailAppCta;
+  $("mailAppCta").href = mailtoFor(lang);
+  $("copyEmailButton").textContent = t.copyEmailCta;
+  $("copyStatus").textContent = "";
   $("footerText").textContent = t.footer;
 
   $("downloadGrid").innerHTML = t.downloads.map(([title, text, href, label], index) => `
@@ -384,6 +464,14 @@ function render() {
   `).join("");
 }
 $("langButton").addEventListener("click", () => { lang = lang === "he" ? "en" : "he"; render(); });
+$("copyEmailButton").addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText("barakbenhur@gmail.com");
+    $("copyStatus").textContent = copy[lang].copiedText;
+  } catch (error) {
+    $("copyStatus").textContent = "barakbenhur@gmail.com";
+  }
+});
 render();
 
     </script>

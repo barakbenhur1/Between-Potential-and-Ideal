@@ -48,7 +48,15 @@ const copy = {
     ],
     publishTitle: "מוכן לאנשים שיאתגרו את הרעיון",
     publishText: "האתר בנוי כמקום ראשי לתיאוריה: אפשר לשלוח אליו קוראים, פילוסופים, פורומים, קהילות, עורכים או אנשים שיכולים לתקוף את הטיעון ברצינות. המטרה אינה להגן על הטקסט מכל ביקורת, אלא להפוך אותו ברור מספיק כדי שביקורת טובה באמת תוכל להגיע.",
-    emailCta: "✉ שלח תגובה",
+    emailCta: "✉ פתח אזור תגובה",
+    discussionKicker: "דיון ותגובות",
+    discussionTitle: "פתח דיון אמיתי",
+    discussionText: "כפתור מייל רגיל לא תמיד עובד אם אין אפליקציית מייל מוגדרת בדפדפן. לכן הוספתי כאן שלוש אפשרויות אמינות: פתיחה ב-Gmail, פתיחה באפליקציית מייל, והעתקת הכתובת ידנית.",
+    discussionHelp: "שלח תגובה, ביקורת, שאלה או הצעה לחידוד התאוריה.",
+    gmailCta: "פתח Gmail",
+    mailAppCta: "פתח אפליקציית מייל",
+    copyEmailCta: "העתק אימייל",
+    copiedText: "האימייל הועתק",
     footer: "Between Potential and Ideal · Nihilism with Hope · Barak Ben Hur"
   },
   en: {
@@ -100,17 +108,36 @@ const copy = {
     ],
     publishTitle: "Ready for people who can challenge the idea",
     publishText: "This site is designed as the theory's home base: a place you can send to readers, philosophers, forums, communities, editors, or people who can attack the argument seriously. The goal is not to protect the text from criticism, but to make it clear enough for good criticism to arrive.",
-    emailCta: "✉ Send a response",
+    emailCta: "✉ Open response area",
+    discussionKicker: "Discussion and responses",
+    discussionTitle: "Start a real discussion",
+    discussionText: "A normal email button does not always work when the browser has no default mail app configured. This section gives readers three reliable options: open Gmail, open the mail app, or copy the address manually.",
+    discussionHelp: "Send a response, critique, question, or suggested refinement of the theory.",
+    gmailCta: "Open Gmail",
+    mailAppCta: "Open mail app",
+    copyEmailCta: "Copy email",
+    copiedText: "Email copied",
     footer: "Between Potential and Ideal · Nihilism with Hope · Barak Ben Hur"
   }
 };
 
 let lang = "he";
 const $ = (id) => document.getElementById(id);
+function subjectFor(language) {
+  return language === "he" ? "תגובה לתיאוריה: בין הפוטנציאל לאידיאל" : "Response to the theory: Between Potential and Ideal";
+}
+function bodyFor(language) {
+  return language === "he" ? "קראתי את התיאוריה ויש לי תגובה:" : "I read the theory and have a response:";
+}
 function mailtoFor(language) {
-  const subject = encodeURIComponent(language === "he" ? "תגובה לתיאוריה: בין הפוטנציאל לאידיאל" : "Response to the theory: Between Potential and Ideal");
-  const body = encodeURIComponent(language === "he" ? "קראתי את התיאוריה ויש לי תגובה:" : "I read the theory and have a response:");
+  const subject = encodeURIComponent(subjectFor(language));
+  const body = encodeURIComponent(bodyFor(language));
   return `mailto:barakbenhur@gmail.com?subject=${subject}&body=${body}`;
+}
+function gmailFor(language) {
+  const subject = encodeURIComponent(subjectFor(language));
+  const body = encodeURIComponent(bodyFor(language));
+  return `https://mail.google.com/mail/?view=cm&fs=1&to=barakbenhur@gmail.com&su=${subject}&body=${body}`;
 }
 function render() {
   const t = copy[lang];
@@ -127,7 +154,7 @@ function render() {
   $("primaryCta").textContent = t.primaryCta;
   $("downloadCta").textContent = t.downloadCta;
   $("secondaryCta").textContent = t.secondaryCta;
-  $("secondaryCta").href = mailtoFor(lang);
+  $("secondaryCta").href = "#discussion";
   $("coreQuote").textContent = `“${t.coreQuote}”`;
   $("essayKicker").textContent = t.essayKicker;
   $("essayTitle").textContent = t.essayTitle;
@@ -142,7 +169,17 @@ function render() {
   $("publishTitle").textContent = t.publishTitle;
   $("publishText").textContent = t.publishText;
   $("emailCta").textContent = t.emailCta;
-  $("emailCta").href = mailtoFor(lang);
+  $("emailCta").href = "#discussion";
+  $("discussionKicker").textContent = t.discussionKicker;
+  $("discussionTitle").textContent = t.discussionTitle;
+  $("discussionText").textContent = t.discussionText;
+  $("discussionHelp").textContent = t.discussionHelp;
+  $("gmailCta").textContent = t.gmailCta;
+  $("gmailCta").href = gmailFor(lang);
+  $("mailAppCta").textContent = t.mailAppCta;
+  $("mailAppCta").href = mailtoFor(lang);
+  $("copyEmailButton").textContent = t.copyEmailCta;
+  $("copyStatus").textContent = "";
   $("footerText").textContent = t.footer;
 
   $("downloadGrid").innerHTML = t.downloads.map(([title, text, href, label], index) => `
@@ -177,4 +214,12 @@ function render() {
   `).join("");
 }
 $("langButton").addEventListener("click", () => { lang = lang === "he" ? "en" : "he"; render(); });
+$("copyEmailButton").addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText("barakbenhur@gmail.com");
+    $("copyStatus").textContent = copy[lang].copiedText;
+  } catch (error) {
+    $("copyStatus").textContent = "barakbenhur@gmail.com";
+  }
+});
 render();

@@ -1,7 +1,10 @@
-# Between Potential and Ideal — fixed static site
+# Between Potential and Ideal — Static Theory Website
 
-This version has CSS and JavaScript inlined inside `index.html`, so the page still looks correct even if the host fails to load separate CSS/JS files.
+This is a no-build static website. CSS and JS are also inlined in `index.html` so Render/GitHub Pages can serve it reliably.
 
-## Render
-Build command: `echo static`
-Publish directory: `theory-site-static` if copied into that folder, or `.` if this package is the repository root.
+## Deploy on Render
+- Build command: `echo static`
+- Publish directory: `.`
+
+## Contact button
+The hero discussion button scrolls to a discussion/contact section. The section includes Gmail, mailto, and copy-email options so it works even when the browser has no default mail app configured.

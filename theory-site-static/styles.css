@@ -80,12 +80,30 @@ blockquote { margin: 0; font-size: clamp(1.45rem, 2.4vw, 2.4rem); line-height: 1
 .cta-section { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 32px; margin-block: 50px 86px; border: 1px solid rgba(148,163,184,.30); border-radius: 42px; background: white; padding: 44px; box-shadow: 0 20px 60px rgba(15,23,42,.07); }
 .cta-section p { max-width: 780px; margin: 20px 0 0; color: #475569; font-size: 1.1rem; line-height: 1.75; }
 .email-button { background: #0f172a; color: white; white-space: nowrap; }
+
+.discussion-section { padding: 10px 0 86px; }
+.discussion-panel { display: grid; grid-template-columns: .95fr 1.05fr; gap: 28px; align-items: stretch; border: 1px solid rgba(148,163,184,.32); border-radius: 42px; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); padding: 38px; box-shadow: 0 28px 80px rgba(15,23,42,.10); }
+.discussion-copy h2 { margin: 0; font-size: clamp(2.2rem, 4.8vw, 4.1rem); line-height: 1.02; letter-spacing: -.04em; }
+.discussion-copy p { color: #475569; font-size: 1.1rem; line-height: 1.75; margin: 18px 0 0; }
+.contact-card { border-radius: 32px; background: #0f172a; color: white; padding: 28px; display: flex; flex-direction: column; justify-content: space-between; gap: 24px; min-height: 260px; box-shadow: inset 0 1px 0 rgba(255,255,255,.08); }
+.contact-card p { margin: 0; color: rgba(255,255,255,.72); line-height: 1.7; }
+.email-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; border: 1px solid rgba(255,255,255,.14); border-radius: 22px; background: rgba(255,255,255,.07); padding: 12px; }
+.email-address { direction: ltr; text-align: left; font-weight: 900; color: #fde68a; overflow-wrap: anywhere; }
+.copy-button { border: 0; border-radius: 999px; min-height: 42px; padding: 10px 16px; background: #fcd34d; color: #0f172a; font-weight: 950; cursor: pointer; white-space: nowrap; transition: transform .2s ease, background .2s ease; }
+.copy-button:hover { transform: translateY(-2px); background: #fde68a; }
+.discussion-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.discussion-link { display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; min-height: 48px; padding: 12px 18px; font-weight: 950; transition: transform .2s ease, background .2s ease; }
+.discussion-link.primary-mail { background: #fcd34d; color: #0f172a; }
+.discussion-link.secondary-mail { border: 1px solid rgba(255,255,255,.16); background: rgba(255,255,255,.08); color: white; }
+.discussion-link:hover { transform: translateY(-2px); }
+.copy-status { min-height: 22px; color: #bbf7d0; font-size: .95rem; font-weight: 800; }
+
 footer { padding: 0 20px 42px; text-align: center; color: #64748b; font-size: 14px; }
 @media (max-width: 900px) {
-  .hero-grid, .motifs, .cta-section, .download-panel { grid-template-columns: 1fr; }
+  .hero-grid, .motifs, .cta-section, .download-panel, .discussion-panel { grid-template-columns: 1fr; }
   .hero-grid { padding-top: 64px; }
   .card-grid, .motif-grid, .figure-grid, .download-grid { grid-template-columns: 1fr; }
-  .motifs, .cta-section, .download-panel { padding: 30px; border-radius: 32px; }
+  .motifs, .cta-section, .download-panel, .discussion-panel { padding: 30px; border-radius: 32px; }
   .orb { max-width: 430px; }
 }
 @media (max-width: 560px) {
@@ -93,7 +111,8 @@ footer { padding: 0 20px 42px; text-align: center; color: #64748b; font-size: 14
   .topbar { border-radius: 28px; align-items: flex-start; }
   .brand strong { max-width: 160px; }
   .hero { padding-top: 14px; }
-  .actions, .primary, .secondary, .email-button, .download-link { width: 100%; }
+  .actions, .primary, .secondary, .email-button, .download-link, .discussion-link, .copy-button { width: 100%; }
+  .email-row { align-items: stretch; flex-direction: column; }
   .orb { padding: 18px; }
   .quote-card { padding: 30px; }
   .section-card { padding: 23px; }
