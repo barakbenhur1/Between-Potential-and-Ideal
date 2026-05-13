@@ -20,3 +20,7 @@ Counter namespace/key used in the code:
 - Counter name: `site-visits`
 
 To reset or change the counter, edit the `namespace` and `counterName` values inside `index.html` and `discussion.html`.
+
+
+## Image cache fix
+This package replaces the previous boat/moon main image with the fragmented central figure and adds cache-busting query strings to image/PDF links.
