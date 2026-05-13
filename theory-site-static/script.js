@@ -154,7 +154,7 @@ function render() {
   $("primaryCta").textContent = t.primaryCta;
   $("downloadCta").textContent = t.downloadCta;
   $("secondaryCta").textContent = t.secondaryCta;
-  $("secondaryCta").href = "#discussion";
+  $("secondaryCta").href = "discussion.html";
   $("coreQuote").textContent = `“${t.coreQuote}”`;
   $("essayKicker").textContent = t.essayKicker;
   $("essayTitle").textContent = t.essayTitle;
@@ -169,7 +169,7 @@ function render() {
   $("publishTitle").textContent = t.publishTitle;
   $("publishText").textContent = t.publishText;
   $("emailCta").textContent = t.emailCta;
-  $("emailCta").href = "#discussion";
+  $("emailCta").href = "discussion.html";
   $("discussionKicker").textContent = t.discussionKicker;
   $("discussionTitle").textContent = t.discussionTitle;
   $("discussionText").textContent = t.discussionText;

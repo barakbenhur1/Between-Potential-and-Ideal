@@ -158,7 +158,7 @@ footer { padding: 0 20px 42px; text-align: center; color: #64748b; font-size: 14
             <div class="actions">
               <a href="#theory" class="primary" id="primaryCta">☰ קרא את התיאוריה</a>
               <a href="#downloads" class="secondary" id="downloadCta">⬇ הורד PDF</a>
-              <a href="#discussion" class="secondary" id="secondaryCta">✉ פתח דיון</a>
+              <a href="discussion.html" class="secondary" id="secondaryCta">✉ פתח דיון</a>
             </div>
           </div>
 
@@ -218,7 +218,7 @@ footer { padding: 0 20px 42px; text-align: center; color: #64748b; font-size: 14
           <h2 id="publishTitle"></h2>
           <p id="publishText"></p>
         </div>
-        <a href="#discussion" class="email-button" id="emailCta">✉ פתח אזור תגובה</a>
+        <a href="discussion.html" class="email-button" id="emailCta">✉ פתח אזור תגובה</a>
       </section>
 
       <section id="discussion" class="discussion-section container">
@@ -404,7 +404,7 @@ function render() {
   $("primaryCta").textContent = t.primaryCta;
   $("downloadCta").textContent = t.downloadCta;
   $("secondaryCta").textContent = t.secondaryCta;
-  $("secondaryCta").href = "#discussion";
+  $("secondaryCta").href = "discussion.html";
   $("coreQuote").textContent = `“${t.coreQuote}”`;
   $("essayKicker").textContent = t.essayKicker;
   $("essayTitle").textContent = t.essayTitle;
@@ -419,7 +419,7 @@ function render() {
   $("publishTitle").textContent = t.publishTitle;
   $("publishText").textContent = t.publishText;
   $("emailCta").textContent = t.emailCta;
-  $("emailCta").href = "#discussion";
+  $("emailCta").href = "discussion.html";
   $("discussionKicker").textContent = t.discussionKicker;
   $("discussionTitle").textContent = t.discussionTitle;
   $("discussionText").textContent = t.discussionText;
