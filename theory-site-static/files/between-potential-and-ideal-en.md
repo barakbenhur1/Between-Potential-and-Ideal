@@ -6,6 +6,8 @@
 **Expanded polished version:** May 13, 2026
 
 
+![Cover image: fragmented consciousness between potential and ideal.](figures/01_fragmented_consciousness_cover.png)
+
 ## Abstract
 
 This essay presents a unified metaphysical theory in which “God” is not a religious figure outside the world, but the infinite potential of existence to become experience, understanding, morality, meaning, and ideality.

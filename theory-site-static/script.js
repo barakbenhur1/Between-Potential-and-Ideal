@@ -18,18 +18,18 @@ const copy = {
     downloadTitle: "קרא את הגרסה המלאה",
     downloadText: "המאמר המלא זמין עכשיו להורדה בעברית ובאנגלית. שמרתי גם גרסאות DOCX ו-Markdown כדי שתוכל לערוך, לשתף או לפרסם במקום אחר בלי לבנות הכול מחדש.",
     downloads: [
-      ["PDF בעברית", "הגרסה העברית המלאה, מוכנה לקריאה ושיתוף.", "files/between-potential-and-ideal-he.pdf?v=20260513-fragmented-final", "פתח PDF"],
-      ["English PDF", "The full polished English version, ready to read and share.", "files/between-potential-and-ideal-en.pdf?v=20260513-fragmented-final", "Open PDF"],
-      ["קבצי עריכה", "DOCX + Markdown בעברית ובאנגלית למקרה שתרצה לערוך או להגיש גרסה אחרת.", "files/between-potential-and-ideal-he.docx?v=20260513-fragmented-final", "פתח DOCX"]
+      ["PDF בעברית", "הגרסה העברית המלאה, מוכנה לקריאה ושיתוף.", "files/between-potential-and-ideal-he.pdf?v=20260513-five-images-v2", "פתח PDF"],
+      ["English PDF", "The full polished English version, ready to read and share.", "files/between-potential-and-ideal-en.pdf?v=20260513-five-images-v2", "Open PDF"],
+      ["קבצי עריכה", "DOCX + Markdown בעברית ובאנגלית למקרה שתרצה לערוך או להגיש גרסה אחרת.", "files/between-potential-and-ideal-he.docx?v=20260513-five-images-v2", "פתח DOCX"]
     ],
     figureKicker: "דימויים",
     figureTitle: "המפות הוויזואליות של התיאוריה",
-    figureText: "ארבעה דימויים שמחזיקים את המבנה: הנהר הקוסמי, הניווט בין הגדות, החזרה/הבירור, והמראה של התודעה.",
+    figureText: "חמישה דימויים שמחזיקים את המבנה: תודעה מפורקת, ניווט בין הגדות, חזרה/בירור, מראה של מודעות, וזרימה אל האידיאל.",
     figures: [
-      ["הנהר הקוסמי", "הקיום כסירה בתוך נהר שאי אפשר לשלוט בו לחלוטין.", "figures/01_cosmic_river_boat.png?v=20260513-fragmented-final"],
-      ["ניווט בין גדות", "הסירה נעה בין פוטנציאל לאידיאל, עם זרמים שמקדמים ומחזירים.", "figures/02_navigation_between_banks.png?v=20260513-fragmented-final"],
-      ["חזרה ובירור", "תהליך לא ליניארי של התקדמות, נסיגה, תיקון והתבהרות.", "figures/03_iterative_reincarnation_model.png?v=20260513-fragmented-final"],
-      ["מראה ותודעה", "המודעות כמרחב שבו העולם משתקף, מתפרש ומקבל משמעות.", "figures/04_ai_mirror_awareness.png?v=20260513-fragmented-final"]
+      ["הנהר הקוסמי", "הקיום כסירה בתוך נהר שאי אפשר לשלוט בו לחלוטין.", "figures/01_fragmented_consciousness_cover.png?v=20260513-five-images-v2"],
+      ["ניווט בין גדות", "הסירה נעה בין פוטנציאל לאידיאל, עם זרמים שמקדמים ומחזירים.", "figures/02_navigation_between_banks.png?v=20260513-five-images-v2"],
+      ["חזרה ובירור", "תהליך לא ליניארי של התקדמות, נסיגה, תיקון והתבהרות.", "figures/03_iterative_reincarnation_model.png?v=20260513-five-images-v2"],
+      ["מראה ותודעה", "המודעות כמרחב שבו העולם משתקף, מתפרש ומקבל משמעות.", "figures/04_ai_mirror_awareness.png?v=20260513-five-images-v2"]
     ],
     sections: [
       ["הטענה המרכזית", "אלוהים כפוטנציאל, לא כדמות דתית", "בתיאוריה הזו, 'אלוהים' אינו ישות דתית, שופטת או חיצונית לעולם. אלוהים הוא שם לפוטנציאל המוחלט: השלם שכולל הכול, אך עדיין אינו יודע אילו צורות, יחסים, חוויות ומשמעויות ראויות להפוך לאידיאל. העולם אינו נפילה מהשלמות, אלא הדרך שבה השלם לומד את עצמו."],
@@ -78,18 +78,18 @@ const copy = {
     downloadTitle: "Read the full version",
     downloadText: "The complete essay is available in Hebrew and English. I also included DOCX and Markdown versions so the text can be edited, submitted, or republished without rebuilding the site.",
     downloads: [
-      ["Hebrew PDF", "The full Hebrew RTL version, ready to read and share.", "files/between-potential-and-ideal-he.pdf?v=20260513-fragmented-final", "Open PDF"],
-      ["English PDF", "The full polished English version, ready to read and share.", "files/between-potential-and-ideal-en.pdf?v=20260513-fragmented-final", "Open PDF"],
-      ["Editable files", "DOCX + Markdown versions in Hebrew and English for future editing or publication.", "files/between-potential-and-ideal-en.docx?v=20260513-fragmented-final", "Open DOCX"]
+      ["Hebrew PDF", "The full Hebrew RTL version, ready to read and share.", "files/between-potential-and-ideal-he.pdf?v=20260513-five-images-v2", "Open PDF"],
+      ["English PDF", "The full polished English version, ready to read and share.", "files/between-potential-and-ideal-en.pdf?v=20260513-five-images-v2", "Open PDF"],
+      ["Editable files", "DOCX + Markdown versions in Hebrew and English for future editing or publication.", "files/between-potential-and-ideal-en.docx?v=20260513-five-images-v2", "Open DOCX"]
     ],
     figureKicker: "Visual motifs",
     figureTitle: "The visual maps of the theory",
-    figureText: "Four images carry the structure: the cosmic river, navigation between banks, iterative clarification, and the mirror of consciousness.",
+    figureText: "Five images carry the structure: fragmented consciousness, navigation between banks, iterative clarification, the mirror of awareness, and flow toward the ideal.",
     figures: [
-      ["The cosmic river", "Existence as a boat inside a river that cannot be fully controlled.", "figures/01_cosmic_river_boat.png?v=20260513-fragmented-final"],
-      ["Navigation between banks", "The boat moves between potential and ideal, with currents that advance and return it.", "figures/02_navigation_between_banks.png?v=20260513-fragmented-final"],
-      ["Return and clarification", "A non-linear process of progress, regression, repair, and clearer understanding.", "figures/03_iterative_reincarnation_model.png?v=20260513-fragmented-final"],
-      ["Mirror and awareness", "Consciousness as the space where reality is reflected, interpreted, and given meaning.", "figures/04_ai_mirror_awareness.png?v=20260513-fragmented-final"]
+      ["The cosmic river", "Existence as a boat inside a river that cannot be fully controlled.", "figures/01_fragmented_consciousness_cover.png?v=20260513-five-images-v2"],
+      ["Navigation between banks", "The boat moves between potential and ideal, with currents that advance and return it.", "figures/02_navigation_between_banks.png?v=20260513-five-images-v2"],
+      ["Return and clarification", "A non-linear process of progress, regression, repair, and clearer understanding.", "figures/03_iterative_reincarnation_model.png?v=20260513-five-images-v2"],
+      ["Mirror and awareness", "Consciousness as the space where reality is reflected, interpreted, and given meaning.", "figures/04_ai_mirror_awareness.png?v=20260513-five-images-v2"]
     ],
     sections: [
       ["The central claim", "God as potential, not as a religious figure", "In this theory, 'God' is not a religious, judging, external being. God is a name for absolute potential: the whole that contains everything, yet still has to discover which forms, relations, experiences, and meanings deserve to become ideal. The world is not a fall from perfection; it is the way the whole comes to understand itself."],

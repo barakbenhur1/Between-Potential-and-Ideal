@@ -1,26 +1,11 @@
-# Between Potential and Ideal — Static Theory Website
+# Between Potential and Ideal / בין פוטנציאל לאידיאל
 
-No build tools. No dependencies. Static HTML/CSS/JS.
+Updated package with **five unique images** used exactly once in the theory materials:
 
-## Important
-The discussion button now links to `discussion.html` directly. It does not depend on `mailto`, scrolling, or JavaScript.
+1. `01_fragmented_consciousness_cover.png` — cover image
+2. `02_navigation_between_banks.png` — schematic river / navigation between banks
+3. `03_iterative_reincarnation_model.png` — reincarnation model
+4. `04_ai_mirror_awareness.png` — AI mirror awareness
+5. `05_flow_toward_the_ideal.png` — cosmic river / flowing toward the ideal
 
-## Deploy on Render
-- Build command: `echo static`
-- Publish directory: `theory-site-static` if this folder is inside your repo root, or `.` if these files are the repo root.
-
-
-## Visitor counter
-This version includes a simple public visitor counter.
-It uses CounterAPI V1 from the browser, because this is a static site with no backend.
-The counter increments at most once per browser per ~24 hours using localStorage, so refreshes do not keep increasing the number from the same browser.
-
-Counter namespace/key used in the code:
-- Namespace: `between-potential-and-ideal`
-- Counter name: `site-visits`
-
-To reset or change the counter, edit the `namespace` and `counterName` values inside `index.html` and `discussion.html`.
-
-
-## Image cache fix
-This package replaces the previous boat/moon main image with the fragmented central figure and adds cache-busting query strings to image/PDF links.
+The DOCX, PDF, Markdown, HTML, and site files were updated accordingly.
