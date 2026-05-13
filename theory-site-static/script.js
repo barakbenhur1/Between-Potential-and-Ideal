@@ -13,6 +13,24 @@ const copy = {
     essayKicker: "המאמר",
     essayTitle: "גרסה קצרה, חזקה וברורה",
     motifsKicker: "מפת רעיון",
+    downloadCta: "⬇ הורד PDF",
+    downloadKicker: "קבצים להורדה",
+    downloadTitle: "קרא את הגרסה המלאה",
+    downloadText: "המאמר המלא זמין עכשיו להורדה בעברית ובאנגלית. שמרתי גם גרסאות DOCX ו-Markdown כדי שתוכל לערוך, לשתף או לפרסם במקום אחר בלי לבנות הכול מחדש.",
+    downloads: [
+      ["PDF בעברית", "הגרסה העברית המלאה, מוכנה לקריאה ושיתוף.", "files/between-potential-and-ideal-he.pdf", "פתח PDF"],
+      ["English PDF", "The full polished English version, ready to read and share.", "files/between-potential-and-ideal-en.pdf", "Open PDF"],
+      ["קבצי עריכה", "DOCX + Markdown בעברית ובאנגלית למקרה שתרצה לערוך או להגיש גרסה אחרת.", "files/between-potential-and-ideal-he.docx", "פתח DOCX"]
+    ],
+    figureKicker: "דימויים",
+    figureTitle: "המפות הוויזואליות של התיאוריה",
+    figureText: "ארבעה דימויים שמחזיקים את המבנה: הנהר הקוסמי, הניווט בין הגדות, החזרה/הבירור, והמראה של התודעה.",
+    figures: [
+      ["הנהר הקוסמי", "הקיום כסירה בתוך נהר שאי אפשר לשלוט בו לחלוטין.", "figures/01_cosmic_river_boat.png"],
+      ["ניווט בין גדות", "הסירה נעה בין פוטנציאל לאידיאל, עם זרמים שמקדמים ומחזירים.", "figures/02_navigation_between_banks.png"],
+      ["חזרה ובירור", "תהליך לא ליניארי של התקדמות, נסיגה, תיקון והתבהרות.", "figures/03_iterative_reincarnation_model.png"],
+      ["מראה ותודעה", "המודעות כמרחב שבו העולם משתקף, מתפרש ומקבל משמעות.", "figures/04_ai_mirror_awareness.png"]
+    ],
     sections: [
       ["הטענה המרכזית", "אלוהים כפוטנציאל, לא כדמות דתית", "בתיאוריה הזו, 'אלוהים' אינו ישות דתית, שופטת או חיצונית לעולם. אלוהים הוא שם לפוטנציאל המוחלט: השלם שכולל הכול, אך עדיין אינו יודע אילו צורות, יחסים, חוויות ומשמעויות ראויות להפוך לאידיאל. העולם אינו נפילה מהשלמות, אלא הדרך שבה השלם לומד את עצמו."],
       ["הנהר והסירה", "הקיום נע בין גדות — לא מחוץ לזרם", "היקום הוא הנהר, הקיום הוא הסירה, והפוטנציאל והאידיאל הם שתי הגדות. אי אפשר פשוט לקפוץ אל האידיאל, כי האידיאל צריך להתברר מתוך ניסיון חי. גם אי אפשר לשלוט בנהר לחלוטין. המשימה היא ללמוד לזרום בתוכו בצורה שמכוונת לאידיאל בלי להימחק בדרך."],
@@ -47,6 +65,24 @@ const copy = {
     essayKicker: "The essay",
     essayTitle: "A short, strong, clear version",
     motifsKicker: "Idea map",
+    downloadCta: "⬇ Download PDF",
+    downloadKicker: "Downloads",
+    downloadTitle: "Read the full version",
+    downloadText: "The complete essay is available in Hebrew and English. I also included DOCX and Markdown versions so the text can be edited, submitted, or republished without rebuilding the site.",
+    downloads: [
+      ["Hebrew PDF", "The full Hebrew RTL version, ready to read and share.", "files/between-potential-and-ideal-he.pdf", "Open PDF"],
+      ["English PDF", "The full polished English version, ready to read and share.", "files/between-potential-and-ideal-en.pdf", "Open PDF"],
+      ["Editable files", "DOCX + Markdown versions in Hebrew and English for future editing or publication.", "files/between-potential-and-ideal-en.docx", "Open DOCX"]
+    ],
+    figureKicker: "Visual motifs",
+    figureTitle: "The visual maps of the theory",
+    figureText: "Four images carry the structure: the cosmic river, navigation between banks, iterative clarification, and the mirror of consciousness.",
+    figures: [
+      ["The cosmic river", "Existence as a boat inside a river that cannot be fully controlled.", "figures/01_cosmic_river_boat.png"],
+      ["Navigation between banks", "The boat moves between potential and ideal, with currents that advance and return it.", "figures/02_navigation_between_banks.png"],
+      ["Return and clarification", "A non-linear process of progress, regression, repair, and clearer understanding.", "figures/03_iterative_reincarnation_model.png"],
+      ["Mirror and awareness", "Consciousness as the space where reality is reflected, interpreted, and given meaning.", "figures/04_ai_mirror_awareness.png"]
+    ],
     sections: [
       ["The central claim", "God as potential, not as a religious figure", "In this theory, 'God' is not a religious, judging, external being. God is a name for absolute potential: the whole that contains everything, yet still has to discover which forms, relations, experiences, and meanings deserve to become ideal. The world is not a fall from perfection; it is the way the whole comes to understand itself."],
       ["The river and the boat", "Existence moves between banks — not outside the current", "The universe is the river, existence is the boat, and potential and ideal are the two banks. We cannot simply leap into the ideal, because the ideal must be clarified through lived experience. We also cannot fully control the river. The task is to learn how to flow within it in a way that remains oriented toward the ideal without being erased on the way."],
@@ -89,18 +125,45 @@ function render() {
   $("title").textContent = t.title;
   $("intro").textContent = t.intro;
   $("primaryCta").textContent = t.primaryCta;
+  $("downloadCta").textContent = t.downloadCta;
   $("secondaryCta").textContent = t.secondaryCta;
   $("secondaryCta").href = mailtoFor(lang);
   $("coreQuote").textContent = `“${t.coreQuote}”`;
   $("essayKicker").textContent = t.essayKicker;
   $("essayTitle").textContent = t.essayTitle;
   $("motifsKicker").textContent = t.motifsKicker;
+  $("downloadKicker").textContent = t.downloadKicker;
+  $("downloadTitle").textContent = t.downloadTitle;
+  $("downloadText").textContent = t.downloadText;
+  $("figureKicker").textContent = t.figureKicker;
+  $("figureTitle").textContent = t.figureTitle;
+  $("figureText").textContent = t.figureText;
   $("motifsTitle").textContent = t.motifsTitle;
   $("publishTitle").textContent = t.publishTitle;
   $("publishText").textContent = t.publishText;
   $("emailCta").textContent = t.emailCta;
   $("emailCta").href = mailtoFor(lang);
   $("footerText").textContent = t.footer;
+
+  $("downloadGrid").innerHTML = t.downloads.map(([title, text, href, label], index) => `
+    <article class="download-card">
+      <div>
+        <span class="download-badge">${index === 0 ? "HE" : index === 1 ? "EN" : "DOC"}</span>
+        <h3>${title}</h3>
+        <p>${text}</p>
+      </div>
+      <a href="${href}" target="_blank" rel="noopener" class="download-link">${label}</a>
+    </article>
+  `).join("");
+  $("figureGrid").innerHTML = t.figures.map(([title, text, src]) => `
+    <figure class="visual-card">
+      <img src="${src}" alt="${title}" loading="lazy" />
+      <figcaption>
+        <strong>${title}</strong>
+        <span>${text}</span>
+      </figcaption>
+    </figure>
+  `).join("");
 
   $("cardGrid").innerHTML = t.sections.map(([kicker, title, text]) => `
     <article class="section-card">

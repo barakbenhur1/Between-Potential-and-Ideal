@@ -1,19 +1,25 @@
 # Between Potential and Ideal — Static Theory Website
 
-No build tools. No dependencies. Just static HTML/CSS/JS.
+Ready static website for Render / Cloudflare Pages / Vercel / GitHub Pages.
 
-## Run locally
-Open `index.html` in your browser.
+## Included
+- `index.html`, `styles.css`, `script.js`
+- PDF downloads in `files/`
+- DOCX/Markdown backups in `files/`
+- visual figures in `figures/`
 
 ## Deploy on Render
-1. Create a GitHub repository and upload these files.
-2. In Render choose **New + → Static Site**.
+1. Push this folder to GitHub.
+2. Render → New + → Static Site.
 3. Connect the repository.
-4. Build command: leave empty, or use `echo static` if Render requires a value.
+4. Build command: `echo static`
 5. Publish directory: `.`
 6. Deploy.
 
+## Local preview
+Open `index.html` in your browser.
+
 ## Edit
-- Main text: `script.js`
-- Design: `styles.css`
+- Main website text: `script.js`
+- Layout/design: `styles.css`
 - Metadata/title: `index.html`

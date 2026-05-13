@@ -43,8 +43,20 @@ h1 { margin: 0; max-width: 920px; font-size: clamp(3.4rem, 9vw, 7.6rem); line-he
 .quote-card { position: relative; height: 100%; display: grid; place-items: center; text-align: center; border-radius: 999px; background: linear-gradient(135deg, rgba(255,255,255,.20), rgba(255,255,255,.05)); padding: 46px; }
 .spark { color: #fde68a; margin-bottom: 20px; font-size: 42px; }
 blockquote { margin: 0; font-size: clamp(1.45rem, 2.4vw, 2.4rem); line-height: 1.45; font-weight: 850; }
+.downloads-section { padding: 42px 0 28px; margin-top: -74px; position: relative; z-index: 2; }
+.download-panel { display: grid; grid-template-columns: .85fr 1.15fr; gap: 28px; align-items: stretch; border: 1px solid rgba(255,255,255,.22); border-radius: 42px; background: rgba(255,255,255,.88); padding: 34px; box-shadow: 0 35px 90px rgba(15,23,42,.16); backdrop-filter: blur(16px); }
+.download-copy h2 { margin: 0; font-size: clamp(2.1rem, 4vw, 3.6rem); line-height: 1.04; letter-spacing: -.04em; }
+.download-copy p:last-child { color: #475569; font-size: 1.08rem; line-height: 1.75; margin: 18px 0 0; }
+.download-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.download-card { min-height: 230px; display: flex; flex-direction: column; justify-content: space-between; gap: 22px; border: 1px solid rgba(148,163,184,.35); border-radius: 28px; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); padding: 22px; box-shadow: 0 16px 36px rgba(15,23,42,.06); }
+.download-badge { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; height: 30px; border-radius: 999px; background: #0f172a; color: white; font-size: 12px; font-weight: 900; letter-spacing: .08em; }
+.download-card h3 { margin: 16px 0 10px; font-size: 1.25rem; letter-spacing: -.02em; }
+.download-card p { margin: 0; color: #64748b; line-height: 1.6; }
+.download-link { display: inline-flex; justify-content: center; align-items: center; border-radius: 999px; min-height: 46px; padding: 10px 16px; background: #fcd34d; color: #0f172a; font-weight: 950; box-shadow: 0 12px 26px rgba(120,53,15,.14); transition: transform .2s ease, background .2s ease; }
+.download-link:hover { transform: translateY(-2px); background: #fde68a; }
 .content-section { padding: 86px 0 66px; }
 .section-heading { max-width: 780px; margin-bottom: 42px; }
+.section-lead { margin: 18px 0 0; color: #475569; font-size: 1.12rem; line-height: 1.75; }
 .kicker { margin: 0 0 14px; color: #b45309; font-weight: 900; text-transform: uppercase; letter-spacing: .22em; font-size: 13px; }
 .section-heading h2, .motifs h2, .cta-section h2 { margin: 0; font-size: clamp(2.4rem, 5vw, 4.4rem); line-height: 1.02; letter-spacing: -.04em; }
 .card-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
@@ -52,6 +64,13 @@ blockquote { margin: 0; font-size: clamp(1.45rem, 2.4vw, 2.4rem); line-height: 1
 .section-card:hover { transform: translateY(-4px); box-shadow: 0 24px 50px rgba(15,23,42,.11); }
 .section-card h3 { margin: 0 0 16px; font-size: 1.55rem; line-height: 1.2; letter-spacing: -.025em; }
 .section-card p:last-child { margin: 0; color: #475569; font-size: 1.08rem; line-height: 1.75; }
+.figure-section { padding: 28px 0 72px; }
+.figure-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.visual-card { margin: 0; overflow: hidden; border: 1px solid rgba(148,163,184,.32); border-radius: 34px; background: white; box-shadow: 0 24px 60px rgba(15,23,42,.08); }
+.visual-card img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #e2e8f0; }
+.visual-card figcaption { display: grid; gap: 8px; padding: 22px; }
+.visual-card figcaption strong { font-size: 1.22rem; letter-spacing: -.02em; }
+.visual-card figcaption span { color: #64748b; line-height: 1.65; }
 .motifs-wrap { padding: 48px 0 72px; }
 .motifs { display: grid; grid-template-columns: .8fr 1.2fr; gap: 54px; border-radius: 42px; background: #0f172a; color: white; padding: 54px; box-shadow: 0 35px 90px rgba(15,23,42,.22); }
 .motif-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
@@ -63,10 +82,10 @@ blockquote { margin: 0; font-size: clamp(1.45rem, 2.4vw, 2.4rem); line-height: 1
 .email-button { background: #0f172a; color: white; white-space: nowrap; }
 footer { padding: 0 20px 42px; text-align: center; color: #64748b; font-size: 14px; }
 @media (max-width: 900px) {
-  .hero-grid, .motifs, .cta-section { grid-template-columns: 1fr; }
+  .hero-grid, .motifs, .cta-section, .download-panel { grid-template-columns: 1fr; }
   .hero-grid { padding-top: 64px; }
-  .card-grid, .motif-grid { grid-template-columns: 1fr; }
-  .motifs, .cta-section { padding: 30px; border-radius: 32px; }
+  .card-grid, .motif-grid, .figure-grid, .download-grid { grid-template-columns: 1fr; }
+  .motifs, .cta-section, .download-panel { padding: 30px; border-radius: 32px; }
   .orb { max-width: 430px; }
 }
 @media (max-width: 560px) {
@@ -74,7 +93,7 @@ footer { padding: 0 20px 42px; text-align: center; color: #64748b; font-size: 14
   .topbar { border-radius: 28px; align-items: flex-start; }
   .brand strong { max-width: 160px; }
   .hero { padding-top: 14px; }
-  .actions, .primary, .secondary, .email-button { width: 100%; }
+  .actions, .primary, .secondary, .email-button, .download-link { width: 100%; }
   .orb { padding: 18px; }
   .quote-card { padding: 30px; }
   .section-card { padding: 23px; }
