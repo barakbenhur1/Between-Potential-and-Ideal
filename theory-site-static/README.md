@@ -1,25 +1,7 @@
-# Between Potential and Ideal — Static Theory Website
+# Between Potential and Ideal — fixed static site
 
-Ready static website for Render / Cloudflare Pages / Vercel / GitHub Pages.
+This version has CSS and JavaScript inlined inside `index.html`, so the page still looks correct even if the host fails to load separate CSS/JS files.
 
-## Included
-- `index.html`, `styles.css`, `script.js`
-- PDF downloads in `files/`
-- DOCX/Markdown backups in `files/`
-- visual figures in `figures/`
-
-## Deploy on Render
-1. Push this folder to GitHub.
-2. Render → New + → Static Site.
-3. Connect the repository.
-4. Build command: `echo static`
-5. Publish directory: `.`
-6. Deploy.
-
-## Local preview
-Open `index.html` in your browser.
-
-## Edit
-- Main website text: `script.js`
-- Layout/design: `styles.css`
-- Metadata/title: `index.html`
+## Render
+Build command: `echo static`
+Publish directory: `theory-site-static` if copied into that folder, or `.` if this package is the repository root.

@@ -9,7 +9,109 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="figures/01_cosmic_river_boat.png" />
     <title>Between Potential and Ideal · Barak Ben Hur</title>
-    <link rel="stylesheet" href="styles.css" />
+    <style>
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #0f172a;
+  background: #f7f3ea;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+.site-shell { min-height: 100vh; overflow: hidden; background: #f7f3ea; }
+.container { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
+.hero { position: relative; min-height: 100vh; padding: 24px 0 96px; color: white; isolation: isolate; }
+.hero-bg { position: absolute; inset: 0; z-index: -2; background: radial-gradient(circle at 20% 20%, rgba(245,158,11,.25), transparent 28%), radial-gradient(circle at 82% 12%, rgba(14,165,233,.18), transparent 30%), linear-gradient(135deg, #111827 0%, #1e293b 48%, #3f2d1c 100%); }
+.hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 42%; z-index: -1; background: linear-gradient(to top, #f7f3ea, transparent); }
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 14px; border: 1px solid rgba(255,255,255,.16); border-radius: 999px; background: rgba(255,255,255,.10); backdrop-filter: blur(14px); }
+.brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.brand-mark { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 999px; border: 1px solid rgba(255,255,255,.2); background: rgba(255,255,255,.1); flex: 0 0 auto; font-size: 28px; font-weight: 900; }
+.brand p { margin: 0 0 2px; color: rgba(255,255,255,.65); font-size: 14px; }
+.brand strong { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.lang-button { display: inline-flex; align-items: center; gap: 8px; border: 0; border-radius: 999px; padding: 10px 16px; background: white; color: #0f172a; font-weight: 800; cursor: pointer; box-shadow: 0 10px 30px rgba(0,0,0,.12); transition: transform .2s ease; }
+.lang-button:hover { transform: scale(1.04); }
+.hero-grid { display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; gap: 56px; padding-top: 90px; }
+.pills { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 26px; }
+.pill { display: inline-flex; border: 1px solid rgba(255,255,255,.16); border-radius: 999px; background: rgba(255,255,255,.1); padding: 10px 16px; color: rgba(255,255,255,.82); backdrop-filter: blur(12px); font-size: 14px; }
+h1 { margin: 0; max-width: 920px; font-size: clamp(3.4rem, 9vw, 7.6rem); line-height: .92; letter-spacing: -.06em; font-weight: 950; }
+.intro { margin: 30px 0 0; max-width: 760px; font-size: clamp(1.2rem, 2.2vw, 1.7rem); line-height: 1.55; color: rgba(255,255,255,.78); }
+.actions { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 42px; }
+.primary, .secondary, .email-button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 14px 26px; border-radius: 999px; font-weight: 900; transition: transform .2s ease, background .2s ease; }
+.primary { background: #fcd34d; color: #0f172a; box-shadow: 0 24px 50px rgba(120,53,15,.25); }
+.secondary { border: 1px solid rgba(255,255,255,.22); background: rgba(255,255,255,.1); color: white; backdrop-filter: blur(14px); }
+.primary:hover, .secondary:hover, .email-button:hover { transform: translateY(-2px); }
+.orb { position: relative; width: min(100%, 520px); aspect-ratio: 1; margin-inline: auto; border-radius: 999px; border: 1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.10); box-shadow: 0 40px 90px rgba(0,0,0,.22); backdrop-filter: blur(16px); padding: 28px; }
+.ring { position: absolute; border-radius: 999px; border: 1px solid rgba(255,255,255,.18); pointer-events: none; }
+.ring-one { inset: 44px; border-color: rgba(254,240,138,.32); }
+.ring-two { inset: 88px; border-color: rgba(186,230,253,.22); }
+.cross { position: absolute; background: linear-gradient(to bottom, transparent, rgba(255,255,255,.32), transparent); pointer-events: none; }
+.vertical { top: 0; bottom: 0; left: 50%; width: 1px; transform: translateX(-50%); }
+.horizontal { left: 0; right: 0; top: 50%; height: 1px; transform: translateY(-50%); background: linear-gradient(to right, transparent, rgba(255,255,255,.32), transparent); }
+.quote-card { position: relative; height: 100%; display: grid; place-items: center; text-align: center; border-radius: 999px; background: linear-gradient(135deg, rgba(255,255,255,.20), rgba(255,255,255,.05)); padding: 46px; }
+.spark { color: #fde68a; margin-bottom: 20px; font-size: 42px; }
+blockquote { margin: 0; font-size: clamp(1.45rem, 2.4vw, 2.4rem); line-height: 1.45; font-weight: 850; }
+.downloads-section { padding: 42px 0 28px; margin-top: -74px; position: relative; z-index: 2; }
+.download-panel { display: grid; grid-template-columns: .85fr 1.15fr; gap: 28px; align-items: stretch; border: 1px solid rgba(255,255,255,.22); border-radius: 42px; background: rgba(255,255,255,.88); padding: 34px; box-shadow: 0 35px 90px rgba(15,23,42,.16); backdrop-filter: blur(16px); }
+.download-copy h2 { margin: 0; font-size: clamp(2.1rem, 4vw, 3.6rem); line-height: 1.04; letter-spacing: -.04em; }
+.download-copy p:last-child { color: #475569; font-size: 1.08rem; line-height: 1.75; margin: 18px 0 0; }
+.download-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.download-card { min-height: 230px; display: flex; flex-direction: column; justify-content: space-between; gap: 22px; border: 1px solid rgba(148,163,184,.35); border-radius: 28px; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); padding: 22px; box-shadow: 0 16px 36px rgba(15,23,42,.06); }
+.download-badge { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; height: 30px; border-radius: 999px; background: #0f172a; color: white; font-size: 12px; font-weight: 900; letter-spacing: .08em; }
+.download-card h3 { margin: 16px 0 10px; font-size: 1.25rem; letter-spacing: -.02em; }
+.download-card p { margin: 0; color: #64748b; line-height: 1.6; }
+.download-link { display: inline-flex; justify-content: center; align-items: center; border-radius: 999px; min-height: 46px; padding: 10px 16px; background: #fcd34d; color: #0f172a; font-weight: 950; box-shadow: 0 12px 26px rgba(120,53,15,.14); transition: transform .2s ease, background .2s ease; }
+.download-link:hover { transform: translateY(-2px); background: #fde68a; }
+.content-section { padding: 86px 0 66px; }
+.section-heading { max-width: 780px; margin-bottom: 42px; }
+.section-lead { margin: 18px 0 0; color: #475569; font-size: 1.12rem; line-height: 1.75; }
+.kicker { margin: 0 0 14px; color: #b45309; font-weight: 900; text-transform: uppercase; letter-spacing: .22em; font-size: 13px; }
+.section-heading h2, .motifs h2, .cta-section h2 { margin: 0; font-size: clamp(2.4rem, 5vw, 4.4rem); line-height: 1.02; letter-spacing: -.04em; }
+.card-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.section-card { border: 1px solid rgba(148,163,184,.35); border-radius: 32px; background: rgba(255,255,255,.82); padding: 28px; box-shadow: 0 10px 26px rgba(15,23,42,.05); backdrop-filter: blur(12px); transition: transform .2s ease, box-shadow .2s ease; }
+.section-card:hover { transform: translateY(-4px); box-shadow: 0 24px 50px rgba(15,23,42,.11); }
+.section-card h3 { margin: 0 0 16px; font-size: 1.55rem; line-height: 1.2; letter-spacing: -.025em; }
+.section-card p:last-child { margin: 0; color: #475569; font-size: 1.08rem; line-height: 1.75; }
+.figure-section { padding: 28px 0 72px; }
+.figure-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.visual-card { margin: 0; overflow: hidden; border: 1px solid rgba(148,163,184,.32); border-radius: 34px; background: white; box-shadow: 0 24px 60px rgba(15,23,42,.08); }
+.visual-card img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #e2e8f0; }
+.visual-card figcaption { display: grid; gap: 8px; padding: 22px; }
+.visual-card figcaption strong { font-size: 1.22rem; letter-spacing: -.02em; }
+.visual-card figcaption span { color: #64748b; line-height: 1.65; }
+.motifs-wrap { padding: 48px 0 72px; }
+.motifs { display: grid; grid-template-columns: .8fr 1.2fr; gap: 54px; border-radius: 42px; background: #0f172a; color: white; padding: 54px; box-shadow: 0 35px 90px rgba(15,23,42,.22); }
+.motif-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.motif { border: 1px solid rgba(255,255,255,.10); border-radius: 26px; background: rgba(255,255,255,.06); padding: 22px; }
+.motif h3 { margin: 0 0 10px; color: #fde68a; font-size: 1.25rem; }
+.motif p { margin: 0; color: rgba(255,255,255,.72); line-height: 1.65; }
+.cta-section { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 32px; margin-block: 50px 86px; border: 1px solid rgba(148,163,184,.30); border-radius: 42px; background: white; padding: 44px; box-shadow: 0 20px 60px rgba(15,23,42,.07); }
+.cta-section p { max-width: 780px; margin: 20px 0 0; color: #475569; font-size: 1.1rem; line-height: 1.75; }
+.email-button { background: #0f172a; color: white; white-space: nowrap; }
+footer { padding: 0 20px 42px; text-align: center; color: #64748b; font-size: 14px; }
+@media (max-width: 900px) {
+  .hero-grid, .motifs, .cta-section, .download-panel { grid-template-columns: 1fr; }
+  .hero-grid { padding-top: 64px; }
+  .card-grid, .motif-grid, .figure-grid, .download-grid { grid-template-columns: 1fr; }
+  .motifs, .cta-section, .download-panel { padding: 30px; border-radius: 32px; }
+  .orb { max-width: 430px; }
+}
+@media (max-width: 560px) {
+  .container { width: min(100% - 28px, 1180px); }
+  .topbar { border-radius: 28px; align-items: flex-start; }
+  .brand strong { max-width: 160px; }
+  .hero { padding-top: 14px; }
+  .actions, .primary, .secondary, .email-button, .download-link { width: 100%; }
+  .orb { padding: 18px; }
+  .quote-card { padding: 30px; }
+  .section-card { padding: 23px; }
+}
+
+    </style>
   </head>
   <body>
     <main id="app" class="site-shell" dir="rtl">
@@ -102,6 +204,188 @@
 
       <footer id="footerText"></footer>
     </main>
-    <script src="script.js"></script>
+    <script>
+const copy = {
+  he: {
+    dir: "rtl",
+    langLabel: "◎ English",
+    eyebrow: "תיאוריה מטאפיזית לפרסום ולדיון",
+    title: "בין הפוטנציאל לאידיאל",
+    subtitle: "ניהיליזם עם תקווה בעולם לא ודאי",
+    author: "ברק בן חור",
+    intro: "הקיום אינו הוכחה לכך שהעולם כבר טוב. הוא גם אינו הוכחה לכך שהכול חסר משמעות. הקיום הוא תהליך שבו הפוטנציאל המוחלט מנסה לברר מה מתוכו ראוי להפוך לאידיאל — בלי למחוק את הייחוד של החווים שבתוכו.",
+    primaryCta: "☰ קרא את התיאוריה",
+    secondaryCta: "✉ פתח דיון",
+    coreQuote: "המוחלט אינו האידיאל. הקיום הוא חציית הנהר: תנועה מתמדת בין מה שיכול להיות לבין מה שראוי להיות.",
+    essayKicker: "המאמר",
+    essayTitle: "גרסה קצרה, חזקה וברורה",
+    motifsKicker: "מפת רעיון",
+    downloadCta: "⬇ הורד PDF",
+    downloadKicker: "קבצים להורדה",
+    downloadTitle: "קרא את הגרסה המלאה",
+    downloadText: "המאמר המלא זמין עכשיו להורדה בעברית ובאנגלית. שמרתי גם גרסאות DOCX ו-Markdown כדי שתוכל לערוך, לשתף או לפרסם במקום אחר בלי לבנות הכול מחדש.",
+    downloads: [
+      ["PDF בעברית", "הגרסה העברית המלאה, מוכנה לקריאה ושיתוף.", "files/between-potential-and-ideal-he.pdf", "פתח PDF"],
+      ["English PDF", "The full polished English version, ready to read and share.", "files/between-potential-and-ideal-en.pdf", "Open PDF"],
+      ["קבצי עריכה", "DOCX + Markdown בעברית ובאנגלית למקרה שתרצה לערוך או להגיש גרסה אחרת.", "files/between-potential-and-ideal-he.docx", "פתח DOCX"]
+    ],
+    figureKicker: "דימויים",
+    figureTitle: "המפות הוויזואליות של התיאוריה",
+    figureText: "ארבעה דימויים שמחזיקים את המבנה: הנהר הקוסמי, הניווט בין הגדות, החזרה/הבירור, והמראה של התודעה.",
+    figures: [
+      ["הנהר הקוסמי", "הקיום כסירה בתוך נהר שאי אפשר לשלוט בו לחלוטין.", "figures/01_cosmic_river_boat.png"],
+      ["ניווט בין גדות", "הסירה נעה בין פוטנציאל לאידיאל, עם זרמים שמקדמים ומחזירים.", "figures/02_navigation_between_banks.png"],
+      ["חזרה ובירור", "תהליך לא ליניארי של התקדמות, נסיגה, תיקון והתבהרות.", "figures/03_iterative_reincarnation_model.png"],
+      ["מראה ותודעה", "המודעות כמרחב שבו העולם משתקף, מתפרש ומקבל משמעות.", "figures/04_ai_mirror_awareness.png"]
+    ],
+    sections: [
+      ["הטענה המרכזית", "אלוהים כפוטנציאל, לא כדמות דתית", "בתיאוריה הזו, 'אלוהים' אינו ישות דתית, שופטת או חיצונית לעולם. אלוהים הוא שם לפוטנציאל המוחלט: השלם שכולל הכול, אך עדיין אינו יודע אילו צורות, יחסים, חוויות ומשמעויות ראויות להפוך לאידיאל. העולם אינו נפילה מהשלמות, אלא הדרך שבה השלם לומד את עצמו."],
+      ["הנהר והסירה", "הקיום נע בין גדות — לא מחוץ לזרם", "היקום הוא הנהר, הקיום הוא הסירה, והפוטנציאל והאידיאל הם שתי הגדות. אי אפשר פשוט לקפוץ אל האידיאל, כי האידיאל צריך להתברר מתוך ניסיון חי. גם אי אפשר לשלוט בנהר לחלוטין. המשימה היא ללמוד לזרום בתוכו בצורה שמכוונת לאידיאל בלי להימחק בדרך."],
+      ["הקושי האנושי", "הזרם מושך, מחזיר ומאתגר", "אדם יכול להתקדם, להבין, להשתנות — ואז כוח פנימי או חיצוני מחזיר אותו לאחור. לכן ההתקדמות אינה קו ישר. היא דומה לשיט בתוך זרם: לפעמים יש תיקון, לפעמים נסיגה, ולפעמים דווקא הנסיגה חושפת מה עדיין לא הובן."],
+      ["מוסר ומשמעות", "לא כל חוויה מוצדקת — אבל כל חוויה מגלה משהו", "התיאוריה אינה מצדיקה רוע. להפך: יש פעולות שחייבים לעצור. אבל גם חוויות קשות חושפות מידע על האפשרויות שבתוך הקיום. המוסר מתחיל במקום שבו הפוטנציאל מבין שחלק מהאפשרויות פוגעות ביכולת של תודעה להמשיך להתבהר."]
+    ],
+    motifsTitle: "המוטיבים של התיאוריה",
+    motifs: [
+      ["פוטנציאל", "כל מה שיכול להיות, לפני שהובן מה ראוי להיות."],
+      ["חוויה", "הדרך שבה האפשרויות נבדקות מבפנים."],
+      ["הבנה", "הפיכת חוויה למידע מוסרי וקיומי."],
+      ["אידיאל", "לא נקודת פתיחה, אלא כיוון שמתברר לאורך הדרך."],
+      ["אני שלא נמחק", "ההבהרה חייבת להתרחש בלי למחוק את הייחוד של החווה."],
+      ["תקווה", "גם אם אין ודאות, עצם הכיוון מאפשר משמעות."]
+    ],
+    publishTitle: "מוכן לאנשים שיאתגרו את הרעיון",
+    publishText: "האתר בנוי כמקום ראשי לתיאוריה: אפשר לשלוח אליו קוראים, פילוסופים, פורומים, קהילות, עורכים או אנשים שיכולים לתקוף את הטיעון ברצינות. המטרה אינה להגן על הטקסט מכל ביקורת, אלא להפוך אותו ברור מספיק כדי שביקורת טובה באמת תוכל להגיע.",
+    emailCta: "✉ שלח תגובה",
+    footer: "Between Potential and Ideal · Nihilism with Hope · Barak Ben Hur"
+  },
+  en: {
+    dir: "ltr",
+    langLabel: "◎ עברית",
+    eyebrow: "A metaphysical theory for publication and debate",
+    title: "Between Potential and Ideal",
+    subtitle: "Nihilism with Hope in an Uncertain World",
+    author: "Barak Ben Hur",
+    intro: "Existence is not proof that the world is already good. It is also not proof that everything is meaningless. Existence is the process through which absolute potential clarifies what within itself deserves to become ideal — without erasing the individuality of the beings who undergo that clarification.",
+    primaryCta: "☰ Read the theory",
+    secondaryCta: "✉ Open a discussion",
+    coreQuote: "The absolute is not the ideal. Existence is the river-crossing: a continuous movement between what can be and what ought to become.",
+    essayKicker: "The essay",
+    essayTitle: "A short, strong, clear version",
+    motifsKicker: "Idea map",
+    downloadCta: "⬇ Download PDF",
+    downloadKicker: "Downloads",
+    downloadTitle: "Read the full version",
+    downloadText: "The complete essay is available in Hebrew and English. I also included DOCX and Markdown versions so the text can be edited, submitted, or republished without rebuilding the site.",
+    downloads: [
+      ["Hebrew PDF", "The full Hebrew RTL version, ready to read and share.", "files/between-potential-and-ideal-he.pdf", "Open PDF"],
+      ["English PDF", "The full polished English version, ready to read and share.", "files/between-potential-and-ideal-en.pdf", "Open PDF"],
+      ["Editable files", "DOCX + Markdown versions in Hebrew and English for future editing or publication.", "files/between-potential-and-ideal-en.docx", "Open DOCX"]
+    ],
+    figureKicker: "Visual motifs",
+    figureTitle: "The visual maps of the theory",
+    figureText: "Four images carry the structure: the cosmic river, navigation between banks, iterative clarification, and the mirror of consciousness.",
+    figures: [
+      ["The cosmic river", "Existence as a boat inside a river that cannot be fully controlled.", "figures/01_cosmic_river_boat.png"],
+      ["Navigation between banks", "The boat moves between potential and ideal, with currents that advance and return it.", "figures/02_navigation_between_banks.png"],
+      ["Return and clarification", "A non-linear process of progress, regression, repair, and clearer understanding.", "figures/03_iterative_reincarnation_model.png"],
+      ["Mirror and awareness", "Consciousness as the space where reality is reflected, interpreted, and given meaning.", "figures/04_ai_mirror_awareness.png"]
+    ],
+    sections: [
+      ["The central claim", "God as potential, not as a religious figure", "In this theory, 'God' is not a religious, judging, external being. God is a name for absolute potential: the whole that contains everything, yet still has to discover which forms, relations, experiences, and meanings deserve to become ideal. The world is not a fall from perfection; it is the way the whole comes to understand itself."],
+      ["The river and the boat", "Existence moves between banks — not outside the current", "The universe is the river, existence is the boat, and potential and ideal are the two banks. We cannot simply leap into the ideal, because the ideal must be clarified through lived experience. We also cannot fully control the river. The task is to learn how to flow within it in a way that remains oriented toward the ideal without being erased on the way."],
+      ["The human difficulty", "The current pulls, returns, and challenges", "A person can progress, understand, change — and then an inner or outer force pulls them backward. Progress is therefore not a straight line. It is more like navigating a current: sometimes there is repair, sometimes regression, and sometimes the regression reveals what has not yet been understood."],
+      ["Morality and meaning", "Not every experience is justified — but every experience reveals something", "The theory does not justify evil. On the contrary: some actions must be stopped. But even painful experiences reveal information about the possibilities within existence. Morality begins where potential understands that some possibilities damage consciousness's ability to keep clarifying itself."]
+    ],
+    motifsTitle: "Core motifs",
+    motifs: [
+      ["Potential", "Everything that can be, before it is clear what ought to be."],
+      ["Experience", "The way possibilities are tested from within."],
+      ["Understanding", "The transformation of experience into moral and existential information."],
+      ["Ideal", "Not a starting point, but a direction clarified over time."],
+      ["The self not erased", "Clarification must happen without deleting the uniqueness of the experiencer."],
+      ["Hope", "Even without certainty, orientation itself makes meaning possible."]
+    ],
+    publishTitle: "Ready for people who can challenge the idea",
+    publishText: "This site is designed as the theory's home base: a place you can send to readers, philosophers, forums, communities, editors, or people who can attack the argument seriously. The goal is not to protect the text from criticism, but to make it clear enough for good criticism to arrive.",
+    emailCta: "✉ Send a response",
+    footer: "Between Potential and Ideal · Nihilism with Hope · Barak Ben Hur"
+  }
+};
+
+let lang = "he";
+const $ = (id) => document.getElementById(id);
+function mailtoFor(language) {
+  const subject = encodeURIComponent(language === "he" ? "תגובה לתיאוריה: בין הפוטנציאל לאידיאל" : "Response to the theory: Between Potential and Ideal");
+  const body = encodeURIComponent(language === "he" ? "קראתי את התיאוריה ויש לי תגובה:" : "I read the theory and have a response:");
+  return `mailto:barakbenhur@gmail.com?subject=${subject}&body=${body}`;
+}
+function render() {
+  const t = copy[lang];
+  document.documentElement.lang = lang;
+  document.documentElement.dir = t.dir;
+  $("app").dir = t.dir;
+  $("langButton").textContent = t.langLabel;
+  $("authorTop").textContent = t.author;
+  $("brandTitle").textContent = t.title;
+  $("eyebrow").textContent = t.eyebrow;
+  $("subtitle").textContent = t.subtitle;
+  $("title").textContent = t.title;
+  $("intro").textContent = t.intro;
+  $("primaryCta").textContent = t.primaryCta;
+  $("downloadCta").textContent = t.downloadCta;
+  $("secondaryCta").textContent = t.secondaryCta;
+  $("secondaryCta").href = mailtoFor(lang);
+  $("coreQuote").textContent = `“${t.coreQuote}”`;
+  $("essayKicker").textContent = t.essayKicker;
+  $("essayTitle").textContent = t.essayTitle;
+  $("motifsKicker").textContent = t.motifsKicker;
+  $("downloadKicker").textContent = t.downloadKicker;
+  $("downloadTitle").textContent = t.downloadTitle;
+  $("downloadText").textContent = t.downloadText;
+  $("figureKicker").textContent = t.figureKicker;
+  $("figureTitle").textContent = t.figureTitle;
+  $("figureText").textContent = t.figureText;
+  $("motifsTitle").textContent = t.motifsTitle;
+  $("publishTitle").textContent = t.publishTitle;
+  $("publishText").textContent = t.publishText;
+  $("emailCta").textContent = t.emailCta;
+  $("emailCta").href = mailtoFor(lang);
+  $("footerText").textContent = t.footer;
+
+  $("downloadGrid").innerHTML = t.downloads.map(([title, text, href, label], index) => `
+    <article class="download-card">
+      <div>
+        <span class="download-badge">${index === 0 ? "HE" : index === 1 ? "EN" : "DOC"}</span>
+        <h3>${title}</h3>
+        <p>${text}</p>
+      </div>
+      <a href="${href}" target="_blank" rel="noopener" class="download-link">${label}</a>
+    </article>
+  `).join("");
+  $("figureGrid").innerHTML = t.figures.map(([title, text, src]) => `
+    <figure class="visual-card">
+      <img src="${src}" alt="${title}" loading="lazy" />
+      <figcaption>
+        <strong>${title}</strong>
+        <span>${text}</span>
+      </figcaption>
+    </figure>
+  `).join("");
+
+  $("cardGrid").innerHTML = t.sections.map(([kicker, title, text]) => `
+    <article class="section-card">
+      <p class="kicker">${kicker}</p>
+      <h3>${title}</h3>
+      <p>${text}</p>
+    </article>
+  `).join("");
+  $("motifGrid").innerHTML = t.motifs.map(([title, text]) => `
+    <div class="motif"><h3>${title}</h3><p>${text}</p></div>
+  `).join("");
+}
+$("langButton").addEventListener("click", () => { lang = lang === "he" ? "en" : "he"; render(); });
+render();
+
+    </script>
   </body>
 </html>
