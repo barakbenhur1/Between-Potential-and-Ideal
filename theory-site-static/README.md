@@ -46,3 +46,6 @@ Update: 2026-05-15
 - The appendix files include the final question page.
 - Stable site links are preserved.
 - Cache version: 20260515-v20-theory-v19-appendices-final-question
+
+
+Update: theory files refreshed from between_potential_and_ideal_v20_optimal_package(3).zip. Appendices refreshed from stories_before_thought_v23_first_story_package(1).zip. Appendices are placed after the theory section and before figures/downloads. Cache version: 20260515-v20-theory-v23-first-story-appendices
