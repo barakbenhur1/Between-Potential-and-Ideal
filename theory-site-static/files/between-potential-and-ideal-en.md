@@ -235,5 +235,3 @@ Friedrich Nietzsche and Albert Camus as background to the modern crisis of meani
 Buddhist and Advaita Vedanta traditions as philosophical background for non-separation, non-self, and the critique of ego.
 
 Note on quotations and lineage: short source references are used for philosophical orientation. The theory itself is presented as an independent proposal, not as a derivation from any single source.
-
-

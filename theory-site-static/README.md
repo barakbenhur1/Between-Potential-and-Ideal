@@ -1,23 +1,19 @@
 # Between Potential and Ideal / בין פוטנציאל לאידיאל
 
-Quiet academic-style static site package.
+Editorial redesign package.
 
-This update intentionally removes the marketing / landing-page feeling and keeps the site closer to a public essay, working note, or philosophical archive.
+This version is intentionally more visually distinct from the earlier exported-document look:
 
-Included:
+- new editorial PDFs rendered from designed HTML/CSS
+- redesigned reading-room website
+- clearer image hierarchy
+- five separate figures kept as distinct files
+- original DOCX/Markdown sources preserved in `source/` and downloadable copies in `files/`
 
-- `index.html` - main bilingual site
-- `discussion.html` - response/contact page
-- `styles.css` - quiet paper-like design
-- `script.js` - language toggle + visitor counter
-- `figures/` - five theory images
-- `files/` - Hebrew/English PDF, DOCX, Markdown, and Hebrew HTML
-
-Render settings:
-
-```txt
-Build command: echo static
-Publish directory: theory-site-static
-```
-
-Cache version: `20260514-quiet-academic-v1`
+Main files:
+- `index.html`
+- `discussion.html`
+- `styles.css`
+- `script.js`
+- `files/between-potential-and-ideal-en-editorial.pdf`
+- `files/between-potential-and-ideal-he-editorial.pdf`
