@@ -17,3 +17,16 @@ Main files:
 - `script.js`
 - `files/between-potential-and-ideal-en-editorial.pdf`
 - `files/between-potential-and-ideal-he-editorial.pdf`
+
+
+## Appendices update
+
+Added appendix support to the site:
+
+- `appendices.html` - bilingual appendices page
+- `files/appendices/stories-before-thought-hebrew-rtl.pdf`
+- `files/appendices/stories-before-thought-hebrew-rtl.docx`
+- `files/appendices/stories-before-thought-english.pdf`
+- `files/appendices/stories-before-thought-english.docx`
+
+Cache version: `20260514-appendices-v1`
