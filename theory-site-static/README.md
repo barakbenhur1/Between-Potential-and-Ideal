@@ -26,3 +26,14 @@ Update: appendices are now placed directly after the theory/figures section and 
 
 
 Compact deploy package: source duplicates and duplicated v19 appendix aliases were removed. The active appendix files are still Stories Before Thought v19 Complete under the stable filenames used by the site. Appendices now appear directly after the theory/figures section and before downloads.
+
+
+Placement fix: appendices are now immediately after the core theory / reader section, before figures and before the general files/downloads area. Cache version: 20260515-appendices-correct-position-v3
+
+
+v4 polish fixes:
+- Rebuilt the Hebrew appendix PDF/DOCX with a centered, publishing-style title page.
+- Rebuilt the English appendix PDF/DOCX using the same clean image constraints.
+- Fixed the children/bridge image so it renders contained instead of visually broken/cropped.
+- Kept appendices immediately after the theory section and before figures/files.
+- Cache version: 20260515-appendices-polished-fixed-v4
