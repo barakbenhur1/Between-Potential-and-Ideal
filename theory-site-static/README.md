@@ -1,32 +1,22 @@
 # Between Potential and Ideal / בין פוטנציאל לאידיאל
 
-Editorial redesign package.
+Static theory site with appendices.
 
-This version is intentionally more visually distinct from the earlier exported-document look:
+This package uses **Stories Before Thought v19 Complete** as the appendix material.
 
-- new editorial PDFs rendered from designed HTML/CSS
-- redesigned reading-room website
-- clearer image hierarchy
-- five separate figures kept as distinct files
-- original DOCX/Markdown sources preserved in `source/` and downloadable copies in `files/`
+## Layout change
 
-Main files:
-- `index.html`
-- `discussion.html`
-- `styles.css`
-- `script.js`
-- `files/between-potential-and-ideal-en-editorial.pdf`
-- `files/between-potential-and-ideal-he-editorial.pdf`
+The appendices section is placed **below the main theory area**, after the main reading/figures/downloads flow, in its own dedicated section. The appendices are supporting material and are not presented before or instead of the theory.
 
+## Included
 
-## Appendices update
+- `index.html` - main bilingual theory site
+- `appendices.html` - appendices page
+- `discussion.html` - response/contact page
+- `styles.css` - editorial/reading-room design
+- `script.js` - language toggle
+- `figures/` - five theory images
+- `files/` - main theory PDFs/DOCX/Markdown/HTML
+- `files/appendices/` - Stories Before Thought v19 Complete in Hebrew and English, PDF and DOCX
 
-Added appendix support to the site:
-
-- `appendices.html` - bilingual appendices page
-- `files/appendices/stories-before-thought-hebrew-rtl.pdf`
-- `files/appendices/stories-before-thought-hebrew-rtl.docx`
-- `files/appendices/stories-before-thought-english.pdf`
-- `files/appendices/stories-before-thought-english.docx`
-
-Cache version: `20260514-appendices-v1`
+Cache version: `20260514-appendices-v19-below-theory`

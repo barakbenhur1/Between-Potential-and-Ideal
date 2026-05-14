@@ -26,3 +26,9 @@ a{color:inherit;text-underline-offset:.18em}.site{min-height:100vh;background:li
 .appendix-page{padding:58px 0 90px}
 .appendix-list{display:grid;gap:18px;margin-top:28px}
 .appendix-note{border-inline-start:4px solid var(--gold);background:#fff8e8;padding:16px 20px;margin:22px 0;color:#33404d}
+
+/* Appendices placed below the main theory */
+.appendices-below-theory{margin-top:28px;padding-top:54px;border-top:2px solid rgba(28,35,49,.22)}
+.appendices-below-theory:before{content:"";display:block;width:88px;height:1px;background:var(--gold);margin:0 auto 30px;opacity:.75}
+.appendices-below-theory .appendix-intro{text-align:center}
+.appendices-below-theory .appendix-intro p{margin-inline:auto}
