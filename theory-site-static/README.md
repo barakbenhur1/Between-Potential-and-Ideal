@@ -31,9 +31,18 @@ Compact deploy package: source duplicates and duplicated v19 appendix aliases we
 Placement fix: appendices are now immediately after the core theory / reader section, before figures and before the general files/downloads area. Cache version: 20260515-appendices-correct-position-v3
 
 
-v4 polish fixes:
-- Rebuilt the Hebrew appendix PDF/DOCX with a centered, publishing-style title page.
-- Rebuilt the English appendix PDF/DOCX using the same clean image constraints.
-- Fixed the children/bridge image so it renders contained instead of visually broken/cropped.
-- Kept appendices immediately after the theory section and before figures/files.
-- Cache version: 20260515-appendices-polished-fixed-v4
+V19 clean appendices rebuild:
+- Appendices placed directly after the core theory/read section, before figures and files.
+- Stories Before Thought v19 appendices rebuilt from source text/images.
+- Hebrew cover alignment fixed.
+- Final question page restored.
+- Child/bridge image included without web/object-fit cropping in PDFs.
+- Cache version: 20260515-v19-appendices-rebuilt-clean-v4
+
+
+Update: 2026-05-15
+- Replaced the main theory files with the user-provided v20 optimal package.
+- Replaced appendix story files with Stories Before Thought v19 complete originals.
+- The appendix files include the final question page.
+- Stable site links are preserved.
+- Cache version: 20260515-v20-theory-v19-appendices-final-question

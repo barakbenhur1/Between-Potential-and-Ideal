@@ -32,12 +32,3 @@ a{color:inherit;text-underline-offset:.18em}.site{min-height:100vh;background:li
 .appendices-below-theory:before{content:"";display:block;width:88px;height:1px;background:var(--gold);margin:0 auto 30px;opacity:.75}
 .appendices-below-theory .appendix-intro{text-align:center}
 .appendices-below-theory .appendix-intro p{margin-inline:auto}
-
-
-/* v4 appendix polish fixes */
-.appendix-card, .reader-card { overflow: visible; }
-.appendix-preview img, .appendix-card img { width: 100%; height: auto; object-fit: contain; display: block; }
-.appendix-actions a { min-height: 42px; display: inline-flex; align-items: center; justify-content: center; }
-html[dir="rtl"] .appendix-card, html[dir="rtl"] .appendix-intro, html[dir="rtl"] .reader-card { text-align: right; }
-html[dir="rtl"] .appendices-below-theory .appendix-intro { text-align: center; }
-html[dir="rtl"] .appendix-actions { justify-content: flex-start; }
