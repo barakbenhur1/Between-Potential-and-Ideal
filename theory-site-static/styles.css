@@ -232,3 +232,116 @@ a{color:inherit;text-underline-offset:.18em}.site{min-height:100vh;background:li
   text-align:center;
   line-height:1.75;
 }
+
+
+/* Two approaches: original and tightened theory */
+.approaches-section{
+  width:min(var(--max),calc(100% - 36px));
+  margin:72px auto 34px;
+  padding:56px 0 18px;
+  border-top:2px solid rgba(166,112,45,.26);
+}
+.approaches-section > h2{
+  text-align:center;
+  font-size:clamp(2.15rem,3.7vw,4.4rem);
+  line-height:1.02;
+  margin:0 0 16px;
+}
+.approaches-section > .intro{
+  max-width:900px;
+  margin:0 auto 34px;
+  text-align:center;
+  line-height:1.8;
+  color:var(--muted);
+}
+.approach-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:28px;
+  align-items:stretch;
+}
+.approach-card{
+  padding:34px 34px 30px;
+  background:rgba(255,250,240,.78);
+  border:1px solid var(--line);
+  box-shadow:0 20px 60px rgba(23,32,45,.075);
+  min-height:360px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.approach-card:before{
+  content:"";
+  display:block;
+  width:74px;
+  height:2px;
+  background:var(--gold);
+  margin:0 0 22px auto;
+  opacity:.8;
+}
+.approach-tightened:before{
+  background:#566173;
+}
+.approach-kicker{
+  margin:0 0 10px;
+  color:var(--gold);
+  font-family:ui-sans-serif,system-ui;
+  font-size:.82rem;
+  font-weight:900;
+  letter-spacing:.08em;
+}
+.approach-tightened .approach-kicker{
+  color:#566173;
+}
+.approach-card h3{
+  margin:0 0 16px;
+  font-size:clamp(1.8rem,2.7vw,3.2rem);
+  line-height:1.05;
+}
+.approach-card p{
+  line-height:1.78;
+  color:#3f4a58;
+}
+.approach-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:24px;
+}
+.approach-actions a{
+  border:1px solid var(--line);
+  background:var(--paper2);
+  padding:12px 16px;
+  text-decoration:none;
+  color:var(--ink);
+}
+.approach-actions a:hover{
+  border-color:rgba(166,112,45,.55);
+  transform:translateY(-1px);
+}
+.approach-report{
+  margin:30px auto 0;
+  max-width:920px;
+  padding:24px 28px;
+  border:1px solid rgba(166,112,45,.22);
+  background:rgba(255,249,236,.58);
+  text-align:center;
+}
+.approach-report p{
+  margin:0 auto;
+  max-width:760px;
+  line-height:1.75;
+  color:#3f4a58;
+}
+.report-actions{
+  justify-content:center;
+}
+@media(max-width:900px){
+  .approach-grid{grid-template-columns:1fr}
+  .approach-card{min-height:auto}
+}
+@media(max-width:640px){
+  .approaches-section{margin-top:52px}
+  .approach-card{padding:26px 20px}
+  .approach-actions a{width:100%;text-align:center}
+}
