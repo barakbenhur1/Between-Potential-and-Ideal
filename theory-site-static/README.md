@@ -10,10 +10,10 @@ Final clean pass:
 - Story images are rendered with contain-style layout, not cropped.
 - Site order: Theory → Appendices → Figures → Files.
 
-Cache version: 20260515-clean-theory-update
+Cache version: 20260515-latest-theory-clean
 
 
-Final strict fix: no internal /version label in public site UI; no Volume One / first-story label; Hebrew appendix cover subtitle centered; question appears only as the final page. Cache: 20260515-clean-theory-update
+Final strict fix: no internal /version label in public site UI; no Volume One / first-story label; Hebrew appendix cover subtitle centered; question appears only as the final page. Cache: 20260515-latest-theory-clean
 
 
 Update: main theory files replaced with the uploaded divine movement manifesto theory package. The site top now includes the requested Hebrew blurb. Visible site labels intentionally avoid version numbers.
