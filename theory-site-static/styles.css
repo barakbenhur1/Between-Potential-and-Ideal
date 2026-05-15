@@ -78,3 +78,15 @@ a{color:inherit;text-underline-offset:.18em}.site{min-height:100vh;background:li
 @media (max-width:720px){
   .cosmic-blurb{padding:20px 18px;margin:12px auto 28px}
 }
+
+
+/* v33: centered hero image and centered hero text */
+.hero{display:flex !important;flex-direction:column !important;align-items:center !important;justify-content:flex-start !important;text-align:center !important;gap:26px !important;}
+.hero-art{width:min(860px,100%) !important;margin:0 auto !important;}
+.hero-art img{object-position:center center !important;}
+.hero-copy{width:min(820px,100%) !important;margin:0 auto !important;text-align:center !important;}
+[dir="rtl"] .hero-copy{ text-align:center !important; }
+.hero-copy .intro,.hero-copy .subtitle{margin-left:auto !important;margin-right:auto !important;}
+.actions{justify-content:center !important;}
+.cosmic-blurb{text-align:center !important;}
+.cosmic-blurb[dir="rtl"] p,.cosmic-blurb[dir="ltr"] p{text-align:center !important;}
