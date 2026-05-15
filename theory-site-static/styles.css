@@ -174,3 +174,24 @@ a{color:inherit;text-underline-offset:.18em}.site{min-height:100vh;background:li
   .pig-question-blurb{padding:18px 16px;margin:-10px auto 24px}
   .red-what-blurb{padding:16px 14px;margin:-6px auto 34px}
 }
+
+
+.pig-question-blurb:before{
+  content:"";
+  display:block;
+  width:72px;
+  height:2px;
+  background:var(--gold);
+  margin:0 auto 18px;
+  opacity:.72;
+}
+
+.red-what-blurb:before{
+  content:"";
+  display:block;
+  width:72px;
+  height:2px;
+  background:#b23a36;
+  margin:0 auto 18px;
+  opacity:.82;
+}
