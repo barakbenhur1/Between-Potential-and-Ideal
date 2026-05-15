@@ -79,7 +79,7 @@ a{color:inherit;text-underline-offset:.18em}.site{min-height:100vh;background:li
   .cosmic-blurb{padding:20px 18px;margin:12px auto 28px}
 }
 
-.ai-believes{width:min(var(--max),calc(100% - 36px));margin:0 auto 88px;border-top:2px solid rgba(28,35,49,.22);padding-top:54px}.ai-believes:before{content:"";display:block;width:88px;height:1px;background:var(--gold);margin:0 auto 30px;opacity:.75}.ai-card-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.ai-card-image{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;margin:0 0 18px;border:1px solid var(--line)}@media(max-width:800px){.ai-card-grid{grid-template-columns:1fr}}
+.ai-believes{width:min(var(--max),calc(100% - 36px));margin:0 auto 88px;border-top:2px solid rgba(28,35,49,.22);padding-top:54px}.ai-believes:before{content:"";display:block;width:88px;height:1px;background:var(--gold);margin:0 auto 30px;opacity:.75}.ai-card-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.ai-card-image{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;margin:0 0 18px;border:1px solid var(--line);background:var(--blue)}@media(max-width:800px){.ai-card-grid{grid-template-columns:1fr}}
 .hero-art{display:flex;justify-content:center}.hero-art img{margin:auto}.cover-image-center{display:block;margin-left:auto;margin-right:auto}
 
 .ai-mode-title{
@@ -128,4 +128,49 @@ a{color:inherit;text-underline-offset:.18em}.site{min-height:100vh;background:li
 .choice-blurb[dir="ltr"] p{text-align:left}
 @media (max-width:720px){
   .choice-blurb{padding:19px 18px;margin:-8px auto 30px}
+}
+
+.ai-card-grid .appendix-card{overflow:hidden}.ai-card-grid .appendix-card h3{margin-top:4px}
+
+
+/* Additional philosophical blurbs under the opening blurbs */
+.pig-question-blurb{
+  grid-column:1 / -1;
+  width:min(820px,100%);
+  margin:-18px auto 28px;
+  padding:20px 28px;
+  border:1px solid rgba(23,32,45,.13);
+  background:rgba(255,249,236,.54);
+  box-shadow:0 12px 34px rgba(23,32,45,.04);
+}
+.pig-question-blurb p{
+  margin:0 auto;
+  max-width:720px;
+  font-size:clamp(1.02rem,1.22vw,1.18rem);
+  line-height:1.78;
+  color:#253244;
+}
+.pig-question-blurb[dir="rtl"] p{text-align:right}
+
+.red-what-blurb{
+  grid-column:1 / -1;
+  width:min(720px,100%);
+  margin:-10px auto 42px;
+  padding:18px 26px;
+  border:1px solid rgba(165,46,46,.26);
+  background:rgba(255,245,240,.56);
+  box-shadow:0 16px 42px rgba(165,46,46,.07);
+}
+.red-what-blurb p{
+  margin:0;
+  text-align:center;
+  color:#b23a36;
+  font-size:clamp(1.55rem,2.5vw,2.35rem);
+  line-height:1.25;
+  font-weight:800;
+  letter-spacing:.02em;
+}
+@media(max-width:720px){
+  .pig-question-blurb{padding:18px 16px;margin:-10px auto 24px}
+  .red-what-blurb{padding:16px 14px;margin:-6px auto 34px}
 }
