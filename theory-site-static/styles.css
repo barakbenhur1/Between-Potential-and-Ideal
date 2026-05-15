@@ -216,3 +216,19 @@ a{color:inherit;text-underline-offset:.18em}.site{min-height:100vh;background:li
 }
 
 .ai-card-grid .appendix-label{display:none!important}
+
+.editorial-tightened{
+  border-top:2px solid rgba(166,112,45,.28);
+  padding-top:52px;
+}
+.editorial-tightened h2{
+  text-align:center;
+  font-size:clamp(2rem,3.2vw,3.8rem);
+  margin:0 0 16px;
+}
+.editorial-tightened .intro{
+  max-width:860px;
+  margin:0 auto 28px;
+  text-align:center;
+  line-height:1.75;
+}
