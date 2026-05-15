@@ -11,3 +11,6 @@ Final clean pass:
 - Site order: Theory → Appendices → Figures → Files.
 
 Cache version: 20260515-final-clean-v2
+
+
+Final strict fix: no internal v20/version label in public site UI; no Volume One / first-story label; Hebrew appendix cover subtitle centered; question appears only as the final page. Cache: 20260515-final-strict-v4

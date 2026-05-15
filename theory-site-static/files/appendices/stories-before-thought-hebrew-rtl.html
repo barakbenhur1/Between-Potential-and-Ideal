@@ -7,13 +7,13 @@ body { background:white; color:var(--ink); font-size:13.2pt; line-height:1.72; }
 body.he { direction:rtl; font-family:'Noto Serif Hebrew','Noto Sans Hebrew',serif; }
 body.en { direction:ltr; font-family:Georgia,'Times New Roman',serif; font-size:12.7pt; }
 .page { min-height: calc(297mm - 35mm); page-break-after: always; }
-.cover { display:flex; align-items:center; justify-content:center; text-align:center; padding:20mm 8mm; }
-.cover-inner { width:100%; max-width:150mm; }
+.cover { display:flex; align-items:center; justify-content:center; text-align:center !important; padding:20mm 8mm; direction:inherit; }
+.cover-inner { width:100%; max-width:150mm; margin-left:auto; margin-right:auto; text-align:center !important; }
 .kicker { font-family:'Noto Sans Hebrew',Arial,sans-serif; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); font-weight:700; font-size:10pt; margin-bottom:16mm; }
 body.en .kicker { font-family:Arial,sans-serif; }
-h1.title { font-size:34pt; line-height:1.08; margin:0 0 6mm; font-weight:700; letter-spacing:-.02em; }
+h1.title { font-size:34pt; line-height:1.08; margin:0 auto 6mm; font-weight:700; letter-spacing:-.02em; text-align:center !important; width:100%; direction:inherit; unicode-bidi:isolate; }
 body.he h1.title { font-size:32pt; }
-.subtitle { font-size:17pt; color:#4f5964; margin:0 0 12mm; line-height:1.35; }
+.subtitle { font-size:17pt; color:#4f5964; margin:0 auto 12mm; line-height:1.35; text-align:center !important; width:100%; display:block; direction:inherit; unicode-bidi:isolate; }
 .rule { width:34mm; height:1px; background:var(--gold); margin:0 auto 12mm; }
 .meta { color:var(--muted); font-size:11pt; }
 .story { page-break-before: always; padding-top:0; }
@@ -34,11 +34,15 @@ body.he .question { direction:rtl; }
 .screen-note { display:none; }
 @media screen { body { background:#eee7dc; } .page { max-width:210mm; min-height:297mm; margin:16px auto; background:white; padding:17mm 18mm 18mm; box-shadow:0 12px 45px rgba(0,0,0,.12); } .cover,.final-question{min-height:297mm;} .story { padding:17mm 18mm 18mm; } }
 @media print { .page { padding:0; } .cover,.final-question { min-height: calc(297mm - 35mm); } }
+
+.cover .kicker, .cover .rule, .cover h1, .cover .subtitle, .cover .meta { text-align:center !important; margin-left:auto; margin-right:auto; }
+body.he .cover, body.he .cover-inner, body.he .cover h1, body.he .cover .subtitle, body.he .cover .meta { text-align:center !important; direction:rtl; unicode-bidi:isolate; }
+.story-head { page-break-after: avoid; }
+.story-number { display:none !important; }
 </style></head><body class="he">
 <section class="page cover"><div class="cover-inner"><div class="kicker">נספחים לתיאוריה</div><div class="rule"></div><h1 class="title">סיפורים לפני מחשבה</h1><p class="subtitle">סיפורים שסיפרתי לאמי לפני השינה</p><p class="meta">ברק בן חור</p></div></section>
 <section class="page story">
 <div class="story-head">
-<div class="story-number">סיפור ראשון</div>
 <h2>איך האמת נשארת כנה</h2>
 <p class="story-subtitle">סיפור קצר על שיחה, טראומה, וההבטחה לחזור אל האידיאל</p>
 </div>
@@ -119,7 +123,6 @@ body.he .question { direction:rtl; }
 </section>
 <section class="page story">
 <div class="story-head">
-<div class="story-number">סיפור שני</div>
 <h2>נכון, זה לא צודק</h2>
 <p class="story-subtitle">מוכר האוויר</p>
 </div>
@@ -244,7 +247,6 @@ body.he .question { direction:rtl; }
 </section>
 <section class="page story">
 <div class="story-head">
-<div class="story-number">סיפור שלישי</div>
 <h2>אדום ואיום</h2>
 <p class="story-subtitle">כשהאמת חייבת לטעות</p>
 </div>
@@ -383,7 +385,6 @@ body.he .question { direction:rtl; }
 </section>
 <section class="page story">
 <div class="story-head">
-<div class="story-number">סיפור רביעי</div>
 <h2>פאזל</h2>
 <p class="story-subtitle">איך ים סוער בלי גלים</p>
 </div>
@@ -419,7 +420,6 @@ body.he .question { direction:rtl; }
 </section>
 <section class="page story">
 <div class="story-head">
-<div class="story-number">סיפור חמישי</div>
 <h2>לפחד מפורצים, או לדבר עם מחשבים</h2>
 <p class="story-subtitle">רגל אחת יחפה</p>
 </div>
@@ -560,7 +560,6 @@ body.he .question { direction:rtl; }
 </section>
 <section class="page story">
 <div class="story-head">
-<div class="story-number">סיפור שישי</div>
 <h2>שני חוטים וקשר</h2>
 <p class="story-subtitle">גואל כנגאל</p>
 </div>
