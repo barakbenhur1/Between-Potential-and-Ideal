@@ -40,7 +40,15 @@ body.he .question { direction:rtl; }
 body.he .cover, body.he .cover-inner, body.he .cover h1, body.he .cover .subtitle, body.he .cover .meta { text-align:center !important; direction:rtl; unicode-bidi:isolate; }
 .story-head { page-break-after: avoid; }
 .story-number { display:none !important; }
-</style></head><body class="he">
+</style>
+<style id="hebrew-rtl-final-fix">
+html[dir="rtl"], body.he, body[dir="rtl"] { direction: rtl !important; unicode-bidi: isolate !important; }
+body.he article, body.he main, body.he .article, body.he .story, body.he .page { direction: rtl !important; }
+body.he p, body.he li, body.he h1:not(.title), body.he h2, body.he h3, body.he h4 { text-align: right !important; direction: rtl !important; unicode-bidi: plaintext !important; text-indent: 0 !important; }
+body.he .cover, body.he .cover *, body.he .final-question, body.he .final-question *, body.he .question-box, body.he .question-box * { text-align: center !important; }
+body.he figure, body.he .image-frame { text-align: center !important; margin-left:auto !important; margin-right:auto !important; }
+</style>
+</head><body class="he">
 <section class="page cover"><div class="cover-inner"><div class="kicker">נספחים לתיאוריה</div><div class="rule"></div><h1 class="title">סיפורים לפני מחשבה</h1><p class="subtitle">סיפורים שסיפרתי לאמי לפני השינה</p><p class="meta">ברק בן חור</p></div></section>
 <section class="page story">
 <div class="story-head">
