@@ -16,34 +16,25 @@ html[lang="he"], html[dir="rtl"], body[dir="rtl"], [dir="rtl"]{direction:rtl!imp
 html[lang="he"] .cover, html[lang="he"] .cover *, body[dir="rtl"] .cover, body[dir="rtl"] .cover *, .hebrew-cover-center, .hebrew-cover-center *, html[lang="he"] figure, html[lang="he"] figcaption, body[dir="rtl"] figure, body[dir="rtl"] figcaption, html[lang="he"] .actions, body[dir="rtl"] .actions, html[lang="he"] .download-grid, body[dir="rtl"] .download-grid, html[lang="he"] .appendix-actions, body[dir="rtl"] .appendix-actions, html[lang="he"] .approach-actions, body[dir="rtl"] .approach-actions{text-align:center!important}
 html[lang="he"] .core, body[dir="rtl"] .core, html[lang="he"] blockquote.core, body[dir="rtl"] blockquote.core{direction:rtl!important;text-align:right!important;text-indent:0!important}
 </style>
-<style id="final-cover-body-alignment-fix">
-/* Final rule: cover/title page stays centered; document body follows language direction. */
-html[lang="he"], html[dir="rtl"], body[dir="rtl"] {
+
+<style id="document-hebrew-alignment-final">
+html, body {
   direction: rtl !important;
 }
-html[lang="en"], html[dir="ltr"], body[dir="ltr"] {
-  direction: ltr !important;
-}
-
-/* Cover / title page must stay centered */
-.cover,
-.cover *,
-.title-page,
-.title-page *,
-.document-cover,
-.document-cover *,
-.hero,
-.hero *,
-figure,
-figcaption {
+.cover, .cover *,
+.title-page, .title-page *,
+.document-cover, .document-cover *,
+header, header *,
+figure, figcaption {
   text-align: center !important;
 }
-
-/* Hebrew document body: right aligned, no left indentation */
-html[lang="he"] main > :not(.cover):not(.title-page):not(.document-cover):not(figure),
-html[lang="he"] article > :not(.cover):not(.title-page):not(.document-cover):not(figure),
-body[dir="rtl"] main > :not(.cover):not(.title-page):not(.document-cover):not(figure),
-body[dir="rtl"] article > :not(.cover):not(.title-page):not(.document-cover):not(figure),
+main > :not(.cover):not(.title-page):not(.document-cover):not(header):not(figure),
+article > :not(.cover):not(.title-page):not(.document-cover):not(header):not(figure),
+section:not(.cover):not(.title-page):not(.document-cover) > p,
+section:not(.cover):not(.title-page):not(.document-cover) > h1,
+section:not(.cover):not(.title-page):not(.document-cover) > h2,
+section:not(.cover):not(.title-page):not(.document-cover) > h3,
+section:not(.cover):not(.title-page):not(.document-cover) > blockquote,
 .hebrew-body-rtl {
   direction: rtl !important;
   text-align: right !important;
@@ -51,43 +42,13 @@ body[dir="rtl"] article > :not(.cover):not(.title-page):not(.document-cover):not
   margin-left: 0 !important;
   padding-left: 0 !important;
 }
-
-/* English document body: left aligned */
-html[lang="en"] main > :not(.cover):not(.title-page):not(.document-cover):not(figure),
-html[lang="en"] article > :not(.cover):not(.title-page):not(.document-cover):not(figure),
-body[dir="ltr"] main > :not(.cover):not(.title-page):not(.document-cover):not(figure),
-body[dir="ltr"] article > :not(.cover):not(.title-page):not(.document-cover):not(figure) {
-  direction: ltr !important;
-  text-align: left !important;
-  unicode-bidi: plaintext;
-}
-
-/* Core box on cover is part of the cover visual, but its inner reading direction is Hebrew/English */
 .cover .core,
 .title-page .core,
 .document-cover .core {
-  max-width: 760px;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-html[lang="he"] .cover .core,
-body[dir="rtl"] .cover .core {
   direction: rtl !important;
   text-align: right !important;
-}
-html[lang="en"] .cover .core,
-body[dir="ltr"] .cover .core {
-  direction: ltr !important;
-  text-align: left !important;
-}
-
-/* Cards/buttons/navigation can remain centered or natural */
-.actions,
-.download-grid,
-.appendix-actions,
-.site-nav,
-nav {
-  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 </style>
 
