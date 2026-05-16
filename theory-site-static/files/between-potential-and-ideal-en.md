@@ -4,11 +4,10 @@
 
 God as Potential, Existence as the Boat, and Knowledge Beyond the Need for Suffering
 
-**Author: Barak Ben Hur · Corrected publishing version · May 2026**
+**Author: Barak Ben Hur · May 2026**
 
 > Core sentence: The absolute is not the ideal. Existence is the river-crossing through which absolute potential clarifies what within itself ought to become ideal.
 
-> Corrected edition: Metamorphosis Code of the Whole, Universal Frequency Test, clean layout, no blank trailing pages.
 
 ## Abstract
 
