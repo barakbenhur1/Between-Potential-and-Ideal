@@ -39,7 +39,46 @@ body.he .question { direction:rtl; }
 body.he .cover, body.he .cover-inner, body.he .cover h1, body.he .cover .subtitle, body.he .cover .meta { text-align:center !important; direction:rtl; unicode-bidi:isolate; }
 .story-head { page-break-after: avoid; }
 .story-number { display:none !important; }
-</style></head><body class="en">
+</style>
+<style id="final-hebrew-rtl-fix">
+html[lang="he"], html[dir="rtl"], body[dir="rtl"], [dir="rtl"] {
+  direction: rtl !important;
+}
+html[lang="he"] main, body[dir="rtl"] main, [dir="rtl"] main,
+html[lang="he"] article, body[dir="rtl"] article, [dir="rtl"] article,
+html[lang="he"] section, body[dir="rtl"] section, [dir="rtl"] section {
+  direction: rtl !important;
+}
+html[lang="he"] p, html[lang="he"] li, html[lang="he"] blockquote,
+html[lang="he"] h1, html[lang="he"] h2, html[lang="he"] h3,
+html[lang="he"] h4, html[lang="he"] h5, html[lang="he"] h6,
+body[dir="rtl"] p, body[dir="rtl"] li, body[dir="rtl"] blockquote,
+body[dir="rtl"] h1, body[dir="rtl"] h2, body[dir="rtl"] h3,
+body[dir="rtl"] h4, body[dir="rtl"] h5, body[dir="rtl"] h6,
+.hebrew-rtl-force {
+  direction: rtl !important;
+  text-align: right !important;
+  unicode-bidi: plaintext;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+html[lang="he"] .cover, html[lang="he"] .cover *,
+body[dir="rtl"] .cover, body[dir="rtl"] .cover *,
+html[lang="he"] figure, html[lang="he"] figcaption,
+body[dir="rtl"] figure, body[dir="rtl"] figcaption,
+html[lang="he"] .actions, body[dir="rtl"] .actions,
+html[lang="he"] .download-grid, body[dir="rtl"] .download-grid,
+html[lang="he"] .appendix-actions, body[dir="rtl"] .appendix-actions {
+  text-align: center !important;
+}
+html[lang="he"] .core,
+body[dir="rtl"] .core {
+  direction: rtl !important;
+  text-align: right !important;
+}
+</style>
+
+</head><body class="en">
 <section class="page cover"><div class="cover-inner"><div class="kicker">Appendices to the Theory</div><div class="rule"></div><h1 class="title">Stories Before Thought</h1><p class="subtitle">Bedtime Stories for My Mother</p><p class="meta">Barak Ben Hur</p></div></section>
 <section class="page story">
 <div class="story-head">
