@@ -219,7 +219,6 @@ The ideal self is not a fixed personal achievement. It is amorphous from within 
 
 ## 2. The River, the Boat, and the Two Banks
 
-style="width:6.3in;height:3.6in" />
 
 Figure 1. The universe as river: existence navigates between potential and ideal.
 
@@ -309,7 +308,6 @@ The ideal is not the removal of knowledge. It is the removal of the need to buy 
 
 ## 8. Reincarnation as Iterative Knowledge, Not Moral Promotion
 
-style="width:6.3in;height:4.05in" />
 
 Figure 2. Reincarnation as iterative perspective: progress, regression, forgetting, and integration.
 
@@ -337,7 +335,6 @@ Reincarnation also answers the gap between the laws of the universe and the loca
 
 ## 9. The AI Mirror: Information, Experience, and Awareness
 
-style="width:6.3in;height:3.825in" />
 
 Figure 3. AI as mirror: information without experience, contrasted with awareness as self-relation.
 
@@ -403,7 +400,6 @@ The task is navigation. Navigation is not domination. It is attention, adjustmen
 
 The ideal is therefore not the end of movement. It is movement without unnecessary harm. It is flow without moral blindness. It is the state in which the boat no longer has to be broken by the river in order to understand the river.
 
-style="width:6.2in;height:4.65in" />
 
 Figure 4. The boat does not control the river; it learns to flow toward the ideal.
 
