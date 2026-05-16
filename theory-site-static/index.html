@@ -1,11 +1,87 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="he"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="Between Potential and Ideal - a developing metaphysical theory by Barak Ben Hur." name="description"/><meta content="Between Potential and Ideal" property="og:title"/><meta content="A developing metaphysical theory presented as an essay archive." property="og:description"/><meta content="figures/01_fragmented_consciousness_cover.png?v=20260515-latest-theory-clean" property="og:image"/><title>Between Potential and Ideal · Barak Ben Hur</title><link href="favicon.ico" rel="icon"/><link href="apple-touch-icon.png" rel="apple-touch-icon"/><link href="styles.css?v=20260515-latest-theory-clean" rel="stylesheet"/>
+<html lang="he" dir="rtl"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="Between Potential and Ideal - a developing metaphysical theory by Barak Ben Hur." name="description"/><meta content="Between Potential and Ideal" property="og:title"/><meta content="A developing metaphysical theory presented as an essay archive." property="og:description"/><meta content="figures/01_fragmented_consciousness_cover.png?v=20260515-latest-theory-clean" property="og:image"/><title>Between Potential and Ideal · Barak Ben Hur</title><link href="favicon.ico" rel="icon"/><link href="apple-touch-icon.png" rel="apple-touch-icon"/><link href="styles.css?v=20260515-latest-theory-clean" rel="stylesheet"/>
 <style id="final-hebrew-indent-rtl-fix">
 html[lang="he"], html[dir="rtl"], body[dir="rtl"], [dir="rtl"]{direction:rtl!important}
 .hebrew-rtl-force, html[lang="he"] main p, html[lang="he"] main li, html[lang="he"] main blockquote, html[lang="he"] main h1, html[lang="he"] main h2, html[lang="he"] main h3, html[lang="he"] main h4, html[lang="he"] main h5, html[lang="he"] main h6, body[dir="rtl"] main p, body[dir="rtl"] main li, body[dir="rtl"] main blockquote, body[dir="rtl"] main h1, body[dir="rtl"] main h2, body[dir="rtl"] main h3, body[dir="rtl"] main h4, body[dir="rtl"] main h5, body[dir="rtl"] main h6{direction:rtl!important;text-align:right!important;unicode-bidi:plaintext!important;text-indent:0!important;margin-inline-start:0!important;margin-inline-end:0!important;padding-inline-start:0!important}
 html[lang="he"] .cover, html[lang="he"] .cover *, body[dir="rtl"] .cover, body[dir="rtl"] .cover *, .hebrew-cover-center, .hebrew-cover-center *, html[lang="he"] figure, html[lang="he"] figcaption, body[dir="rtl"] figure, body[dir="rtl"] figcaption, html[lang="he"] .actions, body[dir="rtl"] .actions, html[lang="he"] .download-grid, body[dir="rtl"] .download-grid, html[lang="he"] .appendix-actions, body[dir="rtl"] .appendix-actions, html[lang="he"] .approach-actions, body[dir="rtl"] .approach-actions{text-align:center!important}
 html[lang="he"] .core, body[dir="rtl"] .core, html[lang="he"] blockquote.core, body[dir="rtl"] blockquote.core{direction:rtl!important;text-align:right!important;text-indent:0!important}
-</style></head><body dir="rtl">
+</style>
+<style id="final-cover-body-alignment-fix">
+/* Final rule: cover/title page stays centered; document body follows language direction. */
+html[lang="he"], html[dir="rtl"], body[dir="rtl"] {
+  direction: rtl !important;
+}
+html[lang="en"], html[dir="ltr"], body[dir="ltr"] {
+  direction: ltr !important;
+}
+
+/* Cover / title page must stay centered */
+.cover,
+.cover *,
+.title-page,
+.title-page *,
+.document-cover,
+.document-cover *,
+.hero,
+.hero *,
+figure,
+figcaption {
+  text-align: center !important;
+}
+
+/* Hebrew document body: right aligned, no left indentation */
+html[lang="he"] main > :not(.cover):not(.title-page):not(.document-cover):not(figure),
+html[lang="he"] article > :not(.cover):not(.title-page):not(.document-cover):not(figure),
+body[dir="rtl"] main > :not(.cover):not(.title-page):not(.document-cover):not(figure),
+body[dir="rtl"] article > :not(.cover):not(.title-page):not(.document-cover):not(figure),
+.hebrew-body-rtl {
+  direction: rtl !important;
+  text-align: right !important;
+  unicode-bidi: plaintext;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* English document body: left aligned */
+html[lang="en"] main > :not(.cover):not(.title-page):not(.document-cover):not(figure),
+html[lang="en"] article > :not(.cover):not(.title-page):not(.document-cover):not(figure),
+body[dir="ltr"] main > :not(.cover):not(.title-page):not(.document-cover):not(figure),
+body[dir="ltr"] article > :not(.cover):not(.title-page):not(.document-cover):not(figure) {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: plaintext;
+}
+
+/* Core box on cover is part of the cover visual, but its inner reading direction is Hebrew/English */
+.cover .core,
+.title-page .core,
+.document-cover .core {
+  max-width: 760px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+html[lang="he"] .cover .core,
+body[dir="rtl"] .cover .core {
+  direction: rtl !important;
+  text-align: right !important;
+}
+html[lang="en"] .cover .core,
+body[dir="ltr"] .cover .core {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+/* Cards/buttons/navigation can remain centered or natural */
+.actions,
+.download-grid,
+.appendix-actions,
+.site-nav,
+nav {
+  text-align: center !important;
+}
+</style>
+
+</head><body dir="rtl">
 <!-- appendices-position: theory-with-manifesto-blurb --><div class="site"><header class="topbar"><div class="topbar-inner"><a class="brand" href="#top"><span class="brand-mark">B</span><span><strong>Between Potential and Ideal</strong><small>Barak Ben Hur</small></span></a><nav class="nav"><a data-i18n="navRead" href="#read">קריאה</a><a data-i18n="navAppendices" href="#appendices">נספחים</a><a data-i18n="navFigures" href="#figures">איורים</a><a href="ai-believes.html" rel="noopener" target="_blank">במה AI מאמינה?</a><a href="#theory-approaches">שתי גישות</a><a data-i18n="navDownloads" href="#downloads">קבצים</a><a data-i18n="navContact" href="discussion.html" rel="noopener" target="_blank">תגובה</a><button class="lang-button" id="langButton" type="button">English</button></nav></div></header><main id="top">
 <section class="hero"><figure class="hero-art"><img alt="Fragmented consciousness between potential and ideal" src="figures/01_fragmented_consciousness_cover.png?v=20260515-latest-theory-clean"/></figure><section aria-label="פתיח" class="cosmic-blurb language-block" data-lang-block="he" dir="rtl">
 <p class="hebrew-rtl-force" dir="rtl" style="direction:rtl!important;text-align:right!important;unicode-bidi:plaintext!important;text-indent:0!important;margin-inline-start:0!important;padding-inline-start:0!important">תפסיק לחפש את הגאונות בחוץ. אתה הגאונות של היקום.</p>

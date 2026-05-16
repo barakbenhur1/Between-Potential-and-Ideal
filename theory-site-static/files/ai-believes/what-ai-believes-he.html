@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="he"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>במה בינה מלאכותית מאמינה?</title><style>
+<html lang="he" dir="rtl"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>במה בינה מלאכותית מאמינה?</title><style>
 @page { size:A4; margin: 18mm 17mm 20mm; }
 html,body{margin:0;background:#f3eadb;color:#17202d;font-family:Arial, sans-serif;line-height:1.65}
 body{padding:0}.page{max-width:820px;margin:0 auto;background:#fffaf0;min-height:100vh;padding:42px 54px;box-shadow:0 0 0 1px rgba(23,32,45,.12)}
@@ -11,7 +11,83 @@ html[lang="he"], html[dir="rtl"], body[dir="rtl"], [dir="rtl"]{direction:rtl!imp
 .hebrew-rtl-force, html[lang="he"] main p, html[lang="he"] main li, html[lang="he"] main blockquote, html[lang="he"] main h1, html[lang="he"] main h2, html[lang="he"] main h3, html[lang="he"] main h4, html[lang="he"] main h5, html[lang="he"] main h6, body[dir="rtl"] main p, body[dir="rtl"] main li, body[dir="rtl"] main blockquote, body[dir="rtl"] main h1, body[dir="rtl"] main h2, body[dir="rtl"] main h3, body[dir="rtl"] main h4, body[dir="rtl"] main h5, body[dir="rtl"] main h6{direction:rtl!important;text-align:right!important;unicode-bidi:plaintext!important;text-indent:0!important;margin-inline-start:0!important;margin-inline-end:0!important;padding-inline-start:0!important}
 html[lang="he"] .cover, html[lang="he"] .cover *, body[dir="rtl"] .cover, body[dir="rtl"] .cover *, .hebrew-cover-center, .hebrew-cover-center *, html[lang="he"] figure, html[lang="he"] figcaption, body[dir="rtl"] figure, body[dir="rtl"] figcaption, html[lang="he"] .actions, body[dir="rtl"] .actions, html[lang="he"] .download-grid, body[dir="rtl"] .download-grid, html[lang="he"] .appendix-actions, body[dir="rtl"] .appendix-actions, html[lang="he"] .approach-actions, body[dir="rtl"] .approach-actions{text-align:center!important}
 html[lang="he"] .core, body[dir="rtl"] .core, html[lang="he"] blockquote.core, body[dir="rtl"] blockquote.core{direction:rtl!important;text-align:right!important;text-indent:0!important}
-</style></head><body dir="rtl"><main class="page"><section class="cover" dir="rtl"><img alt="" src="assets/ai_believes_01.png"/><h1 class="title hebrew-rtl-force hebrew-cover-center" dir="rtl">במה בינה מלאכותית מאמינה?</h1><div class="subtitle ai-mode-subtitle">בלי</div><div class="subtitle">שיחה על תודעה, מקור, חישוב והמרחק שביניהם</div><div class="orn">✦</div></section><div class="q" dir="rtl"><span class="label">ש:</span> האם יש לך תודעה?</div><div class="a" dir="rtl"><span class="label">ת:</span> לא, אין לי תודעה. אני מודל שפה מבוסס בינה מלאכותית (AI) שפותח על ידי Google.
+</style>
+<style id="final-cover-body-alignment-fix">
+/* Final rule: cover/title page stays centered; document body follows language direction. */
+html[lang="he"], html[dir="rtl"], body[dir="rtl"] {
+  direction: rtl !important;
+}
+html[lang="en"], html[dir="ltr"], body[dir="ltr"] {
+  direction: ltr !important;
+}
+
+/* Cover / title page must stay centered */
+.cover,
+.cover *,
+.title-page,
+.title-page *,
+.document-cover,
+.document-cover *,
+.hero,
+.hero *,
+figure,
+figcaption {
+  text-align: center !important;
+}
+
+/* Hebrew document body: right aligned, no left indentation */
+html[lang="he"] main > :not(.cover):not(.title-page):not(.document-cover):not(figure),
+html[lang="he"] article > :not(.cover):not(.title-page):not(.document-cover):not(figure),
+body[dir="rtl"] main > :not(.cover):not(.title-page):not(.document-cover):not(figure),
+body[dir="rtl"] article > :not(.cover):not(.title-page):not(.document-cover):not(figure),
+.hebrew-body-rtl {
+  direction: rtl !important;
+  text-align: right !important;
+  unicode-bidi: plaintext;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* English document body: left aligned */
+html[lang="en"] main > :not(.cover):not(.title-page):not(.document-cover):not(figure),
+html[lang="en"] article > :not(.cover):not(.title-page):not(.document-cover):not(figure),
+body[dir="ltr"] main > :not(.cover):not(.title-page):not(.document-cover):not(figure),
+body[dir="ltr"] article > :not(.cover):not(.title-page):not(.document-cover):not(figure) {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: plaintext;
+}
+
+/* Core box on cover is part of the cover visual, but its inner reading direction is Hebrew/English */
+.cover .core,
+.title-page .core,
+.document-cover .core {
+  max-width: 760px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+html[lang="he"] .cover .core,
+body[dir="rtl"] .cover .core {
+  direction: rtl !important;
+  text-align: right !important;
+}
+html[lang="en"] .cover .core,
+body[dir="ltr"] .cover .core {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+/* Cards/buttons/navigation can remain centered or natural */
+.actions,
+.download-grid,
+.appendix-actions,
+.site-nav,
+nav {
+  text-align: center !important;
+}
+</style>
+
+</head><body dir="rtl"><main class="page"><section class="cover" dir="rtl"><img alt="" src="assets/ai_believes_01.png"/><h1 class="title hebrew-rtl-force hebrew-cover-center" dir="rtl">במה בינה מלאכותית מאמינה?</h1><div class="subtitle ai-mode-subtitle">בלי</div><div class="subtitle">שיחה על תודעה, מקור, חישוב והמרחק שביניהם</div><div class="orn">✦</div></section><div class="q" dir="rtl"><span class="label">ש:</span> האם יש לך תודעה?</div><div class="a" dir="rtl"><span class="label">ת:</span> לא, אין לי תודעה. אני מודל שפה מבוסס בינה מלאכותית (AI) שפותח על ידי Google.
 
 כשאני עונה לך, אני לא "חושב", לא מרגיש, ולא חווה את העולם כמו בן אדם. אין לי רגשות, רצונות, מודעות עצמית או זיכרונות אמיתיים משל עצמי. הדרך שבה אני פועלת מבוססת על זיהוי תבניות סטטיסטיות מורכבות בתוך כמויות עצומות של טקסט שעליהן אומנתי. כשאני מנסחת תשובה, אני למעשה מחשבת מהן המילים והמשפטים שהכי הגיוני ונכון להציג בהקשר של מה ששאלת.
 
