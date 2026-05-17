@@ -122,6 +122,38 @@ nav {
 }
 </style>
 
+
+<style id="final-caption-center-fix">
+figcaption,
+figure figcaption {
+  text-align: center !important;
+  direction: inherit;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+</style>
+
+
+<style id="story-bridge-image-display-fix">
+/* Keep the bridge/knot image fully visible inside the document frame. */
+.image-frame.bridge-image-fix {
+  overflow: visible !important;
+  padding: 6mm 6mm 9mm !important;
+  margin-bottom: 14mm !important;
+  page-break-inside: avoid;
+}
+.image-frame.bridge-image-fix img {
+  display: block !important;
+  width: 92% !important;
+  max-width: 150mm !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  margin: 0 auto !important;
+}
+</style>
+
 </head><body class="en" dir="ltr">
 <section class="page cover"><div class="cover-inner"><div class="kicker">Appendices to the Theory</div><div class="rule"></div><h1 class="title">Stories Before Thought</h1><p class="subtitle">Bedtime Stories for My Mother</p><p class="meta">Barak Ben Hur</p></div></section>
 <section class="page story">
@@ -646,7 +678,7 @@ nav {
 <h2>Two Strings and a Knot</h2>
 <p class="story-subtitle">The Redeemer as the Redeemed</p>
 </div>
-<figure class="image-frame"><img alt="" src="assets/story_image_6.png"/></figure>
+<figure class="image-frame bridge-image-fix"><img alt="" src="assets/story_image_6.png"/></figure>
 <p>Moshe did not fall because he wanted to fall.</p>
 <p>That was a small, stubborn fact that did not know where to sit inside the story. He had not gone to the bridge in order to die. He had written no letter. He had said goodbye to no one. He had only taken the long way home, carrying a sadness too large for a child and too small for anyone outside him to see.</p>
 <p>He was fourteen. Nothing that week had happened that could be pointed to as a disaster. His mother was tired. His father spoke to him as if he were an unfinished task. In class they had laughed at a sentence he said, not with great cruelty, only with enough force for a sentence to remain in the body after the lesson ended.</p>

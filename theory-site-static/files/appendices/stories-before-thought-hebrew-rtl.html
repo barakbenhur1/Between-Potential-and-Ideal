@@ -83,6 +83,38 @@ section:not(.cover):not(.title-page):not(.document-cover) > blockquote,
 }
 </style>
 
+
+<style id="final-caption-center-fix">
+figcaption,
+figure figcaption {
+  text-align: center !important;
+  direction: inherit;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+</style>
+
+
+<style id="story-bridge-image-display-fix">
+/* Keep the bridge/knot image fully visible inside the document frame. */
+.image-frame.bridge-image-fix {
+  overflow: visible !important;
+  padding: 6mm 6mm 9mm !important;
+  margin-bottom: 14mm !important;
+  page-break-inside: avoid;
+}
+.image-frame.bridge-image-fix img {
+  display: block !important;
+  width: 92% !important;
+  max-width: 150mm !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  margin: 0 auto !important;
+}
+</style>
+
 </head><body class="he" dir="rtl">
 <section class="page cover"><div class="cover-inner"><div class="kicker">נספחים לתיאוריה</div><div class="rule"></div><h1 class="title hebrew-rtl-force hebrew-cover-center" dir="rtl">סיפורים לפני מחשבה</h1><p class="subtitle hebrew-rtl-force hebrew-cover-center" dir="rtl">סיפורים שסיפרתי לאמי לפני השינה</p><p class="meta hebrew-rtl-force hebrew-cover-center" dir="rtl">ברק בן חור</p></div></section>
 <section class="page story">
@@ -607,7 +639,7 @@ section:not(.cover):not(.title-page):not(.document-cover) > blockquote,
 <h2 class="hebrew-rtl-force" dir="rtl" style="direction:rtl!important;text-align:right!important;unicode-bidi:plaintext!important;text-indent:0!important;margin-inline-start:0!important;padding-inline-start:0!important">שני חוטים וקשר</h2>
 <p class="story-subtitle hebrew-rtl-force" dir="rtl" style="direction:rtl!important;text-align:right!important;unicode-bidi:plaintext!important;text-indent:0!important;margin-inline-start:0!important;padding-inline-start:0!important">גואל כנגאל</p>
 </div>
-<figure class="image-frame"><img alt="" src="assets/story_image_6.png"/></figure>
+<figure class="image-frame bridge-image-fix"><img alt="" src="assets/story_image_6.png"/></figure>
 <p class="hebrew-rtl-force" dir="rtl" style="direction:rtl!important;text-align:right!important;unicode-bidi:plaintext!important;text-indent:0!important;margin-inline-start:0!important;padding-inline-start:0!important">משה לא נפל מפני שרצה ליפול.</p>
 <p class="hebrew-rtl-force" dir="rtl" style="direction:rtl!important;text-align:right!important;unicode-bidi:plaintext!important;text-indent:0!important;margin-inline-start:0!important;padding-inline-start:0!important">זו הייתה עובדה קטנה, עקשנית, שלא ידעה איפה לשבת בתוך הסיפור. הוא לא הלך אל הגשר כדי למות. לא כתב מכתב. לא נפרד מאיש. הוא רק הלך בדרך הארוכה הביתה, עם עצב שהיה גדול מדי לילד וקטן מדי בשביל שמישהו מבחוץ יראה אותו.</p>
 <p class="hebrew-rtl-force" dir="rtl" style="direction:rtl!important;text-align:right!important;unicode-bidi:plaintext!important;text-indent:0!important;margin-inline-start:0!important;padding-inline-start:0!important">הוא היה בן ארבע-עשרה. באותו שבוע לא קרה לו אסון שאפשר להצביע עליו. אמו הייתה עייפה. אביו דיבר אליו כאילו הוא משימה שלא הסתיימה. בכיתה צחקו על משפט שאמר, לא באכזריות גדולה, רק במידה המספיקה כדי שמשפט יישאר בגוף גם אחרי שהשיעור נגמר.</p>
