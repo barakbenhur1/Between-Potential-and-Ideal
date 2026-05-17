@@ -95,18 +95,35 @@ figure figcaption {
 </style>
 
 
-<style id="story-image-6-clean-display-fix">
-.image-frame.story-image-6-clean {
+<style id="story-pagebreaks-and-image6-finish-fix">
+/* Every story begins on a fresh print/PDF page. */
+section.page.story {
+  break-before: page;
+  page-break-before: always;
+}
+section.page.story:first-of-type {
+  break-before: auto;
+  page-break-before: auto;
+}
+
+/* story_image_6: the source image is naturally cropped at the bottom.
+   This fixes only the document presentation: no forced page-break, no overflow crop,
+   and a clean finished frame/margin so it does not look broken in the document. */
+.image-frame.story-image-6-finish {
   overflow: visible !important;
-  padding: 5mm 5mm 7mm !important;
+  padding: 5mm 5mm 8mm !important;
   margin: 0 0 10mm !important;
   page-break-inside: avoid;
+  break-inside: avoid;
+  border-bottom: 3mm solid #6e5a43 !important;
+  background: var(--paper) !important;
 }
-.image-frame.story-image-6-clean img {
+.image-frame.story-image-6-finish img {
   display: block !important;
-  width: 96% !important;
+  width: 94% !important;
+  max-width: 150mm !important;
   height: auto !important;
-  max-height: 84mm !important;
+  max-height: none !important;
   object-fit: contain !important;
   object-position: center center !important;
   margin: 0 auto !important;
@@ -637,7 +654,7 @@ figure figcaption {
 <h2 class="hebrew-rtl-force" dir="rtl" style="direction:rtl!important;text-align:right!important;unicode-bidi:plaintext!important;text-indent:0!important;margin-inline-start:0!important;padding-inline-start:0!important">שני חוטים וקשר</h2>
 <p class="story-subtitle hebrew-rtl-force" dir="rtl" style="direction:rtl!important;text-align:right!important;unicode-bidi:plaintext!important;text-indent:0!important;margin-inline-start:0!important;padding-inline-start:0!important">גואל כנגאל</p>
 </div>
-<figure class="image-frame story-image-6-clean"><img alt="" src="assets/story_image_6.png"/></figure>
+<figure class="image-frame story-image-6-finish"><img alt="" src="assets/story_image_6.png"/></figure>
 <p class="hebrew-rtl-force" dir="rtl" style="direction:rtl!important;text-align:right!important;unicode-bidi:plaintext!important;text-indent:0!important;margin-inline-start:0!important;padding-inline-start:0!important">משה לא נפל מפני שרצה ליפול.</p>
 <p class="hebrew-rtl-force" dir="rtl" style="direction:rtl!important;text-align:right!important;unicode-bidi:plaintext!important;text-indent:0!important;margin-inline-start:0!important;padding-inline-start:0!important">זו הייתה עובדה קטנה, עקשנית, שלא ידעה איפה לשבת בתוך הסיפור. הוא לא הלך אל הגשר כדי למות. לא כתב מכתב. לא נפרד מאיש. הוא רק הלך בדרך הארוכה הביתה, עם עצב שהיה גדול מדי לילד וקטן מדי בשביל שמישהו מבחוץ יראה אותו.</p>
 <p class="hebrew-rtl-force" dir="rtl" style="direction:rtl!important;text-align:right!important;unicode-bidi:plaintext!important;text-indent:0!important;margin-inline-start:0!important;padding-inline-start:0!important">הוא היה בן ארבע-עשרה. באותו שבוע לא קרה לו אסון שאפשר להצביע עליו. אמו הייתה עייפה. אביו דיבר אליו כאילו הוא משימה שלא הסתיימה. בכיתה צחקו על משפט שאמר, לא באכזריות גדולה, רק במידה המספיקה כדי שמשפט יישאר בגוף גם אחרי שהשיעור נגמר.</p>
