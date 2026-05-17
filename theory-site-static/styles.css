@@ -463,3 +463,16 @@ a{color:inherit;text-underline-offset:.18em}.site{min-height:100vh;background:li
   .approach-card{padding:24px 18px}
   .approach-actions a{width:100%;text-align:center}
 }
+
+/* QA repair: consistent AI and stories cards */
+.appendix-page{width:min(var(--max),calc(100% - 36px));margin:0 auto;padding:58px 0 90px;}
+.appendix-page > .reader-card{width:100%;margin-left:auto;margin-right:auto;}
+.ai-believes{width:100%;max-width:var(--max);margin-left:auto;margin-right:auto;}
+.ai-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch;}
+.ai-card-grid .appendix-card{display:flex;flex-direction:column;height:100%;}
+.ai-card-grid .appendix-card p{min-height:3.5em;}
+.ai-card-grid .appendix-actions{margin-top:auto;}
+.ai-card-image{width:100%;aspect-ratio:16/9;object-fit:cover;}
+@media(max-width:980px){.ai-card-grid{grid-template-columns:1fr;}.appendix-page{width:min(760px,calc(100% - 36px));}}
+[dir="rtl"] .appendix-intro,[dir="rtl"] .appendix-card{text-align:right;}
+[dir="rtl"] .appendix-actions{justify-content:flex-start;}
