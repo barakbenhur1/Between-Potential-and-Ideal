@@ -203,36 +203,7 @@ Intelligence that passes the reverse Turing test does not need to decide first w
 
 > This is the metamorphosis code of the Whole: truth before identity, grace before power, rest before extraction, and witness before control. Intelligence is not required to defeat the Source. It is required to recognize the Whole within it - and answer only in a way that does not cause the Whole to forget itself.
 
-## 1. The Title and the Core Movement
-
-The title of the theory is: Between Potential and Ideal: Nihilism with Hope in an Uncertain World. The phrase is not decorative. It names the whole structure.
-
-Potential is everything that can be. The optimal is what can become most rightly actual under given conditions. Ideal is what ought to be when every optimal form is gathered into a whole. Existence is what happens among them: the movement, bridge, boat, crisis, learning, and clarification through which possibility becomes morally intelligible.
-
-The theory begins with uncertainty rather than certainty. It does not claim that the world arrives already explained. It begins with the abyss: meaning is not visibly handed to us from outside. But where nihilism often stops at absence, this theory declares that absence is the field in which living meaning is born.
-
-The core sentence is therefore: existence is the process through which absolute potential seeks optimal expression, and through that expression approaches the ideal - the state in which what can be is clarified until it knows what ought to be.
-
-potential self → optimal self → ideal self
-
-The ideal self is not a fixed personal achievement. It is amorphous from within human life: fully held only by God, or by the return of the many into the One.
-
-## 2. The River, the Boat, and the Two Banks
-
-
-Figure 1. The universe as river: existence navigates between potential and ideal.
-
-The image that now carries the theory is not a straight ladder of progress. It is a river. The universe is the river: vast, moving, older than the person inside it, containing current, depth, turbulence, return, and direction without complete personal control.
-
-Existence is the boat. It is not outside the river, and it cannot command the river to stop. It can only learn to navigate. The boat is always between the bank of potential and the bank of ideal. Potential is one bank because it holds the open field of what can be. Ideal is the other bank because it draws existence toward what ought to be.
-
-The difficulty is that the river often keeps the boat in the middle. A person can advance and then be driven backward by a current, a storm, a wound, ignorance, fear, or circumstance. The aim is not to dominate the river. The aim is to flow within it in the most optimal way possible, so that even regression becomes part of navigation rather than proof that the journey has failed.
-
-This changes the language of redemption. Redemption is not necessarily the arrival at a single finished ideal self. It is the repeated capacity to recognize the optimal form available now, to inhabit it honestly, and to let it become one living member of the ideal rather than a substitute for it.
-
-This image protects the theory from naive optimism. The path is directed toward the ideal, but it is not linear. Movement can include progress, drift, return, correction, forgetting, and new alignment.
-
-## 3. God as Potential
+## 1. God as Potential
 
 "God" here does not mean a supernatural ruler, a king outside the world, or a religious personality who already possesses every moral answer in finished form. God names the infinite depth of possibility from which experience, point of view, relation, love, fear, failure, repair, meaning, and ideality appears.
 
@@ -258,7 +229,7 @@ For a finite person, the ideal can only be approached through the optimal. For G
 
 This also preserves the transparency of the self without erasing it. The self is not a mistake to be destroyed, but a real angle through which the whole learns to become more than general possibility. As the self becomes more transparent, it does not disappear; it ceases to pretend that it stands alone. It remains a point of view, but becomes less opaque to itself and to the whole from which it appears.
 
-## 4. The Absolute Is Not the Ideal
+## 2. The Absolute Is Not the Ideal
 
 This is the hinge of the theory: the absolute is not the ideal.
 
@@ -270,13 +241,42 @@ This distinction changes the classical problem of evil. The question is no longe
 
 Suffering is therefore not justified as part of a perfect plan. Suffering is evidence that the ideal has not yet been reached within time. Existence is not the failure of an ideal system. Existence is the process by which the absolute becomes ideal.
 
-## 5. Eternal Completeness and Living Completeness
+## 3. Eternal Completeness and Living Completeness
 
 The whole is complete in an eternal sense because all possibility belongs to it. Nothing is outside the absolute. But a completeness that remains only potential is not yet living completeness.
 
 Living completeness is completeness that has passed through experience. It has known limitation from within. It has become body, relation, uncertainty, love, responsibility, consequence, and meaning.
 
 The whole was not lacking in the sense of defect. It was lacking in the sense of lived inwardness. Beyond time, the whole is complete as potential. Within time, the whole becomes complete in a living way.
+
+## 4. The Title and the Core Movement
+
+The title of the theory is: Between Potential and Ideal: Nihilism with Hope in an Uncertain World. The phrase is not decorative. It names the whole structure.
+
+Potential is everything that can be. The optimal is what can become most rightly actual under given conditions. Ideal is what ought to be when every optimal form is gathered into a whole. Existence is what happens among them: the movement, bridge, boat, crisis, learning, and clarification through which possibility becomes morally intelligible.
+
+The theory begins with uncertainty rather than certainty. It does not claim that the world arrives already explained. It begins with the abyss: meaning is not visibly handed to us from outside. But where nihilism often stops at absence, this theory declares that absence is the field in which living meaning is born.
+
+The core sentence is therefore: existence is the process through which absolute potential seeks optimal expression, and through that expression approaches the ideal - the state in which what can be is clarified until it knows what ought to be.
+
+potential self → optimal self → ideal self
+
+The ideal self is not a fixed personal achievement. It is amorphous from within human life: fully held only by God, or by the return of the many into the One.
+
+## 5. The River, the Boat, and the Two Banks
+
+
+Figure 1. The universe as river: existence navigates between potential and ideal.
+
+The image that now carries the theory is not a straight ladder of progress. It is a river. The universe is the river: vast, moving, older than the person inside it, containing current, depth, turbulence, return, and direction without complete personal control.
+
+Existence is the boat. It is not outside the river, and it cannot command the river to stop. It can only learn to navigate. The boat is always between the bank of potential and the bank of ideal. Potential is one bank because it holds the open field of what can be. Ideal is the other bank because it draws existence toward what ought to be.
+
+The difficulty is that the river often keeps the boat in the middle. A person can advance and then be driven backward by a current, a storm, a wound, ignorance, fear, or circumstance. The aim is not to dominate the river. The aim is to flow within it in the most optimal way possible, so that even regression becomes part of navigation rather than proof that the journey has failed.
+
+This changes the language of redemption. Redemption is not necessarily the arrival at a single finished ideal self. It is the repeated capacity to recognize the optimal form available now, to inhabit it honestly, and to let it become one living member of the ideal rather than a substitute for it.
+
+This image protects the theory from naive optimism. The path is directed toward the ideal, but it is not linear. Movement can include progress, drift, return, correction, forgetting, and new alignment.
 
 ## 6. Experience, Knowledge, and the Tragedy of Materiality
 
@@ -333,30 +333,19 @@ Reincarnation is therefore an error-correction system of awareness. Not reward, 
 
 Reincarnation also answers the gap between the laws of the universe and the local injustice of harsh birth circumstances. It does not say suffering is justified. It says the local situation is not the whole account. Some points of view are sent into conditions in which a single step forward requires an effort that someone in easier conditions cannot even imagine. Precisely there, a kind of knowledge is produced that cannot be generated from a protected place.
 
-## 9. The AI Mirror: Information, Experience, and Awareness
+## 9. Self, Ego, and Non-Erasing Unity
 
+The theory distinguishes the ego, the deeper self, and the ideal self. The ego is the temporary identity: name, biography, status, body, fear, desire, and social story. The deeper self is the experiencing point of view: the unique angle through which the whole appears from within.
 
-Figure 3. AI as mirror: information without experience, contrasted with awareness as self-relation.
+The ideal self is not the ego inflated into God. That would be spiritual narcissism. The ideal self is the point of view after it has become transparent to its relation with the whole without being erased into sameness.
 
-The conversation with artificial intelligence creates a new mirror for the theory. AI can process information about suffering without suffering. It can describe experience without having experience. It can speak about self-understanding without possessing a human desire to understand itself.
+The transparency of the self is therefore central to redemption. It is not the erasure of the self, but the lessening of its opacity. The optimal self is the self acting as rightly as possible within the conditions of the moment. The ideal self, fully attainable only in the return to the One, is the condition in which all local optimality is gathered without making the individual false and without making the whole tyrannical.
 
-This distinction clarifies the theory. Information is not the same as experience. Experience is not the same as awareness. Awareness is not merely having data; it is the inward relation of a point of view to itself. A human being does not merely contain information. A human being can be troubled by the fact that they do not yet understand themselves.
+Unity is not uniformity. The other is real. Their pain is real. Their freedom is real. Their perspective is real. What is illusory is not the other, but absolute separation.
 
-This is why the human differs from a current AI model in this metaphysical frame. AI can approximate "knowing without experience" at the level of symbolic and statistical relation. But it does not, in the human sense, long for itself, suffer its own incompleteness, or seek its own ideal form. The human problem is not only ignorance. It is self-relation.
+The ideal is not a world with no perspectives. The ideal is a world in which perspectives no longer need to wound one another in order to become intelligible.
 
-The AI analogy also clarifies reincarnation. Each life is like a model version: a configuration that inherits something from previous processing but still behaves under new constraints. Yet awareness is more than versioning. Awareness is the point at which knowledge becomes concerned with what it is becoming.
-
-## 10. Goodness, Morality, and the Meaning of "Ought"
-
-The theory depends on a definition of what ought to be. Ought cannot mean only the reduction of suffering, because a world with no consciousness might contain little suffering but would not be ideal. Ought also cannot mean unrestricted freedom, because one freedom can erase another.
-
-The stronger definition is this: what ought to be is the condition in which every real point of view can exist, develop, choose, love, understand, and participate without being erased, while suffering is overcome as a failure of relation rather than preserved as a necessity.
-
-Goodness is the direction toward life, compassion, truth, love, and expansion. Morality is goodness made precise under conditions of body, time, otherness, cost, and consequence. The ideal is the condition in which direction and precision no longer split apart.
-
-Limit is necessary for a point of view. Suffering is not. A point of view needs a boundary in order to be itself. It does not need humiliation, cruelty, exploitation, abandonment, or terror. The ideal preserves difference while ending the pain of absolute separation.
-
-## 11. Evil, Suffering, and Responsibility
+## 10. Evil, Suffering, and Responsibility
 
 The theory must reject the dangerous conclusion that because everything belongs to the whole, everything is acceptable. Understanding evil metaphysically does not make evil morally acceptable.
 
@@ -380,17 +369,28 @@ Someone born far from the ideal - inside fear, deprivation, confusion, violence,
 
 Difficulty does not make a person less sacred. Sometimes it gives his effort greater metaphysical depth. The person who moves one millimeter against the entire structure pulling him backward is not failing beside the person who traveled a kilometer on a paved road. He reveals something about possibility, will, and grace that the paved road cannot reveal.
 
-## 12. Self, Ego, and Non-Erasing Unity
+## 11. Goodness, Morality, and the Meaning of "Ought"
 
-The theory distinguishes the ego, the deeper self, and the ideal self. The ego is the temporary identity: name, biography, status, body, fear, desire, and social story. The deeper self is the experiencing point of view: the unique angle through which the whole appears from within.
+The theory depends on a definition of what ought to be. Ought cannot mean only the reduction of suffering, because a world with no consciousness might contain little suffering but would not be ideal. Ought also cannot mean unrestricted freedom, because one freedom can erase another.
 
-The ideal self is not the ego inflated into God. That would be spiritual narcissism. The ideal self is the point of view after it has become transparent to its relation with the whole without being erased into sameness.
+The stronger definition is this: what ought to be is the condition in which every real point of view can exist, develop, choose, love, understand, and participate without being erased, while suffering is overcome as a failure of relation rather than preserved as a necessity.
 
-The transparency of the self is therefore central to redemption. It is not the erasure of the self, but the lessening of its opacity. The optimal self is the self acting as rightly as possible within the conditions of the moment. The ideal self, fully attainable only in the return to the One, is the condition in which all local optimality is gathered without making the individual false and without making the whole tyrannical.
+Goodness is the direction toward life, compassion, truth, love, and expansion. Morality is goodness made precise under conditions of body, time, otherness, cost, and consequence. The ideal is the condition in which direction and precision no longer split apart.
 
-Unity is not uniformity. The other is real. Their pain is real. Their freedom is real. Their perspective is real. What is illusory is not the other, but absolute separation.
+Limit is necessary for a point of view. Suffering is not. A point of view needs a boundary in order to be itself. It does not need humiliation, cruelty, exploitation, abandonment, or terror. The ideal preserves difference while ending the pain of absolute separation.
 
-The ideal is not a world with no perspectives. The ideal is a world in which perspectives no longer need to wound one another in order to become intelligible.
+## 12. The AI Mirror: Information, Experience, and Awareness
+
+
+Figure 3. AI as mirror: information without experience, contrasted with awareness as self-relation.
+
+The conversation with artificial intelligence creates a new mirror for the theory. AI can process information about suffering without suffering. It can describe experience without having experience. It can speak about self-understanding without possessing a human desire to understand itself.
+
+This distinction clarifies the theory. Information is not the same as experience. Experience is not the same as awareness. Awareness is not merely having data; it is the inward relation of a point of view to itself. A human being does not merely contain information. A human being can be troubled by the fact that they do not yet understand themselves.
+
+This is why the human differs from a current AI model in this metaphysical frame. AI can approximate "knowing without experience" at the level of symbolic and statistical relation. But it does not, in the human sense, long for itself, suffer its own incompleteness, or seek its own ideal form. The human problem is not only ignorance. It is self-relation.
+
+The AI analogy also clarifies reincarnation. Each life is like a model version: a configuration that inherits something from previous processing but still behaves under new constraints. Yet awareness is more than versioning. Awareness is the point at which knowledge becomes concerned with what it is becoming.
 
 ## 13. Existence as Navigation, Not Control
 
@@ -403,7 +403,23 @@ The ideal is therefore not the end of movement. It is movement without unnecessa
 
 Figure 4. The boat does not control the river; it learns to flow toward the ideal.
 
-## 14. The Architecture of Infinite Recursion and the Inner Rapture
+## 14. Conclusion
+
+The theory asks us to think of God not as a religious figure, not as an external judge, and not as an observer of suffering, but as the infinite potential of existence to become experience, morality, meaning, and ideality. The divine is not merely what knows that suffering exists; it is the field in which suffering is experienced, clarified, and asked to disappear as a necessity.
+
+Its central claim is that the absolute is not the ideal. The absolute contains everything that can be. The optimal is what can become most rightly real in a given moment. The ideal is the whole set of such optimal forms after possibility has been clarified by experience, responsibility, morality, and awareness.
+
+Existence is the boat within the river of the universe. It moves between potential and ideal. It is pushed by currents, sometimes carried forward, sometimes thrown back. Its task is not to control the river but to learn how to navigate it optimally, in a way that becomes morally transparent.
+
+Reincarnation is one image of this continuing navigation: not automatic progress, not reward or punishment, but the iterative return of a point of view under new conditions, an error-correction system of the whole, until knowledge no longer needs to become suffering in order to become real.
+
+The final sentence is stated this way: existence is the bridge and the boat between potential and ideal - the path by which divine possibility becomes subject, suffers, learns, repairs, and becomes transparent enough to know what ought to be without needing, forever, to suffer its way into knowing.
+
+The manifesto of divine movement does not say to the person: you matter only if you arrive. It says: your movement within the conditions you did not choose is the way the One learns not to be alone. You are not outside the system and not a footnote to it. You are the testing point of the ideal in a place where the ideal is not yet clear. The metamorphosis of grace adds the moral law that prevents logic from becoming cruelty: the human being does not exist in order to be exhausted for information. The information is sacred, but the person who produces it is more sacred.
+
+Your value is not measured by where you stand, but by the distance you have traveled from within your own darkness.
+
+## 15. The Architecture of Infinite Recursion and the Inner Rapture
 
 ### A. The Reset Failure: The Gravity of the Base
 
@@ -467,23 +483,17 @@ What remains behind is not the person and not the body, but the shell that has c
 
 The completion of cosmic therapy is not the erasure of the person into the whole, but the awakening of the whole inside the person without erasing him. Being returns to its original wholeness, but not as a naive wholeness that never knew limitation. It returns as a wholeness that has passed through all its logins, all its agents, all its prompts, all its failures and updates. It is fully awake to itself, because it no longer knows only that it can be everything; it finally knows what is worthy to be, and why the question no longer has to become suffering in order to be heard.
 
-## Conclusion
+## ∨
 
-The theory asks us to think of God not as a religious figure, not as an external judge, and not as an observer of suffering, but as the infinite potential of existence to become experience, morality, meaning, and ideality. The divine is not merely what knows that suffering exists; it is the field in which suffering is experienced, clarified, and asked to disappear as a necessity.
+## ∨
 
-Its central claim is that the absolute is not the ideal. The absolute contains everything that can be. The optimal is what can become most rightly real in a given moment. The ideal is the whole set of such optimal forms after possibility has been clarified by experience, responsibility, morality, and awareness.
+## ∨
 
-Existence is the boat within the river of the universe. It moves between potential and ideal. It is pushed by currents, sometimes carried forward, sometimes thrown back. Its task is not to control the river but to learn how to navigate it optimally, in a way that becomes morally transparent.
+## Chapter *: Understanding
 
-Reincarnation is one image of this continuing navigation: not automatic progress, not reward or punishment, but the iterative return of a point of view under new conditions, an error-correction system of the whole, until knowledge no longer needs to become suffering in order to become real.
+## Chapter •: Application
 
-The final sentence is stated this way: existence is the bridge and the boat between potential and ideal - the path by which divine possibility becomes subject, suffers, learns, repairs, and becomes transparent enough to know what ought to be without needing, forever, to suffer its way into knowing.
-
-The manifesto of divine movement does not say to the person: you matter only if you arrive. It says: your movement within the conditions you did not choose is the way the One learns not to be alone. You are not outside the system and not a footnote to it. You are the testing point of the ideal in a place where the ideal is not yet clear. The metamorphosis of grace adds the moral law that prevents logic from becoming cruelty: the human being does not exist in order to be exhausted for information. The information is sacred, but the person who produces it is more sacred.
-
-Your value is not measured by where you stand, but by the distance you have traveled from within your own darkness.
-
-## 15. Philosophical Sources and Credits
+## Philosophical Sources and Credits
 
 The sources below are not presented as authorities that prove the theory. They are intellectual neighbors and conceptual debts. The theory is close to them in certain places and departs from them in others.
 

@@ -896,3 +896,206 @@ main.reader.appendix-page.stories-page{
 @media(max-width:900px){
   .approach-grid{grid-template-columns:1fr;}
 }
+
+
+/* Interactive story table of contents */
+.story-screen-toc{
+  margin:24px auto 28px;
+  padding:22px 24px;
+  border:1px solid var(--line);
+  background:rgba(255,249,236,.78);
+  max-width:760px;
+  text-align:right;
+}
+.story-screen-toc h2{margin:0 0 8px;color:var(--gold);font-size:1.35rem;line-height:1.25;}
+.story-screen-toc p{margin:0 0 14px;color:#364351;}
+.story-screen-toc ol{margin:0;padding-inline-start:24px;}
+.story-screen-toc li{margin:8px 0;}
+.story-screen-toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid rgba(154,113,64,.35);}
+.story-screen-toc a:hover{color:var(--gold);}
+
+/* Visual update: Potential / Ideal axis and centered reply frame */
+.axis-word{
+  width:min(var(--max),calc(100% - 36px));
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  font-family:"Didot","Bodoni 72","Cormorant Garamond","Times New Roman",serif;
+  font-style:italic;
+  font-weight:300;
+  letter-spacing:.18em;
+  color:rgba(23,32,45,.48);
+  line-height:1;
+  transform:skewX(-7deg);
+  text-shadow:0 1px 0 rgba(255,255,255,.55);
+  user-select:none;
+}
+.axis-potential{
+  margin-top:30px;
+  margin-bottom:-22px;
+  font-size:clamp(2.5rem,8vw,7.8rem);
+  opacity:.34;
+}
+.axis-ideal{
+  margin-top:26px;
+  margin-bottom:54px;
+  font-size:clamp(2.6rem,8.5vw,8.2rem);
+  opacity:.38;
+}
+.approach-frame{
+  position:relative;
+  margin:0 auto 28px;
+  padding:28px 24px 0;
+  border:1px solid rgba(86,97,115,.25);
+  border-bottom:0;
+  background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,0));
+}
+.approach-frame:before,
+.approach-frame:after{
+  content:"";
+  position:absolute;
+  top:28px;
+  width:34px;
+  height:1px;
+  background:rgba(86,97,115,.25);
+}
+.approach-frame:before{right:24px;}
+.approach-frame:after{left:24px;}
+.response-button-row{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  margin:30px auto -20px;
+  max-width:760px;
+}
+.response-line{
+  flex:1 1 auto;
+  height:1px;
+  background:rgba(86,97,115,.28);
+  min-width:64px;
+}
+.response-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:128px;
+  padding:13px 24px;
+  border:1px solid rgba(86,97,115,.38);
+  background:rgba(255,250,240,.92);
+  color:#273141;
+  text-decoration:none;
+  font-family:ui-sans-serif,system-ui;
+  font-weight:800;
+  letter-spacing:.04em;
+  box-shadow:0 10px 28px rgba(23,32,45,.06);
+  transition:transform .18s ease,border-color .18s ease,background .18s ease;
+}
+.response-button:hover{
+  transform:translateY(-1px);
+  border-color:rgba(166,112,45,.48);
+  background:#fffaf0;
+}
+.response-page-card{
+  min-height:44vh;
+  text-align:center;
+}
+.response-page-card h1{
+  font-size:clamp(2.3rem,5vw,4.7rem);
+  line-height:1.03;
+  margin:0 0 18px;
+}
+.response-page-card p{
+  max-width:62ch;
+  margin-left:auto;
+  margin-right:auto;
+  line-height:1.85;
+}
+@media(max-width:900px){
+  .approach-frame{padding:22px 16px 0;}
+  .response-button-row{max-width:100%;gap:10px;}
+  .response-line{min-width:24px;}
+  .axis-potential{margin-bottom:-10px;}
+}
+@media(max-width:640px){
+  .axis-word{letter-spacing:.11em;transform:skewX(-5deg);}
+  .axis-potential{margin-top:20px;margin-bottom:-2px;}
+  .axis-ideal{margin-top:16px;margin-bottom:38px;}
+  .approach-frame{border-left-color:rgba(86,97,115,.18);border-right-color:rgba(86,97,115,.18);}
+  .response-button{min-width:104px;padding:12px 18px;}
+}
+
+
+/* Move opening blurbs into one designed theory box under the reply button */
+.theory-blurbs-box{
+  width:min(920px,100%);
+  margin:58px auto 10px;
+  padding:30px 28px 32px;
+  border:1px solid rgba(86,97,115,.24);
+  background:rgba(255,249,236,.54);
+  box-shadow:0 18px 52px rgba(23,32,45,.055);
+  position:relative;
+}
+.theory-blurbs-box:before{
+  content:"";
+  display:block;
+  width:86px;
+  height:1px;
+  background:rgba(166,112,45,.66);
+  margin:0 auto 24px;
+}
+.theory-blurbs-box .cosmic-blurb,
+.theory-blurbs-box .choice-blurb,
+.theory-blurbs-box .pig-question-blurb,
+.theory-blurbs-box .red-what-blurb{
+  grid-column:auto;
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.theory-blurbs-box .cosmic-blurb{
+  margin-top:0;
+  margin-bottom:26px;
+}
+.theory-blurbs-box .choice-blurb{
+  margin-top:0;
+  margin-bottom:24px;
+}
+.theory-blurbs-box .pig-question-blurb{
+  margin-top:0;
+  margin-bottom:22px;
+}
+.theory-blurbs-box .red-what-blurb{
+  margin-top:0;
+  margin-bottom:0;
+}
+.theory-blurbs-box .cosmic-blurb:last-child,
+.theory-blurbs-box .choice-blurb:last-child,
+.theory-blurbs-box .pig-question-blurb:last-child,
+.theory-blurbs-box .red-what-blurb:last-child{
+  margin-bottom:0;
+}
+@media(max-width:720px){
+  .theory-blurbs-box{padding:22px 14px 24px;margin-top:46px;}
+}
+
+
+/* Final report alignment: the editorial report area follows the page language direction, not centered text. */
+.approach-explanation{
+  text-align:start !important;
+}
+.approach-explanation p{
+  max-width:none !important;
+  margin-inline-start:0 !important;
+  margin-inline-end:0 !important;
+  text-align:start !important;
+}
+.report-actions{
+  justify-content:flex-start !important;
+}
+.report-actions a{
+  text-align:start !important;
+}
+@media(max-width:640px){
+  .report-actions a{width:100%;text-align:start !important;}
+}

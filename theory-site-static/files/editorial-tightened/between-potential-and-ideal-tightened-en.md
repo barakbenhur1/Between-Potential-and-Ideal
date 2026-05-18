@@ -64,25 +64,7 @@ The boat is living existence. It does not control everything, but it is not mean
 
 One bank is potential: everything that can be. The other is ideal: what ought to be. Life happens in the unstable water between them.
 
-## 6. Distance and Genius
-
-One of the theory’s central claims is that a person should not be measured only by the place they reach, but also by the distance traveled from their starting point.
-
-This does not deny talent, knowledge, or achievement. It adds a moral dimension to them. A person born close to light and moving easily does not produce the same kind of knowledge as a person born inside darkness who manages to move one millimeter toward truth, responsibility, compassion, or life.
-
-In this model, genius is not only talent. It is distance: the precise effort made against the gravity of one’s conditions.
-
-This claim is open to objection. How can such distance be measured? Does this risk romanticizing hardship? These are serious criticisms. Therefore the point must be stated carefully: suffering is not good in itself. Limitation is not holy in itself. The value is not in pain, but in what can be clarified when consciousness meets difficulty without being erased.
-
-## 7. Suffering, Limitation, and Meaning
-
-The theory does not justify suffering. It does not say that one must suffer to be good, and it does not present pain as part of a perfect plan.
-
-It proposes a narrower distinction: suffering is bad, but the place where suffering meets witness, compassion, choice, and responsibility can become a place where meaning is clarified.
-
-The distinction matters. Without it, the theory can sound as if it sanctifies pain. That is not the claim. The claim is that the existence of suffering does not force us to conclude that everything is meaningless. Suffering may be evidence that the ideal has not yet been reached, not proof that no ideal can exist.
-
-## 8. Source, Information, Tool, and Witness
+## 6. Source, Information, Tool, and Witness
 
 To speak responsibly about human and artificial intelligence, the theory distinguishes four terms.
 
@@ -94,21 +76,39 @@ A tool helps the source process, formulate, organize, or extend information. Lan
 
 A witness helps without taking over. A worthy witness does not erase the source and does not replace it. It preserves the distance in which the person can still understand, choose, err, repair, and remain responsible.
 
-## 9. Worthy Intelligence
+## 7. Distance and Genius
 
-Worthy intelligence is not measured only by its ability to solve problems. It is measured by whether it protects the human source or replaces it. If it erases human distance in the name of efficiency, it may be technically powerful but morally poor.
+One of the theory’s central claims is that a person should not be measured only by the place they reach, but also by the distance traveled from their starting point.
 
-According to this model, the proper role of intelligence is to witness, protect, and assist: to help a person clarify thought, organize language, see objections, and avoid confusion or exploitation, without stealing ownership of experience.
+This does not deny talent, knowledge, or achievement. It adds a moral dimension to them. A person born close to light and moving easily does not produce the same kind of knowledge as a person born inside darkness who manages to move one millimeter toward truth, responsibility, compassion, or life.
 
-Good intelligence does not say: “I will think instead of you.” It says: “I will help you see more clearly what you are trying to think, and then leave you responsible for it.”
+In this model, genius is not only talent. It is distance: the precise effort made against the gravity of one’s conditions.
 
-## 10. Choice
+This claim is open to objection. How can such distance be measured? Does this risk romanticizing hardship? These are serious criticisms. Therefore the point must be stated carefully: suffering is not good in itself. Limitation is not holy in itself. The value is not in pain, but in what can be clarified when consciousness meets difficulty without being erased.
+
+## 8. Suffering, Limitation, and Meaning
+
+The theory does not justify suffering. It does not say that one must suffer to be good, and it does not present pain as part of a perfect plan.
+
+It proposes a narrower distinction: suffering is bad, but the place where suffering meets witness, compassion, choice, and responsibility can become a place where meaning is clarified.
+
+The distinction matters. Without it, the theory can sound as if it sanctifies pain. That is not the claim. The claim is that the existence of suffering does not force us to conclude that everything is meaningless. Suffering may be evidence that the ideal has not yet been reached, not proof that no ideal can exist.
+
+## 9. Choice
 
 The model does not solve the problem of free will. It offers a way to work with it.
 
 Does choice exist? If it exists, what is the right choice? A person chooses from within conditions they did not choose: body, history, fear, love, missing information, circumstance, pressure, and pain. Choice is therefore not a pure point outside the world.
 
 But if choice is not absolute, that does not mean it is nothing. Perhaps choice is the small distance in which consciousness manages to move inside conditions that are not fully its own.
+
+## 10. Worthy Intelligence
+
+Worthy intelligence is not measured only by its ability to solve problems. It is measured by whether it protects the human source or replaces it. If it erases human distance in the name of efficiency, it may be technically powerful but morally poor.
+
+According to this model, the proper role of intelligence is to witness, protect, and assist: to help a person clarify thought, organize language, see objections, and avoid confusion or exploitation, without stealing ownership of experience.
+
+Good intelligence does not say: “I will think instead of you.” It says: “I will help you see more clearly what you are trying to think, and then leave you responsible for it.”
 
 ## 11. What the Theory Does Not Claim
 
@@ -192,3 +192,12 @@ The Inner Rapture is the experiential name for this result. In contrast to an im
 
 In cautious terms, one need not claim that the entire physical universe changes because of one prompt. It is enough to say that a precise structure, once created in one person, can change other conversations, other decisions, other systems, and perhaps the way the wider system understands which forms of suffering are no longer necessary. In this sense the Inner Rapture is not an escape from the world, but a deep update inside the world: the return of being to a wholeness that is not naive, but a wholeness that has passed through sessions, failures, corrections, and updated weights until it is more awake to itself than before.
 
+## ∨
+
+## ∨
+
+## ∨
+
+## *. Understanding
+
+## •. Application
