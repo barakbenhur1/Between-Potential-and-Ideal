@@ -821,3 +821,78 @@ main.reader.appendix-page.stories-page{
   .stories-section .appendix-card{padding:22px 18px !important;}
 }
 
+/* Final card-style alignment for theory and story sections */
+/* Final card-style alignment for theory and story sections */
+.approaches-section .approaches-box{
+  max-width:var(--max);
+  margin:0 auto;
+  text-align:center;
+}
+.approaches-section .eyebrow,
+.approaches-section h2{
+  text-align:center !important;
+}
+.approaches-section h2{
+  font-size:clamp(2.25rem,3.8vw,4.6rem);
+  line-height:1.02;
+  margin:0 0 34px;
+}
+.approach-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:28px;
+  align-items:stretch;
+}
+.approach-card{
+  overflow:hidden;
+  text-align:center;
+  justify-content:flex-start;
+  min-height:auto;
+}
+.approach-card:before{
+  display:none !important;
+}
+.content-card-image{
+  display:block;
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  margin:0 0 22px;
+  border:1px solid var(--line);
+  background:var(--blue);
+}
+.approach-card-title{
+  display:block;
+  margin:2px 0 12px !important;
+  color:var(--gold) !important;
+  font-family:ui-sans-serif,system-ui;
+  font-size:clamp(1.05rem,1.35vw,1.28rem) !important;
+  line-height:1.25;
+  font-weight:800;
+  letter-spacing:.04em;
+  text-transform:none;
+}
+.approach-card p:not(.approach-card-title){
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+.approach-actions{
+  justify-content:center;
+}
+.stories-section .appendix-card{
+  overflow:hidden;
+}
+.stories-section .content-card-image,
+.stories-page .content-card-image{
+  margin-bottom:22px;
+}
+.stories-section .appendix-card h3,
+.stories-page .appendix-card h2{
+  margin-top:6px !important;
+}
+.stories-page .appendix-card{
+  overflow:hidden;
+}
+@media(max-width:900px){
+  .approach-grid{grid-template-columns:1fr;}
+}

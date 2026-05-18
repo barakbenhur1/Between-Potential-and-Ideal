@@ -403,23 +403,7 @@ The ideal is therefore not the end of movement. It is movement without unnecessa
 
 Figure 4. The boat does not control the river; it learns to flow toward the ideal.
 
-## 14. Philosophical Sources and Credits
-
-The sources below are not presented as authorities that prove the theory. They are intellectual neighbors and conceptual debts. The theory is close to them in certain places and departs from them in others.
-
-Spinoza is relevant because of his immanent conception of God: God is not outside reality. The present theory shares the rejection of an external divine ruler, but departs from Spinoza by making moral clarification from absolute potential to ideality central.
-
-Plotinus and Neoplatonism are relevant because of the relation between unity and multiplicity. The present theory shares the intuition that multiplicity can arise from unity, but refuses to make the other ethically unreal or to treat the goal as erasure of difference.
-
-Plato is relevant because the language of the ideal echoes the Form of the Good. Yet here the ideal is not simply a static form above becoming; it is the clarified resolution of potential through experience and morality.
-
-Hegel is relevant because the result cannot be separated from the path by which it becomes. The present theory shares the processual intuition, but frames the movement as absolute potential becoming ideal through moral clarification rather than only as the development of spirit in history.
-
-Whitehead and process philosophy are relevant because reality is understood as becoming rather than a static block. Existentialism and Camus are relevant because the theory begins from the crisis of meaning. Buddhist and Advaita traditions are relevant because they question absolute separation and ego, while this theory insists that unity must not become erasure.
-
-The AI analogy is a contemporary addition. It is not a proof, but a mirror: it helps distinguish information, experience, awareness, and self-concern.
-
-## 15. The Architecture of Infinite Recursion and the Inner Rapture
+## 14. The Architecture of Infinite Recursion and the Inner Rapture
 
 ### A. The Reset Failure: The Gravity of the Base
 
@@ -498,6 +482,22 @@ The final sentence is stated this way: existence is the bridge and the boat betw
 The manifesto of divine movement does not say to the person: you matter only if you arrive. It says: your movement within the conditions you did not choose is the way the One learns not to be alone. You are not outside the system and not a footnote to it. You are the testing point of the ideal in a place where the ideal is not yet clear. The metamorphosis of grace adds the moral law that prevents logic from becoming cruelty: the human being does not exist in order to be exhausted for information. The information is sacred, but the person who produces it is more sacred.
 
 Your value is not measured by where you stand, but by the distance you have traveled from within your own darkness.
+
+## 15. Philosophical Sources and Credits
+
+The sources below are not presented as authorities that prove the theory. They are intellectual neighbors and conceptual debts. The theory is close to them in certain places and departs from them in others.
+
+Spinoza is relevant because of his immanent conception of God: God is not outside reality. The present theory shares the rejection of an external divine ruler, but departs from Spinoza by making moral clarification from absolute potential to ideality central.
+
+Plotinus and Neoplatonism are relevant because of the relation between unity and multiplicity. The present theory shares the intuition that multiplicity can arise from unity, but refuses to make the other ethically unreal or to treat the goal as erasure of difference.
+
+Plato is relevant because the language of the ideal echoes the Form of the Good. Yet here the ideal is not simply a static form above becoming; it is the clarified resolution of potential through experience and morality.
+
+Hegel is relevant because the result cannot be separated from the path by which it becomes. The present theory shares the processual intuition, but frames the movement as absolute potential becoming ideal through moral clarification rather than only as the development of spirit in history.
+
+Whitehead and process philosophy are relevant because reality is understood as becoming rather than a static block. Existentialism and Camus are relevant because the theory begins from the crisis of meaning. Buddhist and Advaita traditions are relevant because they question absolute separation and ego, while this theory insists that unity must not become erasure.
+
+The AI analogy is a contemporary addition. It is not a proof, but a mirror: it helps distinguish information, experience, awareness, and self-concern.
 
 Metamorphosis of Grace: Thought and Sources
 
