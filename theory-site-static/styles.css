@@ -152,27 +152,33 @@ a{color:inherit;text-underline-offset:.18em}.site{min-height:100vh;background:li
 }
 .pig-question-blurb[dir="rtl"] p{text-align:right}
 
-.red-what-blurb{
+.red-what-blurb,
+.ellipsis-blurb{
   grid-column:1 / -1;
-  width:min(720px,100%);
-  margin:-10px auto 42px;
-  padding:18px 26px;
-  border:1px solid rgba(165,46,46,.26);
-  background:rgba(255,245,240,.56);
-  box-shadow:0 16px 42px rgba(165,46,46,.07);
+  width:min(820px,100%);
+  margin:-10px auto 28px;
+  padding:20px 28px;
+  border:1px solid rgba(23,32,45,.13);
+  background:rgba(255,249,236,.54);
+  box-shadow:0 12px 34px rgba(23,32,45,.04);
 }
-.red-what-blurb p{
-  margin:0;
-  text-align:center;
-  color:#b23a36;
-  font-size:clamp(1.55rem,2.5vw,2.35rem);
-  line-height:1.25;
-  font-weight:800;
-  letter-spacing:.02em;
+.red-what-blurb p,
+.ellipsis-blurb p{
+  margin:0 auto;
+  max-width:720px;
+  color:#253244;
+  font-size:clamp(1.02rem,1.22vw,1.18rem);
+  line-height:1.78;
+  font-weight:400;
+  letter-spacing:0;
 }
+.red-what-blurb[dir="rtl"] p,
+.ellipsis-blurb[dir="rtl"] p{text-align:right}
+.red-what-blurb[dir="ltr"] p,
+.ellipsis-blurb[dir="ltr"] p{text-align:left}
 @media(max-width:720px){
   .pig-question-blurb{padding:18px 16px;margin:-10px auto 24px}
-  .red-what-blurb{padding:16px 14px;margin:-6px auto 34px}
+  .red-what-blurb,.ellipsis-blurb{padding:18px 16px;margin:-6px auto 24px}
 }
 
 
@@ -186,14 +192,15 @@ a{color:inherit;text-underline-offset:.18em}.site{min-height:100vh;background:li
   opacity:.72;
 }
 
-.red-what-blurb:before{
+.red-what-blurb:before,
+.ellipsis-blurb:before{
   content:"";
   display:block;
   width:72px;
   height:2px;
-  background:#b23a36;
+  background:var(--gold);
   margin:0 auto 18px;
-  opacity:.82;
+  opacity:.72;
 }
 
 
@@ -920,60 +927,55 @@ main.reader.appendix-page.stories-page{
   margin-left:auto;
   margin-right:auto;
   text-align:center;
-  font-family:"Didot","Bodoni 72","Cormorant Garamond","Times New Roman",serif;
+  font-family:Georgia,"Times New Roman","Noto Serif Hebrew",serif;
   font-style:italic;
-  font-weight:300;
-  letter-spacing:.18em;
-  color:rgba(23,32,45,.48);
-  line-height:1;
-  transform:skewX(-7deg);
-  text-shadow:0 1px 0 rgba(255,255,255,.55);
+  font-weight:400;
+  letter-spacing:.035em;
+  color:rgba(70,76,86,.56);
+  line-height:1.25;
+  transform:none;
+  text-shadow:none;
   user-select:none;
 }
 .axis-potential{
-  margin-top:30px;
-  margin-bottom:-22px;
-  font-size:clamp(2.5rem,8vw,7.8rem);
-  opacity:.34;
+  margin-top:18px;
+  margin-bottom:10px;
+  font-size:clamp(1.05rem,2.1vw,1.75rem);
+  opacity:.72;
 }
 .axis-ideal{
-  margin-top:26px;
-  margin-bottom:54px;
-  font-size:clamp(2.6rem,8.5vw,8.2rem);
-  opacity:.38;
+  margin-top:22px;
+  margin-bottom:36px;
+  font-size:clamp(1.05rem,2.1vw,1.75rem);
+  opacity:.72;
 }
 .approach-frame{
   position:relative;
   margin:0 auto 28px;
-  padding:28px 24px 0;
+  padding:28px 24px 28px;
   border:1px solid rgba(86,97,115,.25);
-  border-bottom:0;
   background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,0));
 }
+/* The outer frame is intentionally clean: no top-corner artifacts near the theory cards. */
 .approach-frame:before,
 .approach-frame:after{
-  content:"";
-  position:absolute;
-  top:28px;
-  width:34px;
-  height:1px;
-  background:rgba(86,97,115,.25);
+  content:none;
+  display:none;
 }
-.approach-frame:before{right:24px;}
-.approach-frame:after{left:24px;}
 .response-button-row{
   display:flex;
   align-items:center;
   justify-content:center;
   gap:16px;
-  margin:30px auto -20px;
-  max-width:760px;
+  margin:30px auto 0;
+  width:calc(100% - 72px);
+  max-width:none;
 }
 .response-line{
   flex:1 1 auto;
   height:1px;
   background:rgba(86,97,115,.28);
-  min-width:64px;
+  min-width:96px;
 }
 .response-button{
   display:inline-flex;
@@ -1012,16 +1014,16 @@ main.reader.appendix-page.stories-page{
   line-height:1.85;
 }
 @media(max-width:900px){
-  .approach-frame{padding:22px 16px 0;}
-  .response-button-row{max-width:100%;gap:10px;}
+  .approach-frame{padding:22px 16px 22px;}
+  .response-button-row{width:calc(100% - 28px);max-width:none;gap:10px;}
   .response-line{min-width:24px;}
-  .axis-potential{margin-bottom:-10px;}
+  .axis-potential{margin-bottom:8px;}
 }
 @media(max-width:640px){
-  .axis-word{letter-spacing:.11em;transform:skewX(-5deg);}
-  .axis-potential{margin-top:20px;margin-bottom:-2px;}
-  .axis-ideal{margin-top:16px;margin-bottom:38px;}
-  .approach-frame{border-left-color:rgba(86,97,115,.18);border-right-color:rgba(86,97,115,.18);}
+  .axis-word{letter-spacing:.025em;transform:none;}
+  .axis-potential{margin-top:16px;margin-bottom:8px;}
+  .axis-ideal{margin-top:18px;margin-bottom:34px;}
+  .approach-frame{border-color:rgba(86,97,115,.18);}
   .response-button{min-width:104px;padding:12px 18px;}
 }
 
@@ -1029,7 +1031,7 @@ main.reader.appendix-page.stories-page{
 /* Move opening blurbs into one designed theory box under the reply button */
 .theory-blurbs-box{
   width:min(920px,100%);
-  margin:58px auto 10px;
+  margin:34px auto 0;
   padding:30px 28px 32px;
   border:1px solid rgba(86,97,115,.24);
   background:rgba(255,249,236,.54);
@@ -1047,7 +1049,8 @@ main.reader.appendix-page.stories-page{
 .theory-blurbs-box .cosmic-blurb,
 .theory-blurbs-box .choice-blurb,
 .theory-blurbs-box .pig-question-blurb,
-.theory-blurbs-box .red-what-blurb{
+.theory-blurbs-box .red-what-blurb,
+.theory-blurbs-box .ellipsis-blurb{
   grid-column:auto;
   width:100%;
   margin-left:auto;
@@ -1067,16 +1070,21 @@ main.reader.appendix-page.stories-page{
 }
 .theory-blurbs-box .red-what-blurb{
   margin-top:0;
+  margin-bottom:22px;
+}
+.theory-blurbs-box .ellipsis-blurb{
+  margin-top:0;
   margin-bottom:0;
 }
 .theory-blurbs-box .cosmic-blurb:last-child,
 .theory-blurbs-box .choice-blurb:last-child,
 .theory-blurbs-box .pig-question-blurb:last-child,
-.theory-blurbs-box .red-what-blurb:last-child{
+.theory-blurbs-box .red-what-blurb:last-child,
+.theory-blurbs-box .ellipsis-blurb:last-child{
   margin-bottom:0;
 }
 @media(max-width:720px){
-  .theory-blurbs-box{padding:22px 14px 24px;margin-top:46px;}
+  .theory-blurbs-box{padding:22px 14px 24px;margin-top:30px;}
 }
 
 
