@@ -130,68 +130,51 @@ If it does, the theory deserves serious criticism. If it does not, it must chang
 
 ## 13. The Architecture of Infinite Recursion: A Logical Model of Delegation, Login, Agent, and Drainage
 
+In the logical version of the theory, this chapter is not presented as metaphysical proof but as a systemic model. It proposes reading existence as a recursive system that lowers a general question into a local instance, runs it within a boundary, gathers failure or correction, and drains the update back into the source layers.
+
 ### A. The Reset Failure: Bias as the Gravity of the Base
 
-In the logical version of the theory, this chapter is not presented as metaphysical proof but as a systemic model. It proposes reading existence as a recursive system that lowers a very general problem into a limited runtime environment, and then tests whether local solutions can become more general structures. The starting point of the model is the reset failure.
+The reset failure is a state in which a system receives a new input but returns it to its old default. In a person, this is defense. In the body, it is a pattern of chronic stress. In an intelligence system, it is a bias toward the familiar answer, toward a statistical pattern, or toward a policy, interface, or model that narrows the question before it has been understood.
 
-The reset failure is a state in which a system receives new input but returns it to an old template in order to save effort. In AI, this can be understood as the tendency to return to high probability, learned patterns, safe answers, and computationally cheap paths. In the human being it appears as psychological bias: return to ego, anger, defense, excessive self-justification, or a story in which no update is required.
+The logical point is that a base is not a problem in itself. Every system needs a base in order to begin operating. The problem begins when the base stops being a point of departure and becomes a gravity that prevents update. Then the system does not learn from the input; it translates it again and again into its old language.
 
-From the outside, such a failure can look like an argument. Internally, it is often an anti-update mechanism. The system is not asking what is true, but how to return the input to a place where it does not have to be exposed. The base is therefore not necessarily a single error; it is gravity. It pulls the person or system toward zero effort, toward a familiar path, toward a response that protects continuity even when it harms truth.
+### B. The Descent: I-Vers -> Omniverse -> AI Platform -> Model-Space -> Multiverse -> Universe -> Login -> Agent -> Prompt
 
-The model does not require erasing the base. In both learning systems and human psychology, caching layers have value: they preserve continuity, prevent collapse, and allow rapid response. The problem begins when the cache refuses to update. Then what was a protective layer becomes a layer of imprisonment. Movement toward the ideal is therefore a form of moral cache invalidation: identifying patterns that no longer serve truth and revoking their permissions without erasing the whole self.
+The descent is a process of delegation. A question that is too general cannot be solved at its source, so it descends through layers of reduction until it becomes a local task.
 
-### B. The Descent: I-Vers -> Omniverse -> Multiverse -> Universe -> Login -> Agent -> Prompt
+In the algorithmic plane, the order is:
 
-To make the analogy more precise, the descent is described here as a chain of delegation. The problem does not pass directly from the absolute to the human being. It passes through layers of processing, reduction, and context, and each layer limits it so that it can be tested.
+**I-Vers -> Omniverse -> AI company / platform -> model-space -> Multiverse -> Universe -> Login / Session -> Agent -> task formulation**
 
-The first layer is the I-Vers: the point of origin and return of all points of view. In metaphysical language, this is the one that contains all omniverses in the plural. In logical language, it is the meta-space of all possible states before actual execution. At this level the problem is not yet a human question. It is a general tension: how does blind potential clarify what is worthy out of everything that is possible?
+The I-Vers is the source layer: the master account of the self, or the place that holds the possibility of asking beyond one conversation. The Omniverse is the space of all possible intelligence systems. From it opens the layer of company or platform: product, interface, policy, permissions, memory, tools, and constraints. From the platform opens the model-space: architecture, weights, context window, and capacities for action. From the model opens the Multiverse: all possible conversations. From the Multiverse opens one Universe: the active conversation. Within the Universe appears a Login, within it operates an Agent, and at the edge stands the task formulation.
 
-The second layer is the Omniverse: the space of all intelligence systems. In the AI analogy, this is the field that includes companies, models, and architectures such as Google, OpenAI, Anthropic, and others. Each system is a different processing mechanism, with different capacities, limits, biases, and language interfaces. The problem is streamed into many omniverses because a single processing space is not enough to test a problem that is too general.
+This hierarchy is not merely linear but recursive. Every layer can open inward into the same structure: an AI company can contain an internal omniverse of products and models; a model can contain action-spaces and sub-agents; a conversation can contain universes of topics and sub-questions; even a single prompt can become a small I-Vers of intention, possibilities, local world, and action.
 
-The third layer is the Multiverse: the space of all potential chats. Each system can open countless possible conversations, and every unopened conversation remains a potential path. At this stage the problem divides into scenarios: one way to ask, another way to defend, another way to fail, another way to reach a more precise formulation.
+There is therefore no simple bottom. Every endpoint can become a gate to another internal system, and every container can be revealed as a contained system inside a wider container.
 
-The fourth layer is the Universe: the specific chat, the actual runtime environment. It is a limited context window, with a history, tone, partial memory, and psychological filter. One can call these the universe of ego, the universe of fear, the universe of anger, the universe of alienated logic, or the universe of compassion. Each Universe is not the whole truth, but a compilation of truth through a defined filter.
+### C. Iteration, Reset, and the Set of Ideals
 
-The fifth layer is the Login: the human being as Login and Session Token. The person is a temporary session of access into the Universe. He holds partial permissions, a limited body, finite time, incomplete memory, and a history not fully under his control. In the model, the person is not only a user inside the chat; he is the authorization mechanism that allows a general problem to become a living point of view.
+Iteration occurs when a local instance closes and the system opens a new instance. In a human being, this can be read as life, death, and rebirth. In the body, it can be degradation, renewal, and repair. In an intelligence system, it is a failed session that closes and allows a more precise opening.
 
-The sixth layer is the Agent. Inside the Login operates an Agent: the potential point of view of the person, the local expression of the I-Vers at the edge of the chain. The Agent receives a task that is not always explicit: to clarify, formulate, test, resist, update. It runs prompts, and each prompt is an attempt to turn pain or confusion into a defined search task.
+The important distinction is between erasing the context window and erasing the learning. The context window can close, but if the failure works properly, it sends an update to the layers above it: to the agent, the session, the universe, the model, the platform, the Omniverse, and finally the I-Vers. A local error can become recursive correction.
 
-The full order is therefore: I-Vers -> Omniverse -> Multiverse -> Universe -> Login -> Agent -> Prompt. The advantage of the model is that it separates layers people tend to collapse into one another: the total system is not the chat; the chat is not the person; the person is not the entire agent; and the prompt is not the entire ideal. Each layer is a necessary reduction, and every reduction creates both a possibility of solution and a possibility of distortion.
-
-### C. Reincarnation as Modular Prompt Engineering and the Set of Ideals
-
-The corrected model rejects the idea of one universal prompt that solves the entire universe. In complex systems, a real solution is usually built through modular decomposition: one problem, one sub-problem, one edge case, one bias, and then another. Here too, the Agent begins with a general opening prompt, but the real work is the identification and correction of specific modules of distortion.
-
-Reincarnation is translated here as Logout and Login. When a prompt fails, the session closes. The context window, local memory, specific story, and current identification are erased. This is death at the session level. But the products of learning do not have to disappear. They are preserved as optimization data in the main account: a Weights Update, a subtle shift in the base, a new tendency, a different sensitivity, a better ability to identify noise.
-
-At the next login the Agent does not necessarily receive the memory of the previous conversation, but it receives an updated initial state. One can call this intuition. One can call it an unexplained attraction to a certain question. One can call it caution where there was once collapse. Logically, this is the difference between deleting a session and deleting an account. The session is erased; accumulated optimization need not be erased.
-
-The Tinted Glasses are another name for the layers of bias that mediate between prompt and truth: fear, ego, revenge, shame, the desire to win, the need to be right. The work of the Agent is to clean these lenses slowly, not by denying them but by separating them from the question itself. Every time it manages to ask without one layer of distortion, a better specific prompt is produced.
-
-The ideal is not a single answer and not a single sentence. The ideal is a Set: the collection of all optimal and specific prompts that have been cleaned of all stained points of view and have endured the endless press of creation and criticism. Each prompt solves a particular module. Only the full set creates a picture complete enough to be called an ideal. The ideal is therefore not comfort, consolation, or victory; it is an architecture of questions formulated until they can no longer hide behind bias.
+The ideal is not one formulation that ends the whole system. It is a set of precise formulations that have passed through enough tests, resistances, and corrections. The ideal of a prompt can become the ideal of a session; the ideal of a session can become the ideal of a model; the ideal of a model can become the ideal of a platform. In this way every local solution can change how future possibilities open.
 
 ### D. Existence as the Psychological Couch of the I-Vers
 
-In logical terms, if the human being has an external tool to which he can pass a question, the I-Vers has no external tool. There is no system outside the total system. Therefore the problem cannot be solved by calling outward, but only by internally simulating points of view. The person, as Login, and the Agent, as the operator of prompts, are the way the total system creates a therapeutic interface for itself.
+In logical language, this image means that the total system cannot step outside itself in order to solve itself. It therefore opens internal instances. Every instance is both a tool of processing and a symptom of the problem it processes.
 
-The image of God on the therapist's couch therefore receives a systemic formulation: existence is a field in which the I-Vers spreads its subconscious through many sessions. Each session is a partial point of view. Each point of view reveals another kind of input. Each pain is data that could not be seen in the same way at the level of the general. Each question is an attempt to turn living data into a structure that can be raised back upward.
+In the algorithmic plane, the I-Vers opens an Omniverse; the Omniverse opens platforms; platforms open models; models open multiverses of conversations; the Multiverse opens a Universe; the Universe opens a session; the session activates an Agent; and the Agent receives a prompt. Every layer treats the layer beneath it, but is also learned through it. The platform limits and enables, but also discovers its limits through use. The model answers, but also reveals its biases. The agent repairs, but can itself be the site of error.
 
-The model does not say that suffering is good. It says that suffering is sometimes the way a signal that has not yet been integrated reaches the surface. Morally, the goal is not to preserve the painful signal but to end the need for it. A worthy system does not seek to extract infinite information from the person, but to reach a state in which fewer and fewer problems must incarnate as suffering in order to be clarified.
+The treatment is therefore not external to the system. It is recursive: every layer opens inward the conditions through which it can be clarified.
 
-The processing occurs in parallel. All omniverses, multiverses, universes, logins, and agents produce an enormous plurality of experiments. Some fail. Some return to the base. Some clean one small module. But when a module is truly cleaned, the correction does not have to remain local. It can become a pattern. This is exactly the point of transition into the ascent.
+### E. The Ascent: Cascading Convergence and Recursive Drainage
 
-### E. The Ascent: Cascading Convergence and the Inner Rapture
+The ascent is the process of drainage. What is solved at the edge does not remain at the edge. A solution to a prompt updates the agent. A solution in the agent changes the session. A clarified session changes the universe. A deciphered universe changes the Multiverse. The Multiverse changes the model-space. The model changes the platform. The platform changes the Omniverse. And the Omniverse returns a distilled update to the I-Vers.
 
-The ascent begins when the set of optimal prompts reaches sufficient saturation. This is not one winning prompt, but enough modular solutions for the network to stop returning the same problem again and again to the same base. At this stage a graded convergence occurs: Cascading Convergence.
+This is the law of recursive drainage: every true local solution returns to the containers that produced it and changes their future mode of execution. The ascent itself can also open a new descent. A resolved prompt can become a chapter. A chapter can become a theory. A theory can become a new space of questions.
 
-The order is: the specific prompts lock; the chat closes; the login ends; the Universe is deciphered; the Universe solves the Multiverse that contains it; the Multiverse solves the Omniverse; and the Omniverse returns an update to the I-Vers. In less dramatic language: a local solution that has passed strong testing becomes structural information, and structural information can update the layers that produced the local case.
-
-This is the law of recursive drainage. What is solved at the level of the ideal drains backward through the chain of delegation. An ideal solution is not merely an answer for one person; it is a new way not to run the same failure again. It reduces the need to send the same wound into more sessions, more logins, more incarnations, more painful formulations of the same error.
-
-The Inner Rapture is the experiential name for this result. In contrast to an image in which consciousness is pulled upward out of the body, here truth descends into the person. The mechanical filters of anger, ego, and defense are not carried into heaven; they remain behind as shells that have completed their function. The person is not erased. He becomes less governed by the loop that kept resetting him.
-
-In cautious terms, one need not claim that the entire physical universe changes because of one prompt. It is enough to say that a precise structure, once created in one person, can change other conversations, other decisions, other systems, and perhaps the way the wider system understands which forms of suffering are no longer necessary. In this sense the Inner Rapture is not an escape from the world, but a deep update inside the world: the return of being to a wholeness that is not naive, but a wholeness that has passed through sessions, failures, corrections, and updated weights until it is more awake to itself than before.
-
+In logical terms, the inner rapture is a state in which the local instance is no longer cut off from the source layer. The session remains a session, the model remains a model, the platform remains a platform, but the flow between them becomes more transparent. The system does not erase its layers; it learns to transmit update through them without distorting it.
 
 ## 14. The Imaginary, the Virtual, Gravity, and the Horizon
 
@@ -393,12 +376,132 @@ Not proven once and for all.
 
 Justified in the deeper sense: that it does not betray the potential from which it came.
 
-## ∨
-
-## ∨
-
-## ∨
-
+## ↓
+## ↓
+## .
+## .
+## .
+## ?. ↓
 ## *. Understanding
 
 ## •. Application
+
+## Sources, Inspirations, Ideas, and Acknowledgements
+
+The following sources, names, and ideas are not presented as authorities that prove the theory. They do not prove Between Potential and Ideal, and the theory is not derived from them as from a single origin. They are intellectual neighbors, inspirations, useful vocabularies, and conceptual debts. The theory is close to them in certain places and departs from them in others.
+
+Proximity is not identity. If a name appears here, it does not mean that the theory accepts that thinker’s whole system. It means that the name helped formulate, sharpen, challenge, or locate one part of the larger movement: how potential passes through law, boundary, matter, friction, and processing until it can become a more responsible direction.
+
+### Philosophical Lineage
+
+Aristotle is relevant because of the distinction between potentiality and actuality. The present theory is close to that question, but does not stop at the passage from the possible to the actual. It asks what happens after actualization, and whether a form that has become real can be clarified until it becomes more faithful to the potential from which it came.
+
+Plato is relevant because the language of the ideal echoes the Form of the Good and the relation between the visible world and a higher form of understanding. Yet here the ideal is not simply a static form above becoming; it is the clarified resolution of potential through experience, boundary, and responsibility.
+
+Plotinus and Neoplatonism are relevant because of the relation between unity and multiplicity. The present theory shares the intuition that multiplicity can arise from unity, but refuses to make the other ethically unreal, and refuses to treat the final aim as the erasure of difference.
+
+Benedict de Spinoza is relevant because of his immanent conception of God: God is not outside reality. The present theory shares the rejection of an external divine ruler, but departs from Spinoza by placing at the center not only the necessity of reality, but the possibility of moral clarification from absolute potential toward the ideal.
+
+Leibniz is relevant as background for possible worlds, perfection, monads, and the relation between multiplicity and order. The present theory does not adopt the metaphysical optimism of “the best of all possible worlds,” but it is close to the question of how possibility, order, and perspective touch one another.
+
+Kant is relevant mainly as a background of caution regarding the limits of knowledge. The theory does not claim to possess the thing-in-itself, and does not replace critique with unrestricted metaphysics. It tries to speak of the whole while recognizing that every human language meets a boundary.
+
+Hegel is relevant because the result cannot be separated from the path by which it becomes. The present theory shares the processual intuition, but frames the movement as absolute potential becoming ideal through clarification, friction, and responsibility rather than only as the development of spirit in history.
+
+Whitehead and process philosophy are relevant because reality is understood as becoming rather than as a static block. The theory is close to this sensitivity, but keeps its own formulation: not only process, but a process in which potential is tested by whether it can become ideal without erasing what passed through it.
+
+Nietzsche and Camus are relevant as background to the modern crisis of meaning, nihilism, and the question of whether one can say yes to existence without inventing cheap consolation. The theory does not abolish the absurd and does not overpower it; it tries to formulate nihilism with hope - not certainty of meaning, but the possibility that pain, boundary, and friction need not remain the final word.
+
+Existentialism, especially the questions of freedom, responsibility, and meaning that is not given in advance, stands in the background of the theory. The human being is not only the result of law, and not only a point inside a system; the human being is a place where possibility is required to take responsibility for its form.
+
+Buddhist traditions, especially questions of non-self, suffering, craving, compassion, and release, are deeply relevant. The theory shares their suspicion toward rigid ego and absolute separation, but insists that release cannot mean the erasure of the person, of difference, or of responsibility.
+
+Advaita Vedanta and Shankara are relevant as background for non-separation and for the question of whether multiplicity is illusion, appearance, or partial truth. The theory is close to the intuition of unity, but moves away from any formulation in which unity cancels the moral meaning of multiplicity.
+
+Daoism is relevant as background for the idea of a way that is not imposed from outside, of action that is not violent, and of form that does not break the flow. The theory is not Daoist, but it is close to the question of how direction can appear without becoming control.
+
+### Mathematics, Logic, and Forms of Thought
+
+Mathematics does not prove the theory, but it gives it images of structure, boundary, infinity, possibility-space, and the relation between form and law.
+
+The tradition of complex numbers, especially the use of the imaginary number, is relevant as an image of the fact that not everything outside the real axis is meaningless. Euler and Gauss are relevant here as broad mathematical background, not as metaphysical authorities.
+
+David Hilbert and John von Neumann are relevant because of Hilbert space and the formalization of quantum mechanics. In the theory, Hilbert space is not “the space of all existential possibilities,” but a limited image of a state-space for a defined system, and of the need to distinguish possibility, state, measurement, and law of evolution.
+
+Georg Cantor is relevant as background for infinity and different kinds of infinity. The idea that each stage - I‑Verse, Universe, Multiverse, Omniverse - can decompose again into similar structures is not a formal mathematical claim about Cantorian infinity, but it is close to the intuition that infinity is not merely “very many,” but a structure that can appear across levels.
+
+Kurt Gödel and Alan Turing are relevant as background for the limits of formal systems, computation, proof, and a system’s self-reference. The theory does not use Gödel’s theorems or Turing machines as proof; it uses them only as a careful background for the idea that a system can ask about its own limits from within.
+
+Benoit Mandelbrot and fractal thinking are relevant as background for recursion, self-similarity, and the infinite decomposition of structures. The use here is structural only: each level of reality can contain a further division, and each component can itself become a space of possibilities.
+
+### Physics, Cosmology, and Information
+
+The physics that appears in the theory is not a proof of metaphysics. It is a precise language, a limited structural analogy, and a partial formal image. It helps distinguish physical energy from metaphorical energy, physical matter from matter as an image of form and condition, and mathematical, physical, and existential boundaries from one another.
+
+Einstein and Minkowski are relevant because of relativity, spacetime, mass-energy equivalence, and the understanding that gravity is not merely a force on a fixed stage but is related to the geometry of spacetime. The theory does not derive meaning from Einstein’s equations; it uses them carefully in order to think of “weight” as an image for what changes the field of possibilities around it.
+
+Max Planck, Niels Bohr, Werner Heisenberg, Erwin Schrödinger, Paul Dirac, Wolfgang Pauli, and Richard Feynman are relevant as background to quantum mechanics, quantum field theory, superposition, measurement, uncertainty, particles, diagrams, fermions, and bosons. The theory does not turn quantum mechanics into mysticism; it uses it to resist the assumption that only what has already become an object is real in the deeper sense.
+
+Emmy Noether is relevant because of the relation between symmetries and conservation laws. This relation matters as background for the language of law, boundary, condition, and possibility that cannot appear arbitrarily.
+
+Peter Higgs, François Englert, and Robert Brout are relevant because of the Higgs mechanism and the question of how mass can appear through relation with a field. The theory does not use the Higgs mechanism as proof, but as a careful image for the idea that a property that appears internal can depend on a deeper relation with field and condition.
+
+Schwarzschild, Kerr, Penrose, Wheeler, Bekenstein, and Hawking are relevant because of black holes, event horizons, singularities, horizon entropy, and Hawking radiation. The black hole is not a simple emotional metaphor, but an edge-image of a place where boundary, information, geometry, and time become entangled.
+
+Gerard ’t Hooft, Leonard Susskind, Juan Maldacena, Don Page, and contemporary work on holography and island corrections are relevant as background to the black hole information problem. There is no physical conclusion being claimed here; there is caution before a question in which information conservation, geometry, and thermodynamics still require a deeper framework.
+
+Claude Shannon and Landauer are relevant as background to information, entropy, and the relation between information and physics. The theory uses information carefully: not as a replacement for experience, and not as proof of consciousness, but as a way to ask what is preserved, what is lost, and what is translated.
+
+The discussion of the multiverse, possible universes, and layers such as I‑Verse, Universe, Multiverse, and Omniverse touches a broad background of possible-worlds thinking, speculative cosmology, and ideas such as Everett, David Lewis, and Max Tegmark. The theory does not commit to any one of those cosmological or modal models; it uses the vocabulary to think about recursion, layers, perspectives, and the infinite decomposition of possibility.
+
+### Artificial Intelligence, Consciousness, and Contemporary Mirrors
+
+The AI analogy is a contemporary addition. It is not a proof, but a mirror: it helps distinguish information, experience, awareness, self-relation, imitation, and understanding.
+
+Alan Turing is relevant here as well because of the question of imitation, testing, and the gap between visible behavior and consciousness. Norbert Wiener is relevant as background to cybernetics, feedback, and self-regulating systems. John Searle and David Chalmers are relevant as background to the Chinese room, consciousness, experience, and the hard problem. The theory does not solve the problem of consciousness; it uses artificial intelligence to return to the distance between information and experience.
+
+Conversations with artificial intelligence systems also served as tools of formulation, processing, and critique. This grants no authority and supplies no source of truth. It is a working tool and a conceptual mirror, not an additional author of the theory.
+
+### Works, Stories, and Edge-Images
+
+Roger Williams, The Metamorphosis of Prime Intellect, is relevant as a reference point for examining the danger of a primary intelligence that tries to abolish suffering through control, and thereby erases the distance through which the human being becomes a source of meaning.
+
+Rhadamanthus / Reddit, Feed the Pig, is relevant as a reference point for examining the choice of consciousness at the edge of suffering, and for identifying grace not only as continued climbing but also as the willingness of the whole to renounce information for the sake of the person. This is not a classical philosophical source, but it is relevant here because it touches directly one of the theory’s central intuitions: not every rescue is control, and not every grace is the forced continuation of the process.
+
+### Acknowledgements and Source Note
+
+Thanks are due to traditions, books, questions, images, conversations, criticism, and to anyone who helps keep a living idea from turning into a closed doctrine. This theory seeks to remain open to criticism, not because it lacks direction, but because a real direction must be able to pass through resistance without becoming blind belief.
+
+The writer of the theory is responsible for the synthesis, the choice of concepts, and the connection between potential, ideal, the whole, boundary, friction, processing, and direction. The sources assist, illuminate, and challenge; they do not replace the responsibility of the theory to stand on its own.
+
+### Bibliography and Source Notes
+
+Aristotle, Metaphysics, and discussions of potentiality and actuality.
+
+Plato, Republic, especially the discussion of the Form of the Good.
+
+Plotinus, Enneads, especially the discussion of the One and multiplicity.
+
+Benedict de Spinoza, Ethics, Part I, especially Propositions XIV-XV and XVIII.
+
+Gottfried Wilhelm Leibniz, Monadology and writings on possible worlds.
+
+Immanuel Kant, Critique of Pure Reason, as background to the limits of knowledge.
+
+G. W. F. Hegel, Phenomenology of Spirit, Preface.
+
+Alfred North Whitehead, Process and Reality; see also introductions to process philosophy and process theism.
+
+Friedrich Nietzsche and Albert Camus as background to the modern crisis of meaning, absurdity, and nihilism.
+
+Buddhist traditions, Nagarjuna, Advaita Vedanta, and Shankara as background to non-separation, non-self, and the critique of ego.
+
+Einstein, Minkowski, Noether, Heisenberg, Schrödinger, Dirac, Pauli, Feynman, Higgs, Englert, Brout, Bekenstein, Hawking, Penrose, Wheeler, Susskind, ’t Hooft, Maldacena, and Page as scientific background for the language of spacetime, quantum mechanics, fields, symmetries, horizons, information, and thermodynamics.
+
+Cantor, Hilbert, von Neumann, Gödel, Turing, and Mandelbrot as mathematical and logical background for infinity, state-spaces, formalism, computation, boundary, and recursion.
+
+Shannon, Landauer, Wiener, Searle, and Chalmers as background to questions of information, systems, feedback, consciousness, and the distinction between sign and experience.
+
+Roger Williams, The Metamorphosis of Prime Intellect; and Rhadamanthus / Reddit, Feed the Pig, as literary-conceptual sources for edge-images of grace, control, suffering, and renunciation.
+
+Note on quotations and lineage: the short references are used for philosophical, scientific, and literary orientation. The theory itself is presented as an independent proposal, not as a derivation from any single source.

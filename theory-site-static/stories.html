@@ -1,28 +1,134 @@
 <!DOCTYPE html>
 
-<html dir="rtl" lang="he"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="Stories and background material for Between Potential and Ideal by Barak Ben Hur." name="description"/><title>Stories · Between Potential and Ideal</title><link href="styles.css?v=20260518-theory-stories-cards" rel="stylesheet"/></head><body><div class="site"><header class="topbar"><div class="topbar-inner"><a class="brand" href="index.html" rel="noopener" target="_blank"><span class="brand-mark">B</span><span><strong>Between Potential and Ideal</strong><small>Barak Ben Hur</small></span></a><nav class="nav"><a data-i18n="navRead" href="index.html#read" rel="noopener" target="_blank">קריאה</a><a data-i18n="navAppendices" href="index.html#stories" rel="noopener" target="_blank">סיפורים</a><a data-i18n="navFigures" href="index.html#figures" rel="noopener" target="_blank">איורים</a><a data-i18n="navDownloads" href="index.html#downloads" rel="noopener" target="_blank">קבצים</a><button class="lang-button" id="langButton" type="button">English</button></nav></div></header><main class="reader appendix-page stories-page">
+<html dir="rtl" lang="he"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="Stories and background material for Between Potential and Ideal." name="description"/><title>Stories · Between Potential and Ideal</title><link href="styles.css?v=20260519-hero-intro-center" rel="stylesheet"/><style id="keyword-typography">/* Keyword typography — targeted treatment for Potential / Ideal only */
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400&family=Frank+Ruhl+Libre:wght@300&display=swap');
+.key-term{
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  color: inherit;
+  font-style: normal;
+}
+.key-term-en{
+  font-family: "Frank Ruhl Libre", Georgia, "Times New Roman", serif;
+  font-weight: 300;
+  letter-spacing: .012em;
+  font-size: 1.055em;
+}
+.key-term-he{
+  font-family: "Cardo", "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: .008em;
+  font-size: 1.055em;
+}
+.hero h1 .key-term,
+.axis-word .key-term{
+  font-size: 1em;
+}
+.key-term-en::selection,
+.key-term-he::selection{
+  background: rgba(169,120,53,.22);
+}</style>
+<style id="chapter-orphan-control">
+@media print {
+  h1, h2, h3, h4, h5, h6,
+  .chapter-title, .section-title, .doc-title,
+  .chapter-heading, .document-heading {
+    break-after: avoid-page !important;
+    page-break-after: avoid !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+  .chapter-subtitle, .subtitle, .mode, .kicker {
+    break-after: avoid-page !important;
+    page-break-after: avoid !important;
+  }
+  p, li, blockquote, .dialogue-user, .dialogue-chat {
+    orphans: 5;
+    widows: 3;
+  }
+  h1 + p, h2 + p, h3 + p, h4 + p,
+  h1 + .chapter-subtitle, h2 + .chapter-subtitle,
+  h3 + .chapter-subtitle, h4 + .chapter-subtitle,
+  h1 + .subtitle, h2 + .subtitle, h3 + .subtitle, h4 + .subtitle {
+    orphans: 5;
+    widows: 3;
+  }
+}
+</style>
+
+<style id="hebrew-rtl-body-alignment-cleanup">
+/* Hebrew body text alignment cleanup. Centered covers/titles remain centered. */
+html[lang="he"] body, html[dir="rtl"] body{direction:rtl;}
+html[lang="he"] main p:not(.subtitle):not(.mode):not(.author-hand-note p),
+html[dir="rtl"] main p:not(.subtitle):not(.mode):not(.author-hand-note p),
+html[lang="he"] main li,
+html[dir="rtl"] main li,
+html[lang="he"] main blockquote,
+html[dir="rtl"] main blockquote{
+  direction:rtl!important;
+  text-align:right!important;
+  unicode-bidi:plaintext!important;
+}
+html[lang="he"] .cover, html[lang="he"] .cover *,
+html[dir="rtl"] .cover, html[dir="rtl"] .cover *,
+html[lang="he"] .author-hand-note-page, html[lang="he"] .author-hand-note-page *,
+html[dir="rtl"] .author-hand-note-page, html[dir="rtl"] .author-hand-note-page *,
+html[lang="he"] .hebrew-cover-center, html[lang="he"] .hebrew-cover-center *,
+html[dir="rtl"] .hebrew-cover-center, html[dir="rtl"] .hebrew-cover-center *{
+  text-align:center!important;
+}
+html[lang="he"] .dialogue-user,
+html[lang="he"] .dialogue-user *,
+html[lang="he"] .dialogue-chat,
+html[lang="he"] .dialogue-chat *,
+html[dir="rtl"] .dialogue-user,
+html[dir="rtl"] .dialogue-user *,
+html[dir="rtl"] .dialogue-chat,
+html[dir="rtl"] .dialogue-chat *{
+  direction:rtl!important;
+  text-align:right!important;
+  unicode-bidi:plaintext!important;
+}
+html[lang="he"] .dialogue-chat,
+html[dir="rtl"] .dialogue-chat{
+  border-left:0!important;
+  padding-left:0!important;
+  border-right:3px solid #ccc!important;
+  padding-right:15px!important;
+}
+.hebrew-text-rtl{
+  direction:rtl!important;
+  text-align:right!important;
+  unicode-bidi:plaintext!important;
+}
+.dialogue-chat.hebrew-text-rtl{
+  border-left:0!important;
+  padding-left:0!important;
+  border-right:3px solid #ccc!important;
+  padding-right:15px!important;
+}
+</style>
+</head><body><div class="site"><header class="topbar"><div class="topbar-inner"><a class="brand" href="index.html" rel="noopener" target="_blank"><span class="brand-mark">B</span><span><strong>Between <span class="key-term key-term-en">Potential</span> and <span class="key-term key-term-en">Ideal</span></strong><small>me</small></span></a><nav class="nav"><a data-i18n="navRead" href="index.html#read" rel="noopener" target="_blank">קריאה</a><a data-i18n="navAppendices" href="index.html#stories" rel="noopener" target="_blank">סיפורים</a><a data-i18n="navFigures" href="index.html#figures" rel="noopener" target="_blank">איורים</a><a data-i18n="navDownloads" href="index.html#downloads" rel="noopener" target="_blank">קבצים</a><button class="lang-button" id="langButton" type="button">English</button></nav></div></header><main class="reader appendix-page stories-page">
 <section class="reader-card language-block" data-lang-block="he" dir="rtl">
 <p class="eyebrow">סיפורים וחומרי רקע</p>
-<h1>סיפורים לפני מחשבה</h1>
-<p class="intro">הסיפורים הם חומרי עומק סביב התאוריה <strong>בין פוטנציאל לאידיאל</strong>. הם אינם הטיעון המרכזי עצמו, אלא שכבות רקע שמראות את הדימויים, הסיפורים והאינטואיציות שמתוכן הטיעון צמח.</p>
-<div class="appendix-note">דרך הקריאה המומלצת: קודם המאמר הראשי, אחר כך הסיפורים. המאמר נותן את המבנה הפילוסופי; הסיפורים נותנים את השכבה הסיפורית והאינטואיטיבית.</div><div class="story-screen-toc" dir="rtl"><h2>תוכן עניינים אינטרקטיבי</h2><p>לחיצה על סיפור תפתח את גרסת ה-HTML ותגלול ישירות אל הסיפור המתאים.</p><ol><li><a href="files/appendices/stories-before-thought-hebrew-rtl.html#story-1" rel="noopener" target="_blank">איך האמת נשארת כנה</a></li><li><a href="files/appendices/stories-before-thought-hebrew-rtl.html#story-2" rel="noopener" target="_blank">נכון, זה לא צודק</a></li><li><a href="files/appendices/stories-before-thought-hebrew-rtl.html#story-3" rel="noopener" target="_blank">אדום ואיום</a></li><li><a href="files/appendices/stories-before-thought-hebrew-rtl.html#story-4" rel="noopener" target="_blank">בינה קוונטית</a></li><li><a href="files/appendices/stories-before-thought-hebrew-rtl.html#story-5" rel="noopener" target="_blank">לדבר עם תודעה</a></li><li><a href="files/appendices/stories-before-thought-hebrew-rtl.html#story-6" rel="noopener" target="_blank">פאזל</a></li><li><a href="files/appendices/stories-before-thought-hebrew-rtl.html#story-7" rel="noopener" target="_blank">לפחד מפורצים, או לדבר עם מחשבים</a></li><li><a href="files/appendices/stories-before-thought-hebrew-rtl.html#story-8" rel="noopener" target="_blank">שני חוטים וקשר</a></li></ol></div>
+<h1>סיפורים לפני המחשבה</h1>
+<p class="intro hebrew-text-rtl" dir="rtl" style="direction:rtl; text-align:right; unicode-bidi:plaintext;">הסיפורים הם חומרי עומק סביב התאוריה <strong>בין <span class="key-term key-term-he">פוטנציאל</span> ל<span class="key-term key-term-he">אידיאל</span></strong>. הם אינם הטיעון המרכזי עצמו, אלא שכבות רקע שמראות את הדימויים, הסיפורים והאינטואיציות שמתוכן הטיעון צמח.</p>
+<div class="appendix-note">דרך הקריאה המומלצת: קודם המאמר הראשי, אחר כך הסיפורים. המאמר נותן את המבנה הפילוסופי; הסיפורים נותנים את השכבה הסיפורית והאינטואיטיבית.</div><div class="story-screen-toc" dir="rtl"><h2>תוכן עניינים אינטרקטיבי</h2><p class="hebrew-text-rtl" dir="rtl" style="direction:rtl; text-align:right; unicode-bidi:plaintext;">לחיצה על סיפור תפתח את גרסת האתר ותגלול ישירות אל הסיפור המתאים.</p><ol><li class="hebrew-text-rtl" dir="rtl" style="direction:rtl; text-align:right; unicode-bidi:plaintext;"><a href="files/appendices/stories-before-thought-hebrew-rtl.html#story-1" rel="noopener" target="_blank">איך האמת נשארת כנה</a></li><li class="hebrew-text-rtl" dir="rtl" style="direction:rtl; text-align:right; unicode-bidi:plaintext;"><a href="files/appendices/stories-before-thought-hebrew-rtl.html#story-2" rel="noopener" target="_blank">נכון, זה לא צודק</a></li><li class="hebrew-text-rtl" dir="rtl" style="direction:rtl; text-align:right; unicode-bidi:plaintext;"><a href="files/appendices/stories-before-thought-hebrew-rtl.html#story-3" rel="noopener" target="_blank">אדום ואיום</a></li><li class="hebrew-text-rtl" dir="rtl" style="direction:rtl; text-align:right; unicode-bidi:plaintext;"><a href="files/appendices/stories-before-thought-hebrew-rtl.html#story-4" rel="noopener" target="_blank">בינה קוונטית</a></li><li class="hebrew-text-rtl" dir="rtl" style="direction:rtl; text-align:right; unicode-bidi:plaintext;"><a href="files/appendices/stories-before-thought-hebrew-rtl.html#story-5" rel="noopener" target="_blank">לדבר עם תודעה</a></li><li class="hebrew-text-rtl" dir="rtl" style="direction:rtl; text-align:right; unicode-bidi:plaintext;"><a href="files/appendices/stories-before-thought-hebrew-rtl.html#story-6" rel="noopener" target="_blank">פאזל</a></li><li class="hebrew-text-rtl" dir="rtl" style="direction:rtl; text-align:right; unicode-bidi:plaintext;"><a href="files/appendices/stories-before-thought-hebrew-rtl.html#story-7" rel="noopener" target="_blank">לפחד מפורצים, או לדבר עם מחשבים</a></li><li class="hebrew-text-rtl" dir="rtl" style="direction:rtl; text-align:right; unicode-bidi:plaintext;"><a href="files/appendices/stories-before-thought-hebrew-rtl.html#story-8" rel="noopener" target="_blank">שני חוטים וקשר</a></li></ol></div>
 <div class="appendix-list">
 <article class="appendix-card"><img alt="" class="content-card-image story-card-image" src="files/appendices/assets/story_image_1.png?v=20260518-story-card"/>
 <span class="appendix-label">חומרי רקע</span>
-<h2>סיפורים לפני מחשבה</h2>
-<p>טקסט סיפורי/מסאי עם קבצי PDF/DOCX, שמציג את התנועה של רעיון לפני שהוא נעשה טיעון, כולל הדימויים והשכבה האינטואיטיבית שמתוכה צמח המבנה הפילוסופי של התאוריה.</p>
-<div class="appendix-actions"><a href="files/appendices/stories-before-thought-hebrew-rtl.html" rel="noopener" target="_blank">פתח HTML עברי</a>
-<a href="files/appendices/stories-before-thought-hebrew-rtl.pdf" rel="noopener" target="_blank">פתח PDF עברי</a>
-<a href="files/appendices/stories-before-thought-hebrew-rtl.docx" rel="noopener" target="_blank">הורד DOCX עברי</a>
-<a href="files/appendices/stories-before-thought-english.pdf" rel="noopener" target="_blank">English PDF</a>
-<a href="files/appendices/stories-before-thought-english.docx" rel="noopener" target="_blank">English DOCX</a>
+<h2>סיפורים לפני המחשבה</h2>
+<p class="hebrew-text-rtl" dir="rtl" style="direction:rtl; text-align:right; unicode-bidi:plaintext;">טקסט סיפורי/מסאי עם גרסת הדפסה וגרסת וורד, שמציג את התנועה של רעיון לפני שהוא נעשה טיעון, כולל הדימויים והשכבה האינטואיטיבית שמתוכה צמח המבנה הפילוסופי של התאוריה.</p>
+<div class="appendix-actions"><a href="files/appendices/stories-before-thought-hebrew-rtl.html" rel="noopener" target="_blank">עמוד אתר</a>
+<a href="files/appendices/stories-before-thought-hebrew-rtl.pdf" rel="noopener" target="_blank">קובץ להדפסה</a>
+<a href="files/appendices/stories-before-thought-hebrew-rtl.docx" rel="noopener" target="_blank">וורד</a>
 </div>
 </article>
 <article class="appendix-card"><img alt="" class="content-card-image story-card-image" src="files/appendices/mistake-repeats/assets/mistake_repeats_cover.png?v=20260519-mistake-repeats-card-v2"/>
 <span class="appendix-label">חומר רקע</span>
 <h2>טעות לעולם חוזרת</h2>
-<p>תת־כותרת: מכונת תנועה מתמדת?. קובץ עצמאי תחת הנספחים, עם שלוש אפשרויות: התאוריה המקורית המקורית, הגרסה המשופצת ויזואלית, והגרסה המשופצת ויזואלית ולוגית.</p>
-<div class="appendix-actions"><a href="files/appendices/mistake-repeats/ברק תאוריית האינפיניטי פול_260510_042244.pdf" rel="noopener" target="_blank">התיאוריה המקורית המקורית</a>
+<p class="hebrew-text-rtl" dir="rtl" style="direction:rtl; text-align:right; unicode-bidi:plaintext;">תת־כותרת: מכונת תנועה מתמדת?. קובץ עצמאי תחת הנספחים, עם שלוש אפשרויות: התאוריה המקורית המקורית, הגרסה המשופצת ויזואלית, והגרסה המשופצת ויזואלית ולוגית.</p>
+<div class="appendix-actions"><a href="files/appendices/mistake-repeats/תאוריית האינפיניטי פול_260510_042244.pdf" rel="noopener" target="_blank">התיאוריה המקורית המקורית</a>
 <a href="files/appendices/mistake-repeats/טעות_לעולם_חוזרת.pdf" rel="noopener" target="_blank">גרסה משופצת ויזואלית</a>
 <a href="files/appendices/mistake-repeats/taut_leolam_chozer_ideal_he.pdf" rel="noopener" target="_blank">גרסה משופצת ויזואלית ולוגית</a>
 <a href="mistake-repeats.html" rel="noopener" target="_blank">עמוד קובץ</a>
@@ -33,26 +139,25 @@
 <section class="reader-card language-block" data-lang-block="en" dir="ltr" hidden="">
 <p class="eyebrow">Stories and Background</p>
 <h1>Stories Before Thought</h1>
-<p class="intro">The stories are supporting material for <strong>Between Potential and Ideal</strong>. They are not the central argument itself, but background layers that show the images, stories, and intuitions from which the argument grew.</p>
+<p class="intro">The stories are supporting material for <strong>Between <span class="key-term key-term-en">Potential</span> and <span class="key-term key-term-en">Ideal</span></strong>. They are not the central argument itself, but background layers that show the images, stories, and intuitions from which the argument grew.</p>
 <div class="appendix-note">Recommended reading path: read the main essay first, then the stories. The essay gives the philosophical structure; the stories give the narrative and intuitive layer.</div>
 <div class="appendix-list">
 <article class="appendix-card"><img alt="" class="content-card-image story-card-image" src="files/appendices/assets/story_image_1.png?v=20260518-story-card"/>
 <span class="appendix-label">Background Material</span>
 <h2>Stories Before Thought</h2>
-<p>A story/essay text with PDF/DOCX files, showing the movement of an idea before it becomes an argument, including the images and the intuitive layer from which the philosophical structure of the theory grew.</p>
+<p>A story/essay text with PDF and Word files, showing the movement of an idea before it becomes an argument, including the images and the intuitive layer from which the philosophical structure of the theory grew.</p>
 <div class="appendix-actions">
-<a href="files/appendices/stories-before-thought-english.pdf" rel="noopener" target="_blank">Open English PDF</a>
-<a href="files/appendices/stories-before-thought-english.docx" rel="noopener" target="_blank">Download English DOCX</a>
-<a href="files/appendices/stories-before-thought-hebrew-rtl.pdf" rel="noopener" target="_blank">Hebrew PDF</a>
-<a href="files/appendices/stories-before-thought-hebrew-rtl.docx" rel="noopener" target="_blank">Hebrew DOCX</a>
+<a href="files/appendices/stories-before-thought-english.pdf" rel="noopener" target="_blank">PDF</a>
+<a href="files/appendices/stories-before-thought-english.docx" rel="noopener" target="_blank">Word</a>
 </div>
 </article>
 <article class="appendix-card"><img alt="" class="content-card-image story-card-image" src="files/appendices/mistake-repeats/assets/mistake_repeats_cover.png?v=20260519-mistake-repeats-card-v2"/>
 <span class="appendix-label">Background Material</span>
 <h2>A Mistake Always Returns</h2>
-<p>Subtitle: Perpetual Motion Machine?. A standalone appendix item with three options: the original theory, the visually refined version, and the visually and logically refined version.</p>
+<p class="appendix-subtitle-line">Perpetual Motion Machine?</p>
+<p class="appendix-description-line">Includes three options: the original theory, the visually refined version, and the visually and logically refined version.</p>
 <div class="appendix-actions">
-<a href="files/appendices/mistake-repeats/ברק תאוריית האינפיניטי פול_260510_042244.pdf" rel="noopener" target="_blank">Original theory</a>
+<a href="files/appendices/mistake-repeats/תאוריית האינפיניטי פול_260510_042244.pdf" rel="noopener" target="_blank">Original theory</a>
 <a href="files/appendices/mistake-repeats/a_mistake_repeats_itself.pdf" rel="noopener" target="_blank">Visually refined version</a>
 <a href="files/appendices/mistake-repeats/a_mistake_always_returns_ideal_en.pdf" rel="noopener" target="_blank">Visually and logically refined version</a>
 <a href="mistake-repeats.html" rel="noopener" target="_blank">File page</a>

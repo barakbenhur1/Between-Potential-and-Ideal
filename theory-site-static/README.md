@@ -11,3 +11,6 @@ Updates in this build:
 
 
 Stories/background page restored as `stories.html`; story files are under `files/appendices/`.
+
+- Added Mass-Energy and Medium as the final Hebrew theory chapter above the arrow section.
+- Added chapter subtitles to the Hebrew theory structure.

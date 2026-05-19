@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Stories Before Thought</title><style>
+
+<html dir="ltr" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Stories Before Thought</title><style>
 :root { --ink:#1d2733; --muted:#766b60; --paper:#fbf8ef; --line:#d8cdbc; --gold:#9a7140; --blue:#172635; }
 @page { size: A4; margin: 17mm 18mm 18mm 18mm; }
 * { box-sizing: border-box; }
@@ -121,8 +122,6 @@ nav {
   text-align: center !important;
 }
 </style>
-
-
 <style id="final-caption-center-fix">
 figcaption,
 figure figcaption {
@@ -132,8 +131,6 @@ figure figcaption {
   margin-right: auto !important;
 }
 </style>
-
-
 <style id="story-pagebreaks-and-image6-finish-fix">
 /* Every story begins on a fresh print/PDF page. */
 section.page.story {
@@ -168,13 +165,183 @@ section.page.story:first-of-type {
   margin: 0 auto !important;
 }
 </style>
+<style id="cover-page-presence-fix">
+@media print {
+  .cover, .title-page, .document-cover {
+    min-height: 86vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+    break-after: page !important;
+    page-break-after: always !important;
+    overflow: visible !important;
+  }
+  .cover h1, .cover h1.title, .title-page h1, .document-cover h1 {
+    font-size: 42px !important;
+    line-height: 1.1 !important;
+    margin: 0 auto 14px !important;
+    max-width: 760px !important;
+    width: 100% !important;
+    text-align: center !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+  .cover .subtitle, .title-page .subtitle, .document-cover .subtitle {
+    font-size: 20px !important;
+    line-height: 1.35 !important;
+    max-width: 760px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+  .cover .tagline, .cover .author, .cover .core, .cover .kicker, .cover .mode, .cover .meta, .title-page .kicker, .document-cover .kicker {
+    max-width: 760px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+  .cover .kicker, .cover .mode, .cover .meta, .title-page .kicker, .document-cover .kicker {
+    font-size: 16px !important;
+    margin-bottom: 12px !important;
+  }
+  .cover img, .cover-image {
+    max-height: 42vh !important;
+    object-fit: contain !important;
+  }
+}
+@media screen {
+  .cover h1, .cover h1.title, .title-page h1, .document-cover h1 {
+    font-size: clamp(2.3rem, 4.8vw, 3.65rem) !important;
+    line-height: 1.1 !important;
+    max-width: 760px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .cover .subtitle, .title-page .subtitle, .document-cover .subtitle {
+    font-size: clamp(1.15rem, 1.8vw, 1.45rem) !important;
+    max-width: 760px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+</style>
+<style id="keyword-typography">/* Keyword typography — targeted treatment for Potential / Ideal only */
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400&family=Frank+Ruhl+Libre:wght@300&display=swap');
+.key-term{
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  color: inherit;
+  font-style: normal;
+}
+.key-term-en{
+  font-family: "Frank Ruhl Libre", Georgia, "Times New Roman", serif;
+  font-weight: 300;
+  letter-spacing: .012em;
+  font-size: 1.055em;
+}
+.key-term-he{
+  font-family: "Cardo", "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: .008em;
+  font-size: 1.055em;
+}
+.hero h1 .key-term,
+.axis-word .key-term{
+  font-size: 1em;
+}
+.key-term-en::selection,
+.key-term-he::selection{
+  background: rgba(169,120,53,.22);
+}</style>
+<style id="chapter-orphan-control">
+@media print {
+  h1, h2, h3, h4, h5, h6,
+  .chapter-title, .section-title, .doc-title,
+  .chapter-heading, .document-heading {
+    break-after: avoid-page !important;
+    page-break-after: avoid !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+  .chapter-subtitle, .subtitle, .mode, .kicker {
+    break-after: avoid-page !important;
+    page-break-after: avoid !important;
+  }
+  p, li, blockquote, .dialogue-user, .dialogue-chat {
+    orphans: 5;
+    widows: 3;
+  }
+  h1 + p, h2 + p, h3 + p, h4 + p,
+  h1 + .chapter-subtitle, h2 + .chapter-subtitle,
+  h3 + .chapter-subtitle, h4 + .chapter-subtitle,
+  h1 + .subtitle, h2 + .subtitle, h3 + .subtitle, h4 + .subtitle {
+    orphans: 5;
+    widows: 3;
+  }
+}
+</style>
 
+<style id="hebrew-rtl-body-alignment-cleanup">
+/* Hebrew body text alignment cleanup. Centered covers/titles remain centered. */
+html[lang="he"] body, html[dir="rtl"] body{direction:rtl;}
+html[lang="he"] main p:not(.subtitle):not(.mode):not(.author-hand-note p),
+html[dir="rtl"] main p:not(.subtitle):not(.mode):not(.author-hand-note p),
+html[lang="he"] main li,
+html[dir="rtl"] main li,
+html[lang="he"] main blockquote,
+html[dir="rtl"] main blockquote{
+  direction:rtl!important;
+  text-align:right!important;
+  unicode-bidi:plaintext!important;
+}
+html[lang="he"] .cover, html[lang="he"] .cover *,
+html[dir="rtl"] .cover, html[dir="rtl"] .cover *,
+html[lang="he"] .author-hand-note-page, html[lang="he"] .author-hand-note-page *,
+html[dir="rtl"] .author-hand-note-page, html[dir="rtl"] .author-hand-note-page *,
+html[lang="he"] .hebrew-cover-center, html[lang="he"] .hebrew-cover-center *,
+html[dir="rtl"] .hebrew-cover-center, html[dir="rtl"] .hebrew-cover-center *{
+  text-align:center!important;
+}
+html[lang="he"] .dialogue-user,
+html[lang="he"] .dialogue-user *,
+html[lang="he"] .dialogue-chat,
+html[lang="he"] .dialogue-chat *,
+html[dir="rtl"] .dialogue-user,
+html[dir="rtl"] .dialogue-user *,
+html[dir="rtl"] .dialogue-chat,
+html[dir="rtl"] .dialogue-chat *{
+  direction:rtl!important;
+  text-align:right!important;
+  unicode-bidi:plaintext!important;
+}
+html[lang="he"] .dialogue-chat,
+html[dir="rtl"] .dialogue-chat{
+  border-left:0!important;
+  padding-left:0!important;
+  border-right:3px solid #ccc!important;
+  padding-right:15px!important;
+}
+.hebrew-text-rtl{
+  direction:rtl!important;
+  text-align:right!important;
+  unicode-bidi:plaintext!important;
+}
+.dialogue-chat.hebrew-text-rtl{
+  border-left:0!important;
+  padding-left:0!important;
+  border-right:3px solid #ccc!important;
+  padding-right:15px!important;
+}
+</style>
 </head><body class="en" dir="ltr">
-<section class="page cover"><div class="cover-inner"><div class="kicker">Appendices to the Theory</div><div class="rule"></div><h1 class="title">Stories Before Thought</h1><p class="subtitle">Bedtime Stories for My Mother</p><p class="meta">Barak Ben Hur</p></div></section>
+<section class="page cover"><div class="cover-inner"><div class="kicker">Appendices to the Theory</div><div class="rule"></div><h1 class="title">Stories Before Thought</h1><p class="subtitle">Bedtime Stories for My Mother</p><p class="meta">me</p></div></section>
 <section class="page story">
 <div class="story-head">
 <h2>How Truth Remains Honest</h2>
-<p class="story-subtitle">A short story about conversation, trauma, and the promise to return to the ideal</p>
+<p class="story-subtitle">A short story about conversation, trauma, and the promise to return to the <span class="key-term key-term-en">ideal</span></p>
 </div>
 <figure class="image-frame"><img alt="" src="assets/story_image_1.png"/></figure>
 <p>Once, by this point, she would already have left.</p>
@@ -202,7 +369,7 @@ section.page.story:first-of-type {
 <p>But knowledge is not always strength. Sometimes it is only a small light showing a person exactly where he is about to lose himself.</p>
 <p>They continued. She said another thing. He allowed it. She objected. He corrected himself. She said he was making a move. He said he was not making a move. She asked why everything had to be so deep. He almost said, Because all my life I had to dig to find a place where I would not be dismissed, but he swallowed the sentence. Not because it was untrue. Because he knew that if he said it now, he would use the child inside him as a stone.</p>
 <p>Instead he said, 'I understand that it can feel that way.'</p>
-<p>He heard himself. The sentence was true, but it was no longer fully alive. It was the sentence of a person trying to remain ideal after the ideal had begun to drift away from him. Outwardly he was more patient than he had been at the start of the conversation. Inwardly he had begun to gather stones.</p>
+<p>He heard himself. The sentence was true, but it was no longer fully alive. It was the sentence of a person trying to remain <span class="key-term key-term-en">ideal</span> after the <span class="key-term key-term-en">ideal</span> had begun to drift away from him. Outwardly he was more patient than he had been at the start of the conversation. Inwardly he had begun to gather stones.</p>
 <p>And then, for the third or fourth time - he no longer knew how to count - she interrupted him precisely when he felt the point returning to him. The same bright point. The same sentence that, strangely, had not given up on him.</p>
 <p>'You simply can’t accept criticism,' she said.</p>
 <p>Something in him tore.</p>
@@ -226,7 +393,7 @@ section.page.story:first-of-type {
 <p>But he did not say any of that. If he had, he would have turned her boundary back into a question about him. So he kept the small injury quiet, and tried to give her the thing she had asked for: the possibility of stopping without being afraid of him.</p>
 <p>She did not fully believe him. He did not fully believe himself. But they both accepted the sentence as though it were an unstable chair on which one could, carefully, sit for another moment.</p>
 <p>They continued speaking.</p>
-<p>The conversation was no longer close to the ideal. Not really. It had lost that brightness, the possibility that the right sentence might be born exactly as it was meant to be born. Now there were small attempts, almost pathetic ones: she tried not to defend herself immediately; he tried not to turn every reservation into proof that he was unseen. She said something crooked. He corrected it a little less than he wanted to. He said something too precise. She did not fully disappear. It was not beautiful. But inside it there was a thin essence of communication.</p>
+<p>The conversation was no longer close to the <span class="key-term key-term-en">ideal</span>. Not really. It had lost that brightness, the possibility that the right sentence might be born exactly as it was meant to be born. Now there were small attempts, almost pathetic ones: she tried not to defend herself immediately; he tried not to turn every reservation into proof that he was unseen. She said something crooked. He corrected it a little less than he wanted to. He said something too precise. She did not fully disappear. It was not beautiful. But inside it there was a thin essence of communication.</p>
 <p>After a few minutes, he looked at the clock.</p>
 <p>The five minutes had already passed.</p>
 <p>He said nothing.</p>
@@ -248,8 +415,8 @@ section.page.story:first-of-type {
 <p>She rose slowly, carrying the cup that had long since gone cold.</p>
 <p>He remained seated for another moment. Not because he had defeated himself. Not because he was clean. The sentences he had wanted to say still stood inside him, displeased, like guests who had not been allowed in.</p>
 <p>But the door had not slammed.</p>
-<p>And that, on that evening, was all that remained to him of the ideal.</p>
-<p>Not the ideal itself. Only the promise to return to it, after the noise had stopped.</p>
+<p>And that, on that evening, was all that remained to him of the <span class="key-term key-term-en">ideal</span>.</p>
+<p>Not the <span class="key-term key-term-en">ideal</span> itself. Only the promise to return to it, after the noise had stopped.</p>
 </section>
 <section class="page story">
 <div class="story-head">
@@ -325,7 +492,7 @@ section.page.story:first-of-type {
 <p>The article did not state that the bread lacked nutritional value. Weiss was too careful for that. Instead, he wrote a sentence the newspapers loved to quote:</p>
 <p>“I cannot determine that the product lacks nutritional value. It is precisely for that reason that I consider it more dangerous.”</p>
 <p>Then came the grades.</p>
-<p>Nutritional value: not publicly verifiable.<br/>Reliability of source: failed.<br/>Social responsibility: very low.<br/>Institutional risk: extreme.<br/>Potential for innovation: high, and therefore unacceptable at this stage.</p>
+<p>Nutritional value: not publicly verifiable.<br/>Reliability of source: failed.<br/>Social responsibility: very low.<br/>Institutional risk: extreme.<br/><span class="key-term key-term-en">Potential</span> for innovation: high, and therefore unacceptable at this stage.</p>
 <p>The grades did what shouting would not have done. They dressed fear in the shape of order. Within a week, an investigation opened. Within two weeks, the shop’s license was frozen. Within a month, the Recognized Nutritional Source Regulation passed: no person may market an edible product whose primary source is a substance not recognized as an approved natural or industrial nutritional source, even if that substance has undergone conversion, processing, or synthesis.</p>
 <p>The regulation did not name him.</p>
 <p>Everyone knew his name.</p>

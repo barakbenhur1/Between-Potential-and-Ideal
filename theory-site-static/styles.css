@@ -1,3 +1,32 @@
+/* Keyword typography — targeted treatment for Potential / Ideal only */
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400&family=Frank+Ruhl+Libre:wght@300&display=swap');
+.key-term{
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  color: inherit;
+  font-style: normal;
+}
+.key-term-en{
+  font-family: "Frank Ruhl Libre", Georgia, "Times New Roman", serif;
+  font-weight: 300;
+  letter-spacing: .012em;
+  font-size: 1.055em;
+}
+.key-term-he{
+  font-family: "Cardo", "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: .008em;
+  font-size: 1.055em;
+}
+.hero h1 .key-term,
+.axis-word .key-term{
+  font-size: 1em;
+}
+.key-term-en::selection,
+.key-term-he::selection{
+  background: rgba(169,120,53,.22);
+}
+
 :root{
   --paper:#f3eadb;--paper2:#fff9ec;--ink:#17202d;--muted:#697380;--line:rgba(23,32,45,.16);--gold:#a97835;--blue:#101b2b;--rust:#9c5a2c;--max:1040px;
   font-family: ui-serif, Georgia, "Times New Roman", serif;color:var(--ink);background:var(--paper);
@@ -1126,4 +1155,137 @@ main.reader.appendix-page.stories-page{
 @media(max-width:720px){
   .approach-frame > .approach-explanation{padding:18px 14px;margin-top:22px;}
   .approach-frame > .response-button-row{width:calc(100% + 18px);max-width:calc(100% + 18px);}
+}
+
+/* Final ideal layout correction — 2026-05-19
+   1. Keep Hebrew/English theory cards inside the same constrained section.
+   2. Center the response separators symmetrically and let them end only slightly beyond the blurb box. */
+.approaches-section .approaches-box{
+  width:100%;
+  max-width:var(--max);
+  margin-left:auto;
+  margin-right:auto;
+}
+.approaches-section .approach-frame{
+  width:100%;
+  max-width:100%;
+  overflow:visible;
+}
+.approach-frame > .response-button-row{
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+  width:min(952px,calc(100% + 32px));
+  max-width:calc(100vw - 36px);
+  margin:30px 0 0;
+  direction:ltr;
+}
+.approach-frame > .response-button-row .response-line{
+  flex:1 1 0;
+  min-width:0;
+}
+.approach-frame > .response-button-row .response-button{
+  flex:0 0 auto;
+}
+@media(max-width:720px){
+  .approach-frame > .response-button-row{
+    width:min(calc(100% + 18px),calc(100vw - 28px));
+    max-width:calc(100vw - 28px);
+  }
+}
+
+.chapter-subtitle{
+  margin-top:-8px;
+  margin-bottom:22px;
+  color:#5e5346;
+  font-style:italic;
+  font-size:1.02rem;
+  letter-spacing:.01em;
+}
+html[lang="he"] .chapter-subtitle, body[dir="rtl"] .chapter-subtitle{
+  direction:rtl;
+  text-align:right;
+}
+
+
+/* chapter-orphan-control-css: keep chapter/section starts from being stranded at the bottom of print/PDF pages */
+@media print{
+  h1,h2,h3,h4,h5,h6,.chapter-title,.section-title,.doc-title,.chapter-heading,.document-heading{
+    break-after:avoid-page!important;
+    page-break-after:avoid!important;
+    break-inside:avoid!important;
+    page-break-inside:avoid!important;
+  }
+  .chapter-subtitle,.subtitle,.mode,.kicker{
+    break-after:avoid-page!important;
+    page-break-after:avoid!important;
+  }
+  p,li,blockquote,.dialogue-user,.dialogue-chat{orphans:5;widows:3;}
+  h1+p,h2+p,h3+p,h4+p,
+  h1+.chapter-subtitle,h2+.chapter-subtitle,h3+.chapter-subtitle,h4+.chapter-subtitle,
+  h1+.subtitle,h2+.subtitle,h3+.subtitle,h4+.subtitle{orphans:5;widows:3;}
+}
+
+/* English/Hebrew hero intro centering fix */
+.hero-copy .intro{
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+
+/* hebrew-rtl-body-alignment-cleanup: keep real Hebrew body text right-to-left/right-aligned without touching centered titles/covers */
+[dir="rtl"] p:not(.subtitle):not(.mode):not(.eyebrow):not(.chapter-subtitle):not(.author-hand-note p),
+[dir="rtl"] li,
+[dir="rtl"] blockquote,
+[dir="rtl"] .reader-card p,
+[dir="rtl"] .appendix-card p,
+[dir="rtl"] .document-body p,
+[dir="rtl"] .doc-body p{
+  direction:rtl;
+  text-align:right;
+  unicode-bidi:plaintext;
+}
+[dir="rtl"] .cover,
+[dir="rtl"] .cover *,
+[dir="rtl"] .hero-copy,
+[dir="rtl"] .hero-copy *,
+[dir="rtl"] .appendix-intro,
+[dir="rtl"] .appendix-intro *,
+[dir="rtl"] .author-hand-note-page,
+[dir="rtl"] .author-hand-note-page *,
+[dir="rtl"] .approaches-section,
+[dir="rtl"] .approaches-section *,
+[dir="rtl"] .downloads,
+[dir="rtl"] .downloads *{
+  text-align:center;
+}
+[dir="rtl"] .dialogue-user,
+[dir="rtl"] .dialogue-user *,
+[dir="rtl"] .dialogue-chat,
+[dir="rtl"] .dialogue-chat *{
+  direction:rtl;
+  text-align:right;
+  unicode-bidi:plaintext;
+}
+[dir="rtl"] .dialogue-chat{
+  border-left:0!important;
+  padding-left:0!important;
+  border-right:3px solid #ccc!important;
+  padding-right:15px!important;
+}
+
+/* Centered appendix subtitle/description lines */
+.appendix-card .appendix-subtitle-line,
+.appendix-card .appendix-description-line{
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+.appendix-card .appendix-subtitle-line{
+  font-style:italic;
+  margin-bottom:8px;
+}
+.appendix-card .appendix-description-line{
+  margin-top:0;
 }
