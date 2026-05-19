@@ -968,8 +968,8 @@ main.reader.appendix-page.stories-page{
   justify-content:center;
   gap:16px;
   margin:30px auto 0;
-  width:calc(100% - 72px);
-  max-width:none;
+  width:min(920px,100%);
+  max-width:920px;
 }
 .response-line{
   flex:1 1 auto;
@@ -1015,7 +1015,7 @@ main.reader.appendix-page.stories-page{
 }
 @media(max-width:900px){
   .approach-frame{padding:22px 16px 22px;}
-  .response-button-row{width:calc(100% - 28px);max-width:none;gap:10px;}
+  .response-button-row{width:min(920px,100%);max-width:920px;gap:10px;}
   .response-line{min-width:24px;}
   .axis-potential{margin-bottom:8px;}
 }
@@ -1106,4 +1106,24 @@ main.reader.appendix-page.stories-page{
 }
 @media(max-width:640px){
   .report-actions a{width:100%;text-align:start !important;}
+}
+
+
+/* Corrections: explanation now sits inside the theory frame above the reply button.
+   The reply separators intentionally extend just a little past the blurbs box, not across the full page. */
+.approach-frame > .approach-explanation{
+  margin:26px auto 0;
+  width:min(920px,100%);
+  max-width:920px;
+  padding:22px 24px;
+  border:1px solid rgba(86,97,115,.18);
+  background:rgba(255,249,236,.38);
+}
+.approach-frame > .response-button-row{
+  width:min(952px,calc(100% + 32px));
+  max-width:952px;
+}
+@media(max-width:720px){
+  .approach-frame > .approach-explanation{padding:18px 14px;margin-top:22px;}
+  .approach-frame > .response-button-row{width:calc(100% + 18px);max-width:calc(100% + 18px);}
 }
