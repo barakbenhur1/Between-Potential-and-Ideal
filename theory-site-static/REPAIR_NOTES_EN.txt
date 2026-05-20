@@ -9,3 +9,9 @@ Repair notes - English completion
 - Updated ai-believes.html and index.html so the third AI witness text now exposes English PDF, DOCX, MD, and HTML links.
 - No new images were generated. The existing ai_believes_03.png asset is reused.
 - Rendered and visually checked the new DOCX/PDF pages after generation.
+
+P versus NP repair:
+- Restored the missing P versus NP section based on the user's original formulation.
+- The section was inserted into the body of the theory under the algorithmic-logical layer.
+- A short reference was also added under Sources / Mathematics, Logic, and Forms of Thought.
+- Updated Hebrew and English, full and tightened versions, including MD / HTML / DOCX / PDF.

@@ -242,7 +242,7 @@ p{margin:0 0 12px;white-space:pre-wrap;unicode-bidi:embed}
 }
 </style>
 <style id="keyword-typography">/* Keyword typography — targeted treatment for Potential / Ideal only */
-@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400&family=Frank+Ruhl+Libre:wght@300&display=swap');
+/* external font import removed for offline-stable rendering */
 .key-term{
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -296,7 +296,6 @@ p{margin:0 0 12px;white-space:pre-wrap;unicode-bidi:embed}
   }
 }
 </style>
-
 <style id="hebrew-rtl-body-alignment-cleanup">
 /* Hebrew body text alignment cleanup. Centered covers/titles remain centered. */
 html[lang="he"] body, html[dir="rtl"] body{direction:rtl;}
@@ -349,7 +348,241 @@ html[dir="rtl"] .dialogue-chat{
   padding-right:15px!important;
 }
 </style>
-</head><body dir="ltr"><main class="page" dir="ltr">
+<style id="final-actual-layout-repair-20260520">
+/* 2026-05-20 final actual layout repair: cover bounds, author note readability, chapter-arrow typography */
+:root{--repair-ink:#17202d;--repair-gold:#a6702d;--repair-paper:#fffaf0;}
+.cover,
+.document-cover{
+  box-sizing:border-box!important;
+  overflow:hidden!important;
+}
+.cover h1,
+.document-cover h1,
+.reader-card > h1,
+.hero h1{
+  max-width:min(100%, 760px)!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  text-align:center!important;
+  overflow-wrap:normal!important;
+  word-break:normal!important;
+  line-break:auto!important;
+}
+.cover h1 .key-term,
+.cover .tagline .key-term,
+.cover .core .key-term,
+.document-cover h1 .key-term,
+.hero h1 .key-term{
+  font-family:inherit!important;
+  font-size:inherit!important;
+  font-weight:inherit!important;
+  letter-spacing:inherit!important;
+  color:inherit!important;
+}
+.cover .kicker,
+.cover .subtitle,
+.cover .tagline,
+.cover .author,
+.cover .core,
+.document-cover .kicker,
+.document-cover .subtitle,
+.document-cover .tagline,
+.document-cover .author,
+.document-cover .core{
+  max-width:min(100%, 760px)!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  text-align:center!important;
+}
+.cover .core,
+.document-cover .core{
+  box-sizing:border-box!important;
+  width:min(100%, 760px)!important;
+  text-align:center!important;
+}
+.cover-image,
+.document-cover img,
+.cover img{
+  display:block!important;
+  max-width:min(100%, 720px)!important;
+  height:auto!important;
+  object-fit:contain!important;
+}
+.author-hand-note-page{
+  min-height:86vh!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+  box-sizing:border-box!important;
+  padding:0 44px!important;
+  break-before:page!important;
+  page-break-before:always!important;
+  break-after:page!important;
+  page-break-after:always!important;
+}
+.author-hand-note{
+  max-width:780px!important;
+  margin:auto!important;
+  color:#3d3429!important;
+  font-family:"Noto Serif Hebrew","Noto Sans Hebrew",Georgia,"Times New Roman",serif!important;
+  font-size:clamp(1.28rem, 2.05vw, 1.72rem)!important;
+  line-height:1.82!important;
+  font-weight:400!important;
+  letter-spacing:.01em!important;
+  text-align:center!important;
+  direction:inherit!important;
+  unicode-bidi:isolate!important;
+}
+.author-hand-note p{
+  font-family:inherit!important;
+  font-size:inherit!important;
+  line-height:inherit!important;
+  text-align:center!important;
+  direction:inherit!important;
+  unicode-bidi:isolate!important;
+  white-space:pre-line!important;
+  margin:0!important;
+  color:inherit!important;
+}
+.author-hand-note-page[dir="rtl"]{direction:rtl!important;}
+.author-hand-note-page[dir="ltr"]{direction:ltr!important;}
+.arrow-marker{
+  display:block!important;
+  margin:38px 0 14px!important;
+  line-height:1.18!important;
+  font-size:25px!important;
+  font-weight:700!important;
+  break-before:auto!important;
+  page-break-before:auto!important;
+  break-after:avoid-page!important;
+  page-break-after:avoid!important;
+  break-inside:avoid!important;
+  page-break-inside:avoid!important;
+  text-align:inherit!important;
+  color:var(--repair-gold)!important;
+  background:none!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+.arrow-marker[dir="rtl"]{direction:rtl!important;text-align:right!important;}
+.arrow-marker[dir="ltr"]{direction:ltr!important;text-align:left!important;}
+.arrow-marker .arrow-chapter{color:var(--repair-ink)!important;font-weight:700!important;}
+.arrow-marker .arrow-symbol{color:var(--repair-gold)!important;font-weight:700!important;}
+.arrow-marker img{display:none!important;}
+.section-kicker,
+.eyebrow,
+.appendix-intro .eyebrow,
+.appendices-below-theory .appendix-intro .eyebrow{
+  color:var(--gold, #a6702d)!important;
+}
+.appendix-subtitle-line,
+.appendix-description-line{
+  display:block!important;
+  text-align:center!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+.response-button-row{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:18px!important;
+  width:min(100%, 520px)!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+.response-button-row .response-line{
+  flex:1 1 0!important;
+  min-width:72px!important;
+  height:1px!important;
+  background:rgba(23,32,45,.26)!important;
+}
+@media print{
+  @page{size:A4;margin:18mm 17mm 20mm;}
+  html,body{background:#efe8d9!important;}
+  main{
+    width:auto!important;
+    max-width:none!important;
+    min-height:auto!important;
+    padding:0!important;
+    margin:0!important;
+    box-shadow:none!important;
+    background:#fffaf0!important;
+  }
+  .cover,
+  .document-cover{
+    min-height:calc(297mm - 38mm)!important;
+    height:auto!important;
+    margin:0!important;
+    padding:18mm 14mm 14mm!important;
+    border:0!important;
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:center!important;
+    align-items:center!important;
+    break-after:page!important;
+    page-break-after:always!important;
+    overflow:hidden!important;
+  }
+  .cover .kicker,.document-cover .kicker{font-size:13px!important;margin-bottom:6mm!important;}
+  .cover h1,.document-cover h1{
+    font-size:34px!important;
+    line-height:1.16!important;
+    max-width:150mm!important;
+    width:150mm!important;
+    margin:0 auto 5mm!important;
+    padding:0!important;
+    text-align:center!important;
+    white-space:normal!important;
+    overflow:visible!important;
+  }
+  .cover .subtitle,.document-cover .subtitle{font-size:18px!important;margin:0 auto 5mm!important;max-width:150mm!important;}
+  .cover .tagline,.document-cover .tagline{font-size:15px!important;margin:0 auto 4mm!important;max-width:150mm!important;}
+  .cover .author,.document-cover .author{font-size:13px!important;margin:0 auto 5mm!important;max-width:150mm!important;}
+  .cover .core,.document-cover .core{
+    font-size:14px!important;
+    line-height:1.65!important;
+    max-width:150mm!important;
+    width:150mm!important;
+    margin:0 auto 8mm!important;
+    padding:10px 16px!important;
+    text-align:center!important;
+  }
+  .cover-image,.document-cover img,.cover img{
+    max-width:140mm!important;
+    max-height:76mm!important;
+    width:auto!important;
+    height:auto!important;
+    margin:0 auto!important;
+    object-fit:contain!important;
+  }
+  .author-hand-note-page{
+    min-height:calc(297mm - 38mm)!important;
+    padding:0 18mm!important;
+    margin:0!important;
+    break-before:page!important;
+    page-break-before:always!important;
+    break-after:page!important;
+    page-break-after:always!important;
+  }
+  .author-hand-note{
+    font-size:26px!important;
+    line-height:1.82!important;
+    max-width:145mm!important;
+  }
+  .arrow-marker{
+    font-size:25px!important;
+    margin:38px 0 14px!important;
+    break-before:auto!important;
+    page-break-before:auto!important;
+  }
+}
+@media(max-width:780px){
+  .cover h1,.document-cover h1,.hero h1{font-size:clamp(2rem,9vw,3.1rem)!important;}
+  .author-hand-note{font-size:clamp(1.15rem,5.4vw,1.45rem)!important;}
+}
+</style></head><body dir="ltr"><main class="page" dir="ltr">
 <section class="cover"><img alt="" src="assets/ai_believes_01.png"/><p class="mode">Nothing</p><h1>What Does Artificial Intelligence Believe?</h1><p class="subtitle">A conversation about consciousness, source, computation, and the distance between them.</p></section>
 <div class="dialogue-user hebrew-text-rtl" dir="rtl" style="color:#17202d; background:transparent; border:0; padding:0; margin:20px 0 16px; width:100%; max-width:100%; box-sizing:border-box; text-align:right; direction:rtl;">
 <p class="hebrew-text-rtl" dir="rtl" style="color:#17202d; text-align:right; direction:rtl; unicode-bidi:plaintext;"><strong class="dialogue-label hebrew-text-rtl" dir="rtl" style="color:#17202d; text-align:right; direction:rtl; unicode-bidi:plaintext;">User:</strong> האם יש לך תודעה?</p>
