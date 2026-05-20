@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gveret+Levin&family=Playpen+Sans+Hebrew:wght@100..800&display=swap');
-
 :root {
   --font-hand-he: "Gveret Levin", "Playpen Sans Hebrew", cursive;
   --font-hand-en: "Caveat", cursive;
@@ -1735,3 +1734,28 @@ html[dir="rtl"] .mystery-chapter,html[dir="rtl"] .mystery-dot{direction:rtl!impo
 html[dir="ltr"] .mystery-chapter,html[dir="ltr"] .mystery-dot{direction:ltr!important;justify-content:flex-start!important;text-align:left!important}
 .mystery-spacer{visibility:hidden!important;color:#17202d!important;white-space:nowrap!important}
 .mystery-arrow,.mystery-dotmark{display:inline-block!important;width:1.05em!important;text-align:center!important;color:inherit!important;white-space:nowrap!important}
+
+/* Final Hebrew handwritten author-note safeguard */
+.author-note-page[dir="rtl"] .author-note-title.handwriting-title,
+.author-note-page[dir="rtl"] .author-note-main.handwriting-title,
+.author-note-page[dir="rtl"] .author-note-main.handwriting-title p,
+.author-note-title.he.handwriting-title,
+.author-note-main.he.handwriting-title,
+.author-note-main.he.handwriting-title p,
+html[lang="he"] .author-note-title.handwriting-title,
+html[lang="he"] .author-note-main.handwriting-title,
+html[lang="he"] .author-note-main.handwriting-title p {
+  font-family: var(--font-hand-he, "Gveret Levin", "Playpen Sans Hebrew", cursive) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+.author-note-page[dir="rtl"] .author-note-main.handwriting-title,
+.author-note-page[dir="rtl"] .author-note-main.handwriting-title p,
+.author-note-main.he.handwriting-title,
+.author-note-main.he.handwriting-title p,
+html[lang="he"] .author-note-main.handwriting-title,
+html[lang="he"] .author-note-main.handwriting-title p {
+  direction: rtl !important;
+  unicode-bidi: isolate !important;
+}
