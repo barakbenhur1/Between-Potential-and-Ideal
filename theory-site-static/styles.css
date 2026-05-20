@@ -1,5 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gveret+Levin&family=Playpen+Sans+Hebrew:wght@100..800&display=swap');
+
+:root {
+  --font-hand-he: "Gveret Levin", "Playpen Sans Hebrew", cursive;
+  --font-hand-en: "Caveat", cursive;
+}
+
+.handwriting-title {
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+html[lang="he"] .handwriting-title,
+[dir="rtl"] .handwriting-title,
+.handwriting-title.he {
+  font-family: var(--font-hand-he);
+}
+
+html[lang="en"] .handwriting-title,
+[dir="ltr"] .handwriting-title,
+.handwriting-title.en {
+  font-family: var(--font-hand-en);
+}
+
+.author-hand-note.handwriting-title,
+.author-note-main.handwriting-title,
+.author-note-title.handwriting-title {
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.author-hand-note-page[dir="rtl"] .author-hand-note,
+.author-hand-note.he,
+.author-note-main.he,
+.author-note-title.he {
+  font-family: var(--font-hand-he) !important;
+}
+.author-hand-note-page[dir="ltr"] .author-hand-note,
+.author-hand-note.en,
+.author-note-main.en,
+.author-note-title.en {
+  font-family: var(--font-hand-en) !important;
+}
+
+
 /* Keyword typography — targeted treatment for Potential / Ideal only */
-/* external font import removed for offline-stable rendering */
 .key-term{
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -992,13 +1036,13 @@ main.reader.appendix-page.stories-page{
   display:none;
 }
 .response-button-row{
-  display:flex;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
   align-items:center;
-  justify-content:center;
-  gap:16px;
-  margin:30px auto 0;
-  width:min(920px,100%);
-  max-width:920px;
+  width:min(100%, 1180px);
+  max-width:100%;
+  margin:34px auto 0;
+  column-gap:36px;
 }
 .response-line{
   flex:1 1 auto;
@@ -1010,8 +1054,8 @@ main.reader.appendix-page.stories-page{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  min-width:128px;
-  padding:13px 24px;
+  min-width:176px;
+  padding:14px 28px;
   border:1px solid rgba(86,97,115,.38);
   background:rgba(255,250,240,.92);
   color:#273141;
@@ -1149,8 +1193,14 @@ main.reader.appendix-page.stories-page{
   background:rgba(255,249,236,.38);
 }
 .approach-frame > .response-button-row{
-  width:min(952px,calc(100% + 32px));
-  max-width:952px;
+  width:100%;
+  max-width:100%;
+  margin:34px auto 0;
+  direction:ltr;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+  align-items:center;
+  column-gap:36px;
 }
 @media(max-width:720px){
   .approach-frame > .approach-explanation{padding:18px 14px;margin-top:22px;}
@@ -1181,7 +1231,7 @@ main.reader.appendix-page.stories-page{
   direction:ltr;
 }
 .approach-frame > .response-button-row .response-line{
-  flex:1 1 0;
+  width:100%;
   min-width:0;
 }
 .approach-frame > .response-button-row .response-button{
@@ -1339,7 +1389,7 @@ body[dir="rtl"] .approach-frame > .response-button-row .response-line,
 .cover h1 .key-term, .cover .tagline .key-term, .cover .core .key-term{font-family:inherit!important;font-weight:inherit!important;letter-spacing:inherit!important;}
 .cover h1{max-width:900px;margin-left:auto;margin-right:auto;overflow-wrap:normal;word-break:normal;}
 .author-hand-note-page{min-height:88vh!important;display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;break-before:page;page-break-before:always;break-after:page;page-break-after:always;padding:0 36px!important;}
-.author-hand-note{max-width:760px!important;margin:auto!important;color:#3d3429!important;font-family:"Gveret Levin","Noto Sans Hebrew","Alef","Arial",sans-serif!important;font-size:30px!important;line-height:1.9!important;font-weight:400!important;letter-spacing:.01em!important;text-align:center!important;}
+.author-hand-note{max-width:760px!important;margin:auto!important;color:#3d3429!important;font-family:var(--font-hand-he)!important;font-size:30px!important;line-height:1.9!important;font-weight:400!important;letter-spacing:.01em!important;text-align:center!important;}
 .author-hand-note p{font-family:inherit!important;font-size:inherit!important;line-height:inherit!important;text-align:center!important;white-space:pre-line!important;margin:0!important;color:inherit!important;unicode-bidi:isolate!important;}
 .author-hand-note-page[dir="rtl"], .author-hand-note-page[dir="rtl"] *{direction:rtl!important;unicode-bidi:isolate!important;text-align:center!important;}
 .author-hand-note-page[dir="ltr"], .author-hand-note-page[dir="ltr"] *{direction:ltr!important;unicode-bidi:isolate!important;text-align:center!important;}
@@ -1398,7 +1448,7 @@ html[lang="en"] .blurb, html[lang="en"] .blurb *{text-align:left!important;direc
 /* final actual repair from user QA */
 .section-kicker, .eyebrow, .appendix-intro .eyebrow, .appendices-below-theory .appendix-intro .eyebrow{color:var(--gold,#a6702d)!important;}
 .author-hand-note-page{min-height:86vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 52px;}
-.author-hand-note{max-width:780px;margin:auto;color:#4b3a28;font-family:"Noto Serif Hebrew","Noto Sans Hebrew",Georgia,"Times New Roman",serif;font-size:clamp(1.35rem,2.4vw,1.9rem);line-height:1.82;font-weight:400;text-align:center;}
+.author-hand-note{max-width:780px;margin:auto;color:#4b3a28;font-family:var(--font-hand-he);font-size:clamp(1.35rem,2.4vw,1.9rem);line-height:1.82;font-weight:400;text-align:center;}
 .arrow-marker{display:flex;align-items:baseline;gap:.32em;break-before:auto!important;page-break-before:auto!important;break-after:avoid-page!important;page-break-after:avoid!important;}
 .arrow-marker[dir="rtl"]{direction:rtl;justify-content:flex-start;text-align:right;}
 .arrow-marker[dir="ltr"]{direction:ltr;justify-content:flex-start;text-align:left;}
@@ -1483,7 +1533,7 @@ html[lang="en"] .blurb, html[lang="en"] .blurb *{text-align:left!important;direc
   max-width:780px!important;
   margin:auto!important;
   color:#3d3429!important;
-  font-family:"Noto Serif Hebrew","Noto Sans Hebrew",Georgia,"Times New Roman",serif!important;
+  font-family:var(--font-hand-he)!important;
   font-size:clamp(1.28rem, 2.05vw, 1.72rem)!important;
   line-height:1.82!important;
   font-weight:400!important;
@@ -1641,3 +1691,47 @@ html[lang="en"] .blurb, html[lang="en"] .blurb *{text-align:left!important;direc
   .author-hand-note{font-size:clamp(1.15rem,5.4vw,1.45rem)!important;}
 }
 
+
+
+/* Final keyword treatment: apply the special Potential / Ideal typography even inside inflected/compound words. */
+.key-term,
+.key-term-he,
+.key-term-en{
+  font-synthesis:none!important;
+  text-rendering:optimizeLegibility!important;
+  color:inherit!important;
+}
+.key-term-he,
+.key-term.key-term-he,
+.hero h1 .key-term-he,
+.cover h1 .key-term-he,
+.document-cover h1 .key-term-he{
+  font-family:"Noto Serif Hebrew","David","Times New Roman",serif!important;
+  font-weight:700!important;
+  letter-spacing:.008em!important;
+  font-style:normal!important;
+  font-size:1.055em!important;
+}
+.key-term-en,
+.key-term.key-term-en,
+.hero h1 .key-term-en,
+.cover h1 .key-term-en,
+.document-cover h1 .key-term-en{
+  font-family:Georgia,"Times New Roman",serif!important;
+  font-weight:500!important;
+  letter-spacing:.01em!important;
+  font-style:italic!important;
+  font-size:1.055em!important;
+}
+.axis-word .key-term-he,
+.axis-word .key-term-en{
+  font-size:1em!important;
+}
+
+/* targeted chapter-prefix and arrow-dot alignment fixes */
+.chapter-prefix{color:#17202d!important}
+.mystery-chapter,.mystery-dot{display:flex!important;align-items:baseline!important;column-gap:.32em!important;break-after:avoid;page-break-after:avoid}
+html[dir="rtl"] .mystery-chapter,html[dir="rtl"] .mystery-dot{direction:rtl!important;justify-content:flex-start!important;text-align:right!important}
+html[dir="ltr"] .mystery-chapter,html[dir="ltr"] .mystery-dot{direction:ltr!important;justify-content:flex-start!important;text-align:left!important}
+.mystery-spacer{visibility:hidden!important;color:#17202d!important;white-space:nowrap!important}
+.mystery-arrow,.mystery-dotmark{display:inline-block!important;width:1.05em!important;text-align:center!important;color:inherit!important;white-space:nowrap!important}

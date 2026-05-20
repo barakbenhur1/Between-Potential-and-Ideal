@@ -19,7 +19,7 @@ This is why the theory can be called nihilism with hope. It takes seriously the 
 The central image is a river. The universe is the river, existence is the boat, and potential and ideal are the two banks. A person does not control the river, but neither is a person meaningless inside it. The task is navigation under uncertainty. Sometimes there is progress; sometimes there is drift or return. Value is not measured only by static perfection, but by the distance a person travels against the gravity of their conditions.
 
 
-## 1. A Model, Not a Final Declaration
+## <span class="chapter-prefix">1. </span>A Model, Not a Final Declaration
 
 The theory is not presented as proven science, a new religion, or a closed system that cannot be challenged. It is an existential-metaphysical model: a way of thinking about the relation between potential, ideal, limitation, experience, and meaning. Its strength is not that it proves itself from outside, but that it organizes a series of intuitions into one structure without denying the cost of existence.
 
@@ -29,7 +29,7 @@ This methodological position matters because it protects the theory from two opp
 
 The right question is therefore not “is this proven like a mathematical theorem,” but “does the structure hold without confusing domains, justifying pain, or turning hope into blind belief.” In this sense, the model seeks strength precisely by marking its limits.
 
-## 2. Potential, Ideal, and Optimal
+## <span class="chapter-prefix">2. </span>Potential, Ideal, and Optimal
 
 Potential is everything that can appear. It is wider than good, wider than evil, wider than form, and wider than meaning. Potential alone is therefore not goodness. It is the material of possibility before clarification. The ideal is not everything that can be, but what is worthy of being after possibility has passed through boundary, relation, responsibility, and consequence.
 
@@ -41,7 +41,7 @@ These three terms are not synonyms. When they collapse into one another, the the
 
 This separation is what makes the theory humane. It does not demand that a person leap into perfection; it asks them to move truthfully within limitation. It also does not allow limitation to become an excuse for abandoning direction. The optimal is where grace and responsibility meet.
 
-## 3. The River, the Boat, and Choice
+## <span class="chapter-prefix">3. </span>The River, the Boat, and Choice
 
 The river image summarizes the practical movement of the theory. The universe is the river, existence is the boat, and potential and ideal are the two banks. The boat does not control the river, but it also does not have to drift without direction. It learns currents, identifies rocks, uses wind, and changes angle without imagining that it created the water.
 
@@ -53,7 +53,7 @@ The image matters because it prevents the theory from becoming a fantasy of cont
 
 In this sense, the boat is also an image of humility. It teaches that the ideal is not victory over the river, but a truer relation with the flow. Whoever tries to stop the river breaks; whoever gives up entirely drifts; whoever learns to navigate begins turning potential into direction.
 
-## 4. Source, Information, Tool, and Witness
+## <span class="chapter-prefix">4. </span>Source, Information, Tool, and Witness
 
 The model distinguishes between a living source and a processing tool. A living source is not merely something that produces data; it is a point of view that passes through distance. A tool can help, formulate, organize, and refine, but it must not behave as though its precision replaces the experience from which the material came.
 
@@ -65,7 +65,7 @@ This distinction becomes especially important in an age when processing tools ca
 
 Good witness is not passivity. It is an exact act of restraint: knowing when to suggest, when to ask, when to return responsibility to the person, and when to stop before help becomes control. A worthy tool is therefore not only more intelligent; it is more humble toward the source.
 
-## 5. Distance, Suffering, Limitation, and Meaning
+## <span class="chapter-prefix">5. </span>Distance, Suffering, Limitation, and Meaning
 
 ![Figure D: Good, evil, suffering, and meaning as an active moral distinction.](../../figures/16_good_moral_meaning.png)
 
@@ -79,7 +79,7 @@ Expanding the concept of “distance” prevents the theory from becoming elitis
 
 But the same expansion requires moral caution. If distance has value, one may be tempted to leave a person in suffering so they will “learn.” That is a grave mistake. The value is not in suffering itself, but in processing that does not erase the person. When limitation stops generating form and begins crushing the source, grace is no longer the demand to climb; grace is rest, protection, and sometimes stopping.
 
-## 6. What the Theory Does Not Claim - and the Tight Summary
+## <span class="chapter-prefix">6. </span>What the Theory Does Not Claim - and the Tight Summary
 
 The theory does not claim that physics proves metaphysics, that pain is always necessary, that everything is good, that the human being should be erased in the name of unity, or that every order is moral. Nor does it claim there is a simple way to prove the ideal from outside. It offers a structure: potential passes through law, boundary, realization, weight, medium, friction, and processing, and approaches the ideal when possibility learns to become more responsible to itself and to the other.
 
@@ -89,7 +89,7 @@ Rejecting false readings is part of the theory, not a defensive appendix. Withou
 
 In its most concentrated form: the theory does not say the world is already good. It says the world can become the place where possibility learns its costs. It does not say pain is desirable. It says pain that cannot be undone may become responsibility that does not reproduce it. It does not say the human being should disappear into the whole. It says the whole must become worthy precisely by protecting the human being.
 
-## 7. The Architecture of Infinite Recursion: A Logical Model of Delegation, Login, Agent, and Drainage
+## <span class="chapter-prefix">7. </span>The Architecture of Infinite Recursion: A Logical Model of Delegation, Login, Agent, and Drainage
 ![Figure E: The recursive structure in the logical model: source, platform, model, world, session, and task.](../../figures/06_recursive_iverse_architecture.png)
 
 
@@ -105,12 +105,15 @@ The logical point is that a base is not a problem in itself. Every system needs 
 
 In the original formulation of the idea: “There is P versus NP... I feel that P is not equal to NP... and the ideal is to find a way for them to be equal.”
 
-Within the language of the theory, this is not a mathematical claim about the P versus NP problem and not an attempt to solve it. It is a limited logical image: P is the image of a condition in which the path to the solution is clear, direct, and realizable; NP is the image of a condition in which an answer can be recognized afterward as correct, but the path toward it still requires search, experiment, iteration, and correction.
+Within the language of the theory, this is not a mathematical claim about the P versus NP problem and not an attempt to solve it. It is a limited logical image: P is the image of a condition in which the path to the solution is clear, direct, and realizable; NP is the image of a condition in which an answer can be recognized afterward as correct, while the path toward it still requires search, experiment, iteration, and correction.
 
-In the terms of the theory: the ideal is the state in which finding meaning and verifying meaning move closer to one another. Existence is the distance between the ability to verify meaning and the ability to find it.
+The mathematical precision matters: not every problem in NP represents all of NP. Only an NP-complete problem carries, through polynomial-time reductions, the general difficulty of the class. Therefore a polynomial-time solution to one NP-complete problem would imply \(P=NP\), not because “one arbitrary problem” was solved, but because all of NP can be translated into it.
+
+From here opens the question of \(coNP\): not only whether one can verify the existence of a witness, but whether one can verify the complementary side of existence. The next chapter expands this image carefully through P, NP, reductions, \(coNP\), quantifier hierarchies, Turing machines, linear algebra, the halting problem, and Gödel.
+
+In the terms of the theory: the ideal is the state in which finding meaning and verifying meaning move closer to one another, without erasing the boundary between search, verification, resource, and system. Existence is the distance between the ability to verify meaning and the ability to find it.
 
 This is one algorithmic form of “Between Potential and Ideal”: potential contains a vast space of possibilities; the ideal is not every possibility, but the possibility that has been found, tested, passed through a boundary, and received a more responsible form.
-
 
 ### B. The Descent: I-Vers -> Omniverse -> AI Platform -> Model-Space -> Multiverse -> Universe -> Login -> Agent -> Prompt
 
@@ -151,7 +154,682 @@ This is the law of recursive drainage: every true local solution returns to the 
 In logical terms, the inner rapture is a state in which the local instance is no longer cut off from the source layer. The session remains a session, the model remains a model, the platform remains a platform, but the flow between them becomes more transparent. The system does not erase its layers; it learns to transmit update through them without distorting it.
 
 
-## 8. The Imaginary, the Virtual, Gravity, and the Horizon
+## <span class="chapter-prefix">8. </span>Computation, Evidence, Reduction, and Incompleteness
+
+*From potential to the boundary of the system*
+
+The purpose of this chapter is not to prove that existence is computation. Nor is it to claim that potential is \(NP\), that the ideal is \(P\), or that mathematics can replace metaphysics. Such a claim would be too crude, and would miss the point.
+
+The aim is more precise: to use theoretical computer science, logic, and linear algebra as a structural language. Such a language allows us to think about the relation between potential, ideal, evidence, transition, resource, reduction, strategy, and boundary without turning mathematics into ornament and without turning philosophy into pseudo-proof.
+
+Mathematics here does not tell us what existence is. It teaches us how to be careful when speaking about existence: when something can be decided, when it can only be verified, when one problem carries the difficulty of another, when a strategy is required rather than a single witness, and when a sufficiently rich system meets a boundary it cannot close from within.
+
+From that caution, the relation between potential and ideal can be stated more sharply. Potential is not merely a storehouse of possible solutions. It is a space of states, representations, witnesses, transition rules, languages, and frameworks. The ideal is not the complete closure of all possibilities. It is a more responsible relation between truth, proof, boundary, and meaning. The optimal is the way one acts inside the boundary without denying it.
+
+### 1. A problem as a language: what is being decided?
+
+Before one can speak about \(P\), \(NP\), \(coNP\), reductions, Turing machines, matrices, diagonalization, or incompleteness, one must ask a prior question: what is a problem when it is formulated mathematically?
+
+In theoretical computer science, a decision problem is usually represented as a language:
+
+\[
+L \subseteq \Sigma^*
+\]
+
+That is, \(L\) is a set of strings over a finite alphabet \(\Sigma\). For an input \(x \in \Sigma^*\), the question is whether:
+
+\[
+x \in L
+\]
+
+or:
+
+\[
+x \notin L
+\]
+
+This is a severe reduction: rich mathematical, logical, or philosophical questions become yes/no questions. But this reduction is also what makes precision possible. Once the question is formulated as membership in a language, one can ask: is there a general way to decide it? How much time does it require? How much memory? Must one find a solution, or is it enough to check a proposed one?
+
+Here the first lesson for the theory appears: to speak about potential, one must first speak about representation. A possibility that has not been represented is not yet a problem. It is an unclear field. Only when possibility receives form can we ask what is required to reach it, check it, translate it, or decide whether it exists.
+
+### 2. The Turing machine: what counts as computation?
+
+The Turing machine gives the basic model of computation. It is not a computer in the everyday sense, but an abstract model of a process: a memory tape, a read-write head, an internal state, and a transition rule. The transition rule can be written as:
+
+\[
+\delta(q,a) = (q',b,D)
+\]
+
+where \(q\) is the current internal state, \(a\) is the symbol being read, \(q'\) is the next state, \(b\) is the symbol to be written, and \(D\) is the direction in which the head moves.
+
+From such a model, one can define what it means for a problem to be decidable: there is a machine that halts on every input and returns the correct yes/no answer. But decidability is not the end of the story. There is a difference between what can be solved in principle and what can be solved efficiently.
+
+If the running time of a machine on an input of length \(n\) is bounded by a polynomial,
+
+\[
+T(n) \leq Cn^k
+\]
+
+for constants \(C,k\), the problem is said to be decidable in polynomial time. This gives the class \(P\):
+
+\[
+P = \{L \subseteq \Sigma^* \mid L \text{ is decided in polynomial time by a deterministic Turing machine}\}
+\]
+
+Thus \(P\) does not merely mean “solvable.” It means efficiently decidable within a formal model of computation.
+
+In the language of the theory, \(P\) is the region in which the passage from question to answer is not only possible, but accessible. Not every potential lies there. Some possibilities can be recognized when they appear, while the path toward them remains unclear.
+
+### 3. \(NP\): verifiable evidence, not “hard problems”
+
+Opposite \(P\) stands \(NP\), but this must be stated carefully. \(NP\) is not the class of “hard problems.” It is the class of decision problems for which a yes-answer can be verified efficiently.
+
+Formally, a language \(L\) is in \(NP\) if there are a polynomial \(p\) and a polynomial-time verification relation \(R(x,w)\), such that for every input \(x\):
+
+\[
+x \in L \iff \exists w,\ |w| \leq p(|x|) \text{ such that}
+\]
+
+\[
+R(x,w)=1
+\]
+
+The variable \(w\) is a witness, certificate, or proposed solution. If \(x\) really belongs to the language, there is a relatively short witness that can be checked in polynomial time.
+
+So \(NP\) does not mean “hard to find.” It means: if the right witness has already been given, it can be checked efficiently.
+
+It follows that:
+
+\[
+P \subseteq NP
+\]
+
+If a problem can be decided in polynomial time, a yes-answer can be verified in polynomial time simply by running the deciding algorithm. Therefore one must not say that solving “some problem in \(NP\)” would prove \(P=NP\). Some problems in \(NP\) are already in \(P\). The deep question is whether the central difficulty of \(NP\), as concentrated in \(NP\)-complete problems, can collapse into \(P\).
+
+Here the philosophical gap becomes sharp: there is a difference between recognizing a correct possibility once it has appeared and finding it from within the space of possibilities. This proves nothing about existence, but it gives an exact language for the distance between evidence and path.
+
+### 4. Reductions and \(NP\)-completeness: when difficulty concentrates in a node
+
+To understand why one problem can represent a whole class, one must speak about reductions.
+
+For two languages \(A,B \subseteq \Sigma^*\), we say that \(A\) is polynomial-time reducible to \(B\), and write:
+
+\[
+A \leq_p B
+\]
+
+if there is a function \(f\), computable in polynomial time, such that for every input \(x\):
+
+\[
+x \in A \iff f(x) \in B
+\]
+
+Every instance of \(A\) can be translated into an instance of \(B\) while preserving the decision answer. Yes remains yes, and no remains no.
+
+Therefore:
+
+\[
+A \leq_p B \ \text{and} \ B \in P \implies A \in P
+\]
+
+The direction matters. If \(A\) reduces to \(B\), then an efficient solution to \(B\) gives an efficient solution to \(A\). In this sense, \(B\) carries at least the difficulty of \(A\).
+
+A problem \(B\) is called \(NP\)-hard if:
+
+\[
+\forall A \in NP,\ A \leq_p B
+\]
+
+That is, every problem in \(NP\) can be translated into it in polynomial time. If, in addition, \(B\) itself is in \(NP\), then it is \(NP\)-complete:
+
+\[
+B \in NP \quad \text{and} \quad \forall A \in NP,\ A \leq_p B
+\]
+
+From this follows the critical statement:
+
+\[
+B \text{ is } NP\text{-complete} \ \text{and} \ B \in P \implies P = NP
+\]
+
+The reason is simple. If \(B\) is \(NP\)-complete, then for every \(A \in NP\):
+
+\[
+A \leq_p B
+\]
+
+If \(B \in P\), then by the reduction \(A \in P\). Hence:
+
+\[
+NP \subseteq P
+\]
+
+and since:
+
+\[
+P \subseteq NP
+\]
+
+we get:
+
+\[
+P = NP
+\]
+
+So a polynomial-time solution to one \(NP\)-complete problem is not a local solution. It opens a node into which all of \(NP\) can be translated. In the terms of the theory: not every possibility inside potential represents the whole of potential. Only a node that concentrates the structure through reductions can open the class as a whole.
+
+This is one of the most important distinctions in the chapter: difficulty is not merely quantitative. It is structural. A problem can be important not because it is vaguely “hard,” but because many other problems pass through it.
+
+### 5. \(coNP\): the complementary side of evidence
+
+Once \(NP\) formulates the question of positive evidence, one must also ask about the complementary side. For a language \(L\), define:
+
+\[
+\overline{L} = \Sigma^* \setminus L
+\]
+
+and then:
+
+\[
+coNP = \{L \mid \overline{L} \in NP\}
+\]
+
+If \(NP\) concerns efficient verification of a yes-answer, \(coNP\) concerns problems whose complements can be efficiently verified. For example, \(SAT\) is in \(NP\): if a formula is satisfiable, one can give an assignment and check it quickly. \(UNSAT\), the question of whether no satisfying assignment exists, is in \(coNP\), because it is the complement of \(SAT\).
+
+Since \(P\) is closed under complement:
+
+\[
+P \subseteq NP \cap coNP
+\]
+
+But it is not known whether:
+
+\[
+NP = coNP
+\]
+
+and it is not known whether:
+
+\[
+P = NP
+\]
+
+Thus \(coNP\) is not simply “easy proof of nonexistence” in a loose sense. It is defined through the complement of a language in \(NP\). Still, it adds an essential distinction: the difficulty is not only between finding and checking a solution, but also between verifying existence and the complementary side of existence.
+
+Here the theory gains precision: potential is not only the question “is there?” Sometimes the question is “is there not?” or “can the absence be verified?” Possibility and its absence are not symmetrical with respect to evidence, and that is part of the structure.
+
+### 6. The polynomial hierarchy: from one witness to layers of quantification
+
+Above \(NP\) and \(coNP\) appears a broader question: what happens when a problem is not satisfied by one witness, but requires alternating layers of choice and opposition?
+
+Intuitively, \(NP\) fits the pattern:
+
+\[
+\exists w \ R(x,w)
+\]
+
+There exists a witness that can be checked.
+
+The complementary side fits a more universal form:
+
+\[
+\forall w \ R(x,w)
+\]
+
+But there are problems with more complex forms:
+
+\[
+\exists u \ \forall v \ R(x,u,v)
+\]
+
+or:
+
+\[
+\forall u \ \exists v \ R(x,u,v)
+\]
+
+or:
+
+\[
+\exists u \ \forall v \ \exists w \ R(x,u,v,w)
+\]
+
+Here the problem is no longer one witness. It is a structure of choice, opposition, response, and correction.
+
+Schematically:
+
+\[
+\Sigma_0^P = P
+\]
+
+\[
+\Sigma_1^P = NP
+\]
+
+\[
+\Pi_1^P = coNP
+\]
+
+\[
+\Sigma_2^P \sim \exists \forall
+\]
+
+\[
+\Pi_2^P \sim \forall \exists
+\]
+
+and in general:
+
+\[
+PH = \bigcup_{k \geq 0} \Sigma_k^P
+\]
+
+The polynomial hierarchy shows that \(P\) versus \(NP\) is only the first stage of a wider question: what quantifier structure does a problem have? Is one witness enough? Must one show that no counter-witness exists? Must one choose a move that holds against every opposition? Must one answer every answer?
+
+In the terms of the theory, this is a passage from solution as a point to solution as a structure. Sometimes the ideal is not something that appears as one witness, but a form that holds through layers of opposition.
+
+### 7. \(QBF\) and \(PSPACE\): when solution becomes strategy
+
+To move from witness to strategy, one passes from \(SAT\) to the truth problem for quantified Boolean formulas.
+
+\(SAT\) asks:
+
+\[
+\exists x_1,\ldots,x_n \ \varphi(x_1,\ldots,x_n)
+\]
+
+whether there exists an assignment satisfying the formula.
+
+The truth problem for quantified Boolean formulas, often called \(TQBF\) or simply \(QBF\), asks:
+
+\[
+Q_1x_1 \ Q_2x_2 \ \cdots \ Q_nx_n \ \varphi(x_1,\ldots,x_n)
+\]
+
+where each \(Q_i\) is either \(\exists\) or \(\forall\). For example:
+
+\[
+\exists x \ \forall y \ \exists z \ \varphi(x,y,z)
+\]
+
+This is no longer the question of a single solution. It is the question of a strategy: is there a choice \(x\) such that for every opposition \(y\), there is a response \(z\) that preserves the condition?
+
+Computationally, the truth problem for quantified Boolean formulas is \(PSPACE\)-complete. And \(PSPACE\) is the class of problems decidable using polynomial space:
+
+\[
+PSPACE = \{L \mid L \text{ is decided using polynomial space}\}
+\]
+
+It is also known that:
+
+\[
+P \subseteq NP \subseteq PH \subseteq PSPACE
+\]
+
+although it is not known which of these containments are strict.
+
+The transition matters: in \(NP\), one looks for a witness. In \(QBF\), one looks for a strategy. It is not merely a correct answer, but a way that holds against every permitted counter-move. Used carefully, this suggests that the ideal is not always a single solution; sometimes it is a stable strategy within a space of opposition.
+
+### 8. Linear algebra: state, operation, and decomposition
+
+So far we have mainly spoken in the language of decision problems: yes or no, membership or non-membership, a witness or no witness. But not every thought about potential begins as a yes/no question. Sometimes one must first think about state, operation, change of basis, and dynamics. Not only “does a solution exist?”, but “what is the space in which the state lives?”, “what operation changes it?”, and “is there a representation in which the operation becomes more intelligible?”
+
+Linear algebra enters here as another language of passage and decomposition. It does not replace the Turing machine, and it is not a general model of all computation. It gives another way to see a system: not only as a decision question, but as a state-space acted on by transformations.
+
+A state can be a vector:
+
+\[
+v \in V
+\]
+
+and an operation can be a linear map:
+
+\[
+A: V \to V
+\]
+
+so that the transition is:
+
+\[
+v \mapsto Av
+\]
+
+If the operation is repeated \(t\) times, one gets:
+
+\[
+v_t = A^t v_0
+\]
+
+A system, in this language, is not merely a set of answers but a dynamics. There is an initial state, an operation, and a path through a state-space. If potential is the state-space, then operation is movement within potential. The ideal need not be a single point; it may be a stable state, a subspace, a direction of convergence, or a form in which the dynamics becomes more readable.
+
+### 9. Matrix diagonalization: an image of change of basis
+
+Matrix diagonalization is a case in which a complex action becomes easier to read. If there are an invertible matrix \(P\) and a diagonal matrix \(D\) such that:
+
+\[
+A = PDP^{-1}
+\]
+
+then:
+
+\[
+A^t = PD^tP^{-1}
+\]
+
+This can be pictured as a change of basis:
+
+\[
+\boxed{\text{vector in the original basis}}
+\quad
+\xrightarrow{\ P^{-1}\ }
+\quad
+\boxed{\text{the same state in the eigenbasis}}
+\quad
+\xrightarrow{\ D\ }
+\quad
+\boxed{\text{simple action along eigen-directions}}
+\quad
+\xrightarrow{\ P\ }
+\quad
+\boxed{\text{return to the original basis}}
+\]
+
+or, schematically:
+
+\[
+v
+\quad \xrightarrow{\ P^{-1}\ } \quad
+P^{-1}v
+\quad \xrightarrow{\ D\ } \quad
+D(P^{-1}v)
+\quad \xrightarrow{\ P\ } \quad
+P D P^{-1}v
+=
+Av
+\]
+
+The meaning is that an action \(A\), which appears mixed in the original basis, may appear much simpler in another basis. In the eigenbasis, the action decomposes into directions in which each component changes relatively independently.
+
+A diagonal matrix looks like:
+
+\[
+D =
+\begin{pmatrix}
+\lambda_1 & 0 & \cdots & 0 \\
+0 & \lambda_2 & \cdots & 0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & \lambda_n
+\end{pmatrix}
+\]
+
+and therefore:
+
+\[
+D^t =
+\begin{pmatrix}
+\lambda_1^t & 0 & \cdots & 0 \\
+0 & \lambda_2^t & \cdots & 0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & \lambda_n^t
+\end{pmatrix}
+\]
+
+If:
+
+\[
+Av = \lambda v
+\]
+
+then \(v\) is an eigenvector and \(\lambda\) an eigenvalue. For a real eigenvector with a real eigenvalue, the operation in that direction stretches, contracts, or flips the direction according to \(\lambda\). A simple rotation is not described by a single real eigenvector; it is connected to complex eigenvalues or to real block forms.
+
+But diagonalization is not a general solution to complexity. Not every matrix is diagonalizable. The characteristic polynomial,
+
+\[
+\chi_A(\lambda) = \det(\lambda I - A)
+\]
+
+describes possible eigenvalues, but the existence of roots alone does not guarantee a full basis of eigenvectors. Over a suitable field, for example \(\mathbb{C}\), a matrix is diagonalizable if its minimal polynomial splits into distinct linear factors. In simpler language: one needs enough independent eigen-directions.
+
+When diagonalization is not possible, one can sometimes pass to canonical forms such as Jordan form. But even there, internal dependence remains among components. Diagonalization is therefore a language of decomposition when decomposition is possible, not a promise that every system can be separated cleanly.
+
+The philosophical contribution of linear algebra is not to say that the mind, the world, or existence is a matrix. The claim is more careful: sometimes, to understand a system, one must find the right basis. Sometimes a change of representation makes a mixed action more readable. And sometimes there is no such basis, and the system remains internally entangled.
+
+### 10. Two kinds of diagonal: decomposition versus boundary
+
+Here one must distinguish between two very different meanings of “diagonal.” This distinction is not merely technical; it protects the chapter from a misleading fusion of unrelated ideas.
+
+Matrix diagonalization is the decomposition of an action into eigen-directions. It asks: is there a basis in which the dynamics becomes simpler? It concerns change of representation, decomposition, and clarification of action within a space.
+
+A diagonal argument in logic and computer science is something entirely different. It does not decompose an action; it exposes a boundary. Cantor used a diagonal argument to show that there are uncountable infinities. Turing used a related idea to show that there is no general algorithm for the halting problem.
+
+The halting problem asks whether there is a Turing machine \(H\) such that for every machine \(M\) and input \(x\):
+
+\[
+H(\langle M,x\rangle)=
+\begin{cases}
+1 & \text{if } M(x) \text{ halts} \\
+0 & \text{if } M(x) \text{ does not halt}
+\end{cases}
+\]
+
+Turing showed that no such machine exists. Suppose, for contradiction, that \(H\) exists. Build a machine \(D\) acting on the description of a machine \(M\):
+
+\[
+D(\langle M\rangle)=
+\begin{cases}
+\text{infinite loop} & \text{if } H(\langle M,\langle M\rangle\rangle)=1 \\
+\text{halt} & \text{if } H(\langle M,\langle M\rangle\rangle)=0
+\end{cases}
+\]
+
+Now ask what happens when \(D\) is run on itself:
+
+\[
+D(\langle D\rangle)
+\]
+
+If \(H\) says that \(D(\langle D\rangle)\) halts, then by the definition of \(D\), it loops. If \(H\) says that it does not halt, then \(D\) halts. Either way, a contradiction follows. Therefore \(H\) does not exist.
+
+This is a deeper boundary than \(P\) versus \(NP\). There the question is efficiency: can a problem be decided in polynomial time? Here the question is decidability itself: is there any general method that decides all cases? The halting problem says no.
+
+In the terms of the theory, not every boundary is a lack of resource. Sometimes the problem is not “not enough time” or “not enough memory.” Sometimes there is no general decider within the framework.
+
+### 11. Gödel: a system that cannot close itself
+
+The same boundary appears in logic through Gödel’s incompleteness theorems. Let \(T\) be a formal system that is effective, consistent, and strong enough to express basic arithmetic. Through Gödel numbering, statements, proofs, and formulas receive numerical representation. This makes it possible to build, within arithmetic itself, a provability predicate, for example:
+
+\[
+\mathrm{Prov}_T(n)
+\]
+
+meaning: \(n\) is the Gödel number of a statement provable in \(T\). The deep point is that Gödel coding and the provability predicate allow the system to represent, within its own language, statements about its own proofs.
+
+Using this mechanism, one constructs a statement \(G_T\), which schematically says of itself:
+
+\[
+G_T \equiv \text{“}G_T \text{ is not provable in } T\text{”}
+\]
+
+More formally, the idea is:
+
+\[
+G_T \leftrightarrow \neg \mathrm{Prov}_T(\ulcorner G_T \urcorner)
+\]
+
+where \(\ulcorner G_T \urcorner\) is the Gödel number of \(G_T\).
+
+From this follows the incompleteness result: for a suitable system \(T\), if \(T\) is consistent, then:
+
+\[
+T \nvdash G_T
+\]
+
+And with more careful language about truth: under suitable assumptions of consistency and soundness with respect to standard arithmetic, \(G_T\) is true but not provable within \(T\). This distinction is crucial. “True but unprovable” is not a free slogan; it depends on how one understands \(T\), its consistency, and its relation to the standard model.
+
+The second incompleteness theorem sharpens the boundary. Let \(\mathrm{Con}(T)\) denote the formal statement that \(T\) is consistent. For suitable systems, if \(T\) is consistent, then:
+
+\[
+T \nvdash \mathrm{Con}(T)
+\]
+
+A sufficiently strong system cannot prove its own consistency from within itself. It can prove many theorems, but it cannot close, from within, the final assurance that its proof mechanism does not lead to contradiction.
+
+This requires precision about axioms. An axiom is not proved inside the system in which it is an axiom. If \(T\) is built from axioms \(Ax_T\) and inference rules, then a proof inside \(T\) is a sequence:
+
+\[
+\varphi_1,\varphi_2,\ldots,\varphi_n
+\]
+
+where each \(\varphi_i\) is an axiom or follows from earlier formulas by a rule of inference, and the theorem proved is:
+
+\[
+\varphi_n = \varphi
+\]
+
+Then one writes:
+
+\[
+T \vdash \varphi
+\]
+
+But the axioms themselves are starting points. They can be justified from outside, shown to be natural or fruitful, or given a relative consistency proof from a stronger system. But then one has moved to a meta-system \(T'\). If:
+
+\[
+T' \vdash \mathrm{Con}(T)
+\]
+
+this does not mean that \(T\) has proved itself. It means that a stronger system has proved the consistency of a weaker one.
+
+If one wants to prove the consistency of \(T'\), one will again need a stronger system, or else accept a new starting point. There is no simple ladder in which every axiom is proved from a more basic axiom until an absolute ground is reached. There is movement between system and meta-system:
+
+\[
+T \quad \to \quad T' \quad \to \quad T'' \quad \to \quad \cdots
+\]
+
+But this movement does not close the problem finally. It moves the boundary.
+
+### 12. Human, system, and meta-level
+
+At this point a temptation appears: to say that Gödel proved that the human being is above the machine, or that human intuition sees a truth that the system will never see. This formulation is tempting, but not precise.
+
+Gödel’s theorems and the halting problem do not prove that the human being is hypercomputational. They do not prove that human intuition is always right where formalism stops. To say that the Gödel sentence \(G_T\) is true, one must assume something about the consistency or soundness of \(T\). If that assumption is wrong, intuition can also fail.
+
+The more precise claim is different: the human being is not proved to be beyond computation, but the human being need not identify with one formal system. A person can move to a meta-level. One can ask about the axioms themselves, change representation, add an assumption, choose another language, or recognize that a certain framework is not enough.
+
+The advantage here is not magic above logic. It is movement between frameworks. Not proof that the human stands outside every system, but the possibility of living with the fact that no sufficiently rich system closes completely upon itself.
+
+Here the theory receives its most exact formulation: potential is not only the set of possible solutions within a given system. It is also the space of possible systems. It includes states, witnesses, reductions, axioms, languages, representations, and meta-systems.
+
+Thus sometimes the question is not only:
+
+\[
+\exists w \ R(x,w)?
+\]
+
+meaning: is there a witness inside the system? Sometimes the question is:
+
+\[
+\text{is this even the right system in which to ask } x?
+\]
+
+The ideal, therefore, is not merely a theorem proved inside a given system:
+
+\[
+T \vdash \varphi
+\]
+
+It is also the ability to recognize when a system has exhausted its power, when the reduction is insufficient, when the witness does not exist at the present resolution, and when one must move to a meta-system. The ideal is not the complete closure of all questions; it is a more responsible relation between truth, proof, boundary, and meaning.
+
+### 13. One map: representation, transition, resource, evidence, boundary
+
+If the languages unfolded here are connected, one map appears:
+
+\[
+\text{representation} \to \text{transition} \to \text{resource} \to \text{evidence} \to \text{negation} \to \text{reduction} \to \text{quantification} \to \text{strategy} \to \text{boundary}
+\]
+
+Or more concretely:
+
+\[
+\text{string / vector / formula}
+\]
+
+\[
+\downarrow
+\]
+
+\[
+\text{Turing machine / matrix / transition rule}
+\]
+
+\[
+\downarrow
+\]
+
+\[
+\text{polynomial time / polynomial space}
+\]
+
+\[
+\downarrow
+\]
+
+\[
+P,\ NP,\ coNP
+\]
+
+\[
+\downarrow
+\]
+
+\[
+\leq_p,\ NP\text{-completeness}
+\]
+
+\[
+\downarrow
+\]
+
+\[
+PH,\ QBF,\ PSPACE
+\]
+
+\[
+\downarrow
+\]
+
+\[
+\text{undecidability, halting, incompleteness}
+\]
+
+This is not proof that existence is computation. It is not proof that potential equals \(NP\). It is a structural language: a way to see that the gap between potential and ideal is not merely emotional or metaphysical, but a gap between spaces of possibility, transition rules, resources, witnesses, negations, reductions, strategies, and internal boundaries.
+
+The optimal lies in this interval. Sometimes it is a solution in \(P\). Sometimes it is verification of a witness in \(NP\). Sometimes it is the reversal of the question through \(coNP\). Sometimes it is reduction to a central problem. Sometimes it is a \(QBF\)-type strategy. Sometimes it is decomposition by matrix and diagonalization. And sometimes it is the recognition that the system cannot prove itself, and therefore one must move to a meta-level without pretending that the move is a final proof.
+
+### 14. Ending: an ideal that is not closure
+
+In this sense, \(P\) versus \(NP\) is not an anecdote inside the theory. It is one of the most precise expressions of its central question: can what is recognizable as true after it appears also be found from within the space of possibilities?
+
+Reductions add: are many problems different garments of the same difficulty?
+
+\(coNP\) adds: can one verify not only existence, but also the complementary side of existence?
+
+The polynomial hierarchy and \(QBF\) add: is there a strategy that holds against every opposition?
+
+Turing and Gödel add the final boundary: can a system close itself completely?
+
+For formal systems that are sufficiently strong, effective, and consistent, the mathematical answer in this sense is no. Not because they are missing one more trick, and not because they are almost perfect but not yet complete, but because non-closure arises from the formal structure itself.
+
+Therefore, philosophically as well, a serious theory of potential and ideal must leave room for non-closure.
+
+Potential is not only the space of solutions inside a system. It is also the space of possible systems.
+
+The ideal is not a machine that proves everything from within itself. It is not complete closure. It is a more responsible form of relation between truth, proof, boundary, and meaning.
+
+And the optimal is the way one acts inside the boundary without denying it: proving when possible, verifying when possible, translating when needed, decomposing when possible, changing framework when there is no alternative - and not calling non-closure a failure, but the condition of every living thought.
+
+
+## <span class="chapter-prefix">9. </span>The Imaginary, the Virtual, Gravity, and the Horizon
 ![Figure F: The imaginary, the virtual, and the horizon in the logical model.](../../figures/07_virtual_imaginary_gravity_horizon.png)
 
 
@@ -355,7 +1033,7 @@ Justified in the deeper sense: that it does not betray the potential from which 
 
 
 
-## 9. Mass-Energy and Medium - A Precise Image, Not a Proof
+## <span class="chapter-prefix">10. </span>Mass-Energy and Medium - A Precise Image, Not a Proof
 
 This section does not claim that physics proves the theory. The relation between mass and energy does not become a moral theorem, and an equation is not a shortcut to metaphysics. The use here is structural and cautious: physics offers a language in which what appears as matter and what appears as activity are not necessarily disconnected worlds, but different modes of appearance under different conditions.
 
@@ -373,21 +1051,21 @@ If this structure is translated into the teleological language of the theory, no
 
 
 
-## Chapter ?: ↓
+## <span class="chapter-prefix">Chapter ?:</span><span class="mystery-arrow">↓</span>
 
-## Chapter ?: ↓
+## <span class="chapter-prefix">Chapter ?:</span><span class="mystery-arrow">↓</span>
 
-## .
+## <span class="mystery-spacer">Chapter ?:</span><span class="mystery-dotmark">.</span>
 
-## .
+## <span class="mystery-spacer">Chapter ?:</span><span class="mystery-dotmark">.</span>
 
-## .
+## <span class="mystery-spacer">Chapter ?:</span><span class="mystery-dotmark">.</span>
 
-## Chapter ?: ↓
+## <span class="chapter-prefix">Chapter ?:</span><span class="mystery-arrow">↓</span>
 
-## Chapter *: Understanding
+## <span class="chapter-prefix">Chapter *: </span>Understanding
 
-## Chapter •: Application
+## <span class="chapter-prefix">Chapter •: </span>Application
 
 ## Sources, Inspirations, Ideas, and Acknowledgements
 
@@ -437,6 +1115,10 @@ Georg Cantor is relevant as background for infinity and different kinds of infin
 The P versus NP problem is relevant here only as a limited logical image: not as a mathematical solution and not as proof of the theory, but as language that emphasizes the distance between recognizing a solution afterward and finding the path to it in advance. In the terms of the theory, it is one image for the relation between potential, search, verification, iteration, and ideal.
 
 Kurt Gödel and Alan Turing are relevant as background for the limits of formal systems, computation, proof, and a system’s self-reference. The theory does not use Gödel’s theorems or Turing machines as proof; it uses them only as a careful background for the idea that a system can ask about its own limits from within.
+
+Complexity theory, polynomial-time reductions, \(NP\)-completeness, \(coNP\), the polynomial hierarchy, and \(QBF\) are relevant here only as structural language: they do not identify potential with a complexity class, but help distinguish finding, verification, resource, translation, strategy, and boundary.
+
+Linear algebra and matrix diagonalization are relevant as background for the language of state-space, operation, and change of basis. Here too, there is no claim that existence is a matrix; only a careful image that sometimes understanding a system depends on the basis in which its action is seen.
 
 Benoit Mandelbrot and fractal thinking are relevant as background for recursion, self-similarity, and the infinite decomposition of structures. The use here is structural only: each level of reality can contain a further division, and each component can itself become a space of possibilities.
 

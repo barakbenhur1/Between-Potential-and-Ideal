@@ -1,0 +1,12 @@
+Integrated the final computation/evidence/reduction/incompleteness chapter into the main theory sequence.
+
+Placement:
+- Full Hebrew/English theory: inserted after the recursive architecture chapter and before the imaginary/virtual/gravity chapter.
+- Tightened Hebrew/English theory: inserted after the recursive architecture chapter and before the imaginary/virtual/gravity chapter.
+
+Numbering:
+- Full Hebrew: new פרק י; previous פרק י -> פרק י״א; previous פרק י״א -> פרק י״ב.
+- Full English: new Chapter 10; previous 10 -> 11; previous 11 -> 12.
+- Tightened versions: new Chapter/section 8; previous 8 -> 9; previous 9 -> 10.
+
+Also updated the P vs NP notes and mathematics/source sections to bridge naturally into the new chapter.

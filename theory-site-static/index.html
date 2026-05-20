@@ -184,7 +184,7 @@ html[dir="rtl"] .dialogue-chat{
   max-width:780px!important;
   margin:auto!important;
   color:#3d3429!important;
-  font-family:"Noto Serif Hebrew","Noto Sans Hebrew",Georgia,"Times New Roman",serif!important;
+  font-family:var(--font-hand-he)!important;
   font-size:clamp(1.28rem, 2.05vw, 1.72rem)!important;
   line-height:1.82!important;
   font-weight:400!important;
@@ -243,17 +243,17 @@ html[dir="rtl"] .dialogue-chat{
   margin-right:auto!important;
 }
 .response-button-row{
-  display:flex!important;
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)!important;
   align-items:center!important;
-  justify-content:center!important;
-  gap:18px!important;
-  width:min(100%, 520px)!important;
-  margin-left:auto!important;
-  margin-right:auto!important;
+  width:min(100%, 1180px)!important;
+  max-width:100%!important;
+  margin:34px auto 0!important;
+  column-gap:36px!important;
 }
 .response-button-row .response-line{
-  flex:1 1 0!important;
-  min-width:72px!important;
+  width:100%!important;
+  min-width:0!important;
   height:1px!important;
   background:rgba(23,32,45,.26)!important;
 }
@@ -341,12 +341,49 @@ html[dir="rtl"] .dialogue-chat{
   .cover h1,.document-cover h1,.hero h1{font-size:clamp(2rem,9vw,3.1rem)!important;}
   .author-hand-note{font-size:clamp(1.15rem,5.4vw,1.45rem)!important;}
 }
-</style></head><body>
+</style>
+<style id="final-key-term-compound-fix-20260520">
+/* Final keyword treatment: apply the special Potential / Ideal typography even inside inflected/compound words. */
+.key-term,
+.key-term-he,
+.key-term-en{
+  font-synthesis:none!important;
+  text-rendering:optimizeLegibility!important;
+  color:inherit!important;
+}
+.key-term-he,
+.key-term.key-term-he,
+.hero h1 .key-term-he,
+.cover h1 .key-term-he,
+.document-cover h1 .key-term-he{
+  font-family:"Noto Serif Hebrew","David","Times New Roman",serif!important;
+  font-weight:700!important;
+  letter-spacing:.008em!important;
+  font-style:normal!important;
+  font-size:1.055em!important;
+}
+.key-term-en,
+.key-term.key-term-en,
+.hero h1 .key-term-en,
+.cover h1 .key-term-en,
+.document-cover h1 .key-term-en{
+  font-family:Georgia,"Times New Roman",serif!important;
+  font-weight:500!important;
+  letter-spacing:.01em!important;
+  font-style:italic!important;
+  font-size:1.055em!important;
+}
+.axis-word .key-term-he,
+.axis-word .key-term-en{
+  font-size:1em!important;
+}
+</style>
+</head><body>
 <div class="site"><header class="topbar"><div class="topbar-inner"><a class="brand" href="#top"><span class="brand-mark">B</span><span><strong>Between <span class="key-term key-term-en">Potential</span> and <span class="key-term key-term-en">Ideal</span></strong><small>me</small></span></a><nav class="nav"><a data-i18n="navRead" href="#read">קריאה</a><a data-i18n="navFigures" href="#figures">איורים</a><a data-i18n="navAI" href="ai-believes.html" rel="noopener" target="_blank">במה בינה מלאכותית מאמינה?</a><a data-i18n="navTheory" href="#theory-approaches">התאוריה</a><a data-i18n="navDownloads" href="#downloads">קבצים</a><a data-i18n="navContact" href="mailto:betweenpotentialandideal@gmail.com?subject=Response+to+Between+Potential+and+Ideal&amp;body=%D7%A9%D7%9C%D7%95%D7%9D%2C%0A%0A%D7%90%D7%A0%D7%99+%D7%A8%D7%95%D7%A6%D7%94+%D7%9C%D7%94%D7%92%D7%99%D7%91+%D7%A2%D7%9C+%D7%94%D7%AA%D7%90%D7%95%D7%A8%D7%99%D7%94%3A%0A%0A">תגובה</a><button class="lang-button" id="langButton" type="button">English</button></nav></div></header><main id="top">
 <div class="axis-word axis-potential language-block" data-lang-block="he" dir="rtl"><span class="key-term key-term-he">פוטנציאל</span></div>
 <div class="axis-word axis-potential language-block" data-lang-block="en" dir="ltr" hidden=""><span class="key-term key-term-en">Potential</span></div>
 <section class="hero"><figure class="hero-art"><img alt="Fragmented consciousness between potential and ideal" src="figures/01_fragmented_consciousness_cover.png?v=20260515-latest-theory-clean"/></figure>
-<div class="hero-copy language-block" data-lang-block="he" dir="rtl"><p class="eyebrow">פתוחה לביקורת</p><h1>בין <span class="key-term key-term-he">פוטנציאל</span> ל<span class="key-term key-term-he">אידיאל</span></h1><p class="subtitle">ניהיליזם עם תקווה בעולם חסר ודאות</p><p class="intro hebrew-text-rtl" dir="rtl" style="direction:rtl; text-align:right; unicode-bidi:plaintext;">תיאוריה מטאפיזית מתפתחת על הקיום כתהליך שבו <span class="key-term key-term-he">פוטנציאל</span> אבסולוטי עובר בירור מוסרי ומבקש להפוך ל<span class="key-term key-term-he">אידיאל</span>יות.</p></div><div class="hero-copy language-block" data-lang-block="en" dir="ltr" hidden=""><p class="eyebrow">Open to criticism</p><h1>Between <span class="key-term key-term-en">Potential</span> and <span class="key-term key-term-en">Ideal</span></h1><p class="subtitle">Nihilism with Hope in an Uncertain World</p><p class="intro">A developing metaphysical theory about existence as the process through which absolute <span class="key-term key-term-en">potential</span> becomes morally clarified as ideality.</p></div></section>
+<div class="hero-copy language-block" data-lang-block="he" dir="rtl"><p class="eyebrow">פתוחה לביקורת</p><h1>בין <span class="key-term key-term-he">פוטנציאל</span> ל<span class="key-term key-term-he">אידיאל</span></h1><p class="subtitle">ניהיליזם עם תקווה בעולם חסר ודאות</p><p class="intro hebrew-text-rtl" dir="rtl" style="direction:rtl; text-align:right; unicode-bidi:plaintext;">תיאוריה מטאפיזית מתפתחת על הקיום כתהליך שבו <span class="key-term key-term-he">פוטנציאל</span> אבסולוטי עובר בירור מוסרי ומבקש להפוך ל<span class="key-term key-term-he">אידיאל</span>יות.</p></div><div class="hero-copy language-block" data-lang-block="en" dir="ltr" hidden=""><p class="eyebrow">Open to criticism</p><h1>Between <span class="key-term key-term-en">Potential</span> and <span class="key-term key-term-en">Ideal</span></h1><p class="subtitle">Nihilism with Hope in an Uncertain World</p><p class="intro">A developing metaphysical theory about existence as the process through which absolute <span class="key-term key-term-en">potential</span> becomes morally clarified as <span class="key-term key-term-en">ideal</span>ity.</p></div></section>
 <section class="reader" id="read"><div class="reader-card language-block" data-lang-block="he" dir="rtl"><h2>שאלת הליבה</h2><blockquote class="hebrew-text-rtl" dir="rtl" style="direction:rtl; text-align:right; unicode-bidi:plaintext;">האבסולוטי אינו ה<span class="key-term key-term-he">אידיאל</span>י. הקיום הוא חציית הנהר שבה <span class="key-term key-term-he">פוטנציאל</span> אבסולוטי מברר מה מתוך עצמו ראוי להפוך ל<span class="key-term key-term-he">אידיאל</span>.</blockquote><p class="hebrew-text-rtl" dir="rtl" style="direction:rtl; text-align:right; unicode-bidi:plaintext;">האתר הזה אינו מציג מוצר מוגמר אלא מאמר חי: רעיון שנועד להיבחן, להתחדד, להיתקף ולהשתפר. התאוריה המלאה נמצאת בקבצים להורדה.</p><h2>איך לקרוא את התאוריה</h2><p class="hebrew-text-rtl" dir="rtl" style="direction:rtl; text-align:right; unicode-bidi:plaintext;">לא כהוכחה סופית, אלא כמבנה מחשבה: <span class="key-term key-term-he">פוטנציאל</span> הוא מה שיכול להיות; <span class="key-term key-term-he">אידיאל</span> הוא מה שראוי להיות; והקיום הוא התהליך הלא ליניארי ביניהם.</p></div><div class="reader-card language-block" data-lang-block="en" dir="ltr" hidden=""><h2>Core question</h2><blockquote>The absolute is not the <span class="key-term key-term-en">ideal</span>. Existence is the river-crossing through which absolute <span class="key-term key-term-en">potential</span> clarifies what within itself ought to become <span class="key-term key-term-en">ideal</span>.</blockquote><p>This site does not present a finished product, but a living essay: an idea meant to be tested, challenged, clarified, and improved. The full theory is available in the downloadable files.</p><h2>How to read the theory</h2><p>Not as a final proof, but as a structure of thought: <span class="key-term key-term-en">potential</span> is what can be; <span class="key-term key-term-en">ideal</span> is what ought to be; and existence is the non-linear process between them.</p></div></section>
 <section class="approaches-section" id="theory-approaches">
 <div class="approaches-box language-block" data-lang-block="he" dir="rtl">
