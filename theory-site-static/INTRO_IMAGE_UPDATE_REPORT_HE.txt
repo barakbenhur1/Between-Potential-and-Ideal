@@ -1,0 +1,20 @@
+דו״ח עדכון תמונת פתיחה
+
+- נוספה תמונת פתיחה בעמוד הבית בעברית ובעמוד הבית באנגלית, מיד אחרי פתיח האתר.
+- התמונה נשמרה תחת figures/opening_potential_to_ideal_journey.png.
+- עודכנו תגיות og:image בעמודי הבית.
+- נוסף alt תיאורי בעברית ובאנגלית.
+- לא שונו טקסטי התאוריה, הסיפורים או המסמכים.
+
+בדיקת קישורים פנימיים שבורים: 8
+בדיקת שמות mojibake: 0
+
+קישורים שבורים שנותרו:
+- mistake-repeats.html: index.html#read  [missing anchor]
+- mistake-repeats.html: index.html#stories  [missing anchor]
+- mistake-repeats.html: index.html#figures  [missing anchor]
+- mistake-repeats.html: index.html#downloads  [missing anchor]
+- stories.html: index.html#read  [missing anchor]
+- stories.html: index.html#stories  [missing anchor]
+- stories.html: index.html#figures  [missing anchor]
+- stories.html: index.html#downloads  [missing anchor]
