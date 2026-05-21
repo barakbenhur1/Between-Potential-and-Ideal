@@ -1,0 +1,10 @@
+Repair notes:
+- Rebuilt original Hebrew/English theory DOCX/PDF/HTML from the latest Markdown text.
+- Rebuilt updated Hebrew/English theory DOCX/PDF/HTML from the tightened Markdown text.
+- Removed visible build/version noise such as corrected-edition / blank-page notes.
+- Embedded local figures into DOCX/PDF outputs and used relative local paths in HTML.
+- Rendered DOCX files for visual QA. Page counts:
+  between-potential-and-ideal-he.docx: 23 pages
+  between-potential-and-ideal-en.docx: 26 pages
+  between-potential-and-ideal-tightened-he.docx: 9 pages
+  between-potential-and-ideal-tightened-en.docx: 9 pages
