@@ -1773,7 +1773,7 @@ This chapter does not offer new physics instead of mathematical physics. It offe
 
 ### The Physical Spine
 
-<div class="math-block">G_{μν} + Λg_{μν} = (8πG / c⁴) T_{μν}</div>
+<div class="math-block">G_{μν} + Λg_{μν} = (8πG / c^4) T_{μν}</div>
 
 General relativity shows that matter and energy are not merely inside a neutral stage; they shape the stage itself. Through the theory, this is a language in which material-energetic potential becomes readable as geometry.
 
@@ -1789,20 +1789,26 @@ Quantum mechanics describes potential evolving in time and closing into a readab
 
 In closed quantum evolution, information is not supposed to be erased. Through the theory: unreadable information is not necessarily erased information; it may remain as relation, trace, or correlation.
 
-<div class="math-block">ĤΨ = 0
-ℓ_P = √(ℏG / c³)</div>
+<pre class="math-block">ĤΨ = 0
+ℓₚ = √(ℏG / c³)
+tₚ = √(ℏG / c⁵)
+mₚ = √(ℏc / G)
+Eₚ = mₚ c^2 = √(ℏc⁵ / G)</pre>
 
-The problem of time and the Planck scale point to the place where time and spacetime themselves may not be the final ground, but readable forms of a deeper layer.
+The problem of time and the Planck scale point to the place where time and spacetime themselves may not be the final ground, but readable forms of a deeper layer. To probe a smaller distance, one needs, at the level of order of magnitude, higher energy: \(Δx ≈ ℏc/E\). But concentrated energy is also a gravitational source, with Schwarzschild radius \(r_s(E)=2GE/c^4\). When \(Δx\) becomes of the same order as \(r_s\), one obtains \(E²≈ℏc⁵/(2G)\), which is a boundary of roughly Planck energy and Planck length. The Planck scale is therefore not presented here as a proven pixel of reality, but as a boundary where measurement itself stops being transparent: the attempt to see the smallest may create a horizon that hides it.
 
-<div class="math-block">r_s = 2GM / c²
-S_BH = k_B A / (4ℓ_P²)
-T_H = ℏc³ / (8πGMk_B)</div>
+A similar boundary appears at the event horizon, but in a different form. In Schwarzschild coordinates, the factor `(1 - r_s/r)⁻¹` appears, so at `r = r_s` the calculation seems to reach division by zero. Yet the curvature invariant `K = 48G^2 M^2/(c^4 r^6)` remains finite at the horizon and diverges only at `r = 0`. The horizon, therefore, is not necessarily the place where reality breaks, but the place where the ordinary coordinate system stops being a good map. Passing to Eddington-Finkelstein or Kruskal-Szekeres coordinates does not cancel the black hole and does not solve the central singularity; it shows that what is inaccessible from one map may be accessible from another. Within the theory, this is not a loose metaphor but a structural lesson: sometimes potential is not another possibility inside the same system, but the possibility of changing the system.
+
+
+<div class="math-block">r_s = 2GM / c^2
+S_BH = kB A / (4ℓₚ²)
+T_H = ℏc³ / (8πGMkB)</div>
 
 Black holes show that the horizon is not marginal. The boundary itself becomes the place where information, area, entropy, and readability meet. The theory does not solve the information paradox; it distinguishes erasure from loss of readable form.
 
 <div class="math-block">S(ρ) = -Tr(ρ log ρ)
 I(A:B) = S(A) + S(B) - S(AB)
-H² = (8πG/3)ρ - kc²/a² + Λc²/3</div>
+H² = (8πG/3)ρ - kc^2/a² + Λc^2/3</div>
 
 Information and entanglement show that information is not only content inside an object, but relation between parts and readers. Cosmology reminds us that the vacuum is not necessarily empty, but the theory does not quantitatively explain vacuum energy or the cosmological constant.
 

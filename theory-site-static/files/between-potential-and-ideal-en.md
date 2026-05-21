@@ -2299,7 +2299,7 @@ In the language of the theory: spacetime is a readable ideal, not necessarily th
 
 General relativity places geometric form at the center:
 
-<div class="math-block">G_{μν} + Λg_{μν} = (8πG / c⁴) T_{μν}</div>
+<div class="math-block">G_{μν} + Λg_{μν} = (8πG / c^4) T_{μν}</div>
 
 On one side stands the geometry of spacetime; on the other, energy-momentum. Matter and energy are not merely inside a neutral stage; they shape the stage itself. Through the theory, general relativity is a language in which material-energetic potential becomes readable as geometry. This is not only an equation about force; it is an equation in which the relation between content and form becomes geometric.
 
@@ -2335,20 +2335,95 @@ In canonical approaches to quantum gravity, the problem of time appears with gre
 
 The Wheeler-DeWitt equation points to a region in which ordinary external time is absent. The question is not only what happens in time, but how time itself becomes the medium in which change can be read. Here the theory offers a language for the question, not a final solution.
 
-The Planck scale brings together the three great constants:
+The Planck scale brings together the constants at which quantum theory, gravity, relativity, and thermodynamics touch one another:
 
-<div class="math-block">ℓ_P = √(ℏG / c³)
-t_P = √(ℏG / c⁵)
-m_P = √(ℏc / G)</div>
+<pre class="math-block">ℓₚ = √(ℏG / c³)
+tₚ = √(ℏG / c⁵)
+mₚ = √(ℏc / G)
+Eₚ = mₚ c^2 = √(ℏc⁵ / G)
+Tₚ = Eₚ / kB = √(ℏc⁵ / (G kB²))</pre>
 
-These quantities are built from quantum theory, gravity, and relativity. Through the theory, the Planck scale is the place where the continuous ideal of spacetime may expose its seams.
+Here \(ℓₚ\) is Planck length, \(tₚ\) is Planck time, \(mₚ\) is Planck mass, \(Eₚ\) is Planck energy, and \(Tₚ\) is Planck temperature. They are not proven “pixels” of reality, and they do not establish that time is made of final frames. They are natural quantities built from \(ℏ\), \(G\), \(c\), and \(kB\). Through the theory, their importance is not that they prove metaphysics, but that they place measurement itself at a boundary where quantum theory and gravity can no longer be separated in a simple way.
+
+### The Planck Scale and the Horizon of Measurement
+
+One can see the boundary through a heuristic calculation, not through a complete proof. To probe a smaller distance, one needs higher resolution. At the level of order of magnitude, spatial resolution \(Δx\) requires an energy \(E\) such that:
+
+<pre class="math-block">Δx ≈ ℏc / E</pre>
+
+The sign \(≈\) matters: this is an order-of-magnitude estimate, not an exact experimental law. It expresses the idea that a shorter effective wavelength requires higher energy.
+
+But at such energies, measurement is no longer an external and transparent act. Through \(E = Mc^2\), concentrated energy also acts as a gravitational source. If energy \(E\) is concentrated in a sufficiently small region, the corresponding Schwarzschild radius is:
+
+<pre class="math-block">r_s(E) = 2GE / c^4</pre>
+
+On one side, seeing smaller requires increasing \(E\). On the other side, as \(E\) increases, \(r_s\) also increases. When the resolution required for measurement becomes of the same order as the gravitational radius created by the measuring energy itself, one obtains:
+
+<pre class="math-block">ℏc / E ≈ 2GE / c^4
+E² ≈ ℏc⁵ / (2G)
+E ≈ Eₚ / √2
+Δx ≈ √2 ℓₚ</pre>
+
+The factor \(√2\), like other factors of order one, is not the point. The point is that the boundary appears at the Planck scale. The attempt to measure the smallest possible region requires an energy that begins to create a horizon around itself. What was supposed to be a measuring tool may become the very structure that hides what it tried to measure.
+
+This does not mean that Planck length is certainly the final unit of space. It does not mean that Planck time is certainly the smallest instant of time. And it does not replace a theory of quantum gravity. But it does show why the Planck scale is a deep boundary of description: there, measurement, energy, gravity, and horizon cannot remain cleanly separate notions.
+
+In the language of the theory, the ideal of complete knowledge meets the price of itself. To close reality down to the last point, one must introduce an energy of closure so great that the closure itself may create a horizon. Potential is not only what precedes measurement; sometimes it is what returns precisely when measurement tries to become absolute.
+
+This must be marked carefully: physics does not prove that potential precedes reality. It gives a strong example of a condition in which a boundary is not an external wall, but a result of the act of knowing itself. There, at the edge of description, reality is not missing from us because we did not look hard enough; it may be missing because an absolute act of looking would change what it tried to see.
+
+
+
+### The Horizon, the Coordinates, and the Map That Is Not Enough
+
+The same lesson appears inside the description of a black hole itself. In the Schwarzschild metric, which describes an ideal non-rotating and uncharged black hole, the radial term contains the factor:
+
+```math
+(1 - r_s / r)^(-1)
+```
+
+where `r_s = 2GM / c^2`. At the event horizon, `r = r_s`, this factor appears to involve division by zero. But here one must distinguish between two different things: a physical singularity and a coordinate singularity. Not every divergence of notation is a divergence of reality.
+
+The relevant mathematical test is not only whether one component of the metric diverges, but whether geometric quantities that do not depend on that coordinate choice diverge. For Schwarzschild, the Kretschmann curvature invariant is:
+
+```math
+K = R_{abcd} R^{abcd} = 48G^2 M^2 / (c^4 r^6)
+```
+
+It is finite at the horizon `r = r_s`, and diverges only at `r = 0`. Therefore the horizon is not the place where spacetime itself breaks in the same sense as the central singularity. The problem at the horizon is a problem of map: ordinary Schwarzschild coordinates describe the exterior well, but they are not a good map for crossing the horizon.
+
+To continue the description, one does not need to deny the black hole; one needs to change coordinates. For example, define the tortoise coordinate:
+
+```math
+r* = r + r_s ln |r / r_s - 1|
+```
+
+and then an ingoing coordinate:
+
+```math
+v = t + r* / c
+```
+
+In ingoing Eddington-Finkelstein coordinates, the metric can be written as:
+
+```math
+ds^2 = -(1 - r_s / r)c^2 dv^2 + 2c dv dr + r^2 dOmega^2
+```
+
+In this form, the same division by zero at the horizon is absent. The horizon has not disappeared, and the black hole has not been canceled. But what appeared in the previous map as a mathematical end of description turns out to be a failure of the local system of notation. Kruskal-Szekeres coordinates go further and cover the maximal extension of the Schwarzschild solution outside the physical singularity. They also do not solve `r = 0`, but they show that the horizon itself is not the singularity.
+
+The lesson for the theory must remain precise: changing coordinates is not magic and not a solution to every problem of the black hole. It is a mathematical act that distinguishes between a boundary of the object and a boundary of the description. What is inaccessible from one map is not necessarily inaccessible altogether. Sometimes it becomes accessible only after changing the reference system, the computational tool, the language, or the form of the question.
+
+Here the connection to Between Potential and Ideal becomes direct. The ideal seeks one description that can hold everywhere. But there are regions in which a description that was ideal in one domain becomes insufficient in another. Potential is not only another possibility inside the same system; it is also the possibility of changing the system. Thinking outside the box is not only a creative metaphor. In certain cases, it is the most exact form of continuation: the recognition that the box, meaning the coordinate system, has become part of the problem.
+
+The vacuum teaches that absence of appearance is not necessarily absence of possibility. The Planck scale teaches that the attempt to measure to the end may create a horizon. And the horizon itself teaches that not every division by zero is an abyss; sometimes it is the sign that we have reached the edge of the map, and that to continue we must learn another language.
 
 A black hole brings horizon, area, and information to the edge:
 
-<div class="math-block">r_s = 2GM / c²
+<div class="math-block">r_s = 2GM / c^2
 A = 4πr_s²
-S_BH = k_B c³ A / (4Gℏ) = k_B A / (4ℓ_P²)
-T_H = ℏc³ / (8πGMk_B)</div>
+S_BH = kB c³ A / (4Gℏ) = kB A / (4ℓₚ²)
+T_H = ℏc³ / (8πGMkB)</div>
 
 The Schwarzschild radius, Bekenstein-Hawking entropy, and Hawking temperature show that the horizon is not a marginal detail. Entropy is tied to the area of the horizon rather than to volume, so the boundary becomes a place where information and form meet. The theory does not solve the information paradox; it offers a conceptual reading: erasure is not identical to loss of readability.
 
@@ -2373,7 +2448,7 @@ This is a formal and directional expression, not a complete solution. Through th
 
 Finally, in cosmology, the Friedmann equation relates expansion to density, curvature, and the cosmological constant:
 
-<div class="math-block">H² = (8πG/3)ρ - kc²/a² + Λc²/3</div>
+<div class="math-block">H² = (8πG/3)ρ - kc^2/a² + Λc^2/3</div>
 
 Here the theory must be especially careful: it can say that the vacuum is not empty, but it still does not explain quantitatively why the potential of the vacuum takes precisely the cosmic form we observe.
 

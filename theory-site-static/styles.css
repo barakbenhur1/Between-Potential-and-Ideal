@@ -2786,3 +2786,14 @@ body.design-prompt-theme .tone-card::after{
 body.design-prompt-theme .hub-grid.three .hub-card.media-card .card-link{
   align-self:center;
 }
+
+
+/* QA notes pass: accessibility, file filtering and softer card side light */
+.file-tools{margin:22px 0;padding:clamp(18px,3vw,28px)}
+.file-filter-controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:12px}
+.file-filter-controls input,.file-filter-controls select{font:inherit;min-height:44px;border:1px solid var(--line);background:rgba(255,249,236,.88);color:var(--ink);border-radius:999px;padding:10px 14px;box-shadow:0 8px 22px rgba(23,32,45,.04)}
+.file-filter-controls input{flex:1 1 280px}.file-filter-controls select{flex:0 1 180px}.file-filter-count{font-family:ui-sans-serif,system-ui;color:var(--muted);font-size:.9rem;margin-top:10px}.archive-link-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.download-table tr[hidden]{display:none!important}
+.media-card::after,.reader-card::after,.notice-box::after{filter:saturate(1.06) brightness(1.18);opacity:.82}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+@media (max-width:720px){.table-wrap{overflow-x:auto}.download-table{min-width:760px}.file-filter-controls{display:grid;grid-template-columns:1fr}.file-filter-controls input,.file-filter-controls select{width:100%}}
