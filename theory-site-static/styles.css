@@ -2622,3 +2622,120 @@ body.design-prompt-theme .content-grid.two .media-card{
   body.design-prompt-theme .card-thumb{inline-size:58px;block-size:58px;border-radius:18px;}
   body.design-prompt-theme .compact-section-visual img{height:132px!important;aspect-ratio:16/7!important;}
 }
+
+
+/* Image diversity + tab visual consistency patch
+   Keeps the existing design language, but prevents repeated thumbnails and
+   normalizes all tab banners to the same visual rhythm. */
+body.design-prompt-theme .tab-visual.compact-section-visual{
+  width:min(100%,1120px);
+  max-width:1120px;
+  margin-inline:auto;
+  border-radius:30px;
+  overflow:hidden;
+  aspect-ratio:21 / 7;
+  min-height:clamp(154px,18vw,236px);
+  max-height:236px;
+  display:block;
+}
+body.design-prompt-theme .tab-visual.compact-section-visual img{
+  width:100%!important;
+  height:100%!important;
+  min-height:clamp(154px,18vw,236px);
+  max-height:236px;
+  aspect-ratio:auto!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  border-radius:24px!important;
+}
+body.design-prompt-theme .tab-visual.compact-section-visual figcaption{
+  font-size:.88rem;
+  opacity:.78;
+  margin-top:.55rem;
+}
+body.design-prompt-theme .card-thumb{
+  inline-size:74px;
+  block-size:74px;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  object-position:center;
+}
+body.design-prompt-theme .media-card:nth-of-type(3n+1) .card-thumb{border-radius:24px 18px 24px 18px;}
+body.design-prompt-theme .media-card:nth-of-type(3n+2) .card-thumb{border-radius:50% 26px 50% 26px;}
+body.design-prompt-theme .media-card:nth-of-type(3n) .card-thumb{border-radius:20px 34px 20px 34px;}
+@media(max-width:720px){
+  body.design-prompt-theme .tab-visual.compact-section-visual{
+    aspect-ratio:16 / 7;
+    min-height:132px;
+    max-height:168px;
+  }
+  body.design-prompt-theme .tab-visual.compact-section-visual img{
+    min-height:132px;
+    max-height:168px;
+  }
+}
+
+
+/* Ideal creator visual-unity final pass
+   Scope: image diversity, banner consistency, readability and human visual rhythm only. */
+body.design-prompt-theme .page-title-mark,
+body.design-prompt-theme .card-thumb{
+  background:linear-gradient(135deg,#fffaf0,#f6fbfc);
+  border:3px solid rgba(255,255,255,.92);
+  box-shadow:0 12px 26px rgba(10,58,104,.17);
+  filter:saturate(.98) contrast(1.01);
+}
+body.design-prompt-theme .page-title-mark{
+  inline-size:clamp(68px,9vw,96px);
+  block-size:clamp(68px,9vw,96px);
+  border-radius:28px;
+}
+body.design-prompt-theme .card-thumb{
+  inline-size:76px;
+  block-size:76px;
+  border-radius:24px;
+}
+body.design-prompt-theme .tab-visual.compact-section-visual{
+  width:min(100%,1120px);
+  aspect-ratio:21 / 7;
+  min-height:clamp(164px,18vw,238px);
+  max-height:238px;
+  margin-block:0 1.45rem;
+  padding:8px!important;
+  border:1px solid rgba(10,58,104,.12);
+  box-shadow:0 20px 42px rgba(10,58,104,.12);
+}
+body.design-prompt-theme .tab-visual.compact-section-visual img{
+  height:100%!important;
+  min-height:clamp(164px,18vw,238px);
+  max-height:238px;
+  border-radius:24px!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+}
+body.design-prompt-theme .media-card .card-media-head + p,
+body.design-prompt-theme .tone-card p{
+  color:#213241;
+}
+body.design-prompt-theme .signature-blurbs.refined-blurbs{
+  margin-block:clamp(1.6rem,4vw,3rem);
+}
+@media(max-width:720px){
+  body.design-prompt-theme .tab-visual.compact-section-visual{
+    aspect-ratio:16 / 7;
+    min-height:132px;
+    max-height:168px;
+    border-radius:22px;
+  }
+  body.design-prompt-theme .tab-visual.compact-section-visual img{
+    min-height:132px;
+    max-height:168px;
+    border-radius:18px!important;
+  }
+  body.design-prompt-theme .page-title-mark,
+  body.design-prompt-theme .card-thumb{
+    inline-size:58px;
+    block-size:58px;
+    border-radius:18px;
+  }
+}
