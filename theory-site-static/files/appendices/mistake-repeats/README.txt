@@ -11,3 +11,7 @@ Options:
 Website display image: assets/mistake_repeats_cover.png
 Hebrew title/subtitle: טעות לעולם חוזרת / מכונת תנועה מתמדת?
 English title/subtitle: A Mistake Always Returns / Perpetual Motion Machine?
+
+
+Editorial framing note:
+This appendix should be read as a conceptual / speculative model, not as a proof in physics. Scientific terms in the files are part of the metaphorical and philosophical structure unless a local passage explicitly states otherwise.

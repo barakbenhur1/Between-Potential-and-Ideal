@@ -14,3 +14,6 @@ Stories/background page restored as `stories.html`; story files are under `files
 
 - Added Mass-Energy and Medium as the final Hebrew theory chapter above the arrow section.
 - Added chapter subtitles to the Hebrew theory structure.
+
+
+This build integrates the chapter "יצירה, קאנון ואופטימום: מה אסור לאבד" / "Creation, Canon, and Optimum: What Must Not Be Lost" after the computation chapter, with numbering updated in Hebrew and English full and tightened theory files.

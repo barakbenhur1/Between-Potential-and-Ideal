@@ -1759,3 +1759,51 @@ html[lang="he"] .author-note-main.handwriting-title p {
   direction: rtl !important;
   unicode-bidi: isolate !important;
 }
+
+/* FINAL Hebrew author-note font lock — do not weaken.
+   The Hebrew author note must render with Gveret Levin when Google Fonts loads. */
+html[lang="he"] .author-note-page[dir="rtl"] .author-note-title.he,
+html[lang="he"] .author-note-page[dir="rtl"] .author-note-main.he,
+html[lang="he"] .author-note-page[dir="rtl"] .author-note-main.he *,
+.author-note-page[dir="rtl"] .author-note-title.he.handwriting-title,
+.author-note-page[dir="rtl"] .author-note-main.he.handwriting-title,
+.author-note-page[dir="rtl"] .author-note-main.he.handwriting-title *,
+.author-note-title.he.handwriting-title,
+.author-note-main.he.handwriting-title,
+.author-note-main.he.handwriting-title * {
+  font-family: "Gveret Levin", "Playpen Sans Hebrew", cursive !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  letter-spacing: 0 !important;
+  font-synthesis: none !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+html[lang="en"] .author-note-page[dir="ltr"] .author-note-title.en,
+html[lang="en"] .author-note-page[dir="ltr"] .author-note-main.en,
+html[lang="en"] .author-note-page[dir="ltr"] .author-note-main.en *,
+.author-note-title.en.handwriting-title,
+.author-note-main.en.handwriting-title,
+.author-note-main.en.handwriting-title * {
+  font-family: "Caveat", cursive !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  letter-spacing: 0 !important;
+}
+
+
+/* Definitive Hebrew author-note fallback: use pre-rendered Gveret Levin image in static/exported outputs. */
+.author-note-card-image {
+  display: block;
+  width: 720px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.author-note-he-fixed {
+  direction: rtl;
+}
+
+
+/* unified introduction section */
+.unifying-intro{margin-top:10px;margin-bottom:76px}.unifying-intro .reader-card{border-color:rgba(166,112,45,.35)}.unifying-intro h2{margin-top:6px}.unifying-intro p{max-width:74ch}.unifying-intro .eyebrow{margin-bottom:12px}
