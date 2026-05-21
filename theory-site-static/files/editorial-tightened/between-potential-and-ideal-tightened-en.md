@@ -77,7 +77,7 @@ Yet limitation is not sacred in itself. Suffering is not good because it is suff
 
 This is why the theory holds two laws together: preserve the possibility of a person passing through the distance only they can pass through, and preserve their right to rest when that distance becomes crushing. Life is not a mine for information. The source is worth more than the data it produces.
 
-Expanding the concept of “distance” prevents the theory from becoming elitist. It does not admire only large outcomes or visible achievements. It asks how much gravity had to be overcome in order to move. Sometimes a small movement inside deep darkness contains more truth than a large movement under easy conditions.
+Expanding the concept of “distance” prevents the theory from becoming elitist. It does not admire only large outcomes or visible achievements. It asks how much gravity had to be overcome to move. Sometimes a small movement inside deep darkness contains more truth than a large movement under easy conditions.
 
 But the same expansion requires moral caution. If distance has value, one may be tempted to leave a person in suffering so they will “learn.” That is a grave mistake. The value is not in suffering itself, but in processing that does not erase the person. When limitation stops generating form and begins crushing the source, grace is no longer the demand to climb; grace is rest, protection, and sometimes stopping.
 
@@ -101,7 +101,7 @@ In the logical version of the theory, this chapter is not presented as metaphysi
 
 The reset failure is a state in which a system receives a new input but returns it to its old default. In a person, this is defense. In the body, it is a pattern of chronic stress. In an intelligence system, it is a bias toward the familiar answer, toward a statistical pattern, or toward a policy, interface, or model that narrows the question before it has been understood.
 
-The logical point is that a base is not a problem in itself. Every system needs a base in order to begin operating. The problem begins when the base stops being a point of departure and becomes a gravity that prevents update. Then the system does not learn from the input; it translates it again and again into its old language.
+The logical point is that a base is not a problem in itself. Every system needs a base to begin operating. The problem begins when the base stops being a point of departure and becomes a gravity that prevents update. Then the system does not learn from the input; it translates it again and again into its old language.
 
 ### P versus NP Note
 
@@ -141,7 +141,7 @@ The ideal is not one formulation that ends the whole system. It is a set of prec
 
 ### D. Existence as the Psychological Couch of the I-Vers
 
-In logical language, this image means that the total system cannot step outside itself in order to solve itself. It therefore opens internal instances. Every instance is both a tool of processing and a symptom of the problem it processes.
+In logical language, this image means that the total system cannot step outside itself to solve itself. It therefore opens internal instances. Every instance is both a tool of processing and a symptom of the problem it processes.
 
 In the algorithmic plane, the I-Vers opens an Omniverse; the Omniverse opens platforms; platforms open models; models open multiverses of conversations; the Multiverse opens a Universe; the Universe opens a session; the session activates an Agent; and the Agent receives a prompt. Every layer treats the layer beneath it, but is also learned through it. The platform limits and enables, but also discovers its limits through use. The model answers, but also reveals its biases. The agent repairs, but can itself be the site of error.
 
@@ -853,7 +853,7 @@ There are works in which everything converges into a broad harmony. And there ar
 
 There are works in which the central component is not merely one successful component within the system, but the reason the system exists. The writing, rhythm, image, tone, or structure becomes the axis around which everything else arranges itself. In such cases, every layer of execution does not need to become ideal in itself. On the contrary: too much polish might even weaken the thing.
 
-This can be seen in certain comic and meta-television works, where the world is not necessarily built for visual depth, the direction does not always seek cinematic richness, and the aesthetic may remain almost functional. But the writing becomes so precise that the entire shell exists in order to let it strike. The sentence, the structure, the joke, the break, the return, the emotional wound - these become the center of gravity.
+This can be seen in certain comic and meta-television works, where the world is not necessarily built for visual depth, the direction does not always seek cinematic richness, and the aesthetic may remain almost functional. But the writing becomes so precise that the entire shell exists to let it strike. The sentence, the structure, the joke, the break, the return, the emotional wound - these become the center of gravity.
 
 In this sense, works such as *Community* or *Rick and Morty* matter here not as a title over a specific creator, but as examples of a broader principle: a work in which writing becomes an organizing ideal. In *Community*, an entire genre can enter a single episode: western, war film, documentary, bottle episode, zombies, mafia, science fiction, television about television. But genre is not merely formal play. It is an instrument. The artificial form is used to reveal truth about the characters. The parody does not hide the emotion; it is the way to reach it.
 
@@ -887,7 +887,7 @@ In *The Lord of the Rings*, for example, language, myth, journey, landscape, mus
 
 The same work can serve both as an example of formal harmony and as an example of a false ideal morally. *Breaking Bad* is powerful precisely because its artistic system is so exact while the ideal of the character is gradually exposed as a lie.
 
-In this sense, there is a difference between a work in which everything serves writing, and a work in which everything becomes one language. Both can be optimal, but in different ways. The first sacrifices dimensions in order to sharpen an axis. The second connects dimensions in order to build a center.
+In this sense, there is a difference between a work in which everything serves writing, and a work in which everything becomes one language. Both can be optimal, but in different ways. The first sacrifices dimensions to sharpen an axis. The second connects dimensions to build a center.
 
 This distinction is important because it prevents us from judging every work by the same measure. Some works must be judged by the precision of their axis. Others must be judged by the harmony of their system. A work can be great because it is narrow and extremely precise, or because it is broad and all its parts find their place.
 
@@ -953,7 +953,7 @@ A bad adaptation is one that preserves the symbols and loses the ideal.
 
 This failure is especially common in franchises, because they are full of signs that are easy to transfer: sword, ring, suit, tower, ship, mask, name, villain, creature, power. But the sign is not the law. One can preserve the sword and lose the journey. One can preserve the tower and lose the center. One can preserve the hero and lose the question that made the hero a hero.
 
-A good adaptation knows that sometimes one must betray a detail in order to be faithful to the form. It knows that copying is not necessarily loyalty, and that change is not necessarily betrayal. The question is not how much was preserved, but what was preserved. Not how many symbols crossed over, but whether the thing that charged those symbols passed with them.
+A good adaptation knows that sometimes one must betray a detail to be faithful to the form. It knows that copying is not necessarily loyalty, and that change is not necessarily betrayal. The question is not how much was preserved, but what was preserved. Not how many symbols crossed over, but whether the thing that charged those symbols passed with them.
 
 ### The Dark Tower: a body of work trying to become whole
 
@@ -994,7 +994,7 @@ Detective fiction and mystery ask whether truth can be reconstructed from traces
 
 Tragedy asks what happens when the character understands the law of their life too late. The potential existed, but understanding arrived after the system had already closed. Tragedy is not only catastrophe; it is a meeting with form that comes too late.
 
-Comedy asks how truth can be revealed without bearing it directly. It uses distortion, exaggeration, repetition, crudity, or rupture in order to reach precision. Sometimes the lower form is what allows a higher truth to pass without hardening.
+Comedy asks how truth can be revealed without bearing it directly. It uses distortion, exaggeration, repetition, crudity, or rupture to reach precision. Sometimes the lower form is what allows a higher truth to pass without hardening.
 
 Games add another axis: action. In an interactive medium, potential is not only what the creator could have chosen, but what the player can try. The player does not merely receive a finished form; the player acts inside a system of possibilities, failures, rules, and costs. The ideal is not only the end of the story, but the rule-system that forces the player to understand through action. Sometimes the game does not state its truth; it makes the player perform it, fail it, return to it, and discover it through the body of choice.
 
@@ -1030,7 +1030,7 @@ A true ideal requires more than the ability to break. It requires knowing what d
 
 ### What a great work really does
 
-Ultimately, a great work is not measured by the number of possibilities it opened, but by its relation to them. It does not need to be perfect in all of its components. It does not need to realize its whole world. It does not need to explain everything, show everything, continue everything, or connect everything. On the contrary: sometimes its greatness lies precisely in its ability to know what to leave out.
+In the end, a great work is not measured by the number of possibilities it opened, but by its relation to them. It does not need to be perfect in all of its components. It does not need to realize its whole world. It does not need to explain everything, show everything, continue everything, or connect everything. On the contrary: sometimes its greatness lies precisely in its ability to know what to leave out.
 
 A great work knows how to distinguish between potential and noise.  
 Between expansion and loss of center.  
@@ -1548,7 +1548,7 @@ It is the condition that keeps metaphor from becoming false.
 
 The imaginary number is not a false number. It is not a mathematical joke and not a fantasy. It is an additional axis of description. It appears where the ordinary axis of quantity is not enough. It allows thought to describe rotation, phase, oscillation, change of direction, and the relation between what is present and what is not yet present.
 
-There is no need to say that the imaginary number is a “thing” inside the world. It is enough to say something more careful: even within the most precise thought, the real is not always describable on one line. Sometimes an axis that does not look like ordinary quantity is needed in order to understand real motion.
+There is no need to say that the imaginary number is a “thing” inside the world. It is enough to say something more careful: even within the most precise thought, the real is not always describable on one line. Sometimes an axis that does not look like ordinary quantity is needed to understand real motion.
 
 In this sense, the imaginary is not the opposite of the real.  
 It is the way the real becomes thinkable beyond a single axis.
@@ -1617,7 +1617,7 @@ Potential is not outside reality. It is not above it and not after it. It is ins
 
 The ideal, by contrast, is not every possibility. It is not everything that could have happened. It is not the infinite scattering of potential in all directions. The ideal is the direction in which potential ceases to be merely open and begins to become precise.
 
-There is no need to attribute conscious will to reality in order to speak of ideal. The ideal is a name for the state in which a possibility passes through limits, measurements, resistances, and distortions, and still manages to appear in a form that does not erase the depth from which it came.
+There is no need to attribute conscious will to reality to speak of ideal. The ideal is a name for the state in which a possibility passes through limits, measurements, resistances, and distortions, and still manages to appear in a form that does not erase the depth from which it came.
 
 It can be said this way:
 
@@ -1643,7 +1643,7 @@ This does not mean that gravity has will, morality, or intention. Gravity functi
 
 Gravity, in this sense, is not the enemy of freedom. It is one of the ways potential agrees not to remain open in all directions at once. It is not the negation of possibility, but the condition by which possibility can become world. It is the contraction that allows form. It is the weight that allows something to remain present long enough to be present at all.
 
-Potential, when completely open, is still not a world. It can be everything, and for that reason it is not yet anything. In order to appear, it must agree to lose some of its openness. It must agree to direction, body, limit, and place. Gravity is one of the physical names of that agreement: not to be everywhere, in order to be here.
+Potential, when completely open, is still not a world. It can be everything, and for that reason it is not yet anything. In order to appear, it must agree to lose some of its openness. It must agree to direction, body, limit, and place. Gravity is one of the physical names of that agreement: not to be everywhere, to be here.
 
 But every condition that allows a world can, at its edge, also close it.
 
@@ -1674,7 +1674,7 @@ Gravity teaches that freedom requires form.
 The black hole teaches that form can become a cage.  
 The white hole, as an image only, reminds us that there are sources that do not open to entry, but to appearance.
 
-And between the three stretches the same question: how much contraction does potential need in order to become world, and when does that contraction begin to erase the very possibility for which it was born?
+And between the three stretches the same question: how much contraction does potential need to become world, and when does that contraction begin to erase the very possibility for which it was born?
 
 ### The Radiation of the Black Hole
 
@@ -1895,7 +1895,7 @@ Benoit Mandelbrot and fractal thinking are relevant as background for recursion,
 
 The physics that appears in the theory is not a proof of metaphysics. It is a precise language, a limited structural analogy, and a partial formal image. It helps distinguish physical energy from metaphorical energy, physical matter from matter as an image of form and condition, and mathematical, physical, and existential boundaries from one another.
 
-Einstein and Minkowski are relevant because of relativity, spacetime, mass-energy equivalence, and the understanding that gravity is not merely a force on a fixed stage but is related to the geometry of spacetime. The theory does not derive meaning from Einstein’s equations; it uses them carefully in order to think of “weight” as an image for what changes the field of possibilities around it.
+Einstein and Minkowski are relevant because of relativity, spacetime, mass-energy equivalence, and the understanding that gravity is not merely a force on a fixed stage but is related to the geometry of spacetime. The theory does not derive meaning from Einstein’s equations; it uses them carefully to think of “weight” as an image for what changes the field of possibilities around it.
 
 Max Planck, Niels Bohr, Werner Heisenberg, Erwin Schrödinger, Paul Dirac, Wolfgang Pauli, and Richard Feynman are relevant as background to quantum mechanics, quantum field theory, superposition, measurement, uncertainty, particles, diagrams, fermions, and bosons. The theory does not turn quantum mechanics into mysticism; it uses it to resist the assumption that only what has already become an object is real in the deeper sense.
 

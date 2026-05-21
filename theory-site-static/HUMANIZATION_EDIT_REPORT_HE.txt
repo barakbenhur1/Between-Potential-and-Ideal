@@ -1,0 +1,63 @@
+דו״ח ליטוש כתיבה ושימור משמעות
+
+סוג חבילה: מלאה
+
+מה נעשה:
+- בוצע מעבר שמרני על קבצי HTML/MD/TXT ציבוריים כדי להפחית ניסוחים כלליים או מכניים מדי.
+- נשמרו מבנה האתר, סדר הפרקים, הקישורים, התמונות, הנכסים והמסמכים הציבוריים.
+- לא נמחקו דוגמאות, סיפורים, פרקים או רעיונות מהותיים.
+- ההחלפות היו נקודתיות: מעברים גנריים, ניסוחי “AI” מובהקים, וניסוחים בירוקרטיים באתר.
+
+קבצים שנערכו:
+- 404.html
+- ai-en.html
+- ai.html
+- applied-en.html
+- applied.html
+- core-en.html
+- core.html
+- critique-en.html
+- critique.html
+- en.html
+- files/ai-believes/reverse-turing-conversation-he.html
+- files/ai-believes/reverse-turing-conversation-he.md
+- files/ai-believes/what-ai-believes-he.html
+- files/ai-believes/what-ai-believes-he.md
+- files/ai-believes/when-i-am-also-you-en.html
+- files/ai-believes/when-i-am-also-you-en.md
+- files/ai-believes/when-i-am-also-you-he.html
+- files/ai-believes/when-i-am-also-you-he.md
+- files/appendices/stories-before-thought-english.html
+- files/appendices/super_mirrors_when_its_not_you_english.txt
+- files/appendices/the_heretic_from_a_foreign_land_final_micro_en.txt
+- files/between-potential-and-ideal-en-editorial.html
+- files/between-potential-and-ideal-en.md
+- files/between-potential-and-ideal-he-editorial.html
+- files/between-potential-and-ideal-he.md
+- files/editorial-tightened/between-potential-and-ideal-tightened-en.html
+- files/editorial-tightened/between-potential-and-ideal-tightened-en.md
+- files/editorial-tightened/between-potential-and-ideal-tightened-he.html
+- files/editorial-tightened/between-potential-and-ideal-tightened-he.md
+- files-en.html
+- files.html
+- index.html
+- methodology-en.html
+- methodology.html
+- sources-en.html
+- sources.html
+- witness-en.html
+- witness.html
+- files-en.html
+
+בדיקות:
+- קישורים פנימיים שנבדקו: 1290
+- קישורים שבורים: 0
+- anchors שבורים: 0
+- שמות mojibake: 0
+- קבצי EN טקסטואליים עם עברית חריגה: 0
+
+הערת שימור:
+העריכה לא נועדה לקצר או לשכתב מחדש. במקומות שבהם שינוי ניסוח היה עלול לשנות משמעות, הקובץ הושאר כפי שהוא.
+
+המלצה להמשך:
+ליטוש עומק ספרותי מלא לכל פרק ארוך בנפרד עדיף לעשות בקבצים ייעודיים, עם diff פרק־פרק, כדי לא לסכן משמעות או מבנה.

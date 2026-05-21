@@ -1,5 +1,5 @@
 :root {
-  --font-hand-he: "Arial", "Noto Sans Hebrew", system-ui, sans-serif;
+  --font-hand-he: "Noto Rashi Hebrew", "Gveret Levin", "Playpen Sans Hebrew", cursive;
   --font-hand-en: Georgia, "Times New Roman", serif;
 }
 
@@ -1822,3 +1822,52 @@ html[lang="en"] .author-note-page[dir="ltr"] .author-note-main.en *,
 #main:focus{outline:none}.language-status-note,.download-format-note{font-size:1rem}.feedback-card{margin-top:1.2rem}.opening-visual{margin:0 0 1.6rem;border:1px solid rgba(38,44,52,.14);border-radius:28px;overflow:hidden;background:#fffaf0;box-shadow:0 16px 42px rgba(24,29,36,.08)}.opening-visual img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}.opening-visual figcaption{position:absolute;inline-size:1px;block-size:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;clip-path:inset(50%)}
 @media(max-width:680px){.opening-visual{border-radius:20px;margin-bottom:1rem}.opening-visual img{aspect-ratio:4/3}.lead{font-size:1.05rem}.reader-card,.hub-card{padding:1rem}.download-button,.card-link,.language-switch,.site-nav a{min-height:44px}}
 
+
+
+/* 2026-05-21 author-note/new-tab fix */
+.author-note-title.handwriting-title,
+.author-hand-note-page.handwriting-title,
+.author-hand-note-page.handwriting-title *{
+  font-family:var(--font-hand-he,"Noto Rashi Hebrew","Gveret Levin","Playpen Sans Hebrew",cursive)!important;
+  font-weight:400!important;
+  letter-spacing:0!important;
+}
+a[target="_blank"]::after{
+  content:"";
+}
+a:focus-visible,button:focus-visible{
+  outline:3px solid #b68035;
+  outline-offset:4px;
+  border-radius:8px;
+}
+
+
+/* Section/tab visuals — text-free symbolic images for the main navigation pages */
+.tab-visual{
+  margin:0 0 1.55rem;
+  border:1px solid rgba(38,44,52,.14);
+  border-radius:28px;
+  overflow:hidden;
+  background:#fffaf0;
+  box-shadow:0 16px 42px rgba(24,29,36,.08);
+}
+.tab-visual img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  object-fit:cover;
+}
+.tab-visual figcaption{
+  position:absolute;
+  inline-size:1px;
+  block-size:1px;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  white-space:nowrap;
+  clip-path:inset(50%);
+}
+@media(max-width:680px){
+  .tab-visual{border-radius:20px;margin-bottom:1rem}
+  .tab-visual img{aspect-ratio:4/3}
+}
