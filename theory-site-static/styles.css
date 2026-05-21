@@ -2739,3 +2739,50 @@ body.design-prompt-theme .signature-blurbs.refined-blurbs{
     border-radius:18px;
   }
 }
+
+/* 2026-05-21 micro visual polish: hub card alignment + lighter living accent rails
+   Scope: only the small cards shown as a set, and only the side color accents.
+   Intent: keep the current visual language, but make the cards feel aligned and slightly more luminous. */
+body.design-prompt-theme .hub-grid.three{
+  align-items:stretch;
+}
+body.design-prompt-theme .hub-grid.three .hub-card.media-card{
+  display:flex;
+  flex-direction:column;
+  min-block-size:100%;
+}
+body.design-prompt-theme .hub-grid.three .hub-card.media-card .card-media-head{
+  align-items:flex-start;
+  min-block-size:86px;
+  margin-block-end:.75rem;
+}
+body.design-prompt-theme .hub-grid.three .hub-card.media-card .card-media-head .card-thumb{
+  margin-block-start:0;
+}
+body.design-prompt-theme .hub-grid.three .hub-card.media-card .card-link{
+  margin-block-start:auto;
+  align-self:flex-start;
+}
+body.design-prompt-theme[dir="rtl"] .hub-grid.three .hub-card.media-card .card-link,
+body.design-prompt-theme .hub-grid.three[dir="rtl"] .hub-card.media-card .card-link,
+body.design-prompt-theme .hub-grid.three .hub-card.media-card[dir="rtl"] .card-link{
+  align-self:flex-end;
+}
+body.design-prompt-theme .media-card::before,
+body.design-prompt-theme .tone-card::before{
+  background:linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--accent-a) 72%, white),
+    color-mix(in srgb, var(--accent-b) 72%, white),
+    color-mix(in srgb, var(--accent-c) 72%, white)
+  );
+  opacity:.82;
+}
+body.design-prompt-theme .media-card::after,
+body.design-prompt-theme .tone-card::after{
+  background:radial-gradient(circle, color-mix(in srgb, var(--accent-b) 18%, white 8%, transparent), transparent 68%);
+  opacity:.85;
+}
+body.design-prompt-theme .hub-grid.three .hub-card.media-card .card-link{
+  align-self:center;
+}
