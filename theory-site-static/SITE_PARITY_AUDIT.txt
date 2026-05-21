@@ -1,0 +1,23 @@
+SITE PARITY AUDIT
+=================
+
+Hebrew/English page-pair structural parity:
+- index.html / en.html: headings 8/8, images 7/7, visible links 25/25, all links 25/25
+- summary.html / summary-en.html: headings 9/9, images 2/2, visible links 27/27, all links 27/27
+- core.html / core-en.html: headings 5/5, images 6/6, visible links 25/25, all links 25/25
+- witness.html / witness-en.html: headings 7/7, images 8/8, visible links 23/23, all links 23/23
+- applied.html / applied-en.html: headings 6/6, images 7/7, visible links 25/25, all links 25/25
+- ai.html / ai-en.html: headings 8/8, images 9/9, visible links 28/28, all links 40/32
+- files.html / files-en.html: headings 3/3, images 4/4, visible links 75/75, all links 75/75
+- methodology.html / methodology-en.html: headings 6/6, images 7/7, visible links 16/16, all links 16/16
+- critique.html / critique-en.html: headings 11/11, images 12/12, visible links 17/17, all links 17/17
+- sources.html / sources-en.html: headings 4/4, images 5/5, visible links 24/24, all links 24/24
+- about.html / about-en.html: headings 3/3, images 1/1, visible links 16/16, all links 16/16
+- changelog.html / changelog-en.html: headings 2/2, images 1/1, visible links 16/16, all links 16/16
+
+Internal references checked: 995
+Missing internal references: 0
+
+Notes:
+- The English AI page now exposes the full AI archive at the concept-card level, including Hebrew-source editions where no English adaptation exists yet.
+- Visual parity was checked through image counts and visible media-card treatment for the main paired pages.
