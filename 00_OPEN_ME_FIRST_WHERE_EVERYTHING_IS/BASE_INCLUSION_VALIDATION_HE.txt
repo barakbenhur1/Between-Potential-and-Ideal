@@ -1,4 +1,0 @@
-Base zip: /mnt/data/between_potential_ideal_cover_toc_style_fixed(3).zip
-Base file count: 208
-Missing in final updated package: 0
-All uploaded-base files are included in the updated package.

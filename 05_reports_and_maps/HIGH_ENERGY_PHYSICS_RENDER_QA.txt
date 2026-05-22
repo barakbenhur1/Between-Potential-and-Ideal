@@ -1,1 +1,0 @@
-PASS: recreated and rendered Hebrew high-energy chapter DOCX to PNG after list-format QA fix.

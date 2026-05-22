@@ -1,6 +1,0 @@
-high-energy-physics.html: broken styles.css?v=20260521-ideal-improved
-high-energy-physics-en.html: broken styles.css?v=20260521-ideal-improved
-applied.html: broken styles.css?v=20260521-ideal-improved
-applied-en.html: broken styles.css?v=20260521-ideal-improved
-methodology.html: broken styles.css?v=20260521-ideal-improved
-sources.html: broken styles.css?v=20260521-ideal-improved
