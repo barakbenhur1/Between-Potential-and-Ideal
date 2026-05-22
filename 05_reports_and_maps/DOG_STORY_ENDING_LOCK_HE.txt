@@ -1,0 +1,13 @@
+הסיום הנעול נשמר: ואז הוא אמוגי מפאק.
+קבצים שבהם נמצאה התייחסות:
+05_reports_and_maps/COVER_TOC_RTL_STORIES_FIX_REPORT_HE.md
+05_reports_and_maps/DOG_STORY_ENDING_LOCK_HE.txt
+05_reports_and_maps/FINAL_DISTRIBUTION_V2_FIX_SUMMARY_HE.txt
+05_reports_and_maps/FINAL_DISTRIBUTION_V3_FIX_SUMMARY_HE.txt
+05_reports_and_maps/UNIVERSE_GEOMETRY_AND_IHNMAIMS_INTEGRATION_REPORT_HE.md
+05_reports_and_maps/HIGH_ENERGY_PHYSICS_INTEGRATION_REPORT_HE.md
+02_full_theory_documents/HE/between-potential-and-ideal-he.md
+02_full_theory_documents/HE/stories-before-thought-hebrew-rtl.md
+02_full_theory_documents/HE/between-potential-and-ideal-he-complete-with-stories-and-expansion.md
+01_complete_website_archive/Between-Potential-and-Ideal-main/theory-site-static/files/appendices/stories-before-thought-hebrew-rtl.html
+01_complete_website_archive/Between-Potential-and-Ideal-main/theory-site-static/files/appendices/stories-before-thought-hebrew-rtl.md
