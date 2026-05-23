@@ -1,3 +1,0 @@
-# Link QA
-
-No missing local href targets detected.
