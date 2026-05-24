@@ -313,18 +313,6 @@ their conditions.
 
 ## <span class="chapter-prefix">1. </span>A Model, Not a Final Declaration
 
-<!-- V31_EXPANSION:1. A Model, Not a Final Declaration -->
-A further methodological distinction is needed here: being a model is not a weakness compared with being a closed system; it is a condition of honesty. A system that declares itself final too early begins to defend itself instead of examining itself. A model remains answerable to the questions from which it was born: whether its distinctions hold, whether its transitions are justified, and whether the reader can see where a claim ends and a metaphor begins.
-
-The logical version is therefore not meant to make the theory colder, but more responsible. It breaks the language into steps so that no leap is disguised as a conclusion. Potential is not ideal; ideal is not optimal; optimal does not prove that the path is perfect. Each term has a different role, and confusion between them is the source of most dangerous readings.
-
-Even when the model uses broad language, it must remain stoppable. One must be able to say: here this is an image; here this is a value claim; here this is an inspiration from science or computation; here there is not yet proof. The ability to stop the sentence before it becomes an excessive declaration belongs to the structure itself.
-
-The first chapter is therefore not merely a cautious introduction. It lays down the working conditions for everything that follows. If the reader accepts the model, they are not asked to believe it but to test it. If they reject it, the rejection can still be useful if it shows where a distinction is weak, where a transition is too fast, or where an image borrows authority it has not earned.
-
-In this way, the model keeps two loyalties at once: loyalty to the daring of the theory and loyalty to the humility of critique. Without daring, there are only scattered notes. Without humility, there is a system that may make itself too immune. The logical ideal of the chapter is to hold both forces together.
-<!-- /V31_EXPANSION -->
-
 The theory is not presented as proven science, a new religion, or a
 closed system that cannot be challenged. It is an
 existential-metaphysical model: a way of thinking about the relation
@@ -352,31 +340,7 @@ theorem,” but “does the structure hold without confusing domains,
 justifying pain, or turning hope into blind belief.” In this sense, the
 model seeks strength precisely by marking its limits.
 
-
-
-To call this a model means that it offers a map of relations, not ownership of reality. A good map does not replace the road, and it does not release the traveler from checking where they stand. It only makes certain relations visible: possibility and form, pain and responsibility, freedom and cost, hope and the danger of turning hope into an empty promise.
-
-The model must therefore pass three tests. The first is the test of distinctions: whether it preserves the difference between potential, ideal, and optimal. The second is the test of domains: whether it knows when it is doing philosophy, when it is using metaphor, and when it is approaching scientific language. The third is the test of humanity: whether it avoids justifying suffering, reducing a person to a case, or turning complexity into an answer that is too easy.
-
-In this sense, the theory does not ask for immunity from criticism. It needs criticism so that it does not inflate beyond what it can honestly carry. Every large claim must return to the ground: to a body, a time, an example, and a case in which a real person could be harmed by careless reading. If the model cannot stand there, it is not mature enough.
-
-The model also does not replace existing sources. It may learn from theology, philosophy, literature, science, and computation, but it must not borrow an authority that is not its own. When it relies on an image, it must say that it is an image. When it uses a logical structure, it must show the boundary of that structure. When it uses a scientific term, it must avoid turning the term into metaphysical decoration.
-
-This opening chapter is therefore necessary, not merely technical. It sets the ethics of reading: belief is not required, but cynicism is not enough either. The reader is asked to test whether the structure makes relation, boundary, and responsibility more visible. If it does, it has value. If it does not, it must be corrected. The very possibility of correction is part of the theory's honesty.
-
 ## <span class="chapter-prefix">2. </span>Potential, Ideal, and Optimal
-
-<!-- V31_EXPANSION:2. Potential, Ideal, and Optimal -->
-This triad is the spine of the logical version. Potential marks the space of the possible; ideal marks what is worthy within the possible; optimal marks the local translation of the worthy under real conditions. If one of the three terms is swallowed by another, the theory loses its power of distinction.
-
-Potential alone is not enough, because everything possible is included in it: building and destruction, healing and harm, truth and falsehood. There is no moral value in the mere fact that something can appear. The ideal enters in order to select from possibility, but the ideal alone is also not enough, because an ideal that does not pass through conditions may remain abstract or become cruel in the name of its purity.
-
-The optimal is not an inferior compromise but a mechanism of responsibility. It asks: what is the nearest form of the worthy that can be enacted now without lying about the cost, without erasing those harmed, and without calling limitation “completion.” The optimal is therefore where the theory meets time, resources, body, community, and uncertainty.
-
-It is also important to distinguish the optimal from the convenient. What is convenient is not necessarily optimal, and what is optimal is not necessarily pleasant. Optimality requires a relation between value and conditions of realization. It does not ask only what is easy, but what can keep the direction without breaking the vessel that carries it.
-
-From this follows one of the theory’s most important tests: whether it can move from potential to ideal and then to optimal without losing the differences. If it can, it can serve as a map. If it cannot, it returns to being beautiful language about possibility without the capacity to decide within a real world.
-<!-- /V31_EXPANSION -->
 
 Potential is everything that can appear. It is wider than good, wider
 than evil, wider than form, and wider than meaning. Potential alone is
@@ -414,18 +378,6 @@ abandoning direction. The optimal is where grace and responsibility
 meet.
 
 ## <span class="chapter-prefix">3. </span>The River, the Boat, and Choice
-
-<!-- V31_EXPANSION:3. The River, the Boat, and Choice -->
-The river is a way of saying that existence is not static. Conditions change, knowledge changes, and the costs of choices sometimes appear only after movement has begun. The boat is a way of saying that we never touch the whole river at once. We navigate through tools, language, body, memory, institutions, and habits; all of these enable movement, but all of them also limit it.
-
-Choice, within this image, is neither absolute freedom nor absolute compulsion. It is action inside a current. There is no point in demanding a decision untouched by anything, and no point in abandoning responsibility because influences exist. Responsibility begins precisely where there are conditions, and where there is still a difference between one form of response and another.
-
-The boat also clarifies why knowledge received from a distance is not identical with knowledge gained through the path. A map, advice, or formula can be received, but only movement teaches how they break or hold in contact with reality. This is not a dismissal of prior knowledge; it is a refusal to turn prior knowledge into a substitute for friction.
-
-From the logical side, the image holds the relation between a state-space and a strategy. The river is not only a place but a system of possibilities; the boat is a transition mechanism; choice is action under partial information. The ideal does not abolish this partiality, but demands that it become more responsible.
-
-The chapter therefore places the theory between two failures: the fantasy of total control, and complete surrender to the current. The ideal path is neither. It is navigation: continuous reading of conditions, correction of direction, and the understanding that the bank is not proof that the journey was clean, but an invitation to ask what was learned along the way.
-<!-- /V31_EXPANSION -->
 
 The river image summarizes the practical movement of the theory. The
 universe is the river, existence is the boat, and potential and ideal
@@ -504,7 +456,6 @@ source.
 <img src="../../figures/v25_chapter_ai-open-problems.png"
 decoding="async" loading="lazy"
 alt="Artificial Intelligence and Open Problems" />
-<figcaption aria-hidden="true">Image description: answer, source, responsibility, and the distance that can be stolen.</figcaption>
 </figure>
 
 ### Responsibility, source, truth, and a tool that is not a living owner
@@ -571,7 +522,6 @@ actionable ending*
 <img src="../../figures/v25_chapter_i-have-no-mouth.png"
 decoding="async" loading="lazy"
 alt="I Have No Mouth, and I Must Scream" />
-<figcaption aria-hidden="true">Image description: story, game, and the difference between a locked ending and an actable ending.</figcaption>
 </figure>
 
 ### AM, locked ending, moral action, and systemic hell
@@ -686,7 +636,6 @@ demand to climb; grace is rest, protection, and sometimes stopping.
 <figure class="chapter-figure image-frame">
 <img src="../../figures/v25_chapter_education-of-potential.png"
 decoding="async" loading="lazy" alt="Education of Potential" />
-<figcaption aria-hidden="true">Image description: learning, distance, and understanding that cannot be shortcut.</figcaption>
 </figure>
 
 Education is a direct test of Between Potential and Ideal because it
@@ -976,7 +925,6 @@ upper-bound edge*
 <figure class="chapter-figure image-frame">
 <img src="../../figures/cover_logical_recursion_whole_diagram.png" decoding="async"
 loading="lazy" alt="The Recursive Edge" />
-<figcaption aria-hidden="true">Image description: recursive layers in which every boundary can become a new source.</figcaption>
 </figure>
 
 ### The ideal that does not close and the test that continues after every answer
@@ -1875,7 +1823,6 @@ become proof*
 src="../../figures/cover_logical_recursion_whole_diagram.png"
 decoding="async" loading="lazy"
 alt="Science, Physics, and Mathematics as a Boundary Discipline" />
-<figcaption aria-hidden="true">Image description: formulas, measurement, and models as boundary languages, not final proof.</figcaption>
 </figure>
 
 ### How to use precision without turning it into decoration
@@ -1939,7 +1886,6 @@ answer*
 src="../../figures/v25_chapter_locality-nonlocality-contextuality.png"
 decoding="async" loading="lazy"
 alt="Locality, Non-locality, and Contextuality" />
-<figcaption aria-hidden="true">Image description: local and non-local relations, context, measurement, and dependence between observer and observed.</figcaption>
 </figure>
 
 ### Bell, Kochen-Specker, Bohmian mechanics, and the caution against slogan physics
@@ -2589,7 +2535,6 @@ that thing.
 <figure class="chapter-figure image-frame">
 <img src="../../figures/v25_chapter_art-of-potential.png"
 decoding="async" loading="lazy" alt="Art of Potential" />
-<figcaption aria-hidden="true">Image description: creation as a field where possibility receives form without being fully closed.</figcaption>
 </figure>
 
 ### Living source, canon, and form that does not replace breath
@@ -2661,7 +2606,6 @@ borrowing of terms.
 <figure class="chapter-figure image-frame">
 <img src="../../figures/v25_chapter_music-of-potential.png"
 decoding="async" loading="lazy" alt="Music of Potential" />
-<figcaption aria-hidden="true">Image description: rhythm, silence, and return as ways of carrying possibility through time.</figcaption>
 </figure>
 
 ### Voice, time, silence, and an optimum that is not only precision
@@ -2726,7 +2670,6 @@ Material, Form, Load, and Repair That Is Not Redemption
 <img src="../../figures/17_engineering_architecture_potential.png"
 decoding="async" loading="lazy"
 alt="Figure: Engineering and Architecture of Potential." />
-<figcaption aria-hidden="true">Image description: an engineered system in which potential becomes structure, channeling, testing, and repair.</figcaption>
 </figure>
 
 Engineering looks, from the outside, like a discipline of calculation:
@@ -3062,7 +3005,6 @@ Money, Value, Trust, and Potential
 <figure class="image-frame">
 <img src="../../figures/18_economy_relation_potential.png"
 decoding="async" loading="lazy" alt="Figure: Economy of Relation." />
-<figcaption aria-hidden="true">Image description: value, exchange, and responsibility as living relations, not only as numbers.</figcaption>
 </figure>
 
 Economy looks, from the outside, like a field of numbers: money, prices,
@@ -3438,7 +3380,6 @@ Law, Power, Trust, and Repair That Is Not Redemption
 <img src="../../figures/19_governance_society_potential.png"
 decoding="async" loading="lazy"
 alt="Figure: Governance of Potential." />
-<figcaption aria-hidden="true">Image description: institutions, decision, and public coordination as ways of translating possibility into responsibility.</figcaption>
 </figure>
 
 Governance looks, from the outside, like a field of institutions:
@@ -3732,7 +3673,6 @@ Human.
 <figure class="chapter-figure image-frame">
 <img src="../../figures/v25_chapter_law-of-potential.png"
 decoding="async" loading="lazy" alt="Law of Potential" />
-<figcaption aria-hidden="true">Image description: law, interpretation, and boundary as a space where possibility is tested against responsibility.</figcaption>
 </figure>
 
 Law is one of the hardest tests of the theory because it operates
@@ -3803,7 +3743,6 @@ borrowing of terms.
 <figure class="chapter-figure image-frame">
 <img src="../../figures/v25_chapter_medicine-of-potential.png"
 decoding="async" loading="lazy" alt="Medicine of Potential" />
-<figcaption aria-hidden="true">Image description: healing as a careful reading of body, suffering, chance, and conditions.</figcaption>
 </figure>
 
 ### Body, diagnosis, treatment, and a person who is not a case
@@ -4286,7 +4225,6 @@ from which it came.
 <figure class="chapter-figure image-frame">
 <img src="../../figures/v25_chapter_boundary-horizons.png"
 decoding="async" loading="lazy" alt="Boundary Horizons" />
-<figcaption aria-hidden="true">Image description: a boundary that is not merely a wall, but a horizon guiding the relation between possibility and form.</figcaption>
 </figure>
 
 ### What is visible, what is hidden, and what must not be inferred too quickly
@@ -4537,7 +4475,6 @@ born from potential.
 src="../../figures/cover_philosophical_recursion_whole_diagram.png"
 decoding="async" loading="lazy"
 alt="Universe Structure / The Shape of the Universe and the Shape of Potential" />
-<figcaption aria-hidden="true">Image description: the shape of the universe as relations, horizons, and passages between potential and form.</figcaption>
 </figure>
 
 ### Flat universe, curved universe, multiverse and omniverse as cautious boundary language
@@ -4602,7 +4539,6 @@ borrowing of terms.
 <figure class="chapter-figure image-frame">
 <img src="../../figures/v25_chapter_high-energy-physics.png"
 decoding="async" loading="lazy" alt="High-Energy Physics" />
-<figcaption aria-hidden="true">Image description: energy, particles, and horizons as a test of the limits of form.</figcaption>
 </figure>
 
 ### The Standard Model, QFT, Higgs, and the boundary between language and proof
@@ -4666,7 +4602,6 @@ physics into metaphysical proof*
 <img src="../../figures/v25_chapter_black-holes-horizons-holography.png"
 decoding="async" loading="lazy"
 alt="Black Holes, Event Horizons, and the Holographic Principle" />
-<figcaption aria-hidden="true">Image description: horizon, information, and a threshold where what disappears still leaves structural trace.</figcaption>
 </figure>
 
 ### Boundary, trace, and information without turning mystery into myth
