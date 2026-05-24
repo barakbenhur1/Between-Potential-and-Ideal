@@ -42,7 +42,7 @@ _Stories I Told My Mother Before Sleep_
 
 ## How Truth Remains Honest
 
-_A short story about conversation, trauma, and the promise to return to the ideal_
+_Understanding How to Be Misunderstood_
 
 ![story image 1](assets/story_image_1.png)
 
