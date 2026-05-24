@@ -1235,6 +1235,78 @@ body.appendix-document-page .image-frame img,
 }
 
 </style>
+<style id="v41-symmetric-media-padding">
+/* V41 — symmetric white padding for tab/page media images */
+:root{
+  --bpi-symmetric-media-pad: clamp(14px, 1.15vw, 22px);
+  --bpi-symmetric-media-radius: 30px;
+  --bpi-symmetric-media-inner-radius: 22px;
+}
+
+/* Frame-like media blocks used across all tab/content pages */
+body.design-prompt-theme .compact-section-visual,
+body.design-prompt-theme .section-visual,
+body.design-prompt-theme .opening-visual,
+body.design-prompt-theme .hero-art,
+body.design-prompt-theme .image-frame {
+  padding: var(--bpi-symmetric-media-pad) !important;
+  box-sizing: border-box !important;
+  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.94)) !important;
+  border: 1px solid rgba(10,58,104,.16) !important;
+  border-radius: var(--bpi-symmetric-media-radius) !important;
+  overflow: hidden !important;
+  background-clip: padding-box !important;
+}
+
+/* The image itself must not create optical imbalance inside the white frame */
+body.design-prompt-theme .compact-section-visual > img,
+body.design-prompt-theme .section-visual > img,
+body.design-prompt-theme .opening-visual > img,
+body.design-prompt-theme .hero-art > img,
+body.design-prompt-theme .image-frame > img,
+body.design-prompt-theme .image-frame picture > img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  border-radius: var(--bpi-symmetric-media-inner-radius) !important;
+  object-position: center center !important;
+}
+
+/* Preserve the existing wide tab/banner proportion while making the white frame equal on all sides */
+body.design-prompt-theme .compact-section-visual > img {
+  height: clamp(136px, 18vw, 212px) !important;
+  aspect-ratio: 21 / 7 !important;
+  object-fit: cover !important;
+}
+
+/* Direct card images also receive a balanced white frame, without needing HTML wrappers */
+body.design-prompt-theme .content-card-image,
+body.design-prompt-theme img.content-card-image {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  padding: var(--bpi-symmetric-media-pad) !important;
+  box-sizing: border-box !important;
+  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.94)) !important;
+  border: 1px solid rgba(10,58,104,.16) !important;
+  border-radius: var(--bpi-symmetric-media-radius) !important;
+  overflow: hidden !important;
+}
+
+/* Keep mobile padding balanced too */
+@media (max-width: 680px){
+  :root{
+    --bpi-symmetric-media-pad: 12px;
+    --bpi-symmetric-media-radius: 24px;
+    --bpi-symmetric-media-inner-radius: 17px;
+  }
+}
+</style>
 </head><body class="public-page public-page-he design-prompt-theme section-applied appendix-document-page"><a class="skip-link" href="#main">דלג לתוכן המרכזי</a><header class="site-header" dir="rtl" role="banner"><div class="site-brand"><a href="../../index.html">Between Potential and Ideal</a></div><nav aria-label="Primary navigation" class="site-nav" role="navigation"><a href="../../index.html">בית</a><a href="summary.html">תקציר</a><a href="core.html">ליבה</a><a href="witness.html">עדות</a><a aria-current="page" class="active" href="applied.html">יישום</a><a href="ai.html">AI</a><a href="files.html">קבצים</a><a href="methodology.html">מתודולוגיה</a><a href="critique.html">ביקורת</a><a href="sources.html">מקורות</a></nav><a aria-label="מעבר לגרסה האנגלית המקבילה" class="language-switch" href="../en/education-of-potential-en.html">English</a></header><main class="site-main" dir="rtl" id="main" role="main"><nav aria-label="Breadcrumb" class="breadcrumbs"><a href="../../index.html">בית</a><span>›</span><a href="applied.html">הרחבות ויישומים</a><span>›</span><span>חינוך של פוטנציאל</span></nav><section class="page-title media-page-title accent-methodology"><div class="page-title-head"><img alt="חינוך של פוטנציאל" class="page-title-mark" decoding="async" height="480" loading="lazy" src="../../figures/v25_chapter_education-of-potential.png" width="480"/><h1>חינוך של פוטנציאל</h1></div><p class="lead">למידה, מרחק והבנה שאינה קיצור דרך</p></section><section class="notice-box media-card accent-files"><div class="card-media-head"><img alt="פורמטים להורדה" class="card-thumb" decoding="async" height="480" loading="lazy" src="../../figures/thumb_files.png" width="480"/><h2>פורמטים מלאים</h2></div><p>הפרק קיים כעמוד קריאה וכקובצי TXT, MD, DOCX ו-PDF, בעברית ובאנגלית.</p><div class="download-row"><a class="download-button" href="../../files/potential-extensions/education-of-potential-he.txt" rel="noopener noreferrer" target="_blank">TXT</a><a class="download-button" href="../../files/potential-extensions/education-of-potential-he.md" rel="noopener noreferrer" target="_blank">MD</a><a class="download-button" href="../../files/potential-extensions/education-of-potential-he.docx" rel="noopener noreferrer" target="_blank">DOCX</a><a class="download-button" href="../../files/potential-extensions/education-of-potential-he.pdf" rel="noopener noreferrer" target="_blank">PDF</a></div></section><article class="reader-card media-card accent-methodology long-read"><h2>פרק 1 — חינוך של פוטנציאל</h2><figure class="chapter-figure image-frame"><img alt="חינוך של פוטנציאל" decoding="async" loading="lazy" src="../../figures/v25_chapter_education-of-potential.png"/><figcaption aria-hidden="true">תיאור תמונה: למידה, מרחק והבנה שאינה קיצור דרך.</figcaption></figure>
 <h3>למידה, מרחק והבנה שאינה קיצור דרך</h3>
 <p class="hebrew-rtl-force" dir="rtl">חינוך הוא מבחן ישיר של התאוריה “בין פוטנציאל לאידיאל”, מפני שהוא עוסק בדיוק בשאלה כיצד אפשר לפתוח אפשרות לפני אדם בלי לגנוב ממנו את הדרך שבה האפשרות נעשית שלו. כל מערכת חינוך מציבה לפני הלומד מרחב של פוטנציאל: מה הוא יכול להבין, מה הוא יכול לעשות, מה הוא יכול לשאול, איזה אדם הוא יכול להפוך להיות. אבל הפוטנציאל הזה אינו מרחב מופשט. הוא מופיע בתוך גוף, שפה, פחד, זמן, בית, כיתה, מורה, כלי, מוסד, מדידה, תרבות, זיכרון, וסבל שאינו אמור להיות קדוש אבל גם אינו ניתן למחיקה.</p>

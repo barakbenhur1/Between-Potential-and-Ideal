@@ -1828,6 +1828,78 @@ body.stories-page .image-frame img {
 }
 
 </style>
+<style id="v41-symmetric-media-padding">
+/* V41 — symmetric white padding for tab/page media images */
+:root{
+  --bpi-symmetric-media-pad: clamp(14px, 1.15vw, 22px);
+  --bpi-symmetric-media-radius: 30px;
+  --bpi-symmetric-media-inner-radius: 22px;
+}
+
+/* Frame-like media blocks used across all tab/content pages */
+body.design-prompt-theme .compact-section-visual,
+body.design-prompt-theme .section-visual,
+body.design-prompt-theme .opening-visual,
+body.design-prompt-theme .hero-art,
+body.design-prompt-theme .image-frame {
+  padding: var(--bpi-symmetric-media-pad) !important;
+  box-sizing: border-box !important;
+  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.94)) !important;
+  border: 1px solid rgba(10,58,104,.16) !important;
+  border-radius: var(--bpi-symmetric-media-radius) !important;
+  overflow: hidden !important;
+  background-clip: padding-box !important;
+}
+
+/* The image itself must not create optical imbalance inside the white frame */
+body.design-prompt-theme .compact-section-visual > img,
+body.design-prompt-theme .section-visual > img,
+body.design-prompt-theme .opening-visual > img,
+body.design-prompt-theme .hero-art > img,
+body.design-prompt-theme .image-frame > img,
+body.design-prompt-theme .image-frame picture > img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  border-radius: var(--bpi-symmetric-media-inner-radius) !important;
+  object-position: center center !important;
+}
+
+/* Preserve the existing wide tab/banner proportion while making the white frame equal on all sides */
+body.design-prompt-theme .compact-section-visual > img {
+  height: clamp(136px, 18vw, 212px) !important;
+  aspect-ratio: 21 / 7 !important;
+  object-fit: cover !important;
+}
+
+/* Direct card images also receive a balanced white frame, without needing HTML wrappers */
+body.design-prompt-theme .content-card-image,
+body.design-prompt-theme img.content-card-image {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  padding: var(--bpi-symmetric-media-pad) !important;
+  box-sizing: border-box !important;
+  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.94)) !important;
+  border: 1px solid rgba(10,58,104,.16) !important;
+  border-radius: var(--bpi-symmetric-media-radius) !important;
+  overflow: hidden !important;
+}
+
+/* Keep mobile padding balanced too */
+@media (max-width: 680px){
+  :root{
+    --bpi-symmetric-media-pad: 12px;
+    --bpi-symmetric-media-radius: 24px;
+    --bpi-symmetric-media-inner-radius: 17px;
+  }
+}
+</style>
 </head><body class="design-prompt-theme public-page appendix-document-page"><main id="main"><section class="cover" id="cover-page"><p class="kicker"><span>THE THEORY</span></p><h1>Between <span class="key-term key-term-en">Potential</span> and <span class="key-term key-term-en">Ideal</span></h1><p class="subtitle">Nihilism with Hope in an Uncertain World</p><p class="tagline">God as <span class="key-term key-term-en">Potential</span>, Existence as the Boat, and Knowledge Beyond the Need for Suffering</p><p class="author">Author: me · May 2026</p><blockquote class="core">Core sentence: The absolute is not the <span class="key-term key-term-en">ideal</span>. Existence is the river-crossing through which absolute <span class="key-term key-term-en">potential</span> clarifies what within itself ought to become <span class="key-term key-term-en">ideal</span>.</blockquote><figure class="cover-figure image-frame"><img alt="cover image" decoding="async" loading="lazy" src="../figures/cover_philosophical_recursion_whole_diagram.png"/></figure><hr class="cover-divider"/></section><section class="author-note-page" data-v37-no-white="true" dir="ltr" id="author-note" style="height:248mm; min-height:248mm; page-break-after:always; break-after:page; box-sizing:border-box; padding:64mm 18mm 22mm; text-align:center; background:#efe6d6;">
 <div class="bpi-author-note-text-wrap" style="max-width:760px; margin:0 auto; background:transparent; text-align:center;">
 <div class="bpi-author-note-text-title en" style="font-family:'Caveat',Georgia,'Times New Roman',serif; color:#b87926; font-size:36px; line-height:1.12; margin:0 auto 18mm; text-align:center;">Author's note</div>

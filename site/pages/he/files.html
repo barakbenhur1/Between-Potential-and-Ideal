@@ -1416,6 +1416,242 @@ body.stories-page .image-frame img {
 }
 
 </style>
+<style id="v41-symmetric-media-padding">
+/* V41 — symmetric white padding for tab/page media images */
+:root{
+  --bpi-symmetric-media-pad: clamp(14px, 1.15vw, 22px);
+  --bpi-symmetric-media-radius: 30px;
+  --bpi-symmetric-media-inner-radius: 22px;
+}
+
+/* Frame-like media blocks used across all tab/content pages */
+body.design-prompt-theme .compact-section-visual,
+body.design-prompt-theme .section-visual,
+body.design-prompt-theme .opening-visual,
+body.design-prompt-theme .hero-art,
+body.design-prompt-theme .image-frame {
+  padding: var(--bpi-symmetric-media-pad) !important;
+  box-sizing: border-box !important;
+  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.94)) !important;
+  border: 1px solid rgba(10,58,104,.16) !important;
+  border-radius: var(--bpi-symmetric-media-radius) !important;
+  overflow: hidden !important;
+  background-clip: padding-box !important;
+}
+
+/* The image itself must not create optical imbalance inside the white frame */
+body.design-prompt-theme .compact-section-visual > img,
+body.design-prompt-theme .section-visual > img,
+body.design-prompt-theme .opening-visual > img,
+body.design-prompt-theme .hero-art > img,
+body.design-prompt-theme .image-frame > img,
+body.design-prompt-theme .image-frame picture > img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  border-radius: var(--bpi-symmetric-media-inner-radius) !important;
+  object-position: center center !important;
+}
+
+/* Preserve the existing wide tab/banner proportion while making the white frame equal on all sides */
+body.design-prompt-theme .compact-section-visual > img {
+  height: clamp(136px, 18vw, 212px) !important;
+  aspect-ratio: 21 / 7 !important;
+  object-fit: cover !important;
+}
+
+/* Direct card images also receive a balanced white frame, without needing HTML wrappers */
+body.design-prompt-theme .content-card-image,
+body.design-prompt-theme img.content-card-image {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  padding: var(--bpi-symmetric-media-pad) !important;
+  box-sizing: border-box !important;
+  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.94)) !important;
+  border: 1px solid rgba(10,58,104,.16) !important;
+  border-radius: var(--bpi-symmetric-media-radius) !important;
+  overflow: hidden !important;
+}
+
+/* Keep mobile padding balanced too */
+@media (max-width: 680px){
+  :root{
+    --bpi-symmetric-media-pad: 12px;
+    --bpi-symmetric-media-radius: 24px;
+    --bpi-symmetric-media-inner-radius: 17px;
+  }
+}
+</style>
+<style id="v42-appendices-final-layout">
+
+/* V42 appendices final layout fixes */
+.files-appendix-story .story-head,
+.files-appendix-story .story-head h2,
+.files-appendix-story .story-head h3,
+.files-appendix-story .story-title,
+.files-appendix-story .story-subtitle {
+  text-align: inherit !important;
+}
+html[dir="rtl"] .files-appendix-story,
+body[dir="rtl"] .files-appendix-story,
+.files-appendix-story[dir="rtl"] {
+  direction: rtl !important;
+  text-align: right !important;
+}
+html[dir="ltr"] .files-appendix-story,
+body[dir="ltr"] .files-appendix-story,
+.files-appendix-story[dir="ltr"] {
+  direction: ltr !important;
+  text-align: left !important;
+}
+.files-appendix-story .story-subtitle,
+.files-appendix-story h3,
+.files-appendix-story .subtitle {
+  font-weight: 600 !important;
+  letter-spacing: .005em;
+  opacity: .92;
+}
+.files-appendix-story figure.image-frame,
+.files-appendix-story .image-frame,
+.story-cover-figure,
+.cover .story-cover-figure {
+  display: block !important;
+  float: none !important;
+  clear: both !important;
+  width: min(900px, 92%) !important;
+  max-width: 900px !important;
+  margin: 28px auto 36px !important;
+  padding: 18px !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  background: #fffaf0 !important;
+  border: 1px solid rgba(10,58,104,.12) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 14px 38px rgba(20,40,60,.07) !important;
+  overflow: hidden !important;
+}
+.files-appendix-story figure.image-frame img,
+.files-appendix-story .image-frame img,
+.story-cover-figure img,
+.cover .story-cover-figure img {
+  display: block !important;
+  float: none !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: none !important;
+  margin: 0 auto !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  border-radius: 14px !important;
+}
+.files-appendix-story figure.image-frame figcaption,
+.files-appendix-story .image-frame figcaption,
+.story-cover-figure figcaption {
+  display: block !important;
+  clear: both !important;
+  width: 100% !important;
+  margin: 12px auto 0 !important;
+  text-align: center !important;
+  font-size: .92em !important;
+  line-height: 1.45 !important;
+}
+.story-toc-page { page-break-after: always !important; break-after: page !important; }
+.cover { page-break-after: always !important; break-after: page !important; }
+.story-toc-clean-list { max-width: 760px !important; margin: 24px auto 0 !important; }
+.story-toc-clean-list a.story-toc-row {
+  display: block !important;
+  text-decoration: none !important;
+  padding: 10px 16px !important;
+  margin: 5px 0 !important;
+  border-radius: 12px !important;
+  color: #08737a !important;
+}
+.story-toc-clean-list a.story-toc-row:hover,
+.story-toc-clean-list a.story-toc-row:focus {
+  background: rgba(8,115,122,.08) !important;
+  outline: none !important;
+}
+.story-toc-clean-list .toc-title { display:block !important; }
+html[dir="rtl"] .story-toc-clean-list,
+body[dir="rtl"] .story-toc-clean-list { text-align:right !important; direction:rtl !important; }
+html[dir="ltr"] .story-toc-clean-list,
+body[dir="ltr"] .story-toc-clean-list { text-align:left !important; direction:ltr !important; }
+
+@media print {
+  .cover,
+  .story-toc-page {
+    page-break-after: always !important;
+    break-after: page !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+  .files-appendix-story {
+    page-break-before: always !important;
+    break-before: page !important;
+  }
+  .files-appendix-story .story-opening,
+  .files-appendix-story .story-head,
+  .files-appendix-story .story-head + figure.image-frame,
+  .files-appendix-story figure.image-frame {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+  .files-appendix-story .story-head {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+    margin-bottom: 7mm !important;
+  }
+  .files-appendix-story figure.image-frame,
+  .files-appendix-story .image-frame {
+    width: 160mm !important;
+    max-width: 160mm !important;
+    margin: 6mm auto 9mm !important;
+    padding: 4mm !important;
+    background: #fffaf0 !important;
+    border: 0.35mm solid rgba(10,58,104,.12) !important;
+    border-radius: 7mm !important;
+    box-shadow: none !important;
+    overflow: hidden !important;
+  }
+  .files-appendix-story figure.image-frame img,
+  .files-appendix-story .image-frame img {
+    width: auto !important;
+    height: auto !important;
+    max-width: 150mm !important;
+    max-height: 82mm !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+  }
+  .cover .story-cover-figure,
+  .story-cover-figure {
+    width: 158mm !important;
+    max-width: 158mm !important;
+    margin: 8mm auto 0 !important;
+    padding: 3mm !important;
+    box-shadow: none !important;
+  }
+  .cover .story-cover-figure img,
+  .story-cover-figure img {
+    max-width: 150mm !important;
+    max-height: 95mm !important;
+    width: auto !important;
+    height: auto !important;
+  }
+  .story-toc-clean-list a.story-toc-row {
+    padding: 2.5mm 3mm !important;
+    margin: 1mm 0 !important;
+    border-radius: 3mm !important;
+  }
+}
+
+</style>
 </head><body class="public-page public-page-he design-prompt-theme section-files appendix-document-page"><a class="skip-link" href="#main">דלג לתוכן המרכזי</a><header class="site-header" dir="rtl" role="banner"><div class="site-brand"><a href="../../index.html">Between Potential and Ideal</a></div><nav aria-label="Primary navigation" class="site-nav" role="navigation"><a href="../../index.html">בית</a><a class="text-link" href="summary.html">תקציר</a><a href="core.html">ליבה</a><a href="witness.html">עדות</a><a href="applied.html">יישום</a><a href="ai.html">AI</a><a aria-current="page" class="active" href="files.html">קבצים</a><a href="methodology.html">מתודולוגיה</a><a href="critique.html">ביקורת</a><a href="sources.html">מקורות</a></nav><a aria-label="מעבר לגרסה האנגלית המקבילה" class="language-switch" href="../en/files-en.html" title="English version of this page">English</a></header><main class="site-main" dir="rtl" id="main" role="main"><nav aria-label="Breadcrumb" class="breadcrumbs"><a href="../../index.html">בית</a><span>›</span><span>קבצים</span></nav><section class="page-title media-page-title accent-files"><div class="page-title-head"><img alt="איור קבצים: ארכיון ומדפים" class="page-title-mark" decoding="async" height="480" loading="lazy" src="../../figures/thumb_files.png" width="480"/><h1>קבצים ונספחים</h1></div><p class="lead">כל הקבצים הציבוריים מרוכזים כאן, עם פורמט, שפה, גודל ותיאור קצר.</p></section><figure class="tab-visual image-frame compact-section-visual"><img alt="איור קבצים: ארכיון מופשט של ספרים, מגילות ומסמכים" decoding="async" height="1024" loading="lazy" src="../../figures/tab_files_unique.png" width="1792"/><figcaption>איור קבצים: ארכיון מופשט של ספרים, מגילות ומסמכים</figcaption></figure><section class="notice-box download-format-note media-card accent-files"><div class="card-media-head"><img alt="פורמטים והורדות" class="card-thumb" decoding="async" height="480" loading="lazy" src="../../figures/thumb_files.png" width="480"/><h2>פורמטים והורדות</h2></div><p>לקריאה מהירה עדיף לפתוח HTML. קובצי PDF ו־Word נשמרים להדפסה, שיתוף וארכיון.</p></section><section class="notice-box language-status-note media-card accent-methodology"><div class="card-media-head"><img alt="שפה וקריאה" class="card-thumb" decoding="async" height="480" loading="lazy" src="../../figures/thumb_methodology.png" width="480"/><h2>שפה וקריאה</h2></div><p>זה העמוד בעברית. מתג השפה מוביל לעמוד המקביל כשהוא קיים; קובצי המקור נשמרים בלי שינוי.</p></section><section class="notice-box media-card accent-methodology file-rights-note"><div class="card-media-head"><img alt="שימוש וזכויות" class="card-thumb" decoding="async" height="480" loading="lazy" src="../../figures/thumb_sources.png" width="480"/><h2>שימוש וזכויות</h2></div><p>הקבצים זמינים לקריאה, שיתוף פרטי וביקורת. שימוש ציבורי, ציטוטים נרחבים, העתקה או פרסום מחדש דורשים ציון מקור והסכמה מפורשת אלא אם צוין רישיון אחר בתוך הקובץ עצמו.</p></section><section class="notice-box media-card accent-files source-files-section" id="source-files">
 <div class="card-media-head"><img alt="קבצי מקור" class="card-thumb" decoding="async" height="480" loading="lazy" src="../../figures/thumb_files.png" width="480"/><h2>קבצי מקור מלאים</h2></div>
 <p>ריכוז מהיר של קבצי המקור המרכזיים בכל הפורמטים התקינים. אין כפילות PDF: במקום שבו נדרש מקור טקסטואלי מופיע MD.</p>

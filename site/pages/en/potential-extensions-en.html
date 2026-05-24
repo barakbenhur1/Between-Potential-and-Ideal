@@ -1235,6 +1235,78 @@ body.appendix-document-page .image-frame img,
 }
 
 </style>
+<style id="v41-symmetric-media-padding">
+/* V41 — symmetric white padding for tab/page media images */
+:root{
+  --bpi-symmetric-media-pad: clamp(14px, 1.15vw, 22px);
+  --bpi-symmetric-media-radius: 30px;
+  --bpi-symmetric-media-inner-radius: 22px;
+}
+
+/* Frame-like media blocks used across all tab/content pages */
+body.design-prompt-theme .compact-section-visual,
+body.design-prompt-theme .section-visual,
+body.design-prompt-theme .opening-visual,
+body.design-prompt-theme .hero-art,
+body.design-prompt-theme .image-frame {
+  padding: var(--bpi-symmetric-media-pad) !important;
+  box-sizing: border-box !important;
+  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.94)) !important;
+  border: 1px solid rgba(10,58,104,.16) !important;
+  border-radius: var(--bpi-symmetric-media-radius) !important;
+  overflow: hidden !important;
+  background-clip: padding-box !important;
+}
+
+/* The image itself must not create optical imbalance inside the white frame */
+body.design-prompt-theme .compact-section-visual > img,
+body.design-prompt-theme .section-visual > img,
+body.design-prompt-theme .opening-visual > img,
+body.design-prompt-theme .hero-art > img,
+body.design-prompt-theme .image-frame > img,
+body.design-prompt-theme .image-frame picture > img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  border-radius: var(--bpi-symmetric-media-inner-radius) !important;
+  object-position: center center !important;
+}
+
+/* Preserve the existing wide tab/banner proportion while making the white frame equal on all sides */
+body.design-prompt-theme .compact-section-visual > img {
+  height: clamp(136px, 18vw, 212px) !important;
+  aspect-ratio: 21 / 7 !important;
+  object-fit: cover !important;
+}
+
+/* Direct card images also receive a balanced white frame, without needing HTML wrappers */
+body.design-prompt-theme .content-card-image,
+body.design-prompt-theme img.content-card-image {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  padding: var(--bpi-symmetric-media-pad) !important;
+  box-sizing: border-box !important;
+  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.94)) !important;
+  border: 1px solid rgba(10,58,104,.16) !important;
+  border-radius: var(--bpi-symmetric-media-radius) !important;
+  overflow: hidden !important;
+}
+
+/* Keep mobile padding balanced too */
+@media (max-width: 680px){
+  :root{
+    --bpi-symmetric-media-pad: 12px;
+    --bpi-symmetric-media-radius: 24px;
+    --bpi-symmetric-media-inner-radius: 17px;
+  }
+}
+</style>
 </head><body class="public-page public-page-en design-prompt-theme section-applied appendix-document-page"><a class="skip-link" href="#main">Skip to main content</a><header class="site-header" dir="ltr" role="banner"><div class="site-brand"><a href="../../en.html">Between Potential and Ideal</a></div><nav aria-label="Primary navigation" class="site-nav" role="navigation"><a href="../../en.html">Home</a><a href="summary-en.html">Summary</a><a href="core-en.html">Core</a><a href="witness-en.html">Witness</a><a aria-current="page" class="active" href="applied-en.html">Application</a><a href="ai-en.html">AI</a><a href="files-en.html">Files</a><a href="methodology-en.html">Method</a><a href="critique-en.html">Critique</a><a href="sources-en.html">Sources</a></nav><a class="language-switch" href="../he/potential-extensions.html">עברית</a></header><main class="site-main" dir="ltr" id="main"><nav class="breadcrumbs"><a href="../../en.html">Home</a><span>›</span><span>Potential Extensions and Applications</span></nav><section class="page-title media-page-title accent-applied"><div class="page-title-head"><img alt="Extensions" class="page-title-mark" decoding="async" height="480" loading="lazy" src="../../figures/thumb_applied.png" width="480"/><h1>Potential Extensions and Applications</h1></div><p class="lead">A full gateway for the new chapters: education, law, medicine, art, music, AI, boundary horizons, the structure of the universe, the recursive edge, and physics as boundary discipline.</p></section><section class="notice-box media-card accent-methodology"><div class="card-media-head"><img alt="Search index" class="card-thumb" decoding="async" height="480" loading="lazy" src="../../figures/thumb_methodology.png" width="480"/><h2>Visible search index</h2></div><p>The following terms are visible here so the site remains internally searchable and does not hide the work in a side file:</p><p>חינוך · חינוך של פוטנציאל · למידה · פדגוגיה · משפט · משפט של פוטנציאל · מערכת המשפט · רפואה · רפואה של פוטנציאל · מערכת הרפואה · אומנות · אמנות · מוזיקה · AI · בינה מלאכותית · בעיות פתוחות בבינה מלאכותית · אופקי גבול · אופק אירועים · מבנה היקום · מבנה יקום · צורת היקום · צורת הפוטנציאל · יקום שטוח · יקום מקומר · מולטיברס · אומניברס · אין לי פה ואני חייב לצרוח · I Have No Mouth, and I Must Scream · I Have No Mouth and I Must Scream · Harlan Ellison · AM · הקצה הרקורסיבי · אידיאל רקורסיבי · פוטנציאל יחסי · התממשות קונטקסטואלית · פיזיקה באנרגיות גבוהות · המודל הסטנדרטי · QFT · Higgs · EFT · renormalization · String Theory · M-theory · branes · AdS/CFT · holography · Bell · Kochen-Specker · Bohmian mechanics · contextuality · locality · non-locality · חורים שחורים · אופק אירועים קוסמי · העיקרון ההולוגרפי · ואז הוא אמוגי מפאק.</p></section><section class="content-grid two"><article class="reader-card media-card accent-methodology"><div class="card-media-head"><img alt="Education of Potential" class="card-thumb" decoding="async" height="480" loading="lazy" src="../../figures/thumb_methodology.png" width="480"/><h2>Education of Potential</h2></div><p>Learning, distance, and understanding that is not a shortcut</p><div class="download-row"><a class="download-button primary" href="education-of-potential-en.html">Read</a><a class="download-button" href="../../files/potential-extensions/education-of-potential-en.pdf" rel="noopener noreferrer" target="_blank">PDF</a><a class="download-button" href="../he/education-of-potential.html">עברית</a></div></article>
 <article class="reader-card media-card accent-critique"><div class="card-media-head"><img alt="Law of Potential" class="card-thumb" decoding="async" height="480" loading="lazy" src="../../figures/thumb_critique.png" width="480"/><h2>Law of Potential</h2></div><p>Truth, evidence, guilt, and correction that is not revenge</p><div class="download-row"><a class="download-button primary" href="law-of-potential-en.html">Read</a><a class="download-button" href="../../files/potential-extensions/law-of-potential-en.pdf" rel="noopener noreferrer" target="_blank">PDF</a><a class="download-button" href="../he/law-of-potential.html">עברית</a></div></article>
 <article class="reader-card media-card accent-applied"><div class="card-media-head"><img alt="Medicine of Potential" class="card-thumb" decoding="async" height="480" loading="lazy" src="../../figures/thumb_applied.png" width="480"/><h2>Medicine of Potential</h2></div><p>Body, diagnosis, treatment, and a person who is not a case</p><div class="download-row"><a class="download-button primary" href="medicine-of-potential-en.html">Read</a><a class="download-button" href="../../files/potential-extensions/medicine-of-potential-en.pdf" rel="noopener noreferrer" target="_blank">PDF</a><a class="download-button" href="../he/medicine-of-potential.html">עברית</a></div></article>

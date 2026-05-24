@@ -1235,6 +1235,78 @@ body.appendix-document-page .image-frame img,
 }
 
 </style>
+<style id="v41-symmetric-media-padding">
+/* V41 — symmetric white padding for tab/page media images */
+:root{
+  --bpi-symmetric-media-pad: clamp(14px, 1.15vw, 22px);
+  --bpi-symmetric-media-radius: 30px;
+  --bpi-symmetric-media-inner-radius: 22px;
+}
+
+/* Frame-like media blocks used across all tab/content pages */
+body.design-prompt-theme .compact-section-visual,
+body.design-prompt-theme .section-visual,
+body.design-prompt-theme .opening-visual,
+body.design-prompt-theme .hero-art,
+body.design-prompt-theme .image-frame {
+  padding: var(--bpi-symmetric-media-pad) !important;
+  box-sizing: border-box !important;
+  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.94)) !important;
+  border: 1px solid rgba(10,58,104,.16) !important;
+  border-radius: var(--bpi-symmetric-media-radius) !important;
+  overflow: hidden !important;
+  background-clip: padding-box !important;
+}
+
+/* The image itself must not create optical imbalance inside the white frame */
+body.design-prompt-theme .compact-section-visual > img,
+body.design-prompt-theme .section-visual > img,
+body.design-prompt-theme .opening-visual > img,
+body.design-prompt-theme .hero-art > img,
+body.design-prompt-theme .image-frame > img,
+body.design-prompt-theme .image-frame picture > img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  border-radius: var(--bpi-symmetric-media-inner-radius) !important;
+  object-position: center center !important;
+}
+
+/* Preserve the existing wide tab/banner proportion while making the white frame equal on all sides */
+body.design-prompt-theme .compact-section-visual > img {
+  height: clamp(136px, 18vw, 212px) !important;
+  aspect-ratio: 21 / 7 !important;
+  object-fit: cover !important;
+}
+
+/* Direct card images also receive a balanced white frame, without needing HTML wrappers */
+body.design-prompt-theme .content-card-image,
+body.design-prompt-theme img.content-card-image {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  padding: var(--bpi-symmetric-media-pad) !important;
+  box-sizing: border-box !important;
+  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.94)) !important;
+  border: 1px solid rgba(10,58,104,.16) !important;
+  border-radius: var(--bpi-symmetric-media-radius) !important;
+  overflow: hidden !important;
+}
+
+/* Keep mobile padding balanced too */
+@media (max-width: 680px){
+  :root{
+    --bpi-symmetric-media-pad: 12px;
+    --bpi-symmetric-media-radius: 24px;
+    --bpi-symmetric-media-inner-radius: 17px;
+  }
+}
+</style>
 </head><body class="public-page public-page-en design-prompt-theme section-applied appendix-document-page"><a class="skip-link" href="#main">Skip to main content</a><header class="site-header" dir="ltr" role="banner"><div class="site-brand"><a href="../../en.html">Between Potential and Ideal</a></div><nav aria-label="Primary navigation" class="site-nav" role="navigation"><a href="../../en.html">Home</a><a href="summary-en.html">Summary</a><a href="core-en.html">Core</a><a href="witness-en.html">Witness</a><a aria-current="page" class="active" href="applied-en.html">Application</a><a href="ai-en.html">AI</a><a href="files-en.html">Files</a><a href="methodology-en.html">Method</a><a href="critique-en.html">Critique</a><a href="sources-en.html">Sources</a></nav><a aria-label="Switch to the parallel Hebrew version" class="language-switch" href="../he/medicine-of-potential.html">עברית</a></header><main class="site-main" dir="ltr" id="main" role="main"><nav aria-label="Breadcrumb" class="breadcrumbs"><a href="../../en.html">Home</a><span>›</span><a href="applied-en.html">Extensions and applications</a><span>›</span><span>Medicine of Potential</span></nav><section class="page-title media-page-title accent-applied"><div class="page-title-head"><img alt="Medicine of Potential" class="page-title-mark" decoding="async" height="480" loading="lazy" src="../../figures/v25_chapter_medicine-of-potential.png" width="480"/><h1>Medicine of Potential</h1></div><p class="lead">Body, diagnosis, treatment, and a person who is not a case</p></section><section class="notice-box media-card accent-files"><div class="card-media-head"><img alt="Download formats" class="card-thumb" decoding="async" height="480" loading="lazy" src="../../figures/thumb_files.png" width="480"/><h2>Full formats</h2></div><p>This chapter exists as a reading page and as TXT, MD, DOCX, and PDF files, in Hebrew and English.</p><div class="download-row"><a class="download-button" href="../../files/potential-extensions/medicine-of-potential-en.txt" rel="noopener noreferrer" target="_blank">TXT</a><a class="download-button" href="../../files/potential-extensions/medicine-of-potential-en.md" rel="noopener noreferrer" target="_blank">MD</a><a class="download-button" href="../../files/potential-extensions/medicine-of-potential-en.docx" rel="noopener noreferrer" target="_blank">DOCX</a><a class="download-button" href="../../files/potential-extensions/medicine-of-potential-en.pdf" rel="noopener noreferrer" target="_blank">PDF</a></div></section><article class="reader-card media-card accent-applied long-read"><h2>Medicine of Potential</h2><figure class="chapter-figure image-frame"><img alt="Medicine of Potential" decoding="async" loading="lazy" src="../../figures/v25_chapter_medicine-of-potential.png"/><figcaption aria-hidden="true">Image description: healing as a careful reading of body, suffering, chance, and conditions.</figcaption></figure>
 <h3>Body, diagnosis, treatment, and a person who is not a case</h3>
 <p>Medicine tests the theory where potential is compressed into pain, symptom, appointment, scan, protocol, and risk. The body is not an idea and not a metaphor. It is the site where possibility may open, close, fracture, or remain suspended. Medicine of potential is not “soft” medicine against scientific medicine; it is the attempt to keep science in right relation to a living person.</p>

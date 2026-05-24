@@ -1677,6 +1677,78 @@ body.appendix-document-page .image-frame img,
 }
 
 </style>
+<style id="v41-symmetric-media-padding">
+/* V41 — symmetric white padding for tab/page media images */
+:root{
+  --bpi-symmetric-media-pad: clamp(14px, 1.15vw, 22px);
+  --bpi-symmetric-media-radius: 30px;
+  --bpi-symmetric-media-inner-radius: 22px;
+}
+
+/* Frame-like media blocks used across all tab/content pages */
+body.design-prompt-theme .compact-section-visual,
+body.design-prompt-theme .section-visual,
+body.design-prompt-theme .opening-visual,
+body.design-prompt-theme .hero-art,
+body.design-prompt-theme .image-frame {
+  padding: var(--bpi-symmetric-media-pad) !important;
+  box-sizing: border-box !important;
+  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.94)) !important;
+  border: 1px solid rgba(10,58,104,.16) !important;
+  border-radius: var(--bpi-symmetric-media-radius) !important;
+  overflow: hidden !important;
+  background-clip: padding-box !important;
+}
+
+/* The image itself must not create optical imbalance inside the white frame */
+body.design-prompt-theme .compact-section-visual > img,
+body.design-prompt-theme .section-visual > img,
+body.design-prompt-theme .opening-visual > img,
+body.design-prompt-theme .hero-art > img,
+body.design-prompt-theme .image-frame > img,
+body.design-prompt-theme .image-frame picture > img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  border-radius: var(--bpi-symmetric-media-inner-radius) !important;
+  object-position: center center !important;
+}
+
+/* Preserve the existing wide tab/banner proportion while making the white frame equal on all sides */
+body.design-prompt-theme .compact-section-visual > img {
+  height: clamp(136px, 18vw, 212px) !important;
+  aspect-ratio: 21 / 7 !important;
+  object-fit: cover !important;
+}
+
+/* Direct card images also receive a balanced white frame, without needing HTML wrappers */
+body.design-prompt-theme .content-card-image,
+body.design-prompt-theme img.content-card-image {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  padding: var(--bpi-symmetric-media-pad) !important;
+  box-sizing: border-box !important;
+  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.94)) !important;
+  border: 1px solid rgba(10,58,104,.16) !important;
+  border-radius: var(--bpi-symmetric-media-radius) !important;
+  overflow: hidden !important;
+}
+
+/* Keep mobile padding balanced too */
+@media (max-width: 680px){
+  :root{
+    --bpi-symmetric-media-pad: 12px;
+    --bpi-symmetric-media-radius: 24px;
+    --bpi-symmetric-media-inner-radius: 17px;
+  }
+}
+</style>
 </head><body class="design-prompt-theme public-page public-page-he appendix-document-page"><a class="skip-link" href="#main">דלג לתוכן המרכזי</a><header class="site-header" dir="rtl" role="banner"><div class="site-brand"><a href="../../index.html">Between Potential and Ideal</a></div><nav aria-label="Primary navigation" class="site-nav" role="navigation"><a href="../../index.html">בית</a><a class="text-link" href="summary.html">תקציר</a><a href="core.html">ליבה</a><a href="witness.html">עדות</a><a href="applied.html">יישום</a><a href="ai.html">AI</a><a href="files.html">קבצים</a><a href="methodology.html">מתודולוגיה</a><a href="critique.html">ביקורת</a><a href="sources.html">מקורות</a></nav><a class="language-switch" href="../../en.html">English</a></header><div class="legacy-page-banner" dir="rtl"><a href="ai.html">מדור AI המסודר</a></div><div class="site"><header class="topbar"><div class="topbar-inner"><a class="brand" href="../../index.html" rel="noopener" target="_blank"><span class="brand-mark">B</span><span><strong>Between Potential and Ideal</strong><small>AI Witness Texts</small></span></a><nav aria-label="ניווט" class="nav"><a data-i18n="navRead" href="../../index.html" rel="noopener" target="_blank">ראשי</a><a data-i18n="navContact" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=betweenpotentialandideal%40gmail.com&amp;su=Response%20to%20Between%20Potential%20and%20Ideal&amp;body=%D7%A9%D7%9C%D7%95%D7%9D%2C%0A%0A%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%94%D7%92%D7%99%D7%91%20%D7%A2%D7%9C%20%D7%94%D7%AA%D7%90%D7%95%D7%A8%D7%99%D7%94%3A%0A%0A" rel="noopener noreferrer" target="_blank">תגובה</a><a data-i18n="navAppendices" href="stories.html" rel="noopener" target="_blank">נספחים</a><button aria-label="החלפת שפה" class="lang-button" id="langButton" type="button">English</button></nav></div></header><main class="appendix-page" id="main"><section class="appendices ai-believes">
 <div class="appendix-intro language-block" data-lang-block="he" dir="rtl"><p class="eyebrow">בינה מלאכותית ועדות</p><h2>במה בינה מלאכותית מאמינה?</h2><p class="hebrew-text-rtl" dir="rtl" style="direction:rtl; text-align:right; unicode-bidi:plaintext;">שלושת הטקסטים המצורפים כגרסאות נפרדות, עם גרסאות להדפסה, וורד, טקסט ועמוד אתר.</p></div>
 <div class="appendix-intro language-block" data-lang-block="en" dir="ltr" hidden=""><p class="eyebrow">AI and Witnessing</p><h2>What Does Artificial Intelligence Believe?</h2><p>The three attached texts as separate versions, with PDF, Word, Markdown, and HTML files.</p></div>
