@@ -1,0 +1,23 @@
+{
+  "version": "V33_ORGANIZED_FULL_PRODUCT",
+  "checks": {
+    "site_index_exists": true,
+    "site_en_exists": true,
+    "site_styles_exists": true,
+    "site_files_exists": true,
+    "site_figures_exists": true,
+    "product_docs_exists": true,
+    "readme_exists": true,
+    "render_notes_exists": true,
+    "local_html_links_ok": true,
+    "appendices_canonical_files_exist": true,
+    "internal_reports_moved_out_of_site_root": true
+  },
+  "failures": [],
+  "ok": true,
+  "local_links_checked": 2171,
+  "broken_local_links": [],
+  "site_file_count": 329,
+  "total_package_file_count": 357,
+  "render_note": "If deploying this organized ZIP as-is, set Render Publish Directory to 'site'. If replacing an existing static root, copy the contents of site/ into the repo root."
+}
