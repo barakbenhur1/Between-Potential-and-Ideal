@@ -1,0 +1,58 @@
+{
+  "stories.html": {
+    "has_subtitle_mother": true,
+    "has_a_few": true,
+    "has_several": false,
+    "has_v22": true,
+    "has_ai_order_words": false
+  },
+  "ai.html": {
+    "has_subtitle_mother": false,
+    "has_a_few": false,
+    "has_several": false,
+    "has_v22": true,
+    "has_ai_order_words": true
+  },
+  "ai-en.html": {
+    "has_subtitle_mother": false,
+    "has_a_few": false,
+    "has_several": false,
+    "has_v22": true,
+    "has_ai_order_words": true
+  },
+  "ai-believes.html": {
+    "has_subtitle_mother": false,
+    "has_a_few": false,
+    "has_several": false,
+    "has_v22": true,
+    "has_ai_order_words": true
+  },
+  "files/appendices/stories-before-thought-hebrew-rtl.html": {
+    "has_subtitle_mother": true,
+    "has_a_few": false,
+    "has_several": false,
+    "has_v22": true,
+    "has_ai_order_words": true
+  },
+  "files/appendices/stories-before-thought-english.html": {
+    "has_subtitle_mother": true,
+    "has_a_few": true,
+    "has_several": false,
+    "has_v22": true,
+    "has_ai_order_words": true
+  },
+  "search-index.json": {
+    "has_subtitle_mother": false,
+    "has_a_few": true,
+    "has_several": false,
+    "has_v22": false,
+    "has_ai_order_words": null
+  },
+  "styles.css": {
+    "has_subtitle_mother": false,
+    "has_a_few": false,
+    "has_several": false,
+    "has_v22": true,
+    "has_ai_order_words": null
+  }
+}
