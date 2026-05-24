@@ -30,7 +30,7 @@
 
 13. [To Fear Intruders, or Talk to Computers](#story-13)
 
-14. [Two Strings and a Knot](#story-14)
+14. [A Few Strings and a Knot](#story-14)
 
 
 
@@ -3546,7 +3546,7 @@ But because that night, at least, she had la-la-la to think about.
 
 <a id="story-14"></a>
 
-## Two Strings and a Knot
+## A Few Strings and a Knot
 
 _The Redeemer as the Redeemed_
 
