@@ -1,3 +1,11 @@
+# Between Potential and Ideal
+
+**The Logical Version**
+
+A tightened version: structure, distinctions, conditions, and conclusions
+
+---
+
 
 ## Author's note
 

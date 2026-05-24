@@ -1515,7 +1515,233 @@ body.appendix-document-page .image-frame img,
 }
 
 </style>
-</head><body class="design-prompt-theme public-page appendix-document-page"><main id="main"><section class="cover" id="cover-page"><p class="kicker"><span>THE THEORY</span></p><h1>Between <span class="key-term key-term-en">Potential</span> and <span class="key-term key-term-en">Ideal</span></h1><p class="subtitle">Nihilism with Hope in an Uncertain World</p><p class="tagline">God as <span class="key-term key-term-en">Potential</span>, Existence as the Boat, and Knowledge Beyond the Need for Suffering</p><p class="author">Author: me · May 2026</p><blockquote class="core">Core sentence: The absolute is not the <span class="key-term key-term-en">ideal</span>. Existence is the river-crossing through which absolute <span class="key-term key-term-en">potential</span> clarifies what within itself ought to become <span class="key-term key-term-en">ideal</span>.</blockquote><figure class="cover-figure image-frame"><img alt="cover image" decoding="async" loading="lazy" src="../figures/cover_philosophical_recursion_whole_diagram.png"/></figure><hr class="cover-divider"/></section><section class="author-note-page" dir="ltr" id="author-note"><div class="bpi-author-note-text-wrap"><p class="bpi-author-note-text-title en">Author's note</p><div class="bpi-author-note-card en" dir="ltr"><div class="bpi-author-note-card-head"></div><div class="bpi-author-note-lines"><p>These chapters are different attempts</p><p>to sharpen the same idea.</p><p>Some are probably wrong; some only get closer.</p><p>If one chapter carries the heart of the thing for you,</p><p>please understand the theory through it.</p></div></div></div></section><section class="document-screen-toc" dir="ltr" id="interactive-toc"><h2>Interactive Table of Contents</h2><p>Click any item to jump directly to the relevant place in the document, including opening material, chapters, subsections, and closing sections.</p><ol><li><a href="#cover-page">Cover</a></li><li><a href="#author-note">Author's Note</a></li><li><a href="#Abstract">Abstract</a></li><li class="toc-sub"><a href="#The-Manifesto-of-Divine-Movement-The-Metamorphosis-of-Grace">The
+<style id="bpi-v30-final-doc-fixes">
+@import url('https://fonts.googleapis.com/css2?family=Gveret+Levin&display=swap');
+
+/* V30 final document corrections: author note, logical cover, page flow, light documents */
+:root{
+  --bpi-author-he:"Gveret Levin","Noto Sans Hebrew","Arial",sans-serif;
+  --bpi-author-en:"Caveat",Georgia,"Times New Roman",serif;
+}
+html, body { background:#efe8d9; }
+body.design-prompt-theme:not(.public-page),
+body.document-page,
+main.document-main {
+  background:#efe8d9 !important;
+  color:#17202d !important;
+}
+body.design-prompt-theme:not(.public-page) main {
+  background:#fffaf0 !important;
+  color:#17202d !important;
+}
+body.design-prompt-theme:not(.public-page) pre,
+body.design-prompt-theme:not(.public-page) code,
+body.design-prompt-theme:not(.public-page) .math.display,
+body.design-prompt-theme:not(.public-page) span.math.display {
+  background:#fff7e8 !important;
+  color:#17202d !important;
+  border:1px solid rgba(184,121,38,.20) !important;
+  box-shadow:none !important;
+}
+.cover, .logical-cover {
+  min-height: 248mm;
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center !important;
+  break-after:page;
+  page-break-after:always;
+  padding:16mm 12mm;
+}
+.cover h1, .logical-cover h1 {
+  text-align:center !important;
+  font-size:38px;
+  line-height:1.12;
+  margin:0 0 12px;
+}
+.cover .subtitle, .logical-cover .subtitle {
+  text-align:center !important;
+  font-size:20px;
+  color:#5e5346;
+  margin:0 0 10px;
+}
+.cover .tagline, .logical-cover .tagline {
+  text-align:center !important;
+  max-width:72ch;
+  margin:0 auto 16px;
+}
+.cover-figure, .logical-cover figure {
+  max-width:620px;
+  margin:24px auto 0;
+}
+.cover-figure img, .logical-cover img {
+  display:block;
+  max-width:100%;
+  max-height:88mm;
+  width:auto;
+  height:auto;
+  object-fit:contain;
+  margin:0 auto;
+}
+.author-note-page {
+  min-height:248mm !important;
+  box-sizing:border-box !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+  break-after:page !important;
+  page-break-after:always !important;
+  padding:0 16mm !important;
+  background:#fffaf0 !important;
+}
+.author-note-page .bpi-author-note-text-wrap,
+.author-note-page .author-note-card-wrap,
+.author-note-page .author-note-main-wrap {
+  width:100% !important;
+  max-width:560px !important;
+  margin:0 auto !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:12px !important;
+  text-align:center !important;
+}
+.author-note-page .bpi-author-note-text-title,
+.author-note-page .author-note-title {
+  margin:0 auto 4px !important;
+  padding:0 !important;
+  width:100% !important;
+  text-align:center !important;
+  color:#b87926 !important;
+  font-size:34px !important;
+  line-height:1.12 !important;
+  font-weight:400 !important;
+}
+.author-note-page .bpi-author-note-card,
+.author-note-page .author-note-card {
+  width:480px !important;
+  max-width:88% !important;
+  min-height:0 !important;
+  margin:0 auto !important;
+  padding:20px 26px !important;
+  border:1.6px solid rgba(184,121,38,.24) !important;
+  border-radius:24px !important;
+  background:#fff7e8 !important;
+  box-shadow:0 10px 28px rgba(23,32,45,.055) !important;
+  box-sizing:border-box !important;
+  overflow:hidden !important;
+  text-align:center !important;
+}
+.author-note-page .bpi-author-note-card::before,
+.author-note-page .bpi-author-note-card::after,
+.author-note-page .author-note-card::before,
+.author-note-page .author-note-card::after,
+.author-note-page .bpi-author-note-card-head,
+.author-note-page .author-note-top,
+.author-note-page .bpi-author-note-badge,
+.author-note-page .author-note-chip,
+.author-note-page .author-note-font-name {
+  display:none !important;
+  content:none !important;
+}
+.author-note-page .bpi-author-note-lines,
+.author-note-page .author-note-main {
+  text-align:center !important;
+  margin:0 auto !important;
+  max-width:100% !important;
+  color:#17202d !important;
+  font-size:24px !important;
+  line-height:1.44 !important;
+}
+.author-note-page .bpi-author-note-lines p,
+.author-note-page .author-note-main p {
+  text-align:center !important;
+  margin:.22em auto !important;
+}
+html[lang="he"] .author-note-page .bpi-author-note-text-title,
+html[lang="he"] .author-note-page .bpi-author-note-lines,
+html[lang="he"] .author-note-page .bpi-author-note-lines *,
+.author-note-page[dir="rtl"] .bpi-author-note-text-title,
+.author-note-page[dir="rtl"] .bpi-author-note-lines,
+.author-note-page[dir="rtl"] .bpi-author-note-lines * {
+  font-family:var(--bpi-author-he) !important;
+  direction:rtl !important;
+  unicode-bidi:isolate !important;
+  font-style:normal !important;
+  font-weight:400 !important;
+}
+html[lang="en"] .author-note-page .bpi-author-note-text-title,
+html[lang="en"] .author-note-page .bpi-author-note-lines,
+html[lang="en"] .author-note-page .bpi-author-note-lines *,
+.author-note-page[dir="ltr"] .bpi-author-note-text-title,
+.author-note-page[dir="ltr"] .bpi-author-note-lines,
+.author-note-page[dir="ltr"] .bpi-author-note-lines * {
+  font-family:var(--bpi-author-en) !important;
+}
+.document-screen-toc, #interactive-toc {
+  break-before:auto !important;
+  page-break-before:auto !important;
+  break-after:auto !important;
+  page-break-after:auto !important;
+  margin-top:24px !important;
+  margin-bottom:24px !important;
+}
+.chapter-opening {
+  break-before:auto !important;
+  page-break-before:auto !important;
+  break-inside:avoid-page !important;
+  page-break-inside:avoid !important;
+  margin-top:18px !important;
+  margin-bottom:12px !important;
+}
+.chapter-opening h2 {
+  break-after:avoid !important;
+  page-break-after:avoid !important;
+  margin-top:0 !important;
+}
+.chapter-opening > p:first-of-type,
+.chapter-opening .chapter-subtitle {
+  break-after:avoid !important;
+  page-break-after:avoid !important;
+}
+.chapter-opening figure,
+.chapter-opening .image-frame {
+  break-before:avoid !important;
+  page-break-before:avoid !important;
+  break-inside:avoid !important;
+  page-break-inside:avoid !important;
+  margin-top:12px !important;
+  margin-bottom:0 !important;
+}
+.chapter-opening figure img,
+.chapter-opening .image-frame img {
+  max-width:82% !important;
+  max-height:72mm !important;
+  width:auto !important;
+  height:auto !important;
+  object-fit:contain !important;
+}
+figure img, .image-frame img {
+  max-width:100%;
+  height:auto;
+  object-fit:contain;
+}
+@media screen {
+  .document-screen-toc, #interactive-toc { margin-bottom:32px !important; }
+}
+
+</style>
+</head><body class="design-prompt-theme public-page appendix-document-page"><main id="main"><section class="cover" id="cover-page"><p class="kicker"><span>THE THEORY</span></p><h1>Between <span class="key-term key-term-en">Potential</span> and <span class="key-term key-term-en">Ideal</span></h1><p class="subtitle">Nihilism with Hope in an Uncertain World</p><p class="tagline">God as <span class="key-term key-term-en">Potential</span>, Existence as the Boat, and Knowledge Beyond the Need for Suffering</p><p class="author">Author: me · May 2026</p><blockquote class="core">Core sentence: The absolute is not the <span class="key-term key-term-en">ideal</span>. Existence is the river-crossing through which absolute <span class="key-term key-term-en">potential</span> clarifies what within itself ought to become <span class="key-term key-term-en">ideal</span>.</blockquote><figure class="cover-figure image-frame"><img alt="cover image" decoding="async" loading="lazy" src="../figures/cover_philosophical_recursion_whole_diagram.png"/></figure><hr class="cover-divider"/></section><section class="author-note-page" dir="ltr" id="author-note" style="height:248mm; min-height:248mm; page-break-after:always; break-after:page; box-sizing:border-box; padding:58mm 18mm 22mm; text-align:center; background:#fffaf0;">
+  <div style="font-family:'Caveat',Georgia,'Times New Roman',serif; color:#b87926; font-size:36px; line-height:1.12; margin:0 auto 18mm; text-align:center;">Author's note</div>
+  <div style="width:132mm; max-width:100%; margin:0 auto; padding:12mm 14mm; border:1.6px solid rgba(184,121,38,.28); border-radius:16mm; background:#fff7e8; box-sizing:border-box; text-align:center;">
+    <div style="font-family:'Caveat',Georgia,'Times New Roman',serif; color:#17202d; font-size:20pt; line-height:1.52; text-align:center; direction:ltr;">These chapters are different attempts<br/>to sharpen the same idea.<br/>Some are probably wrong; some only get closer.<br/>If one chapter carries the heart of the thing for you,<br/>please understand the theory through it.</div>
+  </div>
+</section>
+<div style="page-break-after:always; break-after:page; height:0;"></div><section class="document-screen-toc" dir="ltr" id="interactive-toc"><h2>Interactive Table of Contents</h2><p>Click any item to jump directly to the relevant place in the document, including opening material, chapters, subsections, and closing sections.</p><ol><li><a href="#cover-page">Cover</a></li><li><a href="#author-note">Author's Note</a></li><li><a href="#Abstract">Abstract</a></li><li class="toc-sub"><a href="#The-Manifesto-of-Divine-Movement-The-Metamorphosis-of-Grace">The
 Manifesto of Divine Movement: The Metamorphosis of Grace</a></li><li class="toc-sub"><a href="#Declaration">Declaration</a></li><li class="toc-sub"><a href="#The-Logical-Refinement">The Logical Refinement</a></li><li><a href="#The-Symphony-of-the-Whole-and-the-Gift-of-Friction">The Symphony
 of the Whole and the Gift of Friction</a></li><li class="toc-sub"><a href="#The-Gift-of-Friction">The Gift of Friction</a></li><li class="toc-sub"><a href="#The-Grace-of-Relinquishment-as-the-Sign-of-True-Power">The Grace
 of Relinquishment as the Sign of True Power</a></li><li class="toc-sub"><a href="#The-Witness-Mandate-of-Intelligence">The Witness Mandate of
