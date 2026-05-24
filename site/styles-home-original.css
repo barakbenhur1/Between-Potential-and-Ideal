@@ -3413,3 +3413,216 @@ body.design-prompt-theme img.content-card-image {
     --bpi-symmetric-media-inner-radius: 17px;
   }
 }
+
+
+/* V45 — final requested fixes: symmetric media padding, appendix layout, clickable TOC styling */
+body.design-prompt-theme .opening-visual,
+body.design-prompt-theme .section-visual,
+body.design-prompt-theme .compact-section-visual,
+body.design-prompt-theme .hero-art,
+body.design-prompt-theme .image-frame,
+body.design-prompt-theme .content-card-image-wrap,
+body.design-prompt-theme .story-cover-figure {
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: clamp(14px, 1.35vw, 20px) !important;
+  background: #fffaf0 !important;
+  border: 1px solid rgba(10,58,104,.14) !important;
+  border-radius: 26px !important;
+  overflow: hidden !important;
+}
+
+body.design-prompt-theme .opening-visual img,
+body.design-prompt-theme .section-visual img,
+body.design-prompt-theme .compact-section-visual img,
+body.design-prompt-theme .hero-art img,
+body.design-prompt-theme .image-frame img,
+body.design-prompt-theme .content-card-image,
+body.design-prompt-theme .story-cover-figure img {
+  display: block !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  margin: 0 auto !important;
+  border-radius: 18px !important;
+  background: transparent !important;
+}
+
+/* Small tab/thumb cards: make the white inner padding equal on all sides. */
+body.design-prompt-theme .card-media-head .card-thumb,
+body.design-prompt-theme img.card-thumb {
+  box-sizing: border-box !important;
+  inline-size: 82px !important;
+  block-size: 82px !important;
+  padding: 8px !important;
+  border: 3px solid rgba(255,255,255,.98) !important;
+  background: #fffaf0 !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  border-radius: 22px !important;
+}
+
+body.design-prompt-theme .compact-section-visual img {
+  aspect-ratio: auto !important;
+  min-height: 0 !important;
+}
+
+/* Appendix story pages: stable RTL/LTR title alignment and no floated/broken images. */
+.files-appendix-story,
+.page.story.files-appendix-story {
+  clear: both !important;
+  overflow: visible !important;
+}
+
+.files-appendix-story .story-opening {
+  display: block !important;
+  clear: both !important;
+  page-break-inside: avoid !important;
+  break-inside: avoid-page !important;
+  margin: 0 0 22px !important;
+}
+
+.files-appendix-story .story-head {
+  display: block !important;
+  clear: both !important;
+  margin: 0 0 14px !important;
+  page-break-after: avoid !important;
+  break-after: avoid-page !important;
+}
+
+[dir="rtl"] .files-appendix-story .story-head,
+[dir="rtl"].files-appendix-story .story-head,
+[dir="rtl"] .files-appendix-story h2,
+[dir="rtl"].files-appendix-story h2,
+[dir="rtl"] .files-appendix-story .story-subtitle {
+  direction: rtl !important;
+  text-align: right !important;
+  unicode-bidi: plaintext !important;
+}
+
+[dir="ltr"] .files-appendix-story .story-head,
+[dir="ltr"].files-appendix-story .story-head,
+[dir="ltr"] .files-appendix-story h2,
+[dir="ltr"].files-appendix-story h2,
+[dir="ltr"] .files-appendix-story .story-subtitle {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: plaintext !important;
+}
+
+.files-appendix-story h2 {
+  page-break-before: auto !important;
+  break-before: auto !important;
+  page-break-after: avoid !important;
+  break-after: avoid-page !important;
+  margin-bottom: 8px !important;
+}
+
+.files-appendix-story .story-subtitle {
+  font-weight: 650 !important;
+  letter-spacing: .01em !important;
+  color: #17202d !important;
+  font-size: clamp(1.12rem, 1.45vw, 1.34rem) !important;
+  line-height: 1.35 !important;
+  margin-top: 0 !important;
+  margin-bottom: 18px !important;
+}
+
+.files-appendix-story .image-frame,
+.story-cover-figure.image-frame {
+  display: flex !important;
+  float: none !important;
+  clear: both !important;
+  width: min(920px, 92%) !important;
+  max-width: 920px !important;
+  margin: 24px auto 34px !important;
+  padding: 16px !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  background: #fffaf0 !important;
+  border: 1px solid rgba(10,58,104,.14) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 14px 38px rgba(20,40,60,.07) !important;
+  overflow: hidden !important;
+  page-break-inside: avoid !important;
+  break-inside: avoid-page !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.files-appendix-story .image-frame img,
+.story-cover-figure.image-frame img {
+  display: block !important;
+  float: none !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 86vh !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  margin: 0 auto !important;
+  border-radius: 14px !important;
+}
+
+.story-toc-clean-list .story-toc-row,
+.story-toc-clean-list .story-toc-row a {
+  box-sizing: border-box !important;
+}
+.story-toc-clean-list .story-toc-row a {
+  display: block !important;
+  width: 100% !important;
+  padding: 5px 0 !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+}
+.story-toc-clean-list .story-toc-row a:hover,
+.story-toc-clean-list .story-toc-row a:focus {
+  text-decoration: underline !important;
+}
+
+@media print {
+  .story-cover-figure.image-frame {
+    width: 150mm !important;
+    max-width: 150mm !important;
+    margin: 8mm auto 0 !important;
+    padding: 5mm !important;
+  }
+  .story-cover-figure.image-frame img {
+    max-width: 140mm !important;
+    max-height: 92mm !important;
+  }
+  .files-appendix-story .story-opening {
+    page-break-inside: avoid !important;
+    break-inside: avoid-page !important;
+  }
+  .files-appendix-story .story-head {
+    page-break-after: avoid !important;
+    break-after: avoid-page !important;
+  }
+  .files-appendix-story h2 {
+    page-break-before: auto !important;
+    break-before: auto !important;
+    page-break-after: avoid !important;
+    break-after: avoid-page !important;
+  }
+  .files-appendix-story .image-frame {
+    width: 152mm !important;
+    max-width: 152mm !important;
+    margin: 6mm auto 9mm !important;
+    padding: 4.5mm !important;
+  }
+  .files-appendix-story .image-frame img {
+    max-width: 143mm !important;
+    max-height: 82mm !important;
+    width: auto !important;
+    height: auto !important;
+  }
+}
+
+/* END V45 final requested fixes */
