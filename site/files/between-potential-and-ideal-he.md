@@ -1026,6 +1026,7 @@ loading="lazy" alt="איור ד: חוויה וחומריות. ידע שאי אפ
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_education-of-potential.png"
 decoding="async" loading="lazy" alt="חינוך של פוטנציאל" />
+<figcaption aria-hidden="true">תיאור תמונה: למידה, מרחק והבנה שאינה קיצור דרך.</figcaption>
 </figure>
 
 חינוך הוא מבחן ישיר של התאוריה “בין פוטנציאל לאידיאל”, מפני שהוא עוסק
@@ -1361,6 +1362,7 @@ loading="lazy" alt="איור ח: הבינה כראי. מרחק, מקור ושי�
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_ai-open-problems.png" decoding="async"
 loading="lazy" alt="בינה מלאכותית ובעיות פתוחות" />
+<figcaption aria-hidden="true">תיאור תמונה: תשובה, מקור, אחריות והמרחק שנגנב.</figcaption>
 </figure>
 
 ### אחריות, מקור, אמת וכלי שאינו בעל חיים
@@ -1421,6 +1423,7 @@ and I Must Scream. המקורות אינם מוכנסים כהוכחות לתא�
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_i-have-no-mouth.png" decoding="async"
 loading="lazy" alt="אין לי פה ואני חייב לצרוח" />
+<figcaption aria-hidden="true">תיאור תמונה: הסיפור, המשחק וההבדל בין סוף נעול לסוף פעולה.</figcaption>
 </figure>
 
 ### AM, סוף נעול, פעולה מוסרית וגיהינום מערכתי
@@ -1975,6 +1978,7 @@ alt="איור ה: המבנה הרקורסיבי. כל שכבה יכולה להפ
 <figure class="chapter-figure image-frame">
 <img src="../figures/cover_logical_recursion_whole_diagram.png" decoding="async"
 loading="lazy" alt="הקצה הרקורסיבי" />
+<figcaption aria-hidden="true">תיאור תמונה: שכבות רקורסיביות שבהן כל גבול יכול להפוך למקור חדש.</figcaption>
 </figure>
 
 ### האידיאל שאינו נסגר והבדיקה שממשיכה אחרי כל תשובה
@@ -2776,6 +2780,7 @@ M\rangle\rangle)=0 \end{cases} \$\$</span>
 src="../figures/cover_logical_recursion_whole_diagram.png"
 decoding="async" loading="lazy"
 alt="מדע, פיזיקה ומתמטיקה כמשמעת גבול" />
+<figcaption aria-hidden="true">תיאור תמונה: נוסחאות, מדידה ומודלים כשפות גבול, לא כהוכחה סופית.</figcaption>
 </figure>
 
 ### כיצד להשתמש בדיוק בלי להפוך אותו לקישוט
@@ -2829,6 +2834,7 @@ and I Must Scream. המקורות אינם מוכנסים כהוכחות לתא�
 <img src="../figures/v25_chapter_locality-nonlocality-contextuality.png"
 decoding="async" loading="lazy"
 alt="לוקליות, אי־לוקליות וקונטקסטואליות" />
+<figcaption aria-hidden="true">תיאור תמונה: קשרים מקומיים ולא־מקומיים, הקשר, מדידה ותלות בין צופה לנצפה.</figcaption>
 </figure>
 
 ### Bell, Kochen-Specker, Bohmian mechanics והזהירות שלא להפוך פיזיקה לסיסמה
@@ -3351,6 +3357,7 @@ the Dragon*, הוא יכול להופיע כמכשף או יועץ מרושע. �
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_art-of-potential.png" decoding="async"
 loading="lazy" alt="אומנות של פוטנציאל" />
+<figcaption aria-hidden="true">תיאור תמונה: יצירה כמרחב שבו אפשרות מקבלת צורה מבלי להיסגר לחלוטין.</figcaption>
 </figure>
 
 ### מקור חי, קאנון וצורה שאינה מחליפה נשימה
@@ -3412,6 +3419,7 @@ and I Must Scream. המקורות אינם מוכנסים כהוכחות לתא�
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_music-of-potential.png"
 decoding="async" loading="lazy" alt="מוזיקה של פוטנציאל" />
+<figcaption aria-hidden="true">תיאור תמונה: קצב, שקט וחזרה כדרך להחזיק אפשרות בזמן.</figcaption>
 </figure>
 
 ### קול, זמן, שתיקה והאופטימום שאינו רק דיוק
@@ -3468,6 +3476,7 @@ and I Must Scream. המקורות אינם מוכנסים כהוכחות לתא�
 <img src="../figures/17_engineering_architecture_potential.png"
 decoding="async" loading="lazy"
 alt="איור: הנדסה וארכיטקטורה של פוטנציאל." />
+<figcaption aria-hidden="true">תיאור תמונה: מערכת הנדסית שבה פוטנציאל הופך למבנה, תיעול, בדיקה ותיקון.</figcaption>
 </figure>
 
 הנדסה נראית מבחוץ כמו תחום של חישובים: עומסים, מידות, חומרים, תקנים,
@@ -4259,6 +4268,7 @@ Hold Human Potential Under Real Conditions
 <figure class="image-frame">
 <img src="../figures/18_economy_relation_potential.png" decoding="async"
 loading="lazy" alt="איור: כלכלה של יחס." />
+<figcaption aria-hidden="true">תיאור תמונה: ערך, חליפין ואחריות כיחסים חיים ולא רק כמספרים.</figcaption>
 </figure>
 
 כלכלה נראית מבחוץ כמו תחום של מספרים: כסף, מחירים, ריבית, שכר, חוב,
@@ -5317,6 +5327,7 @@ Maximize Human Potential Without Destroying the Human
 <figure class="image-frame">
 <img src="../figures/19_governance_society_potential.png"
 decoding="async" loading="lazy" alt="איור: ממשל של פוטנציאל." />
+<figcaption aria-hidden="true">תיאור תמונה: מוסדות, הכרעה ותיאום ציבורי כדרכים לתרגם אפשרות לאחריות.</figcaption>
 </figure>
 
 ממשל נראה מבחוץ כמו תחום של מוסדות: ממשלה, חוק, בתי משפט, משטרה, צבא,
@@ -6128,6 +6139,7 @@ Hold Shared Human Potential Without Devouring the Human
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_law-of-potential.png" decoding="async"
 loading="lazy" alt="משפט של פוטנציאל" />
+<figcaption aria-hidden="true">תיאור תמונה: חוק, פרשנות וגבול כמרחב שבו אפשרות נבחנת מול אחריות.</figcaption>
 </figure>
 
 המשפט הוא אחד המבחנים הקשים ביותר לתאוריה, מפני שהוא פועל בדיוק במקום
@@ -6211,6 +6223,7 @@ and I Must Scream. המקורות אינם מוכנסים כהוכחות לתא�
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_medicine-of-potential.png"
 decoding="async" loading="lazy" alt="רפואה של פוטנציאל" />
+<figcaption aria-hidden="true">תיאור תמונה: ריפוי כקריאה זהירה של גוף, סבל, סיכוי ותנאים.</figcaption>
 </figure>
 
 ### גוף, אבחנה, טיפול ואדם שאינו מקרה
@@ -6667,6 +6680,7 @@ alt="איור ו: המדומה, הווירטואלי והאופק. גבול כמ
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_boundary-horizons.png" decoding="async"
 loading="lazy" alt="אופקי גבול" />
+<figcaption aria-hidden="true">תיאור תמונה: גבול שאינו קיר בלבד, אלא אופק שמכוון את היחס בין אפשרות לצורה.</figcaption>
 </figure>
 
 ### מה שנראה, מה שמוסתר, ומה שאסור להסיק מהר מדי
@@ -7764,6 +7778,7 @@ causal sets ו־CDT בודקים בדרכים שונות אם מרחב וזמן 
 src="../figures/cover_philosophical_recursion_whole_diagram.png"
 decoding="async" loading="lazy"
 alt="מבנה היקום / צורת היקום וצורת הפוטנציאל" />
+<figcaption aria-hidden="true">תיאור תמונה: צורת יקום כסדרת יחסים, אופקים ומעברים בין פוטנציאל לצורה.</figcaption>
 </figure>
 
 ### יקום שטוח, יקום מקומר, מולטיברס ואומניברס כשפת גבול זהירה
@@ -7817,6 +7832,7 @@ and I Must Scream. המקורות אינם מוכנסים כהוכחות לתא�
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_high-energy-physics.png"
 decoding="async" loading="lazy" alt="פיזיקה באנרגיות גבוהות" />
+<figcaption aria-hidden="true">תיאור תמונה: אנרגיה, חלקיקים ואופקים כבדיקה של גבולות הצורה.</figcaption>
 </figure>
 
 ### המודל הסטנדרטי, QFT, Higgs וגבול בין שפה להוכחה
@@ -7871,6 +7887,7 @@ and I Must Scream. המקורות אינם מוכנסים כהוכחות לתא�
 <img src="../figures/v25_chapter_black-holes-horizons-holography.png"
 decoding="async" loading="lazy"
 alt="חורים שחורים, אופקי אירועים והעיקרון ההולוגרפי" />
+<figcaption aria-hidden="true">תיאור תמונה: אופק, מידע וסף שבו מה שנעלם עדיין משאיר עקבה מבנית.</figcaption>
 </figure>
 
 ### גבול, עקבה ומידע בלי להפוך סוד למיתוס

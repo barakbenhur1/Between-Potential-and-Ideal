@@ -1250,6 +1250,7 @@ not reproduce it.
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_education-of-potential.png"
 decoding="async" loading="lazy" alt="Education of Potential" />
+<figcaption aria-hidden="true">Image description: learning, distance, and understanding that cannot be shortcut.</figcaption>
 </figure>
 
 Education is a direct test of Between Potential and Ideal because it
@@ -1614,6 +1615,7 @@ more accurately between potential and ideal.
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_ai-open-problems.png" decoding="async"
 loading="lazy" alt="Artificial Intelligence and Open Problems" />
+<figcaption aria-hidden="true">Image description: answer, source, responsibility, and the distance that can be stolen.</figcaption>
 </figure>
 
 ### Responsibility, source, truth, and a tool that is not a living owner
@@ -1679,6 +1681,7 @@ actionable ending*
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_i-have-no-mouth.png" decoding="async"
 loading="lazy" alt="I Have No Mouth, and I Must Scream" />
+<figcaption aria-hidden="true">Image description: story, game, and the difference between a locked ending and an actable ending.</figcaption>
 </figure>
 
 ### AM, locked ending, moral action, and systemic hell
@@ -2393,6 +2396,7 @@ upper-bound edge*
 <figure class="chapter-figure image-frame">
 <img src="../figures/cover_logical_recursion_whole_diagram.png" decoding="async"
 loading="lazy" alt="The Recursive Edge" />
+<figcaption aria-hidden="true">Image description: recursive layers in which every boundary can become a new source.</figcaption>
 </figure>
 
 ### The ideal that does not close and the test that continues after every answer
@@ -3291,6 +3295,7 @@ become proof*
 src="../figures/cover_logical_recursion_whole_diagram.png"
 decoding="async" loading="lazy"
 alt="Science, Physics, and Mathematics as a Boundary Discipline" />
+<figcaption aria-hidden="true">Image description: formulas, measurement, and models as boundary languages, not final proof.</figcaption>
 </figure>
 
 ### How to use precision without turning it into decoration
@@ -3353,6 +3358,7 @@ answer*
 <img src="../figures/v25_chapter_locality-nonlocality-contextuality.png"
 decoding="async" loading="lazy"
 alt="Locality, Non-locality, and Contextuality" />
+<figcaption aria-hidden="true">Image description: local and non-local relations, context, measurement, and dependence between observer and observed.</figcaption>
 </figure>
 
 ### Bell, Kochen-Specker, Bohmian mechanics, and the caution against slogan physics
@@ -4002,6 +4008,7 @@ that thing.
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_art-of-potential.png" decoding="async"
 loading="lazy" alt="Art of Potential" />
+<figcaption aria-hidden="true">Image description: creation as a field where possibility receives form without being fully closed.</figcaption>
 </figure>
 
 ### Living source, canon, and form that does not replace breath
@@ -4073,6 +4080,7 @@ borrowing of terms.
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_music-of-potential.png"
 decoding="async" loading="lazy" alt="Music of Potential" />
+<figcaption aria-hidden="true">Image description: rhythm, silence, and return as ways of carrying possibility through time.</figcaption>
 </figure>
 
 ### Voice, time, silence, and an optimum that is not only precision
@@ -4137,6 +4145,7 @@ Material, Form, Load, and Repair That Is Not Redemption
 <img src="../figures/17_engineering_architecture_potential.png"
 decoding="async" loading="lazy"
 alt="Figure: Engineering and Architecture of Potential." />
+<figcaption aria-hidden="true">Image description: an engineered system in which potential becomes structure, channeling, testing, and repair.</figcaption>
 </figure>
 
 Engineering looks, from the outside, like a discipline of calculation:
@@ -4544,6 +4553,7 @@ Money, Value, Trust, and Potential
 <figure class="image-frame">
 <img src="../figures/18_economy_relation_potential.png" decoding="async"
 loading="lazy" alt="Figure: Economy of Relation." />
+<figcaption aria-hidden="true">Image description: value, exchange, and responsibility as living relations, not only as numbers.</figcaption>
 </figure>
 
 Economy looks, from the outside, like a field of numbers: money, prices,
@@ -4999,6 +5009,7 @@ Law, Power, Trust, and Repair That Is Not Redemption
 <img src="../figures/19_governance_society_potential.png"
 decoding="async" loading="lazy"
 alt="Figure: Governance of Potential." />
+<figcaption aria-hidden="true">Image description: institutions, decision, and public coordination as ways of translating possibility into responsibility.</figcaption>
 </figure>
 
 Governance looks, from the outside, like a field of institutions:
@@ -5385,6 +5396,7 @@ between power, law, trust, human being, and time.
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_law-of-potential.png" decoding="async"
 loading="lazy" alt="Law of Potential" />
+<figcaption aria-hidden="true">Image description: law, interpretation, and boundary as a space where possibility is tested against responsibility.</figcaption>
 </figure>
 
 Law is one of the hardest tests of the theory because it operates
@@ -5455,6 +5467,7 @@ borrowing of terms.
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_medicine-of-potential.png"
 decoding="async" loading="lazy" alt="Medicine of Potential" />
+<figcaption aria-hidden="true">Image description: healing as a careful reading of body, suffering, chance, and conditions.</figcaption>
 </figure>
 
 ### Body, diagnosis, treatment, and a person who is not a case
@@ -6010,6 +6023,7 @@ from which it came.
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_boundary-horizons.png" decoding="async"
 loading="lazy" alt="Boundary Horizons" />
+<figcaption aria-hidden="true">Image description: a boundary that is not merely a wall, but a horizon guiding the relation between possibility and form.</figcaption>
 </figure>
 
 ### What is visible, what is hidden, and what must not be inferred too quickly
@@ -6605,6 +6619,7 @@ when it seeks unification.
 src="../figures/cover_philosophical_recursion_whole_diagram.png"
 decoding="async" loading="lazy"
 alt="Universe Structure / The Shape of the Universe and the Shape of Potential" />
+<figcaption aria-hidden="true">Image description: the shape of the universe as relations, horizons, and passages between potential and form.</figcaption>
 </figure>
 
 ### Flat universe, curved universe, multiverse and omniverse as cautious boundary language
@@ -6669,6 +6684,7 @@ borrowing of terms.
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_high-energy-physics.png"
 decoding="async" loading="lazy" alt="High-Energy Physics" />
+<figcaption aria-hidden="true">Image description: energy, particles, and horizons as a test of the limits of form.</figcaption>
 </figure>
 
 ### The Standard Model, QFT, Higgs, and the boundary between language and proof
@@ -6732,6 +6748,7 @@ physics into metaphysical proof*
 <img src="../figures/v25_chapter_black-holes-horizons-holography.png"
 decoding="async" loading="lazy"
 alt="Black Holes, Event Horizons, and the Holographic Principle" />
+<figcaption aria-hidden="true">Image description: horizon, information, and a threshold where what disappears still leaves structural trace.</figcaption>
 </figure>
 
 ### Boundary, trace, and information without turning mystery into myth

@@ -1,0 +1,21 @@
+{
+  "version": "V39_FINAL_ISSUE_FIX",
+  "checks": {
+    "local_links_ok": true,
+    "applied_he_source_buttons": true,
+    "applied_he_inside_no_duplicate_pdf": true,
+    "all_mail_buttons_gmail": true,
+    "appendix_cover_no_figcaption": true,
+    "appendix_toc_no_number_spans": true,
+    "appendix_images_auto_ratio_html": true,
+    "appendix_story_heading_centered_html": true,
+    "appendix_pdf_toc_no_number_tokens": true,
+    "appendix_pdf_exists_he": true,
+    "appendix_pdf_exists_en": true,
+    "appendix_docx_exists_he": true,
+    "appendix_docx_exists_en": true
+  },
+  "failures": [],
+  "local_links_checked": 2067,
+  "broken_local_links": []
+}

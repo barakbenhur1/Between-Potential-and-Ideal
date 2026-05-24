@@ -1,0 +1,15 @@
+{
+  "he_nearwhite_ratio": 0.0,
+  "he_no_white_background": true,
+  "en_nearwhite_ratio": 0.0,
+  "en_no_white_background": true,
+  "files_changed": [
+    "styles.css",
+    "files/between-potential-and-ideal-he-editorial.html",
+    "files/between-potential-and-ideal-en-editorial.html",
+    "files/between-potential-and-ideal-he-editorial.pdf",
+    "files/between-potential-and-ideal-en-editorial.pdf"
+  ],
+  "failures": [],
+  "ok": true
+}

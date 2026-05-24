@@ -4,6 +4,8 @@ _Stories I Told My Mother Before Sleep_
 
 
 
+![Cover illustration for the story appendices collection](assets/appendices_stories_cover.png)
+
 ## Table of Contents
 
 1. [How Truth Remains Honest](#story-1)
