@@ -4,11 +4,11 @@
       "slug": "education-of-potential",
       "he": {
         "title": "חינוך של פוטנציאל",
-        "url": "education-of-potential.html"
+        "url": "pages/he/education-of-potential.html"
       },
       "en": {
         "title": "Education of Potential",
-        "url": "education-of-potential-en.html"
+        "url": "pages/en/education-of-potential-en.html"
       },
       "terms": [
         "חינוך",
@@ -73,11 +73,11 @@
       "slug": "law-of-potential",
       "he": {
         "title": "משפט של פוטנציאל",
-        "url": "law-of-potential.html"
+        "url": "pages/he/law-of-potential.html"
       },
       "en": {
         "title": "Law of Potential",
-        "url": "law-of-potential-en.html"
+        "url": "pages/en/law-of-potential-en.html"
       },
       "terms": [
         "חינוך",
@@ -142,11 +142,11 @@
       "slug": "medicine-of-potential",
       "he": {
         "title": "רפואה של פוטנציאל",
-        "url": "medicine-of-potential.html"
+        "url": "pages/he/medicine-of-potential.html"
       },
       "en": {
         "title": "Medicine of Potential",
-        "url": "medicine-of-potential-en.html"
+        "url": "pages/en/medicine-of-potential-en.html"
       },
       "terms": [
         "חינוך",
@@ -211,11 +211,11 @@
       "slug": "art-of-potential",
       "he": {
         "title": "אומנות של פוטנציאל",
-        "url": "art-of-potential.html"
+        "url": "pages/he/art-of-potential.html"
       },
       "en": {
         "title": "Art of Potential",
-        "url": "art-of-potential-en.html"
+        "url": "pages/en/art-of-potential-en.html"
       },
       "terms": [
         "חינוך",
@@ -280,11 +280,11 @@
       "slug": "music-of-potential",
       "he": {
         "title": "מוזיקה של פוטנציאל",
-        "url": "music-of-potential.html"
+        "url": "pages/he/music-of-potential.html"
       },
       "en": {
         "title": "Music of Potential",
-        "url": "music-of-potential-en.html"
+        "url": "pages/en/music-of-potential-en.html"
       },
       "terms": [
         "חינוך",
@@ -349,11 +349,11 @@
       "slug": "ai-open-problems",
       "he": {
         "title": "בינה מלאכותית ובעיות פתוחות",
-        "url": "ai-open-problems.html"
+        "url": "pages/he/ai-open-problems.html"
       },
       "en": {
         "title": "Artificial Intelligence and Open Problems",
-        "url": "ai-open-problems-en.html"
+        "url": "pages/en/ai-open-problems-en.html"
       },
       "terms": [
         "חינוך",
@@ -418,11 +418,11 @@
       "slug": "boundary-horizons",
       "he": {
         "title": "אופקי גבול",
-        "url": "boundary-horizons.html"
+        "url": "pages/he/boundary-horizons.html"
       },
       "en": {
         "title": "Boundary Horizons",
-        "url": "boundary-horizons-en.html"
+        "url": "pages/en/boundary-horizons-en.html"
       },
       "terms": [
         "חינוך",
@@ -487,11 +487,11 @@
       "slug": "shape-of-the-universe-and-potential",
       "he": {
         "title": "מבנה היקום / צורת היקום וצורת הפוטנציאל",
-        "url": "shape-of-the-universe-and-potential.html"
+        "url": "pages/he/shape-of-the-universe-and-potential.html"
       },
       "en": {
         "title": "Structure of the Universe / Shape of the Universe and Shape of Potential",
-        "url": "shape-of-the-universe-and-potential-en.html"
+        "url": "pages/en/shape-of-the-universe-and-potential-en.html"
       },
       "terms": [
         "חינוך",
@@ -556,11 +556,11 @@
       "slug": "i-have-no-mouth",
       "he": {
         "title": "אין לי פה ואני חייב לצרוח",
-        "url": "i-have-no-mouth.html"
+        "url": "pages/he/i-have-no-mouth.html"
       },
       "en": {
         "title": "I Have No Mouth, and I Must Scream",
-        "url": "i-have-no-mouth-en.html"
+        "url": "pages/en/i-have-no-mouth-en.html"
       },
       "terms": [
         "חינוך",
@@ -625,11 +625,11 @@
       "slug": "recursive-edge",
       "he": {
         "title": "הקצה הרקורסיבי",
-        "url": "recursive-edge.html"
+        "url": "pages/he/recursive-edge.html"
       },
       "en": {
         "title": "The Recursive Edge",
-        "url": "recursive-edge-en.html"
+        "url": "pages/en/recursive-edge-en.html"
       },
       "terms": [
         "חינוך",
@@ -694,11 +694,11 @@
       "slug": "high-energy-physics",
       "he": {
         "title": "פיזיקה באנרגיות גבוהות",
-        "url": "high-energy-physics.html"
+        "url": "pages/he/high-energy-physics.html"
       },
       "en": {
         "title": "High-Energy Physics",
-        "url": "high-energy-physics-en.html"
+        "url": "pages/en/high-energy-physics-en.html"
       },
       "terms": [
         "חינוך",
@@ -763,11 +763,11 @@
       "slug": "science-physics-math-boundary-discipline",
       "he": {
         "title": "מדע, פיזיקה ומתמטיקה כמשמעת גבול",
-        "url": "science-physics-math-boundary-discipline.html"
+        "url": "pages/he/science-physics-math-boundary-discipline.html"
       },
       "en": {
         "title": "Science, Physics, and Mathematics as Boundary Discipline",
-        "url": "science-physics-math-boundary-discipline-en.html"
+        "url": "pages/en/science-physics-math-boundary-discipline-en.html"
       },
       "terms": [
         "חינוך",
@@ -832,11 +832,11 @@
       "slug": "locality-nonlocality-contextuality",
       "he": {
         "title": "לוקליות, אי־לוקליות וקונטקסטואליות",
-        "url": "locality-nonlocality-contextuality.html"
+        "url": "pages/he/locality-nonlocality-contextuality.html"
       },
       "en": {
         "title": "Locality, Non-Locality, and Contextuality",
-        "url": "locality-nonlocality-contextuality-en.html"
+        "url": "pages/en/locality-nonlocality-contextuality-en.html"
       },
       "terms": [
         "חינוך",
@@ -901,11 +901,11 @@
       "slug": "black-holes-horizons-holography",
       "he": {
         "title": "חורים שחורים, אופקי אירועים והעיקרון ההולוגרפי",
-        "url": "black-holes-horizons-holography.html"
+        "url": "pages/he/black-holes-horizons-holography.html"
       },
       "en": {
         "title": "Black Holes, Event Horizons, and the Holographic Principle",
-        "url": "black-holes-horizons-holography-en.html"
+        "url": "pages/en/black-holes-horizons-holography-en.html"
       },
       "terms": [
         "חינוך",

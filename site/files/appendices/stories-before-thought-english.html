@@ -1384,6 +1384,90 @@ body.stories-page .story .image-frame {
 }
 
 </style>
+<style id="v36-last-good-fixes">
+
+/* V36 rebuilt from V31 last-good: additive no-regression fixes */
+/* Card/button alignment */
+.content-grid.two,
+.content-grid.three,
+.hub-grid,
+.story-downloads,
+.source-files-card-grid {
+  align-items: stretch !important;
+}
+.reader-card,
+.reader-card.media-card,
+.story-download-box,
+.source-files-card {
+  display: flex !important;
+  flex-direction: column !important;
+}
+.reader-card .download-row,
+.story-download-box .download-strip,
+.source-files-card .download-row {
+  margin-top: auto !important;
+  align-items: flex-end !important;
+}
+
+/* Author note: transparent/no white card */
+.author-note-page {
+  background: #fffaf0 !important;
+}
+.author-note-page .bpi-author-note-card,
+.author-note-page .author-note-card,
+.author-note-page .bpi-author-note-lines,
+.author-note-page .author-note-main,
+.author-note-page .bpi-author-note-text-wrap {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+.author-note-page .bpi-author-note-card,
+.author-note-page .author-note-card {
+  width: auto !important;
+  max-width: 760px !important;
+  padding: 0 !important;
+}
+
+/* Story image size restored */
+.story-cover-figure,
+.story .image-frame,
+.files-appendix-story .image-frame,
+body.stories-page .image-frame {
+  max-width: 940px !important;
+  width: min(940px, 98%) !important;
+  margin: 30px auto 36px !important;
+  text-align: center !important;
+}
+.story-cover-figure img,
+.story .image-frame img,
+.files-appendix-story .image-frame img,
+body.stories-page .image-frame img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+}
+@media print {
+  .cover-download-strip { display: none !important; }
+  .story .image-frame,
+  .files-appendix-story .image-frame,
+  body.stories-page .story .image-frame {
+    width: 170mm !important;
+    max-width: 170mm !important;
+    margin: 6mm auto 8mm !important;
+  }
+  .story .image-frame img,
+  .files-appendix-story .image-frame img,
+  body.stories-page .story .image-frame img {
+    max-width: 164mm !important;
+    max-height: 105mm !important;
+  }
+}
+
+</style>
 </head><body class="appendix-document-page public-page design-prompt-theme"><section class="page cover" id="main"><div class="cover-inner"><div class="kicker">Appendices to the Theory</div><div class="rule"></div><h1 class="title">Stories Before Thought</h1><p class="subtitle">Stories I Told My Mother Before Sleep — literary appendices to the theory, translated and designed across both languages</p><figure class="story-cover-figure image-frame" data-v31-cover="stories"><img alt="Cover illustration for Stories Before Thought appendices" decoding="async" loading="eager" src="assets/story_image_1.png"/><figcaption>Appendix cover — Stories Before Thought</figcaption></figure></div></section><section class="page story-toc-page"><h2>Table of Contents</h2><p>Click any story to jump directly to its place in the document.</p><ol><li><a href="#story-1">How Truth Remains Honest</a></li><li><a href="#story-2">True, But Not Just</a></li><li><a href="#story-3">Red Causes Dread</a></li><li><a href="#story-4">Quantum Intelligence</a></li><li><a href="#story-5">A Place at the End of the Road</a></li><li><a href="#story-6">Super Mirrors</a></li><li><a href="#story-7">Self-Confidence</a></li><li><a href="#story-8">Serial Healer</a></li><li><a href="#story-9">Maxideal</a></li><li><a href="#story-10">To Speak with Consciousness</a></li><li><a href="#story-11">Heretic from Abroad</a></li><li><a href="#story-12">Puzzle</a></li><li><a href="#story-13">To Fear Intruders, or Talk to Computers</a></li><li><a href="#story-14">A Few Strings and a Knot</a></li></ol></section><section class="page story files-appendix-story" id="story-1">
 <div class="story-head">
 <h2>How Truth Remains Honest</h2>
