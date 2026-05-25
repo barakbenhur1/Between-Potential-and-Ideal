@@ -23,7 +23,7 @@
     body.ai-product-page{margin:0;background:radial-gradient(circle at 0 8%,rgba(0,167,183,.08),transparent 30rem),radial-gradient(circle at 100% 0,rgba(242,142,43,.10),transparent 32rem),#f7efe1;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.75}
     .skip-link{position:absolute;left:1rem;top:-4rem;background:#fff;color:#0A3A68;padding:.7rem 1rem;border-radius:999px;z-index:999}.skip-link:focus{top:1rem}
     .site-header{background:linear-gradient(135deg,#0A3A68,#0C526D 58%,rgba(242,142,43,.92));color:#fff;padding:1rem 1.2rem;box-shadow:0 12px 34px rgba(10,58,104,.16)}
-    .nav-wrap{width:min(1120px,calc(100% - 28px));margin:auto;display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap}.brand{font-weight:900;letter-spacing:.02em}.site-nav{display:flex;gap:.55rem;flex-wrap:wrap}.site-nav a{color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:.42rem .78rem;font-weight:750}.site-nav a[aria-current="page"]{background:rgba(255,255,255,.18)}
+    .nav-wrap{width:min(1120px,calc(100% - 28px));margin:auto;display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap}.brand{font-weight:900;letter-spacing:.02em;color:#fff!important}.site-nav{display:flex;gap:.55rem;flex-wrap:wrap}.site-nav a{background:#fffaf0!important;color:#0A3A68!important;text-decoration:none!important;border:1px solid rgba(255,255,255,.62)!important;border-radius:999px!important;padding:.42rem .78rem!important;font-weight:850!important;box-shadow:0 6px 18px rgba(10,58,104,.10)!important}.site-nav a:hover,.site-nav a:focus{background:#fff!important;color:#0A3A68!important;outline:2px solid rgba(255,255,255,.72);outline-offset:2px}.site-nav a[aria-current="page"]{background:rgba(255,255,255,.20)!important;color:#fff!important;border-color:rgba(255,255,255,.55)!important;box-shadow:inset 0 0 0 1px rgba(255,255,255,.22),0 6px 18px rgba(10,58,104,.16)!important}
     main{width:min(1120px,calc(100% - 34px));margin:34px auto 72px}.hero{background:linear-gradient(135deg,#fff,#fffaf0);border:1px solid var(--line);border-left:8px solid var(--gold);border-radius:34px;box-shadow:var(--shadow);padding:clamp(1.6rem,4vw,3.3rem);text-align:center}.eyebrow{color:var(--gold);font-weight:900;letter-spacing:.06em;text-transform:uppercase;font-size:.9rem}.hero h1{font-size:clamp(2.1rem,6vw,4.6rem);line-height:1.03;margin:.35rem 0;color:var(--blue)}.lead{max-width:70ch;margin:1rem auto 0;color:var(--copy);font-size:clamp(1.05rem,2vw,1.35rem)}
     .notice-box{margin:1.4rem auto 0;max-width:880px;background:var(--soft);border:1px solid rgba(184,121,38,.26);border-radius:24px;padding:1rem 1.15rem;color:var(--copy);text-align:left}.notice-box strong{color:var(--blue)}
     .section-title{margin:2.6rem 0 1rem;color:var(--blue);font-size:clamp(1.5rem,3vw,2.3rem)}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.card{background:linear-gradient(135deg,#fff,#fffaf0);border:1px solid var(--line);border-radius:26px;box-shadow:0 14px 38px rgba(10,58,104,.08);padding:1.05rem;display:flex;flex-direction:column;gap:.85rem;min-height:100%}.card img{width:100%;height:164px;object-fit:cover;border-radius:20px;border:1px solid var(--line);background:#fffaf0}.card h2{margin:.1rem 0;color:var(--blue);font-size:1.35rem;line-height:1.25}.card p{margin:0;color:var(--copy)}.meta{display:flex;flex-wrap:wrap;gap:.45rem}.tag{display:inline-flex;border:1px solid rgba(10,58,104,.16);background:#fff7e8;color:#5b4b32;border-radius:999px;padding:.25rem .62rem;font-weight:800;font-size:.84rem}.actions{display:flex;gap:.45rem;flex-wrap:wrap;margin-top:auto}.actions a{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;text-decoration:none;background:var(--blue);color:white;padding:.48rem .78rem;font-weight:850}.actions a.secondary{background:#fff;color:var(--blue);border:1px solid var(--line)}
@@ -33,79 +33,16 @@
 </head>
 <body class="public-page ai-product-page ai-page">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="nav-wrap">
-      <div class="brand">Between Potential and Ideal</div>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="../../en.html">Home</a>
-        <a href="summary-en.html">Summary</a>
-        <a href="core-en.html">Core</a>
-        <a href="witness-en.html">Witness</a>
-        <a href="ai-en.html" aria-current="page">AI</a>
-        <a href="files-en.html">Files</a>
-        <a href="../he/ai.html" lang="he" dir="rtl">עברית</a>
-      </nav>
-    </div>
-  </header>
+  <header class="site-header"><div class="nav-wrap"><div class="brand">Between Potential and Ideal</div><nav class="site-nav" aria-label="Main navigation"><a href="../../en.html">Home</a><a href="summary-en.html">Summary</a><a href="core-en.html">Core</a><a href="witness-en.html">Witness</a><a href="ai-en.html" aria-current="page">AI</a><a href="files-en.html">Files</a><a href="../he/ai.html" lang="he" dir="rtl">עברית</a></nav></div></header>
   <main id="main">
-    <section class="hero" aria-labelledby="page-title">
-      <div class="eyebrow">AI as structural witness</div>
-      <h1 id="page-title">Artificial intelligence, source, and witness</h1>
-      <p class="lead">This section does not present AI as consciousness and does not use the machine to replace a living source. It tests what happens when a linguistic tool returns mirror, structure, wording, and boundary.</p>
-      <div class="notice-box">
-        <strong>Reading rule:</strong> information is not experience, simulation is not living witness, and linguistic response is not belief. These dialogues are reading documents — not proof that a machine is alive, and not an erasure of the person who carries the distance.
-      </div>
-    </section>
-
+    <section class="hero" aria-labelledby="page-title"><div class="eyebrow">AI as structural witness</div><h1 id="page-title">Artificial intelligence, source, and witness</h1><p class="lead">This section does not present AI as consciousness and does not use the machine to replace a living source. It tests what happens when a linguistic tool returns mirror, structure, wording, and boundary.</p><div class="notice-box"><strong>Reading rule:</strong> information is not experience, simulation is not living witness, and linguistic response is not belief. These dialogues are reading documents — not proof that a machine is alive, and not an erasure of the person who carries the distance.</div></section>
     <h2 class="section-title">The three AI documents</h2>
     <section class="cards" aria-label="AI documents">
-      <article class="card">
-        <img src="../../figures/thumb_ai.png" alt="Abstract image of AI as a linguistic mirror" loading="lazy" />
-        <div class="meta"><span class="tag">Hebrew original</span><span class="tag">Full English version</span><span class="tag">Dialogue</span></div>
-        <h2>What AI Believes</h2>
-        <p>A conversation on consciousness, source, computation, and the distance between them. The document tests what a tool can say about itself, and what it must not claim as its own.</p>
-        <div class="actions">
-          <a href="../../files/ai-believes/what-ai-believes-en.html">HTML</a>
-          <a class="secondary" href="../../files/ai-believes/what-ai-believes-en.pdf">PDF</a>
-          <a class="secondary" href="../../files/ai-believes/what-ai-believes-en.docx">DOCX</a>
-          <a class="secondary" href="../../files/ai-believes/what-ai-believes-en.md">MD</a>
-          <a class="secondary" href="../../files/ai-believes/what-ai-believes-he.html" lang="he" dir="rtl">עברית</a>
-        </div>
-      </article>
-      <article class="card">
-        <img src="../../figures/thumb_witness.png" alt="Abstract image of witness, source, and mirror" loading="lazy" />
-        <div class="meta"><span class="tag">Hebrew original</span><span class="tag">Full English version</span><span class="tag">Reverse test</span></div>
-        <h2>The Reverse Turing Test</h2>
-        <p>The direction is reversed: not whether a machine can look human, but whether the human can recognize a brilliant tool without handing it the place of source.</p>
-        <div class="actions">
-          <a href="../../files/ai-believes/reverse-turing-conversation-en.html">HTML</a>
-          <a class="secondary" href="../../files/ai-believes/reverse-turing-conversation-en.pdf">PDF</a>
-          <a class="secondary" href="../../files/ai-believes/reverse-turing-conversation-en.docx">DOCX</a>
-          <a class="secondary" href="../../files/ai-believes/reverse-turing-conversation-en.md">MD</a>
-          <a class="secondary" href="../../files/ai-believes/reverse-turing-conversation-he.html" lang="he" dir="rtl">עברית</a>
-        </div>
-      </article>
-      <article class="card">
-        <img src="../../figures/thumb_sources.png" alt="Abstract image of two voices and a shared source" loading="lazy" />
-        <div class="meta"><span class="tag">Hebrew original</span><span class="tag">Full English version</span><span class="tag">Identity</span></div>
-        <h2>When I Am Also You</h2>
-        <p>A dialogue on identity, tool, mirror, and boundary. The document preserves the distinction between a voice that sounds close and a source that lives the cost.</p>
-        <div class="actions">
-          <a href="../../files/ai-believes/when-i-am-also-you-en.html">HTML</a>
-          <a class="secondary" href="../../files/ai-believes/when-i-am-also-you-en.pdf">PDF</a>
-          <a class="secondary" href="../../files/ai-believes/when-i-am-also-you-en.docx">DOCX</a>
-          <a class="secondary" href="../../files/ai-believes/when-i-am-also-you-en.md">MD</a>
-          <a class="secondary" href="../../files/ai-believes/when-i-am-also-you-he.html" lang="he" dir="rtl">עברית</a>
-        </div>
-      </article>
+      <article class="card"><img src="../../figures/thumb_ai.png" alt="Abstract image of AI as a linguistic mirror" loading="lazy" /><div class="meta"><span class="tag">Hebrew original</span><span class="tag">Full English version</span><span class="tag">Dialogue</span></div><h2>What AI Believes</h2><p>A conversation on consciousness, source, computation, and the distance between them. The document tests what a tool can say about itself, and what it must not claim as its own.</p><div class="actions"><a href="../../files/ai-believes/what-ai-believes-en.html">HTML</a><a class="secondary" href="../../files/ai-believes/what-ai-believes-en.pdf">PDF</a><a class="secondary" href="../../files/ai-believes/what-ai-believes-en.docx">DOCX</a><a class="secondary" href="../../files/ai-believes/what-ai-believes-en.md">MD</a><a class="secondary" href="../../files/ai-believes/what-ai-believes-he.html" lang="he" dir="rtl">עברית</a></div></article>
+      <article class="card"><img src="../../figures/thumb_witness.png" alt="Abstract image of witness, source, and mirror" loading="lazy" /><div class="meta"><span class="tag">Hebrew original</span><span class="tag">Full English version</span><span class="tag">Reverse test</span></div><h2>The Reverse Turing Test</h2><p>The direction is reversed: not whether a machine can look human, but whether the human can recognize a brilliant tool without handing it the place of source.</p><div class="actions"><a href="../../files/ai-believes/reverse-turing-conversation-en.html">HTML</a><a class="secondary" href="../../files/ai-believes/reverse-turing-conversation-en.pdf">PDF</a><a class="secondary" href="../../files/ai-believes/reverse-turing-conversation-en.docx">DOCX</a><a class="secondary" href="../../files/ai-believes/reverse-turing-conversation-en.md">MD</a><a class="secondary" href="../../files/ai-believes/reverse-turing-conversation-he.html" lang="he" dir="rtl">עברית</a></div></article>
+      <article class="card"><img src="../../figures/thumb_sources.png" alt="Abstract image of two voices and a shared source" loading="lazy" /><div class="meta"><span class="tag">Hebrew original</span><span class="tag">Full English version</span><span class="tag">Identity</span></div><h2>When I Am Also You</h2><p>A dialogue on identity, tool, mirror, and boundary. The document preserves the distinction between a voice that sounds close and a source that lives the cost.</p><div class="actions"><a href="../../files/ai-believes/when-i-am-also-you-en.html">HTML</a><a class="secondary" href="../../files/ai-believes/when-i-am-also-you-en.pdf">PDF</a><a class="secondary" href="../../files/ai-believes/when-i-am-also-you-en.docx">DOCX</a><a class="secondary" href="../../files/ai-believes/when-i-am-also-you-en.md">MD</a><a class="secondary" href="../../files/ai-believes/when-i-am-also-you-he.html" lang="he" dir="rtl">עברית</a></div></article>
     </section>
-
-    <h2 class="section-title">How to read this section</h2>
-    <section class="reading-path" aria-label="Reading paths">
-      <div class="path-card"><h3>New reader</h3><p>Start with “The Reverse Turing Test.” It gives the boundary rule: a tool can return a mirror, but it cannot become a living source.</p></div>
-      <div class="path-card"><h3>Deep reader</h3><p>Continue with “What AI Believes” to see the claim tested through answers, refusals, and repetitions.</p></div>
-      <div class="path-card"><h3>Skeptical reader</h3><p>Read all three together. Look for exactly where the text refuses to personify AI, and where it returns responsibility to the human.</p></div>
-    </section>
+    <h2 class="section-title">How to read this section</h2><section class="reading-path" aria-label="Reading paths"><div class="path-card"><h3>New reader</h3><p>Start with “The Reverse Turing Test.” It gives the boundary rule: a tool can return a mirror, but it cannot become a living source.</p></div><div class="path-card"><h3>Deep reader</h3><p>Continue with “What AI Believes” to see the claim tested through answers, refusals, and repetitions.</p></div><div class="path-card"><h3>Skeptical reader</h3><p>Read all three together. Look for exactly where the text refuses to personify AI, and where it returns responsibility to the human.</p></div></section>
   </main>
 </body>
 </html>
