@@ -1,0 +1,73 @@
+/* BPI global document button polish — 2026-05-26
+   Makes HTML format links the primary action across public document/download cards.
+   Scope is intentionally limited to document/download action containers, not navigation. */
+
+body.public-page .appendix-actions a[href$=".html"],
+body.public-page .appendix-actions a[href*=".html#"],
+body.public-page .appendix-actions a[href*=".html?"],
+body.public-page .download-strip a[href$=".html"],
+body.public-page .download-strip a[href*=".html#"],
+body.public-page .download-strip a[href*=".html?"],
+body.public-page .download-row a[href$=".html"],
+body.public-page .download-row a[href*=".html#"],
+body.public-page .download-row a[href*=".html?"],
+body.public-page .download-grid a[href$=".html"],
+body.public-page .download-grid a[href*=".html#"],
+body.public-page .download-grid a[href*=".html?"],
+body.public-page .approach-actions a[href$=".html"],
+body.public-page .approach-actions a[href*=".html#"],
+body.public-page .approach-actions a[href*=".html?"],
+body.public-page .file-actions a[href$=".html"],
+body.public-page .file-actions a[href*=".html#"],
+body.public-page .file-actions a[href*=".html?"],
+body.public-page .format-actions a[href$=".html"],
+body.public-page .format-actions a[href*=".html#"],
+body.public-page .format-actions a[href*=".html?"],
+body.public-page .document-actions a[href$=".html"],
+body.public-page .document-actions a[href*=".html#"],
+body.public-page .document-actions a[href*=".html?"],
+body.public-page a.primary-format,
+body.appendix-document-page .appendix-actions a[href$=".html"],
+body.appendix-document-page .download-strip a[href$=".html"],
+body.appendix-document-page .download-row a[href$=".html"] {
+  background: #0A3A68 !important;
+  color: #ffffff !important;
+  border-color: #0A3A68 !important;
+  box-shadow: 0 8px 18px rgba(10, 58, 104, .14) !important;
+  text-decoration: none !important;
+}
+
+body.public-page .appendix-actions a[href$=".html"] .file-size,
+body.public-page .download-strip a[href$=".html"] .file-size,
+body.public-page .download-row a[href$=".html"] .file-size,
+body.public-page .download-grid a[href$=".html"] .file-size,
+body.public-page .approach-actions a[href$=".html"] .file-size,
+body.public-page .file-actions a[href$=".html"] .file-size,
+body.public-page .format-actions a[href$=".html"] .file-size,
+body.public-page .document-actions a[href$=".html"] .file-size {
+  color: rgba(255,255,255,.82) !important;
+}
+
+body.public-page .appendix-actions a[href$=".html"]:hover,
+body.public-page .appendix-actions a[href$=".html"]:focus,
+body.public-page .download-strip a[href$=".html"]:hover,
+body.public-page .download-strip a[href$=".html"]:focus,
+body.public-page .download-row a[href$=".html"]:hover,
+body.public-page .download-row a[href$=".html"]:focus,
+body.public-page .download-grid a[href$=".html"]:hover,
+body.public-page .download-grid a[href$=".html"]:focus,
+body.public-page .approach-actions a[href$=".html"]:hover,
+body.public-page .approach-actions a[href$=".html"]:focus,
+body.public-page .file-actions a[href$=".html"]:hover,
+body.public-page .file-actions a[href$=".html"]:focus,
+body.public-page .format-actions a[href$=".html"]:hover,
+body.public-page .format-actions a[href$=".html"]:focus,
+body.public-page .document-actions a[href$=".html"]:hover,
+body.public-page .document-actions a[href$=".html"]:focus,
+body.public-page a.primary-format:hover,
+body.public-page a.primary-format:focus {
+  background: #082f55 !important;
+  border-color: #082f55 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
