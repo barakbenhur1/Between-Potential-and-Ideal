@@ -2,8 +2,8 @@
 """Fix Files page source-card duplication.
 
 Rule:
-- The "Inside the theory" card exposes reader formats: full HTML/PDF and logical HTML/PDF.
-- The "Source files" card must expose only formats that are not already shown there:
+- The visible "Inside the theory" card exposes reader formats: full HTML/PDF and logical HTML/PDF.
+- The visible "Source files" card must expose only formats that are not already shown there:
   full DOCX/MD and logical DOCX/MD.
 
 This script patches the Hebrew and English public Files pages without touching blurbs,
@@ -26,7 +26,6 @@ REPORT.parent.mkdir(parents=True, exist_ok=True)
 PAGES = [
     {
         "path": ROOT / "site" / "pages" / "he" / "files.html",
-        "lang": "he",
         "source_titles": {"קבצי מקור"},
         "theory_titles": {"בתוך התאוריה"},
         "description": "כאן נשארים רק קבצי מקור ועריכה שלא מופיעים כבר בכרטיס בתוך התאוריה: DOCX ו־MD בגרסה המלאה והלוגית.",
@@ -39,7 +38,6 @@ PAGES = [
     },
     {
         "path": ROOT / "site" / "pages" / "en" / "files-en.html",
-        "lang": "en",
         "source_titles": {"Source files", "Source Files"},
         "theory_titles": {"Inside the theory", "Within the theory", "In the theory"},
         "description": "Only source/editing formats that are not already shown in the Inside the theory card remain here: full and logical DOCX/MD.",
@@ -60,39 +58,69 @@ def norm(text: str) -> str:
     return " ".join(text.split()).strip()
 
 
-def has_card_class(tag) -> bool:
+def class_list(tag) -> list[str]:
     classes = tag.get("class") or []
     if isinstance(classes, str):
         classes = classes.split()
-    return any("card" in c or "media" in c or "reader" in c or "file" in c for c in classes)
+    return list(classes)
 
 
-def card_heading(tag) -> str:
+def is_big_archive_section(tag) -> bool:
+    title = first_heading_text(tag)
+    return title in {"קבצי מקור מלאים", "Full source files", "Complete source files"}
+
+
+def first_heading_text(tag) -> str:
     heading = tag.find(HEADING_TAGS)
     return norm(heading.get_text(" ", strip=True)) if heading else ""
 
 
-def find_exact_card(soup: BeautifulSoup, titles: set[str]):
-    candidates = []
-    for tag in soup.find_all(CARD_TAGS):
-        if not has_card_class(tag):
-            continue
-        title = card_heading(tag)
-        if title in titles:
-            candidates.append(tag)
-    if candidates:
-        return candidates[0]
+def closest_card_for_heading(heading):
+    """Return the smallest useful visual card around a heading.
+
+    The previous version required card classes and missed the actual visible card.
+    This version starts from the exact visible heading and climbs only until it finds
+    a compact parent with action/download links, while avoiding the large archive section.
+    """
+    cur = heading
+    best = None
+    while cur and getattr(cur, "name", None) != "main":
+        if cur.name in CARD_TAGS:
+            links = cur.find_all("a", href=True)
+            classes = class_list(cur)
+            title = first_heading_text(cur)
+            if len(links) >= 2 and title == norm(heading.get_text(" ", strip=True)) and not is_big_archive_section(cur):
+                best = cur
+                if any("card" in c or "media" in c or "reader" in c or "file" in c for c in classes):
+                    return cur
+        cur = cur.parent
+    return best
+
+
+def find_card_by_exact_heading(soup: BeautifulSoup, titles: set[str]):
+    for heading in soup.find_all(HEADING_TAGS):
+        if norm(heading.get_text(" ", strip=True)) in titles:
+            card = closest_card_for_heading(heading)
+            if card is not None:
+                return card
     return None
 
 
 def find_actions_container(soup: BeautifulSoup, card):
+    preferred = []
+    fallback = []
     for tag in card.find_all(["div", "p", "nav"]):
-        classes = tag.get("class") or []
-        if isinstance(classes, str):
-            classes = classes.split()
-        if any("actions" in c or "download" in c or "formats" in c for c in classes) and tag.find("a"):
-            return tag
-    # fallback: group all direct/action links into a new clean action row
+        if not tag.find("a", href=True):
+            continue
+        classes = class_list(tag)
+        if any("actions" in c or "download" in c or "formats" in c or "row" in c for c in classes):
+            preferred.append(tag)
+        else:
+            fallback.append(tag)
+    if preferred:
+        return preferred[-1]
+    if fallback:
+        return fallback[-1]
     container = soup.new_tag("div")
     container["class"] = "appendix-actions source-only-actions"
     card.append(container)
@@ -100,16 +128,18 @@ def find_actions_container(soup: BeautifulSoup, card):
 
 
 def replace_description(card, text: str):
-    paragraphs = [p for p in card.find_all("p") if norm(p.get_text(" ", strip=True))]
-    if paragraphs:
-        paragraphs[0].string = text
+    heading = card.find(HEADING_TAGS)
+    for p in card.find_all("p"):
+        if heading and p.sourceline and heading.sourceline and p.sourceline < heading.sourceline:
+            continue
+        if norm(p.get_text(" ", strip=True)):
+            p.string = text
+            return
 
 
 def replace_actions(soup: BeautifulSoup, actions, links: list[tuple[str, str]]):
     actions.clear()
-    classes = actions.get("class") or []
-    if isinstance(classes, str):
-        classes = classes.split()
+    classes = class_list(actions)
     for cls in ["appendix-actions", "source-only-actions"]:
         if cls not in classes:
             classes.append(cls)
@@ -130,11 +160,11 @@ def patch_page(config: dict) -> tuple[bool, str]:
 
     html = path.read_text(encoding="utf-8")
     soup = BeautifulSoup(html, "html.parser")
-    source_card = find_exact_card(soup, config["source_titles"])
+    source_card = find_card_by_exact_heading(soup, config["source_titles"])
     if source_card is None:
         return False, f"source card not found: {path.relative_to(ROOT)}"
 
-    theory_card = find_exact_card(soup, config["theory_titles"])
+    theory_card = find_card_by_exact_heading(soup, config["theory_titles"])
     theory_hrefs = {a.get("href") for a in theory_card.find_all("a", href=True)} if theory_card else set()
     links = [(label, href) for label, href in config["links"] if href not in theory_hrefs]
 
