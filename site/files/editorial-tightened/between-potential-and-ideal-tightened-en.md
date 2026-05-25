@@ -415,7 +415,7 @@ source.
 
 *Answer, source, responsibility, and the distance that gets stolen*
 
-![Artificial Intelligence and Open Problems](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_3/e6d26e6b6a62.jpg)
+![Artificial Intelligence and Open Problems](../../figures/v25_chapter_ai-open-problems.png)
 
 Image description: answer, source, responsibility, and the distance that can be stolen.
 
@@ -441,7 +441,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 *The story, the game, and the difference between a sealed ending and an actionable ending*
 
-![I Have No Mouth, and I Must Scream](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_3/b9dc654eac7d.jpg)
+![I Have No Mouth, and I Must Scream](../../figures/v25_chapter_i-have-no-mouth.png)
 
 Image description: story, game, and the difference between a locked ending and an actable ending.
 
@@ -467,7 +467,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 ## 5. Distance, Suffering, Limitation, and Meaning
 
-![Figure D: Good, evil, suffering, and meaning as an active moral distinction.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_3/9e5a896684b5.jpg)
+![Figure D: Good, evil, suffering, and meaning as an active moral distinction.](../../figures/tab_methodology_unique.png)
 
 Figure D: Good, evil, suffering, and
 meaning as an active moral distinction.
@@ -510,7 +510,7 @@ demand to climb; grace is rest, protection, and sometimes stopping.
 
 *Learning, distance, and understanding that is not a shortcut*
 
-![Education of Potential](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_3/d7d68b8897b8.jpg)
+![Education of Potential](../../figures/v25_chapter_education-of-potential.png)
 
 Image description: learning, distance, and understanding that cannot be shortcut.
 
@@ -568,7 +568,7 @@ being.
 
 ## 7. The Architecture of Infinite Recursion: A Logical Model of Delegation, Login, Agent, and Drainage
 
-![Figure E: The recursive structure in the logical model: source, platform, model, world, session, and task.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_3/aab93130711c.jpg)
+![Figure E: The recursive structure in the logical model: source, platform, model, world, session, and task.](../../figures/tab_ai.png)
 
 Figure E: The recursive structure in the
 logical model: source, platform, model, world, session, and
@@ -737,7 +737,7 @@ distorting it.
 
 *Relative potential, contextual realization, and the ideal as an upper-bound edge*
 
-![The Recursive Edge](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_3/aab93130711c.jpg)
+![The Recursive Edge](../../figures/tab_critique.png)
 
 Image description: recursive layers in which every boundary can become a new source.
 
@@ -1599,7 +1599,7 @@ condition of every living thought.
 
 *What is a claim, what is a model, what is a metaphor, and what must not become proof*
 
-![Science, Physics, and Mathematics as a Boundary Discipline](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_3/aab93130711c.jpg)
+![Science, Physics, and Mathematics as a Boundary Discipline](../../figures/tab_files.png)
 
 Image description: formulas, measurement, and models as boundary languages, not final proof.
 
@@ -1625,7 +1625,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 *Correlation is not a message, and context is not noise around the answer*
 
-![Locality, Non-locality, and Contextuality](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_3/e6ee44f90323.jpg)
+![Locality, Non-locality, and Contextuality](../../figures/tab_core.png)
 
 Image description: local and non-local relations, context, measurement, and dependence between observer and observed.
 
@@ -2187,7 +2187,7 @@ that thing.
 
 *Form, living source, canon, and a market that is not the final judge*
 
-![Art of Potential](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_3/7881567eba4f.jpg)
+![Art of Potential](../../figures/v25_chapter_art-of-potential.png)
 
 Image description: creation as a field where possibility receives form without being fully closed.
 
@@ -2215,7 +2215,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 *Time, voice, listening, and resonance that is not a metric*
 
-![Music of Potential](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_3/d766f385e042.jpg)
+![Music of Potential](../../figures/v25_chapter_music-of-potential.png)
 
 Image description: rhythm, silence, and return as ways of carrying possibility through time.
 
@@ -2718,7 +2718,7 @@ In the logical version, civil society, public language, majority and minority, p
 
 *Truth, evidence, guilt, and repair that is not revenge*
 
-![Law of Potential](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_3/3bc181e948ec.jpg)
+![Law of Potential](../../figures/v25_chapter_law-of-potential.png)
 
 Image description: law, interpretation, and boundary as a space where possibility is tested against responsibility.
 
@@ -2742,7 +2742,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 *Body, pain, diagnosis, and care that does not own life*
 
-![Medicine of Potential](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_3/97d00e26792f.jpg)
+![Medicine of Potential](../../figures/v25_chapter_medicine-of-potential.png)
 
 Image description: healing as a careful reading of body, suffering, chance, and conditions.
 
@@ -2768,7 +2768,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 ## 13. The Imaginary, the Virtual, Gravity, and the Horizon
 
-![Figure F: The imaginary, the virtual, and the horizon in the logical model.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_3/ba283013a199.jpg)
+![Figure F: The imaginary, the virtual, and the horizon in the logical model.](../../figures/v25_chapter_science-physics-math-boundary-discipline.png)
 
 Figure F: The imaginary, the virtual, and
 the horizon in the logical model.
@@ -3169,7 +3169,7 @@ from which it came.
 
 *Information, visibility, and what does not return*
 
-![Boundary Horizons](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_3/25fc024a1f81.jpg)
+![Boundary Horizons](../../figures/v25_chapter_boundary-horizons.png)
 
 Image description: a boundary that is not merely a wall, but a horizon guiding the relation between possibility and form.
 
@@ -3251,7 +3251,7 @@ scattered.
 
 *From spacetime as form to potential as a deeper ground*
 
-![Physical comparison map. Quantum theory, relativity, horizon, and information as different languages of the tension between potential and form.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_3/6ed9b8f347f7.jpg)
+![Physical comparison map. Quantum theory, relativity, horizon, and information as different languages of the tension between potential and form.](../../figures/tab_applied_unique.png)
 
 Physical comparison map. Quantum theory, relativity, horizon, and information as different languages of the tension between potential and form.
 
@@ -3303,7 +3303,7 @@ The contribution is therefore not “solving physics,” but a change of layer: 
 
 *Flat, curved, open, bounded infinity and unbounded infinity*
 
-![Universe Structure / The Shape of the Universe and the Shape of Potential](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_3/640310673eac.jpg)
+![Universe Structure / The Shape of the Universe and the Shape of Potential](../../figures/cover_philosophical_recursion_whole_diagram.png)
 
 Image description: the shape of the universe as relations, horizons, and passages between potential and form.
 
@@ -3329,7 +3329,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 *Field, symmetry, breaking, scale, and context*
 
-![High-Energy Physics](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_3/1e3765f34d7a.jpg)
+![High-Energy Physics](../../figures/v25_chapter_high-energy-physics.png)
 
 Image description: energy, particles, and horizons as a test of the limits of form.
 
@@ -3355,7 +3355,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 *Boundary, information, accessibility, and traces - without turning physics into metaphysical proof*
 
-![Black Holes, Event Horizons, and the Holographic Principle](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_3/f842c8388b4b.jpg)
+![Black Holes, Event Horizons, and the Holographic Principle](../../figures/v25_chapter_black-holes-horizons-holography.png)
 
 Image description: horizon, information, and a threshold where what disappears still leaves structural trace.
 

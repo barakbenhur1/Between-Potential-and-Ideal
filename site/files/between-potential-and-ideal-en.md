@@ -1001,7 +1001,7 @@ If the chapter is read well, it does not say that everything is one and therefor
 can appear*
 
 <figure class="image-frame">
-<img src="../figures/01_fragmented_consciousness_cover.png" decoding="async" loading="lazy" alt="Figure A: The fragmented consciousness of the One. From potential wholeness into a plurality of points of view." />
+<img src="../figures/v25_chapter_shape-of-the-universe-and-potential.png" decoding="async" loading="lazy" alt="Figure A: The fragmented consciousness of the One. From potential wholeness into a plurality of points of view." />
 <figcaption aria-hidden="true">Figure A: The fragmented consciousness of the One. From potential wholeness into a plurality of points of view.</figcaption>
 </figure>
 
@@ -1468,7 +1468,7 @@ it.
 ## <span class="chapter-prefix">6. </span>Self, Ego, and Non-Erasing Unity
 
 <figure class="image-frame">
-<img src="../figures/14_self_ego_unity.png" decoding="async"
+<img src="../figures/cover_philosophical_recursion_whole_diagram.png" decoding="async"
 loading="lazy"
 alt="Figure F: Self, ego, and unity: preserving perspective within the whole." />
 <figcaption aria-hidden="true">Figure F: Self, ego, and unity:
@@ -1751,7 +1751,7 @@ borrowing of terms.
 structure*
 
 <figure class="image-frame">
-<img src="../figures/cover_logical_recursion_whole_diagram.png"
+<img src="../figures/v25_chapter_recursive-edge.png"
 decoding="async" loading="lazy"
 alt="Figure E: The recursive structure. Every layer can become origin, field, possibility, and local world." />
 <figcaption aria-hidden="true">Figure E: The recursive structure. Every
@@ -2394,7 +2394,7 @@ as a whole returns to itself, fully awake to itself.
 upper-bound edge*
 
 <figure class="chapter-figure image-frame">
-<img src="../figures/cover_logical_recursion_whole_diagram.png" decoding="async"
+<img src="../figures/v25_chapter_recursive-edge.png" decoding="async"
 loading="lazy" alt="The Recursive Edge" />
 <figcaption aria-hidden="true">Image description: recursive layers in which every boundary can become a new source.</figcaption>
 </figure>
@@ -3292,7 +3292,7 @@ become proof*
 
 <figure class="chapter-figure image-frame">
 <img
-src="../figures/cover_logical_recursion_whole_diagram.png"
+src="../figures/v25_chapter_high-energy-physics.png"
 decoding="async" loading="lazy"
 alt="Science, Physics, and Mathematics as a Boundary Discipline" />
 <figcaption aria-hidden="true">Image description: formulas, measurement, and models as boundary languages, not final proof.</figcaption>
@@ -3355,7 +3355,7 @@ borrowing of terms.
 answer*
 
 <figure class="chapter-figure image-frame">
-<img src="../figures/v25_chapter_locality-nonlocality-contextuality.png"
+<img src="../figures/v25_chapter_boundary-horizons.png"
 decoding="async" loading="lazy"
 alt="Locality, Non-locality, and Contextuality" />
 <figcaption aria-hidden="true">Image description: local and non-local relations, context, measurement, and dependence between observer and observed.</figcaption>
@@ -5536,7 +5536,7 @@ borrowing of terms.
 ## <span class="chapter-prefix">15. </span>The Imaginary, the Virtual, Gravity, and the Horizon
 
 <figure class="image-frame">
-<img src="../figures/07_virtual_imaginary_gravity_horizon.png"
+<img src="../figures/02_navigation_between_banks.png"
 decoding="async" loading="lazy"
 alt="Figure F: The imaginary, the virtual, and the horizon. Boundary as relation, not merely as wall." />
 <figcaption aria-hidden="true">Figure F: The imaginary, the virtual, and
@@ -6167,7 +6167,7 @@ as light that knows how not to disperse.
 *From spacetime as form to potential as a deeper ground*
 
 <figure class="image-frame">
-<img src="../figures/20_physical_comparison_map.png" decoding="async"
+<img src="../figures/05_flow_toward_the_ideal.png" decoding="async"
 loading="lazy"
 alt="Figure H: Physical comparison map. Quantum theory, relativity, horizon, and information as different languages of the tension between potential and form." />
 <figcaption aria-hidden="true">Figure H: Physical comparison map.

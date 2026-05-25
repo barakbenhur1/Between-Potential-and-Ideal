@@ -809,7 +809,7 @@ Intellect) מתגלה הכשל של אינטליגנציה ראשונית המב
 *עומק האפשרות שממנו חוויה, משמעות ואידיאל יכולים להופיע*
 
 <figure class="image-frame">
-<img src="../figures/01_fragmented_consciousness_cover.png"
+<img src="../figures/tab_methodology.png"
 decoding="async" loading="lazy"
 alt="איור א: הפיצול התודעתי של האחד. מן שלמות פוטנציאלית אל ריבוי נקודות מבט." />
 <figcaption aria-hidden="true">איור א: הפיצול התודעתי של האחד. מן שלמות
@@ -1232,7 +1232,7 @@ alt="איור ה: גלגול נשמות כאיטרציה של למידה, שכח
 ## <span class="chapter-prefix">פרק ו: </span>עצמי, אגו ואחדות שאינה מוחקת
 
 <figure class="image-frame">
-<img src="../figures/14_self_ego_unity.png" decoding="async"
+<img src="../figures/cover_philosophical_recursion_whole_diagram.png" decoding="async"
 loading="lazy"
 alt="איור ו: עצמי, אגו ואחדות. שימור נקודת המבט בתוך השלם." />
 <figcaption aria-hidden="true">איור ו: עצמי, אגו ואחדות. שימור נקודת
@@ -1481,7 +1481,7 @@ and I Must Scream. המקורות אינם מוכנסים כהוכחות לתא�
 *איפוס, חזרה, ירידה ועלייה בשלוש שפות של אותו מבנה*
 
 <figure class="image-frame">
-<img src="../figures/cover_logical_recursion_whole_diagram.png"
+<img src="../figures/v25_chapter_recursive-edge.png"
 decoding="async" loading="lazy"
 alt="איור ה: המבנה הרקורסיבי. כל שכבה יכולה להפוך למקור, למרחב, לאפשרות ולעולם מקומי." />
 <figcaption aria-hidden="true">איור ה: המבנה הרקורסיבי. כל שכבה יכולה
@@ -1976,7 +1976,7 @@ alt="איור ה: המבנה הרקורסיבי. כל שכבה יכולה להפ
 *פוטנציאל יחסי, התממשות קונטקסטואלית ואידיאל כגבול־על*
 
 <figure class="chapter-figure image-frame">
-<img src="../figures/cover_logical_recursion_whole_diagram.png" decoding="async"
+<img src="../figures/v25_chapter_recursive-edge.png" decoding="async"
 loading="lazy" alt="הקצה הרקורסיבי" />
 <figcaption aria-hidden="true">תיאור תמונה: שכבות רקורסיביות שבהן כל גבול יכול להפוך למקור חדש.</figcaption>
 </figure>
@@ -2777,7 +2777,7 @@ M\rangle\rangle)=0 \end{cases} \$\$</span>
 
 <figure class="chapter-figure image-frame">
 <img
-src="../figures/cover_logical_recursion_whole_diagram.png"
+src="../figures/v25_chapter_high-energy-physics.png"
 decoding="async" loading="lazy"
 alt="מדע, פיזיקה ומתמטיקה כמשמעת גבול" />
 <figcaption aria-hidden="true">תיאור תמונה: נוסחאות, מדידה ומודלים כשפות גבול, לא כהוכחה סופית.</figcaption>
@@ -2831,7 +2831,7 @@ and I Must Scream. המקורות אינם מוכנסים כהוכחות לתא�
 *קורלציה אינה מסר, והקשר אינו רעש סביב התשובה*
 
 <figure class="chapter-figure image-frame">
-<img src="../figures/v25_chapter_locality-nonlocality-contextuality.png"
+<img src="../figures/v25_chapter_boundary-horizons.png"
 decoding="async" loading="lazy"
 alt="לוקליות, אי־לוקליות וקונטקסטואליות" />
 <figcaption aria-hidden="true">תיאור תמונה: קשרים מקומיים ולא־מקומיים, הקשר, מדידה ותלות בין צופה לנצפה.</figcaption>
@@ -6287,7 +6287,7 @@ and I Must Scream. המקורות אינם מוכנסים כהוכחות לתא�
 *מן האפשרי שאינו דמיוני אל גבול הצורה וההופעה*
 
 <figure class="image-frame">
-<img src="../figures/07_virtual_imaginary_gravity_horizon.png"
+<img src="../figures/02_navigation_between_banks.png"
 decoding="async" loading="lazy"
 alt="איור ו: המדומה, הווירטואלי והאופק. גבול כמבנה של יחס ולא כקיר פשוט." />
 <figcaption aria-hidden="true">איור ו: המדומה, הווירטואלי והאופק. גבול
@@ -7388,7 +7388,7 @@ QCD — קווארקים וגלואונים — ולא ישירות מן ההי�
 *ממרחב־זמן כצורה אל פוטנציאל כקרקע עמוקה יותר*
 
 <figure class="image-frame">
-<img src="../figures/20_physical_comparison_map.png" decoding="async"
+<img src="../figures/05_flow_toward_the_ideal.png" decoding="async"
 loading="lazy"
 alt="איור ח: מפת השוואות פיזיקלית. קוונטים, יחסות, אופק ומידע כשפות שונות של אותו מתח בין פוטנציאל וצורה." />
 <figcaption aria-hidden="true">איור ח: מפת השוואות פיזיקלית. קוונטים,

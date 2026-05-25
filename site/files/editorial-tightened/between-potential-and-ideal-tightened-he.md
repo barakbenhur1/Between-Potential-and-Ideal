@@ -313,7 +313,7 @@
 
 *תשובה, מקור, אחריות והמרחק שנגנב*
 
-![בינה מלאכותית ובעיות פתוחות](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/e6d26e6b6a62.jpg)
+![בינה מלאכותית ובעיות פתוחות](../../figures/v25_chapter_ai-open-problems.png)
 
 תיאור תמונה: תשובה, מקור, אחריות והמרחק שנגנב.
 
@@ -341,7 +341,7 @@ AI משתלב עם חינוך, משפט, רפואה, אומנות, מוזיקה,
 
 *הסיפור, המשחק וההבדל בין סוף נעול לסוף פעולה*
 
-![אין לי פה ואני חייב לצרוח](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/b9dc654eac7d.jpg)
+![אין לי פה ואני חייב לצרוח](../../figures/v25_chapter_i-have-no-mouth.png)
 
 תיאור תמונה: הסיפור, המשחק וההבדל בין סוף נעול לסוף פעולה.
 
@@ -367,7 +367,7 @@ AI משתלב עם חינוך, משפט, רפואה, אומנות, מוזיקה,
 
 ## 5. מרחק, סבל, מגבלה ומשמעות
 
-![איור ד: רוע, סבל, טוב ומשמעות כהבחנה מוסרית פעילה.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/9e5a896684b5.jpg)
+![איור ד: רוע, סבל, טוב ומשמעות כהבחנה מוסרית פעילה.](../../figures/tab_files_unique.png)
 
 איור ד: רוע, סבל, טוב ומשמעות כהבחנה
 מוסרית פעילה.
@@ -402,7 +402,7 @@ AI משתלב עם חינוך, משפט, רפואה, אומנות, מוזיקה,
 
 *למידה, מרחק והבנה שאינה קיצור דרך*
 
-![חינוך של פוטנציאל](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/d7d68b8897b8.jpg)
+![חינוך של פוטנציאל](../../figures/v25_chapter_education-of-potential.png)
 
 תיאור תמונה: למידה, מרחק והבנה שאינה קיצור דרך.
 
@@ -467,7 +467,7 @@ AI משתלב עם חינוך, משפט, רפואה, אומנות, מוזיקה,
 
 ## 7. המבנה הרקורסיבי האינסופי - מודל לוגי של האצלה, התחברות, סוכן וניקוז
 
-![איור ה: המבנה הרקורסיבי במודל הלוגי. מקור, פלטפורמה, מודל, עולם, סשן ומשימה.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/aab93130711c.jpg)
+![איור ה: המבנה הרקורסיבי במודל הלוגי. מקור, פלטפורמה, מודל, עולם, סשן ומשימה.](../../figures/tab_witness_unique.png)
 
 איור ה: המבנה הרקורסיבי במודל הלוגי.
 מקור, פלטפורמה, מודל, עולם, סשן ומשימה.
@@ -602,7 +602,7 @@ AI משתלב עם חינוך, משפט, רפואה, אומנות, מוזיקה,
 
 *פוטנציאל יחסי, התממשות קונטקסטואלית ואידיאל כגבול־על*
 
-![הקצה הרקורסיבי](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/aab93130711c.jpg)
+![הקצה הרקורסיבי](../../figures/tab_critique.png)
 
 תיאור תמונה: שכבות רקורסיביות שבהן כל גבול יכול להפוך למקור חדש.
 
@@ -1382,7 +1382,7 @@ Prov*T*(*n*)
 
 *מה טענה, מה מודל, מה מטאפורה ומה אסור להפוך להוכחה*
 
-![מדע, פיזיקה ומתמטיקה כמשמעת גבול](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/aab93130711c.jpg)
+![מדע, פיזיקה ומתמטיקה כמשמעת גבול](../../figures/tab_files.png)
 
 תיאור תמונה: נוסחאות, מדידה ומודלים כשפות גבול, לא כהוכחה סופית.
 
@@ -1408,7 +1408,7 @@ Prov*T*(*n*)
 
 *קורלציה אינה מסר, והקשר אינו רעש סביב התשובה*
 
-![לוקליות, אי־לוקליות וקונטקסטואליות](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/e6ee44f90323.jpg)
+![לוקליות, אי־לוקליות וקונטקסטואליות](../../figures/tab_core.png)
 
 תיאור תמונה: קשרים מקומיים ולא־מקומיים, הקשר, מדידה ותלות בין צופה לנצפה.
 
@@ -1868,7 +1868,7 @@ Randall Flagg הוא דוגמה מדויקת לכך. הוא אינו רק נבל
 
 *צורה, מקור, קאנון ושוק שאינו שופט אחרון*
 
-![אומנות של פוטנציאל](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/7881567eba4f.jpg)
+![אומנות של פוטנציאל](../../figures/v25_chapter_art-of-potential.png)
 
 תיאור תמונה: יצירה כמרחב שבו אפשרות מקבלת צורה מבלי להיסגר לחלוטין.
 
@@ -1896,7 +1896,7 @@ AI משנה את השאלה. כלי יכול לייצר תמונה, סגנון, 
 
 *זמן, קול, הקשבה ותהודה שאינה מדד*
 
-![מוזיקה של פוטנציאל](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/d766f385e042.jpg)
+![מוזיקה של פוטנציאל](../../figures/v25_chapter_music-of-potential.png)
 
 תיאור תמונה: קצב, שקט וחזרה כדרך להחזיק אפשרות בזמן.
 
@@ -1920,7 +1920,7 @@ AI במוזיקה פותח אפשרויות אמיתיות: סקיצות, ליו
 
 ## 10. הנדסה וארכיטקטורה של פוטנציאל
 
-![איור: הנדסה וארכיטקטורה של פוטנציאל.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/8ca97a13b2dd.jpg)
+![איור: הנדסה וארכיטקטורה של פוטנציאל.](../../figures/17_engineering_architecture_potential.png)
 
 תיאור תמונה: מערכת הנדסית שבה פוטנציאל הופך למבנה, תיעול, בדיקה ותיקון.
 
@@ -1968,7 +1968,7 @@ Factor of Safety = Capacity / Demand
 
 ## 11. כלכלה של יחס
 
-![איור: כלכלה של יחס.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/436e1b16ff42.jpg)
+![איור: כלכלה של יחס.](../../figures/18_economy_relation_potential.png)
 
 תיאור תמונה: ערך, חליפין ואחריות כיחסים חיים ולא רק כמספרים.
 
@@ -2032,7 +2032,7 @@ Debt = Future Obligation Pulled into the Present
 
 ## 12. ממשל של פוטנציאל
 
-![איור: ממשל של פוטנציאל.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/599befd58ed0.jpg)
+![איור: ממשל של פוטנציאל.](../../figures/19_governance_society_potential.png)
 
 תיאור תמונה: מוסדות, הכרעה ותיאום ציבורי כדרכים לתרגם אפשרות לאחריות.
 
@@ -2092,7 +2092,7 @@ Duty = Legitimate Share in the Cost of Maintaining Shared Possibility
 
 *אמת, ראיה, אשמה ותיקון שאינו נקמה*
 
-![משפט של פוטנציאל](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/3bc181e948ec.jpg)
+![משפט של פוטנציאל](../../figures/v25_chapter_law-of-potential.png)
 
 תיאור תמונה: חוק, פרשנות וגבול כמרחב שבו אפשרות נבחנת מול אחריות.
 
@@ -2129,7 +2129,7 @@ AI במערכת המשפט מחדד את הסכנה. כלי יכול לסכם ת
 
 *גוף, כאב, אבחנה וטיפול שאינו בעלות על החיים*
 
-![רפואה של פוטנציאל](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/97d00e26792f.jpg)
+![רפואה של פוטנציאל](../../figures/v25_chapter_medicine-of-potential.png)
 
 תיאור תמונה: ריפוי כקריאה זהירה של גוף, סבל, סיכוי ותנאים.
 
@@ -2155,7 +2155,7 @@ AI ברפואה הוא דוגמה מושלמת. מערכת יכולה לקרוא
 
 ## 13. המדומה, הווירטואלי, הכבידה והאופק
 
-![איור ו: המדומה, הווירטואלי והאופק במודל הלוגי.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/ba283013a199.jpg)
+![איור ו: המדומה, הווירטואלי והאופק במודל הלוגי.](../../figures/v25_chapter_recursive-edge.png)
 
 איור ו: המדומה, הווירטואלי והאופק במודל
 הלוגי.
@@ -2484,7 +2484,7 @@ AI ברפואה הוא דוגמה מושלמת. מערכת יכולה לקרוא
 
 *מידע, ראות ומה שאינו חוזר*
 
-![אופקי גבול](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/25fc024a1f81.jpg)
+![אופקי גבול](../../figures/v25_chapter_boundary-horizons.png)
 
 תיאור תמונה: גבול שאינו קיר בלבד, אלא אופק שמכוון את היחס בין אפשרות לצורה.
 
@@ -2552,7 +2552,7 @@ AI ברפואה הוא דוגמה מושלמת. מערכת יכולה לקרוא
 
 *ממרחב־זמן כצורה אל פוטנציאל כקרקע עמוקה יותר*
 
-![מפת השוואות פיזיקלית. קוונטים, יחסות, אופק ומידע כשפות שונות של אותו מתח בין פוטנציאל וצורה.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/6ed9b8f347f7.jpg)
+![מפת השוואות פיזיקלית. קוונטים, יחסות, אופק ומידע כשפות שונות של אותו מתח בין פוטנציאל וצורה.](../../figures/tab_ai_unique.png)
 
 מפת השוואות פיזיקלית. קוונטים, יחסות, אופק ומידע כשפות שונות של אותו מתח בין פוטנציאל וצורה.
 
@@ -2604,7 +2604,7 @@ S(ρ) = -Tr(ρ log ρ) I(A:B) = S(A) + S(B) - S(AB) H² = (8πG/3)ρ - kc^2/a² 
 
 *שטוח, מקומר, פתוח, אינסוף מוגבל ולא מוגבל*
 
-![מבנה היקום / צורת היקום וצורת הפוטנציאל](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/640310673eac.jpg)
+![מבנה היקום / צורת היקום וצורת הפוטנציאל](../../figures/cover_philosophical_recursion_whole_diagram.png)
 
 תיאור תמונה: צורת יקום כסדרת יחסים, אופקים ומעברים בין פוטנציאל לצורה.
 
@@ -2630,7 +2630,7 @@ S(ρ) = -Tr(ρ log ρ) I(A:B) = S(A) + S(B) - S(AB) H² = (8πG/3)ρ - kc^2/a² 
 
 *שדה, סימטריה, שבירה, סקאלה והקשר*
 
-![פיזיקה באנרגיות גבוהות](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/1e3765f34d7a.jpg)
+![פיזיקה באנרגיות גבוהות](../../figures/v25_chapter_high-energy-physics.png)
 
 תיאור תמונה: אנרגיה, חלקיקים ואופקים כבדיקה של גבולות הצורה.
 
@@ -2656,7 +2656,7 @@ String Theory, M-theory, branes, AdS/CFT ו-holography יופיעו רק כסי�
 
 *גבול, מידע, נגישות ועקבות — בלי להפוך פיזיקה להוכחה מטאפיזית*
 
-![חורים שחורים, אופקי אירועים והעיקרון ההולוגרפי](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_4/f842c8388b4b.jpg)
+![חורים שחורים, אופקי אירועים והעיקרון ההולוגרפי](../../figures/v25_chapter_black-holes-horizons-holography.png)
 
 תיאור תמונה: אופק, מידע וסף שבו מה שנעלם עדיין משאיר עקבה מבנית.
 
