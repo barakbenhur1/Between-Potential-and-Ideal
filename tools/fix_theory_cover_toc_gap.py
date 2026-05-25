@@ -32,10 +32,47 @@ STYLE_BLOCK = f"""
 /* BPI V86 - close cover-to-TOC gap in theory documents.
    Scope: generated theory documents only. Does not affect story blurbs/content. */
 @media screen {{
-  body.design-prompt-theme:not(.public-page) main {{
+  body.design-prompt-theme:not(.public-page) main,
+  main {{
     padding-top: 28px !important;
     padding-bottom: 48px !important;
   }}
+
+  /* The logical exports had an explicit spacer paragraph after the cover.
+     Hide it even if an older generated file still contains it. */
+  .logical-cover-spacer,
+  p.logical-cover-spacer,
+  .cover-spacer,
+  p.cover-spacer {{
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    line-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    break-before: auto !important;
+    page-break-before: auto !important;
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }}
+
+  .logical-cover-spacer + div[style*="page-break-after"],
+  p.logical-cover-spacer + div[style*="page-break-after"],
+  .cover-spacer + div[style*="page-break-after"] {{
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    break-before: auto !important;
+    page-break-before: auto !important;
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }}
+
   body.design-prompt-theme:not(.public-page) .cover,
   body.design-prompt-theme:not(.public-page) .logical-cover,
   body.design-prompt-theme:not(.public-page) .document-cover,
@@ -44,7 +81,7 @@ STYLE_BLOCK = f"""
   main > .logical-cover:first-child,
   main > .document-cover:first-child,
   main > .page.cover:first-child {{
-    min-height: auto !important;
+    min-height: 0 !important;
     height: auto !important;
     max-height: none !important;
     padding-top: 46px !important;
@@ -53,6 +90,7 @@ STYLE_BLOCK = f"""
     break-after: auto !important;
     page-break-after: auto !important;
   }}
+
   body.design-prompt-theme:not(.public-page) .cover + .document-screen-toc,
   body.design-prompt-theme:not(.public-page) .logical-cover + .document-screen-toc,
   body.design-prompt-theme:not(.public-page) .document-cover + .document-screen-toc,
@@ -61,6 +99,9 @@ STYLE_BLOCK = f"""
   main > .logical-cover:first-child + .document-screen-toc,
   main > .document-cover:first-child + .document-screen-toc,
   main > .page.cover:first-child + .document-screen-toc,
+  .logical-cover + .document-screen-toc,
+  .logical-cover + .logical-cover-spacer + .document-screen-toc,
+  .logical-cover + .logical-cover-spacer + div + .document-screen-toc,
   .document-screen-toc,
   #interactive-toc {{
     break-before: auto !important;
@@ -69,6 +110,19 @@ STYLE_BLOCK = f"""
   }}
 }}
 @media print {{
+  .logical-cover-spacer,
+  p.logical-cover-spacer,
+  .cover-spacer,
+  p.cover-spacer,
+  .logical-cover-spacer + div[style*="page-break-after"],
+  p.logical-cover-spacer + div[style*="page-break-after"] {{
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }}
+
   body.design-prompt-theme:not(.public-page) .cover,
   body.design-prompt-theme:not(.public-page) .logical-cover,
   body.design-prompt-theme:not(.public-page) .document-cover,
@@ -116,19 +170,46 @@ def is_theory_doc(path: Path, text: str) -> bool:
     return "potential" in hay or "פוטנציאל" in hay or "ideal" in hay or "אידיאל" in hay
 
 
-def patch_html(path: Path) -> bool:
+def remove_cover_spacers(text: str) -> tuple[str, int]:
+    count = 0
+
+    patterns = [
+        r"\s*<p\b[^>]*class=[\"'][^\"']*logical-cover-spacer[^\"']*[\"'][^>]*>.*?</p>\s*<div\b[^>]*style=[\"'][^\"']*(?:page-break-after|break-after)\s*:\s*(?:always|page)[^\"']*[\"'][^>]*>\s*</div>",
+        r"\s*<p\b[^>]*class=[\"'][^\"']*logical-cover-spacer[^\"']*[\"'][^>]*>.*?</p>",
+        r"\s*<div\b[^>]*style=[\"'][^\"']*(?:page-break-after|break-after)\s*:\s*(?:always|page)[^\"']*height\s*:\s*0[^\"']*[\"'][^>]*>\s*</div>",
+    ]
+
+    for pattern in patterns:
+        text, n = re.subn(pattern, "\n", text, flags=re.S | re.I)
+        count += n
+
+    def clean_toc_style(match: re.Match[str]) -> str:
+        nonlocal count
+        tag = match.group(0)
+        cleaned = re.sub(r"\s*style=[\"'][^\"']*(?:page-break-before|break-before)\s*:\s*(?:always|page)[^\"']*[\"']", "", tag, flags=re.I)
+        if cleaned != tag:
+            count += 1
+        return cleaned
+
+    text = re.sub(r"<section\b[^>]*(?:document-screen-toc|interactive-toc)[^>]*>", clean_toc_style, text, flags=re.I)
+    return text, count
+
+
+def patch_html(path: Path) -> tuple[bool, int]:
     text = path.read_text(encoding="utf-8")
     if not is_theory_doc(path, text):
-        return False
-    text2 = re.sub(rf"\n?<style id=[\"']{re.escape(STYLE_ID)}[\"']>.*?</style>", "", text, flags=re.S)
+        return False, 0
+
+    text2, removed = remove_cover_spacers(text)
+    text2 = re.sub(rf"\n?<style id=[\"']{re.escape(STYLE_ID)}[\"']>.*?</style>", "", text2, flags=re.S)
     if "</head>" in text2:
         text2 = text2.replace("</head>", STYLE_BLOCK + "\n</head>", 1)
     else:
         text2 = STYLE_BLOCK + "\n" + text2
     if text2 != text:
         path.write_text(text2, encoding="utf-8")
-        return True
-    return False
+        return True, removed
+    return False, removed
 
 
 def rebuild_pdf(html_path: Path, report: list[str]) -> None:
@@ -180,13 +261,17 @@ def main() -> int:
         "",
         "היקף: קבצי התאוריה בלבד, עם דגש על הגרסה הלוגית / editorial-tightened.",
         "ברירת המחדל בטוחה: HTML בלבד. PDF/DOCX לא נבנים מחדש כדי לא להחליף תמונות בתיאורי טקסט בגלל נתיבי assets.",
+        "התיקון מסיר spacer מפורש אחרי השער הלוגי ומנטרל page-break-before מיותר בתוכן העניינים.",
         "",
     ]
 
     for path in unique:
-        if patch_html(path):
+        changed, removed = patch_html(path)
+        if changed:
             patched.append(path)
             report.append(f"- HTML patched: `{path.relative_to(ROOT)}`")
+            if removed:
+                report.append(f"  - removed/neutralized cover spacer artifacts: {removed}")
             if args.rebuild_exports:
                 rebuild_pdf(path, report)
                 rebuild_docx(path, report)
