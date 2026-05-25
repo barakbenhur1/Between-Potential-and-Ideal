@@ -1,0 +1,207 @@
+{
+  "version": "BPI_V56_STABLE_OFFLINE_PDF_FEEDBACK_FIX",
+  "site_root": "/Users/barakbenhur/Downloads/theory-site/site",
+  "changed_count": 81,
+  "changed_files": [
+    "assets/bpi-fixes/bpi-v56-feedback-menu.css",
+    "assets/bpi-fixes/bpi-v56-feedback-menu.js",
+    "files/ai-believes/reverse-turing-conversation-he.docx",
+    "files/ai-believes/reverse-turing-conversation-he.md",
+    "files/ai-believes/reverse-turing-conversation-he.pdf",
+    "files/ai-believes/reverse-turing-conversation-he.txt",
+    "files/ai-believes/what-ai-believes-he.docx",
+    "files/ai-believes/what-ai-believes-he.md",
+    "files/ai-believes/what-ai-believes-he.pdf",
+    "files/ai-believes/what-ai-believes-he.txt",
+    "files/ai-believes/when-i-am-also-you-en.docx",
+    "files/ai-believes/when-i-am-also-you-en.md",
+    "files/ai-believes/when-i-am-also-you-en.pdf",
+    "files/ai-believes/when-i-am-also-you-en.txt",
+    "files/ai-believes/when-i-am-also-you-he.docx",
+    "files/ai-believes/when-i-am-also-you-he.md",
+    "files/ai-believes/when-i-am-also-you-he.pdf",
+    "files/ai-believes/when-i-am-also-you-he.txt",
+    "files/appendices/stories-before-thought-english.docx",
+    "files/appendices/stories-before-thought-english.md",
+    "files/appendices/stories-before-thought-english.pdf",
+    "files/appendices/stories-before-thought-english.txt",
+    "files/appendices/stories-before-thought-hebrew-rtl.docx",
+    "files/appendices/stories-before-thought-hebrew-rtl.md",
+    "files/appendices/stories-before-thought-hebrew-rtl.pdf",
+    "files/appendices/stories-before-thought-hebrew-rtl.txt",
+    "files/between-potential-and-ideal-en-editorial.docx",
+    "files/between-potential-and-ideal-en-editorial.html",
+    "files/between-potential-and-ideal-en-editorial.md",
+    "files/between-potential-and-ideal-en-editorial.pdf",
+    "files/between-potential-and-ideal-en-editorial.txt",
+    "files/between-potential-and-ideal-he-editorial.docx",
+    "files/between-potential-and-ideal-he-editorial.html",
+    "files/between-potential-and-ideal-he-editorial.md",
+    "files/between-potential-and-ideal-he-editorial.pdf",
+    "files/between-potential-and-ideal-he-editorial.txt",
+    "files/editorial-tightened/between-potential-and-ideal-tightened-en.docx",
+    "files/editorial-tightened/between-potential-and-ideal-tightened-en.html",
+    "files/editorial-tightened/between-potential-and-ideal-tightened-en.md",
+    "files/editorial-tightened/between-potential-and-ideal-tightened-en.pdf",
+    "files/editorial-tightened/between-potential-and-ideal-tightened-en.txt",
+    "files/editorial-tightened/between-potential-and-ideal-tightened-he.docx",
+    "files/editorial-tightened/between-potential-and-ideal-tightened-he.html",
+    "files/editorial-tightened/between-potential-and-ideal-tightened-he.md",
+    "files/editorial-tightened/between-potential-and-ideal-tightened-he.pdf",
+    "files/editorial-tightened/between-potential-and-ideal-tightened-he.txt",
+    "pages/en/ai-open-problems-en.html",
+    "pages/en/art-of-potential-en.html",
+    "pages/en/black-holes-horizons-holography-en.html",
+    "pages/en/boundary-horizons-en.html",
+    "pages/en/critique-en.html",
+    "pages/en/education-of-potential-en.html",
+    "pages/en/high-energy-physics-en.html",
+    "pages/en/i-have-no-mouth-en.html",
+    "pages/en/law-of-potential-en.html",
+    "pages/en/locality-nonlocality-contextuality-en.html",
+    "pages/en/medicine-of-potential-en.html",
+    "pages/en/music-of-potential-en.html",
+    "pages/en/recursive-edge-en.html",
+    "pages/en/science-physics-math-boundary-discipline-en.html",
+    "pages/en/shape-of-the-universe-and-potential-en.html",
+    "pages/en/sources-en.html",
+    "pages/he/ai-believes.html",
+    "pages/he/ai-open-problems.html",
+    "pages/he/art-of-potential.html",
+    "pages/he/black-holes-horizons-holography.html",
+    "pages/he/boundary-horizons.html",
+    "pages/he/critique.html",
+    "pages/he/discussion.html",
+    "pages/he/education-of-potential.html",
+    "pages/he/high-energy-physics.html",
+    "pages/he/i-have-no-mouth.html",
+    "pages/he/law-of-potential.html",
+    "pages/he/locality-nonlocality-contextuality.html",
+    "pages/he/medicine-of-potential.html",
+    "pages/he/music-of-potential.html",
+    "pages/he/recursive-edge.html",
+    "pages/he/response.html",
+    "pages/he/science-physics-math-boundary-discipline.html",
+    "pages/he/shape-of-the-universe-and-potential.html",
+    "pages/he/sources.html"
+  ],
+  "document_html_count": 10,
+  "results": [
+    {
+      "html": "files/ai-believes/reverse-turing-conversation-he.html",
+      "relbase": "files/ai-believes/reverse-turing-conversation-he",
+      "files": [
+        "files/ai-believes/reverse-turing-conversation-he.pdf",
+        "files/ai-believes/reverse-turing-conversation-he.docx",
+        "files/ai-believes/reverse-turing-conversation-he.md",
+        "files/ai-believes/reverse-turing-conversation-he.txt"
+      ],
+      "warnings": []
+    },
+    {
+      "html": "files/ai-believes/what-ai-believes-he.html",
+      "relbase": "files/ai-believes/what-ai-believes-he",
+      "files": [
+        "files/ai-believes/what-ai-believes-he.pdf",
+        "files/ai-believes/what-ai-believes-he.docx",
+        "files/ai-believes/what-ai-believes-he.md",
+        "files/ai-believes/what-ai-believes-he.txt"
+      ],
+      "warnings": []
+    },
+    {
+      "html": "files/ai-believes/when-i-am-also-you-en.html",
+      "relbase": "files/ai-believes/when-i-am-also-you-en",
+      "files": [
+        "files/ai-believes/when-i-am-also-you-en.pdf",
+        "files/ai-believes/when-i-am-also-you-en.docx",
+        "files/ai-believes/when-i-am-also-you-en.md",
+        "files/ai-believes/when-i-am-also-you-en.txt"
+      ],
+      "warnings": []
+    },
+    {
+      "html": "files/ai-believes/when-i-am-also-you-he.html",
+      "relbase": "files/ai-believes/when-i-am-also-you-he",
+      "files": [
+        "files/ai-believes/when-i-am-also-you-he.pdf",
+        "files/ai-believes/when-i-am-also-you-he.docx",
+        "files/ai-believes/when-i-am-also-you-he.md",
+        "files/ai-believes/when-i-am-also-you-he.txt"
+      ],
+      "warnings": []
+    },
+    {
+      "html": "files/appendices/stories-before-thought-english.html",
+      "relbase": "files/appendices/stories-before-thought-english",
+      "files": [
+        "files/appendices/stories-before-thought-english.pdf",
+        "files/appendices/stories-before-thought-english.docx",
+        "files/appendices/stories-before-thought-english.md",
+        "files/appendices/stories-before-thought-english.txt"
+      ],
+      "warnings": []
+    },
+    {
+      "html": "files/appendices/stories-before-thought-hebrew-rtl.html",
+      "relbase": "files/appendices/stories-before-thought-hebrew-rtl",
+      "files": [
+        "files/appendices/stories-before-thought-hebrew-rtl.pdf",
+        "files/appendices/stories-before-thought-hebrew-rtl.docx",
+        "files/appendices/stories-before-thought-hebrew-rtl.md",
+        "files/appendices/stories-before-thought-hebrew-rtl.txt"
+      ],
+      "warnings": []
+    },
+    {
+      "html": "files/between-potential-and-ideal-en-editorial.html",
+      "relbase": "files/between-potential-and-ideal-en-editorial",
+      "files": [
+        "files/between-potential-and-ideal-en-editorial.pdf",
+        "files/between-potential-and-ideal-en-editorial.docx",
+        "files/between-potential-and-ideal-en-editorial.md",
+        "files/between-potential-and-ideal-en-editorial.txt"
+      ],
+      "warnings": []
+    },
+    {
+      "html": "files/between-potential-and-ideal-he-editorial.html",
+      "relbase": "files/between-potential-and-ideal-he-editorial",
+      "files": [
+        "files/between-potential-and-ideal-he-editorial.pdf",
+        "files/between-potential-and-ideal-he-editorial.docx",
+        "files/between-potential-and-ideal-he-editorial.md",
+        "files/between-potential-and-ideal-he-editorial.txt"
+      ],
+      "warnings": []
+    },
+    {
+      "html": "files/editorial-tightened/between-potential-and-ideal-tightened-en.html",
+      "relbase": "files/editorial-tightened/between-potential-and-ideal-tightened-en",
+      "files": [
+        "files/editorial-tightened/between-potential-and-ideal-tightened-en.pdf",
+        "files/editorial-tightened/between-potential-and-ideal-tightened-en.docx",
+        "files/editorial-tightened/between-potential-and-ideal-tightened-en.md",
+        "files/editorial-tightened/between-potential-and-ideal-tightened-en.txt"
+      ],
+      "warnings": []
+    },
+    {
+      "html": "files/editorial-tightened/between-potential-and-ideal-tightened-he.html",
+      "relbase": "files/editorial-tightened/between-potential-and-ideal-tightened-he",
+      "files": [
+        "files/editorial-tightened/between-potential-and-ideal-tightened-he.pdf",
+        "files/editorial-tightened/between-potential-and-ideal-tightened-he.docx",
+        "files/editorial-tightened/between-potential-and-ideal-tightened-he.md",
+        "files/editorial-tightened/between-potential-and-ideal-tightened-he.txt"
+      ],
+      "warnings": []
+    }
+  ],
+  "warnings": [],
+  "notes_he": [
+    "PDF נוצר במצב visual-safe מתוך תצוגת ה־HTML התקינה, כדי לעקוף את בעיות ה-print/export שגרמו לתמונות ענקיות ושבירות עמודים.",
+    "ה־HTML עצמו לא משוכתב ויזואלית; רק נוסף asset קטן לכפתור הביקורת ולתיקון NIST/CODATA בזמן ריצה.",
+    "DOCX/MD/TXT נוצרים מחדש מטקסט נקי של ה־HTML, עם תמונות ממורכזות ו־RTL בעברית."
+  ]
+}
