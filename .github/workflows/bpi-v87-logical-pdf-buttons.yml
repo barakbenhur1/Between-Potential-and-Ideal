@@ -1,0 +1,36 @@
+name: BPI V87 logical PDF buttons
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/fix_logical_pdf_buttons.py'
+      - '.github/workflows/bpi-v87-logical-pdf-buttons.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix-logical-pdf-buttons:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Apply logical PDF button repair
+        run: python3 tools/fix_logical_pdf_buttons.py
+
+      - name: Commit generated changes
+        run: |
+          git config user.name "bpi-layout-bot"
+          git config user.email "actions@github.com"
+          git add site _product_docs/reports || true
+          if git diff --cached --quiet; then
+            echo "No logical PDF button changes to commit."
+          else
+            git commit -m "Use PDF for logical document button"
+            git push
+          fi
