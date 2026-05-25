@@ -5678,3 +5678,14 @@ body[dir="ltr"] .story-toc-clean-list { text-align:left !important; direction:lt
   }
 }
 
+
+
+/* V73 — bottom gap for tab illustration images only.
+   Targets only files like figures/tab_*.png.
+   Does not affect Home, nav/topbar, cards, author images, or document images. */
+body.public-page .site-main img[src*="figures/tab_"],
+body.public-page .site-main img[src*="/tab_"],
+body.public-page .site-main img[src*="../../figures/tab_"] {
+  display: block !important;
+  margin-bottom: 10px !important;
+}
