@@ -2,18 +2,22 @@
 """
 BPI V86 - close the large visual gap between theory covers and the interactive TOC.
 
+Safe default:
+- patches generated theory HTML files only;
+- does not rebuild PDF/DOCX unless --rebuild-exports is explicitly passed;
+- avoids the WeasyPrint image-path regression that can replace images with text.
+
 This is intentionally narrow:
 - targets generated theory document HTML files, especially the logical/editorial-tightened version;
 - does not touch story blurbs or body text;
-- keeps print/PDF cover page separation, but prevents an extra blank/gap before the TOC;
-- rebuilds PDF/DOCX when optional local tools are available.
+- keeps print/PDF cover page separation, but prevents an extra blank/gap before the TOC.
 """
 from __future__ import annotations
 
+import argparse
 import re
 import shutil
 import subprocess
-import sys
 from datetime import datetime
 from pathlib import Path
 
@@ -99,11 +103,7 @@ TARGET_GLOBS = [
     "site/files/**/between-potential-and-ideal*.html",
     "site/files/**/between_potential_and_ideal*.html",
 ]
-EXCLUDE_PARTS = (
-    "/appendices/",
-    "/ai-believes/",
-    "/stories/",
-)
+EXCLUDE_PARTS = ("/appendices/", "/ai-believes/", "/stories/")
 
 
 def is_theory_doc(path: Path, text: str) -> bool:
@@ -120,18 +120,11 @@ def patch_html(path: Path) -> bool:
     text = path.read_text(encoding="utf-8")
     if not is_theory_doc(path, text):
         return False
-
-    text2 = re.sub(
-        rf"\n?<style id=[\"']{re.escape(STYLE_ID)}[\"']>.*?</style>",
-        "",
-        text,
-        flags=re.S,
-    )
+    text2 = re.sub(rf"\n?<style id=[\"']{re.escape(STYLE_ID)}[\"']>.*?</style>", "", text, flags=re.S)
     if "</head>" in text2:
         text2 = text2.replace("</head>", STYLE_BLOCK + "\n</head>", 1)
     else:
         text2 = STYLE_BLOCK + "\n" + text2
-
     if text2 != text:
         path.write_text(text2, encoding="utf-8")
         return True
@@ -150,43 +143,8 @@ def rebuild_pdf(html_path: Path, report: list[str]) -> None:
             shutil.copy2(pdf_path, pdf_path.with_suffix(pdf_path.suffix + ".v86.bak"))
         HTML(filename=str(html_path)).write_pdf(str(pdf_path))
         report.append(f"- PDF rebuilt: `{pdf_path.relative_to(ROOT)}`")
-        cleanup_blank_pdf_pages(pdf_path, report)
     except Exception as exc:
         report.append(f"- PDF rebuild failed for `{pdf_path.relative_to(ROOT)}`: {exc}")
-
-
-def cleanup_blank_pdf_pages(pdf_path: Path, report: list[str]) -> None:
-    try:
-        import fitz  # type: ignore
-    except Exception:
-        return
-    try:
-        doc = fitz.open(pdf_path)
-        keep = []
-        removed = 0
-        for i, page in enumerate(doc):
-            text = page.get_text("text").strip()
-            images = page.get_images(full=True)
-            drawings = page.get_drawings()
-            is_blank = len(text) < 3 and not images and not drawings
-            if is_blank:
-                removed += 1
-            else:
-                keep.append(i)
-        if removed and keep:
-            out = fitz.open()
-            for i in keep:
-                out.insert_pdf(doc, from_page=i, to_page=i)
-            tmp = pdf_path.with_suffix(".v86.tmp.pdf")
-            out.save(tmp)
-            out.close()
-            doc.close()
-            tmp.replace(pdf_path)
-            report.append(f"  - blank PDF pages removed: {removed}")
-        else:
-            doc.close()
-    except Exception as exc:
-        report.append(f"  - blank-page cleanup skipped for `{pdf_path.relative_to(ROOT)}`: {exc}")
 
 
 def rebuild_docx(html_path: Path, report: list[str]) -> None:
@@ -198,17 +156,17 @@ def rebuild_docx(html_path: Path, report: list[str]) -> None:
     try:
         if docx_path.exists():
             shutil.copy2(docx_path, docx_path.with_suffix(docx_path.suffix + ".v86.bak"))
-        subprocess.run(
-            [pandoc, str(html_path), "--from", "html", "--to", "docx", "--standalone", "-o", str(docx_path)],
-            check=True,
-            cwd=ROOT,
-        )
+        subprocess.run([pandoc, str(html_path), "--from", "html", "--to", "docx", "--standalone", "-o", str(docx_path)], check=True, cwd=ROOT)
         report.append(f"- DOCX rebuilt: `{docx_path.relative_to(ROOT)}`")
     except Exception as exc:
         report.append(f"- DOCX rebuild failed for `{docx_path.relative_to(ROOT)}`: {exc}")
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--rebuild-exports", action="store_true", help="Also rebuild PDF/DOCX. Off by default to avoid image-path regressions.")
+    args = parser.parse_args()
+
     candidates: list[Path] = []
     for pattern in TARGET_GLOBS:
         candidates.extend(ROOT.glob(pattern))
@@ -221,7 +179,7 @@ def main() -> int:
         f"Generated: {datetime.utcnow().isoformat(timespec='seconds')}Z",
         "",
         "היקף: קבצי התאוריה בלבד, עם דגש על הגרסה הלוגית / editorial-tightened.",
-        "התיקון לא משנה תוכן, בלארבים, כותרות, או גוף טקסט. הוא מוסיף שכבת CSS אחרונה שמבטלת את הרווח הגדול במסך ומונעת דפים ריקים בייצוא.",
+        "ברירת המחדל בטוחה: HTML בלבד. PDF/DOCX לא נבנים מחדש כדי לא להחליף תמונות בתיאורי טקסט בגלל נתיבי assets.",
         "",
     ]
 
@@ -229,8 +187,9 @@ def main() -> int:
         if patch_html(path):
             patched.append(path)
             report.append(f"- HTML patched: `{path.relative_to(ROOT)}`")
-            rebuild_pdf(path, report)
-            rebuild_docx(path, report)
+            if args.rebuild_exports:
+                rebuild_pdf(path, report)
+                rebuild_docx(path, report)
 
     if not patched:
         report.append("- No matching theory HTML files required changes.")
@@ -240,6 +199,8 @@ def main() -> int:
     for p in patched:
         print(f" - {p.relative_to(ROOT)}")
     print(f"Report: {REPORT.relative_to(ROOT)}")
+    if not args.rebuild_exports:
+        print("PDF/DOCX rebuild skipped by default. Use --rebuild-exports only after verifying image paths.")
     return 0
 
 
