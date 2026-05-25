@@ -1881,6 +1881,74 @@ body.design-prompt-theme img.content-card-image {
 }
 </style>
 
+<style id="bpi-v86-close-theory-cover-toc-gap">
+/* BPI V86 - close cover-to-TOC gap in theory documents.
+   Scope: generated theory documents only. Does not affect story blurbs/content. */
+@media screen {
+  body.design-prompt-theme:not(.public-page) main {
+    padding-top: 28px !important;
+    padding-bottom: 48px !important;
+  }
+  body.design-prompt-theme:not(.public-page) .cover,
+  body.design-prompt-theme:not(.public-page) .logical-cover,
+  body.design-prompt-theme:not(.public-page) .document-cover,
+  body.design-prompt-theme:not(.public-page) .page.cover,
+  main > .cover:first-child,
+  main > .logical-cover:first-child,
+  main > .document-cover:first-child,
+  main > .page.cover:first-child {
+    min-height: auto !important;
+    height: auto !important;
+    max-height: none !important;
+    padding-top: 46px !important;
+    padding-bottom: 38px !important;
+    margin-bottom: 22px !important;
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }
+  body.design-prompt-theme:not(.public-page) .cover + .document-screen-toc,
+  body.design-prompt-theme:not(.public-page) .logical-cover + .document-screen-toc,
+  body.design-prompt-theme:not(.public-page) .document-cover + .document-screen-toc,
+  body.design-prompt-theme:not(.public-page) .page.cover + .document-screen-toc,
+  main > .cover:first-child + .document-screen-toc,
+  main > .logical-cover:first-child + .document-screen-toc,
+  main > .document-cover:first-child + .document-screen-toc,
+  main > .page.cover:first-child + .document-screen-toc,
+  .document-screen-toc,
+  #interactive-toc {
+    break-before: auto !important;
+    page-break-before: auto !important;
+    margin-top: 18px !important;
+  }
+}
+@media print {
+  body.design-prompt-theme:not(.public-page) .cover,
+  body.design-prompt-theme:not(.public-page) .logical-cover,
+  body.design-prompt-theme:not(.public-page) .document-cover,
+  body.design-prompt-theme:not(.public-page) .page.cover,
+  main > .cover:first-child,
+  main > .logical-cover:first-child,
+  main > .document-cover:first-child,
+  main > .page.cover:first-child {
+    height: auto !important;
+    min-height: calc(297mm - 36mm) !important;
+    max-height: none !important;
+    padding: 16mm 14mm 12mm !important;
+    margin-bottom: 0 !important;
+    break-after: page !important;
+    page-break-after: always !important;
+    overflow: hidden !important;
+  }
+  body.design-prompt-theme:not(.public-page) .document-screen-toc,
+  body.design-prompt-theme:not(.public-page) #interactive-toc,
+  .document-screen-toc,
+  #interactive-toc {
+    break-before: auto !important;
+    page-break-before: auto !important;
+    margin-top: 0 !important;
+  }
+}
+</style>
 </head><body class="design-prompt-theme public-page appendix-document-page logical-document-page"><main id="main"><section class="logical-cover" dir="rtl" id="cover-page" style="height:248mm; min-height:248mm; box-sizing:border-box; padding:28mm 18mm 20mm; text-align:center; background:#fffaf0;">
 <p style="margin:0 0 10mm; color:#5e5346; font-size:15px; text-align:center;">הגרסה הלוגית</p>
 <h1 style="text-align:center; font-size:38px; line-height:1.14; margin:0 0 7mm; color:#17202d;">בין פוטנציאל לאידיאל</h1>

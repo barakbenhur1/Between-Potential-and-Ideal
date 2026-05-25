@@ -1970,6 +1970,74 @@ body.design-prompt-theme img.content-card-image {
   }
 }
 </style>
+<style id="bpi-v86-close-theory-cover-toc-gap">
+/* BPI V86 - close cover-to-TOC gap in theory documents.
+   Scope: generated theory documents only. Does not affect story blurbs/content. */
+@media screen {
+  body.design-prompt-theme:not(.public-page) main {
+    padding-top: 28px !important;
+    padding-bottom: 48px !important;
+  }
+  body.design-prompt-theme:not(.public-page) .cover,
+  body.design-prompt-theme:not(.public-page) .logical-cover,
+  body.design-prompt-theme:not(.public-page) .document-cover,
+  body.design-prompt-theme:not(.public-page) .page.cover,
+  main > .cover:first-child,
+  main > .logical-cover:first-child,
+  main > .document-cover:first-child,
+  main > .page.cover:first-child {
+    min-height: auto !important;
+    height: auto !important;
+    max-height: none !important;
+    padding-top: 46px !important;
+    padding-bottom: 38px !important;
+    margin-bottom: 22px !important;
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }
+  body.design-prompt-theme:not(.public-page) .cover + .document-screen-toc,
+  body.design-prompt-theme:not(.public-page) .logical-cover + .document-screen-toc,
+  body.design-prompt-theme:not(.public-page) .document-cover + .document-screen-toc,
+  body.design-prompt-theme:not(.public-page) .page.cover + .document-screen-toc,
+  main > .cover:first-child + .document-screen-toc,
+  main > .logical-cover:first-child + .document-screen-toc,
+  main > .document-cover:first-child + .document-screen-toc,
+  main > .page.cover:first-child + .document-screen-toc,
+  .document-screen-toc,
+  #interactive-toc {
+    break-before: auto !important;
+    page-break-before: auto !important;
+    margin-top: 18px !important;
+  }
+}
+@media print {
+  body.design-prompt-theme:not(.public-page) .cover,
+  body.design-prompt-theme:not(.public-page) .logical-cover,
+  body.design-prompt-theme:not(.public-page) .document-cover,
+  body.design-prompt-theme:not(.public-page) .page.cover,
+  main > .cover:first-child,
+  main > .logical-cover:first-child,
+  main > .document-cover:first-child,
+  main > .page.cover:first-child {
+    height: auto !important;
+    min-height: calc(297mm - 36mm) !important;
+    max-height: none !important;
+    padding: 16mm 14mm 12mm !important;
+    margin-bottom: 0 !important;
+    break-after: page !important;
+    page-break-after: always !important;
+    overflow: hidden !important;
+  }
+  body.design-prompt-theme:not(.public-page) .document-screen-toc,
+  body.design-prompt-theme:not(.public-page) #interactive-toc,
+  .document-screen-toc,
+  #interactive-toc {
+    break-before: auto !important;
+    page-break-before: auto !important;
+    margin-top: 0 !important;
+  }
+}
+</style>
 </head><body class="design-prompt-theme public-page appendix-document-page"><main id="main"><section class="cover" id="cover-page"><p class="kicker"><span>התאוריה</span></p><h1>בין <span class="key-term key-term-he">פוטנציאל</span> ל<span class="key-term key-term-he">אידיאל</span></h1><p class="subtitle">ניהיליזם עם תקווה בעולם חסר ודאות</p><p class="tagline">אלוהים כ<span class="key-term key-term-he">פוטנציאל</span>, הקיום כסירה, וידיעה שמעבר לצורך בסבל</p><p class="author">מחבר: אני · מאי תשפ״ו</p><blockquote class="core">משפט הליבה: האבסולוטי אינו ה<span class="key-term key-term-he">אידיאל</span>י. הקיום הוא חציית הנהר שבה <span class="key-term key-term-he">פוטנציאל</span> אבסולוטי מברר מה מתוך עצמו ראוי להפוך ל<span class="key-term key-term-he">אידיאל</span>.</blockquote><figure class="cover-figure image-frame"><img alt="cover image" decoding="async" loading="lazy" src="../figures/cover_philosophical_recursion_whole_diagram.png"/></figure><hr class="cover-divider"/></section><section class="author-note-page" data-v37-no-white="true" dir="rtl" id="author-note" style="height:248mm; min-height:248mm; page-break-after:always; break-after:page; box-sizing:border-box; padding:64mm 18mm 22mm; text-align:center; background:#efe6d6;">
 <div class="bpi-author-note-text-wrap" style="max-width:760px; margin:0 auto; background:transparent; text-align:center;">
 <div class="bpi-author-note-text-title he" style="font-family:'Gveret Levin','Noto Sans Hebrew',Arial,sans-serif; color:#b87926; font-size:38px; line-height:1.12; margin:0 auto 18mm; text-align:center;">דבר המחבר</div>
