@@ -985,6 +985,18 @@ the protection of life, rest, and the genius born through friction.
 
 ## <span class="chapter-prefix">1. </span>God as Potential and the Divine Risk
 
+<!-- V31_EXPANSION:1. God as Potential and the Divine Risk -->
+It is important to be precise: this reading does not add a factual claim about what exists beyond the world; it offers a way to understand the world when thought begins from possibility rather than from finished result. The word “God” in this chapter names the edge of the question, not ownership of the answer. It preserves the tension between what can be and what is worthy, without making possibility sacred and without turning worthiness into an automatic guarantee.
+
+In this sense, the divine risk is also the risk of every human reading: once potential receives form, it loses immunity. A form can err, injure, break, rebuild, or carry only a partial truth. Potential is therefore not presented as triumphant perfection, but as a field that must pass through responsibility. Only through that passage does the difference begin between empty possibility and possibility that has become worthy.
+
+For that reason, the chapter cannot use suffering as proof. Suffering does not raise the world to a higher rank, and it does not justify it afterward. It only reveals that potential, when it becomes life, meets a real boundary. If that boundary has meaning, the meaning is born from the way it demands sensitivity, repair, and greater care, not from pain itself.
+
+From this angle, the ideal is not waiting at the beginning as a completed command. It becomes clearer through the friction between form and cost. There is no cheap optimism here. There is nihilism with hope: the recognition that no outside guarantee saves everything in advance, together with the refusal to give up the possibility that our response to limitation can create a more worthy form.
+
+If the chapter is read well, it does not say that everything is one and therefore everything is forgiven. On the contrary: precisely because everything may be connected, no injury is merely incidental. Every boundary, every other, every failure, and every repair becomes part of the way potential learns to distinguish accidental multiplicity from multiplicity that can bear responsibility.
+<!-- /V31_EXPANSION -->
+
 *The depth of possibility from which experience, meaning, and ideality
 can appear*
 
@@ -1039,7 +1051,29 @@ something more difficult: even within what is not good, potential can
 pass through boundary, recognize its cost, and begin moving toward a
 more worthy form.
 
+
+
+This clarification matters because it prevents the chapter from becoming too religious in the wrong sense. The word God is not used here to close the question, but to name the depth from which the question opens. If God is treated as an external power that explains everything from above, the theory immediately weakens. If God names potential itself, existence can be understood not merely as a result, but as the place where possibility is tested, wounded, educated, and asked to become more responsible in form.
+
+Divine risk is therefore not a cosmic drama meant to glorify pain. It is also not an argument that evil is necessary and therefore permitted. The more precise distinction is this: a world that contains freedom, otherness, and consequence cannot be only an exhibition of ready-made perfection. It must contain distance between what can be and what ought to be. That distance is where living knowledge is formed, but it is also where responsibility begins.
+
+This is also the relation between the One and the many. Multiplicity is not a refutation of unity; it is the only way unity can stop being an empty concept and become encounter. A whole that cannot meet otherness, err, listen, be wounded, choose, and return remains whole only in an abstract sense. Living completeness requires many angles, because only through many angles can potential learn what must not be repeated and what deserves to be preserved.
+
+The chapter also places a moral boundary around the rest of the theory: no suffering becomes sacred merely because it exists. When a person is harmed, one must not tell them the harm was good because it taught the whole something. That would be cruelty disguised as metaphysics. The only careful claim is that once harm has occurred, responsibility is not to abandon it to meaninglessness, but to turn it into witness, repair, compassion, and the prevention of repetition. This is where the movement from potential toward the ideal begins.
+
 ## <span class="chapter-prefix">2. </span>The Absolute, the Ideal, and Living Completeness
+
+<!-- V31_EXPANSION:2. The Absolute, the Ideal, and Living Completeness -->
+The absolute, as it appears here, is not an object that can be held. It names what is not exhausted by our local case, while still refusing to erase that case. The chapter therefore has to avoid two opposite mistakes: reducing the ideal to private taste, and freezing it into a stone that ignores circumstance, time, and body.
+
+Living completeness is not completeness without lack, but completeness that knows how to work with lack without pretending it has disappeared. It is more like a direction than a statue. A direction can remain faithful while the road bends; a statue breaks as soon as reality touches it. This is why the theory prefers a living ideal over an ideal presented as closure.
+
+This is also where the optimal receives its role. The ideal shows what is worthy, but the optimal asks what can be done now without betraying what is worthy. It is not a lowering of the ideal, but its translation under real conditions. A good translation does not replace the source, but it prevents the source from becoming beautiful words that cannot act.
+
+For this reason, the chapter does not try to abolish distance. The gap between the absolute and the local is where responsibility is born. If there were no gap, there would be no decision. If everything were already ideal, there would be no moral work, no learning, and no repair. Distance is what lets us know whether a form only looks elevated, or whether it can truly carry life.
+
+A precise reading of the chapter keeps humility intact: the ideal is not the property of the reader, the author, or any one system. It is a critical horizon. Every formulation of it must remain open to examination against pain, example, a real person, and the possibility that the formulation itself is still too crude.
+<!-- /V31_EXPANSION -->
 
 *The distinction between everything that can be and what is worthy of
 being*
@@ -1094,6 +1128,18 @@ unfinished world to clarify the ideal without lying about the cost of
 the passage.
 
 ## <span class="chapter-prefix">3. </span>The Core Movement: Title, River, and Boat
+
+<!-- V31_EXPANSION:3. The Core Movement: Title, River, and Boat -->
+The river and the boat are not decorative metaphors. They clarify that the theory is not describing a standpoint outside life, but movement inside a current. The river is the field of possibilities and forces; the boat is the temporary form through which a person, community, or idea manages to navigate. There is no boat outside the river, and no river becomes moral merely because it flows.
+
+The image matters because it prevents the theory from sounding as if it offers a shortcut. Whoever is in the river does not receive a perfect map before sailing. One learns from the current, the rocks, the error, and the bank that is not always visible. Knowledge is therefore not only an answer; it is a relation built through distance, friction, and correction.
+
+The boat also reminds us that the optimal is always local. The same movement that is worthy in one place can be destructive in another. What looks like progress in calm water can become danger near a fall. The ideal is not canceled, but it must pass through a reading of conditions. This is the difference between fidelity to direction and blindness in the name of direction.
+
+In this sense, the title itself works like a compass. “Between Potential and Ideal” is not one place, but a navigational space. Potential opens too many possibilities; the ideal narrows them by value; and the optimal asks how not to tear the boat while trying to approach the bank.
+
+If the image works, it keeps the theory human. It reminds every conclusion to ask not only whether it is beautiful, but whether it can be lived without erasing those who are inside the current. The core movement is therefore not an escape from the world into an idea, but an attempt to return an idea to a world that can be navigated.
+<!-- /V31_EXPANSION -->
 
 *Nihilism with hope between potential, optimal, and ideal*
 
@@ -1204,6 +1250,7 @@ not reproduce it.
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_education-of-potential.png"
 decoding="async" loading="lazy" alt="Education of Potential" />
+<figcaption aria-hidden="true">Image description: learning, distance, and understanding that cannot be shortcut.</figcaption>
 </figure>
 
 Education is a direct test of Between Potential and Ideal because it
@@ -1568,6 +1615,7 @@ more accurately between potential and ideal.
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_ai-open-problems.png" decoding="async"
 loading="lazy" alt="Artificial Intelligence and Open Problems" />
+<figcaption aria-hidden="true">Image description: answer, source, responsibility, and the distance that can be stolen.</figcaption>
 </figure>
 
 ### Responsibility, source, truth, and a tool that is not a living owner
@@ -1633,6 +1681,7 @@ actionable ending*
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_i-have-no-mouth.png" decoding="async"
 loading="lazy" alt="I Have No Mouth, and I Must Scream" />
+<figcaption aria-hidden="true">Image description: story, game, and the difference between a locked ending and an actable ending.</figcaption>
 </figure>
 
 ### AM, locked ending, moral action, and systemic hell
@@ -2347,6 +2396,7 @@ upper-bound edge*
 <figure class="chapter-figure image-frame">
 <img src="../figures/cover_logical_recursion_whole_diagram.png" decoding="async"
 loading="lazy" alt="The Recursive Edge" />
+<figcaption aria-hidden="true">Image description: recursive layers in which every boundary can become a new source.</figcaption>
 </figure>
 
 ### The ideal that does not close and the test that continues after every answer
@@ -3245,6 +3295,7 @@ become proof*
 src="../figures/cover_logical_recursion_whole_diagram.png"
 decoding="async" loading="lazy"
 alt="Science, Physics, and Mathematics as a Boundary Discipline" />
+<figcaption aria-hidden="true">Image description: formulas, measurement, and models as boundary languages, not final proof.</figcaption>
 </figure>
 
 ### How to use precision without turning it into decoration
@@ -3307,6 +3358,7 @@ answer*
 <img src="../figures/v25_chapter_locality-nonlocality-contextuality.png"
 decoding="async" loading="lazy"
 alt="Locality, Non-locality, and Contextuality" />
+<figcaption aria-hidden="true">Image description: local and non-local relations, context, measurement, and dependence between observer and observed.</figcaption>
 </figure>
 
 ### Bell, Kochen-Specker, Bohmian mechanics, and the caution against slogan physics
@@ -3956,6 +4008,7 @@ that thing.
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_art-of-potential.png" decoding="async"
 loading="lazy" alt="Art of Potential" />
+<figcaption aria-hidden="true">Image description: creation as a field where possibility receives form without being fully closed.</figcaption>
 </figure>
 
 ### Living source, canon, and form that does not replace breath
@@ -4027,6 +4080,7 @@ borrowing of terms.
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_music-of-potential.png"
 decoding="async" loading="lazy" alt="Music of Potential" />
+<figcaption aria-hidden="true">Image description: rhythm, silence, and return as ways of carrying possibility through time.</figcaption>
 </figure>
 
 ### Voice, time, silence, and an optimum that is not only precision
@@ -4091,6 +4145,7 @@ Material, Form, Load, and Repair That Is Not Redemption
 <img src="../figures/17_engineering_architecture_potential.png"
 decoding="async" loading="lazy"
 alt="Figure: Engineering and Architecture of Potential." />
+<figcaption aria-hidden="true">Image description: an engineered system in which potential becomes structure, channeling, testing, and repair.</figcaption>
 </figure>
 
 Engineering looks, from the outside, like a discipline of calculation:
@@ -4498,6 +4553,7 @@ Money, Value, Trust, and Potential
 <figure class="image-frame">
 <img src="../figures/18_economy_relation_potential.png" decoding="async"
 loading="lazy" alt="Figure: Economy of Relation." />
+<figcaption aria-hidden="true">Image description: value, exchange, and responsibility as living relations, not only as numbers.</figcaption>
 </figure>
 
 Economy looks, from the outside, like a field of numbers: money, prices,
@@ -4953,6 +5009,7 @@ Law, Power, Trust, and Repair That Is Not Redemption
 <img src="../figures/19_governance_society_potential.png"
 decoding="async" loading="lazy"
 alt="Figure: Governance of Potential." />
+<figcaption aria-hidden="true">Image description: institutions, decision, and public coordination as ways of translating possibility into responsibility.</figcaption>
 </figure>
 
 Governance looks, from the outside, like a field of institutions:
@@ -5339,6 +5396,7 @@ between power, law, trust, human being, and time.
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_law-of-potential.png" decoding="async"
 loading="lazy" alt="Law of Potential" />
+<figcaption aria-hidden="true">Image description: law, interpretation, and boundary as a space where possibility is tested against responsibility.</figcaption>
 </figure>
 
 Law is one of the hardest tests of the theory because it operates
@@ -5409,6 +5467,7 @@ borrowing of terms.
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_medicine-of-potential.png"
 decoding="async" loading="lazy" alt="Medicine of Potential" />
+<figcaption aria-hidden="true">Image description: healing as a careful reading of body, suffering, chance, and conditions.</figcaption>
 </figure>
 
 ### Body, diagnosis, treatment, and a person who is not a case
@@ -5964,6 +6023,7 @@ from which it came.
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_boundary-horizons.png" decoding="async"
 loading="lazy" alt="Boundary Horizons" />
+<figcaption aria-hidden="true">Image description: a boundary that is not merely a wall, but a horizon guiding the relation between possibility and form.</figcaption>
 </figure>
 
 ### What is visible, what is hidden, and what must not be inferred too quickly
@@ -6559,6 +6619,7 @@ when it seeks unification.
 src="../figures/cover_philosophical_recursion_whole_diagram.png"
 decoding="async" loading="lazy"
 alt="Universe Structure / The Shape of the Universe and the Shape of Potential" />
+<figcaption aria-hidden="true">Image description: the shape of the universe as relations, horizons, and passages between potential and form.</figcaption>
 </figure>
 
 ### Flat universe, curved universe, multiverse and omniverse as cautious boundary language
@@ -6623,6 +6684,7 @@ borrowing of terms.
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_high-energy-physics.png"
 decoding="async" loading="lazy" alt="High-Energy Physics" />
+<figcaption aria-hidden="true">Image description: energy, particles, and horizons as a test of the limits of form.</figcaption>
 </figure>
 
 ### The Standard Model, QFT, Higgs, and the boundary between language and proof
@@ -6686,6 +6748,7 @@ physics into metaphysical proof*
 <img src="../figures/v25_chapter_black-holes-horizons-holography.png"
 decoding="async" loading="lazy"
 alt="Black Holes, Event Horizons, and the Holographic Principle" />
+<figcaption aria-hidden="true">Image description: horizon, information, and a threshold where what disappears still leaves structural trace.</figcaption>
 </figure>
 
 ### Boundary, trace, and information without turning mystery into myth
