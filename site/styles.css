@@ -5681,12 +5681,3 @@ body[dir="ltr"] .story-toc-clean-list { text-align:left !important; direction:lt
 
 
 
-/* V74 — real bottom white gap inside tab illustration images only.
-   This does not change wrapper padding, top spacing, side spacing, Home, nav, or topbar. */
-html body.public-page.design-prompt-theme .site-main img[src*="/tab_"],
-html body.public-page.design-prompt-theme .site-main img[src*="figures/tab_"],
-html body.public-page.design-prompt-theme .site-main img[src*="../../figures/tab_"] {
-  box-sizing: border-box !important;
-  border-bottom: 18px solid #fffaf0 !important;
-  background: #fffaf0 !important;
-}
