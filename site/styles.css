@@ -5687,6 +5687,6 @@ html body.public-page.design-prompt-theme .site-main img[src*="/tab_"],
 html body.public-page.design-prompt-theme .site-main img[src*="figures/tab_"],
 html body.public-page.design-prompt-theme .site-main img[src*="../../figures/tab_"] {
   box-sizing: border-box !important;
-  border-bottom: 12px solid #fffaf0 !important;
+  border-bottom: 18px solid #fffaf0 !important;
   background: #fffaf0 !important;
 }
