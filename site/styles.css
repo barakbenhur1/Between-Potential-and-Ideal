@@ -5680,12 +5680,13 @@ body[dir="ltr"] .story-toc-clean-list { text-align:left !important; direction:lt
 
 
 
-/* V73 — bottom gap for tab illustration images only.
-   Targets only files like figures/tab_*.png.
-   Does not affect Home, nav/topbar, cards, author images, or document images. */
-body.public-page .site-main img[src*="figures/tab_"],
-body.public-page .site-main img[src*="/tab_"],
-body.public-page .site-main img[src*="../../figures/tab_"] {
-  display: block !important;
-  margin-bottom: 10px !important;
+
+/* V74 — real bottom white gap inside tab illustration images only.
+   This does not change wrapper padding, top spacing, side spacing, Home, nav, or topbar. */
+html body.public-page.design-prompt-theme .site-main img[src*="/tab_"],
+html body.public-page.design-prompt-theme .site-main img[src*="figures/tab_"],
+html body.public-page.design-prompt-theme .site-main img[src*="../../figures/tab_"] {
+  box-sizing: border-box !important;
+  border-bottom: 12px solid #fffaf0 !important;
+  background: #fffaf0 !important;
 }
