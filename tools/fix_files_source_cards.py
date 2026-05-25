@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Fix Files page source-card duplication.
 
-Rule:
-- The visible "Inside the theory" card exposes reader formats: full HTML/PDF and logical HTML/PDF.
-- The visible "Source files" card must expose only formats that are not already shown there:
-  full DOCX/MD and logical DOCX/MD.
+Visible product rule:
+- "Inside the theory" / "בתוך התאוריה" is the reader path and may show HTML/PDF.
+- "Source files" / "קבצי מקור" is the source/editing path and should show only formats
+  that are not already duplicated there: DOCX and MD.
 
-This script patches the Hebrew and English public Files pages without touching blurbs,
-main theory text, document exports, or archive files.
+This script is deliberately narrow. It patches the public Files pages only, and does not
+change blurbs, theory text, document exports, or files under site/files.
 """
 from __future__ import annotations
 
@@ -26,10 +26,9 @@ REPORT.parent.mkdir(parents=True, exist_ok=True)
 PAGES = [
     {
         "path": ROOT / "site" / "pages" / "he" / "files.html",
-        "source_titles": {"קבצי מקור"},
-        "theory_titles": {"בתוך התאוריה"},
-        "description": "כאן נשארים רק קבצי מקור ועריכה שלא מופיעים כבר בכרטיס בתוך התאוריה: DOCX ו־MD בגרסה המלאה והלוגית.",
-        "links": [
+        "source_title_parts": ["קבצי מקור"],
+        "source_desc": "כאן נשארים רק קבצי מקור ועריכה שלא מופיעים כבר בכרטיס בתוך התאוריה: DOCX ו־MD בגרסה המלאה והלוגית.",
+        "compact_links": [
             ("DOCX מלא", "../../files/between-potential-and-ideal-he.docx"),
             ("MD מלא", "../../files/between-potential-and-ideal-he.md"),
             ("DOCX לוגי", "../../files/editorial-tightened/between-potential-and-ideal-tightened-he.docx"),
@@ -38,10 +37,9 @@ PAGES = [
     },
     {
         "path": ROOT / "site" / "pages" / "en" / "files-en.html",
-        "source_titles": {"Source files", "Source Files"},
-        "theory_titles": {"Inside the theory", "Within the theory", "In the theory"},
-        "description": "Only source/editing formats that are not already shown in the Inside the theory card remain here: full and logical DOCX/MD.",
-        "links": [
+        "source_title_parts": ["source files", "full source files", "complete source files"],
+        "source_desc": "Only source/editing formats that are not already shown in the reading path remain here: DOCX and MD.",
+        "compact_links": [
             ("Full DOCX", "../../files/between-potential-and-ideal-en.docx"),
             ("Full MD", "../../files/between-potential-and-ideal-en.md"),
             ("Logical DOCX", "../../files/editorial-tightened/between-potential-and-ideal-tightened-en.docx"),
@@ -50,107 +48,134 @@ PAGES = [
     },
 ]
 
-CARD_TAGS = ["section", "article", "div"]
+SOURCE_EXTS = (".docx", ".md")
+READER_EXTS = (".html", ".pdf")
 HEADING_TAGS = ["h2", "h3", "h4"]
+CARD_TAGS = ["section", "article", "div"]
 
 
 def norm(text: str) -> str:
     return " ".join(text.split()).strip()
 
 
-def class_list(tag) -> list[str]:
-    classes = tag.get("class") or []
-    if isinstance(classes, str):
-        classes = classes.split()
-    return list(classes)
+def classes(tag) -> list[str]:
+    raw = tag.get("class") or []
+    if isinstance(raw, str):
+        raw = raw.split()
+    return list(raw)
 
 
-def is_big_archive_section(tag) -> bool:
-    title = first_heading_text(tag)
-    return title in {"קבצי מקור מלאים", "Full source files", "Complete source files"}
+def clean_href(href: str) -> str:
+    return href.split("#", 1)[0].split("?", 1)[0].lower()
 
 
-def first_heading_text(tag) -> str:
-    heading = tag.find(HEADING_TAGS)
-    return norm(heading.get_text(" ", strip=True)) if heading else ""
+def is_source_href(href: str) -> bool:
+    return clean_href(href).endswith(SOURCE_EXTS)
 
 
-def closest_card_for_heading(heading):
-    """Return the smallest useful visual card around a heading.
-
-    The previous version required card classes and missed the actual visible card.
-    This version starts from the exact visible heading and climbs only until it finds
-    a compact parent with action/download links, while avoiding the large archive section.
-    """
-    cur = heading
-    best = None
-    while cur and getattr(cur, "name", None) != "main":
-        if cur.name in CARD_TAGS:
-            links = cur.find_all("a", href=True)
-            classes = class_list(cur)
-            title = first_heading_text(cur)
-            if len(links) >= 2 and title == norm(heading.get_text(" ", strip=True)) and not is_big_archive_section(cur):
-                best = cur
-                if any("card" in c or "media" in c or "reader" in c or "file" in c for c in classes):
-                    return cur
-        cur = cur.parent
-    return best
+def is_reader_href(href: str) -> bool:
+    return clean_href(href).endswith(READER_EXTS)
 
 
-def find_card_by_exact_heading(soup: BeautifulSoup, titles: set[str]):
-    for heading in soup.find_all(HEADING_TAGS):
-        if norm(heading.get_text(" ", strip=True)) in titles:
-            card = closest_card_for_heading(heading)
-            if card is not None:
-                return card
-    return None
+def heading_text(tag) -> str:
+    h = tag.find(HEADING_TAGS)
+    return norm(h.get_text(" ", strip=True)) if h else ""
 
 
-def find_actions_container(soup: BeautifulSoup, card):
-    preferred = []
-    fallback = []
-    for tag in card.find_all(["div", "p", "nav"]):
-        if not tag.find("a", href=True):
-            continue
-        classes = class_list(tag)
-        if any("actions" in c or "download" in c or "formats" in c or "row" in c for c in classes):
-            preferred.append(tag)
-        else:
-            fallback.append(tag)
-    if preferred:
-        return preferred[-1]
-    if fallback:
-        return fallback[-1]
-    container = soup.new_tag("div")
-    container["class"] = "appendix-actions source-only-actions"
-    card.append(container)
-    return container
+def title_matches(title: str, parts: list[str]) -> bool:
+    low = title.lower()
+    return any(part.lower() in low for part in parts)
 
 
-def replace_description(card, text: str):
-    heading = card.find(HEADING_TAGS)
-    for p in card.find_all("p"):
-        if heading and p.sourceline and heading.sourceline and p.sourceline < heading.sourceline:
-            continue
-        if norm(p.get_text(" ", strip=True)):
-            p.string = text
-            return
+def is_source_section(tag, config: dict) -> bool:
+    if tag.get("id") == "source-files":
+        return True
+    if "source-files-section" in classes(tag):
+        return True
+    return title_matches(heading_text(tag), config["source_title_parts"])
 
 
-def replace_actions(soup: BeautifulSoup, actions, links: list[tuple[str, str]]):
-    actions.clear()
-    classes = class_list(actions)
-    for cls in ["appendix-actions", "source-only-actions"]:
-        if cls not in classes:
-            classes.append(cls)
-    actions["class"] = classes
+def is_theory_article(article) -> bool:
+    title = heading_text(article).lower()
+    if any(word in title for word in ["appendix", "stories", "סיפורים", "נספח"]):
+        return False
+    hrefs = [a.get("href", "") for a in article.find_all("a", href=True)]
+    theory_href = any("between-potential-and-ideal" in href or "editorial-tightened" in href for href in hrefs)
+    source_or_reader = any(is_source_href(href) or is_reader_href(href) for href in hrefs)
+    return theory_href and source_or_reader
+
+
+def make_actions(soup: BeautifulSoup, links: list[tuple[str, str]], cls: str):
+    div = soup.new_tag("div")
+    div["class"] = cls
     for label, href in links:
         a = soup.new_tag("a", href=href)
-        a.string = label
-        a["rel"] = "noopener noreferrer"
+        a["class"] = "download-button"
         a["target"] = "_blank"
-        actions.append(a)
-        actions.append("\n")
+        a["rel"] = "noopener noreferrer"
+        a.string = label
+        div.append(a)
+        div.append("\n")
+    return div
+
+
+def find_actions_container(parent):
+    candidates = []
+    for tag in parent.find_all(["div", "p", "nav"]):
+        if not tag.find("a", href=True):
+            continue
+        cls = classes(tag)
+        if any("download" in c or "actions" in c or "formats" in c or "row" in c for c in cls):
+            candidates.append(tag)
+    return candidates[-1] if candidates else None
+
+
+def replace_first_paragraph(parent, text: str) -> bool:
+    for p in parent.find_all("p"):
+        if norm(p.get_text(" ", strip=True)):
+            if norm(p.get_text(" ", strip=True)) != text:
+                p.string = text
+                return True
+            return False
+    return False
+
+
+def patch_source_section(soup: BeautifulSoup, section, config: dict) -> tuple[bool, int]:
+    changed = False
+    touched = 0
+    changed = replace_first_paragraph(section, config["source_desc"]) or changed
+
+    articles = section.find_all("article")
+    if articles:
+        for article in articles:
+            if not is_theory_article(article):
+                continue
+            actions = find_actions_container(article)
+            if actions is None:
+                continue
+            kept = []
+            for a in actions.find_all("a", href=True):
+                href = a.get("href", "")
+                if is_source_href(href):
+                    kept.append((norm(a.get_text(" ", strip=True)), href))
+            if not kept:
+                continue
+            new_actions = make_actions(soup, kept, "download-row")
+            if str(actions) != str(new_actions):
+                actions.replace_with(new_actions)
+                changed = True
+                touched += 1
+        return changed, touched
+
+    # Compact card without nested articles: replace all actions with the canonical source-only set.
+    actions = find_actions_container(section)
+    if actions is not None:
+        new_actions = make_actions(soup, config["compact_links"], "appendix-actions source-only-actions")
+        if str(actions) != str(new_actions):
+            actions.replace_with(new_actions)
+            changed = True
+            touched += 1
+    return changed, touched
 
 
 def patch_page(config: dict) -> tuple[bool, str]:
@@ -158,25 +183,30 @@ def patch_page(config: dict) -> tuple[bool, str]:
     if not path.exists():
         return False, f"missing: {path.relative_to(ROOT)}"
 
-    html = path.read_text(encoding="utf-8")
-    soup = BeautifulSoup(html, "html.parser")
-    source_card = find_card_by_exact_heading(soup, config["source_titles"])
-    if source_card is None:
-        return False, f"source card not found: {path.relative_to(ROOT)}"
+    old = path.read_text(encoding="utf-8")
+    soup = BeautifulSoup(old, "html.parser")
+    sections = []
+    for tag in soup.find_all(CARD_TAGS):
+        if is_source_section(tag, config):
+            # Avoid duplicate descendants by keeping only the outer useful section/card.
+            if not any(tag in parent.find_all(CARD_TAGS) for parent in sections):
+                sections.append(tag)
 
-    theory_card = find_card_by_exact_heading(soup, config["theory_titles"])
-    theory_hrefs = {a.get("href") for a in theory_card.find_all("a", href=True)} if theory_card else set()
-    links = [(label, href) for label, href in config["links"] if href not in theory_hrefs]
+    if not sections:
+        return False, f"source card/section not found: {path.relative_to(ROOT)}"
 
-    actions = find_actions_container(soup, source_card)
-    replace_description(source_card, config["description"])
-    replace_actions(soup, actions, links)
+    changed = False
+    touched_total = 0
+    for section in sections:
+        section_changed, touched = patch_source_section(soup, section, config)
+        changed = changed or section_changed
+        touched_total += touched
 
-    new_html = str(soup)
-    if new_html != html:
-        path.write_text(new_html, encoding="utf-8")
-        return True, f"patched: {path.relative_to(ROOT)} -> {', '.join(label for label, _ in links)}"
-    return False, f"no change: {path.relative_to(ROOT)}"
+    new = str(soup)
+    if changed and new != old:
+        path.write_text(new, encoding="utf-8")
+        return True, f"patched: {path.relative_to(ROOT)} ({touched_total} card/action group(s))"
+    return False, f"no visible change needed: {path.relative_to(ROOT)}"
 
 
 def main() -> int:
@@ -185,8 +215,7 @@ def main() -> int:
         "",
         f"Generated: {datetime.utcnow().isoformat(timespec='seconds')}Z",
         "",
-        "הכלל: כרטיס קבצי מקור מציג רק פורמטים שלא מופיעים כבר בכרטיס בתוך התאוריה.",
-        "לכן נשארים בו DOCX/MD מלאים ולוגיים, ולא HTML/PDF שכבר מוצגים בכרטיס הקריאה.",
+        "הכלל: קבצי מקור מציגים רק פורמטים שלא מופיעים כבר במסלול הקריאה: DOCX/MD ולא HTML/PDF.",
         "",
     ]
     changed = 0
@@ -198,7 +227,7 @@ def main() -> int:
 
     REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"changed pages: {changed}")
-    for line in lines[7:]:
+    for line in lines[6:]:
         print(line)
     print(f"report: {REPORT.relative_to(ROOT)}")
     return 0
