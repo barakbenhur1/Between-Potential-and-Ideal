@@ -38,6 +38,7 @@ EN_LINKS = [
     ("Logical DOCX", "../../files/editorial-tightened/between-potential-and-ideal-tightened-en.docx"),
     ("Logical MD", "../../files/editorial-tightened/between-potential-and-ideal-tightened-en.md"),
 ]
+EN_SOURCE_TITLES = ["source files", "source text files", "full source files", "complete source files"]
 
 PAGES = [
     {
@@ -54,13 +55,13 @@ PAGES = [
     },
     {
         "path": ROOT / "site" / "pages" / "en" / "files-en.html",
-        "source_title_parts": ["source files", "full source files", "complete source files"],
+        "source_title_parts": EN_SOURCE_TITLES,
         "source_desc": "Only source/editing formats that are not already shown in the reading path remain here: DOCX and MD.",
         "compact_links": EN_LINKS,
     },
     {
         "path": ROOT / "site" / "pages" / "en" / "applied-en.html",
-        "source_title_parts": ["source files", "full source files", "complete source files"],
+        "source_title_parts": EN_SOURCE_TITLES,
         "source_desc": "Only source/editing formats that are not already shown in the reading path remain here: DOCX and MD.",
         "compact_links": EN_LINKS,
     },
