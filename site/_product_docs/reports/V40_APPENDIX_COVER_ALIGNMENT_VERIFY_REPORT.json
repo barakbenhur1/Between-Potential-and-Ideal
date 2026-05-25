@@ -1,0 +1,39 @@
+{
+  "version": "V40_APPENDIX_COVER_AND_LANGUAGE_ALIGNMENT_FULL_PRODUCT",
+  "checks": {
+    "deploy_root_index_exists": true,
+    "no_site_wrapper_folder": true,
+    "pages_folder_exists": true,
+    "local_links_ok": true,
+    "source_files_block_has_links": true,
+    "no_duplicate_pdf_buttons_in_key_pages": true,
+    "uploaded_cover_asset_exists": true,
+    "cover_used_in_he_appendix_html": true,
+    "cover_used_in_en_appendix_html": true,
+    "cover_used_in_stories_site_page": true,
+    "cover_used_in_he_md": true,
+    "cover_used_in_en_md": true,
+    "he_docx_has_embedded_images": false,
+    "en_docx_has_embedded_images": false,
+    "story_titles_follow_language_alignment": true,
+    "story_images_keep_aspect_style": true
+  },
+  "failures": [
+    "he_docx_has_embedded_images",
+    "en_docx_has_embedded_images"
+  ],
+  "ok": false,
+  "local_links_checked": 2067,
+  "broken_local_links": [],
+  "duplicate_pdf_button_report": {
+    "pages/he/files.html": [],
+    "pages/en/files-en.html": [],
+    "pages/he/witness.html": [],
+    "pages/en/witness-en.html": [],
+    "pages/he/stories.html": []
+  },
+  "style_failures": [],
+  "image_style_failures": [],
+  "file_count": 367,
+  "render_note": "Render from repo root; no site/ wrapper folder. index.html remains at root."
+}

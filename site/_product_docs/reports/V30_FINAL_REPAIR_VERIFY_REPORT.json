@@ -1,0 +1,27 @@
+{
+  "home_restored": {
+    "index_uses_frozen_v17_css": true,
+    "en_uses_frozen_v17_css": true,
+    "top_image_present": true,
+    "styles_home_original_exists": true
+  },
+  "documents": {
+    "philosophical_he_pdf_exists": true,
+    "philosophical_en_pdf_exists": true,
+    "logical_he_pdf_exists": true,
+    "logical_en_pdf_exists": true,
+    "logical_he_cover_visual_rendered": true,
+    "logical_en_cover_visual_rendered": true,
+    "author_note_he_visual_rendered": true,
+    "author_note_en_visual_rendered": true
+  },
+  "font": {
+    "gveret_remote_import_present": true,
+    "gveret_font_family_present": true
+  },
+  "black_background_scan": {
+    "critical_document_files_bad_black_background_tokens": 0
+  },
+  "failures": [],
+  "ok": true
+}

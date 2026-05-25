@@ -1,0 +1,161 @@
+{
+  "styles.css": {
+    "bad_black_tokens": 0
+  },
+  "ai-believes.html": {
+    "bad_black_tokens": 0
+  },
+  "ai-en.html": {
+    "bad_black_tokens": 0
+  },
+  "stories.html": {
+    "bad_black_tokens": 0
+  },
+  "files/appendices/stories-before-thought-hebrew-rtl.html": {
+    "bad_black_tokens": 0
+  },
+  "files/appendices/stories-before-thought-english.html": {
+    "bad_black_tokens": 0
+  },
+  "stories_subtitles": {
+    "he_site": true,
+    "en_site": true,
+    "he_appendix": true,
+    "en_appendix": true
+  },
+  "names": {
+    "has_a_few": true,
+    "has_bad_several": false,
+    "has_bad_two": false,
+    "has_he_new": true,
+    "has_he_old": false
+  },
+  "ai_order_he": {
+    "positions": [
+      93255,
+      94198,
+      95159
+    ],
+    "ok": true
+  },
+  "ai_order_en": {
+    "positions": [
+      76376,
+      77510,
+      78720
+    ],
+    "ok": true
+  },
+  "files/appendices/stories-before-thought-hebrew-rtl.pdf": {
+    "pdftotext_rc": 0,
+    "has_pdfdocxmdtxt": false,
+    "has_he_subtitle": true,
+    "has_en_subtitle": false,
+    "has_a_few": false,
+    "has_bad_several": false
+  },
+  "files/appendices/stories-before-thought-english.pdf": {
+    "pdftotext_rc": 0,
+    "has_pdfdocxmdtxt": false,
+    "has_he_subtitle": false,
+    "has_en_subtitle": true,
+    "has_a_few": true,
+    "has_bad_several": false
+  },
+  "files/appendices/stories-before-thought-hebrew-rtl.docx": {
+    "zip_ok": true,
+    "has_pdfdocxmdtxt": false,
+    "has_he_subtitle": true,
+    "has_en_subtitle": false,
+    "has_a_few": false,
+    "has_bad_several": false
+  },
+  "files/appendices/stories-before-thought-english.docx": {
+    "zip_ok": true,
+    "has_pdfdocxmdtxt": false,
+    "has_he_subtitle": false,
+    "has_en_subtitle": true,
+    "has_a_few": true,
+    "has_bad_several": false
+  },
+  "appendix_image_sizes": {
+    "story_image_11.png": [
+      480,
+      360
+    ],
+    "story_image_6.png": [
+      479,
+      228
+    ],
+    "story_image_12.png": [
+      480,
+      360
+    ],
+    "story_image_14.png": [
+      480,
+      360
+    ],
+    "story_image_7.png": [
+      480,
+      240
+    ],
+    "story_image_8.png": [
+      480,
+      240
+    ],
+    "story_image_4.png": [
+      480,
+      228
+    ],
+    "story_image_heretic_from_abroad.png": [
+      480,
+      360
+    ],
+    "story_image_3.png": [
+      480,
+      228
+    ],
+    "story_image_10.png": [
+      480,
+      270
+    ],
+    "story_image_13.png": [
+      480,
+      360
+    ],
+    "story_image_9.png": [
+      480,
+      270
+    ],
+    "story_image_1.png": [
+      480,
+      228
+    ],
+    "story_image_2.png": [
+      480,
+      228
+    ],
+    "story_image_5.png": [
+      480,
+      228
+    ]
+  },
+  "appendix_images_within_480x360": true,
+  "critical_exists": {
+    "index.html": true,
+    "stories.html": true,
+    "ai-believes.html": true,
+    "ai-en.html": true,
+    "styles.css": true,
+    "files/between-potential-and-ideal-he-editorial.pdf": true,
+    "files/between-potential-and-ideal-en-editorial.pdf": true,
+    "files/appendices/stories-before-thought-hebrew-rtl.pdf": true,
+    "files/appendices/stories-before-thought-english.pdf": true,
+    "files/appendices/stories-before-thought-hebrew-rtl.docx": true,
+    "files/appendices/stories-before-thought-english.docx": true,
+    "V25_IDEAL_FINAL_QA_REPORT_HE.md": true,
+    "V26_IMAGE_BOUNDING_AND_FINAL_VISUAL_FIX_REPORT_HE.md": true
+  },
+  "failures": [],
+  "ok": true
+}

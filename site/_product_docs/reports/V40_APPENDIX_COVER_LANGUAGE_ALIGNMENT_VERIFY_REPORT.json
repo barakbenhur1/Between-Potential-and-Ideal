@@ -1,0 +1,44 @@
+{
+  "version": "V40_APPENDIX_COVER_LANGUAGE_ALIGNMENT_FULL_PRODUCT",
+  "checks": {
+    "deploy_root_index_exists": true,
+    "no_site_wrapper_folder": true,
+    "local_links_ok": true,
+    "source_files_block_has_links": true,
+    "no_duplicate_pdf_buttons": true,
+    "cover_asset_exists": true,
+    "cover_used_in_he_html": true,
+    "cover_used_in_en_html": true,
+    "cover_used_in_site_stories": true,
+    "cover_used_in_md_files": true,
+    "he_docx_images_embedded": true,
+    "en_docx_images_embedded": true,
+    "story_titles_language_aligned": true
+  },
+  "failures": [],
+  "ok": true,
+  "local_links_checked": 2067,
+  "broken_local_links": [],
+  "duplicate_pdf_button_report": {
+    "pages/he/files.html": [],
+    "pages/en/files-en.html": [],
+    "pages/he/witness.html": [],
+    "pages/en/witness-en.html": [],
+    "pages/he/stories.html": []
+  },
+  "docx_image_info": {
+    "he": {
+      "media_count": 15,
+      "has_link_attr": false,
+      "has_external": false
+    },
+    "en": {
+      "media_count": 15,
+      "has_link_attr": false,
+      "has_external": false
+    }
+  },
+  "style_failures": [],
+  "file_count": 372,
+  "render_note": "Deploy from repository root. There is no site/ wrapper folder."
+}

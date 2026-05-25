@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "main_he_html_expansions": true,
+    "main_en_html_expansions": true,
+    "logical_he_html_expansions": true,
+    "logical_en_html_expansions": true,
+    "main_he_pdf_expansion": true,
+    "main_en_pdf_expansion": true,
+    "logical_he_pdf_expansion": true,
+    "logical_en_pdf_expansion": true,
+    "main_he_docx_expansion": true,
+    "main_en_docx_expansion": true,
+    "logical_he_docx_expansion": true,
+    "logical_en_docx_expansion": true,
+    "logical_he_cover_image_html": true,
+    "logical_en_cover_image_html": true,
+    "story_landing_cover_image": true,
+    "story_he_cover_image": true,
+    "story_en_cover_image": true,
+    "story_he_no_cover_format_buttons": true,
+    "story_en_no_cover_format_buttons": true,
+    "source_files_he": true,
+    "source_files_en": true,
+    "no_concatenated_betweenpotential": true,
+    "no_duplicate_pdf_buttons": true,
+    "mistake_button_alignment_css": true,
+    "story_he_docx_has_cover_image": true,
+    "story_en_docx_has_cover_image": true,
+    "story_he_docx_no_between_meta": true,
+    "story_en_docx_no_between_meta": true
+  },
+  "duplicate_pdf_report": {
+    "files.html": [],
+    "files-en.html": [],
+    "stories.html": [],
+    "witness.html": [],
+    "witness-en.html": []
+  },
+  "failures": [],
+  "ok": true
+}

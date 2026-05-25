@@ -1,0 +1,35 @@
+# אינדקס נספחים V36
+
+- `files/appendices/README_APPENDICES_STRUCTURE.md`
+- `files/appendices/assets/story_image_1.png`
+- `files/appendices/assets/story_image_10.png`
+- `files/appendices/assets/story_image_11.png`
+- `files/appendices/assets/story_image_12.png`
+- `files/appendices/assets/story_image_13.png`
+- `files/appendices/assets/story_image_14.png`
+- `files/appendices/assets/story_image_2.png`
+- `files/appendices/assets/story_image_3.png`
+- `files/appendices/assets/story_image_4.png`
+- `files/appendices/assets/story_image_5.png`
+- `files/appendices/assets/story_image_6.png`
+- `files/appendices/assets/story_image_7.png`
+- `files/appendices/assets/story_image_8.png`
+- `files/appendices/assets/story_image_9.png`
+- `files/appendices/assets/story_image_heretic_from_abroad.png`
+- `files/appendices/mistake-repeats/README.txt`
+- `files/appendices/mistake-repeats/assets/mistake_repeats_cover.png`
+- `files/appendices/mistake-repeats/infinity-pool-original-he.pdf`
+- `files/appendices/mistake-repeats/mistake-repeats-visual-en.pdf`
+- `files/appendices/mistake-repeats/mistake-repeats-visual-he.pdf`
+- `files/appendices/mistake-repeats/mistake-repeats-visual-logical-en.pdf`
+- `files/appendices/mistake-repeats/mistake-repeats-visual-logical-he.pdf`
+- `files/appendices/stories-before-thought-english.docx`
+- `files/appendices/stories-before-thought-english.html`
+- `files/appendices/stories-before-thought-english.md`
+- `files/appendices/stories-before-thought-english.pdf`
+- `files/appendices/stories-before-thought-english.txt`
+- `files/appendices/stories-before-thought-hebrew-rtl.docx`
+- `files/appendices/stories-before-thought-hebrew-rtl.html`
+- `files/appendices/stories-before-thought-hebrew-rtl.md`
+- `files/appendices/stories-before-thought-hebrew-rtl.pdf`
+- `files/appendices/stories-before-thought-hebrew-rtl.txt`

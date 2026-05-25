@@ -1,0 +1,125 @@
+{
+  "stories.html": {
+    "exists": true,
+    "he_mother_subtitle": true,
+    "en_mother_subtitle": true,
+    "a_few": true,
+    "several": false,
+    "has_v24": true,
+    "bad_black_tokens": 0
+  },
+  "witness.html": {
+    "exists": true,
+    "he_mother_subtitle": true,
+    "en_mother_subtitle": false,
+    "a_few": false,
+    "several": false,
+    "has_v24": true,
+    "bad_black_tokens": 0
+  },
+  "witness-en.html": {
+    "exists": true,
+    "he_mother_subtitle": false,
+    "en_mother_subtitle": true,
+    "a_few": false,
+    "several": false,
+    "has_v24": true,
+    "bad_black_tokens": 0
+  },
+  "ai.html": {
+    "exists": true,
+    "he_mother_subtitle": false,
+    "en_mother_subtitle": false,
+    "a_few": false,
+    "several": false,
+    "has_v24": true,
+    "bad_black_tokens": 0
+  },
+  "ai-en.html": {
+    "exists": true,
+    "he_mother_subtitle": false,
+    "en_mother_subtitle": false,
+    "a_few": false,
+    "several": false,
+    "has_v24": true,
+    "bad_black_tokens": 0
+  },
+  "ai-believes.html": {
+    "exists": true,
+    "he_mother_subtitle": false,
+    "en_mother_subtitle": false,
+    "a_few": false,
+    "several": false,
+    "has_v24": true,
+    "bad_black_tokens": 2
+  },
+  "files/appendices/stories-before-thought-hebrew-rtl.html": {
+    "exists": true,
+    "he_mother_subtitle": true,
+    "en_mother_subtitle": false,
+    "a_few": false,
+    "several": false,
+    "has_v24": true,
+    "bad_black_tokens": 0
+  },
+  "files/appendices/stories-before-thought-english.html": {
+    "exists": true,
+    "he_mother_subtitle": false,
+    "en_mother_subtitle": true,
+    "a_few": true,
+    "several": false,
+    "has_v24": true,
+    "bad_black_tokens": 0
+  },
+  "search-index.json": {
+    "exists": true,
+    "he_mother_subtitle": false,
+    "en_mother_subtitle": false,
+    "a_few": true,
+    "several": false,
+    "has_v24": false,
+    "bad_black_tokens": 0
+  },
+  "styles.css": {
+    "exists": true,
+    "he_mother_subtitle": false,
+    "en_mother_subtitle": false,
+    "a_few": false,
+    "several": false,
+    "has_v24": true,
+    "bad_black_tokens": 2
+  },
+  "files/appendices/stories-before-thought-hebrew-rtl.pdf": {
+    "exists": true,
+    "size": 1507997,
+    "has_download_concat": false,
+    "has_he_subtitle": true,
+    "has_en_subtitle": false
+  },
+  "files/appendices/stories-before-thought-english.pdf": {
+    "exists": true,
+    "size": 1209812,
+    "has_download_concat": false,
+    "has_he_subtitle": false,
+    "has_en_subtitle": true
+  },
+  "files/appendices/stories-before-thought-hebrew-rtl.docx": {
+    "exists": true,
+    "zip_ok": true,
+    "size": 24350619,
+    "has_download_concat": false,
+    "has_he_subtitle": true,
+    "has_en_subtitle": false
+  },
+  "files/appendices/stories-before-thought-english.docx": {
+    "exists": true,
+    "zip_ok": true,
+    "size": 24324169,
+    "has_download_concat": false,
+    "has_he_subtitle": false,
+    "has_en_subtitle": true
+  },
+  "V24_FINAL_HARDENING_REPORT_HE.md": {
+    "exists": true
+  }
+}
