@@ -1,0 +1,106 @@
+/* BPI V57 feedback menu: hidden by default, opens only on click. */
+.bpi-v57-feedback-backdrop[hidden],
+.bpi-v57-feedback-backdrop:not([data-open="true"]) {
+  display: none !important;
+}
+.bpi-v57-feedback-backdrop[data-open="true"] {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2147483647 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 24px !important;
+  background: rgba(15, 23, 32, .42) !important;
+  backdrop-filter: blur(2px) !important;
+  box-sizing: border-box !important;
+}
+.bpi-v57-feedback-dialog {
+  width: min(560px, calc(100vw - 34px)) !important;
+  background: #fffaf0 !important;
+  border: 1.5px solid rgba(184, 121, 38, .35) !important;
+  border-radius: 28px !important;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, .24) !important;
+  padding: 26px !important;
+  color: #17202d !important;
+  box-sizing: border-box !important;
+  font-family: Arial, "Noto Sans Hebrew", sans-serif !important;
+}
+html[dir="rtl"] .bpi-v57-feedback-dialog { direction: rtl !important; text-align: right !important; }
+html[dir="ltr"] .bpi-v57-feedback-dialog { direction: ltr !important; text-align: left !important; }
+.bpi-v57-feedback-dialog h2 {
+  margin: 0 0 10px !important;
+  color: #0b3a67 !important;
+  font-size: 22px !important;
+  line-height: 1.25 !important;
+}
+.bpi-v57-feedback-dialog p {
+  margin: 0 0 18px !important;
+  color: #344052 !important;
+  font-size: 15px !important;
+  line-height: 1.55 !important;
+}
+.bpi-v57-feedback-actions {
+  display: grid !important;
+  gap: 12px !important;
+}
+.bpi-v57-feedback-actions a,
+.bpi-v57-feedback-actions button {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 52px !important;
+  border-radius: 999px !important;
+  border: 1.5px solid rgba(184, 121, 38, .32) !important;
+  background: #fff7e8 !important;
+  color: #17202d !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  font-weight: 800 !important;
+  font-size: 15px !important;
+  font-family: inherit !important;
+  box-sizing: border-box !important;
+}
+.bpi-v57-feedback-actions a:hover,
+.bpi-v57-feedback-actions button:hover,
+.bpi-v57-feedback-actions a:focus-visible,
+.bpi-v57-feedback-actions button:focus-visible {
+  outline: none !important;
+  border-color: rgba(184, 121, 38, .72) !important;
+  background: #fff0d6 !important;
+}
+.bpi-v57-feedback-close {
+  margin-top: 14px !important;
+  width: 100% !important;
+  min-height: 38px !important;
+  border: 1px solid rgba(23,32,45,.24) !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  color: #17202d !important;
+  cursor: pointer !important;
+}
+.bpi-v57-feedback-toast {
+  margin-top: 10px !important;
+  font-size: 13px !important;
+  color: #0b3a67 !important;
+  min-height: 18px !important;
+}
+.bpi-v57-nist-fixed-line {
+  direction: rtl !important;
+  unicode-bidi: isolate !important;
+}
+.bpi-v57-nist-title {
+  direction: rtl !important;
+  unicode-bidi: isolate !important;
+  display: inline !important;
+}
+.bpi-v57-nist-sep,
+.bpi-v57-nist-source {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  display: inline-block !important;
+  white-space: nowrap !important;
+}
+@media print {
+  .bpi-v57-feedback-backdrop { display: none !important; }
+}

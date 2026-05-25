@@ -1,0 +1,48 @@
+/* BPI V58: targeted feedback menu only. It must not replace the Critique/Bikoret page. */
+#bpi-v58-feedback-overlay[hidden],
+#bpi-v58-feedback-modal[hidden]{display:none!important;}
+#bpi-v58-feedback-overlay{
+  position:fixed!important; inset:0!important; z-index:2147483000!important;
+  background:rgba(10,22,32,.48)!important; backdrop-filter:blur(2px)!important;
+}
+#bpi-v58-feedback-modal{
+  position:fixed!important; z-index:2147483001!important; inset:50% auto auto 50%!important;
+  transform:translate(-50%,-50%)!important; width:min(620px,calc(100vw - 32px))!important;
+  box-sizing:border-box!important; padding:28px!important; border-radius:26px!important;
+  background:#fffaf0!important; color:#122033!important; border:1px solid rgba(184,121,38,.28)!important;
+  box-shadow:0 24px 80px rgba(0,0,0,.32)!important; direction:inherit!important;
+  font-family:inherit!important; text-align:start!important;
+}
+#bpi-v58-feedback-modal h2{margin:0 0 10px!important;color:#b87926!important;font-size:24px!important;line-height:1.2!important;text-align:start!important;}
+#bpi-v58-feedback-modal p{margin:0 0 18px!important;font-size:15px!important;line-height:1.55!important;color:#243246!important;text-align:start!important;}
+#bpi-v58-feedback-modal .bpi-v58-feedback-actions{display:grid!important;gap:12px!important;}
+#bpi-v58-feedback-modal button,
+#bpi-v58-feedback-modal a.bpi-v58-feedback-action{
+  display:flex!important; align-items:center!important; justify-content:center!important;
+  min-height:48px!important; padding:10px 18px!important; border-radius:999px!important;
+  border:1px solid rgba(184,121,38,.32)!important; background:#fff7e8!important; color:#122033!important;
+  font:inherit!important; font-weight:800!important; text-decoration:none!important; cursor:pointer!important;
+}
+#bpi-v58-feedback-modal button:hover,
+#bpi-v58-feedback-modal a.bpi-v58-feedback-action:hover{background:#fff1d6!important;}
+#bpi-v58-feedback-close{margin-top:10px!important;border-radius:8px!important;min-height:34px!important;background:transparent!important;}
+.bpi-v58-nist-codata-row{direction:rtl!important;text-align:right!important;unicode-bidi:isolate!important;}
+.bpi-v58-nist-codata-row .bpi-v58-source-line{
+  display:inline-flex!important; align-items:baseline!important; justify-content:flex-start!important;
+  flex-direction:row!important; direction:rtl!important; gap:.36em!important; unicode-bidi:isolate!important;
+  max-width:100%!important; white-space:normal!important;
+}
+.bpi-v58-nist-codata-row .bpi-v58-source-title{direction:rtl!important;unicode-bidi:isolate!important;}
+.bpi-v58-nist-codata-row .bpi-v58-codata-en,
+.bpi-v58-nist-codata-row .bpi-v58-source-org{direction:ltr!important;unicode-bidi:isolate!important;display:inline-block!important;}
+.bpi-v58-nist-codata-row .bpi-v58-sep{direction:ltr!important;unicode-bidi:isolate!important;}
+@media print{
+  #bpi-v58-feedback-overlay,#bpi-v58-feedback-modal{display:none!important;}
+  .document-backbar,.skip-link,nav.site-nav,header .nav,header nav{display:none!important;}
+  figure,.chapter-opening,.chapter-figure,.image-frame,.section-visual,.compact-section-visual{break-inside:avoid!important;page-break-inside:avoid!important;}
+  figure img,.chapter-opening img,.chapter-figure img,.image-frame img,.section-visual img,.compact-section-visual img,img.bpi-v58-restored-bg-img{
+    display:block!important;visibility:visible!important;opacity:1!important;
+    width:auto!important;max-width:82%!important;height:auto!important;max-height:95mm!important;
+    object-fit:contain!important;object-position:center center!important;margin:12px auto!important;
+  }
+}
