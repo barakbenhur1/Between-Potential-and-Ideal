@@ -1904,10 +1904,47 @@ body.design-prompt-theme img.content-card-image {
 /* BPI V86 - close cover-to-TOC gap in theory documents.
    Scope: generated theory documents only. Does not affect story blurbs/content. */
 @media screen {
-  body.design-prompt-theme:not(.public-page) main {
+  body.design-prompt-theme:not(.public-page) main,
+  main {
     padding-top: 28px !important;
     padding-bottom: 48px !important;
   }
+
+  /* The logical exports had an explicit spacer paragraph after the cover.
+     Hide it even if an older generated file still contains it. */
+  .logical-cover-spacer,
+  p.logical-cover-spacer,
+  .cover-spacer,
+  p.cover-spacer {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    line-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    break-before: auto !important;
+    page-break-before: auto !important;
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }
+
+  .logical-cover-spacer + div[style*="page-break-after"],
+  p.logical-cover-spacer + div[style*="page-break-after"],
+  .cover-spacer + div[style*="page-break-after"] {
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    break-before: auto !important;
+    page-break-before: auto !important;
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }
+
   body.design-prompt-theme:not(.public-page) .cover,
   body.design-prompt-theme:not(.public-page) .logical-cover,
   body.design-prompt-theme:not(.public-page) .document-cover,
@@ -1916,7 +1953,7 @@ body.design-prompt-theme img.content-card-image {
   main > .logical-cover:first-child,
   main > .document-cover:first-child,
   main > .page.cover:first-child {
-    min-height: auto !important;
+    min-height: 0 !important;
     height: auto !important;
     max-height: none !important;
     padding-top: 46px !important;
@@ -1925,6 +1962,7 @@ body.design-prompt-theme img.content-card-image {
     break-after: auto !important;
     page-break-after: auto !important;
   }
+
   body.design-prompt-theme:not(.public-page) .cover + .document-screen-toc,
   body.design-prompt-theme:not(.public-page) .logical-cover + .document-screen-toc,
   body.design-prompt-theme:not(.public-page) .document-cover + .document-screen-toc,
@@ -1933,6 +1971,9 @@ body.design-prompt-theme img.content-card-image {
   main > .logical-cover:first-child + .document-screen-toc,
   main > .document-cover:first-child + .document-screen-toc,
   main > .page.cover:first-child + .document-screen-toc,
+  .logical-cover + .document-screen-toc,
+  .logical-cover + .logical-cover-spacer + .document-screen-toc,
+  .logical-cover + .logical-cover-spacer + div + .document-screen-toc,
   .document-screen-toc,
   #interactive-toc {
     break-before: auto !important;
@@ -1941,6 +1982,19 @@ body.design-prompt-theme img.content-card-image {
   }
 }
 @media print {
+  .logical-cover-spacer,
+  p.logical-cover-spacer,
+  .cover-spacer,
+  p.cover-spacer,
+  .logical-cover-spacer + div[style*="page-break-after"],
+  p.logical-cover-spacer + div[style*="page-break-after"] {
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
   body.design-prompt-theme:not(.public-page) .cover,
   body.design-prompt-theme:not(.public-page) .logical-cover,
   body.design-prompt-theme:not(.public-page) .document-cover,
@@ -1980,7 +2034,7 @@ body.design-prompt-theme img.content-card-image {
 </div>
 </div>
 </section>
-<div style="page-break-after:always; break-after:page; height:0;"></div><section class="document-screen-toc" dir="ltr" id="interactive-toc"><h2>Interactive Table of Contents</h2><p>Click any item to jump directly to the relevant place in the document, including opening material, chapters, subsections, and closing sections.</p><ol><li><a href="#cover-page">Cover</a></li><li><a href="#author-note">Author's Note</a></li><li><a href="#Abstract">Abstract</a></li><li class="toc-sub"><a href="#The-Manifesto-of-Divine-Movement-The-Metamorphosis-of-Grace">The
+<section class="document-screen-toc" dir="ltr" id="interactive-toc"><h2>Interactive Table of Contents</h2><p>Click any item to jump directly to the relevant place in the document, including opening material, chapters, subsections, and closing sections.</p><ol><li><a href="#cover-page">Cover</a></li><li><a href="#author-note">Author's Note</a></li><li><a href="#Abstract">Abstract</a></li><li class="toc-sub"><a href="#The-Manifesto-of-Divine-Movement-The-Metamorphosis-of-Grace">The
 Manifesto of Divine Movement: The Metamorphosis of Grace</a></li><li class="toc-sub"><a href="#Declaration">Declaration</a></li><li class="toc-sub"><a href="#The-Logical-Refinement">The Logical Refinement</a></li><li><a href="#The-Symphony-of-the-Whole-and-the-Gift-of-Friction">The Symphony
 of the Whole and the Gift of Friction</a></li><li class="toc-sub"><a href="#The-Gift-of-Friction">The Gift of Friction</a></li><li class="toc-sub"><a href="#The-Grace-of-Relinquishment-as-the-Sign-of-True-Power">The Grace
 of Relinquishment as the Sign of True Power</a></li><li class="toc-sub"><a href="#The-Witness-Mandate-of-Intelligence">The Witness Mandate of
