@@ -1,0 +1,247 @@
+#!/usr/bin/env python3
+"""
+BPI V86 - close the large visual gap between theory covers and the interactive TOC.
+
+This is intentionally narrow:
+- targets generated theory document HTML files, especially the logical/editorial-tightened version;
+- does not touch story blurbs or body text;
+- keeps print/PDF cover page separation, but prevents an extra blank/gap before the TOC;
+- rebuilds PDF/DOCX when optional local tools are available.
+"""
+from __future__ import annotations
+
+import re
+import shutil
+import subprocess
+import sys
+from datetime import datetime
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+REPORT_DIR = ROOT / "_product_docs" / "reports"
+REPORT_DIR.mkdir(parents=True, exist_ok=True)
+REPORT = REPORT_DIR / "BPI_V86_CLOSE_THEORY_COVER_TOC_GAP_REPORT_HE.md"
+
+STYLE_ID = "bpi-v86-close-theory-cover-toc-gap"
+STYLE_BLOCK = f"""
+<style id=\"{STYLE_ID}\">
+/* BPI V86 - close cover-to-TOC gap in theory documents.
+   Scope: generated theory documents only. Does not affect story blurbs/content. */
+@media screen {{
+  body.design-prompt-theme:not(.public-page) main {{
+    padding-top: 28px !important;
+    padding-bottom: 48px !important;
+  }}
+  body.design-prompt-theme:not(.public-page) .cover,
+  body.design-prompt-theme:not(.public-page) .logical-cover,
+  body.design-prompt-theme:not(.public-page) .document-cover,
+  body.design-prompt-theme:not(.public-page) .page.cover,
+  main > .cover:first-child,
+  main > .logical-cover:first-child,
+  main > .document-cover:first-child,
+  main > .page.cover:first-child {{
+    min-height: auto !important;
+    height: auto !important;
+    max-height: none !important;
+    padding-top: 46px !important;
+    padding-bottom: 38px !important;
+    margin-bottom: 22px !important;
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }}
+  body.design-prompt-theme:not(.public-page) .cover + .document-screen-toc,
+  body.design-prompt-theme:not(.public-page) .logical-cover + .document-screen-toc,
+  body.design-prompt-theme:not(.public-page) .document-cover + .document-screen-toc,
+  body.design-prompt-theme:not(.public-page) .page.cover + .document-screen-toc,
+  main > .cover:first-child + .document-screen-toc,
+  main > .logical-cover:first-child + .document-screen-toc,
+  main > .document-cover:first-child + .document-screen-toc,
+  main > .page.cover:first-child + .document-screen-toc,
+  .document-screen-toc,
+  #interactive-toc {{
+    break-before: auto !important;
+    page-break-before: auto !important;
+    margin-top: 18px !important;
+  }}
+}}
+@media print {{
+  body.design-prompt-theme:not(.public-page) .cover,
+  body.design-prompt-theme:not(.public-page) .logical-cover,
+  body.design-prompt-theme:not(.public-page) .document-cover,
+  body.design-prompt-theme:not(.public-page) .page.cover,
+  main > .cover:first-child,
+  main > .logical-cover:first-child,
+  main > .document-cover:first-child,
+  main > .page.cover:first-child {{
+    height: auto !important;
+    min-height: calc(297mm - 36mm) !important;
+    max-height: none !important;
+    padding: 16mm 14mm 12mm !important;
+    margin-bottom: 0 !important;
+    break-after: page !important;
+    page-break-after: always !important;
+    overflow: hidden !important;
+  }}
+  body.design-prompt-theme:not(.public-page) .document-screen-toc,
+  body.design-prompt-theme:not(.public-page) #interactive-toc,
+  .document-screen-toc,
+  #interactive-toc {{
+    break-before: auto !important;
+    page-break-before: auto !important;
+    margin-top: 0 !important;
+  }}
+}}
+</style>
+""".strip()
+
+TARGET_GLOBS = [
+    "site/files/editorial-tightened/between-potential-and-ideal-tightened-*.html",
+    "site/files/**/between-potential-and-ideal*.html",
+    "site/files/**/between_potential_and_ideal*.html",
+]
+EXCLUDE_PARTS = (
+    "/appendices/",
+    "/ai-believes/",
+    "/stories/",
+)
+
+
+def is_theory_doc(path: Path, text: str) -> bool:
+    rel = "/" + path.relative_to(ROOT).as_posix()
+    if any(part in rel for part in EXCLUDE_PARTS):
+        return False
+    if "document-screen-toc" not in text and "interactive-toc" not in text:
+        return False
+    hay = (str(path).lower() + "\n" + text[:8000].lower())
+    return "potential" in hay or "פוטנציאל" in hay or "ideal" in hay or "אידיאל" in hay
+
+
+def patch_html(path: Path) -> bool:
+    text = path.read_text(encoding="utf-8")
+    if not is_theory_doc(path, text):
+        return False
+
+    text2 = re.sub(
+        rf"\n?<style id=[\"']{re.escape(STYLE_ID)}[\"']>.*?</style>",
+        "",
+        text,
+        flags=re.S,
+    )
+    if "</head>" in text2:
+        text2 = text2.replace("</head>", STYLE_BLOCK + "\n</head>", 1)
+    else:
+        text2 = STYLE_BLOCK + "\n" + text2
+
+    if text2 != text:
+        path.write_text(text2, encoding="utf-8")
+        return True
+    return False
+
+
+def rebuild_pdf(html_path: Path, report: list[str]) -> None:
+    pdf_path = html_path.with_suffix(".pdf")
+    try:
+        from weasyprint import HTML  # type: ignore
+    except Exception:
+        report.append(f"- PDF skipped, weasyprint unavailable: `{pdf_path.relative_to(ROOT)}`")
+        return
+    try:
+        if pdf_path.exists():
+            shutil.copy2(pdf_path, pdf_path.with_suffix(pdf_path.suffix + ".v86.bak"))
+        HTML(filename=str(html_path)).write_pdf(str(pdf_path))
+        report.append(f"- PDF rebuilt: `{pdf_path.relative_to(ROOT)}`")
+        cleanup_blank_pdf_pages(pdf_path, report)
+    except Exception as exc:
+        report.append(f"- PDF rebuild failed for `{pdf_path.relative_to(ROOT)}`: {exc}")
+
+
+def cleanup_blank_pdf_pages(pdf_path: Path, report: list[str]) -> None:
+    try:
+        import fitz  # type: ignore
+    except Exception:
+        return
+    try:
+        doc = fitz.open(pdf_path)
+        keep = []
+        removed = 0
+        for i, page in enumerate(doc):
+            text = page.get_text("text").strip()
+            images = page.get_images(full=True)
+            drawings = page.get_drawings()
+            is_blank = len(text) < 3 and not images and not drawings
+            if is_blank:
+                removed += 1
+            else:
+                keep.append(i)
+        if removed and keep:
+            out = fitz.open()
+            for i in keep:
+                out.insert_pdf(doc, from_page=i, to_page=i)
+            tmp = pdf_path.with_suffix(".v86.tmp.pdf")
+            out.save(tmp)
+            out.close()
+            doc.close()
+            tmp.replace(pdf_path)
+            report.append(f"  - blank PDF pages removed: {removed}")
+        else:
+            doc.close()
+    except Exception as exc:
+        report.append(f"  - blank-page cleanup skipped for `{pdf_path.relative_to(ROOT)}`: {exc}")
+
+
+def rebuild_docx(html_path: Path, report: list[str]) -> None:
+    pandoc = shutil.which("pandoc")
+    docx_path = html_path.with_suffix(".docx")
+    if not pandoc:
+        report.append(f"- DOCX skipped, pandoc unavailable: `{docx_path.relative_to(ROOT)}`")
+        return
+    try:
+        if docx_path.exists():
+            shutil.copy2(docx_path, docx_path.with_suffix(docx_path.suffix + ".v86.bak"))
+        subprocess.run(
+            [pandoc, str(html_path), "--from", "html", "--to", "docx", "--standalone", "-o", str(docx_path)],
+            check=True,
+            cwd=ROOT,
+        )
+        report.append(f"- DOCX rebuilt: `{docx_path.relative_to(ROOT)}`")
+    except Exception as exc:
+        report.append(f"- DOCX rebuild failed for `{docx_path.relative_to(ROOT)}`: {exc}")
+
+
+def main() -> int:
+    candidates: list[Path] = []
+    for pattern in TARGET_GLOBS:
+        candidates.extend(ROOT.glob(pattern))
+    unique = sorted(set(p for p in candidates if p.is_file()))
+
+    patched: list[Path] = []
+    report: list[str] = [
+        "# BPI V86 - סגירת הרווח בין שער התאוריה לתוכן העניינים",
+        "",
+        f"Generated: {datetime.utcnow().isoformat(timespec='seconds')}Z",
+        "",
+        "היקף: קבצי התאוריה בלבד, עם דגש על הגרסה הלוגית / editorial-tightened.",
+        "התיקון לא משנה תוכן, בלארבים, כותרות, או גוף טקסט. הוא מוסיף שכבת CSS אחרונה שמבטלת את הרווח הגדול במסך ומונעת דפים ריקים בייצוא.",
+        "",
+    ]
+
+    for path in unique:
+        if patch_html(path):
+            patched.append(path)
+            report.append(f"- HTML patched: `{path.relative_to(ROOT)}`")
+            rebuild_pdf(path, report)
+            rebuild_docx(path, report)
+
+    if not patched:
+        report.append("- No matching theory HTML files required changes.")
+
+    REPORT.write_text("\n".join(report) + "\n", encoding="utf-8")
+    print(f"Patched HTML files: {len(patched)}")
+    for p in patched:
+        print(f" - {p.relative_to(ROOT)}")
+    print(f"Report: {REPORT.relative_to(ROOT)}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
