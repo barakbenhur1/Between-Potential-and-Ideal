@@ -1706,7 +1706,182 @@ body.design-prompt-theme img.content-card-image {
   }
 }
 </style>
-</head><body class="design-prompt-theme public-page appendix-document-page"><main id="main"><section class="logical-cover" dir="ltr" id="cover-page" style="height:248mm; min-height:248mm; box-sizing:border-box; padding:28mm 18mm 20mm; text-align:center; background:#fffaf0;">
+
+
+
+<style id="v86-logical-print-only-cover-fix">
+/* V86 — print/export-only repair.
+   This intentionally does NOT style @media screen, so the live HTML display keeps the site's normal design.
+   It only constrains the cover during PDF/print export to avoid broken cover layout and blank pages. */
+
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm 16mm;
+  }
+
+  html, body {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    overflow: visible !important;
+    background: #fffaf0 !important;
+  }
+
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  body.logical-document-page .cover,
+  body.logical-document-page .title-page,
+  body.logical-document-page .document-cover,
+  body.logical-document-page .front-cover,
+  body.logical-document-page section.cover,
+  body .logical-cover,
+  body .cover.logical-cover {
+    box-sizing: border-box !important;
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    margin: 0 auto !important;
+    padding: 9mm 0 6mm !important;
+    overflow: visible !important;
+    text-align: center !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+
+  body.logical-document-page .cover + *,
+  body.logical-document-page .title-page + *,
+  body.logical-document-page .document-cover + *,
+  body.logical-document-page .front-cover + *,
+  body .logical-cover + * {
+    page-break-before: auto !important;
+    break-before: auto !important;
+  }
+
+  body.logical-document-page .cover h1,
+  body.logical-document-page .title-page h1,
+  body.logical-document-page .document-cover h1,
+  body.logical-document-page .front-cover h1,
+  body .logical-cover h1 {
+    display: block !important;
+    width: 100% !important;
+    max-width: 165mm !important;
+    margin: 7mm auto 4mm !important;
+    padding: 0 !important;
+    text-align: center !important;
+    line-height: 1.12 !important;
+    font-size: 29pt !important;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+
+  body.logical-document-page .cover h2,
+  body.logical-document-page .title-page h2,
+  body.logical-document-page .document-cover h2,
+  body.logical-document-page .front-cover h2,
+  body .logical-cover h2,
+  body.logical-document-page .cover p,
+  body.logical-document-page .title-page p,
+  body.logical-document-page .document-cover p,
+  body.logical-document-page .front-cover p,
+  body .logical-cover p {
+    max-width: 155mm !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    line-height: 1.35 !important;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+
+  body.logical-document-page .cover figure,
+  body.logical-document-page .title-page figure,
+  body.logical-document-page .document-cover figure,
+  body.logical-document-page .front-cover figure,
+  body .logical-cover figure,
+  body.logical-document-page .cover .image-frame,
+  body.logical-document-page .title-page .image-frame,
+  body.logical-document-page .document-cover .image-frame,
+  body.logical-document-page .front-cover .image-frame,
+  body .logical-cover .image-frame {
+    display: block !important;
+    float: none !important;
+    clear: both !important;
+    box-sizing: border-box !important;
+    width: 132mm !important;
+    max-width: 132mm !important;
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    margin: 8mm auto 6mm !important;
+    padding: 3mm !important;
+    text-align: center !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    overflow: hidden !important;
+  }
+
+  body.logical-document-page .cover img,
+  body.logical-document-page .title-page img,
+  body.logical-document-page .document-cover img,
+  body.logical-document-page .front-cover img,
+  body .logical-cover img {
+    display: block !important;
+    float: none !important;
+    width: auto !important;
+    max-width: 124mm !important;
+    height: auto !important;
+    max-height: 66mm !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    margin: 0 auto !important;
+  }
+
+  body.logical-document-page .cover figcaption,
+  body.logical-document-page .title-page figcaption,
+  body.logical-document-page .document-cover figcaption,
+  body.logical-document-page .front-cover figcaption,
+  body .logical-cover figcaption {
+    display: block !important;
+    width: 100% !important;
+    max-width: 125mm !important;
+    margin: 3mm auto 0 !important;
+    text-align: center !important;
+    line-height: 1.35 !important;
+    font-size: 9.5pt !important;
+  }
+
+  section:empty,
+  div:empty,
+  p:empty,
+  .empty-page,
+  .blank-page,
+  .page-spacer,
+  .spacer-page {
+    display: none !important;
+    min-height: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    page-break-before: auto !important;
+    page-break-after: auto !important;
+    break-before: auto !important;
+    break-after: auto !important;
+  }
+}
+</style>
+
+</head><body class="design-prompt-theme public-page appendix-document-page logical-document-page"><main id="main"><section class="logical-cover" dir="ltr" id="cover-page" style="height:248mm; min-height:248mm; box-sizing:border-box; padding:28mm 18mm 20mm; text-align:center; background:#fffaf0;">
 <p style="margin:0 0 10mm; color:#5e5346; font-size:15px; text-align:center;">THE LOGICAL VERSION</p>
 <h1 style="text-align:center; font-size:38px; line-height:1.14; margin:0 0 7mm; color:#17202d;">Between Potential and Ideal</h1>
 <p style="text-align:center; font-size:20px; color:#344052; margin:0 0 8mm;">A tightened version: structure, distinctions, conditions, and conclusions</p>
