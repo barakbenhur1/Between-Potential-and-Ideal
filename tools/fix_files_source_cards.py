@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
-"""Fix Files page source-card duplication.
+"""Fix duplicated source-format buttons on public reader pages.
 
 Visible product rule:
 - "Inside the theory" / "בתוך התאוריה" is the reader path and may show HTML/PDF.
 - "Source files" / "קבצי מקור" is the source/editing path and should show only formats
   that are not already duplicated there: DOCX and MD.
 
-This script is deliberately narrow. It patches the public Files pages only, and does not
-change blurbs, theory text, document exports, or files under site/files.
+This script patches both places where these cards can appear:
+- Files pages
+- Applied / יישום pages
+
+It does not change blurbs, theory text, document exports, or files under site/files.
 """
 from __future__ import annotations
 
@@ -23,28 +26,43 @@ ROOT = Path(__file__).resolve().parents[1]
 REPORT = ROOT / "_product_docs" / "reports" / "BPI_V88_FILES_SOURCE_CARD_DEDUPE_REPORT_HE.md"
 REPORT.parent.mkdir(parents=True, exist_ok=True)
 
+HE_LINKS = [
+    ("DOCX מלא", "../../files/between-potential-and-ideal-he.docx"),
+    ("MD מלא", "../../files/between-potential-and-ideal-he.md"),
+    ("DOCX לוגי", "../../files/editorial-tightened/between-potential-and-ideal-tightened-he.docx"),
+    ("MD לוגי", "../../files/editorial-tightened/between-potential-and-ideal-tightened-he.md"),
+]
+EN_LINKS = [
+    ("Full DOCX", "../../files/between-potential-and-ideal-en.docx"),
+    ("Full MD", "../../files/between-potential-and-ideal-en.md"),
+    ("Logical DOCX", "../../files/editorial-tightened/between-potential-and-ideal-tightened-en.docx"),
+    ("Logical MD", "../../files/editorial-tightened/between-potential-and-ideal-tightened-en.md"),
+]
+
 PAGES = [
     {
         "path": ROOT / "site" / "pages" / "he" / "files.html",
         "source_title_parts": ["קבצי מקור"],
         "source_desc": "כאן נשארים רק קבצי מקור ועריכה שלא מופיעים כבר בכרטיס בתוך התאוריה: DOCX ו־MD בגרסה המלאה והלוגית.",
-        "compact_links": [
-            ("DOCX מלא", "../../files/between-potential-and-ideal-he.docx"),
-            ("MD מלא", "../../files/between-potential-and-ideal-he.md"),
-            ("DOCX לוגי", "../../files/editorial-tightened/between-potential-and-ideal-tightened-he.docx"),
-            ("MD לוגי", "../../files/editorial-tightened/between-potential-and-ideal-tightened-he.md"),
-        ],
+        "compact_links": HE_LINKS,
+    },
+    {
+        "path": ROOT / "site" / "pages" / "he" / "applied.html",
+        "source_title_parts": ["קבצי מקור"],
+        "source_desc": "כאן נשארים רק קבצי מקור ועריכה שלא מופיעים כבר בכרטיס בתוך התאוריה: DOCX ו־MD בגרסה המלאה והלוגית.",
+        "compact_links": HE_LINKS,
     },
     {
         "path": ROOT / "site" / "pages" / "en" / "files-en.html",
         "source_title_parts": ["source files", "full source files", "complete source files"],
         "source_desc": "Only source/editing formats that are not already shown in the reading path remain here: DOCX and MD.",
-        "compact_links": [
-            ("Full DOCX", "../../files/between-potential-and-ideal-en.docx"),
-            ("Full MD", "../../files/between-potential-and-ideal-en.md"),
-            ("Logical DOCX", "../../files/editorial-tightened/between-potential-and-ideal-tightened-en.docx"),
-            ("Logical MD", "../../files/editorial-tightened/between-potential-and-ideal-tightened-en.md"),
-        ],
+        "compact_links": EN_LINKS,
+    },
+    {
+        "path": ROOT / "site" / "pages" / "en" / "applied-en.html",
+        "source_title_parts": ["source files", "full source files", "complete source files"],
+        "source_desc": "Only source/editing formats that are not already shown in the reading path remain here: DOCX and MD.",
+        "compact_links": EN_LINKS,
     },
 ]
 
@@ -216,6 +234,7 @@ def main() -> int:
         f"Generated: {datetime.utcnow().isoformat(timespec='seconds')}Z",
         "",
         "הכלל: קבצי מקור מציגים רק פורמטים שלא מופיעים כבר במסלול הקריאה: DOCX/MD ולא HTML/PDF.",
+        "ההחלה כוללת את עמודי הקבצים ואת עמודי היישום בעברית ובאנגלית.",
         "",
     ]
     changed = 0
@@ -227,7 +246,7 @@ def main() -> int:
 
     REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"changed pages: {changed}")
-    for line in lines[6:]:
+    for line in lines[7:]:
         print(line)
     print(f"report: {REPORT.relative_to(ROOT)}")
     return 0
