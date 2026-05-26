@@ -1,6 +1,7 @@
-/* V119 — Home mobile prepaint fix.
+/* V120 — Home mobile prepaint fix.
    Loaded from <head> so the Home page never flashes the old mobile top bar.
-   Scope: Home entry pages only because only index.html/en.html load this file. */
+   Scope: Home entry pages only because only index.html/en.html load this file.
+   Mobile Home content is wider: only outer content gutters changed. */
 @media (max-width:860px){
   html,body{width:100%!important;max-width:100%!important;overflow-x:hidden!important;}
   body.public-page{
@@ -34,8 +35,8 @@
     scroll-snap-align:none!important;
   }
   body.public-page .breadcrumbs{
-    width:min(100% - 24px,1120px)!important;
-    max-width:calc(100vw - 24px)!important;
+    width:min(100% - 12px,1120px)!important;
+    max-width:calc(100vw - 12px)!important;
     margin:52px auto 14px!important;
     box-sizing:border-box!important;
   }
@@ -44,8 +45,8 @@
   body.public-page .notice-box,
   body.public-page .hub-grid,
   body.public-page .reading-path-cta{
-    width:min(100% - 24px,1120px)!important;
-    max-width:calc(100vw - 24px)!important;
+    width:min(100% - 12px,1120px)!important;
+    max-width:calc(100vw - 12px)!important;
     margin-left:auto!important;
     margin-right:auto!important;
     box-sizing:border-box!important;
@@ -53,8 +54,8 @@
   body.public-page .concise-hero,
   body.public-page .hero.concise-hero{
     display:block!important;
-    width:min(100% - 24px,1120px)!important;
-    max-width:calc(100vw - 24px)!important;
+    width:min(100% - 12px,1120px)!important;
+    max-width:calc(100vw - 12px)!important;
     margin:0 auto 26px!important;
     box-sizing:border-box!important;
     padding:clamp(34px,8vw,56px) clamp(24px,6vw,42px)!important;
@@ -111,14 +112,14 @@
 }
 @media (max-width:390px){
   body.public-page .breadcrumbs{
-    width:min(100% - 20px,1120px)!important;
-    max-width:calc(100vw - 20px)!important;
+    width:min(100% - 10px,1120px)!important;
+    max-width:calc(100vw - 10px)!important;
     margin-top:48px!important;
   }
   body.public-page .concise-hero,
   body.public-page .hero.concise-hero{
-    width:min(100% - 20px,1120px)!important;
-    max-width:calc(100vw - 20px)!important;
+    width:min(100% - 10px,1120px)!important;
+    max-width:calc(100vw - 10px)!important;
     padding:44px 22px!important;
     border-radius:28px!important;
   }
