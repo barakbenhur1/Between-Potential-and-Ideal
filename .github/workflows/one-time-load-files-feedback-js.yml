@@ -1,0 +1,51 @@
+name: One-time load files feedback JS
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/one-time-load-files-feedback-js.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  inject-js:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Inject JS into public pages
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          pages = [Path('site/index.html'), Path('site/en.html')]
+          pages += sorted(Path('site/pages').glob('**/*.html'))
+          for p in pages:
+              if not p.exists():
+                  continue
+              html = p.read_text(encoding='utf-8')
+              if 'bpi-files-feedback-fixes.js' in html:
+                  continue
+              tag = '<script src="assets/bpi-files-feedback-fixes.js?v=20260526-files-feedback" defer></script>' if p.parent == Path('site') else '<script src="../../assets/bpi-files-feedback-fixes.js?v=20260526-files-feedback" defer></script>'
+              if '</body>' in html:
+                  html = html.replace('</body>', tag + '\n</body>', 1)
+              else:
+                  html += '\n' + tag + '\n'
+              p.write_text(html, encoding='utf-8')
+              print('injected', p)
+          PY
+      - name: Remove workflow
+        run: rm -f .github/workflows/one-time-load-files-feedback-js.yml
+      - name: Commit JS loader injection
+        run: |
+          git config user.name "Barak Ben Hur via ChatGPT"
+          git config user.email "barakbenhur@gmail.com"
+          if ! git diff --quiet; then
+            git add site/index.html site/en.html site/pages .github/workflows/one-time-load-files-feedback-js.yml
+            git commit -m "Load files filtering and feedback mail JS"
+            git push
+          else
+            echo "No changes to commit"
+          fi
