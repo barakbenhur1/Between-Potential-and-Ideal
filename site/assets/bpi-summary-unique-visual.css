@@ -1,19 +1,21 @@
-/* V103 — summary tab visual uses a NEW unique series-style illustration.
-   Summary no longer reuses Core and no longer reuses Methodology. */
+/* V104 — summary tab visual uses the requested existing unused tab image.
+   Summary no longer uses Core, Methodology, or the generated SVG. */
 body.section-summary .tab-visual.compact-section-visual > img[src$="tab_core_unique.png"],
-body.section-summary .tab-visual.compact-section-visual > img[src$="tab_methodology.png"]{
-  content:url("../figures/tab_summary_unique.svg")!important;
+body.section-summary .tab-visual.compact-section-visual > img[src$="tab_methodology.png"],
+body.section-summary .tab-visual.compact-section-visual > img[src$="tab_summary_unique.svg"]{
+  content:url("../figures/tab_applied.png")!important;
 }
-body.section-summary .page-title-mark[src$="thumb_core.png"]{
-  content:url("../figures/tab_summary_unique.svg")!important;
+body.section-summary .page-title-mark[src$="thumb_core.png"],
+body.section-summary .page-title-mark[src$="tab_summary_unique.svg"]{
+  content:url("../figures/tab_applied.png")!important;
 }
 body.section-summary .tab-visual figcaption{
   font-size:0!important;
 }
 body.section-summary .tab-visual figcaption::after{
-  content:"איור תקציר: דפי קריאה, שער מרוכז ומסלול שמזקק את המודל";
+  content:"איור תקציר: מעבר בין שכבות, שערים וגשר אל מסלול הקריאה";
   font-size:13px!important;
 }
 body.public-page-en.section-summary .tab-visual figcaption::after{
-  content:"Summary illustration: reading pages, a focused gate, and a path that distills the model";
+  content:"Summary illustration: passages, layers, gates, and a bridge into the reading path";
 }
