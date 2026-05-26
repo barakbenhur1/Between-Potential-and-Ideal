@@ -1,109 +1,13 @@
 # BPI V93 - סריקת שאריות אמון ותיקונים שמרניים
 
-Generated: 2026-05-26T02:38:35Z
+Generated: 2026-05-26T02:55:44Z
 
 העיקרון: לתקן רק שאריות ברורות, מונחים מפורקים ושגיאות ריווח נקודתיות. לא שונו כותרות/תתי־כותרות/תמונות/עיצוב, ולא בוצע שכתוב רעיוני רחב.
 
-Changed files: 18
+Changed files: 0
 
 ## תיקונים שבוצעו
-### `site/files/ai-believes/when-i-am-also-you-he.md`
-- `ה אידיאל` → `האידיאל` (1)
-### `site/files/ai-believes/when-i-am-also-you-he.txt`
-- `ה אידיאל` → `האידיאל` (1)
-### `site/files/appendices/stories-before-thought-hebrew-rtl.md`
-- `אידיאל י` → `אידיאלי` (1)
-- `שה אידיאל` → `שהאידיאל` (1)
-- `ה אידיאל` → `האידיאל` (2)
-### `site/files/appendices/stories-before-thought-hebrew-rtl.txt`
-- `אידיאל י` → `אידיאלי` (1)
-- `שה אידיאל` → `שהאידיאל` (1)
-- `ה אידיאל` → `האידיאל` (2)
-### `site/files/between-potential-and-ideal-en-editorial.html`
-- formal token normalized to `NP` (3)
-- formal token normalized to `QBF` (1)
-- formal token normalized to `PSPACE` (1)
-### `site/files/between-potential-and-ideal-en-editorial.md`
-- formal token normalized to `NP` (3)
-- formal token normalized to `QBF` (1)
-- formal token normalized to `PSPACE` (1)
-### `site/files/between-potential-and-ideal-en-editorial.txt`
-- formal token normalized to `NP` (69)
-- formal token normalized to `QBF` (9)
-- formal token normalized to `PSPACE` (7)
-- formal token normalized to `PH` (3)
-- formal token normalized to `SAT` (5)
-### `site/files/between-potential-and-ideal-en.md`
-- formal token normalized to `NP` (3)
-- formal token normalized to `QBF` (1)
-- formal token normalized to `PSPACE` (1)
-### `site/files/between-potential-and-ideal-he-editorial.html`
-- `אידיאל י` → `אידיאלי` (2)
-- `שה אידיאל` → `שהאידיאל` (2)
-- `ה אידיאל` → `האידיאל` (6)
-- formal token normalized to `NP` (3)
-- formal token normalized to `QBF` (1)
-- formal token normalized to `PSPACE` (1)
-### `site/files/between-potential-and-ideal-he-editorial.md`
-- `אידיאל י` → `אידיאלי` (2)
-- `שה אידיאל` → `שהאידיאל` (2)
-- `ה אידיאל` → `האידיאל` (6)
-- formal token normalized to `NP` (3)
-- formal token normalized to `QBF` (1)
-- formal token normalized to `PSPACE` (1)
-### `site/files/between-potential-and-ideal-he-editorial.txt`
-- `אידיאל י` → `אידיאלי` (3)
-- `שה אידיאל` → `שהאידיאל` (2)
-- `ה אידיאל` → `האידיאל` (7)
-- formal token normalized to `NP` (72)
-- formal token normalized to `QBF` (9)
-- formal token normalized to `PSPACE` (7)
-- formal token normalized to `PH` (3)
-- formal token normalized to `SAT` (5)
-### `site/files/between-potential-and-ideal-he.md`
-- `אידיאל י` → `אידיאלי` (2)
-- `שה אידיאל` → `שהאידיאל` (1)
-- `ה אידיאל` → `האידיאל` (6)
-- formal token normalized to `NP` (3)
-- formal token normalized to `QBF` (1)
-- formal token normalized to `PSPACE` (1)
-### `site/files/editorial-tightened/between-potential-and-ideal-tightened-en.html`
-- formal token normalized to `NP` (3)
-- formal token normalized to `QBF` (1)
-- formal token normalized to `PSPACE` (1)
-### `site/files/editorial-tightened/between-potential-and-ideal-tightened-en.md`
-- formal token normalized to `NP` (3)
-- formal token normalized to `QBF` (1)
-- formal token normalized to `PSPACE` (1)
-### `site/files/editorial-tightened/between-potential-and-ideal-tightened-en.txt`
-- formal token normalized to `NP` (69)
-- formal token normalized to `QBF` (9)
-- formal token normalized to `PSPACE` (7)
-- formal token normalized to `PH` (3)
-- formal token normalized to `SAT` (5)
-### `site/files/editorial-tightened/between-potential-and-ideal-tightened-he.html`
-- `אידיאל י` → `אידיאלי` (2)
-- `שה אידיאל` → `שהאידיאל` (1)
-- `ה אידיאל` → `האידיאל` (4)
-- formal token normalized to `NP` (3)
-- formal token normalized to `QBF` (1)
-- formal token normalized to `PSPACE` (1)
-### `site/files/editorial-tightened/between-potential-and-ideal-tightened-he.md`
-- `אידיאל י` → `אידיאלי` (2)
-- `שה אידיאל` → `שהאידיאל` (1)
-- `ה אידיאל` → `האידיאל` (4)
-- formal token normalized to `NP` (3)
-- formal token normalized to `QBF` (1)
-- formal token normalized to `PSPACE` (1)
-### `site/files/editorial-tightened/between-potential-and-ideal-tightened-he.txt`
-- `אידיאל י` → `אידיאלי` (2)
-- `שה אידיאל` → `שהאידיאל` (1)
-- `ה אידיאל` → `האידיאל` (4)
-- formal token normalized to `NP` (72)
-- formal token normalized to `QBF` (9)
-- formal token normalized to `PSPACE` (7)
-- formal token normalized to `PH` (3)
-- formal token normalized to `SAT` (5)
+- לא נמצאו תיקונים שמרניים לביצוע.
 
 ## מופעים שדורשים בדיקה ידנית ולא תוקנו אוטומטית
 ### `site/_product_docs/notes/ORIGINAL_README.md`
