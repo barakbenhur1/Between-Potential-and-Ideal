@@ -1,0 +1,94 @@
+name: One-time align home CSS with site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/one-time-align-home-css-with-site.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  align-home-css:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Make home pages use the same stylesheet as the rest of the site
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          VERSION = '20260526-home-main-site-style-v112'
+          changed = []
+
+          for path in [Path('site/index.html'), Path('site/en.html')]:
+              if not path.exists():
+                  continue
+              html = path.read_text(encoding='utf-8', errors='ignore')
+              original = html
+
+              # Home was the only public page still loading styles-home-original.css,
+              # which made its header/top nav and body content look unlike the rest
+              # of the site. Use the normal site stylesheet instead.
+              html = re.sub(
+                  r'<link\s+href="styles-home-original\.css\?v=[^"]*"\s+rel="stylesheet"\s*/?>',
+                  f'<link href="styles.css?v={VERSION}" rel="stylesheet"/>',
+                  html,
+                  count=1
+              )
+              html = re.sub(
+                  r'<link\s+href="styles-home-original\.css"\s+rel="stylesheet"\s*/?>',
+                  f'<link href="styles.css?v={VERSION}" rel="stylesheet"/>',
+                  html,
+                  count=1
+              )
+
+              # If a previous patch left both stylesheets, keep only the main one.
+              html = re.sub(
+                  r'<link\s+href="styles-home-original\.css\?v=[^"]*"\s+rel="stylesheet"\s*/?>',
+                  '',
+                  html
+              )
+
+              if html != original:
+                  path.write_text(html, encoding='utf-8')
+                  changed.append(str(path))
+
+          report = Path('docs/home-css-alignment-fix.md')
+          report.parent.mkdir(parents=True, exist_ok=True)
+          report.write_text('\n'.join([
+              '# Home CSS alignment fix',
+              '',
+              'The home pages now load `site/styles.css`, the same stylesheet used by the other public pages.',
+              '',
+              'This fixes:',
+              '- top bar/header looking different on desktop and mobile',
+              '- home content appearing unstyled',
+              '- mobile Home active tab not matching the rest of the site',
+              '',
+              '## Changed files',
+              *[f'- `{p}`' for p in changed],
+              ''
+          ]), encoding='utf-8')
+          print('\n'.join(changed))
+          PY
+
+      - name: Remove workflow
+        run: rm -f .github/workflows/one-time-align-home-css-with-site.yml
+
+      - name: Commit home CSS alignment
+        run: |
+          git config user.name "Barak Ben Hur via ChatGPT"
+          git config user.email "barakbenhur@gmail.com"
+          if ! git diff --quiet; then
+            git add site/index.html site/en.html docs/home-css-alignment-fix.md .github/workflows/one-time-align-home-css-with-site.yml
+            git commit -m "Align home pages with main site stylesheet"
+            git push
+          else
+            echo "No changes to commit"
+          fi
