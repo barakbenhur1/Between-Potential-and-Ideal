@@ -1,202 +1,22 @@
-/* BPI AI section polish — 2026-05-26
-   Scope: AI document cards only, plus the AI tab visual matched to the working tab-frame pattern. */
-
-/* AI tab visual: keep the working wide-tab crop and create the real bottom white gap inside the image frame. */
-body.section-ai figure.tab-visual.image-frame.compact-section-visual {
-  width: min(960px, 100%) !important;
-  max-width: 960px !important;
-  margin: 1.2rem auto 1.6rem !important;
-  padding: 12px 12px 26px !important;
-  box-sizing: border-box !important;
-  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.94)) !important;
-  border: 1px solid rgba(10,58,104,.16) !important;
-  border-radius: 30px !important;
-  overflow: hidden !important;
-  background-clip: padding-box !important;
-}
-
-body.section-ai figure.tab-visual.image-frame.compact-section-visual > img {
-  display: block !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  height: clamp(136px, 18vw, 212px) !important;
-  aspect-ratio: 21 / 7 !important;
-  object-fit: cover !important;
-  object-position: center center !important;
-  margin: 0 !important;
-  box-sizing: border-box !important;
-  border-radius: 18px !important;
-  border-bottom: 0 !important;
-  clip-path: none !important;
-  -webkit-clip-path: none !important;
-}
-
-body.section-ai .ai-documents-card {
-  padding: clamp(1.3rem, 2.5vw, 2rem) !important;
-}
-
-body.section-ai .ai-section-kicker {
-  color: #b87926 !important;
-  font-weight: 900 !important;
-  letter-spacing: .04em !important;
-  margin: 0 0 .35rem !important;
-}
-
-body.section-ai .ai-section-lead {
-  max-width: 74ch !important;
-  margin: 0 0 1.15rem !important;
-  color: #28384a !important;
-  line-height: 1.65 !important;
-}
-
-body.section-ai .ai-card-grid.ai-page-card-grid {
-  display: grid !important;
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-  gap: clamp(.9rem, 2vw, 1.25rem) !important;
-  align-items: stretch !important;
-}
-
-body.section-ai .ai-reading-card {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: .75rem !important;
-  min-height: 100% !important;
-  padding: 1rem !important;
-  border-radius: 24px !important;
-  background: linear-gradient(135deg, #fff, #fffaf0) !important;
-  border: 1px solid rgba(10, 58, 104, .16) !important;
-  box-shadow: 0 12px 34px rgba(10, 58, 104, .08) !important;
-}
-
-body.section-ai .ai-reading-card .card-media-head {
-  display: grid !important;
-  grid-template-columns: 72px 1fr !important;
-  gap: .75rem !important;
-  align-items: center !important;
-  margin: .15rem 0 .1rem !important;
-}
-
-body.section-ai[dir="rtl"] .ai-reading-card .card-media-head,
-body.section-ai .site-main[dir="rtl"] .ai-reading-card .card-media-head {
-  grid-template-columns: 72px 1fr !important;
-}
-
-body.section-ai .ai-reading-card .card-thumb {
-  width: 72px !important;
-  height: 72px !important;
-  max-width: 72px !important;
-  max-height: 72px !important;
-  object-fit: cover !important;
-  border-radius: 18px !important;
-  border: 1px solid rgba(10, 58, 104, .14) !important;
-}
-
-body.section-ai .ai-reading-card h3 {
-  margin: 0 !important;
-  color: #0A3A68 !important;
-  line-height: 1.25 !important;
-}
-
-body.section-ai .ai-mode-title,
-body.section-ai .file-mode-label {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: max-content !important;
-  max-width: 100% !important;
-  margin: 0 0 .15rem !important;
-  padding: .34rem .78rem !important;
-  border-radius: 999px !important;
-  background: #fff7e8 !important;
-  border: 1px solid rgba(184, 121, 38, .32) !important;
-  color: #b87926 !important;
-  font-weight: 900 !important;
-  line-height: 1.15 !important;
-}
-
-body.section-ai .ai-mode-subtitle {
-  margin: -.2rem 0 .2rem !important;
-  color: #5f6f7d !important;
-  font-weight: 750 !important;
-  line-height: 1.38 !important;
-}
-
-body.section-ai .ai-reading-card p {
-  margin: 0 !important;
-  color: #28384a !important;
-  line-height: 1.62 !important;
-}
-
-body.section-ai .appendix-actions {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  gap: .45rem !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-  margin-top: auto !important;
-  padding-top: .25rem !important;
-}
-
-body.section-ai .site-main[dir="rtl"] .appendix-actions {
-  justify-content: flex-start !important;
-}
-
-body.section-ai .appendix-actions a {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-height: 34px !important;
-  padding: .42rem .7rem !important;
-  border-radius: 999px !important;
-  background: #fffaf0 !important;
-  color: #0A3A68 !important;
-  border: 1px solid rgba(10, 58, 104, .18) !important;
-  text-decoration: none !important;
-  font-weight: 850 !important;
-  line-height: 1.1 !important;
-}
-
-body.section-ai .appendix-actions a.primary-format {
-  background: #0A3A68 !important;
-  color: #fff !important;
-  border-color: #0A3A68 !important;
-}
-
-body.section-ai .appendix-actions a:hover,
-body.section-ai .appendix-actions a:focus {
-  transform: translateY(-1px);
-  box-shadow: 0 8px 18px rgba(10, 58, 104, .14) !important;
-}
-
-body.section-ai .file-size {
-  opacity: .72 !important;
-  font-weight: 700 !important;
-  margin-inline-start: .25em !important;
-}
-
-body.section-ai .ai-archive-note {
-  margin-top: 1rem !important;
-  padding: .85rem 1rem !important;
-  border-radius: 18px !important;
-  background: #fff7e8 !important;
-  color: #425468 !important;
-  border: 1px solid rgba(184, 121, 38, .22) !important;
-}
-
-@media (max-width: 960px) {
-  body.section-ai .ai-card-grid.ai-page-card-grid {
-    grid-template-columns: 1fr !important;
-  }
-}
-
-@media (max-width: 560px) {
-  body.section-ai .ai-reading-card .card-media-head {
-    grid-template-columns: 58px 1fr !important;
-  }
-  body.section-ai .ai-reading-card .card-thumb {
-    width: 58px !important;
-    height: 58px !important;
-    max-width: 58px !important;
-    max-height: 58px !important;
-  }
-}
+/* BPI AI section polish — document cards only. Tab visual follows the working Application tab HTML/CSS pattern. */
+body.section-ai .ai-documents-card{padding:clamp(1.3rem,2.5vw,2rem)!important;}
+body.section-ai .ai-section-kicker{color:#b87926!important;font-weight:900!important;letter-spacing:.04em!important;margin:0 0 .35rem!important;}
+body.section-ai .ai-section-lead{max-width:74ch!important;margin:0 0 1.15rem!important;color:#28384a!important;line-height:1.65!important;}
+body.section-ai .ai-card-grid.ai-page-card-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:clamp(.9rem,2vw,1.25rem)!important;align-items:stretch!important;}
+body.section-ai .ai-reading-card{display:flex!important;flex-direction:column!important;gap:.75rem!important;min-height:100%!important;padding:1rem!important;border-radius:24px!important;background:linear-gradient(135deg,#fff,#fffaf0)!important;border:1px solid rgba(10,58,104,.16)!important;box-shadow:0 12px 34px rgba(10,58,104,.08)!important;}
+body.section-ai .ai-reading-card .card-media-head{display:grid!important;grid-template-columns:72px 1fr!important;gap:.75rem!important;align-items:center!important;margin:.15rem 0 .1rem!important;}
+body.section-ai[dir="rtl"] .ai-reading-card .card-media-head,body.section-ai .site-main[dir="rtl"] .ai-reading-card .card-media-head{grid-template-columns:72px 1fr!important;}
+body.section-ai .ai-reading-card .card-thumb{width:72px!important;height:72px!important;max-width:72px!important;max-height:72px!important;object-fit:cover!important;border-radius:18px!important;border:1px solid rgba(10,58,104,.14)!important;}
+body.section-ai .ai-reading-card h3{margin:0!important;color:#0A3A68!important;line-height:1.25!important;}
+body.section-ai .ai-mode-title,body.section-ai .file-mode-label{display:inline-flex!important;align-items:center!important;justify-content:center!important;width:max-content!important;max-width:100%!important;margin:0 0 .15rem!important;padding:.34rem .78rem!important;border-radius:999px!important;background:#fff7e8!important;border:1px solid rgba(184,121,38,.32)!important;color:#b87926!important;font-weight:900!important;line-height:1.15!important;}
+body.section-ai .ai-mode-subtitle{margin:-.2rem 0 .2rem!important;color:#5f6f7d!important;font-weight:750!important;line-height:1.38!important;}
+body.section-ai .ai-reading-card p{margin:0!important;color:#28384a!important;line-height:1.62!important;}
+body.section-ai .appendix-actions{display:flex!important;flex-wrap:wrap!important;gap:.45rem!important;align-items:center!important;justify-content:flex-start!important;margin-top:auto!important;padding-top:.25rem!important;}
+body.section-ai .site-main[dir="rtl"] .appendix-actions{justify-content:flex-start!important;}
+body.section-ai .appendix-actions a{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:34px!important;padding:.42rem .7rem!important;border-radius:999px!important;background:#fffaf0!important;color:#0A3A68!important;border:1px solid rgba(10,58,104,.18)!important;text-decoration:none!important;font-weight:850!important;line-height:1.1!important;}
+body.section-ai .appendix-actions a.primary-format{background:#0A3A68!important;color:#fff!important;border-color:#0A3A68!important;}
+body.section-ai .appendix-actions a:hover,body.section-ai .appendix-actions a:focus{transform:translateY(-1px);box-shadow:0 8px 18px rgba(10,58,104,.14)!important;}
+body.section-ai .file-size{opacity:.72!important;font-weight:700!important;margin-inline-start:.25em!important;}
+body.section-ai .ai-archive-note{margin-top:1rem!important;padding:.85rem 1rem!important;border-radius:18px!important;background:#fff7e8!important;color:#425468!important;border:1px solid rgba(184,121,38,.22)!important;}
+@media(max-width:960px){body.section-ai .ai-card-grid.ai-page-card-grid{grid-template-columns:1fr!important;}}
+@media(max-width:560px){body.section-ai .ai-reading-card .card-media-head{grid-template-columns:58px 1fr!important;}body.section-ai .ai-reading-card .card-thumb{width:58px!important;height:58px!important;max-width:58px!important;max-height:58px!important;}}
