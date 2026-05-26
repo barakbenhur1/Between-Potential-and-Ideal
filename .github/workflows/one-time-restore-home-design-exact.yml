@@ -1,0 +1,48 @@
+name: One-time restore exact home design
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/one-time-restore-home-design-exact.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  restore-home-design-exact:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Restore only the home design files
+        run: |
+          set -e
+
+          # Exact restore point: before the later home nav/header/css experiments.
+          # Scope is intentionally only these three files.
+          git checkout bdde7bb6bd98f98e09b328cf1cd23dba78824f06^ -- \
+            site/index.html \
+            site/en.html \
+            site/styles-home-original.css
+
+          rm -f docs/home-css-alignment-fix.md
+          rm -f docs/home-design-restore.md
+
+      - name: Remove this workflow
+        run: rm -f .github/workflows/one-time-restore-home-design-exact.yml
+
+      - name: Commit exact home design restore
+        run: |
+          git config user.name "Barak Ben Hur via ChatGPT"
+          git config user.email "barakbenhur@gmail.com"
+          if ! git diff --quiet; then
+            git add site/index.html site/en.html site/styles-home-original.css docs/home-css-alignment-fix.md docs/home-design-restore.md .github/workflows/one-time-restore-home-design-exact.yml
+            git commit -m "Restore exact home page design"
+            git push
+          else
+            echo "No changes to commit"
+          fi
