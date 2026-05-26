@@ -1,0 +1,253 @@
+name: One-time theory file image audit and fix
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/one-time-theory-file-image-audit-fix.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  audit-and-fix-theory-file-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Audit and fix images inside theory files only
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import os
+          import re
+          from collections import Counter, defaultdict
+
+          FIGURES = Path('site/figures')
+          THEORY_ROOT = Path('site/files')
+          REPORT = Path('docs/theory-file-image-audit.md')
+          REPORT.parent.mkdir(parents=True, exist_ok=True)
+
+          IMAGE_EXTS = ('.png', '.jpg', '.jpeg', '.webp', '.svg')
+          TEXT_EXTS = ('.html', '.htm', '.md', '.txt')
+
+          SUMMARY_TARGET = FIGURES / 'tab_applied.png'
+          SUMMARY_THUMB_TARGET = FIGURES / 'thumb_applied.png'
+          BLACK_HOLE_TARGET = FIGURES / 'v25_chapter_black-holes-horizons-holography.png'
+
+          SUMMARY_WORDS = [
+              'תקציר', 'מסלול קריאה', 'שער הקצר', 'summary', 'overview', 'reading path'
+          ]
+          BLACK_HOLE_WORDS = [
+              'חורים שחורים', 'אופקי אירועים', 'אופק אירועים', 'הולוגרפי', 'ההולוגרפי',
+              'עקבה מבנית', 'מה שנעלם עדיין משאיר',
+              'black holes', 'black hole', 'event horizons', 'event horizon', 'holographic', 'holography'
+          ]
+
+          def is_text_file(path: Path) -> bool:
+              return path.is_file() and path.suffix.lower() in TEXT_EXTS
+
+          def is_theory_text_file(path: Path) -> bool:
+              if not is_text_file(path):
+                  return False
+              if THEORY_ROOT not in path.parents:
+                  return False
+              low = str(path).lower().replace('\\', '/')
+              # Keep appendices/stories/AI dialogue pages out of this pass unless they are theory-named.
+              if any(part in low for part in ['/appendices/', '/ai-believes/', 'stories-before-thought', 'mistake-repeats']):
+                  return False
+              return True
+
+          def rel_from(file_path: Path, target: Path) -> str:
+              return os.path.relpath(target, start=file_path.parent).replace(os.sep, '/')
+
+          def has_any(text: str, words) -> bool:
+              low = text.lower()
+              return any(w.lower() in low for w in words)
+
+          def replace_src_once(tag_or_block: str, new_src: str) -> tuple[str, bool]:
+              changed = False
+              def repl(m):
+                  nonlocal changed
+                  old = m.group(2)
+                  if old == new_src:
+                      return m.group(0)
+                  clean = old.split('?', 1)[0].lower()
+                  if not clean.endswith(IMAGE_EXTS):
+                      return m.group(0)
+                  changed = True
+                  return f'{m.group(1)}{new_src}{m.group(3)}'
+              out = re.sub(r'(\bsrc=["\'])([^"\']+)(["\'])', repl, tag_or_block, count=1, flags=re.I)
+              return out, changed
+
+          def replace_markdown_image(line: str, new_src: str) -> tuple[str, bool]:
+              changed = False
+              def repl(m):
+                  nonlocal changed
+                  old = m.group(2)
+                  clean = old.split('?', 1)[0].lower()
+                  if not clean.endswith(IMAGE_EXTS) or old == new_src:
+                      return m.group(0)
+                  changed = True
+                  return f'{m.group(1)}{new_src}{m.group(3)}'
+              out = re.sub(r'(!\[[^\]]*\]\()([^\)]+)(\))', repl, line, count=1)
+              return out, changed
+
+          def patch_html(path: Path, text: str) -> tuple[str, list[str]]:
+              changes = []
+              summary_src = rel_from(path, SUMMARY_TARGET)
+              summary_thumb_src = rel_from(path, SUMMARY_THUMB_TARGET)
+              black_src = rel_from(path, BLACK_HOLE_TARGET)
+
+              def patch_figure(m):
+                  block = m.group(0)
+                  low = block.lower()
+                  if has_any(block, BLACK_HOLE_WORDS):
+                      new_block, ok = replace_src_once(block, black_src)
+                      if ok:
+                          changes.append(f'black-hole/holography figure -> {black_src}')
+                      return new_block
+                  if 'tab_core_unique' in low and has_any(block, SUMMARY_WORDS):
+                      new_block, ok = replace_src_once(block, summary_src)
+                      if ok:
+                          changes.append(f'summary duplicate core figure -> {summary_src}')
+                      return new_block
+                  return block
+
+              text2 = re.sub(r'<figure\b[^>]*>.*?</figure>', patch_figure, text, flags=re.I | re.S)
+
+              # Also patch standalone title/cover image tags inside theory files when alt/title context is clear.
+              def patch_img(m):
+                  tag = m.group(0)
+                  low = tag.lower()
+                  if has_any(tag, BLACK_HOLE_WORDS):
+                      new_tag, ok = replace_src_once(tag, black_src)
+                      if ok:
+                          changes.append(f'black-hole/holography img -> {black_src}')
+                      return new_tag
+                  if ('tab_core_unique' in low or 'thumb_core' in low) and has_any(tag, SUMMARY_WORDS):
+                      target = summary_thumb_src if 'thumb_core' in low else summary_src
+                      new_tag, ok = replace_src_once(tag, target)
+                      if ok:
+                          changes.append(f'summary duplicate core img -> {target}')
+                      return new_tag
+                  return tag
+
+              text2 = re.sub(r'<img\b[^>]*>', patch_img, text2, flags=re.I)
+              return text2, changes
+
+          def patch_md_txt(path: Path, text: str) -> tuple[str, list[str]]:
+              changes = []
+              summary_src = rel_from(path, SUMMARY_TARGET)
+              black_src = rel_from(path, BLACK_HOLE_TARGET)
+              lines = text.splitlines(keepends=True)
+              out = []
+              for i, line in enumerate(lines):
+                  context = ''.join(lines[max(0, i-2):min(len(lines), i+3)])
+                  if '![' in line and has_any(context, BLACK_HOLE_WORDS):
+                      newline, ok = replace_markdown_image(line, black_src)
+                      if ok:
+                          changes.append(f'black-hole/holography markdown image -> {black_src}')
+                          line = newline
+                  elif '![' in line and 'tab_core_unique' in line.lower() and has_any(context, SUMMARY_WORDS):
+                      newline, ok = replace_markdown_image(line, summary_src)
+                      if ok:
+                          changes.append(f'summary duplicate core markdown image -> {summary_src}')
+                          line = newline
+                  out.append(line)
+              return ''.join(out), changes
+
+          changed_files = defaultdict(list)
+          for path in THEORY_ROOT.rglob('*'):
+              if not is_theory_text_file(path):
+                  continue
+              text = path.read_text(encoding='utf-8', errors='ignore')
+              if path.suffix.lower() in ('.html', '.htm'):
+                  new_text, changes = patch_html(path, text)
+              else:
+                  new_text, changes = patch_md_txt(path, text)
+              if new_text != text:
+                  path.write_text(new_text, encoding='utf-8')
+                  changed_files[str(path)].extend(changes)
+
+          # Audit image usage after the patch. This is intentionally broad inside site/files.
+          usage = Counter()
+          locations = defaultdict(list)
+          src_re = re.compile(r'(?:src|href)=["\']([^"\']+\.(?:png|jpe?g|webp|svg))(?:\?[^"\']*)?["\']', re.I)
+          md_re = re.compile(r'!\[[^\]]*\]\(([^\)]+\.(?:png|jpe?g|webp|svg))(?:\?[^\)]*)?\)', re.I)
+          for path in THEORY_ROOT.rglob('*'):
+              if not is_text_file(path):
+                  continue
+              text = path.read_text(encoding='utf-8', errors='ignore')
+              refs = src_re.findall(text) + md_re.findall(text)
+              for ref in refs:
+                  key = os.path.basename(ref.split('?', 1)[0])
+                  usage[key] += 1
+                  if len(locations[key]) < 12:
+                      locations[key].append(str(path))
+
+          all_figures = sorted(p.name for p in FIGURES.glob('*') if p.suffix.lower() in IMAGE_EXTS)
+          unused = [name for name in all_figures if usage[name] == 0]
+          duplicated = [(name, count) for name, count in usage.most_common() if count > 1]
+          homepage_candidates = [name for name in all_figures if any(tok in name.lower() for tok in ['home', 'homepage', 'hero', 'sun', 'main'])]
+
+          lines = []
+          lines.append('# Theory file image audit')
+          lines.append('')
+          lines.append('Scope: `site/files/**` only. This pass does not edit public tab pages.')
+          lines.append('')
+          lines.append('## Direct fixes applied')
+          if changed_files:
+              for file, changes in sorted(changed_files.items()):
+                  lines.append(f'- `{file}`')
+                  for c in changes:
+                      lines.append(f'  - {c}')
+          else:
+              lines.append('- No direct text-file image references required patching in this pass.')
+          lines.append('')
+          lines.append('## Duplicated image filenames inside theory files')
+          if duplicated:
+              for name, count in duplicated[:80]:
+                  lines.append(f'- `{name}` — {count} references')
+                  for loc in locations[name][:6]:
+                      lines.append(f'  - `{loc}`')
+          else:
+              lines.append('- No duplicated image filenames found in text-based theory files.')
+          lines.append('')
+          lines.append('## Homepage / hero image candidates not necessarily used in theory files')
+          if homepage_candidates:
+              for name in homepage_candidates:
+                  lines.append(f'- `{name}` — theory-file references: {usage[name]}')
+          else:
+              lines.append('- No obvious homepage/hero image candidate found by filename.')
+          lines.append('')
+          lines.append('## Unused figure assets by text-reference scan')
+          lines.append('Note: binary PDF/DOCX may embed images without text references, so this is not a deletion list.')
+          for name in unused[:160]:
+              lines.append(f'- `{name}`')
+          REPORT.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+
+          print(f'Changed files: {len(changed_files)}')
+          for file, changes in sorted(changed_files.items()):
+              print(file)
+              for c in changes:
+                  print('  -', c)
+          print(f'Report written: {REPORT}')
+          PY
+
+      - name: Remove this one-time workflow
+        run: rm -f .github/workflows/one-time-theory-file-image-audit-fix.yml
+
+      - name: Commit theory file image fixes and audit
+        run: |
+          git config user.name "Barak Ben Hur via ChatGPT"
+          git config user.email "barakbenhur@gmail.com"
+          if ! git diff --quiet; then
+            git add site/files docs/theory-file-image-audit.md .github/workflows/one-time-theory-file-image-audit-fix.yml
+            git commit -m "Audit and fix theory file image usage"
+            git push
+          else
+            echo "No changes to commit"
+          fi
