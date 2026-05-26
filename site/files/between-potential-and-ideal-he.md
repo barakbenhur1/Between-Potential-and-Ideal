@@ -7884,7 +7884,7 @@ and I Must Scream. המקורות אינם מוכנסים כהוכחות לתא�
 *גבול, מידע, נגישות ועקבות — בלי להפוך פיזיקה להוכחה מטאפיזית*
 
 <figure class="chapter-figure image-frame">
-<img src="../figures/v25_chapter_black-holes-horizons-holography.png"
+<img src="../figures/v25_chapter_black-holes-horizons-holography_v2.svg"
 decoding="async" loading="lazy"
 alt="חורים שחורים, אופקי אירועים והעיקרון ההולוגרפי" />
 <figcaption aria-hidden="true">תיאור תמונה: אופק, מידע וסף שבו מה שנעלם עדיין משאיר עקבה מבנית.</figcaption>

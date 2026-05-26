@@ -6745,7 +6745,7 @@ borrowing of terms.
 physics into metaphysical proof*
 
 <figure class="chapter-figure image-frame">
-<img src="../figures/v25_chapter_black-holes-horizons-holography.png"
+<img src="../figures/v25_chapter_black-holes-horizons-holography_v2.svg"
 decoding="async" loading="lazy"
 alt="Black Holes, Event Horizons, and the Holographic Principle" />
 <figcaption aria-hidden="true">Image description: horizon, information, and a threshold where what disappears still leaves structural trace.</figcaption>

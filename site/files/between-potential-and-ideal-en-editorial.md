@@ -10,7 +10,7 @@ Author: me · May 2026
 
 > Core sentence: The absolute is not the ideal. Existence is the river-crossing through which absolute potential clarifies what within itself ought to become ideal.
 
-![cover image](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/640310673eac.jpg)
+![cover ../figures/cover_philosophical_recursion_whole_diagram.png)
 
 ---
 
@@ -5020,7 +5020,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 *Boundary, information, accessibility, and traces - without turning physics into metaphysical proof*
 
-![Black Holes, Event Horizons, and the Holographic Principle](../figures/v25_chapter_black-holes-horizons-holography.png)
+![Black Holes, Event Horizons, and the Holographic ../figures/v25_chapter_black-holes-horizons-holography_v2.svg)
 
 Image description: horizon, information, and a threshold where what disappears still leaves structural trace.
 
