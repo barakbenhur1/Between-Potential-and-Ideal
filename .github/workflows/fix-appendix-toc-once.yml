@@ -1,0 +1,125 @@
+name: Fix appendix story TOC once
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/fix-appendix-toc-once.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch-appendix-toc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Patch standalone appendix TOC screens
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          css = r'''
+          <style id="v110-appendix-story-toc-side-alignment">
+          /* V110 — standalone appendix TOC: side-aligned by language, with subtle item separation. */
+          .story-toc-page{
+            text-align:start!important;
+          }
+          html[dir="rtl"] .story-toc-page{
+            text-align:right!important;
+          }
+          html[dir="ltr"] .story-toc-page{
+            text-align:left!important;
+          }
+          .story-toc-page h2,
+          .story-toc-page p{
+            text-align:inherit!important;
+          }
+          .story-toc-page ol{
+            columns:1!important;
+            column-count:1!important;
+            width:min(560px,100%)!important;
+            max-width:100%!important;
+            margin-block:24px 0!important;
+            padding-inline-start:0!important;
+            padding-inline-end:0!important;
+            list-style:none!important;
+            text-align:inherit!important;
+          }
+          html[dir="rtl"] .story-toc-page ol{
+            margin-right:0!important;
+            margin-left:auto!important;
+          }
+          html[dir="ltr"] .story-toc-page ol{
+            margin-left:0!important;
+            margin-right:auto!important;
+          }
+          .story-toc-page li{
+            break-inside:avoid!important;
+            margin:0!important;
+            padding:.74rem 0 .72rem!important;
+            border-block-start:1px solid rgba(197,121,29,.24)!important;
+            font-size:clamp(1.08rem,2vw,1.36rem)!important;
+            line-height:1.35!important;
+          }
+          .story-toc-page li:first-child{
+            border-block-start:0!important;
+          }
+          .story-toc-page li a{
+            display:block!important;
+            color:var(--teal,#0a6d78)!important;
+            font-weight:700!important;
+            text-decoration:none!important;
+          }
+          .story-toc-page li a:hover{
+            text-decoration:underline!important;
+            text-decoration-thickness:1px!important;
+            text-underline-offset:.18em!important;
+          }
+          @media print{
+            .story-toc-page ol{
+              columns:1!important;
+              column-count:1!important;
+            }
+            .story-toc-page li{
+              padding:.42rem 0!important;
+            }
+          }
+          </style>
+          '''.strip()
+
+          marker_re = re.compile(r'\n?\s*<style id="v110-appendix-story-toc-side-alignment">.*?</style>', re.S)
+          changed = []
+          for path in sorted(Path('site/files/appendices').glob('*.html')):
+            text = path.read_text(encoding='utf-8')
+            if 'story-toc-page' not in text:
+              continue
+            clean = marker_re.sub('', text)
+            if '</head>' not in clean:
+              continue
+            patched = clean.replace('</head>', css + '\n</head>', 1)
+            if patched != text:
+              path.write_text(patched, encoding='utf-8')
+              changed.append(str(path))
+
+          print('patched files:')
+          for path in changed:
+            print(path)
+          if not changed:
+            print('no changes needed')
+          PY
+      - name: Commit patch
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/files/appendices/*.html
+          git commit -m "Fix standalone appendix TOC alignment"
+          git push
