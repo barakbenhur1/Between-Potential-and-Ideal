@@ -1,0 +1,215 @@
+name: One-time Home mobile prepaint CSS fix
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/one-time-home-mobile-prepaint-css.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix-home-mobile-prepaint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Move Home mobile shell styling into head-loaded CSS
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import os
+          import re
+
+          version = '20260526-home-mobile-prepaint-v118'
+          css_path = Path('site/assets/bpi-home-mobile-prepaint.css')
+          css_path.parent.mkdir(parents=True, exist_ok=True)
+          css_path.write_text(r'''/* V118 — Home mobile prepaint fix.
+   Loaded in <head> before JS to prevent the temporary wrong Home top bar / white hero flash.
+   Scope: Home entry pages only via body.public-page on index/en, mobile only. */
+@media (max-width:860px){
+  html,body{width:100%!important;max-width:100%!important;overflow-x:hidden!important;}
+  body.public-page{
+    max-width:100vw!important;
+    overflow-x:hidden!important;
+    background:radial-gradient(circle at 0% 12%,rgba(0,167,183,.10),transparent 34rem),radial-gradient(circle at 100% 0%,rgba(242,142,43,.12),transparent 32rem),#f7efe1!important;
+    color:#102033!important;
+  }
+  body.public-page .site-main{
+    background:transparent!important;
+    color:#102033!important;
+    max-width:100vw!important;
+    overflow-x:hidden!important;
+  }
+
+  /* Top shell uses the same mobile base as the Summary tab. */
+  body.public-page .site-header{
+    background:linear-gradient(135deg,#0A3A68,#0C526D 58%,rgba(242,142,43,.92))!important;
+    color:#fff!important;
+  }
+  body.public-page .site-header a{color:#fff!important;}
+  body.public-page .site-header .site-nav{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    justify-content:center!important;
+    align-items:center!important;
+    overflow:visible!important;
+    overflow-x:visible!important;
+    scroll-snap-type:none!important;
+  }
+  body.public-page .site-header .site-nav a{
+    transform:none!important;
+    scroll-snap-align:none!important;
+  }
+
+  /* Summary-like page spacing. */
+  body.public-page .breadcrumbs{
+    width:min(100% - 40px,1120px)!important;
+    max-width:calc(100vw - 40px)!important;
+    margin:52px auto 14px!important;
+    box-sizing:border-box!important;
+  }
+  body.public-page .opening-visual,
+  body.public-page .signature-blurbs,
+  body.public-page .notice-box,
+  body.public-page .hub-grid,
+  body.public-page .reading-path-cta{
+    width:min(100% - 40px,1120px)!important;
+    max-width:calc(100vw - 40px)!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Restore Home opening block: blue/turquoise hero card with white text. */
+  body.public-page .concise-hero,
+  body.public-page .hero.concise-hero{
+    display:block!important;
+    width:min(100% - 52px,1120px)!important;
+    max-width:calc(100vw - 52px)!important;
+    margin:0 auto 26px!important;
+    box-sizing:border-box!important;
+    padding:clamp(34px,8vw,56px) clamp(24px,6vw,42px)!important;
+    border-radius:30px!important;
+    border:1px solid rgba(255,255,255,.22)!important;
+    background:linear-gradient(145deg,#06466d 0%,#007b91 58%,#008fa2 100%)!important;
+    color:#fffaf0!important;
+    box-shadow:0 18px 48px rgba(10,58,104,.18)!important;
+    text-align:center!important;
+    overflow:hidden!important;
+  }
+  body.public-page .concise-hero::before,
+  body.public-page .hero.concise-hero::before{
+    display:none!important;
+    content:none!important;
+  }
+  body.public-page .concise-hero .kicker,
+  body.public-page .hero.concise-hero .kicker{
+    color:#fffaf0!important;
+    background:transparent!important;
+    border:0!important;
+    margin:0 auto clamp(30px,8vw,58px)!important;
+    padding:0!important;
+    text-align:center!important;
+    font-weight:800!important;
+  }
+  body.public-page .concise-hero h1,
+  body.public-page .hero.concise-hero h1{
+    color:#fffaf0!important;
+    text-align:center!important;
+    margin:0 auto!important;
+    max-width:760px!important;
+    font-family:"Gveret Levin","Noto Sans Hebrew",Georgia,"Times New Roman",serif!important;
+    font-size:clamp(2.7rem,11.5vw,4.8rem)!important;
+    line-height:1.04!important;
+    letter-spacing:-.025em!important;
+  }
+  body.public-page .concise-hero .lead,
+  body.public-page .hero.concise-hero .lead,
+  body.public-page .concise-hero .method-note,
+  body.public-page .hero.concise-hero .method-note{
+    color:rgba(255,250,240,.92)!important;
+    text-align:center!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    max-width:72ch!important;
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+    padding:0!important;
+    font-size:clamp(1rem,4.5vw,1.18rem)!important;
+    line-height:1.7!important;
+  }
+}
+
+@media (max-width:390px){
+  body.public-page .breadcrumbs{
+    width:min(100% - 34px,1120px)!important;
+    max-width:calc(100vw - 34px)!important;
+    margin-top:48px!important;
+  }
+  body.public-page .concise-hero,
+  body.public-page .hero.concise-hero{
+    width:min(100% - 40px,1120px)!important;
+    max-width:calc(100vw - 40px)!important;
+    padding:44px 22px!important;
+    border-radius:28px!important;
+  }
+}
+''', encoding='utf-8')
+
+          changed = []
+          for html_path in [Path('site/index.html'), Path('site/en.html')]:
+            html = html_path.read_text(encoding='utf-8', errors='ignore')
+            original = html
+
+            # Load Summary/main site CSS in the head on mobile only, before the Home-only override.
+            if 'styles.css?v=20260526-home-mobile-summary-prepaint' not in html:
+              html = html.replace(
+                '<link href="styles-home-original.css?v=v17-exact-skipfix2" rel="stylesheet"/>',
+                '<link href="styles-home-original.css?v=v17-exact-skipfix2" rel="stylesheet"/><link href="styles.css?v=20260526-home-mobile-summary-prepaint" media="(max-width: 860px)" rel="stylesheet"/><link href="assets/bpi-home-mobile-prepaint.css?v=' + version + '" media="(max-width: 860px)" rel="stylesheet"/>'
+              )
+
+            # Cache-bust the fallback JS too, but the visual fix is now CSS loaded in head.
+            html = re.sub(r'bpi-files-feedback-fixes\.js\?v=[^"\s]+', 'bpi-files-feedback-fixes.js?v=' + version, html)
+
+            if html != original:
+              html_path.write_text(html, encoding='utf-8')
+              changed.append(str(html_path))
+
+          report = Path('docs/home-mobile-prepaint-css-fix.md')
+          report.parent.mkdir(parents=True, exist_ok=True)
+          report.write_text('\n'.join([
+            '# Home mobile prepaint CSS fix',
+            '',
+            'Fixes the temporary flash where Home showed the old/wrong top bar and white hero before JavaScript finished.',
+            '',
+            'Changed files:',
+            '- `site/assets/bpi-home-mobile-prepaint.css` — head-loaded mobile-only Home CSS; keeps the Summary shell and restores the blue Home hero before first paint.',
+            '- `site/index.html` — loads `styles.css` and the Home prepaint CSS in `<head>` for mobile.',
+            '- `site/en.html` — same for English Home.',
+            '',
+            'The previous JavaScript override remains only as a fallback; the visual state no longer waits for JavaScript.',
+            ''
+          ]), encoding='utf-8')
+
+          print('changed:', ', '.join(changed))
+          PY
+
+      - name: Remove workflow
+        run: rm -f .github/workflows/one-time-home-mobile-prepaint-css.yml
+
+      - name: Commit Home mobile prepaint CSS fix
+        run: |
+          git config user.name "Barak Ben Hur via ChatGPT"
+          git config user.email "barakbenhur@gmail.com"
+          if ! git diff --quiet; then
+            git add site/assets/bpi-home-mobile-prepaint.css site/index.html site/en.html docs/home-mobile-prepaint-css-fix.md .github/workflows/one-time-home-mobile-prepaint-css.yml
+            git commit -m "Prevent Home mobile shell flash before load"
+            git push
+          else
+            echo "No changes to commit"
+          fi
