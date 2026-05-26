@@ -2,7 +2,8 @@
 """BPI V96 — user-requested reverts and order fixes.
 
 User rules applied:
-- AI labels must remain exactly: אין / יש / יש מאין, and English equivalents No / Yes / Being from Nothing.
+- AI labels must remain exactly: אין / יש / יש מאין.
+- English AI labels must be exactly: Without / With / Communication.
 - Do not change the text of blurbs; remove the homepage blurbs section entirely as requested.
 - Move tab visuals above the newly added recommended-start/source-responsibility blocks.
 - Keep design structure and existing file/archive content intact.
@@ -20,17 +21,9 @@ REPORT = ROOT / "_product_docs" / "reports" / "BPI_V96_USER_REQUESTED_REVERTS_RE
 REPORT.parent.mkdir(parents=True, exist_ok=True)
 
 HOME_PAGES = [ROOT / "site" / "index.html", ROOT / "site" / "en.html"]
-AI_REPLACEMENTS = {
-    ROOT / "site" / "pages" / "he" / "ai.html": [
-        ("שאלת האין", "אין"),
-        ("שאלת היש", "יש"),
-        ("שאלת המעבר מן האין אל היש", "יש מאין"),
-    ],
-    ROOT / "site" / "pages" / "en" / "ai-en.html": [
-        ("Question of Nothingness", "No"),
-        ("Question of Being", "Yes"),
-        ("Being from Nothing / The Passage Question", "Being from Nothing"),
-    ],
+AI_LABEL_TARGETS = {
+    ROOT / "site" / "pages" / "he" / "ai.html": ["אין", "יש", "יש מאין"],
+    ROOT / "site" / "pages" / "en" / "ai-en.html": ["Without", "With", "Communication"],
 }
 TAB_ORDER_PAGES = [
     ROOT / "site" / "pages" / "he" / "files.html",
@@ -57,21 +50,32 @@ def add_class(tag, name: str) -> bool:
 
 
 def patch_ai_labels() -> tuple[int, list[str]]:
+    """Set only the visible AI card mode labels, without touching body copy."""
     changed = 0
     notes: list[str] = []
-    for path, replacements in AI_REPLACEMENTS.items():
+    for path, targets in AI_LABEL_TARGETS.items():
         if not path.exists():
             notes.append(f"missing: `{path.relative_to(ROOT)}`")
             continue
-        text = path.read_text(encoding="utf-8")
-        old_text = text
-        for old, new in replacements:
-            if old in text:
-                text = text.replace(old, new)
-                notes.append(f"`{path.relative_to(ROOT)}`: `{old}` → `{new}`")
-        if text != old_text:
-            path.write_text(text, encoding="utf-8")
+        old = path.read_text(encoding="utf-8")
+        soup = BeautifulSoup(old, "html.parser")
+        labels = [tag for tag in soup.find_all(class_="ai-mode-title") if "file-mode-label" in class_list(tag)]
+        if len(labels) < len(targets):
+            notes.append(f"`{path.relative_to(ROOT)}`: expected {len(targets)} AI labels, found {len(labels)}")
+            continue
+        local_changed = False
+        for tag, target in zip(labels, targets):
+            current = tag.get_text(" ", strip=True)
+            if current != target:
+                tag.clear()
+                tag.string = target
+                notes.append(f"`{path.relative_to(ROOT)}`: `{current}` → `{target}`")
+                local_changed = True
+        if local_changed:
+            path.write_text(str(soup), encoding="utf-8")
             changed += 1
+        else:
+            notes.append(f"`{path.relative_to(ROOT)}`: AI labels already correct")
     return changed, notes
 
 
@@ -198,7 +202,7 @@ def main() -> int:
         "",
         f"Generated: {datetime.utcnow().isoformat(timespec='seconds')}Z",
         "",
-        "בוצעו רק תיקונים לפי בקשת המשתמש: החזרת טקסטי AI המקוריים, הסרת בלרבים מדף הבית, הזזת תמונות טאב למיקום התקני, וסימון כרטיסי גרסה לוגית ליישור כפתורים. לא שונו כותרות/תתי־כותרות/תמונות.",
+        "בוצעו רק תיקונים לפי בקשת המשתמש: החזרת תוויות AI המדויקות, הסרת בלרבים מדף הבית, הזזת תמונות טאב למיקום התקני, וסימון כרטיסי גרסה לוגית ליישור כפתורים. לא שונו כותרות/תתי־כותרות/תמונות.",
         "",
         f"Changed groups: {total_changed}",
         "",
