@@ -5020,7 +5020,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 *Boundary, information, accessibility, and traces - without turning physics into metaphysical proof*
 
-![Black Holes, Event Horizons, and the Holographic Principle](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/f842c8388b4b.jpg)
+![Black Holes, Event Horizons, and the Holographic Principle](../figures/v25_chapter_black-holes-horizons-holography.png)
 
 Image description: horizon, information, and a threshold where what disappears still leaves structural trace.
 

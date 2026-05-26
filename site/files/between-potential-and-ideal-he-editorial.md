@@ -6263,7 +6263,7 @@ String Theory, M-theory, branes, AdS/CFT ו-holography יופיעו רק כסי�
 
 *גבול, מידע, נגישות ועקבות — בלי להפוך פיזיקה להוכחה מטאפיזית*
 
-![חורים שחורים, אופקי אירועים והעיקרון ההולוגרפי](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_2/f842c8388b4b.jpg)
+![חורים שחורים, אופקי אירועים והעיקרון ההולוגרפי](../figures/v25_chapter_black-holes-horizons-holography.png)
 
 תיאור תמונה: אופק, מידע וסף שבו מה שנעלם עדיין משאיר עקבה מבנית.
 
