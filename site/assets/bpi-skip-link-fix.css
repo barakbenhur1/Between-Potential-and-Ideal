@@ -1,0 +1,39 @@
+/* BPI skip-link visibility fix — 2026-05-26
+   The hidden accessibility skip link was leaking as a clipped orange pill near the
+   top edge after language/direction changes. Keep it fully hidden until keyboard focus. */
+
+body.public-page .skip-link {
+  position: fixed !important;
+  top: 12px !important;
+  inset-inline-start: 12px !important;
+  z-index: 10000 !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  transform: translateY(calc(-100% - 32px)) !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+body.public-page .skip-link:focus,
+body.public-page .skip-link:focus-visible {
+  width: auto !important;
+  height: auto !important;
+  padding: 10px 16px !important;
+  overflow: visible !important;
+  clip: auto !important;
+  clip-path: none !important;
+  transform: none !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  border-radius: 999px !important;
+  background: #0A3A68 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  box-shadow: 0 10px 24px rgba(10, 58, 104, .22) !important;
+}
