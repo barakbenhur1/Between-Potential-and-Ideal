@@ -1,10 +1,9 @@
-/* V108 — Files filtering + feedback mail fixes only.
-   Removed the mobile nav scroll-centering code because it caused tab rail jumps/freezes.
-   Mobile nav is handled by CSS wrapping in bpi-mobile-site-fixes.css. */
+/* V109 — Files filtering fixes only.
+   Feedback links are handled only by assets/bpi-fixes/bpi-feedback-desktop.js.
+   This prevents the files helper from forcing mailto on desktop and blocking Gmail compose. */
 (function(){
   'use strict';
 
-  var FEEDBACK_TO = 'barakbenhur@gmail.com';
   var KNOWN_FORMATS = ['html','pdf','docx','md','txt'];
   var lastFormat = null;
 
@@ -19,73 +18,6 @@
     return p.endsWith('/files.html') || p.endsWith('/files-en.html') ||
       document.body.classList.contains('files-page') ||
       !!document.querySelector('#fileSearch,#fileTypeFilter,#fileLangFilter,.download-table,.file-card,.download-card,.resource-card,[data-format],[data-formats]');
-  }
-
-  function enc(v){ return encodeURIComponent(v).replace(/%20/g,'%20'); }
-
-  function feedbackMailto(){
-    var he = isHe();
-    var subject = he ? 'ביקורת על Between Potential and Ideal' : 'Feedback on Between Potential and Ideal';
-    var body = he ? [
-      'שלום ברק,',
-      '',
-      'קראתי את הפרויקט Between Potential and Ideal ויש לי ביקורת / הערה:',
-      '',
-      '',
-      'העמוד שבו הייתי:',
-      location.href,
-      '',
-      'הערה:'
-    ].join('\n') : [
-      'Hi Barak,',
-      '',
-      'I read Between Potential and Ideal and have feedback / a note:',
-      '',
-      '',
-      'Page I was on:',
-      location.href,
-      '',
-      'Feedback:'
-    ].join('\n');
-    return 'mailto:' + FEEDBACK_TO + '?subject=' + enc(subject) + '&body=' + enc(body);
-  }
-
-  function isFeedbackAnchor(a){
-    if (!a || !a.getAttribute) return false;
-    var href = (a.getAttribute('href') || '').toLowerCase();
-    var text = (a.textContent || '').trim().toLowerCase();
-    var aria = (a.getAttribute('aria-label') || '').toLowerCase();
-    var title = (a.getAttribute('title') || '').toLowerCase();
-    return href.includes('mail.google.com') || href.includes('gmail.com/mail') ||
-      href.startsWith('mailto:') && (text.includes('ביקורת') || text.includes('feedback')) ||
-      text.includes('שלח ביקורת') || aria.includes('שלח ביקורת') || title.includes('שלח ביקורת') ||
-      text.includes('send feedback') || aria.includes('send feedback') || title.includes('send feedback') ||
-      text === 'feedback' || aria === 'feedback' || title === 'feedback';
-  }
-
-  function patchFeedbackLinks(){
-    var mail = feedbackMailto();
-    document.querySelectorAll('a[href]').forEach(function(a){
-      if (!isFeedbackAnchor(a)) return;
-      a.setAttribute('href', mail);
-      a.removeAttribute('target');
-      a.removeAttribute('rel');
-      a.setAttribute('data-bpi-feedback-mail','true');
-    });
-  }
-
-  function installFeedbackClickGuard(){
-    document.addEventListener('click', function(ev){
-      var a = ev.target && ev.target.closest ? ev.target.closest('a[href]') : null;
-      if (!isFeedbackAnchor(a)) return;
-      ev.preventDefault();
-      ev.stopPropagation();
-      a.removeAttribute('target');
-      a.removeAttribute('rel');
-      var href = feedbackMailto();
-      a.setAttribute('href', href);
-      window.location.href = href;
-    }, true);
   }
 
   function normalizeFormat(value){
@@ -282,10 +214,8 @@
   }
 
   function init(){
-    patchFeedbackLinks();
-    installFeedbackClickGuard();
     normalizeFiles();
-    document.addEventListener('click', function(ev){ rememberFormatFromEvent(ev); setTimeout(function(){ patchFeedbackLinks(); normalizeFiles(); }, 0); }, true);
+    document.addEventListener('click', function(ev){ rememberFormatFromEvent(ev); setTimeout(normalizeFiles, 0); }, true);
     document.addEventListener('change', function(ev){ rememberFormatFromEvent(ev); setTimeout(normalizeFiles, 0); }, true);
     document.addEventListener('input', function(ev){ rememberFormatFromEvent(ev); setTimeout(normalizeFiles, 0); }, true);
     if (isFilesPage()) {
