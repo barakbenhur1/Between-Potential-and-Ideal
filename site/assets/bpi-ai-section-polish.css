@@ -1,4 +1,9 @@
 /* BPI AI section polish — document cards only. Tab visual follows the working Application tab HTML/CSS pattern. */
+:root{
+  --bpi-symmetric-media-pad: clamp(14px, 1.15vw, 22px);
+  --bpi-symmetric-media-radius: 30px;
+  --bpi-symmetric-media-inner-radius: 22px;
+}
 body.section-ai .ai-documents-card{padding:clamp(1.3rem,2.5vw,2rem)!important;}
 body.section-ai .ai-section-kicker{color:#b87926!important;font-weight:900!important;letter-spacing:.04em!important;margin:0 0 .35rem!important;}
 body.section-ai .ai-section-lead{max-width:74ch!important;margin:0 0 1.15rem!important;color:#28384a!important;line-height:1.65!important;}
@@ -19,17 +24,21 @@ body.section-ai .appendix-actions a:hover,body.section-ai .appendix-actions a:fo
 body.section-ai .file-size{opacity:.72!important;font-weight:700!important;margin-inline-start:.25em!important;}
 body.section-ai .ai-archive-note{margin-top:1rem!important;padding:.85rem 1rem!important;border-radius:18px!important;background:#fff7e8!important;color:#425468!important;border:1px solid rgba(184,121,38,.22)!important;}
 
-/* V98 — AI tab visual: lock it to the same balanced frame behavior as the working tab visuals. */
-body.section-ai .tab-visual.compact-section-visual{
-  width:min(760px,100%)!important;
+/* V99 — AI tab visual: copied from the verified Application tab visual pattern. */
+body.section-ai .tab-visual.image-frame.compact-section-visual{
+  width:min(560px,100%)!important;
   max-width:100%!important;
-  margin:22px auto 28px!important;
-  padding:12px!important;
-  border-radius:30px!important;
+  margin:16px auto 22px!important;
+  padding:var(--bpi-symmetric-media-pad)!important;
+  box-sizing:border-box!important;
+  background:linear-gradient(135deg,rgba(255,255,255,.98),rgba(255,250,240,.94))!important;
+  border:1px solid rgba(10,58,104,.16)!important;
+  border-radius:var(--bpi-symmetric-media-radius)!important;
   overflow:hidden!important;
+  background-clip:padding-box!important;
   text-align:center!important;
 }
-body.section-ai .tab-visual.compact-section-visual img{
+body.section-ai .tab-visual.image-frame.compact-section-visual > img{
   display:block!important;
   width:100%!important;
   max-width:100%!important;
@@ -37,12 +46,14 @@ body.section-ai .tab-visual.compact-section-visual img{
   aspect-ratio:21 / 7!important;
   object-fit:cover!important;
   object-position:center center!important;
-  border-radius:18px!important;
+  margin:0!important;
   box-sizing:border-box!important;
+  border-radius:18px!important;
+  clip-path:inset(0 0 18px 0 round 18px)!important;
+  -webkit-clip-path:inset(0 0 18px 0 round 18px)!important;
 }
-body.section-ai .tab-visual.compact-section-visual figcaption{
-  display:none!important;
-}
+body.section-ai .tab-visual.image-frame.compact-section-visual figcaption{display:none!important;}
 
 @media(max-width:960px){body.section-ai .ai-card-grid.ai-page-card-grid{grid-template-columns:1fr!important;}}
+@media(max-width:680px){:root{--bpi-symmetric-media-pad:12px;--bpi-symmetric-media-radius:24px;--bpi-symmetric-media-inner-radius:17px;}}
 @media(max-width:560px){body.section-ai .ai-reading-card .card-media-head{grid-template-columns:58px 1fr!important;}body.section-ai .ai-reading-card .card-thumb{width:58px!important;height:58px!important;max-width:58px!important;max-height:58px!important;}}
