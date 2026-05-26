@@ -1,8 +1,17 @@
 (function () {
-  function encodedMailto(link) {
+  function isMobileLike() {
+    return /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent || "") ||
+      (window.matchMedia && window.matchMedia("(pointer: coarse)").matches);
+  }
+
+  function feedbackData(link) {
+    var isHebrew = document.documentElement.lang === "he" ||
+      document.documentElement.dir === "rtl" ||
+      document.body.classList.contains("public-page-he");
+
     var to = link.getAttribute("data-feedback-to") || "betweenpotentialandideal@gmail.com";
-    var subject = link.getAttribute("data-feedback-subject") || "Response to Between Potential and Ideal";
-    var isHebrew = document.documentElement.lang === "he" || document.documentElement.dir === "rtl" || document.body.classList.contains("public-page-he");
+    var subject = link.getAttribute("data-feedback-subject") ||
+      (isHebrew ? "ביקורת על Between Potential and Ideal" : "Feedback on Between Potential and Ideal");
     var body = link.getAttribute("data-feedback-body") || (isHebrew
       ? [
           "שלום,",
@@ -25,9 +34,26 @@
           "Feedback:"
         ].join("\n"));
 
-    return "mailto:" + encodeURIComponent(to).replace(/%40/g, "@") +
-      "?subject=" + encodeURIComponent(subject) +
-      "&body=" + encodeURIComponent(body);
+    return { to: to, subject: subject, body: body };
+  }
+
+  function encodedMailto(link) {
+    var data = feedbackData(link);
+    return "mailto:" + encodeURIComponent(data.to).replace(/%40/g, "@") +
+      "?subject=" + encodeURIComponent(data.subject) +
+      "&body=" + encodeURIComponent(data.body);
+  }
+
+  function encodedGmail(link) {
+    var data = feedbackData(link);
+    return "https://mail.google.com/mail/?view=cm&fs=1&tf=1" +
+      "&to=" + encodeURIComponent(data.to) +
+      "&su=" + encodeURIComponent(data.subject) +
+      "&body=" + encodeURIComponent(data.body);
+  }
+
+  function targetHref(link) {
+    return isMobileLike() ? encodedMailto(link) : encodedGmail(link);
   }
 
   function isFeedbackLink(link) {
@@ -38,6 +64,7 @@
     return link.hasAttribute("data-gmail-compose") ||
       href.indexOf("mail.google.com") !== -1 ||
       href.indexOf("gmail.com/mail") !== -1 ||
+      href.indexOf("mailto:") === 0 && (text.indexOf("ביקורת") !== -1 || text.indexOf("feedback") !== -1 || text.indexOf("מייל") !== -1) ||
       text.indexOf("שלח ביקורת") !== -1 ||
       text.indexOf("פתח מייל") !== -1 ||
       text.indexOf("send feedback") !== -1 ||
@@ -46,12 +73,13 @@
   }
 
   function patch(link) {
-    var mailto = encodedMailto(link);
-    link.setAttribute("href", mailto);
+    var href = targetHref(link);
+    link.setAttribute("href", href);
     link.removeAttribute("target");
     link.removeAttribute("rel");
     link.removeAttribute("onclick");
-    link.setAttribute("data-feedback-mailto-fixed", "true");
+    link.onclick = null;
+    link.setAttribute("data-feedback-link-fixed", isMobileLike() ? "mailto" : "gmail");
   }
 
   function patchAll() {
@@ -66,6 +94,7 @@
     patch(link);
     event.preventDefault();
     event.stopPropagation();
+    if (event.stopImmediatePropagation) event.stopImmediatePropagation();
     window.location.href = link.getAttribute("href");
   }, true);
 
