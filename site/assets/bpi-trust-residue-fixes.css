@@ -1,0 +1,12 @@
+/* BPI V93 — Trust residue typography fixes
+   Scoped utility for LTR formal tokens inside RTL/LTR prose. */
+
+.math-token {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  display: inline-block !important;
+  white-space: nowrap !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace !important;
+  font-size: .96em !important;
+  letter-spacing: 0 !important;
+}
