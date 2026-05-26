@@ -1,35 +1,6 @@
 /* BPI V96 — user-verified visual corrections */
 
-/* Do not change all tab images here. Only the AI tab receives the same frame behavior
-   as the already-correct tabs, using the existing public figure pattern. */
-body.section-ai figure.tab-visual.compact-section-visual,
-body.section-ai .tab-visual.image-frame.compact-section-visual {
-  width: min(760px, 100%) !important;
-  max-width: 100% !important;
-  margin: 22px auto 28px !important;
-  padding: 12px !important;
-  box-sizing: border-box !important;
-  overflow: hidden !important;
-  text-align: center !important;
-  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.97)) !important;
-  border: 1px solid rgba(10,58,104,.16) !important;
-  border-radius: 30px !important;
-}
-
-body.section-ai figure.tab-visual.compact-section-visual > img,
-body.section-ai .tab-visual.image-frame.compact-section-visual > img {
-  display: block !important;
-  max-width: 100% !important;
-  width: auto !important;
-  height: auto !important;
-  max-height: 420px !important;
-  object-fit: contain !important;
-  object-position: center center !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  border-radius: 18px !important;
-  box-sizing: border-box !important;
-}
+/* AI tab image must not be styled here. It uses the same markup/pattern as the working tab pages. */
 
 body.section-files .source-card-actions-top {
   justify-content: flex-start !important;
