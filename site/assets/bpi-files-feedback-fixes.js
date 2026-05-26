@@ -1,15 +1,18 @@
-/* V106 — Files filtering + feedback mail fixes.
+/* V107 — Files filtering + feedback mail + mobile nav position fixes.
    Additive runtime patch:
    - keeps all file cards discoverable by real link formats
    - restores philosophical theory under format/search filtering
    - converts feedback/Gmail links to native mail links and intercepts clicks to avoid blank tabs
+   - keeps the selected mobile nav tab visible instead of letting the nav rail reset to the start
 */
 (function(){
   'use strict';
 
   var FEEDBACK_TO = 'barakbenhur@gmail.com';
   var KNOWN_FORMATS = ['html','pdf','docx','md','txt'];
+  var NAV_SCROLL_KEY = 'bpi:last-selected-nav-href';
   var lastFormat = null;
+  var navScrollInstalled = false;
 
   function isHe(){
     return document.documentElement.lang === 'he' ||
@@ -159,9 +162,7 @@
     KNOWN_FORMATS.forEach(function(f){ card.classList.toggle('format-' + f, formats.has(f)); });
   }
 
-  function hasPhilosophical(){
-    return cards().some(isPhilosophicalCard);
-  }
+  function hasPhilosophical(){ return cards().some(isPhilosophicalCard); }
 
   function filesContainer(){
     return document.querySelector('.files-grid,.file-grid,.download-grid,.downloads-grid,[data-files-list]') || document.querySelector('main');
@@ -236,11 +237,79 @@
     forceVisibleForFormat();
   }
 
+  function absPath(a){
+    try { return new URL(a.getAttribute('href'), location.href).pathname.replace(/\/+$/,''); }
+    catch(e) { return ''; }
+  }
+
+  function currentPath(){ return location.pathname.replace(/\/+$/,''); }
+
+  function findNavTarget(nav){
+    if (!nav) return null;
+    var active = nav.querySelector('a[aria-current="page"],a.active');
+    if (active) return active;
+
+    var saved = null;
+    try { saved = sessionStorage.getItem(NAV_SCROLL_KEY); } catch(e) {}
+    var links = Array.from(nav.querySelectorAll('a[href]'));
+    if (saved) {
+      var bySaved = links.find(function(a){ return absPath(a) === saved || a.getAttribute('href') === saved; });
+      if (bySaved) return bySaved;
+    }
+    var now = currentPath();
+    return links.find(function(a){ return absPath(a) === now; }) || null;
+  }
+
+  function centerNavTarget(nav, target){
+    if (!nav || !target) return;
+    if (nav.scrollWidth <= nav.clientWidth + 2) return;
+
+    var reduceMotion = false;
+    try { reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch(e) {}
+    var behavior = reduceMotion ? 'auto' : 'smooth';
+
+    try {
+      target.scrollIntoView({block:'nearest', inline:'center', behavior:behavior});
+    } catch(e) {
+      var desired = target.offsetLeft - ((nav.clientWidth - target.offsetWidth) / 2);
+      nav.scrollLeft = Math.max(0, desired);
+    }
+  }
+
+  function keepSelectedNavVisible(){
+    var navs = Array.from(document.querySelectorAll('.site-nav'));
+    navs.forEach(function(nav){
+      var target = findNavTarget(nav);
+      if (!target) return;
+      centerNavTarget(nav, target);
+    });
+  }
+
+  function installMobileNavScrollFix(){
+    if (navScrollInstalled) return;
+    navScrollInstalled = true;
+
+    document.addEventListener('click', function(ev){
+      var a = ev.target && ev.target.closest ? ev.target.closest('.site-nav a[href]') : null;
+      if (!a) return;
+      try { sessionStorage.setItem(NAV_SCROLL_KEY, absPath(a) || a.getAttribute('href') || ''); } catch(e) {}
+      setTimeout(keepSelectedNavVisible, 0);
+    }, true);
+
+    window.addEventListener('pageshow', function(){ setTimeout(keepSelectedNavVisible, 0); setTimeout(keepSelectedNavVisible, 120); });
+    window.addEventListener('load', function(){ setTimeout(keepSelectedNavVisible, 80); });
+    window.addEventListener('resize', function(){ setTimeout(keepSelectedNavVisible, 120); });
+  }
+
   function init(){
     patchFeedbackLinks();
     installFeedbackClickGuard();
+    installMobileNavScrollFix();
     normalizeFiles();
-    document.addEventListener('click', function(ev){ rememberFormatFromEvent(ev); setTimeout(function(){ patchFeedbackLinks(); normalizeFiles(); }, 0); }, true);
+    keepSelectedNavVisible();
+    setTimeout(keepSelectedNavVisible, 80);
+    setTimeout(keepSelectedNavVisible, 240);
+    document.addEventListener('click', function(ev){ rememberFormatFromEvent(ev); setTimeout(function(){ patchFeedbackLinks(); normalizeFiles(); keepSelectedNavVisible(); }, 0); }, true);
     document.addEventListener('change', function(ev){ rememberFormatFromEvent(ev); setTimeout(normalizeFiles, 0); }, true);
     document.addEventListener('input', function(ev){ rememberFormatFromEvent(ev); setTimeout(normalizeFiles, 0); }, true);
     if (isFilesPage()) {
