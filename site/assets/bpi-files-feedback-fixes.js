@@ -1,18 +1,12 @@
-/* V107 — Files filtering + feedback mail + mobile nav position fixes.
-   Additive runtime patch:
-   - keeps all file cards discoverable by real link formats
-   - restores philosophical theory under format/search filtering
-   - converts feedback/Gmail links to native mail links and intercepts clicks to avoid blank tabs
-   - keeps the selected mobile nav tab visible instead of letting the nav rail reset to the start
-*/
+/* V108 — Files filtering + feedback mail fixes only.
+   Removed the mobile nav scroll-centering code because it caused tab rail jumps/freezes.
+   Mobile nav is handled by CSS wrapping in bpi-mobile-site-fixes.css. */
 (function(){
   'use strict';
 
   var FEEDBACK_TO = 'barakbenhur@gmail.com';
   var KNOWN_FORMATS = ['html','pdf','docx','md','txt'];
-  var NAV_SCROLL_KEY = 'bpi:last-selected-nav-href';
   var lastFormat = null;
-  var navScrollInstalled = false;
 
   function isHe(){
     return document.documentElement.lang === 'he' ||
@@ -24,7 +18,7 @@
     var p = location.pathname.toLowerCase();
     return p.endsWith('/files.html') || p.endsWith('/files-en.html') ||
       document.body.classList.contains('files-page') ||
-      !!document.querySelector('.file-card,.download-card,.resource-card,[data-format],[data-formats]');
+      !!document.querySelector('#fileSearch,#fileTypeFilter,#fileLangFilter,.download-table,.file-card,.download-card,.resource-card,[data-format],[data-formats]');
   }
 
   function enc(v){ return encodeURIComponent(v).replace(/%20/g,'%20'); }
@@ -88,16 +82,25 @@
       ev.stopPropagation();
       a.removeAttribute('target');
       a.removeAttribute('rel');
-      a.setAttribute('href', feedbackMailto());
-      window.location.href = feedbackMailto();
+      var href = feedbackMailto();
+      a.setAttribute('href', href);
+      window.location.href = href;
     }, true);
+  }
+
+  function normalizeFormat(value){
+    value = (value || '').toLowerCase().trim();
+    if (value === 'word' || value === 'doc') return 'docx';
+    if (value === 'markdown') return 'md';
+    if (value === 'text') return 'txt';
+    return value;
   }
 
   function fmtFromHref(h){
     var clean = (h || '').split('?')[0].split('#')[0].toLowerCase();
     var m = clean.match(/\.([a-z0-9]+)$/);
     if (!m) return null;
-    var e = m[1] === 'htm' ? 'html' : m[1];
+    var e = normalizeFormat(m[1]);
     return KNOWN_FORMATS.indexOf(e) >= 0 ? e : null;
   }
 
@@ -111,58 +114,73 @@
     });
   }
 
-  function formatsOf(card){
+  function rows(){
+    return Array.from(document.querySelectorAll('.download-table tr')).slice(1);
+  }
+
+  function formatsOf(el){
     var formats = new Set();
     [
-      card.getAttribute('data-format'),
-      card.getAttribute('data-formats'),
-      card.getAttribute('data-file-format'),
-      card.getAttribute('data-file-formats'),
-      card.dataset && card.dataset.format,
-      card.dataset && card.dataset.formats,
-      card.dataset && card.dataset.fileFormat,
-      card.dataset && card.dataset.fileFormats
+      el.getAttribute('data-format'),
+      el.getAttribute('data-formats'),
+      el.getAttribute('data-file-format'),
+      el.getAttribute('data-file-formats'),
+      el.dataset && el.dataset.format,
+      el.dataset && el.dataset.formats,
+      el.dataset && el.dataset.fileFormat,
+      el.dataset && el.dataset.fileFormats
     ].filter(Boolean).join(' ').split(/[\s,|/]+/).forEach(function(f){
-      f = (f || '').trim().toLowerCase();
+      f = normalizeFormat(f);
       if (KNOWN_FORMATS.indexOf(f) >= 0) formats.add(f);
     });
-    card.querySelectorAll('a[href]').forEach(function(a){
+    el.querySelectorAll('a[href]').forEach(function(a){
       var f = fmtFromHref(a.getAttribute('href'));
       if (f) formats.add(f);
     });
+    var text = (el.textContent || '').toLowerCase();
+    if (text.includes('pdf')) formats.add('pdf');
+    if (text.includes('html')) formats.add('html');
+    if (text.includes('word') || text.includes('docx')) formats.add('docx');
+    if (text.includes('markdown')) formats.add('md');
+    if (text.includes('text')) formats.add('txt');
     return formats;
   }
 
-  function isPhilosophicalCard(card){
-    var text = (card.textContent || '').toLowerCase();
-    var hrefs = Array.from(card.querySelectorAll('a[href]')).map(function(a){return a.getAttribute('href') || '';}).join(' ').toLowerCase();
+  function isPhilosophicalBlock(el){
+    var text = (el.textContent || '').toLowerCase();
+    var hrefs = Array.from(el.querySelectorAll('a[href]')).map(function(a){return a.getAttribute('href') || '';}).join(' ').toLowerCase();
     return text.includes('התאוריה הפילוסופית') || text.includes('התיאוריה הפילוסופית') ||
       text.includes('philosophical theory') || text.includes('between potential and ideal') ||
-      hrefs.includes('between-potential-and-ideal-he-editorial') ||
-      hrefs.includes('between-potential-and-ideal-en-editorial');
+      hrefs.includes('between-potential-and-ideal-he') ||
+      hrefs.includes('between-potential-and-ideal-en');
   }
 
-  function setCardFormats(card){
-    var formats = formatsOf(card);
-    if (isPhilosophicalCard(card)) {
+  function setFormats(el){
+    var formats = formatsOf(el);
+    if (isPhilosophicalBlock(el)) {
       ['html','pdf','docx','md'].forEach(function(f){ formats.add(f); });
-      card.dataset.search = [
-        card.dataset.search || '',
-        'התאוריה הפילוסופית','התיאוריה הפילוסופית','בין פוטנציאל לאידיאל',
-        'philosophical theory','between potential and ideal','html pdf docx md'
-      ].join(' ');
+      if (el.dataset) {
+        el.dataset.search = [
+          el.dataset.search || '',
+          'התאוריה הפילוסופית','התיאוריה הפילוסופית','בין פוטנציאל לאידיאל',
+          'philosophical theory','between potential and ideal','html pdf docx md'
+        ].join(' ');
+      }
     }
-    if (!formats.size) return;
+    if (!formats.size) return formats;
     var value = Array.from(formats).sort().join(' ');
-    card.setAttribute('data-format', value);
-    card.setAttribute('data-formats', value);
-    card.setAttribute('data-file-format', value);
-    card.setAttribute('data-file-formats', value);
-    card.setAttribute('data-filter-formats', value);
-    KNOWN_FORMATS.forEach(function(f){ card.classList.toggle('format-' + f, formats.has(f)); });
+    el.setAttribute('data-format', value);
+    el.setAttribute('data-formats', value);
+    el.setAttribute('data-file-format', value);
+    el.setAttribute('data-file-formats', value);
+    el.setAttribute('data-filter-formats', value);
+    KNOWN_FORMATS.forEach(function(f){ el.classList.toggle('format-' + f, formats.has(f)); });
+    return formats;
   }
 
-  function hasPhilosophical(){ return cards().some(isPhilosophicalCard); }
+  function hasPhilosophical(){
+    return cards().some(isPhilosophicalBlock) || rows().some(isPhilosophicalBlock);
+  }
 
   function filesContainer(){
     return document.querySelector('.files-grid,.file-grid,.download-grid,.downloads-grid,[data-files-list]') || document.querySelector('main');
@@ -201,7 +219,7 @@
       el.value,
       el.textContent
     ].filter(Boolean).join(' ').toLowerCase();
-    for (var i=0;i<KNOWN_FORMATS.length;i++) if (raw.includes(KNOWN_FORMATS[i])) return KNOWN_FORMATS[i];
+    for (var i=0;i<KNOWN_FORMATS.length;i++) if (normalizeFormat(raw).includes(KNOWN_FORMATS[i])) return KNOWN_FORMATS[i];
     if (raw.includes('all') || raw.includes('הכל') || raw.includes('כולם')) return null;
     return lastFormat;
   }
@@ -212,10 +230,35 @@
     lastFormat = f;
   }
 
+  function applyTableFilter(){
+    var tableRows = rows();
+    if (!tableRows.length) return;
+    var qEl = document.querySelector('#fileSearch');
+    var typeEl = document.querySelector('#fileTypeFilter');
+    var langEl = document.querySelector('#fileLangFilter');
+    var q = (qEl && qEl.value || '').toLowerCase().trim();
+    var type = normalizeFormat(typeEl && typeEl.value || lastFormat || '');
+    var lang = (langEl && langEl.value || '').toLowerCase().trim();
+    var visible = 0;
+    tableRows.forEach(function(row){
+      var formats = setFormats(row);
+      if (isPhilosophicalBlock(row)) ['html','pdf','docx','md'].forEach(function(f){ formats.add(f); });
+      var text = (row.textContent || '').toLowerCase() + ' ' + Array.from(row.querySelectorAll('a[href]')).map(function(a){ return a.getAttribute('href') || ''; }).join(' ').toLowerCase();
+      var okQ = !q || text.includes(q);
+      var okType = !type || formats.has(type);
+      var okLang = !lang || text.includes(lang);
+      var ok = okQ && okType && okLang;
+      row.style.display = ok ? '' : 'none';
+      if (ok) visible += 1;
+    });
+    var count = document.querySelector('#fileFilterCount');
+    if (count) count.textContent = isHe() ? ('מוצגים ' + visible + ' קבצים') : (visible + ' files shown');
+  }
+
   function forceVisibleForFormat(){
     if (!isFilesPage() || !lastFormat) return;
     cards().forEach(function(card){
-      var formats = formatsOf(card);
+      var formats = setFormats(card);
       if (!formats.has(lastFormat)) return;
       card.hidden = false;
       card.removeAttribute('hidden');
@@ -233,83 +276,16 @@
       var c = filesContainer();
       if (c) c.appendChild(createPhilosophical());
     }
-    cards().forEach(setCardFormats);
+    cards().forEach(setFormats);
+    applyTableFilter();
     forceVisibleForFormat();
-  }
-
-  function absPath(a){
-    try { return new URL(a.getAttribute('href'), location.href).pathname.replace(/\/+$/,''); }
-    catch(e) { return ''; }
-  }
-
-  function currentPath(){ return location.pathname.replace(/\/+$/,''); }
-
-  function findNavTarget(nav){
-    if (!nav) return null;
-    var active = nav.querySelector('a[aria-current="page"],a.active');
-    if (active) return active;
-
-    var saved = null;
-    try { saved = sessionStorage.getItem(NAV_SCROLL_KEY); } catch(e) {}
-    var links = Array.from(nav.querySelectorAll('a[href]'));
-    if (saved) {
-      var bySaved = links.find(function(a){ return absPath(a) === saved || a.getAttribute('href') === saved; });
-      if (bySaved) return bySaved;
-    }
-    var now = currentPath();
-    return links.find(function(a){ return absPath(a) === now; }) || null;
-  }
-
-  function centerNavTarget(nav, target){
-    if (!nav || !target) return;
-    if (nav.scrollWidth <= nav.clientWidth + 2) return;
-
-    var reduceMotion = false;
-    try { reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch(e) {}
-    var behavior = reduceMotion ? 'auto' : 'smooth';
-
-    try {
-      target.scrollIntoView({block:'nearest', inline:'center', behavior:behavior});
-    } catch(e) {
-      var desired = target.offsetLeft - ((nav.clientWidth - target.offsetWidth) / 2);
-      nav.scrollLeft = Math.max(0, desired);
-    }
-  }
-
-  function keepSelectedNavVisible(){
-    var navs = Array.from(document.querySelectorAll('.site-nav'));
-    navs.forEach(function(nav){
-      var target = findNavTarget(nav);
-      if (!target) return;
-      centerNavTarget(nav, target);
-    });
-  }
-
-  function installMobileNavScrollFix(){
-    if (navScrollInstalled) return;
-    navScrollInstalled = true;
-
-    document.addEventListener('click', function(ev){
-      var a = ev.target && ev.target.closest ? ev.target.closest('.site-nav a[href]') : null;
-      if (!a) return;
-      try { sessionStorage.setItem(NAV_SCROLL_KEY, absPath(a) || a.getAttribute('href') || ''); } catch(e) {}
-      setTimeout(keepSelectedNavVisible, 0);
-    }, true);
-
-    window.addEventListener('pageshow', function(){ setTimeout(keepSelectedNavVisible, 0); setTimeout(keepSelectedNavVisible, 120); });
-    window.addEventListener('load', function(){ setTimeout(keepSelectedNavVisible, 80); });
-    window.addEventListener('resize', function(){ setTimeout(keepSelectedNavVisible, 120); });
   }
 
   function init(){
     patchFeedbackLinks();
     installFeedbackClickGuard();
-    installMobileNavScrollFix();
     normalizeFiles();
-    keepSelectedNavVisible();
-    setTimeout(keepSelectedNavVisible, 80);
-    setTimeout(keepSelectedNavVisible, 240);
-    document.addEventListener('click', function(ev){ rememberFormatFromEvent(ev); setTimeout(function(){ patchFeedbackLinks(); normalizeFiles(); keepSelectedNavVisible(); }, 0); }, true);
+    document.addEventListener('click', function(ev){ rememberFormatFromEvent(ev); setTimeout(function(){ patchFeedbackLinks(); normalizeFiles(); }, 0); }, true);
     document.addEventListener('change', function(ev){ rememberFormatFromEvent(ev); setTimeout(normalizeFiles, 0); }, true);
     document.addEventListener('input', function(ev){ rememberFormatFromEvent(ev); setTimeout(normalizeFiles, 0); }, true);
     if (isFilesPage()) {
