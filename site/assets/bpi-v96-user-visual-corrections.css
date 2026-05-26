@@ -1,10 +1,30 @@
-/* BPI V96 — user-verified visual corrections
-   Scope: keep user-approved text choices and align selected file-card actions.
+/* BPI V96 — user-verified visual corrections */
 
-   Important: do not style the AI tab image here. It must inherit the same tab-visual
-   rules as every other tab, so spacing stays identical instead of being guessed per page. */
+body.public-page figure.tab-visual.compact-section-visual,
+body.public-page .tab-visual.image-frame.compact-section-visual {
+  padding: clamp(14px, 1.15vw, 22px) !important;
+  box-sizing: border-box !important;
+  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.94)) !important;
+  border: 1px solid rgba(10,58,104,.16) !important;
+  border-radius: 30px !important;
+  overflow: hidden !important;
+  background-clip: padding-box !important;
+}
 
-/* Keep selected file cards visually equal in height, but place their buttons near the first action row instead of at the bottom. */
+body.public-page figure.tab-visual.compact-section-visual > img,
+body.public-page .tab-visual.image-frame.compact-section-visual > img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: clamp(136px, 18vw, 212px) !important;
+  aspect-ratio: 21 / 7 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  margin: 0 !important;
+  border-radius: 22px !important;
+  box-sizing: border-box !important;
+}
+
 body.section-files .source-card-actions-top {
   justify-content: flex-start !important;
 }
