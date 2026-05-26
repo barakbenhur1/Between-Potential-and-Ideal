@@ -1,6 +1,7 @@
-/* V117 — scoped Home mobile shell + lightweight Files filtering.
+/* V118 — scoped Home mobile shell + lightweight Files filtering.
    Home mobile loads the same main stylesheet used by the Summary tab, then keeps
-   only the Home opening hero blue/turquoise. No desktop changes. */
+   only the Home opening hero blue/turquoise. Mobile Home content is slightly wider.
+   No desktop changes. */
 (function(){
   'use strict';
 
@@ -45,19 +46,19 @@
       'body.public-page .site-header .site-nav a{transform:none!important;scroll-snap-align:none!important;}',
 
       /* Summary-like page spacing. */
-      'body.public-page .breadcrumbs{width:min(100% - 40px,1120px)!important;max-width:calc(100vw - 40px)!important;margin:52px auto 14px!important;box-sizing:border-box!important;}',
-      'body.public-page .opening-visual,body.public-page .signature-blurbs,body.public-page .notice-box,body.public-page .hub-grid,body.public-page .reading-path-cta{width:min(100% - 40px,1120px)!important;max-width:calc(100vw - 40px)!important;margin-left:auto!important;margin-right:auto!important;box-sizing:border-box!important;}',
+      'body.public-page .breadcrumbs{width:min(100% - 24px,1120px)!important;max-width:calc(100vw - 24px)!important;margin:52px auto 14px!important;box-sizing:border-box!important;}',
+      'body.public-page .opening-visual,body.public-page .signature-blurbs,body.public-page .notice-box,body.public-page .hub-grid,body.public-page .reading-path-cta{width:min(100% - 24px,1120px)!important;max-width:calc(100vw - 24px)!important;margin-left:auto!important;margin-right:auto!important;box-sizing:border-box!important;}',
 
       /* Restore the Home-specific opening block: blue/turquoise card with white text. */
-      'body.public-page .concise-hero,body.public-page .hero.concise-hero{display:block!important;width:min(100% - 52px,1120px)!important;max-width:calc(100vw - 52px)!important;margin:0 auto 26px!important;box-sizing:border-box!important;padding:clamp(34px,8vw,56px) clamp(24px,6vw,42px)!important;border-radius:30px!important;border:1px solid rgba(255,255,255,.22)!important;background:linear-gradient(145deg,#06466d 0%,#007b91 58%,#008fa2 100%)!important;color:#fffaf0!important;box-shadow:0 18px 48px rgba(10,58,104,.18)!important;text-align:center!important;overflow:hidden!important;}',
+      'body.public-page .concise-hero,body.public-page .hero.concise-hero{display:block!important;width:min(100% - 24px,1120px)!important;max-width:calc(100vw - 24px)!important;margin:0 auto 26px!important;box-sizing:border-box!important;padding:clamp(34px,8vw,56px) clamp(24px,6vw,42px)!important;border-radius:30px!important;border:1px solid rgba(255,255,255,.22)!important;background:linear-gradient(145deg,#06466d 0%,#007b91 58%,#008fa2 100%)!important;color:#fffaf0!important;box-shadow:0 18px 48px rgba(10,58,104,.18)!important;text-align:center!important;overflow:hidden!important;}',
       'body.public-page .concise-hero::before,body.public-page .hero.concise-hero::before{display:none!important;content:none!important;}',
       'body.public-page .concise-hero .kicker,body.public-page .hero.concise-hero .kicker{color:#fffaf0!important;background:transparent!important;border:0!important;margin:0 auto clamp(30px,8vw,58px)!important;padding:0!important;text-align:center!important;font-weight:800!important;}',
       'body.public-page .concise-hero h1,body.public-page .hero.concise-hero h1{color:#fffaf0!important;text-align:center!important;margin:0 auto!important;max-width:760px!important;font-family:"Gveret Levin","Noto Sans Hebrew",Georgia,"Times New Roman",serif!important;font-size:clamp(2.7rem,11.5vw,4.8rem)!important;line-height:1.04!important;letter-spacing:-.025em!important;}',
       'body.public-page .concise-hero .lead,body.public-page .hero.concise-hero .lead,body.public-page .concise-hero .method-note,body.public-page .hero.concise-hero .method-note{color:rgba(255,250,240,.92)!important;text-align:center!important;margin-left:auto!important;margin-right:auto!important;max-width:72ch!important;background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;font-size:clamp(1rem,4.5vw,1.18rem)!important;line-height:1.7!important;}',
       '}',
       '@media (max-width:390px){',
-      'body.public-page .breadcrumbs{width:min(100% - 34px,1120px)!important;max-width:calc(100vw - 34px)!important;margin-top:48px!important;}',
-      'body.public-page .concise-hero,body.public-page .hero.concise-hero{width:min(100% - 40px,1120px)!important;max-width:calc(100vw - 40px)!important;padding:44px 22px!important;border-radius:28px!important;}',
+      'body.public-page .breadcrumbs{width:min(100% - 20px,1120px)!important;max-width:calc(100vw - 20px)!important;margin-top:48px!important;}',
+      'body.public-page .concise-hero,body.public-page .hero.concise-hero{width:min(100% - 20px,1120px)!important;max-width:calc(100vw - 20px)!important;padding:44px 22px!important;border-radius:28px!important;}',
       '}'
     ].join('');
     document.head.appendChild(style);
