@@ -24,8 +24,8 @@ jobs:
           import re
 
           css = r'''
-          <style id="v111-appendix-story-toc-clean-list-alignment">
-          /* V111 — standalone appendix TOC: fix the actual clean-list markup used by the story appendix. */
+          <style id="v112-appendix-story-toc-existing-thumbnails">
+          /* V112 — standalone appendix TOC: existing story images as thumbnails. No new images. */
           .story-toc-page{
             text-align:start!important;
           }
@@ -41,8 +41,8 @@ jobs:
           }
           .story-toc-page .story-toc-clean-list{
             display:block!important;
-            width:min(560px,100%)!important;
-            max-width:560px!important;
+            width:min(760px,100%)!important;
+            max-width:760px!important;
             margin-block:24px 0!important;
             padding:0!important;
             text-align:inherit!important;
@@ -64,7 +64,7 @@ jobs:
           .story-toc-page p.story-toc-row{
             display:block!important;
             margin:0!important;
-            padding:.74rem 0 .72rem!important;
+            padding:.72rem 0!important;
             border-block-start:1px solid rgba(197,121,29,.24)!important;
             text-align:inherit!important;
             direction:inherit!important;
@@ -73,24 +73,53 @@ jobs:
           .story-toc-page p.story-toc-row:first-child{
             border-block-start:0!important;
           }
-          .story-toc-page .story-toc-clean-list a,
-          .story-toc-page p.story-toc-row a,
-          .story-toc-page a.story-toc-row{
-            display:block!important;
+          .story-toc-page .story-toc-entry,
+          .story-toc-page .story-toc-clean-list a.story-toc-entry,
+          .story-toc-page p.story-toc-row a.story-toc-entry{
+            display:flex!important;
+            align-items:center!important;
+            justify-content:flex-start!important;
+            gap:14px!important;
             width:100%!important;
+            min-height:64px!important;
             padding:0!important;
             margin:0!important;
+            color:#08737a!important;
+            text-align:inherit!important;
+            direction:inherit!important;
+            text-decoration:none!important;
+          }
+          html[dir="rtl"] .story-toc-page .story-toc-entry{
+            flex-direction:row!important;
+          }
+          html[dir="ltr"] .story-toc-page .story-toc-entry{
+            flex-direction:row!important;
+          }
+          .story-toc-page .story-toc-thumb{
+            display:block!important;
+            flex:0 0 92px!important;
+            width:92px!important;
+            min-width:92px!important;
+            height:62px!important;
+            object-fit:cover!important;
+            object-position:center center!important;
+            border-radius:12px!important;
+            border:1px solid rgba(10,58,104,.14)!important;
+            background:#fffaf0!important;
+            box-shadow:0 6px 16px rgba(20,40,60,.08)!important;
+          }
+          .story-toc-page .story-toc-title{
+            display:block!important;
+            min-width:0!important;
             color:#08737a!important;
             font-size:clamp(1.08rem,2vw,1.36rem)!important;
             line-height:1.35!important;
             font-weight:700!important;
             text-align:inherit!important;
             direction:inherit!important;
-            text-decoration:none!important;
           }
-          .story-toc-page .story-toc-clean-list a:hover,
-          .story-toc-page p.story-toc-row a:hover,
-          .story-toc-page a.story-toc-row:hover{
+          .story-toc-page .story-toc-entry:hover .story-toc-title,
+          .story-toc-page .story-toc-entry:focus .story-toc-title{
             text-decoration:underline!important;
             text-decoration-thickness:1px!important;
             text-underline-offset:.18em!important;
@@ -98,8 +127,8 @@ jobs:
           .story-toc-page ol{
             columns:1!important;
             column-count:1!important;
-            width:min(560px,100%)!important;
-            max-width:560px!important;
+            width:min(760px,100%)!important;
+            max-width:760px!important;
             margin-block:24px 0!important;
             padding-inline-start:0!important;
             padding-inline-end:0!important;
@@ -117,13 +146,26 @@ jobs:
           .story-toc-page li{
             break-inside:avoid!important;
             margin:0!important;
-            padding:.74rem 0 .72rem!important;
+            padding:.72rem 0!important;
             border-block-start:1px solid rgba(197,121,29,.24)!important;
             font-size:clamp(1.08rem,2vw,1.36rem)!important;
             line-height:1.35!important;
           }
           .story-toc-page li:first-child{
             border-block-start:0!important;
+          }
+          @media (max-width:560px){
+            .story-toc-page .story-toc-entry{
+              gap:10px!important;
+              min-height:58px!important;
+            }
+            .story-toc-page .story-toc-thumb{
+              flex-basis:76px!important;
+              width:76px!important;
+              min-width:76px!important;
+              height:52px!important;
+              border-radius:10px!important;
+            }
           }
           @media print{
             .story-toc-page .story-toc-clean-list,
@@ -138,17 +180,53 @@ jobs:
             .story-toc-page li{
               padding:.42rem 0!important;
             }
+            .story-toc-page .story-toc-entry{
+              gap:4mm!important;
+              min-height:18mm!important;
+            }
+            .story-toc-page .story-toc-thumb{
+              flex-basis:26mm!important;
+              width:26mm!important;
+              min-width:26mm!important;
+              height:18mm!important;
+              border-radius:3mm!important;
+              box-shadow:none!important;
+            }
+            .story-toc-page .story-toc-title{
+              font-size:13pt!important;
+            }
           }
           </style>
           '''.strip()
 
-          marker_re = re.compile(r'\n?\s*<style id="v11[01]-appendix-story-toc[^>]*>.*?</style>', re.S)
+          marker_re = re.compile(r'\n?\s*<style id="v11[0-2]-appendix-story-toc[^>]*>.*?</style>', re.S)
+          list_re = re.compile(r'<div class="story-toc-clean-list"(?P<attrs>[^>]*)>(?P<body>.*?)</div>', re.S)
+          row_re = re.compile(r'<p class="story-toc-row"[^>]*>\s*<a\s+([^>]*?)href="#story-(\d+)"([^>]*)>(.*?)</a>\s*</p>', re.S)
+
+          def normalize_rows(match):
+            body = match.group('body')
+
+            def repl(row):
+              story_no = int(row.group(2))
+              title_html = row.group(4).strip()
+              return (
+                f'<p class="story-toc-row">'
+                f'<a class="story-toc-entry" href="#story-{story_no}">'
+                f'<img class="story-toc-thumb" src="assets/story_image_{story_no}.png" alt="" loading="lazy" decoding="async"/>'
+                f'<span class="story-toc-title">{title_html}</span>'
+                f'</a></p>'
+              )
+
+            new_body = row_re.sub(repl, body)
+            return '<div class="story-toc-clean-list">' + new_body + '</div>'
+
           changed = []
           for path in sorted(Path('site/files/appendices').glob('*.html')):
             text = path.read_text(encoding='utf-8')
             if 'story-toc-page' not in text:
               continue
             clean = marker_re.sub('', text)
+            clean = list_re.sub(normalize_rows, clean, count=1)
             if '</head>' not in clean:
               continue
             patched = clean.replace('</head>', css + '\n</head>', 1)
@@ -171,5 +249,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site/files/appendices/*.html
-          git commit -m "Fix standalone appendix TOC alignment"
+          git commit -m "Add existing thumbnails to appendix TOC"
           git push
