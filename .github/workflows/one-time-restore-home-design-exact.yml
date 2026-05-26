@@ -1,4 +1,4 @@
-name: One-time restore exact home design
+name: One-time restore exact home design with mobile full tab bar
 
 on:
   push:
@@ -18,12 +18,12 @@ jobs:
           persist-credentials: true
           fetch-depth: 0
 
-      - name: Restore only the home design files
+      - name: Restore home design and apply only the mobile full-tab-bar fix
         run: |
           set -e
 
-          # Exact restore point: before the later home nav/header/css experiments.
-          # Scope is intentionally only these three files.
+          # Restore exact home design first. Then apply one scoped mobile-only fix:
+          # when Home is active, the top bar must show all tabs without horizontal scrolling.
           git checkout bdde7bb6bd98f98e09b328cf1cd23dba78824f06^ -- \
             site/index.html \
             site/en.html \
@@ -32,16 +32,113 @@ jobs:
           rm -f docs/home-css-alignment-fix.md
           rm -f docs/home-design-restore.md
 
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          css_path = Path('site/styles-home-original.css')
+          css = css_path.read_text(encoding='utf-8')
+          marker = '/* V111 — home mobile full tab bar only */'
+          block = r'''
+/* V111 — home mobile full tab bar only.
+   Scope: Home stylesheet only, mobile only. It does not alter desktop or content design.
+   Goal: when the Home tab is active, all top-bar tabs remain visible without horizontal scrolling. */
+@media (max-width: 860px){
+  body.public-page .site-header,
+  .site-header{
+    width:calc(100% - 16px) !important;
+    max-width:100vw !important;
+    box-sizing:border-box !important;
+    overflow:visible !important;
+  }
+  body.public-page .site-header .site-nav,
+  .site-header .site-nav{
+    display:flex !important;
+    flex-wrap:wrap !important;
+    justify-content:center !important;
+    align-items:center !important;
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    overflow:visible !important;
+    overflow-x:visible !important;
+    overflow-y:visible !important;
+    white-space:normal !important;
+    gap:.32rem !important;
+    box-sizing:border-box !important;
+    scrollbar-width:none !important;
+    scroll-snap-type:none !important;
+  }
+  body.public-page .site-header .site-nav::-webkit-scrollbar,
+  .site-header .site-nav::-webkit-scrollbar{
+    display:none !important;
+  }
+  body.public-page .site-header .site-nav a,
+  .site-header .site-nav a{
+    flex:0 1 auto !important;
+    min-width:0 !important;
+    max-width:calc(50vw - .75rem) !important;
+    box-sizing:border-box !important;
+    white-space:nowrap !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+    transform:none !important;
+    scroll-snap-align:none !important;
+  }
+}
+@media (max-width: 480px){
+  body.public-page .site-header .site-nav,
+  .site-header .site-nav{
+    gap:.24rem !important;
+  }
+  body.public-page .site-header .site-nav a,
+  .site-header .site-nav a{
+    max-width:calc(50vw - .55rem) !important;
+  }
+}
+@media (max-width: 360px){
+  body.public-page .site-header .site-nav a,
+  .site-header .site-nav a{
+    max-width:calc(100vw - 1rem) !important;
+  }
+}
+'''
+          if marker not in css:
+              css = css.rstrip() + '\n\n' + block + '\n'
+              css_path.write_text(css, encoding='utf-8')
+
+          for html_path in [Path('site/index.html'), Path('site/en.html')]:
+              html = html_path.read_text(encoding='utf-8')
+              html = re.sub(
+                  r'styles-home-original\.css\?v=[^"\s]+',
+                  'styles-home-original.css?v=20260526-home-original-mobile-tabs-v111',
+                  html
+              )
+              html_path.write_text(html, encoding='utf-8')
+          PY
+
+          cat > docs/home-mobile-full-tab-bar-fix.md <<'EOF'
+          # Home mobile full tab bar fix
+
+          Restored the home design, then applied only one scoped mobile-only change:
+          the Home page top navigation wraps and shows all tabs on mobile when Home is active.
+
+          Changed only:
+          - `site/index.html`
+          - `site/en.html`
+          - `site/styles-home-original.css`
+          EOF
+
       - name: Remove this workflow
         run: rm -f .github/workflows/one-time-restore-home-design-exact.yml
 
-      - name: Commit exact home design restore
+      - name: Commit exact home design restore with mobile tab bar fix
         run: |
           git config user.name "Barak Ben Hur via ChatGPT"
           git config user.email "barakbenhur@gmail.com"
           if ! git diff --quiet; then
-            git add site/index.html site/en.html site/styles-home-original.css docs/home-css-alignment-fix.md docs/home-design-restore.md .github/workflows/one-time-restore-home-design-exact.yml
-            git commit -m "Restore exact home page design"
+            git add site/index.html site/en.html site/styles-home-original.css docs/home-css-alignment-fix.md docs/home-design-restore.md docs/home-mobile-full-tab-bar-fix.md .github/workflows/one-time-restore-home-design-exact.yml
+            git commit -m "Restore home design and show all mobile tabs"
             git push
           else
             echo "No changes to commit"
