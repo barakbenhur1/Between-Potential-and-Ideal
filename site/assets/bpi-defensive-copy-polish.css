@@ -2,9 +2,11 @@
    Keep necessary methodological safeguards, but make repeated language/status notes feel like UI metadata rather than main argument. */
 
 body.public-page .language-status-note {
-  max-width: min(860px, calc(100% - 36px)) !important;
-  margin: 22px auto 30px !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 22px 0 30px !important;
   padding: 14px 20px !important;
+  box-sizing: border-box !important;
   border-radius: 22px !important;
   box-shadow: 0 10px 30px rgba(10, 58, 104, .055) !important;
   background: rgba(255, 250, 240, .62) !important;
