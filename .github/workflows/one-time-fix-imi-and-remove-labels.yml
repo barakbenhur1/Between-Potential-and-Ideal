@@ -1,0 +1,156 @@
+name: One-time fix Imi wording and remove visible labels
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/one-time-fix-imi-and-remove-labels.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix-imi-labels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Install converters
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc wkhtmltopdf fonts-noto-core fonts-noto-extra fonts-noto-color-emoji
+
+      - name: Fix Hebrew Imi wording and remove visible structural labels
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import subprocess
+
+          HE_TITLE = 'סיפורים לפני המחשבה'
+          HE_SUBTITLE_GOOD = 'סיפורים שסיפרתי לאימי לפני השינה'
+          HE_SUBTITLE_BAD = 'סיפורים שסיפרתי לאמי לפני השינה'
+          HE_EXPLANATION = 'נספחים ספרותיים לתאוריה, מתורגמים ומעוצבים לשתי השפות'
+
+          EN_TITLE = 'Stories Before Thought'
+          EN_SUBTITLE = 'Stories I Told My Mother Before Sleep'
+          EN_EXPLANATION = 'Literary appendices to the theory, translated and designed in both languages.'
+
+          TEXT_EXTS = {'.html', '.htm', '.md', '.txt'}
+          changed = []
+          regenerated = []
+
+          replacements = {
+              HE_SUBTITLE_BAD: HE_SUBTITLE_GOOD,
+              f'כותרת: {HE_TITLE}': HE_TITLE,
+              f'כותרת — {HE_TITLE}': HE_TITLE,
+              f'כותרת - {HE_TITLE}': HE_TITLE,
+              f'תת כותרת: {HE_SUBTITLE_GOOD}': HE_SUBTITLE_GOOD,
+              f'תת־כותרת: {HE_SUBTITLE_GOOD}': HE_SUBTITLE_GOOD,
+              f'תת-כותרת: {HE_SUBTITLE_GOOD}': HE_SUBTITLE_GOOD,
+              f'סאב־טייטל: {HE_SUBTITLE_GOOD}': HE_SUBTITLE_GOOD,
+              f'הסבר: {HE_EXPLANATION}': HE_EXPLANATION,
+              f'Title: {EN_TITLE}': EN_TITLE,
+              f'Subtitle: {EN_SUBTITLE}': EN_SUBTITLE,
+              f'Explanation: {EN_EXPLANATION}': EN_EXPLANATION,
+          }
+
+          # Also remove labels if wrapped in simple inline HTML tags before the text.
+          html_replacements = {
+              '<strong>כותרת:</strong> ': '',
+              '<b>כותרת:</b> ': '',
+              '<span>כותרת:</span> ': '',
+              '<strong>תת כותרת:</strong> ': '',
+              '<b>תת כותרת:</b> ': '',
+              '<span>תת כותרת:</span> ': '',
+              '<strong>תת־כותרת:</strong> ': '',
+              '<b>תת־כותרת:</b> ': '',
+              '<span>תת־כותרת:</span> ': '',
+              '<strong>הסבר:</strong> ': '',
+              '<b>הסבר:</b> ': '',
+              '<span>הסבר:</span> ': '',
+              '<strong>Title:</strong> ': '',
+              '<b>Title:</b> ': '',
+              '<span>Title:</span> ': '',
+              '<strong>Subtitle:</strong> ': '',
+              '<b>Subtitle:</b> ': '',
+              '<span>Subtitle:</span> ': '',
+              '<strong>Explanation:</strong> ': '',
+              '<b>Explanation:</b> ': '',
+              '<span>Explanation:</span> ': '',
+          }
+
+          def is_relevant(text):
+              low = text.lower()
+              return (
+                  HE_TITLE in text or HE_SUBTITLE_BAD in text or HE_SUBTITLE_GOOD in text or
+                  EN_TITLE.lower() in low or EN_SUBTITLE.lower() in low or
+                  'stories before thought' in low or 'stories i told my mother' in low
+              )
+
+          for path in sorted(Path('site').rglob('*')):
+              if not path.is_file() or path.suffix.lower() not in TEXT_EXTS:
+                  continue
+              text = path.read_text(encoding='utf-8', errors='ignore')
+              if not is_relevant(text):
+                  continue
+              new = text
+              for old, good in replacements.items():
+                  new = new.replace(old, good)
+              for old, good in html_replacements.items():
+                  new = new.replace(old, good)
+              if new != text:
+                  path.write_text(new, encoding='utf-8')
+                  changed.append(str(path))
+
+          # Regenerate binary files for any changed HTML file with same-stem outputs.
+          for item in changed:
+              html = Path(item)
+              if html.suffix.lower() not in {'.html', '.htm'}:
+                  continue
+              pdf = html.with_suffix('.pdf')
+              docx = html.with_suffix('.docx')
+              if pdf.exists():
+                  try:
+                      subprocess.run(['wkhtmltopdf','--enable-local-file-access',str(html),str(pdf)], check=True)
+                      regenerated.append(str(pdf))
+                  except Exception as e:
+                      print('PDF regeneration failed:', pdf, e)
+              if docx.exists():
+                  try:
+                      subprocess.run(['pandoc',str(html),'--from=html','--to=docx',f'--resource-path={html.parent}:site:site/figures','--output',str(docx)], check=True)
+                      regenerated.append(str(docx))
+                  except Exception as e:
+                      print('DOCX regeneration failed:', docx, e)
+
+          report = Path('docs/stories-before-thought-imi-label-cleanup.md')
+          report.parent.mkdir(parents=True, exist_ok=True)
+          lines = ['# Stories Before Thought cleanup', '']
+          lines.append('Applied content rule: keep only the real title, subtitle, and explanation text; do not show structural labels such as Title/Subtitle/Explanation.')
+          lines.append('')
+          lines.append(f'Hebrew subtitle restored to: `{HE_SUBTITLE_GOOD}`')
+          lines.append('')
+          lines.append('## Changed files')
+          lines += [f'- `{p}`' for p in changed] if changed else ['- No text files needed changes.']
+          lines.append('')
+          lines.append('## Regenerated binary outputs')
+          lines += [f'- `{p}`' for p in regenerated] if regenerated else ['- No same-stem binary outputs regenerated.']
+          report.write_text('\n'.join(lines)+'\n', encoding='utf-8')
+          print('\n'.join(lines))
+          PY
+
+      - name: Remove workflow
+        run: rm -f .github/workflows/one-time-fix-imi-and-remove-labels.yml
+
+      - name: Commit Imi and label cleanup
+        run: |
+          git config user.name "Barak Ben Hur via ChatGPT"
+          git config user.email "barakbenhur@gmail.com"
+          if ! git diff --quiet; then
+            git add site docs/stories-before-thought-imi-label-cleanup.md .github/workflows/one-time-fix-imi-and-remove-labels.yml
+            git commit -m "Fix Stories Before Thought subtitle wording and labels"
+            git push
+          else
+            echo "No changes to commit"
+          fi
