@@ -4,9 +4,9 @@ Scope: `site/files/**` only. This pass does not edit public tab pages.
 
 ## Direct fixes applied
 - `site/files/between-potential-and-ideal-en-editorial.md`
-  - black-hole/holography markdown image -> ../figures/v25_chapter_black-holes-horizons-holography.png
+  - black-hole/holography markdown image -> ../figures/v26_restyle_polar_field_threshold.png
 - `site/files/between-potential-and-ideal-he-editorial.md`
-  - black-hole/holography markdown image -> ../figures/v25_chapter_black-holes-horizons-holography.png
+  - black-hole/holography markdown image -> ../figures/v26_restyle_polar_field_threshold.png
 
 ## Duplicated image filenames inside theory files
 - `cover_philosophical_recursion_whole_diagram.png` — 16 references
@@ -16,7 +16,7 @@ Scope: `site/files/**` only. This pass does not edit public tab pages.
   - `site/files/between-potential-and-ideal-en-editorial.html`
   - `site/files/between-potential-and-ideal-en-editorial.html`
   - `site/files/between-potential-and-ideal-en-editorial.html`
-- `v25_chapter_high-energy-physics.png` — 15 references
+- `v26_restyle_orbital_horizon.png` — 15 references
   - `site/files/between-potential-and-ideal-he-editorial.html`
   - `site/files/between-potential-and-ideal-he-editorial.html`
   - `site/files/between-potential-and-ideal-en-editorial.html`
@@ -37,7 +37,7 @@ Scope: `site/files/**` only. This pass does not edit public tab pages.
   - `site/files/between-potential-and-ideal-en-editorial.html`
   - `site/files/between-potential-and-ideal-en.md`
   - `site/files/between-potential-and-ideal-en.md`
-- `v25_chapter_black-holes-horizons-holography.png` — 10 references
+- `v26_restyle_polar_field_threshold.png` — 10 references
   - `site/files/between-potential-and-ideal-en-editorial.md`
   - `site/files/between-potential-and-ideal-he-editorial.html`
   - `site/files/between-potential-and-ideal-he-editorial.md`
@@ -362,7 +362,7 @@ Note: binary PDF/DOCX may embed images without text references, so this is not a
 - `tab_critique_unique.png`
 - `tab_sources.png`
 - `tab_sources_unique.png`
-- `tab_summary_unique.svg`
+- `v26_restyle_fragmented_figure_sun.png`
 - `tab_witness.png`
 - `thumb_ai.png`
 - `thumb_applied.png`
@@ -372,5 +372,5 @@ Note: binary PDF/DOCX may embed images without text references, so this is not a
 - `thumb_methodology.png`
 - `thumb_sources.png`
 - `thumb_witness.png`
-- `v25_chapter_black-holes-horizons-holography_v2.svg`
-- `v25_chapter_locality-nonlocality-contextuality.png`
+- `v26_restyle_polar_field_threshold.png`
+- `v26_restyle_dual_lenses_resonance.png`

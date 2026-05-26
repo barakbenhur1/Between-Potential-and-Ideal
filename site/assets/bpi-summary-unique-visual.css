@@ -2,11 +2,11 @@
    Summary no longer uses Core, Methodology, or the generated SVG. */
 body.section-summary .tab-visual.compact-section-visual > img[src$="tab_core_unique.png"],
 body.section-summary .tab-visual.compact-section-visual > img[src$="tab_methodology.png"],
-body.section-summary .tab-visual.compact-section-visual > img[src$="tab_summary_unique.svg"]{
+body.section-summary .tab-visual.compact-section-visual > img[src$="v26_restyle_fragmented_figure_sun.png"]{
   content:url("../figures/tab_applied.png")!important;
 }
 body.section-summary .page-title-mark[src$="thumb_core.png"],
-body.section-summary .page-title-mark[src$="tab_summary_unique.svg"]{
+body.section-summary .page-title-mark[src$="v26_restyle_fragmented_figure_sun.png"]{
   content:url("../figures/tab_applied.png")!important;
 }
 body.section-summary .tab-visual figcaption{

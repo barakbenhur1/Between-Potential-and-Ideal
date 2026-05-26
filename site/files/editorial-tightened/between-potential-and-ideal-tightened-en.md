@@ -2768,7 +2768,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 ## 13. The Imaginary, the Virtual, Gravity, and the Horizon
 
-![Figure F: The imaginary, the virtual, and the horizon in the logical model.](../../figures/v25_chapter_science-physics-math-boundary-discipline.png)
+![Figure F: The imaginary, the virtual, and the horizon in the logical model.](../../figures/v26_restyle_three_frames_measurement.png)
 
 Figure F: The imaginary, the virtual, and
 the horizon in the logical model.
@@ -3329,7 +3329,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 *Field, symmetry, breaking, scale, and context*
 
-![High-Energy Physics](../../figures/v25_chapter_high-energy-physics.png)
+![High-Energy Physics](../../figures/v26_restyle_orbital_horizon.png)
 
 Image description: energy, particles, and horizons as a test of the limits of form.
 
@@ -3355,7 +3355,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 *Boundary, information, accessibility, and traces - without turning physics into metaphysical proof*
 
-![Black Holes, Event Horizons, and the Holographic ../../figures/v25_chapter_black-holes-horizons-holography_v2.svg)
+![Black Holes, Event Horizons, and the Holographic ../../figures/v26_restyle_polar_field_threshold.png)
 
 Image description: horizon, information, and a threshold where what disappears still leaves structural trace.
 

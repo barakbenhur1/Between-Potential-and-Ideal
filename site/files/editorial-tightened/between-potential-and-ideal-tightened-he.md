@@ -2630,7 +2630,7 @@ S(ρ) = -Tr(ρ log ρ) I(A:B) = S(A) + S(B) - S(AB) H² = (8πG/3)ρ - kc^2/a² 
 
 *שדה, סימטריה, שבירה, סקאלה והקשר*
 
-![פיזיקה באנרגיות גבוהות](../../figures/v25_chapter_high-energy-physics.png)
+![פיזיקה באנרגיות גבוהות](../../figures/v26_restyle_orbital_horizon.png)
 
 תיאור תמונה: אנרגיה, חלקיקים ואופקים כבדיקה של גבולות הצורה.
 
@@ -2656,7 +2656,7 @@ String Theory, M-theory, branes, AdS/CFT ו-holography יופיעו רק כסי�
 
 *גבול, מידע, נגישות ועקבות — בלי להפוך פיזיקה להוכחה מטאפיזית*
 
-![חורים שחורים, אופקי אירועים והעיקרון ../../figures/v25_chapter_black-holes-horizons-holography_v2.svg)
+![חורים שחורים, אופקי אירועים והעיקרון ../../figures/v26_restyle_polar_field_threshold.png)
 
 תיאור תמונה: אופק, מידע וסף שבו מה שנעלם עדיין משאיר עקבה מבנית.
 

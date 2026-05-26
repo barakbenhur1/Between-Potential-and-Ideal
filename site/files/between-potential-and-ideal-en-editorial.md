@@ -5020,7 +5020,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 *Boundary, information, accessibility, and traces - without turning physics into metaphysical proof*
 
-![Black Holes, Event Horizons, and the Holographic ../figures/v25_chapter_black-holes-horizons-holography_v2.svg)
+![Black Holes, Event Horizons, and the Holographic ../figures/v26_restyle_polar_field_threshold.png)
 
 Image description: horizon, information, and a threshold where what disappears still leaves structural trace.
 

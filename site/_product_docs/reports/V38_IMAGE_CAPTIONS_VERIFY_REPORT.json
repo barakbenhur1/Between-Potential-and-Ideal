@@ -48,7 +48,7 @@
     ],
     "pages/en/black-holes-horizons-holography-en.html": [
       {
-        "src": "../../figures/v25_chapter_black-holes-horizons-holography.png",
+        "src": "../../figures/v26_restyle_polar_field_threshold.png",
         "alt": "Black Holes, Event Horizons, and the Holographic Principle",
         "caption": "Image description: horizon, information, and a threshold where what disappears still leaves structural trace."
       }
@@ -69,7 +69,7 @@
     ],
     "pages/en/high-energy-physics-en.html": [
       {
-        "src": "../../figures/v25_chapter_high-energy-physics.png",
+        "src": "../../figures/v26_restyle_orbital_horizon.png",
         "alt": "High-Energy Physics",
         "caption": "Image description: energy, particles, and horizons as a test of the limits of form."
       }
@@ -90,7 +90,7 @@
     ],
     "pages/en/locality-nonlocality-contextuality-en.html": [
       {
-        "src": "../../figures/v25_chapter_locality-nonlocality-contextuality.png",
+        "src": "../../figures/v26_restyle_dual_lenses_resonance.png",
         "alt": "Locality, Non-locality, and Contextuality",
         "caption": "Image description: local and non-local relations, context, measurement, and dependence between observer and observed."
       }
@@ -146,7 +146,7 @@
     ],
     "pages/he/black-holes-horizons-holography.html": [
       {
-        "src": "../../figures/v25_chapter_black-holes-horizons-holography.png",
+        "src": "../../figures/v26_restyle_polar_field_threshold.png",
         "alt": "חורים שחורים, אופקי אירועים והעיקרון ההולוגרפי",
         "caption": "תיאור תמונה: אופק, מידע וסף שבו מה שנעלם עדיין משאיר עקבה מבנית."
       }
@@ -167,7 +167,7 @@
     ],
     "pages/he/high-energy-physics.html": [
       {
-        "src": "../../figures/v25_chapter_high-energy-physics.png",
+        "src": "../../figures/v26_restyle_orbital_horizon.png",
         "alt": "פיזיקה באנרגיות גבוהות",
         "caption": "תיאור תמונה: אנרגיה, חלקיקים ואופקים כבדיקה של גבולות הצורה."
       }
@@ -188,7 +188,7 @@
     ],
     "pages/he/locality-nonlocality-contextuality.html": [
       {
-        "src": "../../figures/v25_chapter_locality-nonlocality-contextuality.png",
+        "src": "../../figures/v26_restyle_dual_lenses_resonance.png",
         "alt": "לוקליות, אי־לוקליות וקונטקסטואליות",
         "caption": "תיאור תמונה: קשרים מקומיים ולא־מקומיים, הקשר, מדידה ותלות בין צופה לנצפה."
       }

@@ -3292,7 +3292,7 @@ become proof*
 
 <figure class="chapter-figure image-frame">
 <img
-src="../figures/v25_chapter_high-energy-physics.png"
+src="../figures/v26_restyle_orbital_horizon.png"
 decoding="async" loading="lazy"
 alt="Science, Physics, and Mathematics as a Boundary Discipline" />
 <figcaption aria-hidden="true">Image description: formulas, measurement, and models as boundary languages, not final proof.</figcaption>
@@ -6682,7 +6682,7 @@ borrowing of terms.
 *Field, symmetry, breaking, scale, and context*
 
 <figure class="chapter-figure image-frame">
-<img src="../figures/v25_chapter_high-energy-physics.png"
+<img src="../figures/v26_restyle_orbital_horizon.png"
 decoding="async" loading="lazy" alt="High-Energy Physics" />
 <figcaption aria-hidden="true">Image description: energy, particles, and horizons as a test of the limits of form.</figcaption>
 </figure>
@@ -6745,7 +6745,7 @@ borrowing of terms.
 physics into metaphysical proof*
 
 <figure class="chapter-figure image-frame">
-<img src="../figures/v25_chapter_black-holes-horizons-holography_v2.svg"
+<img src="../figures/v26_restyle_polar_field_threshold.png"
 decoding="async" loading="lazy"
 alt="Black Holes, Event Horizons, and the Holographic Principle" />
 <figcaption aria-hidden="true">Image description: horizon, information, and a threshold where what disappears still leaves structural trace.</figcaption>

@@ -2777,7 +2777,7 @@ M\rangle\rangle)=0 \end{cases} \$\$</span>
 
 <figure class="chapter-figure image-frame">
 <img
-src="../figures/v25_chapter_high-energy-physics.png"
+src="../figures/v26_restyle_orbital_horizon.png"
 decoding="async" loading="lazy"
 alt="מדע, פיזיקה ומתמטיקה כמשמעת גבול" />
 <figcaption aria-hidden="true">תיאור תמונה: נוסחאות, מדידה ומודלים כשפות גבול, לא כהוכחה סופית.</figcaption>
@@ -7830,7 +7830,7 @@ and I Must Scream. המקורות אינם מוכנסים כהוכחות לתא�
 *שדה, סימטריה, שבירה, סקאלה והקשר*
 
 <figure class="chapter-figure image-frame">
-<img src="../figures/v25_chapter_high-energy-physics.png"
+<img src="../figures/v26_restyle_orbital_horizon.png"
 decoding="async" loading="lazy" alt="פיזיקה באנרגיות גבוהות" />
 <figcaption aria-hidden="true">תיאור תמונה: אנרגיה, חלקיקים ואופקים כבדיקה של גבולות הצורה.</figcaption>
 </figure>
@@ -7884,7 +7884,7 @@ and I Must Scream. המקורות אינם מוכנסים כהוכחות לתא�
 *גבול, מידע, נגישות ועקבות — בלי להפוך פיזיקה להוכחה מטאפיזית*
 
 <figure class="chapter-figure image-frame">
-<img src="../figures/v25_chapter_black-holes-horizons-holography_v2.svg"
+<img src="../figures/v26_restyle_polar_field_threshold.png"
 decoding="async" loading="lazy"
 alt="חורים שחורים, אופקי אירועים והעיקרון ההולוגרפי" />
 <figcaption aria-hidden="true">תיאור תמונה: אופק, מידע וסף שבו מה שנעלם עדיין משאיר עקבה מבנית.</figcaption>
