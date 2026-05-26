@@ -3,11 +3,14 @@
 
 /* AI tab visual: keep the working wide-tab crop and create the real bottom white gap inside the image frame. */
 body.section-ai figure.tab-visual.image-frame.compact-section-visual {
-  padding: var(--bpi-symmetric-media-pad) !important;
+  width: min(960px, 100%) !important;
+  max-width: 960px !important;
+  margin: 1.2rem auto 1.6rem !important;
+  padding: 12px 12px 26px !important;
   box-sizing: border-box !important;
   background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.94)) !important;
   border: 1px solid rgba(10,58,104,.16) !important;
-  border-radius: var(--bpi-symmetric-media-radius) !important;
+  border-radius: 30px !important;
   overflow: hidden !important;
   background-clip: padding-box !important;
 }
@@ -23,7 +26,7 @@ body.section-ai figure.tab-visual.image-frame.compact-section-visual > img {
   margin: 0 !important;
   box-sizing: border-box !important;
   border-radius: 18px !important;
-  border-bottom: 20px solid #fffaf0 !important;
+  border-bottom: 0 !important;
   clip-path: none !important;
   -webkit-clip-path: none !important;
 }
