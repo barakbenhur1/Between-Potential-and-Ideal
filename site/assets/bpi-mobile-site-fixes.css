@@ -72,3 +72,75 @@
     max-width:calc(100vw - 1rem)!important;
   }
 }
+
+/* V109 — appendix/document table of contents alignment and subtle chapter separation. */
+body.design-prompt-theme:not(.public-page) .document-screen-toc,
+body.design-prompt-theme:not(.public-page) #interactive-toc,
+body.stories-page .document-screen-toc,
+body.stories-page #interactive-toc,
+.files-appendix-story .document-screen-toc,
+.files-appendix-story #interactive-toc{
+  width:min(760px,100%)!important;
+  max-width:100%!important;
+  margin-block:22px 28px!important;
+  margin-inline-start:0!important;
+  margin-inline-end:auto!important;
+  direction:inherit!important;
+  text-align:start!important;
+}
+[dir="rtl"] body.design-prompt-theme:not(.public-page) .document-screen-toc,
+[dir="rtl"] body.design-prompt-theme:not(.public-page) #interactive-toc,
+[dir="rtl"] body.stories-page .document-screen-toc,
+[dir="rtl"] body.stories-page #interactive-toc,
+[dir="rtl"] .files-appendix-story .document-screen-toc,
+[dir="rtl"] .files-appendix-story #interactive-toc{text-align:right!important;margin-right:0!important;margin-left:auto!important;}
+[dir="ltr"] body.design-prompt-theme:not(.public-page) .document-screen-toc,
+[dir="ltr"] body.design-prompt-theme:not(.public-page) #interactive-toc,
+[dir="ltr"] body.stories-page .document-screen-toc,
+[dir="ltr"] body.stories-page #interactive-toc,
+[dir="ltr"] .files-appendix-story .document-screen-toc,
+[dir="ltr"] .files-appendix-story #interactive-toc{text-align:left!important;margin-left:0!important;margin-right:auto!important;}
+body.design-prompt-theme:not(.public-page) .document-screen-toc :is(ol,ul),
+body.design-prompt-theme:not(.public-page) #interactive-toc :is(ol,ul),
+body.stories-page .document-screen-toc :is(ol,ul),
+body.stories-page #interactive-toc :is(ol,ul),
+.files-appendix-story .document-screen-toc :is(ol,ul),
+.files-appendix-story #interactive-toc :is(ol,ul){margin:12px 0 0!important;padding-inline-start:1.45em!important;padding-inline-end:0!important;text-align:start!important;}
+body.design-prompt-theme:not(.public-page) .document-screen-toc li,
+body.design-prompt-theme:not(.public-page) #interactive-toc li,
+body.stories-page .document-screen-toc li,
+body.stories-page #interactive-toc li,
+.files-appendix-story .document-screen-toc li,
+.files-appendix-story #interactive-toc li{margin:0!important;padding-block:.72rem .68rem!important;padding-inline:.2rem!important;border-block-start:1px solid rgba(169,120,53,.18)!important;}
+body.design-prompt-theme:not(.public-page) .document-screen-toc li:first-child,
+body.design-prompt-theme:not(.public-page) #interactive-toc li:first-child,
+body.stories-page .document-screen-toc li:first-child,
+body.stories-page #interactive-toc li:first-child,
+.files-appendix-story .document-screen-toc li:first-child,
+.files-appendix-story #interactive-toc li:first-child{border-block-start:0!important;}
+body.design-prompt-theme:not(.public-page) .document-screen-toc li::marker,
+body.design-prompt-theme:not(.public-page) #interactive-toc li::marker,
+body.stories-page .document-screen-toc li::marker,
+body.stories-page #interactive-toc li::marker,
+.files-appendix-story .document-screen-toc li::marker,
+.files-appendix-story #interactive-toc li::marker{color:var(--gold,#a97835)!important;font-weight:700!important;}
+body.design-prompt-theme:not(.public-page) .document-screen-toc li a,
+body.design-prompt-theme:not(.public-page) #interactive-toc li a,
+body.stories-page .document-screen-toc li a,
+body.stories-page #interactive-toc li a,
+.files-appendix-story .document-screen-toc li a,
+.files-appendix-story #interactive-toc li a{display:block!important;text-decoration:none!important;color:inherit!important;}
+body.design-prompt-theme:not(.public-page) .document-screen-toc li a:hover,
+body.design-prompt-theme:not(.public-page) #interactive-toc li a:hover,
+body.stories-page .document-screen-toc li a:hover,
+body.stories-page #interactive-toc li a:hover,
+.files-appendix-story .document-screen-toc li a:hover,
+.files-appendix-story #interactive-toc li a:hover{text-decoration:underline!important;text-decoration-thickness:1px!important;text-underline-offset:.18em!important;}
+@media (max-width:720px){
+  body.design-prompt-theme:not(.public-page) .document-screen-toc,
+  body.design-prompt-theme:not(.public-page) #interactive-toc,
+  body.stories-page .document-screen-toc,
+  body.stories-page #interactive-toc,
+  .files-appendix-story .document-screen-toc,
+  .files-appendix-story #interactive-toc{width:100%!important;}
+}
