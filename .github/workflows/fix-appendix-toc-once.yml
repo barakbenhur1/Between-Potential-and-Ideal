@@ -21,11 +21,12 @@ jobs:
         run: |
           python3 - <<'PY'
           from pathlib import Path
+          import html
           import re
 
           css = r'''
-          <style id="v113-appendix-story-toc-existing-thumbnails-smaller">
-          /* V113 — standalone appendix TOC: smaller existing story image thumbnails. No new images. */
+          <style id="v114-appendix-story-toc-single-existing-thumbnail">
+          /* V114 — standalone appendix TOC: one small existing story image thumbnail per row. No new images. */
           .story-toc-page{
             text-align:start!important;
           }
@@ -89,9 +90,7 @@ jobs:
             direction:inherit!important;
             text-decoration:none!important;
           }
-          html[dir="rtl"] .story-toc-page .story-toc-entry{
-            flex-direction:row!important;
-          }
+          html[dir="rtl"] .story-toc-page .story-toc-entry,
           html[dir="ltr"] .story-toc-page .story-toc-entry{
             flex-direction:row!important;
           }
@@ -199,28 +198,43 @@ jobs:
           </style>
           '''.strip()
 
-          marker_re = re.compile(r'\n?\s*<style id="v11[0-3]-appendix-story-toc[^>]*>.*?</style>', re.S)
+          marker_re = re.compile(r'\n?\s*<style id="v11[0-4]-appendix-story-toc[^>]*>.*?</style>', re.S)
           list_re = re.compile(r'<div class="story-toc-clean-list"(?P<attrs>[^>]*)>(?P<body>.*?)</div>', re.S)
-          row_with_img_re = re.compile(r'<p class="story-toc-row"[^>]*>\s*<a\s+class="story-toc-entry"\s+href="#story-(\d+)"[^>]*>\s*<img[^>]*?>\s*<span class="story-toc-title">(.*?)</span>\s*</a>\s*</p>', re.S)
-          row_plain_re = re.compile(r'<p class="story-toc-row"[^>]*>\s*<a\s+([^>]*?)href="#story-(\d+)"([^>]*)>(.*?)</a>\s*</p>', re.S)
+          row_re = re.compile(r'<p class="story-toc-row"[^>]*>(?P<row>.*?)</p>', re.S)
+          href_re = re.compile(r'href="#story-(\d+)"')
+          img_re = re.compile(r'<img\b[^>]*>', re.I | re.S)
+          tag_re = re.compile(r'<[^>]+>', re.S)
+          ws_re = re.compile(r'\s+')
+
+          def normalize_title(row_html):
+            without_images = img_re.sub('', row_html)
+            text = tag_re.sub('', without_images)
+            text = html.unescape(text)
+            text = ws_re.sub(' ', text).strip()
+            return text
 
           def normalize_rows(match):
             body = match.group('body')
-
-            def make_row(story_no, title_html):
-              story_no = int(story_no)
-              title_html = title_html.strip()
-              return (
+            rows = []
+            for row_match in row_re.finditer(body):
+              row_html = row_match.group('row')
+              href = href_re.search(row_html)
+              if not href:
+                continue
+              story_no = int(href.group(1))
+              title_text = normalize_title(row_html)
+              if not title_text:
+                continue
+              rows.append(
                 f'<p class="story-toc-row">'
                 f'<a class="story-toc-entry" href="#story-{story_no}">'
                 f'<img class="story-toc-thumb" src="assets/story_image_{story_no}.png" alt="" loading="lazy" decoding="async"/>'
-                f'<span class="story-toc-title">{title_html}</span>'
+                f'<span class="story-toc-title">{html.escape(title_text)}</span>'
                 f'</a></p>'
               )
-
-            body = row_with_img_re.sub(lambda row: make_row(row.group(1), row.group(2)), body)
-            body = row_plain_re.sub(lambda row: make_row(row.group(2), row.group(4)), body)
-            return '<div class="story-toc-clean-list">' + body + '</div>'
+            if not rows:
+              return match.group(0)
+            return '<div class="story-toc-clean-list">' + ''.join(rows) + '</div>'
 
           changed = []
           for path in sorted(Path('site/files/appendices').glob('*.html')):
@@ -251,5 +265,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site/files/appendices/*.html
-          git commit -m "Make appendix TOC thumbnails smaller"
+          git commit -m "Remove duplicate appendix TOC thumbnails"
           git push
