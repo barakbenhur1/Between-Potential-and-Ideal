@@ -1,0 +1,62 @@
+name: One-time restore home design
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/one-time-restore-home-design.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  restore-home-design:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Restore home design files to the last known good state
+        run: |
+          set -e
+
+          # Restore the home pages and their dedicated stylesheet to the state
+          # before the broken mobile/header/css experiments.
+          git checkout bdde7bb6bd98f98e09b328cf1cd23dba78824f06^ -- \
+            site/index.html \
+            site/en.html \
+            site/styles-home-original.css
+
+          # Remove the report from the bad "align home to main stylesheet" attempt.
+          rm -f docs/home-css-alignment-fix.md
+
+          cat > docs/home-design-restore.md <<'EOF'
+          # Home design restore
+
+          Restored the home page design to the last known good state before the later CSS/header/nav experiments.
+
+          Restored:
+          - `site/index.html`
+          - `site/en.html`
+          - `site/styles-home-original.css`
+
+          Removed:
+          - `docs/home-css-alignment-fix.md`
+          EOF
+
+      - name: Remove this workflow
+        run: rm -f .github/workflows/one-time-restore-home-design.yml
+
+      - name: Commit restored home design
+        run: |
+          git config user.name "Barak Ben Hur via ChatGPT"
+          git config user.email "barakbenhur@gmail.com"
+          if ! git diff --quiet; then
+            git add site/index.html site/en.html site/styles-home-original.css docs/home-design-restore.md docs/home-css-alignment-fix.md .github/workflows/one-time-restore-home-design.yml
+            git commit -m "Restore home page design"
+            git push
+          else
+            echo "No changes to commit"
+          fi
