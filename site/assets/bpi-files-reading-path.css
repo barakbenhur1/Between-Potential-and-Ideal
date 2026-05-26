@@ -1,0 +1,72 @@
+/* BPI V92 — Files page reading path
+   Adds a product-level first step above the full archive without removing files, filters, tables, or transparency. */
+
+body.section-files .files-reading-path {
+  margin-top: clamp(1.2rem, 2vw, 2rem) !important;
+}
+
+body.section-files .files-reading-path .reading-path-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: clamp(.85rem, 2vw, 1.15rem) !important;
+  margin-top: 1rem !important;
+}
+
+body.section-files .files-reading-path .reading-path-card {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: .65rem !important;
+  min-height: 100% !important;
+  padding: 1rem !important;
+  border-radius: 24px !important;
+  border: 1px solid rgba(10, 58, 104, .16) !important;
+  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.95)) !important;
+  box-shadow: 0 12px 34px rgba(10, 58, 104, .07) !important;
+}
+
+body.section-files .files-reading-path .reading-path-card h3 {
+  margin: 0 !important;
+  color: #0A3A68 !important;
+  line-height: 1.24 !important;
+}
+
+body.section-files .files-reading-path .reading-path-card p {
+  margin: 0 !important;
+  color: #28384a !important;
+  line-height: 1.58 !important;
+}
+
+body.section-files .files-reading-path .reading-path-actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: .45rem !important;
+  margin-top: auto !important;
+  padding-top: .25rem !important;
+}
+
+body.section-files .files-reading-path .reading-path-actions a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 34px !important;
+  padding: .42rem .72rem !important;
+  border-radius: 999px !important;
+  background: #fffaf0 !important;
+  color: #0A3A68 !important;
+  border: 1px solid rgba(10, 58, 104, .18) !important;
+  text-decoration: none !important;
+  font-weight: 850 !important;
+  line-height: 1.1 !important;
+}
+
+body.section-files .files-reading-path .reading-path-actions a.primary-format {
+  background: #0A3A68 !important;
+  color: #fff !important;
+  border-color: #0A3A68 !important;
+}
+
+@media (max-width: 960px) {
+  body.section-files .files-reading-path .reading-path-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
