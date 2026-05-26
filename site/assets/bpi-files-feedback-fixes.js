@@ -1,6 +1,7 @@
-/* V109 — Files filtering fixes only.
+/* V112 — Files filtering fixes + scoped Home mobile tab-bar fix.
    Feedback links are handled only by assets/bpi-fixes/bpi-feedback-desktop.js.
-   This prevents the files helper from forcing mailto on desktop and blocking Gmail compose. */
+   This file is already loaded by the Home page, so it injects a mobile-only Home nav fix
+   without changing the restored Home design/content. */
 (function(){
   'use strict';
 
@@ -11,6 +12,34 @@
     return document.documentElement.lang === 'he' ||
       document.documentElement.dir === 'rtl' ||
       document.body.classList.contains('public-page-he');
+  }
+
+  function isHomePage(){
+    var path = (location.pathname || '').toLowerCase();
+    return path === '/' || path.endsWith('/index.html') || path.endsWith('/en.html') ||
+      path.endsWith('/site/index.html') || path.endsWith('/site/en.html');
+  }
+
+  function installHomeMobileTabBarFix(){
+    if (!isHomePage() || document.getElementById('bpi-home-mobile-all-tabs-v112')) return;
+    var style = document.createElement('style');
+    style.id = 'bpi-home-mobile-all-tabs-v112';
+    style.textContent = '' +
+      '@media (max-width:860px){' +
+      'body.public-page .site-header,body.public-page header.site-header,.site-header{' +
+      'width:calc(100% - 16px)!important;max-width:100vw!important;min-width:0!important;height:auto!important;max-height:none!important;box-sizing:border-box!important;overflow:visible!important;overflow-x:visible!important;overflow-y:visible!important;' +
+      '}' +
+      'body.public-page .site-header .site-nav,.site-header .site-nav,nav.site-nav{' +
+      'display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;width:100%!important;max-width:100%!important;min-width:0!important;height:auto!important;max-height:none!important;box-sizing:border-box!important;overflow:visible!important;overflow-x:visible!important;overflow-y:visible!important;white-space:normal!important;gap:.32rem!important;scrollbar-width:none!important;scroll-snap-type:none!important;' +
+      '}' +
+      'body.public-page .site-header .site-nav::-webkit-scrollbar,.site-header .site-nav::-webkit-scrollbar,nav.site-nav::-webkit-scrollbar{display:none!important;}' +
+      'body.public-page .site-header .site-nav a,.site-header .site-nav a,nav.site-nav a{' +
+      'display:inline-flex!important;flex:0 1 auto!important;min-width:0!important;max-width:calc(50vw - .7rem)!important;box-sizing:border-box!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;transform:none!important;scroll-snap-align:none!important;' +
+      '}' +
+      '}' +
+      '@media (max-width:480px){body.public-page .site-header .site-nav,.site-header .site-nav,nav.site-nav{gap:.24rem!important;}body.public-page .site-header .site-nav a,.site-header .site-nav a,nav.site-nav a{max-width:calc(50vw - .55rem)!important;}}' +
+      '@media (max-width:360px){body.public-page .site-header .site-nav a,.site-header .site-nav a,nav.site-nav a{max-width:calc(100vw - 1rem)!important;}}';
+    document.head.appendChild(style);
   }
 
   function isFilesPage(){
@@ -214,6 +243,7 @@
   }
 
   function init(){
+    installHomeMobileTabBarFix();
     normalizeFiles();
     document.addEventListener('click', function(ev){ rememberFormatFromEvent(ev); setTimeout(normalizeFiles, 0); }, true);
     document.addEventListener('change', function(ev){ rememberFormatFromEvent(ev); setTimeout(normalizeFiles, 0); }, true);
