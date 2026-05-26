@@ -52,10 +52,6 @@
       "&body=" + encodeURIComponent(data.body);
   }
 
-  function targetHref(link) {
-    return isMobileLike() ? encodedMailto(link) : encodedGmail(link);
-  }
-
   function isFeedbackLink(link) {
     if (!link || !link.getAttribute) return false;
     var href = (link.getAttribute("href") || "").toLowerCase();
@@ -73,13 +69,20 @@
   }
 
   function patch(link) {
-    var href = targetHref(link);
+    var mobile = isMobileLike();
+    var href = mobile ? encodedMailto(link) : encodedGmail(link);
     link.setAttribute("href", href);
-    link.removeAttribute("target");
-    link.removeAttribute("rel");
     link.removeAttribute("onclick");
     link.onclick = null;
-    link.setAttribute("data-feedback-link-fixed", isMobileLike() ? "mailto" : "gmail");
+    if (mobile) {
+      link.removeAttribute("target");
+      link.removeAttribute("rel");
+      link.setAttribute("data-feedback-link-fixed", "mailto");
+    } else {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+      link.setAttribute("data-feedback-link-fixed", "gmail-new-tab");
+    }
   }
 
   function patchAll() {
@@ -95,7 +98,17 @@
     event.preventDefault();
     event.stopPropagation();
     if (event.stopImmediatePropagation) event.stopImmediatePropagation();
-    window.location.href = link.getAttribute("href");
+
+    if (isMobileLike()) {
+      window.location.href = encodedMailto(link);
+      return;
+    }
+
+    var gmailUrl = encodedGmail(link);
+    var opened = window.open(gmailUrl, "_blank", "noopener,noreferrer");
+    if (!opened) {
+      window.location.href = gmailUrl;
+    }
   }, true);
 
   if (document.readyState === "loading") {
