@@ -1,5 +1,31 @@
 /* BPI AI section polish — 2026-05-26
-   Scope: AI document cards only. Do not style the tab hero image here; the AI tab image must use the same inline/frame pattern as the working tabs. */
+   Scope: AI document cards only, plus the AI tab visual matched to the working tab-frame pattern. */
+
+/* AI tab visual: copy the working Application tab behavior exactly enough to avoid guessing. */
+body.section-ai figure.tab-visual.image-frame.compact-section-visual {
+  padding: var(--bpi-symmetric-media-pad) !important;
+  box-sizing: border-box !important;
+  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.94)) !important;
+  border: 1px solid rgba(10,58,104,.16) !important;
+  border-radius: var(--bpi-symmetric-media-radius) !important;
+  overflow: hidden !important;
+  background-clip: padding-box !important;
+}
+
+body.section-ai figure.tab-visual.image-frame.compact-section-visual > img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: clamp(136px, 18vw, 212px) !important;
+  aspect-ratio: 21 / 7 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  border-radius: 18px !important;
+  clip-path: inset(0 0 18px 0 round 18px) !important;
+  -webkit-clip-path: inset(0 0 18px 0 round 18px) !important;
+}
 
 body.section-ai .ai-documents-card {
   padding: clamp(1.3rem, 2.5vw, 2rem) !important;
