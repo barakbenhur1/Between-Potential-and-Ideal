@@ -2237,8 +2237,8 @@ figure figcaption { text-align: center !important; }
   margin:.25rem auto .35rem!important;
 }
 </style>
-<style id="v110-appendix-story-toc-side-alignment">
-/* V110 — standalone appendix TOC: side-aligned by language, with subtle item separation. */
+<style id="v111-appendix-story-toc-clean-list-alignment">
+/* V111 — standalone appendix TOC: fix the actual clean-list markup used by the story appendix. */
 .story-toc-page{
   text-align:start!important;
 }
@@ -2249,14 +2249,70 @@ html[dir="ltr"] .story-toc-page{
   text-align:left!important;
 }
 .story-toc-page h2,
-.story-toc-page p{
+.story-toc-page > p{
   text-align:inherit!important;
+}
+.story-toc-page .story-toc-clean-list{
+  display:block!important;
+  width:min(560px,100%)!important;
+  max-width:560px!important;
+  margin-block:24px 0!important;
+  padding:0!important;
+  text-align:inherit!important;
+  direction:inherit!important;
+}
+html[dir="rtl"] .story-toc-page .story-toc-clean-list{
+  margin-right:0!important;
+  margin-left:auto!important;
+  text-align:right!important;
+  direction:rtl!important;
+}
+html[dir="ltr"] .story-toc-page .story-toc-clean-list{
+  margin-left:0!important;
+  margin-right:auto!important;
+  text-align:left!important;
+  direction:ltr!important;
+}
+.story-toc-page .story-toc-clean-list p.story-toc-row,
+.story-toc-page p.story-toc-row{
+  display:block!important;
+  margin:0!important;
+  padding:.74rem 0 .72rem!important;
+  border-block-start:1px solid rgba(197,121,29,.24)!important;
+  text-align:inherit!important;
+  direction:inherit!important;
+}
+.story-toc-page .story-toc-clean-list p.story-toc-row:first-child,
+.story-toc-page p.story-toc-row:first-child{
+  border-block-start:0!important;
+}
+.story-toc-page .story-toc-clean-list a,
+.story-toc-page p.story-toc-row a,
+.story-toc-page a.story-toc-row{
+  display:block!important;
+  width:100%!important;
+  padding:0!important;
+  margin:0!important;
+  color:#08737a!important;
+  font-size:clamp(1.08rem,2vw,1.36rem)!important;
+  line-height:1.35!important;
+  font-weight:700!important;
+  text-align:inherit!important;
+  direction:inherit!important;
+  text-decoration:none!important;
+}
+.story-toc-page .story-toc-clean-list a:hover,
+.story-toc-page p.story-toc-row a:hover,
+.story-toc-page a.story-toc-row:hover{
+  text-decoration:underline!important;
+  text-decoration-thickness:1px!important;
+  text-underline-offset:.18em!important;
 }
 .story-toc-page ol{
   columns:1!important;
   column-count:1!important;
   width:min(560px,100%)!important;
-  max-width:100%!important;
+  max-width:560px!important;
   margin-block:24px 0!important;
   padding-inline-start:0!important;
   padding-inline-end:0!important;
@@ -2282,22 +2338,16 @@ html[dir="ltr"] .story-toc-page ol{
 .story-toc-page li:first-child{
   border-block-start:0!important;
 }
-.story-toc-page li a{
-  display:block!important;
-  color:var(--teal,#0a6d78)!important;
-  font-weight:700!important;
-  text-decoration:none!important;
-}
-.story-toc-page li a:hover{
-  text-decoration:underline!important;
-  text-decoration-thickness:1px!important;
-  text-underline-offset:.18em!important;
-}
 @media print{
+  .story-toc-page .story-toc-clean-list,
   .story-toc-page ol{
+    width:100%!important;
+    max-width:100%!important;
     columns:1!important;
     column-count:1!important;
   }
+  .story-toc-page .story-toc-clean-list p.story-toc-row,
+  .story-toc-page p.story-toc-row,
   .story-toc-page li{
     padding:.42rem 0!important;
   }
