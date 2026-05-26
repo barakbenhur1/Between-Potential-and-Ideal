@@ -1,0 +1,96 @@
+name: One-time Home mobile Summary shell fix
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/one-time-home-mobile-summary-shell.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix-home-mobile-summary-shell:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Patch Home mobile shell and bump cache
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          js_path = Path('site/assets/bpi-files-feedback-fixes.js')
+          js = js_path.read_text(encoding='utf-8')
+          original = js
+
+          js = js.replace('/* V114 — Scoped fixes only.', '/* V115 — Scoped fixes only.')
+          js = js.replace('Home mobile top bar: match the other tabs more closely, no horizontal scroll.', 'Home mobile uses the same shell proportions as the Summary tab, no horizontal scroll.')
+          js = js.replace('bpi-home-mobile-topbar-match-v114', 'bpi-home-mobile-summary-shell-v115')
+
+          replacements = {
+            'background:#f3eadb!important;': 'background:radial-gradient(circle at 0% 12%,rgba(0,167,183,.07),transparent 34rem),radial-gradient(circle at 100% 0%,rgba(242,142,43,.10),transparent 34rem),#f7efe1!important;color:#102033!important;',
+            'padding:22px 18px 18px!important;': 'padding:33px 22px 26px!important;',
+            'gap:14px!important;': 'gap:19px!important;',
+            'font-size:clamp(1.28rem,4.75vw,1.78rem)!important;': 'font-size:clamp(1.32rem,4.1vw,1.72rem)!important;',
+            'gap:8px 7px!important;': 'gap:8px 6px!important;',
+            'min-height:38px!important;padding:.45rem .74rem!important;': 'min-height:36px!important;padding:.39rem .56rem!important;',
+            'font-size:clamp(.94rem,3.85vw,1.08rem)!important;': 'font-size:clamp(.86rem,3.28vw,1rem)!important;',
+            'min-height:50px!important;margin:3px auto 0!important;padding:.56rem 1rem!important;': 'min-height:44px!important;margin:18px auto 0!important;padding:.48rem 1rem!important;',
+            'font-size:clamp(1.05rem,4.05vw,1.35rem)!important;': 'font-size:clamp(1rem,3.75vw,1.24rem)!important;',
+            'body.public-page .site-main{width:100%!important;max-width:100vw!important;overflow-x:hidden!important;box-sizing:border-box!important;padding-left:0!important;padding-right:0!important;}': 'body.public-page .site-main{width:100%!important;max-width:100vw!important;overflow-x:hidden!important;box-sizing:border-box!important;background:transparent!important;color:#102033!important;padding:0!important;}',
+            'body.public-page .breadcrumbs,body.public-page .concise-hero,body.public-page .hero,body.public-page .opening-visual,body.public-page .signature-blurbs,body.public-page .notice-box,body.public-page .hub-grid,body.public-page .reading-path-cta{': 'body.public-page .breadcrumbs{width:min(100% - 40px,1120px)!important;max-width:calc(100vw - 40px)!important;margin:52px auto 14px!important;box-sizing:border-box!important;text-align:start!important;color:#5f6f7d!important;font-size:clamp(1rem,4vw,1.2rem)!important;line-height:1.35!important;}body.public-page .breadcrumbs a{color:#0A3A68!important;font-weight:800!important;text-decoration:underline!important;text-underline-offset:.18em!important;}body.public-page .concise-hero,body.public-page .hero.concise-hero{display:block!important;width:min(100% - 52px,1120px)!important;max-width:calc(100vw - 52px)!important;margin:0 auto 26px!important;box-sizing:border-box!important;padding:clamp(28px,7vw,46px) clamp(24px,6vw,40px)!important;border-radius:26px!important;border:1px solid rgba(10,58,104,.16)!important;background:linear-gradient(135deg,rgba(255,255,255,.99),rgba(255,250,240,.99))!important;color:#102033!important;box-shadow:0 14px 38px rgba(10,58,104,.08)!important;text-align:center!important;overflow:hidden!important;}body.public-page .concise-hero::before,body.public-page .hero.concise-hero::before{content:""!important;display:block!important;height:8px!important;border-radius:999px 999px 0 0!important;background:linear-gradient(90deg,#0A3A68,#00A7B7,#F28E2B)!important;margin:calc(-1 * clamp(28px,7vw,46px)) calc(-1 * clamp(24px,6vw,40px)) 28px!important;}body.public-page .concise-hero .kicker,body.public-page .hero.concise-hero .kicker{color:#0A3A68!important;background:transparent!important;border:0!important;margin:0 auto 18px!important;padding:0!important;text-align:center!important;font-weight:800!important;}body.public-page .concise-hero h1,body.public-page .hero.concise-hero h1{color:#0A3A68!important;text-align:center!important;margin:0 auto 22px!important;max-width:760px!important;font-family:"Gveret Levin","Noto Sans Hebrew",Georgia,"Times New Roman",serif!important;font-size:clamp(2.45rem,11vw,4.4rem)!important;line-height:1.04!important;letter-spacing:-.025em!important;}body.public-page .concise-hero .lead,body.public-page .hero.concise-hero .lead,body.public-page .concise-hero .method-note,body.public-page .hero.concise-hero .method-note{color:#28384a!important;text-align:center!important;margin-left:auto!important;margin-right:auto!important;max-width:72ch!important;background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;font-size:clamp(1rem,4.5vw,1.18rem)!important;line-height:1.7!important;}body.public-page .hero-cta-row{display:flex!important;justify-content:center!important;align-items:center!important;gap:10px!important;flex-wrap:wrap!important;margin-top:20px!important;}body.public-page .opening-visual,body.public-page .signature-blurbs,body.public-page .notice-box,body.public-page .hub-grid,body.public-page .reading-path-cta{'
+          }
+          for old, new in replacements.items():
+            js = js.replace(old, new)
+
+          js = js.replace('body.public-page .site-header,body.public-page header.site-header,.site-header{padding:20px 14px 16px!important;gap:12px!important;}', 'body.public-page .site-header,body.public-page header.site-header,.site-header{padding:30px 18px 24px!important;gap:17px!important;}')
+          js = js.replace('body.public-page .site-header .site-nav,.site-header .site-nav,nav.site-nav{gap:7px 6px!important;}', 'body.public-page .site-header .site-nav,.site-header .site-nav,nav.site-nav{gap:7px 5px!important;}')
+          js = js.replace('padding:.42rem .66rem!important;font-size:clamp(.9rem,3.75vw,1rem)!important;min-height:36px!important;', 'padding:.38rem .52rem!important;font-size:clamp(.84rem,3.18vw,.96rem)!important;min-height:35px!important;')
+          js = js.replace('body.public-page .language-switch,.site-header .language-switch{min-height:48px!important;}', 'body.public-page .language-switch,.site-header .language-switch{min-height:43px!important;margin-top:17px!important;}')
+
+          js_path.write_text(js, encoding='utf-8')
+
+          # Bump the script version on the Home entry pages so the browser cannot keep the older mobile CSS injector.
+          for html_path in [Path('site/index.html'), Path('site/en.html')]:
+            if not html_path.exists():
+              continue
+            html = html_path.read_text(encoding='utf-8')
+            html = re.sub(r'bpi-files-feedback-fixes\.js\?v=[^"\s]+', 'bpi-files-feedback-fixes.js?v=20260526-home-summary-shell-v115', html)
+            html_path.write_text(html, encoding='utf-8')
+
+          report = Path('docs/home-mobile-summary-shell-fix.md')
+          report.parent.mkdir(parents=True, exist_ok=True)
+          report.write_text('\n'.join([
+            '# Home mobile Summary shell fix',
+            '',
+            'Changed only the Home mobile shell override and Home script cache.',
+            '',
+            'Files changed:',
+            '- `site/assets/bpi-files-feedback-fixes.js` — mobile Home header/nav/card override now follows the Summary tab proportions; Files filtering remains lightweight and no MutationObserver is used.',
+            '- `site/index.html` — bumped Home script cache.',
+            '- `site/en.html` — bumped Home script cache.',
+            ''
+          ]), encoding='utf-8')
+
+          print('patched', js_path)
+          print('changed js:', js != original)
+          PY
+
+      - name: Remove workflow
+        run: rm -f .github/workflows/one-time-home-mobile-summary-shell.yml
+
+      - name: Commit Home mobile Summary shell fix
+        run: |
+          git config user.name "Barak Ben Hur via ChatGPT"
+          git config user.email "barakbenhur@gmail.com"
+          if ! git diff --quiet; then
+            git add site/assets/bpi-files-feedback-fixes.js site/index.html site/en.html docs/home-mobile-summary-shell-fix.md .github/workflows/one-time-home-mobile-summary-shell.yml
+            git commit -m "Match Home mobile shell to Summary tab"
+            git push
+          else
+            echo "No changes to commit"
+          fi
