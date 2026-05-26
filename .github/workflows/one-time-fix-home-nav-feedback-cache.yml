@@ -1,0 +1,144 @@
+name: One-time fix home nav and feedback cache
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/one-time-fix-home-nav-feedback-cache.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix-home-nav-feedback-cache:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Patch home mobile CSS cache and feedback links
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          from urllib.parse import quote
+
+          HOME_CSS_VERSION = '20260526-home-nav-wrap-v109'
+          FILES_JS_VERSION = '20260526-files-only-v109'
+          FEEDBACK_JS_VERSION = '20260526-feedback-gmail-newtab-v110'
+
+          gmail_href_html = (
+              'https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1'
+              '&amp;to=betweenpotentialandideal%40gmail.com'
+              '&amp;su=' + quote('Feedback on Between Potential and Ideal') +
+              '&amp;body=' + quote('Hi,\n\nI read Between Potential and Ideal and have feedback / a note:\n\nFeedback:')
+          )
+
+          changed = []
+
+          def patch_feedback_anchor_tag(tag: str) -> str:
+              if 'data-gmail-compose' not in tag and 'mail.google.com' not in tag and 'gmail.com/mail' not in tag:
+                  return tag
+              if not any(token in tag.lower() for token in ['feedback', 'ביקורת', 'מייל', 'mail.google', 'gmail']):
+                  return tag
+
+              out = re.sub(r'\s+onclick="[^"]*"', '', tag)
+              out = re.sub(r'\s+target="[^"]*"', '', out)
+              out = re.sub(r'\s+rel="[^"]*"', '', out)
+              if re.search(r'\s+href="[^"]*"', out):
+                  out = re.sub(r'\s+href="[^"]*"', f' href="{gmail_href_html}"', out, count=1)
+              else:
+                  out = out[:-1] + f' href="{gmail_href_html}">'
+              out = out[:-1] + ' target="_blank" rel="noopener noreferrer">'
+              return out
+
+          for path in [Path('site/index.html'), Path('site/en.html')]:
+              if not path.exists():
+                  continue
+              text = path.read_text(encoding='utf-8', errors='ignore')
+              original = text
+              text = re.sub(r'styles-home-original\.css\?v=[^"\s]+', f'styles-home-original.css?v={HOME_CSS_VERSION}', text)
+              text = text.replace('styles-home-original.css"', f'styles-home-original.css?v={HOME_CSS_VERSION}"')
+              if text != original:
+                  path.write_text(text, encoding='utf-8')
+                  changed.append(str(path))
+
+          for path in sorted(Path('site').glob('**/*.html')):
+              text = path.read_text(encoding='utf-8', errors='ignore')
+              original = text
+
+              # Cache-bust the fixed scripts so browsers cannot keep the old broken handlers.
+              text = re.sub(
+                  r'(bpi-files-feedback-fixes\.js)(?:\?v=[^"\s]*)?',
+                  rf'\1?v={FILES_JS_VERSION}',
+                  text
+              )
+              text = re.sub(
+                  r'(bpi-feedback-desktop\.js)(?:\?v=[^"\s]*)?',
+                  rf'\1?v={FEEDBACK_JS_VERSION}',
+                  text
+              )
+
+              # Make the static fallback safe on desktop: Gmail compose in a new tab.
+              text = re.sub(r'<a\b[^>]*(?:data-gmail-compose|mail\.google\.com|gmail\.com/mail)[^>]*>', lambda m: patch_feedback_anchor_tag(m.group(0)), text)
+
+              # If a page contains a feedback button but somehow lacks the feedback script, inject it.
+              if ('data-gmail-compose' in text or 'mail.google.com/mail' in text or 'gmail.com/mail' in text) and 'bpi-feedback-desktop.js' not in text:
+                  rel = Path('site/assets/bpi-fixes/bpi-feedback-desktop.js')
+                  src = Path(os.path.relpath(rel, start=path.parent)).as_posix() if False else None
+
+              if text != original:
+                  path.write_text(text, encoding='utf-8')
+                  changed.append(str(path))
+
+          # Dedicated injection pass for feedback script when needed.
+          for path in sorted(Path('site').glob('**/*.html')):
+              text = path.read_text(encoding='utf-8', errors='ignore')
+              if 'bpi-feedback-desktop.js' in text:
+                  continue
+              if not ('data-gmail-compose' in text or 'mail.google.com/mail' in text or 'gmail.com/mail' in text):
+                  continue
+              original = text
+              import os
+              rel = os.path.relpath(Path('site/assets/bpi-fixes/bpi-feedback-desktop.js'), start=path.parent).replace(os.sep, '/')
+              tag = f'<script defer src="{rel}?v={FEEDBACK_JS_VERSION}"></script>'
+              if '</body>' in text:
+                  text = text.replace('</body>', tag + '\n</body>', 1)
+              else:
+                  text += '\n' + tag + '\n'
+              if text != original:
+                  path.write_text(text, encoding='utf-8')
+                  changed.append(str(path))
+
+          report = Path('docs/home-nav-feedback-cache-fix.md')
+          report.parent.mkdir(parents=True, exist_ok=True)
+          report.write_text('\n'.join([
+              '# Home nav and feedback cache fix',
+              '',
+              f'- Home stylesheet cache bumped to `{HOME_CSS_VERSION}` so mobile בית uses the wrapped nav CSS.',
+              f'- Files helper cache bumped to `{FILES_JS_VERSION}`.',
+              f'- Feedback helper cache bumped to `{FEEDBACK_JS_VERSION}`.',
+              '- Static feedback links now fall back to Gmail compose in a new tab on desktop.',
+              '',
+              '## Changed files',
+              *[f'- `{p}`' for p in sorted(set(changed))],
+              ''
+          ]), encoding='utf-8')
+          print('\n'.join(sorted(set(changed))))
+          PY
+
+      - name: Remove workflow
+        run: rm -f .github/workflows/one-time-fix-home-nav-feedback-cache.yml
+
+      - name: Commit home nav and feedback cache fix
+        run: |
+          git config user.name "Barak Ben Hur via ChatGPT"
+          git config user.email "barakbenhur@gmail.com"
+          if ! git diff --quiet; then
+            git add site docs/home-nav-feedback-cache-fix.md .github/workflows/one-time-fix-home-nav-feedback-cache.yml
+            git commit -m "Fix home mobile nav and feedback cache behavior"
+            git push
+          else
+            echo "No changes to commit"
+          fi
