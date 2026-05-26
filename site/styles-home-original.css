@@ -40,22 +40,98 @@ html[lang="en"] .handwriting-title,
   font-family: var(--font-hand-en) !important;
 }
 
-/* V109 — home page mobile top-tabs: no horizontal rail, no scroll reset.
-   Home uses styles-home-original.css instead of site/styles.css, so the mobile
-   nav fix must live here too. */
+/* V110 — home page header/nav base styling.
+   Home uses styles-home-original.css, so it must carry the public header style too.
+   This prevents raw-looking HTML links when Home is the active tab. */
+body.public-page .site-header,
+.site-header{
+  width:min(1180px, calc(100% - 32px));
+  margin:18px auto 0;
+  padding:12px 14px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  box-sizing:border-box;
+  border:1px solid rgba(10,58,104,.14);
+  border-radius:999px;
+  background:linear-gradient(135deg,rgba(255,255,255,.82),rgba(255,250,240,.92));
+  box-shadow:0 12px 32px rgba(10,58,104,.07);
+}
+.site-brand a{
+  display:inline-flex;
+  align-items:center;
+  text-decoration:none;
+  color:#0A3A68;
+  font-weight:800;
+  letter-spacing:.01em;
+  white-space:nowrap;
+}
+.site-nav{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:.42rem;
+  min-width:0;
+}
+.site-nav a,
+.language-switch{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:34px;
+  padding:.42rem .74rem;
+  border-radius:999px;
+  color:#17324f;
+  text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:.94rem;
+  font-weight:750;
+  line-height:1;
+  white-space:nowrap;
+  border:1px solid transparent;
+}
+.site-nav a:hover,
+.language-switch:hover{
+  background:rgba(255,255,255,.7);
+  border-color:rgba(10,58,104,.12);
+}
+.site-nav a.active,
+.site-nav a[aria-current="page"]{
+  background:#0A3A68;
+  color:#fffaf0;
+  border-color:rgba(10,58,104,.2);
+  box-shadow:0 8px 18px rgba(10,58,104,.15);
+}
+.language-switch{
+  border-color:rgba(10,58,104,.14);
+  background:rgba(255,255,255,.62);
+}
+
+/* V110 — home page mobile top-tabs: no horizontal rail, no scroll reset. */
 @media (max-width: 860px){
   html,body{width:100%!important;max-width:100%!important;overflow-x:hidden!important;}
   body.public-page .site-header,
   body.public-page header.site-header,
   .site-header{
-    width:100%!important;
+    width:calc(100% - 16px)!important;
     max-width:100vw!important;
     box-sizing:border-box!important;
     overflow:hidden!important;
-    padding-left:8px!important;
-    padding-right:8px!important;
+    padding:10px 8px!important;
+    margin:10px auto 0!important;
+    border-radius:24px!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    justify-content:center!important;
+    gap:8px!important;
   }
   .site-brand,.language-switch{min-width:0!important;max-width:100%!important;box-sizing:border-box!important;}
+  .site-brand{text-align:center!important;}
+  .site-brand a{justify-content:center!important;white-space:normal!important;line-height:1.15!important;}
+  .language-switch{align-self:center!important;min-height:32px!important;}
   .site-nav,
   header .site-nav,
   body.public-page .site-nav{
@@ -71,7 +147,7 @@ html[lang="en"] .handwriting-title,
     overflow-x:visible!important;
     overflow-y:visible!important;
     gap:.34rem!important;
-    padding:.35rem .15rem .44rem!important;
+    padding:.25rem .1rem .18rem!important;
     margin:0!important;
     transform:none!important;
     scrollbar-width:none!important;
@@ -92,6 +168,8 @@ html[lang="en"] .handwriting-title,
     transform:none!important;
     margin:0!important;
     scroll-snap-align:none!important;
+    min-height:32px!important;
+    padding:.42rem .64rem!important;
   }
   .site-nav a.active,
   .site-nav a[aria-current="page"],
@@ -104,8 +182,8 @@ html[lang="en"] .handwriting-title,
   .site-nav a[aria-current="page"],
   .site-nav [aria-current="page"]{
     max-width:calc(50vw - .55rem)!important;
-    padding-inline:.64rem!important;
-    font-size:.94rem!important;
+    padding-inline:.58rem!important;
+    font-size:.92rem!important;
   }
 }
 @media (max-width:360px){
