@@ -1,6 +1,42 @@
 /* BPI AI section polish — 2026-05-26
    Scope: AI tab pages only. Keeps the existing site/header/tab visual design, removes file-dump feeling, and presents AI documents as readable cards. */
 
+/* Final AI tab visual fix: the AI page loads this file after styles.css, so the fix must live here.
+   This matches the existing public-page figure frame pattern and does not affect other tabs. */
+body.section-ai figure.tab-visual.compact-section-visual,
+body.section-ai figure.tab-visual.image-frame.compact-section-visual {
+  width: min(760px, 100%) !important;
+  max-width: 100% !important;
+  margin: 22px auto 28px !important;
+  padding: 12px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  text-align: center !important;
+  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,250,240,.97)) !important;
+  border: 1px solid rgba(10,58,104,.16) !important;
+  border-radius: 30px !important;
+  box-shadow: 0 14px 38px rgba(10,58,104,.08) !important;
+}
+
+body.section-ai figure.tab-visual.compact-section-visual > img,
+body.section-ai figure.tab-visual.image-frame.compact-section-visual > img {
+  display: block !important;
+  max-width: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  max-height: 420px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  margin: 0 auto !important;
+  border-radius: 18px !important;
+  box-sizing: border-box !important;
+}
+
+body.section-ai figure.tab-visual.compact-section-visual figcaption,
+body.section-ai figure.tab-visual.image-frame.compact-section-visual figcaption {
+  margin-top: 10px !important;
+}
+
 body.section-ai .ai-documents-card {
   padding: clamp(1.3rem, 2.5vw, 2rem) !important;
 }
