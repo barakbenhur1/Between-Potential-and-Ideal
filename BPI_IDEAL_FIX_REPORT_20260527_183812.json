@@ -1,0 +1,34 @@
+{
+  "run_id": "20260527_183812",
+  "repo_root": "/Users/barakbenhur/Downloads/theory-site",
+  "backup_root": "/Users/barakbenhur/Downloads/theory-site/.bpi_fix_backup_20260527_183812",
+  "changes": {
+    "styles_css_updated": true,
+    "home_start_here_added": 2,
+    "files_recommended_added": 2,
+    "skip_links_added": 8,
+    "html_files_changed": 70,
+    "alt_added": 28,
+    "toc_sub_thumbs_removed": 0,
+    "toc_thumbs_wrapped": 0,
+    "duplicate_figures_removed": 0,
+    "file_changes": [
+      "sitemap: /Users/barakbenhur/Downloads/theory-site/site/sitemap.xml",
+      "robots: /Users/barakbenhur/Downloads/theory-site/site/robots.txt"
+    ]
+  },
+  "qa": {
+    "html_files": 75,
+    "empty_alt": [],
+    "scale_in_theory_docs": [],
+    "toc_sub_thumbs": [],
+    "bad_hash_targets": [],
+    "missing_local_images": [],
+    "redirect_links": []
+  },
+  "notes": [
+    "Preserved requested TOC/title artifacts.",
+    "No conceptual body text was removed.",
+    "PDF/DOCX regeneration still depends on the existing build/export pipeline."
+  ]
+}

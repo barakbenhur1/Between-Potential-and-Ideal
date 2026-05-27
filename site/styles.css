@@ -8,3 +8,56 @@
 @import url("./assets/bpi-v96-user-visual-corrections.css?v=20260526-v96-user-corrections");
 @import url("./assets/bpi-summary-unique-visual.css?v=20260526-summary-unique-visual");
 @import url("./assets/bpi-mobile-site-fixes.css?v=20260526-mobile-site-fixes-v108-wrap-no-scroll");
+
+/* bpi-v300-site-accessibility-product-fixes */
+/* BPI V300 - product-level accessibility and navigation safety fixes. */
+.skip-link{
+  position:absolute!important;
+  inset-inline-start:12px!important;
+  top:10px!important;
+  transform:translateY(-160%)!important;
+  background:#1d2938!important;
+  color:#fff!important;
+  padding:8px 12px!important;
+  border-radius:8px!important;
+  z-index:9999!important;
+}
+.skip-link:focus{transform:translateY(0)!important;}
+a:focus-visible,button:focus-visible,[role="button"]:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{
+  outline:3px solid #b87926!important;
+  outline-offset:3px!important;
+  border-radius:6px!important;
+}
+[id]{scroll-margin-top:78px;}
+.bpi-start-here-clarity,.bpi-recommended-start{
+  margin:22px auto!important;
+  padding:18px 20px!important;
+  max-width:980px!important;
+  border:1px solid rgba(184,121,38,.28)!important;
+  border-radius:18px!important;
+  background:#fff7e8!important;
+  box-shadow:0 8px 22px rgba(23,32,45,.05)!important;
+  box-sizing:border-box!important;
+}
+.bpi-start-here-clarity h2,.bpi-recommended-start h2{margin-top:0!important;color:#b87926!important;}
+.bpi-start-actions,.bpi-recommended-grid{display:flex!important;flex-wrap:wrap!important;gap:10px!important;margin-top:12px!important;}
+.bpi-start-actions a,.bpi-recommended-grid a{
+  display:inline-block!important;
+  padding:9px 13px!important;
+  border:1px solid rgba(184,121,38,.35)!important;
+  border-radius:999px!important;
+  background:#fffaf0!important;
+  color:#08737a!important;
+  text-decoration:none!important;
+  font-weight:700!important;
+}
+.bpi-status-note,.bpi-ai-transparency-note{
+  margin:16px auto!important;
+  padding:12px 15px!important;
+  border:1px solid rgba(184,121,38,.22)!important;
+  border-radius:12px!important;
+  background:#fffaf0!important;
+  color:#4b3d2e!important;
+  font-size:14px!important;
+  line-height:1.55!important;
+}
