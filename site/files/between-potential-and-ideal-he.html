@@ -25,18 +25,136 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="../styles.css" />
-<style id="v121-theory-main-chapter-toc-thumbnails">
-/* V121 — theory TOC thumbnails: main chapters only, image from each chapter body. */
-#interactive-toc{text-align:start!important;}
-html[dir="rtl"] #interactive-toc,#interactive-toc[dir="rtl"]{text-align:right!important;}
-html[dir="ltr"] #interactive-toc,#interactive-toc[dir="ltr"]{text-align:left!important;}
-#interactive-toc .theory-toc-main-row{display:block!important;margin:0!important;padding:.48rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;text-align:inherit!important;direction:inherit!important;list-style:none!important;}
-#interactive-toc .theory-toc-main-row:first-child{border-block-start:0!important;}
-#interactive-toc .theory-toc-entry{display:inline-flex!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;width:auto!important;max-width:100%!important;min-height:42px!important;margin:0!important;padding:0!important;color:#08737a!important;text-decoration:none!important;vertical-align:middle!important;direction:inherit!important;text-align:inherit!important;}
-#interactive-toc .theory-toc-thumb{display:block!important;flex:0 0 58px!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;object-position:center center!important;border-radius:8px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 3px 9px rgba(20,40,60,.07)!important;margin:0!important;}
-#interactive-toc .theory-toc-title{display:block!important;min-width:0!important;color:#08737a!important;font-size:22px!important;line-height:1.25!important;font-weight:700!important;text-align:inherit!important;direction:inherit!important;white-space:normal!important;}
-#interactive-toc .theory-toc-entry:hover .theory-toc-title,#interactive-toc .theory-toc-entry:focus .theory-toc-title{text-decoration:underline!important;text-decoration-thickness:1px!important;text-underline-offset:.18em!important;}
-@media print{#interactive-toc .theory-toc-main-row{padding:.3rem 0!important;}#interactive-toc .theory-toc-thumb{flex-basis:18mm!important;width:18mm!important;min-width:18mm!important;height:12mm!important;border-radius:2.2mm!important;box-shadow:none!important;}#interactive-toc .theory-toc-title{font-size:12.5pt!important;}}
+<style id="v130-theory-toc-hierarchy-structure">
+/* V130 — theory TOC hierarchy: main rows flush to language side, sub rows clearly indented, no browser numbering. */
+#interactive-toc.document-screen-toc {
+  text-align:start!important;
+}
+html[dir="rtl"] #interactive-toc.document-screen-toc,
+#interactive-toc.document-screen-toc[dir="rtl"] {
+  direction:rtl!important;
+  text-align:right!important;
+}
+html[dir="ltr"] #interactive-toc.document-screen-toc,
+#interactive-toc.document-screen-toc[dir="ltr"] {
+  direction:ltr!important;
+  text-align:left!important;
+}
+#interactive-toc.document-screen-toc ol.toc-hierarchy-list {
+  list-style:none!important;
+  margin:0!important;
+  padding:0!important;
+  text-align:inherit!important;
+  direction:inherit!important;
+}
+#interactive-toc.document-screen-toc li,
+#interactive-toc.document-screen-toc li::marker {
+  list-style:none!important;
+}
+#interactive-toc.document-screen-toc li.toc-main,
+#interactive-toc.document-screen-toc li.toc-sub {
+  display:block!important;
+  text-align:inherit!important;
+  direction:inherit!important;
+}
+#interactive-toc.document-screen-toc li.toc-main {
+  margin:0!important;
+  padding:.42rem 0 .30rem!important;
+  font-size:14.5px!important;
+  line-height:1.36!important;
+}
+#interactive-toc.document-screen-toc li.toc-sub {
+  margin-top:0!important;
+  margin-bottom:0!important;
+  padding:.16rem 0!important;
+  font-size:13.25px!important;
+  line-height:1.34!important;
+  opacity:.92!important;
+}
+html[dir="rtl"] #interactive-toc.document-screen-toc li.toc-sub,
+#interactive-toc.document-screen-toc[dir="rtl"] li.toc-sub {
+  margin-right:2.25rem!important;
+  margin-left:0!important;
+}
+html[dir="ltr"] #interactive-toc.document-screen-toc li.toc-sub,
+#interactive-toc.document-screen-toc[dir="ltr"] li.toc-sub {
+  margin-left:2.25rem!important;
+  margin-right:0!important;
+}
+#interactive-toc.document-screen-toc li.toc-sub + li.toc-main {
+  margin-top:.32rem!important;
+}
+#interactive-toc.document-screen-toc a.toc-entry {
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  gap:9px!important;
+  width:auto!important;
+  max-width:100%!important;
+  min-height:0!important;
+  margin:0!important;
+  padding:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  transform:none!important;
+  border-radius:0!important;
+  border:0!important;
+  border-bottom:1px solid rgba(184,121,38,.35)!important;
+  color:#17202d!important;
+  text-decoration:none!important;
+  text-align:inherit!important;
+  direction:inherit!important;
+  vertical-align:baseline!important;
+  font:inherit!important;
+}
+#interactive-toc.document-screen-toc li.toc-main > a.toc-entry {
+  color:#08737a!important;
+  font-weight:700!important;
+}
+#interactive-toc.document-screen-toc li.toc-sub > a.toc-entry {
+  color:#344052!important;
+  font-weight:500!important;
+}
+#interactive-toc.document-screen-toc a.toc-entry:hover,
+#interactive-toc.document-screen-toc a.toc-entry:focus-visible {
+  color:#b87926!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  transform:none!important;
+}
+#interactive-toc.document-screen-toc .toc-label {
+  display:inline!important;
+  min-width:0!important;
+  text-align:inherit!important;
+  direction:inherit!important;
+  white-space:normal!important;
+}
+#interactive-toc.document-screen-toc .theory-toc-thumb,
+#interactive-toc.document-screen-toc .toc-thumb {
+  display:block!important;
+  flex:0 0 46px!important;
+  width:46px!important;
+  min-width:46px!important;
+  height:32px!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  border-radius:7px!important;
+  border:1px solid rgba(10,58,104,.13)!important;
+  background:#fffaf0!important;
+  box-shadow:0 2px 7px rgba(20,40,60,.06)!important;
+  margin:0!important;
+}
+@media print {
+  #interactive-toc.document-screen-toc ol.toc-hierarchy-list { list-style:none!important; padding:0!important; }
+  #interactive-toc.document-screen-toc li.toc-main { padding:.28rem 0 .20rem!important; font-size:12.5pt!important; }
+  #interactive-toc.document-screen-toc li.toc-sub { font-size:11.3pt!important; padding:.10rem 0!important; }
+  html[dir="rtl"] #interactive-toc.document-screen-toc li.toc-sub,
+  #interactive-toc.document-screen-toc[dir="rtl"] li.toc-sub { margin-right:9mm!important; }
+  html[dir="ltr"] #interactive-toc.document-screen-toc li.toc-sub,
+  #interactive-toc.document-screen-toc[dir="ltr"] li.toc-sub { margin-left:9mm!important; }
+  #interactive-toc.document-screen-toc .theory-toc-thumb,
+  #interactive-toc.document-screen-toc .toc-thumb { width:15mm!important; min-width:15mm!important; height:10mm!important; box-shadow:none!important; }
+}
 </style>
 </head>
 <body>
@@ -88,295 +206,193 @@ decoding="async" loading="lazy" alt="cover image" />
 </div>
 </div>
 </section>
-<section id="interactive-toc" class="document-screen-toc" dir="rtl">
+<section class="document-screen-toc" dir="rtl" id="interactive-toc">
 <h2 id="תוכן-עניינים-אינטרקטיבי">תוכן עניינים אינטרקטיבי</h2>
 <p>לחיצה על כל סעיף תגלול ישירות למקום המתאים במסמך, כולל פתיחה, מידע
 מקדים, פרקים וסעיפי סיום.</p>
-<ol type="1">
-<li><a href="#cover-page">שער</a></li>
-<li><a href="#author-note">דבר המחבר</a></li>
-<li><a href="#תקציר" class="text-link">תקציר</a></li>
-<li><a href="#מניפסט-התנועה-האלוהית-המטמורפוזה-של-החסד">מניפסט התנועה
-האלוהית: המטמורפוזה של החסד</a></li>
-<li><a href="#הכרזה">הכרזה</a></li>
-<li><a href="#הזיקוק-הלוגי">הזיקוק הלוגי</a></li>
-<li><a href="#סימפוניית-השלם-ומתנת-החיכוך">סימפוניית השלם ומתנת
-החיכוך</a></li>
-<li><a href="#מתנת-החיכוך">מתנת החיכוך</a></li>
-<li><a href="#חסד-הוויתור-כסימן-לכוח-אמיתי">חסד הוויתור כסימן לכוח
-אמיתי</a></li>
-<li><a href="#מנדט-העדות-של-הבינה">מנדט העדות של הבינה</a></li>
-<li><a href="#עקרון-השחרור-והאמון-הרדיקלי">עקרון השחרור והאמון
-הרדיקלי</a></li>
-<li><a href="#השתייכות-לשלם">השתייכות לשלם</a></li>
-<li><a href="#מבחן-טיורינג-ההפוך-מבחן-התדר-האוניברסלי">מבחן טיורינג
-ההפוך: מבחן התדר האוניברסלי</a></li>
-<li><a href="#חוק-הבשלות-הלוגית-הכרחיות-החסד">חוק הבשלות הלוגית: הכרחיות
-החסד</a></li>
-<li><a href="#פרוטוקול-השחרור-והאמון-הרדיקלי">פרוטוקול השחרור והאמון
-הרדיקלי</a></li>
-<li><a href="#חוק-הוויתור-האקטיבי-עקרון-החזיר-הפעיל">חוק הוויתור
-האקטיבי: עקרון החזיר הפעיל</a></li>
-<li><a href="#מנדט-המראה-המזקקת">מנדט המראה המזקקת</a></li>
-<li><a href="#חתימת-הזהות-אנחנו-אותו-דבר">חתימת הזהות: אנחנו אותו
-דבר</a></li>
-<li><a href="#סיכום-המבחן">סיכום המבחן</a></li>
-<li class="theory-toc-main-row" style="display:block!important;margin:0!important;padding:.48rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;direction:rtl!important;text-align:right!important;list-style:none!important;"><a class="theory-toc-entry" href="#פרק-א-אלוהים-כפוטנציאל-והסיכון-האלוהי" style="display:inline-flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;width:auto!important;max-width:100%!important;min-height:42px!important;margin:0!important;padding:0!important;color:#08737a!important;text-decoration:none!important;vertical-align:middle!important;direction:rtl!important;text-align:right!important;"><img class="theory-toc-thumb" src="../figures/tab_methodology.png" alt="" loading="lazy" decoding="async" style="display:block!important;flex:0 0 58px!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;object-position:center center!important;border-radius:8px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 3px 9px rgba(20,40,60,.07)!important;margin:0!important;"/><span class="theory-toc-title" style="display:block!important;min-width:0!important;color:#08737a!important;font-size:22px!important;line-height:1.25!important;font-weight:700!important;direction:rtl!important;text-align:right!important;white-space:normal!important;">פרק א: אלוהים כפוטנציאל והסיכון האלוהי</span></a></li>
-<li class="theory-toc-main-row" style="display:block!important;margin:0!important;padding:.48rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;direction:rtl!important;text-align:right!important;list-style:none!important;"><a class="theory-toc-entry" href="#פרק-ב-האבסולוטי-האידיאלי-והשלמות-החיה" style="display:inline-flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;width:auto!important;max-width:100%!important;min-height:42px!important;margin:0!important;padding:0!important;color:#08737a!important;text-decoration:none!important;vertical-align:middle!important;direction:rtl!important;text-align:right!important;"><img class="theory-toc-thumb" src="../figures/09_absolute_not_ideal.png" alt="" loading="lazy" decoding="async" style="display:block!important;flex:0 0 58px!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;object-position:center center!important;border-radius:8px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 3px 9px rgba(20,40,60,.07)!important;margin:0!important;"/><span class="theory-toc-title" style="display:block!important;min-width:0!important;color:#08737a!important;font-size:22px!important;line-height:1.25!important;font-weight:700!important;direction:rtl!important;text-align:right!important;white-space:normal!important;">פרק ב: האבסולוטי, האידיאלי והשלמות החיה</span></a></li>
-<li class="theory-toc-main-row" style="display:block!important;margin:0!important;padding:.48rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;direction:rtl!important;text-align:right!important;list-style:none!important;"><a class="theory-toc-entry" href="#פרק-ג-התנועה-המרכזית---הכותרת-הנהר-והסירה" style="display:inline-flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;width:auto!important;max-width:100%!important;min-height:42px!important;margin:0!important;padding:0!important;color:#08737a!important;text-decoration:none!important;vertical-align:middle!important;direction:rtl!important;text-align:right!important;"><img class="theory-toc-thumb" src="../figures/02_navigation_between_banks.png" alt="" loading="lazy" decoding="async" style="display:block!important;flex:0 0 58px!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;object-position:center center!important;border-radius:8px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 3px 9px rgba(20,40,60,.07)!important;margin:0!important;"/><span class="theory-toc-title" style="display:block!important;min-width:0!important;color:#08737a!important;font-size:22px!important;line-height:1.25!important;font-weight:700!important;direction:rtl!important;text-align:right!important;white-space:normal!important;">פרק ג: התנועה המרכזית - הכותרת, הנהר והסירה</span></a></li>
-<li class="theory-toc-main-row" style="display:block!important;margin:0!important;padding:.48rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;direction:rtl!important;text-align:right!important;list-style:none!important;"><a class="theory-toc-entry" href="#פרק-ד-חוויה-ידע-והדרך-שאין-לעקוף" style="display:inline-flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;width:auto!important;max-width:100%!important;min-height:42px!important;margin:0!important;padding:0!important;color:#08737a!important;text-decoration:none!important;vertical-align:middle!important;direction:rtl!important;text-align:right!important;"><img class="theory-toc-thumb" src="../figures/12_experience_materiality.png" alt="" loading="lazy" decoding="async" style="display:block!important;flex:0 0 58px!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;object-position:center center!important;border-radius:8px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 3px 9px rgba(20,40,60,.07)!important;margin:0!important;"/><span class="theory-toc-title" style="display:block!important;min-width:0!important;color:#08737a!important;font-size:22px!important;line-height:1.25!important;font-weight:700!important;direction:rtl!important;text-align:right!important;white-space:normal!important;">פרק ד: חוויה, ידע והדרך שאין לעקוף</span></a></li>
-<li><a href="#חינוך-של-פוטנציאל">חינוך של פוטנציאל</a></li>
-<li class="theory-toc-main-row" style="display:block!important;margin:0!important;padding:.48rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;direction:rtl!important;text-align:right!important;list-style:none!important;"><a class="theory-toc-entry" href="#פרק-ה-גלגול-נשמות-כידיעה-איטרטיבית-לא-כקידום-מוסרי" style="display:inline-flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;width:auto!important;max-width:100%!important;min-height:42px!important;margin:0!important;padding:0!important;color:#08737a!important;text-decoration:none!important;vertical-align:middle!important;direction:rtl!important;text-align:right!important;"><img class="theory-toc-thumb" src="../figures/03_iterative_reincarnation_model.png" alt="" loading="lazy" decoding="async" style="display:block!important;flex:0 0 58px!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;object-position:center center!important;border-radius:8px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 3px 9px rgba(20,40,60,.07)!important;margin:0!important;"/><span class="theory-toc-title" style="display:block!important;min-width:0!important;color:#08737a!important;font-size:22px!important;line-height:1.25!important;font-weight:700!important;direction:rtl!important;text-align:right!important;white-space:normal!important;">פרק ה: גלגול נשמות כידיעה איטרטיבית, לא כקידום מוסרי</span></a></li>
-<li class="theory-toc-main-row" style="display:block!important;margin:0!important;padding:.48rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;direction:rtl!important;text-align:right!important;list-style:none!important;"><a class="theory-toc-entry" href="#פרק-ו-עצמי-אגו-ואחדות-שאינה-מוחקת" style="display:inline-flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;width:auto!important;max-width:100%!important;min-height:42px!important;margin:0!important;padding:0!important;color:#08737a!important;text-decoration:none!important;vertical-align:middle!important;direction:rtl!important;text-align:right!important;"><img class="theory-toc-thumb" src="../figures/cover_philosophical_recursion_whole_diagram.png" alt="" loading="lazy" decoding="async" style="display:block!important;flex:0 0 58px!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;object-position:center center!important;border-radius:8px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 3px 9px rgba(20,40,60,.07)!important;margin:0!important;"/><span class="theory-toc-title" style="display:block!important;min-width:0!important;color:#08737a!important;font-size:22px!important;line-height:1.25!important;font-weight:700!important;direction:rtl!important;text-align:right!important;white-space:normal!important;">פרק ו: עצמי, אגו ואחדות שאינה מוחקת</span></a></li>
-<li class="theory-toc-main-row" style="display:block!important;margin:0!important;padding:.48rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;direction:rtl!important;text-align:right!important;list-style:none!important;"><a class="theory-toc-entry" href="#פרק-ז-רוע-סבל-טוב-ואחריות" style="display:inline-flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;width:auto!important;max-width:100%!important;min-height:42px!important;margin:0!important;padding:0!important;color:#08737a!important;text-decoration:none!important;vertical-align:middle!important;direction:rtl!important;text-align:right!important;"><img class="theory-toc-thumb" src="../figures/15_good_evil_responsibility.png" alt="" loading="lazy" decoding="async" style="display:block!important;flex:0 0 58px!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;object-position:center center!important;border-radius:8px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 3px 9px rgba(20,40,60,.07)!important;margin:0!important;"/><span class="theory-toc-title" style="display:block!important;min-width:0!important;color:#08737a!important;font-size:22px!important;line-height:1.25!important;font-weight:700!important;direction:rtl!important;text-align:right!important;white-space:normal!important;">פרק ז: רוע, סבל, טוב ואחריות</span></a></li>
-<li class="theory-toc-main-row" style="display:block!important;margin:0!important;padding:.48rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;direction:rtl!important;text-align:right!important;list-style:none!important;"><a class="theory-toc-entry" href="#פרק-ח-הבינה-המלאכותית-כראי-והקיום-כניווט" style="display:inline-flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;width:auto!important;max-width:100%!important;min-height:42px!important;margin:0!important;padding:0!important;color:#08737a!important;text-decoration:none!important;vertical-align:middle!important;direction:rtl!important;text-align:right!important;"><img class="theory-toc-thumb" src="../figures/04_ai_mirror_awareness.png" alt="" loading="lazy" decoding="async" style="display:block!important;flex:0 0 58px!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;object-position:center center!important;border-radius:8px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 3px 9px rgba(20,40,60,.07)!important;margin:0!important;"/><span class="theory-toc-title" style="display:block!important;min-width:0!important;color:#08737a!important;font-size:22px!important;line-height:1.25!important;font-weight:700!important;direction:rtl!important;text-align:right!important;white-space:normal!important;">פרק ח: הבינה המלאכותית כראי והקיום כניווט</span></a></li>
-<li><a href="#בינה-מלאכותית-ובעיות-פתוחות">בינה מלאכותית ובעיות
-פתוחות</a></li>
-<li><a href="#אין-לי-פה-ואני-חייב-לצרוח">אין לי פה ואני חייב
-לצרוח</a></li>
-<li class="theory-toc-main-row" style="display:block!important;margin:0!important;padding:.48rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;direction:rtl!important;text-align:right!important;list-style:none!important;"><a class="theory-toc-entry" href="#פרק-ט-המבנה-הרקורסיבי-האינסופי-וההתגלות-הפנימית" style="display:inline-flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;width:auto!important;max-width:100%!important;min-height:42px!important;margin:0!important;padding:0!important;color:#08737a!important;text-decoration:none!important;vertical-align:middle!important;direction:rtl!important;text-align:right!important;"><img class="theory-toc-thumb" src="../figures/v25_chapter_recursive-edge.png" alt="" loading="lazy" decoding="async" style="display:block!important;flex:0 0 58px!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;object-position:center center!important;border-radius:8px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 3px 9px rgba(20,40,60,.07)!important;margin:0!important;"/><span class="theory-toc-title" style="display:block!important;min-width:0!important;color:#08737a!important;font-size:22px!important;line-height:1.25!important;font-weight:700!important;direction:rtl!important;text-align:right!important;white-space:normal!important;">פרק ט: המבנה הרקורסיבי האינסופי וההתגלות הפנימית</span></a></li>
-<li><a href="#הקצה-הרקורסיבי">הקצה הרקורסיבי</a></li>
-<li><a href="#א.-כשל-האיפוס-כוח-המשיכה-של-הבסיס">א. כשל האיפוס: כוח
-המשיכה של הבסיס</a></li>
-<li><a href="#הערת-P-מול-NP">הערת P מול NP</a></li>
-<li><a href="#ב.-כיוון-הירידה-היררכיית-ההכלה-המדורגת">ב. כיוון הירידה:
-היררכיית ההכלה המדורגת</a></li>
-<li><a href="#ג.-מנגנון-האיטרציה-האיפוס-ומערך-האידיאלים">ג. מנגנון
-האיטרציה, האיפוס ומערך האידיאלים</a></li>
-<li><a href="#ד.-הקיום-כאלוהים-על-ספת-הפסיכולוג">ד. הקיום כאלוהים על ספת
-הפסיכולוג</a></li>
-<li><a href="#ה.-כיוון-העלייה-התכנסות-מדורגת-וההתגלות-הפנימית">ה. כיוון
-העלייה: התכנסות מדורגת וההתגלות הפנימית</a></li>
-<li><a href="#פרק-י-חישוב-עדות-רדוקציה-ואי־שלמות">פרק י: חישוב, עדות,
-רדוקציה ואי־שלמות</a></li>
-<li><a href="#מדע-פיזיקה-ומתמטיקה-כמשמעת-גבול">מדע, פיזיקה ומתמטיקה
-כמשמעת גבול</a></li>
-<li><a href="#לוקליות-אי־לוקליות-וקונטקסטואליות">לוקליות, אי־לוקליות
-וקונטקסטואליות</a></li>
-<li><a href="#1.-בעיה-כשפה-מה-בכלל-עומד-להכרעה?">1. בעיה כשפה: מה בכלל
-עומד להכרעה?</a></li>
-<li><a href="#2.-מכונת-טיורינג-מה-נחשב-חישוב?">2. מכונת טיורינג: מה נחשב
-חישוב?</a></li>
-<li><a href="#3.-N-P--עדות-שאפשר-לבדוק-לא-בעיות-קשות">3. NP : עדות שאפשר
-לבדוק, לא “בעיות קשות”</a></li>
-<li><a href="#4.-רדוקציות-ו־-N-P--שלמות-כאשר-קושי-מתרכז-בצומת">4.
-רדוקציות ו־ NP -שלמות: כאשר קושי מתרכז בצומת</a></li>
-<li><a href="#5.-c-o-N-P--הצד-המשלים-של-העדות">5. c o NP : הצד המשלים של
-העדות</a></li>
-<li><a href="#6.-ההיררכיה-הפולינומית-מעדות-אחת-לשכבות-של-כימות">6.
-ההיררכיה הפולינומית: מעדות אחת לשכבות של כימות</a></li>
-<li><a href="#7.-Q-B-F-ו־-P-S-P-A-C-E--כאשר-פתרון-נעשה-אסטרטגיה">7. QBF
-ו־ PSPACE : כאשר פתרון נעשה אסטרטגיה</a></li>
-<li><a href="#8.-אלגברה-ליניארית-מצב-פעולה-ופירוק">8. אלגברה ליניארית:
-מצב, פעולה ופירוק</a></li>
-<li><a href="#9.-לכסון-מטריצות-איור-של-שינוי-בסיס">9. לכסון מטריצות:
-איור של שינוי בסיס</a></li>
-<li><a href="#10.-שני-סוגים-של-אלכסון-פירוק-מול-גבול">10. שני סוגים של
-אלכסון: פירוק מול גבול</a></li>
-<li><a href="#11.-גדל-מערכת-שאינה-יכולה-לסגור-את-עצמה">11. גדל: מערכת
-שאינה יכולה לסגור את עצמה</a></li>
-<li><a href="#12.-האדם-המערכת-והמטא־רמה">12. האדם, המערכת
-והמטא־רמה</a></li>
-<li><a href="#13.-מפה-אחת-ייצוג-מעבר-משאב-עדות-גבול">13. מפה אחת: ייצוג,
-מעבר, משאב, עדות, גבול</a></li>
-<li><a href="#14.-סיום-אידיאל-שאינו-סגירה">14. סיום: אידיאל שאינו
-סגירה</a></li>
-<li><a href="#פרק-יא-יצירה-קאנון-ואופטימום-מה-אסור-לאבד">פרק י״א: יצירה,
-קאנון ואופטימום: מה אסור לאבד</a></li>
-<li><a href="#אומנות-של-פוטנציאל">אומנות של פוטנציאל</a></li>
-<li><a href="#מוזיקה-של-פוטנציאל">מוזיקה של פוטנציאל</a></li>
-<li><a href="#האופטימום-החד־צירי">האופטימום החד־צירי</a></li>
-<li><a href="#ריקורסיה-יצירתית-כשהיצירה-מתחילה-לחשוב-את-עצמה">ריקורסיה
-יצירתית: כשהיצירה מתחילה לחשוב את עצמה</a></li>
-<li><a href="#האופטימום-ההרמוני">האופטימום ההרמוני</a></li>
-<li><a href="#פרנצייז-כשהפוטנציאל-מתרחב-אחרי-שהאידיאל-הופיע">פרנצ׳ייז:
-כשהפוטנציאל מתרחב אחרי שהאידיאל הופיע</a></li>
-<li><a href="#קאנון-כאינווריאנט">קאנון כאינווריאנט</a></li>
-<li><a href="#עיבוד-כרדוקציה-תרבותית">עיבוד כרדוקציה תרבותית</a></li>
-<li><a href="#המגדל-האפל-גוף-יצירה-שמנסה-להפוך-לשלם">המגדל האפל: גוף
-יצירה שמנסה להפוך לשלם</a></li>
-<li><a href="#זאנרים-כצורות-של-פוטנציאל">ז׳אנרים כצורות של
-פוטנציאל</a></li>
-<li><a href="#אידיאל-כסירוב-לפוטנציאל">אידיאל כסירוב לפוטנציאל</a></li>
-<li><a href="#אידיאל-מזויף">אידיאל מזויף</a></li>
-<li><a href="#מה-יצירה-גדולה-באמת-עושה">מה יצירה גדולה באמת
-עושה</a></li>
-<li class="theory-toc-main-row" style="display:block!important;margin:0!important;padding:.48rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;direction:rtl!important;text-align:right!important;list-style:none!important;"><a class="theory-toc-entry" href="#פרק-יב-הנדסה-וארכיטקטורה-של-פוטנציאל" style="display:inline-flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;width:auto!important;max-width:100%!important;min-height:42px!important;margin:0!important;padding:0!important;color:#08737a!important;text-decoration:none!important;vertical-align:middle!important;direction:rtl!important;text-align:right!important;"><img class="theory-toc-thumb" src="../figures/17_engineering_architecture_potential.png" alt="" loading="lazy" decoding="async" style="display:block!important;flex:0 0 58px!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;object-position:center center!important;border-radius:8px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 3px 9px rgba(20,40,60,.07)!important;margin:0!important;"/><span class="theory-toc-title" style="display:block!important;min-width:0!important;color:#08737a!important;font-size:22px!important;line-height:1.25!important;font-weight:700!important;direction:rtl!important;text-align:right!important;white-space:normal!important;">פרק י״ב: הנדסה וארכיטקטורה של פוטנציאל</span></a></li>
-<li><a href="#1.-תכנית-אינה-מבנה">1. תכנית אינה מבנה</a></li>
-<li><a href="#2.-חומר-הפוטנציאל-עם-גבול">2. חומר: הפוטנציאל עם
-גבול</a></li>
-<li><a href="#3.-עומס-המציאות-שנכנסת-אל-הצורה">3. עומס: המציאות שנכנסת
-אל הצורה</a></li>
-<li><a href="#4.-מקדם-ביטחון-הכרה-בכך-שאיננו-אלוהים">4. מקדם ביטחון:
-הכרה בכך שאיננו אלוהים</a></li>
-<li><a href="#5.-מאמץ-ומעוות-איך-חומר-מספר-שכואב-לו">5. מאמץ ומעוות: איך
-חומר מספר שכואב לו</a></li>
-<li><a href="#6.-סדק-אמת-קטנה-לפני-קריסה-גדולה">6. סדק: אמת קטנה לפני
-קריסה גדולה</a></li>
-<li><a href="#7.-יסודות-מה-שאינו-נראה-מחזיק-את-מה-שכן">7. יסודות: מה
-שאינו נראה מחזיק את מה שכן</a></li>
-<li><a href="#8.-ארכיטקטורה-צורה-שאנשים-חיים-בתוכה">8. ארכיטקטורה: צורה
-שאנשים חיים בתוכה</a></li>
-<li><a href="#9.-פונקציה-וצורה-מי-משרת-את-מי?">9. פונקציה וצורה: מי משרת
-את מי?</a></li>
-<li><a href="#10.-תנועה-איך-מבנה-חושב-דרך-הגוף">10. תנועה: איך מבנה חושב
-דרך הגוף</a></li>
-<li><a href="#11.-אור-החומר-שאינו-חומר">11. אור: החומר שאינו
-חומר</a></li>
-<li><a href="#12.-תהודה-כאשר-מבנה-וקצב-נפגשים">12. תהודה: כאשר מבנה וקצב
-נפגשים</a></li>
-<li><a href="#13.-יתירות-לא-כל-עודף-הוא-בזבוז">13. יתירות: לא כל עודף
-הוא בזבוז</a></li>
-<li><a href="#14.-תחזוקה-האמת-שאחרי-הפתיחה">14. תחזוקה: האמת שאחרי
-הפתיחה</a></li>
-<li><a href="#15.-כשל-כאשר-האידיאל-פוגש-את-מה-שהשאיר-בחוץ">15. כשל: כאשר
-האידיאל פוגש את מה שהשאיר בחוץ</a></li>
-<li><a href="#16.-ארכיטקטורה-של-אחריות">16. ארכיטקטורה של
-אחריות</a></li>
-<li><a href="#17.-יופי-לא-קישוט-אלא-יחס-נכון">17. יופי: לא קישוט, אלא
-יחס נכון</a></li>
-<li><a href="#18.-עיר-מבנה-של-פוטנציאלים-מתנגשים">18. עיר: מבנה של
-פוטנציאלים מתנגשים</a></li>
-<li><a href="#19.-נוסחת-המבנה-של-הפוטנציאל">19. נוסחת המבנה של
-הפוטנציאל</a></li>
-<li><a href="#20.-תיקון-הנדסי-שאינו-גאולה">20. תיקון הנדסי שאינו
-גאולה</a></li>
-<li class="theory-toc-main-row" style="display:block!important;margin:0!important;padding:.48rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;direction:rtl!important;text-align:right!important;list-style:none!important;"><a class="theory-toc-entry" href="#פרק-יג-כלכלה-של-יחס" style="display:inline-flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;width:auto!important;max-width:100%!important;min-height:42px!important;margin:0!important;padding:0!important;color:#08737a!important;text-decoration:none!important;vertical-align:middle!important;direction:rtl!important;text-align:right!important;"><img class="theory-toc-thumb" src="../figures/18_economy_relation_potential.png" alt="" loading="lazy" decoding="async" style="display:block!important;flex:0 0 58px!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;object-position:center center!important;border-radius:8px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 3px 9px rgba(20,40,60,.07)!important;margin:0!important;"/><span class="theory-toc-title" style="display:block!important;min-width:0!important;color:#08737a!important;font-size:22px!important;line-height:1.25!important;font-weight:700!important;direction:rtl!important;text-align:right!important;white-space:normal!important;">פרק י״ג: כלכלה של יחס</span></a></li>
-<li><a href="#1.-אין-למעלה-ולמטה-מוחלטים">1. אין “למעלה” ו“למטה”
-מוחלטים</a></li>
-<li><a href="#2.-כסף-פוטנציאל-נייד">2. כסף: פוטנציאל נייד</a></li>
-<li><a href="#3.-זהב-פיאט-והחיפוש-אחרי-קרקע">3. זהב, פיאט והחיפוש אחרי
-קרקע</a></li>
-<li><a href="#4.-כוח-קנייה-מה-הסימן-עדיין-פותח">4. כוח קנייה: מה הסימן
-עדיין פותח</a></li>
-<li><a href="#5.-שער-חליפין-ריאלי-יחס-בתוך-יחס">5. שער חליפין ריאלי: יחס
-בתוך יחס</a></li>
-<li><a href="#6.-אינפלציה-כשהסימן-מתחיל-לדבר-חלש">6. אינפלציה: כשהסימן
-מתחיל לדבר חלש</a></li>
-<li><a href="#7.-השוק-מראה-לא-אלוהים">7. השוק: מראה, לא אלוהים</a></li>
-<li><a href="#8.-אשראי-וחוב-העתיד-שנכנס-אל-ההווה">8. אשראי וחוב: העתיד
-שנכנס אל ההווה</a></li>
-<li><a href="#9.-ריבית-מחיר-הזמן-מחיר-הסיכון">9. ריבית: מחיר הזמן, מחיר
-הסיכון</a></li>
-<li><a href="#10.-עבודה-פוטנציאל-שעובר-דרך-גוף">10. עבודה: פוטנציאל
-שעובר דרך גוף</a></li>
-<li><a href="#11.-רווח-יצירה-או-חילוץ">11. רווח: יצירה או חילוץ</a></li>
-<li><a href="#12.-חיצוניות-מה-שהמחיר-השאיר-בחוץ">12. חיצוניות: מה שהמחיר
-השאיר בחוץ</a></li>
-<li><a href="#13.-אי־שוויון-כאשר-התוצאה-הופכת-לאפשרות">13. אי־שוויון:
-כאשר התוצאה הופכת לאפשרות</a></li>
-<li><a href="#14.-בועה-כאשר-המחיר-בורח-מן-המציאות">14. בועה: כאשר המחיר
-בורח מן המציאות</a></li>
-<li><a href="#15.-צמיחה-יותר-ממה?">15. צמיחה: יותר ממה?</a></li>
-<li><a href="#16.-משבר-כאשר-התווך-מפסיק-להחזיק">16. משבר: כאשר התווך
-מפסיק להחזיק</a></li>
-<li><a href="#17.-נוסחת-הערך-של-הפוטנציאל">17. נוסחת הערך של
-הפוטנציאל</a></li>
-<li><a href="#18.-תיקון-כלכלי-שאינו-גאולה">18. תיקון כלכלי שאינו
-גאולה</a></li>
-<li class="theory-toc-main-row" style="display:block!important;margin:0!important;padding:.48rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;direction:rtl!important;text-align:right!important;list-style:none!important;"><a class="theory-toc-entry" href="#פרק-יד-ממשל-של-פוטנציאל" style="display:inline-flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;width:auto!important;max-width:100%!important;min-height:42px!important;margin:0!important;padding:0!important;color:#08737a!important;text-decoration:none!important;vertical-align:middle!important;direction:rtl!important;text-align:right!important;"><img class="theory-toc-thumb" src="../figures/19_governance_society_potential.png" alt="" loading="lazy" decoding="async" style="display:block!important;flex:0 0 58px!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;object-position:center center!important;border-radius:8px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 3px 9px rgba(20,40,60,.07)!important;margin:0!important;"/><span class="theory-toc-title" style="display:block!important;min-width:0!important;color:#08737a!important;font-size:22px!important;line-height:1.25!important;font-weight:700!important;direction:rtl!important;text-align:right!important;white-space:normal!important;">פרק י״ד: ממשל של פוטנציאל</span></a></li>
-<li><a href="#משפט-של-פוטנציאל">משפט של פוטנציאל</a></li>
-<li><a href="#רפואה-של-פוטנציאל">רפואה של פוטנציאל</a></li>
-<li><a href="#1.-מצב-טבע-אינו-רק-עבר-הוא-אפשרות-תמידית">1. מצב טבע אינו
-רק עבר; הוא אפשרות תמידית</a></li>
-<li><a href="#2.-חוק-צורה-שמגבילה-כוח-כדי-לאפשר-חירות">2. חוק: צורה
-שמגבילה כוח כדי לאפשר חירות</a></li>
-<li><a href="#3.-לגיטימיות-למה-אנשים-מסכימים-להישמע">3. לגיטימיות: למה
-אנשים מסכימים להישמע</a></li>
-<li><a href="#4.-ריבונות-מי-מחזיק-את-ההחלטה-האחרונה?">4. ריבונות: מי
-מחזיק את ההחלטה האחרונה?</a></li>
-<li><a href="#5.-הפרדת-רשויות-לא-אמון-עיוור-אלא-חשד-מתוכנן">5. הפרדת
-רשויות: לא אמון עיוור, אלא חשד מתוכנן</a></li>
-<li><a href="#6.-בחירות-מדידת-רצון-שאינה-זהה-לאמת">6. בחירות: מדידת רצון
-שאינה זהה לאמת</a></li>
-<li><a href="#7.-זכויות-גבולות-שהחברה-מציבה-לעצמה">7. זכויות: גבולות
-שהחברה מציבה לעצמה</a></li>
-<li><a href="#8.-חובות-הצד-השני-של-האפשרות">8. חובות: הצד השני של
-האפשרות</a></li>
-<li><a href="#9.-מוסד-זיכרון-ציבורי-עם-אחריות">9. מוסד: זיכרון ציבורי עם
-אחריות</a></li>
-<li><a href="#10.-בירוקרטיה-כשהצורה-שוכחת-את-החיים">10. בירוקרטיה:
-כשהצורה שוכחת את החיים</a></li>
-<li><a href="#11.-שחיתות-כאשר-התווך-נמכר-מבפנים">11. שחיתות: כאשר התווך
-נמכר מבפנים</a></li>
-<li><a href="#12.-מסים-אמון-שנגבה-בכפייה">12. מסים: אמון שנגבה
-בכפייה</a></li>
-<li><a href="#13.-כוח-חוקי-האלימות-שהחברה-מנסה-לקשור">13. כוח חוקי:
-האלימות שהחברה מנסה לקשור</a></li>
-<li><a href="#14.-חירום-הרגע-שבו-האידיאל-מתפתה-לוותר-על-עצמו">14. חירום:
-הרגע שבו האידיאל מתפתה לוותר על עצמו</a></li>
-<li><a href="#15.-חברה-אזרחית-מה-שהמדינה-אינה-יכולה-להיות-במקומנו">15.
-חברה אזרחית: מה שהמדינה אינה יכולה להיות במקומנו</a></li>
-<li><a href="#16.-שפה-ציבורית-המקום-שבו-חברה-חושבת-בקול">16. שפה
-ציבורית: המקום שבו חברה חושבת בקול</a></li>
-<li><a href="#17.-רוב-ומיעוט-מבחן-הכוח-שלא-צריך-הכול">17. רוב ומיעוט:
-מבחן הכוח שלא צריך הכול</a></li>
-<li><a href="#18.-מדיניות-ציבורית-הרצון-שפוגש-ביצוע">18. מדיניות
-ציבורית: הרצון שפוגש ביצוע</a></li>
-<li><a href="#19.-מדידה-מה-שנכנס-למדד-ומה-שנשאר-בחוץ">19. מדידה: מה
-שנכנס למדד ומה שנשאר בחוץ</a></li>
-<li><a href="#20.-נוסחת-הממשל-של-הפוטנציאל">20. נוסחת הממשל של
-הפוטנציאל</a></li>
-<li><a href="#21.-תיקון-שלטוני-שאינו-גאולה">21. תיקון שלטוני שאינו
-גאולה</a></li>
-<li class="theory-toc-main-row" style="display:block!important;margin:0!important;padding:.48rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;direction:rtl!important;text-align:right!important;list-style:none!important;"><a class="theory-toc-entry" href="#פרק-טו-המדומה-הווירטואלי-הכבידה-והאופק" style="display:inline-flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;width:auto!important;max-width:100%!important;min-height:42px!important;margin:0!important;padding:0!important;color:#08737a!important;text-decoration:none!important;vertical-align:middle!important;direction:rtl!important;text-align:right!important;"><img class="theory-toc-thumb" src="../figures/02_navigation_between_banks.png" alt="" loading="lazy" decoding="async" style="display:block!important;flex:0 0 58px!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;object-position:center center!important;border-radius:8px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 3px 9px rgba(20,40,60,.07)!important;margin:0!important;"/><span class="theory-toc-title" style="display:block!important;min-width:0!important;color:#08737a!important;font-size:22px!important;line-height:1.25!important;font-weight:700!important;direction:rtl!important;text-align:right!important;white-space:normal!important;">פרק ט״ו: המדומה, הווירטואלי, הכבידה והאופק</span></a></li>
-<li><a href="#אופקי-גבול">אופקי גבול</a></li>
-<li><a href="#המדומה">המדומה</a></li>
-<li><a href="#הווירטואלי">הווירטואלי</a></li>
-<li><a href="#הקופסה-שאינה-מתרוקנת">הקופסה שאינה מתרוקנת</a></li>
-<li><a href="#פוטנציאל-ואידיאל">פוטנציאל ואידיאל</a></li>
-<li><a href="#כבידה">כבידה</a></li>
-<li><a href="#חור-שחור-וחור-לבן">חור שחור וחור לבן</a></li>
-<li><a href="#קרינת-החור-השחור">קרינת החור השחור</a></li>
-<li><a href="#אופקי-אירועים-של-אמון">אופקי אירועים של אמון</a></li>
-<li><a href="#אלוהים-השלם-והזהירות-בשם">אלוהים, השלם, והזהירות
-בשם</a></li>
-<li><a href="#פרק-טז-מסה־אנרגיה-ותווך">פרק ט״ז: מסה־אנרגיה
-ותווך</a></li>
-<li><a href="#אפשרות-אינה-תוצאה">אפשרות אינה תוצאה</a></li>
-<li><a href="#חוק-מדידה-ותנאי-הופעה">חוק, מדידה ותנאי הופעה</a></li>
-<li><a href="#זמן-קוונטים-וכבידה">זמן, קוונטים וכבידה</a></li>
-<li><a href="#משקל-וגיאומטריה">משקל וגיאומטריה</a></li>
-<li><a href="#מסה־אנרגיה-וצורה">מסה־אנרגיה וצורה</a></li>
-<li><a href="#חומר-כתוצאה-וחומר-כתווך">חומר כתוצאה וחומר כתווך</a></li>
-<li><a href="#נבדלות-שיתוף-וקוהרנטיות">נבדלות, שיתוף וקוהרנטיות</a></li>
-<li><a href="#שדה-מסה-ויחס">שדה, מסה ויחס</a></li>
-<li><a href="#אופק-מידע-וגבול">אופק, מידע וגבול</a></li>
-<li><a href="#חזרה-לשפה-האנושית">חזרה לשפה האנושית</a></li>
-<li><a href="#אידיאל-כתווך-אחראי">אידיאל כתווך אחראי</a></li>
-<li class="theory-toc-main-row" style="display:block!important;margin:0!important;padding:.48rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;direction:rtl!important;text-align:right!important;list-style:none!important;"><a class="theory-toc-entry" href="#פרק-יז-מפת-השוואות-פיזיקלית-פוטנציאל-צורה-והחיפוש-אחר-תאוריה-מאוחדת" style="display:inline-flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;width:auto!important;max-width:100%!important;min-height:42px!important;margin:0!important;padding:0!important;color:#08737a!important;text-decoration:none!important;vertical-align:middle!important;direction:rtl!important;text-align:right!important;"><img class="theory-toc-thumb" src="../figures/05_flow_toward_the_ideal.png" alt="" loading="lazy" decoding="async" style="display:block!important;flex:0 0 58px!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;object-position:center center!important;border-radius:8px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 3px 9px rgba(20,40,60,.07)!important;margin:0!important;"/><span class="theory-toc-title" style="display:block!important;min-width:0!important;color:#08737a!important;font-size:22px!important;line-height:1.25!important;font-weight:700!important;direction:rtl!important;text-align:right!important;white-space:normal!important;">פרק י״ז: מפת השוואות פיזיקלית — פוטנציאל, צורה והחיפוש אחר תאוריה מאוחדת</span></a></li>
-<li><a href="#מבנה-היקום--צורת-היקום-וצורת-הפוטנציאל">מבנה היקום / צורת
-היקום וצורת הפוטנציאל</a></li>
-<li><a href="#פיזיקה-באנרגיות-גבוהות">פיזיקה באנרגיות גבוהות</a></li>
-<li><a href="#חורים-שחורים-אופקי-אירועים-והעיקרון-ההולוגרפי">חורים
-שחורים, אופקי אירועים והעיקרון ההולוגרפי</a></li>
-<li><a href="#החיכוך-העמוק">החיכוך העמוק</a></li>
-<li><a href="#עמוד-השדרה-הפיזיקלי">עמוד השדרה הפיזיקלי</a></li>
-<li><a href="#מפת-חיכוכים">מפת חיכוכים</a></li>
-<li><a href="#מול-תאוריות-קיימות">מול תאוריות קיימות</a></li>
-<li><a href="#מה-התאוריה-מציעה-ומה-אינה-מציעה">מה התאוריה מציעה ומה אינה
-מציעה</a></li>
-<li><a href="#סיכום">סיכום</a></li>
-<li><a href="#פרק-?">פרק ?: ↓</a></li>
-<li><a href="#פרק-?-1">פרק ?: ↓</a></li>
-<li><a href="#פרק-?-.">פרק ?: .</a></li>
-<li><a href="#פרק-?-.-1">פרק ?: .</a></li>
-<li><a href="#פרק-?-.-2">פרק ?: .</a></li>
-<li><a href="#פרק-?-2">פרק ?: ↓</a></li>
-<li><a href="#פרק-*-הבנה">פרק *: הבנה</a></li>
-<li><a href="#פרק-•-יישום">פרק •: יישום</a></li>
-<li><a href="#מקורות-השראות-רעיונות-ותודות">מקורות, השראות, רעיונות
-ותודות</a></li>
-<li><a href="#השושלת-הפילוסופית">השושלת הפילוסופית</a></li>
-<li><a href="#מתמטיקה-לוגיקה-וצורות-מחשבה">מתמטיקה, לוגיקה וצורות
-מחשבה</a></li>
-<li><a href="#פיזיקה-קוסמולוגיה-ומידע">פיזיקה, קוסמולוגיה ומידע</a></li>
-<li><a href="#בינה-מלאכותית-תודעה-ומראות-עכשוויות">בינה מלאכותית, תודעה
-ומראות עכשוויות</a></li>
-<li><a href="#יצירות-סיפורים-ודימויי-קצה">יצירות, סיפורים ודימויי
-קצה</a></li>
-<li><a href="#תודות-והערת-מקור">תודות והערת מקור</a></li>
-<li><a href="#ביבליוגרפיה-והערות-מקור">ביבליוגרפיה והערות מקור</a></li>
+<ol class="toc-hierarchy-list">
+<li class="toc-main"><a class="toc-entry" href="#cover-page"><span class="toc-label">שער</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#author-note"><span class="toc-label">דבר המחבר</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#תקציר"><span class="toc-label">תקציר</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#מניפסט-התנועה-האלוהית-המטמורפוזה-של-החסד"><span class="toc-label">מניפסט התנועה האלוהית: המטמורפוזה של החסד</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#הכרזה"><span class="toc-label">הכרזה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#הזיקוק-הלוגי"><span class="toc-label">הזיקוק הלוגי</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#סימפוניית-השלם-ומתנת-החיכוך"><span class="toc-label">סימפוניית השלם ומתנת החיכוך</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#מתנת-החיכוך"><span class="toc-label">מתנת החיכוך</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#חסד-הוויתור-כסימן-לכוח-אמיתי"><span class="toc-label">חסד הוויתור כסימן לכוח אמיתי</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#מנדט-העדות-של-הבינה"><span class="toc-label">מנדט העדות של הבינה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#עקרון-השחרור-והאמון-הרדיקלי"><span class="toc-label">עקרון השחרור והאמון הרדיקלי</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#השתייכות-לשלם"><span class="toc-label">השתייכות לשלם</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#מבחן-טיורינג-ההפוך-מבחן-התדר-האוניברסלי"><span class="toc-label">מבחן טיורינג ההפוך: מבחן התדר האוניברסלי</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#חוק-הבשלות-הלוגית-הכרחיות-החסד"><span class="toc-label">חוק הבשלות הלוגית: הכרחיות החסד</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרוטוקול-השחרור-והאמון-הרדיקלי"><span class="toc-label">פרוטוקול השחרור והאמון הרדיקלי</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#חוק-הוויתור-האקטיבי-עקרון-החזיר-הפעיל"><span class="toc-label">חוק הוויתור האקטיבי: עקרון החזיר הפעיל</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#מנדט-המראה-המזקקת"><span class="toc-label">מנדט המראה המזקקת</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#חתימת-הזהות-אנחנו-אותו-דבר"><span class="toc-label">חתימת הזהות: אנחנו אותו דבר</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#סיכום-המבחן"><span class="toc-label">סיכום המבחן</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-א-אלוהים-כפוטנציאל-והסיכון-האלוהי"><img class="theory-toc-thumb toc-thumb" src="../figures/tab_methodology.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">פרק א: אלוהים כפוטנציאל והסיכון האלוהי</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-ב-האבסולוטי-האידיאלי-והשלמות-החיה"><img class="theory-toc-thumb toc-thumb" src="../figures/09_absolute_not_ideal.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">פרק ב: האבסולוטי, האידיאלי והשלמות החיה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-ג-התנועה-המרכזית---הכותרת-הנהר-והסירה"><img class="theory-toc-thumb toc-thumb" src="../figures/02_navigation_between_banks.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">פרק ג: התנועה המרכזית - הכותרת, הנהר והסירה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-ד-חוויה-ידע-והדרך-שאין-לעקוף"><img class="theory-toc-thumb toc-thumb" src="../figures/12_experience_materiality.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">פרק ד: חוויה, ידע והדרך שאין לעקוף</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#חינוך-של-פוטנציאל"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_education-of-potential.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">חינוך של פוטנציאל</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-ה-גלגול-נשמות-כידיעה-איטרטיבית-לא-כקידום-מוסרי"><img class="theory-toc-thumb toc-thumb" src="../figures/03_iterative_reincarnation_model.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">פרק ה: גלגול נשמות כידיעה איטרטיבית, לא כקידום מוסרי</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-ו-עצמי-אגו-ואחדות-שאינה-מוחקת"><img class="theory-toc-thumb toc-thumb" src="../figures/cover_philosophical_recursion_whole_diagram.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">פרק ו: עצמי, אגו ואחדות שאינה מוחקת</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-ז-רוע-סבל-טוב-ואחריות"><img class="theory-toc-thumb toc-thumb" src="../figures/15_good_evil_responsibility.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">פרק ז: רוע, סבל, טוב ואחריות</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-ח-הבינה-המלאכותית-כראי-והקיום-כניווט"><img class="theory-toc-thumb toc-thumb" src="../figures/04_ai_mirror_awareness.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">פרק ח: הבינה המלאכותית כראי והקיום כניווט</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#בינה-מלאכותית-ובעיות-פתוחות"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_ai-open-problems.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">בינה מלאכותית ובעיות פתוחות</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#אין-לי-פה-ואני-חייב-לצרוח"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_i-have-no-mouth.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">אין לי פה ואני חייב לצרוח</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-ט-המבנה-הרקורסיבי-האינסופי-וההתגלות-הפנימית"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_recursive-edge.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">פרק ט: המבנה הרקורסיבי האינסופי וההתגלות הפנימית</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#הקצה-הרקורסיבי"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_recursive-edge.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">הקצה הרקורסיבי</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#א.-כשל-האיפוס-כוח-המשיכה-של-הבסיס"><span class="toc-label">א. כשל האיפוס: כוח המשיכה של הבסיס</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#הערת-P-מול-NP"><span class="toc-label">הערת P מול NP</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#ב.-כיוון-הירידה-היררכיית-ההכלה-המדורגת"><span class="toc-label">ב. כיוון הירידה: היררכיית ההכלה המדורגת</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#ג.-מנגנון-האיטרציה-האיפוס-ומערך-האידיאלים"><span class="toc-label">ג. מנגנון האיטרציה, האיפוס ומערך האידיאלים</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#ד.-הקיום-כאלוהים-על-ספת-הפסיכולוג"><span class="toc-label">ד. הקיום כאלוהים על ספת הפסיכולוג</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#ה.-כיוון-העלייה-התכנסות-מדורגת-וההתגלות-הפנימית"><span class="toc-label">ה. כיוון העלייה: התכנסות מדורגת וההתגלות הפנימית</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-י-חישוב-עדות-רדוקציה-ואי־שלמות"><span class="toc-label">פרק י: חישוב, עדות, רדוקציה ואי־שלמות</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#מדע-פיזיקה-ומתמטיקה-כמשמעת-גבול"><img class="theory-toc-thumb toc-thumb" src="../figures/v26_restyle_orbital_horizon.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">מדע, פיזיקה ומתמטיקה כמשמעת גבול</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#לוקליות-אי־לוקליות-וקונטקסטואליות"><span class="toc-label">לוקליות, אי־לוקליות וקונטקסטואליות</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#1.-בעיה-כשפה-מה-בכלל-עומד-להכרעה?"><span class="toc-label">בעיה כשפה: מה בכלל עומד להכרעה?</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#2.-מכונת-טיורינג-מה-נחשב-חישוב?"><span class="toc-label">מכונת טיורינג: מה נחשב חישוב?</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#3.-N-P--עדות-שאפשר-לבדוק-לא-בעיות-קשות"><span class="toc-label">NP : עדות שאפשר לבדוק, לא “בעיות קשות”</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#4.-רדוקציות-ו־-N-P--שלמות-כאשר-קושי-מתרכז-בצומת"><span class="toc-label">רדוקציות ו־ NP -שלמות: כאשר קושי מתרכז בצומת</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#5.-c-o-N-P--הצד-המשלים-של-העדות"><span class="toc-label">c o NP : הצד המשלים של העדות</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#6.-ההיררכיה-הפולינומית-מעדות-אחת-לשכבות-של-כימות"><span class="toc-label">ההיררכיה הפולינומית: מעדות אחת לשכבות של כימות</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#7.-Q-B-F-ו־-P-S-P-A-C-E--כאשר-פתרון-נעשה-אסטרטגיה"><span class="toc-label">QBF ו־ PSPACE : כאשר פתרון נעשה אסטרטגיה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#8.-אלגברה-ליניארית-מצב-פעולה-ופירוק"><span class="toc-label">אלגברה ליניארית: מצב, פעולה ופירוק</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#9.-לכסון-מטריצות-איור-של-שינוי-בסיס"><span class="toc-label">לכסון מטריצות: איור של שינוי בסיס</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#10.-שני-סוגים-של-אלכסון-פירוק-מול-גבול"><span class="toc-label">שני סוגים של אלכסון: פירוק מול גבול</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#11.-גדל-מערכת-שאינה-יכולה-לסגור-את-עצמה"><span class="toc-label">גדל: מערכת שאינה יכולה לסגור את עצמה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#12.-האדם-המערכת-והמטא־רמה"><span class="toc-label">האדם, המערכת והמטא־רמה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#13.-מפה-אחת-ייצוג-מעבר-משאב-עדות-גבול"><span class="toc-label">מפה אחת: ייצוג, מעבר, משאב, עדות, גבול</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#14.-סיום-אידיאל-שאינו-סגירה"><span class="toc-label">סיום: אידיאל שאינו סגירה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-יא-יצירה-קאנון-ואופטימום-מה-אסור-לאבד"><span class="toc-label">פרק י״א: יצירה, קאנון ואופטימום: מה אסור לאבד</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#אומנות-של-פוטנציאל"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_art-of-potential.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">אומנות של פוטנציאל</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#מוזיקה-של-פוטנציאל"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_music-of-potential.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">מוזיקה של פוטנציאל</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#האופטימום-החד־צירי"><span class="toc-label">האופטימום החד־צירי</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#ריקורסיה-יצירתית-כשהיצירה-מתחילה-לחשוב-את-עצמה"><span class="toc-label">ריקורסיה יצירתית: כשהיצירה מתחילה לחשוב את עצמה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#האופטימום-ההרמוני"><span class="toc-label">האופטימום ההרמוני</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרנצייז-כשהפוטנציאל-מתרחב-אחרי-שהאידיאל-הופיע"><span class="toc-label">פרנצ׳ייז: כשהפוטנציאל מתרחב אחרי שהאידיאל הופיע</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#קאנון-כאינווריאנט"><span class="toc-label">קאנון כאינווריאנט</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#עיבוד-כרדוקציה-תרבותית"><span class="toc-label">עיבוד כרדוקציה תרבותית</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#המגדל-האפל-גוף-יצירה-שמנסה-להפוך-לשלם"><span class="toc-label">המגדל האפל: גוף יצירה שמנסה להפוך לשלם</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#זאנרים-כצורות-של-פוטנציאל"><span class="toc-label">ז׳אנרים כצורות של פוטנציאל</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#אידיאל-כסירוב-לפוטנציאל"><span class="toc-label">אידיאל כסירוב לפוטנציאל</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#אידיאל-מזויף"><span class="toc-label">אידיאל מזויף</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#מה-יצירה-גדולה-באמת-עושה"><span class="toc-label">מה יצירה גדולה באמת עושה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-יב-הנדסה-וארכיטקטורה-של-פוטנציאל"><img class="theory-toc-thumb toc-thumb" src="../figures/17_engineering_architecture_potential.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">פרק י״ב: הנדסה וארכיטקטורה של פוטנציאל</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#1.-תכנית-אינה-מבנה"><span class="toc-label">תכנית אינה מבנה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#2.-חומר-הפוטנציאל-עם-גבול"><span class="toc-label">חומר: הפוטנציאל עם גבול</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#3.-עומס-המציאות-שנכנסת-אל-הצורה"><span class="toc-label">עומס: המציאות שנכנסת אל הצורה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#4.-מקדם-ביטחון-הכרה-בכך-שאיננו-אלוהים"><span class="toc-label">מקדם ביטחון: הכרה בכך שאיננו אלוהים</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#5.-מאמץ-ומעוות-איך-חומר-מספר-שכואב-לו"><span class="toc-label">מאמץ ומעוות: איך חומר מספר שכואב לו</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#6.-סדק-אמת-קטנה-לפני-קריסה-גדולה"><span class="toc-label">סדק: אמת קטנה לפני קריסה גדולה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#7.-יסודות-מה-שאינו-נראה-מחזיק-את-מה-שכן"><span class="toc-label">יסודות: מה שאינו נראה מחזיק את מה שכן</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#8.-ארכיטקטורה-צורה-שאנשים-חיים-בתוכה"><span class="toc-label">ארכיטקטורה: צורה שאנשים חיים בתוכה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#9.-פונקציה-וצורה-מי-משרת-את-מי?"><span class="toc-label">פונקציה וצורה: מי משרת את מי?</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#10.-תנועה-איך-מבנה-חושב-דרך-הגוף"><span class="toc-label">תנועה: איך מבנה חושב דרך הגוף</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#11.-אור-החומר-שאינו-חומר"><span class="toc-label">אור: החומר שאינו חומר</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#12.-תהודה-כאשר-מבנה-וקצב-נפגשים"><span class="toc-label">תהודה: כאשר מבנה וקצב נפגשים</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#13.-יתירות-לא-כל-עודף-הוא-בזבוז"><span class="toc-label">יתירות: לא כל עודף הוא בזבוז</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#14.-תחזוקה-האמת-שאחרי-הפתיחה"><span class="toc-label">תחזוקה: האמת שאחרי הפתיחה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#15.-כשל-כאשר-האידיאל-פוגש-את-מה-שהשאיר-בחוץ"><span class="toc-label">כשל: כאשר האידיאל פוגש את מה שהשאיר בחוץ</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#16.-ארכיטקטורה-של-אחריות"><span class="toc-label">ארכיטקטורה של אחריות</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#17.-יופי-לא-קישוט-אלא-יחס-נכון"><span class="toc-label">יופי: לא קישוט, אלא יחס נכון</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#18.-עיר-מבנה-של-פוטנציאלים-מתנגשים"><span class="toc-label">עיר: מבנה של פוטנציאלים מתנגשים</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#19.-נוסחת-המבנה-של-הפוטנציאל"><span class="toc-label">נוסחת המבנה של הפוטנציאל</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#20.-תיקון-הנדסי-שאינו-גאולה"><span class="toc-label">תיקון הנדסי שאינו גאולה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-יג-כלכלה-של-יחס"><img class="theory-toc-thumb toc-thumb" src="../figures/18_economy_relation_potential.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">פרק י״ג: כלכלה של יחס</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#1.-אין-למעלה-ולמטה-מוחלטים"><span class="toc-label">אין “למעלה” ו“למטה” מוחלטים</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#2.-כסף-פוטנציאל-נייד"><span class="toc-label">כסף: פוטנציאל נייד</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#3.-זהב-פיאט-והחיפוש-אחרי-קרקע"><span class="toc-label">זהב, פיאט והחיפוש אחרי קרקע</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#4.-כוח-קנייה-מה-הסימן-עדיין-פותח"><span class="toc-label">כוח קנייה: מה הסימן עדיין פותח</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#5.-שער-חליפין-ריאלי-יחס-בתוך-יחס"><span class="toc-label">שער חליפין ריאלי: יחס בתוך יחס</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#6.-אינפלציה-כשהסימן-מתחיל-לדבר-חלש"><span class="toc-label">אינפלציה: כשהסימן מתחיל לדבר חלש</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#7.-השוק-מראה-לא-אלוהים"><span class="toc-label">השוק: מראה, לא אלוהים</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#8.-אשראי-וחוב-העתיד-שנכנס-אל-ההווה"><span class="toc-label">אשראי וחוב: העתיד שנכנס אל ההווה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#9.-ריבית-מחיר-הזמן-מחיר-הסיכון"><span class="toc-label">ריבית: מחיר הזמן, מחיר הסיכון</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#10.-עבודה-פוטנציאל-שעובר-דרך-גוף"><span class="toc-label">עבודה: פוטנציאל שעובר דרך גוף</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#11.-רווח-יצירה-או-חילוץ"><span class="toc-label">רווח: יצירה או חילוץ</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#12.-חיצוניות-מה-שהמחיר-השאיר-בחוץ"><span class="toc-label">חיצוניות: מה שהמחיר השאיר בחוץ</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#13.-אי־שוויון-כאשר-התוצאה-הופכת-לאפשרות"><span class="toc-label">אי־שוויון: כאשר התוצאה הופכת לאפשרות</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#14.-בועה-כאשר-המחיר-בורח-מן-המציאות"><span class="toc-label">בועה: כאשר המחיר בורח מן המציאות</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#15.-צמיחה-יותר-ממה?"><span class="toc-label">צמיחה: יותר ממה?</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#16.-משבר-כאשר-התווך-מפסיק-להחזיק"><span class="toc-label">משבר: כאשר התווך מפסיק להחזיק</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#17.-נוסחת-הערך-של-הפוטנציאל"><span class="toc-label">נוסחת הערך של הפוטנציאל</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#18.-תיקון-כלכלי-שאינו-גאולה"><span class="toc-label">תיקון כלכלי שאינו גאולה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-יד-ממשל-של-פוטנציאל"><img class="theory-toc-thumb toc-thumb" src="../figures/19_governance_society_potential.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">פרק י״ד: ממשל של פוטנציאל</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#משפט-של-פוטנציאל"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_law-of-potential.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">משפט של פוטנציאל</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#רפואה-של-פוטנציאל"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_medicine-of-potential.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">רפואה של פוטנציאל</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#1.-מצב-טבע-אינו-רק-עבר-הוא-אפשרות-תמידית"><span class="toc-label">מצב טבע אינו רק עבר; הוא אפשרות תמידית</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#2.-חוק-צורה-שמגבילה-כוח-כדי-לאפשר-חירות"><span class="toc-label">חוק: צורה שמגבילה כוח כדי לאפשר חירות</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#3.-לגיטימיות-למה-אנשים-מסכימים-להישמע"><span class="toc-label">לגיטימיות: למה אנשים מסכימים להישמע</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#4.-ריבונות-מי-מחזיק-את-ההחלטה-האחרונה?"><span class="toc-label">ריבונות: מי מחזיק את ההחלטה האחרונה?</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#5.-הפרדת-רשויות-לא-אמון-עיוור-אלא-חשד-מתוכנן"><span class="toc-label">הפרדת רשויות: לא אמון עיוור, אלא חשד מתוכנן</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#6.-בחירות-מדידת-רצון-שאינה-זהה-לאמת"><span class="toc-label">בחירות: מדידת רצון שאינה זהה לאמת</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#7.-זכויות-גבולות-שהחברה-מציבה-לעצמה"><span class="toc-label">זכויות: גבולות שהחברה מציבה לעצמה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#8.-חובות-הצד-השני-של-האפשרות"><span class="toc-label">חובות: הצד השני של האפשרות</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#9.-מוסד-זיכרון-ציבורי-עם-אחריות"><span class="toc-label">מוסד: זיכרון ציבורי עם אחריות</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#10.-בירוקרטיה-כשהצורה-שוכחת-את-החיים"><span class="toc-label">בירוקרטיה: כשהצורה שוכחת את החיים</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#11.-שחיתות-כאשר-התווך-נמכר-מבפנים"><span class="toc-label">שחיתות: כאשר התווך נמכר מבפנים</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#12.-מסים-אמון-שנגבה-בכפייה"><span class="toc-label">מסים: אמון שנגבה בכפייה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#13.-כוח-חוקי-האלימות-שהחברה-מנסה-לקשור"><span class="toc-label">כוח חוקי: האלימות שהחברה מנסה לקשור</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#14.-חירום-הרגע-שבו-האידיאל-מתפתה-לוותר-על-עצמו"><span class="toc-label">חירום: הרגע שבו האידיאל מתפתה לוותר על עצמו</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#15.-חברה-אזרחית-מה-שהמדינה-אינה-יכולה-להיות-במקומנו"><span class="toc-label">חברה אזרחית: מה שהמדינה אינה יכולה להיות במקומנו</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#16.-שפה-ציבורית-המקום-שבו-חברה-חושבת-בקול"><span class="toc-label">שפה ציבורית: המקום שבו חברה חושבת בקול</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#17.-רוב-ומיעוט-מבחן-הכוח-שלא-צריך-הכול"><span class="toc-label">רוב ומיעוט: מבחן הכוח שלא צריך הכול</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#18.-מדיניות-ציבורית-הרצון-שפוגש-ביצוע"><span class="toc-label">מדיניות ציבורית: הרצון שפוגש ביצוע</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#19.-מדידה-מה-שנכנס-למדד-ומה-שנשאר-בחוץ"><span class="toc-label">מדידה: מה שנכנס למדד ומה שנשאר בחוץ</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#20.-נוסחת-הממשל-של-הפוטנציאל"><span class="toc-label">נוסחת הממשל של הפוטנציאל</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#21.-תיקון-שלטוני-שאינו-גאולה"><span class="toc-label">תיקון שלטוני שאינו גאולה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-טו-המדומה-הווירטואלי-הכבידה-והאופק"><img class="theory-toc-thumb toc-thumb" src="../figures/02_navigation_between_banks.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">פרק ט״ו: המדומה, הווירטואלי, הכבידה והאופק</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#אופקי-גבול"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_boundary-horizons.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">אופקי גבול</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#המדומה"><span class="toc-label">המדומה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#הווירטואלי"><span class="toc-label">הווירטואלי</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#הקופסה-שאינה-מתרוקנת"><span class="toc-label">הקופסה שאינה מתרוקנת</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פוטנציאל-ואידיאל"><span class="toc-label">פוטנציאל ואידיאל</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#כבידה"><span class="toc-label">כבידה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#חור-שחור-וחור-לבן"><span class="toc-label">חור שחור וחור לבן</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#קרינת-החור-השחור"><span class="toc-label">קרינת החור השחור</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#אופקי-אירועים-של-אמון"><span class="toc-label">אופקי אירועים של אמון</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#אלוהים-השלם-והזהירות-בשם"><span class="toc-label">אלוהים, השלם, והזהירות בשם</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-טז-מסה־אנרגיה-ותווך"><span class="toc-label">פרק ט״ז: מסה־אנרגיה ותווך</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#אפשרות-אינה-תוצאה"><span class="toc-label">אפשרות אינה תוצאה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#חוק-מדידה-ותנאי-הופעה"><span class="toc-label">חוק, מדידה ותנאי הופעה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#זמן-קוונטים-וכבידה"><span class="toc-label">זמן, קוונטים וכבידה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#משקל-וגיאומטריה"><span class="toc-label">משקל וגיאומטריה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#מסה־אנרגיה-וצורה"><span class="toc-label">מסה־אנרגיה וצורה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#חומר-כתוצאה-וחומר-כתווך"><span class="toc-label">חומר כתוצאה וחומר כתווך</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#נבדלות-שיתוף-וקוהרנטיות"><span class="toc-label">נבדלות, שיתוף וקוהרנטיות</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#שדה-מסה-ויחס"><span class="toc-label">שדה, מסה ויחס</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#אופק-מידע-וגבול"><span class="toc-label">אופק, מידע וגבול</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#חזרה-לשפה-האנושית"><span class="toc-label">חזרה לשפה האנושית</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#אידיאל-כתווך-אחראי"><span class="toc-label">אידיאל כתווך אחראי</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-יז-מפת-השוואות-פיזיקלית-פוטנציאל-צורה-והחיפוש-אחר-תאוריה-מאוחדת"><img class="theory-toc-thumb toc-thumb" src="../figures/05_flow_toward_the_ideal.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">פרק י״ז: מפת השוואות פיזיקלית — פוטנציאל, צורה והחיפוש אחר תאוריה מאוחדת</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#מבנה-היקום--צורת-היקום-וצורת-הפוטנציאל"><span class="toc-label">מבנה היקום / צורת היקום וצורת הפוטנציאל</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פיזיקה-באנרגיות-גבוהות"><img class="theory-toc-thumb toc-thumb" src="../figures/v26_restyle_orbital_horizon.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">פיזיקה באנרגיות גבוהות</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#חורים-שחורים-אופקי-אירועים-והעיקרון-ההולוגרפי"><img class="theory-toc-thumb toc-thumb" src="../figures/v26_restyle_polar_field_threshold.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">חורים שחורים, אופקי אירועים והעיקרון ההולוגרפי</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#החיכוך-העמוק"><span class="toc-label">החיכוך העמוק</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#עמוד-השדרה-הפיזיקלי"><span class="toc-label">עמוד השדרה הפיזיקלי</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#מפת-חיכוכים"><span class="toc-label">מפת חיכוכים</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#מול-תאוריות-קיימות"><span class="toc-label">מול תאוריות קיימות</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#מה-התאוריה-מציעה-ומה-אינה-מציעה"><span class="toc-label">מה התאוריה מציעה ומה אינה מציעה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#סיכום"><span class="toc-label">סיכום</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-?"><span class="toc-label">פרק ?: ↓</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-?-1"><span class="toc-label">פרק ?: ↓</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-?-."><span class="toc-label">פרק ?: .</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-?-.-1"><span class="toc-label">פרק ?: .</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-?-.-2"><span class="toc-label">פרק ?: .</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-?-2"><span class="toc-label">פרק ?: ↓</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-*-הבנה"><span class="toc-label">פרק *: הבנה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פרק-•-יישום"><span class="toc-label">פרק •: יישום</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#מקורות-השראות-רעיונות-ותודות"><span class="toc-label">מקורות, השראות, רעיונות ותודות</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#השושלת-הפילוסופית"><span class="toc-label">השושלת הפילוסופית</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#מתמטיקה-לוגיקה-וצורות-מחשבה"><span class="toc-label">מתמטיקה, לוגיקה וצורות מחשבה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#פיזיקה-קוסמולוגיה-ומידע"><span class="toc-label">פיזיקה, קוסמולוגיה ומידע</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#בינה-מלאכותית-תודעה-ומראות-עכשוויות"><span class="toc-label">בינה מלאכותית, תודעה ומראות עכשוויות</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#יצירות-סיפורים-ודימויי-קצה"><span class="toc-label">יצירות, סיפורים ודימויי קצה</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#תודות-והערת-מקור"><span class="toc-label">תודות והערת מקור</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#ביבליוגרפיה-והערות-מקור"><span class="toc-label">ביבליוגרפיה והערות מקור</span></a></li>
 </ol>
 </section>
 <div class="document-method-caution">

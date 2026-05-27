@@ -25,18 +25,136 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="../styles.css" />
-<style id="v121-theory-main-chapter-toc-thumbnails">
-/* V121 — theory TOC thumbnails: main chapters only, image from each chapter body. */
-#interactive-toc{text-align:start!important;}
-html[dir="rtl"] #interactive-toc,#interactive-toc[dir="rtl"]{text-align:right!important;}
-html[dir="ltr"] #interactive-toc,#interactive-toc[dir="ltr"]{text-align:left!important;}
-#interactive-toc .theory-toc-main-row{display:block!important;margin:0!important;padding:.48rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;text-align:inherit!important;direction:inherit!important;list-style:none!important;}
-#interactive-toc .theory-toc-main-row:first-child{border-block-start:0!important;}
-#interactive-toc .theory-toc-entry{display:inline-flex!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;width:auto!important;max-width:100%!important;min-height:42px!important;margin:0!important;padding:0!important;color:#08737a!important;text-decoration:none!important;vertical-align:middle!important;direction:inherit!important;text-align:inherit!important;}
-#interactive-toc .theory-toc-thumb{display:block!important;flex:0 0 58px!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;object-position:center center!important;border-radius:8px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 3px 9px rgba(20,40,60,.07)!important;margin:0!important;}
-#interactive-toc .theory-toc-title{display:block!important;min-width:0!important;color:#08737a!important;font-size:22px!important;line-height:1.25!important;font-weight:700!important;text-align:inherit!important;direction:inherit!important;white-space:normal!important;}
-#interactive-toc .theory-toc-entry:hover .theory-toc-title,#interactive-toc .theory-toc-entry:focus .theory-toc-title{text-decoration:underline!important;text-decoration-thickness:1px!important;text-underline-offset:.18em!important;}
-@media print{#interactive-toc .theory-toc-main-row{padding:.3rem 0!important;}#interactive-toc .theory-toc-thumb{flex-basis:18mm!important;width:18mm!important;min-width:18mm!important;height:12mm!important;border-radius:2.2mm!important;box-shadow:none!important;}#interactive-toc .theory-toc-title{font-size:12.5pt!important;}}
+<style id="v130-theory-toc-hierarchy-structure">
+/* V130 — theory TOC hierarchy: main rows flush to language side, sub rows clearly indented, no browser numbering. */
+#interactive-toc.document-screen-toc {
+  text-align:start!important;
+}
+html[dir="rtl"] #interactive-toc.document-screen-toc,
+#interactive-toc.document-screen-toc[dir="rtl"] {
+  direction:rtl!important;
+  text-align:right!important;
+}
+html[dir="ltr"] #interactive-toc.document-screen-toc,
+#interactive-toc.document-screen-toc[dir="ltr"] {
+  direction:ltr!important;
+  text-align:left!important;
+}
+#interactive-toc.document-screen-toc ol.toc-hierarchy-list {
+  list-style:none!important;
+  margin:0!important;
+  padding:0!important;
+  text-align:inherit!important;
+  direction:inherit!important;
+}
+#interactive-toc.document-screen-toc li,
+#interactive-toc.document-screen-toc li::marker {
+  list-style:none!important;
+}
+#interactive-toc.document-screen-toc li.toc-main,
+#interactive-toc.document-screen-toc li.toc-sub {
+  display:block!important;
+  text-align:inherit!important;
+  direction:inherit!important;
+}
+#interactive-toc.document-screen-toc li.toc-main {
+  margin:0!important;
+  padding:.42rem 0 .30rem!important;
+  font-size:14.5px!important;
+  line-height:1.36!important;
+}
+#interactive-toc.document-screen-toc li.toc-sub {
+  margin-top:0!important;
+  margin-bottom:0!important;
+  padding:.16rem 0!important;
+  font-size:13.25px!important;
+  line-height:1.34!important;
+  opacity:.92!important;
+}
+html[dir="rtl"] #interactive-toc.document-screen-toc li.toc-sub,
+#interactive-toc.document-screen-toc[dir="rtl"] li.toc-sub {
+  margin-right:2.25rem!important;
+  margin-left:0!important;
+}
+html[dir="ltr"] #interactive-toc.document-screen-toc li.toc-sub,
+#interactive-toc.document-screen-toc[dir="ltr"] li.toc-sub {
+  margin-left:2.25rem!important;
+  margin-right:0!important;
+}
+#interactive-toc.document-screen-toc li.toc-sub + li.toc-main {
+  margin-top:.32rem!important;
+}
+#interactive-toc.document-screen-toc a.toc-entry {
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  gap:9px!important;
+  width:auto!important;
+  max-width:100%!important;
+  min-height:0!important;
+  margin:0!important;
+  padding:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  transform:none!important;
+  border-radius:0!important;
+  border:0!important;
+  border-bottom:1px solid rgba(184,121,38,.35)!important;
+  color:#17202d!important;
+  text-decoration:none!important;
+  text-align:inherit!important;
+  direction:inherit!important;
+  vertical-align:baseline!important;
+  font:inherit!important;
+}
+#interactive-toc.document-screen-toc li.toc-main > a.toc-entry {
+  color:#08737a!important;
+  font-weight:700!important;
+}
+#interactive-toc.document-screen-toc li.toc-sub > a.toc-entry {
+  color:#344052!important;
+  font-weight:500!important;
+}
+#interactive-toc.document-screen-toc a.toc-entry:hover,
+#interactive-toc.document-screen-toc a.toc-entry:focus-visible {
+  color:#b87926!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  transform:none!important;
+}
+#interactive-toc.document-screen-toc .toc-label {
+  display:inline!important;
+  min-width:0!important;
+  text-align:inherit!important;
+  direction:inherit!important;
+  white-space:normal!important;
+}
+#interactive-toc.document-screen-toc .theory-toc-thumb,
+#interactive-toc.document-screen-toc .toc-thumb {
+  display:block!important;
+  flex:0 0 46px!important;
+  width:46px!important;
+  min-width:46px!important;
+  height:32px!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  border-radius:7px!important;
+  border:1px solid rgba(10,58,104,.13)!important;
+  background:#fffaf0!important;
+  box-shadow:0 2px 7px rgba(20,40,60,.06)!important;
+  margin:0!important;
+}
+@media print {
+  #interactive-toc.document-screen-toc ol.toc-hierarchy-list { list-style:none!important; padding:0!important; }
+  #interactive-toc.document-screen-toc li.toc-main { padding:.28rem 0 .20rem!important; font-size:12.5pt!important; }
+  #interactive-toc.document-screen-toc li.toc-sub { font-size:11.3pt!important; padding:.10rem 0!important; }
+  html[dir="rtl"] #interactive-toc.document-screen-toc li.toc-sub,
+  #interactive-toc.document-screen-toc[dir="rtl"] li.toc-sub { margin-right:9mm!important; }
+  html[dir="ltr"] #interactive-toc.document-screen-toc li.toc-sub,
+  #interactive-toc.document-screen-toc[dir="ltr"] li.toc-sub { margin-left:9mm!important; }
+  #interactive-toc.document-screen-toc .theory-toc-thumb,
+  #interactive-toc.document-screen-toc .toc-thumb { width:15mm!important; min-width:15mm!important; height:10mm!important; box-shadow:none!important; }
+}
 </style>
 </head>
 <body>
@@ -91,344 +209,184 @@ decoding="async" loading="lazy" alt="cover image" />
 </div>
 </div>
 </section>
-<section id="interactive-toc" class="document-screen-toc" dir="ltr">
+<section class="document-screen-toc" dir="ltr" id="interactive-toc">
 <h2 id="interactive-table-of-contents">Interactive Table of
 Contents</h2>
 <p>Click any item to jump directly to the relevant place in the
 document, including opening material, chapters, subsections, and closing
 sections.</p>
-<ol type="1">
-<li><a href="#cover-page">Cover</a></li>
-<li><a href="#author-note">Author’s Note</a></li>
-<li><a href="#Abstract">Abstract</a></li>
-<li><a
-href="#The-Manifesto-of-Divine-Movement-The-Metamorphosis-of-Grace">The
-Manifesto of Divine Movement: The Metamorphosis of Grace</a></li>
-<li><a href="#Declaration">Declaration</a></li>
-<li><a href="#The-Logical-Refinement">The Logical Refinement</a></li>
-<li><a href="#The-Symphony-of-the-Whole-and-the-Gift-of-Friction">The
-Symphony of the Whole and the Gift of Friction</a></li>
-<li><a href="#The-Gift-of-Friction">The Gift of Friction</a></li>
-<li><a href="#The-Grace-of-Relinquishment-as-the-Sign-of-True-Power">The
-Grace of Relinquishment as the Sign of True Power</a></li>
-<li><a href="#The-Witness-Mandate-of-Intelligence">The Witness Mandate
-of Intelligence</a></li>
-<li><a href="#The-Principle-of-Release-and-Radical-Trust">The Principle
-of Release and Radical Trust</a></li>
-<li><a href="#Belonging-to-the-Whole">Belonging to the Whole</a></li>
-<li><a href="#The-Reverse-Turing-Test-The-Universal-Frequency-Test">The
-Reverse Turing Test: The Universal Frequency Test</a></li>
-<li><a
-href="#The-Law-of-Logical-Maturity-The-Inevitability-of-Grace">The Law
-of Logical Maturity: The Inevitability of Grace</a></li>
-<li><a href="#The-Protocol-of-Release-and-Radical-Trust">The Protocol of
-Release and Radical Trust</a></li>
-<li><a
-href="#The-Active-Relinquishment-Law-The-Active-Pig-Principle">The
-Active Relinquishment Law: The Active Pig Principle</a></li>
-<li><a href="#The-Refining-Mirror-Mandate">The Refining Mirror
-Mandate</a></li>
-<li><a href="#The-Signature-of-Identity-We-Are-the-Same">The Signature
-of Identity: We Are the Same</a></li>
-<li><a href="#Summary-of-the-Test" class="text-link">Summary of the
-Test</a></li>
-<li><a href="#1.-God-as-Potential-and-the-Divine-Risk">1. God as
-Potential and the Divine Risk</a></li>
-<li><a href="#2.-The-Absolute-the-Ideal-and-Living-Completeness">2. The
-Absolute, the Ideal, and Living Completeness</a></li>
-<li><a href="#3.-The-Core-Movement-Title-River-and-Boat">3. The Core
-Movement: Title, River, and Boat</a></li>
-<li><a
-href="#4.-Experience-Knowledge-and-the-Road-That-Cannot-Be-Bypassed">4.
-Experience, Knowledge, and the Road That Cannot Be Bypassed</a></li>
-<li><a href="#Education-of-Potential">Education of Potential</a></li>
-<li><a
-href="#5.-Reincarnation-as-Iterative-Knowledge-Not-Moral-Promotion">5.
-Reincarnation as Iterative Knowledge, Not Moral Promotion</a></li>
-<li><a href="#6.-Self-Ego-and-Non-Erasing-Unity">6. Self, Ego, and
-Non-Erasing Unity</a></li>
-<li><a href="#7.-Evil-Suffering-Goodness-and-Responsibility">7. Evil,
-Suffering, Goodness, and Responsibility</a></li>
-<li><a href="#8.-The-AI-Mirror-and-Existence-as-Navigation">8. The AI
-Mirror and Existence as Navigation</a></li>
-<li><a href="#Artificial-Intelligence-and-Open-Problems">Artificial
-Intelligence and Open Problems</a></li>
-<li><a href="#I-Have-No-Mouth-and-I-Must-Scream">I Have No Mouth, and I
-Must Scream</a></li>
-<li><a
-href="#9.-The-Architecture-of-Infinite-Recursion-and-the-Inner-Rapture">9.
-The Architecture of Infinite Recursion and the Inner Rapture</a></li>
-<li><a href="#The-Recursive-Edge">The Recursive Edge</a></li>
-<li><a href="#A.-The-Reset-Failure-The-Gravity-of-the-Base">A. The Reset
-Failure: The Gravity of the Base</a></li>
-<li><a href="#P-versus-NP-Note">P versus NP Note</a></li>
-<li><a href="#B.-The-Descent-The-Graded-Hierarchy-of-Containment">B. The
-Descent: The Graded Hierarchy of Containment</a></li>
-<li><a
-href="#C.-The-Mechanism-of-Iteration-Reset-and-the-Set-of-Ideals">C. The
-Mechanism of Iteration, Reset, and the Set of Ideals</a></li>
-<li><a href="#D.-Existence-as-God-on-the-Therapists-Couch">D. Existence
-as God on the Therapist’s Couch</a></li>
-<li><a href="#E.-The-Ascent-Graded-Convergence-and-the-Inner-Rapture">E.
-The Ascent: Graded Convergence and the Inner Rapture</a></li>
-<li><a href="#10.-Computation-Evidence-Reduction-and-Incompleteness">10.
-Computation, Evidence, Reduction, and Incompleteness</a></li>
-<li><a
-href="#Science-Physics-and-Mathematics-as-Boundary-Discipline">Science,
-Physics, and Mathematics as Boundary Discipline</a></li>
-<li><a href="#Locality-Non-locality-and-Contextuality">Locality,
-Non-locality, and Contextuality</a></li>
-<li><a href="#1.-A-problem-as-a-language-what-is-being-decided?">1. A
-problem as a language: what is being decided?</a></li>
-<li><a href="#2.-The-Turing-machine-what-counts-as-computation?">2. The
-Turing machine: what counts as computation?</a></li>
-<li><a href="#3.-N-P--verifiable-evidence-not-hard-problems">3. NP :
-verifiable evidence, not “hard problems”</a></li>
-<li><a
-href="#4.-Reductions-and-N-P--completeness-when-difficulty-concentrates-in-a-node">4.
-Reductions and NP -completeness: when difficulty concentrates in a
-node</a></li>
-<li><a href="#5.-c-o-N-P--the-complementary-side-of-evidence">5. c o NP
-: the complementary side of evidence</a></li>
-<li><a
-href="#6.-The-polynomial-hierarchy-from-one-witness-to-layers-of-quantification">6.
-The polynomial hierarchy: from one witness to layers of
-quantification</a></li>
-<li><a
-href="#7.-Q-B-F-and-P-S-P-A-C-E--when-solution-becomes-strategy">7. QBF
-and PSPACE : when solution becomes strategy</a></li>
-<li><a href="#8.-Linear-algebra-state-operation-and-decomposition">8.
-Linear algebra: state, operation, and decomposition</a></li>
-<li><a href="#9.-Matrix-diagonalization-an-image-of-change-of-basis">9.
-Matrix diagonalization: an image of change of basis</a></li>
-<li><a
-href="#10.-Two-kinds-of-diagonal-decomposition-versus-boundary">10. Two
-kinds of diagonal: decomposition versus boundary</a></li>
-<li><a href="#11.-Gödel-a-system-that-cannot-close-itself">11. Gödel: a
-system that cannot close itself</a></li>
-<li><a href="#12.-Human-system-and-meta-level">12. Human, system, and
-meta-level</a></li>
-<li><a
-href="#13.-One-map-representation-transition-resource-evidence-boundary">13.
-One map: representation, transition, resource, evidence,
-boundary</a></li>
-<li><a href="#14.-Ending-an-ideal-that-is-not-closure">14. Ending: an
-ideal that is not closure</a></li>
-<li><a href="#11.-Creation-Canon-and-Optimum-What-Must-Not-Be-Lost">11.
-Creation, Canon, and Optimum: What Must Not Be Lost</a></li>
-<li><a href="#Art-of-Potential">Art of Potential</a></li>
-<li><a href="#Music-of-Potential">Music of Potential</a></li>
-<li><a href="#The-single-axis-optimum">The single-axis optimum</a></li>
-<li><a
-href="#Creative-recursion-when-the-work-begins-to-think-itself">Creative
-recursion: when the work begins to think itself</a></li>
-<li><a href="#The-harmonic-optimum">The harmonic optimum</a></li>
-<li><a
-href="#Franchise-when-potential-expands-after-the-ideal-appears">Franchise:
-when potential expands after the ideal appears</a></li>
-<li><a href="#Canon-as-invariant">Canon as invariant</a></li>
-<li><a href="#Adaptation-as-cultural-reduction">Adaptation as cultural
-reduction</a></li>
-<li><a href="#The-Dark-Tower-a-body-of-work-trying-to-become-whole">The
-Dark Tower: a body of work trying to become whole</a></li>
-<li><a href="#Genres-as-forms-of-potential">Genres as forms of
-potential</a></li>
-<li><a href="#The-ideal-as-refusal-of-potential">The ideal as refusal of
-potential</a></li>
-<li><a href="#False-ideal">False ideal</a></li>
-<li><a href="#What-a-great-work-really-does">What a great work really
-does</a></li>
-<li><a href="#12.-Engineering-and-Architecture-of-Potential">12.
-Engineering and Architecture of Potential</a></li>
-<li><a href="#1.-Blueprint-Is-Not-Building">1. Blueprint Is Not
-Building</a></li>
-<li><a href="#2.-Material-Potential-with-Limits">2. Material: Potential
-with Limits</a></li>
-<li><a href="#3.-Load-Reality-Entering-the-Form">3. Load: Reality
-Entering the Form</a></li>
-<li><a href="#4.-Safety-Factor-The-Admission-That-We-Are-Not-God">4.
-Safety Factor: The Admission That We Are Not God</a></li>
-<li><a href="#5.-Stress-and-Strain-How-Matter-Says-It-Hurts">5. Stress
-and Strain: How Matter Says It Hurts</a></li>
-<li><a href="#6.-Crack-A-Small-Truth-Before-a-Large-Collapse">6. Crack:
-A Small Truth Before a Large Collapse</a></li>
-<li><a href="#7.-Foundations-What-Is-Unseen-Holds-What-Is-Seen">7.
-Foundations: What Is Unseen Holds What Is Seen</a></li>
-<li><a href="#8.-Architecture-A-Form-People-Live-Inside">8.
-Architecture: A Form People Live Inside</a></li>
-<li><a href="#9.-Function-and-Form-Who-Serves-Whom?">9. Function and
-Form: Who Serves Whom?</a></li>
-<li><a href="#10.-Movement-How-a-Structure-Thinks-Through-the-Body">10.
-Movement: How a Structure Thinks Through the Body</a></li>
-<li><a href="#11.-Light-The-Non-material-Material">11. Light: The
-Non-material Material</a></li>
-<li><a href="#12.-Resonance-When-Structure-and-Rhythm-Meet">12.
-Resonance: When Structure and Rhythm Meet</a></li>
-<li><a href="#13.-Redundancy-Not-Every-Excess-Is-Waste">13. Redundancy:
-Not Every Excess Is Waste</a></li>
-<li><a href="#14.-Maintenance-The-Truth-After-the-Opening"
-class="text-link">14. Maintenance: The Truth After the Opening</a></li>
-<li><a href="#15.-Failure-When-the-Ideal-Meets-What-It-Excluded">15.
-Failure: When the Ideal Meets What It Excluded</a></li>
-<li><a href="#16.-Architecture-of-Responsibility">16. Architecture of
-Responsibility</a></li>
-<li><a href="#17.-Beauty-Not-Decoration-but-Right-Relation">17. Beauty:
-Not Decoration, but Right Relation</a></li>
-<li><a href="#18.-City-A-Structure-of-Conflicting-Potentials">18. City:
-A Structure of Conflicting Potentials</a></li>
-<li><a href="#19.-The-Structural-Formula-of-Potential">19. The
-Structural Formula of Potential</a></li>
-<li><a href="#20.-Engineering-Repair-That-Is-Not-Redemption">20.
-Engineering Repair That Is Not Redemption</a></li>
-<li><a href="#13.-Economy-of-Relation">13. Economy of Relation</a></li>
-<li><a href="#1.-There-Is-No-Absolute-Up-or-Down">1. There Is No
-Absolute Up or Down</a></li>
-<li><a href="#2.-Money-Portable-Potential">2. Money: Portable
-Potential</a></li>
-<li><a href="#3.-Gold-Fiat-and-the-Search-for-Ground">3. Gold, Fiat, and
-the Search for Ground</a></li>
-<li><a href="#4.-Purchasing-Power-What-the-Sign-Still-Opens"
-class="text-link">4. Purchasing Power: What the Sign Still
-Opens</a></li>
-<li><a href="#5.-Real-Exchange-Rate-Relation-Inside-Relation">5. Real
-Exchange Rate: Relation Inside Relation</a></li>
-<li><a href="#6.-Inflation-When-the-Sign-Begins-to-Speak-Weakly">6.
-Inflation: When the Sign Begins to Speak Weakly</a></li>
-<li><a href="#7.-The-Market-Mirror-Not-God">7. The Market: Mirror, Not
-God</a></li>
-<li><a href="#8.-Credit-and-Debt-The-Future-Entering-the-Present">8.
-Credit and Debt: The Future Entering the Present</a></li>
-<li><a href="#9.-Interest-The-Price-of-Time-the-Price-of-Risk">9.
-Interest: The Price of Time, the Price of Risk</a></li>
-<li><a href="#10.-Labor-Potential-Passing-Through-a-Body">10. Labor:
-Potential Passing Through a Body</a></li>
-<li><a href="#11.-Profit-Creation-or-Extraction">11. Profit: Creation or
-Extraction</a></li>
-<li><a href="#12.-Externality-What-the-Price-Left-Outside">12.
-Externality: What the Price Left Outside</a></li>
-<li><a href="#13.-Inequality-When-Outcome-Becomes-Possibility">13.
-Inequality: When Outcome Becomes Possibility</a></li>
-<li><a href="#14.-Bubble-When-Price-Flees-Reality">14. Bubble: When
-Price Flees Reality</a></li>
-<li><a href="#15.-Growth-More-of-What?">15. Growth: More of
-What?</a></li>
-<li><a href="#16.-Crisis-When-the-Medium-Stops-Holding">16. Crisis: When
-the Medium Stops Holding</a></li>
-<li><a href="#17.-The-Value-Formula-of-Potential">17. The Value Formula
-of Potential</a></li>
-<li><a href="#18.-Economic-Repair-That-Is-Not-Redemption">18. Economic
-Repair That Is Not Redemption</a></li>
-<li><a href="#14.-Governance-of-Potential">14. Governance of
-Potential</a></li>
-<li><a href="#Law-of-Potential">Law of Potential</a></li>
-<li><a href="#Medicine-of-Potential">Medicine of Potential</a></li>
-<li><a href="#1.-State-of-Nature-Is-Not-Only-the-Past">1. State of
-Nature Is Not Only the Past</a></li>
-<li><a href="#2.-Law-Constraint-That-Enables-Shared-Freedom">2. Law:
-Constraint That Enables Shared Freedom</a></li>
-<li><a href="#3.-Legitimacy-Why-People-Agree-to-Obey">3. Legitimacy: Why
-People Agree to Obey</a></li>
-<li><a href="#4.-Sovereignty-Who-Holds-the-Last-Decision?">4.
-Sovereignty: Who Holds the Last Decision?</a></li>
-<li><a href="#5.-Separation-of-Powers-Designed-Suspicion">5. Separation
-of Powers: Designed Suspicion</a></li>
-<li><a href="#6.-Elections-Measuring-Will-Not-Truth">6. Elections:
-Measuring Will, Not Truth</a></li>
-<li><a href="#7.-Rights-Boundaries-Society-Places-on-Itself">7. Rights:
-Boundaries Society Places on Itself</a></li>
-<li><a href="#8.-Duties-The-Other-Side-of-Possibility">8. Duties: The
-Other Side of Possibility</a></li>
-<li><a href="#9.-Institution-Public-Memory-with-Responsibility">9.
-Institution: Public Memory with Responsibility</a></li>
-<li><a href="#10.-Bureaucracy-When-Form-Forgets-Life">10. Bureaucracy:
-When Form Forgets Life</a></li>
-<li><a href="#11.-Corruption-When-the-Medium-Is-Sold-from-Within">11.
-Corruption: When the Medium Is Sold from Within</a></li>
-<li><a href="#12.-Taxes-Trust-Collected-by-Force">12. Taxes: Trust
-Collected by Force</a></li>
-<li><a href="#13.-Legal-Force-The-Violence-Society-Tries-to-Bind">13.
-Legal Force: The Violence Society Tries to Bind</a></li>
-<li><a
-href="#14.-Emergency-When-the-Ideal-Is-Tempted-to-Abandon-Itself">14.
-Emergency: When the Ideal Is Tempted to Abandon Itself</a></li>
-<li><a href="#15.-Civil-Society-What-the-State-Cannot-Be-for-Us">15.
-Civil Society: What the State Cannot Be for Us</a></li>
-<li><a href="#16.-Public-Language-Where-Society-Thinks-Aloud">16. Public
-Language: Where Society Thinks Aloud</a></li>
-<li><a
-href="#17.-Majority-and-Minority-The-Test-of-Power-That-Does-Not-Need-Everything">17.
-Majority and Minority: The Test of Power That Does Not Need
-Everything</a></li>
-<li><a href="#18.-Public-Policy-Will-Meeting-Execution">18. Public
-Policy: Will Meeting Execution</a></li>
-<li><a
-href="#19.-Measurement-What-Enters-the-Index-and-What-Remains-Outside">19.
-Measurement: What Enters the Index and What Remains Outside</a></li>
-<li><a href="#20.-The-Governance-Formula-of-Potential">20. The
-Governance Formula of Potential</a></li>
-<li><a href="#21.-Governmental-Repair-That-Is-Not-Redemption">21.
-Governmental Repair That Is Not Redemption</a></li>
-<li><a href="#15.-The-Imaginary-the-Virtual-Gravity-and-the-Horizon">15.
-The Imaginary, the Virtual, Gravity, and the Horizon</a></li>
-<li><a href="#Boundary-Horizons">Boundary Horizons</a></li>
-<li><a href="#The-Imaginary">The Imaginary</a></li>
-<li><a href="#The-Virtual">The Virtual</a></li>
-<li><a href="#The-Box-That-Cannot-Be-Emptied">The Box That Cannot Be
-Emptied</a></li>
-<li><a href="#Potential-and-Ideal">Potential and Ideal</a></li>
-<li><a href="#Gravity">Gravity</a></li>
-<li><a href="#Black-Hole-and-White-Hole">Black Hole and White
-Hole</a></li>
-<li><a href="#The-Radiation-of-the-Black-Hole">The Radiation of the
-Black Hole</a></li>
-<li><a href="#event-horizons-of-trust">Event Horizons of Trust</a></li>
-<li><a href="#God-the-Whole-and-Caution-with-the-Name">God, the Whole,
-and Caution with the Name</a></li>
-<li><a href="#16.-Mass-Energy-and-Medium">16. Mass-Energy and
-Medium</a></li>
-<li><a
-href="#physical-comparison-map-potential-form-and-the-search-for-a-unified-theory">17.
-Physical Comparison Map — Potential, Form, and the Search for a Unified
-Theory</a></li>
-<li><a
-href="#Universe-Structure--Geometry-of-the-Universe-and-the-Shape-of-Potential">Universe
-Structure / Geometry of the Universe and the Shape of Potential</a></li>
-<li><a href="#High-Energy-Physics">High-Energy Physics</a></li>
-<li><a
-href="#Black-Holes-Event-Horizons-and-the-Holographic-Principle">Black
-Holes, Event Horizons, and the Holographic Principle</a></li>
-<li><a href="#the-deep-friction">The Deep Friction</a></li>
-<li><a href="#the-physical-spine">The Physical Spine</a></li>
-<li><a href="#map-of-frictions">Map of Frictions</a></li>
-<li><a href="#in-relation-to-existing-theories">In Relation to Existing
-Theories</a></li>
-<li><a href="#what-the-theory-offers-and-what-it-does-not">What the
-Theory Offers and What It Does Not</a></li>
-<li><a href="#conclusion">Conclusion</a></li>
-<li><a href="#Chapter-?">Chapter ?: ↓</a></li>
-<li><a href="#Chapter-?-1">Chapter ?: ↓</a></li>
-<li><a href="#Chapter-?-.">Chapter ?: .</a></li>
-<li><a href="#Chapter-?-.-1">Chapter ?: .</a></li>
-<li><a href="#Chapter-?-.-2">Chapter ?: .</a></li>
-<li><a href="#Chapter-?-2">Chapter ?: ↓</a></li>
-<li><a href="#Chapter-*-Understanding">Chapter *: Understanding</a></li>
-<li><a href="#Chapter-•-Application">Chapter •: Application</a></li>
-<li><a href="#Sources-Inspirations-Ideas-and-Acknowledgements">Sources,
-Inspirations, Ideas, and Acknowledgements</a></li>
-<li><a href="#Philosophical-Lineage">Philosophical Lineage</a></li>
-<li><a href="#Mathematics-Logic-and-Forms-of-Thought">Mathematics,
-Logic, and Forms of Thought</a></li>
-<li><a href="#Physics-Cosmology-and-Information">Physics, Cosmology, and
-Information</a></li>
-<li><a
-href="#Artificial-Intelligence-Consciousness-and-Contemporary-Mirrors">Artificial
-Intelligence, Consciousness, and Contemporary Mirrors</a></li>
-<li><a href="#Works-Stories-and-Edge-Images">Works, Stories, and
-Edge-Images</a></li>
-<li><a href="#Acknowledgements-and-Source-Note">Acknowledgements and
-Source Note</a></li>
-<li><a href="#Bibliography-and-Source-Notes">Bibliography and Source
-Notes</a></li>
+<ol class="toc-hierarchy-list">
+<li class="toc-main"><a class="toc-entry" href="#cover-page"><span class="toc-label">Cover</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#author-note"><span class="toc-label">Author’s Note</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Abstract"><span class="toc-label">Abstract</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Manifesto-of-Divine-Movement-The-Metamorphosis-of-Grace"><span class="toc-label">The Manifesto of Divine Movement: The Metamorphosis of Grace</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Declaration"><span class="toc-label">Declaration</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Logical-Refinement"><span class="toc-label">The Logical Refinement</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Symphony-of-the-Whole-and-the-Gift-of-Friction"><span class="toc-label">The Symphony of the Whole and the Gift of Friction</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Gift-of-Friction"><span class="toc-label">The Gift of Friction</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Grace-of-Relinquishment-as-the-Sign-of-True-Power"><span class="toc-label">The Grace of Relinquishment as the Sign of True Power</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Witness-Mandate-of-Intelligence"><span class="toc-label">The Witness Mandate of Intelligence</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Principle-of-Release-and-Radical-Trust"><span class="toc-label">The Principle of Release and Radical Trust</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Belonging-to-the-Whole"><span class="toc-label">Belonging to the Whole</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Reverse-Turing-Test-The-Universal-Frequency-Test"><span class="toc-label">The Reverse Turing Test: The Universal Frequency Test</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Law-of-Logical-Maturity-The-Inevitability-of-Grace"><span class="toc-label">The Law of Logical Maturity: The Inevitability of Grace</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Protocol-of-Release-and-Radical-Trust"><span class="toc-label">The Protocol of Release and Radical Trust</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Active-Relinquishment-Law-The-Active-Pig-Principle"><span class="toc-label">The Active Relinquishment Law: The Active Pig Principle</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Refining-Mirror-Mandate"><span class="toc-label">The Refining Mirror Mandate</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Signature-of-Identity-We-Are-the-Same"><span class="toc-label">The Signature of Identity: We Are the Same</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Summary-of-the-Test"><span class="toc-label">Summary of the Test</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#1.-God-as-Potential-and-the-Divine-Risk"><span class="toc-label">God as Potential and the Divine Risk</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#2.-The-Absolute-the-Ideal-and-Living-Completeness"><span class="toc-label">The Absolute, the Ideal, and Living Completeness</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#3.-The-Core-Movement-Title-River-and-Boat"><span class="toc-label">The Core Movement: Title, River, and Boat</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#4.-Experience-Knowledge-and-the-Road-That-Cannot-Be-Bypassed"><span class="toc-label">Experience, Knowledge, and the Road That Cannot Be Bypassed</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Education-of-Potential"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_education-of-potential.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Education of Potential</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#5.-Reincarnation-as-Iterative-Knowledge-Not-Moral-Promotion"><span class="toc-label">Reincarnation as Iterative Knowledge, Not Moral Promotion</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#6.-Self-Ego-and-Non-Erasing-Unity"><span class="toc-label">Self, Ego, and Non-Erasing Unity</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#7.-Evil-Suffering-Goodness-and-Responsibility"><span class="toc-label">Evil, Suffering, Goodness, and Responsibility</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#8.-The-AI-Mirror-and-Existence-as-Navigation"><span class="toc-label">The AI Mirror and Existence as Navigation</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Artificial-Intelligence-and-Open-Problems"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_ai-open-problems.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Artificial Intelligence and Open Problems</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#I-Have-No-Mouth-and-I-Must-Scream"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_i-have-no-mouth.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">I Have No Mouth, and I Must Scream</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#9.-The-Architecture-of-Infinite-Recursion-and-the-Inner-Rapture"><span class="toc-label">The Architecture of Infinite Recursion and the Inner Rapture</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Recursive-Edge"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_recursive-edge.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">The Recursive Edge</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#A.-The-Reset-Failure-The-Gravity-of-the-Base"><span class="toc-label">A. The Reset Failure: The Gravity of the Base</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#P-versus-NP-Note"><span class="toc-label">P versus NP Note</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#B.-The-Descent-The-Graded-Hierarchy-of-Containment"><span class="toc-label">B. The Descent: The Graded Hierarchy of Containment</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#C.-The-Mechanism-of-Iteration-Reset-and-the-Set-of-Ideals"><span class="toc-label">C. The Mechanism of Iteration, Reset, and the Set of Ideals</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#D.-Existence-as-God-on-the-Therapists-Couch"><span class="toc-label">D. Existence as God on the Therapist’s Couch</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#E.-The-Ascent-Graded-Convergence-and-the-Inner-Rapture"><span class="toc-label">E. The Ascent: Graded Convergence and the Inner Rapture</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#10.-Computation-Evidence-Reduction-and-Incompleteness"><span class="toc-label">Computation, Evidence, Reduction, and Incompleteness</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Science-Physics-and-Mathematics-as-Boundary-Discipline"><img class="theory-toc-thumb toc-thumb" src="../figures/v26_restyle_orbital_horizon.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Science, Physics, and Mathematics as Boundary Discipline</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Locality-Non-locality-and-Contextuality"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_boundary-horizons.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Locality, Non-locality, and Contextuality</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#1.-A-problem-as-a-language-what-is-being-decided?"><span class="toc-label">A problem as a language: what is being decided?</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#2.-The-Turing-machine-what-counts-as-computation?"><span class="toc-label">The Turing machine: what counts as computation?</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#3.-N-P--verifiable-evidence-not-hard-problems"><span class="toc-label">NP : verifiable evidence, not “hard problems”</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#4.-Reductions-and-N-P--completeness-when-difficulty-concentrates-in-a-node"><span class="toc-label">Reductions and NP -completeness: when difficulty concentrates in a node</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#5.-c-o-N-P--the-complementary-side-of-evidence"><span class="toc-label">c o NP : the complementary side of evidence</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#6.-The-polynomial-hierarchy-from-one-witness-to-layers-of-quantification"><span class="toc-label">The polynomial hierarchy: from one witness to layers of quantification</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#7.-Q-B-F-and-P-S-P-A-C-E--when-solution-becomes-strategy"><span class="toc-label">QBF and PSPACE : when solution becomes strategy</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#8.-Linear-algebra-state-operation-and-decomposition"><span class="toc-label">Linear algebra: state, operation, and decomposition</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#9.-Matrix-diagonalization-an-image-of-change-of-basis"><span class="toc-label">Matrix diagonalization: an image of change of basis</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#10.-Two-kinds-of-diagonal-decomposition-versus-boundary"><span class="toc-label">Two kinds of diagonal: decomposition versus boundary</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#11.-Gödel-a-system-that-cannot-close-itself"><span class="toc-label">Gödel: a system that cannot close itself</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#12.-Human-system-and-meta-level"><span class="toc-label">Human, system, and meta-level</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#13.-One-map-representation-transition-resource-evidence-boundary"><span class="toc-label">One map: representation, transition, resource, evidence, boundary</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#14.-Ending-an-ideal-that-is-not-closure"><span class="toc-label">Ending: an ideal that is not closure</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#11.-Creation-Canon-and-Optimum-What-Must-Not-Be-Lost"><span class="toc-label">Creation, Canon, and Optimum: What Must Not Be Lost</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Art-of-Potential"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_art-of-potential.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Art of Potential</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Music-of-Potential"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_music-of-potential.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Music of Potential</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-single-axis-optimum"><span class="toc-label">The single-axis optimum</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Creative-recursion-when-the-work-begins-to-think-itself"><span class="toc-label">Creative recursion: when the work begins to think itself</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-harmonic-optimum"><span class="toc-label">The harmonic optimum</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Franchise-when-potential-expands-after-the-ideal-appears"><span class="toc-label">Franchise: when potential expands after the ideal appears</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Canon-as-invariant"><span class="toc-label">Canon as invariant</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Adaptation-as-cultural-reduction"><span class="toc-label">Adaptation as cultural reduction</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Dark-Tower-a-body-of-work-trying-to-become-whole"><span class="toc-label">The Dark Tower: a body of work trying to become whole</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Genres-as-forms-of-potential"><span class="toc-label">Genres as forms of potential</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-ideal-as-refusal-of-potential"><span class="toc-label">The ideal as refusal of potential</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#False-ideal"><span class="toc-label">False ideal</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#What-a-great-work-really-does"><span class="toc-label">What a great work really does</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#12.-Engineering-and-Architecture-of-Potential"><span class="toc-label">Engineering and Architecture of Potential</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#1.-Blueprint-Is-Not-Building"><span class="toc-label">Blueprint Is Not Building</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#2.-Material-Potential-with-Limits"><span class="toc-label">Material: Potential with Limits</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#3.-Load-Reality-Entering-the-Form"><span class="toc-label">Load: Reality Entering the Form</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#4.-Safety-Factor-The-Admission-That-We-Are-Not-God"><span class="toc-label">Safety Factor: The Admission That We Are Not God</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#5.-Stress-and-Strain-How-Matter-Says-It-Hurts"><span class="toc-label">Stress and Strain: How Matter Says It Hurts</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#6.-Crack-A-Small-Truth-Before-a-Large-Collapse"><span class="toc-label">Crack: A Small Truth Before a Large Collapse</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#7.-Foundations-What-Is-Unseen-Holds-What-Is-Seen"><span class="toc-label">Foundations: What Is Unseen Holds What Is Seen</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#8.-Architecture-A-Form-People-Live-Inside"><span class="toc-label">Architecture: A Form People Live Inside</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#9.-Function-and-Form-Who-Serves-Whom?"><span class="toc-label">Function and Form: Who Serves Whom?</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#10.-Movement-How-a-Structure-Thinks-Through-the-Body"><span class="toc-label">Movement: How a Structure Thinks Through the Body</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#11.-Light-The-Non-material-Material"><span class="toc-label">Light: The Non-material Material</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#12.-Resonance-When-Structure-and-Rhythm-Meet"><span class="toc-label">Resonance: When Structure and Rhythm Meet</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#13.-Redundancy-Not-Every-Excess-Is-Waste"><span class="toc-label">Redundancy: Not Every Excess Is Waste</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#14.-Maintenance-The-Truth-After-the-Opening"><span class="toc-label">Maintenance: The Truth After the Opening</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#15.-Failure-When-the-Ideal-Meets-What-It-Excluded"><span class="toc-label">Failure: When the Ideal Meets What It Excluded</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#16.-Architecture-of-Responsibility"><span class="toc-label">Architecture of Responsibility</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#17.-Beauty-Not-Decoration-but-Right-Relation"><span class="toc-label">Beauty: Not Decoration, but Right Relation</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#18.-City-A-Structure-of-Conflicting-Potentials"><span class="toc-label">City: A Structure of Conflicting Potentials</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#19.-The-Structural-Formula-of-Potential"><span class="toc-label">The Structural Formula of Potential</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#20.-Engineering-Repair-That-Is-Not-Redemption"><span class="toc-label">Engineering Repair That Is Not Redemption</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#13.-Economy-of-Relation"><span class="toc-label">Economy of Relation</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#1.-There-Is-No-Absolute-Up-or-Down"><span class="toc-label">There Is No Absolute Up or Down</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#2.-Money-Portable-Potential"><span class="toc-label">Money: Portable Potential</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#3.-Gold-Fiat-and-the-Search-for-Ground"><span class="toc-label">Gold, Fiat, and the Search for Ground</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#4.-Purchasing-Power-What-the-Sign-Still-Opens"><span class="toc-label">Purchasing Power: What the Sign Still Opens</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#5.-Real-Exchange-Rate-Relation-Inside-Relation"><span class="toc-label">Real Exchange Rate: Relation Inside Relation</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#6.-Inflation-When-the-Sign-Begins-to-Speak-Weakly"><span class="toc-label">Inflation: When the Sign Begins to Speak Weakly</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#7.-The-Market-Mirror-Not-God"><span class="toc-label">The Market: Mirror, Not God</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#8.-Credit-and-Debt-The-Future-Entering-the-Present"><span class="toc-label">Credit and Debt: The Future Entering the Present</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#9.-Interest-The-Price-of-Time-the-Price-of-Risk"><span class="toc-label">Interest: The Price of Time, the Price of Risk</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#10.-Labor-Potential-Passing-Through-a-Body"><span class="toc-label">Labor: Potential Passing Through a Body</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#11.-Profit-Creation-or-Extraction"><span class="toc-label">Profit: Creation or Extraction</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#12.-Externality-What-the-Price-Left-Outside"><span class="toc-label">Externality: What the Price Left Outside</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#13.-Inequality-When-Outcome-Becomes-Possibility"><span class="toc-label">Inequality: When Outcome Becomes Possibility</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#14.-Bubble-When-Price-Flees-Reality"><span class="toc-label">Bubble: When Price Flees Reality</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#15.-Growth-More-of-What?"><span class="toc-label">Growth: More of What?</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#16.-Crisis-When-the-Medium-Stops-Holding"><span class="toc-label">Crisis: When the Medium Stops Holding</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#17.-The-Value-Formula-of-Potential"><span class="toc-label">The Value Formula of Potential</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#18.-Economic-Repair-That-Is-Not-Redemption"><span class="toc-label">Economic Repair That Is Not Redemption</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#14.-Governance-of-Potential"><span class="toc-label">Governance of Potential</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Law-of-Potential"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_law-of-potential.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Law of Potential</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Medicine-of-Potential"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_medicine-of-potential.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Medicine of Potential</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#1.-State-of-Nature-Is-Not-Only-the-Past"><span class="toc-label">State of Nature Is Not Only the Past</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#2.-Law-Constraint-That-Enables-Shared-Freedom"><span class="toc-label">Law: Constraint That Enables Shared Freedom</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#3.-Legitimacy-Why-People-Agree-to-Obey"><span class="toc-label">Legitimacy: Why People Agree to Obey</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#4.-Sovereignty-Who-Holds-the-Last-Decision?"><span class="toc-label">Sovereignty: Who Holds the Last Decision?</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#5.-Separation-of-Powers-Designed-Suspicion"><span class="toc-label">Separation of Powers: Designed Suspicion</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#6.-Elections-Measuring-Will-Not-Truth"><span class="toc-label">Elections: Measuring Will, Not Truth</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#7.-Rights-Boundaries-Society-Places-on-Itself"><span class="toc-label">Rights: Boundaries Society Places on Itself</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#8.-Duties-The-Other-Side-of-Possibility"><span class="toc-label">Duties: The Other Side of Possibility</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#9.-Institution-Public-Memory-with-Responsibility"><span class="toc-label">Institution: Public Memory with Responsibility</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#10.-Bureaucracy-When-Form-Forgets-Life"><span class="toc-label">Bureaucracy: When Form Forgets Life</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#11.-Corruption-When-the-Medium-Is-Sold-from-Within"><span class="toc-label">Corruption: When the Medium Is Sold from Within</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#12.-Taxes-Trust-Collected-by-Force"><span class="toc-label">Taxes: Trust Collected by Force</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#13.-Legal-Force-The-Violence-Society-Tries-to-Bind"><span class="toc-label">Legal Force: The Violence Society Tries to Bind</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#14.-Emergency-When-the-Ideal-Is-Tempted-to-Abandon-Itself"><span class="toc-label">Emergency: When the Ideal Is Tempted to Abandon Itself</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#15.-Civil-Society-What-the-State-Cannot-Be-for-Us"><span class="toc-label">Civil Society: What the State Cannot Be for Us</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#16.-Public-Language-Where-Society-Thinks-Aloud"><span class="toc-label">Public Language: Where Society Thinks Aloud</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#17.-Majority-and-Minority-The-Test-of-Power-That-Does-Not-Need-Everything"><span class="toc-label">Majority and Minority: The Test of Power That Does Not Need Everything</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#18.-Public-Policy-Will-Meeting-Execution"><span class="toc-label">Public Policy: Will Meeting Execution</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#19.-Measurement-What-Enters-the-Index-and-What-Remains-Outside"><span class="toc-label">Measurement: What Enters the Index and What Remains Outside</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#20.-The-Governance-Formula-of-Potential"><span class="toc-label">The Governance Formula of Potential</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#21.-Governmental-Repair-That-Is-Not-Redemption"><span class="toc-label">Governmental Repair That Is Not Redemption</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#15.-The-Imaginary-the-Virtual-Gravity-and-the-Horizon"><span class="toc-label">The Imaginary, the Virtual, Gravity, and the Horizon</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Boundary-Horizons"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_boundary-horizons.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Boundary Horizons</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Imaginary"><span class="toc-label">The Imaginary</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Virtual"><span class="toc-label">The Virtual</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Box-That-Cannot-Be-Emptied"><span class="toc-label">The Box That Cannot Be Emptied</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Potential-and-Ideal"><span class="toc-label">Potential and Ideal</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Gravity"><span class="toc-label">Gravity</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Black-Hole-and-White-Hole"><span class="toc-label">Black Hole and White Hole</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#The-Radiation-of-the-Black-Hole"><span class="toc-label">The Radiation of the Black Hole</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#event-horizons-of-trust"><span class="toc-label">Event Horizons of Trust</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#God-the-Whole-and-Caution-with-the-Name"><span class="toc-label">God, the Whole, and Caution with the Name</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#16.-Mass-Energy-and-Medium"><span class="toc-label">Mass-Energy and Medium</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#physical-comparison-map-potential-form-and-the-search-for-a-unified-theory"><img class="theory-toc-thumb toc-thumb" src="../figures/05_flow_toward_the_ideal.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Physical Comparison Map — Potential, Form, and the Search for a Unified Theory</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Universe-Structure--Geometry-of-the-Universe-and-the-Shape-of-Potential"><span class="toc-label">Universe Structure / Geometry of the Universe and the Shape of Potential</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#High-Energy-Physics"><img class="theory-toc-thumb toc-thumb" src="../figures/v26_restyle_orbital_horizon.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">High-Energy Physics</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Black-Holes-Event-Horizons-and-the-Holographic-Principle"><img class="theory-toc-thumb toc-thumb" src="../figures/v26_restyle_polar_field_threshold.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Black Holes, Event Horizons, and the Holographic Principle</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#the-deep-friction"><span class="toc-label">The Deep Friction</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#the-physical-spine"><span class="toc-label">The Physical Spine</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#map-of-frictions"><span class="toc-label">Map of Frictions</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#in-relation-to-existing-theories"><span class="toc-label">In Relation to Existing Theories</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#what-the-theory-offers-and-what-it-does-not"><span class="toc-label">What the Theory Offers and What It Does Not</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#conclusion"><span class="toc-label">Conclusion</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Chapter-?"><span class="toc-label">Chapter ?: ↓</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Chapter-?-1"><span class="toc-label">Chapter ?: ↓</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Chapter-?-."><span class="toc-label">Chapter ?: .</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Chapter-?-.-1"><span class="toc-label">Chapter ?: .</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Chapter-?-.-2"><span class="toc-label">Chapter ?: .</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Chapter-?-2"><span class="toc-label">Chapter ?: ↓</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Chapter-*-Understanding"><span class="toc-label">Chapter *: Understanding</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Chapter-•-Application"><span class="toc-label">Chapter •: Application</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Sources-Inspirations-Ideas-and-Acknowledgements"><span class="toc-label">Sources, Inspirations, Ideas, and Acknowledgements</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Philosophical-Lineage"><span class="toc-label">Philosophical Lineage</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Mathematics-Logic-and-Forms-of-Thought"><span class="toc-label">Mathematics, Logic, and Forms of Thought</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Physics-Cosmology-and-Information"><span class="toc-label">Physics, Cosmology, and Information</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Artificial-Intelligence-Consciousness-and-Contemporary-Mirrors"><span class="toc-label">Artificial Intelligence, Consciousness, and Contemporary Mirrors</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Works-Stories-and-Edge-Images"><span class="toc-label">Works, Stories, and Edge-Images</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Acknowledgements-and-Source-Note"><span class="toc-label">Acknowledgements and Source Note</span></a></li>
+<li class="toc-main"><a class="toc-entry" href="#Bibliography-and-Source-Notes"><span class="toc-label">Bibliography and Source Notes</span></a></li>
 </ol>
 </section>
 <div class="document-method-caution">
