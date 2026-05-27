@@ -118,3 +118,88 @@ a:focus-visible,button:focus-visible,[role="button"]:focus-visible,input:focus-v
   border-radius: 16px;
   background: rgba(255,247,232,.75);
 }
+
+/* BPI V402 - single Start Here card + matching hero width.
+   Keeps the SECOND Start Here card design, removes the duplicate first card in HTML,
+   gives the card the full first-card content, adds 3 buttons, and makes the blue hero
+   card match the Start Here card width on desktop and mobile. */
+body.public-page .site-main > .bpi-start-here-clarity{
+  display:none!important;
+}
+body.public-page .site-main > .bpi-start-here-note,
+body.public-page .site-main > .hero.concise-hero{
+  width:min(1680px, calc(100vw - 144px))!important;
+  max-width:min(1680px, calc(100vw - 144px))!important;
+  margin-inline:auto!important;
+  box-sizing:border-box!important;
+}
+body.public-page .site-main > .bpi-start-here-note{
+  margin-block:28px 34px!important;
+  padding:clamp(30px,3.2vw,54px) clamp(28px,5vw,78px)!important;
+  border-radius:24px!important;
+  text-align:center!important;
+  overflow:hidden!important;
+}
+body.public-page .site-main > .bpi-start-here-note h2{
+  margin:0 0 18px!important;
+  line-height:1.15!important;
+}
+body.public-page .site-main > .bpi-start-here-note p{
+  max-width:1160px!important;
+  margin:0 auto!important;
+  line-height:1.75!important;
+  text-align:center!important;
+}
+body.public-page .site-main > .bpi-start-here-note .download-row,
+body.public-page .site-main > .bpi-start-here-note .bpi-start-here-buttons{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(160px,1fr))!important;
+  gap:18px!important;
+  width:100%!important;
+  max-width:1180px!important;
+  margin:30px auto 0!important;
+  align-items:center!important;
+}
+body.public-page .site-main > .bpi-start-here-note .download-button{
+  width:100%!important;
+  min-width:0!important;
+  justify-content:center!important;
+  text-align:center!important;
+  box-sizing:border-box!important;
+  white-space:normal!important;
+}
+body.public-page .site-main > .hero.concise-hero{
+  margin-block:34px 28px!important;
+}
+@media (max-width: 900px){
+  body.public-page .site-main > .bpi-start-here-note,
+  body.public-page .site-main > .hero.concise-hero{
+    width:calc(100vw - 32px)!important;
+    max-width:calc(100vw - 32px)!important;
+  }
+  body.public-page .site-main > .bpi-start-here-note{
+    padding:32px 22px!important;
+  }
+  body.public-page .site-main > .bpi-start-here-note .download-row,
+  body.public-page .site-main > .bpi-start-here-note .bpi-start-here-buttons{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:12px!important;
+    margin-top:26px!important;
+  }
+  body.public-page .site-main > .bpi-start-here-note .download-button:last-child{
+    grid-column:1 / -1!important;
+    justify-self:center!important;
+    width:min(100%, 320px)!important;
+  }
+}
+@media (max-width: 520px){
+  body.public-page .site-main > .bpi-start-here-note .download-row,
+  body.public-page .site-main > .bpi-start-here-note .bpi-start-here-buttons{
+    grid-template-columns:1fr!important;
+  }
+  body.public-page .site-main > .bpi-start-here-note .download-button:last-child{
+    grid-column:auto!important;
+    width:100%!important;
+  }
+}
+
