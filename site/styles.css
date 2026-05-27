@@ -202,4 +202,103 @@ body.public-page .site-main > .hero.concise-hero{
     width:100%!important;
   }
 }
+/* BPI V405 - precise homepage card width normalization.
+   Restores the desktop/mobile visual behavior after the overly broad equal-width fix.
+   Scope is limited to index.html/en.html through body.bpi-home-width-clean.
+   It changes width/centering only; it does not redesign cards, grids, colors, typography, images, or content. */
+body.bpi-home-width-clean{
+  --bpi-home-card-width: min(1680px, calc(100vw - 144px));
+}
 
+/* Let the homepage cards use the intended wide card width on desktop. */
+@media (min-width: 769px){
+  body.bpi-home-width-clean .site-main{
+    width:100%!important;
+    max-width:none!important;
+    box-sizing:border-box!important;
+  }
+
+  body.bpi-home-width-clean .site-main > :is(
+    .bpi-start-here-note,
+    .hero.concise-hero,
+    .opening-visual,
+    .signature-blurbs.refined-blurbs,
+    .signature-blurbs,
+    .reading-path-cta,
+    .language-status-note,
+    .hub-grid.three,
+    .content-grid,
+    .notice-box,
+    .method-note,
+    .media-card
+  ){
+    width:var(--bpi-home-card-width)!important;
+    max-width:var(--bpi-home-card-width)!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Keep the blue theory/hero card exactly as designed, only match the white card width. */
+  body.bpi-home-width-clean .site-main > .hero.concise-hero{
+    width:var(--bpi-home-card-width)!important;
+    max-width:var(--bpi-home-card-width)!important;
+  }
+
+  body.bpi-home-width-clean .site-main > .opening-visual{
+    width:var(--bpi-home-card-width)!important;
+    max-width:var(--bpi-home-card-width)!important;
+  }
+}
+
+/* Mobile: 8px from each side, centered, and every major card uses the same corrected width. */
+@media (max-width: 768px){
+  body.bpi-home-width-clean .site-main{
+    width:100%!important;
+    max-width:none!important;
+    padding-left:8px!important;
+    padding-right:8px!important;
+    box-sizing:border-box!important;
+  }
+
+  body.bpi-home-width-clean .site-main > :is(
+    .bpi-start-here-note,
+    .hero.concise-hero,
+    .opening-visual,
+    .signature-blurbs.refined-blurbs,
+    .signature-blurbs,
+    .reading-path-cta,
+    .language-status-note,
+    .hub-grid.three,
+    .content-grid,
+    .notice-box,
+    .method-note,
+    .media-card
+  ){
+    width:100%!important;
+    max-width:100%!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    box-sizing:border-box!important;
+  }
+
+  body.bpi-home-width-clean .site-main > .bpi-start-here-note,
+  body.bpi-home-width-clean .site-main > .hero.concise-hero{
+    text-align:center;
+  }
+
+  body.bpi-home-width-clean .bpi-start-here-buttons{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    justify-content:center!important;
+    align-items:center!important;
+    gap:12px!important;
+    width:100%!important;
+  }
+
+  body.bpi-home-width-clean .bpi-start-here-buttons .download-button{
+    box-sizing:border-box!important;
+    justify-content:center!important;
+    text-align:center!important;
+  }
+}
