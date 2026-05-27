@@ -29,31 +29,31 @@ jobs:
             Path('site/files/appendices/stories-before-thought-english.html'),
           ]
 
-          STYLE_ID = 'v115-appendix-story-toc-images-from-story-sections'
+          STYLE_ID = 'v116-appendix-story-toc-tight-thumbnail-layout'
           CSS = f'''
           <style id="{STYLE_ID}">
-          /* V115 — appendix story TOC thumbnails: use the image from each linked story section. */
+          /* V116 — appendix story TOC thumbnails: correct image per story, compact side-aligned layout. */
           .story-toc-page{{text-align:start!important;}}
           html[dir="rtl"] .story-toc-page{{text-align:right!important;}}
           html[dir="ltr"] .story-toc-page{{text-align:left!important;}}
           .story-toc-page h2,.story-toc-page>p{{text-align:inherit!important;}}
-          .story-toc-page .story-toc-clean-list{{display:block!important;width:min(720px,100%)!important;max-width:720px!important;margin-block:24px 0!important;padding:0!important;text-align:inherit!important;direction:inherit!important;}}
+          .story-toc-page .story-toc-clean-list{{display:block!important;width:max-content!important;max-width:100%!important;margin-block:24px 0!important;padding:0!important;text-align:inherit!important;direction:inherit!important;}}
           html[dir="rtl"] .story-toc-page .story-toc-clean-list{{margin-right:0!important;margin-left:auto!important;text-align:right!important;direction:rtl!important;}}
           html[dir="ltr"] .story-toc-page .story-toc-clean-list{{margin-left:0!important;margin-right:auto!important;text-align:left!important;direction:ltr!important;}}
-          .story-toc-page .story-toc-row{{display:block!important;margin:0!important;padding:.58rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;text-align:inherit!important;direction:inherit!important;}}
+          .story-toc-page .story-toc-row{{display:block!important;margin:0!important;padding:.5rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;text-align:inherit!important;direction:inherit!important;}}
           .story-toc-page .story-toc-row:first-child{{border-block-start:0!important;}}
-          .story-toc-page .story-toc-entry{{display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:11px!important;width:100%!important;min-height:50px!important;padding:0!important;margin:0!important;color:#08737a!important;text-align:inherit!important;direction:inherit!important;text-decoration:none!important;}}
+          .story-toc-page .story-toc-entry{{display:inline-flex!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;width:auto!important;max-width:100%!important;min-height:42px!important;padding:0!important;margin:0!important;color:#08737a!important;text-align:inherit!important;direction:inherit!important;text-decoration:none!important;vertical-align:middle!important;}}
           html[dir="rtl"] .story-toc-page .story-toc-entry,html[dir="ltr"] .story-toc-page .story-toc-entry{{flex-direction:row!important;}}
-          .story-toc-page .story-toc-thumb{{display:block!important;flex:0 0 68px!important;width:68px!important;min-width:68px!important;height:46px!important;object-fit:cover!important;object-position:center center!important;border-radius:9px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 4px 12px rgba(20,40,60,.07)!important;}}
-          .story-toc-page .story-toc-title{{display:block!important;min-width:0!important;color:#08737a!important;font-size:clamp(1.03rem,1.75vw,1.24rem)!important;line-height:1.32!important;font-weight:700!important;text-align:inherit!important;direction:inherit!important;}}
+          .story-toc-page .story-toc-thumb{{display:block!important;flex:0 0 58px!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;object-position:center center!important;border-radius:8px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 3px 9px rgba(20,40,60,.07)!important;}}
+          .story-toc-page .story-toc-title{{display:block!important;min-width:0!important;color:#08737a!important;font-size:clamp(1.02rem,1.55vw,1.18rem)!important;line-height:1.28!important;font-weight:700!important;text-align:inherit!important;direction:inherit!important;}}
           .story-toc-page .story-toc-entry:hover .story-toc-title,.story-toc-page .story-toc-entry:focus .story-toc-title{{text-decoration:underline!important;text-decoration-thickness:1px!important;text-underline-offset:.18em!important;}}
-          @media (max-width:560px){{.story-toc-page .story-toc-entry{{gap:9px!important;min-height:46px!important;}}.story-toc-page .story-toc-thumb{{flex-basis:58px!important;width:58px!important;min-width:58px!important;height:40px!important;border-radius:8px!important;}}}}
-          @media print{{.story-toc-page .story-toc-clean-list{{width:100%!important;max-width:100%!important;}}.story-toc-page .story-toc-row{{padding:.34rem 0!important;}}.story-toc-page .story-toc-entry{{gap:3mm!important;min-height:14mm!important;}}.story-toc-page .story-toc-thumb{{flex-basis:20mm!important;width:20mm!important;min-width:20mm!important;height:14mm!important;border-radius:2.4mm!important;box-shadow:none!important;}}.story-toc-page .story-toc-title{{font-size:12.5pt!important;}}}}
+          @media print{{.story-toc-page .story-toc-clean-list{{width:max-content!important;max-width:100%!important;}}.story-toc-page .story-toc-row{{padding:.28rem 0!important;}}.story-toc-page .story-toc-entry{{gap:3mm!important;min-height:12mm!important;}}.story-toc-page .story-toc-thumb{{flex-basis:18mm!important;width:18mm!important;min-width:18mm!important;height:12mm!important;border-radius:2.2mm!important;box-shadow:none!important;}}.story-toc-page .story-toc-title{{font-size:12pt!important;}}}}
           </style>
           '''.strip()
 
           OLD_TOC_STYLE_RE = re.compile(r'\n?\s*<style id="v11[0-9]-appendix-story-toc[^>]*>.*?</style>', re.S | re.I)
           NEW_STYLE_RE = re.compile(r'\n?\s*<style id="' + re.escape(STYLE_ID) + r'">.*?</style>', re.S | re.I)
+          PRIOR_STYLE_RE = re.compile(r'\n?\s*<style id="v115-appendix-story-toc-images-from-story-sections">.*?</style>', re.S | re.I)
           HEAD_RE = re.compile(r'</head>', re.I)
           STORY_LIST_RE = re.compile(r'<div class="story-toc-clean-list"[^>]*>(?P<body>.*?)</div>', re.S | re.I)
           STORY_ROW_RE = re.compile(r'<p class="story-toc-row"[^>]*>(?P<body>.*?)</p>', re.S | re.I)
@@ -114,6 +114,7 @@ jobs:
               continue
             old = path.read_text(encoding='utf-8')
             new = OLD_TOC_STYLE_RE.sub('', old)
+            new = PRIOR_STYLE_RE.sub('', new)
             new = NEW_STYLE_RE.sub('', new)
             new = rebuild_story_toc(new)
             if HEAD_RE.search(new):
@@ -137,5 +138,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site/files/appendices/stories-before-thought-hebrew-rtl.html site/files/appendices/stories-before-thought-english.html
-          git commit -m "Map appendix TOC images from story sections only"
+          git commit -m "Tighten appendix TOC thumbnail layout"
           git push
