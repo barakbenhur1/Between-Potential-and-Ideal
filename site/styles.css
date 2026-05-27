@@ -202,127 +202,117 @@ body.public-page .site-main > .hero.concise-hero{
     width:100%!important;
   }
 }
-/* BPI V405 - precise homepage card width normalization.
-   Restores the desktop/mobile visual behavior after the overly broad equal-width fix.
-   Scope is limited to index.html/en.html through body.bpi-home-width-clean.
-   It changes width/centering only; it does not redesign cards, grids, colors, typography, images, or content. */
-body.bpi-home-width-clean{
-  --bpi-home-card-width: min(1680px, calc(100vw - 144px));
-}
 
-/* Let the homepage cards use the intended wide card width on desktop. */
+
+/* BPI V415 — final small alignment and hero-kicker polish.
+   1. Make only the white Start Here card slightly wider on desktop.
+   2. Make the "Between Potential and Ideal" kicker inside the blue hero more present/formal.
+   Do not touch the blue card dimensions, opening image, documents, appendices, or content. */
 @media (min-width: 769px){
-  body.bpi-home-width-clean .site-main{
-    width:100%!important;
-    max-width:none!important;
-    box-sizing:border-box!important;
-  }
-
-  body.bpi-home-width-clean .site-main > :is(
-    .bpi-start-here-note,
-    .hero.concise-hero,
-    .opening-visual,
-    .signature-blurbs.refined-blurbs,
-    .signature-blurbs,
-    .reading-path-cta,
-    .language-status-note,
-    .hub-grid.three,
-    .content-grid,
-    .notice-box,
-    .method-note,
-    .media-card
-  ){
-    width:var(--bpi-home-card-width)!important;
-    max-width:var(--bpi-home-card-width)!important;
-    margin-left:auto!important;
-    margin-right:auto!important;
-    box-sizing:border-box!important;
-  }
-
-  /* Keep the blue theory/hero card exactly as designed, only match the white card width. */
-  body.bpi-home-width-clean .site-main > .hero.concise-hero{
-    width:var(--bpi-home-card-width)!important;
-    max-width:var(--bpi-home-card-width)!important;
-  }
-
-  body.bpi-home-width-clean .site-main > .opening-visual{
-    width:var(--bpi-home-card-width)!important;
-    max-width:var(--bpi-home-card-width)!important;
-  }
-}
-
-/* Mobile: 12px from each side, centered, and every major card uses the same corrected width. */
-@media (max-width: 768px){
-  body.bpi-home-width-clean .site-main{
-    width:100%!important;
-    max-width:none!important;
-    padding-left:12px!important;
-    padding-right:12px!important;
-    box-sizing:border-box!important;
-  }
-
-  body.bpi-home-width-clean .site-main > :is(
-    .bpi-start-here-note,
-    .hero.concise-hero,
-    .opening-visual,
-    .signature-blurbs.refined-blurbs,
-    .signature-blurbs,
-    .reading-path-cta,
-    .language-status-note,
-    .hub-grid.three,
-    .content-grid,
-    .notice-box,
-    .method-note,
-    .media-card
-  ){
-    width:100%!important;
-    max-width:100%!important;
-    margin-left:auto!important;
-    margin-right:auto!important;
-    box-sizing:border-box!important;
-  }
-
-  body.bpi-home-width-clean .site-main > .bpi-start-here-note,
-  body.bpi-home-width-clean .site-main > .hero.concise-hero{
-    text-align:center;
-  }
-
-  body.bpi-home-width-clean .bpi-start-here-buttons{
-    display:flex!important;
-    flex-wrap:wrap!important;
-    justify-content:center!important;
-    align-items:center!important;
-    gap:12px!important;
-    width:100%!important;
-  }
-
-  body.bpi-home-width-clean .bpi-start-here-buttons .download-button{
-    box-sizing:border-box!important;
-    justify-content:center!important;
-    text-align:center!important;
-  }
-}
-/* BPI V407 - desktop: make first two homepage cards match the third visual card width.
-   Scope: homepage only. Mobile is intentionally untouched; V406 keeps 12px side margins.
-   This only changes desktop width alignment for:
-   1) Start Here white card
-   2) Blue thought/hero card
-   3) Opening image/visual card
-*/
-@media (min-width: 769px){
-  body.bpi-home-width-clean{
-    --bpi-home-card-width: min(1680px, calc(100vw - 96px));
-  }
-
-  body.bpi-home-width-clean .site-main > :is(
-    .bpi-start-here-note,
-    .hero.concise-hero,
-    .opening-visual
-  ){
-    width: var(--bpi-home-card-width) !important;
-    max-width: var(--bpi-home-card-width) !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+  html body.public-page.design-prompt-theme main.site-main > section#bpi-start-here-note.bpi-start-here-note{
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+    margin-left: 12px !important;
+    margin-right: 12px !important;
     box-sizing: border-box !important;
   }
+
+  html body.public-page.design-prompt-theme main.site-main > section#bpi-start-here-note.bpi-start-here-note > h2,
+  html body.public-page.design-prompt-theme main.site-main > section#bpi-start-here-note.bpi-start-here-note > p,
+  html body.public-page.design-prompt-theme main.site-main > section#bpi-start-here-note.bpi-start-here-note > .download-row{
+    max-width: 920px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+}
+
+html body.public-page.design-prompt-theme main.site-main > section.hero.concise-hero .kicker{
+  font-size: clamp(1.15rem, 1.45vw, 1.55rem) !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.018em !important;
+  color: rgba(255,255,255,0.98) !important;
+  opacity: 1 !important;
+  text-shadow: 0 2px 14px rgba(0,0,0,0.26) !important;
+  line-height: 1.25 !important;
+}
+
+
+/* BPI V416 — final homepage polish.
+   1. Start Here card should match the blue hero card width: full width of the homepage card rail.
+   2. Hero kicker should feel more official and present.
+   Does not touch opening image, documents, theory pages, appendices, or content. */
+@media (min-width: 769px){
+  html body.public-page.design-prompt-theme main.site-main > section#bpi-start-here-note.bpi-start-here-note{
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  html body.public-page.design-prompt-theme main.site-main > section#bpi-start-here-note.bpi-start-here-note > h2,
+  html body.public-page.design-prompt-theme main.site-main > section#bpi-start-here-note.bpi-start-here-note > p,
+  html body.public-page.design-prompt-theme main.site-main > section#bpi-start-here-note.bpi-start-here-note > .download-row{
+    max-width: 980px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  html body.public-page.design-prompt-theme main.site-main > section#bpi-start-here-note.bpi-start-here-note > .download-row{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 16px !important;
+  }
+}
+
+html body.public-page.design-prompt-theme main.site-main > section.hero.concise-hero .kicker{
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0.38rem 0.72rem !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(255,255,255,0.42) !important;
+  background: rgba(255,255,255,0.12) !important;
+  color: rgba(255,255,255,0.98) !important;
+  font-size: clamp(1.15rem, 1.55vw, 1.75rem) !important;
+  font-weight: 950 !important;
+  letter-spacing: 0.035em !important;
+  line-height: 1.15 !important;
+  opacity: 1 !important;
+  text-shadow: 0 2px 18px rgba(0,0,0,0.34) !important;
+  box-shadow: 0 12px 34px rgba(0,0,0,0.12) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+
+/* BPI V417 — hero kicker typography only.
+   Remove the pill/background behind "Between Potential and Ideal"
+   and make the label feel more elegant, formal, and present.
+   Does not touch card widths, images, layout, documents, or content. */
+html body.public-page.design-prompt-theme main.site-main > section.hero.concise-hero .kicker{
+  display: block !important;
+  padding: 0 !important;
+  margin: 0 0 0.75rem 0 !important;
+
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+
+  color: rgba(255,255,255,0.98) !important;
+  font-family: "Noto Serif Hebrew", "Frank Ruhl Libre", "David Libre", Georgia, "Times New Roman", serif !important;
+  font-size: clamp(1.35rem, 2.05vw, 2.15rem) !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.012em !important;
+  line-height: 1.18 !important;
+  opacity: 1 !important;
+
+  text-shadow:
+    0 2px 12px rgba(0,0,0,0.30),
+    0 0 1px rgba(255,255,255,0.25) !important;
 }
