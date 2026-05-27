@@ -17,242 +17,114 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Patch standalone appendix TOC screens
+      - name: Map appendix TOC thumbnails from their own story sections only
         run: |
           python3 - <<'PY'
           from pathlib import Path
           import html
           import re
 
-          css = r'''
-          <style id="v114-appendix-story-toc-single-existing-thumbnail">
-          /* V114 — standalone appendix TOC: one small existing story image thumbnail per row. No new images. */
-          .story-toc-page{
-            text-align:start!important;
-          }
-          html[dir="rtl"] .story-toc-page{
-            text-align:right!important;
-          }
-          html[dir="ltr"] .story-toc-page{
-            text-align:left!important;
-          }
-          .story-toc-page h2,
-          .story-toc-page > p{
-            text-align:inherit!important;
-          }
-          .story-toc-page .story-toc-clean-list{
-            display:block!important;
-            width:min(720px,100%)!important;
-            max-width:720px!important;
-            margin-block:24px 0!important;
-            padding:0!important;
-            text-align:inherit!important;
-            direction:inherit!important;
-          }
-          html[dir="rtl"] .story-toc-page .story-toc-clean-list{
-            margin-right:0!important;
-            margin-left:auto!important;
-            text-align:right!important;
-            direction:rtl!important;
-          }
-          html[dir="ltr"] .story-toc-page .story-toc-clean-list{
-            margin-left:0!important;
-            margin-right:auto!important;
-            text-align:left!important;
-            direction:ltr!important;
-          }
-          .story-toc-page .story-toc-clean-list p.story-toc-row,
-          .story-toc-page p.story-toc-row{
-            display:block!important;
-            margin:0!important;
-            padding:.58rem 0!important;
-            border-block-start:1px solid rgba(197,121,29,.22)!important;
-            text-align:inherit!important;
-            direction:inherit!important;
-          }
-          .story-toc-page .story-toc-clean-list p.story-toc-row:first-child,
-          .story-toc-page p.story-toc-row:first-child{
-            border-block-start:0!important;
-          }
-          .story-toc-page .story-toc-entry,
-          .story-toc-page .story-toc-clean-list a.story-toc-entry,
-          .story-toc-page p.story-toc-row a.story-toc-entry{
-            display:flex!important;
-            align-items:center!important;
-            justify-content:flex-start!important;
-            gap:11px!important;
-            width:100%!important;
-            min-height:50px!important;
-            padding:0!important;
-            margin:0!important;
-            color:#08737a!important;
-            text-align:inherit!important;
-            direction:inherit!important;
-            text-decoration:none!important;
-          }
-          html[dir="rtl"] .story-toc-page .story-toc-entry,
-          html[dir="ltr"] .story-toc-page .story-toc-entry{
-            flex-direction:row!important;
-          }
-          .story-toc-page .story-toc-thumb{
-            display:block!important;
-            flex:0 0 68px!important;
-            width:68px!important;
-            min-width:68px!important;
-            height:46px!important;
-            object-fit:cover!important;
-            object-position:center center!important;
-            border-radius:9px!important;
-            border:1px solid rgba(10,58,104,.13)!important;
-            background:#fffaf0!important;
-            box-shadow:0 4px 12px rgba(20,40,60,.07)!important;
-          }
-          .story-toc-page .story-toc-title{
-            display:block!important;
-            min-width:0!important;
-            color:#08737a!important;
-            font-size:clamp(1.03rem,1.75vw,1.24rem)!important;
-            line-height:1.32!important;
-            font-weight:700!important;
-            text-align:inherit!important;
-            direction:inherit!important;
-          }
-          .story-toc-page .story-toc-entry:hover .story-toc-title,
-          .story-toc-page .story-toc-entry:focus .story-toc-title{
-            text-decoration:underline!important;
-            text-decoration-thickness:1px!important;
-            text-underline-offset:.18em!important;
-          }
-          .story-toc-page ol{
-            columns:1!important;
-            column-count:1!important;
-            width:min(720px,100%)!important;
-            max-width:720px!important;
-            margin-block:24px 0!important;
-            padding-inline-start:0!important;
-            padding-inline-end:0!important;
-            list-style:none!important;
-            text-align:inherit!important;
-          }
-          html[dir="rtl"] .story-toc-page ol{
-            margin-right:0!important;
-            margin-left:auto!important;
-          }
-          html[dir="ltr"] .story-toc-page ol{
-            margin-left:0!important;
-            margin-right:auto!important;
-          }
-          .story-toc-page li{
-            break-inside:avoid!important;
-            margin:0!important;
-            padding:.58rem 0!important;
-            border-block-start:1px solid rgba(197,121,29,.22)!important;
-            font-size:clamp(1.03rem,1.75vw,1.24rem)!important;
-            line-height:1.32!important;
-          }
-          .story-toc-page li:first-child{
-            border-block-start:0!important;
-          }
-          @media (max-width:560px){
-            .story-toc-page .story-toc-entry{
-              gap:9px!important;
-              min-height:46px!important;
-            }
-            .story-toc-page .story-toc-thumb{
-              flex-basis:58px!important;
-              width:58px!important;
-              min-width:58px!important;
-              height:40px!important;
-              border-radius:8px!important;
-            }
-          }
-          @media print{
-            .story-toc-page .story-toc-clean-list,
-            .story-toc-page ol{
-              width:100%!important;
-              max-width:100%!important;
-              columns:1!important;
-              column-count:1!important;
-            }
-            .story-toc-page .story-toc-clean-list p.story-toc-row,
-            .story-toc-page p.story-toc-row,
-            .story-toc-page li{
-              padding:.34rem 0!important;
-            }
-            .story-toc-page .story-toc-entry{
-              gap:3mm!important;
-              min-height:14mm!important;
-            }
-            .story-toc-page .story-toc-thumb{
-              flex-basis:20mm!important;
-              width:20mm!important;
-              min-width:20mm!important;
-              height:14mm!important;
-              border-radius:2.4mm!important;
-              box-shadow:none!important;
-            }
-            .story-toc-page .story-toc-title{
-              font-size:12.5pt!important;
-            }
-          }
+          TARGETS = [
+            Path('site/files/appendices/stories-before-thought-hebrew-rtl.html'),
+            Path('site/files/appendices/stories-before-thought-english.html'),
+          ]
+
+          STYLE_ID = 'v115-appendix-story-toc-images-from-story-sections'
+          CSS = f'''
+          <style id="{STYLE_ID}">
+          /* V115 — appendix story TOC thumbnails: use the image from each linked story section. */
+          .story-toc-page{{text-align:start!important;}}
+          html[dir="rtl"] .story-toc-page{{text-align:right!important;}}
+          html[dir="ltr"] .story-toc-page{{text-align:left!important;}}
+          .story-toc-page h2,.story-toc-page>p{{text-align:inherit!important;}}
+          .story-toc-page .story-toc-clean-list{{display:block!important;width:min(720px,100%)!important;max-width:720px!important;margin-block:24px 0!important;padding:0!important;text-align:inherit!important;direction:inherit!important;}}
+          html[dir="rtl"] .story-toc-page .story-toc-clean-list{{margin-right:0!important;margin-left:auto!important;text-align:right!important;direction:rtl!important;}}
+          html[dir="ltr"] .story-toc-page .story-toc-clean-list{{margin-left:0!important;margin-right:auto!important;text-align:left!important;direction:ltr!important;}}
+          .story-toc-page .story-toc-row{{display:block!important;margin:0!important;padding:.58rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;text-align:inherit!important;direction:inherit!important;}}
+          .story-toc-page .story-toc-row:first-child{{border-block-start:0!important;}}
+          .story-toc-page .story-toc-entry{{display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:11px!important;width:100%!important;min-height:50px!important;padding:0!important;margin:0!important;color:#08737a!important;text-align:inherit!important;direction:inherit!important;text-decoration:none!important;}}
+          html[dir="rtl"] .story-toc-page .story-toc-entry,html[dir="ltr"] .story-toc-page .story-toc-entry{{flex-direction:row!important;}}
+          .story-toc-page .story-toc-thumb{{display:block!important;flex:0 0 68px!important;width:68px!important;min-width:68px!important;height:46px!important;object-fit:cover!important;object-position:center center!important;border-radius:9px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 4px 12px rgba(20,40,60,.07)!important;}}
+          .story-toc-page .story-toc-title{{display:block!important;min-width:0!important;color:#08737a!important;font-size:clamp(1.03rem,1.75vw,1.24rem)!important;line-height:1.32!important;font-weight:700!important;text-align:inherit!important;direction:inherit!important;}}
+          .story-toc-page .story-toc-entry:hover .story-toc-title,.story-toc-page .story-toc-entry:focus .story-toc-title{{text-decoration:underline!important;text-decoration-thickness:1px!important;text-underline-offset:.18em!important;}}
+          @media (max-width:560px){{.story-toc-page .story-toc-entry{{gap:9px!important;min-height:46px!important;}}.story-toc-page .story-toc-thumb{{flex-basis:58px!important;width:58px!important;min-width:58px!important;height:40px!important;border-radius:8px!important;}}}}
+          @media print{{.story-toc-page .story-toc-clean-list{{width:100%!important;max-width:100%!important;}}.story-toc-page .story-toc-row{{padding:.34rem 0!important;}}.story-toc-page .story-toc-entry{{gap:3mm!important;min-height:14mm!important;}}.story-toc-page .story-toc-thumb{{flex-basis:20mm!important;width:20mm!important;min-width:20mm!important;height:14mm!important;border-radius:2.4mm!important;box-shadow:none!important;}}.story-toc-page .story-toc-title{{font-size:12.5pt!important;}}}}
           </style>
           '''.strip()
 
-          marker_re = re.compile(r'\n?\s*<style id="v11[0-4]-appendix-story-toc[^>]*>.*?</style>', re.S)
-          list_re = re.compile(r'<div class="story-toc-clean-list"(?P<attrs>[^>]*)>(?P<body>.*?)</div>', re.S)
-          row_re = re.compile(r'<p class="story-toc-row"[^>]*>(?P<row>.*?)</p>', re.S)
-          href_re = re.compile(r'href="#story-(\d+)"')
-          img_re = re.compile(r'<img\b[^>]*>', re.I | re.S)
-          tag_re = re.compile(r'<[^>]+>', re.S)
-          ws_re = re.compile(r'\s+')
+          OLD_TOC_STYLE_RE = re.compile(r'\n?\s*<style id="v11[0-9]-appendix-story-toc[^>]*>.*?</style>', re.S | re.I)
+          NEW_STYLE_RE = re.compile(r'\n?\s*<style id="' + re.escape(STYLE_ID) + r'">.*?</style>', re.S | re.I)
+          HEAD_RE = re.compile(r'</head>', re.I)
+          STORY_LIST_RE = re.compile(r'<div class="story-toc-clean-list"[^>]*>(?P<body>.*?)</div>', re.S | re.I)
+          STORY_ROW_RE = re.compile(r'<p class="story-toc-row"[^>]*>(?P<body>.*?)</p>', re.S | re.I)
+          HREF_RE = re.compile(r'href=["\']#(?P<id>[^"\']+)["\']', re.I)
+          IMG_SRC_RE = re.compile(r'<img\b[^>]*\bsrc=["\'](?P<src>[^"\']+)["\'][^>]*>', re.I | re.S)
+          TAG_RE = re.compile(r'<[^>]+>', re.S)
+          WS_RE = re.compile(r'\s+')
 
-          def normalize_title(row_html):
-            without_images = img_re.sub('', row_html)
-            text = tag_re.sub('', without_images)
-            text = html.unescape(text)
-            text = ws_re.sub(' ', text).strip()
-            return text
+          def text_only(fragment: str) -> str:
+            fragment = IMG_SRC_RE.sub('', fragment)
+            fragment = TAG_RE.sub('', fragment)
+            fragment = html.unescape(fragment)
+            return WS_RE.sub(' ', fragment).strip()
 
-          def normalize_rows(match):
-            body = match.group('body')
-            rows = []
-            for row_match in row_re.finditer(body):
-              row_html = row_match.group('row')
-              href = href_re.search(row_html)
-              if not href:
+          def first_image_in_story(text: str, story_id: str):
+            start_match = re.search(r'<section\b[^>]*\bid=["\']' + re.escape(story_id) + r'["\'][^>]*>', text, re.I | re.S)
+            if not start_match:
+              return None
+            start = start_match.start()
+            next_match = re.search(r'<section\b[^>]*\bid=["\']story-\d+["\'][^>]*>', text[start + 1:], re.I | re.S)
+            end = start + 1 + next_match.start() if next_match else len(text)
+            section = text[start:end]
+            for img in IMG_SRC_RE.finditer(section):
+              src = img.group('src')
+              low = src.lower()
+              if any(skip in low for skip in ('cover', 'logo', 'favicon', 'apple-touch-icon')):
                 continue
-              story_no = int(href.group(1))
-              title_text = normalize_title(row_html)
-              if not title_text:
-                continue
-              rows.append(
-                f'<p class="story-toc-row">'
-                f'<a class="story-toc-entry" href="#story-{story_no}">'
-                f'<img class="story-toc-thumb" src="assets/story_image_{story_no}.png" alt="" loading="lazy" decoding="async"/>'
-                f'<span class="story-toc-title">{html.escape(title_text)}</span>'
-                f'</a></p>'
-              )
-            if not rows:
-              return match.group(0)
-            return '<div class="story-toc-clean-list">' + ''.join(rows) + '</div>'
+              return src
+            first = IMG_SRC_RE.search(section)
+            return first.group('src') if first else None
+
+          def rebuild_story_toc(text: str) -> str:
+            def replace_list(match):
+              rows = []
+              for row in STORY_ROW_RE.finditer(match.group('body')):
+                body = row.group('body')
+                href = HREF_RE.search(body)
+                if not href:
+                  continue
+                story_id = html.unescape(href.group('id'))
+                title = text_only(body)
+                src = first_image_in_story(text, story_id)
+                if not title or not src:
+                  continue
+                rows.append(
+                  f'<p class="story-toc-row">'
+                  f'<a class="story-toc-entry" href="#{html.escape(story_id, quote=True)}">'
+                  f'<img class="story-toc-thumb" src="{html.escape(src, quote=True)}" alt="" loading="lazy" decoding="async"/>'
+                  f'<span class="story-toc-title">{html.escape(title)}</span>'
+                  f'</a></p>'
+                )
+              return '<div class="story-toc-clean-list">' + ''.join(rows) + '</div>' if rows else match.group(0)
+            return STORY_LIST_RE.sub(replace_list, text, count=1)
 
           changed = []
-          for path in sorted(Path('site/files/appendices').glob('*.html')):
-            text = path.read_text(encoding='utf-8')
-            if 'story-toc-page' not in text:
+          for path in TARGETS:
+            if not path.exists():
               continue
-            clean = marker_re.sub('', text)
-            clean = list_re.sub(normalize_rows, clean, count=1)
-            if '</head>' not in clean:
-              continue
-            patched = clean.replace('</head>', css + '\n</head>', 1)
-            if patched != text:
-              path.write_text(patched, encoding='utf-8')
+            old = path.read_text(encoding='utf-8')
+            new = OLD_TOC_STYLE_RE.sub('', old)
+            new = NEW_STYLE_RE.sub('', new)
+            new = rebuild_story_toc(new)
+            if HEAD_RE.search(new):
+              new = HEAD_RE.sub(CSS + '\n</head>', new, count=1)
+            if new != old:
+              path.write_text(new, encoding='utf-8')
               changed.append(str(path))
 
           print('patched files:')
-          for path in changed:
-            print(path)
+          for item in changed:
+            print(item)
           if not changed:
             print('no changes needed')
           PY
@@ -264,6 +136,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/files/appendices/*.html
-          git commit -m "Remove duplicate appendix TOC thumbnails"
+          git add site/files/appendices/stories-before-thought-hebrew-rtl.html site/files/appendices/stories-before-thought-english.html
+          git commit -m "Map appendix TOC images from story sections only"
           git push
