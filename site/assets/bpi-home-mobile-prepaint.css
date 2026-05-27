@@ -124,3 +124,44 @@
     border-radius:28px!important;
   }
 }
+
+/* BPI V426 MOBILE CENTER ONLY — final mobile card centering.
+   Scope: mobile only.
+   Does not change content, order, desktop, images, or card design. */
+@media (max-width: 860px){
+  html,
+  body{
+    overflow-x: hidden !important;
+  }
+
+  body.public-page main.site-main{
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  body.public-page main.site-main > #bpi-start-here-note,
+  body.public-page main.site-main > .homepage-start-card,
+  body.public-page main.site-main > .hero.concise-hero,
+  body.public-page main.site-main > figure.opening-visual,
+  body.public-page main.site-main > .signature-blurbs,
+  body.public-page main.site-main > .hub-grid,
+  body.public-page main.site-main > .notice-box.media-card,
+  body.public-page main.site-main > section.notice-box{
+    width: calc(100vw - 24px) !important;
+    max-width: calc(100vw - 24px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+    justify-self: center !important;
+    align-self: start !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+  }
+}
+
