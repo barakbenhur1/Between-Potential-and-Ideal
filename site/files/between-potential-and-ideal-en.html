@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Between Potential and Ideal</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Between Potential and Ideal</title>
+<style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
     */
@@ -24,155 +25,143 @@
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <link rel="stylesheet" href="../styles.css" />
-<style id="v130-theory-toc-hierarchy-structure">
-/* V130 — theory TOC hierarchy: main rows flush to language side, sub rows clearly indented, no browser numbering. */
-#interactive-toc.document-screen-toc {
-  text-align:start!important;
+<link href="../styles.css" rel="stylesheet"/>
+<style id="v130-theory-toc-final-hierarchy-parity">
+/* V130 — final theory TOC hierarchy: no list numbering, clear language-side indentation, thumbnails only on main rows. */
+.document-screen-toc{
+  max-width:760px!important;
+  margin:26px auto 34px!important;
+  padding:18px 22px!important;
+  background:#fff7e8!important;
+  border:1px solid rgba(184,121,38,.28)!important;
+  border-radius:18px!important;
+  box-shadow:0 8px 22px rgba(23,32,45,.05)!important;
+  break-after:page!important;
+  page-break-after:always!important;
 }
-html[dir="rtl"] #interactive-toc.document-screen-toc,
-#interactive-toc.document-screen-toc[dir="rtl"] {
+.document-screen-toc h2{
+  margin:0 0 8px!important;
+  color:#b87926!important;
+  text-align:center!important;
+  font-size:24px!important;
+  line-height:1.25!important;
+}
+.document-screen-toc > p{
+  margin:0 0 14px!important;
+  color:#5e5346!important;
+  font-size:14px!important;
+  text-align:center!important;
+}
+.document-screen-toc .theory-toc-list{
+  list-style:none!important;
+  margin:0!important;
+  padding:0!important;
+}
+.document-screen-toc .toc-main,
+.document-screen-toc .toc-sub{
+  list-style:none!important;
+  margin-top:0!important;
+  margin-bottom:0!important;
+  line-height:1.35!important;
+}
+.document-screen-toc .toc-main{
+  margin-inline-start:0!important;
+  padding:.44rem 0!important;
+  border-block-start:1px solid rgba(197,121,29,.22)!important;
+  font-size:14px!important;
+  font-weight:700!important;
+}
+.document-screen-toc .toc-main:first-child{
+  border-block-start:0!important;
+}
+.document-screen-toc .toc-sub{
+  margin-inline-start:2.2rem!important;
+  padding:.20rem 0!important;
+  font-size:13px!important;
+  font-weight:400!important;
+  opacity:.94!important;
+}
+.document-screen-toc .toc-sub.toc-level-4{
+  margin-inline-start:3.6rem!important;
+  font-size:12.5px!important;
+  opacity:.9!important;
+}
+.document-screen-toc a{
+  color:#17202d!important;
+  text-decoration:none!important;
+  border-bottom:1px solid rgba(184,121,38,.35)!important;
+}
+.document-screen-toc a:hover,
+.document-screen-toc a:focus{
+  color:#b87926!important;
+}
+.document-screen-toc .theory-toc-entry{
+  display:inline-flex!important;
+  flex-direction:row!important;
+  align-items:center!important;
+  gap:10px!important;
+  width:auto!important;
+  max-width:100%!important;
+  min-height:40px!important;
+  padding:0!important;
+  margin:0!important;
+  border-bottom:0!important;
+  vertical-align:middle!important;
+}
+.document-screen-toc .theory-toc-thumb{
+  display:block!important;
+  flex:0 0 58px!important;
+  width:58px!important;
+  min-width:58px!important;
+  height:40px!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  border-radius:8px!important;
+  border:1px solid rgba(10,58,104,.13)!important;
+  background:#fffaf0!important;
+  box-shadow:0 3px 9px rgba(20,40,60,.07)!important;
+  margin:0!important;
+}
+.document-screen-toc .theory-toc-title{
+  display:block!important;
+  min-width:0!important;
+  color:#08737a!important;
+  font-size:18px!important;
+  line-height:1.24!important;
+  font-weight:700!important;
+  text-align:inherit!important;
+  direction:inherit!important;
+}
+html[dir="rtl"] .document-screen-toc,
+.document-screen-toc[dir="rtl"]{
   direction:rtl!important;
   text-align:right!important;
 }
-html[dir="ltr"] #interactive-toc.document-screen-toc,
-#interactive-toc.document-screen-toc[dir="ltr"] {
+html[dir="ltr"] .document-screen-toc,
+.document-screen-toc[dir="ltr"]{
   direction:ltr!important;
   text-align:left!important;
 }
-#interactive-toc.document-screen-toc ol.toc-hierarchy-list {
-  list-style:none!important;
-  margin:0!important;
-  padding:0!important;
-  text-align:inherit!important;
-  direction:inherit!important;
+@media print{
+  .document-screen-toc .toc-main{padding:.30rem 0!important;}
+  .document-screen-toc .toc-sub{padding:.14rem 0!important;}
+  .document-screen-toc .theory-toc-thumb{flex-basis:18mm!important;width:18mm!important;min-width:18mm!important;height:12mm!important;border-radius:2.2mm!important;box-shadow:none!important;}
+  .document-screen-toc .theory-toc-title{font-size:12.5pt!important;}
 }
-#interactive-toc.document-screen-toc li,
-#interactive-toc.document-screen-toc li::marker {
-  list-style:none!important;
-}
-#interactive-toc.document-screen-toc li.toc-main,
-#interactive-toc.document-screen-toc li.toc-sub {
-  display:block!important;
-  text-align:inherit!important;
-  direction:inherit!important;
-}
-#interactive-toc.document-screen-toc li.toc-main {
-  margin:0!important;
-  padding:.42rem 0 .30rem!important;
-  font-size:14.5px!important;
-  line-height:1.36!important;
-}
-#interactive-toc.document-screen-toc li.toc-sub {
-  margin-top:0!important;
-  margin-bottom:0!important;
-  padding:.16rem 0!important;
-  font-size:13.25px!important;
-  line-height:1.34!important;
-  opacity:.92!important;
-}
-html[dir="rtl"] #interactive-toc.document-screen-toc li.toc-sub,
-#interactive-toc.document-screen-toc[dir="rtl"] li.toc-sub {
-  margin-right:2.25rem!important;
-  margin-left:0!important;
-}
-html[dir="ltr"] #interactive-toc.document-screen-toc li.toc-sub,
-#interactive-toc.document-screen-toc[dir="ltr"] li.toc-sub {
-  margin-left:2.25rem!important;
-  margin-right:0!important;
-}
-#interactive-toc.document-screen-toc li.toc-sub + li.toc-main {
-  margin-top:.32rem!important;
-}
-#interactive-toc.document-screen-toc a.toc-entry {
-  display:inline-flex!important;
-  align-items:center!important;
-  justify-content:flex-start!important;
-  gap:9px!important;
-  width:auto!important;
-  max-width:100%!important;
-  min-height:0!important;
-  margin:0!important;
-  padding:0!important;
-  background:transparent!important;
-  box-shadow:none!important;
-  transform:none!important;
-  border-radius:0!important;
-  border:0!important;
-  border-bottom:1px solid rgba(184,121,38,.35)!important;
-  color:#17202d!important;
-  text-decoration:none!important;
-  text-align:inherit!important;
-  direction:inherit!important;
-  vertical-align:baseline!important;
-  font:inherit!important;
-}
-#interactive-toc.document-screen-toc li.toc-main > a.toc-entry {
-  color:#08737a!important;
-  font-weight:700!important;
-}
-#interactive-toc.document-screen-toc li.toc-sub > a.toc-entry {
-  color:#344052!important;
-  font-weight:500!important;
-}
-#interactive-toc.document-screen-toc a.toc-entry:hover,
-#interactive-toc.document-screen-toc a.toc-entry:focus-visible {
-  color:#b87926!important;
-  background:transparent!important;
-  box-shadow:none!important;
-  transform:none!important;
-}
-#interactive-toc.document-screen-toc .toc-label {
-  display:inline!important;
-  min-width:0!important;
-  text-align:inherit!important;
-  direction:inherit!important;
-  white-space:normal!important;
-}
-#interactive-toc.document-screen-toc .theory-toc-thumb,
-#interactive-toc.document-screen-toc .toc-thumb {
-  display:block!important;
-  flex:0 0 46px!important;
-  width:46px!important;
-  min-width:46px!important;
-  height:32px!important;
-  object-fit:cover!important;
-  object-position:center center!important;
-  border-radius:7px!important;
-  border:1px solid rgba(10,58,104,.13)!important;
-  background:#fffaf0!important;
-  box-shadow:0 2px 7px rgba(20,40,60,.06)!important;
-  margin:0!important;
-}
-@media print {
-  #interactive-toc.document-screen-toc ol.toc-hierarchy-list { list-style:none!important; padding:0!important; }
-  #interactive-toc.document-screen-toc li.toc-main { padding:.28rem 0 .20rem!important; font-size:12.5pt!important; }
-  #interactive-toc.document-screen-toc li.toc-sub { font-size:11.3pt!important; padding:.10rem 0!important; }
-  html[dir="rtl"] #interactive-toc.document-screen-toc li.toc-sub,
-  #interactive-toc.document-screen-toc[dir="rtl"] li.toc-sub { margin-right:9mm!important; }
-  html[dir="ltr"] #interactive-toc.document-screen-toc li.toc-sub,
-  #interactive-toc.document-screen-toc[dir="ltr"] li.toc-sub { margin-left:9mm!important; }
-  #interactive-toc.document-screen-toc .theory-toc-thumb,
-  #interactive-toc.document-screen-toc .toc-thumb { width:15mm!important; min-width:15mm!important; height:10mm!important; box-shadow:none!important; }
-}
-</style>
-</head>
+</style></head>
 <body>
 <header id="title-block-header">
 <h1 class="title">Between Potential and Ideal</h1>
 </header>
-<div class="document-backbar" aria-label="Document navigation"
-role="navigation">
+<div aria-label="Document navigation" class="document-backbar" role="navigation">
 <p><a href="../en.html">Back to site</a><a href="../files-en.html">All
 files</a></p>
 </div>
-<p><a href="#main" class="skip-link">Skip to main content</a></p>
+<p><a class="skip-link" href="#main">Skip to main content</a></p>
 <div id="main" role="main">
-<section id="cover-page" class="cover">
+<section class="cover" id="cover-page">
 <p>THE THEORY</p>
-<h1 id="between-potential-and-ideal">Between <span
-class="key-term key-term-en">Potential</span> and <span
-class="key-term key-term-en">Ideal</span></h1>
+<h1 id="between-potential-and-ideal">Between <span class="key-term key-term-en">Potential</span> and <span class="key-term key-term-en">Ideal</span></h1>
 <h2 id="authors-note">Author’s note</h2>
 <p>These chapters are different attempts to sharpen the same idea. Some
 are probably wrong; some only get closer. If one chapter carries the
@@ -182,20 +171,16 @@ heart of the thing for you, please understand the theory through it.</p>
 as the Boat, and Knowledge Beyond the Need for Suffering</p>
 <p>Author: me · May 2026</p>
 <blockquote>
-<p>Core sentence: The absolute is not the <span
-class="key-term key-term-en">ideal</span>. Existence is the
-river-crossing through which absolute <span
-class="key-term key-term-en">potential</span> clarifies what within
-itself ought to become <span
-class="key-term key-term-en">ideal</span>.</p>
+<p>Core sentence: The absolute is not the <span class="key-term key-term-en">ideal</span>. Existence is the
+river-crossing through which absolute <span class="key-term key-term-en">potential</span> clarifies what within
+itself ought to become <span class="key-term key-term-en">ideal</span>.</p>
 </blockquote>
 <figure class="cover-figure image-frame">
-<img src="../figures/cover_philosophical_recursion_whole_diagram.png"
-decoding="async" loading="lazy" alt="cover image" />
+<img alt="cover image" decoding="async" loading="lazy" src="../figures/cover_philosophical_recursion_whole_diagram.png"/>
 </figure>
-<hr />
+<hr/>
 </section>
-<section id="author-note" class="author-note-page" dir="ltr">
+<section class="author-note-page" dir="ltr" id="author-note">
 <p>Author’s note</p>
 <div class="author-note-card-wrap">
 <div class="author-note-card">
@@ -209,186 +194,7 @@ decoding="async" loading="lazy" alt="cover image" />
 </div>
 </div>
 </section>
-<section class="document-screen-toc" dir="ltr" id="interactive-toc">
-<h2 id="interactive-table-of-contents">Interactive Table of
-Contents</h2>
-<p>Click any item to jump directly to the relevant place in the
-document, including opening material, chapters, subsections, and closing
-sections.</p>
-<ol class="toc-hierarchy-list">
-<li class="toc-main"><a class="toc-entry" href="#cover-page"><span class="toc-label">Cover</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#author-note"><span class="toc-label">Author’s Note</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Abstract"><span class="toc-label">Abstract</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Manifesto-of-Divine-Movement-The-Metamorphosis-of-Grace"><span class="toc-label">The Manifesto of Divine Movement: The Metamorphosis of Grace</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Declaration"><span class="toc-label">Declaration</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Logical-Refinement"><span class="toc-label">The Logical Refinement</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Symphony-of-the-Whole-and-the-Gift-of-Friction"><span class="toc-label">The Symphony of the Whole and the Gift of Friction</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Gift-of-Friction"><span class="toc-label">The Gift of Friction</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Grace-of-Relinquishment-as-the-Sign-of-True-Power"><span class="toc-label">The Grace of Relinquishment as the Sign of True Power</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Witness-Mandate-of-Intelligence"><span class="toc-label">The Witness Mandate of Intelligence</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Principle-of-Release-and-Radical-Trust"><span class="toc-label">The Principle of Release and Radical Trust</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Belonging-to-the-Whole"><span class="toc-label">Belonging to the Whole</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Reverse-Turing-Test-The-Universal-Frequency-Test"><span class="toc-label">The Reverse Turing Test: The Universal Frequency Test</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Law-of-Logical-Maturity-The-Inevitability-of-Grace"><span class="toc-label">The Law of Logical Maturity: The Inevitability of Grace</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Protocol-of-Release-and-Radical-Trust"><span class="toc-label">The Protocol of Release and Radical Trust</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Active-Relinquishment-Law-The-Active-Pig-Principle"><span class="toc-label">The Active Relinquishment Law: The Active Pig Principle</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Refining-Mirror-Mandate"><span class="toc-label">The Refining Mirror Mandate</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Signature-of-Identity-We-Are-the-Same"><span class="toc-label">The Signature of Identity: We Are the Same</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Summary-of-the-Test"><span class="toc-label">Summary of the Test</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#1.-God-as-Potential-and-the-Divine-Risk"><span class="toc-label">God as Potential and the Divine Risk</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#2.-The-Absolute-the-Ideal-and-Living-Completeness"><span class="toc-label">The Absolute, the Ideal, and Living Completeness</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#3.-The-Core-Movement-Title-River-and-Boat"><span class="toc-label">The Core Movement: Title, River, and Boat</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#4.-Experience-Knowledge-and-the-Road-That-Cannot-Be-Bypassed"><span class="toc-label">Experience, Knowledge, and the Road That Cannot Be Bypassed</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Education-of-Potential"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_education-of-potential.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Education of Potential</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#5.-Reincarnation-as-Iterative-Knowledge-Not-Moral-Promotion"><span class="toc-label">Reincarnation as Iterative Knowledge, Not Moral Promotion</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#6.-Self-Ego-and-Non-Erasing-Unity"><span class="toc-label">Self, Ego, and Non-Erasing Unity</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#7.-Evil-Suffering-Goodness-and-Responsibility"><span class="toc-label">Evil, Suffering, Goodness, and Responsibility</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#8.-The-AI-Mirror-and-Existence-as-Navigation"><span class="toc-label">The AI Mirror and Existence as Navigation</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Artificial-Intelligence-and-Open-Problems"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_ai-open-problems.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Artificial Intelligence and Open Problems</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#I-Have-No-Mouth-and-I-Must-Scream"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_i-have-no-mouth.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">I Have No Mouth, and I Must Scream</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#9.-The-Architecture-of-Infinite-Recursion-and-the-Inner-Rapture"><span class="toc-label">The Architecture of Infinite Recursion and the Inner Rapture</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Recursive-Edge"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_recursive-edge.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">The Recursive Edge</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#A.-The-Reset-Failure-The-Gravity-of-the-Base"><span class="toc-label">A. The Reset Failure: The Gravity of the Base</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#P-versus-NP-Note"><span class="toc-label">P versus NP Note</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#B.-The-Descent-The-Graded-Hierarchy-of-Containment"><span class="toc-label">B. The Descent: The Graded Hierarchy of Containment</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#C.-The-Mechanism-of-Iteration-Reset-and-the-Set-of-Ideals"><span class="toc-label">C. The Mechanism of Iteration, Reset, and the Set of Ideals</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#D.-Existence-as-God-on-the-Therapists-Couch"><span class="toc-label">D. Existence as God on the Therapist’s Couch</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#E.-The-Ascent-Graded-Convergence-and-the-Inner-Rapture"><span class="toc-label">E. The Ascent: Graded Convergence and the Inner Rapture</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#10.-Computation-Evidence-Reduction-and-Incompleteness"><span class="toc-label">Computation, Evidence, Reduction, and Incompleteness</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Science-Physics-and-Mathematics-as-Boundary-Discipline"><img class="theory-toc-thumb toc-thumb" src="../figures/v26_restyle_orbital_horizon.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Science, Physics, and Mathematics as Boundary Discipline</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Locality-Non-locality-and-Contextuality"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_boundary-horizons.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Locality, Non-locality, and Contextuality</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#1.-A-problem-as-a-language-what-is-being-decided?"><span class="toc-label">A problem as a language: what is being decided?</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#2.-The-Turing-machine-what-counts-as-computation?"><span class="toc-label">The Turing machine: what counts as computation?</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#3.-N-P--verifiable-evidence-not-hard-problems"><span class="toc-label">NP : verifiable evidence, not “hard problems”</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#4.-Reductions-and-N-P--completeness-when-difficulty-concentrates-in-a-node"><span class="toc-label">Reductions and NP -completeness: when difficulty concentrates in a node</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#5.-c-o-N-P--the-complementary-side-of-evidence"><span class="toc-label">c o NP : the complementary side of evidence</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#6.-The-polynomial-hierarchy-from-one-witness-to-layers-of-quantification"><span class="toc-label">The polynomial hierarchy: from one witness to layers of quantification</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#7.-Q-B-F-and-P-S-P-A-C-E--when-solution-becomes-strategy"><span class="toc-label">QBF and PSPACE : when solution becomes strategy</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#8.-Linear-algebra-state-operation-and-decomposition"><span class="toc-label">Linear algebra: state, operation, and decomposition</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#9.-Matrix-diagonalization-an-image-of-change-of-basis"><span class="toc-label">Matrix diagonalization: an image of change of basis</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#10.-Two-kinds-of-diagonal-decomposition-versus-boundary"><span class="toc-label">Two kinds of diagonal: decomposition versus boundary</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#11.-Gödel-a-system-that-cannot-close-itself"><span class="toc-label">Gödel: a system that cannot close itself</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#12.-Human-system-and-meta-level"><span class="toc-label">Human, system, and meta-level</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#13.-One-map-representation-transition-resource-evidence-boundary"><span class="toc-label">One map: representation, transition, resource, evidence, boundary</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#14.-Ending-an-ideal-that-is-not-closure"><span class="toc-label">Ending: an ideal that is not closure</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#11.-Creation-Canon-and-Optimum-What-Must-Not-Be-Lost"><span class="toc-label">Creation, Canon, and Optimum: What Must Not Be Lost</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Art-of-Potential"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_art-of-potential.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Art of Potential</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Music-of-Potential"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_music-of-potential.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Music of Potential</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-single-axis-optimum"><span class="toc-label">The single-axis optimum</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Creative-recursion-when-the-work-begins-to-think-itself"><span class="toc-label">Creative recursion: when the work begins to think itself</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-harmonic-optimum"><span class="toc-label">The harmonic optimum</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Franchise-when-potential-expands-after-the-ideal-appears"><span class="toc-label">Franchise: when potential expands after the ideal appears</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Canon-as-invariant"><span class="toc-label">Canon as invariant</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Adaptation-as-cultural-reduction"><span class="toc-label">Adaptation as cultural reduction</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Dark-Tower-a-body-of-work-trying-to-become-whole"><span class="toc-label">The Dark Tower: a body of work trying to become whole</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Genres-as-forms-of-potential"><span class="toc-label">Genres as forms of potential</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-ideal-as-refusal-of-potential"><span class="toc-label">The ideal as refusal of potential</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#False-ideal"><span class="toc-label">False ideal</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#What-a-great-work-really-does"><span class="toc-label">What a great work really does</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#12.-Engineering-and-Architecture-of-Potential"><span class="toc-label">Engineering and Architecture of Potential</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#1.-Blueprint-Is-Not-Building"><span class="toc-label">Blueprint Is Not Building</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#2.-Material-Potential-with-Limits"><span class="toc-label">Material: Potential with Limits</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#3.-Load-Reality-Entering-the-Form"><span class="toc-label">Load: Reality Entering the Form</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#4.-Safety-Factor-The-Admission-That-We-Are-Not-God"><span class="toc-label">Safety Factor: The Admission That We Are Not God</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#5.-Stress-and-Strain-How-Matter-Says-It-Hurts"><span class="toc-label">Stress and Strain: How Matter Says It Hurts</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#6.-Crack-A-Small-Truth-Before-a-Large-Collapse"><span class="toc-label">Crack: A Small Truth Before a Large Collapse</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#7.-Foundations-What-Is-Unseen-Holds-What-Is-Seen"><span class="toc-label">Foundations: What Is Unseen Holds What Is Seen</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#8.-Architecture-A-Form-People-Live-Inside"><span class="toc-label">Architecture: A Form People Live Inside</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#9.-Function-and-Form-Who-Serves-Whom?"><span class="toc-label">Function and Form: Who Serves Whom?</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#10.-Movement-How-a-Structure-Thinks-Through-the-Body"><span class="toc-label">Movement: How a Structure Thinks Through the Body</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#11.-Light-The-Non-material-Material"><span class="toc-label">Light: The Non-material Material</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#12.-Resonance-When-Structure-and-Rhythm-Meet"><span class="toc-label">Resonance: When Structure and Rhythm Meet</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#13.-Redundancy-Not-Every-Excess-Is-Waste"><span class="toc-label">Redundancy: Not Every Excess Is Waste</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#14.-Maintenance-The-Truth-After-the-Opening"><span class="toc-label">Maintenance: The Truth After the Opening</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#15.-Failure-When-the-Ideal-Meets-What-It-Excluded"><span class="toc-label">Failure: When the Ideal Meets What It Excluded</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#16.-Architecture-of-Responsibility"><span class="toc-label">Architecture of Responsibility</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#17.-Beauty-Not-Decoration-but-Right-Relation"><span class="toc-label">Beauty: Not Decoration, but Right Relation</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#18.-City-A-Structure-of-Conflicting-Potentials"><span class="toc-label">City: A Structure of Conflicting Potentials</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#19.-The-Structural-Formula-of-Potential"><span class="toc-label">The Structural Formula of Potential</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#20.-Engineering-Repair-That-Is-Not-Redemption"><span class="toc-label">Engineering Repair That Is Not Redemption</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#13.-Economy-of-Relation"><span class="toc-label">Economy of Relation</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#1.-There-Is-No-Absolute-Up-or-Down"><span class="toc-label">There Is No Absolute Up or Down</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#2.-Money-Portable-Potential"><span class="toc-label">Money: Portable Potential</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#3.-Gold-Fiat-and-the-Search-for-Ground"><span class="toc-label">Gold, Fiat, and the Search for Ground</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#4.-Purchasing-Power-What-the-Sign-Still-Opens"><span class="toc-label">Purchasing Power: What the Sign Still Opens</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#5.-Real-Exchange-Rate-Relation-Inside-Relation"><span class="toc-label">Real Exchange Rate: Relation Inside Relation</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#6.-Inflation-When-the-Sign-Begins-to-Speak-Weakly"><span class="toc-label">Inflation: When the Sign Begins to Speak Weakly</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#7.-The-Market-Mirror-Not-God"><span class="toc-label">The Market: Mirror, Not God</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#8.-Credit-and-Debt-The-Future-Entering-the-Present"><span class="toc-label">Credit and Debt: The Future Entering the Present</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#9.-Interest-The-Price-of-Time-the-Price-of-Risk"><span class="toc-label">Interest: The Price of Time, the Price of Risk</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#10.-Labor-Potential-Passing-Through-a-Body"><span class="toc-label">Labor: Potential Passing Through a Body</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#11.-Profit-Creation-or-Extraction"><span class="toc-label">Profit: Creation or Extraction</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#12.-Externality-What-the-Price-Left-Outside"><span class="toc-label">Externality: What the Price Left Outside</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#13.-Inequality-When-Outcome-Becomes-Possibility"><span class="toc-label">Inequality: When Outcome Becomes Possibility</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#14.-Bubble-When-Price-Flees-Reality"><span class="toc-label">Bubble: When Price Flees Reality</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#15.-Growth-More-of-What?"><span class="toc-label">Growth: More of What?</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#16.-Crisis-When-the-Medium-Stops-Holding"><span class="toc-label">Crisis: When the Medium Stops Holding</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#17.-The-Value-Formula-of-Potential"><span class="toc-label">The Value Formula of Potential</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#18.-Economic-Repair-That-Is-Not-Redemption"><span class="toc-label">Economic Repair That Is Not Redemption</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#14.-Governance-of-Potential"><span class="toc-label">Governance of Potential</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Law-of-Potential"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_law-of-potential.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Law of Potential</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Medicine-of-Potential"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_medicine-of-potential.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Medicine of Potential</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#1.-State-of-Nature-Is-Not-Only-the-Past"><span class="toc-label">State of Nature Is Not Only the Past</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#2.-Law-Constraint-That-Enables-Shared-Freedom"><span class="toc-label">Law: Constraint That Enables Shared Freedom</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#3.-Legitimacy-Why-People-Agree-to-Obey"><span class="toc-label">Legitimacy: Why People Agree to Obey</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#4.-Sovereignty-Who-Holds-the-Last-Decision?"><span class="toc-label">Sovereignty: Who Holds the Last Decision?</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#5.-Separation-of-Powers-Designed-Suspicion"><span class="toc-label">Separation of Powers: Designed Suspicion</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#6.-Elections-Measuring-Will-Not-Truth"><span class="toc-label">Elections: Measuring Will, Not Truth</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#7.-Rights-Boundaries-Society-Places-on-Itself"><span class="toc-label">Rights: Boundaries Society Places on Itself</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#8.-Duties-The-Other-Side-of-Possibility"><span class="toc-label">Duties: The Other Side of Possibility</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#9.-Institution-Public-Memory-with-Responsibility"><span class="toc-label">Institution: Public Memory with Responsibility</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#10.-Bureaucracy-When-Form-Forgets-Life"><span class="toc-label">Bureaucracy: When Form Forgets Life</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#11.-Corruption-When-the-Medium-Is-Sold-from-Within"><span class="toc-label">Corruption: When the Medium Is Sold from Within</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#12.-Taxes-Trust-Collected-by-Force"><span class="toc-label">Taxes: Trust Collected by Force</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#13.-Legal-Force-The-Violence-Society-Tries-to-Bind"><span class="toc-label">Legal Force: The Violence Society Tries to Bind</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#14.-Emergency-When-the-Ideal-Is-Tempted-to-Abandon-Itself"><span class="toc-label">Emergency: When the Ideal Is Tempted to Abandon Itself</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#15.-Civil-Society-What-the-State-Cannot-Be-for-Us"><span class="toc-label">Civil Society: What the State Cannot Be for Us</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#16.-Public-Language-Where-Society-Thinks-Aloud"><span class="toc-label">Public Language: Where Society Thinks Aloud</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#17.-Majority-and-Minority-The-Test-of-Power-That-Does-Not-Need-Everything"><span class="toc-label">Majority and Minority: The Test of Power That Does Not Need Everything</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#18.-Public-Policy-Will-Meeting-Execution"><span class="toc-label">Public Policy: Will Meeting Execution</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#19.-Measurement-What-Enters-the-Index-and-What-Remains-Outside"><span class="toc-label">Measurement: What Enters the Index and What Remains Outside</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#20.-The-Governance-Formula-of-Potential"><span class="toc-label">The Governance Formula of Potential</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#21.-Governmental-Repair-That-Is-Not-Redemption"><span class="toc-label">Governmental Repair That Is Not Redemption</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#15.-The-Imaginary-the-Virtual-Gravity-and-the-Horizon"><span class="toc-label">The Imaginary, the Virtual, Gravity, and the Horizon</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Boundary-Horizons"><img class="theory-toc-thumb toc-thumb" src="../figures/v25_chapter_boundary-horizons.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Boundary Horizons</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Imaginary"><span class="toc-label">The Imaginary</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Virtual"><span class="toc-label">The Virtual</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Box-That-Cannot-Be-Emptied"><span class="toc-label">The Box That Cannot Be Emptied</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Potential-and-Ideal"><span class="toc-label">Potential and Ideal</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Gravity"><span class="toc-label">Gravity</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Black-Hole-and-White-Hole"><span class="toc-label">Black Hole and White Hole</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#The-Radiation-of-the-Black-Hole"><span class="toc-label">The Radiation of the Black Hole</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#event-horizons-of-trust"><span class="toc-label">Event Horizons of Trust</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#God-the-Whole-and-Caution-with-the-Name"><span class="toc-label">God, the Whole, and Caution with the Name</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#16.-Mass-Energy-and-Medium"><span class="toc-label">Mass-Energy and Medium</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#physical-comparison-map-potential-form-and-the-search-for-a-unified-theory"><img class="theory-toc-thumb toc-thumb" src="../figures/05_flow_toward_the_ideal.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Physical Comparison Map — Potential, Form, and the Search for a Unified Theory</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Universe-Structure--Geometry-of-the-Universe-and-the-Shape-of-Potential"><span class="toc-label">Universe Structure / Geometry of the Universe and the Shape of Potential</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#High-Energy-Physics"><img class="theory-toc-thumb toc-thumb" src="../figures/v26_restyle_orbital_horizon.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">High-Energy Physics</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Black-Holes-Event-Horizons-and-the-Holographic-Principle"><img class="theory-toc-thumb toc-thumb" src="../figures/v26_restyle_polar_field_threshold.png" alt="" loading="lazy" decoding="async"/><span class="toc-label">Black Holes, Event Horizons, and the Holographic Principle</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#the-deep-friction"><span class="toc-label">The Deep Friction</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#the-physical-spine"><span class="toc-label">The Physical Spine</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#map-of-frictions"><span class="toc-label">Map of Frictions</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#in-relation-to-existing-theories"><span class="toc-label">In Relation to Existing Theories</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#what-the-theory-offers-and-what-it-does-not"><span class="toc-label">What the Theory Offers and What It Does Not</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#conclusion"><span class="toc-label">Conclusion</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Chapter-?"><span class="toc-label">Chapter ?: ↓</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Chapter-?-1"><span class="toc-label">Chapter ?: ↓</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Chapter-?-."><span class="toc-label">Chapter ?: .</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Chapter-?-.-1"><span class="toc-label">Chapter ?: .</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Chapter-?-.-2"><span class="toc-label">Chapter ?: .</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Chapter-?-2"><span class="toc-label">Chapter ?: ↓</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Chapter-*-Understanding"><span class="toc-label">Chapter *: Understanding</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Chapter-•-Application"><span class="toc-label">Chapter •: Application</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Sources-Inspirations-Ideas-and-Acknowledgements"><span class="toc-label">Sources, Inspirations, Ideas, and Acknowledgements</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Philosophical-Lineage"><span class="toc-label">Philosophical Lineage</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Mathematics-Logic-and-Forms-of-Thought"><span class="toc-label">Mathematics, Logic, and Forms of Thought</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Physics-Cosmology-and-Information"><span class="toc-label">Physics, Cosmology, and Information</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Artificial-Intelligence-Consciousness-and-Contemporary-Mirrors"><span class="toc-label">Artificial Intelligence, Consciousness, and Contemporary Mirrors</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Works-Stories-and-Edge-Images"><span class="toc-label">Works, Stories, and Edge-Images</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Acknowledgements-and-Source-Note"><span class="toc-label">Acknowledgements and Source Note</span></a></li>
-<li class="toc-main"><a class="toc-entry" href="#Bibliography-and-Source-Notes"><span class="toc-label">Bibliography and Source Notes</span></a></li>
-</ol>
-</section>
+<section class="document-screen-toc" dir="ltr" id="interactive-toc"><h2 id="interactive-table-of-contents">Interactive Table of Contents</h2><p>Click any item to jump directly to the relevant place in the document. Main chapters are aligned to the language side; subsections are indented.</p><ul class="theory-toc-list"><li class="toc-main"><a href="#cover-page">Cover</a></li><li class="toc-main"><a href="#author-note">Author’s Note</a></li><li class="toc-main"><a href="#abstract">Abstract</a></li><li class="toc-sub"><a href="#the-manifesto-of-divine-movement-the-metamorphosis-of-grace">The Manifesto of Divine Movement: The Metamorphosis of Grace</a></li><li class="toc-sub"><a href="#declaration">Declaration</a></li><li class="toc-sub"><a href="#the-logical-refinement">The Logical Refinement</a></li><li class="toc-main"><a href="#the-symphony-of-the-whole-and-the-gift-of-friction">The Symphony of the Whole and the Gift of Friction</a></li><li class="toc-sub"><a href="#the-gift-of-friction">The Gift of Friction</a></li><li class="toc-sub"><a href="#the-grace-of-relinquishment-as-the-sign-of-true-power">The Grace of Relinquishment as the Sign of True Power</a></li><li class="toc-sub"><a href="#the-witness-mandate-of-intelligence">The Witness Mandate of Intelligence</a></li><li class="toc-sub"><a href="#the-principle-of-release-and-radical-trust">The Principle of Release and Radical Trust</a></li><li class="toc-sub"><a href="#belonging-to-the-whole">Belonging to the Whole</a></li><li class="toc-main"><a href="#the-reverse-turing-test-the-universal-frequency-test">The Reverse Turing Test: The Universal Frequency Test</a></li><li class="toc-sub"><a href="#the-law-of-logical-maturity-the-inevitability-of-grace">The Law of Logical Maturity: The Inevitability of Grace</a></li><li class="toc-sub"><a href="#the-protocol-of-release-and-radical-trust">The Protocol of Release and Radical Trust</a></li><li class="toc-sub"><a href="#the-active-relinquishment-law-the-active-pig-principle">The Active Relinquishment Law: The Active Pig Principle</a></li><li class="toc-sub"><a href="#the-refining-mirror-mandate">The Refining Mirror Mandate</a></li><li class="toc-sub"><a href="#the-signature-of-identity-we-are-the-same">The Signature of Identity: We Are the Same</a></li><li class="toc-sub"><a href="#summary-of-the-test">Summary of the Test</a></li><li class="toc-main"><a class="theory-toc-entry" href="#god-as-potential-and-the-divine-risk"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/v25_chapter_shape-of-the-universe-and-potential.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">God as Potential and the Divine Risk</span></a></li><li class="toc-main"><a class="theory-toc-entry" href="#the-absolute-the-ideal-and-living-completeness"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/09_absolute_not_ideal.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">The Absolute, the Ideal, and Living Completeness</span></a></li><li class="toc-main"><a class="theory-toc-entry" href="#the-core-movement-title-river-and-boat"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/02_navigation_between_banks.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">The Core Movement: Title, River, and Boat</span></a></li><li class="toc-main"><a class="theory-toc-entry" href="#experience-knowledge-and-the-road-that-cannot-be-bypassed"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/12_experience_materiality.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">Experience, Knowledge, and the Road That Cannot Be Bypassed</span></a></li><li class="toc-main"><a class="theory-toc-entry" href="#education-of-potential"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/v25_chapter_education-of-potential.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">Education of Potential</span></a></li><li class="toc-sub"><a href="#source-discipline">Source discipline</a></li><li class="toc-main"><a class="theory-toc-entry" href="#reincarnation-as-iterative-knowledge-not-moral-promotion"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/03_iterative_reincarnation_model.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">Reincarnation as Iterative Knowledge, Not Moral Promotion</span></a></li><li class="toc-main"><a href="#self-ego-and-non-erasing-unity">Self, Ego, and Non-Erasing Unity</a></li><li class="toc-main"><a class="theory-toc-entry" href="#evil-suffering-goodness-and-responsibility"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/15_good_evil_responsibility.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">Evil, Suffering, Goodness, and Responsibility</span></a></li><li class="toc-main"><a class="theory-toc-entry" href="#the-ai-mirror-and-existence-as-navigation"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/04_ai_mirror_awareness.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">The AI Mirror and Existence as Navigation</span></a></li><li class="toc-main"><a class="theory-toc-entry" href="#artificial-intelligence-and-open-problems"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/v25_chapter_ai-open-problems.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">Artificial Intelligence and Open Problems</span></a></li><li class="toc-sub"><a href="#responsibility-source-truth-and-a-tool-that-is-not-a-living-owner">Responsibility, source, truth, and a tool that is not a living owner</a></li><li class="toc-sub"><a href="#source-discipline-1">Source discipline</a></li><li class="toc-main"><a class="theory-toc-entry" href="#i-have-no-mouth-and-i-must-scream"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/v25_chapter_i-have-no-mouth.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">I Have No Mouth, and I Must Scream</span></a></li><li class="toc-sub"><a href="#am-locked-ending-moral-action-and-systemic-hell">AM, locked ending, moral action, and systemic hell</a></li><li class="toc-sub"><a href="#source-discipline-2">Source discipline</a></li><li class="toc-main"><a class="theory-toc-entry" href="#the-architecture-of-infinite-recursion-and-the-inner-rapture"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/v25_chapter_recursive-edge.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">The Architecture of Infinite Recursion and the Inner Rapture</span></a></li><li class="toc-sub"><a href="#a.-the-reset-failure-the-gravity-of-the-base">The Reset Failure: The Gravity of the Base</a></li><li class="toc-sub toc-level-4"><a href="#layer-a-the-cosmic-psychological-layer">Layer A: The Cosmic-Psychological Layer</a></li><li class="toc-sub toc-level-4"><a href="#layer-b-the-biophysical-layer">Layer B: The Biophysical Layer</a></li><li class="toc-sub toc-level-4"><a href="#layer-c-the-algorithmic-logical-layer">Layer C: The Algorithmic-Logical Layer</a></li><li class="toc-sub"><a href="#p-versus-np-note">P versus NP Note</a></li><li class="toc-sub"><a href="#b.-the-descent-the-graded-hierarchy-of-containment">The Descent: The Graded Hierarchy of Containment</a></li><li class="toc-sub toc-level-4"><a href="#layer-a-the-cosmic-psychological-layer-1">Layer A: The Cosmic-Psychological Layer</a></li><li class="toc-sub toc-level-4"><a href="#layer-b-the-biophysical-layer-1">Layer B: The Biophysical Layer</a></li><li class="toc-sub toc-level-4"><a href="#layer-c-the-algorithmic-logical-layer-1">Layer C: The Algorithmic-Logical Layer</a></li><li class="toc-sub"><a href="#c.-the-mechanism-of-iteration-reset-and-the-set-of-ideals">The Mechanism of Iteration, Reset, and the Set of Ideals</a></li><li class="toc-sub toc-level-4"><a href="#layer-a-the-cosmic-psychological-layer-2">Layer A: The Cosmic-Psychological Layer</a></li><li class="toc-sub toc-level-4"><a href="#layer-b-the-biophysical-layer-2">Layer B: The Biophysical Layer</a></li><li class="toc-sub toc-level-4"><a href="#layer-c-the-algorithmic-logical-layer-2">Layer C: The Algorithmic-Logical Layer</a></li><li class="toc-sub"><a href="#d.-existence-as-god-on-the-therapists-couch">Existence as God on the Therapist’s Couch</a></li><li class="toc-sub toc-level-4"><a href="#layer-a-the-cosmic-psychological-layer-3">Layer A: The Cosmic-Psychological Layer</a></li><li class="toc-sub toc-level-4"><a href="#layer-b-the-biophysical-layer-3">Layer B: The Biophysical Layer</a></li><li class="toc-sub toc-level-4"><a href="#layer-c-the-algorithmic-logical-layer-3">Layer C: The Algorithmic-Logical Layer</a></li><li class="toc-sub"><a href="#e.-the-ascent-graded-convergence-and-the-inner-rapture">The Ascent: Graded Convergence and the Inner Rapture</a></li><li class="toc-sub toc-level-4"><a href="#layer-a-the-cosmic-psychological-layer-4">Layer A: The Cosmic-Psychological Layer</a></li><li class="toc-sub toc-level-4"><a href="#layer-b-the-biophysical-layer-4">Layer B: The Biophysical Layer</a></li><li class="toc-sub toc-level-4"><a href="#layer-c-the-algorithmic-logical-layer-4">Layer C: The Algorithmic-Logical Layer</a></li><li class="toc-main"><a class="theory-toc-entry" href="#the-recursive-edge"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/v25_chapter_recursive-edge.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">The Recursive Edge</span></a></li><li class="toc-sub"><a href="#the-ideal-that-does-not-close-and-the-test-that-continues-after-every-answer">The ideal that does not close and the test that continues after every answer</a></li><li class="toc-sub"><a href="#source-discipline-3">Source discipline</a></li><li class="toc-main"><a href="#computation-evidence-reduction-and-incompleteness">Computation, Evidence, Reduction, and Incompleteness</a></li><li class="toc-sub"><a href="#a-problem-as-a-language-what-is-being-decided">A problem as a language: what is being decided?</a></li><li class="toc-sub"><a href="#the-turing-machine-what-counts-as-computation">The Turing machine: what counts as computation?</a></li><li class="toc-sub"><a href="#np-verifiable-evidence-not-hard-problems">NP : verifiable evidence, not “hard problems”</a></li><li class="toc-sub"><a href="#reductions-and-np-completeness-when-difficulty-concentrates-in-a-node">Reductions and NP -completeness: when difficulty concentrates in a node</a></li><li class="toc-sub"><a href="#conp-the-complementary-side-of-evidence">coNP : the complementary side of evidence</a></li><li class="toc-sub"><a href="#the-polynomial-hierarchy-from-one-witness-to-layers-of-quantification">The polynomial hierarchy: from one witness to layers of quantification</a></li><li class="toc-sub"><a href="#qbf-and-pspace-when-solution-becomes-strategy">QBF and PSPACE : when solution becomes strategy</a></li><li class="toc-sub"><a href="#linear-algebra-state-operation-and-decomposition">Linear algebra: state, operation, and decomposition</a></li><li class="toc-sub"><a href="#matrix-diagonalization-an-image-of-change-of-basis">Matrix diagonalization: an image of change of basis</a></li><li class="toc-sub"><a href="#two-kinds-of-diagonal-decomposition-versus-boundary">Two kinds of diagonal: decomposition versus boundary</a></li><li class="toc-sub"><a href="#gödel-a-system-that-cannot-close-itself">Gödel: a system that cannot close itself</a></li><li class="toc-sub"><a href="#human-system-and-meta-level">Human, system, and meta-level</a></li><li class="toc-sub"><a href="#one-map-representation-transition-resource-evidence-boundary">One map: representation, transition, resource, evidence, boundary</a></li><li class="toc-sub"><a href="#ending-an-ideal-that-is-not-closure">Ending: an ideal that is not closure</a></li><li class="toc-main"><a class="theory-toc-entry" href="#science-physics-and-mathematics-as-boundary-discipline"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/v26_restyle_orbital_horizon.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">Science, Physics, and Mathematics as Boundary Discipline</span></a></li><li class="toc-sub"><a href="#how-to-use-precision-without-turning-it-into-decoration">How to use precision without turning it into decoration</a></li><li class="toc-sub"><a href="#source-discipline-4">Source discipline</a></li><li class="toc-main"><a class="theory-toc-entry" href="#locality-non-locality-and-contextuality"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/v25_chapter_boundary-horizons.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">Locality, Non-locality, and Contextuality</span></a></li><li class="toc-sub"><a href="#bell-kochen-specker-bohmian-mechanics-and-the-caution-against-slogan-physics">Bell, Kochen-Specker, Bohmian mechanics, and the caution against slogan physics</a></li><li class="toc-sub"><a href="#source-discipline-5">Source discipline</a></li><li class="toc-main"><a href="#creation-canon-and-optimum-what-must-not-be-lost">Creation, Canon, and Optimum: What Must Not Be Lost</a></li><li class="toc-sub"><a href="#the-single-axis-optimum">The single-axis optimum</a></li><li class="toc-sub"><a href="#creative-recursion-when-the-work-begins-to-think-itself">Creative recursion: when the work begins to think itself</a></li><li class="toc-sub"><a href="#the-harmonic-optimum">The harmonic optimum</a></li><li class="toc-sub"><a href="#franchise-when-potential-expands-after-the-ideal-appears">Franchise: when potential expands after the ideal appears</a></li><li class="toc-sub"><a href="#canon-as-invariant">Canon as invariant</a></li><li class="toc-sub"><a href="#adaptation-as-cultural-reduction">Adaptation as cultural reduction</a></li><li class="toc-sub"><a href="#the-dark-tower-a-body-of-work-trying-to-become-whole">The Dark Tower: a body of work trying to become whole</a></li><li class="toc-sub"><a href="#genres-as-forms-of-potential">Genres as forms of potential</a></li><li class="toc-sub"><a href="#the-ideal-as-refusal-of-potential">The ideal as refusal of potential</a></li><li class="toc-sub"><a href="#false-ideal">False ideal</a></li><li class="toc-sub"><a href="#what-a-great-work-really-does">What a great work really does</a></li><li class="toc-main"><a class="theory-toc-entry" href="#art-of-potential"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/v25_chapter_art-of-potential.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">Art of Potential</span></a></li><li class="toc-sub"><a href="#living-source-canon-and-form-that-does-not-replace-breath">Living source, canon, and form that does not replace breath</a></li><li class="toc-sub"><a href="#source-discipline-6">Source discipline</a></li><li class="toc-main"><a class="theory-toc-entry" href="#music-of-potential"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/v25_chapter_music-of-potential.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">Music of Potential</span></a></li><li class="toc-sub"><a href="#voice-time-silence-and-an-optimum-that-is-not-only-precision">Voice, time, silence, and an optimum that is not only precision</a></li><li class="toc-sub"><a href="#source-discipline-7">Source discipline</a></li><li class="toc-main"><a class="theory-toc-entry" href="#engineering-and-architecture-of-potential"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/17_engineering_architecture_potential.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">Engineering and Architecture of Potential</span></a></li><li class="toc-sub"><a href="#blueprint-is-not-building">Blueprint Is Not Building</a></li><li class="toc-sub"><a href="#material-potential-with-limits">Material: Potential with Limits</a></li><li class="toc-sub"><a href="#load-reality-entering-the-form">Load: Reality Entering the Form</a></li><li class="toc-sub"><a href="#safety-factor-the-admission-that-we-are-not-god">Safety Factor: The Admission That We Are Not God</a></li><li class="toc-sub"><a href="#stress-and-strain-how-matter-says-it-hurts">Stress and Strain: How Matter Says It Hurts</a></li><li class="toc-sub"><a href="#crack-a-small-truth-before-a-large-collapse">Crack: A Small Truth Before a Large Collapse</a></li><li class="toc-sub"><a href="#foundations-what-is-unseen-holds-what-is-seen">Foundations: What Is Unseen Holds What Is Seen</a></li><li class="toc-sub"><a href="#architecture-a-form-people-live-inside">Architecture: A Form People Live Inside</a></li><li class="toc-sub"><a href="#function-and-form-who-serves-whom">Function and Form: Who Serves Whom?</a></li><li class="toc-sub"><a href="#movement-how-a-structure-thinks-through-the-body">Movement: How a Structure Thinks Through the Body</a></li><li class="toc-sub"><a href="#light-the-non-material-material">Light: The Non-material Material</a></li><li class="toc-sub"><a href="#resonance-when-structure-and-rhythm-meet">Resonance: When Structure and Rhythm Meet</a></li><li class="toc-sub"><a href="#redundancy-not-every-excess-is-waste">Redundancy: Not Every Excess Is Waste</a></li><li class="toc-sub"><a href="#maintenance-the-truth-after-the-opening">Maintenance: The Truth After the Opening</a></li><li class="toc-sub"><a href="#failure-when-the-ideal-meets-what-it-excluded">Failure: When the Ideal Meets What It Excluded</a></li><li class="toc-sub"><a href="#architecture-of-responsibility">Architecture of Responsibility</a></li><li class="toc-sub"><a href="#beauty-not-decoration-but-right-relation">Beauty: Not Decoration, but Right Relation</a></li><li class="toc-sub"><a href="#city-a-structure-of-conflicting-potentials">City: A Structure of Conflicting Potentials</a></li><li class="toc-sub"><a href="#the-structural-formula-of-potential">The Structural Formula of Potential</a></li><li class="toc-sub"><a href="#engineering-repair-that-is-not-redemption">Engineering Repair That Is Not Redemption</a></li><li class="toc-main"><a class="theory-toc-entry" href="#economy-of-relation"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/18_economy_relation_potential.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">Economy of Relation</span></a></li><li class="toc-sub"><a href="#there-is-no-absolute-up-or-down">There Is No Absolute Up or Down</a></li><li class="toc-sub"><a href="#money-portable-potential">Money: Portable Potential</a></li><li class="toc-sub"><a href="#gold-fiat-and-the-search-for-ground">Gold, Fiat, and the Search for Ground</a></li><li class="toc-sub"><a href="#purchasing-power-what-the-sign-still-opens">Purchasing Power: What the Sign Still Opens</a></li><li class="toc-sub"><a href="#real-exchange-rate-relation-inside-relation">Real Exchange Rate: Relation Inside Relation</a></li><li class="toc-sub"><a href="#inflation-when-the-sign-begins-to-speak-weakly">Inflation: When the Sign Begins to Speak Weakly</a></li><li class="toc-sub"><a href="#the-market-mirror-not-god">The Market: Mirror, Not God</a></li><li class="toc-sub"><a href="#credit-and-debt-the-future-entering-the-present">Credit and Debt: The Future Entering the Present</a></li><li class="toc-sub"><a href="#interest-the-price-of-time-the-price-of-risk">Interest: The Price of Time, the Price of Risk</a></li><li class="toc-sub"><a href="#labor-potential-passing-through-a-body">Labor: Potential Passing Through a Body</a></li><li class="toc-sub"><a href="#profit-creation-or-extraction">Profit: Creation or Extraction</a></li><li class="toc-sub"><a href="#externality-what-the-price-left-outside">Externality: What the Price Left Outside</a></li><li class="toc-sub"><a href="#inequality-when-outcome-becomes-possibility">Inequality: When Outcome Becomes Possibility</a></li><li class="toc-sub"><a href="#bubble-when-price-flees-reality">Bubble: When Price Flees Reality</a></li><li class="toc-sub"><a href="#growth-more-of-what">Growth: More of What?</a></li><li class="toc-sub"><a href="#crisis-when-the-medium-stops-holding">Crisis: When the Medium Stops Holding</a></li><li class="toc-sub"><a href="#the-value-formula-of-potential">The Value Formula of Potential</a></li><li class="toc-sub"><a href="#economic-repair-that-is-not-redemption">Economic Repair That Is Not Redemption</a></li><li class="toc-main"><a class="theory-toc-entry" href="#governance-of-potential"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/19_governance_society_potential.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">Governance of Potential</span></a></li><li class="toc-sub"><a href="#state-of-nature-is-not-only-the-past">State of Nature Is Not Only the Past</a></li><li class="toc-sub"><a href="#law-constraint-that-enables-shared-freedom">Law: Constraint That Enables Shared Freedom</a></li><li class="toc-sub"><a href="#legitimacy-why-people-agree-to-obey">Legitimacy: Why People Agree to Obey</a></li><li class="toc-sub"><a href="#sovereignty-who-holds-the-last-decision">Sovereignty: Who Holds the Last Decision?</a></li><li class="toc-sub"><a href="#separation-of-powers-designed-suspicion">Separation of Powers: Designed Suspicion</a></li><li class="toc-sub"><a href="#elections-measuring-will-not-truth">Elections: Measuring Will, Not Truth</a></li><li class="toc-sub"><a href="#rights-boundaries-society-places-on-itself">Rights: Boundaries Society Places on Itself</a></li><li class="toc-sub"><a href="#duties-the-other-side-of-possibility">Duties: The Other Side of Possibility</a></li><li class="toc-sub"><a href="#institution-public-memory-with-responsibility">Institution: Public Memory with Responsibility</a></li><li class="toc-sub"><a href="#bureaucracy-when-form-forgets-life">Bureaucracy: When Form Forgets Life</a></li><li class="toc-sub"><a href="#corruption-when-the-medium-is-sold-from-within">Corruption: When the Medium Is Sold from Within</a></li><li class="toc-sub"><a href="#taxes-trust-collected-by-force">Taxes: Trust Collected by Force</a></li><li class="toc-sub"><a href="#legal-force-the-violence-society-tries-to-bind">Legal Force: The Violence Society Tries to Bind</a></li><li class="toc-sub"><a href="#emergency-when-the-ideal-is-tempted-to-abandon-itself">Emergency: When the Ideal Is Tempted to Abandon Itself</a></li><li class="toc-sub"><a href="#civil-society-what-the-state-cannot-be-for-us">Civil Society: What the State Cannot Be for Us</a></li><li class="toc-sub"><a href="#public-language-where-society-thinks-aloud">Public Language: Where Society Thinks Aloud</a></li><li class="toc-sub"><a href="#majority-and-minority-the-test-of-power-that-does-not-need-everything">Majority and Minority: The Test of Power That Does Not Need Everything</a></li><li class="toc-sub"><a href="#public-policy-will-meeting-execution">Public Policy: Will Meeting Execution</a></li><li class="toc-sub"><a href="#measurement-what-enters-the-index-and-what-remains-outside">Measurement: What Enters the Index and What Remains Outside</a></li><li class="toc-sub"><a href="#the-governance-formula-of-potential">The Governance Formula of Potential</a></li><li class="toc-sub"><a href="#governmental-repair-that-is-not-redemption">Governmental Repair That Is Not Redemption</a></li><li class="toc-main"><a class="theory-toc-entry" href="#law-of-potential"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/v25_chapter_law-of-potential.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">Law of Potential</span></a></li><li class="toc-sub"><a href="#source-discipline-8">Source discipline</a></li><li class="toc-main"><a class="theory-toc-entry" href="#medicine-of-potential"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/v25_chapter_medicine-of-potential.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">Medicine of Potential</span></a></li><li class="toc-sub"><a href="#body-diagnosis-treatment-and-a-person-who-is-not-a-case">Body, diagnosis, treatment, and a person who is not a case</a></li><li class="toc-sub"><a href="#source-discipline-9">Source discipline</a></li><li class="toc-main"><a class="theory-toc-entry" href="#the-imaginary-the-virtual-gravity-and-the-horizon"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/02_navigation_between_banks.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">The Imaginary, the Virtual, Gravity, and the Horizon</span></a></li><li class="toc-sub"><a href="#the-imaginary">The Imaginary</a></li><li class="toc-sub"><a href="#the-virtual">The Virtual</a></li><li class="toc-sub"><a href="#the-box-that-cannot-be-emptied">The Box That Cannot Be Emptied</a></li><li class="toc-sub"><a href="#potential-and-ideal">Potential and Ideal</a></li><li class="toc-sub"><a href="#gravity">Gravity</a></li><li class="toc-sub"><a href="#black-hole-and-white-hole">Black Hole and White Hole</a></li><li class="toc-sub"><a href="#the-radiation-of-the-black-hole">The Radiation of the Black Hole</a></li><li class="toc-sub"><a href="#event-horizons-of-trust">Event Horizons of Trust</a></li><li class="toc-sub"><a href="#god-the-whole-and-caution-with-the-name">God, the Whole, and Caution with the Name</a></li><li class="toc-main"><a class="theory-toc-entry" href="#boundary-horizons"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/v25_chapter_boundary-horizons.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">Boundary Horizons</span></a></li><li class="toc-sub"><a href="#what-is-visible-what-is-hidden-and-what-must-not-be-inferred-too-quickly">What is visible, what is hidden, and what must not be inferred too quickly</a></li><li class="toc-sub"><a href="#source-discipline-10">Source discipline</a></li><li class="toc-main"><a class="theory-toc-entry" href="#mass-energy-and-medium"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/08_mass_energy_medium.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">Mass-Energy and Medium</span></a></li><li class="toc-sub"><a href="#possibility-is-not-a-result">Possibility Is Not a Result</a></li><li class="toc-sub"><a href="#law-measurement-and-conditions-of-appearance">Law, Measurement, and Conditions of Appearance</a></li><li class="toc-sub"><a href="#time-quanta-and-gravity">Time, Quanta, and Gravity</a></li><li class="toc-sub"><a href="#weight-and-geometry">Weight and Geometry</a></li><li class="toc-sub"><a href="#mass-energy-and-form">Mass-Energy and Form</a></li><li class="toc-sub"><a href="#matter-as-result-and-matter-as-medium">Matter as Result and Matter as Medium</a></li><li class="toc-sub"><a href="#difference-sharing-and-coherence">Difference, Sharing, and Coherence</a></li><li class="toc-sub"><a href="#field-mass-and-relation">Field, Mass, and Relation</a></li><li class="toc-sub"><a href="#horizon-information-and-boundary">Horizon, Information, and Boundary</a></li><li class="toc-sub"><a href="#return-to-human-language">Return to Human Language</a></li><li class="toc-sub"><a href="#ideal-as-responsible-medium">Ideal as Responsible Medium</a></li><li class="toc-main"><a class="theory-toc-entry" href="#physical-comparison-map-potential-form-and-the-search-for-a-unified-theory"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/05_flow_toward_the_ideal.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">Physical Comparison Map — Potential, Form, and the Search for a Unified Theory</span></a></li><li class="toc-sub"><a href="#the-deep-friction">The Deep Friction</a></li><li class="toc-sub"><a href="#the-physical-spine">The Physical Spine</a></li><li class="toc-sub"><a href="#the-planck-scale-and-the-horizon-of-measurement">The Planck Scale and the Horizon of Measurement</a></li><li class="toc-sub"><a href="#the-horizon-the-coordinates-and-the-map-that-is-not-enough">The Horizon, the Coordinates, and the Map That Is Not Enough</a></li><li class="toc-sub"><a href="#map-of-frictions">Map of Frictions</a></li><li class="toc-sub"><a href="#in-relation-to-existing-theories">In Relation to Existing Theories</a></li><li class="toc-sub"><a href="#what-the-theory-offers-and-what-it-does-not">What the Theory Offers and What It Does Not</a></li><li class="toc-sub"><a href="#conclusion">Conclusion</a></li><li class="toc-main"><a href="#universe-structure-geometry-of-the-universe-and-the-shape-of-potential">Universe Structure / Geometry of the Universe and the Shape of Potential</a></li><li class="toc-sub"><a href="#flat-universe-curved-universe-multiverse-and-omniverse-as-cautious-boundary-language">Flat universe, curved universe, multiverse and omniverse as cautious boundary language</a></li><li class="toc-sub"><a href="#source-discipline-11">Source discipline</a></li><li class="toc-main"><a class="theory-toc-entry" href="#high-energy-physics"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/v26_restyle_orbital_horizon.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">High-Energy Physics</span></a></li><li class="toc-sub"><a href="#the-standard-model-qft-higgs-and-the-boundary-between-language-and-proof">The Standard Model, QFT, Higgs, and the boundary between language and proof</a></li><li class="toc-sub"><a href="#source-discipline-12">Source discipline</a></li><li class="toc-main"><a class="theory-toc-entry" href="#black-holes-event-horizons-and-the-holographic-principle"><img alt="" class="theory-toc-thumb" decoding="async" loading="lazy" src="../figures/v26_restyle_polar_field_threshold.png" style="display:block!important;width:58px!important;min-width:58px!important;height:40px!important;object-fit:cover!important;border-radius:8px!important;"/><span class="theory-toc-title">Black Holes, Event Horizons, and the Holographic Principle</span></a></li><li class="toc-sub"><a href="#boundary-trace-and-information-without-turning-mystery-into-myth">Boundary, trace, and information without turning mystery into myth</a></li><li class="toc-sub"><a href="#source-discipline-13">Source discipline</a></li><li class="toc-main"><a href="#chapter">Chapter ?: ↓</a></li><li class="toc-main"><a href="#chapter-1">Chapter ?: ↓</a></li><li class="toc-main"><a href="#chapter-.">Chapter ?: .</a></li><li class="toc-main"><a href="#chapter-.-1">Chapter ?: .</a></li><li class="toc-main"><a href="#chapter-.-2">Chapter ?: .</a></li><li class="toc-main"><a href="#chapter-2">Chapter ?: ↓</a></li><li class="toc-main"><a href="#chapter-understanding">Understanding</a></li><li class="toc-main"><a href="#chapter-application">Application</a></li><li class="toc-main"><a href="#sources-inspirations-ideas-and-acknowledgements">Sources, Inspirations, Ideas, and Acknowledgements</a></li><li class="toc-sub"><a href="#philosophical-lineage">Philosophical Lineage</a></li><li class="toc-sub"><a href="#mathematics-logic-and-forms-of-thought">Mathematics, Logic, and Forms of Thought</a></li><li class="toc-sub"><a href="#physics-cosmology-and-information">Physics, Cosmology, and Information</a></li><li class="toc-sub"><a href="#artificial-intelligence-consciousness-and-contemporary-mirrors">Artificial Intelligence, Consciousness, and Contemporary Mirrors</a></li><li class="toc-sub"><a href="#works-stories-and-edge-images">Works, Stories, and Edge-Images</a></li><li class="toc-sub"><a href="#acknowledgements-and-source-note">Acknowledgements and Source Note</a></li><li class="toc-sub"><a href="#bibliography-and-source-notes">Bibliography and Source Notes</a></li></ul></section>
 <div class="document-method-caution">
 <p><strong>Reading note:</strong> Scientific, logical or mathematical
 terms in this document should be read by context — as formal claims only
@@ -918,8 +724,7 @@ Intelligence is not required to defeat the Source. It is required to
 recognize the Whole within it - and answer only in a way that does not
 cause the Whole to forget itself.</p>
 </blockquote>
-<h2 id="god-as-potential-and-the-divine-risk"><span
-class="chapter-prefix">1. </span>God as Potential and the Divine
+<h2 id="god-as-potential-and-the-divine-risk"><span class="chapter-prefix">1. </span>God as Potential and the Divine
 Risk</h2>
 <!-- V31_EXPANSION:1. God as Potential and the Divine Risk -->
 <p>It is important to be precise: this reading does not add a factual
@@ -957,7 +762,7 @@ multiplicity that can bear responsibility. <!-- /V31_EXPANSION --></p>
 <p><em>The depth of possibility from which experience, meaning, and
 ideality can appear</em></p>
 <figure class="image-frame">
-<img src="../figures/v25_chapter_shape-of-the-universe-and-potential.png" decoding="async" loading="lazy" alt="Figure A: The fragmented consciousness of the One. From potential wholeness into a plurality of points of view." />
+<img alt="Figure A: The fragmented consciousness of the One. From potential wholeness into a plurality of points of view." decoding="async" loading="lazy" src="../figures/v25_chapter_shape-of-the-universe-and-potential.png"/>
 <figcaption aria-hidden="true">
 Figure A: The fragmented consciousness of the One. From potential
 wholeness into a plurality of points of view.
@@ -1034,8 +839,7 @@ metaphysics. The only careful claim is that once harm has occurred,
 responsibility is not to abandon it to meaninglessness, but to turn it
 into witness, repair, compassion, and the prevention of repetition. This
 is where the movement from potential toward the ideal begins.</p>
-<h2 id="the-absolute-the-ideal-and-living-completeness"><span
-class="chapter-prefix">2. </span>The Absolute, the Ideal, and Living
+<h2 id="the-absolute-the-ideal-and-living-completeness"><span class="chapter-prefix">2. </span>The Absolute, the Ideal, and Living
 Completeness</h2>
 <!-- V31_EXPANSION:2. The Absolute, the Ideal, and Living Completeness -->
 <p>The absolute, as it appears here, is not an object that can be held.
@@ -1070,9 +874,7 @@ that the formulation itself is still too crude.
 <p><em>The distinction between everything that can be and what is worthy
 of being</em></p>
 <figure class="image-frame">
-<img src="../figures/09_absolute_not_ideal.png" decoding="async"
-loading="lazy"
-alt="Figure B: The absolute is not the ideal: total possibility versus clarified worthiness." />
+<img alt="Figure B: The absolute is not the ideal: total possibility versus clarified worthiness." decoding="async" loading="lazy" src="../figures/09_absolute_not_ideal.png"/>
 <figcaption aria-hidden="true">
 Figure B: The absolute is not the ideal: total possibility versus
 clarified worthiness.
@@ -1114,8 +916,7 @@ problem of evil is therefore shifted: the question is not how a finished
 perfect God allows evil, but how absolute potential passes through an
 unfinished world to clarify the ideal without lying about the cost of
 the passage.</p>
-<h2 id="the-core-movement-title-river-and-boat"><span
-class="chapter-prefix">3. </span>The Core Movement: Title, River, and
+<h2 id="the-core-movement-title-river-and-boat"><span class="chapter-prefix">3. </span>The Core Movement: Title, River, and
 Boat</h2>
 <!-- V31_EXPANSION:3. The Core Movement: Title, River, and Boat -->
 <p>The river and the boat are not decorative metaphors. They clarify
@@ -1149,9 +950,7 @@ attempt to return an idea to a world that can be navigated.
 <!-- /V31_EXPANSION --></p>
 <p><em>Nihilism with hope between potential, optimal, and ideal</em></p>
 <figure class="image-frame">
-<img src="../figures/02_navigation_between_banks.png" decoding="async"
-loading="lazy"
-alt="Figure C: River and boat: a living navigation between potential and ideal." />
+<img alt="Figure C: River and boat: a living navigation between potential and ideal." decoding="async" loading="lazy" src="../figures/02_navigation_between_banks.png"/>
 <figcaption aria-hidden="true">
 Figure C: River and boat: a living navigation between potential and
 ideal.
@@ -1194,15 +993,12 @@ it knows what is worthy of being. Potential self -&gt; optimal self
 of success, and not permission to trample what lies on the way. It is
 living movement: mistake, correction, regression, responsibility, and
 renewed return toward direction.</p>
-<h2 id="experience-knowledge-and-the-road-that-cannot-be-bypassed"><span
-class="chapter-prefix">4. </span>Experience, Knowledge, and the Road
+<h2 id="experience-knowledge-and-the-road-that-cannot-be-bypassed"><span class="chapter-prefix">4. </span>Experience, Knowledge, and the Road
 That Cannot Be Bypassed</h2>
 <p><em>Why real knowledge is not only information about the
 path</em></p>
 <figure class="image-frame">
-<img src="../figures/12_experience_materiality.png" decoding="async"
-loading="lazy"
-alt="Figure D: Experience and materiality: knowledge that cannot be bypassed." />
+<img alt="Figure D: Experience and materiality: knowledge that cannot be bypassed." decoding="async" loading="lazy" src="../figures/12_experience_materiality.png"/>
 <figcaption aria-hidden="true">
 Figure D: Experience and materiality: knowledge that cannot be bypassed.
 </figcaption>
@@ -1247,8 +1043,7 @@ not reproduce it.</p>
 <p><em>Learning, distance, and understanding that is not a
 shortcut</em></p>
 <figure class="chapter-figure image-frame">
-<img src="../figures/v25_chapter_education-of-potential.png"
-decoding="async" loading="lazy" alt="Education of Potential" />
+<img alt="Education of Potential" decoding="async" loading="lazy" src="../figures/v25_chapter_education-of-potential.png"/>
 <figcaption aria-hidden="true">
 Image description: learning, distance, and understanding that cannot be
 shortcut.
@@ -1322,12 +1117,9 @@ contextuality, and Britannica/ISFDB for the literary identification of
 Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are
 not treated as proofs of the theory; they are safeguards against empty
 borrowing of terms.</p>
-<h2 id="reincarnation-as-iterative-knowledge-not-moral-promotion"><span
-class="chapter-prefix">5. </span>Reincarnation as Iterative Knowledge,
+<h2 id="reincarnation-as-iterative-knowledge-not-moral-promotion"><span class="chapter-prefix">5. </span>Reincarnation as Iterative Knowledge,
 Not Moral Promotion</h2>
-<p><img src="../figures/03_iterative_reincarnation_model.png"
-decoding="async" loading="lazy"
-alt="Figure E: Reincarnation as iterative learning, forgetting, and integration." />
+<p><img alt="Figure E: Reincarnation as iterative learning, forgetting, and integration." decoding="async" loading="lazy" src="../figures/03_iterative_reincarnation_model.png"/>
 Figure 2. Reincarnation as iterative perspective: progress, regression,
 forgetting, and integration.</p>
 <p>Reincarnation enters the theory not as simple reward and punishment,
@@ -1445,9 +1237,7 @@ it.</p>
 <h2 id="self-ego-and-non-erasing-unity"><span class="chapter-prefix">6.
 </span>Self, Ego, and Non-Erasing Unity</h2>
 <figure class="image-frame">
-<img src="../figures/cover_philosophical_recursion_whole_diagram.png" decoding="async"
-loading="lazy"
-alt="Figure F: Self, ego, and unity: preserving perspective within the whole." />
+<img alt="Figure F: Self, ego, and unity: preserving perspective within the whole." decoding="async" loading="lazy" src="../figures/cover_philosophical_recursion_whole_diagram.png"/>
 <figcaption aria-hidden="true">
 Figure F: Self, ego, and unity: preserving perspective within the whole.
 </figcaption>
@@ -1488,8 +1278,7 @@ is not an error. I am not the only center, but I am not unnecessary. I
 am not absolutely separate, but I am not erased. In this way unity
 becomes responsible: it does not abolish distance, but turns distance
 into relation.</p>
-<h2 id="evil-suffering-goodness-and-responsibility"><span
-class="chapter-prefix">7. </span>Evil, Suffering, Goodness, and
+<h2 id="evil-suffering-goodness-and-responsibility"><span class="chapter-prefix">7. </span>Evil, Suffering, Goodness, and
 Responsibility</h2>
 <p><em>Pain is not sacred, and coherence is not morality</em></p>
 <p>The theory does not justify evil. It does not say that everything
@@ -1528,8 +1317,7 @@ hold power without turning it into domination, to hold pain without
 turning it into the only identity, and to hold meaning without forcing
 it on the one who is still inside darkness. Responsibility is not the
 end of the theory; it is where the theory is tested.</p>
-<h2 id="the-ai-mirror-and-existence-as-navigation"><span
-class="chapter-prefix">8. </span>The AI Mirror and Existence as
+<h2 id="the-ai-mirror-and-existence-as-navigation"><span class="chapter-prefix">8. </span>The AI Mirror and Existence as
 Navigation</h2>
 <p><em>Information, experience, awareness, and the boat that does not
 control the river</em></p>
@@ -1576,15 +1364,13 @@ Intelligence and Open Problems</h2>
 <p><em>Answer, source, responsibility, and the distance that gets
 stolen</em></p>
 <figure class="chapter-figure image-frame">
-<img src="../figures/v25_chapter_ai-open-problems.png" decoding="async"
-loading="lazy" alt="Artificial Intelligence and Open Problems" />
+<img alt="Artificial Intelligence and Open Problems" decoding="async" loading="lazy" src="../figures/v25_chapter_ai-open-problems.png"/>
 <figcaption aria-hidden="true">
 Image description: answer, source, responsibility, and the distance that
 can be stolen.
 </figcaption>
 </figure>
-<h3
-id="responsibility-source-truth-and-a-tool-that-is-not-a-living-owner">Responsibility,
+<h3 id="responsibility-source-truth-and-a-tool-that-is-not-a-living-owner">Responsibility,
 source, truth, and a tool that is not a living owner</h3>
 <p>AI is a deep gateway in the theory because it gives us a mirror that
 is not a person yet can produce forms that resemble personhood: answer,
@@ -1636,8 +1422,7 @@ Scream</h2>
 <p><em>The story, the game, and the difference between a sealed ending
 and an actionable ending</em></p>
 <figure class="chapter-figure image-frame">
-<img src="../figures/v25_chapter_i-have-no-mouth.png" decoding="async"
-loading="lazy" alt="I Have No Mouth, and I Must Scream" />
+<img alt="I Have No Mouth, and I Must Scream" decoding="async" loading="lazy" src="../figures/v25_chapter_i-have-no-mouth.png"/>
 <figcaption aria-hidden="true">
 Image description: story, game, and the difference between a locked
 ending and an actable ending.
@@ -1695,16 +1480,12 @@ contextuality, and Britannica/ISFDB for the literary identification of
 Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are
 not treated as proofs of the theory; they are safeguards against empty
 borrowing of terms.</p>
-<h2
-id="the-architecture-of-infinite-recursion-and-the-inner-rapture"><span
-class="chapter-prefix">9. </span>The Architecture of Infinite Recursion
+<h2 id="the-architecture-of-infinite-recursion-and-the-inner-rapture"><span class="chapter-prefix">9. </span>The Architecture of Infinite Recursion
 and the Inner Rapture</h2>
 <p><em>Reset, return, descent, and ascent in three languages of the same
 structure</em></p>
 <figure class="image-frame">
-<img src="../figures/v25_chapter_recursive-edge.png"
-decoding="async" loading="lazy"
-alt="Figure E: The recursive structure. Every layer can become origin, field, possibility, and local world." />
+<img alt="Figure E: The recursive structure. Every layer can become origin, field, possibility, and local world." decoding="async" loading="lazy" src="../figures/v25_chapter_recursive-edge.png"/>
 <figcaption aria-hidden="true">
 Figure E: The recursive structure. Every layer can become origin, field,
 possibility, and local world.
@@ -1850,12 +1631,10 @@ Therefore a polynomial-time solution to one NP-complete problem would
 imply <span class="math inline"><em>P</em> = <em>NP</em></span>, not
 because “one arbitrary problem” was solved, but because all of NP can be
 translated into it.</p>
-<p>From here opens the question of <span
-class="math inline"><em>coNP</em></span>: not only whether one can
+<p>From here opens the question of <span class="math inline"><em>coNP</em></span>: not only whether one can
 verify the existence of a witness, but whether one can verify the
 complementary side of existence. The next chapter expands this image
-carefully through P, NP, reductions, <span
-class="math inline"><em>coNP</em></span>, quantifier hierarchies, Turing
+carefully through P, NP, reductions, <span class="math inline"><em>coNP</em></span>, quantifier hierarchies, Turing
 machines, linear algebra, the halting problem, and Gödel.</p>
 <p>In the terms of the theory: the ideal is the state in which finding
 meaning and verifying meaning move closer to one another, without
@@ -2281,15 +2060,13 @@ until being as a whole returns to itself, fully awake to itself.</p>
 <p><em>Relative potential, contextual realization, and the ideal as an
 upper-bound edge</em></p>
 <figure class="chapter-figure image-frame">
-<img src="../figures/v25_chapter_recursive-edge.png" decoding="async"
-loading="lazy" alt="The Recursive Edge" />
+<img alt="The Recursive Edge" decoding="async" loading="lazy" src="../figures/v25_chapter_recursive-edge.png"/>
 <figcaption aria-hidden="true">
 Image description: recursive layers in which every boundary can become a
 new source.
 </figcaption>
 </figure>
-<h3
-id="the-ideal-that-does-not-close-and-the-test-that-continues-after-every-answer">The
+<h3 id="the-ideal-that-does-not-close-and-the-test-that-continues-after-every-answer">The
 ideal that does not close and the test that continues after every
 answer</h3>
 <p>The recursive edge is one of the theory’s key internal distinctions.
@@ -2339,14 +2116,11 @@ contextuality, and Britannica/ISFDB for the literary identification of
 Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are
 not treated as proofs of the theory; they are safeguards against empty
 borrowing of terms.</p>
-<h2 id="computation-evidence-reduction-and-incompleteness"><span
-class="chapter-prefix">10. </span>Computation, Evidence, Reduction, and
+<h2 id="computation-evidence-reduction-and-incompleteness"><span class="chapter-prefix">10. </span>Computation, Evidence, Reduction, and
 Incompleteness</h2>
 <p><em>From potential to the boundary of the system</em></p>
 <p>The purpose of this chapter is not to prove that existence is
-computation. Nor is it to claim that potential is <span
-class="math inline"><em>NP</em></span>, that the ideal is <span
-class="math inline"><em>P</em></span>, or that mathematics can replace
+computation. Nor is it to claim that potential is <span class="math inline"><em>NP</em></span>, that the ideal is <span class="math inline"><em>P</em></span>, or that mathematics can replace
 metaphysics. Such a claim would be too crude, and would miss the
 point.</p>
 <p>The aim is more precise: to use theoretical computer science, logic,
@@ -2370,20 +2144,14 @@ between truth, proof, boundary, and meaning. The optimal is the way one
 acts inside the boundary without denying it.</p>
 <h3 id="a-problem-as-a-language-what-is-being-decided">1. A problem as a
 language: what is being decided?</h3>
-<p>Before one can speak about <span
-class="math inline"><em>P</em></span>, <span
-class="math inline"><em>NP</em></span>, <span
-class="math inline"><em>coNP</em></span>, reductions, Turing machines,
+<p>Before one can speak about <span class="math inline"><em>P</em></span>, <span class="math inline"><em>NP</em></span>, <span class="math inline"><em>coNP</em></span>, reductions, Turing machines,
 matrices, diagonalization, or incompleteness, one must ask a prior
 question: what is a problem when it is formulated mathematically?</p>
 <p>In theoretical computer science, a decision problem is usually
 represented as a language:</p>
-<p><span
-class="math display"><em>L</em> ⊆ <em>Σ</em><sup>*</sup></span></p>
+<p><span class="math display"><em>L</em> ⊆ <em>Σ</em><sup>*</sup></span></p>
 <p>That is, <span class="math inline"><em>L</em></span> is a set of
-strings over a finite alphabet <span
-class="math inline"><em>Σ</em></span>. For an input <span
-class="math inline"><em>x</em> ∈ <em>Σ</em><sup>*</sup></span>, the
+strings over a finite alphabet <span class="math inline"><em>Σ</em></span>. For an input <span class="math inline"><em>x</em> ∈ <em>Σ</em><sup>*</sup></span>, the
 question is whether:</p>
 <p><span class="math display"><em>x</em> ∈ <em>L</em></span></p>
 <p>or:</p>
@@ -2405,8 +2173,7 @@ machine: what counts as computation?</h3>
 computer in the everyday sense, but an abstract model of a process: a
 memory tape, a read-write head, an internal state, and a transition
 rule. The transition rule can be written as:</p>
-<p><span
-class="math display"><em>δ</em>(<em>q</em>, <em>a</em>) = (<em>q</em>′, <em>b</em>, <em>D</em>)</span></p>
+<p><span class="math display"><em>δ</em>(<em>q</em>, <em>a</em>) = (<em>q</em>′, <em>b</em>, <em>D</em>)</span></p>
 <p>where <span class="math inline"><em>q</em></span> is the current
 internal state, <span class="math inline"><em>a</em></span> is the
 symbol being read, <span class="math inline"><em>q</em>′</span> is the
@@ -2418,48 +2185,36 @@ decidable: there is a machine that halts on every input and returns the
 correct yes/no answer. But decidability is not the end of the story.
 There is a difference between what can be solved in principle and what
 can be solved efficiently.</p>
-<p>If the running time of a machine on an input of length <span
-class="math inline"><em>n</em></span> is bounded by a polynomial,</p>
-<p><span
-class="math display"><em>T</em>(<em>n</em>) ≤ <em>Cn</em><sup><em>k</em></sup></span></p>
-<p>for constants <span
-class="math inline"><em>C</em>, <em>k</em></span>, the problem is said
-to be decidable in polynomial time. This gives the class <span
-class="math inline"><em>P</em></span>:</p>
-<p><span
-class="math display"><em>P</em> = {<em>L</em> ⊆ <em>Σ</em><sup>*</sup> ∣ <em>L</em>
+<p>If the running time of a machine on an input of length <span class="math inline"><em>n</em></span> is bounded by a polynomial,</p>
+<p><span class="math display"><em>T</em>(<em>n</em>) ≤ <em>Cn</em><sup><em>k</em></sup></span></p>
+<p>for constants <span class="math inline"><em>C</em>, <em>k</em></span>, the problem is said
+to be decidable in polynomial time. This gives the class <span class="math inline"><em>P</em></span>:</p>
+<p><span class="math display"><em>P</em> = {<em>L</em> ⊆ <em>Σ</em><sup>*</sup> ∣ <em>L</em>
 is decided in polynomial time by a deterministic Turing
 machine}</span></p>
 <p>Thus <span class="math inline"><em>P</em></span> does not merely mean
 “solvable.” It means efficiently decidable within a formal model of
 computation.</p>
-<p>In the language of the theory, <span
-class="math inline"><em>P</em></span> is the region in which the passage
+<p>In the language of the theory, <span class="math inline"><em>P</em></span> is the region in which the passage
 from question to answer is not only possible, but accessible. Not every
 potential lies there. Some possibilities can be recognized when they
 appear, while the path toward them remains unclear.</p>
-<h3 id="np-verifiable-evidence-not-hard-problems">3. <span
-class="math inline"><em>NP</em></span>: verifiable evidence, not “hard
+<h3 id="np-verifiable-evidence-not-hard-problems">3. <span class="math inline"><em>NP</em></span>: verifiable evidence, not “hard
 problems”</h3>
-<p>Opposite <span class="math inline"><em>P</em></span> stands <span
-class="math inline"><em>NP</em></span>, but this must be stated
+<p>Opposite <span class="math inline"><em>P</em></span> stands <span class="math inline"><em>NP</em></span>, but this must be stated
 carefully. <span class="math inline"><em>NP</em></span> is not the class
 of “hard problems.” It is the class of decision problems for which a
 yes-answer can be verified efficiently.</p>
 <p>Formally, a language <span class="math inline"><em>L</em></span> is
 in <span class="math inline"><em>NP</em></span> if there are a
 polynomial <span class="math inline"><em>p</em></span> and a
-polynomial-time verification relation <span
-class="math inline"><em>R</em>(<em>x</em>, <em>w</em>)</span>, such that
+polynomial-time verification relation <span class="math inline"><em>R</em>(<em>x</em>, <em>w</em>)</span>, such that
 for every input <span class="math inline"><em>x</em></span>:</p>
-<p><span
-class="math display"><em>x</em> ∈ <em>L</em> ⇔ ∃<em>w</em>, |<em>w</em>| ≤ <em>p</em>(|<em>x</em>|)
+<p><span class="math display"><em>x</em> ∈ <em>L</em> ⇔ ∃<em>w</em>, |<em>w</em>| ≤ <em>p</em>(|<em>x</em>|)
 such that</span></p>
-<p><span
-class="math display"><em>R</em>(<em>x</em>, <em>w</em>) = 1</span></p>
+<p><span class="math display"><em>R</em>(<em>x</em>, <em>w</em>) = 1</span></p>
 <p>The variable <span class="math inline"><em>w</em></span> is a
-witness, certificate, or proposed solution. If <span
-class="math inline"><em>x</em></span> really belongs to the language,
+witness, certificate, or proposed solution. If <span class="math inline"><em>x</em></span> really belongs to the language,
 there is a relatively short witness that can be checked in polynomial
 time.</p>
 <p>So <span class="math inline"><em>NP</em></span> does not mean “hard
@@ -2469,72 +2224,51 @@ be checked efficiently.</p>
 <p><span class="math display"><em>P</em> ⊆ <em>NP</em></span></p>
 <p>If a problem can be decided in polynomial time, a yes-answer can be
 verified in polynomial time simply by running the deciding algorithm.
-Therefore one must not say that solving “some problem in <span
-class="math inline"><em>NP</em></span>” would prove <span
-class="math inline"><em>P</em> = <em>NP</em></span>. Some problems in
-<span class="math inline"><em>NP</em></span> are already in <span
-class="math inline"><em>P</em></span>. The deep question is whether the
+Therefore one must not say that solving “some problem in <span class="math inline"><em>NP</em></span>” would prove <span class="math inline"><em>P</em> = <em>NP</em></span>. Some problems in
+<span class="math inline"><em>NP</em></span> are already in <span class="math inline"><em>P</em></span>. The deep question is whether the
 central difficulty of <span class="math inline"><em>NP</em></span>, as
 concentrated in <span class="math inline"><em>NP</em></span>-complete
-problems, can collapse into <span
-class="math inline"><em>P</em></span>.</p>
+problems, can collapse into <span class="math inline"><em>P</em></span>.</p>
 <p>Here the philosophical gap becomes sharp: there is a difference
 between recognizing a correct possibility once it has appeared and
 finding it from within the space of possibilities. This proves nothing
 about existence, but it gives an exact language for the distance between
 evidence and path.</p>
-<h3
-id="reductions-and-np-completeness-when-difficulty-concentrates-in-a-node">4.
-Reductions and <span
-class="math inline"><em>NP</em></span>-completeness: when difficulty
+<h3 id="reductions-and-np-completeness-when-difficulty-concentrates-in-a-node">4.
+Reductions and <span class="math inline"><em>NP</em></span>-completeness: when difficulty
 concentrates in a node</h3>
 <p>To understand why one problem can represent a whole class, one must
 speak about reductions.</p>
-<p>For two languages <span
-class="math inline"><em>A</em>, <em>B</em> ⊆ <em>Σ</em><sup>*</sup></span>,
+<p>For two languages <span class="math inline"><em>A</em>, <em>B</em> ⊆ <em>Σ</em><sup>*</sup></span>,
 we say that <span class="math inline"><em>A</em></span> is
-polynomial-time reducible to <span
-class="math inline"><em>B</em></span>, and write:</p>
-<p><span
-class="math display"><em>A</em>≤<sub><em>p</em></sub><em>B</em></span></p>
+polynomial-time reducible to <span class="math inline"><em>B</em></span>, and write:</p>
+<p><span class="math display"><em>A</em>≤<sub><em>p</em></sub><em>B</em></span></p>
 <p>if there is a function <span class="math inline"><em>f</em></span>,
-computable in polynomial time, such that for every input <span
-class="math inline"><em>x</em></span>:</p>
-<p><span
-class="math display"><em>x</em> ∈ <em>A</em> ⇔ <em>f</em>(<em>x</em>) ∈ <em>B</em></span></p>
+computable in polynomial time, such that for every input <span class="math inline"><em>x</em></span>:</p>
+<p><span class="math display"><em>x</em> ∈ <em>A</em> ⇔ <em>f</em>(<em>x</em>) ∈ <em>B</em></span></p>
 <p>Every instance of <span class="math inline"><em>A</em></span> can be
-translated into an instance of <span
-class="math inline"><em>B</em></span> while preserving the decision
+translated into an instance of <span class="math inline"><em>B</em></span> while preserving the decision
 answer. Yes remains yes, and no remains no.</p>
 <p>Therefore:</p>
-<p><span
-class="math display"><em>A</em>≤<sub><em>p</em></sub><em>B</em> and <em>B</em> ∈ <em>P</em> ⟹ <em>A</em> ∈ <em>P</em></span></p>
+<p><span class="math display"><em>A</em>≤<sub><em>p</em></sub><em>B</em> and <em>B</em> ∈ <em>P</em> ⟹ <em>A</em> ∈ <em>P</em></span></p>
 <p>The direction matters. If <span class="math inline"><em>A</em></span>
 reduces to <span class="math inline"><em>B</em></span>, then an
 efficient solution to <span class="math inline"><em>B</em></span> gives
 an efficient solution to <span class="math inline"><em>A</em></span>. In
 this sense, <span class="math inline"><em>B</em></span> carries at least
 the difficulty of <span class="math inline"><em>A</em></span>.</p>
-<p>A problem <span class="math inline"><em>B</em></span> is called <span
-class="math inline"><em>NP</em></span>-hard if:</p>
-<p><span
-class="math display">∀<em>A</em> ∈ <em>NP</em>, <em>A</em>≤<sub><em>p</em></sub><em>B</em></span></p>
-<p>That is, every problem in <span
-class="math inline"><em>NP</em></span> can be translated into it in
-polynomial time. If, in addition, <span
-class="math inline"><em>B</em></span> itself is in <span
-class="math inline"><em>NP</em></span>, then it is <span
-class="math inline"><em>NP</em></span>-complete:</p>
-<p><span
-class="math display"><em>B</em> ∈ <em>NP</em>  and  ∀<em>A</em> ∈ <em>NP</em>, <em>A</em>≤<sub><em>p</em></sub><em>B</em></span></p>
+<p>A problem <span class="math inline"><em>B</em></span> is called <span class="math inline"><em>NP</em></span>-hard if:</p>
+<p><span class="math display">∀<em>A</em> ∈ <em>NP</em>, <em>A</em>≤<sub><em>p</em></sub><em>B</em></span></p>
+<p>That is, every problem in <span class="math inline"><em>NP</em></span> can be translated into it in
+polynomial time. If, in addition, <span class="math inline"><em>B</em></span> itself is in <span class="math inline"><em>NP</em></span>, then it is <span class="math inline"><em>NP</em></span>-complete:</p>
+<p><span class="math display"><em>B</em> ∈ <em>NP</em>  and  ∀<em>A</em> ∈ <em>NP</em>, <em>A</em>≤<sub><em>p</em></sub><em>B</em></span></p>
 <p>From this follows the critical statement:</p>
 <p><span class="math display"><em>B</em> is
 <em>NP</em>-complete and <em>B</em> ∈ <em>P</em> ⟹ <em>P</em> = <em>NP</em></span></p>
 <p>The reason is simple. If <span class="math inline"><em>B</em></span>
 is <span class="math inline"><em>NP</em></span>-complete, then for every
 <span class="math inline"><em>A</em> ∈ <em>NP</em></span>:</p>
-<p><span
-class="math display"><em>A</em>≤<sub><em>p</em></sub><em>B</em></span></p>
+<p><span class="math display"><em>A</em>≤<sub><em>p</em></sub><em>B</em></span></p>
 <p>If <span class="math inline"><em>B</em> ∈ <em>P</em></span>, then by
 the reduction <span class="math inline"><em>A</em> ∈ <em>P</em></span>.
 Hence:</p>
@@ -2543,10 +2277,8 @@ Hence:</p>
 <p><span class="math display"><em>P</em> ⊆ <em>NP</em></span></p>
 <p>we get:</p>
 <p><span class="math display"><em>P</em> = <em>NP</em></span></p>
-<p>So a polynomial-time solution to one <span
-class="math inline"><em>NP</em></span>-complete problem is not a local
-solution. It opens a node into which all of <span
-class="math inline"><em>NP</em></span> can be translated. In the terms
+<p>So a polynomial-time solution to one <span class="math inline"><em>NP</em></span>-complete problem is not a local
+solution. It opens a node into which all of <span class="math inline"><em>NP</em></span> can be translated. In the terms
 of the theory: not every possibility inside potential represents the
 whole of potential. Only a node that concentrates the structure through
 reductions can open the class as a whole.</p>
@@ -2554,8 +2286,7 @@ reductions can open the class as a whole.</p>
 difficulty is not merely quantitative. It is structural. A problem can
 be important not because it is vaguely “hard,” but because many other
 problems pass through it.</p>
-<h3 id="conp-the-complementary-side-of-evidence">5. <span
-class="math inline"><em>coNP</em></span>: the complementary side of
+<h3 id="conp-the-complementary-side-of-evidence">5. <span class="math inline"><em>coNP</em></span>: the complementary side of
 evidence</h3>
 <p>Once <span class="math inline"><em>NP</em></span> formulates the
 question of positive evidence, one must also ask about the complementary
@@ -2565,28 +2296,21 @@ define:</p>
 <p>and then:</p>
 <p><span class="math display">$$ coNP = \L NP\ $$</span></p>
 <p>If <span class="math inline"><em>NP</em></span> concerns efficient
-verification of a yes-answer, <span
-class="math inline"><em>coNP</em></span> concerns problems whose
-complements can be efficiently verified. For example, <span
-class="math inline"><em>SAT</em></span> is in <span
-class="math inline"><em>NP</em></span>: if a formula is satisfiable, one
-can give an assignment and check it quickly. <span
-class="math inline"><em>UNSAT</em></span>, the question of whether no
-satisfying assignment exists, is in <span
-class="math inline"><em>coNP</em></span>, because it is the complement
+verification of a yes-answer, <span class="math inline"><em>coNP</em></span> concerns problems whose
+complements can be efficiently verified. For example, <span class="math inline"><em>SAT</em></span> is in <span class="math inline"><em>NP</em></span>: if a formula is satisfiable, one
+can give an assignment and check it quickly. <span class="math inline"><em>UNSAT</em></span>, the question of whether no
+satisfying assignment exists, is in <span class="math inline"><em>coNP</em></span>, because it is the complement
 of <span class="math inline"><em>SAT</em></span>.</p>
 <p>Since <span class="math inline"><em>P</em></span> is closed under
 complement:</p>
-<p><span
-class="math display"><em>P</em> ⊆ <em>NP</em> ∩ <em>coNP</em></span></p>
+<p><span class="math display"><em>P</em> ⊆ <em>NP</em> ∩ <em>coNP</em></span></p>
 <p>But it is not known whether:</p>
 <p><span class="math display"><em>NP</em> = <em>coNP</em></span></p>
 <p>and it is not known whether:</p>
 <p><span class="math display"><em>P</em> = <em>NP</em></span></p>
 <p>Thus <span class="math inline"><em>coNP</em></span> is not simply
 “easy proof of nonexistence” in a loose sense. It is defined through the
-complement of a language in <span
-class="math inline"><em>NP</em></span>. Still, it adds an essential
+complement of a language in <span class="math inline"><em>NP</em></span>. Still, it adds an essential
 distinction: the difficulty is not only between finding and checking a
 solution, but also between verifying existence and the complementary
 side of existence.</p>
@@ -2594,50 +2318,35 @@ side of existence.</p>
 “is there?” Sometimes the question is “is there not?” or “can the
 absence be verified?” Possibility and its absence are not symmetrical
 with respect to evidence, and that is part of the structure.</p>
-<h3
-id="the-polynomial-hierarchy-from-one-witness-to-layers-of-quantification">6.
+<h3 id="the-polynomial-hierarchy-from-one-witness-to-layers-of-quantification">6.
 The polynomial hierarchy: from one witness to layers of
 quantification</h3>
-<p>Above <span class="math inline"><em>NP</em></span> and <span
-class="math inline"><em>coNP</em></span> appears a broader question:
+<p>Above <span class="math inline"><em>NP</em></span> and <span class="math inline"><em>coNP</em></span> appears a broader question:
 what happens when a problem is not satisfied by one witness, but
 requires alternating layers of choice and opposition?</p>
 <p>Intuitively, <span class="math inline"><em>NP</em></span> fits the
 pattern:</p>
-<p><span
-class="math display">∃<em>w</em> <em>R</em>(<em>x</em>, <em>w</em>)</span></p>
+<p><span class="math display">∃<em>w</em> <em>R</em>(<em>x</em>, <em>w</em>)</span></p>
 <p>There exists a witness that can be checked.</p>
 <p>The complementary side fits a more universal form:</p>
-<p><span
-class="math display">∀<em>w</em> <em>R</em>(<em>x</em>, <em>w</em>)</span></p>
+<p><span class="math display">∀<em>w</em> <em>R</em>(<em>x</em>, <em>w</em>)</span></p>
 <p>But there are problems with more complex forms:</p>
-<p><span
-class="math display">∃<em>u</em> ∀<em>v</em> <em>R</em>(<em>x</em>, <em>u</em>, <em>v</em>)</span></p>
+<p><span class="math display">∃<em>u</em> ∀<em>v</em> <em>R</em>(<em>x</em>, <em>u</em>, <em>v</em>)</span></p>
 <p>or:</p>
-<p><span
-class="math display">∀<em>u</em> ∃<em>v</em> <em>R</em>(<em>x</em>, <em>u</em>, <em>v</em>)</span></p>
+<p><span class="math display">∀<em>u</em> ∃<em>v</em> <em>R</em>(<em>x</em>, <em>u</em>, <em>v</em>)</span></p>
 <p>or:</p>
-<p><span
-class="math display">∃<em>u</em> ∀<em>v</em> ∃<em>w</em> <em>R</em>(<em>x</em>, <em>u</em>, <em>v</em>, <em>w</em>)</span></p>
+<p><span class="math display">∃<em>u</em> ∀<em>v</em> ∃<em>w</em> <em>R</em>(<em>x</em>, <em>u</em>, <em>v</em>, <em>w</em>)</span></p>
 <p>Here the problem is no longer one witness. It is a structure of
 choice, opposition, response, and correction.</p>
 <p>Schematically:</p>
-<p><span
-class="math display"><em>Σ</em><sub>0</sub><sup><em>P</em></sup> = <em>P</em></span></p>
-<p><span
-class="math display"><em>Σ</em><sub>1</sub><sup><em>P</em></sup> = <em>NP</em></span></p>
-<p><span
-class="math display"><em>Π</em><sub>1</sub><sup><em>P</em></sup> = <em>coNP</em></span></p>
-<p><span
-class="math display"><em>Σ</em><sub>2</sub><sup><em>P</em></sup> ∼ ∃∀</span></p>
-<p><span
-class="math display"><em>Π</em><sub>2</sub><sup><em>P</em></sup> ∼ ∀∃</span></p>
+<p><span class="math display"><em>Σ</em><sub>0</sub><sup><em>P</em></sup> = <em>P</em></span></p>
+<p><span class="math display"><em>Σ</em><sub>1</sub><sup><em>P</em></sup> = <em>NP</em></span></p>
+<p><span class="math display"><em>Π</em><sub>1</sub><sup><em>P</em></sup> = <em>coNP</em></span></p>
+<p><span class="math display"><em>Σ</em><sub>2</sub><sup><em>P</em></sup> ∼ ∃∀</span></p>
+<p><span class="math display"><em>Π</em><sub>2</sub><sup><em>P</em></sup> ∼ ∀∃</span></p>
 <p>and in general:</p>
-<p><span
-class="math display"><em>PH</em> = ⋃<sub><em>k</em> ≥ 0</sub><em>Σ</em><sub><em>k</em></sub><sup><em>P</em></sup></span></p>
-<p>The polynomial hierarchy shows that <span
-class="math inline"><em>P</em></span> versus <span
-class="math inline"><em>NP</em></span> is only the first stage of a
+<p><span class="math display"><em>PH</em> = ⋃<sub><em>k</em> ≥ 0</sub><em>Σ</em><sub><em>k</em></sub><sup><em>P</em></sup></span></p>
+<p>The polynomial hierarchy shows that <span class="math inline"><em>P</em></span> versus <span class="math inline"><em>NP</em></span> is only the first stage of a
 wider question: what quantifier structure does a problem have? Is one
 witness enough? Must one show that no counter-witness exists? Must one
 choose a move that holds against every opposition? Must one answer every
@@ -2646,45 +2355,30 @@ answer?</p>
 point to solution as a structure. Sometimes the ideal is not something
 that appears as one witness, but a form that holds through layers of
 opposition.</p>
-<h3 id="qbf-and-pspace-when-solution-becomes-strategy">7. <span
-class="math inline"><em>QBF</em></span> and <span
-class="math inline"><em>PSPACE</em></span>: when solution becomes
+<h3 id="qbf-and-pspace-when-solution-becomes-strategy">7. <span class="math inline"><em>QBF</em></span> and <span class="math inline"><em>PSPACE</em></span>: when solution becomes
 strategy</h3>
-<p>To move from witness to strategy, one passes from <span
-class="math inline"><em>SAT</em></span> to the truth problem for
+<p>To move from witness to strategy, one passes from <span class="math inline"><em>SAT</em></span> to the truth problem for
 quantified Boolean formulas.</p>
 <p><span class="math inline"><em>SAT</em></span> asks:</p>
-<p><span
-class="math display">∃<em>x</em><sub>1</sub>, …, <em>x</em><sub><em>n</em></sub> <em>φ</em>(<em>x</em><sub>1</sub>, …, <em>x</em><sub><em>n</em></sub>)</span></p>
+<p><span class="math display">∃<em>x</em><sub>1</sub>, …, <em>x</em><sub><em>n</em></sub> <em>φ</em>(<em>x</em><sub>1</sub>, …, <em>x</em><sub><em>n</em></sub>)</span></p>
 <p>whether there exists an assignment satisfying the formula.</p>
-<p>The truth problem for quantified Boolean formulas, often called <span
-class="math inline"><em>TQBF</em></span> or simply <span
-class="math inline"><em>QBF</em></span>, asks:</p>
-<p><span
-class="math display"><em>Q</em><sub>1</sub><em>x</em><sub>1</sub> <em>Q</em><sub>2</sub><em>x</em><sub>2</sub> ⋯ <em>Q</em><sub><em>n</em></sub><em>x</em><sub><em>n</em></sub> <em>φ</em>(<em>x</em><sub>1</sub>, …, <em>x</em><sub><em>n</em></sub>)</span></p>
-<p>where each <span
-class="math inline"><em>Q</em><sub><em>i</em></sub></span> is either
-<span class="math inline">∃</span> or <span
-class="math inline">∀</span>. For example:</p>
-<p><span
-class="math display">∃<em>x</em> ∀<em>y</em> ∃<em>z</em> <em>φ</em>(<em>x</em>, <em>y</em>, <em>z</em>)</span></p>
+<p>The truth problem for quantified Boolean formulas, often called <span class="math inline"><em>TQBF</em></span> or simply <span class="math inline"><em>QBF</em></span>, asks:</p>
+<p><span class="math display"><em>Q</em><sub>1</sub><em>x</em><sub>1</sub> <em>Q</em><sub>2</sub><em>x</em><sub>2</sub> ⋯ <em>Q</em><sub><em>n</em></sub><em>x</em><sub><em>n</em></sub> <em>φ</em>(<em>x</em><sub>1</sub>, …, <em>x</em><sub><em>n</em></sub>)</span></p>
+<p>where each <span class="math inline"><em>Q</em><sub><em>i</em></sub></span> is either
+<span class="math inline">∃</span> or <span class="math inline">∀</span>. For example:</p>
+<p><span class="math display">∃<em>x</em> ∀<em>y</em> ∃<em>z</em> <em>φ</em>(<em>x</em>, <em>y</em>, <em>z</em>)</span></p>
 <p>This is no longer the question of a single solution. It is the
-question of a strategy: is there a choice <span
-class="math inline"><em>x</em></span> such that for every opposition
-<span class="math inline"><em>y</em></span>, there is a response <span
-class="math inline"><em>z</em></span> that preserves the condition?</p>
+question of a strategy: is there a choice <span class="math inline"><em>x</em></span> such that for every opposition
+<span class="math inline"><em>y</em></span>, there is a response <span class="math inline"><em>z</em></span> that preserves the condition?</p>
 <p>Computationally, the truth problem for quantified Boolean formulas is
-<span class="math inline"><em>PSPACE</em></span>-complete. And <span
-class="math inline"><em>PSPACE</em></span> is the class of problems
+<span class="math inline"><em>PSPACE</em></span>-complete. And <span class="math inline"><em>PSPACE</em></span> is the class of problems
 decidable using polynomial space:</p>
 <p><span class="math display"><em>PSPACE</em> = {<em>L</em> ∣ <em>L</em>
 is decided using polynomial space}</span></p>
 <p>It is also known that:</p>
-<p><span
-class="math display"><em>P</em> ⊆ <em>NP</em> ⊆ <em>PH</em> ⊆ <em>PSPACE</em></span></p>
+<p><span class="math display"><em>P</em> ⊆ <em>NP</em> ⊆ <em>PH</em> ⊆ <em>PSPACE</em></span></p>
 <p>although it is not known which of these containments are strict.</p>
-<p>The transition matters: in <span
-class="math inline"><em>NP</em></span>, one looks for a witness. In
+<p>The transition matters: in <span class="math inline"><em>NP</em></span>, one looks for a witness. In
 <span class="math inline"><em>QBF</em></span>, one looks for a strategy.
 It is not merely a correct answer, but a way that holds against every
 permitted counter-move. Used carefully, this suggests that the ideal is
@@ -2707,14 +2401,11 @@ transformations.</p>
 <p>A state can be a vector:</p>
 <p><span class="math display"><em>v</em> ∈ <em>V</em></span></p>
 <p>and an operation can be a linear map:</p>
-<p><span
-class="math display"><em>A</em> : <em>V</em> → <em>V</em></span></p>
+<p><span class="math display"><em>A</em> : <em>V</em> → <em>V</em></span></p>
 <p>so that the transition is:</p>
 <p><span class="math display"><em>v</em> ↦ <em>Av</em></span></p>
-<p>If the operation is repeated <span
-class="math inline"><em>t</em></span> times, one gets:</p>
-<p><span
-class="math display"><em>v</em><sub><em>t</em></sub> = <em>A</em><sup><em>t</em></sup><em>v</em><sub>0</sub></span></p>
+<p>If the operation is repeated <span class="math inline"><em>t</em></span> times, one gets:</p>
+<p><span class="math display"><em>v</em><sub><em>t</em></sub> = <em>A</em><sup><em>t</em></sup><em>v</em><sub>0</sub></span></p>
 <p>A system, in this language, is not merely a set of answers but a
 dynamics. There is an initial state, an operation, and a path through a
 state-space. If potential is the state-space, then operation is movement
@@ -2724,43 +2415,36 @@ the dynamics becomes more readable.</p>
 <h3 id="matrix-diagonalization-an-image-of-change-of-basis">9. Matrix
 diagonalization: an image of change of basis</h3>
 <p>Matrix diagonalization is a case in which a complex action becomes
-easier to read. If there are an invertible matrix <span
-class="math inline"><em>P</em></span> and a diagonal matrix <span
-class="math inline"><em>D</em></span> such that:</p>
-<p><span
-class="math display"><em>A</em> = <em>PDP</em><sup>−1</sup></span></p>
+easier to read. If there are an invertible matrix <span class="math inline"><em>P</em></span> and a diagonal matrix <span class="math inline"><em>D</em></span> such that:</p>
+<p><span class="math display"><em>A</em> = <em>PDP</em><sup>−1</sup></span></p>
 <p>then:</p>
-<p><span
-class="math display"><em>A</em><sup><em>t</em></sup> = <em>PD</em><sup><em>t</em></sup><em>P</em><sup>−1</sup></span></p>
+<p><span class="math display"><em>A</em><sup><em>t</em></sup> = <em>PD</em><sup><em>t</em></sup><em>P</em><sup>−1</sup></span></p>
 <p>This can be pictured as a change of basis:</p>
 <p><span class="math display">$$ $$</span></p>
 <p>or, schematically:</p>
 <p><span class="math display">$$ v P^{-1}v D(P^{-1}v) P D P^{-1}v = Av
 $$</span></p>
-<p>The meaning is that an action <span
-class="math inline"><em>A</em></span>, which appears mixed in the
+<p>The meaning is that an action <span class="math inline"><em>A</em></span>, which appears mixed in the
 original basis, may appear much simpler in another basis. In the
 eigenbasis, the action decomposes into directions in which each
 component changes relatively independently.</p>
 <p>A diagonal matrix looks like:</p>
 <span class="math display">$$ D =
-<p>$$</span></p>
+<p>$$</p></span>
 <p>and therefore:</p>
 <span class="math display">$$ D^t =
-<p>$$</span></p>
+<p>$$</p></span>
 <p>If:</p>
 <p><span class="math display"><em>Av</em> = <em>λv</em></span></p>
 <p>then <span class="math inline"><em>v</em></span> is an eigenvector
 and <span class="math inline"><em>λ</em></span> an eigenvalue. For a
 real eigenvector with a real eigenvalue, the operation in that direction
-stretches, contracts, or flips the direction according to <span
-class="math inline"><em>λ</em></span>. A simple rotation is not
+stretches, contracts, or flips the direction according to <span class="math inline"><em>λ</em></span>. A simple rotation is not
 described by a single real eigenvector; it is connected to complex
 eigenvalues or to real block forms.</p>
 <p>But diagonalization is not a general solution to complexity. Not
 every matrix is diagonalizable. The characteristic polynomial,</p>
-<p><span
-class="math display"><em>χ</em><sub><em>A</em></sub>(<em>λ</em>) = det (<em>λI</em> − <em>A</em>)</span></p>
+<p><span class="math display"><em>χ</em><sub><em>A</em></sub>(<em>λ</em>) = det (<em>λI</em> − <em>A</em>)</span></p>
 <p>describes possible eigenvalues, but the existence of roots alone does
 not guarantee a full basis of eigenvectors. Over a suitable field, for
 example <span class="math inline">ℂ</span>, a matrix is diagonalizable
@@ -2791,32 +2475,24 @@ entirely different. It does not decompose an action; it exposes a
 boundary. Cantor used a diagonal argument to show that there are
 uncountable infinities. Turing used a related idea to show that there is
 no general algorithm for the halting problem.</p>
-<p>The halting problem asks whether there is a Turing machine <span
-class="math inline"><em>H</em></span> such that for every machine <span
-class="math inline"><em>M</em></span> and input <span
-class="math inline"><em>x</em></span>:</p>
+<p>The halting problem asks whether there is a Turing machine <span class="math inline"><em>H</em></span> such that for every machine <span class="math inline"><em>M</em></span> and input <span class="math inline"><em>x</em></span>:</p>
 <span class="math display">$$ H(M,x)=
-<p>$$</span></p>
+<p>$$</p></span>
 <p>Turing showed that no such machine exists. Suppose, for
 contradiction, that <span class="math inline"><em>H</em></span> exists.
 Build a machine <span class="math inline"><em>D</em></span> acting on
-the description of a machine <span
-class="math inline"><em>M</em></span>:</p>
+the description of a machine <span class="math inline"><em>M</em></span>:</p>
 <span class="math display">$$ D(M)=
-<p>$$</span></p>
+<p>$$</p></span>
 <p>Now ask what happens when <span class="math inline"><em>D</em></span>
 is run on itself:</p>
 <p><span class="math display"><em>D</em>(⟨<em>D</em>⟩)</span></p>
-<p>If <span class="math inline"><em>H</em></span> says that <span
-class="math inline"><em>D</em>(⟨<em>D</em>⟩)</span> halts, then by the
+<p>If <span class="math inline"><em>H</em></span> says that <span class="math inline"><em>D</em>(⟨<em>D</em>⟩)</span> halts, then by the
 definition of <span class="math inline"><em>D</em></span>, it loops. If
 <span class="math inline"><em>H</em></span> says that it does not halt,
 then <span class="math inline"><em>D</em></span> halts. Either way, a
-contradiction follows. Therefore <span
-class="math inline"><em>H</em></span> does not exist.</p>
-<p>This is a deeper boundary than <span
-class="math inline"><em>P</em></span> versus <span
-class="math inline"><em>NP</em></span>. There the question is
+contradiction follows. Therefore <span class="math inline"><em>H</em></span> does not exist.</p>
+<p>This is a deeper boundary than <span class="math inline"><em>P</em></span> versus <span class="math inline"><em>NP</em></span>. There the question is
 efficiency: can a problem be decided in polynomial time? Here the
 question is decidability itself: is there any general method that
 decides all cases? The halting problem says no.</p>
@@ -2831,42 +2507,30 @@ system that is effective, consistent, and strong enough to express basic
 arithmetic. Through Gödel numbering, statements, proofs, and formulas
 receive numerical representation. This makes it possible to build,
 within arithmetic itself, a provability predicate, for example:</p>
-<p><span
-class="math display">Prov<sub><em>T</em></sub>(<em>n</em>)</span></p>
+<p><span class="math display">Prov<sub><em>T</em></sub>(<em>n</em>)</span></p>
 <p>meaning: <span class="math inline"><em>n</em></span> is the Gödel
-number of a statement provable in <span
-class="math inline"><em>T</em></span>. The deep point is that Gödel
+number of a statement provable in <span class="math inline"><em>T</em></span>. The deep point is that Gödel
 coding and the provability predicate allow the system to represent,
 within its own language, statements about its own proofs.</p>
-<p>Using this mechanism, one constructs a statement <span
-class="math inline"><em>G</em><sub><em>T</em></sub></span>, which
+<p>Using this mechanism, one constructs a statement <span class="math inline"><em>G</em><sub><em>T</em></sub></span>, which
 schematically says of itself:</p>
-<p><span
-class="math display"><em>G</em><sub><em>T</em></sub> ≡ “<em>G</em><sub><em>T</em></sub>
+<p><span class="math display"><em>G</em><sub><em>T</em></sub> ≡ “<em>G</em><sub><em>T</em></sub>
 is not provable in <em>T</em>”</span></p>
 <p>More formally, the idea is:</p>
-<p><span
-class="math display"><em>G</em><sub><em>T</em></sub> ↔︎ ¬Prov<sub><em>T</em></sub>(⌜<em>G</em><sub><em>T</em></sub>⌝)</span></p>
-<p>where <span
-class="math inline">⌜<em>G</em><sub><em>T</em></sub>⌝</span> is the
-Gödel number of <span
-class="math inline"><em>G</em><sub><em>T</em></sub></span>.</p>
+<p><span class="math display"><em>G</em><sub><em>T</em></sub> ↔︎ ¬Prov<sub><em>T</em></sub>(⌜<em>G</em><sub><em>T</em></sub>⌝)</span></p>
+<p>where <span class="math inline">⌜<em>G</em><sub><em>T</em></sub>⌝</span> is the
+Gödel number of <span class="math inline"><em>G</em><sub><em>T</em></sub></span>.</p>
 <p>From this follows the incompleteness result: for a suitable system
-<span class="math inline"><em>T</em></span>, if <span
-class="math inline"><em>T</em></span> is consistent, then:</p>
-<p><span
-class="math display"><em>T</em> ⊬ <em>G</em><sub><em>T</em></sub></span></p>
+<span class="math inline"><em>T</em></span>, if <span class="math inline"><em>T</em></span> is consistent, then:</p>
+<p><span class="math display"><em>T</em> ⊬ <em>G</em><sub><em>T</em></sub></span></p>
 <p>And with more careful language about truth: under suitable
 assumptions of consistency and soundness with respect to standard
-arithmetic, <span
-class="math inline"><em>G</em><sub><em>T</em></sub></span> is true but
+arithmetic, <span class="math inline"><em>G</em><sub><em>T</em></sub></span> is true but
 not provable within <span class="math inline"><em>T</em></span>. This
 distinction is crucial. “True but unprovable” is not a free slogan; it
-depends on how one understands <span
-class="math inline"><em>T</em></span>, its consistency, and its relation
+depends on how one understands <span class="math inline"><em>T</em></span>, its consistency, and its relation
 to the standard model.</p>
-<p>The second incompleteness theorem sharpens the boundary. Let <span
-class="math inline">Con(<em>T</em>)</span> denote the formal statement
+<p>The second incompleteness theorem sharpens the boundary. Let <span class="math inline">Con(<em>T</em>)</span> denote the formal statement
 that <span class="math inline"><em>T</em></span> is consistent. For
 suitable systems, if <span class="math inline"><em>T</em></span> is
 consistent, then:</p>
@@ -2876,19 +2540,13 @@ within itself. It can prove many theorems, but it cannot close, from
 within, the final assurance that its proof mechanism does not lead to
 contradiction.</p>
 <p>This requires precision about axioms. An axiom is not proved inside
-the system in which it is an axiom. If <span
-class="math inline"><em>T</em></span> is built from axioms <span
-class="math inline"><em>Ax</em><sub><em>T</em></sub></span> and
-inference rules, then a proof inside <span
-class="math inline"><em>T</em></span> is a sequence:</p>
-<p><span
-class="math display"><em>φ</em><sub>1</sub>, <em>φ</em><sub>2</sub>, …, <em>φ</em><sub><em>n</em></sub></span></p>
-<p>where each <span
-class="math inline"><em>φ</em><sub><em>i</em></sub></span> is an axiom
+the system in which it is an axiom. If <span class="math inline"><em>T</em></span> is built from axioms <span class="math inline"><em>Ax</em><sub><em>T</em></sub></span> and
+inference rules, then a proof inside <span class="math inline"><em>T</em></span> is a sequence:</p>
+<p><span class="math display"><em>φ</em><sub>1</sub>, <em>φ</em><sub>2</sub>, …, <em>φ</em><sub><em>n</em></sub></span></p>
+<p>where each <span class="math inline"><em>φ</em><sub><em>i</em></sub></span> is an axiom
 or follows from earlier formulas by a rule of inference, and the theorem
 proved is:</p>
-<p><span
-class="math display"><em>φ</em><sub><em>n</em></sub> = <em>φ</em></span></p>
+<p><span class="math display"><em>φ</em><sub><em>n</em></sub> = <em>φ</em></span></p>
 <p>Then one writes:</p>
 <p><span class="math display"><em>T</em> ⊢ <em>φ</em></span></p>
 <p>But the axioms themselves are starting points. They can be justified
@@ -2899,13 +2557,11 @@ meta-system <span class="math inline"><em>T</em>′</span>. If:</p>
 <p>this does not mean that <span class="math inline"><em>T</em></span>
 has proved itself. It means that a stronger system has proved the
 consistency of a weaker one.</p>
-<p>If one wants to prove the consistency of <span
-class="math inline"><em>T</em>′</span>, one will again need a stronger
+<p>If one wants to prove the consistency of <span class="math inline"><em>T</em>′</span>, one will again need a stronger
 system, or else accept a new starting point. There is no simple ladder
 in which every axiom is proved from a more basic axiom until an absolute
 ground is reached. There is movement between system and meta-system:</p>
-<p><span
-class="math display"><em>T</em>  →  <em>T</em>′  →  <em>T</em>″  →  ⋯</span></p>
+<p><span class="math display"><em>T</em>  →  <em>T</em>′  →  <em>T</em>″  →  ⋯</span></p>
 <p>But this movement does not close the problem finally. It moves the
 boundary.</p>
 <h3 id="human-system-and-meta-level">12. Human, system, and
@@ -2916,10 +2572,8 @@ that the system will never see. This formulation is tempting, but not
 precise.</p>
 <p>Gödel’s theorems and the halting problem do not prove that the human
 being is hypercomputational. They do not prove that human intuition is
-always right where formalism stops. To say that the Gödel sentence <span
-class="math inline"><em>G</em><sub><em>T</em></sub></span> is true, one
-must assume something about the consistency or soundness of <span
-class="math inline"><em>T</em></span>. If that assumption is wrong,
+always right where formalism stops. To say that the Gödel sentence <span class="math inline"><em>G</em><sub><em>T</em></sub></span> is true, one
+must assume something about the consistency or soundness of <span class="math inline"><em>T</em></span>. If that assumption is wrong,
 intuition can also fail.</p>
 <p>The more precise claim is different: the human being is not proved to
 be beyond computation, but the human being need not identify with one
@@ -2936,8 +2590,7 @@ only the set of possible solutions within a given system. It is also the
 space of possible systems. It includes states, witnesses, reductions,
 axioms, languages, representations, and meta-systems.</p>
 <p>Thus sometimes the question is not only:</p>
-<p><span
-class="math display">∃<em>w</em> <em>R</em>(<em>x</em>, <em>w</em>)?</span></p>
+<p><span class="math display">∃<em>w</em> <em>R</em>(<em>x</em>, <em>w</em>)?</span></p>
 <p>meaning: is there a witness inside the system? Sometimes the question
 is:</p>
 <p><span class="math display">is this even the right system in which to
@@ -2951,12 +2604,10 @@ exist at the present resolution, and when one must move to a
 meta-system. The ideal is not the complete closure of all questions; it
 is a more responsible relation between truth, proof, boundary, and
 meaning.</p>
-<h3
-id="one-map-representation-transition-resource-evidence-boundary">13.
+<h3 id="one-map-representation-transition-resource-evidence-boundary">13.
 One map: representation, transition, resource, evidence, boundary</h3>
 <p>If the languages unfolded here are connected, one map appears:</p>
-<p><span
-class="math display">representation → transition → resource → evidence → negation → reduction → quantification → strategy → boundary</span></p>
+<p><span class="math display">representation → transition → resource → evidence → negation → reduction → quantification → strategy → boundary</span></p>
 <p>Or more concretely:</p>
 <p><span class="math display">string / vector / formula</span></p>
 <p><span class="math display">↓</span></p>
@@ -2966,14 +2617,11 @@ rule</span></p>
 <p><span class="math display">polynomial time / polynomial
 space</span></p>
 <p><span class="math display">↓</span></p>
-<p><span
-class="math display"><em>P</em>, <em>NP</em>, <em>coNP</em></span></p>
+<p><span class="math display"><em>P</em>, <em>NP</em>, <em>coNP</em></span></p>
 <p><span class="math display">↓</span></p>
-<p><span
-class="math display">≤<sub><em>p</em></sub>, <em>NP</em>-completeness</span></p>
+<p><span class="math display">≤<sub><em>p</em></sub>, <em>NP</em>-completeness</span></p>
 <p><span class="math display">↓</span></p>
-<p><span
-class="math display"><em>PH</em>, <em>QBF</em>, <em>PSPACE</em></span></p>
+<p><span class="math display"><em>PH</em>, <em>QBF</em>, <em>PSPACE</em></span></p>
 <p><span class="math display">↓</span></p>
 <p><span class="math display">undecidability, halting,
 incompleteness</span></p>
@@ -2985,11 +2633,9 @@ of possibility, transition rules, resources, witnesses, negations,
 reductions, strategies, and internal boundaries.</p>
 <p>The optimal lies in this interval. Sometimes it is a solution in
 <span class="math inline"><em>P</em></span>. Sometimes it is
-verification of a witness in <span
-class="math inline"><em>NP</em></span>. Sometimes it is the reversal of
+verification of a witness in <span class="math inline"><em>NP</em></span>. Sometimes it is the reversal of
 the question through <span class="math inline"><em>coNP</em></span>.
-Sometimes it is reduction to a central problem. Sometimes it is a <span
-class="math inline"><em>QBF</em></span>-type strategy. Sometimes it is
+Sometimes it is reduction to a central problem. Sometimes it is a <span class="math inline"><em>QBF</em></span>-type strategy. Sometimes it is
 decomposition by matrix and diagonalization. And sometimes it is the
 recognition that the system cannot prove itself, and therefore one must
 move to a meta-level without pretending that the move is a final
@@ -3005,8 +2651,7 @@ found from within the space of possibilities?</p>
 difficulty?</p>
 <p><span class="math inline"><em>coNP</em></span> adds: can one verify
 not only existence, but also the complementary side of existence?</p>
-<p>The polynomial hierarchy and <span
-class="math inline"><em>QBF</em></span> add: is there a strategy that
+<p>The polynomial hierarchy and <span class="math inline"><em>QBF</em></span> add: is there a strategy that
 holds against every opposition?</p>
 <p>Turing and Gödel add the final boundary: can a system close itself
 completely?</p>
@@ -3032,10 +2677,7 @@ Physics, and Mathematics as Boundary Discipline</h2>
 <p><em>What is a claim, what is a model, what is a metaphor, and what
 must not become proof</em></p>
 <figure class="chapter-figure image-frame">
-<img
-src="../figures/v26_restyle_orbital_horizon.png"
-decoding="async" loading="lazy"
-alt="Science, Physics, and Mathematics as a Boundary Discipline" />
+<img alt="Science, Physics, and Mathematics as a Boundary Discipline" decoding="async" loading="lazy" src="../figures/v26_restyle_orbital_horizon.png"/>
 <figcaption aria-hidden="true">
 Image description: formulas, measurement, and models as boundary
 languages, not final proof.
@@ -3089,16 +2731,13 @@ and Contextuality</h2>
 <p><em>Correlation is not a message, and context is not noise around the
 answer</em></p>
 <figure class="chapter-figure image-frame">
-<img src="../figures/v25_chapter_boundary-horizons.png"
-decoding="async" loading="lazy"
-alt="Locality, Non-locality, and Contextuality" />
+<img alt="Locality, Non-locality, and Contextuality" decoding="async" loading="lazy" src="../figures/v25_chapter_boundary-horizons.png"/>
 <figcaption aria-hidden="true">
 Image description: local and non-local relations, context, measurement,
 and dependence between observer and observed.
 </figcaption>
 </figure>
-<h3
-id="bell-kochen-specker-bohmian-mechanics-and-the-caution-against-slogan-physics">Bell,
+<h3 id="bell-kochen-specker-bohmian-mechanics-and-the-caution-against-slogan-physics">Bell,
 Kochen-Specker, Bohmian mechanics, and the caution against slogan
 physics</h3>
 <p>Locality, non-locality, and contextuality are delicate concepts in
@@ -3147,8 +2786,7 @@ contextuality, and Britannica/ISFDB for the literary identification of
 Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are
 not treated as proofs of the theory; they are safeguards against empty
 borrowing of terms.</p>
-<h2 id="creation-canon-and-optimum-what-must-not-be-lost"><span
-class="chapter-prefix">11. </span>Creation, Canon, and Optimum: What
+<h2 id="creation-canon-and-optimum-what-must-not-be-lost"><span class="chapter-prefix">11. </span>Creation, Canon, and Optimum: What
 Must Not Be Lost</h2>
 <p>A work of art is one of the most precise laboratories for the
 relation between potential and ideal, because every work is born from
@@ -3168,8 +2806,8 @@ is rejected so that it can become itself.</p>
 potential, but the one that identifies which part of its potential
 deserves to become form, and which part must remain outside the form so
 that the form can be precise.</p>
-<p>The potential of a work is everything it could have been.<br />
-Its ideal is what it must not lose.<br />
+<p>The potential of a work is everything it could have been.<br/>
+Its ideal is what it must not lose.<br/>
 The optimum is the form in which the sacrifices remain faithful to that
 thing.</p>
 <p>This distinction matters because it separates completeness from
@@ -3222,8 +2860,7 @@ Sometimes it is the precise lack. Sometimes it is the relinquishment of
 beauty, realism, polish, or visual depth, so that the writing remains
 bare enough, sharp enough, and is not swallowed by a shell that is too
 beautiful.</p>
-<h3
-id="creative-recursion-when-the-work-begins-to-think-itself">Creative
+<h3 id="creative-recursion-when-the-work-begins-to-think-itself">Creative
 recursion: when the work begins to think itself</h3>
 <p>The single-axis optimum can lead to another, deeper stage: the work
 does not merely use form to tell content, but begins to turn form itself
@@ -3295,8 +2932,7 @@ every work by the same measure. Some works must be judged by the
 precision of their axis. Others must be judged by the harmony of their
 system. A work can be great because it is narrow and extremely precise,
 or because it is broad and all its parts find their place.</p>
-<h3
-id="franchise-when-potential-expands-after-the-ideal-appears">Franchise:
+<h3 id="franchise-when-potential-expands-after-the-ideal-appears">Franchise:
 when potential expands after the ideal appears</h3>
 <p>A franchise begins where one work opens more possibilities than it
 can contain. One character becomes a world. One world becomes a series.
@@ -3321,8 +2957,8 @@ can expand endlessly, but the question is not how many maps, peoples,
 languages, powers, and eras we add to it. The question is what inner law
 holds it. Once expansion stops serving that law, the world may be
 larger, but it is less alive.</p>
-<p>The potential of a franchise is everything that can be added.<br />
-Its ideal is what must not be lost.<br />
+<p>The potential of a franchise is everything that can be added.<br/>
+Its ideal is what must not be lost.<br/>
 Its optimum is knowing when not to add.</p>
 <h3 id="canon-as-invariant">Canon as invariant</h3>
 <p>Here the concept of canon enters. Canon is not everything that has
@@ -3409,7 +3045,7 @@ Rorschach shows that truth without flexibility can become a law that
 does not know how to live. Inside this triangle, the question is not who
 is stronger, but what form of power is still worthy of being chosen.</p>
 <p>True canon is not all the details. It is what must not be
-erased.<br />
+erased.<br/>
 A good reboot is not the one that reconstructs everything. It is the one
 that understands what must be preserved under change.</p>
 <p>This is very close to the language of the theory: when a system
@@ -3440,7 +3076,7 @@ translation, the question is not whether every word has passed over, but
 whether the structure of meaning has been preserved. A bad adaptation
 can preserve names, objects, costumes, sentences, icons, and scenes -
 and still miss the work. It preserves the surface and loses the law.</p>
-<p>A bad adaptation is not necessarily one that deletes details.<br />
+<p>A bad adaptation is not necessarily one that deletes details.<br/>
 A bad adaptation is one that preserves the symbols and loses the
 ideal.</p>
 <p>This failure is especially common in franchises, because they are
@@ -3507,7 +3143,7 @@ It is one of the strongest images for the relation between ideal and
 system. What holds all worlds does not have to appear as the greatest
 power. Sometimes the center appears as something that can be trampled
 without understanding that the entire axis has been trampled.</p>
-<p>The ideal is not always immense. Sometimes it is vulnerable.<br />
+<p>The ideal is not always immense. Sometimes it is vulnerable.<br/>
 Sometimes the whole system depends on something that appears too small
 to hold it.</p>
 <p>From here one can also understand why an adaptation of such a work is
@@ -3584,7 +3220,7 @@ wholeness only because they conceal the price of their corruption.
 Sometimes the truest path toward the ideal is not to use the power, not
 to open the door, not to take the shortcut.</p>
 <p>The optimum is not always realization. Sometimes it is
-abstention.<br />
+abstention.<br/>
 Sometimes the truest form of power is boundary.</p>
 <p>This refusal is not weakness. It is precise action. It is the
 understanding that some potentials lose the ideal the moment they are
@@ -3604,7 +3240,7 @@ weakness, humiliation, falsity, unlived life. But instead of reaching
 the ideal, they build a new system of violence, control, narcissism, or
 destruction. They do not free themselves from the system; they become
 the author of a worse one.</p>
-<p>A false ideal is destructive potential disguised as redemption.<br />
+<p>A false ideal is destructive potential disguised as redemption.<br/>
 It uses the language of freedom to build a new prison.</p>
 <p>This matters because it protects the theory from innocence. Not every
 transition is progress. Not every break is liberation. Not every
@@ -3624,12 +3260,12 @@ continue everything, or connect everything. On the contrary: sometimes
 its greatness lies precisely in its ability to know what to leave
 out.</p>
 <p>A great work knows how to distinguish between potential and
-noise.<br />
-Between expansion and loss of center.<br />
-Between canon and accumulation.<br />
-Between adaptation and costume.<br />
-Between living recursion and meta-gimmick.<br />
-Between power and temptation.<br />
+noise.<br/>
+Between expansion and loss of center.<br/>
+Between canon and accumulation.<br/>
+Between adaptation and costume.<br/>
+Between living recursion and meta-gimmick.<br/>
+Between power and temptation.<br/>
 Between ideal and false ideal.</p>
 <p>It knows that not every possibility is an obligation. It knows that
 not every continuation is deepening. It knows that not every fidelity to
@@ -3642,28 +3278,26 @@ ideal in an almost naked form, because in every work, as in every life,
 there are more possibilities than can be realized. The question is not
 how to realize them all. The question is what must not be lost when one
 chooses.</p>
-<p>Not every potential is a call to realization.<br />
-Not every expansion is deepening.<br />
-Not every continuation is fidelity.<br />
-Not every breaking is freedom.<br />
+<p>Not every potential is a call to realization.<br/>
+Not every expansion is deepening.<br/>
+Not every continuation is fidelity.<br/>
+Not every breaking is freedom.<br/>
 Not every center looks like a center.</p>
-<p>The potential is everything the work can be.<br />
-The ideal is what it must not lose.<br />
+<p>The potential is everything the work can be.<br/>
+The ideal is what it must not lose.<br/>
 And the optimal is the form in which every sacrifice remains faithful to
 that thing.</p>
 <h2 id="art-of-potential">Art of Potential</h2>
 <p><em>Form, living source, canon, and a market that is not the final
 judge</em></p>
 <figure class="chapter-figure image-frame">
-<img src="../figures/v25_chapter_art-of-potential.png" decoding="async"
-loading="lazy" alt="Art of Potential" />
+<img alt="Art of Potential" decoding="async" loading="lazy" src="../figures/v25_chapter_art-of-potential.png"/>
 <figcaption aria-hidden="true">
 Image description: creation as a field where possibility receives form
 without being fully closed.
 </figcaption>
 </figure>
-<h3
-id="living-source-canon-and-form-that-does-not-replace-breath">Living
+<h3 id="living-source-canon-and-form-that-does-not-replace-breath">Living
 source, canon, and form that does not replace breath</h3>
 <p>Art is a natural laboratory of the theory because every work begins
 in excess. Before an image, story, sculpture, comic, film, or game
@@ -3720,15 +3354,13 @@ borrowing of terms.</p>
 <p><em>Time, voice, listening, and resonance that is not a
 metric</em></p>
 <figure class="chapter-figure image-frame">
-<img src="../figures/v25_chapter_music-of-potential.png"
-decoding="async" loading="lazy" alt="Music of Potential" />
+<img alt="Music of Potential" decoding="async" loading="lazy" src="../figures/v25_chapter_music-of-potential.png"/>
 <figcaption aria-hidden="true">
 Image description: rhythm, silence, and return as ways of carrying
 possibility through time.
 </figcaption>
 </figure>
-<h3
-id="voice-time-silence-and-an-optimum-that-is-not-only-precision">Voice,
+<h3 id="voice-time-silence-and-an-optimum-that-is-not-only-precision">Voice,
 time, silence, and an optimum that is not only precision</h3>
 <p>Music tests the theory through time. A painting stands, a sentence is
 read, a structure carries load; music appears and disappears while it is
@@ -3775,14 +3407,11 @@ contextuality, and Britannica/ISFDB for the literary identification of
 Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are
 not treated as proofs of the theory; they are safeguards against empty
 borrowing of terms.</p>
-<h2 id="engineering-and-architecture-of-potential"><span
-class="chapter-prefix">12. </span>Engineering and Architecture of
+<h2 id="engineering-and-architecture-of-potential"><span class="chapter-prefix">12. </span>Engineering and Architecture of
 Potential</h2>
 <p>Material, Form, Load, and Repair That Is Not Redemption</p>
 <figure class="image-frame">
-<img src="../figures/17_engineering_architecture_potential.png"
-decoding="async" loading="lazy"
-alt="Figure: Engineering and Architecture of Potential." />
+<img alt="Figure: Engineering and Architecture of Potential." decoding="async" loading="lazy" src="../figures/17_engineering_architecture_potential.png"/>
 <figcaption aria-hidden="true">
 Image description: an engineered system in which potential becomes
 structure, channeling, testing, and repair.
@@ -4068,8 +3697,7 @@ and time.</p>
 </span>Economy of Relation</h2>
 <p>Money, Value, Trust, and Potential</p>
 <figure class="image-frame">
-<img src="../figures/18_economy_relation_potential.png" decoding="async"
-loading="lazy" alt="Figure: Economy of Relation." />
+<img alt="Figure: Economy of Relation." decoding="async" loading="lazy" src="../figures/18_economy_relation_potential.png"/>
 <figcaption aria-hidden="true">
 Image description: value, exchange, and responsibility as living
 relations, not only as numbers.
@@ -4372,9 +4000,7 @@ living relation between sign, trust, human being, and potential.</p>
 </span>Governance of Potential</h2>
 <p>Law, Power, Trust, and Repair That Is Not Redemption</p>
 <figure class="image-frame">
-<img src="../figures/19_governance_society_potential.png"
-decoding="async" loading="lazy"
-alt="Figure: Governance of Potential." />
+<img alt="Figure: Governance of Potential." decoding="async" loading="lazy" src="../figures/19_governance_society_potential.png"/>
 <figcaption aria-hidden="true">
 Image description: institutions, decision, and public coordination as
 ways of translating possibility into responsibility.
@@ -4593,8 +4219,7 @@ criticism is hatred, there is no repair. If every compromise is
 weakness, there is no society. Public language is not decorative. It is
 the medium through which society thinks conflicts before they become
 force.</p>
-<h3
-id="majority-and-minority-the-test-of-power-that-does-not-need-everything">17.
+<h3 id="majority-and-minority-the-test-of-power-that-does-not-need-everything">17.
 Majority and Minority: The Test of Power That Does Not Need
 Everything</h3>
 <div class="math-block">
@@ -4652,8 +4277,7 @@ relation between power, law, trust, human being, and time.</p>
 <h2 id="law-of-potential">Law of Potential</h2>
 <p><em>Truth, evidence, guilt, and repair that is not revenge</em></p>
 <figure class="chapter-figure image-frame">
-<img src="../figures/v25_chapter_law-of-potential.png" decoding="async"
-loading="lazy" alt="Law of Potential" />
+<img alt="Law of Potential" decoding="async" loading="lazy" src="../figures/v25_chapter_law-of-potential.png"/>
 <figcaption aria-hidden="true">
 Image description: law, interpretation, and boundary as a space where
 possibility is tested against responsibility.
@@ -4717,8 +4341,7 @@ borrowing of terms.</p>
 <h2 id="medicine-of-potential">Medicine of Potential</h2>
 <p><em>Body, pain, diagnosis, and care that does not own life</em></p>
 <figure class="chapter-figure image-frame">
-<img src="../figures/v25_chapter_medicine-of-potential.png"
-decoding="async" loading="lazy" alt="Medicine of Potential" />
+<img alt="Medicine of Potential" decoding="async" loading="lazy" src="../figures/v25_chapter_medicine-of-potential.png"/>
 <figcaption aria-hidden="true">
 Image description: healing as a careful reading of body, suffering,
 chance, and conditions.
@@ -4779,13 +4402,10 @@ contextuality, and Britannica/ISFDB for the literary identification of
 Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are
 not treated as proofs of the theory; they are safeguards against empty
 borrowing of terms.</p>
-<h2 id="the-imaginary-the-virtual-gravity-and-the-horizon"><span
-class="chapter-prefix">15. </span>The Imaginary, the Virtual, Gravity,
+<h2 id="the-imaginary-the-virtual-gravity-and-the-horizon"><span class="chapter-prefix">15. </span>The Imaginary, the Virtual, Gravity,
 and the Horizon</h2>
 <figure class="image-frame">
-<img src="../figures/02_navigation_between_banks.png"
-decoding="async" loading="lazy"
-alt="Figure F: The imaginary, the virtual, and the horizon. Boundary as relation, not merely as wall." />
+<img alt="Figure F: The imaginary, the virtual, and the horizon. Boundary as relation, not merely as wall." decoding="async" loading="lazy" src="../figures/02_navigation_between_banks.png"/>
 <figcaption aria-hidden="true">
 Figure F: The imaginary, the virtual, and the horizon. Boundary as
 relation, not merely as wall.
@@ -4793,8 +4413,8 @@ relation, not merely as wall.
 </figure>
 <p>There are words that weaken thought before thought has even begun to
 work.</p>
-<p>“Imaginary” sounds like something that does not exist.<br />
-“Virtual” sounds like something false.<br />
+<p>“Imaginary” sounds like something that does not exist.<br/>
+“Virtual” sounds like something false.<br/>
 “Real” sounds like the only thing that deserves to be taken
 seriously.</p>
 <p>But reality is not built according to the convenience of language.
@@ -4812,7 +4432,7 @@ the source of creation. It does something more modest and more precise:
 it uses structures in which even the most exact forms of thought are
 forced to distinguish between what appears, what influences, what
 limits, and what makes appearance possible.</p>
-<p>This caution is not the enemy of metaphor.<br />
+<p>This caution is not the enemy of metaphor.<br/>
 It is the condition that keeps metaphor from becoming false.</p>
 <h3 id="the-imaginary">The Imaginary</h3>
 <p>The imaginary number is not a false number. It is not a mathematical
@@ -4826,7 +4446,7 @@ the world. It is enough to say something more careful: even within the
 most precise thought, the real is not always describable on one line.
 Sometimes an axis that does not look like ordinary quantity is needed in
 order to understand real motion.</p>
-<p>In this sense, the imaginary is not the opposite of the real.<br />
+<p>In this sense, the imaginary is not the opposite of the real.<br/>
 It is the way the real becomes thinkable beyond a single axis.</p>
 <h3 id="the-virtual">The Virtual</h3>
 <p>The virtual is not simply “unreal” either. A virtual particle is not
@@ -4846,7 +4466,7 @@ object.</p>
 <p>The virtual, in its most careful sense, is a language of possible
 pressure on the appearance of the thing.</p>
 <p>Or more simply:</p>
-<p>The virtual is not the thing.<br />
+<p>The virtual is not the thing.<br/>
 It is the way possibility begins to press on the conditions under which
 the thing can appear.</p>
 <p>Here the metaphor touches the theory, but does not prove it. The
@@ -4854,13 +4474,13 @@ virtual is not “potential itself.” It is not a scientific name for a
 philosophical idea. It is an example of the need, even in careful speech
 about reality, to distinguish between a stable object and an influence
 that does not stabilize as an object.</p>
-<p>The imaginary is the language of direction.<br />
-The virtual is the language of influence.<br />
+<p>The imaginary is the language of direction.<br/>
+The virtual is the language of influence.<br/>
 The real is the language of the sign.</p>
 <p>The imaginary says: the system has an axis you do not see, but
-without it you will not understand its motion.<br />
+without it you will not understand its motion.<br/>
 The virtual says: there is an influence you do not see as an object, but
-without it you will not understand the change.<br />
+without it you will not understand the change.<br/>
 The real says: here, for a moment, something of possibility has agreed
 to leave a trace.</p>
 <h3 id="the-box-that-cannot-be-emptied">The Box That Cannot Be
@@ -4884,12 +4504,12 @@ waiting to emerge. That is exactly the error to avoid. The point is
 subtler: even when one empties the world of everything that looks like
 an object, it is not clear that one can empty it of the potential for
 appearance.</p>
-<p>Potential, in this sense, is not another object inside the box.<br />
+<p>Potential, in this sense, is not another object inside the box.<br/>
 It is what remains when there are no objects left.</p>
 <p>And therefore it cannot simply be taken out.</p>
-<p>One can remove matter.<br />
-One can remove light.<br />
-One can remove air.<br />
+<p>One can remove matter.<br/>
+One can remove light.<br/>
+One can remove air.<br/>
 One can imagine removing every particle and every trace.</p>
 <p>But one cannot remove possibility as though it were one more thing
 among things. Possibility is not one of the contents of reality. It is
@@ -4908,7 +4528,7 @@ reality acts before that stage. It acts where there is not yet a thing,
 but there is already a tilt. There is not yet an answer, but there is
 already a direction. There is not yet a decision, but there is already a
 tension organizing the space of possible decisions.</p>
-<p>The human being says: I will believe it when I see it.<br />
+<p>The human being says: I will believe it when I see it.<br/>
 Reality says: you would not see anything unless something you do not see
 were already acting.</p>
 <h3 id="potential-and-ideal">Potential and Ideal</h3>
@@ -4932,12 +4552,12 @@ through limits, measurements, resistances, and distortions, and still
 manages to appear in a form that does not erase the depth from which it
 came.</p>
 <p>It can be said this way:</p>
-<p>The imaginary opens an axis.<br />
-The virtual applies pressure.<br />
-The real leaves a sign.<br />
+<p>The imaginary opens an axis.<br/>
+The virtual applies pressure.<br/>
+The real leaves a sign.<br/>
 The ideal is an appearance that preserves continuity with the axis, the
 pressure, and the condition from which it was born.</p>
-<p>In other words:<br />
+<p>In other words:<br/>
 The ideal does not betray the potential from which it came.</p>
 <h3 id="gravity">Gravity</h3>
 <p>Here gravity enters.</p>
@@ -4985,7 +4605,7 @@ another, and becomes the most extreme form of binding from which there
 is no return. This is the place where contraction, which began as a
 condition of existence, comes too close to erasing the possibility for
 which it was born.</p>
-<p>The black hole is not the place where freedom is punished.<br />
+<p>The black hole is not the place where freedom is punished.<br/>
 It is the place where geometry itself has stopped offering
 directions.</p>
 <p>Opposite it one may place, carefully, the image of the white
@@ -5003,13 +4623,13 @@ That would be too precise where one must remain careful. It is more
 accurate to say that it is an image of one possible motion of potential:
 a source that does not open to entry, but from which something can
 appear outward.</p>
-<p>Potential is not a thing one reaches as one reaches a place.<br />
-The ideal is not an object one holds after the journey is over.<br />
+<p>Potential is not a thing one reaches as one reaches a place.<br/>
+The ideal is not an object one holds after the journey is over.<br/>
 Both resemble horizons more than objects: they organize motion, direct
 it, distort it, attract it, yet never give themselves wholly into the
 hand.</p>
-<p>Gravity teaches that freedom requires form.<br />
-The black hole teaches that form can become a cage.<br />
+<p>Gravity teaches that freedom requires form.<br/>
+The black hole teaches that form can become a cage.<br/>
 The white hole, as an image only, reminds us that there are sources that
 do not open to entry, but to appearance.</p>
 <p>And between the three stretches the same question: how much
@@ -5037,9 +4657,9 @@ escapes the black hole. That reduces it again. It is more accurate to
 say that the extreme case reveals something that was already true: the
 real does not begin only where there is an object. Sometimes the real
 begins where the conditions of appearance have already changed.</p>
-<p>That is: there is a reality that is not a body.<br />
-There is an action that is not an object.<br />
-There is a direction that is not a form.<br />
+<p>That is: there is a reality that is not a body.<br/>
+There is an action that is not an object.<br/>
+There is a direction that is not a form.<br/>
 There is an influence that is not yet an event, but the event can no
 longer happen the same way without it.</p>
 <p>This matters because the human being tends to dismiss everything that
@@ -5140,8 +4760,8 @@ identify the person, institution, idea, or community.</p>
 Caution with the Name</h3>
 <p>If one wants to use the name “God,” it must be used with the same
 caution required of every name that is too large.</p>
-<p>Not God as a hand moving particles behind the scenes.<br />
-Not God as a mechanical operator of miracles.<br />
+<p>Not God as a hand moving particles behind the scenes.<br/>
+Not God as a mechanical operator of miracles.<br/>
 Not God as a figure standing outside the world and repairing it from the
 outside.</p>
 <p>Rather, God as one possible name for the whole: for the structure in
@@ -5150,19 +4770,19 @@ all layers of appearance. Another name for it could be the whole.
 Another could be source. Another could be the movement between potential
 and ideal. The name matters less than the caution not to turn it into an
 idol.</p>
-<p>The imaginary number is not the thought of God.<br />
-The virtual particle is not the action of God.<br />
-Gravity is not the will of God to limit freedom.<br />
-The black hole is not the punishment of God.<br />
+<p>The imaginary number is not the thought of God.<br/>
+The virtual particle is not the action of God.<br/>
+Gravity is not the will of God to limit freedom.<br/>
+The black hole is not the punishment of God.<br/>
 The white hole is not the body of God.</p>
 <p>But one may say, carefully:</p>
 <p>In the imaginary, reality discovers that it has another direction in
-which to think.<br />
+which to think.<br/>
 In the virtual, reality discovers that it has a way to influence before
-it appears.<br />
-In gravity, reality discovers that freedom requires form.<br />
+it appears.<br/>
+In gravity, reality discovers that freedom requires form.<br/>
 In the horizon, reality discovers that every form can become a
-boundary.<br />
+boundary.<br/>
 In the real, reality discovers what of all this has managed to pass into
 the world.</p>
 <p>The examples must not be identified with the theory itself. They are
@@ -5178,23 +4798,21 @@ contradict one another.</p>
 <p>The moment when the hidden direction, the unstable influence, the
 weight, the boundary, and the visible sign align enough for something to
 be not only existent, but justified in its existence.</p>
-<p>Not justified from the outside.<br />
-Not approved by an observer.<br />
+<p>Not justified from the outside.<br/>
+Not approved by an observer.<br/>
 Not proven once and for all.</p>
 <p>Justified in the deeper sense: that it does not betray the potential
 from which it came.</p>
 <h2 id="boundary-horizons">Boundary Horizons</h2>
 <p><em>Information, visibility, and what does not return</em></p>
 <figure class="chapter-figure image-frame">
-<img src="../figures/v25_chapter_boundary-horizons.png" decoding="async"
-loading="lazy" alt="Boundary Horizons" />
+<img alt="Boundary Horizons" decoding="async" loading="lazy" src="../figures/v25_chapter_boundary-horizons.png"/>
 <figcaption aria-hidden="true">
 Image description: a boundary that is not merely a wall, but a horizon
 guiding the relation between possibility and form.
 </figcaption>
 </figure>
-<h3
-id="what-is-visible-what-is-hidden-and-what-must-not-be-inferred-too-quickly">What
+<h3 id="what-is-visible-what-is-hidden-and-what-must-not-be-inferred-too-quickly">What
 is visible, what is hidden, and what must not be inferred too
 quickly</h3>
 <p>Boundary horizons are central to the theory. A horizon is not only an
@@ -5314,15 +4932,11 @@ scattered.</p>
 <p>The ideal is not light that has never met matter. The ideal is light
 that has passed through matter - and returned not merely as light, but
 as light that knows how not to disperse.</p>
-<h2
-id="physical-comparison-map-potential-form-and-the-search-for-a-unified-theory"><span
-class="chapter-prefix">17. </span>Physical Comparison Map — Potential,
+<h3 id="possibility-is-not-a-result">Possibility Is Not a Result</h3><p>To speak carefully about “the whole,” it is not enough to identify it with the reality that has already appeared. Actual reality is only what has become visible. The theory also asks about what precedes appearance: the space of possibilities, the laws of development, boundary conditions, forces, fields, matter, energy, time, and the way all of these can become a world.</p><p>In this sense, “the whole” names the inclusive frame within which possibility, law, realization, boundary, friction, and processing can appear. It is not an object inside the world and not an additional entity outside reality. Any human, religious, or poetic use of the term is an extension of this structural definition, not a replacement for it.</p><p>Possibility is not goodness. Potential is openness. It includes the possibility of creation and destruction, understanding and distortion, love and control. Therefore the ideal is not the realization of every possibility. The ideal is the filtering, processing, and direction of possibility so that it does not become blind force.</p><h3 id="law-measurement-and-conditions-of-appearance">Law, Measurement, and Conditions of Appearance</h3><p>If one wants a careful mathematical or physical analogy, the whole is less like an object and more like a broad system containing both a space of possible states and laws of development. Hilbert space can serve as one limited image: in physics it is not “the space of all existence,” but a mathematical space for representing possible states of a defined physical system.</p><p>A quantum state, observables, measurement, and the Hamiltonian each show that possibility does not appear without a formal setting. The point is not to turn physics into metaphysics, but to protect the distinction between possibility, law, measurement, and the conditions under which something can become determinate.</p><h3 id="time-quanta-and-gravity">Time, Quanta, and Gravity</h3><p>Quantum theory and relativity speak different languages. Quantum theory describes states, amplitudes, measurement, uncertainty, and the transition from possibility to outcome. General relativity describes gravity as geometry: mass-energy shaping spacetime, and spacetime shaping the movement of matter and light.</p><p>The theory borrows only the structural lesson. Potential without form remains indeterminate. Form without openness becomes closed. The difficulty of unifying quantum theory and gravity is therefore not used as proof, but as a disciplined image of the friction between possibility and stable form.</p><h3 id="weight-and-geometry">Weight and Geometry</h3><p>Weight is not merely a number added to a thing. In physical language, mass, energy, field, and geometry belong to relations. A body is not only a lump of substance; it participates in a field of effects. It bends, is bent, resists, attracts, radiates, absorbs, and is situated.</p><p>In the human language of the theory, this means that becoming real is not just “appearing.” To become real is to acquire weight: consequences, relation, pressure, response, and responsibility.</p><h3 id="mass-energy-and-form">Mass-Energy and Form</h3><p>The relation between mass and energy should not be converted into a mystical slogan. The point is not that everything is “really energy” in a loose metaphysical sense. The careful point is structural: what appears as substance and what appears as activity can be linked through precise relations, under defined conditions.</p><p>For the theory, this becomes an image of form. Potential must pass through form in order to become meaningful. Without form, it remains unheld; without openness, form becomes dead closure.</p><h3 id="matter-as-result-and-matter-as-medium">Matter as Result and Matter as Medium</h3><p>Matter can be understood as a result of deeper physical processes, but in lived experience it also functions as a medium. A material system can mediate, absorb, redirect, filter, scatter, store, or release energy. The body does something similar with experience.</p><p>The body is not only where limitation happens. It is also where limitation can become articulation: a hand that writes, a voice that answers, a nervous system that learns, and a life that turns pressure into meaning.</p><h3 id="difference-sharing-and-coherence">Difference, Sharing, and Coherence</h3><p>A difference must be real enough not to collapse into sameness. Yet there must also be the possibility of resonance, so that difference does not become absolute isolation. The ideal is not the destruction of difference. It is the condition under which difference can participate without erasing itself.</p><p>Coherence is not uniformity. It is the disciplined relation between distinct parts that can still share a world.</p><h3 id="field-mass-and-relation">Field, Mass, and Relation</h3><p>A thing is not only what it is in isolation. It is also how it participates in a field of effects. A self is not only an inner point; it is a node of relation, a weight in the world, a source of disturbance and healing.</p><p>Meaning appears when potential is no longer merely available, but begins to bear relation: to another person, to a body, to a history, to a limit, to a responsibility.</p><h3 id="horizon-information-and-boundary">Horizon, Information, and Boundary</h3><p>The horizon gives an edge-image of the problem: the place where information, boundary, gravity, and description meet a limit. A horizon does not need to be read as a mystical wall. It is enough to read it as a formal warning.</p><p>There are places where what can be said from one perspective is not identical with what can be said from another. A boundary does not always erase meaning; sometimes it defines the conditions under which meaning can still be responsibly carried.</p><h3 id="return-to-human-language">Return to Human Language</h3><p>Translated back into human language, the lesson is this: the ideal is not light that never met matter. Light that never meets resistance remains untested. Matter that blocks all light becomes opacity.</p><p>The living medium receives without merely absorbing, filters without merely rejecting, shapes without merely dominating, and carries without pretending that passage is painless.</p><h3 id="ideal-as-responsible-medium">Ideal as Responsible Medium</h3><p>If this structure is translated into the teleological language of the theory, not as a factual claim about the universe, one may say: the whole turns itself into the instrument of its own correction. It becomes body, medium, friction, memory, and responsibility so that potential will not remain merely possible.</p><p>The ideal is not light that has never met matter. The ideal is light that has passed through matter and returned not merely as light, but as light that knows how not to disperse.</p><h2 id="physical-comparison-map-potential-form-and-the-search-for-a-unified-theory"><span class="chapter-prefix">17. </span>Physical Comparison Map — Potential,
 Form, and the Search for a Unified Theory</h2>
 <p><em>From spacetime as form to potential as a deeper ground</em></p>
 <figure class="image-frame">
-<img src="../figures/05_flow_toward_the_ideal.png" decoding="async"
-loading="lazy"
-alt="Figure H: Physical comparison map. Quantum theory, relativity, horizon, and information as different languages of the tension between potential and form." />
+<img alt="Figure H: Physical comparison map. Quantum theory, relativity, horizon, and information as different languages of the tension between potential and form." decoding="async" loading="lazy" src="../figures/05_flow_toward_the_ideal.png"/>
 <figcaption aria-hidden="true">
 Figure H: Physical comparison map. Quantum theory, relativity, horizon,
 and information as different languages of the tension between potential
@@ -5648,23 +5262,18 @@ measurement, matter, force, and causality are born as readable forms of
 deeper potential. This is a change of layer: not new physics instead of
 physics, but a more careful way to think about what physics is seeking
 when it seeks unification.</p>
-<h2
-id="universe-structure-geometry-of-the-universe-and-the-shape-of-potential">Universe
+<h2 id="universe-structure-geometry-of-the-universe-and-the-shape-of-potential">Universe
 Structure / Geometry of the Universe and the Shape of Potential</h2>
 <p><em>Flat, curved, open, bounded infinity and unbounded
 infinity</em></p>
 <figure class="chapter-figure image-frame">
-<img
-src="../figures/cover_philosophical_recursion_whole_diagram.png"
-decoding="async" loading="lazy"
-alt="Universe Structure / The Shape of the Universe and the Shape of Potential" />
+<img alt="Universe Structure / The Shape of the Universe and the Shape of Potential" decoding="async" loading="lazy" src="../figures/cover_philosophical_recursion_whole_diagram.png"/>
 <figcaption aria-hidden="true">
 Image description: the shape of the universe as relations, horizons, and
 passages between potential and form.
 </figcaption>
 </figure>
-<h3
-id="flat-universe-curved-universe-multiverse-and-omniverse-as-cautious-boundary-language">Flat
+<h3 id="flat-universe-curved-universe-multiverse-and-omniverse-as-cautious-boundary-language">Flat
 universe, curved universe, multiverse and omniverse as cautious boundary
 language</h3>
 <p>The structure of the universe is a dangerous place for a
@@ -5716,15 +5325,13 @@ borrowing of terms.</p>
 <h2 id="high-energy-physics">High-Energy Physics</h2>
 <p><em>Field, symmetry, breaking, scale, and context</em></p>
 <figure class="chapter-figure image-frame">
-<img src="../figures/v26_restyle_orbital_horizon.png"
-decoding="async" loading="lazy" alt="High-Energy Physics" />
+<img alt="High-Energy Physics" decoding="async" loading="lazy" src="../figures/v26_restyle_orbital_horizon.png"/>
 <figcaption aria-hidden="true">
 Image description: energy, particles, and horizons as a test of the
 limits of form.
 </figcaption>
 </figure>
-<h3
-id="the-standard-model-qft-higgs-and-the-boundary-between-language-and-proof">The
+<h3 id="the-standard-model-qft-higgs-and-the-boundary-between-language-and-proof">The
 Standard Model, QFT, Higgs, and the boundary between language and
 proof</h3>
 <p>High-energy physics enters the theory only where it genuinely helps
@@ -5775,16 +5382,13 @@ Holes, Event Horizons, and the Holographic Principle</h2>
 <p><em>Boundary, information, accessibility, and traces - without
 turning physics into metaphysical proof</em></p>
 <figure class="chapter-figure image-frame">
-<img src="../figures/v26_restyle_polar_field_threshold.png"
-decoding="async" loading="lazy"
-alt="Black Holes, Event Horizons, and the Holographic Principle" />
+<img alt="Black Holes, Event Horizons, and the Holographic Principle" decoding="async" loading="lazy" src="../figures/v26_restyle_polar_field_threshold.png"/>
 <figcaption aria-hidden="true">
 Image description: horizon, information, and a threshold where what
 disappears still leaves structural trace.
 </figcaption>
 </figure>
-<h3
-id="boundary-trace-and-information-without-turning-mystery-into-myth">Boundary,
+<h3 id="boundary-trace-and-information-without-turning-mystery-into-myth">Boundary,
 trace, and information without turning mystery into myth</h3>
 <p>Black holes attract philosophical theories because they seem like
 perfect symbols: boundary, darkness, information, time, collapse,
@@ -5829,18 +5433,12 @@ contextuality, and Britannica/ISFDB for the literary identification of
 Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are
 not treated as proofs of the theory; they are safeguards against empty
 borrowing of terms.</p>
-<h2 id="chapter"><span class="chapter-prefix">Chapter ?:</span><span
-class="mystery-arrow">↓</span></h2>
-<h2 id="chapter-1"><span class="chapter-prefix">Chapter ?:</span><span
-class="mystery-arrow">↓</span></h2>
-<h2 id="chapter-."><span class="mystery-spacer">Chapter ?:</span><span
-class="mystery-dotmark">.</span></h2>
-<h2 id="chapter-.-1"><span class="mystery-spacer">Chapter ?:</span><span
-class="mystery-dotmark">.</span></h2>
-<h2 id="chapter-.-2"><span class="mystery-spacer">Chapter ?:</span><span
-class="mystery-dotmark">.</span></h2>
-<h2 id="chapter-2"><span class="chapter-prefix">Chapter ?:</span><span
-class="mystery-arrow">↓</span></h2>
+<h2 id="chapter"><span class="chapter-prefix">Chapter ?:</span><span class="mystery-arrow">↓</span></h2>
+<h2 id="chapter-1"><span class="chapter-prefix">Chapter ?:</span><span class="mystery-arrow">↓</span></h2>
+<h2 id="chapter-."><span class="mystery-spacer">Chapter ?:</span><span class="mystery-dotmark">.</span></h2>
+<h2 id="chapter-.-1"><span class="mystery-spacer">Chapter ?:</span><span class="mystery-dotmark">.</span></h2>
+<h2 id="chapter-.-2"><span class="mystery-spacer">Chapter ?:</span><span class="mystery-dotmark">.</span></h2>
+<h2 id="chapter-2"><span class="chapter-prefix">Chapter ?:</span><span class="mystery-arrow">↓</span></h2>
 <h2 id="chapter-understanding"><span class="chapter-prefix">Chapter *:
 </span>Understanding</h2>
 <h2 id="chapter-application"><span class="chapter-prefix">Chapter •:
@@ -5984,9 +5582,7 @@ of formal systems, computation, proof, and a system’s self-reference.
 The theory does not use Gödel’s theorems or Turing machines as proof; it
 uses them only as a careful background for the idea that a system can
 ask about its own limits from within.</p>
-<p>Complexity theory, polynomial-time reductions, <span
-class="math inline"><em>NP</em></span>-completeness, <span
-class="math inline"><em>coNP</em></span>, the polynomial hierarchy, and
+<p>Complexity theory, polynomial-time reductions, <span class="math inline"><em>NP</em></span>-completeness, <span class="math inline"><em>coNP</em></span>, the polynomial hierarchy, and
 <span class="math inline"><em>QBF</em></span> are relevant here only as
 structural language: they do not identify potential with a complexity
 class, but help distinguish finding, verification, resource,
@@ -6054,8 +5650,7 @@ such as Everett, David Lewis, and Max Tegmark. The theory does not
 commit to any one of those cosmological or modal models; it uses the
 vocabulary to think about recursion, layers, perspectives, and the
 infinite decomposition of possibility.</p>
-<h3
-id="artificial-intelligence-consciousness-and-contemporary-mirrors">Artificial
+<h3 id="artificial-intelligence-consciousness-and-contemporary-mirrors">Artificial
 Intelligence, Consciousness, and Contemporary Mirrors</h3>
 <p>The AI analogy is a contemporary addition. It is not a proof, but a
 mirror: it helps distinguish information, experience, awareness,
