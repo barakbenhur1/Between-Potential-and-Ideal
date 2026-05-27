@@ -18,7 +18,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Add thumbnails only to main theory chapter rows
+      - name: Add thumbnails only to visible main theory chapter rows
         run: |
           python3 - <<'PY'
           from pathlib import Path
@@ -26,14 +26,16 @@ jobs:
           import re
 
           TARGETS = [
-            (Path('site/files/between-potential-and-ideal-he.html'), 'rtl'),
-            (Path('site/files/between-potential-and-ideal-en.html'), 'ltr'),
+            (Path('site/files/between-potential-and-ideal-he-editorial.html'), 'rtl'),
+            (Path('site/files/between-potential-and-ideal-en-editorial.html'), 'ltr'),
+            (Path('site/files/between-potential-and-ideal-tightened-he.html'), 'rtl'),
+            (Path('site/files/between-potential-and-ideal-tightened-en.html'), 'ltr'),
           ]
 
-          STYLE_ID = 'v121-theory-main-chapter-toc-thumbnails'
+          STYLE_ID = 'v122-visible-theory-main-chapter-toc-thumbnails'
           CSS = f'''
           <style id="{STYLE_ID}">
-          /* V121 — theory TOC thumbnails: main chapters only, image from each chapter body. */
+          /* V122 — visible theory TOC thumbnails: main chapters only, image from each chapter body. */
           #interactive-toc{{text-align:start!important;}}
           html[dir="rtl"] #interactive-toc,#interactive-toc[dir="rtl"]{{text-align:right!important;}}
           html[dir="ltr"] #interactive-toc,#interactive-toc[dir="ltr"]{{text-align:left!important;}}
@@ -47,7 +49,7 @@ jobs:
           </style>
           '''.strip()
 
-          STYLE_RE = re.compile(r'\n?\s*<style id="v12[0-9]-theory-main-chapter-toc-thumbnails">.*?</style>', re.S | re.I)
+          STYLE_RE = re.compile(r'\n?\s*<style id="v12[0-9][^"]*theory[^>]*toc[^>]*>.*?</style>', re.S | re.I)
           HEAD_RE = re.compile(r'</head>', re.I)
           TOC_RE = re.compile(r'(<section\b[^>]*\bid=["\']interactive-toc["\'][^>]*>)(?P<body>.*?)(</section>)', re.S | re.I)
           LI_RE = re.compile(r'<li(?P<attrs>[^>]*)>(?P<body>.*?)</li>', re.S | re.I)
@@ -144,6 +146,7 @@ jobs:
           changed = []
           for path, direction in TARGETS:
             if not path.exists():
+              print(f'missing target: {path}')
               continue
             old = path.read_text(encoding='utf-8')
             new = STYLE_RE.sub('', old)
@@ -169,6 +172,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/files/between-potential-and-ideal-he.html site/files/between-potential-and-ideal-en.html
-          git commit -m "Add theory TOC thumbnails for main chapters only"
+          git add site/files/between-potential-and-ideal-he-editorial.html site/files/between-potential-and-ideal-en-editorial.html site/files/between-potential-and-ideal-tightened-he.html site/files/between-potential-and-ideal-tightened-en.html
+          git commit -m "Add TOC thumbnails to visible theory files"
           git push
