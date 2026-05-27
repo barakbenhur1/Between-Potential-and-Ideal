@@ -302,3 +302,27 @@ body.bpi-home-width-clean{
     text-align:center!important;
   }
 }
+/* BPI V407 - desktop: make first two homepage cards match the third visual card width.
+   Scope: homepage only. Mobile is intentionally untouched; V406 keeps 12px side margins.
+   This only changes desktop width alignment for:
+   1) Start Here white card
+   2) Blue thought/hero card
+   3) Opening image/visual card
+*/
+@media (min-width: 769px){
+  body.bpi-home-width-clean{
+    --bpi-home-card-width: min(1680px, calc(100vw - 96px));
+  }
+
+  body.bpi-home-width-clean .site-main > :is(
+    .bpi-start-here-note,
+    .hero.concise-hero,
+    .opening-visual
+  ){
+    width: var(--bpi-home-card-width) !important;
+    max-width: var(--bpi-home-card-width) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+}
