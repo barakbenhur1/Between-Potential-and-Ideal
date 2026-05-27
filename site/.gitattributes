@@ -1,2 +1,2 @@
-# Git LFS for large generated document downloads
-files/**/*.docx filter=lfs diff=lfs merge=lfs -text
+files/*.docx -filter -diff -merge -text
+files/**/*.docx -filter -diff -merge -text

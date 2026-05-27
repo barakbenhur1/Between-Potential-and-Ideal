@@ -1,2 +1,4 @@
-site/files/*.docx filter=lfs diff=lfs merge=lfs -text
-site/files/**/*.docx filter=lfs diff=lfs merge=lfs -text
+*.docx -filter -diff -merge -text
+*.docx.v86.bak -filter -diff -merge -text
+site/files/*.docx -filter -diff -merge -text
+site/files/**/*.docx -filter -diff -merge -text
