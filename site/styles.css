@@ -579,3 +579,22 @@ body.public-page .site-main > .homepage-start-card .download-button{
     min-width: 0 !important;
   }
 }
+
+/* BPI MOBILE CENTER ONLY — do not change content, order, width, images, or desktop.
+   Fixes mobile card alignment only. */
+@media (max-width: 860px){
+  body.public-page main.site-main > #bpi-start-here-note,
+  body.public-page main.site-main > .homepage-start-card,
+  body.public-page main.site-main > .hero.concise-hero,
+  body.public-page main.site-main > figure.opening-visual,
+  body.public-page main.site-main > .signature-blurbs,
+  body.public-page main.site-main > .hub-grid,
+  body.public-page main.site-main > .notice-box.media-card{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-self: center !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+  }
+}
