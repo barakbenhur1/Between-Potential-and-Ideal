@@ -165,3 +165,25 @@
   }
 }
 
+
+/* BPI V427 MOBILE BUTTON COLORS ONLY
+   Match desktop button colors on mobile:
+   primary = orange/gold, secondary = white.
+   Does not change layout, width, order, text, images, or desktop. */
+@media (max-width: 860px){
+  body.public-page .download-button,
+  body.public-page a.download-button{
+    background: #fffaf0 !important;
+    color: #123f73 !important;
+    border: 1px solid rgba(184, 121, 38, 0.34) !important;
+    box-shadow: 0 8px 22px rgba(17, 38, 64, 0.08) !important;
+  }
+
+  body.public-page .download-button.primary,
+  body.public-page a.download-button.primary{
+    background: linear-gradient(135deg, #c98a2c, #b87926) !important;
+    color: #ffffff !important;
+    border-color: rgba(184, 121, 38, 0.78) !important;
+    box-shadow: 0 10px 26px rgba(184, 121, 38, 0.24) !important;
+  }
+}
