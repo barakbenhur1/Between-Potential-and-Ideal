@@ -1,0 +1,28 @@
+BPI V418 remove extra homepage cards and move blurbs
+
+Changed:
+- Removed redundant cards: 'מסלול קריאה קצר' / 'לפני הקריאה' and English equivalents if present.
+- Moved blurbs block to the bottom of the homepage main content.
+- Did not touch Start Here, blue hero, opening image, theory documents, appendices, or content text except removing those cards.
+
+Results:
+[
+  {
+    "file": "/Users/barakbenhur/Downloads/theory-site/site/index.html",
+    "changed": false,
+    "removed_cards": [],
+    "moved_blurbs_blocks": 1,
+    "still_has_forbidden_phrases": [],
+    "blurbs_before_main_end": true
+  },
+  {
+    "file": "/Users/barakbenhur/Downloads/theory-site/site/en.html",
+    "changed": false,
+    "removed_cards": [],
+    "moved_blurbs_blocks": 1,
+    "still_has_forbidden_phrases": [],
+    "blurbs_before_main_end": true
+  }
+]
+
+OK
