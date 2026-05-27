@@ -377,13 +377,87 @@ figure.chapter-figure.image-frame:not(.cover-figure) > img{
   figure.cover-figure.image-frame{width:150mm!important;max-width:150mm!important;}
   main figure.image-frame:not(.cover-figure),figure.image-frame:not(.cover-figure){width:160mm!important;max-width:160mm!important;padding:2.5mm!important;}
   .document-screen-toc .theory-toc-thumb-box{flex-basis:18mm!important;width:18mm!important;min-width:18mm!important;height:12mm!important;box-shadow:none!important;}
-}</style></head>
+}</style><style id="bpi-v150-theory-document-image-and-accessibility-fixes">
+/* bpi-v150-theory-document-image-and-accessibility-fixes: keeps existing layout, fixes image boxes, accessibility focus, and TOC thumbnails without changing preserved titles. */
+:where(a, button, input, select, textarea, summary):focus-visible {
+  outline: 3px solid #0b7285 !important;
+  outline-offset: 3px !important;
+  border-radius: 8px !important;
+}
+:where(h1,h2,h3,h4,h5,h6)[id] { scroll-margin-top: 96px !important; }
+figure.image-frame, figure.chapter-figure.image-frame, .chapter-opening figure.image-frame, .cover-figure.image-frame {
+  overflow:hidden !important;
+  background:#fffaf0 !important;
+  box-sizing:border-box !important;
+}
+figure.image-frame > img, figure.chapter-figure.image-frame > img, .chapter-opening figure.image-frame > img {
+  display:block !important;
+  width:100% !important;
+  max-width:100% !important;
+  min-width:100% !important;
+  height:auto !important;
+  max-height:none !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  margin:0 auto !important;
+}
+.cover-figure.image-frame {
+  width:min(720px, 86%) !important;
+  max-width:86% !important;
+  margin-inline:auto !important;
+}
+.cover-figure.image-frame > img {
+  display:block !important;
+  width:100% !important;
+  max-width:100% !important;
+  min-width:100% !important;
+  height:auto !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  margin:0 auto !important;
+}
+.document-screen-toc .theory-toc-thumb-box {
+  display:block !important;
+  flex:0 0 58px !important;
+  width:58px !important;
+  min-width:58px !important;
+  height:40px !important;
+  overflow:hidden !important;
+  border-radius:8px !important;
+  border:1px solid rgba(10,58,104,.13) !important;
+  background:#fffaf0 !important;
+  box-shadow:0 3px 9px rgba(20,40,60,.07) !important;
+  margin:0 !important;
+  box-sizing:border-box !important;
+}
+.document-screen-toc .theory-toc-thumb-box .theory-toc-thumb,
+.document-screen-toc .theory-toc-thumb {
+  display:block !important;
+  width:100% !important;
+  min-width:0 !important;
+  height:100% !important;
+  max-width:none !important;
+  max-height:none !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  background:transparent !important;
+  margin:0 !important;
+}
+.document-screen-toc .toc-sub .theory-toc-thumb,
+.document-screen-toc .toc-sub .theory-toc-thumb-box { display:none !important; }
+@media (max-width: 680px) {
+  .cover-figure.image-frame { width:100% !important; max-width:100% !important; }
+}
+</style></head>
 <body>
 <header id="title-block-header">
 <h1 class="title">Between Potential and Ideal</h1>
 </header>
 <div aria-label="Document navigation" class="document-backbar" role="navigation">
-<p><a href="../en.html">Back to site</a><a href="../files-en.html">All
+<p><a href="../en.html">Back to site</a><a href="../pages/en/files-en.html">All
 files</a></p>
 </div>
 <p><a class="skip-link" href="#main">Skip to main content</a></p>

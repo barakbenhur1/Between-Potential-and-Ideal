@@ -61,3 +61,60 @@ a:focus-visible,button:focus-visible,[role="button"]:focus-visible,input:focus-v
   font-size:14px!important;
   line-height:1.55!important;
 }
+
+
+/* bpi-v150-ideal-product-safe-fixes: product-level safe fixes approved in QA pass. */
+:where(a, button, input, select, textarea, summary):focus-visible {
+  outline: 3px solid #0b7285 !important;
+  outline-offset: 3px !important;
+  border-radius: 8px !important;
+}
+:where(h1,h2,h3,h4,h5,h6)[id] {
+  scroll-margin-top: 96px;
+}
+.skip-link {
+  position:absolute;
+  inset-inline-start:12px;
+  top:8px;
+  z-index:10000;
+  padding:.55rem .8rem;
+  border-radius:999px;
+  background:#102033;
+  color:#fff;
+  transform:translateY(-180%);
+}
+.skip-link:focus { transform:translateY(0); }
+.card-thumb, .page-title-mark, .tab-visual img, .compact-section-visual img {
+  object-fit: cover;
+  object-position: center center;
+}
+.image-frame {
+  overflow: hidden;
+  background: #fffaf0;
+}
+.image-frame > img {
+  display:block;
+  width:100%;
+  max-width:100%;
+  height:auto;
+}
+.bpi-method-scope-note {
+  margin: 18px auto;
+  padding: 14px 18px;
+  max-width: 920px;
+  box-sizing: border-box;
+  border: 1px solid rgba(184,121,38,.28);
+  border-inline-start: 4px solid #b87926;
+  border-radius: 14px;
+  background: #fff7e8;
+  color: #4b3d2e;
+  font-size: 14px;
+  line-height: 1.55;
+}
+.bpi-start-here-note {
+  margin: 16px 0 22px;
+  padding: 14px 18px;
+  border: 1px solid rgba(8,115,122,.22);
+  border-radius: 16px;
+  background: rgba(255,247,232,.75);
+}
