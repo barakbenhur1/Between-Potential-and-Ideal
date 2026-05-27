@@ -1,10 +1,8 @@
+# Push trigger disabled by BPI ideal fixer to prevent one-time workflow regressions.
 name: One-time Home mobile prepaint CSS fix
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/one-time-home-mobile-prepaint-css.yml'
+  workflow_dispatch:
 
 permissions:
   contents: write

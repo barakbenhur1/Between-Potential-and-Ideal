@@ -1,14 +1,8 @@
+# Push trigger disabled by BPI ideal fixer to prevent one-time workflow regressions.
 name: BPI V88 files source-card dedupe
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'tools/fix_files_source_cards.py'
-      - '.github/workflows/bpi-v88-files-source-card.yml'
-      - 'site/pages/he/files.html'
-      - 'site/pages/en/files-en.html'
 
 permissions:
   contents: write

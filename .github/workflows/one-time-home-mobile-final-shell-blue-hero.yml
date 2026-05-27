@@ -1,10 +1,8 @@
+# Push trigger disabled by BPI ideal fixer to prevent one-time workflow regressions.
 name: One-time final Home mobile shell and blue hero fix
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/one-time-home-mobile-final-shell-blue-hero.yml'
+  workflow_dispatch:
 
 permissions:
   contents: write

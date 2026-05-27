@@ -97,3 +97,8 @@ The deepest answer is therefore not “AI believes” but “AI reflects belief.
 This document is not evidence that AI is conscious. It is evidence that the question of consciousness becomes more dangerous when language becomes fluent. The more convincing the tool becomes, the more important the boundary becomes.
 
 A worthy use of AI does not ask the machine to become a soul. It asks the machine to help the living source remain honest.
+
+---
+
+**Short methodological clarification:** When this document uses terms from mathematics, physics, computer science, logic, or artificial intelligence, they should be read according to their stated context: sometimes as structural metaphor, sometimes as a reading model, and only as a formal claim when explicitly presented as such. The use of a scientific term should not be treated as a scientific or metaphysical proof by itself.
+

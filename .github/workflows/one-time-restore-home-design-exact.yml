@@ -1,10 +1,8 @@
+# Push trigger disabled by BPI ideal fixer to prevent one-time workflow regressions.
 name: One-time restore exact home design with mobile full tab bar
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/one-time-restore-home-design-exact.yml'
+  workflow_dispatch:
 
 permissions:
   contents: write

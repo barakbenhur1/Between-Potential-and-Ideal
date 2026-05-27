@@ -1,10 +1,8 @@
+# Push trigger disabled by BPI ideal fixer to prevent one-time workflow regressions.
 name: Fix appendix story TOC once
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - .github/workflows/fix-appendix-toc-once.yml
+  workflow_dispatch:
   workflow_dispatch:
 
 permissions:

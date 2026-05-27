@@ -1,10 +1,8 @@
+# Push trigger disabled by BPI ideal fixer to prevent one-time workflow regressions.
 name: One-time final mobile nav feedback and files fix
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/one-time-final-mobile-feedback-files-fix.yml'
+  workflow_dispatch:
 
 permissions:
   contents: write

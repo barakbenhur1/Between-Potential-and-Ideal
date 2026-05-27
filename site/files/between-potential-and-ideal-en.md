@@ -7187,3 +7187,8 @@ is presented as an independent proposal, not as a derivation from any
 single source.
 
 </div>
+
+---
+
+**Short methodological clarification:** When this document uses terms from mathematics, physics, computer science, logic, or artificial intelligence, they should be read according to their stated context: sometimes as structural metaphor, sometimes as a reading model, and only as a formal claim when explicitly presented as such. The use of a scientific term should not be treated as a scientific or metaphysical proof by itself.
+

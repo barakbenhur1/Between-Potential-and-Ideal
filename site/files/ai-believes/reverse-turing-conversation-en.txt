@@ -85,3 +85,8 @@ If the human can stand before a convincing mirror and still distinguish source f
 The final rule is this:
 
 A tool may help language become clearer, but it must not steal the distance through which truth becomes yours.
+
+---
+
+Short methodological clarification: When this document uses terms from mathematics, physics, computer science, logic, or artificial intelligence, they should be read according to their stated context: sometimes as structural metaphor, sometimes as a reading model, and only as a formal claim when explicitly presented as such. The use of a scientific term should not be treated as a scientific or metaphysical proof by itself.
+

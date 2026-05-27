@@ -1,12 +1,8 @@
+# Push trigger disabled by BPI ideal fixer to prevent one-time workflow regressions.
 name: BPI V87 logical PDF buttons
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'tools/fix_logical_pdf_buttons.py'
-      - '.github/workflows/bpi-v87-logical-pdf-buttons.yml'
 
 permissions:
   contents: write

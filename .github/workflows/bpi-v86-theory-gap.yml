@@ -1,15 +1,9 @@
+# Push trigger disabled by BPI ideal fixer to prevent one-time workflow regressions.
 name: BPI V86 theory cover TOC gap repair
 
 # Trigger marker: 2026-05-26 close logical-cover gap
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'tools/fix_theory_cover_toc_gap.py'
-      - 'site/files/editorial-tightened/**'
-      - 'site/files/**/*.html'
-      - '.github/workflows/bpi-v86-theory-gap.yml'
 
 permissions:
   contents: write
