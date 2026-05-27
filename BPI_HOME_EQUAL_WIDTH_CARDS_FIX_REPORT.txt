@@ -1,0 +1,17 @@
+BPI home equal-width cards fix
+
+Changed files:
+- /Users/barakbenhur/Downloads/theory-site/site/index.html
+- /Users/barakbenhur/Downloads/theory-site/site/en.html
+
+Created/updated:
+- /Users/barakbenhur/Downloads/theory-site/site/assets/bpi-home-card-equal-width.css
+
+Missing targets:
+
+Manual QA:
+- Desktop: start-here card appears once and all major cards match the widest card width.
+- Desktop: blue opening card width equals the white start card width.
+- Mobile: start-here and thought/hero cards are centered and slightly tightened.
+- Mobile: all major cards match that corrected width.
+- Three buttons remain visible in start-here in Hebrew and English.
