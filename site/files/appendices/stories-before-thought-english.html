@@ -2237,178 +2237,26 @@ figure figcaption { text-align: center !important; }
   margin:.25rem auto .35rem!important;
 }
 </style>
-<style id="v114-appendix-story-toc-single-existing-thumbnail">
-/* V114 — standalone appendix TOC: one small existing story image thumbnail per row. No new images. */
-.story-toc-page{
-  text-align:start!important;
-}
-html[dir="rtl"] .story-toc-page{
-  text-align:right!important;
-}
-html[dir="ltr"] .story-toc-page{
-  text-align:left!important;
-}
-.story-toc-page h2,
-.story-toc-page > p{
-  text-align:inherit!important;
-}
-.story-toc-page .story-toc-clean-list{
-  display:block!important;
-  width:min(720px,100%)!important;
-  max-width:720px!important;
-  margin-block:24px 0!important;
-  padding:0!important;
-  text-align:inherit!important;
-  direction:inherit!important;
-}
-html[dir="rtl"] .story-toc-page .story-toc-clean-list{
-  margin-right:0!important;
-  margin-left:auto!important;
-  text-align:right!important;
-  direction:rtl!important;
-}
-html[dir="ltr"] .story-toc-page .story-toc-clean-list{
-  margin-left:0!important;
-  margin-right:auto!important;
-  text-align:left!important;
-  direction:ltr!important;
-}
-.story-toc-page .story-toc-clean-list p.story-toc-row,
-.story-toc-page p.story-toc-row{
-  display:block!important;
-  margin:0!important;
-  padding:.58rem 0!important;
-  border-block-start:1px solid rgba(197,121,29,.22)!important;
-  text-align:inherit!important;
-  direction:inherit!important;
-}
-.story-toc-page .story-toc-clean-list p.story-toc-row:first-child,
-.story-toc-page p.story-toc-row:first-child{
-  border-block-start:0!important;
-}
-.story-toc-page .story-toc-entry,
-.story-toc-page .story-toc-clean-list a.story-toc-entry,
-.story-toc-page p.story-toc-row a.story-toc-entry{
-  display:flex!important;
-  align-items:center!important;
-  justify-content:flex-start!important;
-  gap:11px!important;
-  width:100%!important;
-  min-height:50px!important;
-  padding:0!important;
-  margin:0!important;
-  color:#08737a!important;
-  text-align:inherit!important;
-  direction:inherit!important;
-  text-decoration:none!important;
-}
-html[dir="rtl"] .story-toc-page .story-toc-entry,
-html[dir="ltr"] .story-toc-page .story-toc-entry{
-  flex-direction:row!important;
-}
-.story-toc-page .story-toc-thumb{
-  display:block!important;
-  flex:0 0 68px!important;
-  width:68px!important;
-  min-width:68px!important;
-  height:46px!important;
-  object-fit:cover!important;
-  object-position:center center!important;
-  border-radius:9px!important;
-  border:1px solid rgba(10,58,104,.13)!important;
-  background:#fffaf0!important;
-  box-shadow:0 4px 12px rgba(20,40,60,.07)!important;
-}
-.story-toc-page .story-toc-title{
-  display:block!important;
-  min-width:0!important;
-  color:#08737a!important;
-  font-size:clamp(1.03rem,1.75vw,1.24rem)!important;
-  line-height:1.32!important;
-  font-weight:700!important;
-  text-align:inherit!important;
-  direction:inherit!important;
-}
-.story-toc-page .story-toc-entry:hover .story-toc-title,
-.story-toc-page .story-toc-entry:focus .story-toc-title{
-  text-decoration:underline!important;
-  text-decoration-thickness:1px!important;
-  text-underline-offset:.18em!important;
-}
-.story-toc-page ol{
-  columns:1!important;
-  column-count:1!important;
-  width:min(720px,100%)!important;
-  max-width:720px!important;
-  margin-block:24px 0!important;
-  padding-inline-start:0!important;
-  padding-inline-end:0!important;
-  list-style:none!important;
-  text-align:inherit!important;
-}
-html[dir="rtl"] .story-toc-page ol{
-  margin-right:0!important;
-  margin-left:auto!important;
-}
-html[dir="ltr"] .story-toc-page ol{
-  margin-left:0!important;
-  margin-right:auto!important;
-}
-.story-toc-page li{
-  break-inside:avoid!important;
-  margin:0!important;
-  padding:.58rem 0!important;
-  border-block-start:1px solid rgba(197,121,29,.22)!important;
-  font-size:clamp(1.03rem,1.75vw,1.24rem)!important;
-  line-height:1.32!important;
-}
-.story-toc-page li:first-child{
-  border-block-start:0!important;
-}
-@media (max-width:560px){
-  .story-toc-page .story-toc-entry{
-    gap:9px!important;
-    min-height:46px!important;
-  }
-  .story-toc-page .story-toc-thumb{
-    flex-basis:58px!important;
-    width:58px!important;
-    min-width:58px!important;
-    height:40px!important;
-    border-radius:8px!important;
-  }
-}
-@media print{
-  .story-toc-page .story-toc-clean-list,
-  .story-toc-page ol{
-    width:100%!important;
-    max-width:100%!important;
-    columns:1!important;
-    column-count:1!important;
-  }
-  .story-toc-page .story-toc-clean-list p.story-toc-row,
-  .story-toc-page p.story-toc-row,
-  .story-toc-page li{
-    padding:.34rem 0!important;
-  }
-  .story-toc-page .story-toc-entry{
-    gap:3mm!important;
-    min-height:14mm!important;
-  }
-  .story-toc-page .story-toc-thumb{
-    flex-basis:20mm!important;
-    width:20mm!important;
-    min-width:20mm!important;
-    height:14mm!important;
-    border-radius:2.4mm!important;
-    box-shadow:none!important;
-  }
-  .story-toc-page .story-toc-title{
-    font-size:12.5pt!important;
-  }
-}
+<style id="v115-appendix-story-toc-images-from-story-sections">
+/* V115 — appendix story TOC thumbnails: use the image from each linked story section. */
+.story-toc-page{text-align:start!important;}
+html[dir="rtl"] .story-toc-page{text-align:right!important;}
+html[dir="ltr"] .story-toc-page{text-align:left!important;}
+.story-toc-page h2,.story-toc-page>p{text-align:inherit!important;}
+.story-toc-page .story-toc-clean-list{display:block!important;width:min(720px,100%)!important;max-width:720px!important;margin-block:24px 0!important;padding:0!important;text-align:inherit!important;direction:inherit!important;}
+html[dir="rtl"] .story-toc-page .story-toc-clean-list{margin-right:0!important;margin-left:auto!important;text-align:right!important;direction:rtl!important;}
+html[dir="ltr"] .story-toc-page .story-toc-clean-list{margin-left:0!important;margin-right:auto!important;text-align:left!important;direction:ltr!important;}
+.story-toc-page .story-toc-row{display:block!important;margin:0!important;padding:.58rem 0!important;border-block-start:1px solid rgba(197,121,29,.22)!important;text-align:inherit!important;direction:inherit!important;}
+.story-toc-page .story-toc-row:first-child{border-block-start:0!important;}
+.story-toc-page .story-toc-entry{display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:11px!important;width:100%!important;min-height:50px!important;padding:0!important;margin:0!important;color:#08737a!important;text-align:inherit!important;direction:inherit!important;text-decoration:none!important;}
+html[dir="rtl"] .story-toc-page .story-toc-entry,html[dir="ltr"] .story-toc-page .story-toc-entry{flex-direction:row!important;}
+.story-toc-page .story-toc-thumb{display:block!important;flex:0 0 68px!important;width:68px!important;min-width:68px!important;height:46px!important;object-fit:cover!important;object-position:center center!important;border-radius:9px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 4px 12px rgba(20,40,60,.07)!important;}
+.story-toc-page .story-toc-title{display:block!important;min-width:0!important;color:#08737a!important;font-size:clamp(1.03rem,1.75vw,1.24rem)!important;line-height:1.32!important;font-weight:700!important;text-align:inherit!important;direction:inherit!important;}
+.story-toc-page .story-toc-entry:hover .story-toc-title,.story-toc-page .story-toc-entry:focus .story-toc-title{text-decoration:underline!important;text-decoration-thickness:1px!important;text-underline-offset:.18em!important;}
+@media (max-width:560px){.story-toc-page .story-toc-entry{gap:9px!important;min-height:46px!important;}.story-toc-page .story-toc-thumb{flex-basis:58px!important;width:58px!important;min-width:58px!important;height:40px!important;border-radius:8px!important;}}
+@media print{.story-toc-page .story-toc-clean-list{width:100%!important;max-width:100%!important;}.story-toc-page .story-toc-row{padding:.34rem 0!important;}.story-toc-page .story-toc-entry{gap:3mm!important;min-height:14mm!important;}.story-toc-page .story-toc-thumb{flex-basis:20mm!important;width:20mm!important;min-width:20mm!important;height:14mm!important;border-radius:2.4mm!important;box-shadow:none!important;}.story-toc-page .story-toc-title{font-size:12.5pt!important;}}
 </style>
-</head><body class="appendix-document-page public-page design-prompt-theme" dir="ltr"><section class="page cover" id="cover-page" style="min-height:250mm;page-break-after:always;break-after:page;box-sizing:border-box;"><div class="cover-inner subtitle document-subtitle bpi-v72-document-subtitle"><div class="kicker">Appendices to the Theory</div><div class="rule"></div><h1 class="title">Stories Before Thought</h1><p class="subtitle">Stories I Told My Mother Before Sleep — literary appendices to the theory, translated and designed across both languages</p><figure class="story-cover-figure image-frame" data-v31-cover="stories" data-v39-cover="clean" style="display:block; width:min(900px,92%); max-width:900px; margin:28px auto 0; padding:18px; box-sizing:border-box; text-align:center; background:#fffaf0; border:1px solid rgba(10,58,104,.12); border-radius:24px; box-shadow:0 14px 38px rgba(20,40,60,.07); overflow:hidden;"><img alt="New cover illustration for the story appendices collection" decoding="async" height="347" loading="eager" src="assets/appendices_stories_cover.png" style="display:block; width:auto; height:auto; max-width:100%; max-height:none; object-fit:contain; object-position:center center; margin:0 auto; border-radius:14px;" width="520"/></figure></div></section><section class="page story-toc-page" id="table-of-contents" style="min-height:250mm;page-break-after:always;break-after:page;box-sizing:border-box;"><h2 style=";page-break-before:always;break-before:page;">Table of Contents</h2><p>Click any story to jump directly to its place in the document.</p><div class="story-toc-clean-list"><p class="story-toc-row"><a class="story-toc-entry" href="#story-1"><img class="story-toc-thumb" src="assets/story_image_1.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">How Truth Remains Honest</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-2"><img class="story-toc-thumb" src="assets/story_image_2.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">True, But Not Just</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-3"><img class="story-toc-thumb" src="assets/story_image_3.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">Red Causes Dread</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-4"><img class="story-toc-thumb" src="assets/story_image_4.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">Quantum Intelligence</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-5"><img class="story-toc-thumb" src="assets/story_image_5.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">A Place at the End of the Road</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-6"><img class="story-toc-thumb" src="assets/story_image_6.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">Super Mirrors</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-7"><img class="story-toc-thumb" src="assets/story_image_7.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">Self-Confidence</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-8"><img class="story-toc-thumb" src="assets/story_image_8.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">Serial Healer</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-9"><img class="story-toc-thumb" src="assets/story_image_9.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">Maxideal</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-10"><img class="story-toc-thumb" src="assets/story_image_10.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">To Speak with Consciousness</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-11"><img class="story-toc-thumb" src="assets/story_image_11.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">Heretic from Abroad</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-12"><img class="story-toc-thumb" src="assets/story_image_12.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">Puzzle</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-13"><img class="story-toc-thumb" src="assets/story_image_13.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">To Fear Intruders, or Talk to Computers</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-14"><img class="story-toc-thumb" src="assets/story_image_14.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">A Few Strings and a Knot</span></a></p></div></section><section class="page story files-appendix-story" data-v39-story-layout="clean" dir="ltr" id="story-1" style="direction:ltr!important;text-align:left!important;page-break-before:always;break-before:page;page-break-before:always;break-before:page;page-break-before:always;break-before:page;">
+</head><body class="appendix-document-page public-page design-prompt-theme" dir="ltr"><section class="page cover" id="cover-page" style="min-height:250mm;page-break-after:always;break-after:page;box-sizing:border-box;"><div class="cover-inner subtitle document-subtitle bpi-v72-document-subtitle"><div class="kicker">Appendices to the Theory</div><div class="rule"></div><h1 class="title">Stories Before Thought</h1><p class="subtitle">Stories I Told My Mother Before Sleep — literary appendices to the theory, translated and designed across both languages</p><figure class="story-cover-figure image-frame" data-v31-cover="stories" data-v39-cover="clean" style="display:block; width:min(900px,92%); max-width:900px; margin:28px auto 0; padding:18px; box-sizing:border-box; text-align:center; background:#fffaf0; border:1px solid rgba(10,58,104,.12); border-radius:24px; box-shadow:0 14px 38px rgba(20,40,60,.07); overflow:hidden;"><img alt="New cover illustration for the story appendices collection" decoding="async" height="347" loading="eager" src="assets/appendices_stories_cover.png" style="display:block; width:auto; height:auto; max-width:100%; max-height:none; object-fit:contain; object-position:center center; margin:0 auto; border-radius:14px;" width="520"/></figure></div></section><section class="page story-toc-page" id="table-of-contents" style="min-height:250mm;page-break-after:always;break-after:page;box-sizing:border-box;"><h2 style=";page-break-before:always;break-before:page;">Table of Contents</h2><p>Click any story to jump directly to its place in the document.</p><div class="story-toc-clean-list"><p class="story-toc-row"><a class="story-toc-entry" href="#story-1"><img class="story-toc-thumb" src="assets/story_image_1.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">How Truth Remains Honest</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-2"><img class="story-toc-thumb" src="assets/story_image_2.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">True, But Not Just</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-3"><img class="story-toc-thumb" src="assets/story_image_3.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">Red Causes Dread</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-4"><img class="story-toc-thumb" src="assets/story_image_8.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">Quantum Intelligence</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-5"><img class="story-toc-thumb" src="assets/story_image_9.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">A Place at the End of the Road</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-6"><img class="story-toc-thumb" src="assets/story_image_10.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">Super Mirrors</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-7"><img class="story-toc-thumb" src="assets/story_image_12.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">Self-Confidence</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-8"><img class="story-toc-thumb" src="assets/story_image_13.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">Serial Healer</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-9"><img class="story-toc-thumb" src="assets/story_image_14.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">Maxideal</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-10"><img class="story-toc-thumb" src="assets/story_image_7.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">To Speak with Consciousness</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-11"><img class="story-toc-thumb" src="assets/story_image_heretic_from_abroad.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">Heretic from Abroad</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-12"><img class="story-toc-thumb" src="assets/story_image_4.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">Puzzle</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-13"><img class="story-toc-thumb" src="assets/story_image_5.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">To Fear Intruders, or Talk to Computers</span></a></p><p class="story-toc-row"><a class="story-toc-entry" href="#story-14"><img class="story-toc-thumb" src="assets/story_image_6.png" alt="" loading="lazy" decoding="async"/><span class="story-toc-title">A Few Strings and a Knot</span></a></p></div></section><section class="page story files-appendix-story" data-v39-story-layout="clean" dir="ltr" id="story-1" style="direction:ltr!important;text-align:left!important;page-break-before:always;break-before:page;page-break-before:always;break-before:page;page-break-before:always;break-before:page;">
 <div class="story-head" style="text-align:left!important;direction:ltr!important;page-break-after:avoid!important;break-after:avoid!important;margin-bottom:7mm!important;">
 <h2 class="" dir="ltr" style="text-align:left!important;direction:ltr!important;page-break-after:avoid!important;break-after:avoid!important;margin-bottom:4mm!important;page-break-before:always;break-before:page;page-break-after:avoid;break-after:avoid;">How Truth Remains Honest</h2>
 <p class="story-subtitle" dir="ltr" style="text-align:left!important;direction:ltr!important;unicode-bidi:plaintext!important;margin-left:0!important;margin-right:0!important;text-indent:0!important;padding-inline-start:0!important;">A short story about conversation, trauma, and the promise to return to the <span class="key-term key-term-en">ideal</span></p>
