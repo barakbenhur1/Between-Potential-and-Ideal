@@ -273,7 +273,7 @@ including opening material, chapters, subsections, and closing sections.
 109. [18. Economic Repair That Is Not
      Redemption](#18.-Economic-Repair-That-Is-Not-Redemption)
 110. [14. Governance of Potential](#14.-Governance-of-Potential)
-111. [Law of Potential](#Law-of-Potential)
+111. [Law of Potential: Justice Under Limitation](#Law-of-Potential-Justice-Under-Limitation)
 112. [Medicine of Potential](#Medicine-of-Potential)
 113. [1. State of Nature Is Not Only the
      Past](#1.-State-of-Nature-Is-Not-Only-the-Past)
@@ -1253,82 +1253,57 @@ decoding="async" loading="lazy" alt="Education of Potential" />
 <figcaption aria-hidden="true">Image description: learning, distance, and understanding that cannot be shortcut.</figcaption>
 </figure>
 
-Education is a direct test of Between Potential and Ideal because it
-asks how an opening can be offered to a person without stealing the path
-by which that opening becomes theirs. Every educational system places
-before the learner a field of potential: what can be understood, done,
-asked, and become. Yet that potential is never abstract. It appears
-inside a body, a language, fear, time, home, classroom, teacher, tool,
-institution, measurement, culture, memory, and suffering that is not
-holy but also cannot simply be erased.
+### Learning, distance, and understanding that is not a shortcut
 
-The deepest failure of education is not low grades, inequality, dropout,
-or weak motivation. Those are symptoms. The deeper failure is the
-substitution of formation by result. A learner submits a paper and the
-system sees a product. A learner marks a correct answer and the exam
-sees performance. A learner reproduces a formula and the grade sees
-success. The theory asks a different question: not whether a result
-appeared, but whether understanding was formed. Understanding is not
-information placed in the head. It is a changed relation between a
-person and a question: the person can carry it, move it, apply it,
-challenge it, and build a path from it.
+# Education of Potential
 
-Good education is therefore not the transfer of knowledge. Transfer is a
-dangerous metaphor: it imagines knowledge as an object owned by the
-teacher, absent from the student, and movable from one container to
-another. Living knowledge does not move that way. It is built when the
-learner meets a distance that does not erase them. If the distance is
-too large, the learner is abandoned; if it is too small, the road is
-stolen before the question has worked on the person.
 
-Living understanding = learner potential × real question × practice ×
-worthy distance × trust × correction / fear × humiliation × shortcut ×
-overload × empty measurement × indifference. This is not a psychological
-formula for numerical calculation. It is a diagnostic map asking whether
-help preserved the path, whether difficulty still teaches or already
-erases, whether measurement illuminates a living thing or replaces it,
-and whether the system returns responsibility to the learner or takes it
-away.
+### Learning, distance, and understanding that is not a shortcut
 
-AI in education sharpens the issue. A learner can ask a system to write
-a paper, solve an exercise, explain a text, summarize a study, build
-code, translate a paragraph, or generate an idea. From the outside the
-product may look better than what the learner would have produced alone.
-The deep question is not only whether this is cheating. The deeper
-question is whether the tool acted as scaffolding or as a thief of the
-road. A scaffold supports the learner so they can stand where they
-cannot yet stand alone. A thief of the road stands in their place. A
-good scaffold gradually withdraws. A thief leaves a product without
-leaving an ability.
+Education is a direct test of Between Potential and Ideal because it asks how an opening can be offered to a person without stealing the path by which that opening becomes theirs. Every educational system places before the learner a field of potential: what can be understood, done, asked, and become. Yet that potential is never abstract. It appears inside a body, a language, fear, time, home, classroom, teacher, tool, institution, measurement, culture, memory, and suffering that is not holy but also cannot simply be erased.
 
-The pedagogical optimum is not the fastest result. It is the distance in
-which understanding can be formed without erasing the learner. A hint
-instead of a full solution may be less efficient in the short term, but
-more faithful to the ideal because it holds the distance itself. Exams
-can help, but when they pretend to be truth they become dangerous. A
-grade shows control of a technique under particular conditions. It does
-not prove that knowledge can move into a new situation, recognize its
-limits, or be used responsibly.
+The deepest failure of education is not low grades, inequality, dropout, or weak motivation. Those are symptoms. The deeper failure is the substitution of formation by result. A learner submits a paper and the system sees a product. A learner marks a correct answer and the exam sees performance. A learner reproduces a formula and the grade sees success. The theory asks a different question: not whether a result appeared, but whether understanding was formed. Understanding is not information placed in the head. It is a changed relation between a person and a question: the person can carry it, move it, apply it, challenge it, and build a path from it.
 
-Education of potential does not defend ignorance in the name of
-authenticity and does not sanctify effort in the name of morality. It
-says something more precise: understanding is a living source. It cannot
-be replaced by an output without losing something human. A person can be
-helped to arrive; no one can arrive in their place and call that
-learning.
+Good education is therefore not the transfer of knowledge. Transfer is a dangerous metaphor: it imagines knowledge as an object owned by the teacher, absent from the student, and movable from one container to another. Living knowledge does not move that way. It is built when the learner meets a distance that does not erase them. If the distance is too large, the learner is abandoned; if it is too small, the road is stolen before the question has worked on the person.
+
+Living understanding = learner potential × real question × practice × worthy distance × trust × correction / fear × humiliation × shortcut × overload × empty measurement × indifference. This is not a psychological formula for numerical calculation. It is a diagnostic map asking whether help preserved the path, whether difficulty still teaches or already erases, whether measurement illuminates a living thing or replaces it, and whether the system returns responsibility to the learner or takes it away.
+
+AI in education sharpens the issue. A learner can ask a system to write a paper, solve an exercise, explain a text, summarize a study, build code, translate a paragraph, or generate an idea. From the outside the product may look better than what the learner would have produced alone. The deep question is not only whether this is cheating. The deeper question is whether the tool acted as scaffolding or as a thief of the road. A scaffold supports the learner so they can stand where they cannot yet stand alone. A thief of the road stands in their place. A good scaffold gradually withdraws. A thief leaves a product without leaving an ability.
+
+The pedagogical optimum is not the fastest result. It is the distance in which understanding can be formed without erasing the learner. A hint instead of a full solution may be less efficient in the short term, but more faithful to the ideal because it holds the distance itself. Exams can help, but when they pretend to be truth they become dangerous. A grade shows control of a technique under particular conditions. It does not prove that knowledge can move into a new situation, recognize its limits, or be used responsibly.
+
+To turn this distinction into a working tool, education must be read through the three central terms of the theory: potential, ideal, and optimal.
+
+Educational potential is not only “what the learner is capable of knowing.” It is the field of possibilities that have not yet taken form: an understanding that may be born, a question not yet formulated, an ability not yet stable, a responsibility not yet fully owned. The educational ideal is not the highest grade or the most impressive product, but the worthiest possibility: a state in which the learner becomes a more living source of understanding, not merely a place where a sign of knowledge appeared. The optimal is the local path by which the learner can be brought closer to that ideal without being erased on the way.
+
+From here, one can distinguish four kinds of educational help. It is important to stress that these are not four fixed moral categories of action, but four roles that help can play. The same action may hold the learner at one stage, hint at another, and replace them at a third. The question is not only “how much help was given,” but what happened to the distance between the learner and understanding.
+
+The first kind is help that replaces. It gives the learner an answer, wording, solution, summary, or complete work instead of the learner’s encounter with the problem. Through the lens of the theory, this is not only a matter of “cheating” or “shortcut.” It is deeper: the learner’s potential did not pass through distance, and therefore did not become their understanding. A product was produced, but the living source did not change. The ideal may look as if it was reached from the outside, but the local path that should have turned potential into understanding did not occur.
+
+The second kind is help that hints. It does not solve in the learner’s place, but points toward a direction: a counter-question, a partial example, a common mistake, a way to check, or a small opening that returns the learner to their own work. This help preserves the distance instead of erasing it. It respects the fact that understanding is not material inserted into a learner from outside, but a form that appears when their potential meets resistance in a measure that can be borne.
+
+The third kind is help that holds. Here the learner is genuinely close to collapse: fear, overload, lack of language, a previous gap, or a repeated experience of failure. In such a case, the distance is no longer teaching; it is threatening to erase. According to the theory, suffering is not holy, and difficulty is not a value in itself. Sometimes the educational optimum is therefore not to add more demand, but to build a stronger scaffold: a temporary frame that lets the learner remain inside the encounter without being broken by it.
+
+The fourth kind is help that releases. This is the moment when the scaffold must begin to withdraw. If the teacher, tool, or system continues to hold the learner after a first ability has already formed, help becomes dependence. It stops serving potential and begins to occupy its place. Good education is therefore measured not only by how much support it gives, but by whether it knows when to return the distance to the learner.
+
+From this follows a rule for using AI in education. AI is not a living source in place of the learner. It can be a mirror, scaffold, checking tool, practice tool, or temporary witness to a thinking process. But when it produces the final work in the learner’s place, without the learner passing through a path in which real ownership of understanding is formed, it is not merely “too helpful”; it shifts the center of gravity of learning. Instead of the learner’s potential being translated through distance into a local ideal, the tool produces an output that skips the formation itself.
+
+Educational policy should therefore not ask only whether AI is permitted or forbidden. That division is too crude. The more precise question is: at what stage of learning does the tool appear, which part of the distance does it carry instead of the learner, and whether, at the end of use, the learner is left with an ability they did not have before. Even when AI participates in producing an output, the educational question is not only who typed the final sentence, but whether the learner can explain, break down, criticize, revise, or reconstruct the move. If so, the tool acted as a scaffold. If not, it acted as a substitute. And if it acted as a substitute, even a correct product can be an educational failure.
+
+The exam must be re-examined by the same principle. A good exam is not only a gate of selection; it is a moment of testimony. It shows what has already become the learner’s own, what still rests on momentary recall, what collapses under pressure, and what requires another kind of return. A bad exam turns learning into a theater of performance: the learner trains to appear as if they know, and the institution confuses a sign of control with living understanding.
+
+A responsible educational system must therefore hold three things together: form, because without form there is no responsibility; distance, because without distance there is no formation; and compassion, because distance that becomes humiliation does not build a person but breaks their ability to learn. The educational optimum is not softness without demand, not hardness disguised as depth, and not efficiency that replaces the person with an output. It is the path by which human potential becomes worthy understanding without losing the source from which it came.
+
+Education of potential does not defend ignorance in the name of authenticity and does not sanctify effort in the name of morality. It says something more precise: understanding is a living source. It cannot be replaced by an output without losing something human. A person can be helped to arrive; no one can arrive in their place and call that learning.
+
 
 ### Source discipline
 
-Working sources and caution: this chapter relies on the theory itself
-and on background sources checked outside the prompt: UNESCO on
-artificial intelligence in education, WHO on ethics and governance of AI
-for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the
-Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the
-Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and
-contextuality, and Britannica/ISFDB for the literary identification of
-Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are
-not treated as proofs of the theory; they are safeguards against empty
-borrowing of terms.
+Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
+
+---
+
+**Short methodological clarification:** When this document uses terms from mathematics, physics, computer science, logic, or artificial intelligence, they should be read according to their stated context: sometimes as structural metaphor, sometimes as a reading model, and only as a formal claim when explicitly presented as such. The use of a scientific term should not be treated as a scientific or metaphysical proof by itself.
 
 ## <span class="chapter-prefix">5. </span>Reincarnation as Iterative Knowledge, Not Moral Promotion
 
@@ -5389,9 +5364,9 @@ is not only prohibition. It is a form that tries to make shared freedom
 possible. A healthy governance is one that preserves a living relation
 between power, law, trust, human being, and time.
 
-## Law of Potential
+## Law of Potential: Justice Under Limitation
 
-*Truth, evidence, guilt, and repair that is not revenge*
+*Justice, evidence, distance, and correction under limitation*
 
 <figure class="chapter-figure image-frame">
 <img src="../figures/v25_chapter_law-of-potential.png" decoding="async"
@@ -5399,66 +5374,140 @@ loading="lazy" alt="Law of Potential" />
 <figcaption aria-hidden="true">Image description: law, interpretation, and boundary as a space where possibility is tested against responsibility.</figcaption>
 </figure>
 
-Law is one of the hardest tests of the theory because it operates
-exactly where potential, ideal, and optimum collide with pain, power,
-time, evidence, and institution. Harm has happened, or is alleged to
-have happened. Someone was harmed. Someone is accused. Someone denies.
-Someone remembers. Someone forgets. Someone holds evidence. Someone
-holds power. Law is required to turn all of that into a form: procedure,
-testimony, decision, responsibility, boundary, compensation, punishment,
-restoration, or acquittal.
+### Law as moral translation under limitation
 
-Legal form is dangerous precisely because it is necessary. Without form,
-pain can become revenge. Without procedure, power can punish whoever is
-convenient. Without evidence, truth can be buried under feeling. Yet
-when the form forgets why it was created, it becomes organized force. A
-court can look like justice while merely managing pain. A statute can
-look like truth while distributing possibilities according to who can
-pay, wait, prove, and appear credible inside institutional language.
+To read law through the theory, one must understand that law is not only a system of rules, and not only a mechanism for deciding between claims. Law is the place where society tries to translate moral potential into an institutional ideal under difficult conditions: harm that has already occurred, truth that is not always accessible, power that is unequally distributed, time that runs out, evidence that breaks, memories that erode, public fear, systemic pressure, and a real person standing before a form larger than them.
 
-Law teaches the theory a distinction between truth and access to truth.
-An event may have happened while the evidence is insufficient. A person
-may have been harmed while memory is broken. A person may be innocent
-while the system sees a pattern. Truth can exist beyond the evidence
-horizon. Legal justice is therefore not identical with absolute truth.
-It is an institutional attempt to act responsibly under limited
-information.
+Law is one of the hardest tests of the theory because it operates exactly where potential, ideal, and optimum collide with pain, power, time, evidence, and institution. Harm has happened, or is alleged to have happened. Someone was harmed. Someone is accused. Someone denies. Someone remembers. Someone forgets. Someone holds evidence. Someone holds power. Law is required to turn all of that into a form: procedure, testimony, decision, responsibility, boundary, compensation, punishment, restoration, or acquittal.
 
-Institutional justice = clarified truth × evidence × fair procedure ×
-proportionality × possibility of correction × access / arbitrary power ×
-revenge × bias × systemic blindness × inequality × automation. This is
-not a legal formula; it is a warning map. It asks whether procedure
-approaches justice or merely produces form, whether evidence holds truth
-or replaces it, and whether punishment protects and repairs or only
-releases anger.
+Legal form is dangerous precisely because it is necessary. Without form, pain can become revenge. Without procedure, power can punish whoever is convenient. Without evidence, truth can be buried under feeling. Yet when the form forgets why it was created, it becomes organized force. A court can look like justice while merely managing pain. A statute can look like truth while distributing possibilities according to who can pay, wait, prove, and appear credible inside institutional language.
 
-AI in law intensifies the danger. A tool may summarize files, find
-precedents, rank risk, identify patterns, or accelerate work. But when
-it hides assumptions, reproduces bias, invents citations, or gives a
-statistical score the appearance of moral judgment, it turns a measure
-into truth. Law cannot afford to confuse correlation with justice. A
-person is not only risk, a file is not only text, and a judgment is not
-a summary product.
+### The legal fields covered by this lens
 
-The law of potential does not replace law and does not offer legal
-advice. It preserves the question that procedure sometimes forgets: is
-the form still serving justice, or has justice become an excuse for the
-form? The legal optimum is not absolute truth and not system throughput.
-It is the fairest responsible action possible under limited information,
-power, and time, while preserving correction when the horizon changes.
+The examples below are drawn mainly from criminal law because that is where the tension between pain, evidence, power, responsibility, and punishment appears most sharply. Yet the lens itself is broader. It can also apply to civil, administrative, constitutional, contractual, family, and economic law — wherever legal form is required to decide human fate under limitation.
+
+In civil law, this lens asks whether monetary compensation truly restores a possibility that was harmed, recognizes damage, and reduces injustice, or merely translates pain into a number. In administrative law, it asks whether an authority's decision preserves the person behind the form. In family law, it asks whether the decision protects the child and the parties, or merely ends a conflict in a way convenient for the system. In constitutional law, it asks whether protection of the public still preserves the individual person, or turns their rights into a convenient price in the name of public order.
+
+### Legal potential
+
+Legal potential is everything that can still be made worthy before it hardens into another injustice. It includes truth not yet clarified, harm not yet given language, an accused person not yet reduced to an identity of guilt, a harmed person not yet turned into a symbol, evidence not yet interpreted, a procedure that can still remain fair, punishment that can still set a boundary without becoming revenge, and a society that can still choose not to use pain to justify erasure.
+
+Legal potential does not promise complete repair. Sometimes all that remains in it is the modest but essential possibility of not adding injustice to injustice. In this sense, legal potential is not a soft dream of total reconciliation, but a point of responsibility before fixation: before the system fixes guilt, liberty, entitlement, compensation, punishment, story, or finality.
+
+One can formulate law through a relation map:
+
+Institutional justice =
+clarified truth × evidence × fair procedure × proportionality × possibility of correction × access
+over
+arbitrary power × revenge × bias × systemic blindness × inequality × automation.
+
+This is not a legal formula; it is a warning map. It asks whether procedure approaches justice or merely produces form, whether evidence holds truth or replaces it, whether punishment protects and repairs or only releases anger, whether the harmed person is preserved as a person or turned into a symbol, whether the accused is preserved as a person or reduced to guilt, and whether the system knows how to distinguish boundary from erasure.
+
+### Legal ideal and procedural justice
+
+The legal ideal is not maximal conviction, maximal acquittal, maximal punishment, maximal efficiency, or maximal case closure. All of these can be outcomes or metrics, but they are not the ideal itself. The legal ideal is worthy justice: a state in which truth is examined seriously, power is limited, harm is recognized, responsibility is not escaped, the person is not erased into the file, and the system remains able to correct itself when it discovers that the horizon from which it acted was partial.
+
+Legal justice is not only a worthy outcome, but also a worthy way of reaching it: a procedure that allows claim, opposition, representation, critique, and correction. Procedure is not merely technique. It is the way a powerful system forces itself not to rush from suspicion, pain, or fear into decision. Without procedure, justice can become violence in the name of the good. Without justice, procedure can become a cult of form.
+
+### The legal optimum
+
+The legal optimum is the local translation of that ideal under real limitations. It is not the pure ideal, because law never operates inside complete knowledge. It operates inside time, evidence, costs, fear, backlog, inequality, institutional language, human memory, procedural limits, and risk of further harm.
+
+The deeper legal question is therefore not only “what is correct,” but what is the fairest action that can be taken now without turning legal form into a substitute for justice. The legal optimum is not a surrender of the ideal, but a refusal to lie in the name of the ideal: it acknowledges limitation, but does not turn limitation into an institutional excuse.
+
+### Legal distance
+
+Law teaches the theory a deep distinction between truth and access to truth. An event may have happened while the evidence is insufficient. A person may have been harmed while memory is broken. A person may be innocent while the system sees a pattern. Truth can exist beyond the evidence horizon. Law is born because it must act even when truth is not fully accessible. Legal justice is therefore not identical with absolute truth; it is an institutional attempt to act responsibly under a limited horizon of information.
+
+Here law meets the theory's concept of distance. Legal distance is the gap between what may have happened and what can be proved; between pain and evidence; between living truth and admissible truth; between a person and their role in a case; between the feeling of justice and fair procedure; between moral guilt and legal guilt; and between inner knowledge and external proof. If this distance is erased, law becomes revenge or blind belief. If this distance is too large and receives no form, law becomes organized indifference. Worthy law neither erases the distance nor submits to it. It tries to hold it responsibly.
+
+In this sense, law does not only confront distance; it also deliberately creates distance. The presumption of innocence, rules of evidence, the right to be heard, the right to representation, and appeal are all institutional forms of distance: mechanisms that prevent pain, suspicion, or power from immediately becoming decision.
+
+### Legality and worthiness
+
+A law can be legal and still not be worthy. A procedure can be proper and still fail to see a person. A reasoned decision can still miss the harm. Punishment can be justified and still lose the question of correction. Conversely, compassion that sets no boundary is not necessarily an ideal; sometimes it is a refusal to take responsibility for harm.
+
+The law of potential does not seek to replace law with feeling, but to ask whether law still serves what it was created for: protecting the possibility of justice inside a world where justice does not appear in full. Legality is not a guarantee of worthiness, but worthiness that refuses to pass through legality can become violence in the name of justice.
+
+### The harmed person and the accused as living sources
+
+In this sense, both the harmed person and the accused must be preserved as living sources, not symbols. This is not a simple moral symmetry between harmed person and accused; it is a recognition that law can erase human beings in different ways, even when their roles in the procedure are entirely different.
+
+The harmed person is not merely evidence of harm, not merely a tool for conviction, and not merely a voice that may be used to justify punishment. The accused is not merely risk, not merely the name of an offense, and not merely a body on which the system demonstrates its power. Law must hold the harm without turning it into a license for erasure, and hold suspicion without turning it into a whole identity. This is difficult precisely because law acts where pain demands decision, while truth does not always offer itself at the same speed.
+
+Preserving the accused as a person does not weaken the duty to recognize harm; on the contrary, it prevents legal recognition itself from becoming a tool of revenge rather than a tool of justice. Preserving the harmed person as a person does not require turning pain into automatic decision; on the contrary, it requires the procedure to hear the harm without using it as institutional raw material.
+
+### Plea bargains
+
+A plea bargain shows the problem sharply. From the outside it can look like an institutional optimum: less time, less risk, less backlog, a more predictable result. But through the theory one must ask: optimum in relation to which ideal, and for whom? Is this a locally worthy way to protect a harmed person, reduce damage, and act under limits of evidence and time? Or is it a form that translates power gaps into apparent agreement?
+
+The same bargain can be a responsible translation of an ideal under limitation, and it can be a polite erasure of a truth that did not have enough power to appear. A worthy plea bargain is not measured only by whether all parties signed it, but by what distance it closed, what distance it preserved, and what voice it left outside the form.
+
+### Punishment
+
+Punishment must be read in the same way. Punishment is not wrong simply because it is institutional pain. Sometimes it protects, sets a boundary, recognizes harm, and prevents further damage. But according to the theory, suffering does not become holy merely because the state administers it. Pain is not proof that justice was done.
+
+Worthy punishment must hold boundary, recognition, proportion, protection, and possibility of correction together. When one of them swallows the others, punishment becomes distorted: too soft, too vengeful, too technical, or too blind. If punishment preserves a boundary, recognizes responsibility, and leaves room for correction where correction is possible, it can serve a legal ideal. If it merely ensures that someone suffers so that the system can feel it has responded, it becomes a false optimum: a strong form of reaction that hides moral weakness.
+
+### Capital punishment
+
+From this follows, through the lens of the theory, a principled opposition to capital punishment. Not because every harm can be repaired, not because every dangerous person can immediately return to society, and not because every injury can be forgiven, but because capital punishment turns law from an act of boundary into an act of final erasure. It closes the horizon of correction even when partial correction might have been possible; it closes the horizon of appeal even when new evidence may appear; and it gives the state the power to declare not only that a certain act crossed a boundary, but that a certain person has entirely lost the possibility of remaining a living source.
+
+This opposition does not cancel society's duty to protect itself. It separates extreme protection from final erasure. Even when retribution, deterrence, and protection raise serious claims, the theory distinguishes between extreme deprivation of liberty and deprivation of every future possibility. The first may be necessary; the second requires the state to hold a power of finality that it has no way to correct if it turns out to be mistaken.
+
+Even when society must protect itself severely, and even when a person must be permanently removed from the free circle of social life, removal should not become destruction. A strong boundary does not require erasure. Worthy punishment can protect, limit, recognize harm, and prevent further damage; but when it takes upon itself the right to close every possibility of correction forever, it ceases to be a legal optimum and becomes a false ideal of ending.
+
+### The evidence horizon
+
+Here the evidence horizon also enters. Law does not act before truth itself, but before what can be brought into legal form. There is factual truth, evidentiary truth, and legal truth — what the system is authorized to determine after procedure. Law may not pretend that the third is always identical to the first; but it also cannot act without turning evidence into decision.
+
+Truth can exist and be inaccessible. Evidence can be accessible and insufficient. Testimony can be true and still broken. Procedure can be proper and still not heal. Legal justice therefore requires a special humility: not a humility that cancels decision, but one that knows every decision is made from a horizon. Law that does not recognize its horizon may turn its limitation of knowledge into absolute truth.
+
+### AI in law
+
+AI in law is especially dangerous because it can give form the appearance of certainty. It can summarize, rank, extract patterns, find precedents, draft, and accelerate work. All of this can be an important scaffold if it remains a tool serving responsible human judgment. But when the tool hides assumptions, reproduces bias, invents sources, or turns probability into the language of guilt, it does exactly what the theory warns against: it replaces a living source with an output, and replaces a partial horizon with the appearance of truth.
+
+Proper use of AI in law is therefore measured not only by statistical accuracy, but by whether responsibility remains in the right place. Who can challenge it? Who understands how the recommendation was produced? Who bears responsibility when the rating is wrong? Can the person concerned meet the claim against them, or are they standing before an opaque form? Worthy legal AI must remain a visible scaffold, not a hidden judge. It should assist in locating, organizing, checking, and making material accessible; not replace responsibility, not hide assumptions, and not turn probability into a decision about a person.
+
+Every significant legal use of AI requires at minimum transparency, auditability, a possibility of appeal, identified human responsibility, documentation of use, bias testing, relevant access rights, and a clear distinction between assistive tool and decision. AI should not independently decide questions of guilt, liberty, dangerousness, or entitlement.
+
+The closer the tool is to a decision about guilt, liberty, dangerousness, or entitlement, the higher the threshold must be: more transparency, more critique, more access rights, and less room for automation. If AI expands access, exposes bias, helps a weaker defense, shortens proceedings without harming rights, or helps find evidence lost inside overload, it can serve the legal optimum. If it produces authority without responsibility, it is not a tool of justice but a machine that beautifies power.
+
+### The basic tensions of a law of potential
+
+The law of potential therefore tries to hold a delicate tension: without form there is no justice, but form can swallow justice; without evidence there is no responsibility, but evidence is not all of truth; without punishment there is no boundary, but punishment is not repair merely because it hurts; without efficiency there is no system, but efficiency can become an alibi for erasure. The legal ideal is not found at one of these extremes. It is found in the difficult attempt to translate justice into institutional action without forgetting that the translation is never the thing itself.
+
+This is not a surrender of law. It is an attempt to save law from itself.
+
+### Chapter appendix — legal working questions
+
+To turn this lens into a working tool, every legal action should ask:
+
+- Which person may be erased here into a role?
+- Which distance are we erasing too quickly?
+- Which distance are we leaving too large?
+- Is the legal form still serving justice, or only itself?
+- Is there a possibility of critique and correction?
+- Who bears responsibility for the decision?
+- What happens if the evidentiary horizon changes?
+- Is efficiency here reducing suffering or hiding injustice?
+- Does punishment protect and set a boundary, or merely produce pain?
+
+Before decision, the question is whether the evidence can bear the responsibility the system wants to place on it. Before punishment, the question is whether the boundary protects and repairs or merely produces pain. Before a plea bargain, the question is which voice remains outside the form. Before use of an automated tool, the question is whether the person concerned can understand, challenge, and meet the claim against them.
+
+### Conclusion
+
+In the end, law returns a central lesson to the theory: the ideal is not cancelled because it cannot be reached in full, but the local optimum must not pretend to be the ideal itself. A judgment, plea bargain, acquittal, conviction, compensation, or punishment is a translation under limitation. It can be necessary, worthy, and as just as possible, but it must remain open to responsibility: correction, appeal, critique, and the ability to admit that the horizon has changed.
+
+The law of potential does not replace law, does not offer legal advice, and does not propose emotional justice instead of procedure. It is a critical-ethical principle, not a ready legal doctrine and not a substitute for interpretation of existing law. It preserves the question procedure sometimes forgets: is the form still serving justice, or has justice become an excuse for the form? Does the system protect the human possibility of correction, or merely produce closure? And inside all the decisions, pain, evidence, and forms, does the person still remain a living source that cannot be fully reduced to their role in the case?
 
 ### Source discipline
 
-Working sources and caution: this chapter relies on the theory itself
-and on background sources checked outside the prompt: UNESCO on
-artificial intelligence in education, WHO on ethics and governance of AI
-for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the
-Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the
-Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and
-contextuality, and Britannica/ISFDB for the literary identification of
-Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are
-not treated as proofs of the theory; they are safeguards against empty
-borrowing of terms.
+Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
+
+---
+
+**Short methodological clarification:** When this document uses terms from mathematics, physics, computer science, logic, law, or artificial intelligence, they should be read according to their stated context: sometimes as structural metaphor, sometimes as a reading model, and only as a formal claim when explicitly presented as such. The use of a scientific or legal term should not be treated as scientific, metaphysical, or legal proof by itself.
 
 ## Medicine of Potential
 
@@ -7191,4 +7240,3 @@ single source.
 ---
 
 **Short methodological clarification:** When this document uses terms from mathematics, physics, computer science, logic, or artificial intelligence, they should be read according to their stated context: sometimes as structural metaphor, sometimes as a reading model, and only as a formal claim when explicitly presented as such. The use of a scientific term should not be treated as a scientific or metaphysical proof by itself.
-
