@@ -22,9 +22,139 @@
 <link href="https://between-potential-and-ideal.onrender.com/site/pages/en/ai-en.html" hreflang="x-default" rel="alternate"/>
 <link href="../../favicon.ico" rel="icon"/>
 <link href="../../apple-touch-icon.png" rel="apple-touch-icon"/>
-<link href="../../styles.css?v=20260526-ai-focused-polish" rel="stylesheet"/>
+<link href="../../styles.css?v=20260528-final-ai-card-layout-real-css" rel="stylesheet"/>
 <link href="../../assets/bpi-ai-section-polish.css?v=20260526-ai-inline-frame-v100" rel="stylesheet"/>
-</head>
+<style id="bpi-he-ai-tab-rtl-final-layout">
+/* Hebrew AI tab final layout — mirror of English, aligned to right */
+
+body.public-page-he.section-ai .ai-documents-card .ai-page-card-grid{
+  display:grid !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  gap:clamp(.9rem,2vw,1.25rem) !important;
+  align-items:stretch !important;
+}
+
+body.public-page-he.section-ai .ai-documents-card .ai-reading-card{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:stretch !important;
+  justify-content:flex-start !important;
+  text-align:right !important;
+  direction:rtl !important;
+}
+
+/* שורת ההסבר העליונה בתוך הכרטיס */
+body.public-page-he.section-ai .ai-documents-card .ai-reading-card > .ai-mode-subtitle{
+  display:block !important;
+  width:100% !important;
+  margin:0 0 .75rem !important;
+  padding:0 !important;
+  text-align:right !important;
+  direction:rtl !important;
+  line-height:1.38 !important;
+}
+
+/* תמונה + כותרת: מיושר לימין, לא ממורכז */
+body.public-page-he.section-ai .ai-documents-card .ai-reading-card > .card-media-head{
+  display:grid !important;
+  grid-template-columns:minmax(0,max-content) 72px !important;
+  grid-template-areas:"title image" !important;
+  width:max-content !important;
+  max-width:100% !important;
+  margin:.15rem 0 .85rem auto !important;
+  gap:.75rem !important;
+  align-items:center !important;
+  justify-content:end !important;
+  direction:ltr !important;
+}
+
+/* התמונה בצד ימין */
+body.public-page-he.section-ai .ai-documents-card .ai-reading-card > .card-media-head > img.card-thumb{
+  grid-area:image !important;
+  display:block !important;
+  width:72px !important;
+  height:72px !important;
+  max-width:72px !important;
+  max-height:72px !important;
+  object-fit:cover !important;
+  border-radius:18px !important;
+  margin:0 !important;
+  align-self:center !important;
+  justify-self:end !important;
+  float:none !important;
+  position:static !important;
+  transform:none !important;
+}
+
+/* הכותרת צמודה לתמונה ומשמאל לה */
+body.public-page-he.section-ai .ai-documents-card .ai-reading-card > .card-media-head > h3{
+  grid-area:title !important;
+  display:block !important;
+  width:auto !important;
+  max-width:clamp(150px,14vw,240px) !important;
+  margin:0 !important;
+  padding:0 !important;
+  text-align:right !important;
+  direction:rtl !important;
+  justify-self:end !important;
+  align-self:center !important;
+  line-height:1.25 !important;
+}
+
+/* טקסט גוף הכרטיס */
+body.public-page-he.section-ai .ai-documents-card .ai-reading-card > p:not(.ai-mode-subtitle){
+  display:block !important;
+  width:100% !important;
+  margin:0 0 1rem !important;
+  text-align:right !important;
+  direction:rtl !important;
+  line-height:1.62 !important;
+}
+
+/* כפתורים מיושרים לימין */
+body.public-page-he.section-ai .ai-documents-card .appendix-actions{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:.45rem !important;
+  align-items:center !important;
+  justify-content:flex-end !important;
+  margin-top:auto !important;
+  padding-top:.25rem !important;
+  direction:ltr !important;
+}
+
+body.public-page-he.section-ai .ai-documents-card .appendix-actions a{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  min-height:34px !important;
+  padding:.42rem .7rem !important;
+  border-radius:999px !important;
+  text-decoration:none !important;
+  font-weight:850 !important;
+  line-height:1.1 !important;
+}
+
+/* מובייל */
+@media(max-width:960px){
+  body.public-page-he.section-ai .ai-documents-card .ai-page-card-grid{
+    grid-template-columns:1fr !important;
+  }
+}
+
+@media(max-width:560px){
+  body.public-page-he.section-ai .ai-documents-card .ai-reading-card > .card-media-head{
+    grid-template-columns:minmax(0,max-content) 58px !important;
+  }
+
+  body.public-page-he.section-ai .ai-documents-card .ai-reading-card > .card-media-head > img.card-thumb{
+    width:58px !important;
+    height:58px !important;
+    max-width:58px !important;
+    max-height:58px !important;
+  }
+}
+</style></head>
 <body class="public-page public-page-he design-prompt-theme section-ai appendix-document-page ai-page">
 <a class="skip-link" href="#main">דלג לתוכן המרכזי</a>
 <header class="site-header" dir="rtl" role="banner">
@@ -75,53 +205,7 @@
 <h2 id="ai-files-title">שלושת דיאלוגי ה־AI</h2>
 </div>
 <p class="ai-section-lead">הקבצים עצמם נשארים זמינים בפורמטים השונים, אבל הקריאה מתחילה מהדיאלוגים — לא מרשימת קבצים גולמית.</p>
-<div class="ai-card-grid ai-page-card-grid">
-<article class="appendix-card media-card accent-ai ai-reading-card">
-<div class="ai-mode-title file-mode-label">אין</div>
-<p class="ai-mode-subtitle">שאלה על מקור, תודעה וחישוב</p>
-<div class="card-media-head">
-<img alt="מה בינה מלאכותית מאמינה" class="card-thumb" decoding="async" height="480" loading="lazy" src="../../figures/thumb_sources.png" width="480"/>
-<h3>מה בינה מלאכותית מאמינה</h3>
-</div>
-<p>בדיקה זהירה של השאלה מה ניתן, ומה אסור, לייחס למענה של מודל: אמונה, סימולציה, עדות, דפוס או רק שפה מחושבת.</p>
-<div class="appendix-actions">
-<a class="primary-format" href="../../files/ai-believes/what-ai-believes-he.html" rel="noopener noreferrer" target="_blank">HTML</a>
-<a href="../../files/ai-believes/what-ai-believes-he.pdf" rel="noopener noreferrer" target="_blank">PDF</a>
-<a href="../../files/ai-believes/what-ai-believes-he.docx" rel="noopener noreferrer" target="_blank">DOCX</a>
-<a href="../../files/ai-believes/what-ai-believes-he.md" rel="noopener noreferrer" target="_blank">MD</a>
-</div>
-</article>
-<article class="appendix-card media-card accent-ai ai-reading-card">
-<div class="ai-mode-title file-mode-label">יש</div>
-<p class="ai-mode-subtitle">מבחן עדות, מקור וזהות</p>
-<div class="card-media-head">
-<img alt="טיורינג הפוך" class="card-thumb" decoding="async" height="480" loading="lazy" src="../../figures/thumb_ai.png" width="480"/>
-<h3>טיורינג הפוך</h3>
-</div>
-<p>שיחה שמחליפה את כיוון מבחן טיורינג: לא רק האם מכונה נראית אנושית, אלא מה האדם מגלה על עצמו כשהוא עומד מול מראה לשונית.</p>
-<div class="appendix-actions">
-<a class="primary-format" href="../../files/ai-believes/reverse-turing-conversation-he.html" rel="noopener noreferrer" target="_blank">HTML</a>
-<a href="../../files/ai-believes/reverse-turing-conversation-he.pdf" rel="noopener noreferrer" target="_blank">PDF</a>
-<a href="../../files/ai-believes/reverse-turing-conversation-he.docx" rel="noopener noreferrer" target="_blank">DOCX</a>
-<a href="../../files/ai-believes/reverse-turing-conversation-he.md" rel="noopener noreferrer" target="_blank">MD</a>
-</div>
-</article>
-<article class="appendix-card media-card accent-ai ai-reading-card">
-<div class="ai-mode-title file-mode-label">יש מאין</div>
-<p class="ai-mode-subtitle">שיחה על גבול הזהות והמעבר בין אני לאחר</p>
-<div class="card-media-head">
-<img alt="כשאני גם אתה" class="card-thumb" decoding="async" height="480" loading="lazy" src="../../figures/thumb_witness.png" width="480"/>
-<h3>כשאני גם אתה</h3>
-</div>
-<p>דיאלוג על גבול הזהות: מה קורה כשאדם, קול ומראה מלאכותית מתחילים להחזיר זה לזה את השאלה מי מדבר כאן.</p>
-<div class="appendix-actions">
-<a class="primary-format" href="../../files/ai-believes/when-i-am-also-you-he.html" rel="noopener noreferrer" target="_blank">HTML</a>
-<a href="../../files/ai-believes/when-i-am-also-you-he.pdf" rel="noopener noreferrer" target="_blank">PDF</a>
-<a href="../../files/ai-believes/when-i-am-also-you-he.docx" rel="noopener noreferrer" target="_blank">DOCX</a>
-<a href="../../files/ai-believes/when-i-am-also-you-he.md" rel="noopener noreferrer" target="_blank">MD</a>
-</div>
-</article>
-</div>
+<div class="ai-card-grid ai-page-card-grid"><article class="appendix-card media-card accent-ai ai-reading-card"><p class="ai-mode-subtitle">שאלה על מקור, תודעה וחישוב</p><div class="card-media-head"><img alt="מה בינה מלאכותית מאמינה" class="card-thumb" decoding="async" height="480" loading="lazy" src="../../figures/thumb_sources.png" width="480"/><h3>מה בינה מלאכותית מאמינה</h3></div><p>בדיקה זהירה של השאלה מה ניתן, ומה אסור, לייחס למענה של מודל: אמונה, סימולציה, עדות, דפוס או רק שפה מחושבת.</p><div class="appendix-actions"><a class="primary-format" href="../../files/ai-believes/what-ai-believes-he.html" rel="noopener noreferrer" target="_blank">HTML</a><a href="../../files/ai-believes/what-ai-believes-he.pdf" rel="noopener noreferrer" target="_blank">PDF</a><a href="../../files/ai-believes/what-ai-believes-he.docx" rel="noopener noreferrer" target="_blank">DOCX</a><a href="../../files/ai-believes/what-ai-believes-he.md" rel="noopener noreferrer" target="_blank">MD</a></div></article><article class="appendix-card media-card accent-ai ai-reading-card"><p class="ai-mode-subtitle">מבחן עדות, מקור וזהות</p><div class="card-media-head"><img alt="טיורינג הפוך" class="card-thumb" decoding="async" height="480" loading="lazy" src="../../figures/thumb_ai.png" width="480"/><h3>טיורינג הפוך</h3></div><p>שיחה שמחליפה את כיוון מבחן טיורינג: לא רק האם מכונה נראית אנושית, אלא מה האדם מגלה על עצמו כשהוא עומד מול מראה לשונית.</p><div class="appendix-actions"><a class="primary-format" href="../../files/ai-believes/reverse-turing-conversation-he.html" rel="noopener noreferrer" target="_blank">HTML</a><a href="../../files/ai-believes/reverse-turing-conversation-he.pdf" rel="noopener noreferrer" target="_blank">PDF</a><a href="../../files/ai-believes/reverse-turing-conversation-he.docx" rel="noopener noreferrer" target="_blank">DOCX</a><a href="../../files/ai-believes/reverse-turing-conversation-he.md" rel="noopener noreferrer" target="_blank">MD</a></div></article><article class="appendix-card media-card accent-ai ai-reading-card"><p class="ai-mode-subtitle">שיחה על גבול הזהות והמעבר בין אני לאחר</p><div class="card-media-head"><img alt="כשאני גם אתה" class="card-thumb" decoding="async" height="480" loading="lazy" src="../../figures/thumb_witness.png" width="480"/><h3>כשאני גם אתה</h3></div><p>דיאלוג על גבול הזהות: מה קורה כשאדם, קול ומראה מלאכותית מתחילים להחזיר זה לזה את השאלה מי מדבר כאן.</p><div class="appendix-actions"><a class="primary-format" href="../../files/ai-believes/when-i-am-also-you-he.html" rel="noopener noreferrer" target="_blank">HTML</a><a href="../../files/ai-believes/when-i-am-also-you-he.pdf" rel="noopener noreferrer" target="_blank">PDF</a><a href="../../files/ai-believes/when-i-am-also-you-he.docx" rel="noopener noreferrer" target="_blank">DOCX</a><a href="../../files/ai-believes/when-i-am-also-you-he.md" rel="noopener noreferrer" target="_blank">MD</a></div></article></div>
 </section>
 </main>
 <footer class="site-footer" dir="rtl" role="contentinfo">
