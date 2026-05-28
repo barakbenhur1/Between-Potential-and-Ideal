@@ -229,8 +229,7 @@ a.skip-link:focus-visible{
   }
 }
 
-/* V123 — English Witness brand reset to match Application/Sources.
-   The page accidentally gave the brand subtitle/document-title classes; neutralize only those classes. */
+/* V124 — English Witness brand: match Application page brand exactly. */
 body.public-page-en.section-witness .site-header > .site-brand.subtitle.document-subtitle.bpi-v72-document-subtitle{
   display:block!important;
   width:auto!important;
@@ -242,22 +241,15 @@ body.public-page-en.section-witness .site-header > .site-brand.subtitle.document
   border:0!important;
   box-shadow:none!important;
   text-align:inherit!important;
-  color:#fff!important;
-  font-family:ui-serif,Georgia,"Times New Roman",serif!important;
-  font-size:1.0425rem!important;
-  font-style:normal!important;
-  font-weight:700!important;
-  letter-spacing:normal!important;
-  line-height:1.2!important;
+  color:inherit!important;
+  font:inherit!important;
+  letter-spacing:inherit!important;
 }
 
 body.public-page-en.section-witness .site-header > .site-brand.subtitle.document-subtitle.bpi-v72-document-subtitle > a{
-  color:#fff!important;
-  font-family:ui-serif,Georgia,"Times New Roman",serif!important;
-  font-size:1.0425rem!important;
-  font-style:normal!important;
-  font-weight:700!important;
-  letter-spacing:normal!important;
-  line-height:1.2!important;
-  text-decoration:none!important;
+  color:inherit!important;
+  font:inherit!important;
+  letter-spacing:inherit!important;
+  line-height:inherit!important;
+  text-decoration:inherit!important;
 }
