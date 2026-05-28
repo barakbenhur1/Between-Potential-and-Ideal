@@ -186,3 +186,45 @@ body.design-prompt-theme.public-page .site-footer a:focus{
     padding:24px 20px 26px!important;
   }
 }
+
+/* V120 — accessibility guardrails.
+   Safe additive rules only: visible keyboard focus, skip-link reliability,
+   readable text selection, and reduced-motion support. */
+:where(a, button, input, select, textarea, summary, [role="button"], [tabindex]):focus-visible{
+  outline:3px solid #0b7285!important;
+  outline-offset:3px!important;
+  border-radius:8px!important;
+}
+
+.skip-link,
+a.skip-link{
+  position:absolute!important;
+  inset-inline-start:12px!important;
+  top:10px!important;
+  z-index:10000!important;
+}
+
+.skip-link:focus,
+a.skip-link:focus,
+.skip-link:focus-visible,
+a.skip-link:focus-visible{
+  transform:translateY(0)!important;
+}
+
+::selection{
+  background:rgba(184,121,38,.28);
+  color:#102033;
+}
+
+@media (prefers-reduced-motion: reduce){
+  html:focus-within{scroll-behavior:auto!important;}
+
+  *,
+  *::before,
+  *::after{
+    animation-duration:.001ms!important;
+    animation-iteration-count:1!important;
+    scroll-behavior:auto!important;
+    transition-duration:.001ms!important;
+  }
+}
