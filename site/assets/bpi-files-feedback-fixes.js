@@ -1,8 +1,9 @@
-/* V119 — scoped Home mobile shell + lightweight Files filtering + file-link target normalization.
+/* V120 — scoped Home mobile shell + lightweight Files filtering + file-link target normalization + Home reflection fold.
    Home mobile loads the same main stylesheet used by the Summary tab, then keeps
    only the Home opening hero blue/turquoise. Mobile Home content is slightly wider.
    Files pages normalize real file/download links so they open in a new tab.
-   No desktop design changes. */
+   Home keeps the long poetic/reflection block, but folds it behind a reader-controlled summary.
+   No desktop design changes outside the targeted Home/Files behaviors. */
 (function(){
   'use strict';
 
@@ -63,6 +64,40 @@
       '}'
     ].join('');
     document.head.appendChild(style);
+  }
+
+  function installHomeReflectionFold(){
+    if (!isHomePage()) return;
+    if (document.querySelector('.bpi-home-reflection-fold')) return;
+
+    var section = document.querySelector('.signature-blurbs');
+    if (!section || !section.parentNode) return;
+
+    var fold = document.createElement('details');
+    fold.className = 'bpi-home-reflection-fold media-card accent-witness';
+
+    var summary = document.createElement('summary');
+    summary.textContent = isHe() ? 'פתיחה פואטית / אישית' : 'Poetic opening / personal reflection';
+    fold.appendChild(summary);
+
+    section.parentNode.insertBefore(fold, section);
+    fold.appendChild(section);
+
+    if (!document.getElementById('bpi-home-reflection-fold-style-v120')) {
+      var style = document.createElement('style');
+      style.id = 'bpi-home-reflection-fold-style-v120';
+      style.textContent = [
+        'body.bpi-home-page .bpi-home-reflection-fold{width:min(1680px,calc(100vw - 96px))!important;max-width:min(1680px,calc(100vw - 96px))!important;margin:28px auto!important;padding:0!important;box-sizing:border-box!important;border:1px solid rgba(18,63,115,.14)!important;border-radius:24px!important;background:linear-gradient(135deg,rgba(255,255,255,.98),rgba(255,250,240,.96))!important;box-shadow:0 14px 38px rgba(10,58,104,.08)!important;overflow:hidden!important;}',
+        'body.bpi-home-page .bpi-home-reflection-fold summary{cursor:pointer;list-style:none;padding:20px 24px!important;color:#123f73!important;font-weight:900!important;font-size:clamp(1.15rem,1.5vw,1.45rem)!important;line-height:1.35!important;}',
+        'body.bpi-home-page .bpi-home-reflection-fold summary::-webkit-details-marker{display:none!important;}',
+        'body.bpi-home-page .bpi-home-reflection-fold summary::after{content:"＋";float:inline-end;font-weight:900;color:#b87926;}',
+        'body.bpi-home-page .bpi-home-reflection-fold[open] summary::after{content:"−";}',
+        'body.bpi-home-page .bpi-home-reflection-fold .signature-blurbs{width:100%!important;max-width:none!important;margin:0!important;padding:0 24px 24px!important;box-sizing:border-box!important;}',
+        'body.bpi-home-page .bpi-home-reflection-fold:not([open]){margin-bottom:24px!important;}',
+        '@media(max-width:860px){body.bpi-home-page .bpi-home-reflection-fold{width:calc(100vw - 24px)!important;max-width:calc(100vw - 24px)!important;margin:22px auto!important;}body.bpi-home-page .bpi-home-reflection-fold summary{padding:18px 18px!important;}body.bpi-home-page .bpi-home-reflection-fold .signature-blurbs{padding:0 18px 20px!important;}}'
+      ].join('');
+      document.head.appendChild(style);
+    }
   }
 
   function isFilesPage(){
@@ -183,6 +218,7 @@
 
   function init(){
     installHomeMobileSummaryShell();
+    installHomeReflectionFold();
     installFilesFilters();
   }
 
