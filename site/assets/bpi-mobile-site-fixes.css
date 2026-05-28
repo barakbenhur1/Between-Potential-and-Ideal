@@ -72,3 +72,38 @@
     max-width:calc(100vw - 1rem)!important;
   }
 }
+
+/* V109 — footer contrast repair.
+   Scope: public site pages. Keeps the blue footer, forces every footer text/link
+   to stay white on non-home tabs where general paragraph/link rules leaked in. */
+body.public-page .site-footer,
+body.public-page footer.site-footer,
+body.design-prompt-theme.public-page .site-footer,
+body.design-prompt-theme.public-page footer.site-footer{
+  color:#ffffff!important;
+}
+
+body.public-page .site-footer p,
+body.public-page .site-footer a,
+body.public-page .site-footer a:visited,
+body.public-page .site-footer a:hover,
+body.public-page .site-footer a:focus,
+body.public-page footer.site-footer p,
+body.public-page footer.site-footer a,
+body.public-page footer.site-footer a:visited,
+body.public-page footer.site-footer a:hover,
+body.public-page footer.site-footer a:focus,
+body.design-prompt-theme.public-page .site-footer p,
+body.design-prompt-theme.public-page .site-footer a,
+body.design-prompt-theme.public-page .site-footer a:visited,
+body.design-prompt-theme.public-page .site-footer a:hover,
+body.design-prompt-theme.public-page .site-footer a:focus{
+  color:#ffffff!important;
+  opacity:1!important;
+}
+
+body.public-page .site-footer a,
+body.public-page footer.site-footer a,
+body.design-prompt-theme.public-page .site-footer a{
+  text-decoration-color:rgba(255,255,255,.82)!important;
+}
