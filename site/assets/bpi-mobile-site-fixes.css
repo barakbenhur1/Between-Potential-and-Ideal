@@ -228,3 +228,35 @@ a.skip-link:focus-visible{
     transition-duration:.001ms!important;
   }
 }
+
+/* V121 — scoped English Witness header brand repair.
+   Only fixes the accidental subtitle/document-title classes on the English Witness page brand. */
+body.public-page-en.section-witness .site-header > .site-brand.subtitle.document-subtitle.bpi-v72-document-subtitle{
+  display:block!important;
+  width:auto!important;
+  max-width:none!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:0!important;
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  text-align:inherit!important;
+  color:#fff!important;
+  font-size:1rem!important;
+  line-height:1.2!important;
+  font-style:normal!important;
+  font-weight:700!important;
+  letter-spacing:normal!important;
+}
+
+body.public-page-en.section-witness .site-header > .site-brand.subtitle.document-subtitle.bpi-v72-document-subtitle > a{
+  color:#fff!important;
+  font:inherit!important;
+  font-size:inherit!important;
+  line-height:inherit!important;
+  font-style:normal!important;
+  font-weight:inherit!important;
+  letter-spacing:inherit!important;
+  text-decoration:none!important;
+}
