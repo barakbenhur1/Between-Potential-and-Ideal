@@ -73,7 +73,7 @@
   }
 }
 
-/* V110 — global footer visual match.
+/* V111 — global footer visual match with homepage font scale.
    Scope: all public pages. Keeps the footer language-direction correct while matching
    the blue block, spacing, typography, white body text, and gold links from the approved sample. */
 body.public-page .site-footer,
@@ -116,15 +116,15 @@ body.public-page .site-footer p,
 body.public-page footer.site-footer p,
 body.design-prompt-theme.public-page .site-footer p{
   max-width:none!important;
-  margin:0 0 38px!important;
+  margin:0 0 32px!important;
   padding:0!important;
   color:#fffaf0!important;
   opacity:1!important;
   font-family:"Noto Serif Hebrew","Frank Ruhl Libre","David Libre",Georgia,"Times New Roman",serif!important;
-  font-size:clamp(1.12rem,1.28vw,1.48rem)!important;
-  font-weight:700!important;
-  line-height:1.45!important;
-  letter-spacing:.01em!important;
+  font-size:1rem!important;
+  font-weight:600!important;
+  line-height:1.55!important;
+  letter-spacing:.005em!important;
 }
 
 body.public-page .site-footer p:last-child,
@@ -148,11 +148,12 @@ body.design-prompt-theme.public-page .site-footer a:focus{
   color:#ffd18a!important;
   opacity:1!important;
   font-family:"Noto Serif Hebrew","Frank Ruhl Libre","David Libre",Georgia,"Times New Roman",serif!important;
-  font-weight:900!important;
+  font-size:inherit!important;
+  font-weight:800!important;
   text-decoration-line:underline!important;
   text-decoration-thickness:2px!important;
   text-decoration-color:#ffd18a!important;
-  text-underline-offset:7px!important;
+  text-underline-offset:6px!important;
 }
 
 @media (max-width: 860px){
@@ -169,9 +170,9 @@ body.design-prompt-theme.public-page .site-footer a:focus{
   body.public-page .site-footer p,
   body.public-page footer.site-footer p,
   body.design-prompt-theme.public-page .site-footer p{
-    font-size:clamp(1.04rem,4.4vw,1.28rem)!important;
-    line-height:1.48!important;
-    margin-bottom:30px!important;
+    font-size:.98rem!important;
+    line-height:1.52!important;
+    margin-bottom:28px!important;
   }
 }
 
