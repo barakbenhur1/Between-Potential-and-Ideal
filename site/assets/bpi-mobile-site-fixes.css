@@ -260,3 +260,16 @@ body.public-page-en.section-witness .site-header > .site-brand.subtitle.document
   letter-spacing:inherit!important;
   text-decoration:none!important;
 }
+
+/* V122 — exact visual match for English Witness brand against Application/Sources header brand. */
+body.public-page-en.section-witness .site-header > .site-brand.subtitle.document-subtitle.bpi-v72-document-subtitle,
+body.public-page-en.section-witness .site-header > .site-brand.subtitle.document-subtitle.bpi-v72-document-subtitle > a{
+  font-family:"Noto Serif Hebrew","Frank Ruhl Libre","David Libre",Georgia,"Times New Roman",serif!important;
+  font-size:clamp(1.35rem,2.05vw,2.15rem)!important;
+  font-style:italic!important;
+  font-weight:800!important;
+  letter-spacing:.012em!important;
+  line-height:1.18!important;
+  color:#fff!important;
+  text-decoration:none!important;
+}
