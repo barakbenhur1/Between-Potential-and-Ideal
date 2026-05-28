@@ -72,3 +72,191 @@
     max-width:calc(100vw - 1rem)!important;
   }
 }
+
+/* V112 — compact footer visual match with homepage.
+   Scope: all public pages. Same blue/footer language styling, but no oversized block. */
+body.public-page .site-footer,
+body.public-page footer.site-footer,
+body.design-prompt-theme.public-page .site-footer,
+body.design-prompt-theme.public-page footer.site-footer{
+  display:block!important;
+  width:calc(100% - 96px)!important;
+  max-width:none!important;
+  min-height:0!important;
+  height:auto!important;
+  margin:48px auto 0!important;
+  padding:30px clamp(28px,3.1vw,46px) 32px!important;
+  box-sizing:border-box!important;
+  background:#0A3A68!important;
+  background-image:none!important;
+  color:#fffaf0!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  overflow:hidden!important;
+}
+
+html[dir="rtl"] body.public-page .site-footer,
+html[dir="rtl"] body.public-page footer.site-footer,
+body.public-page-he .site-footer,
+body.public-page-he footer.site-footer{
+  direction:rtl!important;
+  text-align:right!important;
+}
+
+html[dir="ltr"] body.public-page .site-footer,
+html[dir="ltr"] body.public-page footer.site-footer,
+body.public-page-en .site-footer,
+body.public-page-en footer.site-footer{
+  direction:ltr!important;
+  text-align:left!important;
+}
+
+body.public-page .site-footer p,
+body.public-page footer.site-footer p,
+body.design-prompt-theme.public-page .site-footer p{
+  max-width:none!important;
+  margin:0 0 14px!important;
+  padding:0!important;
+  color:#fffaf0!important;
+  opacity:1!important;
+  font-family:"Noto Serif Hebrew","Frank Ruhl Libre","David Libre",Georgia,"Times New Roman",serif!important;
+  font-size:1rem!important;
+  font-weight:600!important;
+  line-height:1.55!important;
+  letter-spacing:.005em!important;
+}
+
+body.public-page .site-footer p:last-child,
+body.public-page footer.site-footer p:last-child,
+body.design-prompt-theme.public-page .site-footer p:last-child{
+  margin-bottom:0!important;
+}
+
+body.public-page .site-footer a,
+body.public-page .site-footer a:visited,
+body.public-page .site-footer a:hover,
+body.public-page .site-footer a:focus,
+body.public-page footer.site-footer a,
+body.public-page footer.site-footer a:visited,
+body.public-page footer.site-footer a:hover,
+body.public-page footer.site-footer a:focus,
+body.design-prompt-theme.public-page .site-footer a,
+body.design-prompt-theme.public-page .site-footer a:visited,
+body.design-prompt-theme.public-page .site-footer a:hover,
+body.design-prompt-theme.public-page .site-footer a:focus{
+  color:#ffd18a!important;
+  opacity:1!important;
+  font-family:"Noto Serif Hebrew","Frank Ruhl Libre","David Libre",Georgia,"Times New Roman",serif!important;
+  font-size:inherit!important;
+  font-weight:800!important;
+  text-decoration-line:underline!important;
+  text-decoration-thickness:2px!important;
+  text-decoration-color:#ffd18a!important;
+  text-underline-offset:6px!important;
+}
+
+@media (max-width: 860px){
+  body.public-page .site-footer,
+  body.public-page footer.site-footer,
+  body.design-prompt-theme.public-page .site-footer,
+  body.design-prompt-theme.public-page footer.site-footer{
+    width:calc(100vw - 32px)!important;
+    min-height:0!important;
+    height:auto!important;
+    margin-top:36px!important;
+    padding:26px 24px 28px!important;
+  }
+
+  body.public-page .site-footer p,
+  body.public-page footer.site-footer p,
+  body.design-prompt-theme.public-page .site-footer p{
+    font-size:.98rem!important;
+    line-height:1.52!important;
+    margin-bottom:12px!important;
+  }
+}
+
+@media (max-width: 420px){
+  body.public-page .site-footer,
+  body.public-page footer.site-footer,
+  body.design-prompt-theme.public-page .site-footer,
+  body.design-prompt-theme.public-page footer.site-footer{
+    width:calc(100vw - 24px)!important;
+    padding:24px 20px 26px!important;
+  }
+}
+
+/* V120 — accessibility guardrails.
+   Safe additive rules only: visible keyboard focus, skip-link reliability,
+   readable text selection, and reduced-motion support. */
+:where(a, button, input, select, textarea, summary, [role="button"], [tabindex]):focus-visible{
+  outline:3px solid #0b7285!important;
+  outline-offset:3px!important;
+  border-radius:8px!important;
+}
+
+.skip-link,
+a.skip-link{
+  position:absolute!important;
+  inset-inline-start:12px!important;
+  top:10px!important;
+  z-index:10000!important;
+}
+
+.skip-link:focus,
+a.skip-link:focus,
+.skip-link:focus-visible,
+a.skip-link:focus-visible{
+  transform:translateY(0)!important;
+}
+
+::selection{
+  background:rgba(184,121,38,.28);
+  color:#102033;
+}
+
+@media (prefers-reduced-motion: reduce){
+  html:focus-within{scroll-behavior:auto!important;}
+
+  *,
+  *::before,
+  *::after{
+    animation-duration:.001ms!important;
+    animation-iteration-count:1!important;
+    scroll-behavior:auto!important;
+    transition-duration:.001ms!important;
+  }
+}
+
+/* V121 — scoped English Witness header brand repair.
+   Only fixes the accidental subtitle/document-title classes on the English Witness page brand. */
+body.public-page-en.section-witness .site-header > .site-brand.subtitle.document-subtitle.bpi-v72-document-subtitle{
+  display:block!important;
+  width:auto!important;
+  max-width:none!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:0!important;
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  text-align:inherit!important;
+  color:#fff!important;
+  font-size:1rem!important;
+  line-height:1.2!important;
+  font-style:normal!important;
+  font-weight:700!important;
+  letter-spacing:normal!important;
+}
+
+body.public-page-en.section-witness .site-header > .site-brand.subtitle.document-subtitle.bpi-v72-document-subtitle > a{
+  color:#fff!important;
+  font:inherit!important;
+  font-size:inherit!important;
+  line-height:inherit!important;
+  font-style:normal!important;
+  font-weight:inherit!important;
+  letter-spacing:inherit!important;
+  text-decoration:none!important;
+}

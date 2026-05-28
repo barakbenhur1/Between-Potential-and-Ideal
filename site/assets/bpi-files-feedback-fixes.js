@@ -1,7 +1,8 @@
-/* V118 — scoped Home mobile shell + lightweight Files filtering.
+/* V119 — scoped Home mobile shell + lightweight Files filtering + file-link target normalization.
    Home mobile loads the same main stylesheet used by the Summary tab, then keeps
    only the Home opening hero blue/turquoise. Mobile Home content is slightly wider.
-   No desktop changes. */
+   Files pages normalize real file/download links so they open in a new tab.
+   No desktop design changes. */
 (function(){
   'use strict';
 
@@ -87,6 +88,28 @@
     return KNOWN_FORMATS.indexOf(ext) !== -1 ? ext : '';
   }
 
+  function normalizeFileDownloadTargets(){
+    if (!isFilesPage()) return;
+
+    Array.from(document.querySelectorAll('a[href]')).forEach(function(a){
+      var href = a.getAttribute('href') || '';
+      var clean = href.split('?')[0].split('#')[0].toLowerCase();
+      var pointsToFileArchive = clean.indexOf('/files/') !== -1 ||
+        clean.indexOf('../../files/') === 0 || clean.indexOf('../files/') === 0 ||
+        clean.indexOf('files/') === 0;
+
+      if (!pointsToFileArchive || !formatFromHref(href)) return;
+
+      a.setAttribute('target', '_blank');
+
+      var rel = (a.getAttribute('rel') || '').split(/\s+/).filter(Boolean);
+      ['noopener','noreferrer'].forEach(function(token){
+        if (rel.indexOf(token) === -1) rel.push(token);
+      });
+      a.setAttribute('rel', rel.join(' '));
+    });
+  }
+
   function rowText(row){
     var hrefs = Array.from(row.querySelectorAll('a[href]')).map(function(a){ return a.getAttribute('href') || ''; }).join(' ');
     return ((row.textContent || '') + ' ' + hrefs).toLowerCase();
@@ -148,6 +171,7 @@
 
   function installFilesFilters(){
     if (!isFilesPage()) return;
+    normalizeFileDownloadTargets();
     var search = document.querySelector('#fileSearch');
     var type = document.querySelector('#fileTypeFilter');
     var lang = document.querySelector('#fileLangFilter');
