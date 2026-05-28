@@ -635,3 +635,52 @@ body.bpi-files-page .bpi-files-recommended-card .recommended-card-action .downlo
     min-width: 0 !important;
   }
 }
+
+/* BPI SAFE ACCESSIBILITY PATCH V1 */
+
+/* Skip link: hidden until keyboard focus */
+.skip-link {
+  position: absolute;
+  inset-inline-start: 1rem;
+  top: 0.75rem;
+  z-index: 9999;
+  transform: translateY(-180%);
+  padding: 0.65rem 0.9rem;
+  border-radius: 999px;
+  background: #0A3A68;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  box-shadow: 0 8px 22px rgba(10, 58, 104, 0.25);
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+/* Visible keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #0A3A68;
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* END BPI SAFE ACCESSIBILITY PATCH V1 */
