@@ -157,6 +157,99 @@ body.public-page-en.section-ai .ai-documents-card .appendix-actions a{
     max-height: 58px !important;
   }
 }
+</style><style id="bpi-en-ai-tab-title-row-lock-final">
+/* English AI tab: all thumbnails same Y, still centered to title */
+
+/* Stable descriptor area so every title/image row starts at same height */
+body.public-page-en.section-ai .ai-documents-card .ai-reading-card > .ai-mode-subtitle{
+  min-height: 3.9rem !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  margin: 0 0 .65rem !important;
+  text-align: left !important;
+  direction: ltr !important;
+}
+
+/* The row itself starts at the same Y in all cards */
+body.public-page-en.section-ai .ai-documents-card .ai-reading-card .card-media-head{
+  display: grid !important;
+  grid-template-columns: 72px minmax(0, max-content) !important;
+  grid-template-areas: "image title" !important;
+  width: max-content !important;
+  max-width: 100% !important;
+  margin: .15rem auto .85rem 0 !important;
+  gap: .75rem !important;
+  align-items: center !important;
+  justify-content: start !important;
+  direction: ltr !important;
+  min-height: 7.25rem !important;
+}
+
+/* Image keeps fixed size and aligns to the center of the locked title row */
+body.public-page-en.section-ai .ai-documents-card .ai-reading-card .card-media-head > img.card-thumb{
+  grid-area: image !important;
+  width: 72px !important;
+  height: 72px !important;
+  max-width: 72px !important;
+  max-height: 72px !important;
+  object-fit: cover !important;
+  border-radius: 18px !important;
+  margin: 0 !important;
+  align-self: center !important;
+  justify-self: start !important;
+  float: none !important;
+  position: static !important;
+  transform: none !important;
+}
+
+/* Title gets the same vertical area in all cards, so image centering stays consistent */
+body.public-page-en.section-ai .ai-documents-card .ai-reading-card .card-media-head > h3{
+  grid-area: title !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  min-height: 7.25rem !important;
+  width: auto !important;
+  max-width: clamp(190px, 17vw, 290px) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+  direction: ltr !important;
+  line-height: 1.18 !important;
+  align-self: center !important;
+  justify-self: start !important;
+}
+
+/* Body text starts after the locked row without extra fake gap */
+body.public-page-en.section-ai .ai-documents-card .ai-reading-card > p:not(.ai-mode-subtitle){
+  margin-top: 0 !important;
+}
+</style><style id="bpi-ai-tab-micro-spacing-final-en">
+/* English AI tab: tiny spacing correction only */
+
+/* close the gap slightly between the top sentence and the title/image row */
+body.public-page-en.section-ai .ai-documents-card .ai-reading-card > .ai-mode-subtitle{
+  margin-bottom: .42rem !important;
+}
+
+/* keep image centered to title, but reduce the title/body vertical area slightly */
+body.public-page-en.section-ai .ai-documents-card .ai-reading-card .card-media-head{
+  min-height: 6.05rem !important;
+  margin-top: 0 !important;
+  margin-bottom: .35rem !important;
+  align-items: center !important;
+}
+
+body.public-page-en.section-ai .ai-documents-card .ai-reading-card .card-media-head > h3{
+  min-height: 6.05rem !important;
+  align-items: center !important;
+}
+
+/* close the gap between title row and body text slightly */
+body.public-page-en.section-ai .ai-documents-card .ai-reading-card > p:not(.ai-mode-subtitle){
+  margin-top: 0 !important;
+}
 </style></head>
 <body class="public-page public-page-en design-prompt-theme section-ai appendix-document-page ai-page">
 <header class="site-header" dir="ltr" role="banner">
