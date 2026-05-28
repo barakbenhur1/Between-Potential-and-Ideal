@@ -1253,13 +1253,7 @@ decoding="async" loading="lazy" alt="Education of Potential" />
 <figcaption aria-hidden="true">Image description: learning, distance, and understanding that cannot be shortcut.</figcaption>
 </figure>
 
-### Learning, distance, and understanding that is not a shortcut
-
-# Education of Potential
-
-
-### Learning, distance, and understanding that is not a shortcut
-
+## Learning, distance, and understanding that is not a shortcut
 Education is a direct test of Between Potential and Ideal because it asks how an opening can be offered to a person without stealing the path by which that opening becomes theirs. Every educational system places before the learner a field of potential: what can be understood, done, asked, and become. Yet that potential is never abstract. It appears inside a body, a language, fear, time, home, classroom, teacher, tool, institution, measurement, culture, memory, and suffering that is not holy but also cannot simply be erased.
 
 The deepest failure of education is not low grades, inequality, dropout, or weak motivation. Those are symptoms. The deeper failure is the substitution of formation by result. A learner submits a paper and the system sees a product. A learner marks a correct answer and the exam sees performance. A learner reproduces a formula and the grade sees success. The theory asks a different question: not whether a result appeared, but whether understanding was formed. Understanding is not information placed in the head. It is a changed relation between a person and a question: the person can carry it, move it, apply it, challenge it, and build a path from it.
@@ -3414,8 +3408,8 @@ potential, but the one that identifies which part of its potential
 deserves to become form, and which part must remain outside the form so
 that the form can be precise.
 
-The potential of a work is everything it could have been.  
-Its ideal is what it must not lose.  
+The potential of a work is everything it could have been.
+Its ideal is what it must not lose.
 The optimum is the form in which the sacrifices remain faithful to that
 thing.
 
@@ -3593,8 +3587,8 @@ languages, powers, and eras we add to it. The question is what inner law
 holds it. Once expansion stops serving that law, the world may be
 larger, but it is less alive.
 
-The potential of a franchise is everything that can be added.  
-Its ideal is what must not be lost.  
+The potential of a franchise is everything that can be added.
+Its ideal is what must not be lost.
 Its optimum is knowing when not to add.
 
 ### Canon as invariant
@@ -3693,7 +3687,7 @@ Rorschach shows that truth without flexibility can become a law that
 does not know how to live. Inside this triangle, the question is not who
 is stronger, but what form of power is still worthy of being chosen.
 
-True canon is not all the details. It is what must not be erased.  
+True canon is not all the details. It is what must not be erased.
 A good reboot is not the one that reconstructs everything. It is the one
 that understands what must be preserved under change.
 
@@ -3729,7 +3723,7 @@ structure of meaning has been preserved. A bad adaptation can preserve
 names, objects, costumes, sentences, icons, and scenes - and still miss
 the work. It preserves the surface and loses the law.
 
-A bad adaptation is not necessarily one that deletes details.  
+A bad adaptation is not necessarily one that deletes details.
 A bad adaptation is one that preserves the symbols and loses the ideal.
 
 This failure is especially common in franchises, because they are full
@@ -3804,7 +3798,7 @@ holds all worlds does not have to appear as the greatest power.
 Sometimes the center appears as something that can be trampled without
 understanding that the entire axis has been trampled.
 
-The ideal is not always immense. Sometimes it is vulnerable.  
+The ideal is not always immense. Sometimes it is vulnerable.
 Sometimes the whole system depends on something that appears too small
 to hold it.
 
@@ -3896,7 +3890,7 @@ wholeness only because they conceal the price of their corruption.
 Sometimes the truest path toward the ideal is not to use the power, not
 to open the door, not to take the shortcut.
 
-The optimum is not always realization. Sometimes it is abstention.  
+The optimum is not always realization. Sometimes it is abstention.
 Sometimes the truest form of power is boundary.
 
 This refusal is not weakness. It is precise action. It is the
@@ -3922,7 +3916,7 @@ they build a new system of violence, control, narcissism, or
 destruction. They do not free themselves from the system; they become
 the author of a worse one.
 
-A false ideal is destructive potential disguised as redemption.  
+A false ideal is destructive potential disguised as redemption.
 It uses the language of freedom to build a new prison.
 
 This matters because it protects the theory from innocence. Not every
@@ -3944,12 +3938,12 @@ It does not need to explain everything, show everything, continue
 everything, or connect everything. On the contrary: sometimes its
 greatness lies precisely in its ability to know what to leave out.
 
-A great work knows how to distinguish between potential and noise.  
-Between expansion and loss of center.  
-Between canon and accumulation.  
-Between adaptation and costume.  
-Between living recursion and meta-gimmick.  
-Between power and temptation.  
+A great work knows how to distinguish between potential and noise.
+Between expansion and loss of center.
+Between canon and accumulation.
+Between adaptation and costume.
+Between living recursion and meta-gimmick.
+Between power and temptation.
 Between ideal and false ideal.
 
 It knows that not every possibility is an obligation. It knows that not
@@ -3965,14 +3959,14 @@ are more possibilities than can be realized. The question is not how to
 realize them all. The question is what must not be lost when one
 chooses.
 
-Not every potential is a call to realization.  
-Not every expansion is deepening.  
-Not every continuation is fidelity.  
-Not every breaking is freedom.  
+Not every potential is a call to realization.
+Not every expansion is deepening.
+Not every continuation is fidelity.
+Not every breaking is freedom.
 Not every center looks like a center.
 
-The potential is everything the work can be.  
-The ideal is what it must not lose.  
+The potential is everything the work can be.
+The ideal is what it must not lose.
 And the optimal is the form in which every sacrifice remains faithful to
 that thing.
 
@@ -5595,8 +5589,8 @@ the horizon. Boundary as relation, not merely as wall.</figcaption>
 There are words that weaken thought before thought has even begun to
 work.
 
-“Imaginary” sounds like something that does not exist.  
-“Virtual” sounds like something false.  
+“Imaginary” sounds like something that does not exist.
+“Virtual” sounds like something false.
 “Real” sounds like the only thing that deserves to be taken seriously.
 
 But reality is not built according to the convenience of language. The
@@ -5616,7 +5610,7 @@ it uses structures in which even the most exact forms of thought are
 forced to distinguish between what appears, what influences, what
 limits, and what makes appearance possible.
 
-This caution is not the enemy of metaphor.  
+This caution is not the enemy of metaphor.
 It is the condition that keeps metaphor from becoming false.
 
 ### The Imaginary
@@ -5633,7 +5627,7 @@ most precise thought, the real is not always describable on one line.
 Sometimes an axis that does not look like ordinary quantity is needed in
 order to understand real motion.
 
-In this sense, the imaginary is not the opposite of the real.  
+In this sense, the imaginary is not the opposite of the real.
 It is the way the real becomes thinkable beyond a single axis.
 
 ### The Virtual
@@ -5659,7 +5653,7 @@ pressure on the appearance of the thing.
 
 Or more simply:
 
-The virtual is not the thing.  
+The virtual is not the thing.
 It is the way possibility begins to press on the conditions under which
 the thing can appear.
 
@@ -5669,14 +5663,14 @@ philosophical idea. It is an example of the need, even in careful speech
 about reality, to distinguish between a stable object and an influence
 that does not stabilize as an object.
 
-The imaginary is the language of direction.  
-The virtual is the language of influence.  
+The imaginary is the language of direction.
+The virtual is the language of influence.
 The real is the language of the sign.
 
 The imaginary says: the system has an axis you do not see, but without
-it you will not understand its motion.  
+it you will not understand its motion.
 The virtual says: there is an influence you do not see as an object, but
-without it you will not understand the change.  
+without it you will not understand the change.
 The real says: here, for a moment, something of possibility has agreed
 to leave a trace.
 
@@ -5706,14 +5700,14 @@ subtler: even when one empties the world of everything that looks like
 an object, it is not clear that one can empty it of the potential for
 appearance.
 
-Potential, in this sense, is not another object inside the box.  
+Potential, in this sense, is not another object inside the box.
 It is what remains when there are no objects left.
 
 And therefore it cannot simply be taken out.
 
-One can remove matter.  
-One can remove light.  
-One can remove air.  
+One can remove matter.
+One can remove light.
+One can remove air.
 One can imagine removing every particle and every trace.
 
 But one cannot remove possibility as though it were one more thing among
@@ -5736,7 +5730,7 @@ but there is already a tilt. There is not yet an answer, but there is
 already a direction. There is not yet a decision, but there is already a
 tension organizing the space of possible decisions.
 
-The human being says: I will believe it when I see it.  
+The human being says: I will believe it when I see it.
 Reality says: you would not see anything unless something you do not see
 were already acting.
 
@@ -5767,13 +5761,13 @@ came.
 
 It can be said this way:
 
-The imaginary opens an axis.  
-The virtual applies pressure.  
-The real leaves a sign.  
+The imaginary opens an axis.
+The virtual applies pressure.
+The real leaves a sign.
 The ideal is an appearance that preserves continuity with the axis, the
 pressure, and the condition from which it was born.
 
-In other words:  
+In other words:
 The ideal does not betray the potential from which it came.
 
 ### Gravity
@@ -5832,7 +5826,7 @@ is no return. This is the place where contraction, which began as a
 condition of existence, comes too close to erasing the possibility for
 which it was born.
 
-The black hole is not the place where freedom is punished.  
+The black hole is not the place where freedom is punished.
 It is the place where geometry itself has stopped offering directions.
 
 Opposite it one may place, carefully, the image of the white hole.
@@ -5853,14 +5847,14 @@ accurate to say that it is an image of one possible motion of potential:
 a source that does not open to entry, but from which something can
 appear outward.
 
-Potential is not a thing one reaches as one reaches a place.  
-The ideal is not an object one holds after the journey is over.  
+Potential is not a thing one reaches as one reaches a place.
+The ideal is not an object one holds after the journey is over.
 Both resemble horizons more than objects: they organize motion, direct
 it, distort it, attract it, yet never give themselves wholly into the
 hand.
 
-Gravity teaches that freedom requires form.  
-The black hole teaches that form can become a cage.  
+Gravity teaches that freedom requires form.
+The black hole teaches that form can become a cage.
 The white hole, as an image only, reminds us that there are sources that
 do not open to entry, but to appearance.
 
@@ -5893,9 +5887,9 @@ say that the extreme case reveals something that was already true: the
 real does not begin only where there is an object. Sometimes the real
 begins where the conditions of appearance have already changed.
 
-That is: there is a reality that is not a body.  
-There is an action that is not an object.  
-There is a direction that is not a form.  
+That is: there is a reality that is not a body.
+There is an action that is not an object.
+There is a direction that is not a form.
 There is an influence that is not yet an event, but the event can no
 longer happen the same way without it.
 
@@ -6013,8 +6007,8 @@ identify the person, institution, idea, or community.
 If one wants to use the name “God,” it must be used with the same
 caution required of every name that is too large.
 
-Not God as a hand moving particles behind the scenes.  
-Not God as a mechanical operator of miracles.  
+Not God as a hand moving particles behind the scenes.
+Not God as a mechanical operator of miracles.
 Not God as a figure standing outside the world and repairing it from the
 outside.
 
@@ -6025,21 +6019,21 @@ Another could be source. Another could be the movement between potential
 and ideal. The name matters less than the caution not to turn it into an
 idol.
 
-The imaginary number is not the thought of God.  
-The virtual particle is not the action of God.  
-Gravity is not the will of God to limit freedom.  
-The black hole is not the punishment of God.  
+The imaginary number is not the thought of God.
+The virtual particle is not the action of God.
+Gravity is not the will of God to limit freedom.
+The black hole is not the punishment of God.
 The white hole is not the body of God.
 
 But one may say, carefully:
 
 In the imaginary, reality discovers that it has another direction in
-which to think.  
+which to think.
 In the virtual, reality discovers that it has a way to influence before
-it appears.  
-In gravity, reality discovers that freedom requires form.  
+it appears.
+In gravity, reality discovers that freedom requires form.
 In the horizon, reality discovers that every form can become a
-boundary.  
+boundary.
 In the real, reality discovers what of all this has managed to pass into
 the world.
 
@@ -6058,8 +6052,8 @@ The moment when the hidden direction, the unstable influence, the
 weight, the boundary, and the visible sign align enough for something to
 be not only existent, but justified in its existence.
 
-Not justified from the outside.  
-Not approved by an observer.  
+Not justified from the outside.
+Not approved by an observer.
 Not proven once and for all.
 
 Justified in the deeper sense: that it does not betray the potential

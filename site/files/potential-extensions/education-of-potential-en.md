@@ -1,12 +1,6 @@
 # Education of Potential
 
 ## Learning, distance, and understanding that is not a shortcut
-
-# Education of Potential
-
-
-## Learning, distance, and understanding that is not a shortcut
-
 Education is a direct test of Between Potential and Ideal because it asks how an opening can be offered to a person without stealing the path by which that opening becomes theirs. Every educational system places before the learner a field of potential: what can be understood, done, asked, and become. Yet that potential is never abstract. It appears inside a body, a language, fear, time, home, classroom, teacher, tool, institution, measurement, culture, memory, and suffering that is not holy but also cannot simply be erased.
 
 The deepest failure of education is not low grades, inequality, dropout, or weak motivation. Those are symptoms. The deeper failure is the substitution of formation by result. A learner submits a paper and the system sees a product. A learner marks a correct answer and the exam sees performance. A learner reproduces a formula and the grade sees success. The theory asks a different question: not whether a result appeared, but whether understanding was formed. Understanding is not information placed in the head. It is a changed relation between a person and a question: the person can carry it, move it, apply it, challenge it, and build a path from it.
