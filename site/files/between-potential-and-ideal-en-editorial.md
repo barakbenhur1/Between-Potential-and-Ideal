@@ -1228,9 +1228,10 @@ form that does not reproduce it.
 
 *Learning, distance, and understanding that is not a shortcut*
 
-![Education of Potential](../figures/v25_chapter_education-of-potential.png)
+![Education of Potential](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: learning, distance, and understanding that cannot be shortcut.
+
 ## Learning, distance, and understanding that is not a shortcut
 Education is a direct test of Between Potential and Ideal because it asks how an opening can be offered to a person without stealing the path by which that opening becomes theirs. Every educational system places before the learner a field of potential: what can be understood, done, asked, and become. Yet that potential is never abstract. It appears inside a body, a language, fear, time, home, classroom, teacher, tool, institution, measurement, culture, memory, and suffering that is not holy but also cannot simply be erased.
 
@@ -1728,7 +1729,7 @@ the boat to move more accurately between potential and ideal.
 
 *Answer, source, responsibility, and the distance that gets stolen*
 
-![Artificial Intelligence and Open Problems](../figures/v25_chapter_ai-open-problems.png)
+![Artificial Intelligence and Open Problems](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: answer, source, responsibility, and the distance that can be stolen.
 
@@ -1745,11 +1746,12 @@ A common mistake is to ask only whether AI truly understands. That matters, but 
 The theory distinguishes roles: AI can be mirror, witness, tool, scaffold, accelerator, translator, preliminary diagnostician, or drainage mechanism. It is not the owner of the human road. When it replaces distance, it produces output without formation. When it helps carry distance, it can be a deep tool. The difference lies not only in the model but in practice, governance, design, and boundary.
 
 AI of potential is neither fear of machines nor blind enthusiasm. It preserves one sentence: a tool may open possibility, but it must not steal the place where a person, community, or living source becomes responsible for what is made.
+
 ## I Have No Mouth, and I Must Scream
 
 *The story, the game, and the difference between a sealed ending and an actionable ending*
 
-![I Have No Mouth, and I Must Scream](../figures/v25_chapter_i-have-no-mouth.png)
+![I Have No Mouth, and I Must Scream](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: story, game, and the difference between a locked ending and an actable ending.
 
@@ -1768,6 +1770,7 @@ The link to contemporary AI is not simple prophecy. Current models are not AM. T
 The chapter links to the drainage mechanism: a healthy system drains power, error, pain, and pretension into repair. A hellish system accumulates them. It links to law and medicine because even benevolent institutions can become forms that close possibility. It links to the recursive edge because any system that tries to become the absolute end turns itself into a prison.
 
 I Have No Mouth, and I Must Scream is not only a strong title. It is a sentence about a source deprived of appearance. The theory learns that the ideal is not perfect control over pain, but preservation of a possibility in which voice, body, ending, and repair are not replaced by mechanism.
+
 ## 9. The Architecture of Infinite Recursion and the Inner Rapture
 
 *Reset, return, descent, and ascent in three languages of the same
@@ -2418,7 +2421,7 @@ until being as a whole returns to itself, fully awake to itself.
 
 *Relative potential, contextual realization, and the ideal as an upper-bound edge*
 
-![The Recursive Edge](../figures/tab_critique.png)
+![The Recursive Edge](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: recursive layers in which every boundary can become a new source.
 
@@ -2435,6 +2438,7 @@ The recursive edge relates to P versus NP, logic, and computation only as carefu
 In education, the edge is a learner who understands enough to ask better. In law, it is a judgment that preserves appeal or correction. In medicine, it is treatment that leads to rehabilitation, monitoring, and prevention. In art, it is a work that opens possibilities without being only a draft. In science, it is a theory that states what would falsify, expand, or repair it.
 
 The recursive edge also drains pretension. It prevents the theory from becoming doctrine. If the theory says “there is nothing more to ask,” it betrays itself. The ideal is not a summit where movement stops; it is a direction that creates deeper responsibility whenever one approaches it.
+
 ## 10. Computation, Evidence, Reduction, and Incompleteness
 
 *From potential to the boundary of the system*
@@ -2935,7 +2939,7 @@ It does not try to be everything. It chooses what not to be in order to be real.
 
 *Form, living source, canon, and a market that is not the final judge*
 
-![Art of Potential](../figures/v25_chapter_art-of-potential.png)
+![Art of Potential](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: creation as a field where possibility receives form without being fully closed.
 
@@ -2954,11 +2958,12 @@ Canon is neither prison nor grand stamp. It is the memory of forms that survived
 Art of potential links to economy because markets can enable and deform creation; to AI because living source can become template; to education because an art student needs distance, not only a portfolio; and to the grace of relinquishment because sometimes the better work gives up the effect that shines more than its truth.
 
 Art of potential is not nostalgia against technology and not a defense of suffering as authenticity. It says: use any tool, but do not lie about where the tool stood in for the source. A living work is not only an impressive result. It is the trace of a choice that passed through a person.
+
 ## Music of Potential
 
 *Time, voice, listening, and resonance that is not a metric*
 
-![Music of Potential](../figures/v25_chapter_music-of-potential.png)
+![Music of Potential](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: rhythm, silence, and return as ways of carrying possibility through time.
 
@@ -2975,11 +2980,12 @@ AI in music opens real possibilities: sketches, accompaniment, demos, access for
 Music links to economy because it lives between gift, work, and market. It links to education because good practice preserves distance: enough repetition to build the body, enough freedom not to strangle voice. It links to boundary horizons because every performance faces what cannot yet be heard: a feeling not formulated, a tone that exists only in the moment, an audience that changes the song by hearing it.
 
 Music of potential does not say that the human is always better than the machine. It says the question is not who produced the cleaner sound. The question is whether there is a responsible relation between source, voice, time, and listening.
+
 ## 12. Engineering and Architecture of Potential
 
 Material, Form, Load, and Repair That Is Not Redemption
 
-![Figure: Engineering and Architecture of Potential.](../figures/17_engineering_architecture_potential.png)
+![Figure: Engineering and Architecture of Potential.](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: an engineered system in which potential becomes structure, channeling, testing, and repair.
 
@@ -3159,11 +3165,12 @@ but:
 Hold Human Potential Under Real Conditions
 
 A structure is not only a thing that stands. It is a promise that matter can still bear. A house is not only a thing that closes. It is a form that lets a person appear. A healthy engineering is one that preserves a living relation between idea, material, load, human being, and time.
+
 ## 13. Economy of Relation
 
 Money, Value, Trust, and Potential
 
-![Figure: Economy of Relation.](../figures/18_economy_relation_potential.png)
+![Figure: Economy of Relation.](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: value, exchange, and responsibility as living relations, not only as numbers.
 
@@ -3384,11 +3391,12 @@ but:
 Maximize Human Potential Without Destroying the Human
 
 Money is not value. Money is a sign trying to carry value. Price is not truth. Price is a relation trying to measure value. A healthy economy is not one that found absolute value; it is one that preserves a living relation between sign, trust, human being, and potential.
+
 ## 14. Governance of Potential
 
 Law, Power, Trust, and Repair That Is Not Redemption
 
-![Figure: Governance of Potential.](../figures/19_governance_society_potential.png)
+![Figure: Governance of Potential.](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: institutions, decision, and public coordination as ways of translating possibility into responsibility.
 
@@ -3563,11 +3571,12 @@ but:
 Hold Shared Human Potential Without Devouring the Human
 
 A state is not only force. It is a promise that force will be bound. Law is not only prohibition. It is a form that tries to make shared freedom possible. A healthy governance is one that preserves a living relation between power, law, trust, human being, and time.
+
 ## Law of Potential: Justice Under Limitation
 
 *Justice, evidence, distance, and correction under limitation*
 
-![Law of Potential](../figures/v25_chapter_law-of-potential.png)
+![Law of Potential](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: law, interpretation, and boundary as a space where possibility is tested against responsibility.
 
@@ -3697,11 +3706,12 @@ Before decision, the question is whether the evidence can bear the responsibilit
 In the end, law returns a central lesson to the theory: the ideal is not cancelled because it cannot be reached in full, but the local optimum must not pretend to be the ideal itself. A judgment, plea bargain, acquittal, conviction, compensation, or punishment is a translation under limitation. It can be necessary, worthy, and as just as possible, but it must remain open to responsibility: correction, appeal, critique, and the ability to admit that the horizon has changed.
 
 The law of potential does not replace law, does not offer legal advice, and does not propose emotional justice instead of procedure. It is a critical-ethical principle, not a ready legal doctrine and not a substitute for interpretation of existing law. It preserves the question procedure sometimes forgets: is the form still serving justice, or has justice become an excuse for the form? Does the system protect the human possibility of correction, or merely produce closure? And inside all the decisions, pain, evidence, and forms, does the person still remain a living source that cannot be fully reduced to their role in the case?
+
 ## Medicine of Potential
 
 *Body, pain, diagnosis, and care that does not own life*
 
-![Medicine of Potential](../figures/v25_chapter_medicine-of-potential.png)
+![Medicine of Potential](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: healing as a careful reading of body, suffering, chance, and conditions.
 
@@ -3720,9 +3730,10 @@ A simple case: pain that does not appear on a test. Bad medicine says: no findin
 Medicine of potential links to boundary horizons because every diagnosis is a horizon: what can be seen, what remains hidden, and what is dangerous to infer. It links to the recursive edge because every successful treatment opens the next question: rehabilitation, quality of life, prevention, living with illness, or systemic change. It links to AI because a tool is morally useful only when it returns responsibility rather than stealing it.
 
 This chapter gives no medical advice. It clarifies the condition of responsibility: the patient is not the output of a test, the physician is not a relay for an algorithm, and a system may not call efficiency “care” when efficiency was bought by erasing listening.
+
 ## 15. The Imaginary, the Virtual, Gravity, and the Horizon
 
-![Figure F: The imaginary, the virtual, and the horizon. Boundary as relation, not merely as wall.](../figures/v26_restyle_three_frames_measurement.png)
+![Figure F: The imaginary, the virtual, and the horizon. Boundary as relation, not merely as wall.](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Figure F: The imaginary, the virtual, and
 the horizon. Boundary as relation, not merely as wall.
@@ -4132,11 +4143,12 @@ Not proven once and for all.
 
 Justified in the deeper sense: that it does not betray the potential
 from which it came.
+
 ## Boundary Horizons
 
 *Information, visibility, and what does not return*
 
-![Boundary Horizons](../figures/v25_chapter_boundary-horizons.png)
+![Boundary Horizons](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: a boundary that is not merely a wall, but a horizon guiding the relation between possibility and form.
 
@@ -4153,6 +4165,7 @@ In science, boundary horizons appear in instruments, energy scales, resolution, 
 In law, the evidence horizon determines responsible judgment. In education, the horizon of understanding determines what distance can be carried. In medicine, the diagnostic horizon determines what is known, suspected, and still needs testing. In AI, the horizon of explanation determines whether a system can be a trustworthy tool or a black box disguised as authority.
 
 Boundary horizons link to the recursive edge because every moved horizon reveals another horizon. There is no final point where all hiddenness disappears. But this is not despair: naming the boundary makes action more moral. A person is not required to know everything; they are required not to lie about what they do not know.
+
 ## 16. Mass-Energy and Medium
 
 *Form, light, and matter as three languages of passage*
