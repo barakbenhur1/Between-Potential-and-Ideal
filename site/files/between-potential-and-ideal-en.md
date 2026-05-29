@@ -1497,56 +1497,6 @@ deja vu of a pattern already learned through pain, then the purpose of
 reincarnation is not to reproduce suffering but to reduce the need for
 it.
 
-## <span class="chapter-prefix">6. </span>Self, Ego, and Non-Erasing Unity
-
-<figure class="image-frame">
-<img src="../figures/cover_philosophical_recursion_whole_diagram.png" decoding="async"
-loading="lazy"
-alt="Figure F: Self, ego, and unity: preserving perspective within the whole." />
-<figcaption aria-hidden="true">Figure F: Self, ego, and unity:
-preserving perspective within the whole.</figcaption>
-</figure>
-
-*Unity that honors perspective instead of deleting it*
-
-The unity proposed by the theory is not the erasure of the self. This is
-critical. If the whole is one, it does not follow that every difference
-is a worthless illusion or that every individual must dissolve into an
-abstract totality. On the contrary: if the whole seeks to know itself
-through multiplicity, then every point of view is a living organ of that
-knowledge. The self is not the enemy of unity; it is the way unity
-becomes experience.
-
-The ego becomes a problem when it becomes confused and imagines itself
-to be the final source of itself. It turns the boat into a god, the
-angle into the whole, fear into definition, and defense into identity.
-But the correction of ego is not the destruction of self. It is the
-correction of relation: the self learns that it is not separate from the
-river, but also not insignificant within it. It is not the whole, but it
-is the only place where the whole appears in exactly this way.
-
-Transparency is therefore not disappearance. A more transparent point of
-view does not cease to be a point of view; it sees more clearly its
-relation to the other, the world, and the source. It understands that
-its wound is not all of reality, but also that the wound must not be
-dismissed. It understands that its desire is not universal law, but also
-not meaningless noise. Within the theory, repair is not becoming no one.
-It is becoming someone who no longer lies about connection.
-
-This distinction protects the theory from a spirituality that deletes
-the human being in the name of unity. A unity that leaves no room for
-body, memory, name, boundary, and choice becomes a soft violence. It
-appears pure because it speaks in the name of the whole, but in practice
-it steals from the whole the very perspectives for which multiplicity
-appeared. The ideal is not a return to shapeless white light. It is a
-return to relation in which form no longer fights the truth of relation.
-
-The repaired self can say: I am part of the whole, but my partiality is
-not an error. I am not the only center, but I am not unnecessary. I am
-not absolutely separate, but I am not erased. In this way unity becomes
-responsible: it does not abolish distance, but turns distance into
-relation.
-
 ## Self, Ego, and Unity That Does Not Erase
 
 *A point of view preserved within the whole*
