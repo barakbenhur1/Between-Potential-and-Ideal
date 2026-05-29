@@ -18,8 +18,6 @@ THE THEORY
 
 Click any item to jump directly to the relevant place in the document,
 including opening material, chapters, subsections, and closing sections.
-
-1. [This Is a Model, Not a Final Declaration](#This-Is-a-Model-Not-a-Final-Declaration)
 1.  [Cover](#cover-page)
 2.  [Author's Note](#author-note)
 3.  [Abstract](#Abstract)
@@ -325,6 +323,11 @@ explicitly stated, and as metaphors when used as structural images.
 
 
 ## This Is a Model, Not a Final Declaration
+
+![Chapter illustration: This Is a Model, Not a Final Declaration](../figures/cover_philosophical_recursion_whole_diagram.png)
+
+*Image description: a map of relations, not a final declaration and not a closed reality.*
+
 
 *A map of responsibility, not a license for certainty*
 
