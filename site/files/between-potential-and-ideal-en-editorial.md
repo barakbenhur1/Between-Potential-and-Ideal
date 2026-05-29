@@ -15,6 +15,7 @@ Author: me · May 2026
 ---
 
 Author's note
+1. [This Is a Model, Not a Final Declaration](#This-Is-a-Model-Not-a-Final-Declaration)
 
 These chapters are different attempts
 
@@ -29,7 +30,6 @@ please understand the theory through it.
 
 Click any item to jump directly to the relevant place in the document, including opening material, chapters, subsections, and closing sections.
 
-1. [This Is a Model, Not a Final Declaration](#This-Is-a-Model-Not-a-Final-Declaration)
 1. [Cover](#cover-page)
 2. [Author's Note](#author-note)
 3. [Abstract](#Abstract)
