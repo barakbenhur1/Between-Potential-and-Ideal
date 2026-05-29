@@ -56,3 +56,53 @@ body.public-page-en main blockquote,
 body.public-page-en main figcaption {
   text-align: left;
 }
+
+/* Strong fix for generated philosophical theory documents */
+body.public-page-he main#main,
+body.public-page-he main#main section,
+body.public-page-he main#main article,
+body.public-page-he main#main p,
+body.public-page-he main#main li,
+body.public-page-he main#main blockquote,
+body.public-page-he main#main figcaption,
+body.public-page-he main#main .reader-card,
+body.public-page-he main#main .chapter-figure,
+body.public-page-he main#main .back-to-toc {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+body.public-page-en main#main,
+body.public-page-en main#main section,
+body.public-page-en main#main article,
+body.public-page-en main#main p,
+body.public-page-en main#main li,
+body.public-page-en main#main blockquote,
+body.public-page-en main#main figcaption,
+body.public-page-en main#main .reader-card,
+body.public-page-en main#main .chapter-figure,
+body.public-page-en main#main .back-to-toc {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+/* Preserve intentional TOC layout */
+#interactive-toc,
+#interactive-toc *,
+.theory-toc-entry,
+.theory-toc-title,
+.theory-toc-thumb-box {
+  text-align: inherit !important;
+}
+
+/* Preserve visual title/cover areas */
+.page-title,
+.page-title *,
+.hero,
+.hero *,
+.site-header,
+.site-footer,
+.download-row,
+.archive-link-row {
+  text-align: inherit !important;
+}
