@@ -2428,831 +2428,141 @@ borrowing of terms.
 
 *From potential to the boundary of the system*
 
-The purpose of this chapter is not to prove that existence is
-computation. Nor is it to claim that potential is
-<span class="math inline">*NP*</span>, that the ideal is
-<span class="math inline">*P*</span>, or that mathematics can replace
-metaphysics. Such a claim would be too crude, and would miss the point.
-
-The aim is more precise: to use theoretical computer science, logic, and
-linear algebra as a structural language. Such a language allows us to
-think about the relation between potential, ideal, evidence, transition,
-resource, reduction, strategy, and boundary without turning mathematics
-into ornament and without turning philosophy into pseudo-proof.
-
-Mathematics here does not tell us what existence is. It teaches us how
-to be careful when speaking about existence: when something can be
-decided, when it can only be verified, when one problem carries the
-difficulty of another, when a strategy is required rather than a single
-witness, and when a sufficiently rich system meets a boundary it cannot
-close from within.
-
-From that caution, the relation between potential and ideal can be
-stated more sharply. Potential is not merely a storehouse of possible
-solutions. It is a space of states, representations, witnesses,
-transition rules, languages, and frameworks. The ideal is not the
-complete closure of all possibilities. It is a more responsible relation
-between truth, proof, boundary, and meaning. The optimal is the way one
-acts inside the boundary without denying it.
-
-### 1. A problem as a language: what is being decided?
-
-Before one can speak about <span class="math inline">*P*</span>,
-<span class="math inline">*NP*</span>,
-<span class="math inline">*coNP*</span>, reductions, Turing machines,
-matrices, diagonalization, or incompleteness, one must ask a prior
-question: what is a problem when it is formulated mathematically?
-
-In theoretical computer science, a decision problem is usually
-represented as a language:
-
-<span class="math display">*L* ⊆ *Σ*<sup>\*</sup></span>
-
-That is, <span class="math inline">*L*</span> is a set of strings over a
-finite alphabet <span class="math inline">*Σ*</span>. For an input
-<span class="math inline">*x* ∈ *Σ*<sup>\*</sup></span>, the question is
-whether:
-
-<span class="math display">*x* ∈ *L*</span>
-
-or:
-
-<span class="math display">*x* ∉ *L*</span>
-
-This is a severe reduction: rich mathematical, logical, or philosophical
-questions become yes/no questions. But this reduction is also what makes
-precision possible. Once the question is formulated as membership in a
-language, one can ask: is there a general way to decide it? How much
-time does it require? How much memory? Must one find a solution, or is
-it enough to check a proposed one?
-
-Here the first lesson for the theory appears: to speak about potential,
-one must first speak about representation. A possibility that has not
-been represented is not yet a problem. It is an unclear field. Only when
-possibility receives form can we ask what is required to reach it, check
-it, translate it, or decide whether it exists.
-
-### 2. The Turing machine: what counts as computation?
-
-The Turing machine gives the basic model of computation. It is not a
-computer in the everyday sense, but an abstract model of a process: a
-memory tape, a read-write head, an internal state, and a transition
-rule. The transition rule can be written as:
-
-<span class="math display">*δ*(*q*, *a*) = (*q*′, *b*, *D*)</span>
-
-where <span class="math inline">*q*</span> is the current internal
-state, <span class="math inline">*a*</span> is the symbol being read,
-<span class="math inline">*q*′</span> is the next state,
-<span class="math inline">*b*</span> is the symbol to be written, and
-<span class="math inline">*D*</span> is the direction in which the head
-moves.
-
-From such a model, one can define what it means for a problem to be
-decidable: there is a machine that halts on every input and returns the
-correct yes/no answer. But decidability is not the end of the story.
-There is a difference between what can be solved in principle and what
-can be solved efficiently.
-
-If the running time of a machine on an input of length
-<span class="math inline">*n*</span> is bounded by a polynomial,
-
-<span class="math display">*T*(*n*) ≤ *Cn*<sup>*k*</sup></span>
-
-for constants <span class="math inline">*C*, *k*</span>, the problem is
-said to be decidable in polynomial time. This gives the class
-<span class="math inline">*P*</span>:
-
-<span class="math display">*P* = {*L* ⊆ *Σ*<sup>\*</sup> ∣ *L* is
-decided in polynomial time by a deterministic Turing machine}</span>
-
-Thus <span class="math inline">*P*</span> does not merely mean
-“solvable.” It means efficiently decidable within a formal model of
-computation.
-
-In the language of the theory, <span class="math inline">*P*</span> is
-the region in which the passage from question to answer is not only
-possible, but accessible. Not every potential lies there. Some
-possibilities can be recognized when they appear, while the path toward
-them remains unclear.
+This chapter does not try to prove that existence is computation. It does not try to identify potential with NP, the ideal with P, or the human being with a mystical escape from machinehood. Such claims would be too crude. They would turn mathematics into borrowed authority instead of discipline.
 
-### 3. <span class="math inline">*NP*</span>: verifiable evidence, not “hard problems”
+After the theory has clarified that science and mathematics do not give it external proof, but teach it boundary discipline, this chapter examines one case in which mathematical language is especially useful: computation, logic, and algebra as languages that distinguish representation, decision, evidence, reduction, strategy, and non-closure.
 
-Opposite <span class="math inline">*P*</span> stands
-<span class="math inline">*NP*</span>, but this must be stated
-carefully. <span class="math inline">*NP*</span> is not the class of
-“hard problems.” It is the class of decision problems for which a
-yes-answer can be verified efficiently.
+Computation does not replace the theory. It teaches the theory caution. It shows that the gap between potential and ideal is not only experiential or metaphysical; it is also a gap between question and problem, possibility and representation, evidence and path, local solution and strategy, system and the boundary the system cannot close from within.
 
-Formally, a language <span class="math inline">*L*</span> is in
-<span class="math inline">*NP*</span> if there are a polynomial
-<span class="math inline">*p*</span> and a polynomial-time verification
-relation <span class="math inline">*R*(*x*, *w*)</span>, such that for
-every input <span class="math inline">*x*</span>:
+### 1. From question to problem: the cost of representation
 
-<span class="math display">*x* ∈ *L* ⇔ ∃*w*, \|*w*\| ≤ *p*(\|*x*\|) such
-that</span>
+Not every question is already a problem. A question can be alive, open, unrepresented, and still without a language. A problem begins when the question receives a representation: an input, a domain, a success condition, a way of checking, and a language in which an answer can count as an answer.
 
-<span class="math display">*R*(*x*, *w*) = 1</span>
+In theoretical computer science, a decision problem is often represented as a language: a set of strings for which each input must be decided as belonging or not belonging. This is a severe reduction, but it is also what makes precision possible. Once the question becomes a problem, one can ask: is there a general way to decide it? How much time does it require? How much memory? Must one find a solution, or is it enough to check a proposed one?
 
-The variable <span class="math inline">*w*</span> is a witness,
-certificate, or proposed solution. If
-<span class="math inline">*x*</span> really belongs to the language,
-there is a relatively short witness that can be checked in polynomial
-time.
+Here the first lesson for the theory appears: potential that has not been represented is too open to be checked. Potential that receives representation has already been translated. That translation enables action, but it also has a cost. Every representation reveals some relations and hides others. It makes one thing legible, and may make another thing invisible.
 
-So <span class="math inline">*NP*</span> does not mean “hard to find.”
-It means: if the right witness has already been given, it can be checked
-efficiently.
+The optimal is therefore not only “finding a solution.” Sometimes it is choosing a representation that does not lie too much about what it translates. A possibility that enters a system becomes computable in some sense, but it also loses something of the openness from which it came. This is not merely a defect; it is the cost of moving from vague potential to a form one can work with.
 
-It follows that:
+### 2. P: accessible decision inside a frame
 
-<span class="math display">*P* ⊆ *NP*</span>
+P is not the name of truth, and it is not the name of the ideal. P is the class of decision problems that can be solved in polynomial time, relative to a standard model of computation. In simpler terms: there is a relatively efficient way to move from the description of the problem to a yes-or-no answer.
 
-If a problem can be decided in polynomial time, a yes-answer can be
-verified in polynomial time simply by running the deciding algorithm.
-Therefore one must not say that solving “some problem in
-<span class="math inline">*NP*</span>” would prove
-<span class="math inline">*P* = *NP*</span>. Some problems in
-<span class="math inline">*NP*</span> are already in
-<span class="math inline">*P*</span>. The deep question is whether the
-central difficulty of <span class="math inline">*NP*</span>, as
-concentrated in <span class="math inline">*NP*</span>-complete problems,
-can collapse into <span class="math inline">*P*</span>.
+The philosophical point is not that the ideal is P. That would be a mistake. The point is that P illuminates a situation in which the passage from question to answer is accessible within a given frame. When a problem lies in such a region, there is a clearer local relation between representation, path, and solution. This is a case in which the optimal is easier to recognize: not because it is absolute, but because under the given conditions there is a relatively stable way to act.
 
-Here the philosophical gap becomes sharp: there is a difference between
-recognizing a correct possibility once it has appeared and finding it
-from within the space of possibilities. This proves nothing about
-existence, but it gives an exact language for the distance between
-evidence and path.
+Even here, caution is needed. Efficient decision does not mean that the original question has been exhausted. It means that the question, once translated into a represented problem, can be decided in a certain way. P does not abolish potential; it describes one region within potential where the path becomes accessible.
 
-### 4. Reductions and <span class="math inline">*NP*</span>-completeness: when difficulty concentrates in a node
+### 3. NP: a checkable certificate, not “hard problems”
 
-To understand why one problem can represent a whole class, one must
-speak about reductions.
+NP is not the class of “hard problems.” That common phrase is misleading. NP is the class of decision problems in which a yes-answer can be supported by a witness, certificate, or proposed solution that can be checked efficiently.
 
-For two languages
-<span class="math inline">*A*, *B* ⊆ *Σ*<sup>\*</sup></span>, we say
-that <span class="math inline">*A*</span> is polynomial-time reducible
-to <span class="math inline">*B*</span>, and write:
+Here we need to distinguish two uses of evidence. In the broader language of the theory, evidence is what carries a claim and prevents it from becoming fantasy. In science, evidence is tied to measurement, repetition, criticism, and context. In the technical language of NP, a witness or certificate is a formal object that, if given, can be checked efficiently as supporting a yes-answer.
 
-<span class="math display">*A*≤<sub>*p*</sub>*B*</span>
+This distinction matters. A formal certificate is not the same as evidence carried by a living source, and such evidence is not necessarily a formal certificate. But both levels illuminate the same structure: there is a difference between finding something and checking it once it has appeared.
 
-if there is a function <span class="math inline">*f*</span>, computable
-in polynomial time, such that for every input
-<span class="math inline">*x*</span>:
+The P versus NP question remains open. It must therefore not be used as proof of an absolute gap between finding and checking. But the very formulation of the question sharpens the gap: there may be cases in which it is easy to check the right certificate, while no efficient way is known to find it from the space of possibilities.
 
-<span class="math display">*x* ∈ *A* ⇔ *f*(*x*) ∈ *B*</span>
+In the theory’s terms, NP does not prove that potential is a complexity class. It illuminates the difference between a possibility that has already appeared and the path toward it. It reminds us that the ideal is not only “does the answer exist?” but also “what is required to find, recognize, carry, and verify it?”
 
-Every instance of <span class="math inline">*A*</span> can be translated
-into an instance of <span class="math inline">*B*</span> while
-preserving the decision answer. Yes remains yes, and no remains no.
+### 4. Reduction and NP-completeness: translation that concentrates difficulty
 
-Therefore:
+A reduction is not a shortcut and not proof that two problems are identical. A reduction is a translation showing that if one knows how to solve one problem, one can solve another through it, while preserving the relevant decision structure and relative efficiency.
 
-<span class="math display">*A*≤<sub>*p*</sub>*B* and *B* ∈ *P* ⟹ *A* ∈ *P*</span>
+Reduction is therefore a way of mapping difficulty. It says: this problem does not stand alone; it is connected to another problem such that a solution to one would open the other. In NP-completeness, the idea becomes especially sharp: an NP-complete problem is a problem in NP to which every problem in NP can be reduced. If there were an efficient way to solve it, every problem in NP would become efficiently solvable through that route.
 
-The direction matters. If <span class="math inline">*A*</span> reduces
-to <span class="math inline">*B*</span>, then an efficient solution to
-<span class="math inline">*B*</span> gives an efficient solution to
-<span class="math inline">*A*</span>. In this sense,
-<span class="math inline">*B*</span> carries at least the difficulty of
-<span class="math inline">*A*</span>.
+This does not mean that an NP-complete problem is “the hardest thing in the world,” or that it has been proven to have no efficient solution. We do not know that. What can be said carefully is that such problems concentrate structural difficulty. They are nodes through which a wide space of problems can pass.
 
-A problem <span class="math inline">*B*</span> is called
-<span class="math inline">*NP*</span>-hard if:
+In the theory’s terms, not every possibility inside potential represents the whole of potential. There are local possibilities, and there are structural nodes. Reduction teaches us to distinguish them. Sometimes solving one thing is not merely solving one thing; it changes the map of transitions for a whole space.
 
-<span class="math display">∀*A* ∈ *NP*, *A*≤<sub>*p*</sub>*B*</span>
+### 5. coNP: the complementary side of evidence
 
-That is, every problem in <span class="math inline">*NP*</span> can be
-translated into it in polynomial time. If, in addition,
-<span class="math inline">*B*</span> itself is in
-<span class="math inline">*NP*</span>, then it is
-<span class="math inline">*NP*</span>-complete:
+coNP is not “the class of proofs of nonexistence” in a loose sense. More precisely, it is tied to complements of problems in NP. If NP concerns cases in which a yes-answer can receive an efficiently checkable certificate, coNP reminds us that sometimes the complementary side of the question is the one that asks for a certificate.
 
-<span class="math display">*B* ∈ *NP*  and  ∀*A* ∈ *NP*, *A*≤<sub>*p*</sub>*B*</span>
+The philosophical value here is asymmetry. It is not always as easy to carry evidence that something does not exist as it is to carry evidence that something exists. Sometimes one example is enough to show existence, while absence requires facing a whole space of possibilities.
 
-From this follows the critical statement:
+coNP therefore proves nothing about a metaphysics of absence. It illuminates a structure: potential includes not only the question “is there?” but also “is there not?”, “can the absence be verified?”, and “what is required to carry a claim of absence without making an irresponsible leap?”
 
-<span class="math display">*B* is
-*NP*-complete and *B* ∈ *P* ⟹ *P* = *NP*</span>
+For the theory, this matters because the ideal is not only the discovery of a worthy possibility. Sometimes it is also a responsible refusal: knowing when one can say no, when one cannot say no, and when lack of evidence is not evidence of absence.
 
-The reason is simple. If <span class="math inline">*B*</span> is
-<span class="math inline">*NP*</span>-complete, then for every
-<span class="math inline">*A* ∈ *NP*</span>:
+### 6. QBF and PSPACE: when solution becomes strategy
 
-<span class="math display">*A*≤<sub>*p*</sub>*B*</span>
+Some problems are not satisfied by one certificate. One must show that a move holds against every opposition, that every counter-choice receives a response, and that every step remains within a larger structure. Here the language of quantified Boolean formulas, QBF, and PSPACE becomes useful.
 
-If <span class="math inline">*B* ∈ *P*</span>, then by the reduction
-<span class="math inline">*A* ∈ *P*</span>. Hence:
+This chapter does not need to become a lesson in PSPACE. The careful point is enough: QBF represents a passage from “does a solution exist?” to “is there a strategy that holds against every permitted counter-move?” This is no longer one point of solution, but a structure of choice, opposition, response, and endurance over time.
 
-<span class="math display">*NP* ⊆ *P*</span>
+In the terms of the theory, this is an important transition. Sometimes the ideal is not a point. Sometimes it is a stable strategy within a space of opposition. Not “I found the answer,” but “I found a way of acting that continues to hold when reality answers back.”
 
-and since:
+This matters beyond mathematics. In education, law, ethics, AI, and art, the problem is not always to find the right sentence or the right action. Sometimes the problem is to build a way that remains responsible when resistance, failure, new information, or changed conditions appear. The optimal is then not one result, but a strategy under limitation.
 
-<span class="math display">*P* ⊆ *NP*</span>
+### 7. Linear algebra: state, operation, and change of representation
 
-we get:
+Not every thought about potential begins as a yes-or-no question. Sometimes one must think about state, operation, change of basis, and dynamics. Not only “does a solution exist?” but “what is the space in which the state lives?”, “what operation changes it?”, and “is there a representation in which the operation becomes more intelligible?”
 
-<span class="math display">*P* = *NP*</span>
+Linear algebra enters here as a language of state and decomposition. A state can be represented as a vector, an operation as a transformation, and a change of basis can make an operation that looked entangled become more readable. Matrix diagonalization is an example: when a suitable basis exists, an operation can be decomposed into directions in which the dynamics are easier to understand.
 
-So a polynomial-time solution to one
-<span class="math inline">*NP*</span>-complete problem is not a local
-solution. It opens a node into which all of
-<span class="math inline">*NP*</span> can be translated. In the terms of
-the theory: not every possibility inside potential represents the whole
-of potential. Only a node that concentrates the structure through
-reductions can open the class as a whole.
+But this must not become metaphysics. The mind is not “a matrix,” society is not “a matrix,” and existence is not “linear algebra.” The careful claim is smaller: sometimes the problem is not only the state itself, but the representation through which we view it. Sometimes a change of representation does not solve everything, but reveals a structure that had been hidden.
 
-This is one of the most important distinctions in the chapter:
-difficulty is not merely quantitative. It is structural. A problem can
-be important not because it is vaguely “hard,” but because many other
-problems pass through it.
+Here too there is a boundary. Not every matrix is diagonalizable. Not every operation decomposes cleanly into independent directions. Sometimes there is internal dependence that does not disappear through a change of basis. This is a crucial lesson for the theory: not every complexity is solved by “seeing correctly.” Sometimes even the best representation leaves a remainder.
 
-### 5. <span class="math inline">*coNP*</span>: the complementary side of evidence
+### 8. Two senses of diagonal: decomposition and boundary
 
-Once <span class="math inline">*NP*</span> formulates the question of
-positive evidence, one must also ask about the complementary side. For a
-language <span class="math inline">*L*</span>, define:
+It is essential to distinguish matrix diagonalization from diagonal argument in logic and computation. They are not the same thing.
 
-<span class="math display">\$\$ \overline{L} = \Sigma^\* \setminus L
-\$\$</span>
+Matrix diagonalization is a change of representation for a linear operation when a suitable basis exists. It asks: is there a way to see the operation so that it decomposes into more readable components?
 
-and then:
+A diagonal argument, as in Cantor, Turing, and Gödel, does something different. It does not decompose an operation into axes. It constructs a case that escapes any list, any general decider, or any attempt by a system to close itself. It is a language of boundary, not decomposition.
 
-<span class="math display">\$\$ coNP = \\L \mid \overline{L} \in NP\\
-\$\$</span>
+Both senses teach something about representation, but they are not one concept. The first teaches that sometimes a change of basis reveals order. The second teaches that sometimes every attempt to close the order from inside the system meets a boundary.
 
-If <span class="math inline">*NP*</span> concerns efficient verification
-of a yes-answer, <span class="math inline">*coNP*</span> concerns
-problems whose complements can be efficiently verified. For example,
-<span class="math inline">*SAT*</span> is in
-<span class="math inline">*NP*</span>: if a formula is satisfiable, one
-can give an assignment and check it quickly.
-<span class="math inline">*UNSAT*</span>, the question of whether no
-satisfying assignment exists, is in
-<span class="math inline">*coNP*</span>, because it is the complement of
-<span class="math inline">*SAT*</span>.
+This distinction matters because it prevents the chapter from using “diagonal” as one magical word that explains everything. There is no magic here. There are two different languages: one of decomposition, one of non-closure.
 
-Since <span class="math inline">*P*</span> is closed under complement:
+### 9. Turing and Gödel: a boundary that is not lack of resources
 
-<span class="math display">*P* ⊆ *NP* ∩ *coNP*</span>
+The halting problem teaches that some questions have no general decider. This differs from a question of efficiency. In P versus NP, one asks, among other things, whether an efficient solution exists for a certain type of problem. In the halting problem, the issue is deeper: there is no general algorithm that decides in every case whether a program will halt.
 
-But it is not known whether:
+This is a central lesson for the theory: not every boundary is a lack of resources. Sometimes the problem is not insufficient time, memory, or information. Sometimes there is no general decider inside the frame itself.
 
-<span class="math display">*NP* = *coNP*</span>
+Gödel’s incompleteness theorems teach a nearby but different boundary. In effective, consistent formal systems strong enough to express arithmetic, there are limits to what can be proven inside the system. A sufficiently rich system cannot, under certain conditions, close all questions of truth and consistency from within itself.
 
-and it is not known whether:
+This must not be turned into proof that the human being is above machines. That would be an irresponsible leap. Gödel and Turing do not prove that human consciousness is hypercomputational. They do illuminate the danger of a system imagining that it can close all the conditions of its own truth from within itself.
 
-<span class="math display">*P* = *NP*</span>
+In the theory’s terms, non-closure is not always failure. Sometimes it is a sign that a sufficiently rich system has met the boundary of its language. Where a system cannot close itself, responsibility does not disappear; it begins.
 
-Thus <span class="math inline">*coNP*</span> is not simply “easy proof
-of nonexistence” in a loose sense. It is defined through the complement
-of a language in <span class="math inline">*NP*</span>. Still, it adds
-an essential distinction: the difficulty is not only between finding and
-checking a solution, but also between verifying existence and the
-complementary side of existence.
+### 10. The human being and the meta-level
 
-Here the theory gains precision: potential is not only the question “is
-there?” Sometimes the question is “is there not?” or “can the absence be
-verified?” Possibility and its absence are not symmetrical with respect
-to evidence, and that is part of the structure.
+The human being is not proven here to be a being above all computation. But the human being also need not identify with one formal system. One can ask about the axioms, change representation, shift language, move to a meta-level, or recognize that a given frame is insufficient.
 
-### 6. The polynomial hierarchy: from one witness to layers of quantification
+The advantage is not magic. It is movement between frames. The human being is not outside every system, but can live with the fact that no given system is necessarily the final word. One can carry non-closure without worshiping it and without escaping into fantasy.
 
-Above <span class="math inline">*NP*</span> and
-<span class="math inline">*coNP*</span> appears a broader question: what
-happens when a problem is not satisfied by one witness, but requires
-alternating layers of choice and opposition?
+Here potential receives a wider formulation. Potential is not only the space of solutions inside a system. It is also the space of possible systems: representations, languages, axioms, transition rules, reductions, meta-systems, and ways of checking.
 
-Intuitively, <span class="math inline">*NP*</span> fits the pattern:
+The ideal is not only a theorem proven inside a system. It is also the capacity to recognize when a system has exhausted its power, when representation must change, when evidence is insufficient, and when moving to a meta-level is a responsible act rather than an escape.
 
-<span class="math display">∃*w* *R*(*x*, *w*)</span>
+### 11. AI, signs, and checkable evidence
 
-There exists a witness that can be checked.
+AI makes this chapter especially urgent. A system can generate an answer that looks like evidence, a formula that looks precise, or a summary that produces the feeling of mastery. But a linguistic product is not necessarily evidence. A sign is not necessarily a source. A correct-looking formulation is not necessarily understanding.
 
-The complementary side fits a more universal form:
+In the terms of NP, a witness or certificate is something that can be checked relative to a defined problem. In the broader sense, evidence requires context, source, method, domain of validity, and possibility of critique. AI can help formulate, suggest, partially test, search for relations, and open possibilities. But if there is no way to check what carries the answer, the product can become a substitute for understanding.
 
-<span class="math display">∀*w* *R*(*x*, *w*)</span>
+This returns us to a basic principle of the theory: the living source comes before the information extracted from it. Not because the living source is always right, but because understanding is not merely the production of a correct sign. Understanding is a relation between source, distance, testing, correction, and responsibility.
 
-But there are problems with more complex forms:
+### 12. One map: representation, transition, resource, evidence, strategy, boundary
 
-<span class="math display">∃*u* ∀*v* *R*(*x*, *u*, *v*)</span>
+If the languages unfolded here are joined, one map appears:
 
-or:
+representation → transition → resource → certificate/evidence → reduction → complement → strategy → change of representation → boundary → meta-level.
 
-<span class="math display">∀*u* ∃*v* *R*(*x*, *u*, *v*)</span>
+This is not proof that existence is computation. It is not proof that potential equals NP. It is a structural map showing that the gap between potential and ideal is not only a gap of desire, depth, or inspiration. It is also a gap of representation, resource, evidence, path, translation, and boundary.
 
-or:
+The optimal lives exactly in this middle. Sometimes it is an efficient solution. Sometimes it is the checking of a certificate. Sometimes it is a reduction to a central problem. Sometimes it is a strategy that holds against opposition. Sometimes it is a change of representation. And sometimes it is the recognition that the system cannot close itself, so one must move a level without pretending that the move is final proof.
 
-<span class="math display">∃*u* ∀*v* ∃*w* *R*(*x*, *u*, *v*, *w*)</span>
+### 13. Ending: an ideal that is not closure
 
-Here the problem is no longer one witness. It is a structure of choice,
-opposition, response, and correction.
+The ideal is not a machine that proves everything from within itself. It is not the complete closure of all questions, and it is not a promise that every potential can be efficiently realized. It is a more responsible relation between truth, proof, boundary, and meaning.
 
-Schematically:
+The optimal is the way one acts inside the boundary without denying it: proving when possible, verifying when possible, translating when needed, decomposing when one can, changing frames when there is no responsible alternative, and recognizing that non-closure is not always failure. Sometimes it is what prevents a system from becoming an idol of itself.
 
-<span class="math display">*Σ*<sub>0</sub><sup>*P*</sup> = *P*</span>
-
-<span class="math display">*Σ*<sub>1</sub><sup>*P*</sup> = *NP*</span>
-
-<span class="math display">*Π*<sub>1</sub><sup>*P*</sup> = *coNP*</span>
-
-<span class="math display">*Σ*<sub>2</sub><sup>*P*</sup> ∼ ∃∀</span>
-
-<span class="math display">*Π*<sub>2</sub><sup>*P*</sup> ∼ ∀∃</span>
-
-and in general:
-
-<span class="math display">*PH* = ⋃<sub>*k* ≥ 0</sub>*Σ*<sub>*k*</sub><sup>*P*</sup></span>
-
-The polynomial hierarchy shows that <span class="math inline">*P*</span>
-versus <span class="math inline">*NP*</span> is only the first stage of
-a wider question: what quantifier structure does a problem have? Is one
-witness enough? Must one show that no counter-witness exists? Must one
-choose a move that holds against every opposition? Must one answer every
-answer?
-
-In the terms of the theory, this is a passage from solution as a point
-to solution as a structure. Sometimes the ideal is not something that
-appears as one witness, but a form that holds through layers of
-opposition.
-
-### 7. <span class="math inline">*QBF*</span> and <span class="math inline">*PSPACE*</span>: when solution becomes strategy
-
-To move from witness to strategy, one passes from
-<span class="math inline">*SAT*</span> to the truth problem for
-quantified Boolean formulas.
-
-<span class="math inline">*SAT*</span> asks:
-
-<span class="math display">∃*x*<sub>1</sub>, …, *x*<sub>*n*</sub> *φ*(*x*<sub>1</sub>, …, *x*<sub>*n*</sub>)</span>
-
-whether there exists an assignment satisfying the formula.
-
-The truth problem for quantified Boolean formulas, often called
-<span class="math inline">*TQBF*</span> or simply
-<span class="math inline">*QBF*</span>, asks:
-
-<span class="math display">*Q*<sub>1</sub>*x*<sub>1</sub> *Q*<sub>2</sub>*x*<sub>2</sub> ⋯ *Q*<sub>*n*</sub>*x*<sub>*n*</sub> *φ*(*x*<sub>1</sub>, …, *x*<sub>*n*</sub>)</span>
-
-where each <span class="math inline">*Q*<sub>*i*</sub></span> is either
-<span class="math inline">∃</span> or
-<span class="math inline">∀</span>. For example:
-
-<span class="math display">∃*x* ∀*y* ∃*z* *φ*(*x*, *y*, *z*)</span>
-
-This is no longer the question of a single solution. It is the question
-of a strategy: is there a choice <span class="math inline">*x*</span>
-such that for every opposition <span class="math inline">*y*</span>,
-there is a response <span class="math inline">*z*</span> that preserves
-the condition?
-
-Computationally, the truth problem for quantified Boolean formulas is
-<span class="math inline">*PSPACE*</span>-complete. And
-<span class="math inline">*PSPACE*</span> is the class of problems
-decidable using polynomial space:
-
-<span class="math display">*PSPACE* = {*L* ∣ *L* is decided using
-polynomial space}</span>
-
-It is also known that:
-
-<span class="math display">*P* ⊆ *NP* ⊆ *PH* ⊆ *PSPACE*</span>
-
-although it is not known which of these containments are strict.
-
-The transition matters: in <span class="math inline">*NP*</span>, one
-looks for a witness. In <span class="math inline">*QBF*</span>, one
-looks for a strategy. It is not merely a correct answer, but a way that
-holds against every permitted counter-move. Used carefully, this
-suggests that the ideal is not always a single solution; sometimes it is
-a stable strategy within a space of opposition.
-
-### 8. Linear algebra: state, operation, and decomposition
-
-So far we have mainly spoken in the language of decision problems: yes
-or no, membership or non-membership, a witness or no witness. But not
-every thought about potential begins as a yes/no question. Sometimes one
-must first think about state, operation, change of basis, and dynamics.
-Not only “does a solution exist?”, but “what is the space in which the
-state lives?”, “what operation changes it?”, and “is there a
-representation in which the operation becomes more intelligible?”
-
-Linear algebra enters here as another language of passage and
-decomposition. It does not replace the Turing machine, and it is not a
-general model of all computation. It gives another way to see a system:
-not only as a decision question, but as a state-space acted on by
-transformations.
-
-A state can be a vector:
-
-<span class="math display">*v* ∈ *V*</span>
-
-and an operation can be a linear map:
-
-<span class="math display">*A* : *V* → *V*</span>
-
-so that the transition is:
-
-<span class="math display">*v* ↦ *Av*</span>
-
-If the operation is repeated <span class="math inline">*t*</span> times,
-one gets:
-
-<span class="math display">*v*<sub>*t*</sub> = *A*<sup>*t*</sup>*v*<sub>0</sub></span>
-
-A system, in this language, is not merely a set of answers but a
-dynamics. There is an initial state, an operation, and a path through a
-state-space. If potential is the state-space, then operation is movement
-within potential. The ideal need not be a single point; it may be a
-stable state, a subspace, a direction of convergence, or a form in which
-the dynamics becomes more readable.
-
-### 9. Matrix diagonalization: an image of change of basis
-
-Matrix diagonalization is a case in which a complex action becomes
-easier to read. If there are an invertible matrix
-<span class="math inline">*P*</span> and a diagonal matrix
-<span class="math inline">*D*</span> such that:
-
-<span class="math display">*A* = *PDP*<sup>−1</sup></span>
-
-then:
-
-<span class="math display">*A*<sup>*t*</sup> = *PD*<sup>*t*</sup>*P*<sup>−1</sup></span>
-
-This can be pictured as a change of basis:
-
-<span class="math display">\$\$ \boxed{\text{vector in the original
-basis}} \quad \xrightarrow{\\ P^{-1}\\ } \quad \boxed{\text{the same
-state in the eigenbasis}} \quad \xrightarrow{\\ D\\ } \quad
-\boxed{\text{simple action along eigen-directions}} \quad
-\xrightarrow{\\ P\\ } \quad \boxed{\text{return to the original basis}}
-\$\$</span>
-
-or, schematically:
-
-<span class="math display">\$\$ v \quad \xrightarrow{\\ P^{-1}\\ } \quad
-P^{-1}v \quad \xrightarrow{\\ D\\ } \quad D(P^{-1}v) \quad
-\xrightarrow{\\ P\\ } \quad P D P^{-1}v = Av \$\$</span>
-
-The meaning is that an action <span class="math inline">*A*</span>,
-which appears mixed in the original basis, may appear much simpler in
-another basis. In the eigenbasis, the action decomposes into directions
-in which each component changes relatively independently.
-
-A diagonal matrix looks like:
-
-<span class="math display">\$\$ D = \begin{pmatrix} \lambda_1 & 0 &
-\cdots & 0 \\ 0 & \lambda_2 & \cdots & 0 \\ \vdots & \vdots & \ddots &
-\vdots \\ 0 & 0 & \cdots & \lambda_n \end{pmatrix} \$\$</span>
-
-and therefore:
-
-<span class="math display">\$\$ D^t = \begin{pmatrix} \lambda_1^t & 0 &
-\cdots & 0 \\ 0 & \lambda_2^t & \cdots & 0 \\ \vdots & \vdots & \ddots &
-\vdots \\ 0 & 0 & \cdots & \lambda_n^t \end{pmatrix} \$\$</span>
-
-If:
-
-<span class="math display">*Av* = *λv*</span>
-
-then <span class="math inline">*v*</span> is an eigenvector and
-<span class="math inline">*λ*</span> an eigenvalue. For a real
-eigenvector with a real eigenvalue, the operation in that direction
-stretches, contracts, or flips the direction according to
-<span class="math inline">*λ*</span>. A simple rotation is not described
-by a single real eigenvector; it is connected to complex eigenvalues or
-to real block forms.
-
-But diagonalization is not a general solution to complexity. Not every
-matrix is diagonalizable. The characteristic polynomial,
-
-<span class="math display">*χ*<sub>*A*</sub>(*λ*) = det (*λI* − *A*)</span>
-
-describes possible eigenvalues, but the existence of roots alone does
-not guarantee a full basis of eigenvectors. Over a suitable field, for
-example <span class="math inline">ℂ</span>, a matrix is diagonalizable
-if its minimal polynomial splits into distinct linear factors. In
-simpler language: one needs enough independent eigen-directions.
-
-When diagonalization is not possible, one can sometimes pass to
-canonical forms such as Jordan form. But even there, internal dependence
-remains among components. Diagonalization is therefore a language of
-decomposition when decomposition is possible, not a promise that every
-system can be separated cleanly.
-
-The philosophical contribution of linear algebra is not to say that the
-mind, the world, or existence is a matrix. The claim is more careful:
-sometimes, to understand a system, one must find the right basis.
-Sometimes a change of representation makes a mixed action more readable.
-And sometimes there is no such basis, and the system remains internally
-entangled.
-
-### 10. Two kinds of diagonal: decomposition versus boundary
-
-Here one must distinguish between two very different meanings of
-“diagonal.” This distinction is not merely technical; it protects the
-chapter from a misleading fusion of unrelated ideas.
-
-Matrix diagonalization is the decomposition of an action into
-eigen-directions. It asks: is there a basis in which the dynamics
-becomes simpler? It concerns change of representation, decomposition,
-and clarification of action within a space.
-
-A diagonal argument in logic and computer science is something entirely
-different. It does not decompose an action; it exposes a boundary.
-Cantor used a diagonal argument to show that there are uncountable
-infinities. Turing used a related idea to show that there is no general
-algorithm for the halting problem.
-
-The halting problem asks whether there is a Turing machine
-<span class="math inline">*H*</span> such that for every machine
-<span class="math inline">*M*</span> and input
-<span class="math inline">*x*</span>:
-
-<span class="math display">\$\$ H(\langle M,x\rangle)= \begin{cases} 1 &
-\text{if } M(x) \text{ halts} \\ 0 & \text{if } M(x) \text{ does not
-halt} \end{cases} \$\$</span>
-
-Turing showed that no such machine exists. Suppose, for contradiction,
-that <span class="math inline">*H*</span> exists. Build a machine
-<span class="math inline">*D*</span> acting on the description of a
-machine <span class="math inline">*M*</span>:
-
-<span class="math display">\$\$ D(\langle M\rangle)= \begin{cases}
-\text{infinite loop} & \text{if } H(\langle M,\langle M\rangle\rangle)=1
-\\ \text{halt} & \text{if } H(\langle M,\langle M\rangle\rangle)=0
-\end{cases} \$\$</span>
-
-Now ask what happens when <span class="math inline">*D*</span> is run on
-itself:
-
-<span class="math display">*D*(⟨*D*⟩)</span>
-
-If <span class="math inline">*H*</span> says that
-<span class="math inline">*D*(⟨*D*⟩)</span> halts, then by the
-definition of <span class="math inline">*D*</span>, it loops. If
-<span class="math inline">*H*</span> says that it does not halt, then
-<span class="math inline">*D*</span> halts. Either way, a contradiction
-follows. Therefore <span class="math inline">*H*</span> does not exist.
-
-This is a deeper boundary than <span class="math inline">*P*</span>
-versus <span class="math inline">*NP*</span>. There the question is
-efficiency: can a problem be decided in polynomial time? Here the
-question is decidability itself: is there any general method that
-decides all cases? The halting problem says no.
-
-In the terms of the theory, not every boundary is a lack of resource.
-Sometimes the problem is not “not enough time” or “not enough memory.”
-Sometimes there is no general decider within the framework.
-
-### 11. Gödel: a system that cannot close itself
-
-The same boundary appears in logic through Gödel’s incompleteness
-theorems. Let <span class="math inline">*T*</span> be a formal system
-that is effective, consistent, and strong enough to express basic
-arithmetic. Through Gödel numbering, statements, proofs, and formulas
-receive numerical representation. This makes it possible to build,
-within arithmetic itself, a provability predicate, for example:
-
-<span class="math display">Prov<sub>*T*</sub>(*n*)</span>
-
-meaning: <span class="math inline">*n*</span> is the Gödel number of a
-statement provable in <span class="math inline">*T*</span>. The deep
-point is that Gödel coding and the provability predicate allow the
-system to represent, within its own language, statements about its own
-proofs.
-
-Using this mechanism, one constructs a statement
-<span class="math inline">*G*<sub>*T*</sub></span>, which schematically
-says of itself:
-
-<span class="math display">*G*<sub>*T*</sub> ≡ “*G*<sub>*T*</sub> is not
-provable in *T*”</span>
-
-More formally, the idea is:
-
-<span class="math display">*G*<sub>*T*</sub> ↔︎ ¬Prov<sub>*T*</sub>(⌜*G*<sub>*T*</sub>⌝)</span>
-
-where <span class="math inline">⌜*G*<sub>*T*</sub>⌝</span> is the Gödel
-number of <span class="math inline">*G*<sub>*T*</sub></span>.
-
-From this follows the incompleteness result: for a suitable system
-<span class="math inline">*T*</span>, if
-<span class="math inline">*T*</span> is consistent, then:
-
-<span class="math display">*T* ⊬ *G*<sub>*T*</sub></span>
-
-And with more careful language about truth: under suitable assumptions
-of consistency and soundness with respect to standard arithmetic,
-<span class="math inline">*G*<sub>*T*</sub></span> is true but not
-provable within <span class="math inline">*T*</span>. This distinction
-is crucial. “True but unprovable” is not a free slogan; it depends on
-how one understands <span class="math inline">*T*</span>, its
-consistency, and its relation to the standard model.
-
-The second incompleteness theorem sharpens the boundary. Let
-<span class="math inline">Con(*T*)</span> denote the formal statement
-that <span class="math inline">*T*</span> is consistent. For suitable
-systems, if <span class="math inline">*T*</span> is consistent, then:
-
-<span class="math display">*T* ⊬ Con(*T*)</span>
-
-A sufficiently strong system cannot prove its own consistency from
-within itself. It can prove many theorems, but it cannot close, from
-within, the final assurance that its proof mechanism does not lead to
-contradiction.
-
-This requires precision about axioms. An axiom is not proved inside the
-system in which it is an axiom. If <span class="math inline">*T*</span>
-is built from axioms <span class="math inline">*Ax*<sub>*T*</sub></span>
-and inference rules, then a proof inside
-<span class="math inline">*T*</span> is a sequence:
-
-<span class="math display">*φ*<sub>1</sub>, *φ*<sub>2</sub>, …, *φ*<sub>*n*</sub></span>
-
-where each <span class="math inline">*φ*<sub>*i*</sub></span> is an
-axiom or follows from earlier formulas by a rule of inference, and the
-theorem proved is:
-
-<span class="math display">*φ*<sub>*n*</sub> = *φ*</span>
-
-Then one writes:
-
-<span class="math display">*T* ⊢ *φ*</span>
-
-But the axioms themselves are starting points. They can be justified
-from outside, shown to be natural or fruitful, or given a relative
-consistency proof from a stronger system. But then one has moved to a
-meta-system <span class="math inline">*T*′</span>. If:
-
-<span class="math display">*T*′ ⊢ Con(*T*)</span>
-
-this does not mean that <span class="math inline">*T*</span> has proved
-itself. It means that a stronger system has proved the consistency of a
-weaker one.
-
-If one wants to prove the consistency of
-<span class="math inline">*T*′</span>, one will again need a stronger
-system, or else accept a new starting point. There is no simple ladder
-in which every axiom is proved from a more basic axiom until an absolute
-ground is reached. There is movement between system and meta-system:
-
-<span class="math display">*T*  →  *T*′  →  *T*″  →  ⋯</span>
-
-But this movement does not close the problem finally. It moves the
-boundary.
-
-### 12. Human, system, and meta-level
-
-At this point a temptation appears: to say that Gödel proved that the
-human being is above the machine, or that human intuition sees a truth
-that the system will never see. This formulation is tempting, but not
-precise.
-
-Gödel’s theorems and the halting problem do not prove that the human
-being is hypercomputational. They do not prove that human intuition is
-always right where formalism stops. To say that the Gödel sentence
-<span class="math inline">*G*<sub>*T*</sub></span> is true, one must
-assume something about the consistency or soundness of
-<span class="math inline">*T*</span>. If that assumption is wrong,
-intuition can also fail.
-
-The more precise claim is different: the human being is not proved to be
-beyond computation, but the human being need not identify with one
-formal system. A person can move to a meta-level. One can ask about the
-axioms themselves, change representation, add an assumption, choose
-another language, or recognize that a certain framework is not enough.
-
-The advantage here is not magic above logic. It is movement between
-frameworks. Not proof that the human stands outside every system, but
-the possibility of living with the fact that no sufficiently rich system
-closes completely upon itself.
-
-Here the theory receives its most exact formulation: potential is not
-only the set of possible solutions within a given system. It is also the
-space of possible systems. It includes states, witnesses, reductions,
-axioms, languages, representations, and meta-systems.
-
-Thus sometimes the question is not only:
-
-<span class="math display">∃*w* *R*(*x*, *w*)?</span>
-
-meaning: is there a witness inside the system? Sometimes the question
-is:
-
-<span class="math display">is this even the right system in which to ask
-*x*?</span>
-
-The ideal, therefore, is not merely a theorem proved inside a given
-system:
-
-<span class="math display">*T* ⊢ *φ*</span>
-
-It is also the ability to recognize when a system has exhausted its
-power, when the reduction is insufficient, when the witness does not
-exist at the present resolution, and when one must move to a
-meta-system. The ideal is not the complete closure of all questions; it
-is a more responsible relation between truth, proof, boundary, and
-meaning.
-
-### 13. One map: representation, transition, resource, evidence, boundary
-
-If the languages unfolded here are connected, one map appears:
-
-<span class="math display">representation → transition → resource → evidence → negation → reduction → quantification → strategy → boundary</span>
-
-Or more concretely:
-
-<span class="math display">string / vector / formula</span>
-
-<span class="math display">↓</span>
-
-<span class="math display">Turing machine / matrix / transition
-rule</span>
-
-<span class="math display">↓</span>
-
-<span class="math display">polynomial time / polynomial space</span>
-
-<span class="math display">↓</span>
-
-<span class="math display">*P*, *NP*, *coNP*</span>
-
-<span class="math display">↓</span>
-
-<span class="math display">≤<sub>*p*</sub>, *NP*-completeness</span>
-
-<span class="math display">↓</span>
-
-<span class="math display">*PH*, *QBF*, *PSPACE*</span>
-
-<span class="math display">↓</span>
-
-<span class="math display">undecidability, halting,
-incompleteness</span>
-
-This is not proof that existence is computation. It is not proof that
-potential equals <span class="math inline">*NP*</span>. It is a
-structural language: a way to see that the gap between potential and
-ideal is not merely emotional or metaphysical, but a gap between spaces
-of possibility, transition rules, resources, witnesses, negations,
-reductions, strategies, and internal boundaries.
-
-The optimal lies in this interval. Sometimes it is a solution in
-<span class="math inline">*P*</span>. Sometimes it is verification of a
-witness in <span class="math inline">*NP*</span>. Sometimes it is the
-reversal of the question through
-<span class="math inline">*coNP*</span>. Sometimes it is reduction to a
-central problem. Sometimes it is a
-<span class="math inline">*QBF*</span>-type strategy. Sometimes it is
-decomposition by matrix and diagonalization. And sometimes it is the
-recognition that the system cannot prove itself, and therefore one must
-move to a meta-level without pretending that the move is a final proof.
-
-### 14. Ending: an ideal that is not closure
-
-In this sense, <span class="math inline">*P*</span> versus
-<span class="math inline">*NP*</span> is not an anecdote inside the
-theory. It is one of the most precise expressions of its central
-question: can what is recognizable as true after it appears also be
-found from within the space of possibilities?
-
-Reductions add: are many problems different garments of the same
-difficulty?
-
-<span class="math inline">*coNP*</span> adds: can one verify not only
-existence, but also the complementary side of existence?
-
-The polynomial hierarchy and <span class="math inline">*QBF*</span> add:
-is there a strategy that holds against every opposition?
-
-Turing and Gödel add the final boundary: can a system close itself
-completely?
-
-For formal systems that are sufficiently strong, effective, and
-consistent, the mathematical answer in this sense is no. Not because
-they are missing one more trick, and not because they are almost perfect
-but not yet complete, but because non-closure arises from the formal
-structure itself.
-
-Therefore, philosophically as well, a serious theory of potential and
-ideal must leave room for non-closure.
-
-Potential is not only the space of solutions inside a system. It is also
-the space of possible systems.
-
-The ideal is not a machine that proves everything from within itself. It
-is not complete closure. It is a more responsible form of relation
-between truth, proof, boundary, and meaning.
-
-And the optimal is the way one acts inside the boundary without denying
-it: proving when possible, verifying when possible, translating when
-needed, decomposing when possible, changing framework when there is no
-alternative - and not calling non-closure a failure, but the condition
-of every living thought.
+Where a system cannot close itself, responsibility remains. There potential does not disappear; it changes level. And there the theory meets one of its deepest sentences: not every boundary is an end. Sometimes a boundary is the place where living thought begins.
 
 ## Science, Physics, and Mathematics as Boundary Discipline
 
