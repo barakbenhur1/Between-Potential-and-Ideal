@@ -641,14 +641,14 @@ The mathematical precision matters: not every problem in NP
 represents all of NP. Only an NP-complete problem carries, through
 polynomial-time reductions, the general difficulty of the class.
 Therefore a polynomial-time solution to one NP-complete problem would
-imply *P* = *N**P*, not
+imply *P* = NP, not
 because “one arbitrary problem” was solved, but because all of NP can be
 translated into it.
 
-From here opens the question of *c**o**N**P*: not
+From here opens the question of *c**o*NP: not
 only whether one can verify the existence of a witness, but whether one
 can verify the complementary side of existence. The next chapter expands
-this image carefully through P, NP, reductions, *c**o**N**P*,
+this image carefully through P, NP, reductions, *c**o*NP,
 quantifier hierarchies, Turing machines, linear algebra, the halting
 problem, and Gödel.
 
@@ -3213,7 +3213,7 @@ The theory does not use Gödel’s theorems or Turing machines as proof; it
 uses them only as a careful background for the idea that a system can
 ask about its own limits from within.
 
-Complexity theory, polynomial-time reductions, *N**P*-completeness, *c**o**N**P*, the
+Complexity theory, polynomial-time reductions, NP-completeness, *c**o*NP, the
 polynomial hierarchy, and *Q**B**F* are relevant
 here only as structural language: they do not identify potential with a
 complexity class, but help distinguish finding, verification, resource,
