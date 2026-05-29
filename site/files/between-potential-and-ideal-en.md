@@ -1497,7 +1497,7 @@ deja vu of a pattern already learned through pain, then the purpose of
 reincarnation is not to reproduce suffering but to reduce the need for
 it.
 
-## Self, Ego, and Unity That Does Not Erase
+## 6. Self, Ego, and Unity That Does Not Erase
 
 *A point of view preserved within the whole*
 
