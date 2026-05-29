@@ -855,7 +855,7 @@ through friction.
 *The depth of possibility from which experience, meaning, and
 ideality can appear*
 
-![Figure A: The fragmented consciousness of the One. From potential wholeness into a plurality of points of view.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/5b42e09955e3.jpg)
+![Figure A: The fragmented consciousness of the One. From potential wholeness into a plurality of points of view.](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Figure A: The fragmented consciousness of the One. From potential wholeness into a plurality of points of view.
 
@@ -928,7 +928,7 @@ If the chapter is read well, it does not say that everything is one and therefor
 *The distinction between everything that can be and what is worthy
 of being*
 
-![Figure B: The absolute is not the ideal: total possibility versus clarified worthiness.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/ee0f7c0559d7.jpg)
+![Figure B: The absolute is not the ideal: total possibility versus clarified worthiness.](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Figure B: The absolute is not the ideal:
 total possibility versus clarified worthiness.
@@ -988,7 +988,7 @@ A precise reading of the chapter keeps humility intact: the ideal is not the pro
 
 *Nihilism with hope between potential, optimal, and ideal*
 
-![Figure C: River and boat: a living navigation between potential and ideal.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/7559aba33897.jpg)
+![Figure C: River and boat: a living navigation between potential and ideal.](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Figure C: River and boat: a living
 navigation between potential and ideal.
@@ -1050,7 +1050,7 @@ If the image works, it keeps the theory human. It reminds every conclusion to as
 *Why real knowledge is not only information about the
 path*
 
-![Figure D: Experience and materiality: knowledge that cannot be bypassed.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/469b6fcb8a0c.jpg)
+![Figure D: Experience and materiality: knowledge that cannot be bypassed.](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Figure D: Experience and materiality:
 knowledge that cannot be bypassed.
@@ -1100,7 +1100,7 @@ form that does not reproduce it.
 
 *Learning, distance, and understanding that is not a shortcut*
 
-![Education of Potential](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/d7d68b8897b8.jpg)
+![Education of Potential](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: learning, distance, and understanding that cannot be shortcut.
 
@@ -1152,7 +1152,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 ## 5. Reincarnation as Iterative Knowledge, Not Moral Promotion
 
-![Figure E: Reincarnation as iterative learning, forgetting, and integration.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/f7a7db1dced2.jpg)
+![Figure E: Reincarnation as iterative learning, forgetting, and integration.](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 Figure 2. Reincarnation as iterative perspective: progress, regression,
 forgetting, and integration.
 
@@ -1283,7 +1283,7 @@ it.
 
 ## 6. Self, Ego, and Non-Erasing Unity
 
-![Figure F: Self, ego, and unity: preserving perspective within the whole.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/4891dd714f8d.jpg)
+![Figure F: Self, ego, and unity: preserving perspective within the whole.](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Figure F: Self, ego, and unity:
 preserving perspective within the whole.
@@ -1427,7 +1427,7 @@ the boat to move more accurately between potential and ideal.
 
 *Answer, source, responsibility, and the distance that gets stolen*
 
-![Artificial Intelligence and Open Problems](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/e6d26e6b6a62.jpg)
+![Artificial Intelligence and Open Problems](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: answer, source, responsibility, and the distance that can be stolen.
 
@@ -1453,7 +1453,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 *The story, the game, and the difference between a sealed ending and an actionable ending*
 
-![I Have No Mouth, and I Must Scream](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/b9dc654eac7d.jpg)
+![I Have No Mouth, and I Must Scream](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: story, game, and the difference between a locked ending and an actable ending.
 
@@ -1482,7 +1482,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 *Reset, return, descent, and ascent in three languages of the same
 structure*
 
-![Figure E: The recursive structure. Every layer can become origin, field, possibility, and local world.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/aab93130711c.jpg)
+![Figure E: The recursive structure. Every layer can become origin, field, possibility, and local world.](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Figure E: The recursive structure. Every
 layer can become origin, field, possibility, and local
@@ -2127,7 +2127,7 @@ until being as a whole returns to itself, fully awake to itself.
 
 *Relative potential, contextual realization, and the ideal as an upper-bound edge*
 
-![The Recursive Edge](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/aab93130711c.jpg)
+![The Recursive Edge](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: recursive layers in which every boundary can become a new source.
 
@@ -2333,7 +2333,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 *Correlation is not a message, and context is not noise around the answer*
 
-![Locality, Non-locality, and Contextuality](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/e6ee44f90323.jpg)
+![Locality, Non-locality, and Contextuality](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: local and non-local relations, context, measurement, and dependence between observer and observed.
 
@@ -2895,7 +2895,7 @@ that thing.
 
 *Form, living source, canon, and a market that is not the final judge*
 
-![Art of Potential](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/7881567eba4f.jpg)
+![Art of Potential](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: creation as a field where possibility receives form without being fully closed.
 
@@ -2923,7 +2923,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 *Time, voice, listening, and resonance that is not a metric*
 
-![Music of Potential](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/d766f385e042.jpg)
+![Music of Potential](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: rhythm, silence, and return as ways of carrying possibility through time.
 
@@ -2949,7 +2949,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 Material, Form, Load, and Repair That Is Not Redemption
 
-![Figure: Engineering and Architecture of Potential.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/8ca97a13b2dd.jpg)
+![Figure: Engineering and Architecture of Potential.](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: an engineered system in which potential becomes structure, channeling, testing, and repair.
 
@@ -3134,7 +3134,7 @@ A structure is not only a thing that stands. It is a promise that matter can sti
 
 Money, Value, Trust, and Potential
 
-![Figure: Economy of Relation.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/436e1b16ff42.jpg)
+![Figure: Economy of Relation.](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: value, exchange, and responsibility as living relations, not only as numbers.
 
@@ -3360,7 +3360,7 @@ Money is not value. Money is a sign trying to carry value. Price is not truth. P
 
 Law, Power, Trust, and Repair That Is Not Redemption
 
-![Figure: Governance of Potential.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/599befd58ed0.jpg)
+![Figure: Governance of Potential.](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: institutions, decision, and public coordination as ways of translating possibility into responsibility.
 
@@ -3540,7 +3540,7 @@ A state is not only force. It is a promise that force will be bound. Law is not 
 
 *Justice, evidence, distance, and correction under limitation*
 
-![Law of Potential](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/3bc181e948ec.jpg)
+![Law of Potential](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: law, interpretation, and boundary as a space where possibility is tested against responsibility.
 
@@ -3683,7 +3683,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 *Body, pain, diagnosis, and care that does not own life*
 
-![Medicine of Potential](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/97d00e26792f.jpg)
+![Medicine of Potential](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: healing as a careful reading of body, suffering, chance, and conditions.
 
@@ -3709,7 +3709,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 ## 15. The Imaginary, the Virtual, Gravity, and the Horizon
 
-![Figure F: The imaginary, the virtual, and the horizon. Boundary as relation, not merely as wall.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/ba283013a199.jpg)
+![Figure F: The imaginary, the virtual, and the horizon. Boundary as relation, not merely as wall.](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Figure F: The imaginary, the virtual, and
 the horizon. Boundary as relation, not merely as wall.
@@ -4124,7 +4124,7 @@ from which it came.
 
 *Information, visibility, and what does not return*
 
-![Boundary Horizons](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/25fc024a1f81.jpg)
+![Boundary Horizons](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: a boundary that is not merely a wall, but a horizon guiding the relation between possibility and form.
 
@@ -4230,7 +4230,7 @@ as light that knows how not to disperse.
 
 *From spacetime as form to potential as a deeper ground*
 
-![Figure H: Physical comparison map. Quantum theory, relativity, horizon, and information as different languages of the tension between potential and form.](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/6ed9b8f347f7.jpg)
+![Figure H: Physical comparison map. Quantum theory, relativity, horizon, and information as different languages of the tension between potential and form.](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Figure H: Physical comparison map. Quantum theory, relativity, horizon, and information as different languages of the tension between potential and form.
 
@@ -4431,35 +4431,146 @@ If this chapter contributes anything, it is not by “solving” physics. Its co
 
 ## Universe Structure / Geometry of the Universe and the Shape of Potential
 
-*Flat, curved, open, bounded infinity and unbounded infinity*
+*Horizon, partiality, infinity, form, and responsibility within boundary*
 
-![Universe Structure / The Shape of the Universe and the Shape of Potential](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/640310673eac.jpg)
+![Universe Structure / The Shape of the Universe and the Shape of Potential](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
-Image description: the shape of the universe as relations, horizons, and passages between potential and form.
+Image description: a horizon, a visible and hidden field, and possibilities that cannot be fully accessed from one viewpoint.
 
-### Flat universe, curved universe, multiverse and omniverse as cautious boundary language
 
-The structure of the universe is a dangerous place for a philosophical theory: it is easy to take grand terms, turn them into images, and sound profound without saying anything precise. This chapter begins with restraint: the shape of the universe does not prove the shape of potential. Cosmology is observational and mathematical science; the theory uses it as boundary language, not as metaphysical authority.
+This chapter does not try to prove the theory through the universe. The shape of the universe is not the shape of potential, and cosmology is not moral metaphysics. But cosmological language teaches something the theory needs: how to think, choose, and act from within a horizon, when the visible part is not the whole system, when the local does not decide the global by itself, and when a boundary of access is not necessarily falsehood, prison, or end.
 
-Scientifically, the question of the shape of the universe involves distinctions among curvature, topology, observational horizon, and expansion history. A flat universe does not necessarily mean a simple universe; a curved universe does not necessarily mean a closed story; multiverse and omniverse ideas sit at different levels of speculation. “Structure of the universe” and “shape of the universe” must therefore appear in the theory as discipline, not ornament.
+We do not have a view from outside the universe, just as a human being does not have a view from outside life. All knowledge begins from a place: time, body, tools, language, measurement, and limitation. The horizon is therefore not only what prevents us from knowing. It is also the form within which human knowledge can begin.
 
-Shape of potential = field of possibilities × access limits × local lawfulness × topology of relations × observational horizon / empty image × metaphysical leap × mixing science and fiction × over-certainty. The map says: even when the global structure is unknown, local limits still shape responsible action.
+In this sense, cosmology gives the theory no external authority. It does not say that potential is the universe, that the ideal is a cosmic shape, or that the optimal is a geometric solution. It teaches a different discipline: responsible action does not wait for an absolute view. It acts from within partiality that knows itself as partiality.
 
-The useful analogy is not “the universe is potential.” The useful analogy is that one can live inside a system where the visible part is not the whole system and the global structure is not directly accessible. This is true in cosmology, but also in law, medicine, education, and AI. A person acts from within a horizon, not from outside the universe.
+### 1. The observable universe is not the whole universe
 
-Multiverse and omniverse are used here only as linguistic warnings. As the field of possibilities grows, so does the temptation to call every possibility meaningful. The theory rejects that. Potential is not the holiness of every possibility. Ideal is the moral clarification of the possible. Optimum is the local translation of the ideal under constraint.
+The observable universe is the region from which signals could have reached us over cosmic history, given the age of the universe and the expansion of space. It is not necessarily the whole universe. This does not mean that we know with certainty what lies beyond it; it means that the boundary of access must not be identified with the boundary of reality itself.
 
-The shape of potential is not a proven geometric shape. It is a way of speaking about relations among possibilities, boundaries, appearances, and choices. Any language about the universe must drain pretension rather than add a halo to it.
+This sentence matters for the theory: the horizon is not false, but it is also not the whole truth. It is a limit of access. It tells us what can appear, what can be measured from here, and what remains outside our observational reach. A human being, a society, a physician, a judge, a teacher, or an AI system does not act from the whole. Each acts from what is available, and what is available is not necessarily all that exists.
+
+A living source is therefore not weak because it is limited. It is alive because it is situated. It does not know despite being within a horizon; it knows through being within a horizon. Body, time, memory, language, instruments, and distance are not only obstacles to knowledge. They are also the conditions through which knowledge can take form.
+
+Here potential receives a more precise meaning: it is not simply “all possibilities,” but the field of possibilities that cannot be fully accessed from one horizon. Every living source encounters only part of the possible, yet must act as if that part is enough for beginning and not enough for closure.
+
+### 2. Different horizons, not one simple horizon
+
+The word horizon sounds simple, but in cosmology it is not one single term. There is a particle horizon, connected to what could have reached or affected us over cosmic history; a cosmological event horizon, connected to regions from which we may never receive signals in the future, depending on the expansion model; a Hubble radius, connected to the current expansion rate but not always identical with an observational horizon; and the observable universe, which names our practical observational reach.
+
+This chapter does not need to teach all these technical distinctions in depth. It does need to avoid turning horizon into one magical word. Here horizon is used mainly as a language of partial access: what can appear, what can be measured, what depends on a model, and what remains outside the current frame.
+
+This precision matters because the theory also has more than one horizon. There are emotional, moral, linguistic, technological, legal, medical, educational, and computational horizons. Each opens some possibilities and closes others. Each can expand, but none becomes a divine view.
+
+The ideal is not the abolition of all horizons. Such an ideal would be a fantasy of total control. The ideal is the worthy clarification of the possible within real horizons. The optimal is the local translation of that clarification into the condition in which we actually stand.
+
+### 3. Observation, sign, and model
+
+Cosmology does not hold a direct photograph of the whole. It builds conclusions from signs: light, radiation, motion, redshift, galaxy distribution, gravitational lensing, cosmic microwave background radiation, models, and assumptions tested again and again. Cosmological knowledge is a relation among observation, model, instrument, correction, and uncertainty.
+
+Even when we speak of the cosmic microwave background, we are not looking directly at “the first instant.” We are encountering ancient traces from the era when the universe became transparent to radiation. Even our earliest accessible knowledge of the universe arrives as a sign that has passed through time, distance, expansion, measurement, and interpretation.
+
+This connects cosmology to the theory through the concept of distance. Distance is not only separation. In cosmology, seeing far also means seeing back in time. Knowledge does not touch the thing itself immediately; it meets a trace, a sign, light that arrived late, and an image built through a model.
+
+So too in the theory, knowledge is not total possession of the thing. It is responsible translation of signs within a horizon. A living source does not hold truth as a complete object in the hand. It meets evidence, builds models, corrects, fails, and continues to act under not-knowing.
+
+### 4. A question of shape is also a question of access
+
+When we ask about the shape of the universe, we are not only asking “what shape is out there?” We are also asking: what can be measured? What is inferred through a model? What depends on assumptions? What is accessible from our location? What remains beyond the observational horizon?
+
+This is central to the theory: form is not only the structure of the thing itself. Form is also the structure of our access to it. What appears to us depends on what exists, on our tools, on our position, and on the language through which we interpret signs.
+
+The “shape of potential” is therefore not a list of all possibilities. It is also the structure of access to possibilities: what appears, what remains hidden, what can be checked, what can be realized, what deserves filtering, and what remains beyond our current capacity for decision.
+
+Potential does not disappear when it receives form. But every form is also a choice. It makes part of the possible legible, and another part obscure. This is the same principle encountered in computation: action requires representation, and every representation opens a possibility while imposing a cost.
+
+### 5. Flat, curved, open, and closed: precise words, not free images
+
+In cosmology, flat does not mean shallow, simple, two-dimensional, or depthless. It refers to spatial curvature within a measurement model. Curved, open, and closed are also not free words that can be carried directly into metaphysics or ethics.
+
+A flat universe is not necessarily a simple universe, and not necessarily an infinite universe. A finite universe is not necessarily a universe with a simple edge. A boundless universe is not necessarily formless. Words that sound ordinary receive precise work in cosmology, and philosophical use of them therefore requires caution.
+
+The lesson for the theory is not “potential is flat” or “the ideal is curved.” Those would be empty leaps. The lesson is that precise language changes according to the field in which it operates. A word may look familiar while doing completely different work inside a science.
+
+Boundary discipline begins exactly here: not taking a scientific term because it is beautiful, but asking what it does, what its domain of validity is, and what it must not claim outside its frame.
+
+### 6. Curvature and topology: local is not global
+
+Curvature asks how space is measured. Topology asks how it is connected. They are not the same question. A space may appear locally flat and still have a nontrivial global topology. The local does not decide the whole by itself.
+
+This is one of the deepest lessons cosmology can offer the theory: what appears from within a local horizon is not the entire structure. The local is real, but not necessarily complete. Local observation can be extremely precise and still fail to close the global question.
+
+The same is true in life. A person may see a local truth without understanding the full structure in which it operates. A legal system may hold certain evidence without seeing the entire story. A physician may see signs without knowing the whole clinical future. AI may detect a pattern inside data without knowing the living source from which the data came.
+
+The optimal does not deny the local. It also does not turn it into the absolute. It asks: what can be done responsibly from the local, without pretending that the local is the global?
+
+### 7. Finitude, infinity, and boundlessness
+
+Finitude, infinity, and boundlessness are not the same claim. A space can be finite and without boundary; it can be infinite and still structured; and it can lie beyond our horizon without becoming an invitation to say anything about it.
+
+This distinction matters because infinity tempts the imagination. It can sound like absolute freedom, absolute depth, absolute possibility. But infinity is not the ideal. Infinite possibilities are not infinite value. Infinite variations are not infinite meaning.
+
+Potential, too, is not merely quantity. A larger field of potential is not necessarily a worthier one. If every possibility receives value merely because it is possible, there is no longer an ideal but noise. The theory rejects this: potential is the field of the possible, but the ideal is the clarification of what deserves realization.
+
+Boundlessness is therefore not enough. Even a boundless field requires a form of responsibility. The question is not only how many possibilities exist, but which possibilities are worthy, under what conditions, for whom, and at what cost.
+
+### 8. Multiverse and omniverse: possibility is not value
+
+Multiverse is not one term pointing to one proven theory. It is an umbrella name for different ideas, speculative to different degrees, some more physical and some more interpretive: eternal inflation, string landscape, many-worlds interpretations of quantum mechanics, universes with different initial conditions, and more. They do not all have the same evidential status, and they are not all the same claim.
+
+Omniverse, by contrast, is not a standard cosmological term. If used, it should be presented as a cultural, fictional, or metaphorical term for a total field of possibilities, not as a scientific claim.
+
+Multiverse and omniverse can therefore appear here only carefully, as language about multiplicity of possibility, not as proof of an actual multiplicity of worlds and not as a moral permission for every possibility. As the field of possibilities grows, so does the responsibility of filtering.
+
+Here the connection to the theory is sharp: expanding the possible is not expanding the worthy. More possibilities are not more truth. More imagined worlds are not more depth. The ideal does not arise from the quantity of possibilities, but from the clarification that distinguishes possibility from worthy possibility.
+
+### 9. The shape of potential is not geometry but relation
+
+The shape of potential is not a geometric shape of the universe. It is not a circle, line, surface, curvature, topology, or cosmological model. It is a name for the relation among possibilities, boundaries, horizons of access, local lawfulness, distance, filtering, choice, and local translation.
+
+It asks: what can appear? What remains beyond the horizon? What can be measured? What can be realized? What can only be imagined? What deserves to be chosen? What should be refused? What happens when one horizon opens and reveals another?
+
+In this sense, the shape of potential is an ethical-existential structure, not an astronomical structure. Cosmology does not prove it, but helps speak about it without turning it into a boundless abstraction. It reminds us that every possibility appears within conditions, and every condition both limits and enables.
+
+Potential without boundary becomes noise. Ideal without potential becomes empty dogma. Optimal without horizon becomes pretension. This chapter tries to hold the three together: the field of the possible, the clarification of the worthy, and local action that does not claim to see everything.
+
+### 10. AI as an artificial field of possibilities
+
+AI is not a multiverse, and it is not cosmology. But it can serve as a strong metaphor for an artificial field of possibilities: many images, many texts, many solutions, many variations, many possible worlds generated quickly.
+
+Here the danger appears: more possibilities can become less understanding. AI does not only expand a horizon; it can also flood it. If there is no filtering, source, evidence, context, and responsibility, the field of possibilities becomes persuasive noise.
+
+The problem of potential is not always a lack of possibilities. Sometimes the problem is an excess of possibilities without clarification. Not every generated image deserves to enter a document. Not every possible formulation strengthens a theory. Not every world that can be imagined deserves to be built. Not every answer that sounds deep carries a source.
+
+The optimal in AI is not “generate as much as possible.” It is to choose, test, filter, carry source, recognize boundary, and return responsibility to the human being. This is exactly the difference between potential and ideal: the possible multiplies by itself; the worthy requires work.
+
+### 11. The recursive edge: every horizon opens a horizon
+
+Every expansion of view creates a new boundary. Every “beyond the horizon” becomes another horizon. Every model of the universe opens questions about its conditions, limits, assumptions, and what it cannot see. There is no human viewpoint that closes the entire shape of potential.
+
+This is not the failure of thought. It is the structure in which thought lives. If there were an absolute view that closed everything, there would be no distance, no learning, no responsibility, and no possibility of correction.
+
+The recursive edge does not mean there is no truth. It means that every human truth carries a horizon. It can expand, become sharper, change, open further, but it does not become God. Every responsible answer leaves behind a new boundary where new responsibility begins.
+
+The hope of the theory is therefore not the hope of seeing everything. It is the hope of acting better without seeing everything. Not denying the horizon, and not turning it into a prison. Recognizing it as the condition from which form can appear.
+
+### 12. Ending: not every horizon is a prison
+
+The shape of potential is not the geometry of the universe. It is not a circle, line, curvature, or topology. It is a living relation among possibilities, boundaries, horizons of access, filtering, choice, and responsibility. Cosmology does not prove this relation, but it teaches it through a powerful language: there is no absolute view, there is no action without horizon, and one does not need to see everything in order to act responsibly.
+
+The human being does not act outside the universe, and does not choose outside potential. The human being acts from within a horizon. The ideal is therefore not a divine view, but a worthy clarification of the possible within partiality. And the optimal is the local form in which such responsibility can become real.
+
+Not every horizon is a prison. Sometimes a horizon is the condition that allows form to appear without lying that it is everything.
 
 ### Source discipline
 
-Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
+Working sources and caution: this chapter relies on the theory itself and on reliable general cosmology sources such as NASA, ESA/Planck, WMAP, and university-level explanatory material on the observable universe, cosmic microwave background radiation, curvature, topology, and cosmological horizons. These sources do not prove the theory; they serve as safeguards against empty or misleading use of astronomical terms.
 
 ## High-Energy Physics
 
 *Field, symmetry, breaking, scale, and context*
 
-![High-Energy Physics](file:///Users/barakbenhur/Downloads/bpi_v62_documents_compact_author_keep_images/out/work/images_1/1e3765f34d7a.jpg)
+![High-Energy Physics](../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 Image description: energy, particles, and horizons as a test of the limits of form.
 
