@@ -1727,7 +1727,7 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 Material, Form, Load, and Repair That Is Not Redemption
 
-![Figure: Engineering and Architecture of Potential.](../../figures/v25_chapter_shape-of-the-universe-and-potential.png)
+![Figure: Engineering and Architecture of Potential.](../../figures/17_engineering_architecture_potential.png)
 
 Image description: an engineered system in which potential becomes structure, channeling, testing, and repair.
 
@@ -1875,12 +1875,11 @@ Failure usually begins before the visible collapse: an unchecked assumption, a d
 ### 16. Architecture of Responsibility
 
 In the logical version, the conclusion is simple: engineering and architecture teach that potential becomes trustworthy only when form accepts material, load, use, maintenance, and time. The law is not Maximize Form, but Hold Human Potential Under Real Conditions.
-
 ## 11. Economy of Relation
 
 Money, Value, Trust, and Potential
 
-![Figure: Economy of Relation.](../../figures/v25_chapter_shape-of-the-universe-and-potential.png)
+![Figure: Economy of Relation.](../../figures/18_economy_relation_potential.png)
 
 Image description: value, exchange, and responsibility as living relations, not only as numbers.
 
@@ -2059,12 +2058,11 @@ A factory sells cheaply, but the air becomes dirty. An app is free, but attentio
 ### 13. Inequality, Bubble, Growth, Crisis, and Repair
 
 In the logical version, the remaining economic concepts gather into one axis: inequality becomes structural when outcome becomes future possibility; a bubble is price feeding on itself; growth must ask "more of what?"; crisis appears when mediation stops holding. The law is not Maximize Money, but Maximize Human Potential Without Destroying the Human.
-
 ## 12. Governance of Potential
 
 Law, Power, Trust, and Repair That Is Not Redemption
 
-![Figure: Governance of Potential.](../../figures/v25_chapter_shape-of-the-universe-and-potential.png)
+![Figure: Governance of Potential.](../../figures/19_governance_society_potential.png)
 
 Image description: institutions, decision, and public coordination as ways of translating possibility into responsibility.
 
@@ -2199,7 +2197,6 @@ War, plague, disaster, terror, collapse: in such moments society asks for speed 
 ### 15. Civil Society, Public Language, and Repair
 
 In the logical version, civil society, public language, majority and minority, policy, and measurement all serve one question: can power remain bound while shared possibility stays open? The law is not Maximize Control, but Hold Shared Human Potential Without Devouring the Human.
-
 ## Law of Potential: Justice Under Limitation
 
 *Justice, evidence, distance, and correction under limitation*
