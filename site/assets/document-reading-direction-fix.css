@@ -1,0 +1,58 @@
+
+/* Document reading alignment fix */
+body.public-page-he main,
+body.public-page-he article,
+body.public-page-he .reader-card,
+body.public-page-he .document-body,
+body.public-page-he .appendix-document-page main,
+html[dir="rtl"] main {
+  direction: rtl;
+  text-align: right;
+}
+
+body.public-page-en main,
+body.public-page-en article,
+body.public-page-en .reader-card,
+body.public-page-en .document-body,
+body.public-page-en .appendix-document-page main,
+html[dir="ltr"] main {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Keep intentional centered UI areas centered */
+.page-title,
+.page-title *,
+.hero,
+.hero *,
+.site-header,
+.site-footer,
+#interactive-toc,
+#interactive-toc *,
+.theory-toc-entry,
+.download-row,
+.archive-link-row {
+  text-align: inherit;
+}
+
+/* Force normal reading flow inside generated theory documents */
+main p,
+main li,
+main blockquote,
+main figcaption {
+  text-align: inherit;
+}
+
+body.public-page-he main p,
+body.public-page-he main li,
+body.public-page-he main blockquote,
+body.public-page-he main figcaption {
+  text-align: right;
+}
+
+body.public-page-en main p,
+body.public-page-en main li,
+body.public-page-en main blockquote,
+body.public-page-en main figcaption {
+  text-align: left;
+}
