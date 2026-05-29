@@ -264,6 +264,7 @@ Click any item to jump directly to the relevant place in the document, including
 
 
 
+
 ## This Is a Model, Not a Final Declaration
 
 *A map of responsibility, not a license for certainty*
@@ -1716,18 +1717,6 @@ Double responsibility is this: on one side, not to turn the person into the guil
 
 In this sense, responsibility is not the conclusion of the theory. It is the way the theory is tested in practice. The theory becomes true not because it explains suffering, but because it knows where explanation must stop and action must begin.
 
-### 10. Nihilism with hope
-
-Nihilism with hope does not mean that there is a hidden justification for every suffering. It means that even without such a justification, the human being is not exempt from the responsibility to stop its repetition.
-
-There is no final justification for suffering, but there is no exemption from responsibility. There is no guarantee that good will win, but there is no permission for indifference. There is no proven salvation, but there is local repair. Pain is not sacred, but the refusal to repeat it can be a worthy act.
-
-Hope here is not the promise that everything will be redeemed. It is the possibility that even after what should not have happened, one can still refuse to let it become law. It does not cleanse evil; it prevents evil from receiving the last word.
-
-This is where the theory must be humble and hard at the same time: not justify the pain, not abandon repair; not sanctify suffering, not surrender the world to despair.
-
-Hope does not mean the suffering was necessary. It means that suffering does not have to have the final authority over what comes after it.
-
 ### 11. Ending: do not sanctify pain, do not abandon repair
 
 There is no holiness in pain itself. There is no justice in the mere fact that something happened. There is no morality in the mere fact that a system is ordered. And there is no responsibility in finding a beautiful sentence about a fracture after the fact.
@@ -1737,10 +1726,6 @@ But there is another possibility: not to let pain become repeated cruelty. Not t
 Goodness is not the explanation of evil; it is the resistance to evil becoming law. The ideal does not seek to sanctify suffering, but to preserve the possibility of repair even where there is no complete justification. The optimal does not promise that everything will be redeemed; it asks what can be done now to reduce erasure, preserve life, and prevent the repetition of pain.
 
 Pain is not sacred. What may be sacred is the refusal to let it give birth to further cruelty.
-
-### Source discipline
-
-This chapter relies on the theory’s own concepts — potential, ideal, optimal, living source, distance, responsibility, the grace of relinquishment, and nihilism with hope. It does not offer a justification for suffering, does not present pain as a goal, and does not replace therapy, law, science, or living testimony with philosophical interpretation.
 
 ## 8. The AI Mirror and Existence as Navigation
 
