@@ -967,27 +967,148 @@ Working sources and caution: this chapter relies on the theory itself and on bac
 
 *Correlation is not a message, and context is not noise around the answer*
 
-![Locality, Non-locality, and Contextuality](../../figures/tab_core.png)
+![Locality, Non-locality, and Contextuality](../../figures/chapter-locality-nonlocality-contextuality-v2.png)
 
-Image description: local and non-local relations, context, measurement, and dependence between observer and observed.
+Image description: local and non-local relations, measurement, context, and correlations that are not messages.
 
-### Bell, Kochen-Specker, Bohmian mechanics, and the caution against slogan physics
 
-Locality, non-locality, and contextuality are delicate concepts in physics and philosophy of quantum mechanics. In this theory they do not prove that everything is relative, that reality is consciousness, or that context simply creates truth. That would be wrong. They are used only to stress that the question “what is the thing” may depend on the measurement frame and relations in which the thing appears.
+Correlation is not a message, and context is not noise around the answer. These are the two warnings without which locality, non-locality, and contextuality cannot be used responsibly. This chapter does not try to prove the theory through quantum mechanics, and it does not try to turn Bell, Kochen-Specker, Bohmian mechanics, or measurement into philosophical slogans. It tries to learn from them a discipline of appearance: what can be said about a thing when the way it is measured, asked about, and made to appear is part of the conditions of the answer.
 
-Bell marks limits for certain families of local hidden-variable explanations of quantum results. Kochen-Specker concerns the difficulty of assigning noncontextual values to all observables while reproducing quantum predictions. Bohmian mechanics is an example of a framework that preserves a certain world-picture at the price of non-locality. These are complex and must not be flattened.
+Non-locality is not telepathy, not an instant message, and not permission to say that everything affects everything. The no-signalling principle is a necessary safeguard: a correlation can be non-classical without becoming a communication channel. Contextuality is not relativism and not the claim that there is no truth. It teaches a subtler lesson: there are situations in which what can be said responsibly depends on the conditions of measurement, language, assumptions, and the relational structure within which the result appears.
 
-Responsible quantum use = defined concept × distinction between measurement and morality × stated limits × no fast generalization × connection to method / slogan × mysticism × “everything is possible” × mixing consciousness and physics. The aim is not to prove the theory through quantum mechanics, but to prevent the theory from speaking confidently beyond what it knows.
+In this sense, the chapter is not quantum in order to sound deep. It is quantum only insofar as it requires precision. Potential is not “everything is possible”; the ideal is not “truth without context”; and the optimal is not an answer that erases its conditions. The optimal is an answer that knows the context in which it works.
 
-The structural value is contextual realization. Relative potential does not mean there is no truth; it means possibility appears within conditions. A learner understands inside a language and question. Legal evidence gains meaning inside procedure. A medical symptom gains meaning inside body, history, and instrument. A work of art gains meaning inside tradition and reader. This is not relativism; it is responsibility for conditions of appearance.
+### 1. Locality: responsibility begins somewhere
 
-The link to AI is direct: a model does not generate an answer in a vacuum. Output depends on training, prompt, context, policy, data, interface, and use. Therefore “the model said” is not a source of responsibility. One must ask: in what context, from what information, for what purpose, under what boundary, and who carries responsibility?
+Locality is first of all a physical concept, but in this chapter it also serves as a careful structural lesson: to speak responsibly, one must know where one is speaking from. Location is not only a limitation. It is also a condition of responsibility. Whoever speaks as if speaking from nowhere risks speaking for everything while carrying the conditions of nothing.
 
-Locality and contextuality link to the recursive edge because every answer depends on conditions that invite further testing. They link to science as boundary discipline because they force us not to use quantum terms to escape the hard work of distinction.
+In the theory, the living source is not a divine observer outside the system. It is a situated source: body, language, memory, tools, question, limitation, and the possibility of error. This situatedness does not make it less real. It makes it more responsible, because it must say from where it speaks and what cannot be seen from there.
+
+Locality is therefore not merely restriction. It is the beginning of honesty. Moral action, legal interpretation, medical diagnosis, education, art, and AI output all begin from local conditions. This does not mean truth is only local; it means every responsible statement must recognize the location from which it begins.
+
+The ideal is not a view without place. An ideal without place can become a voice that erases life, because it speaks as if it came from nowhere and therefore owes an account to nowhere. The responsible ideal does not give up truth, but refuses to hide the conditions of its appearance.
+
+### 2. Non-locality: correlation is not communication
+
+Quantum non-locality is a delicate concept, not a license for mysticism. It does not mean instant messaging, does not prove telepathy, does not prove that everything freely affects everything, and does not turn the world into a voluntary web of meanings.
+
+The necessary methodological safeguard is the no-signalling principle: quantum correlations can be non-classical, but they cannot be used to send controlled information faster than light. Correlation is not a communication channel. Relation is not control. Dependence is not necessarily direct moral responsibility.
+
+This sentence matters outside physics as well. In life and society, it is easy to confuse relation with message, correlation with cause, resemblance with meaning, statistical dependence with responsibility. The theory must avoid the same mistake: the fact that two things are connected does not mean that one speaks for the other.
+
+Potential is not a network in which every possibility sends a message to every other possibility. It is a field in which possibilities can appear under conditions. The ideal is not the expansion of all connections in all directions, but the clarification of which connections are worthy, in what context, and under what responsibility.
+
+### 3. Bell: a boundary for a local-classical intuition
+
+Bell’s theorems and Bell inequalities show that, under certain assumptions, families of local hidden-variable theories cannot reproduce the predictions and experiments of quantum mechanics. This is a deep boundary on certain kinds of explanation, not a slogan that everything is connected to everything.
+
+Bell does not prove that reality is consciousness. It does not prove that there are no facts. It does not prove that everything is non-local in the popular sense. It shows that a certain intuition — that one can preserve classical locality together with certain hidden values that reproduce the predictions — meets a hard boundary.
+
+The lesson for the theory is not “anything goes.” It is the opposite. Not every simple intuition survives testing. Sometimes what feels natural to thought is not enough when it must face experiment, formalism, and conditions of verification.
+
+The same is true in moral and philosophical work. Intuition can be a beginning, but not an end. A feeling of truth does not exempt us from conditions of testing. An idea that sounds deep does not become ideal merely because it feels right. It must pass through a boundary of testing.
+
+### 4. Kochen-Specker: context is not noise around value
+
+The Kochen-Specker theorem points to a principled difficulty in assigning definite pre-existing values to all quantum quantities in a noncontextual way while preserving the structural relations of the theory. In broader language: it is not always possible to think of measurement results as if they were all written in advance, independently of how the question was asked.
+
+This does not mean the observer invents reality at will. It does not mean there is no truth. It does not mean every interpretation is equal. It does require caution: the conditions of measurement are not always noise around value; sometimes they are part of what makes responsible talk about value possible.
+
+Here the deep connection to the theory appears. Context is not merely an external disturbance. In some cases, context is part of the conditions of appearance. Question, instrument, language, assumption, procedure, and purpose can change what can be said responsibly about the thing.
+
+Context is not an excuse to escape truth. It is what requires us to say which truth is being stated, under what conditions, by what instrument, and within what boundary.
+
+### 5. Measurement is not magic, and observer does not simply mean consciousness
+
+One of the major mistakes in popular language about quantum mechanics is to identify measurement with human consciousness. The “observer” becomes an almost mystical figure, as if personal awareness itself creates reality. This chapter must avoid that.
+
+Quantum measurement is not magic, and it is not proof that consciousness creates reality. It names the place where system, instrument, interaction, question, formalism, and registration meet so that a result can be stated. It does not need to become human will in order to be more than passive looking.
+
+The meaning for the theory is delicate: the living source does not create truth by will. It also does not erase itself in the name of false neutrality. It is situated within question, instrument, language, and body, and therefore must carry responsibility for the conditions in which the answer appears.
+
+Truth does not need to be conditionless in order to be truth. But when its conditions are hidden, it becomes dangerous. It begins to speak as if it were absolute even when it depends on instrument, question, and frame.
+
+### 6. Entanglement: not emotional connection and not a message channel
+
+If entanglement is mentioned, it must be handled carefully. Entanglement is not emotional connection, not spiritual unity, not telepathy, and not a message channel. It is a precise quantum structure of a shared state that does not decompose simply into independent states of its parts.
+
+It can teach cautiously that there are situations in which the whole is not well described as a collection of independent parts. But here too one must not jump into mysticism. The fact that a quantum system requires a joint description does not mean that every human, moral, or cultural relation is entanglement.
+
+The connection to the theory must be structural only: sometimes meaning does not sit inside one isolated part but in a relation. Sometimes evidence does not arise from one component but from a structure. But when one moves from physics to life, one must mark that this is structural inspiration, not physical proof.
+
+This is a discipline principle: do not use the beauty of a concept to extend it beyond the domain where it is measured.
+
+### 7. Bohmian mechanics: saving a picture at a cost
+
+Bohmian mechanics reminds us that no interpretation receives everything for free. It preserves determinism and a kind of particle trajectory picture, but at the cost of explicit non-locality and commitment to another theoretical structure.
+
+This chapter does not need a full technical discussion. Its role here is to show that every framework that saves one intuition pays a price elsewhere. If one wants to preserve a certain world-picture, one must be willing to say what its cost is.
+
+This is an important lesson for the theory. Every language that organizes the world hides something, highlights something, and pays a price. No language saves everything without boundary. An ideal that does not recognize the cost of its language becomes dangerous, because it presents itself as natural, unconditioned, and without alternatives.
+
+The optimal is not the language with no cost. It is the language that honestly states what it enables, what it requires, and what it cannot carry.
+
+### 8. Context is not subjectivity
+
+This is the heart of the chapter. Context is not subjectivism. It does not mean “everyone has their own truth.” It does not mean there is no reality outside interpretation. It does not mean every interpretation is equal. It also does not mean the observer is free to create values at will.
+
+Quantum contextuality is a technical concept. The broader use of the word context in chapters on AI, law, education, medicine, and art is a cautious structural extension, not proof transferred from physics. The chapter must say this in order not to fall into the very mistake it warns against.
+
+Still, the structural inspiration is strong: sometimes one cannot responsibly speak about a result without speaking about the question, instrument, procedure, and frame within which it appeared. Context does not abolish truth; it requires us to be more precise about the form of its appearance.
+
+Truth does not disappear when it appears within context. It becomes responsible only when its context is not hidden.
+
+### 9. Potential, ideal, and optimal within conditions of appearance
+
+Potential is not a warehouse of ready-made results. It is a field in which a possibility becomes sayable only when there is a question, instrument, context, and boundary. This does not mean everything is possible, and it does not mean there is no truth until someone looks. It means possibility takes form under conditions.
+
+The ideal is not contextless truth. An ideal that does not recognize its context becomes violent; an ideal that dissolves entirely into context loses its spine. The responsible ideal holds both: truth and conditions of appearance.
+
+The optimal is not “my relative truth.” It is not subjectivism. It is the most responsible answer that can be carried within defined conditions of appearance: an answer that says what it knows, under which question, by which instrument, in which language, within which boundary, and what remains open.
+
+Here the chapter joins the previous ones. In science we learned domain of validity. In computation we learned representation and evidence. In the structure of the universe we learned horizon. In high-energy physics we learned scale and appearance. Here we learn context: not as an excuse, but as a condition of responsibility.
+
+### 10. Living source, distance, and evidence
+
+The living source is not one who cancels physics in favor of consciousness, and not a divine observer who creates truth by will. A living source is one who asks, measures, interprets, errs, corrects, and carries responsibility within language, body, instrument, and limitation.
+
+Evidence is not a naked result. It passes through distance: from system to measurement, from measurement to sign, from sign to model, from model to interpretation, and from interpretation to action that can be carried responsibly.
+
+This distance is not only failure. It is what makes criticism possible. If there were no distance between result and interpretation, there would be no way to test interpretation. If there were no distance between source and output, there would be no way to ask what was lost on the way.
+
+The theory therefore does not seek to abolish distance. It seeks not to pretend distance is absent. Responsibility begins when one identifies the path from sign to meaning.
+
+### 11. AI: output is context-dependent
+
+AI is not non-local in the physical sense, and quantum mechanics must not be used to explain its operation. But AI shows very clearly how output depends on context: prompt, training data, system policy, memory, tools, interface, language, culture, user intent, evaluation metric, and deployment environment.
+
+“The model said” is therefore not the end of the discussion but its beginning. It is closer to saying “the detector registered” than to saying “the truth has been spoken.” One must ask: which model? which prompt? which information? which constraints? which use? which source? which test? which responsibility?
+
+The output does not appear in a vacuum. It is the result of a system of conditions. As throughout this chapter, context does not abolish the possibility of evaluating the answer; it requires a more precise evaluation. An AI answer can be useful, but only if it does not hide the conditions of its appearance.
+
+The optimal in working with AI is not the answer that sounds most confident. It is the answer that can show its conditions, limits, sources, purpose, and the human being who carries responsibility for its use.
+
+### 12. The recursive edge: who defined the context?
+
+When the context of an answer is exposed, responsibility does not end. A new question opens: who defined the context, in what context was it defined, what does it allow us to see, and what does it hide? This is the recursive edge of truth within conditions of appearance.
+
+Every measurement frame rests on another frame. Every language rests on a wider language. Every tool rests on design choices. Every AI policy rests on values. Every legal procedure rests on assumptions about justice. Every exposed context opens another context.
+
+This does not abolish truth. It prevents truth from disguising itself as a view without place. The recursive edge is not despair; it is the form of responsibility for thought that does not lie to itself that it has finished.
+
+The chapter therefore does not end by saying that everything depends on everything. It ends with the opposite demand: if something depends on context, we must become more precise, not less.
+
+### 13. Ending: truth that does not hide its conditions
+
+Locality, non-locality, and contextuality do not prove the theory. They teach it a form of responsibility. Locality reminds us that every action begins somewhere. Non-locality reminds us that not every correlation is a message, and not every relation is communication. Contextuality reminds us that context is not noise around truth, but sometimes part of the conditions of its appearance.
+
+The lesson is not relativism. On the contrary: relativism begins when context is used to escape responsibility. Here context requires responsibility. It demands that one say in what question, by what instrument, in what language, for what purpose, and within what boundary the answer was stated.
+
+Truth does not disappear when it appears within context. It becomes responsible only when its context is not hidden.
 
 ### Source discipline
 
-Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
+Working sources and caution: this chapter relies on the theory itself and on focused sources in the philosophy and foundations of quantum mechanics: Bell’s theorem, Kochen-Specker theorem, quantum contextuality, no-signalling, Bohmian mechanics, and foundations of quantum mechanics. These sources do not prove the theory; they serve as safeguards against empty or misleading use of quantum terms.
 
 ## 9. Creation, Canon, and Optimum: What Must Not Be Lost
 
