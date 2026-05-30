@@ -16,11 +16,11 @@
 
 4. [Quantum Intelligence](#story-4)
 
-5. [A Place at the End of the Road](#story-5)
+5. [A place at the end of the road.](#story-5)
 
 6. [Super Mirrors](#story-6)
 
-7. [Self Confidence](#story-7)
+7. [Self-Confidence](#story-7)
 
 8. [Serial Healer](#story-8)
 
@@ -770,7 +770,7 @@ He left the microphone off for several days. Then, once, without planning to, he
 
 <a id="story-5"></a>
 
-## A Place at the End of the Road
+## A place at the end of the road.
 
 _Fifteen Minutes of Glory_
 
@@ -1768,7 +1768,7 @@ And then another.
 
 <a id="story-7"></a>
 
-## Self Confidence
+## Self-Confidence
 
 _Something to Mull Over_
 
