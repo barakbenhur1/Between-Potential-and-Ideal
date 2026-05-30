@@ -102,6 +102,7 @@ def main():
         "issues": issues,
     }
 
+    REPORT.parent.mkdir(parents=True, exist_ok=True)
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
 
     if issues:
