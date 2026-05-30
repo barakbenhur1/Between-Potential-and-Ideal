@@ -2,6 +2,7 @@ import subprocess
 import sys
 
 CHECKS = [
+    ["python3", "tools/check_no_root_junk_files.py"],
     ["python3", "tools/check_tool_inventory.py"],
     ["python3", "tools/check_release_guard_integrity.py"],
     ["python3", "tools/check_gitignore.py"],
