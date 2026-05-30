@@ -1,0 +1,22 @@
+
+# Local QA / generated outputs
+reports/
+tools/__pycache__/
+__pycache__/
+*.pyc
+*.pyo
+# Temporary repair / extraction artifacts
+bpi_missing_english_stories_package/
+bpi_translation_files_only/
+README_RESTORE_EN_EDITORIAL.txt
+README_SELF_EGO_UNITY_FIX.txt
+QA_BUNDLE_MANIFEST_HE.txt
+QA_PRODUCT_AUDIT_FULL_HE.md
+manifest.json
+*_repair_prompt*.txt
+*ultimate_repair_prompt*.txt
+restore_*.zip
+bpi_*_fixed_files.zip
+# Local OS/editor files
+.DS_Store
+Thumbs.db
