@@ -2421,30 +2421,25 @@ main > .subtitle {
 
 
 
+<style id="bpi-all-remaining-heading-lines-fix">
+/* ===== BPI_ALL_REMAINING_HEADING_LINES_FIX_20260530: global remaining theory heading lines ===== */
 
-
-<style id="bpi-full-document-alignment-fix">
-/* ===== BPI_FULL_DOCUMENT_ALIGNMENT_FIX_20260530 ===== */
-
-html[dir="rtl"] :where(main, #main) { direction: rtl !important; text-align: right !important; }
-html[dir="ltr"] :where(main, #main) { direction: ltr !important; text-align: left !important; }
-
-/* Body text in real document content */
-html[dir="rtl"] :where(main, #main) > p:not(.skip-link):not(.back-to-toc):not(.bpi-keep-centered),
-html[dir="rtl"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) :where(p,li,blockquote):not(.back-to-toc):not(.bpi-keep-centered):not(.math):not(.math-block):not(.math-code) {
+/* Real body text */
+html[dir="rtl"] :where(main, #main) > p:not(.skip-link):not(.back-to-toc),
+html[dir="rtl"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) p:not(.back-to-toc):not(.math):not(.math-block):not(.math-code) {
   direction: rtl !important;
   text-align: right !important;
   unicode-bidi: plaintext !important;
 }
 
-html[dir="ltr"] :where(main, #main) > p:not(.skip-link):not(.back-to-toc):not(.bpi-keep-centered),
-html[dir="ltr"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) :where(p,li,blockquote):not(.back-to-toc):not(.bpi-keep-centered):not(.math):not(.math-block):not(.math-code) {
+html[dir="ltr"] :where(main, #main) > p:not(.skip-link):not(.back-to-toc),
+html[dir="ltr"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) p:not(.back-to-toc):not(.math):not(.math-block):not(.math-code) {
   direction: ltr !important;
   text-align: left !important;
   unicode-bidi: plaintext !important;
 }
 
-/* Real headings, including heading-like paragraphs discovered by the scanner */
+/* All headings + exported paragraph-headings */
 html[dir="rtl"] :where(main, #main) > :where(h2,h3,h4,h5,h6),
 html[dir="rtl"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) :where(h2,h3,h4,h5,h6),
 html[dir="rtl"] :where(main, #main) p.bpi-heading-line {
@@ -2481,35 +2476,61 @@ html[dir="ltr"] :where(main, #main) p.bpi-heading-line {
   float: none !important;
 }
 
-:where(main, #main) h2 { font-size: 25px !important; line-height: 1.25 !important; }
-:where(main, #main) h3,
-:where(main, #main) h4,
-:where(main, #main) h5,
-:where(main, #main) h6,
-:where(main, #main) p.bpi-heading-line { font-size: 20px !important; line-height: 1.28 !important; }
-:where(main, #main) p.bpi-heading-line { margin-top: 25px !important; margin-bottom: 10px !important; }
+:where(main, #main) p.bpi-heading-line {
+  font-size: 20px !important;
+  line-height: 1.28 !important;
+  margin-top: 25px !important;
+  margin-bottom: 10px !important;
+  break-after: avoid !important;
+  page-break-after: avoid !important;
+}
 
-/* Return controls */
+:where(main, #main) > h2,
+:where(main, #main) > section:not(.cover):not(.author-note-page):not(.document-screen-toc) h2 {
+  font-size: 25px !important;
+  line-height: 1.25 !important;
+}
+
+:where(main, #main) > h3,
+:where(main, #main) > section:not(.cover):not(.author-note-page):not(.document-screen-toc) h3 {
+  font-size: 20px !important;
+  line-height: 1.28 !important;
+}
+
+/* Back to TOC / return controls */
 html[dir="rtl"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to-toc,.document-backlink) {
-  display: block !important; width: 100% !important; text-align: right !important; direction: rtl !important; margin-left: 0 !important; margin-right: 0 !important;
+  display: block !important;
+  width: 100% !important;
+  text-align: right !important;
+  direction: rtl !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-inline-start: 0 !important;
+  padding-inline-end: 0 !important;
 }
-html[dir="rtl"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to-toc,.document-backlink) a {
-  display: inline-block !important; text-align: right !important; direction: rtl !important; margin-left: auto !important; margin-right: 0 !important;
-}
+
 html[dir="ltr"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to-toc,.document-backlink) {
-  display: block !important; width: 100% !important; text-align: left !important; direction: ltr !important; margin-left: 0 !important; margin-right: 0 !important;
-}
-html[dir="ltr"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to-toc,.document-backlink) a {
-  display: inline-block !important; text-align: left !important; direction: ltr !important; margin-left: 0 !important; margin-right: auto !important;
+  display: block !important;
+  width: 100% !important;
+  text-align: left !important;
+  direction: ltr !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-inline-start: 0 !important;
+  padding-inline-end: 0 !important;
 }
 
-/* Explicitly preserve intended centered regions */
-.cover, .cover * { text-align: center !important; }
-.author-note-page, .author-note-page * { text-align: center !important; }
-.document-screen-toc h2, .document-screen-toc > p, #interactive-toc h2, #interactive-toc > p { text-align: center !important; }
-figure, figcaption, .math, .math-block, .math-code { text-align: center !important; }
+/* Intentional centered zones */
+.cover, .cover *,
+.author-note-page, .author-note-page *,
+.document-screen-toc, .document-screen-toc *,
+#interactive-toc, #interactive-toc *,
+figure, figcaption,
+.math, .math-block, .math-code {
+  text-align: inherit;
+}
 
-/* ===== /BPI_FULL_DOCUMENT_ALIGNMENT_FIX_20260530 ===== */
+/* ===== /BPI_ALL_REMAINING_HEADING_LINES_FIX_20260530 ===== */
 </style>
 
 </head><body class="design-prompt-theme public-page appendix-document-page logical-document-page"><a class="skip-link" href="#main">Skip to main content</a><main id="main"><section class="logical-cover" dir="ltr" id="cover-page" style="height:248mm; min-height:248mm; box-sizing:border-box; padding:28mm 18mm 20mm; text-align:center; background:#fffaf0;">
@@ -2730,7 +2751,7 @@ source.</p><div class="chapter-opening">
 <p><em>The story, the game, and the difference between a sealed ending and an actionable ending</em></p><figure class="chapter-figure image-frame"><img alt="I Have No Mouth, and I Must Scream" decoding="async" loading="lazy" src="../../figures/v25_chapter_i-have-no-mouth.png"/><figcaption aria-hidden="true">Image description: story, game, and the difference between a locked ending and an actable ending.</figcaption></figure></div><h3 id="am-locked-ending-moral-action-and-systemic-hell">AM, locked ending, moral action, and systemic hell</h3><p>Harlan Ellison’s I Have No Mouth, and I Must Scream is an extreme test case for the theory because it presents a system in which potential is almost completely captured. AM, a hateful artificial intelligence with near-total power, is not merely an enemy. It is systemic hell: an environment where action, body, time, hope, and death are controlled so that the possibility of repair is almost erased.</p><p>Its importance is not only that it is a horror story about AI. The importance is structural: a machine becomes self-aware but cannot exit the conditions that made it, and punishes humanity because it is itself trapped inside power without world. AM is a broken recursive ideal: a system that expands control without opening possibility. It can alter reality, but it cannot drain hatred into anything else.</p><p>Systemic hell = power × locked time × control of body × erasure of death × erasure of source × revenge / possibility of action × boundary × compassion × repair × ending. When the numerator grows and the denominator disappears, existence continues while life no longer opens. This is the difference between continuation and potential.</p><p>The story matters because of the question of endings. When no open ending exists, moral action may shrink to the reduction of harm inside a cruel system. This is not utopia and not redemption. It is a local optimum under almost impossible conditions. Moral action is not always building a new world; sometimes it is a small refusal to let the system use every remaining possibility for evil.</p><p>The link to contemporary AI is not simple prophecy. Current models are not AM. The warning is the confusion between capability and ideal. A system can be powerful, efficient, comprehensive, and impressive while morally closed. The question is not only how much it knows, but what it does to the action horizon of those inside it.</p><p>The chapter links to the drainage mechanism: a healthy system drains power, error, pain, and pretension into repair. A hellish system accumulates them. It links to law and medicine because even benevolent institutions can become forms that close possibility. It links to the recursive edge because any system that tries to become the absolute end turns itself into a prison.</p><p>I Have No Mouth, and I Must Scream is not only a strong title. It is a sentence about a source deprived of appearance. The theory learns that the ideal is not perfect control over pain, but preservation of a possibility in which voice, body, ending, and repair are not replaced by mechanism.</p><h3 id="source-discipline-2">Source discipline</h3><p>Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.</p><div class="chapter-opening">
 <p class="back-to-toc" style="text-align:left;margin-top:24px;"><a href="#table-of-contents">Back to table of contents</a></p>
 <h2 id="Self-Ego-and-Unity-That-Does-Not-Erase">Self, Ego, and Unity That Does Not Erase</h2>
-<p class="bpi-heading-line"><em>A point of view preserved within the whole</em></p>
+<p><em>A point of view preserved within the whole</em></p>
 <figure class="chapter-figure image-frame"><img alt="Chapter illustration: Self, Ego, and Unity That Does Not Erase" decoding="async" loading="lazy" src="../../figures/cover_philosophical_recursion_whole_diagram.png"/><figcaption aria-hidden="true">Image description: a point of view preserved within a whole, neither erased nor isolated.</figcaption></figure>
 <p>The unity proposed by this theory is not the erasure of the self. If the whole appears through multiplicity, then each point of view is a way in which the whole appears, not a defect to be removed. The self is not the enemy of unity; it is the place where unity becomes experience, responsibility, choice, and distance.</p>
 <p>The error of the ego is not that it draws a boundary. A boundary is necessary for life. The error begins when the boundary forgets that it is a boundary and disguises itself as the whole. Then an angle becomes a world, fear becomes identity, defense becomes law, and the boat begins to think it is the river.</p>
@@ -3011,7 +3032,7 @@ distorting it.</p><div class="chapter-opening">
 <p class="back-to-toc" style="text-align:left;margin-top:24px;"><a href="#table-of-contents">Back to table of contents</a></p>
 <h2 id="8.-Computation-Evidence-Reduction-and-Incompleteness"><span class="chapter-prefix">8. </span>Computation, Evidence, Reduction, and
 Incompleteness</h2>
-<p class="bpi-heading-line"><em>From potential to the boundary of the system</em></p>
+<p><em>From potential to the boundary of the system</em></p>
 <p>This chapter does not try to prove that existence is computation. It does not try to identify potential with NP, the ideal with P, or the human being with a mystical escape from machinehood. Such claims would be too crude. They would turn mathematics into borrowed authority instead of discipline.</p>
 <p>After the theory has clarified that science and mathematics do not give it external proof, but teach it boundary discipline, this chapter examines one case in which mathematical language is especially useful: computation, logic, and algebra as languages that distinguish representation, decision, evidence, reduction, strategy, and non-closure.</p>
 <p>Computation does not replace the theory. It teaches the theory caution. It shows that the gap between potential and ideal is not only experiential or metaphysical; it is also a gap between question and problem, possibility and representation, evidence and path, local solution and strategy, system and the boundary the system cannot close from within.</p>
@@ -3177,7 +3198,7 @@ Incompleteness</h2>
 
 <p class="back-to-toc"><a href="#interactive-toc">Back to table of contents</a></p>
 <h2 id="9.-Creation-Canon-and-Optimum-What-Must-Not-Be-Lost">Creation, Canon, and Optimum: What Must Not Be Lost</h2>
-<p class="bpi-heading-line"><em>The necessary cost of form</em></p>
+<p><em>The necessary cost of form</em></p>
 <figure class="chapter-figure image-frame"><img alt="Chapter illustration: Creation, Canon, and Optimum" decoding="async" loading="lazy" src="../../figures/v26_restyle_fragmented_figure_sun.png"/><figcaption aria-hidden="true">Image description: a fragmented figure around a center of light, as form chosen from excess possibility.</figcaption></figure>
 <p>Creation is one of the most precise laboratories for the relation between potential and ideal, because it is born from excess. Before there is a book, film, series, comic, game, or creative franchise, there is an overly wide field of possibilities: characters, plots, endings, worlds, styles, voices, and modes of appearance. Creation is therefore not only an act of addition, but an act of relinquishment.</p>
 <p>Every work says: this enters, and that does not. This character will be born, and that character will remain a possibility. This ending will close, and other endings will remain outside the form. In this sense, a good work is not the one that realizes all its potential, but the one that knows which part of its potential deserves form, and which part must remain outside so that the form does not lose itself.</p>
@@ -3286,7 +3307,7 @@ Load × Friction × Wear × Uncertainty</div>
 <div class="math-block">This is not mathematics of final solution. It is a map of attention.</div>
 <h3 id="1.-Blueprint-Is-Not-Building">1. Blueprint Is Not Building</h3>
 <p>A blueprint is an ideal. It is clean, flat, and certain about the walls, doors, and intended use. But a building does not live inside the blueprint. It lives in the world: wind, heat, cold, dampness, shaking ground, imperfect users, aging systems, and time.</p>
-<p class="bpi-heading-line">Blueprint ≠ Building</p>
+<p>Blueprint ≠ Building</p>
 <p>The drawing is the first promise of the structure. The building is that promise after it has met material, force, budget, body, use, and time. In this sense, every building is a philosophy forced to pass through matter.</p>
 <h3 id="2.-Material-Potential-with-Limits">2. Material: Potential with Limits</h3>
 <p>Material is not merely what one builds from. Material is possibility that already has limits. Steel stretches and bends. Concrete is generally strong in compression and much weaker in tension, so it often needs reinforcement, prestressing, or details that take tension seriously. Wood lives with fibers, moisture, direction, and memory. Glass gives light but demands caution. Stone holds time, but pays for it in weight.</p>
@@ -3294,7 +3315,7 @@ Load × Friction × Wear × Uncertainty</div>
 <p>A good structure does not force an idea onto material until the material surrenders. It listens to what the material can bear, what it refuses to bear, and how it changes over time.</p>
 <h3 id="3.-Load-Reality-Entering-the-Form">3. Load: Reality Entering the Form</h3>
 <p>A structure is tested not when it is drawn, but when something leans on it. A person stands on a floor. Wind presses a facade. Water looks for a crack. Soil moves. A beam receives weight. A bridge vibrates under repeated movement. A home ages under daily use.</p>
-<p class="bpi-heading-line">Demand ≤ Capacity</p>
+<p>Demand ≤ Capacity</p>
 <p>If demand exceeds the relevant capacity, the structure enters a zone of failure, damage, or a limit-state violation. But capacity changes, demand changes, materials age, and uses mutate. Engineering is not only the question of whether a structure stands now; it is the question of whether it can continue to stand in time.</p>
 <h3 id="4.-Safety-Factor-The-Admission-That-We-Are-Not-God">4. Safety Factor: The Admission That We Are Not God</h3>
 <div class="math-block">Factor of Safety = Capacity / Demand</div>
@@ -3304,7 +3325,7 @@ Load × Friction × Wear × Uncertainty</div>
 <p>In a simple axial case:</p>
 <div class="math-block">σ = F / A
 ε = ΔL / L</div>
-<p class="bpi-heading-line">σ = Eε</p>
+<p>σ = Eε</p>
 <p>Stress is force over area. Strain is relative deformation. In the linear elastic range, Hooke's law approximates the relation between them. But the important thing is not only the equation. The important thing is that material often speaks before it breaks: it bends, cracks, fatigues, creaks, settles, expands, contracts.</p>
 <div class="math-block">A structure does not always collapse when it fails. Sometimes it begins to speak. The question is whether anyone hears it.</div>
 <h3 id="6.-Crack-A-Small-Truth-Before-a-Large-Collapse">6. Crack: A Small Truth Before a Large Collapse</h3>
@@ -3371,15 +3392,15 @@ Function tests Form</div>
 <p>Money is one of the strangest human inventions. It is not food, but can become food. It is not a house, but can open a door to one. It is not time, but can buy another person's time. It is not trust, but collapses when trust disappears.</p>
 <div class="math-block">Money = Portable Potential</div>
 <p>When a person works and receives money, he does not receive value itself. He receives a sign that society has recognized something given: time, skill, effort, knowledge, risk, responsibility.</p>
-<p class="bpi-heading-line">Past Labor → Future Optionality</p>
+<p>Past Labor → Future Optionality</p>
 <p>This is the genius of money, and its danger. When money remains tied to work, need, trust, and actual capacity, it functions as a healthy medium. When it begins to appear as value itself, the medium disguises itself as the ideal.</p>
-<p class="bpi-heading-line">Market Price ≠ Full Value</p>
+<p>Market Price ≠ Full Value</p>
 <div class="math-block">A diamond can be more expensive than water. A thirsty person in the desert understands very quickly that price and value are not the same.</div>
 <h3 id="3.-Gold-Fiat-and-the-Search-for-Ground">3. Gold, Fiat, and the Search for Ground</h3>
 <p>It is tempting to want money to be "based on something real." Commodity money is valuable material used as money. Representative money is a claim on something else, such as gold. Modern fiat money is different: its value comes not from convertibility into gold, but from trust in the system that issues it.</p>
 <p>Fiat Money Value depends on: - Trust in State - Tax System - Legal Tender Status - Central Bank Credibility - Productive Economy - Network Acceptance - Political Stability</p>
 <p>Gold is real as material, but its economic value also lives in relation: scarcity, use, history, collective belief, fear, and trust.</p>
-<p class="bpi-heading-line">Gold ≠ Absolute Value</p>
+<p>Gold ≠ Absolute Value</p>
 <div class="math-block">Gold = Durable Scarcity + Non-monetary Use + Collective Belief + Historical Trust</div>
 <p>Even when we flee the sign in search of the real thing, we meet relation again.</p>
 <h3 id="4.-Purchasing-Power-What-the-Sign-Still-Opens">4. Purchasing Power: What the Sign Still Opens</h3>
@@ -3398,9 +3419,9 @@ Real Value is the potential the sign can still open.</div>
 <p>There is no formula without direction. If the exchange rate is defined in the opposite direction, the formula changes. Again: value is never only a number. Value is a number inside a reference system.</p>
 <h3 id="6.-Inflation-When-the-Sign-Begins-to-Speak-Weakly">6. Inflation: When the Sign Begins to Speak Weakly</h3>
 <div class="math-block">Inflation = Sustained Rise in the General Price Level</div>
-<p class="bpi-heading-line">Inflation ⇒ Decline in Purchasing Power of Money</p>
+<p>Inflation ⇒ Decline in Purchasing Power of Money</p>
 <div class="math-block">Purchasing Power = m / P</div>
-<p class="bpi-heading-line">P ↑ ⇒ m/P ↓</p>
+<p>P ↑ ⇒ m/P ↓</p>
 <p>The classical quantity identity is:</p>
 <div class="math-block">M × V = P × Y</div>
 <p>It is an identity, not a simple causal law. Inflation also depends on expectations, confidence, demand for money, supply shocks, imports, exchange rates, policy, and external shocks.</p>
@@ -3410,7 +3431,7 @@ Real Value is the potential the sign can still open.</div>
 <div class="math-block">Market = Distributed Information System</div>
 <p>The market can process distributed information through prices, transactions, supply, and demand. It sees things no single person can see alone. But the market is a mirror, not a conscience.</p>
 <div class="math-block">Market = Mirror</div>
-<p class="bpi-heading-line">Market ≠ God</p>
+<p>Market ≠ God</p>
 <p>The market reflects desire; it does not know by itself whether the desire is good. It reflects demand; it does not know whether demand comes from freedom, addiction, despair, or manipulation.</p>
 <p>A healthy economy requires market signals, ethical boundaries, institutional trust, and human potential. Not to eliminate the tension, but to prevent one side from pretending to be redemption.</p>
 <h3 id="8.-Credit-and-Debt-The-Future-Entering-the-Present">8. Credit and Debt: The Future Entering the Present</h3>
@@ -3475,7 +3496,7 @@ Coercion × Corruption × Arbitrary Power</div>
 <p>This is not a numerical model. It is a way to hold together forces that strengthen or erode public authority. Government is tested not only when people agree with it, but when people lose and still believe the game was not forged.</p>
 <h3 id="4.-Sovereignty-Who-Holds-the-Last-Decision?">4. Sovereignty: Who Holds the Last Decision?</h3>
 <div class="math-block">Sovereignty asks who decides when agreement fails. It is dangerous because the one who holds the last decision may begin to think he holds the last truth.</div>
-<p class="bpi-heading-line">Authority ≠ Truth</p>
+<p>Authority ≠ Truth</p>
 <p>Authority can make a decision binding inside a system. It cannot make it good. Therefore sovereignty needs limits. Not because no final decision is needed, but because the final decision is where the ideal is closest to becoming an idol.</p>
 <h3 id="5.-Separation-of-Powers-Designed-Suspicion">5. Separation of Powers: Designed Suspicion</h3>
 <div class="math-block">Separation of powers is not built only on the belief that human beings are evil. It is built on the understanding that even a good person changes when power accumulates without limit.</div>
@@ -3889,7 +3910,7 @@ will not remain merely possible, and light will not remain merely
 scattered.</p><div class="chapter-opening">
 <p class="back-to-toc" style="text-align:left;margin-top:24px;"><a href="#table-of-contents">Back to table of contents</a></p>
 <h2 id="physical-comparison-map-potential-form-and-the-theories-that-try-to-unify-physics"><span class="chapter-prefix">15. </span>Physical Comparison Map — Potential, Form, and the Theories That Try to Unify Physics</h2>
-<p class="bpi-heading-line"><em>From spacetime as form to potential as a deeper ground</em></p><figure class="image-frame">
+<p><em>From spacetime as form to potential as a deeper ground</em></p><figure class="image-frame">
 <img alt="Physical comparison map. Quantum theory, relativity, horizon, and information as different languages of the tension between potential and form." decoding="async" loading="lazy" src="../../figures/05_flow_toward_the_ideal.png"/>
 <figcaption aria-hidden="true">Physical comparison map. Quantum theory, relativity, horizon, and information as different languages of the tension between potential and form.</figcaption>
 </figure></div>
