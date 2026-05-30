@@ -92,3 +92,16 @@ Do not remove:
 ## Deployment
 
 The site is deployed from the repository to Render. After pushing to `main`, wait for Render to finish deploying, then hard-refresh the live page before judging visual changes.
+
+---
+
+## Contributor Guardrails
+
+Before editing this project, read:
+
+- `docs/contributor-guardrails.md`
+- `docs/deploy.md`
+- `docs/visual-qa.md`
+- `docs/performance-budget.md`
+
+Always run `python3 tools/audit_release_guard.py` before pushing to `main`.
