@@ -41,6 +41,7 @@ def main():
         "total_duplicate_ids": total_duplicate_ids,
         "issues": results,
     }
+    REPORT.parent.mkdir(parents=True, exist_ok=True)
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
 
     if results:

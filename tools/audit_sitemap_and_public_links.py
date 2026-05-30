@@ -118,6 +118,7 @@ def main():
         "missing_local_refs": missing_local,
     }
 
+    REPORT.parent.mkdir(parents=True, exist_ok=True)
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
 
     if bad_sitemap or missing_local:

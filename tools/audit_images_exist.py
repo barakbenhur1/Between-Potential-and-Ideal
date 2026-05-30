@@ -44,6 +44,7 @@ def main():
         "missing_count": len(missing),
         "missing": missing,
     }
+    REPORT.parent.mkdir(parents=True, exist_ok=True)
     REPORT.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
 
     if missing:

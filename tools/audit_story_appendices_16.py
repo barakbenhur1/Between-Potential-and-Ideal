@@ -148,6 +148,7 @@ def main():
         audit_file(HE, is_english=False),
         audit_file(EN, is_english=True),
     ]
+    REPORT.parent.mkdir(parents=True, exist_ok=True)
     REPORT.write_text(json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")
 
     errors = []
