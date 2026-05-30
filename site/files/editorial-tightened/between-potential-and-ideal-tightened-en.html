@@ -34,165 +34,8 @@ html[dir="ltr"] .mystery-chapter,html[dir="ltr"] .mystery-dot{direction:ltr!impo
 
 .document-backbar{position:sticky;top:0;z-index:999;background:#1d2938;color:#fff;padding:10px 14px;font-family:Arial,sans-serif;font-size:14px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}.document-backbar a{color:#fff;text-decoration:underline}.document-method-caution{margin:14px auto;padding:12px 16px;border:1px solid rgba(184,121,38,.28);background:#fff7e8;color:#4b3d2e;font-family:Arial,sans-serif;font-size:14px;line-height:1.5;max-width:920px;box-sizing:border-box}.document-method-caution strong{color:#8a551c}@media(max-width:680px){main{padding:24px 18px!important}.document-backbar{position:static}}
 
-/* ===== BPI_TARGETED_THEORY_BODY_ALIGNMENT_FIX_20260530: targeted theory body alignment only ===== */
-
-/*
-  Scope:
-  - theory body sections only
-  - not cover
-  - not author note
-  - not interactive/table of contents
-  - not figures/captions
-  - not story appendices
-*/
-
-html[dir="rtl"] body > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) {
-  direction: rtl !important;
-  text-align: right !important;
-}
-
-html[dir="rtl"] body > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page)
-  :where(p, h1, h2, h3, h4, h5, h6, ul, ol, li, blockquote):not(.lead-centered-note):not(.caption):not(figcaption) {
-  direction: rtl !important;
-  text-align: right !important;
-  unicode-bidi: plaintext !important;
-}
-
-html[dir="ltr"] body > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) {
-  direction: ltr !important;
-  text-align: left !important;
-}
-
-html[dir="ltr"] body > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page)
-  :where(p, h1, h2, h3, h4, h5, h6, ul, ol, li, blockquote):not(.lead-centered-note):not(.caption):not(figcaption) {
-  direction: ltr !important;
-  text-align: left !important;
-  unicode-bidi: plaintext !important;
-}
-
-/* Return buttons belong on the language side, not centered. */
-html[dir="rtl"] body > section p.back-to-toc,
-html[dir="rtl"] body > section .back-to-toc,
-html[dir="rtl"] body > section .document-backlink,
-html[dir="rtl"] body > section .return-to-toc {
-  display: block !important;
-  width: 100% !important;
-  direction: rtl !important;
-  text-align: right !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-html[dir="rtl"] body > section p.back-to-toc a,
-html[dir="rtl"] body > section .back-to-toc a,
-html[dir="rtl"] body > section .document-backlink a,
-html[dir="rtl"] body > section .return-to-toc a {
-  display: inline-block !important;
-  margin-left: auto !important;
-  margin-right: 0 !important;
-  text-align: right !important;
-}
-
-html[dir="ltr"] body > section p.back-to-toc,
-html[dir="ltr"] body > section .back-to-toc,
-html[dir="ltr"] body > section .document-backlink,
-html[dir="ltr"] body > section .return-to-toc {
-  display: block !important;
-  width: 100% !important;
-  direction: ltr !important;
-  text-align: left !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-html[dir="ltr"] body > section p.back-to-toc a,
-html[dir="ltr"] body > section .back-to-toc a,
-html[dir="ltr"] body > section .document-backlink a,
-html[dir="ltr"] body > section .return-to-toc a {
-  display: inline-block !important;
-  margin-left: 0 !important;
-  margin-right: auto !important;
-  text-align: left !important;
-}
-
-/* ===== /BPI_TARGETED_THEORY_BODY_ALIGNMENT_FIX_20260530 ===== */
 
 
-/* ===== BPI_MAIN_THEORY_ALIGNMENT_FINAL_20260530: final targeted theory heading alignment ===== */
-
-html[dir="rtl"] body > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page)
-  :where(h2, h3, h4, h5, h6, .document-heading-aligned, .chapter-subheading, .section-subheading, .logical-distillation, .key-statement, p.bpi-heading-line) {
-  color: #0A3A68 !important;
-  direction: rtl !important;
-  text-align: right !important;
-  unicode-bidi: plaintext !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-html[dir="ltr"] body > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page)
-  :where(h2, h3, h4, h5, h6, .document-heading-aligned, .chapter-subheading, .section-subheading, .logical-distillation, .key-statement, p.bpi-heading-line) {
-  color: #0A3A68 !important;
-  direction: ltr !important;
-  text-align: left !important;
-  unicode-bidi: plaintext !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-html[dir="rtl"] body > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page)
-  p.bpi-heading-line {
-  font-weight: 800 !important;
-  font-size: clamp(1.14rem, 2.15vw, 1.38rem) !important;
-  line-height: 1.36 !important;
-  margin-top: 1.45em !important;
-  margin-bottom: .48em !important;
-}
-
-html[dir="ltr"] body > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page)
-  p.bpi-heading-line {
-  font-weight: 800 !important;
-  font-size: clamp(1.14rem, 2.15vw, 1.38rem) !important;
-  line-height: 1.36 !important;
-  margin-top: 1.45em !important;
-  margin-bottom: .48em !important;
-}
-
-html[dir="rtl"] body > section p.back-to-toc {
-  display: block !important;
-  width: 100% !important;
-  direction: rtl !important;
-  text-align: right !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-html[dir="rtl"] body > section p.back-to-toc a {
-  display: inline-block !important;
-  text-align: right !important;
-  direction: rtl !important;
-  margin-left: auto !important;
-  margin-right: 0 !important;
-}
-
-html[dir="ltr"] body > section p.back-to-toc {
-  display: block !important;
-  width: 100% !important;
-  direction: ltr !important;
-  text-align: left !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-html[dir="ltr"] body > section p.back-to-toc a {
-  display: inline-block !important;
-  text-align: left !important;
-  direction: ltr !important;
-  margin-left: 0 !important;
-  margin-right: auto !important;
-}
-
-/* ===== /BPI_MAIN_THEORY_ALIGNMENT_FINAL_20260530 ===== */
 
 </style><meta content="Between Potential and Ideal project document." name="description"/><meta content="Between Potential and Ideal" property="og:title"/><meta content="website" property="og:type"/><meta content="Between Potential and Ideal project document." property="og:description"/>
 <meta content="Built from the supplied base. CSS, fonts, colors, and original images are preserved; additions are inserted inline." name="bpi-base-preserved"/><style id="bpi-v6-hard-layout-fixes">
@@ -2567,6 +2410,91 @@ main > .subtitle {
   letter-spacing:-0.015em!important;
   margin:0!important;
 }
+</style>
+
+
+<style id="bpi-real-main-section-alignment-fix">
+/* ===== BPI_REAL_MAIN_SECTION_ALIGNMENT_FIX_20260530: real #main section heading/back-link alignment ===== */
+
+html[dir="rtl"] #main > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page)
+  :where(h2, h3, h4, h5, h6, .document-heading-aligned, .chapter-subheading, .section-subheading, .logical-distillation, .key-statement, p.bpi-heading-line) {
+  color: #0A3A68 !important;
+  direction: rtl !important;
+  text-align: right !important;
+  unicode-bidi: plaintext !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+html[dir="ltr"] #main > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page)
+  :where(h2, h3, h4, h5, h6, .document-heading-aligned, .chapter-subheading, .section-subheading, .logical-distillation, .key-statement, p.bpi-heading-line) {
+  color: #0A3A68 !important;
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: plaintext !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+html[dir="rtl"] #main > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page)
+  p.bpi-heading-line {
+  color: #0A3A68 !important;
+  font-weight: 800 !important;
+  font-size: clamp(1.14rem, 2.15vw, 1.38rem) !important;
+  line-height: 1.36 !important;
+  direction: rtl !important;
+  text-align: right !important;
+  margin-top: 1.45em !important;
+  margin-bottom: .48em !important;
+}
+
+html[dir="ltr"] #main > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page)
+  p.bpi-heading-line {
+  color: #0A3A68 !important;
+  font-weight: 800 !important;
+  font-size: clamp(1.14rem, 2.15vw, 1.38rem) !important;
+  line-height: 1.36 !important;
+  direction: ltr !important;
+  text-align: left !important;
+  margin-top: 1.45em !important;
+  margin-bottom: .48em !important;
+}
+
+html[dir="rtl"] #main > section p.back-to-toc {
+  display: block !important;
+  width: 100% !important;
+  direction: rtl !important;
+  text-align: right !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+html[dir="rtl"] #main > section p.back-to-toc a {
+  display: inline-block !important;
+  direction: rtl !important;
+  text-align: right !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+html[dir="ltr"] #main > section p.back-to-toc {
+  display: block !important;
+  width: 100% !important;
+  direction: ltr !important;
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+html[dir="ltr"] #main > section p.back-to-toc a {
+  display: inline-block !important;
+  direction: ltr !important;
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* ===== /BPI_REAL_MAIN_SECTION_ALIGNMENT_FIX_20260530 ===== */
 </style>
 
 </head><body class="design-prompt-theme public-page appendix-document-page logical-document-page"><a class="skip-link" href="#main">Skip to main content</a><main id="main"><section class="logical-cover" dir="ltr" id="cover-page" style="height:248mm; min-height:248mm; box-sizing:border-box; padding:28mm 18mm 20mm; text-align:center; background:#fffaf0;">
