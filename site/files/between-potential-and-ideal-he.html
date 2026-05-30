@@ -605,6 +605,28 @@ html[dir="ltr"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to
 /* ===== /BPI_STRUCTURAL_ALIGNMENT_FIX_V5_20260530 ===== */
 </style>
 
+
+<style id="bpi-document-key-term-font-reset">
+/* ===== BPI_DOCUMENT_KEY_TERM_FONT_RESET_20260530 =====
+   Documents only: Potential/Ideal key-term spans must use the surrounding text font.
+   This intentionally does not change the website pages outside site/files.
+*/
+:where(main, #main) :where(.key-term, .key-term-he, .key-term-en),
+:where(main, #main) h1 :where(.key-term, .key-term-he, .key-term-en),
+:where(main, #main) .cover h1 :where(.key-term, .key-term-he, .key-term-en),
+:where(main, #main) .tagline :where(.key-term, .key-term-he, .key-term-en),
+:where(main, #main) .core :where(.key-term, .key-term-he, .key-term-en) {
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  font-style: inherit !important;
+  font-size: inherit !important;
+  letter-spacing: inherit !important;
+  text-rendering: inherit !important;
+  font-synthesis: inherit !important;
+  color: inherit !important;
+}
+/* ===== /BPI_DOCUMENT_KEY_TERM_FONT_RESET_20260530 ===== */
+</style>
 </head>
 <body>
 <header id="title-block-header">

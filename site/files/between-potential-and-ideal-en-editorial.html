@@ -64,9 +64,6 @@ hr.cover-divider{width:85%;border:none;border-top:1px solid rgba(23,32,45,.16);m
 .chapter-opening figure{margin-top:18px;break-inside:avoid;page-break-inside:avoid}
 
 
-.key-term,.key-term-he,.key-term-en{font-synthesis:none!important;text-rendering:optimizeLegibility!important;color:inherit!important}
-.key-term-he,.key-term.key-term-he,.cover h1 .key-term-he{font-family:"Noto Serif Hebrew","David","Times New Roman",serif!important;font-weight:700!important;letter-spacing:.008em!important;font-style:normal!important;font-size:1.055em!important}
-.key-term-en,.key-term.key-term-en,.cover h1 .key-term-en{font-family:Georgia,"Times New Roman",serif!important;font-weight:500!important;letter-spacing:.01em!important;font-style:italic!important;font-size:1.055em!important}
 
 
 
@@ -2548,6 +2545,28 @@ html[dir="ltr"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to
 }
 
 /* ===== /BPI_STRUCTURAL_ALIGNMENT_FIX_V5_20260530 ===== */
+</style>
+
+<style id="bpi-document-key-term-font-reset">
+/* ===== BPI_DOCUMENT_KEY_TERM_FONT_RESET_20260530 =====
+   Documents only: Potential/Ideal key-term spans must use the surrounding text font.
+   This intentionally does not change the website pages outside site/files.
+*/
+:where(main, #main) :where(.key-term, .key-term-he, .key-term-en),
+:where(main, #main) h1 :where(.key-term, .key-term-he, .key-term-en),
+:where(main, #main) .cover h1 :where(.key-term, .key-term-he, .key-term-en),
+:where(main, #main) .tagline :where(.key-term, .key-term-he, .key-term-en),
+:where(main, #main) .core :where(.key-term, .key-term-he, .key-term-en) {
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  font-style: inherit !important;
+  font-size: inherit !important;
+  letter-spacing: inherit !important;
+  text-rendering: inherit !important;
+  font-synthesis: inherit !important;
+  color: inherit !important;
+}
+/* ===== /BPI_DOCUMENT_KEY_TERM_FONT_RESET_20260530 ===== */
 </style>
 </head><body class="design-prompt-theme public-page appendix-document-page"><a class="skip-link" href="#main">Skip to main content</a><main id="main"><section class="cover" id="cover-page"><p class="kicker"><span>THE THEORY</span></p><h1>Between <span class="key-term key-term-en">Potential</span> and <span class="key-term key-term-en">Ideal</span></h1><p class="subtitle">Nihilism with Hope in an Uncertain World</p><p class="tagline">God as <span class="key-term key-term-en">Potential</span>, Existence as the Boat, and Knowledge Beyond the Need for Suffering</p><p class="author">Author: me · May 2026</p><blockquote class="core">Core sentence: The absolute is not the <span class="key-term key-term-en">ideal</span>. Existence is the river-crossing through which absolute <span class="key-term key-term-en">potential</span> clarifies what within itself ought to become <span class="key-term key-term-en">ideal</span>.</blockquote><figure class="cover-figure image-frame"><img alt="Cover image: Between Potential and Ideal" decoding="async" loading="lazy" src="../figures/cover_philosophical_recursion_whole_diagram.png"/></figure><hr class="cover-divider"/></section><h2 id="authors-note">Author’s note</h2>
 <p>These chapters are different attempts to sharpen the same idea. Some

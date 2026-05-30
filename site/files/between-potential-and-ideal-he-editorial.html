@@ -64,9 +64,6 @@ hr.cover-divider{width:85%;border:none;border-top:1px solid rgba(23,32,45,.16);m
 .chapter-opening figure{margin-top:18px;break-inside:avoid;page-break-inside:avoid}
 
 
-.key-term,.key-term-he,.key-term-en{font-synthesis:none!important;text-rendering:optimizeLegibility!important;color:inherit!important}
-.key-term-he,.key-term.key-term-he,.cover h1 .key-term-he{font-family:"Noto Serif Hebrew","David","Times New Roman",serif!important;font-weight:700!important;letter-spacing:.008em!important;font-style:normal!important;font-size:1.055em!important}
-.key-term-en,.key-term.key-term-en,.cover h1 .key-term-en{font-family:Georgia,"Times New Roman",serif!important;font-weight:500!important;letter-spacing:.01em!important;font-style:italic!important;font-size:1.055em!important}
 
 
 
@@ -2621,6 +2618,28 @@ html[dir="ltr"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to
 /* ===== /BPI_STRUCTURAL_ALIGNMENT_FIX_V5_20260530 ===== */
 </style>
 
+
+<style id="bpi-document-key-term-font-reset">
+/* ===== BPI_DOCUMENT_KEY_TERM_FONT_RESET_20260530 =====
+   Documents only: Potential/Ideal key-term spans must use the surrounding text font.
+   This intentionally does not change the website pages outside site/files.
+*/
+:where(main, #main) :where(.key-term, .key-term-he, .key-term-en),
+:where(main, #main) h1 :where(.key-term, .key-term-he, .key-term-en),
+:where(main, #main) .cover h1 :where(.key-term, .key-term-he, .key-term-en),
+:where(main, #main) .tagline :where(.key-term, .key-term-he, .key-term-en),
+:where(main, #main) .core :where(.key-term, .key-term-he, .key-term-en) {
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  font-style: inherit !important;
+  font-size: inherit !important;
+  letter-spacing: inherit !important;
+  text-rendering: inherit !important;
+  font-synthesis: inherit !important;
+  color: inherit !important;
+}
+/* ===== /BPI_DOCUMENT_KEY_TERM_FONT_RESET_20260530 ===== */
+</style>
 </head><body class="design-prompt-theme public-page appendix-document-page"><a class="skip-link" href="#main">דלג לתוכן המרכזי</a><main id="main"><section class="cover" id="cover-page"><p class="kicker"><span>התאוריה</span></p><h1>בין <span class="key-term key-term-he">פוטנציאל</span> ל<span class="key-term key-term-he">אידיאל</span></h1><p class="subtitle">ניהיליזם עם תקווה בעולם חסר ודאות</p><p class="tagline">אלוהים כ<span class="key-term key-term-he">פוטנציאל</span>, הקיום כסירה, וידיעה שמעבר לצורך בסבל</p><p class="author">מחבר: אני · מאי תשפ״ו</p><blockquote class="core">משפט הליבה: האבסולוטי אינו ה<span class="key-term key-term-he">אידיאל</span>י. הקיום הוא חציית הנהר שבה <span class="key-term key-term-he">פוטנציאל</span> אבסולוטי מברר מה מתוך עצמו ראוי להפוך ל<span class="key-term key-term-he">אידיאל</span>.</blockquote><figure class="cover-figure image-frame"><img alt="תמונת שער: בין פוטנציאל לאידיאל" decoding="async" loading="lazy" src="../figures/cover_philosophical_recursion_whole_diagram.png"/></figure><hr class="cover-divider"/></section><section class="author-note-page" data-v37-no-white="true" dir="rtl" id="author-note" style="height:248mm; min-height:248mm; page-break-after:always; break-after:page; box-sizing:border-box; padding:64mm 18mm 22mm; text-align:center; background:#efe6d6;">
 <div class="bpi-author-note-text-wrap" style="max-width:760px; margin:0 auto; background:transparent; text-align:center;">
 <div class="bpi-author-note-text-title he" style="font-family:'Gveret Levin','Noto Sans Hebrew',Arial,sans-serif; color:#b87926; font-size:38px; line-height:1.12; margin:0 auto 18mm; text-align:center;"><span aria-hidden="true" class="anchor-alias" id="דבר-המחבר"></span>דבר המחבר</div>
