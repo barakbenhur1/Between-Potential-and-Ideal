@@ -1,4 +1,0 @@
-*.docx -filter -diff -merge -text
-*.docx.v86.bak -filter -diff -merge -text
-site/files/*.docx -filter -diff -merge -text
-site/files/**/*.docx -filter -diff -merge -text
