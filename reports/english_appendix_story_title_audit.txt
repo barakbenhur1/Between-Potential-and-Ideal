@@ -1,0 +1,13 @@
+English appendix story title audit
+========================================
+Changed files: 0
+Title/subtitle replacements: 0
+
+/Users/barakbenhur/Downloads/theory-site/site/files/appendices/stories-before-thought-english.html
+  Story headings found: 14/14
+
+/Users/barakbenhur/Downloads/theory-site/site/files/appendices/stories-before-thought-english.md
+  Story headings found: 14/14
+
+/Users/barakbenhur/Downloads/theory-site/site/files/appendices/stories-before-thought-english.txt
+  Story headings found: 14/14
