@@ -212,7 +212,7 @@ html:has(link[rel="canonical"][href$="/what-ai-believes-en.html"]) main#main > h
   display: block !important;
   font-size: 1.55rem !important;
   line-height: 1.2 !important;
-  font-weight: 800 !important;
+  font-weight: 700 !important;
 }
 
 html:has(link[rel="canonical"][href$="/when-i-am-also-you-en.html"]) main#main > h1:first-of-type + h2::before {
@@ -221,6 +221,6 @@ html:has(link[rel="canonical"][href$="/when-i-am-also-you-en.html"]) main#main >
   display: block !important;
   font-size: 1.55rem !important;
   line-height: 1.2 !important;
-  font-weight: 800 !important;
+  font-weight: 700 !important;
 }
 /* ===== /BPI_AI_APPENDIX_EN_SUBTITLE_TEXT_FIX_V1_20260531 ===== */
