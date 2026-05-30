@@ -195,3 +195,32 @@ html[lang="en"] body.appendix-document-page.public-page.design-prompt-theme[dir=
   border-radius: 14px !important;
 }
 /* ===== /BPI_STORIES_EN_COVER_MATCH_HE_V1_20260530 ===== */
+
+/* ===== BPI_AI_APPENDIX_EN_SUBTITLE_TEXT_FIX_V1_20260531 =====
+   Visual-only correction for two generated AI appendix HTML pages.
+   The CSS is scoped by each page canonical URL, so no other title/subtitle is touched. */
+html:has(link[rel="canonical"][href$="/what-ai-believes-en.html"]) main#main > h1:first-of-type + h2,
+html:has(link[rel="canonical"][href$="/when-i-am-also-you-en.html"]) main#main > h1:first-of-type + h2 {
+  color: transparent !important;
+  font-size: 0 !important;
+  line-height: 1.2 !important;
+}
+
+html:has(link[rel="canonical"][href$="/what-ai-believes-en.html"]) main#main > h1:first-of-type + h2::before {
+  content: "Without" !important;
+  color: var(--gold, #a97835) !important;
+  display: block !important;
+  font-size: 1.55rem !important;
+  line-height: 1.2 !important;
+  font-weight: 800 !important;
+}
+
+html:has(link[rel="canonical"][href$="/when-i-am-also-you-en.html"]) main#main > h1:first-of-type + h2::before {
+  content: "With from Without" !important;
+  color: var(--gold, #a97835) !important;
+  display: block !important;
+  font-size: 1.55rem !important;
+  line-height: 1.2 !important;
+  font-weight: 800 !important;
+}
+/* ===== /BPI_AI_APPENDIX_EN_SUBTITLE_TEXT_FIX_V1_20260531 ===== */
