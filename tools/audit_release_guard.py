@@ -8,6 +8,7 @@ CHECKS = [
     ["python3", "tools/audit_anchors.py"],
     ["python3", "tools/audit_visible_hebrew_in_english.py"],
     ["python3", "tools/check_files_language_labels.py"],
+    ["python3", "tools/check_files_table_accessibility.py"],
 ]
 
 def run(cmd):
