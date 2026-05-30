@@ -224,3 +224,12 @@ html:has(link[rel="canonical"][href$="/when-i-am-also-you-en.html"]) main#main >
   font-weight: 700 !important;
 }
 /* ===== /BPI_AI_APPENDIX_EN_SUBTITLE_TEXT_FIX_V1_20260531 ===== */
+
+/* ===== BPI_AI_EN_HIDE_VISIBLE_SKIP_LINK_V1_20260531 =====
+   The generated English AI dialogue files exposed an unstyled skip-link at the top.
+   Hide it only on the AI-believes English documents that load this shared fix sheet. */
+html[lang="en"]:has(link[rel="canonical"][href*="/files/ai-believes/"]) .skip-link {
+  display: none !important;
+  visibility: hidden !important;
+}
+/* ===== /BPI_AI_EN_HIDE_VISIBLE_SKIP_LINK_V1_20260531 ===== */
