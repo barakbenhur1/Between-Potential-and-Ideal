@@ -24,7 +24,91 @@
       vertical-align: middle;
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-  </style>
+  
+/* ===== BPI_TARGETED_THEORY_BODY_ALIGNMENT_FIX_20260530: targeted theory body alignment only ===== */
+
+/*
+  Scope:
+  - theory body sections only
+  - not cover
+  - not author note
+  - not interactive/table of contents
+  - not figures/captions
+  - not story appendices
+*/
+
+html[dir="rtl"] body > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+html[dir="rtl"] body > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page)
+  :where(p, h1, h2, h3, h4, h5, h6, ul, ol, li, blockquote):not(.lead-centered-note):not(.caption):not(figcaption) {
+  direction: rtl !important;
+  text-align: right !important;
+  unicode-bidi: plaintext !important;
+}
+
+html[dir="ltr"] body > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+html[dir="ltr"] body > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page)
+  :where(p, h1, h2, h3, h4, h5, h6, ul, ol, li, blockquote):not(.lead-centered-note):not(.caption):not(figcaption) {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: plaintext !important;
+}
+
+/* Return buttons belong on the language side, not centered. */
+html[dir="rtl"] body > section p.back-to-toc,
+html[dir="rtl"] body > section .back-to-toc,
+html[dir="rtl"] body > section .document-backlink,
+html[dir="rtl"] body > section .return-to-toc {
+  display: block !important;
+  width: 100% !important;
+  direction: rtl !important;
+  text-align: right !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+html[dir="rtl"] body > section p.back-to-toc a,
+html[dir="rtl"] body > section .back-to-toc a,
+html[dir="rtl"] body > section .document-backlink a,
+html[dir="rtl"] body > section .return-to-toc a {
+  display: inline-block !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  text-align: right !important;
+}
+
+html[dir="ltr"] body > section p.back-to-toc,
+html[dir="ltr"] body > section .back-to-toc,
+html[dir="ltr"] body > section .document-backlink,
+html[dir="ltr"] body > section .return-to-toc {
+  display: block !important;
+  width: 100% !important;
+  direction: ltr !important;
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+html[dir="ltr"] body > section p.back-to-toc a,
+html[dir="ltr"] body > section .back-to-toc a,
+html[dir="ltr"] body > section .document-backlink a,
+html[dir="ltr"] body > section .return-to-toc a {
+  display: inline-block !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  text-align: left !important;
+}
+
+/* ===== /BPI_TARGETED_THEORY_BODY_ALIGNMENT_FIX_20260530 ===== */
+
+</style>
 <meta content="בין פוטנציאל לאידיאל — ניסוי מחשבתי דו־לשוני על פוטנציאל, אידיאל, משמעות ואחריות תחת אילוצים." property="og:description"/><link href="../styles.css" rel="stylesheet"/>
 <style id="v130-theory-toc-final-hierarchy-parity">
 /* V130 — final theory TOC hierarchy: no list numbering, clear language-side indentation, thumbnails only on main rows. */
