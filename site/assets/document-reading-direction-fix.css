@@ -145,17 +145,12 @@ body.public-page-he.section-ai .ai-page-card-grid > article:nth-child(2) h3::bef
 body.public-page-he.section-ai .ai-page-card-grid > article:nth-child(3) h3::before { content: "כשאני הוא גם אתה."; }
 /* ===== /BPI_AI_INDEX_CARD_TITLE_MATCH_DOC_TITLE_V1_20260531 ===== */
 
-/* ===== BPI_WITNESS_EN_HERO_ALIGNMENT_FIX_V1_20260531 =====
-   Scope: English Witness tab only. Keeps the existing HTML and image, but restores
-   the hero/title composition to the same centered visual system used by the other tabs. */
+/* ===== BPI_WITNESS_EN_HERO_ALIGNMENT_FIX_V2_20260531 =====
+   Scope: English Witness tab only. Match Core: thumbnail left, title beside it, lead below. */
 body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness {
   direction: ltr !important;
-  text-align: center !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: clamp(16px, 2vw, 24px) !important;
+  text-align: left !important;
+  display: block !important;
   min-height: clamp(250px, 23vw, 330px) !important;
   padding: clamp(38px, 5vw, 68px) clamp(28px, 6vw, 82px) !important;
   box-sizing: border-box !important;
@@ -163,46 +158,46 @@ body.public-page-en.section-witness main#main > .page-title.media-page-title.acc
 
 body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness .page-title-head {
   direction: ltr !important;
-  text-align: center !important;
+  text-align: left !important;
   display: flex !important;
-  flex-direction: column !important;
+  flex-direction: row !important;
   align-items: center !important;
-  justify-content: center !important;
-  gap: clamp(14px, 1.8vw, 22px) !important;
+  justify-content: flex-start !important;
+  gap: clamp(22px, 2.8vw, 34px) !important;
   width: 100% !important;
-  margin: 0 auto !important;
+  margin: 0 0 clamp(26px, 3vw, 36px) 0 !important;
 }
 
 body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness .page-title-mark {
   flex: 0 0 auto !important;
   display: block !important;
-  width: clamp(78px, 8vw, 112px) !important;
-  height: clamp(78px, 8vw, 112px) !important;
-  max-width: clamp(78px, 8vw, 112px) !important;
-  max-height: clamp(78px, 8vw, 112px) !important;
-  margin: 0 auto !important;
+  width: clamp(108px, 9vw, 150px) !important;
+  height: clamp(108px, 9vw, 150px) !important;
+  max-width: clamp(108px, 9vw, 150px) !important;
+  max-height: clamp(108px, 9vw, 150px) !important;
+  margin: 0 !important;
   object-fit: cover !important;
   object-position: center center !important;
 }
 
 body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness h1 {
   display: block !important;
-  width: 100% !important;
-  margin: 0 auto !important;
-  text-align: center !important;
+  width: auto !important;
+  margin: 0 !important;
+  text-align: left !important;
   color: #102033 !important;
   line-height: 1.02 !important;
 }
 
 body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness .lead {
   display: block !important;
-  width: min(980px, 100%) !important;
-  max-width: 980px !important;
-  margin: 0 auto !important;
-  text-align: center !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  text-align: left !important;
   line-height: 1.45 !important;
 }
-/* ===== /BPI_WITNESS_EN_HERO_ALIGNMENT_FIX_V1_20260531 ===== */
+/* ===== /BPI_WITNESS_EN_HERO_ALIGNMENT_FIX_V2_20260531 ===== */
 
 /* ===== BPI_HE_SELECTED_TABS_AI_NAV_LABEL_FIX_V1_20260531 =====
    Scope: Hebrew Witness / Methodology / Critique tabs only. Visual label should be
