@@ -492,40 +492,43 @@ main > .subtitle {
 
 
 
-<style id="bpi-direct-main-heading-alignment-final">
-/* ===== BPI_DIRECT_MAIN_HEADING_ALIGNMENT_FINAL_20260530: direct main headings + section headings, HE and EN ===== */
 
-html[dir="rtl"] :where(main, #main) > :where(h2,h3,h4,h5,h6,p.bpi-heading-line),
-html[dir="rtl"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page)
-  :where(h2,h3,h4,h5,h6,p.bpi-heading-line),
-html[dir="rtl"] :where(main, #main) .chapter-opening :where(h2,h3,h4,h5,h6,p.bpi-heading-line) {
-  display:block!important;
-  width:100%!important;
+
+<style id="bpi-final-real-heading-fix">
+/* ===== BPI_FINAL_REAL_HEADING_FIX_20260530: real heading/subheading alignment in theory documents ===== */
+
+/* Direct h2-h6 in editorial main, plus nested chapter headings. */
+html[dir="rtl"] :where(main, #main) :where(h2,h3,h4,h5,h6,.bpi-heading-line):not(.author-note-title):not(.bpi-author-note-text-title) {
   color:#0A3A68!important;
   direction:rtl!important;
   text-align:right!important;
   unicode-bidi:plaintext!important;
-  margin-left:0!important;
-  margin-right:0!important;
-  float:none!important;
 }
 
-html[dir="ltr"] :where(main, #main) > :where(h2,h3,h4,h5,h6,p.bpi-heading-line),
-html[dir="ltr"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page)
-  :where(h2,h3,h4,h5,h6,p.bpi-heading-line),
-html[dir="ltr"] :where(main, #main) .chapter-opening :where(h2,h3,h4,h5,h6,p.bpi-heading-line) {
-  display:block!important;
-  width:100%!important;
+html[dir="ltr"] :where(main, #main) :where(h2,h3,h4,h5,h6,.bpi-heading-line):not(.author-note-title):not(.bpi-author-note-text-title) {
   color:#0A3A68!important;
   direction:ltr!important;
   text-align:left!important;
   unicode-bidi:plaintext!important;
-  margin-left:0!important;
-  margin-right:0!important;
-  float:none!important;
 }
 
+/* Preserve intentional centered regions. */
+:where(.cover,.cover *,.author-note-page,.author-note-page *,.document-screen-toc,.document-screen-toc *,#interactive-toc,#interactive-toc *,figure,figcaption,.math,.math-block,.math-code) {
+  unicode-bidi:initial;
+}
+
+html[dir="rtl"] :where(.cover,.cover *,.author-note-page,.author-note-page *,.document-screen-toc,.document-screen-toc *,#interactive-toc,#interactive-toc *,figure,figcaption,.math,.math-block,.math-code) {
+  text-align:inherit;
+}
+
+html[dir="ltr"] :where(.cover,.cover *,.author-note-page,.author-note-page *,.document-screen-toc,.document-screen-toc *,#interactive-toc,#interactive-toc *,figure,figcaption,.math,.math-block,.math-code) {
+  text-align:inherit;
+}
+
+/* Paragraphs that are really subheadings. */
 :where(main, #main) p.bpi-heading-line {
+  display:block!important;
+  width:100%!important;
   font-weight:800!important;
   font-size:clamp(1.14rem,2.15vw,1.38rem)!important;
   line-height:1.36!important;
@@ -533,6 +536,17 @@ html[dir="ltr"] :where(main, #main) .chapter-opening :where(h2,h3,h4,h5,h6,p.bpi
   margin-bottom:.48em!important;
 }
 
+html[dir="rtl"] :where(main, #main) p.bpi-heading-line {
+  margin-left:0!important;
+  margin-right:0!important;
+}
+
+html[dir="ltr"] :where(main, #main) p.bpi-heading-line {
+  margin-left:0!important;
+  margin-right:0!important;
+}
+
+/* Back-to-TOC / return controls. */
 html[dir="rtl"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to-toc,.document-backlink) {
   display:block!important;
   width:100%!important;
@@ -567,7 +581,7 @@ html[dir="ltr"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to
   margin-right:auto!important;
 }
 
-/* ===== /BPI_DIRECT_MAIN_HEADING_ALIGNMENT_FINAL_20260530 ===== */
+/* ===== /BPI_FINAL_REAL_HEADING_FIX_20260530 ===== */
 </style>
 
 </head>
@@ -835,7 +849,7 @@ Intellect) מתגלה הכשל של אינטליגנציה ראשונית המב
 <figcaption>תיאור תמונה: מפה של יחסים, לא הכרזה סופית ולא מציאות סגורה.</figcaption>
 </figure>
 
-<p><em>מפת אחריות, לא רישיון לוודאות</em></p>
+<p class="bpi-heading-line"><em>מפת אחריות, לא רישיון לוודאות</em></p>
 <p>זהו מודל, לא הכרזה סופית. התאוריה אינה מוצגת כמדע מוכח, כדת חדשה, כמערכת סגורה או כתשובה שאי־אפשר לערער עליה. היא מציעה מפת יחסים: דרך לחשוב על פוטנציאל, אידיאל, אופטימלי, מקור חי, מרחק, מגבלה, חוויה ומשמעות בלי לטעון שהמפה היא המציאות עצמה.</p>
 <p>מודל טוב אינו מחליף את הדרך. הוא אינו פוטר את ההולך מן הצורך לבדוק איפה הוא עומד. הוא רק מאפשר לראות קשרים שלא נראו קודם: בין אפשרות לבין צורה, בין כאב לבין אחריות, בין חירות לבין מחיר, בין תקווה לבין הסכנה להפוך אותה להבטחה ריקה.</p>
 <p>לכן השאלה הנכונה אינה “האם זה מוכח כמו משפט מתמטי?”, אלא “האם המבנה מחזיק בלי לערבב תחומים, בלי להצדיק כאב, בלי למחוק אדם, ובלי להפוך תקווה לאמונה עיוורת?”. במובן הזה, כוחו של המודל אינו בכך שהוא מכריז על עצמו כסופי, אלא בכך שהוא יודע לסמן את גבולותיו.</p>

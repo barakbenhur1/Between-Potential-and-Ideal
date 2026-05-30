@@ -492,40 +492,43 @@ main > .subtitle {
 
 
 
-<style id="bpi-direct-main-heading-alignment-final">
-/* ===== BPI_DIRECT_MAIN_HEADING_ALIGNMENT_FINAL_20260530: direct main headings + section headings, HE and EN ===== */
 
-html[dir="rtl"] :where(main, #main) > :where(h2,h3,h4,h5,h6,p.bpi-heading-line),
-html[dir="rtl"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page)
-  :where(h2,h3,h4,h5,h6,p.bpi-heading-line),
-html[dir="rtl"] :where(main, #main) .chapter-opening :where(h2,h3,h4,h5,h6,p.bpi-heading-line) {
-  display:block!important;
-  width:100%!important;
+
+<style id="bpi-final-real-heading-fix">
+/* ===== BPI_FINAL_REAL_HEADING_FIX_20260530: real heading/subheading alignment in theory documents ===== */
+
+/* Direct h2-h6 in editorial main, plus nested chapter headings. */
+html[dir="rtl"] :where(main, #main) :where(h2,h3,h4,h5,h6,.bpi-heading-line):not(.author-note-title):not(.bpi-author-note-text-title) {
   color:#0A3A68!important;
   direction:rtl!important;
   text-align:right!important;
   unicode-bidi:plaintext!important;
-  margin-left:0!important;
-  margin-right:0!important;
-  float:none!important;
 }
 
-html[dir="ltr"] :where(main, #main) > :where(h2,h3,h4,h5,h6,p.bpi-heading-line),
-html[dir="ltr"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page)
-  :where(h2,h3,h4,h5,h6,p.bpi-heading-line),
-html[dir="ltr"] :where(main, #main) .chapter-opening :where(h2,h3,h4,h5,h6,p.bpi-heading-line) {
-  display:block!important;
-  width:100%!important;
+html[dir="ltr"] :where(main, #main) :where(h2,h3,h4,h5,h6,.bpi-heading-line):not(.author-note-title):not(.bpi-author-note-text-title) {
   color:#0A3A68!important;
   direction:ltr!important;
   text-align:left!important;
   unicode-bidi:plaintext!important;
-  margin-left:0!important;
-  margin-right:0!important;
-  float:none!important;
 }
 
+/* Preserve intentional centered regions. */
+:where(.cover,.cover *,.author-note-page,.author-note-page *,.document-screen-toc,.document-screen-toc *,#interactive-toc,#interactive-toc *,figure,figcaption,.math,.math-block,.math-code) {
+  unicode-bidi:initial;
+}
+
+html[dir="rtl"] :where(.cover,.cover *,.author-note-page,.author-note-page *,.document-screen-toc,.document-screen-toc *,#interactive-toc,#interactive-toc *,figure,figcaption,.math,.math-block,.math-code) {
+  text-align:inherit;
+}
+
+html[dir="ltr"] :where(.cover,.cover *,.author-note-page,.author-note-page *,.document-screen-toc,.document-screen-toc *,#interactive-toc,#interactive-toc *,figure,figcaption,.math,.math-block,.math-code) {
+  text-align:inherit;
+}
+
+/* Paragraphs that are really subheadings. */
 :where(main, #main) p.bpi-heading-line {
+  display:block!important;
+  width:100%!important;
   font-weight:800!important;
   font-size:clamp(1.14rem,2.15vw,1.38rem)!important;
   line-height:1.36!important;
@@ -533,6 +536,17 @@ html[dir="ltr"] :where(main, #main) .chapter-opening :where(h2,h3,h4,h5,h6,p.bpi
   margin-bottom:.48em!important;
 }
 
+html[dir="rtl"] :where(main, #main) p.bpi-heading-line {
+  margin-left:0!important;
+  margin-right:0!important;
+}
+
+html[dir="ltr"] :where(main, #main) p.bpi-heading-line {
+  margin-left:0!important;
+  margin-right:0!important;
+}
+
+/* Back-to-TOC / return controls. */
 html[dir="rtl"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to-toc,.document-backlink) {
   display:block!important;
   width:100%!important;
@@ -567,7 +581,7 @@ html[dir="ltr"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to
   margin-right:auto!important;
 }
 
-/* ===== /BPI_DIRECT_MAIN_HEADING_ALIGNMENT_FINAL_20260530 ===== */
+/* ===== /BPI_FINAL_REAL_HEADING_FIX_20260530 ===== */
 </style>
 
 </head>
@@ -940,7 +954,7 @@ only widen the language of the Whole.</p>
 <figcaption>Image description: a map of relations, not a final declaration and not a closed reality.</figcaption>
 </figure>
 
-<p><em>A map of responsibility, not a license for certainty</em></p>
+<p class="bpi-heading-line"><em>A map of responsibility, not a license for certainty</em></p>
 <p>This is a model, not a final declaration. The theory is not presented as proven science, a new religion, a closed system, or an answer that cannot be challenged. It offers a map of relations: a way to think about potential, ideal, optimal, living source, distance, limitation, experience, and meaning without claiming that the map is reality itself.</p>
 <p>A good model does not replace the road. It does not release the traveler from checking where they stand. It only makes certain relations visible: possibility and form, pain and responsibility, freedom and cost, hope and the danger of turning hope into an empty promise.</p>
 <p>The right question is therefore not “is this proven like a mathematical theorem?”, but “does the structure hold without confusing domains, justifying pain, erasing a person, or turning hope into blind belief?”. In this sense, the model’s strength is not that it declares itself final, but that it knows how to mark its limits.</p>
