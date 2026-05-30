@@ -93,16 +93,16 @@ including opening material, chapters, subsections, and closing sections.
 43. [2. The Turing machine: what counts as
     computation?](#2.-The-Turing-machine-what-counts-as-computation?)
 44. [3. NP : verifiable evidence, not “hard
-    problems”](#3.-N-P--verifiable-evidence-not-hard-problems)
+    problems”](#3.-NP--verifiable-evidence-not-hard-problems)
 45. [4. Reductions and NP -completeness: when difficulty concentrates
     in a
-    node](#4.-Reductions-and-N-P--completeness-when-difficulty-concentrates-in-a-node)
-46. [5. c o NP : the complementary side of
-    evidence](#5.-c-o-N-P--the-complementary-side-of-evidence)
+    node](#4.-Reductions-and-NP--completeness-when-difficulty-concentrates-in-a-node)
+46. [5. coNP: the complementary side of
+    evidence](#5.-coNP--the-complementary-side-of-evidence)
 47. [6. The polynomial hierarchy: from one witness to layers of
     quantification](#6.-The-polynomial-hierarchy-from-one-witness-to-layers-of-quantification)
 48. [7. QBF and PSPACE : when solution becomes
-    strategy](#7.-Q-B-F-and-P-S-P-A-C-E--when-solution-becomes-strategy)
+    strategy](#7.-QBF-and-PSPACE--when-solution-becomes-strategy)
 49. [8. Linear algebra: state, operation, and
     decomposition](#8.-Linear-algebra-state-operation-and-decomposition)
 50. [9. Matrix diagonalization: an image of change of
