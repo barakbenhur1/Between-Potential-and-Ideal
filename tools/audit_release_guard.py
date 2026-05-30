@@ -2,6 +2,7 @@ import subprocess
 import sys
 
 CHECKS = [
+    ["python3", "tools/check_files_filter_live_region.py"],
     ["python3", "tools/check_external_links_accessibility.py"],
     ["python3", "tools/check_qa_docs_index.py"],
     ["python3", "tools/check_contributor_guardrails.py"],
