@@ -2514,36 +2514,47 @@ main > .subtitle {
 
 
 
-<style id="bpi-all-remaining-heading-lines-fix">
-/* ===== BPI_ALL_REMAINING_HEADING_LINES_FIX_20260530: global remaining theory heading lines ===== */
 
-/* Real body text */
-html[dir="rtl"] :where(main, #main) > p:not(.skip-link):not(.back-to-toc),
-html[dir="rtl"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) p:not(.back-to-toc):not(.math):not(.math-block):not(.math-code) {
+
+<style id="bpi-side-align-real-content-only">
+/* ===== BPI_SIDE_ALIGN_REAL_CONTENT_ONLY_20260530 ===== */
+
+/* Editorial files: direct real content under <main>. */
+html[dir="rtl"] main > :where(p,ul,ol,li,blockquote,h2,h3,h4,h5,h6):not(.kicker):not(.subtitle):not(.tagline):not(.author):not(.core):not(.back-to-toc),
+html[dir="rtl"] main > :where(p,ul,ol,li,blockquote,h2,h3,h4,h5,h6):not(.kicker):not(.subtitle):not(.tagline):not(.author):not(.core):not(.back-to-toc) * {
   direction: rtl !important;
   text-align: right !important;
   unicode-bidi: plaintext !important;
 }
 
-html[dir="ltr"] :where(main, #main) > p:not(.skip-link):not(.back-to-toc),
-html[dir="ltr"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) p:not(.back-to-toc):not(.math):not(.math-block):not(.math-code) {
+html[dir="ltr"] main > :where(p,ul,ol,li,blockquote,h2,h3,h4,h5,h6):not(.kicker):not(.subtitle):not(.tagline):not(.author):not(.core):not(.back-to-toc),
+html[dir="ltr"] main > :where(p,ul,ol,li,blockquote,h2,h3,h4,h5,h6):not(.kicker):not(.subtitle):not(.tagline):not(.author):not(.core):not(.back-to-toc) * {
   direction: ltr !important;
   text-align: left !important;
   unicode-bidi: plaintext !important;
 }
 
-/* All headings + exported paragraph-headings */
-html[dir="rtl"] :where(main, #main) > :where(h2,h3,h4,h5,h6),
-html[dir="rtl"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) :where(h2,h3,h4,h5,h6),
-html[dir="rtl"] :where(main, #main) p.bpi-heading-line {
-  display: block !important;
-  width: 100% !important;
-  color: #0A3A68 !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Hebrew", Arial, sans-serif !important;
-  font-weight: 800 !important;
+/* Regular exported files: real content inside #main sections, not cover/author-note/TOC/figures/math. */
+html[dir="rtl"] #main > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page)
+  :where(p,ul,ol,li,blockquote,h2,h3,h4,h5,h6):not(.back-to-toc):not(.math):not(.math-block):not(.math-code) {
   direction: rtl !important;
   text-align: right !important;
   unicode-bidi: plaintext !important;
+}
+
+html[dir="ltr"] #main > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page)
+  :where(p,ul,ol,li,blockquote,h2,h3,h4,h5,h6):not(.back-to-toc):not(.math):not(.math-block):not(.math-code) {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: plaintext !important;
+}
+
+/* Heading color/font/indentation. */
+html[dir="rtl"] :where(main, #main) :where(h2,h3,h4,h5,h6,p.bpi-heading-line):not(.author-note-title):not(.bpi-author-note-text-title),
+html[dir="ltr"] :where(main, #main) :where(h2,h3,h4,h5,h6,p.bpi-heading-line):not(.author-note-title):not(.bpi-author-note-text-title) {
+  color: #0A3A68 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Hebrew", Arial, sans-serif !important;
+  font-weight: 800 !important;
   margin-inline-start: 0 !important;
   margin-inline-end: 0 !important;
   padding-inline-start: 0 !important;
@@ -2551,79 +2562,41 @@ html[dir="rtl"] :where(main, #main) p.bpi-heading-line {
   float: none !important;
 }
 
-html[dir="ltr"] :where(main, #main) > :where(h2,h3,h4,h5,h6),
-html[dir="ltr"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) :where(h2,h3,h4,h5,h6),
-html[dir="ltr"] :where(main, #main) p.bpi-heading-line {
-  display: block !important;
-  width: 100% !important;
-  color: #0A3A68 !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Hebrew", Arial, sans-serif !important;
-  font-weight: 800 !important;
+html[dir="rtl"] :where(main, #main) :where(h2,h3,h4,h5,h6,p.bpi-heading-line):not(.author-note-title):not(.bpi-author-note-text-title) {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+html[dir="ltr"] :where(main, #main) :where(h2,h3,h4,h5,h6,p.bpi-heading-line):not(.author-note-title):not(.bpi-author-note-text-title) {
   direction: ltr !important;
   text-align: left !important;
-  unicode-bidi: plaintext !important;
-  margin-inline-start: 0 !important;
-  margin-inline-end: 0 !important;
-  padding-inline-start: 0 !important;
-  padding-inline-end: 0 !important;
-  float: none !important;
 }
 
 :where(main, #main) p.bpi-heading-line {
+  display: block !important;
+  width: 100% !important;
   font-size: 20px !important;
   line-height: 1.28 !important;
   margin-top: 25px !important;
   margin-bottom: 10px !important;
-  break-after: avoid !important;
-  page-break-after: avoid !important;
 }
 
-:where(main, #main) > h2,
-:where(main, #main) > section:not(.cover):not(.author-note-page):not(.document-screen-toc) h2 {
-  font-size: 25px !important;
-  line-height: 1.25 !important;
-}
-
-:where(main, #main) > h3,
-:where(main, #main) > section:not(.cover):not(.author-note-page):not(.document-screen-toc) h3 {
-  font-size: 20px !important;
-  line-height: 1.28 !important;
-}
-
-/* Back to TOC / return controls */
+/* Return links. */
 html[dir="rtl"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to-toc,.document-backlink) {
   display: block !important;
   width: 100% !important;
-  text-align: right !important;
   direction: rtl !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  padding-inline-start: 0 !important;
-  padding-inline-end: 0 !important;
+  text-align: right !important;
 }
 
 html[dir="ltr"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to-toc,.document-backlink) {
   display: block !important;
   width: 100% !important;
-  text-align: left !important;
   direction: ltr !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  padding-inline-start: 0 !important;
-  padding-inline-end: 0 !important;
+  text-align: left !important;
 }
 
-/* Intentional centered zones */
-.cover, .cover *,
-.author-note-page, .author-note-page *,
-.document-screen-toc, .document-screen-toc *,
-#interactive-toc, #interactive-toc *,
-figure, figcaption,
-.math, .math-block, .math-code {
-  text-align: inherit;
-}
-
-/* ===== /BPI_ALL_REMAINING_HEADING_LINES_FIX_20260530 ===== */
+/* ===== /BPI_SIDE_ALIGN_REAL_CONTENT_ONLY_20260530 ===== */
 </style>
 
 </head><body class="design-prompt-theme public-page appendix-document-page"><a class="skip-link" href="#main">דלג לתוכן המרכזי</a><main id="main"><section class="cover" id="cover-page"><p class="kicker"><span>התאוריה</span></p><h1>בין <span class="key-term key-term-he">פוטנציאל</span> ל<span class="key-term key-term-he">אידיאל</span></h1><p class="subtitle">ניהיליזם עם תקווה בעולם חסר ודאות</p><p class="tagline">אלוהים כ<span class="key-term key-term-he">פוטנציאל</span>, הקיום כסירה, וידיעה שמעבר לצורך בסבל</p><p class="author">מחבר: אני · מאי תשפ״ו</p><blockquote class="core">משפט הליבה: האבסולוטי אינו ה<span class="key-term key-term-he">אידיאל</span>י. הקיום הוא חציית הנהר שבה <span class="key-term key-term-he">פוטנציאל</span> אבסולוטי מברר מה מתוך עצמו ראוי להפוך ל<span class="key-term key-term-he">אידיאל</span>.</blockquote><figure class="cover-figure image-frame"><img alt="תמונת שער: בין פוטנציאל לאידיאל" decoding="async" loading="lazy" src="../figures/cover_philosophical_recursion_whole_diagram.png"/></figure><hr class="cover-divider"/></section><section class="author-note-page" data-v37-no-white="true" dir="rtl" id="author-note" style="height:248mm; min-height:248mm; page-break-after:always; break-after:page; box-sizing:border-box; padding:64mm 18mm 22mm; text-align:center; background:#efe6d6;">
