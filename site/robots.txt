@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://between-potential-and-ideal.onrender.com/sitemap.xml
