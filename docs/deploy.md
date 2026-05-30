@@ -73,3 +73,25 @@ git push
 ```
 
 Do not force-push main.
+
+## Build info
+
+The site exposes a static build metadata file:
+
+```text
+/build-info.json
+```
+
+Before an important release, update it from the repository root:
+
+```bash
+python3 tools/update_build_info.py
+```
+
+If Render supports a build command, use:
+
+```bash
+python3 tools/update_build_info.py
+```
+
+This helps compare the live site with the Git commit that was intended for deploy.

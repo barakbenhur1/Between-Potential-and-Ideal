@@ -1,0 +1,8 @@
+{
+  "project": "Between Potential and Ideal",
+  "branch": "main",
+  "commit": "47367d44be631a6d8ff13183d549ceb4b434e4b2",
+  "short_commit": "47367d4",
+  "generated_at_utc": "2026-05-30T19:59:46+00:00",
+  "source": "tools/update_build_info.py"
+}
