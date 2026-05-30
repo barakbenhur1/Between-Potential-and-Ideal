@@ -203,3 +203,19 @@ body.public-page-en.section-witness main#main > .page-title.media-page-title.acc
   line-height: 1.45 !important;
 }
 /* ===== /BPI_WITNESS_EN_HERO_ALIGNMENT_FIX_V1_20260531 ===== */
+
+/* ===== BPI_HE_SELECTED_TABS_AI_NAV_LABEL_FIX_V1_20260531 =====
+   Scope: Hebrew Witness / Methodology / Critique tabs only. Visual label should be
+   Hebrew, matching the rest of the Hebrew navigation, without touching page content. */
+body.public-page-he:is(.section-witness, .section-methodology, .section-critique) .site-nav a[href="ai.html"] {
+  font-size: 0 !important;
+  line-height: 1 !important;
+}
+
+body.public-page-he:is(.section-witness, .section-methodology, .section-critique) .site-nav a[href="ai.html"]::before {
+  content: "בינה מלאכותית" !important;
+  display: inline !important;
+  font-size: 1rem !important;
+  line-height: inherit !important;
+}
+/* ===== /BPI_HE_SELECTED_TABS_AI_NAV_LABEL_FIX_V1_20260531 ===== */
