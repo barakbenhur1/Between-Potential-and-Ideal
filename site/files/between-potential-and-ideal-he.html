@@ -496,39 +496,28 @@ main > .subtitle {
 
 
 
-<style id="bpi-final-no-fstring-layout-fix">
-/* ===== BPI_FINAL_NO_FSTRING_LAYOUT_FIX_20260530: final theory layout repair ===== */
 
-/* Base document direction */
-html[dir="rtl"] :where(main, #main) {
-  direction: rtl !important;
-  text-align: right !important;
-}
 
-html[dir="ltr"] :where(main, #main) {
-  direction: ltr !important;
-  text-align: left !important;
-}
+<style id="bpi-all-remaining-heading-lines-fix">
+/* ===== BPI_ALL_REMAINING_HEADING_LINES_FIX_20260530: global remaining theory heading lines ===== */
 
-/* Normal body text in the real document area */
+/* Real body text */
 html[dir="rtl"] :where(main, #main) > p:not(.skip-link):not(.back-to-toc),
-html[dir="rtl"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) p:not(.back-to-toc):not(.math):not(.math-block):not(.math-code),
-html[dir="rtl"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) li {
+html[dir="rtl"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) p:not(.back-to-toc):not(.math):not(.math-block):not(.math-code) {
   direction: rtl !important;
   text-align: right !important;
   unicode-bidi: plaintext !important;
 }
 
 html[dir="ltr"] :where(main, #main) > p:not(.skip-link):not(.back-to-toc),
-html[dir="ltr"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) p:not(.back-to-toc):not(.math):not(.math-block):not(.math-code),
-html[dir="ltr"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) li {
+html[dir="ltr"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) p:not(.back-to-toc):not(.math):not(.math-block):not(.math-code) {
   direction: ltr !important;
   text-align: left !important;
   unicode-bidi: plaintext !important;
 }
 
-/* All real headings and subheadings: color, font, side alignment, no center indentation */
-html[dir="rtl"] :where(main, #main) > :where(h2,h3,h4,h5,h6):not([id="authors-note"]):not([id="דבר-המחבר"]),
+/* All headings + exported paragraph-headings */
+html[dir="rtl"] :where(main, #main) > :where(h2,h3,h4,h5,h6),
 html[dir="rtl"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) :where(h2,h3,h4,h5,h6),
 html[dir="rtl"] :where(main, #main) p.bpi-heading-line {
   display: block !important;
@@ -546,7 +535,7 @@ html[dir="rtl"] :where(main, #main) p.bpi-heading-line {
   float: none !important;
 }
 
-html[dir="ltr"] :where(main, #main) > :where(h2,h3,h4,h5,h6):not([id="authors-note"]):not([id="דבר-המחבר"]),
+html[dir="ltr"] :where(main, #main) > :where(h2,h3,h4,h5,h6),
 html[dir="ltr"] :where(main, #main) > section:not(.cover):not(.cover-page):not(.title-page):not(.author-note-page):not(.document-screen-toc):not(#interactive-toc):not(#table-of-contents):not(#cover-page) :where(h2,h3,h4,h5,h6),
 html[dir="ltr"] :where(main, #main) p.bpi-heading-line {
   display: block !important;
@@ -564,7 +553,15 @@ html[dir="ltr"] :where(main, #main) p.bpi-heading-line {
   float: none !important;
 }
 
-/* Heading sizes */
+:where(main, #main) p.bpi-heading-line {
+  font-size: 20px !important;
+  line-height: 1.28 !important;
+  margin-top: 25px !important;
+  margin-bottom: 10px !important;
+  break-after: avoid !important;
+  page-break-after: avoid !important;
+}
+
 :where(main, #main) > h2,
 :where(main, #main) > section:not(.cover):not(.author-note-page):not(.document-screen-toc) h2 {
   font-size: 25px !important;
@@ -572,17 +569,9 @@ html[dir="ltr"] :where(main, #main) p.bpi-heading-line {
 }
 
 :where(main, #main) > h3,
-:where(main, #main) > section:not(.cover):not(.author-note-page):not(.document-screen-toc) h3,
-:where(main, #main) p.bpi-heading-line {
+:where(main, #main) > section:not(.cover):not(.author-note-page):not(.document-screen-toc) h3 {
   font-size: 20px !important;
   line-height: 1.28 !important;
-}
-
-:where(main, #main) p.bpi-heading-line {
-  margin-top: 25px !important;
-  margin-bottom: 10px !important;
-  break-after: avoid !important;
-  page-break-after: avoid !important;
 }
 
 /* Back to TOC / return controls */
@@ -597,14 +586,6 @@ html[dir="rtl"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to
   padding-inline-end: 0 !important;
 }
 
-html[dir="rtl"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to-toc,.document-backlink) a {
-  display: inline-block !important;
-  text-align: right !important;
-  direction: rtl !important;
-  margin-left: auto !important;
-  margin-right: 0 !important;
-}
-
 html[dir="ltr"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to-toc,.document-backlink) {
   display: block !important;
   width: 100% !important;
@@ -616,15 +597,7 @@ html[dir="ltr"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to
   padding-inline-end: 0 !important;
 }
 
-html[dir="ltr"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to-toc,.document-backlink) a {
-  display: inline-block !important;
-  text-align: left !important;
-  direction: ltr !important;
-  margin-left: 0 !important;
-  margin-right: auto !important;
-}
-
-/* Intentional centered zones stay intentional */
+/* Intentional centered zones */
 .cover, .cover *,
 .author-note-page, .author-note-page *,
 .document-screen-toc, .document-screen-toc *,
@@ -634,7 +607,7 @@ figure, figcaption,
   text-align: inherit;
 }
 
-/* ===== /BPI_FINAL_NO_FSTRING_LAYOUT_FIX_20260530 ===== */
+/* ===== /BPI_ALL_REMAINING_HEADING_LINES_FIX_20260530 ===== */
 </style>
 
 </head>
@@ -1470,7 +1443,7 @@ Intellect) מתגלה הכשל של אינטליגנציה ראשונית המב
 הנהר אינו בהכרח זיכרון של הסירה הקודמת, אלא לפעמים רגישות חדשה לזרם,
 סירוב פנימי לחזור אל אותו סלע, או תחושת זיהוי עמוקה שמופיעה לפני שהשכל
 יודע להסביר אותה.</p>
-<p>גלגול כחוק שימור וצבירת המודעות</p>
+<p class="bpi-heading-line">גלגול כחוק שימור וצבירת המודעות</p>
 <p>במונחים האלה, הגלגול הוא לא אמונה דתית שמודבקת מבחוץ על התאוריה, אלא
 מסקנה לוגית מתוך מגבלות הדגימה. חיים בודדים הם דגימה קטנה מדי של נקודת
 מבט אחת: מעט זמן, מעט גוף, מעט נסיבות, מעט שפה, מעט כוח. אם השלם מבקש
@@ -3830,7 +3803,7 @@ Power</p>
 יודע שהן אינן אותו דבר.</p>
 <p>Authority ≠ Truth</p>
 <p>או:</p>
-<p>סמכות ≠ אמת</p>
+<p class="bpi-heading-line">סמכות ≠ אמת</p>
 <p>סמכות יכולה להפוך הכרעה למחייבת בתוך מסגרת נתונה; היא אינה יכולה
 להפוך אותה לנכונה.</p>
 <p>הממשלה יכולה להחליט. החוק יכול לחייב. בית המשפט יכול לפסוק. הרוב יכול
@@ -4779,10 +4752,10 @@ Information Distortion ↑ Administrative Friction ↑</p>
 ההמילטוניאן הוא האופרטור שמייצג את האנרגיה של המערכת, ובמערכות רבות הוא
 גם המחולל של התפתחות בזמן.</p>
 <p>בצורה הסכמטית ביותר, ההתפתחות הקוונטית של מערכת סגורה נכתבת כך:</p>
-<p><strong>iℏ ∂|ψ(t)⟩ / ∂t = Ĥ|ψ(t)⟩</strong></p>
+<p class="bpi-heading-line"><strong>iℏ ∂|ψ(t)⟩ / ∂t = Ĥ|ψ(t)⟩</strong></p>
 <p>כאשר ההמילטוניאן אינו תלוי בזמן, אפשר לכתוב את אופרטור ההתפתחות
 כך:</p>
-<p><strong>U(t)=e^{-iĤt/ℏ}</strong></p>
+<p class="bpi-heading-line"><strong>U(t)=e^{-iĤt/ℏ}</strong></p>
 <p>במקרה כללי יותר, כאשר ההמילטוניאן תלוי בזמן, צריך להשתמש באופרטור
 התפתחות עם סידור בזמן:</p>
 <p><strong>U(t,t₀)=𝒯 exp[-(i/ℏ)∫ₜ₀ᵗ Ĥ(t′)dt′]</strong></p>
@@ -4853,9 +4826,9 @@ Information Distortion ↑ Administrative Friction ↑</p>
 <p>בתורת היחסות הכללית, חומר אינו רק “נמצא” בתוך מרחב. טנזור האנרגיה־תנע
 קשור לגיאומטריה של המרחב־זמן. בניסוח סמלי, משוואות איינשטיין קושרות בין
 הגיאומטריה של המרחב־זמן לבין תוכן האנרגיה־תנע שבתוכו:</p>
-<p><strong>Gμν + Λgμν = 8πG/c^4 · Tμν</strong></p>
+<p class="bpi-heading-line"><strong>Gμν + Λgμν = 8πG/c^4 · Tμν</strong></p>
 <p>בצורה מפושטת, כאשר מתעלמים מן הקבוע הקוסמולוגי, כותבים לעיתים:</p>
-<p><strong>Gμν = 8πG/c^4 · Tμν</strong></p>
+<p class="bpi-heading-line"><strong>Gμν = 8πG/c^4 · Tμν</strong></p>
 <p>הצד השמאלי מתאר את הגיאומטריה של המרחב־זמן. הצד הימני מתאר את תוכן
 האנרגיה־תנע: אנרגיה, מסה, לחץ, שטף ותנע. כלומר, מה שיש לו אנרגיה ותנע
 אינו רק אובייקט על במה קיימת; בתוך היחסות הכללית הוא משתתף בעיצוב הבמה
@@ -4892,11 +4865,11 @@ Information Distortion ↑ Administrative Friction ↑</p>
 כאשר אומרים שמסה היא צורה של אנרגיה, הכוונה היא שמסת מנוחה תורמת לאנרגיה
 הכוללת של המערכת. עבור גוף במנוחה, האנרגיה העצמית שלו ניתנת לביטוי
 כך:</p>
-<p><strong>E₀=mc^2</strong></p>
+<p class="bpi-heading-line"><strong>E₀=mc^2</strong></p>
 <p>ובצורה כללית יותר, היחס בין אנרגיה, תנע ומסה נכתב כך:</p>
-<p><strong>E²=p²c<sup>2+m²c</sup>4</strong></p>
+<p class="bpi-heading-line"><strong>E²=p²c<sup>2+m²c</sup>4</strong></p>
 <p>כאשר מסת המנוחה היא אפס, כמו במקרה של פוטון, מתקבל:</p>
-<p><strong>E=pc</strong></p>
+<p class="bpi-heading-line"><strong>E=pc</strong></p>
 <p>המשמעות אינה שחומר הוא “ההפך” מאנרגיה, אלא שמסה היא צורה שבה אנרגיה
 מופיעה כמשהו בעל אינרציה, יציבות, התנגדות לשינוי ומסלול בזמן. חלקיק חסר
 מסת מנוחה, כמו פוטון, אינו “חווה זמן” במובן הרגיל; למעשה, אין לפוטון
@@ -4919,15 +4892,15 @@ Information Distortion ↑ Administrative Friction ↑</p>
 זוג בנוכחות גרעין או שדה חיצוני שיכול לספוג תנע.</p>
 <p>אחת הצורות הנקיות לחשוב על מעבר מאור לחומר היא יצירת זוגות בתהליך
 שני־פוטוני:</p>
-<p><strong>γ + γ → e⁻ + e⁺</strong></p>
+<p class="bpi-heading-line"><strong>γ + γ → e⁻ + e⁺</strong></p>
 <p>תנאי הסף תלוי באנרגיית מרכז המסה וגם בזווית בין הפוטונים. בניסוח
 אינווריאנטי, עבור שני פוטונים בעלי אנרגיות <strong>E₁</strong>
 ו־<strong>E₂</strong> וזווית <strong>θ</strong> ביניהם:</p>
-<p><strong>2E₁E₂(1 − cosθ) ≥ (2mₑc^2)²</strong></p>
+<p class="bpi-heading-line"><strong>2E₁E₂(1 − cosθ) ≥ (2mₑc^2)²</strong></p>
 <p>במקרה של התנגשות חזיתית, כאשר <strong>θ=π</strong>, התנאי קל יותר
 למימוש מאשר כאשר הפוטונים נעים כמעט באותו כיוון. בכיוון ההפוך, אלקטרון
 ופוזיטרון יכולים להתאיין ולהפוך לפוטונים:</p>
-<p><strong>e⁻ + e⁺ → γ + γ</strong></p>
+<p class="bpi-heading-line"><strong>e⁻ + e⁺ → γ + γ</strong></p>
 <p>זה אינו מעגל קסם, ואינו מכונת תנועה מתמדת. זה מעבר מותנה בין צורות
 הופעה של אותה ממשות פיזיקלית: מסה יכולה להשתחרר כאנרגיה, ואנרגיה יכולה
 להתארגן כחלקיקים — אבל רק כאשר החוק מאפשר זאת.</p>
@@ -5058,7 +5031,7 @@ Information Distortion ↑ Administrative Friction ↑</p>
 הקיצוניות המתמטית בתיאור הקלאסי מופיעה בסינגולריות, לא בהכרח באופק.</p>
 <p>במקרה האידיאלי של חור שחור שוורצשילד — לא מסתובב ולא טעון — רדיוס
 אופק האירועים ניתן על ידי:</p>
-<p><strong>r_s=2GM/c^2</strong></p>
+<p class="bpi-heading-line"><strong>r_s=2GM/c^2</strong></p>
 <p>אבל זה מודל אידיאלי. חורים שחורים אסטרופיזיקליים צפויים בדרך כלל
 להיות מסתובבים, ולכן המקרה הכללי יותר מתואר על ידי פתרונות מסוג Kerr. גם
 שם יש אופקים, אבל המבנה עשיר ומורכב יותר.</p>
@@ -5082,11 +5055,11 @@ Information Distortion ↑ Administrative Friction ↑</p>
 <p>כאן נכנסות קרינת הוקינג ואנטרופיית בקנשטיין־הוקינג. חור שחור אינו רק
 בור קלאסי ששותק לנצח; לפי חישוב קוונטי על רקע מרחב־זמן עקום, הוא אמור
 לפלוט קרינה תרמית. עבור חור שחור שוורצשילד, הטמפרטורה נכתבת כך:</p>
-<p><strong>T_H=ℏc³/8πGMkB</strong></p>
+<p class="bpi-heading-line"><strong>T_H=ℏc³/8πGMkB</strong></p>
 <p>והאנטרופיה שלו פרופורציונית לשטח האופק, לא לנפח:</p>
-<p><strong>S_BH=kBc³A/4Gℏ</strong></p>
+<p class="bpi-heading-line"><strong>S_BH=kBc³A/4Gℏ</strong></p>
 <p>או בקיצור:</p>
-<p><strong>S_BH=kBA/4l_P²</strong></p>
+<p class="bpi-heading-line"><strong>S_BH=kBA/4l_P²</strong></p>
 <p>הניסוח המדויק הוא שלאופק משויכת אנטרופיה פרופורציונית לשטחו, ולכן הוא
 אינו רק גבול גיאומטרי אלא גם אובייקט תרמודינמי עמוק. אבל אם הקרינה נראית
 תרמית לגמרי, ואם החור השחור מתאדה לחלוטין, נדמה שמידע על המצב המקורי
