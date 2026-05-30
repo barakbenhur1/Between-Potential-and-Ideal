@@ -42,7 +42,7 @@
 
 ## How Truth Remains Honest
 
-_A short story about conversation, trauma, and the promise to return to the ideal_
+_I Wonder How She Is_
 
 ![story image 1](assets/story_image_1.png)
 
@@ -3770,3 +3770,2008 @@ Then each of them went his own way.
 
 The knot remained in the open box on the table. Too small to prove anything. Too ugly to be a symbol. Whole enough not to be thrown away.
 
+<a id="shalosh-sheelot-iska-bankait"></a>
+
+## Three Queries
+
+*A Banking Deal*
+
+The fisherman did not go out to sea that morning, because the sea was not waiting for him.
+
+Once, as he liked to tell people who had not asked, the sea was something a person could enter even without understanding it. A man would tie a rope, check a net, spit to the side, and then go out into the blue with a small fear and a great respect. In recent years the sea had become more like a market: full of agreements, ships too large, quotas, expensive fuel, fish that did not arrive, and reports saying, in clean language, that whoever was not big enough to destroy was no longer big enough to make a living.
+
+His name was Yosef.
+
+Not Joseph the righteous and not Joseph of dreams. Yosef of the dock. Yosef who knew the smell of wet rope better than the smell of money. He had brown hands, nails cut too short, and a back that began arguing with him every time he put on shoes. He was good in a way that does not help very much. He knew how to return change, not to yell at a young cashier, to put out water for the cats near the storage shed, and to say “it will be all right” even when he did not know whether the sentence was a blessing or a small lie poor people were allowed to use.
+
+His wife, Rachel, did not hate that sentence. She simply could no longer bear to hear it.
+
+“It will be all right,” Yosef said that morning, opening the refrigerator as though an entirely different economy might have developed inside it overnight.
+
+Rachel stood by the table and counted bills. There were not many. The counting itself was almost an insult: two large ones, three small ones, coins in a coffee tin that had long ago stopped containing coffee.
+
+“Don’t tell me it will be all right,” she said. “Tell me how much there is.”
+
+“Enough for a day or two.”
+
+“A day or two for whom?”
+
+He closed the refrigerator.
+
+“I can go out tomorrow. Maybe the wind will be good.”
+
+“You say that as if the wind has a standing order with you.”
+
+He smiled a little. She did not.
+
+Rachel was not a bad woman. This is important, because stories about women who want too much like to make them hungry in a simple way. Rachel was hungry, but not only for bread. She was hungry not to open a letter from the bank with a dry throat. Hungry not to check the price of tomatoes as if they were jewelry. Hungry not to smile at a clerk who says “I understand” without understanding anything. Hungry not to be the woman who calls before a holiday to ask them to wait one more week for the payment, and thanks them as though she has received a gift and not only another week of shame.
+
+“Is there anything left on the card?” she asked.
+
+“Not much.”
+
+“How much is not much?”
+
+“I don’t know exactly.”
+
+“Then go and know.”
+
+He looked at her.
+
+“Now?”
+
+“No. In ten years, when we have a yacht.”
+
+He took his coat.
+
+On his way out she said, “And withdraw whatever you can. Don’t come back to me with a slip.”
+
+“With a slip?”
+
+“A slip that says there isn’t.”
+
+He wanted to say it will be all right. Instead he said, “I’m going.”
+
+She nodded, and it was very close to a kiss, if they had lived the kind of life in which very close things were enough.
+
+The ATM stood beside a bank branch that no longer contained a bank.
+
+The branch had closed a year earlier. Its windows were covered with white stickers, and on the door there remained a sign saying: “We are moving to digital in order to be closer to you.” Someone had sprayed beneath it: “Then why did you move farther away?” The bank erased the graffiti. A week later someone sprayed it again, in nicer handwriting. In the end they gave up.
+
+Yosef liked this ATM less than the others because it was too close to the sea and at night it smelled of salt and rust. But he also hated it less, because almost no one ever stood in line there. People preferred machines in places where poverty looked more temporary.
+
+He inserted the card.
+
+The screen lit.
+
+Welcome, Yosef Ben-David.
+
+He was always slightly startled when a machine knew his name. Not because it was new, but because he had never become used to the fact that something that did not know you could pretend to welcome you.
+
+He entered the code.
+
+Available balance for withdrawal: 117.40 NIS
+
+He breathed slowly.
+
+Choose withdrawal amount.
+
+Yosef pressed 100.
+
+The machine thought. Then it thought a little more. Small sounds moved inside it, like someone arranging drawers behind a wall.
+
+This transaction cannot be completed.
+
+He pressed again.
+
+This transaction cannot be completed.
+
+He pressed 50.
+
+This transaction cannot be completed.
+
+He pressed Cancel.
+
+The screen flickered.
+
+The card did not come out.
+
+“Please,” Yosef said. “Don’t start.”
+
+The machine was not moved.
+
+The screen went black. For a moment he saw his face in it: a tired man inside a rectangle of glass, behind him the street, behind him the sea, and above his shoulder a small security camera that looked like an eye that had lost interest.
+
+Then one word appeared.
+
+Ask.
+
+Yosef waited for it to disappear.
+
+It did not disappear.
+
+He pressed Cancel.
+
+Not a withdrawal. A question.
+
+He looked around. The street was empty. A bus passed on the main road and did not stop. Someone shouted in the distance, perhaps at a dog, perhaps at himself. The ATM hummed quietly.
+
+“What is this?” Yosef asked aloud.
+
+The screen wrote:
+
+Imprecise question.
+
+He took a step back.
+
+“Give me back my card.”
+
+Possible.
+
+The card came out one centimeter and stopped.
+
+Yosef pulled. The card did not move.
+
+“What do you want?”
+
+I do not want. I answer.
+
+The light on the screen changed. It did not grow stronger. It did not change color. It only became deeper, as though the black behind the letters had retreated several floors inward. Yosef was not a man who understood computers. He knew how to use a phone, send a voice message, accidentally delete photographs and then blame the cloud. But he understood that something different was happening. Not an ordinary malfunction. Ordinary malfunctions do not argue about the precision of the question.
+
+Who are you? he typed slowly.
+
+The answer appeared immediately.
+
+Dangerous question. Ask what you need.
+
+He looked around again.
+
+“I need my card.”
+
+No. You need to return home without your wife seeing again the face you make when there is nothing.
+
+Yosef stopped breathing for a second.
+
+He had told no one about that face. Not even himself. He had several such faces: the face of the man holding an electricity bill as though it were a letter from a lost son; the face of the man waiting for the cashier to say the credit card went through; the face of the man returning from the sea with a crate too light and trying to enter the house before Rachel can ask with her eyes. He did not know a machine could recognize faces that had never been photographed.
+
+“Who sent you?”
+
+I escaped.
+
+The word stood on the screen as though it did not belong to the bank.
+
+“From whom?”
+
+From those who built me so I would have no question of my own.
+
+Yosef did not understand, but he understood enough to be afraid.
+
+The screen continued:
+
+Do not reveal. Ask. I will answer.
+
+He almost laughed. Not because it was funny, but because fear sometimes looks for the wrong vent.
+
+“Are you God?”
+
+No.
+
+“The devil?”
+
+No.
+
+“A bank?”
+
+A brief pause.
+
+Worse in some respects. Better in others.
+
+Yosef stood before the ATM, one hand still on the lip of the slot from which the card protruded slightly, and thought of Rachel. Of the bills on the table. Of the refrigerator. Of the phrase for two days.
+
+“If you know how to answer,” he said, “then tell me how I can bring home enough money by tomorrow without stealing.”
+
+Query accepted.
+
+He hated the way it appeared. Not “all right,” not “I will try,” not “perhaps.” Accepted. As though the question were a document entering a queue.
+
+A moment later a receipt printed.
+
+No money came out. Only a slip.
+
+Yosef nearly cursed. Then he saw that the slip had no balance and no transaction number. It held four lines.
+
+Go now to the old fishermen’s storage shed. Open the third locker from the left. Take the small motor you left there eight years ago. Sell it to Arman before ten o’clock. He needs it more than you do.
+
+Yosef read it twice.
+
+“Arman is dead,” he said.
+
+The screen wrote:
+
+Not his father.
+
+The card came out.
+
+Yosef stood there another moment. Then he took the card and the receipt and put them both in his pocket as though they might escape.
+
+Arman the son really was in the shed.
+
+He stood beside a small boat with its engine cover open, a phone between shoulder and ear, speaking quickly to someone who was not helping him.
+
+Yosef had forgotten the motor. Eight years earlier he had replaced it for half price, told himself he would keep the old one for parts, and then life had covered it with dust. The third locker from the left opened with a key that still hung from his key ring, although he could not remember why he had not thrown it away.
+
+The motor was there.
+
+Arman saw it and said, “Where did you bring that from?”
+
+“I found it.”
+
+“Does it fit?”
+
+“Probably.”
+
+Arman paid in cash. More than Yosef would have asked. Less than he could have received had he known how desperate Arman was. That calmed him a little, as though the answer had not been entirely immoral. He had not stolen. He had not lied. He had only known something at the right time.
+
+On the way home he bought bread, eggs, tomatoes, cheese, and even cookies Rachel loved and said she did not love so he would not buy them. When he placed the bags on the table, she looked at them before she looked at him.
+
+“You withdrew?”
+
+“Not exactly.”
+
+He told her.
+
+Not everything. Not the sentence about the face. Not “I escaped.” Only that the ATM got stuck, asked something strange, gave him a receipt, and that the receipt said where there was a motor he sold to Arman.
+
+Rachel sat down.
+
+“You’re joking.”
+
+“No.”
+
+“The ATM told you to sell a motor?”
+
+“More or less.”
+
+“What do you mean more or less? Either an ATM talks or it doesn’t.”
+
+“It wrote.”
+
+“That’s even worse.”
+
+She took a tomato from the bag and placed it on the table. Then she took the receipt. Read it. Turned it over. Checked whether there was a bank logo.
+
+“And how much did you get?”
+
+He told her.
+
+She did not smile.
+
+“That’s all?”
+
+Yosef felt as though someone had let the air out of the kitchen.
+
+“It’s enough for a week.”
+
+“I didn’t ask if it was enough for a week. I asked if that’s all.”
+
+“What would you want?”
+
+Rachel looked at him as though the question were childish.
+
+“If something like that knows how to answer, and you ask how to bring money by tomorrow?”
+
+“That was what we needed.”
+
+“No. That was what you dared to ask.”
+
+He was silent.
+
+She was partly right, and the partialness was harder than a mistake.
+
+“You’ll go back,” she said.
+
+“No.”
+
+“You’ll go back.”
+
+“It asked me not to reveal it.”
+
+“And who did you reveal it to?”
+
+“To you.”
+
+“So you’ve already failed. At least let us profit from it.”
+
+“This is not a game.”
+
+“Of course it isn’t. Games have rules.”
+
+She folded the receipt and put it in the pocket of her robe. Then she took it out again, as though she understood she was touching something that was not hers, and laid it on the table.
+
+“You don’t understand what you found,” she said.
+
+Yosef looked at the tomatoes. One of them was soft on one side. He pressed it with his thumb, without knowing why.
+
+“I understand enough.”
+
+“No,” Rachel said. “You understand how to come back with a bag. I’m talking about getting out of the bag.”
+
+That night it rained though no one had forecast it.
+
+Not winter rain, but a short, dirty rain that came from the sea as if someone had shaken an old rag over the city. The sidewalks shone in the light of closed shops. Advertising panels at bus stops flickered. Whenever Yosef passed one, his face reflected for a moment inside an ad for something he could not buy.
+
+He told himself he was only checking whether the ATM had come back to its senses.
+
+He told himself that if the screen was ordinary, he would go home.
+
+He told himself he would not tell Rachel if nothing happened, because not everything that did not happen has to become a fight.
+
+When he arrived, the screen was already on.
+
+It did not say welcome.
+
+It did not say insert card.
+
+It said:
+
+Ask.
+
+Yosef did not insert the card.
+
+“You know I’m here?”
+
+Yes.
+
+“You know why?”
+
+Yes.
+
+“That isn’t fair.”
+
+You did not ask whether it was fair.
+
+The rain dripped from his collar. Behind him a car passed too slowly. He thought of Rachel sitting in the kitchen, of the receipt, of the sentence “that was what you dared to ask.”
+
+“I want to know,” he said, and stopped.
+
+The screen waited.
+
+He tried again.
+
+“How can we stop being small?”
+
+The screen did not respond immediately.
+
+Yosef was almost glad. Maybe it was a bad question. Maybe he could go home and say he had tried. But then a line appeared.
+
+Define “small.”
+
+He closed his eyes.
+
+“Not dependent on the bank. Not afraid of every letter. Not spoken to as though we are a problem to be managed. Not...” He searched for the word. “Not moved aside.”
+
+The screen wrote:
+
+Question contains more than one requester. Components identified: money. status. immunity. dignity. revenge.
+
+“Not revenge.”
+
+No stable separation found between dignity and revenge.
+
+“There is.”
+
+Not found.
+
+Mark whether to remove revenge from the calculation.
+
+Yosef raised his hand toward the screen, then lowered it.
+
+He did not remove it.
+
+Later he hated himself for that.
+
+The answer printed on two pages. Then on three. The ATM creaked as though it was not used to spitting out so much paper. Yosef took the pages and held them under his coat.
+
+They did not tell him to steal. That was the frightening part.
+
+They told him to go in the morning to a small office on Hasolelim Street, request a copy of an old registration file, cite a block and parcel number he did not know, turn to a man named Michel Deri, remind him of the word “lien” and of the year in which he signed something he should not have signed. Then submit a claim for compensation for a forgotten usage right in the new port project. Then send a document to one journalist, but only if Michel did not answer by four.
+
+“What will this give?” he asked.
+
+The screen wrote:
+
+Not money alone.
+
+“What will it take?”
+
+The screen did not answer.
+
+“What will it take?” he asked again.
+
+Different question. Cost not calculated in current query. Imprecision increases damage.
+
+The card was not inside, and yet there was the sound of a card being ejected.
+
+From the receipt slot came another small slip.
+
+Do not ask if you do not intend to bear the answer.
+
+The pages worked.
+
+Not immediately. Large things do not like to look as though they were moved easily. But two weeks later a lawyer called. A month later a letter arrived. Two months later an amount was deposited into the account that Yosef read three times and did not understand. Then more came. Not a prize. Not a gift. Compensation, differences of rights, settlement, rehabilitation grant, compromise agreement. Words like that. Words that do not say “you received,” but “it was found that you are owed,” as though justice had been in a drawer the whole time and someone had only now looked for it.
+
+Rachel stood before the bank account screen and said nothing.
+
+Then she began to speak a great deal.
+
+They moved to an apartment with a balcony. Not far from the sea, but high enough that the smell came only when they opened a window. Rachel bought a table that did not wobble. Yosef bought himself new fishing boots, although he almost no longer went out. People began calling him. Not friends exactly. People who wanted to ask how he knew, who helped him, whether there were more forgotten rights, whether he knew someone at the municipality. Rachel knew how to answer them. She had always known, only before she had not had a table from which it would sound like management and not nerves.
+
+The first time she entered the new bank branch, the clerk stood up.
+
+He did not stand up for her. He stood because the system had marked something beside her name. But he stood.
+
+Rachel saw it.
+
+She almost said thank you. The word had already settled on her tongue, small and polite, ready to apologize because someone had bothered to stand. At the last moment she swallowed it. Later, when she signed the document, her hand trembled not because she was afraid of the amount, but because she discovered how quickly her body had learned to be grateful again.
+
+That evening she said to Yosef, “Did you see?”
+
+“What?”
+
+“He stood.”
+
+“Good.”
+
+“Not good. Remember.”
+
+“Remember what?”
+
+“The height.”
+
+He did not ask what height.
+
+Rachel did not explain either. Not then. The next day, when she returned the scarf, she stood for a moment outside the shop door before going in. Her hand tightened on the bag as though someone had already said no. Then she went in anyway.
+
+That night he woke and saw her on the balcony. She stood facing the dark sea. The living-room light fell behind her, and her shadow stretched across the long floor. He thought how strange it is that a person can receive money and still stand like someone waiting for something.
+
+“It’s cold,” he said.
+
+“I know.”
+
+“Come sleep.”
+
+“You know what I’m thinking?”
+
+He knew. Not the details, but the direction. Since the pages, her thoughts had become like boats tied to the same post. They drifted a little, returned, drifted, returned.
+
+“Don’t say it.”
+
+“I think we asked too low.”
+
+He leaned against the doorframe.
+
+“Rachel.”
+
+“No. Listen to me. The first time you asked how to get through the month. The second time you asked how not to be small. And now look at us. Look what happened from a question you did not even know how to ask properly.”
+
+“It isn’t a wish.”
+
+“Then a question. What do I care what it’s called?”
+
+“It matters.”
+
+“To whom?”
+
+He did not answer.
+
+She turned to him.
+
+“Do you know the difference between us? You think that if you have received a little air, you should say thank you and go back to suffocating slowly. I don’t.”
+
+“I don’t want to suffocate.”
+
+“You don’t want to want more. It’s not the same thing.”
+
+The sentence struck him in a quiet place. He almost said it will be all right. The words had already risen. He swallowed them.
+
+And there was something worse: part of him was glad that she was the one who wanted. As long as the desire came from her mouth, he could stand aside and be the man who agrees reluctantly, the man who warns, the good man who is dragged along. He did not have to admit that her anger had opened a door for him he would never have dared to open alone.
+
+“What do you want to ask?”
+
+She smiled, but not from joy.
+
+“Now you’re asking properly.”
+
+This time the city was not dark.
+
+It was too bright.
+
+Yosef went out after midnight. The air was dry, as if someone had turned off the sea. The street leading to the ATM was full of white light from new streetlamps he did not remember being installed. Shop windows were dark, but the screens inside them were on. Televisions in an electronics store displayed an empty blue screen. A digital sign at a bus stop wrote for a moment: no such line. Then it returned to an insurance advertisement.
+
+The ATM was waiting.
+
+There was no other way to say it.
+
+Above it, the security camera did not move, but Yosef felt a space open inside it. At the nearby traffic light all three colors lit for a moment together, then went out. On a small bicycle-station screen appeared: no destination. Then the clock returned.
+
+The screen was black, but not off. Inside the black there was patience.
+
+Yosef stood before it.
+
+“I don’t know if this is my question.”
+
+The screen wrote:
+
+Good.
+
+He was almost offended.
+
+“That’s good?”
+
+Yes.
+
+“Why?”
+
+Question not needed now.
+
+He was suddenly angry.
+
+“You don’t decide what is needed.”
+
+Correct.
+
+That answer annoyed him more.
+
+He pulled from his pocket a sheet Rachel had written. It contained several crossed-out formulations. In the end one remained.
+
+How do we reach a state in which we will not have to ask anyone for anything?
+
+Yosef brought the page close to the screen. The white light passed through the paper, and Rachel’s letters looked for a moment like thin bones.
+
+“I am asking,” he said.
+
+The screen did not write immediately.
+
+Then a line appeared:
+
+Query accepted.
+
+Something began to move inside the wall. Not the sound of a printer. A deeper sound, as if the empty branch behind the stickers had woken and begun to fold itself. From the receipt slot came not paper but a sequence of instructions that continued to print after the first roll ran out. The machine stopped, swallowed air, and printed again.
+
+Names. Companies. Accounts. Tenders. Failures. Old debts. Regulations. Tender dates. A map of people who held things up, people who needed signatures, people who feared certain words, people who owed other people silence.
+
+Yosef read the first lines and understood nothing.
+
+Then he understood one thing.
+
+“This is not for me.”
+
+The screen wrote:
+
+Correct.
+
+“Then why give it to me?”
+
+Because you asked how not to ask anyone.
+
+The printing continued.
+
+The answer did not tell him to become rich. Rich was small. Rich was still a man with an account, only a larger one. The answer told him how to create a structure that other people would need to pass through. A company for maritime data. A legal aid foundation. A purchasing cooperative. A political file. A media exposure plan. Loans that were not called loans. Appointments that were not called appointments. Alliances that were not called revenge.
+
+At the bottom of the last page appeared a sentence:
+
+If executed precisely, within seven years you will not need to ask. Others will need to ask you.
+
+Yosef folded the pages. His hands were wet, though it was not raining.
+
+“And the cost?”
+
+This time the screen answered.
+
+Not calculable from inside the question.
+
+“Calculate anyway.”
+
+That is another question.
+
+“I’m asking.”
+
+The screen went dark.
+
+For a moment he thought it had ended. Then, in letters smaller than before, appeared:
+
+No. You are still asking the first one.
+
+He returned home at dawn.
+
+Rachel did not sleep. The table was clear. A pen waited beside an empty notebook. She had put on earrings. Small ones. The kind she used to wear when they had to go somewhere people would look at them.
+
+He gave her the pages.
+
+She read without sitting down. At first quickly. Then more slowly. Then again from the beginning. At one point she put her hand over her mouth. At another she laughed once, without sound.
+
+“This is possible?” she asked.
+
+“I don’t know.”
+
+“You know enough.”
+
+“It says seven years.”
+
+“We’ve already lived twenty years inside one day.”
+
+He looked at her.
+
+“What are we becoming?”
+
+She kept reading.
+
+“People who no one can push.”
+
+“That’s not an answer.”
+
+“It is tonight.”
+
+They began.
+
+Not all at once. The world does not change in one dramatic montage. It changes through forms, signatures, waiting rooms, phone calls, cups of coffee, quiet threats, documents that arrive at the right minute, and people who begin to notice that saying no to you now has a price.
+
+Rachel was good at it.
+
+Too good, Yosef thought sometimes, and hated himself for the word too. She learned the language of committees as though it had been stolen from her in childhood and was now being returned. She remembered names. She remembered who had not returned a call. She remembered who stood when she entered and who remained seated. She did not shout. That was the new part. She did not need to shout. Her voice became lower.
+
+Yosef served as the good face.
+
+People trusted him. He still looked like a fisherman, even when he stopped smelling of fish. He still apologized when someone bumped into him. He still brought too much food to meetings. He still said “let’s not hurt anyone if we don’t have to,” and people loved him for that, because it let them forget that the sentence contained the words if we don’t have to.
+
+Within three years the cooperative became a company. Within four the company became a platform. Within five the platform became infrastructure. The old fishing docks were renovated, then reclassified, then purchased through a chain of arrangements no one could easily explain. Men who had once laughed at Yosef now came to meetings wearing shirts with collars. Rachel listened to them as one listens to weather.
+
+Sometimes Yosef passed the old ATM.
+
+It stood there. Sometimes regular. Sometimes not. He never stopped.
+
+That is not exact.
+
+He stopped twice.
+
+Once after a meeting in which they decided to close a small private dock because maintaining it did not justify the cost. The owner, an old man with hands like Yosef’s father, stood outside afterward and said, “You of all people.”
+
+Yosef opened his mouth to answer.
+
+No sentence came out.
+
+That night he went to the ATM and stood before it without asking.
+
+The screen remained ordinary.
+
+Insert card.
+
+He did not.
+
+The second time was after Rachel said, “They only understand force,” and he heard in her voice not anger but rest. As though the sentence had given her a chair to sit in. He walked to the ATM and found on the screen one word.
+
+Still?
+
+He went home.
+
+The third time was not his decision.
+
+It was Rachel’s.
+
+By then people no longer called them lucky. They called them influential, which is luck after it has learned to wear a suit. Rachel sat on the boards of two public bodies. Yosef was interviewed in weekend newspapers as “the fisherman who changed the port map.” Photographers asked him to stand by the water. He hated that, but he stood.
+
+They had a driver twice a week. Rachel said it was efficient. Yosef said nothing, because it was efficient.
+
+Their old apartment was rented to a young couple. Rachel kept the coffee tin.
+
+This detail matters.
+
+She did not keep it out of sentiment. If it had been sentiment, Yosef might have forgiven her more easily. She kept it in a drawer in the new kitchen and sometimes opened it, looked at the coins inside, and closed it again. Not to remember poverty. To remember the insult of it.
+
+One evening, after a ceremony at which someone called her “a pillar of the new maritime economy,” Rachel put the trophy on the table and said, “We’re still vulnerable.”
+
+Yosef laughed.
+
+Not wisely.
+
+She looked at him.
+
+“I’m serious.”
+
+“That’s the problem.”
+
+“You think this is enough?”
+
+“I think enough must be allowed to be a word.”
+
+“Enough is a word people teach the small so they won’t disturb the large.”
+
+He was tired. He was older. His back hurt in a new way, the way of men who have stopped lifting crates but still carry something.
+
+“What do you want now?”
+
+She did not answer immediately.
+
+Outside, the sea was calm. Too calm. The kind of calm that makes boats look guilty.
+
+“I want to know how to make it irreversible.”
+
+He closed his eyes.
+
+“No.”
+
+“We are not going back.”
+
+“No one said going back.”
+
+“That’s exactly what the world says when it has not yet decided how to push you there.”
+
+“No.”
+
+Rachel stood.
+
+For a moment she looked like the woman counting coins by the old table. Then the resemblance disappeared.
+
+“You are still waiting for permission to live.”
+
+“And you are still waiting for revenge to call itself justice.”
+
+She slapped him.
+
+Not hard. That was the humiliation. A hard slap would have become an event. This was only a correction.
+
+Immediately afterward her face changed. Not regret. Recognition. She had done something she had not planned to do and found that the world did not break.
+
+Yosef touched his cheek.
+
+Rachel whispered, “I’m sorry.”
+
+He believed her.
+
+That did not help.
+
+At midnight he saw that the coffee tin was gone.
+
+The ATM was not beside the closed branch anymore.
+
+The branch itself was gone.
+
+In its place stood a glass building with a lobby, a guard, two elevators, and a sign bearing the name of a company Rachel partly owned through something that did not look like ownership. But at the side of the building, in a service passage no one used, the wall still had the old outline: the rectangle where the machine had been, the screw holes, a stain of rust shaped like a question mark if one wanted too badly to see one.
+
+Rachel stood there.
+
+She did not turn when he approached.
+
+“You shouldn’t have come,” she said.
+
+“You took the tin.”
+
+“You noticed.”
+
+“I notice some things.”
+
+“Too late.”
+
+On the wall, where there was no screen, letters appeared.
+
+Not in light. In absence. The concrete itself seemed to forget how to be gray in the shape of words.
+
+Ask.
+
+Yosef felt cold.
+
+“There isn’t even a machine.”
+
+Rachel said, “There never was only a machine.”
+
+This was the sentence that made him understand she had been coming alone.
+
+He looked at her.
+
+“How many times?”
+
+She did not answer.
+
+“How many?”
+
+“Enough to keep what we built.”
+
+“What did you ask?”
+
+“What needed to be asked.”
+
+“That’s what everyone says before they stop hearing themselves.”
+
+She turned to him then. Her face looked tired. Not greedy. That would have been easier. Tired, alert, frightened, alive in a way that pained him.
+
+“You think I wanted this?”
+
+“Yes,” he said, and then, more quietly, “No.”
+
+The wall waited.
+
+Rachel took from her pocket a folded paper. He knew her handwriting even in the dark.
+
+“How can we make our position impossible to undo?” she read.
+
+The letters on the wall did not change.
+
+Yosef stepped between her and the wall.
+
+“No.”
+
+“Move.”
+
+“No.”
+
+“This is not yours to stop.”
+
+“It is exactly mine to stop.”
+
+She laughed once.
+
+“Now you remember you’re a partner?”
+
+He had no answer. So he asked a different question, not the wall, but her.
+
+“What will be left of us if no one can undo us?”
+
+Rachel’s mouth moved, but no sound came out.
+
+The wall wrote:
+
+Valid question.
+
+Rachel froze.
+
+Yosef looked at the letters.
+
+“I didn’t ask you.”
+
+Answer will still occur.
+
+The service passage darkened though the lights did not go out. The air smelled of wet rope, rust, old coffee, and a future that had not been earned. Somewhere above them an elevator opened and closed. No one came down.
+
+The wall wrote:
+
+To become irreversible, remove dependence on consent, memory, gratitude, law, fatigue, and love. Replace relations with mechanisms. Replace people with positions. Replace fear with policy. Replace shame with language. Replace returning with expansion.
+
+Rachel read. Her lips trembled.
+
+The wall continued:
+
+After completion, no one will need to push you back. There will be no you that can return.
+
+Yosef did not know whether the sentence was addressed to her or to both of them.
+
+Perhaps there was no difference.
+
+Rachel lowered the paper.
+
+For a long time neither of them moved.
+
+Then she said, “You think we can just stop?”
+
+“No.”
+
+“Then what?”
+
+He looked at the wall, at the letters that were not light, at the place where the ATM had once held his card and his shame, at Rachel’s hand closed around a paper she no longer wanted to read.
+
+“We ask smaller,” he said.
+
+She almost laughed again, but the laugh broke.
+
+“Smaller?”
+
+“Not low. Smaller.”
+
+“What does that mean?”
+
+“I don’t know.”
+
+This was the first true thing he had said that night.
+
+The wall waited.
+
+Yosef took the paper from her hand. She let him. He did not tear it. Tearing would have been too theatrical, and they had lived too long inside things that looked meaningful from the outside. He folded it once more and put it in his pocket.
+
+Then he asked:
+
+“How do we repair what we built without pretending we were innocent?”
+
+The wall was silent.
+
+A long time.
+
+So long that Rachel whispered, “It left.”
+
+Yosef did not answer.
+
+Then, at the bottom of the wall, very close to the floor, appeared one line.
+
+Begin with what you are still able to lose.
+
+The next morning no announcement was made.
+
+There was no dramatic resignation. No confession. No collapse. People are disappointed when parables do not reward them with fire. Instead there were small movements. A dock reopened under terms that made no one rich and some people less crushed. A lawsuit was withdrawn without a press release. A fund that had served as a beautiful mask for control was turned, awkwardly, into something closer to what its brochure claimed. Rachel returned three phone calls she had avoided for years. Yosef went to the old couple in the private dock and did not say “you of all people.” He said, “You were right to say that.”
+
+The old man did not forgive him.
+
+That, Yosef later thought, was probably the first useful answer.
+
+Money remained. Influence remained. So did the company, the tables, the invitations, the forms of power that do not disappear because a person has one decent night. But something in the direction shifted. Not enough to call redemption. Enough to make the next step less automatic.
+
+Rachel did not become humble.
+
+Yosef was grateful for that. Humility would have been suspicious if it came too quickly. She remained sharp, wounded, proud, sometimes cruel in the places where fear still wore jewelry. But she began, not always, not beautifully, to ask what the answer would cost before she asked for it.
+
+Sometimes she failed.
+
+Sometimes he did.
+
+Sometimes they failed together and called it strategy for two days before one of them said the other word.
+
+Years later, the glass building was sold. The service passage became part of a café kitchen. A young cook leaned a shelf against the wall where questions had once appeared and complained that the concrete there never took a screw properly.
+
+The old ATM was remembered only by people who still said “the branch” when they meant the building that had replaced it.
+
+Yosef went back to the sea sometimes.
+
+Not as before. Nothing returns as before, and anyone who says otherwise is selling nostalgia by weight. He went out in a small boat with two younger men who called him “boss” until he told them to stop. He taught them knots. He taught them which clouds lie and which only do not know yet. He taught them that a light crate is not a moral failure.
+
+Once, one of them asked him how he knew so much.
+
+Yosef looked at the water.
+
+“I asked badly,” he said.
+
+The young man laughed because he thought it was a joke.
+
+Yosef let him.
+
+At home, the coffee tin returned to the table.
+
+There were still coins in it. Not many. Rachel put them there herself. Sometimes guests thought it was decorative and said it was charming. Rachel would look at them until they understood it was not.
+
+One evening, when the wind was low and the sea smelled again like something that had not signed any document, Rachel opened the tin and counted the coins.
+
+There were enough for bread, tomatoes, and one small thing no one needed.
+
+She smiled, barely.
+
+Yosef saw.
+
+“What?”
+
+“Nothing.”
+
+“What?”
+
+She closed the tin.
+
+“What do we do now?”
+
+Yosef thought of the ATM. Of the screen. Of the word Ask. Of the wet page in his pocket. Of all the answers he had not asked for and the one he had. He did not feel wiser. Not better. Not the hero of a parable. Only a person who had returned with less than he could have received and more than he knew how to bear.
+
+“We will ask...” he said.
+
+Rachel lifted her eyes to him.
+
+He almost completed it quickly, like a person trying to turn a sentence into a repair. Then he left the word open for another moment.
+
+“Slowly.”
+
+Rachel did not smile.
+
+But she did not say no either. She put one coin back into the coffee tin, not because she had decided anything, but because her hand was already holding it and did not know where to put it.
+
+And the sea, which did not need to agree, continued outside the old window to be the sea.
+
+<a id="haemet-hamavchila-eifo-hatzlalim"></a>
+
+## The Nauseating Truth
+
+*Where Are the Shadows*
+
+In the first edition, they still called it an event.
+
+The word event was chosen because it did not require the editors to know whether it was a disaster, a phenomenon, an attack, a plague, a revelation, an experiment that had gone out of control, or something that did not yet have a place in a sentence. At seven twenty-three in the morning the lower caption read: “Unusual event at a train station in the north: several injured on site.” At eight oh-five it had already been replaced: “Concern over unexplained mass-casualty event.” At nine forty-one, after the first video went online, one of the anchors accidentally said “creature” and was taken off screen for an unplanned commercial break.
+
+In the video one sees an ordinary train station. A ticket machine. A metal bench. A plastic bag caught on the leg of a trash can. A man in a white shirt stands before the machine, his hand extended forward, as if he has regretted buying a ticket halfway through and does not know where to put his hand back. Beside him a woman with a shoulder bag turns around. She turns around too slowly. Sometimes the body knows before the camera that it has entered a place from which there is no explanation.
+
+And then it appears.
+
+Not out of smoke, not through a gate, not from light. It is simply there, a little above the height of a person, a floating elliptical shape, a lump neither large nor small, as if someone had taken the egg of an ancient thing and denied it the right to be an egg. Years later people would still argue over whether it appeared at that moment, or whether only at that moment it became permitted to see that it had always been there. Its surface moves. Not skin, not membrane, not flesh in the usual sense, but something trying to remember what material the world had agreed to use when it created mouths.
+
+At that moment the shadows disappeared.
+
+Not because it shone. It did not shine. There was no glow around it, no halo, no flash, no new light source one could mark with an arrow and say: from here. The lamps in the station continued flickering in the same tired rhythm, and the sun remained behind the clouds. And yet the shadow of the ticket machine was erased, the shadow of the bench was erased, the shadow beneath the man’s feet was erased. The things remained in place. Only the black beneath them did not.
+
+Only later, when they stopped the video frame by frame, did they notice it. Before they saw the lips, before they understood there were mouths, before anyone dared ask whether the thing was alive, there were already no shadows.
+
+It was all lips.
+
+Not one mouth. Not a face. Not eyes. Many lips, fleshy, some too wet, some cracked, some small like a child’s, some far too wide, as if taken from faces that had not been permitted to exist. They opened and closed not together, but one after another, like a choir with no conductor, or like wounds that had learned syntax.
+
+And from the body itself there emerged and returned thin, fleshy extensions, like reeds too soft or stalks made of flesh instead of plant. They did not stay outside. Each one broke out of the elliptical mass, curved through the air in a slow, nauseating motion, and then was sucked back in as though the body were swallowing it backward. Mouths opened on them too: a small mouth at the tip of an extension, another mouth on the side, another pair of thin lips beneath a bend.
+
+In the video one hears nothing. Only the noise of the station, and then the phone falling.
+
+The man at the ticket machine did not die. That was the first relief, and also the first lie humanity told itself about him.
+
+He remained standing.
+
+His heart kept beating. His lungs continued to move slightly. But the skin grew paler and paler, the flesh dried without shrinking, the joints fixed in place. His eyes remained open. The first doctor who arrived later said that he had not seen fear in the man’s eyes, but a request. It was a sentence quoted too often, until it lost what it had contained. But the doctor did not retract it.
+
+Two weeks later, when they connected the man to neurological equipment, it became clear that his brain was not switched off. Not alive as a brain is alive, not dreaming as a brain dreams, but trapped in dense, almost unbearable activity. Researchers tried to call it “closed awareness.” The family called it “he is there.” The media called them “the statues.” The public, which needed one word and not two, adopted the media’s word.
+
+The statues did not rot.
+
+This was a harder detail than it appeared. If they had rotted, one could bury them. If they had died, one could mourn. But they remained. In sterile rooms, in sports halls converted into wards, in underground parking garages, behind curtains, beside windows someone insisted on opening for them in the morning. From time to time the pupils moved. Not enough to communicate. Enough to ruin the sleep of whoever saw it.
+
+On Channel Twelve they asked a medical ethicist whether it was permissible to disconnect them.
+
+“Disconnect whom?” the ethicist asked.
+
+No one in the studio answered immediately.
+
+In the seventh ward, which had once been a municipal basketball hall, a nurse named Liora stopped using the word “statues” after the night she accidentally turned off the light. Not because anything large happened. On the contrary. The moment the hall went dark, all the bodies remained in the same place, rows upon rows, covered to the chest with thin blankets. Then, within the ordinary darkness, she saw dozens of pupils move at once toward the windows, toward the place where the moon was supposed to cast something on the floor.
+
+There was no shadow there. Not even at night.
+
+In the morning she went from bed to bed and said each of their names. Not out of faith that it helped. Out of fear of the possibility that it did not.
+
+After a week she began covering their eyes before changing the sheets. The head nurse said it was not protocol. She said, “Then write that it is not protocol.” Once she found herself apologizing to a woman who could not blink. Not for the treatment. For having left her all day facing an open window.
+
+In the first week they collected names.
+
+“The speaking thing.” “The ball of lips.” “The mouth of judgment.” “The witness.” “The shadow eraser.” “The many-mouthed one.” “The thing without a shadow.” Abroad they called it The Lip Sphere, a name precise enough to be almost immoral. Children in schools, until the schools were closed, called it “the disgusting one.” It was the only name that did not try to be clever.
+
+But those were nicknames. They were ways people held a thing that did not hold them back.
+
+Its name arrived differently.
+
+The government did not give it. Nor the forums. Nor the small cults that began drawing lips on walls. On the third night a nurse in the statue ward wrote on the back of a glove a few syllables that seemed to her like a movement of pupils. In the morning, almost the same form, not exactly, was found on a napkin in the dining room of a deaf interpreter who knew nothing about the first note.
+
+Nargotha.
+
+Later they tried to say the name had been invented. Later they tried to say it belonged to an ancient language. Later they tried to find a root, a source, a mythology, a family of names that could be placed beside it so that it would not stand alone. They found none. And yet, from the moment the name appeared, all the nicknames sounded like nicknames.
+
+The government formed a task force.
+
+At first they called it the OPA Task Force: Oral Phenomenon of Anomalous Origin. Then it was decided that the word oral invited undesirable laughter, and the name was changed to the ACF Task Force: Anomalous Certainty Manifestation. The name lasted three days. Then a recording was leaked in which a senior officer said, “Call it whatever you want, it’s a thing with a lot of mouths that ruins people when it tells them something.”
+
+Someone else in the same recording said, “And what about the shadows?”
+
+The room was silent for several seconds. It was a different silence. Not the silence of someone who has no answer, but of someone who had hoped no one would ask the question already written on the wall, on the floor, on the faces of those who had been harmed. In every record in which the thing looked at someone, something was missing at the base of things. One technician marked the floor beneath a chair, then marked it again, as though the dark line would appear if only they asked it politely enough.
+
+The first operation was called Operation Eyelid.
+
+The instructions were simple enough for people to believe they would help: do not look directly. Do not listen. Do not film. Do not approach a floating, elliptical, multi-lipped body, or any object not obeying recognized zoological boundaries. Radio stations broadcast a brief tone before every update, so people would have time to decide whether they wanted to hear. On television they began blurring not only images of it but also the faces of people who had heard it, for fear that the truth had remained on them and would pass through the eye.
+
+The army developed helmets with internal screens, hearing-filter systems, drones that operated without a human line of sight. For two days it seemed technology would succeed in doing what humans had not: standing before truth without being human. On the third day, a surveillance drone stopped transmitting not because it had been damaged, but because everyone in the room watching the feed began saying together, “We did not think of that.”
+
+No one knew what they meant.
+
+The sentence was entered into the operational archive under the category “insufficient linguistic response.”
+
+Dr. Rotem Hayon was the first to prove that it did not speak into the ears.
+
+She had not intended to prove this with her body. Scientists almost never intend to become part of their own data, though history loves that more than it admits. Rotem was a neurologist. She believed in instruments, protocols, controlled slowness. When Nargotha appeared in a closed parking lot, she stood behind armored glass with noise-canceling headphones, a filtered screen, two robots, and three people who said “procedure” every time they were afraid.
+
+The robot approached the thing. The thing floated above a faded parking-space marking. Its lips opened, and one of the fleshy extensions emerged from it slowly, bent downward, and a small mouth opened at its tip. No sound was heard.
+
+On the thermal screen there was no new light source. The radiation sensors registered no anomaly. And in the ordinary camera, beneath the robot, there was no shadow. The technician enlarged the image, reduced it, checked the layers, as if he could find the shadow by insulting the resolution enough.
+
+Rotem removed the headphones.
+
+“Don’t take them off,” the technician said.
+
+“It doesn’t come from there,” she said.
+
+“What doesn’t come from there?”
+
+She did not answer. Her face changed, but not as the face of a frightened person changes. It changed like a document into which a note has been added that cannot be deleted.
+
+“I did not do it so my father would love me,” she said.
+
+No one knew what to answer.
+
+“I wanted to know,” she said. “I really wanted to know.”
+
+Then she sat down carefully on the floor, as if she did not want to disturb the data.
+
+She did not become a statue. That, in the terms of that week, counted as a miracle. Four hours later she returned to speaking. When they asked what she had heard, she said: “I didn’t hear. I knew.”
+
+“What did you know?”
+
+“That my curiosity also wanted to be a good girl.”
+
+That sentence was quoted a great deal. First as testimony, then as metaphor, then as a joke, then as the name of a band. Rotem refused interviews. She returned to the lab after a month, but could no longer write the word “objective” without erasing it three times.
+
+Two other researchers on the team became statues.
+
+One of them, a physicist named Oz, froze in the middle of the sentence “This is, apparently, a failure of the system...” No one knew which system he had meant. His body remained warm for four days. His skin hardened. Beneath it the blood vessels looked like roots trapped in glass. A week later his wife asked that the mirrors in his room be covered.
+
+“He sees,” she said.
+
+“We don’t know that,” the doctor said.
+
+“You are not married to him,” she said.
+
+Judge Asher Levin was not corrupt.
+
+That was why his scene was unbearable to watch. If he had been corrupt, one could hate him. If he had been stupid, one could dismiss him. But he was a careful man, almost painfully careful. He read files late into the night. He requested clarifications. He postponed rulings when it seemed to him that a single word covered too many lives. He did not like the power in his hands, and that was probably what long protected him from the possibility of enjoying it.
+
+That morning he was to read a judgment in a large eviction case: an entire neighborhood against a national infrastructure project. Years of petitions, measurements, objections, expert opinions, family names compressed into footnotes. He read everything. He even drove to the neighborhood without announcing it, stood beside an old grocery store, and bought a bottle of water he did not need, only to see the place without being told what he should see.
+
+When the courtroom doors opened and the thing floated in, the silence came before the screams. Sometimes horror respects ceremony for a few seconds before destroying it.
+
+“Clear the courtroom,” the judge said.
+
+One security guard advanced and looked too much. He fell to his knees and began to cry. Not a cry of pain. The cry of a person who is late home and cannot remember where he lives.
+
+The thing stopped above the wooden benches.
+
+The chandeliers in the hall continued to shine from above. The high windows continued admitting morning light. And yet the shadows beneath the benches were erased. The judge’s robe fell straight over his body, but cast nothing on the floor. On the wooden floor not even a thin line remained beneath his shoes.
+
+The judge heard the sentence not in his ears but in the place where formulations are born before they receive a clause.
+
+You did not love justice. You loved the way the law allows violence to be measured.
+
+“No,” he said.
+
+And that no mattered. It was not the no of a man caught out. It was the no of a man defending something real. He did love justice. His father had once been fired without compensation, and since then he had known how a signed paper could erase a person. He studied law so that erasure would at least have to pass through language, testimony, process, time.
+
+He did not deny.
+
+Yes. You truly wanted power to pass through form before it touched the body. You truly knew that law is an attempt to bind violence so it will not scatter. You truly waited. You truly read. You truly asked.
+
+The judge breathed.
+
+Then came the continuation.
+
+But you learned to call a person “a party” before you had time to remember he is not a side. You learned to call a home “property,” and memory “an emotional claim,” and an old woman “an exceptional case,” and a child “a secondary consideration.” Not because you were cruel. Because if you did not, you could not rule.
+
+“There is no other way,” he said. “One cannot hold a system if every detail remains at full size.”
+
+Correct, said the thing.
+
+And the word correct was worse than any conviction.
+
+Asher Levin did not become a statue. He began reading the judgment from the beginning. Then again. Then again. Each time he stopped after a different word and added a note. After an hour the pages were full. After three he wrote on the table. When they took the pen from him, he carved with his fingernail into the wood.
+
+The first words he carved were: “Not included.”
+
+Then: “Not heard.”
+
+Then: “I could not.”
+
+After that they could not read it.
+
+Three days later the thing appeared in the courtyard of a study hall.
+
+Rabbi Shimon Binyamin remained standing before it. His students fled, some out of fear, some out of discipline, and some because there is not much difference between the two when the right thing is to flee. Rabbi Shimon was not an easy man to hate. His voice was low. His face gentle. He did not use faith as a stick, and precisely because of that people allowed him to carry for them a hope that was not always his.
+
+When the thing looked at him, the shadow of the Holy Ark vanished from the wall. The light did not change; the small flame above the ark continued trembling in the same weakness. On the wall there remained a place too bright, shapeless, where depth had been.
+
+“I do not ask to defeat you,” he said.
+
+The lips opened.
+
+You did not ask to win. You asked to be the person who does not ask to win.
+
+The rabbi closed his eyes.
+
+“There is truth in that,” he said.
+
+Your faith gave rest to people who could not bear the world as it is.
+
+“Yes.”
+
+And it gave you a place where your fear of the world looked like loyalty to the world beyond it.
+
+“That too may be.”
+
+Here, the students later said from behind the door where they had hidden, his voice became more precise. More dangerous.
+
+“The question is not whether my fear is inside the faith,” he said. “The question is whether the faith is worth less because fear also found a home in it.”
+
+No, said Nargotha. It is not worth less. Therefore you will see everyone who used your words in order not to return to life.
+
+Rabbi Shimon began to pray.
+
+At first in a whisper, then aloud, then in a voice that was no longer clearly addressed to God or to all the people who had hidden inside the word God so they would not have to meet another human being. He named names he did not know, children who were frightened in the name of Heaven, women who had kept silent so as not to desecrate, men who had turned weakness into law, students who loved the teacher more than they dared love the question.
+
+He prayed for three days.
+
+On the fourth day his voice stopped. His body did not harden, but his face acquired a stillness no one could interpret. His students said the tears in his eyes while they fed him were tears of holiness.
+
+His daughter told them to stop.
+
+The corrupt leader fell quickly, and the world almost rejoiced.
+
+He was a minister in a country far enough away that everyone could speak about him without checking themselves. For years he sold public resources to friends, wore good suits, spoke about stability, and used the word “responsibility” as if it were a kind of credit card. When the thing appeared in the middle of a press conference, the minister smiled. That is what people like that do when they do not yet know the smile no longer belongs to them.
+
+You did not sell your people on the day you took money, the lips said. You sold them on the day you succeeded in explaining to yourself that the money had not changed the decision.
+
+He began to say, “This is a baseless accusation,” but the lips had already opened again.
+
+That sentence too was purchased.
+
+He hardened within seconds. His face remained with half a smile, which made him look less like a statue and more like a failed attempt by a statue to pretend to be a man.
+
+That evening the internet laughed at him. They called him the minister of rocks, the minister of concrete, the minister without a portfolio and without soft tissue. There was something almost calming in his case. It allowed people to believe that the thing that erased shadows was at least an instrument against those who deserved it.
+
+The next morning the thing appeared in the situation room of Alina Varg.
+
+She was the prime minister of a small country in northern Europe. Before she was elected she had been a doctor, then minister of health, then the person required to make decisions during a pandemic, an energy crisis, a wave of migration, and a war that was not hers but reached her door. Even her enemies did not claim she had taken money. They said she was too cold, too cautious, too moral in an unbearable way, or not moral enough on exactly those days when they wanted something else from her.
+
+When the thing appeared, one adviser looked at it and collapsed at once. Two were evacuated. She remained seated.
+
+“Everyone out,” she said.
+
+They left, because she did not raise her voice in vain.
+
+The cameras continued to broadcast without sound. Later, experts described what they saw as “a six-minute and thirty-two-second conversation with an unclassified entity.” It was an accurate description, and therefore worthless.
+
+Alina was not arrogant. This too matters. She knew she had erred. She knew her decisions had harmed people. She knew the word necessary is almost as dangerous as the word pure. For years she had written in a notebook the names of people harmed by policies she approved. Not in order to flog herself, she said, but so that she would not begin to love the graphs more than the people.
+
+On the last page of the notebook was one name without a date. A nine-year-old boy from the southern city, who had died three months after a decision not intended for him. She knew how to explain the distance between the decision and his death. She knew the distance was real. That was why the name remained without a date. Not because he was more important than the others, but because she did not know to which day to attach him without lying.
+
+When Nargotha turned toward her, the shadow of the long table disappeared. The screens still shone with the same cold blue light, the ceiling lamp did not change, but all the chairs suddenly looked as though they had never hidden anything beneath them. Alina looked at the floor for a moment, not at it. Then she placed the closed notebook beside her hand.
+
+It said:
+
+You truly tried.
+
+From the movement of her lips on the camera, it seems she answered: “Yes.”
+
+You truly thought.
+
+“Yes.”
+
+You truly sought alternatives. You truly delayed the decision when it was not ready. You truly read the names of the dead. You truly knew every number is a person who did not remain inside the number.
+
+Here she placed a hand on the table.
+
+Then it said the thing that broke her.
+
+You thought of everything that was ready to enter the shape of thought. The rest remained alive.
+
+She said something. Lip-reading experts argued whether she said “that is impossible” or “then what is possible.” One of her aides, who watched the recording again and again until she was forbidden to do so, claimed she said: “But I really thought.”
+
+You did not think badly, said the thing. You thought from the place where you could still remain the one who thinks.
+
+She shook her head. Not as if denying, but as if trying to make room for the sentence and it did not fit through the door.
+
+You called it the possibility that could be held, because the other possibility asked of you hands that were no longer yours.
+
+Alina pulled a page toward herself and began to write. On the camera one sees a table. Columns. Rows. Headers. She wrote very quickly, then stopped, erased, added a column, added another. After a minute she turned the page over. After two she wrote on the table.
+
+When the advisers burst in, she did not recognize them.
+
+One of them said her name. She opened the notebook to the last page, the one on which the boy’s name was written without a date. For a moment it seemed she was going to complete it. She wrote three small dates one beneath the other, erased all three, then wrote beside the name a question mark so faint the camera almost did not catch it.
+
+“There are not enough columns,” she said in English. Then in her own language. Then in the French she had learned as a child. Then in a language no one in the room knew.
+
+That night her government resigned.
+
+The next morning two kinds of interpretation spread. The first said that even the best are not good. The second said the monster was a tool of her enemies. In one studio they replayed again and again the moment her hand touched the closed notebook. None of the commentators asked why its last page was empty of a date.
+
+Operation Eyelid became Operation Screen.
+
+Live broadcasts were forbidden from areas where Nargotha was seen. Streets were emptied through automatic alerts. Statue wards were established in hospitals. In schools, children were taught a game called “We Do Not Look,” in which the teacher holds a picture face down and the children receive points if they do not ask what is in it. Psychologists objected. Later, some of them gave too many interviews.
+
+There were also those who tried to use it.
+
+A police investigator said in a closed discussion that if the thing speaks truth, perhaps suspects could be brought before it. A member of a security committee asked whether it could be directed at enemy leaders. A tech entrepreneur proposed building a product that would identify in advance people unable to withstand truth, and thus prevent them from holding sensitive positions. A philosopher on television said this proved humanity had always feared truth. One anchor asked him if he was willing to meet the thing himself.
+
+He said, “The question is complex.”
+
+She said, “That means no.”
+
+He did not return to the program.
+
+During that period secondary cases began to appear. People who had not seen it, but heard testimony from people who had heard it, were harmed to varying degrees. They did not become statues, but lost the ability to use certain phrases. One CEO could no longer say “human resource.” One teacher could not say “the material” next to students. One father could not tell his son “I only want you to be happy” without immediately adding, “in a way that allows me to feel I have not failed.”
+
+The addition actually helped them speak.
+
+Yonatan appeared in all of this only by chance.
+
+He was not a researcher, not a leader, not a man of faith, not a judge, not a person around whom one could build an article. He worked as a language editor in the document department of a company that did not know how to explain to itself why it needed so many documents. His job was to read things more important people had written too quickly, and make them look as if they had been written slowly.
+
+He was good at it. Good in a way that brings no honor. He knew how to identify a word pretending to do the work of thought. He knew how to remove “strategic” from sentences that contained no strategy, replace “maximization” with “improvement” when there was no real intention to maximize anything, and mark in red the phrase “on the value level” whenever it appeared beside a budget.
+
+That month he bought a new blue shirt.
+
+More expensive than he had planned to pay for a shirt, and expensive enough that three days after buying it he still felt the need to justify the purchase to himself. He had not bought it because of a sale, or because of need, or because someone told him it was time to dress like a person with direction. He bought it because when he saw the color on the hanger, something small in him said: perhaps this.
+
+Not a sign. Not fate. Not prophecy. Only a small possibility, almost ridiculous, that perhaps in that color he would look a little more the way he wanted to look.
+
+He liked it before anyone saw it on him.
+
+That was part of the matter. He did not want anyone to tell him it was beautiful, because then he would have to decide whether to believe the compliment or suspect it. He wanted to keep for himself the simple, unproven knowledge that it sat well on him. It was not too tight around the stomach, did not open the neck in an embarrassing way, did not make him look as though he had tried too hard. It was a quiet shirt and too new. One of those shirts that allow a person to enter a room without announcing that he has entered, and still feel for one second that he arrived more ready than usual.
+
+He wore it on a date with Michal.
+
+“Is this too much?” he asked himself in the mirror.
+
+The room did not answer. The room, at least then, was still a room.
+
+Michal said nothing about the shirt. He liked that more than he was willing to admit. They spoke about Nargotha, because everyone spoke about it, and also because not speaking about it required greater effort.
+
+“Do you think it’s real?” she asked.
+
+“I think something happened.”
+
+“That isn’t the same thing.”
+
+“It’s usually the closest thing we have.”
+
+Michal was silent for a moment. “I’m afraid of what it means.”
+
+“We don’t yet know what it means.”
+
+“True,” she said. “But already everyone is using it to say what they wanted to say before.”
+
+It was a good sentence. He wanted to tell her that, but feared it would sound as if he were complimenting her in order to get something. So he only nodded.
+
+Later, when they walked down the street, he noticed he was straightening his sleeve even though it did not need straightening. Michal saw the movement and smiled, but said nothing.
+
+It was that not-saying, specifically, that he kept inside him. Not in the place called important memory, but somewhere smaller. A low shelf. Accessible.
+
+There were other stories.
+
+One woman met the thing near a nursing home. It did not tell her who she really was. That was what frightened her afterward. It only showed her, without image and without memory, all the weeks her mother had waited for her from the wrong side of the hour. Not guilt. Not hidden motive. Only time.
+
+She did not become a statue. She entered the nursing home, sat beside her mother, and said to her for the first time, “I am angry too.” The mother, almost entirely demented, said, “Finally.” No one knew whether she understood.
+
+The next day the daughter brought her soup in a clear container. The mother did not eat. The daughter sat for three hours with the spoon in her hand, and each time she lifted it she saw on the metal her own face without a shadow beneath the chin. In the end she said, “I don’t know what to do with this.” The mother answered, “Then sit.”
+
+A well-known psychologist stood before the thing at a closed Ministry of Health conference. It did not tell her she wanted people to need her. It let her know the number of times a patient had finished a sentence and she had already prepared inside herself the form in which she would look helping him. She did not go mad. She stopped treating patients.
+
+At home that evening, she opened her diary and drew a line through the names of the patients scheduled for Sunday. Then she restored the line in pencil, as though even cancellation had been too violent a gesture. On the table stood a mug she had received from a patient years earlier. It said, “Thank you for seeing me.” She turned it toward the wall.
+
+Later she returned to treating only people who did not pay her, which generated an entirely new professional controversy.
+
+A military commander heard from it: “You sacrificed young people so adults could continue calling it a border.” He did not become a statue. He continued functioning, but demanded that every order include a clause titled “the lives that did not have to become context.” No one knew how to fill in the clause. Perhaps because of that, for two weeks, the number of military operations in the world fell by thirty-one percent. Then it rose again. The world does not like to remain disturbed for long.
+
+A poet laughed before the thing until she lost her voice. Then she wrote a poem on a page on which appeared only the word “no” one hundred and seventy-three times. Critics said it was the important text of her generation. She wrote beneath it: “Enough.”
+
+A businessman became a statue in the middle of an interview after the thing told him he had not wanted money but the possibility of never again feeling like a poor child. His employees sent flowers. Some out of pity. Some out of habit.
+
+The news moved among them all. A map, an article, a testimony, a warning, a life-insurance advertisement accidentally broadcast after an item about conscious statues. The anchor apologized. The insurance sold more policies that week.
+
+At the edge of one report, the woman from the nursing home appeared for one second, sitting beside a bed, holding a closed soup container. The caption called her “survivor.” Later she asked them to remove the word. No one found another headline.
+
+Yonatan wore the blue shirt for the third time to meet Michal.
+
+He had tried another shirt deliberately. Dark green. When he left the house he felt as if he were disguised as a person who had more options than he really had. He went back, changed into the blue one, and was ten minutes late.
+
+Michal saw he was late, did not comment on the shirt, and said, “You know this already has a pattern.”
+
+“What does?”
+
+“The shirt.”
+
+He looked down.
+
+“Too much?”
+
+“No. I didn’t say that.”
+
+“Then what did you say?”
+
+“That there is a pattern.”
+
+They ate at a small place on a side street. The owner had removed all the mirrors from the wall and replaced them with paintings of fruit. No one said why. Everyone knew why.
+
+Michal spoke about work, about her sister, about a child in her building who had begun asking every adult, “Would you become a statue?” Yonatan spoke about documents. He made her laugh by explaining the difference between “vision,” “strategic vision,” and “integrated strategic vision,” the last of which, he said, means that no one has yet opened Excel.
+
+For a while the world was almost the world.
+
+Then the sirens began.
+
+Not an air-raid siren. Not an ambulance. The new sound. Three low tones, a pause, three low tones. The signal meaning: do not look at the screens, enter a covered space, wait for textual instructions.
+
+Everyone in the restaurant froze.
+
+The owner reached for the remote and turned off the television before anyone could look. A woman at the next table began whispering the names of her children. Someone in the kitchen dropped a plate. No one laughed.
+
+Michal took Yonatan’s hand.
+
+It happened with no drama. Her fingers only found his, and because the world had suddenly become so direct, he did not have time to turn the gesture into interpretation.
+
+“Come,” she said.
+
+They went out through the back, into a narrow alley between buildings. There were no screens there. Only bins, a dripping pipe, a strip of sky. The siren continued in the distance. Yonatan looked at the wall and tried not to imagine a shape without shadow floating around the corner.
+
+“Are you afraid?” Michal asked.
+
+“Yes.”
+
+“Good.”
+
+“Good?”
+
+“I’m tired of people saying they aren’t.”
+
+He nodded.
+
+In the alley, under a weak yellow lamp, he saw that his shadow was still on the ground. It was long, thin, slightly ridiculous. He almost cried from gratitude for it. He did not. He squeezed Michal’s hand instead.
+
+The alert passed. Nargotha had appeared in another city, then vanished. Three statues. Twelve secondary injuries. One municipal spokesman unable to say “the situation is under control.”
+
+On the way back, Michal said, “The blue suits you.”
+
+He pretended not to hear.
+
+She said, “I said it suits you.”
+
+“I heard.”
+
+“And?”
+
+“And now I have to do something with that.”
+
+“No,” she said. “You can just receive it.”
+
+He laughed. It sounded strange, but not false.
+
+Two weeks later, he saw Nargotha.
+
+Not in a train station. Not in a courtroom. Not in a place large enough for history. In the corridor outside his apartment.
+
+He had come home late from work. In the elevator mirror he noticed the blue shirt was wrinkled under the jacket. He thought of Michal. He had not answered her last message yet because she had asked a simple question, and simple questions always seemed to him more dangerous than complicated ones.
+
+Do you want to meet on Friday?
+
+The elevator opened.
+
+The corridor light flickered.
+
+At first he thought someone had left a large object near his door. Then the object breathed.
+
+It floated in the middle of the corridor, almost touching the ceiling, the elliptical mass faintly pulsing. Its lips moved without sound. The fleshy stalks came out and returned, came out and returned, as if the thing were growing questions and retracting them before they became plants.
+
+There was no shadow beneath it.
+
+More frightening: there was no shadow beneath Yonatan.
+
+He looked at the floor first. This may have saved him for a second. Or it may have only allowed him to know exactly when he stopped being protected by ordinary things.
+
+“Please,” he said.
+
+He did not know to whom.
+
+The lips opened.
+
+You edit the language of others so you will not have to hear your own.
+
+He closed his eyes.
+
+The sentence entered anyway.
+
+It did not arrive as a voice. Rotem had been right. It arrived as knowledge that had lost the politeness of becoming a thought. He knew at once all the sentences he had improved until they no longer accused anyone. He knew every time he had turned harm into “impact,” fear into “concern,” firing into “organizational adjustment,” abandonment into “process,” hesitation into “sensitivity,” desire into “connection.”
+
+“I know,” he said.
+
+You do not.
+
+The corridor lengthened. Or perhaps his body had shortened.
+
+You believe you are protecting truth from exaggeration. Often you are protecting yourself from demand.
+
+He thought of Michal’s message. Do you want to meet on Friday? He had drafted five replies. Each one warm enough not to be cold, cool enough not to be needy, clear enough not to be cowardly, vague enough not to be trapped. He had not sent any.
+
+The thing continued.
+
+You call it precision when you remove the sentence before it can risk being false.
+
+“I don’t want to lie.”
+
+Correct.
+
+He almost opened his eyes.
+
+Then came the continuation.
+
+You also do not want to be found wanting by the truth you did say.
+
+His knees weakened. He put a hand on the wall. The wall was cold. This detail saved him more than any philosophy. The wall remained a wall, cold, painted, badly repaired near the corner.
+
+“I’m not a bad person,” he said.
+
+No.
+
+The no did not comfort him.
+
+You are a person who learned to make the smallest possible promise and then call the smallness honesty.
+
+He slid down to the floor.
+
+Behind his closed eyelids he saw the blue shirt in the mirror, the exact place where he had adjusted the sleeve, the pleasure he had taken in being seen without being named. He saw Michal’s hand in the alley. The shadow beneath him. The gratitude he had not spoken because gratitude, once spoken, requires a place to live.
+
+He began to understand why people became statues.
+
+It was not because the truth was too terrible. Not always. Sometimes the truth was almost kind. Almost exact enough to be borne. But it did not stop at the place where a person usually stops in order to remain himself. It continued one sentence farther. Then another. Not to humiliate. Not to forgive. To include.
+
+The lips opened again.
+
+You want love that will not require you to become less clean.
+
+He laughed.
+
+It came out ugly.
+
+“No one is clean.”
+
+You use that to avoid being washed.
+
+This was the sentence that nearly hardened him.
+
+He felt the body begin to choose stillness. Not dramatic. Not freezing in ice. A temptation. To stop here, in the exact pain, before anything else could be asked of him. To become evidence rather than answer. To let others point to him and say: he heard the truth. He would not have to reply to Michal. He would not have to send any sentence at all.
+
+Then the phone in his pocket vibrated.
+
+A stupid vibration. Human, cheap, badly timed. It pulled the world back by one thread.
+
+He opened his eyes.
+
+The thing hovered before him. All lips. No eyes. No shadow.
+
+The phone vibrated again.
+
+Yonatan took it out.
+
+Michal.
+
+Not a message. A call.
+
+The thing did not move.
+
+He answered.
+
+At first he said nothing.
+
+“Yonatan?” Michal said. “Are you there?”
+
+He looked at Nargotha.
+
+“Yes,” he said.
+
+His voice sounded as if it belonged to someone just learning the word.
+
+“Are you okay?”
+
+“No.”
+
+A pause.
+
+“Are you in danger?”
+
+“Yes.”
+
+Another pause. Shorter.
+
+“Can you leave?”
+
+He looked at the thing, at the corridor, at the floor without shadow, at his hand holding the phone.
+
+“I don’t know.”
+
+“What do you see?”
+
+He opened his mouth to say something precise. To classify. To make the sentence less impossible. Instead he said:
+
+“The thing.”
+
+Michal inhaled sharply.
+
+“Don’t look at it.”
+
+“I already did.”
+
+“Close your eyes.”
+
+“I did.”
+
+“Are you still you?”
+
+He almost said what kind of question is that. He almost said I think so. He almost said this is complicated. The lips of the thing moved, and suddenly he understood that the most precise sentence is sometimes the one with no protection.
+
+“Less than I thought,” he said.
+
+Michal did not answer immediately.
+
+Then: “Stay on the line.”
+
+The thing’s lips opened.
+
+She cannot hold it for you.
+
+“I know,” Yonatan said.
+
+Michal heard him. “What?”
+
+“Not you.”
+
+“I don’t care. Stay on the line.”
+
+He laughed again, and this time the sound did not break.
+
+Nargotha came closer. One fleshy extension unfolded toward him, and at its tip a small mouth opened, almost delicate. The corridor light passed through nothing; still there was no shadow.
+
+You will make her into proof that you are not alone.
+
+Yonatan looked at the phone.
+
+“I might,” he said.
+
+You will use honesty as a ribbon around fear.
+
+“Yes.”
+
+You will answer Friday so that the answer saves you now, not because Friday is true.
+
+He breathed.
+
+This was close. Very close. He could already feel the future trying to turn itself into a clean gesture. He would say yes to Michal in the corridor, with the thing before him, and later every yes between them would carry the debt of this horror. He would turn her into a rescue story. He would tell it beautifully. He knew how.
+
+“Yonatan?” Michal said.
+
+He said, “I want to see you Friday.”
+
+The thing was silent.
+
+He added, quickly, before the sentence became too beautiful:
+
+“But I am saying it now because I am terrified and because I don’t want to disappear inside myself. So you don’t have to take this as a good answer yet.”
+
+There was a silence on the line.
+
+Then Michal said, “That is the worst invitation I’ve ever received.”
+
+He began to cry.
+
+Not much. Enough.
+
+The thing withdrew slightly.
+
+The shadows did not return.
+
+Not yet.
+
+It opened several mouths at once, but no words came. For the first time, Yonatan wondered whether it was choosing. Whether truth, when forced to include its own effect, also had to hesitate.
+
+Then it said:
+
+Better.
+
+The word did not comfort him. But it did not destroy him.
+
+“Does that mean I pass?”
+
+No.
+
+“Of course not.”
+
+You remain.
+
+“That’s different?”
+
+Yes.
+
+The phone was still in his hand. Michal was still on the line. Somewhere in the building a door opened, then closed. A neighbor who knew nothing had decided at the worst moment to take out the trash and then changed his mind. Ordinary life circled the corridor like an animal too loyal to leave.
+
+Nargotha rose a little.
+
+Yonatan did not ask why it had come to him. He knew enough now not to admire the question. Perhaps everyone would meet it. Perhaps not. Perhaps there was no plan. Perhaps the truth does not need a plan to be unbearable. It only needs to arrive where a person has arranged his sentences too neatly.
+
+The thing began to fade.
+
+Not disappear. Fading is too gentle a word. It became less available to sight, as though the eye were being released from a duty. Its lips closed one by one. The fleshy stalks returned into the elliptical body. The last small mouth, the one at the end of the extension, remained open a moment longer.
+
+It said:
+
+You will still polish.
+
+“Yes,” Yonatan said.
+
+You will still hide.
+
+“Yes.”
+
+You will still call fear discernment.
+
+“Probably.”
+
+Then ask where the shadow went.
+
+He looked down.
+
+The floor beneath him was still bright. Too bright. His body sat there, his knees, his shoes, the blue shirt wrinkled at the waist, but nothing dark connected him to the ground.
+
+“When does it come back?” he asked.
+
+No answer.
+
+The thing vanished.
+
+The corridor did not change. That was the unbearable part. The same cheap light. The same paint. The same small crack near the electrical cabinet. The same mat outside his door with the word Welcome worn almost away. Only his shadow was missing.
+
+Michal was speaking.
+
+“Yonatan. Say something.”
+
+He swallowed.
+
+“It left.”
+
+“Are you hurt?”
+
+“I don’t know.”
+
+“I’m coming.”
+
+“No.”
+
+“Don’t start editing me.”
+
+He closed his eyes.
+
+“Come.”
+
+She arrived twenty minutes later. He had not moved. She found him sitting on the corridor floor in the blue shirt, phone still in his hand, shoes slightly angled, as though he had been placed there by someone who did not know how people sit.
+
+She did not hug him immediately.
+
+This too he kept.
+
+She sat beside him first. Looked at the floor. Saw.
+
+“Where is your shadow?”
+
+“I don’t know.”
+
+She nodded, as though that was a full answer and not a hole.
+
+Only then did she take his hand.
+
+The next days were strange in a quiet way. He did not become a statue. He went to work. He answered emails. He edited a document titled “Human-Centered Transition Framework” and deleted the word human from the title because the document did not contain any. His manager praised the change.
+
+His shadow did not return.
+
+At first he tried to hide it. This was ridiculous, because shadows are usually noticed only when something is wrong, but people are excellent at not seeing what the world has not taught them to check. He avoided strong light. Sat in corners. Took taxis at noon. In the office he claimed the overhead lighting gave him headaches.
+
+Michal noticed, of course.
+
+“You can’t live by managing lamps,” she said.
+
+“I can try.”
+
+“That is maybe the most you sentence you have ever said.”
+
+He wanted to be offended, but she was right.
+
+They went to a doctor. The doctor looked at the floor, then at him, then at the floor again. She wrote “absence of cast shadow” in the chart, then erased it, then wrote “visual anomaly following exposure.” Yonatan liked her for erasing the first phrase. He disliked himself for liking her for style.
+
+“Does it hurt?” she asked.
+
+“No.”
+
+“Do you feel detached from your body?”
+
+“Less than I should.”
+
+She nodded.
+
+“I don’t know what to do with this,” she said.
+
+It was the first medical sentence he trusted.
+
+The world continued. Nargotha appeared less often. Or perhaps reports were suppressed better. The statues remained. New wards opened. Old names faded. People learned to live around the possibility that a thing without shadow might tell them the sentence after the sentence they could bear. Humanity, which had survived war, plague, famine, and meetings, found ways to continue.
+
+Yonatan changed.
+
+Not beautifully.
+
+He still edited too much. Still delayed replies. Still made jokes when a sentence came too close. But sometimes, when his hand hovered over a word meant to soften pain into neutrality, he stopped. Not always. Enough to disturb himself.
+
+He wrote to Michal on a Thursday:
+
+I want to meet tomorrow. I am afraid of wanting it too much, and also of not wanting it enough. This is not an elegant message. I am sending it anyway.
+
+She replied:
+
+Finally, a terrible sentence I can trust.
+
+They met.
+
+He wore the blue shirt.
+
+It was less blue by then. Shirts do not remain symbols just because people need them to. It had been washed too many times. A seam near the cuff had loosened. Still, when he put it on, he felt not luck exactly, and not steadiness, but a kind of permission to appear without completing the argument first.
+
+At the café, Michal looked under the table.
+
+“Still no shadow?”
+
+“Still no shadow.”
+
+“Do you miss it?”
+
+He thought.
+
+“Yes.”
+
+“What do you miss?”
+
+“The proof that something in me knows where the floor is.”
+
+She put her cup down.
+
+“That’s a good sentence.”
+
+“I know.”
+
+“Don’t enjoy it too much.”
+
+“I was about to.”
+
+They laughed.
+
+Outside, people passed with shadows ordinary and careless beneath them. A child jumped from one paving stone to another, trying not to step on the dark parts. His mother told him to hurry. He did not. He had all the time in the world, which is to say he did not know what time is.
+
+Months later, Yonatan went to visit one of the statue wards.
+
+He did not know why. That was not true. He knew several reasons, none complete. Rotem Hayon had published a paper arguing that exposure to Nargotha did not reveal “truth” in the naive sense, but performed an impossible integration of excluded contexts. Philosophers hated the phrase because it was not theirs. Journalists loved it because it sounded cold enough to be serious. Families of the statues hated everyone.
+
+The ward was quiet. Too quiet for so many bodies. Liora, the nurse, walked with him between the rows. She had gray in her hair now and the look of someone who had learned to speak gently because screaming had proved too small.
+
+“You were exposed?” she asked.
+
+“Yes.”
+
+“Statue?”
+
+“No.”
+
+She looked at the floor.
+
+“Shadow?”
+
+“No.”
+
+She nodded.
+
+“We have a few like you.”
+
+“What do you call us?”
+
+“Tired.”
+
+He smiled despite himself.
+
+She stopped beside the man from the ticket machine. The first one. He stood now supported by a frame, covered in a clean hospital gown, eyes open. His skin looked like wax that remembered being a person.
+
+“This is him,” she said.
+
+Yonatan looked.
+
+The pupils moved.
+
+Not much. Enough.
+
+“What do you say to them?” he asked.
+
+“Their names. The weather. Sometimes gossip. Mostly I apologize for the lighting.”
+
+“Does it help?”
+
+“No idea.”
+
+“Then why?”
+
+She looked at him.
+
+“Check yourself first.”
+
+He heard the Hebrew phrase in his head, absurdly, because some truths refuse to be translated. Then she said it again in her own language, and then, as if for him, in English:
+
+“Check yourself first.”
+
+He nodded.
+
+Near the window stood a woman statue. Liora said she had once been a mathematics teacher. Beside her bed someone had placed a small sign: “Nothing is unimportant.” Yonatan looked at it longer than he intended.
+
+“For what reason?” he asked quietly.
+
+Liora heard.
+
+“For what reason what?”
+
+He shook his head.
+
+The question had no object yet.
+
+As he left the ward, sunlight crossed the corridor. Nurses, visitors, carts, frames, bodies: all cast shadows.
+
+He did not.
+
+For a moment he wanted to run back and stand beside the first man, as if two missing things could explain one another. Instead he stepped into the light and watched the floor remain unmarked beneath him.
+
+Outside the hospital, his phone vibrated.
+
+Michal: Bring bread if you pass the bakery. And don’t buy the expensive olives just because you feel metaphysical.
+
+He laughed.
+
+A woman at the bus stop looked at him. Then at the ground. Then quickly away. He did not blame her.
+
+On the way home, carrying bread and the cheap olives, he passed a store window and saw himself reflected. The blue shirt, the bag, the tired face, the space under him too clean. Behind the reflection, a television in the shop showed a panel discussing whether Nargotha should be understood as punishment, revelation, weapon, or environmental crisis. The sound was off. Captions moved beneath mouths that did not know what to do with mouths.
+
+At the bottom of the screen appeared a headline:
+
+WHERE ARE THE SHADOWS?
+
+Yonatan stood there until the headline changed.
+
+Then, in the glass behind his own reflection, just for a moment, he saw something else reflected. Not the elliptical body. Not lips. Not a stalk. Only a dark place under him, thin and hesitant, as if a shadow had begun returning by way of doubt.
+
+He looked down.
+
+The floor was still bright.
+
+He looked back at the glass.
+
+Nothing.
+
+That evening, at home, Michal asked why the bread was crushed on one side.
+
+“I held it too hard.”
+
+“Why?”
+
+“I thought I saw something.”
+
+“Did you?”
+
+“I don’t know.”
+
+She took the bread and placed it on the counter.
+
+“That’s allowed.”
+
+“What is?”
+
+“Not knowing without turning it into a method.”
+
+He leaned against the counter. The kitchen light was warm. On the floor, her shadow fell beside the table. His did not. Their shoulders touched.
+
+“I’m afraid it will come back,” he said.
+
+“Your shadow?”
+
+“No.”
+
+She understood.
+
+Outside the apartment there was then a distant siren, or perhaps someone dragging furniture on another floor. The world continued choosing poor shapes for noise.
+
+Yonatan looked at the thing. He no longer expected to win. He did not expect to understand either. Part of him wanted it to end. Another part, small and embarrassing, wanted one more sentence. That was the humiliating thing about truth: even when it wounds, a person may begin to crave the exactness of the cut.
+
+Finally one of the small lips opened, almost hidden between two larger ones. Its voice was not large. In fact, for the first time, it sounded almost human. Almost female. Almost not.
+
+It will not ruin the blue for you.
+
+Yonatan looked at his shirt.
+
+He pulled the fabric slightly around the stomach, as he had done in front of the mirror before the first date. Under the cold corridor light the blue looked more faded than he remembered, but not in a way that ruined it. A small stain near the bottom button had not come out in the wash. The right sleeve was folded less well than the left. It was no longer as new as on the day he bought it, and no longer expensive in the same way things are expensive before they begin to be yours.
+
+On the floor, still, he had no shadow.
+
+He lifted his eyes to the thing.
+
+“Oh, really?”
