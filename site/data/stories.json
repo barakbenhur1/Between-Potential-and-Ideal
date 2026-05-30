@@ -1,0 +1,18 @@
+[
+  { "id": "story-1", "en_title": "How Truth Remains Honest", "he_title": "איך האמת נשארת ישרה" },
+  { "id": "story-2", "en_title": "True, But Not Just", "he_title": "נכון, אבל לא רק" },
+  { "id": "story-3", "en_title": "Red Causes Dread", "he_title": "אדום גורם לפחד" },
+  { "id": "story-4", "en_title": "Quantum Intelligence", "he_title": "אינטליגנציה קוונטית" },
+  { "id": "story-5", "en_title": "A Place at the End of the Road", "he_title": "מקום בקצה הדרך" },
+  { "id": "story-6", "en_title": "Super Mirrors", "he_title": "מראות־על" },
+  { "id": "story-7", "en_title": "Self-Confidence", "he_title": "ביטחון עצמי" },
+  { "id": "shalosh-sheelot-iska-bankait", "en_title": "Three Queries", "en_subtitle": "A Banking Deal", "he_title": "שלוש שאלות", "he_subtitle": "עסקה בנקאית" },
+  { "id": "story-8", "en_title": "Serial Healer", "he_title": "מרפא סדרתי" },
+  { "id": "story-9", "en_title": "Maxideal", "he_title": "מקסאידיאל" },
+  { "id": "story-10", "en_title": "To Speak with Consciousness", "he_title": "לדבר עם תודעה" },
+  { "id": "story-11", "en_title": "Heretic from Abroad", "he_title": "כופר מחו״ל" },
+  { "id": "story-12", "en_title": "Puzzle", "he_title": "פאזל" },
+  { "id": "haemet-hamavchila-eifo-hatzlalim", "en_title": "The Nauseating Truth", "en_subtitle": "Where Are the Shadows", "he_title": "האמת המבחילה", "he_subtitle": "איפה הצללים" },
+  { "id": "story-13", "en_title": "To Fear Intruders, or Talk to Computers", "he_title": "לפחד מפולשים, או לדבר עם מחשבים" },
+  { "id": "story-14", "en_title": "A Few Strings and a Knot", "he_title": "כמה מיתרים וקשר" }
+]
