@@ -2,6 +2,7 @@ import subprocess
 import sys
 
 CHECKS = [
+    ["python3", "tools/check_visual_qa_docs.py"],
     ["python3", "tools/check_build_info.py"],
     ["python3", "tools/check_ci_workflow.py"],
     ["python3", "tools/check_deploy_docs.py"],
