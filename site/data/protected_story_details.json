@@ -1,0 +1,61 @@
+{
+  "protected_rules": [
+    {
+      "id": "what-dogs-dream-about-ending",
+      "story_id": "story-10",
+      "type": "exact_required_text",
+      "lang": "he",
+      "text": "ואז... הוא 🥱",
+      "reason": "Protected ending. Do not correct, polish, remove, soften, or rewrite."
+    },
+    {
+      "id": "three-queries-hebrew-identity",
+      "story_id": "shalosh-sheelot-iska-bankait",
+      "type": "story_rule",
+      "lang": "he",
+      "required_title": "שלוש שאלות",
+      "required_subtitle": "עסקה בנקאית",
+      "forbidden_terms": [
+        "נותרו שלוש שאלות",
+        "נותרו שתי שאלות",
+        "נותרה שאלה אחת"
+      ],
+      "reason": "Three Queries is a query story, not a direct magical wish story. Do not add an explicit counter."
+    },
+    {
+      "id": "three-queries-english-identity",
+      "story_id": "shalosh-sheelot-iska-bankait",
+      "type": "story_rule",
+      "lang": "en",
+      "required_title": "Three Queries",
+      "required_subtitle": "A Banking Deal",
+      "forbidden_terms": [
+        "three queries remaining",
+        "two queries remaining",
+        "one query remaining",
+        "three wishes remaining",
+        "two wishes remaining",
+        "one wish remaining"
+      ],
+      "reason": "English title/subtitle and no explicit counter."
+    },
+    {
+      "id": "nauseating-truth-hebrew-identity",
+      "story_id": "haemet-hamavchila-eifo-hatzlalim",
+      "type": "story_rule",
+      "lang": "he",
+      "required_title": "האמת המבחילה",
+      "required_subtitle": "איפה הצללים",
+      "reason": "Protected story identity."
+    },
+    {
+      "id": "nauseating-truth-english-identity",
+      "story_id": "haemet-hamavchila-eifo-hatzlalim",
+      "type": "story_rule",
+      "lang": "en",
+      "required_title": "The Nauseating Truth",
+      "required_subtitle": "Where Are the Shadows",
+      "reason": "Protected story identity."
+    }
+  ]
+}
