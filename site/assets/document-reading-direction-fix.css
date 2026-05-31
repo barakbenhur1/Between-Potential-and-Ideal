@@ -151,15 +151,11 @@ body.public-page-he.section-ai .ai-page-card-grid > article:nth-child(2) h3::bef
 body.public-page-he.section-ai .ai-page-card-grid > article:nth-child(3) h3::before { content: "כשאני הוא גם אתה."; }
 /* ===== /BPI_AI_INDEX_CARD_TITLE_MATCH_DOC_TITLE_V1_20260531 ===== */
 
-
-/* ===== BPI_HE_SELECTED_TABS_AI_NAV_LABEL_FIX_V1_20260531 =====
-   Scope: Hebrew Witness / Methodology / Critique tabs only. Visual label should be
-   Hebrew, matching the rest of the Hebrew navigation, without touching page content. */
+/* ===== BPI_HE_SELECTED_TABS_AI_NAV_LABEL_FIX_V1_20260531 ===== */
 body.public-page-he:is(.section-witness, .section-methodology, .section-critique) .site-nav a[href="ai.html"] {
   font-size: 0 !important;
   line-height: 1 !important;
 }
-
 body.public-page-he:is(.section-witness, .section-methodology, .section-critique) .site-nav a[href="ai.html"]::before {
   content: "בינה מלאכותית" !important;
   display: inline !important;
@@ -168,15 +164,12 @@ body.public-page-he:is(.section-witness, .section-methodology, .section-critique
 }
 /* ===== /BPI_HE_SELECTED_TABS_AI_NAV_LABEL_FIX_V1_20260531 ===== */
 
-/* ===== BPI_WITNESS_EN_PAGE_LAYOUT_FIX_V3_20260531 =====
-   Scoped only to the English Witness tab. Restores the same left-aligned media-head
-   geometry used by the other tab pages and prevents centered/broken card headers. */
+/* ===== BPI_WITNESS_EN_PAGE_LAYOUT_FIX_V4_20260531 ===== */
 body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness {
   direction: ltr !important;
   text-align: left !important;
   display: block !important;
 }
-
 body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness > .page-title-head,
 body.public-page-en.section-witness main#main .card-media-head {
   direction: ltr !important;
@@ -185,13 +178,13 @@ body.public-page-en.section-witness main#main .card-media-head {
   flex-direction: row !important;
   align-items: center !important;
   justify-content: flex-start !important;
-  gap: clamp(22px, 2.8vw, 34px) !important;
+  gap: 12px !important;
+  column-gap: 12px !important;
   width: 100% !important;
   margin: 0 0 clamp(22px, 2.7vw, 34px) 0 !important;
   position: static !important;
   transform: none !important;
 }
-
 body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness > .page-title-head > .page-title-mark,
 body.public-page-en.section-witness main#main .card-media-head > .card-thumb {
   position: static !important;
@@ -211,7 +204,6 @@ body.public-page-en.section-witness main#main .card-media-head > .card-thumb {
   object-position: center center !important;
   border-radius: 20px !important;
 }
-
 body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness h1,
 body.public-page-en.section-witness main#main .card-media-head h2 {
   position: static !important;
@@ -220,9 +212,9 @@ body.public-page-en.section-witness main#main .card-media-head h2 {
   display: block !important;
   width: auto !important;
   margin: 0 !important;
+  padding: 0 !important;
   text-align: left !important;
 }
-
 body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness > .lead {
   display: block !important;
   width: 100% !important;
@@ -230,12 +222,10 @@ body.public-page-en.section-witness main#main > .page-title.media-page-title.acc
   margin: 0 !important;
   text-align: left !important;
 }
-
 body.public-page-en.section-witness main#main > figure.tab-visual.image-frame.compact-section-visual {
   width: min(760px, 100%) !important;
   max-width: 760px !important;
 }
-
 body.public-page-en.section-witness main#main > figure.tab-visual.image-frame.compact-section-visual > img {
   height: clamp(136px, 18vw, 212px) !important;
   max-height: 212px !important;
@@ -243,4 +233,4 @@ body.public-page-en.section-witness main#main > figure.tab-visual.image-frame.co
   object-fit: cover !important;
   object-position: center center !important;
 }
-/* ===== /BPI_WITNESS_EN_PAGE_LAYOUT_FIX_V3_20260531 ===== */
+/* ===== /BPI_WITNESS_EN_PAGE_LAYOUT_FIX_V4_20260531 ===== */
