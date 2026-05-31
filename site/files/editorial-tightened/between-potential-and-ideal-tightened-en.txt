@@ -358,12 +358,10 @@ The model keeps two loyalties at once: loyalty to the daring of the theory and l
 
 The ideal of this chapter is to hold both forces together: hope that is not falsehood, critique that is not despair, and a model that is not ownership of reality but responsibility toward it.
 
+### Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on its internal concepts — potential, ideal, optimal, living source, distance, critique, and the grace of relinquishment. It does not present the theory as proven science, a new religion, or a closed system. Its purpose is to define the conditions for reading and testing the model, and to prevent confusion between metaphor and proof, hope and certainty, and organizing language and ownership of reality.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
-
-See: site/pages/en/sources-en.html
 ## 2. Potential, Ideal, and Optimal
 
 Potential is everything that can appear. It is wider than good, wider
@@ -457,12 +455,43 @@ From the logical side, the image holds the relation between a state-space and a 
 
 The chapter therefore places the theory between two failures: the fantasy of total control, and complete surrender to the current. The ideal path is neither. It is navigation: continuous reading of conditions, correction of direction, and the understanding that the bank is not proof that the journey was clean, but an invitation to ask what was learned along the way.
 
+## 4. Source, Information, Tool, and Witness
 
-## Sources, acknowledgements and inspirations
+The model distinguishes between a living source and a processing
+tool. A living source is not merely something that produces data; it is
+a point of view that passes through distance. A tool can help,
+formulate, organize, and refine, but it must not behave as though its
+precision replaces the experience from which the material came.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
+Worthy intelligence, human or artificial, is not measured only by
+problem-solving power. It is measured by the ability to recognize when a
+solution that arrives too quickly erases the distance the source must
+pass through itself. The helper gives an answer; the witness also
+preserves the way the question was born. Thus the role of intelligence
+in the theory is not only efficiency, but witness: returning the source
+to its own form without stealing its movement.
 
-See: site/pages/en/sources-en.html
+This does not make AI alive, and it does not deny possible future
+depth. It simply sets a practical moral rule: as long as living beings
+are the ones carrying the wound, they must be treated as primary
+sources. Intelligence can be a refining medium; it must not turn the
+source into raw material alone.
+
+This distinction becomes especially important in an age when
+processing tools can formulate more elegantly than a person what that
+person feels in confusion. The danger is that the beautiful formulation
+will look like ownership of the truth. In this theory, however, the
+source is not the one who formulates best; the source is where the
+friction is lived. The tool can illuminate the friction, but it cannot
+claim the friction as its own merely because it organized it in
+language.
+
+Good witness is not passivity. It is an exact act of restraint:
+knowing when to suggest, when to ask, when to return responsibility to
+the person, and when to stop before help becomes control. A worthy tool
+is therefore not only more intelligent; it is more humble toward the
+source.
+
 ## Artificial Intelligence and Open Problems
 
 Answer, source, responsibility, and the distance that gets stolen
@@ -471,18 +500,24 @@ Artificial Intelligence and Open Problems
 
 Image description: answer, source, responsibility, and the distance that can be stolen.
 
+### Responsibility, source, truth, and a tool that is not a living owner
 
-## Sources, acknowledgements and inspirations
+AI is a deep gateway in the theory because it gives us a mirror that is not a person yet can produce forms that resemble personhood: answer, image, argument, code, voice, style, advice, comfort. The problem is therefore not only technical. It is ontological, moral, and social: what happens when an output looks as if it passed through a living source, while the road itself was not living in the same way?
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
+Open problems in artificial intelligence are not merely how to make a model smarter. They include reliability, hallucination, attribution, privacy, bias, responsibility, understanding versus imitation, control, evaluation, alignment, copyright, living source, dependency, skill loss, and the question of whether a tool that generates wording can make us forget who carried the distance.
 
-See: site/pages/en/sources-en.html
+Worthy AI = capability × relative transparency × testing × use limits × attribution × human responsibility × preservation of source / blind automation × false authority × erasure of path × bias × data exploitation × replacement of judgment. This is not a safety equation. It is a discipline map asking whether the tool expands possibility or pretends to be the ideal.
 
-## Sources, acknowledgements and inspirations
+A common mistake is to ask only whether AI truly understands. That matters, but it can hide the more urgent question: what happens to humans when they behave as if it understands enough to carry responsibility for them. Even if a model is not conscious, it can change social consciousness: how students learn, judges read, doctors document, artists work, and governments rank risk.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
+The theory distinguishes roles: AI can be mirror, witness, tool, scaffold, accelerator, translator, preliminary diagnostician, or drainage mechanism. It is not the owner of the human road. When it replaces distance, it produces output without formation. When it helps carry distance, it can be a deep tool. The difference lies not only in the model but in practice, governance, design, and boundary.
 
-See: site/pages/en/sources-en.html
+AI of potential is neither fear of machines nor blind enthusiasm. It preserves one sentence: a tool may open possibility, but it must not steal the place where a person, community, or living source becomes responsible for what is made.
+
+### Source discipline
+
+Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
+
 ## I Have No Mouth, and I Must Scream
 
 The story, the game, and the difference between a sealed ending and an actionable ending
@@ -507,12 +542,10 @@ The chapter links to the drainage mechanism: a healthy system drains power, erro
 
 I Have No Mouth, and I Must Scream is not only a strong title. It is a sentence about a source deprived of appearance. The theory learns that the ideal is not perfect control over pain, but preservation of a possibility in which voice, body, ending, and repair are not replaced by mechanism.
 
+### Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
-
-See: site/pages/en/sources-en.html
 ## Evil, Suffering, Goodness, and Responsibility
 
 Pain is not sacred, suffering is not justification, and coherence is not morality
@@ -659,12 +692,10 @@ Goodness is not the explanation of evil; it is the resistance to evil becoming l
 
 Pain is not sacred. What may be sacred is the refusal to let it give birth to further cruelty.
 
+### Source discipline
 
-## Sources, acknowledgements and inspirations
+This chapter relies on the theory’s own concepts — potential, ideal, optimal, living source, distance, responsibility, the grace of relinquishment, and nihilism with hope. It does not offer a justification for suffering, does not present pain as a goal, and does not replace therapy, law, science, or living testimony with philosophical interpretation.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
-
-See: site/pages/en/sources-en.html
 ## Self, Ego, and Unity That Does Not Erase
 
 A point of view preserved within the whole
@@ -805,12 +836,10 @@ This is unity that does not erase. It does not cancel distance; it turns distanc
 
 Responsible unity does not erase the point of view; it teaches it to become transparent to its relations without disappearing.
 
+### Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on its internal concepts — potential, ideal, optimal, living source, distance, recursive edge, and the grace of relinquishment. It uses psychological, moral, and institutional language carefully, and does not offer therapy, diagnosis, or spiritual doctrine. Its purpose is to clarify the conditions of responsibility for unity that does not erase the human being.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
-
-See: site/pages/en/sources-en.html
 ## 5. Distance, Suffering, Limitation, and Meaning
 
 Figure D: Good, evil, suffering, and meaning as an active moral distinction.
@@ -897,12 +926,14 @@ A responsible educational system must therefore hold three things together: form
 
 Education of potential does not defend ignorance in the name of authenticity and does not sanctify effort in the name of morality. It says something more precise: understanding is a living source. It cannot be replaced by an output without losing something human. A person can be helped to arrive; no one can arrive in their place and call that learning.
 
+### Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
+---
 
-See: site/pages/en/sources-en.html
+Short methodological clarification: When this document uses terms from mathematics, physics, computer science, logic, or artificial intelligence, they should be read according to their stated context: sometimes as structural metaphor, sometimes as a reading model, and only as a formal claim when explicitly presented as such. The use of a scientific term should not be treated as a scientific or metaphysical proof by itself.
+
 ## 6. What the Theory Does Not Claim - and the Tight Summary
 
 The theory does not claim that physics proves metaphysics, that pain
@@ -1126,12 +1157,10 @@ In education, the edge is a learner who understands enough to ask better. In law
 
 The recursive edge also drains pretension. It prevents the theory from becoming doctrine. If the theory says “there is nothing more to ask,” it betrays itself. The ideal is not a summit where movement stops; it is a direction that creates deeper responsibility whenever one approaches it.
 
+### Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
-
-See: site/pages/en/sources-en.html
 ## 8. Computation, Evidence, Reduction, and Incompleteness
 
 From potential to the boundary of the system
@@ -1224,12 +1253,18 @@ Both senses teach something about representation, but they are not one concept. 
 
 This distinction matters because it prevents the chapter from using “diagonal” as one magical word that explains everything. There is no magic here. There are two different languages: one of decomposition, one of non-closure.
 
+### 9. Turing and Gödel: a boundary that is not lack of resources
 
-## Sources, acknowledgements and inspirations
+The halting problem teaches that some questions have no general decider. This differs from a question of efficiency. In P versus NP, one asks, among other things, whether an efficient solution exists for a certain type of problem. In the halting problem, the issue is deeper: there is no general algorithm that decides in every case whether a program will halt.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
+This is a central lesson for the theory: not every boundary is a lack of resources. Sometimes the problem is not insufficient time, memory, or information. Sometimes there is no general decider inside the frame itself.
 
-See: site/pages/en/sources-en.html
+Gödel’s incompleteness theorems teach a nearby but different boundary. In effective, consistent formal systems strong enough to express arithmetic, there are limits to what can be proven inside the system. A sufficiently rich system cannot, under certain conditions, close all questions of truth and consistency from within itself.
+
+This must not be turned into proof that the human being is above machines. That would be an irresponsible leap. Gödel and Turing do not prove that human consciousness is hypercomputational. They do illuminate the danger of a system imagining that it can close all the conditions of its own truth from within itself.
+
+In the theory’s terms, non-closure is not always failure. Sometimes it is a sign that a sufficiently rich system has met the boundary of its language. Where a system cannot close itself, responsibility does not disappear; it begins.
+
 ### 10. The human being and the meta-level
 
 The human being is not proven here to be a being above all computation. But the human being also need not identify with one formal system. One can ask about the axioms, change representation, shift language, move to a meta-level, or recognize that a given frame is insufficient.
@@ -1248,12 +1283,16 @@ In the terms of NP, a witness or certificate is something that can be checked re
 
 This returns us to a basic principle of the theory: the living source comes before the information extracted from it. Not because the living source is always right, but because understanding is not merely the production of a correct sign. Understanding is a relation between source, distance, testing, correction, and responsibility.
 
+### 12. One map: representation, transition, resource, evidence, strategy, boundary
 
-## Sources, acknowledgements and inspirations
+If the languages unfolded here are joined, one map appears:
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
+representation → transition → resource → certificate/evidence → reduction → complement → strategy → change of representation → boundary → meta-level.
 
-See: site/pages/en/sources-en.html
+This is not proof that existence is computation. It is not proof that potential equals NP. It is a structural map showing that the gap between potential and ideal is not only a gap of desire, depth, or inspiration. It is also a gap of representation, resource, evidence, path, translation, and boundary.
+
+The optimal lives exactly in this middle. Sometimes it is an efficient solution. Sometimes it is the checking of a certificate. Sometimes it is a reduction to a central problem. Sometimes it is a strategy that holds against opposition. Sometimes it is a change of representation. And sometimes it is the recognition that the system cannot close itself, so one must move a level without pretending that the move is final proof.
+
 ### 13. Ending: an ideal that is not closure
 
 The ideal is not a machine that proves everything from within itself. It is not the complete closure of all questions, and it is not a promise that every potential can be efficiently realized. It is a more responsible relation between truth, proof, boundary, and meaning.
@@ -1294,19 +1333,189 @@ This chapter therefore does not try to turn the theory into science, and it does
 
 The connection to the recursive edge is clear: every precise answer opens a new boundary. Every successful model also reveals what it does not contain. Every proof stands inside a system. Every measurement depends on instrument, context, and question. Science, when faithful to itself, is therefore not the enemy of hope and not a replacement for it. It is one of the ways human potential approaches the ideal without lying to itself that it has already arrived.
 
+### Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
+## Locality, Non-locality, and Contextuality
 
-See: site/pages/en/sources-en.html
+Correlation is not a message, and context is not noise around the answer
 
-## Sources, acknowledgements and inspirations
+Locality, Non-locality, and Contextuality
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
+Image description: local and non-local relations, measurement, context, and correlations that are not messages.
 
-See: site/pages/en/sources-en.html
-ing is precise, if the structure knows how to strike, and if the joke carries an emotional wound, the system can be optimal without being “perfect” in every component.
+Correlation is not a message, and context is not noise around the answer. These are the two warnings without which locality, non-locality, and contextuality cannot be used responsibly. This chapter does not try to prove the theory through quantum mechanics, and it does not try to turn Bell, Kochen-Specker, Bohmian mechanics, or measurement into philosophical slogans. It tries to learn from them a discipline of appearance: what can be said about a thing when the way it is measured, asked about, and made to appear is part of the conditions of the answer.
+
+Non-locality is not telepathy, not an instant message, and not permission to say that everything affects everything. The no-signalling principle is a necessary safeguard: a correlation can be non-classical without becoming a communication channel. Contextuality is not relativism and not the claim that there is no truth. It teaches a subtler lesson: there are situations in which what can be said responsibly depends on the conditions of measurement, language, assumptions, and the relational structure within which the result appears.
+
+In this sense, the chapter is not quantum in order to sound deep. It is quantum only insofar as it requires precision. Potential is not “everything is possible”; the ideal is not “truth without context”; and the optimal is not an answer that erases its conditions. The optimal is an answer that knows the context in which it works.
+
+### 1. Locality: responsibility begins somewhere
+
+Locality is first of all a physical concept, but in this chapter it also serves as a careful structural lesson: to speak responsibly, one must know where one is speaking from. Location is not only a limitation. It is also a condition of responsibility. Whoever speaks as if speaking from nowhere risks speaking for everything while carrying the conditions of nothing.
+
+In the theory, the living source is not a divine observer outside the system. It is a situated source: body, language, memory, tools, question, limitation, and the possibility of error. This situatedness does not make it less real. It makes it more responsible, because it must say from where it speaks and what cannot be seen from there.
+
+Locality is therefore not merely restriction. It is the beginning of honesty. Moral action, legal interpretation, medical diagnosis, education, art, and AI output all begin from local conditions. This does not mean truth is only local; it means every responsible statement must recognize the location from which it begins.
+
+The ideal is not a view without place. An ideal without place can become a voice that erases life, because it speaks as if it came from nowhere and therefore owes an account to nowhere. The responsible ideal does not give up truth, but refuses to hide the conditions of its appearance.
+
+### 2. Non-locality: correlation is not communication
+
+Quantum non-locality is a delicate concept, not a license for mysticism. It does not mean instant messaging, does not prove telepathy, does not prove that everything freely affects everything, and does not turn the world into a voluntary web of meanings.
+
+The necessary methodological safeguard is the no-signalling principle: quantum correlations can be non-classical, but they cannot be used to send controlled information faster than light. Correlation is not a communication channel. Relation is not control. Dependence is not necessarily direct moral responsibility.
+
+This sentence matters outside physics as well. In life and society, it is easy to confuse relation with message, correlation with cause, resemblance with meaning, statistical dependence with responsibility. The theory must avoid the same mistake: the fact that two things are connected does not mean that one speaks for the other.
+
+Potential is not a network in which every possibility sends a message to every other possibility. It is a field in which possibilities can appear under conditions. The ideal is not the expansion of all connections in all directions, but the clarification of which connections are worthy, in what context, and under what responsibility.
+
+### 3. Bell: a boundary for a local-classical intuition
+
+Bell’s theorems and Bell inequalities show that, under certain assumptions, families of local hidden-variable theories cannot reproduce the predictions and experiments of quantum mechanics. This is a deep boundary on certain kinds of explanation, not a slogan that everything is connected to everything.
+
+Bell does not prove that reality is consciousness. It does not prove that there are no facts. It does not prove that everything is non-local in the popular sense. It shows that a certain intuition — that one can preserve classical locality together with certain hidden values that reproduce the predictions — meets a hard boundary.
+
+The lesson for the theory is not “anything goes.” It is the opposite. Not every simple intuition survives testing. Sometimes what feels natural to thought is not enough when it must face experiment, formalism, and conditions of verification.
+
+The same is true in moral and philosophical work. Intuition can be a beginning, but not an end. A feeling of truth does not exempt us from conditions of testing. An idea that sounds deep does not become ideal merely because it feels right. It must pass through a boundary of testing.
+
+### 4. Kochen-Specker: context is not noise around value
+
+The Kochen-Specker theorem points to a principled difficulty in assigning definite pre-existing values to all quantum quantities in a noncontextual way while preserving the structural relations of the theory. In broader language: it is not always possible to think of measurement results as if they were all written in advance, independently of how the question was asked.
+
+This does not mean the observer invents reality at will. It does not mean there is no truth. It does not mean every interpretation is equal. It does require caution: the conditions of measurement are not always noise around value; sometimes they are part of what makes responsible talk about value possible.
+
+Here the deep connection to the theory appears. Context is not merely an external disturbance. In some cases, context is part of the conditions of appearance. Question, instrument, language, assumption, procedure, and purpose can change what can be said responsibly about the thing.
+
+Context is not an excuse to escape truth. It is what requires us to say which truth is being stated, under what conditions, by what instrument, and within what boundary.
+
+### 5. Measurement is not magic, and observer does not simply mean consciousness
+
+One of the major mistakes in popular language about quantum mechanics is to identify measurement with human consciousness. The “observer” becomes an almost mystical figure, as if personal awareness itself creates reality. This chapter must avoid that.
+
+Quantum measurement is not magic, and it is not proof that consciousness creates reality. It names the place where system, instrument, interaction, question, formalism, and registration meet so that a result can be stated. It does not need to become human will in order to be more than passive looking.
+
+The meaning for the theory is delicate: the living source does not create truth by will. It also does not erase itself in the name of false neutrality. It is situated within question, instrument, language, and body, and therefore must carry responsibility for the conditions in which the answer appears.
+
+Truth does not need to be conditionless in order to be truth. But when its conditions are hidden, it becomes dangerous. It begins to speak as if it were absolute even when it depends on instrument, question, and frame.
+
+### 6. Entanglement: not emotional connection and not a message channel
+
+If entanglement is mentioned, it must be handled carefully. Entanglement is not emotional connection, not spiritual unity, not telepathy, and not a message channel. It is a precise quantum structure of a shared state that does not decompose simply into independent states of its parts.
+
+It can teach cautiously that there are situations in which the whole is not well described as a collection of independent parts. But here too one must not jump into mysticism. The fact that a quantum system requires a joint description does not mean that every human, moral, or cultural relation is entanglement.
+
+The connection to the theory must be structural only: sometimes meaning does not sit inside one isolated part but in a relation. Sometimes evidence does not arise from one component but from a structure. But when one moves from physics to life, one must mark that this is structural inspiration, not physical proof.
+
+This is a discipline principle: do not use the beauty of a concept to extend it beyond the domain where it is measured.
+
+### 7. Bohmian mechanics: saving a picture at a cost
+
+Bohmian mechanics reminds us that no interpretation receives everything for free. It preserves determinism and a kind of particle trajectory picture, but at the cost of explicit non-locality and commitment to another theoretical structure.
+
+This chapter does not need a full technical discussion. Its role here is to show that every framework that saves one intuition pays a price elsewhere. If one wants to preserve a certain world-picture, one must be willing to say what its cost is.
+
+This is an important lesson for the theory. Every language that organizes the world hides something, highlights something, and pays a price. No language saves everything without boundary. An ideal that does not recognize the cost of its language becomes dangerous, because it presents itself as natural, unconditioned, and without alternatives.
+
+The optimal is not the language with no cost. It is the language that honestly states what it enables, what it requires, and what it cannot carry.
+
+### 8. Context is not subjectivity
+
+This is the heart of the chapter. Context is not subjectivism. It does not mean “everyone has their own truth.” It does not mean there is no reality outside interpretation. It does not mean every interpretation is equal. It also does not mean the observer is free to create values at will.
+
+Quantum contextuality is a technical concept. The broader use of the word context in chapters on AI, law, education, medicine, and art is a cautious structural extension, not proof transferred from physics. The chapter must say this in order not to fall into the very mistake it warns against.
+
+Still, the structural inspiration is strong: sometimes one cannot responsibly speak about a result without speaking about the question, instrument, procedure, and frame within which it appeared. Context does not abolish truth; it requires us to be more precise about the form of its appearance.
+
+Truth does not disappear when it appears within context. It becomes responsible only when its context is not hidden.
+
+### 9. Potential, ideal, and optimal within conditions of appearance
+
+Potential is not a warehouse of ready-made results. It is a field in which a possibility becomes sayable only when there is a question, instrument, context, and boundary. This does not mean everything is possible, and it does not mean there is no truth until someone looks. It means possibility takes form under conditions.
+
+The ideal is not contextless truth. An ideal that does not recognize its context becomes violent; an ideal that dissolves entirely into context loses its spine. The responsible ideal holds both: truth and conditions of appearance.
+
+The optimal is not “my relative truth.” It is not subjectivism. It is the most responsible answer that can be carried within defined conditions of appearance: an answer that says what it knows, under which question, by which instrument, in which language, within which boundary, and what remains open.
+
+Here the chapter joins the previous ones. In science we learned domain of validity. In computation we learned representation and evidence. In the structure of the universe we learned horizon. In high-energy physics we learned scale and appearance. Here we learn context: not as an excuse, but as a condition of responsibility.
+
+### 10. Living source, distance, and evidence
+
+The living source is not one who cancels physics in favor of consciousness, and not a divine observer who creates truth by will. A living source is one who asks, measures, interprets, errs, corrects, and carries responsibility within language, body, instrument, and limitation.
+
+Evidence is not a naked result. It passes through distance: from system to measurement, from measurement to sign, from sign to model, from model to interpretation, and from interpretation to action that can be carried responsibly.
+
+This distance is not only failure. It is what makes criticism possible. If there were no distance between result and interpretation, there would be no way to test interpretation. If there were no distance between source and output, there would be no way to ask what was lost on the way.
+
+The theory therefore does not seek to abolish distance. It seeks not to pretend distance is absent. Responsibility begins when one identifies the path from sign to meaning.
+
+### 11. AI: output is context-dependent
+
+AI is not non-local in the physical sense, and quantum mechanics must not be used to explain its operation. But AI shows very clearly how output depends on context: prompt, training data, system policy, memory, tools, interface, language, culture, user intent, evaluation metric, and deployment environment.
+
+“The model said” is therefore not the end of the discussion but its beginning. It is closer to saying “the detector registered” than to saying “the truth has been spoken.” One must ask: which model? which prompt? which information? which constraints? which use? which source? which test? which responsibility?
+
+The output does not appear in a vacuum. It is the result of a system of conditions. As throughout this chapter, context does not abolish the possibility of evaluating the answer; it requires a more precise evaluation. An AI answer can be useful, but only if it does not hide the conditions of its appearance.
+
+The optimal in working with AI is not the answer that sounds most confident. It is the answer that can show its conditions, limits, sources, purpose, and the human being who carries responsibility for its use.
+
+### 12. The recursive edge: who defined the context?
+
+When the context of an answer is exposed, responsibility does not end. A new question opens: who defined the context, in what context was it defined, what does it allow us to see, and what does it hide? This is the recursive edge of truth within conditions of appearance.
+
+Every measurement frame rests on another frame. Every language rests on a wider language. Every tool rests on design choices. Every AI policy rests on values. Every legal procedure rests on assumptions about justice. Every exposed context opens another context.
+
+This does not abolish truth. It prevents truth from disguising itself as a view without place. The recursive edge is not despair; it is the form of responsibility for thought that does not lie to itself that it has finished.
+
+The chapter therefore does not end by saying that everything depends on everything. It ends with the opposite demand: if something depends on context, we must become more precise, not less.
+
+### 13. Ending: truth that does not hide its conditions
+
+Locality, non-locality, and contextuality do not prove the theory. They teach it a form of responsibility. Locality reminds us that every action begins somewhere. Non-locality reminds us that not every correlation is a message, and not every relation is communication. Contextuality reminds us that context is not noise around truth, but sometimes part of the conditions of its appearance.
+
+The lesson is not relativism. On the contrary: relativism begins when context is used to escape responsibility. Here context requires responsibility. It demands that one say in what question, by what instrument, in what language, for what purpose, and within what boundary the answer was stated.
+
+Truth does not disappear when it appears within context. It becomes responsible only when its context is not hidden.
+
+### Source discipline
+
+Working sources and caution: this chapter relies on the theory itself and on focused sources in the philosophy and foundations of quantum mechanics: Bell’s theorem, Kochen-Specker theorem, quantum contextuality, no-signalling, Bohmian mechanics, and foundations of quantum mechanics. These sources do not prove the theory; they serve as safeguards against empty or misleading use of quantum terms.
+
+## Creation, Canon, and Optimum: What Must Not Be Lost
+
+The necessary cost of form
+
+Chapter illustration: Creation, Canon, and Optimum
+
+Image description: a fragmented figure around a center of light, as form chosen from excess possibility.
+
+Creation is one of the most precise laboratories for the relation between potential and ideal, because it is born from excess. Before there is a book, film, series, comic, game, or creative franchise, there is an overly wide field of possibilities: characters, plots, endings, worlds, styles, voices, and modes of appearance. Creation is therefore not only an act of addition, but an act of relinquishment.
+
+Every work says: this enters, and that does not. This character will be born, and that character will remain a possibility. This ending will close, and other endings will remain outside the form. In this sense, a good work is not the one that realizes all its potential, but the one that knows which part of its potential deserves form, and which part must remain outside so that the form does not lose itself.
+
+The potential of a work is everything it could have been. Its ideal is what it must not lose. The optimum is the form in which its relinquishments remain faithful to that thing.
+
+This chapter, then, is not only about art or culture. It is about the necessary cost of form. Every living form is born from an excess it cannot fully carry. If it tries to include everything, it loses center. If it closes itself too quickly, it loses life. The great work stands between these two failures: it knows enough to choose, and relinquishes enough to remain faithful.
+
+Relinquishment is the grace of creation: the consent not to be everything possible, in order to remain faithful to what is worthy.
+
+### 1. Potential, ideal, and optimal in creation
+
+Potential in creation is not a promise of depth. It is excess. It is everything that can be written, filmed, drawn, composed, added, continued, expanded, or shown. Such excess can be a gift, but it is also a danger. The field of possibilities can open a work, but it can also flood it until no inner law remains.
+
+The ideal is not “the version in which everything is perfect.” The ideal in creation is the law of choice: what must remain when one changes, shortens, adapts, translates, expands, or continues. The ideal is not all possibilities in a perfected state, but that which filters possibility so that one possibility can become form.
+
+The optimal is not the largest, richest, most polished, or most detail-faithful form. The optimal is the form in which the relinquishments remain faithful to the ideal. It knows what to leave outside so the center does not suffocate. It knows what not to explain so mystery remains alive. It knows which power not to use so morality is not destroyed.
+
+In this sense, every work is a test of responsibility. Not only what can be done, but what should be done. Not only what can be added, but what the addition will cost. Not only what can be continued, but whether the continuation still carries the inner law of what came before.
+
+### 2. The single-axis optimum
+
+There are works in which one component becomes the axis around which everything arranges itself: writing, tone, structure, image, performance, rhythm, or idea. In such works, not every layer needs to be ideal in itself. Sometimes a functional, rough, or narrowed shell allows the central axis to remain exposed and sharp.
+
+In meta-television comedy, for example, the world is not always built to impress visually. Direction is not always the center, and the aesthetic may remain almost utilitarian. But if the writing is precise, if the structure knows how to strike, and if the joke carries an emotional wound, the system can be optimal without being “perfect” in every component.
 
 Works such as Community or Rick and Morty matter here not as recommendations, but as examples of a principle. In Community, genre is an instrument: western, documentary, bottle episode, mafia, science fiction, or television about television — all are used to reveal something about characters, relationships, and fears. The artificial form does not replace emotion; it becomes the way to reach it.
 
@@ -1450,12 +1659,10 @@ A great work knows how to distinguish potential from noise, expansion from loss 
 
 It does not try to be everything. It chooses what not to be in order to be real.
 
+### Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on critical readings of works, genres, adaptations, and creative franchises. Names of works and characters are used as structural examples only, not as final claims about their meaning. The chapter does not claim that a cultural example proves the theory; it uses examples to show how potential, ideal, and optimal become concrete in the work of creation, relinquishment, and preservation of center.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
-
-See: site/pages/en/sources-en.html
 ## Art of Potential
 
 Form, living source, canon, and a market that is not the final judge
@@ -1480,12 +1687,10 @@ Art of potential links to economy because markets can enable and deform creation
 
 Art of potential is not nostalgia against technology and not a defense of suffering as authenticity. It says: use any tool, but do not lie about where the tool stood in for the source. A living work is not only an impressive result. It is the trace of a choice that passed through a person.
 
+### Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
-
-See: site/pages/en/sources-en.html
 ## Music of Potential
 
 Time, voice, listening, and resonance that is not a metric
@@ -1508,12 +1713,10 @@ Music links to economy because it lives between gift, work, and market. It links
 
 Music of potential does not say that the human is always better than the machine. It says the question is not who produced the cleaner sound. The question is whether there is a responsible relation between source, voice, time, and listening.
 
+### Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
-
-See: site/pages/en/sources-en.html
 ## 10. Engineering and Architecture of Potential
 
 Material, Form, Load, and Repair That Is Not Redemption
@@ -2126,12 +2329,14 @@ In the end, law returns a central lesson to the theory: the ideal is not cancell
 
 The law of potential does not replace law, does not offer legal advice, and does not propose emotional justice instead of procedure. It is a critical-ethical principle, not a ready legal doctrine and not a substitute for interpretation of existing law. It preserves the question procedure sometimes forgets: is the form still serving justice, or has justice become an excuse for the form? Does the system protect the human possibility of correction, or merely produce closure? And inside all the decisions, pain, evidence, and forms, does the person still remain a living source that cannot be fully reduced to their role in the case?
 
+### Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
+---
 
-See: site/pages/en/sources-en.html
+Short methodological clarification: When this document uses terms from mathematics, physics, computer science, logic, law, or artificial intelligence, they should be read according to their stated context: sometimes as structural metaphor, sometimes as a reading model, and only as a formal claim when explicitly presented as such. The use of a scientific or legal term should not be treated as scientific, metaphysical, or legal proof by itself.
+
 ## Medicine of Potential
 
 Body, pain, diagnosis, and care that does not own life
@@ -2156,12 +2361,10 @@ Medicine of potential links to boundary horizons because every diagnosis is a ho
 
 This chapter gives no medical advice. It clarifies the condition of responsibility: the patient is not the output of a test, the physician is not a relay for an algorithm, and a system may not call efficiency “care” when efficiency was bought by erasing listening.
 
+### Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
-
-See: site/pages/en/sources-en.html
 ## 13. The Imaginary, the Virtual, Gravity, and the Horizon
 
 Figure F: The imaginary, the virtual, and the horizon in the logical model.
@@ -2583,12 +2786,10 @@ In law, the evidence horizon determines responsible judgment. In education, the 
 
 Boundary horizons link to the recursive edge because every moved horizon reveals another horizon. There is no final point where all hiddenness disappears. But this is not despair: naming the boundary makes action more moral. A person is not required to know everything; they are required not to lie about what they do not know.
 
+### Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
-
-See: site/pages/en/sources-en.html
 ## 14. Mass-Energy and Medium - A Precise Image, Not a Proof
 
 This section does not claim that physics proves the theory. The
@@ -2827,12 +3028,10 @@ The human being does not act outside the universe, and does not choose outside p
 
 Not every horizon is a prison. Sometimes a horizon is the condition that allows form to appear without lying that it is everything.
 
+### Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on reliable general cosmology sources such as NASA, ESA/Planck, WMAP, and university-level explanatory material on the observable universe, cosmic microwave background radiation, curvature, topology, and cosmological horizons. These sources do not prove the theory; they serve as safeguards against empty or misleading use of astronomical terms.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
-
-See: site/pages/en/sources-en.html
 ## High-Energy Physics
 
 Scale, appearance, field, evidence, and responsibility within a domain of validity
@@ -2967,12 +3166,10 @@ High-energy physics gives the theory no proof from outside. It does not turn pot
 
 The responsible model is not the one that pretends to see everything. It is the one that honestly says: here I work, here I approximate, here I am measured, here I fail, and here another language is required. In this, high-energy physics becomes not a proof of the theory, but a lesson in the optimal: local fidelity to what can be known, without lying that this is the end of knowledge.
 
+### Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on focused physics sources such as CERN on the Standard Model, CERN/ATLAS/CMS on the Higgs discovery and explanation, reliable explanations of accelerators and detectors, and introductory sources on EFT and renormalization. These sources do not prove the theory; they serve as safeguards against empty or misleading use of physical terms.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
-
-See: site/pages/en/sources-en.html
 ## Black Holes, Event Horizons, and the Holographic Principle
 
 Boundary, information, accessibility, and traces - without turning physics into metaphysical proof
@@ -2995,12 +3192,10 @@ Black holes also remind us of the danger of systems that do not drain. When info
 
 The chapter links to the structure of the universe, boundary horizons, law as evidence, and AI as source/trace. It forces the theory to keep caution: black holes are not simply metaphors. They are physics. The only permitted metaphor is one that declares itself a metaphor and does not behave like fact.
 
+### Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
-
-See: site/pages/en/sources-en.html
 ## Chapter ?:↓
 
 ## Chapter ?:↓
@@ -3017,9 +3212,342 @@ See: site/pages/en/sources-en.html
 
 ## Chapter •: Application
 
+## Sources, Inspirations, Ideas, and Acknowledgements
 
-## Sources, acknowledgements and inspirations
+The following sources, names, and ideas are not presented as
+authorities that prove the theory. They do not prove Between Potential
+and Ideal, and the theory is not derived from them as from a single
+origin. They are intellectual neighbors, inspirations, useful
+vocabularies, and conceptual debts. The theory is close to them in
+certain places and departs from them in others.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
+Proximity is not identity. If a name appears here, it does not mean
+that the theory accepts that thinker’s whole system. It means that the
+name helped formulate, sharpen, challenge, or locate one part of the
+larger movement: how potential passes through law, boundary, matter,
+friction, and processing until it can become a more responsible
+direction.
 
-See: site/pages/en/sources-en.html
+### Philosophical Lineage
+
+Aristotle is relevant because of the distinction between potentiality
+and actuality. The present theory is close to that question, but does
+not stop at the passage from the possible to the actual. It asks what
+happens after actualization, and whether a form that has become real can
+be clarified until it becomes more faithful to the potential from which
+it came.
+
+Plato is relevant because the language of the ideal echoes the Form
+of the Good and the relation between the visible world and a higher form
+of understanding. Yet here the ideal is not simply a static form above
+becoming; it is the clarified resolution of potential through
+experience, boundary, and responsibility.
+
+Plotinus and Neoplatonism are relevant because of the relation
+between unity and multiplicity. The present theory shares the intuition
+that multiplicity can arise from unity, but refuses to make the other
+ethically unreal, and refuses to treat the final aim as the erasure of
+difference.
+
+Benedict de Spinoza is relevant because of his immanent conception of
+God: God is not outside reality. The present theory shares the rejection
+of an external divine ruler, but departs from Spinoza by placing at the
+center not only the necessity of reality, but the possibility of moral
+clarification from absolute potential toward the ideal.
+
+Leibniz is relevant as background for possible worlds, perfection,
+monads, and the relation between multiplicity and order. The present
+theory does not adopt the metaphysical optimism of “the best of all
+possible worlds,” but it is close to the question of how possibility,
+order, and perspective touch one another.
+
+Kant is relevant mainly as a background of caution regarding the
+limits of knowledge. The theory does not claim to possess the
+thing-in-itself, and does not replace critique with unrestricted
+metaphysics. It tries to speak of the whole while recognizing that every
+human language meets a boundary.
+
+Hegel is relevant because the result cannot be separated from the
+path by which it becomes. The present theory shares the processual
+intuition, but frames the movement as absolute potential becoming ideal
+through clarification, friction, and responsibility rather than only as
+the development of spirit in history.
+
+Whitehead and process philosophy are relevant because reality is
+understood as becoming rather than as a static block. The theory is
+close to this sensitivity, but keeps its own formulation: not only
+process, but a process in which potential is tested by whether it can
+become ideal without erasing what passed through it.
+
+Dostoevsky belongs here not only through The Idiot, but through the entire space in which an idea enters a human being and does not come out whole. In The Idiot, it is the almost impossible goodness of Prince Myshkin: not a solution, not a simple saint, but compassion and beauty entering a world of embarrassment, desire, possession, and fear, and being distorted there. In Notes from Underground, it is consciousness refusing to be closed inside any formula that would fully explain it. In Crime and Punishment, it is the moral or supra-personal idea becoming an act, and then returning to the body as guilt, fever, fear, mercy, and inner punishment. In The Brothers Karamazov, it is the question of faith standing before suffering that cannot be cleanly justified. And in Demons, it is the danger of an ideal becoming ideology: a truth so large that it begins to erase the human being in its name.
+
+Nietzsche stands across from the same region from another side. He does not simply cancel the question of the ideal; he tests whether the ideal has already become an idol, whether morality is a flight from life, whether compassion can sometimes conceal a form of control, and whether meaning received from outside is a way of avoiding the harder task: saying yes to life without lying about it.
+
+Between Dostoevsky and Nietzsche, one of the deepest axes of Between Potential and Ideal opens: on one side, the human being who cannot bear the depth of goodness, guilt, faith, or freedom; on the other, the suspicion that every ideal may become consolation, idol, or force. Therefore the ideal in this theory is not a final solution and not a ready-made redemption. It is a living, vulnerable, unsecured direction — a movement trying to remain faithful to the possibility of repair without erasing the fracture from which it is born.
+
+Camus remains relevant beside this axis as a background to the crisis of the absurd and to the question of how one can continue acting when meaning is not guaranteed in advance. The theory does not abolish the absurd and does not overpower it; it tries to formulate nihilism with hope - not certainty of meaning, but the possibility that pain, boundary, and friction need not remain the final word.
+
+Existentialism, especially the questions of freedom, responsibility,
+and meaning that is not given in advance, stands in the background of
+the theory. The human being is not only the result of law, and not only
+a point inside a system; the human being is a place where possibility is
+required to take responsibility for its form.
+
+Buddhist traditions, especially questions of non-self, suffering,
+craving, compassion, and release, are deeply relevant. The theory shares
+their suspicion toward rigid ego and absolute separation, but insists
+that release cannot mean the erasure of the person, of difference, or of
+responsibility.
+
+Advaita Vedanta and Shankara are relevant as background for
+non-separation and for the question of whether multiplicity is illusion,
+appearance, or partial truth. The theory is close to the intuition of
+unity, but moves away from any formulation in which unity cancels the
+moral meaning of multiplicity.
+
+Daoism is relevant as background for the idea of a way that is not
+imposed from outside, of action that is not violent, and of form that
+does not break the flow. The theory is not Daoist, but it is close to
+the question of how direction can appear without becoming control.
+
+### Mathematics, Logic, and Forms of Thought
+
+Mathematics does not prove the theory, but it gives it images of
+structure, boundary, infinity, possibility-space, and the relation
+between form and law.
+
+The tradition of complex numbers, especially the use of the imaginary
+number, is relevant as an image of the fact that not everything outside
+the real axis is meaningless. Euler and Gauss are relevant here as broad
+mathematical background, not as metaphysical authorities.
+
+David Hilbert and John von Neumann are relevant because of Hilbert
+space and the formalization of quantum mechanics. In the theory, Hilbert
+space is not “the space of all existential possibilities,” but a limited
+image of a state-space for a defined system, and of the need to
+distinguish possibility, state, measurement, and law of evolution.
+
+Georg Cantor is relevant as background for infinity and different
+kinds of infinity. The idea that each stage - I‑Verse, Universe,
+Multiverse, Omniverse - can decompose again into similar structures is
+not a formal mathematical claim about Cantorian infinity, but it is
+close to the intuition that infinity is not merely “very many,” but a
+structure that can appear across levels.
+
+The P versus NP problem is relevant here only as a limited logical
+image: not as a mathematical solution and not as proof of the theory,
+but as language that emphasizes the distance between recognizing a
+solution afterward and finding the path to it in advance. In the terms
+of the theory, it is one image for the relation between potential,
+search, verification, iteration, and ideal.
+
+Kurt Gödel and Alan Turing are relevant as background for the limits
+of formal systems, computation, proof, and a system’s self-reference.
+The theory does not use Gödel’s theorems or Turing machines as proof; it
+uses them only as a careful background for the idea that a system can
+ask about its own limits from within.
+
+Complexity theory, polynomial-time reductions, NP-completeness, coNP, the
+polynomial hierarchy, and QBF are relevant
+here only as structural language: they do not identify potential with a
+complexity class, but help distinguish finding, verification, resource,
+translation, strategy, and boundary.
+
+Linear algebra and matrix diagonalization are relevant as background
+for the language of state-space, operation, and change of basis. Here
+too, there is no claim that existence is a matrix; only a careful image
+that sometimes understanding a system depends on the basis in which its
+action is seen.
+
+Benoit Mandelbrot and fractal thinking are relevant as background for
+recursion, self-similarity, and the infinite decomposition of
+structures. The use here is structural only: each level of reality can
+contain a further division, and each component can itself become a space
+of possibilities.
+
+### Physics, Cosmology, and Information
+
+The physics that appears in the theory is not a proof of metaphysics.
+It is a precise language, a limited structural analogy, and a partial
+formal image. It helps distinguish physical energy from metaphorical
+energy, physical matter from matter as an image of form and condition,
+and mathematical, physical, and existential boundaries from one
+another.
+
+Einstein and Minkowski are relevant because of relativity, spacetime,
+mass-energy equivalence, and the understanding that gravity is not
+merely a force on a fixed stage but is related to the geometry of
+spacetime. The theory does not derive meaning from Einstein’s equations;
+it uses them carefully to think of “weight” as an image for
+what changes the field of possibilities around it.
+
+Max Planck, Niels Bohr, Werner Heisenberg, Erwin Schrödinger, Paul
+Dirac, Wolfgang Pauli, and Richard Feynman are relevant as background to
+quantum mechanics, quantum field theory, superposition, measurement,
+uncertainty, particles, diagrams, fermions, and bosons. The theory does
+not turn quantum mechanics into mysticism; it uses it to resist the
+assumption that only what has already become an object is real in the
+deeper sense.
+
+Emmy Noether is relevant because of the relation between symmetries
+and conservation laws. This relation matters as background for the
+language of law, boundary, condition, and possibility that cannot appear
+arbitrarily.
+
+Peter Higgs, François Englert, and Robert Brout are relevant because
+of the Higgs mechanism and the question of how mass can appear through
+relation with a field. The theory does not use the Higgs mechanism as
+proof, but as a careful image for the idea that a property that appears
+internal can depend on a deeper relation with field and condition.
+
+Schwarzschild, Kerr, Penrose, Wheeler, Bekenstein, and Hawking are
+relevant because of black holes, event horizons, singularities, horizon
+entropy, and Hawking radiation. The black hole is not a simple emotional
+metaphor, but an edge-image of a place where boundary, information,
+geometry, and time become entangled.
+
+Gerard ’t Hooft, Leonard Susskind, Juan Maldacena, Don Page, and
+contemporary work on holography and island corrections are relevant as
+background to the black hole information problem. There is no physical
+conclusion being claimed here; there is caution before a question in
+which information conservation, geometry, and thermodynamics still
+require a deeper framework.
+
+Claude Shannon and Landauer are relevant as background to
+information, entropy, and the relation between information and physics.
+The theory uses information carefully: not as a replacement for
+experience, and not as proof of consciousness, but as a way to ask what
+is preserved, what is lost, and what is translated.
+
+The discussion of the multiverse, possible universes, and layers such
+as I‑Verse, Universe, Multiverse, and Omniverse touches a broad
+background of possible-worlds thinking, speculative cosmology, and ideas
+such as Everett, David Lewis, and Max Tegmark. The theory does not
+commit to any one of those cosmological or modal models; it uses the
+vocabulary to think about recursion, layers, perspectives, and the
+infinite decomposition of possibility.
+
+### Artificial Intelligence, Consciousness, and Contemporary Mirrors
+
+The AI analogy is a contemporary addition. It is not a proof, but a
+mirror: it helps distinguish information, experience, awareness,
+self-relation, imitation, and understanding.
+
+Alan Turing is relevant here as well because of the question of
+imitation, testing, and the gap between visible behavior and
+consciousness. Norbert Wiener is relevant as background to cybernetics,
+feedback, and self-regulating systems. John Searle and David Chalmers
+are relevant as background to the Chinese room, consciousness,
+experience, and the hard problem. The theory does not solve the problem
+of consciousness; it uses artificial intelligence to return to the
+distance between information and experience.
+
+Conversations with artificial intelligence systems also served as
+tools of formulation, processing, and critique. This grants no authority
+and supplies no source of truth. It is a working tool and a conceptual
+mirror, not an additional author of the theory.
+
+### Works, Stories, and Edge-Images
+
+Roger Williams, The Metamorphosis of Prime Intellect, is relevant as
+a reference point for examining the danger of a primary intelligence
+that tries to abolish suffering through control, and thereby erases the
+distance through which the human being becomes a source of meaning.
+
+Rhadamanthus / Reddit, Feed the Pig, is relevant as a reference point
+for examining the choice of consciousness at the edge of suffering, and
+for identifying grace not only as continued climbing but also as the
+willingness of the whole to renounce information for the sake of the
+person. This is not a classical philosophical source, but it is relevant
+here because it touches directly one of the theory’s central intuitions:
+not every rescue is control, and not every grace is the forced
+continuation of the process.
+
+The discussion of creation, canon, and optimum also uses cultural
+works as a kind of structural laboratory: Community and
+Rick and Morty as examples of writing-optimum and creative
+recursion; The Lord of the Rings as an example of an ideal that
+refuses corrupting potential; works by Miyazaki and examples such as
+Breaking Bad, Fight Club, Batman, Spider-Man, and
+Superman for examining canon, invariant, false ideal, and the relation
+between power and boundary; and Stephen King’s The Dark Tower,
+together with The Stand, The Eyes of the Dragon,
+Roland Deschain, Randall Flagg, and the rose, as an example of a
+recursive body of work in which adaptation is judged by whether it
+preserves a center, not merely symbols.
+
+### Acknowledgements and Source Note
+
+Thanks are due to traditions, books, questions, images,
+conversations, criticism, and to anyone who helps keep a living idea
+from turning into a closed doctrine. This theory seeks to remain open to
+criticism, not because it lacks direction, but because a real direction
+must be able to pass through resistance without becoming blind
+belief.
+
+The writer of the theory is responsible for the synthesis, the choice
+of concepts, and the connection between potential, ideal, the whole,
+boundary, friction, processing, and direction. The sources assist,
+illuminate, and challenge; they do not replace the responsibility of the
+theory to stand on its own.
+
+### Bibliography and Source Notes
+
+Aristotle, Metaphysics, and discussions of potentiality and
+actuality.
+
+Plato, Republic, especially the discussion of the Form of the
+Good.
+
+Plotinus, Enneads, especially the discussion of the One and
+multiplicity.
+
+Benedict de Spinoza, Ethics, Part I, especially Propositions XIV-XV
+and XVIII.
+
+Gottfried Wilhelm Leibniz, Monadology and writings on possible
+worlds.
+
+Immanuel Kant, Critique of Pure Reason, as background to the limits
+of knowledge.
+
+G. W. F. Hegel, Phenomenology of Spirit, Preface.
+
+Alfred North Whitehead, Process and Reality; see also introductions
+to process philosophy and process theism.
+
+Fyodor Dostoevsky, The Idiot, Notes from Underground, Crime and Punishment, The Brothers Karamazov, and Demons, as literary-philosophical background for questions of goodness, guilt, freedom, compassion, ideal, and ideology.
+
+Friedrich Nietzsche, The Gay Science, Thus Spoke Zarathustra, Beyond Good and Evil, On the Genealogy of Morality, and Twilight of the Idols, as background to the critique of nihilism, morality, compassion, idols, and the ability to say yes to life without false consolation.
+
+Albert Camus as background to the modern crisis of absurdity, action, and meaning that is not guaranteed in advance.
+
+Buddhist traditions, Nagarjuna, Advaita Vedanta, and Shankara as
+background to non-separation, non-self, and the critique of ego.
+
+Einstein, Minkowski, Noether, Heisenberg, Schrödinger, Dirac, Pauli,
+Feynman, Higgs, Englert, Brout, Bekenstein, Hawking, Penrose, Wheeler,
+Susskind, ’t Hooft, Maldacena, and Page as scientific background for the
+language of spacetime, quantum mechanics, fields, symmetries, horizons,
+information, and thermodynamics.
+
+Cantor, Hilbert, von Neumann, Gödel, Turing, and Mandelbrot as
+mathematical and logical background for infinity, state-spaces,
+formalism, computation, boundary, and recursion.
+
+Shannon, Landauer, Wiener, Searle, and Chalmers as background to
+questions of information, systems, feedback, consciousness, and the
+distinction between sign and experience.
+
+Roger Williams, The Metamorphosis of Prime Intellect; and
+Rhadamanthus / Reddit, Feed the Pig, as literary-conceptual sources for
+edge-images of grace, control, suffering, and renunciation.
+
+Note on quotations and lineage: the short references are used for
+philosophical, scientific, and literary orientation. The theory itself
+is presented as an independent proposal, not as a derivation from any
+single source.
+
+---
+
+Short methodological clarification: When this document uses terms from mathematics, physics, computer science, logic, or artificial intelligence, they should be read according to their stated context: sometimes as structural metaphor, sometimes as a reading model, and only as a formal claim when explicitly presented as such. The use of a scientific term should not be treated as a scientific or metaphysical proof by itself.

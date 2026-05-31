@@ -147,9 +147,10 @@ In the end, law returns a central lesson to the theory: the ideal is not cancell
 
 The law of potential does not replace law, does not offer legal advice, and does not propose emotional justice instead of procedure. It is a critical-ethical principle, not a ready legal doctrine and not a substitute for interpretation of existing law. It preserves the question procedure sometimes forgets: is the form still serving justice, or has justice become an excuse for the form? Does the system protect the human possibility of correction, or merely produce closure? And inside all the decisions, pain, evidence, and forms, does the person still remain a living source that cannot be fully reduced to their role in the case?
 
+## Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
+---
 
-See: site/pages/en/sources-en.html
+**Short methodological clarification:** When this document uses terms from mathematics, physics, computer science, logic, law, or artificial intelligence, they should be read according to their stated context: sometimes as structural metaphor, sometimes as a reading model, and only as a formal claim when explicitly presented as such. The use of a scientific or legal term should not be treated as scientific, metaphysical, or legal proof by itself.

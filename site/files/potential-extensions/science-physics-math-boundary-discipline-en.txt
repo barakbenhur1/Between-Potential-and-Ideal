@@ -30,12 +30,10 @@ This chapter therefore does not try to turn the theory into science, and it does
 
 The connection to the recursive edge is clear: every precise answer opens a new boundary. Every successful model also reveals what it does not contain. Every proof stands inside a system. Every measurement depends on instrument, context, and question. Science, when faithful to itself, is therefore not the enemy of hope and not a replacement for it. It is one of the ways human potential approaches the ideal without lying to itself that it has already arrived.
 
+### Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
-
-See: site/pages/en/sources-en.html
 # Science, Physics, and Mathematics as Boundary Discipline
 
 ## How to use precision without turning it into decoration
@@ -52,9 +50,10 @@ Physics teaches another humility: a theory can be extremely precise within a dom
 
 Boundary discipline also protects the living source. When scientific language is used as decoration, it exploits the work of scientists as an effect. When used carefully, it honors the distance they carried to turn not-knowing into partial responsible knowledge.
 
+## Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
+---
 
-See: site/pages/en/sources-en.html
+Short methodological clarification: When this document uses terms from mathematics, physics, computer science, logic, or artificial intelligence, they should be read according to their stated context: sometimes as structural metaphor, sometimes as a reading model, and only as a formal claim when explicitly presented as such. The use of a scientific term should not be treated as a scientific or metaphysical proof by itself.

@@ -20,9 +20,11 @@ Multiverse and omniverse are used here only as linguistic warnings. As the field
 The shape of potential is not a proven geometric shape. It is a way of speaking about relations among possibilities, boundaries, appearances, and choices. Any language about the universe must drain pretension rather than add a halo to it.
 
 
+## Source discipline
 
-## Sources, acknowledgements and inspirations
+Working sources and caution: this chapter relies on the theory itself and on background sources checked outside the prompt: UNESCO on artificial intelligence in education, WHO on ethics and governance of AI for health, the NIST AI RMF for AI risk management, CERN/ATLAS on the Standard Model and the Higgs, NASA and ESA/Planck on cosmology, the Stanford Encyclopedia of Philosophy on Bell, Kochen-Specker and contextuality, and Britannica/ISFDB for the literary identification of Harlan Ellison and I Have No Mouth, and I Must Scream. These sources are not treated as proofs of the theory; they are safeguards against empty borrowing of terms.
 
-The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
+---
 
-See: site/pages/en/sources-en.html
+**Short methodological clarification:** When this document uses terms from mathematics, physics, computer science, logic, or artificial intelligence, they should be read according to their stated context: sometimes as structural metaphor, sometimes as a reading model, and only as a formal claim when explicitly presented as such. The use of a scientific term should not be treated as a scientific or metaphysical proof by itself.
+
