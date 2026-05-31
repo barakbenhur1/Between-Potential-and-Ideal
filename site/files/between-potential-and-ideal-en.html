@@ -727,9 +727,9 @@ body.public-page-en .document-screen-toc .toc-sub > a {
   }
 }
 </style>
-<style id="bpi-author-note-hebrew-page-match-v4">
-/* English Author's Note: match the Hebrew philosophical "דבר המחבר" as a quiet centered page. */
-body.public-page-en .bpi-author-note-hebrew-page-en {
+<style id="bpi-author-note-hebrew-page-force-v7">
+/* FORCE English Author's Note to match the Hebrew philosophical "דבר המחבר" page. */
+.bpi-author-note-hebrew-page-en {
   direction: ltr !important;
   max-width: min(1180px, calc(100vw - 48px)) !important;
   margin: 3.5rem auto 3rem !important;
@@ -740,8 +740,8 @@ body.public-page-en .bpi-author-note-hebrew-page-en {
   box-shadow: none !important;
 }
 
-body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-center {
-  min-height: clamp(620px, 78vh, 980px) !important;
+.bpi-author-note-hebrew-page-en .bpi-author-note-center {
+  min-height: clamp(660px, 82vh, 1040px) !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
@@ -749,58 +749,58 @@ body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-center {
   text-align: center !important;
   padding: clamp(2rem, 4vw, 4.5rem) !important;
   box-sizing: border-box !important;
-  background: rgba(236, 226, 210, 0.58) !important;
+  background: rgba(236, 226, 210, 0.62) !important;
   border: 0 !important;
   border-radius: 0 !important;
   box-shadow: none !important;
 }
 
-body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-center h1,
-body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-center h2,
-body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-center h3,
-body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-center #authors-note,
-body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-center #Authors-Note {
+.bpi-author-note-hebrew-page-en .bpi-author-note-center h1,
+.bpi-author-note-hebrew-page-en .bpi-author-note-center h2,
+.bpi-author-note-hebrew-page-en .bpi-author-note-center h3,
+.bpi-author-note-hebrew-page-en .bpi-author-note-center #authors-note,
+.bpi-author-note-hebrew-page-en .bpi-author-note-center #Authors-Note {
   margin: 0 0 1.2rem !important;
   color: #b97924 !important;
   text-align: center !important;
   font-family: Georgia, "Times New Roman", serif !important;
-  font-size: clamp(2rem, 3.6vw, 3.2rem) !important;
+  font-size: clamp(2.05rem, 3.75vw, 3.35rem) !important;
   font-weight: 800 !important;
   line-height: 1.08 !important;
   letter-spacing: 0.01em !important;
 }
 
-body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-center p {
-  max-width: 660px !important;
-  margin: 0.35rem auto !important;
+.bpi-author-note-hebrew-page-en .bpi-author-note-center p {
+  max-width: 680px !important;
+  margin: 0.38rem auto !important;
   color: #172238 !important;
   text-align: center !important;
-  font-size: clamp(1.04rem, 1.55vw, 1.34rem) !important;
+  font-size: clamp(1.05rem, 1.55vw, 1.34rem) !important;
   line-height: 1.42 !important;
   font-weight: 650 !important;
 }
 
-body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-center a {
+.bpi-author-note-hebrew-page-en .bpi-author-note-center a {
   color: inherit !important;
 }
 
-body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-extra {
+.bpi-author-note-hebrew-page-en .bpi-author-note-extra {
   max-width: min(1040px, 100%) !important;
   margin: 3rem auto 0 !important;
   padding: 0 !important;
   text-align: left !important;
 }
 
-body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-extra:empty {
+.bpi-author-note-hebrew-page-en .bpi-author-note-extra:empty {
   display: none !important;
 }
 
-body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-extra blockquote,
-body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-extra .callout,
-body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-extra .quote,
-body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-extra .core-sentence,
-body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-extra [class*="core"],
-body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-extra [class*="quote"] {
+.bpi-author-note-hebrew-page-en .bpi-author-note-extra blockquote,
+.bpi-author-note-hebrew-page-en .bpi-author-note-extra .callout,
+.bpi-author-note-hebrew-page-en .bpi-author-note-extra .quote,
+.bpi-author-note-hebrew-page-en .bpi-author-note-extra .core-sentence,
+.bpi-author-note-hebrew-page-en .bpi-author-note-extra [class*="core"],
+.bpi-author-note-hebrew-page-en .bpi-author-note-extra [class*="quote"] {
   margin: 1.6rem 0 !important;
   padding: 1.1rem 1.3rem !important;
   border-left: 5px solid #c47a1e !important;
@@ -809,12 +809,12 @@ body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-extra [clas
   color: #172238 !important;
 }
 
-body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-extra figure {
+.bpi-author-note-hebrew-page-en .bpi-author-note-extra figure {
   margin: 1.8rem auto 0 !important;
   max-width: 100% !important;
 }
 
-body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-extra img {
+.bpi-author-note-hebrew-page-en .bpi-author-note-extra img {
   display: block !important;
   width: 100% !important;
   max-width: 100% !important;
@@ -826,16 +826,16 @@ body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-extra img {
 }
 
 @media (max-width: 720px) {
-  body.public-page-en .bpi-author-note-hebrew-page-en {
+  .bpi-author-note-hebrew-page-en {
     max-width: calc(100vw - 24px) !important;
   }
 
-  body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-center {
-    min-height: 72vh !important;
+  .bpi-author-note-hebrew-page-en .bpi-author-note-center {
+    min-height: 74vh !important;
     padding: 2rem 1.15rem !important;
   }
 
-  body.public-page-en .bpi-author-note-hebrew-page-en .bpi-author-note-extra img {
+  .bpi-author-note-hebrew-page-en .bpi-author-note-extra img {
     border-radius: 18px !important;
   }
 }
