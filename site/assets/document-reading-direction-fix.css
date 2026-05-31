@@ -167,3 +167,80 @@ body.public-page-he:is(.section-witness, .section-methodology, .section-critique
   line-height: inherit !important;
 }
 /* ===== /BPI_HE_SELECTED_TABS_AI_NAV_LABEL_FIX_V1_20260531 ===== */
+
+/* ===== BPI_WITNESS_EN_PAGE_LAYOUT_FIX_V3_20260531 =====
+   Scoped only to the English Witness tab. Restores the same left-aligned media-head
+   geometry used by the other tab pages and prevents centered/broken card headers. */
+body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness {
+  direction: ltr !important;
+  text-align: left !important;
+  display: block !important;
+}
+
+body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness > .page-title-head,
+body.public-page-en.section-witness main#main .card-media-head {
+  direction: ltr !important;
+  text-align: left !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: clamp(22px, 2.8vw, 34px) !important;
+  width: 100% !important;
+  margin: 0 0 clamp(22px, 2.7vw, 34px) 0 !important;
+  position: static !important;
+  transform: none !important;
+}
+
+body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness > .page-title-head > .page-title-mark,
+body.public-page-en.section-witness main#main .card-media-head > .card-thumb {
+  position: static !important;
+  transform: none !important;
+  inset: auto !important;
+  float: none !important;
+  display: block !important;
+  flex: 0 0 88px !important;
+  width: 88px !important;
+  height: 88px !important;
+  min-width: 88px !important;
+  min-height: 88px !important;
+  max-width: 88px !important;
+  max-height: 88px !important;
+  margin: 0 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  border-radius: 20px !important;
+}
+
+body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness h1,
+body.public-page-en.section-witness main#main .card-media-head h2 {
+  position: static !important;
+  transform: none !important;
+  float: none !important;
+  display: block !important;
+  width: auto !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
+
+body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness > .lead {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
+
+body.public-page-en.section-witness main#main > figure.tab-visual.image-frame.compact-section-visual {
+  width: min(760px, 100%) !important;
+  max-width: 760px !important;
+}
+
+body.public-page-en.section-witness main#main > figure.tab-visual.image-frame.compact-section-visual > img {
+  height: clamp(136px, 18vw, 212px) !important;
+  max-height: 212px !important;
+  aspect-ratio: 21 / 7 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+/* ===== /BPI_WITNESS_EN_PAGE_LAYOUT_FIX_V3_20260531 ===== */
