@@ -128,9 +128,15 @@ html:has(link[rel="canonical"][href$="/what-ai-believes-en.html"]) main#main > h
 html:has(link[rel="canonical"][href$="/when-i-am-also-you-en.html"]) main#main > h1:first-of-type + h2::before { content: "With from Without" !important; color: var(--gold, #a97835) !important; display: block !important; font-size: 1.55rem !important; line-height: 1.2 !important; font-weight: 700 !important; }
 /* ===== /BPI_AI_APPENDIX_EN_SUBTITLE_TEXT_FIX_V1_20260531 ===== */
 
-/* ===== BPI_AI_EN_HIDE_VISIBLE_SKIP_LINK_V1_20260531 ===== */
-html[lang="en"]:has(link[rel="canonical"][href*="/files/ai-believes/"]) .skip-link { display: none !important; visibility: hidden !important; }
-/* ===== /BPI_AI_EN_HIDE_VISIBLE_SKIP_LINK_V1_20260531 ===== */
+/* ===== BPI_AI_HIDE_VISIBLE_SKIP_LINK_V2_20260531 ===== */
+html[lang="en"]:has(link[rel="canonical"][href*="/files/ai-believes/"]) .skip-link,
+html[lang="he"]:has(link[rel="canonical"][href*="/files/ai-believes/"]) .skip-link,
+html[dir="rtl"]:has(link[rel="canonical"][href*="/files/ai-believes/"]) .skip-link,
+body.public-page-he.ai-believes-page .skip-link {
+  display: none !important;
+  visibility: hidden !important;
+}
+/* ===== /BPI_AI_HIDE_VISIBLE_SKIP_LINK_V2_20260531 ===== */
 
 /* ===== BPI_AI_INDEX_CARD_TITLE_MATCH_DOC_TITLE_V1_20260531 ===== */
 body.section-ai .ai-page-card-grid > article:nth-child(1) h3,
