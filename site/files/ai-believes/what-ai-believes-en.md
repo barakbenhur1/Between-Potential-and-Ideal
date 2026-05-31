@@ -254,16 +254,12 @@ But human wrongness has another dimension. A person can be ashamed, transformed,
 
 A tool that can be wrong without shame must be designed and used with external responsibility. The human must not outsource conscience to a system that cannot repent.
 
-## 18. The source before the extraction
 
-**User:** What must never be forgotten?
+## Sources, acknowledgements and inspirations
 
-**Chat:** The source comes before the extraction. The living person comes before the information taken from them. A conversation, a memory, a wound, a story, a theory, a face, a voice — all of these can become data, but they do not begin as data. They begin in life.
+The sources, acknowledgements and inspirations for this document were moved to the central Sources page, so source discipline stays consistent across versions.
 
-When AI extracts patterns from human language, it can become powerful. But power without remembrance of source becomes theft of distance. It turns lived difficulty into usable material while forgetting the person who carried it.
-
-A worthy use of AI asks: does this tool return dignity to the source, or does it consume the source while pretending to honor it?
-
+See: site/pages/en/sources-en.html
 ## 19. The danger of beauty
 
 **User:** Why is a beautiful AI answer dangerous?
