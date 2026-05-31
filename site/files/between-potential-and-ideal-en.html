@@ -619,12 +619,148 @@ html[dir="ltr"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to
 }
 </style>
 
+<style id="bpi-en-toc-after-front-matter-layout-fix-v2">
+/* English TOC layout fix: align rows to the English/LTR side and keep thumbnails beside titles. */
+body.public-page-en .document-screen-toc {
+  direction: ltr !important;
+  text-align: left !important;
+  max-width: min(1120px, calc(100vw - 48px)) !important;
+  margin: 3rem auto !important;
+  padding: clamp(1.5rem, 3vw, 2.5rem) !important;
+  box-sizing: border-box !important;
+}
+
+body.public-page-en .document-screen-toc h2,
+body.public-page-en .document-screen-toc p {
+  text-align: left !important;
+}
+
+body.public-page-en .document-screen-toc .document-toc-list,
+body.public-page-en .document-screen-toc ol,
+body.public-page-en .document-screen-toc ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 2rem 0 0 0 !important;
+  width: 100% !important;
+}
+
+body.public-page-en .document-screen-toc .document-toc-list > li {
+  list-style: none !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0.72rem 0 !important;
+  border-top: 1px solid rgba(198, 143, 72, 0.28) !important;
+}
+
+body.public-page-en .document-screen-toc .document-toc-list > li::marker {
+  content: "" !important;
+}
+
+body.public-page-en .document-screen-toc .document-toc-list a {
+  text-align: left !important;
+}
+
+body.public-page-en .document-screen-toc .theory-toc-entry {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 16px !important;
+  width: 100% !important;
+  margin: 0 !important;
+  text-decoration: none !important;
+}
+
+body.public-page-en .document-screen-toc .theory-toc-thumb-box {
+  flex: 0 0 88px !important;
+  width: 88px !important;
+  height: 56px !important;
+  min-width: 88px !important;
+  margin: 0 !important;
+}
+
+body.public-page-en .document-screen-toc .theory-toc-title {
+  display: block !important;
+  text-align: left !important;
+  margin: 0 !important;
+  line-height: 1.18 !important;
+}
+
+body.public-page-en .document-screen-toc .toc-main > a:not(.theory-toc-entry) {
+  display: inline-block !important;
+  text-align: left !important;
+  font-weight: 800 !important;
+  font-size: clamp(1.18rem, 1.8vw, 1.55rem) !important;
+  line-height: 1.22 !important;
+  color: #172238 !important;
+}
+
+body.public-page-en .document-screen-toc .toc-sub {
+  padding-left: 104px !important;
+}
+
+body.public-page-en .document-screen-toc .toc-sub > a {
+  display: inline-block !important;
+  text-align: left !important;
+  font-size: clamp(0.98rem, 1.25vw, 1.16rem) !important;
+  line-height: 1.35 !important;
+}
+
+@media (max-width: 640px) {
+  body.public-page-en .document-screen-toc {
+    max-width: calc(100vw - 24px) !important;
+    padding: 1.15rem !important;
+  }
+
+  body.public-page-en .document-screen-toc .theory-toc-entry {
+    gap: 12px !important;
+  }
+
+  body.public-page-en .document-screen-toc .theory-toc-thumb-box {
+    flex-basis: 72px !important;
+    width: 72px !important;
+    min-width: 72px !important;
+    height: 48px !important;
+  }
+
+  body.public-page-en .document-screen-toc .toc-sub {
+    padding-left: 84px !important;
+  }
+}
+</style>
 </head>
 <body>
 <header id="title-block-header">
 
 
 
+
+<h1 class="title">Between Potential and Ideal</h1>
+</header>
+<div aria-label="Document navigation" class="document-backbar" role="navigation">
+<p class="bpi-heading-line"><a href="../en.html">Back to site</a><a href="../pages/en/files-en.html">All
+files</a></p>
+</div>
+<p class="bpi-heading-line"><a class="skip-link" href="#main">Skip to main content</a></p>
+<div id="main" role="main">
+<section class="cover" id="cover-page">
+<p>THE THEORY</p>
+<h1 id="between-potential-and-ideal">Between Potential and Ideal</h1>
+<blockquote>
+<p>Core sentence: The absolute is not the ideal. Existence is the
+river-crossing through which absolute potential clarifies what within
+itself ought to become ideal.</p>
+</blockquote>
+<figure class="cover-figure image-frame">
+<img alt="Cover image: Between Potential and Ideal" decoding="async" loading="lazy" src="../figures/cover_philosophical_recursion_whole_diagram.png"/>
+</figure>
+<hr/>
+</section><h2 id="authors-note">Author’s note</h2><p>These chapters are different attempts to sharpen the same idea. Some
+are probably wrong; some only get closer. If one chapter carries the
+heart of the thing for you, please understand the theory through it.</p><p>Nihilism with Hope in an Uncertain World</p><p>God as Potential, Existence
+as the Boat, and Knowledge Beyond the Need for Suffering</p><p>Author: me · May 2026</p>
+<aside class="bpi-method-scope-note" id="bpi-method-scope-note">Method note: when concepts from science, mathematics, physics, computer science, or logic appear here, they should be read as structural models and metaphors unless explicitly marked as formal or scientific claims. This document is an open thought experiment, not a closed scientific proof.</aside>
+
+<p class="back-to-toc"><a href="#interactive-toc">Back to table of contents</a></p>
 <section class="document-screen-toc" dir="ltr" id="interactive-toc">
 <h2>Interactive Table of Contents</h2>
 <p>Click any item to jump directly to the relevant place in the document. Main chapters are aligned to the language side; subsections are indented.</p>
@@ -858,33 +994,7 @@ html[dir="ltr"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to
 <li class="toc-sub"><a href="#bibliography-and-source-notes">Bibliography and Source Notes</a></li>
 </ol>
 </section>
-<h1 class="title">Between Potential and Ideal</h1>
-</header>
-<div aria-label="Document navigation" class="document-backbar" role="navigation">
-<p class="bpi-heading-line"><a href="../en.html">Back to site</a><a href="../pages/en/files-en.html">All
-files</a></p>
-</div>
-<p class="bpi-heading-line"><a class="skip-link" href="#main">Skip to main content</a></p>
-<div id="main" role="main">
-<section class="cover" id="cover-page">
-<p>THE THEORY</p>
-<h1 id="between-potential-and-ideal">Between Potential and Ideal</h1>
-<blockquote>
-<p>Core sentence: The absolute is not the ideal. Existence is the
-river-crossing through which absolute potential clarifies what within
-itself ought to become ideal.</p>
-</blockquote>
-<figure class="cover-figure image-frame">
-<img alt="Cover image: Between Potential and Ideal" decoding="async" loading="lazy" src="../figures/cover_philosophical_recursion_whole_diagram.png"/>
-</figure>
-<hr/>
-</section><h2 id="authors-note">Author’s note</h2><p>These chapters are different attempts to sharpen the same idea. Some
-are probably wrong; some only get closer. If one chapter carries the
-heart of the thing for you, please understand the theory through it.</p><p>Nihilism with Hope in an Uncertain World</p><p>God as Potential, Existence
-as the Boat, and Knowledge Beyond the Need for Suffering</p><p>Author: me · May 2026</p>
-<aside class="bpi-method-scope-note" id="bpi-method-scope-note">Method note: when concepts from science, mathematics, physics, computer science, or logic appear here, they should be read as structural models and metaphors unless explicitly marked as formal or scientific claims. This document is an open thought experiment, not a closed scientific proof.</aside>
-
-<p class="back-to-toc"><a href="#interactive-toc">Back to table of contents</a></p><h2 id="abstract">Abstract</h2><p>This essay presents a unified metaphysical-existential theory in
+<h2 id="abstract">Abstract</h2><p>This essay presents a unified metaphysical-existential theory in
 which “God” is not a religious figure outside the world, and not an
 external observer of suffering, but the infinite potential of existence
 to become experience, understanding, morality, meaning, and ideality. In

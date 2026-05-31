@@ -2509,11 +2509,139 @@ html[dir="ltr"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to
 <link rel="canonical" href="https://between-potential-and-ideal.onrender.com/files/editorial-tightened/between-potential-and-ideal-tightened-en.html"/>
 <meta property="og:image" content="https://between-potential-and-ideal.onrender.com/figures/cover_logical_recursion_whole_diagram.png"/>
 <meta name="twitter:image" content="https://between-potential-and-ideal.onrender.com/figures/cover_logical_recursion_whole_diagram.png"/>
+<style id="bpi-en-toc-after-front-matter-layout-fix-v2">
+/* English TOC layout fix: align rows to the English/LTR side and keep thumbnails beside titles. */
+body.public-page-en .document-screen-toc {
+  direction: ltr !important;
+  text-align: left !important;
+  max-width: min(1120px, calc(100vw - 48px)) !important;
+  margin: 3rem auto !important;
+  padding: clamp(1.5rem, 3vw, 2.5rem) !important;
+  box-sizing: border-box !important;
+}
+
+body.public-page-en .document-screen-toc h2,
+body.public-page-en .document-screen-toc p {
+  text-align: left !important;
+}
+
+body.public-page-en .document-screen-toc .document-toc-list,
+body.public-page-en .document-screen-toc ol,
+body.public-page-en .document-screen-toc ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 2rem 0 0 0 !important;
+  width: 100% !important;
+}
+
+body.public-page-en .document-screen-toc .document-toc-list > li {
+  list-style: none !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0.72rem 0 !important;
+  border-top: 1px solid rgba(198, 143, 72, 0.28) !important;
+}
+
+body.public-page-en .document-screen-toc .document-toc-list > li::marker {
+  content: "" !important;
+}
+
+body.public-page-en .document-screen-toc .document-toc-list a {
+  text-align: left !important;
+}
+
+body.public-page-en .document-screen-toc .theory-toc-entry {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 16px !important;
+  width: 100% !important;
+  margin: 0 !important;
+  text-decoration: none !important;
+}
+
+body.public-page-en .document-screen-toc .theory-toc-thumb-box {
+  flex: 0 0 88px !important;
+  width: 88px !important;
+  height: 56px !important;
+  min-width: 88px !important;
+  margin: 0 !important;
+}
+
+body.public-page-en .document-screen-toc .theory-toc-title {
+  display: block !important;
+  text-align: left !important;
+  margin: 0 !important;
+  line-height: 1.18 !important;
+}
+
+body.public-page-en .document-screen-toc .toc-main > a:not(.theory-toc-entry) {
+  display: inline-block !important;
+  text-align: left !important;
+  font-weight: 800 !important;
+  font-size: clamp(1.18rem, 1.8vw, 1.55rem) !important;
+  line-height: 1.22 !important;
+  color: #172238 !important;
+}
+
+body.public-page-en .document-screen-toc .toc-sub {
+  padding-left: 104px !important;
+}
+
+body.public-page-en .document-screen-toc .toc-sub > a {
+  display: inline-block !important;
+  text-align: left !important;
+  font-size: clamp(0.98rem, 1.25vw, 1.16rem) !important;
+  line-height: 1.35 !important;
+}
+
+@media (max-width: 640px) {
+  body.public-page-en .document-screen-toc {
+    max-width: calc(100vw - 24px) !important;
+    padding: 1.15rem !important;
+  }
+
+  body.public-page-en .document-screen-toc .theory-toc-entry {
+    gap: 12px !important;
+  }
+
+  body.public-page-en .document-screen-toc .theory-toc-thumb-box {
+    flex-basis: 72px !important;
+    width: 72px !important;
+    min-width: 72px !important;
+    height: 48px !important;
+  }
+
+  body.public-page-en .document-screen-toc .toc-sub {
+    padding-left: 84px !important;
+  }
+}
+</style>
 </head><body class="design-prompt-theme public-page appendix-document-page logical-document-page"><a class="skip-link" href="#main">Skip to main content</a><main id="main"><section class="logical-cover" dir="ltr" id="cover-page" style="height:248mm; min-height:248mm; box-sizing:border-box; padding:28mm 18mm 20mm; text-align:center; background:#fffaf0;">
 <p style="margin:0 0 10mm; color:#5e5346; font-size:15px; text-align:center;">THE LOGICAL VERSION</p>
 
 
 
+
+<h1 style="text-align:center; font-size:38px; line-height:1.14; margin:0 0 7mm; color:#17202d;">Between Potential and Ideal</h1>
+<p style="text-align:center; font-size:20px; color:#344052; margin:0 0 8mm;">A tightened version: structure, distinctions, conditions, and conclusions</p>
+<figure class="logical-cover-figure" style="width:156mm; max-width:92%; margin:0 auto 8mm; padding:0; background:transparent; border:0; box-shadow:none;">
+<img alt="Unique cover illustration for the logical version" decoding="async" loading="eager" src="../../figures/cover_logical_recursion_whole_diagram.png" style="display:block; width:100%; max-height:86mm; object-fit:contain; margin:0 auto; border-radius:18px;"/>
+<figcaption aria-hidden="true">Cover image description: a recursive structure showing source, model, world, and action as related layers.</figcaption></figure>
+<p style="text-align:center; max-width:72ch; margin:0 auto 6mm; color:#5e5346;">A logical presentation of potential, ideal, optimality, friction, witness, and the passage from the possible to the worthy.</p>
+<p style="text-align:center; color:#5e5346;">Author: me · May 2026</p>
+</section>
+<aside class="bpi-method-scope-note" id="bpi-method-scope-note">Method note: when concepts from science, mathematics, physics, computer science, or logic appear here, they should be read as structural models and metaphors unless explicitly marked as formal or scientific claims. This document is an open thought experiment, not a closed scientific proof.</aside><p class="bpi-status-note" id="bpi-tightened-version-note">Note: this is a tightened/logical version. It is meant for focused reading and may condense some expansions from the full document without changing the core meaning.</p>
+
+
+<!-- TOC compatibility aliases for legacy generated anchors -->
+<span id="1.-A-problem-as-a-language-what-is-being-decided?" class="toc-anchor-alias" aria-hidden="true"></span>
+<span id="2.-The-Turing-machine-what-counts-as-computation?" class="toc-anchor-alias" aria-hidden="true"></span>
+<span id="6.-The-polynomial-hierarchy-from-one-witness-to-layers-of-quantification" class="toc-anchor-alias" aria-hidden="true"></span>
+<span id="Franchise-when-potential-expands-after-the-ideal-appears" class="toc-anchor-alias" aria-hidden="true"></span>
+<span id="Canon-as-invariant" class="toc-anchor-alias" aria-hidden="true"></span>
+<span id="Genres-as-forms-of-potential" class="toc-anchor-alias" aria-hidden="true"></span>
+<div class="document-method-caution"><strong>Reading note:</strong> Scientific, logical or mathematical terms in this document should be read by context — as formal claims only when explicitly stated, and as metaphors when used as structural images.</div>
 <section class="document-screen-toc" dir="ltr" id="interactive-toc"><h2 id="interactive-table-of-contents">Interactive Table of Contents</h2><p>Click any item to jump directly to the relevant place in the document. Main chapters are aligned to the language side; subsections are indented.</p>
 <ol class="document-toc-list">
 <li class="toc-main"><a class="theory-toc-entry" href="#cover-page"><span class="theory-toc-thumb-box" style="display:block!important;flex:0 0 58px!important;width:58px!important;min-width:58px!important;height:40px!important;overflow:hidden!important;border-radius:8px!important;border:1px solid rgba(10,58,104,.13)!important;background:#fffaf0!important;box-shadow:0 3px 9px rgba(20,40,60,.07)!important;margin:0!important;box-sizing:border-box!important;"><img alt="Table of contents image: Cover" class="theory-toc-thumb" decoding="async" loading="lazy" src="../../figures/cover_philosophical_recursion_whole_diagram.png" style="display:block!important;width:100%!important;min-width:0!important;height:100%!important;max-width:none!important;max-height:none!important;object-fit:cover!important;object-position:center center!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:transparent!important;margin:0!important;"/></span><span class="theory-toc-title">Cover</span></a></li>
@@ -2678,25 +2806,7 @@ html[dir="ltr"] :where(main, #main) :where(p.back-to-toc,.back-to-toc,.return-to
 <li class="toc-sub"><a href="#Bibliography-and-Source-Notes">Bibliography and Source Notes</a></li>
 </ol>
 </section>
-<h1 style="text-align:center; font-size:38px; line-height:1.14; margin:0 0 7mm; color:#17202d;">Between Potential and Ideal</h1>
-<p style="text-align:center; font-size:20px; color:#344052; margin:0 0 8mm;">A tightened version: structure, distinctions, conditions, and conclusions</p>
-<figure class="logical-cover-figure" style="width:156mm; max-width:92%; margin:0 auto 8mm; padding:0; background:transparent; border:0; box-shadow:none;">
-<img alt="Unique cover illustration for the logical version" decoding="async" loading="eager" src="../../figures/cover_logical_recursion_whole_diagram.png" style="display:block; width:100%; max-height:86mm; object-fit:contain; margin:0 auto; border-radius:18px;"/>
-<figcaption aria-hidden="true">Cover image description: a recursive structure showing source, model, world, and action as related layers.</figcaption></figure>
-<p style="text-align:center; max-width:72ch; margin:0 auto 6mm; color:#5e5346;">A logical presentation of potential, ideal, optimality, friction, witness, and the passage from the possible to the worthy.</p>
-<p style="text-align:center; color:#5e5346;">Author: me · May 2026</p>
-</section>
-<aside class="bpi-method-scope-note" id="bpi-method-scope-note">Method note: when concepts from science, mathematics, physics, computer science, or logic appear here, they should be read as structural models and metaphors unless explicitly marked as formal or scientific claims. This document is an open thought experiment, not a closed scientific proof.</aside><p class="bpi-status-note" id="bpi-tightened-version-note">Note: this is a tightened/logical version. It is meant for focused reading and may condense some expansions from the full document without changing the core meaning.</p>
-
-
-<!-- TOC compatibility aliases for legacy generated anchors -->
-<span id="1.-A-problem-as-a-language-what-is-being-decided?" class="toc-anchor-alias" aria-hidden="true"></span>
-<span id="2.-The-Turing-machine-what-counts-as-computation?" class="toc-anchor-alias" aria-hidden="true"></span>
-<span id="6.-The-polynomial-hierarchy-from-one-witness-to-layers-of-quantification" class="toc-anchor-alias" aria-hidden="true"></span>
-<span id="Franchise-when-potential-expands-after-the-ideal-appears" class="toc-anchor-alias" aria-hidden="true"></span>
-<span id="Canon-as-invariant" class="toc-anchor-alias" aria-hidden="true"></span>
-<span id="Genres-as-forms-of-potential" class="toc-anchor-alias" aria-hidden="true"></span>
-<div class="document-method-caution"><strong>Reading note:</strong> Scientific, logical or mathematical terms in this document should be read by context — as formal claims only when explicitly stated, and as metaphors when used as structural images.</div><h2 id="Abstract">Abstract</h2>
+<h2 id="Abstract">Abstract</h2>
 <p>The theory proposes a way of thinking about existence, meaning,
 suffering, and intelligence through three distinctions: potential,
 ideal, and optimal.</p><p>Potential is the field of possibility: everything that can appear,
