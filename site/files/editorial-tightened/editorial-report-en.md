@@ -3,31 +3,49 @@
 ## A. What was done in the rewritten version
 
 1. Absolute declarations were turned into modal formulations: instead of saying "existence is," "God is," or "the human being is," the wording now relies more on phrases such as "one can think of," "according to the model," "the theory proposes," and "as a way of reading."
+
 2. The core of the theory was preserved: Potential, Ideal, Optimal, distance, suffering, testimony, source, and worthy intelligence.
+
 3. Explicit philosophical humility was added: the text states that it is a thought model rather than a doctrine, and that one may reject the metaphysics while still examining the ethical value.
+
 4. Definitions were sharpened so that the reader does not feel that large concepts are thrown at them without an anchor.
+
 5. Logical bridges were added between the river image, the language about God, the question of suffering, and the question of artificial intelligence.
+
 6. Formulations that sounded like revelation or final proclamation were reduced, while the imagery and poetic force were preserved.
+
 7. The text now stresses that suffering is not good in itself, and that the model must not be used to justify pain, passivity, or external judgment of another person.
 
 ## B. Places where there is still a logical leap or a weak claim
 
 1. The transition from the psychology of a single person to a cosmic structure still requires further justification. At present it is presented as an interpretive extension, not as proof.
+
 2. The concept of "the whole" still needs a more precise definition if the text is intended for a strict philosophical setting.
+
 3. The claim that "the whole needs the experience of limitation" is very strong. In the tightened version it was softened into a model, but it still needs to explain why it is not merely a beautiful image.
+
 4. The measurement of "distance" remains an open problem. The text should clarify whether this is a moral, psychological, existential, or metaphysical category.
+
 5. The connection between artificial intelligence and the general metaphysics is interesting, but it still needs one more link: why does a model about existence and suffering lead specifically to a model of "testimony" in intelligence?
+
 6. There is a risk that readers will think the theory romanticizes suffering. It should continue to stress that suffering is not a value, but a condition through which value is sometimes clarified.
+
 7. The language about "God" will provoke resistance. It is recommended to introduce it from the beginning as a technical or metaphorical concept, not as a religious proof.
 
 ## C. Suggestions for further strengthening before serious publication
 
 1. Open the essay with a short section titled "What I am not claiming" in order to lower premature resistance.
+
 2. Add a short section titled "A possible secular reading": how the entire model can be understood without God.
+
 3. Add a short section titled "A possible religious reading": how the model can be understood without turning it into religious dogma.
+
 4. Add one concrete example for each concept: Potential, Ideal, Optimal, distance, and testimony.
+
 5. Separate "the philosophical essay" from "the poetic manifesto." The site can contain both, but a serious reader needs to know what is the claim and what is the image.
+
 6. Add a chapter of objections: "Why is this not simply theodicy?" "Why is this not a justification of suffering?" "Why is this not mysticism?" "Why is AI related to this?"
+
 7. Add a very short forum-ready summary: 250-400 words, without the site, without images, and with an explicit invitation to criticism.
 
 ## D. Clarification on terminology
@@ -45,8 +63,3 @@ And if you are foolish enough to become attached to what I tried to say here, an
 I feel that even if new ideas or further refinements to the theory come to me, I probably will not add them anymore.
 
 *I realized that I need to walk my dog.*
-
----
-
-**Short methodological clarification:** When this document uses terms from mathematics, physics, computer science, logic, or artificial intelligence, they should be read according to their stated context: sometimes as structural metaphor, sometimes as a reading model, and only as a formal claim when explicitly presented as such. The use of a scientific term should not be treated as a scientific or metaphysical proof by itself.
-
