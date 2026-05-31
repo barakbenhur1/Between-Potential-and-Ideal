@@ -43,8 +43,8 @@ Legal potential does not promise complete repair. Sometimes all that remains in 
 One can formulate law through a relation map:
 
 Institutional justice =
-clarified truth × evidence × fair procedure × proportionality × possibility of correction × access  
-over  
+clarified truth × evidence × fair procedure × proportionality × possibility of correction × access
+over
 arbitrary power × revenge × bias × systemic blindness × inequality × automation.
 
 This is not a legal formula; it is a warning map. It asks whether procedure approaches justice or merely produces form, whether evidence holds truth or replaces it, whether punishment protects and repairs or only releases anger, whether the harmed person is preserved as a person or turned into a symbol, whether the accused is preserved as a person or reduced to guilt, and whether the system knows how to distinguish boundary from erasure.
