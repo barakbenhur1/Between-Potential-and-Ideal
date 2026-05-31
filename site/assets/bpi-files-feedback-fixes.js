@@ -1,8 +1,9 @@
-/* V119 — scoped Home mobile shell + lightweight Files filtering + file-link target normalization.
+/* V120 — scoped Home mobile shell + lightweight Files filtering + file-link target normalization + Witness hero enforcement.
    Home mobile loads the same main stylesheet used by the Summary tab, then keeps
    only the Home opening hero blue/turquoise. Mobile Home content is slightly wider.
    Files pages normalize real file/download links so they open in a new tab.
-   No desktop design changes. */
+   English Witness hero is normalized after CSS loads to match Core geometry.
+   No unrelated desktop design changes. */
 (function(){
   'use strict';
 
@@ -18,6 +19,83 @@
     var path = (location.pathname || '').toLowerCase();
     return path === '/' || path.endsWith('/index.html') || path.endsWith('/en.html') ||
       path.endsWith('/site/index.html') || path.endsWith('/site/en.html');
+  }
+
+  function setImportant(el, prop, value){
+    if (!el) return;
+    el.style.setProperty(prop, value, 'important');
+  }
+
+  function installEnglishWitnessHeroLayout(){
+    var path = (location.pathname || '').toLowerCase();
+    var isWitness = document.body.classList.contains('section-witness') &&
+      document.body.classList.contains('public-page-en') &&
+      (path.endsWith('/witness-en.html') || path.endsWith('/witness-en'));
+    if (!isWitness) return;
+
+    var hero = document.querySelector('main#main > section.page-title.media-page-title.accent-witness');
+    if (!hero) return;
+
+    var head = hero.querySelector(':scope > .page-title-head');
+    var mark = head && head.querySelector(':scope > img.page-title-mark');
+    var title = head && head.querySelector(':scope > h1');
+    var lead = hero.querySelector(':scope > p.lead');
+
+    setImportant(hero, 'direction', 'ltr');
+    setImportant(hero, 'text-align', 'left');
+    setImportant(hero, 'display', 'block');
+    setImportant(hero, 'position', 'relative');
+    setImportant(hero, 'padding', 'clamp(38px, 5vw, 68px) clamp(28px, 6vw, 82px)');
+    setImportant(hero, 'min-height', 'clamp(250px, 23vw, 330px)');
+    setImportant(hero, 'box-sizing', 'border-box');
+
+    setImportant(head, 'direction', 'ltr');
+    setImportant(head, 'text-align', 'left');
+    setImportant(head, 'display', 'flex');
+    setImportant(head, 'flex-direction', 'row');
+    setImportant(head, 'align-items', 'center');
+    setImportant(head, 'justify-content', 'flex-start');
+    setImportant(head, 'gap', 'clamp(22px, 2.8vw, 34px)');
+    setImportant(head, 'width', '100%');
+    setImportant(head, 'margin', '0 0 clamp(26px, 3vw, 36px) 0');
+    setImportant(head, 'position', 'static');
+    setImportant(head, 'transform', 'none');
+
+    [mark, title, lead].forEach(function(el){
+      setImportant(el, 'position', 'static');
+      setImportant(el, 'transform', 'none');
+      setImportant(el, 'inset', 'auto');
+      setImportant(el, 'top', 'auto');
+      setImportant(el, 'right', 'auto');
+      setImportant(el, 'bottom', 'auto');
+      setImportant(el, 'left', 'auto');
+      setImportant(el, 'float', 'none');
+    });
+
+    setImportant(mark, 'display', 'block');
+    setImportant(mark, 'flex', '0 0 auto');
+    setImportant(mark, 'width', 'clamp(108px, 9vw, 150px)');
+    setImportant(mark, 'height', 'clamp(108px, 9vw, 150px)');
+    setImportant(mark, 'max-width', 'clamp(108px, 9vw, 150px)');
+    setImportant(mark, 'max-height', 'clamp(108px, 9vw, 150px)');
+    setImportant(mark, 'min-width', 'clamp(108px, 9vw, 150px)');
+    setImportant(mark, 'min-height', 'clamp(108px, 9vw, 150px)');
+    setImportant(mark, 'margin', '0');
+    setImportant(mark, 'object-fit', 'cover');
+    setImportant(mark, 'object-position', 'center center');
+
+    setImportant(title, 'display', 'block');
+    setImportant(title, 'width', 'auto');
+    setImportant(title, 'margin', '0');
+    setImportant(title, 'text-align', 'left');
+    setImportant(title, 'line-height', '1.02');
+
+    setImportant(lead, 'display', 'block');
+    setImportant(lead, 'width', '100%');
+    setImportant(lead, 'max-width', 'none');
+    setImportant(lead, 'margin', '0');
+    setImportant(lead, 'text-align', 'left');
+    setImportant(lead, 'line-height', '1.45');
   }
 
   function installHomeMobileSummaryShell(){
@@ -182,6 +260,9 @@
   }
 
   function init(){
+    installEnglishWitnessHeroLayout();
+    if (window.requestAnimationFrame) window.requestAnimationFrame(installEnglishWitnessHeroLayout);
+    window.setTimeout(installEnglishWitnessHeroLayout, 120);
     installHomeMobileSummaryShell();
     installFilesFilters();
   }
