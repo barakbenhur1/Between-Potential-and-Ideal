@@ -2658,9 +2658,10 @@ body.public-page-en .document-screen-toc .toc-sub > a {
   }
 }
 </style>
-<style id="bpi-author-note-hebrew-page-force-v7">
-/* FORCE English Author's Note to match the Hebrew philosophical "דבר המחבר" page. */
+<style id="bpi-author-note-gveret-levin-force-v8">
+/* FORCE English Author's Note to match the Hebrew philosophical "דבר המחבר" page/font. */
 .bpi-author-note-hebrew-page-en {
+  --bpi-author-note-hand-font: "Gveret Levin", "Gveret Levin AlefAlefAlef", "GveretLevin", "GveretLevinAlefAlefAlef", "AlefAlefAlef Gveret Levin", cursive;
   direction: ltr !important;
   max-width: min(1180px, calc(100vw - 48px)) !important;
   margin: 3.5rem auto 3rem !important;
@@ -2672,7 +2673,7 @@ body.public-page-en .document-screen-toc .toc-sub > a {
 }
 
 .bpi-author-note-hebrew-page-en .bpi-author-note-center {
-  min-height: clamp(660px, 82vh, 1040px) !important;
+  min-height: clamp(680px, 84vh, 1080px) !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
@@ -2691,28 +2692,33 @@ body.public-page-en .document-screen-toc .toc-sub > a {
 .bpi-author-note-hebrew-page-en .bpi-author-note-center h3,
 .bpi-author-note-hebrew-page-en .bpi-author-note-center #authors-note,
 .bpi-author-note-hebrew-page-en .bpi-author-note-center #Authors-Note {
-  margin: 0 0 1.2rem !important;
+  margin: 0 0 1.25rem !important;
   color: #b97924 !important;
   text-align: center !important;
-  font-family: Georgia, "Times New Roman", serif !important;
-  font-size: clamp(2.05rem, 3.75vw, 3.35rem) !important;
-  font-weight: 800 !important;
-  line-height: 1.08 !important;
-  letter-spacing: 0.01em !important;
+  font-family: var(--bpi-author-note-hand-font) !important;
+  font-size: clamp(2.35rem, 4.7vw, 4.45rem) !important;
+  font-weight: 400 !important;
+  line-height: 1.02 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
 }
 
 .bpi-author-note-hebrew-page-en .bpi-author-note-center p {
-  max-width: 680px !important;
-  margin: 0.38rem auto !important;
+  max-width: 610px !important;
+  margin: 0.42rem auto !important;
   color: #172238 !important;
   text-align: center !important;
-  font-size: clamp(1.05rem, 1.55vw, 1.34rem) !important;
-  line-height: 1.42 !important;
-  font-weight: 650 !important;
+  font-family: var(--bpi-author-note-hand-font) !important;
+  font-size: clamp(1.35rem, 2.05vw, 2.05rem) !important;
+  line-height: 1.28 !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
 }
 
 .bpi-author-note-hebrew-page-en .bpi-author-note-center a {
   color: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
 }
 
 .bpi-author-note-hebrew-page-en .bpi-author-note-extra {
@@ -2720,6 +2726,7 @@ body.public-page-en .document-screen-toc .toc-sub > a {
   margin: 3rem auto 0 !important;
   padding: 0 !important;
   text-align: left !important;
+  font-family: inherit !important;
 }
 
 .bpi-author-note-hebrew-page-en .bpi-author-note-extra:empty {
@@ -2764,6 +2771,16 @@ body.public-page-en .document-screen-toc .toc-sub > a {
   .bpi-author-note-hebrew-page-en .bpi-author-note-center {
     min-height: 74vh !important;
     padding: 2rem 1.15rem !important;
+  }
+
+  .bpi-author-note-hebrew-page-en .bpi-author-note-center h1,
+  .bpi-author-note-hebrew-page-en .bpi-author-note-center h2,
+  .bpi-author-note-hebrew-page-en .bpi-author-note-center h3 {
+    font-size: clamp(2.1rem, 12vw, 3.4rem) !important;
+  }
+
+  .bpi-author-note-hebrew-page-en .bpi-author-note-center p {
+    font-size: clamp(1.2rem, 6vw, 1.7rem) !important;
   }
 
   .bpi-author-note-hebrew-page-en .bpi-author-note-extra img {
