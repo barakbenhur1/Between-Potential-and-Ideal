@@ -24,6 +24,7 @@ CHECKS = [
     ["python3", "tools/audit_visible_hebrew_in_english.py"],
     ["python3", "tools/check_files_language_labels.py"],
     ["python3", "tools/check_files_table_accessibility.py"],
+    ["python3", "tools/audit_file_download_links.py"],
 ]
 
 def run(cmd):
