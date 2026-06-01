@@ -6,7 +6,8 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 
 ## Main command
 
-- `tools/audit_release_guard.py` — runs the full local release gate.
+- `tools/final_release_qa.py` — runs the repo-local final release QA gate before push/release.
+- `tools/audit_release_guard.py` — runs the detailed local release guard used by the final QA command.
 
 ## Permanent checks
 
@@ -20,6 +21,7 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/check_performance_budget_docs.py` — verifies performance/asset policy.
 - `tools/check_visual_qa_docs.py` — verifies visual QA baseline docs.
 - `tools/check_build_info.py` — verifies build metadata.
+- `tools/check_build_info_matches_head.py` — verifies build-info metadata without creating false deployment blockers.
 - `tools/check_ci_workflow.py` — verifies GitHub Actions release guard workflow.
 - `tools/check_deploy_docs.py` — verifies deploy documentation.
 - `tools/check_seo_metadata.py` — verifies robots and sitemap SEO baseline.
@@ -29,6 +31,7 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/check_story_registry.py` — verifies protected 16-story appendix registry.
 - `tools/check_protected_story_details.py` — verifies protected story details.
 - `tools/check_tool_inventory.py` — verifies this inventory covers release guard checks.
+- `tools/audit_file_download_links.py` — verifies Files page download links and document sibling packages.
 
 ## Existing audit tools
 
@@ -38,11 +41,12 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/audit_visible_hebrew_in_english.py`
 - `tools/audit_seo_social_preview.py`
 - `tools/audit_sitemap_and_public_links.py`
+- `tools/audit_file_download_links.py`
 
 ## Operational tools
 
 - `tools/check_live_deploy_urls.py` — checks important live URLs after Render deploy.
-- `tools/update_build_info.py` — updates `site/build-info.json` before important releases.
+- `tools/update_build_info.py` — updates `site/build-info.json` before important releases or during deploy builds.
 
 ## Rule
 
