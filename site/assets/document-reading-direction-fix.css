@@ -142,7 +142,6 @@ body.public-page-he.ai-believes-page .skip-link {
   margin: 0 !important;
   overflow: hidden !important;
   white-space: nowrap !important;
-  clip: rect(0 0 0 0) !important;
   clip-path: inset(50%) !important;
   transform: translateY(calc(-100% - 32px)) !important;
   opacity: 0 !important;
@@ -254,3 +253,5 @@ body.public-page-en.section-witness main#main .card-media-head h2 {
 body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness > .lead {
   display: block !important;
   width: 100% !important;
+}
+/* ===== /BPI_WITNESS_EN_PAGE_LAYOUT_FIX_V4_20260531 ===== */
