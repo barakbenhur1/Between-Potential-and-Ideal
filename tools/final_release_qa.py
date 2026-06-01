@@ -60,6 +60,10 @@ def tail(text: str, n: int = 80) -> str:
     return "\n".join((text or "").splitlines()[-n:])
 
 
+def command_output(cmd: dict, n: int = 160) -> str:
+    return tail(((cmd.get("stdout") or "") + (cmd.get("stderr") or "")).strip(), n)
+
+
 def run_scan() -> dict:
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -172,7 +176,7 @@ def write_reports(result: dict) -> None:
             f"- OK: `{cmd['ok']}`",
             f"- Return code: `{cmd['returncode']}`",
             "```text",
-            tail((cmd.get("stdout") or "") + (cmd.get("stderr") or ""), 120).strip() or "(no output)",
+            command_output(cmd, 160) or "(no output)",
             "```",
         ]
 
@@ -204,6 +208,9 @@ def main() -> None:
     print("Report:", REPORT_DIR / "final_release_qa.md")
 
     if result["status"] != "RELEASE_READY":
+        print("\n--- audit release guard output tail ---")
+        print(command_output(result["commands"]["release_guard"], 220) or "(no output)")
+        print("--- end audit release guard output tail ---")
         sys.exit(2)
 
 
