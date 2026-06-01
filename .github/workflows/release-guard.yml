@@ -18,8 +18,8 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Run release guard
+      - name: Run final release QA
         run: |
           rm -rf reports tools/__pycache__
-          python3 tools/audit_release_guard.py
+          python3 tools/final_release_qa.py --scan
           git diff --check
