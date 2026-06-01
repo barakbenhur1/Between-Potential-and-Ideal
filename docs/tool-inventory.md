@@ -26,6 +26,7 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/check_deploy_docs.py` — verifies deploy documentation.
 - `tools/check_seo_metadata.py` — verifies robots and sitemap SEO baseline.
 - `tools/audit_sitemap_canonical_parity.py` — verifies sitemap URLs, canonical base, duplicate URL safety, local target existence, and lastmod coverage.
+- `tools/audit_search_index_terms.py` — audits search-index URL integrity and term precision warnings.
 - `tools/audit_document_seo_metadata.py` — audits long public document HTML SEO and social metadata readiness.
 - `tools/check_ai_disclosures.py` — verifies AI dialogue disclosure blocks.
 - `tools/check_files_table_accessibility.py` — verifies Files table semantics.
@@ -44,6 +45,7 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/audit_seo_social_preview.py`
 - `tools/audit_sitemap_and_public_links.py`
 - `tools/audit_sitemap_canonical_parity.py`
+- `tools/audit_search_index_terms.py`
 - `tools/audit_document_seo_metadata.py`
 - `tools/audit_file_download_links.py`
 
