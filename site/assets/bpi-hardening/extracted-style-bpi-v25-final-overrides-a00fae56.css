@@ -1,0 +1,188 @@
+/* ===== V25 IDEAL FINAL OVERRIDES - no dark leaks, bounded images, compact author note, stable story/AI order ===== */
+:root{
+  --bpi-ink:#102033;
+  --bpi-copy:#253244;
+  --bpi-blue:#0A3A68;
+  --bpi-gold:#b87926;
+  --bpi-orange:#f28e2b;
+  --bpi-paper:#fffaf0;
+  --bpi-paper-soft:#fff7e8;
+  --bpi-site-bg:#f7efe1;
+  --bpi-line:rgba(10,58,104,.16);
+  --font-hand-he:"Gveret Levin","Noto Sans Hebrew","Arial",sans-serif!important;
+}
+html, body{color:var(--bpi-ink);}
+/* Public/site pages must never inherit the dark document background. */
+body.public-page,
+body.public-page.design-prompt-theme,
+body.stories-page,
+body.appendix-document-page,
+body.files-page,
+body.ai-page,
+body.ai-believes-page{
+  background:var(--bpi-site-bg)!important;
+  color:var(--bpi-ink)!important;
+}
+body.public-page main,
+body.public-page .site-main,
+body.public-page .page,
+body.stories-page main,
+body.stories-page .page,
+body.appendix-document-page main,
+body.ai-page main,
+body.ai-believes-page main{
+  background:transparent!important;
+  color:var(--bpi-ink)!important;
+  box-shadow:none!important;
+}
+body.public-page main::before, body.public-page main::after,
+body.public-page .site-main::before, body.public-page .site-main::after,
+body.appendix-document-page main::before, body.appendix-document-page main::after,
+body.ai-page main::before, body.ai-page main::after,
+body.ai-believes-page main::before, body.ai-believes-page main::after{
+  display:none!important;content:none!important;background:none!important;
+}
+body.public-page .reader-card,
+body.public-page .long-read,
+body.public-page .hub-card,
+body.public-page .notice-box,
+body.public-page .file-card,
+body.public-page .appendix-card,
+body.public-page .media-card,
+body.public-page .page-title,
+body.public-page .table-wrap,
+body.stories-page .page,
+body.stories-page .landing-card,
+body.appendix-document-page .page,
+body.appendix-document-page main,
+body.ai-page .appendix-card,
+body.ai-believes-page .appendix-card{
+  background:linear-gradient(135deg,#fff,#fffaf0)!important;
+  color:var(--bpi-ink)!important;
+  border-color:var(--bpi-line)!important;
+}
+body.public-page p, body.public-page li, body.public-page td, body.public-page th,
+body.stories-page p, body.stories-page li,
+body.appendix-document-page p, body.appendix-document-page li,
+body.ai-page p, body.ai-page li,
+body.ai-believes-page p, body.ai-believes-page li{
+  color:var(--bpi-copy)!important;opacity:1!important;
+}
+body.public-page h1,body.public-page h2,body.public-page h3,
+body.stories-page h1,body.stories-page h2,body.stories-page h3,
+body.appendix-document-page h1,body.appendix-document-page h2,body.appendix-document-page h3,
+body.ai-page h1,body.ai-page h2,body.ai-page h3,
+body.ai-believes-page h1,body.ai-believes-page h2,body.ai-believes-page h3{
+  color:var(--bpi-blue)!important;opacity:1!important;
+}
+body.public-page .site-header{background:linear-gradient(135deg,#0A3A68,#0C526D 58%,rgba(242,142,43,.92))!important;color:#fff!important;}
+body.public-page .site-header a{color:#fff!important;}
+/* Document pages may show separated sheets, but use warm paper, never black. */
+body.design-prompt-theme:not(.public-page){background:#efe8d9!important;color:var(--bpi-ink)!important;}
+body.design-prompt-theme:not(.public-page) main{background:#efe8d9!important;color:var(--bpi-ink)!important;padding:26px 0 42px!important;box-shadow:none!important;}
+body.design-prompt-theme:not(.public-page) main > section,
+body.design-prompt-theme:not(.public-page) main > article,
+body.design-prompt-theme:not(.public-page) .cover,
+body.design-prompt-theme:not(.public-page) .author-note-page,
+body.design-prompt-theme:not(.public-page) .document-screen-toc,
+body.design-prompt-theme:not(.public-page) .page{
+  background:var(--bpi-paper)!important;
+  color:var(--bpi-ink)!important;
+  margin-bottom:32px!important;
+}
+body.design-prompt-theme:not(.public-page) p,
+body.design-prompt-theme:not(.public-page) li,
+body.design-prompt-theme:not(.public-page) blockquote{color:var(--bpi-ink)!important;opacity:1!important;}
+/* Compact author note: no debug label, no double pill, no huge empty box. */
+body.design-prompt-theme:not(.public-page) .author-note-page{
+  min-height:34vh!important;height:auto!important;padding:22px 18px!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;
+}
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-text-wrap,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-card-wrap,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-main-wrap{
+  width:100%!important;max-width:520px!important;margin:0 auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:8px!important;
+}
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-text-title,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-title{
+  margin:0 auto 4px!important;text-align:center!important;color:var(--bpi-gold)!important;font-size:clamp(24px,2.55vw,34px)!important;line-height:1.1!important;font-family:var(--font-hand-he)!important;font-weight:400!important;
+}
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-card,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-card{
+  width:min(420px,78vw)!important;max-width:420px!important;min-height:0!important;margin:0 auto!important;padding:16px 20px!important;background:#fffaf1!important;border:2px solid rgba(190,170,130,.52)!important;border-radius:18px!important;box-shadow:none!important;outline:0!important;text-align:center!important;overflow:hidden!important;
+}
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-card::before,
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-card::after,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-card::before,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-card::after,
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-card-head,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-top,
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-badge,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-chip,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-font-name{
+  display:none!important;visibility:hidden!important;content:none!important;width:0!important;height:0!important;margin:0!important;padding:0!important;border:0!important;
+}
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-lines,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-main,
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-lines p,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-main p{
+  color:#151515!important;text-align:center!important;margin-left:auto!important;margin-right:auto!important;font-family:var(--font-hand-he)!important;font-size:clamp(16px,1.55vw,20px)!important;line-height:1.34!important;font-weight:400!important;letter-spacing:0!important;
+}
+/* Story, appendix and chapter images: never leave their card/page. */
+body.public-page figure,
+body.public-page .image-frame,
+body.public-page .chapter-figure,
+body.public-page .story figure,
+body.public-page .story .image-frame,
+body.stories-page figure,
+body.stories-page .image-frame,
+body.appendix-document-page figure,
+body.appendix-document-page .image-frame,
+.files-appendix-story figure,
+.files-appendix-story .image-frame,
+.page.story figure,
+.page.story .image-frame{
+  width:min(620px,100%)!important;max-width:100%!important;margin:18px auto 24px!important;padding:10px!important;overflow:hidden!important;text-align:center!important;box-sizing:border-box!important;background:#fffaf0!important;border:1px solid rgba(10,58,104,.16)!important;border-radius:20px!important;
+}
+body.public-page figure img,
+body.public-page .image-frame img,
+body.public-page .chapter-figure img,
+body.public-page .story figure img,
+body.public-page .story .image-frame img,
+body.stories-page figure img,
+body.stories-page .image-frame img,
+body.appendix-document-page figure img,
+body.appendix-document-page .image-frame img,
+.files-appendix-story figure img,
+.files-appendix-story .image-frame img,
+.page.story figure img,
+.page.story .image-frame img{
+  display:block!important;width:auto!important;height:auto!important;max-width:100%!important;max-height:340px!important;object-fit:contain!important;object-position:center!important;margin:0 auto!important;border-radius:16px!important;box-sizing:border-box!important;
+}
+body.public-page .tab-visual img{width:100%!important;max-height:340px!important;object-fit:cover!important;}
+body.public-page .card-thumb,body.public-page .page-title-mark{width:88px!important;height:88px!important;max-width:88px!important;max-height:88px!important;object-fit:cover!important;border-radius:20px!important;}
+body.public-page .ai-card-image{width:100%!important;height:150px!important;max-height:150px!important;object-fit:cover!important;border-radius:18px!important;}
+/* Stories landing / appendix cover */
+body.stories-page .title, body.stories-page .subtitle{text-align:center!important;display:block!important;}
+body.stories-page .subtitle, body.appendix-document-page .cover .subtitle{font-size:clamp(1.05rem,1.9vw,1.35rem)!important;color:#31465d!important;font-style:italic!important;line-height:1.5!important;max-width:76ch!important;margin:0 auto 14px!important;}
+.download-strip,.download-row,.appendix-actions{display:flex!important;justify-content:center!important;align-items:center!important;gap:10px!important;flex-wrap:wrap!important;white-space:normal!important;}
+.download-strip a,.download-row a,.appendix-actions a{display:inline-flex!important;align-items:center!important;justify-content:center!important;margin:4px!important;padding:8px 13px!important;border:1px solid rgba(10,58,104,.16)!important;border-radius:999px!important;background:#fffaf0!important;color:var(--bpi-blue)!important;text-decoration:none!important;font-weight:800!important;line-height:1.2!important;}
+/* AI cards */
+.ai-page-card-grid,.ai-card-grid{align-items:stretch!important;}
+.ai-mode-title,.file-mode-label{display:inline-flex!important;align-items:center!important;justify-content:center!important;align-self:flex-start!important;margin:0 0 8px!important;padding:6px 14px!important;border-radius:999px!important;background:#fff7e8!important;border:1px solid rgba(184,121,38,.32)!important;color:var(--bpi-gold)!important;font-weight:900!important;}
+.ai-mode-subtitle{display:block!important;margin:0 0 12px!important;color:#5f6f7d!important;font-weight:700!important;font-size:.98rem!important;line-height:1.35!important;}
+/* PDF/print: hide format buttons and keep figures bounded. */
+@media print{
+  .download-strip,.download-row,.appendix-actions{display:none!important;visibility:hidden!important;height:0!important;margin:0!important;padding:0!important;overflow:hidden!important;}
+  body{background:#fffaf0!important;color:#102033!important;}
+  body.public-page, body.stories-page, body.appendix-document-page, body.design-prompt-theme{background:#fffaf0!important;color:#102033!important;}
+  .cover{break-after:page!important;page-break-after:always!important;}
+  .story-toc-page{break-after:page!important;page-break-after:always!important;}
+  .story,.page.story{break-before:page!important;page-break-before:always!important;}
+  .document-screen-toc,#interactive-toc{break-before:page!important;page-break-before:always!important;break-after:auto!important;page-break-after:auto!important;}
+  .chapter-opening{break-before:auto!important;page-break-before:auto!important;break-inside:avoid-page!important;page-break-inside:avoid!important;}
+  .chapter-opening h2,.chapter-opening .chapter-subtitle,.chapter-opening p,.chapter-opening figure,.chapter-opening .image-frame,.chapter-opening figcaption{break-inside:avoid!important;page-break-inside:avoid!important;break-after:avoid!important;page-break-after:avoid!important;}
+  body.appendix-document-page figure,body.appendix-document-page .image-frame,.files-appendix-story figure,.files-appendix-story .image-frame,.page.story figure,.page.story .image-frame,body.public-page .story figure,body.public-page .story .image-frame{max-width:145mm!important;width:145mm!important;margin:6mm auto!important;padding:3mm!important;}
+  body.appendix-document-page figure img,body.appendix-document-page .image-frame img,.files-appendix-story figure img,.files-appendix-story .image-frame img,.page.story figure img,.page.story .image-frame img,body.public-page .story figure img,body.public-page .story .image-frame img{max-height:78mm!important;max-width:100%!important;width:auto!important;height:auto!important;object-fit:contain!important;}
+  body.design-prompt-theme:not(.public-page) .author-note-page{height:100vh!important;min-height:100vh!important;break-after:page!important;page-break-after:always!important;}
+}

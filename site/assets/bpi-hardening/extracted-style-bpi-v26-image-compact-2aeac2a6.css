@@ -1,0 +1,80 @@
+/* ===== V26 STORY/APPENDIX IMAGE COMPACT FINAL ===== */
+body.public-page figure,
+body.public-page .image-frame,
+body.public-page .chapter-figure,
+body.public-page .story figure,
+body.public-page .story .image-frame,
+body.stories-page figure,
+body.stories-page .image-frame,
+body.appendix-document-page figure,
+body.appendix-document-page .image-frame,
+.files-appendix-story figure,
+.files-appendix-story .image-frame,
+.page.story figure,
+.page.story .image-frame{
+  width:min(560px,100%)!important;
+  max-width:100%!important;
+  margin:16px auto 22px!important;
+  padding:10px!important;
+  overflow:hidden!important;
+  text-align:center!important;
+  box-sizing:border-box!important;
+  background:#fffaf0!important;
+  border:1px solid rgba(10,58,104,.16)!important;
+  border-radius:20px!important;
+}
+body.public-page figure img,
+body.public-page .image-frame img,
+body.public-page .chapter-figure img,
+body.public-page .story figure img,
+body.public-page .story .image-frame img,
+body.stories-page figure img,
+body.stories-page .image-frame img,
+body.appendix-document-page figure img,
+body.appendix-document-page .image-frame img,
+.files-appendix-story figure img,
+.files-appendix-story .image-frame img,
+.page.story figure img,
+.page.story .image-frame img{
+  display:block!important;
+  width:auto!important;
+  height:auto!important;
+  max-width:100%!important;
+  max-height:300px!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  margin:0 auto!important;
+  border-radius:16px!important;
+  box-sizing:border-box!important;
+}
+@media print{
+  body.appendix-document-page figure,
+  body.appendix-document-page .image-frame,
+  .files-appendix-story figure,
+  .files-appendix-story .image-frame,
+  .page.story figure,
+  .page.story .image-frame,
+  body.public-page .story figure,
+  body.public-page .story .image-frame{
+    width:118mm!important;
+    max-width:118mm!important;
+    margin:5mm auto 6mm!important;
+    padding:2mm!important;
+    break-inside:avoid!important;
+    page-break-inside:avoid!important;
+  }
+  body.appendix-document-page figure img,
+  body.appendix-document-page .image-frame img,
+  .files-appendix-story figure img,
+  .files-appendix-story .image-frame img,
+  .page.story figure img,
+  .page.story .image-frame img,
+  body.public-page .story figure img,
+  body.public-page .story .image-frame img{
+    max-height:54mm!important;
+    max-width:112mm!important;
+    width:auto!important;
+    height:auto!important;
+    object-fit:contain!important;
+  }
+}

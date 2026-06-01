@@ -1,0 +1,244 @@
+/* ===== V21 FINAL PRODUCT STABILITY FIX =====
+   Specific fixes: readable site pages, smaller author note, bounded images,
+   story subtitles, AI mode order, and no black page/card regressions. */
+:root{
+  --v21-ink:#102033;
+  --v21-copy:#263444;
+  --v21-paper:#fffaf0;
+  --v21-soft:#fff7e8;
+  --v21-gold:#b87926;
+  --v21-line:rgba(10,58,104,.16);
+}
+html,body{color:var(--v21-ink);}
+body.public-page,
+body.public-page.design-prompt-theme,
+body.stories-page{
+  background:radial-gradient(circle at 0% 10%,rgba(0,167,183,.10),transparent 34rem),radial-gradient(circle at 100% 0%,rgba(242,142,43,.12),transparent 32rem),#f7efe1!important;
+  color:var(--v21-ink)!important;
+}
+body.public-page .site-main,
+body.public-page.design-prompt-theme .site-main,
+body.stories-page main{
+  background:transparent!important;
+  color:var(--v21-ink)!important;
+}
+body.public-page .reader-card,
+body.public-page .hub-card,
+body.public-page .notice-box,
+body.public-page .method-note,
+body.public-page .file-card,
+body.public-page .appendix-card,
+body.public-page .side-toc,
+body.public-page .table-wrap,
+body.public-page .media-card,
+body.public-page .tone-card,
+body.stories-page .page,
+body.stories-page .landing-card{
+  background:linear-gradient(135deg,rgba(255,255,255,.98),rgba(255,250,240,.96))!important;
+  color:var(--v21-ink)!important;
+  border-color:var(--v21-line)!important;
+  box-shadow:0 14px 38px rgba(10,58,104,.08)!important;
+}
+body.public-page p,
+body.public-page li,
+body.public-page blockquote,
+body.public-page .reader-card p,
+body.public-page .long-read p,
+body.public-page .hebrew-rtl-force,
+body.stories-page p,
+body.stories-page li{
+  color:var(--v21-copy)!important;
+  opacity:1!important;
+}
+body.public-page h1,
+body.public-page h2,
+body.public-page h3,
+body.public-page .reader-card h1,
+body.public-page .reader-card h2,
+body.public-page .reader-card h3,
+body.stories-page h1,
+body.stories-page h2,
+body.stories-page h3{
+  opacity:1!important;
+}
+body.public-page .reader-card h1,
+body.public-page .reader-card h2,
+body.public-page .reader-card h3,
+body.public-page .long-read h1,
+body.public-page .long-read h2{color:#0A3A68!important;}
+body.public-page .long-read h3,
+body.stories-page h2{color:var(--v21-gold)!important;}
+body.public-page figcaption,
+body.stories-page figcaption{color:#5f6f7d!important;opacity:1!important;}
+
+/* Bound all chapter/story images; no overflow and no giant cards. */
+body.public-page figure,
+body.public-page .image-frame,
+body.public-page .chapter-figure,
+body.stories-page .image-frame,
+.files-appendix-story .image-frame,
+.files-appendix-story figure,
+.page.story .image-frame{
+  width:min(760px,100%)!important;
+  max-width:100%!important;
+  margin:22px auto 28px!important;
+  padding:12px!important;
+  box-sizing:border-box!important;
+  overflow:hidden!important;
+  text-align:center!important;
+}
+body.public-page figure img,
+body.public-page .image-frame img,
+body.public-page .chapter-figure img,
+body.stories-page .image-frame img,
+.files-appendix-story .image-frame img,
+.files-appendix-story figure img,
+.page.story .image-frame img{
+  display:block!important;
+  max-width:100%!important;
+  width:100%!important;
+  height:auto!important;
+  max-height:430px!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  border-radius:18px!important;
+  box-sizing:border-box!important;
+}
+
+/* Formula/math blocks should never be dark unreadable boxes. */
+body.design-prompt-theme span.math.display,
+body.design-prompt-theme .math.display,
+body.design-prompt-theme pre,
+body.design-prompt-theme code,
+.public-page span.math.display,
+.public-page .math.display,
+.public-page pre,
+.public-page code{
+  background:#fffaf0!important;
+  color:#17202d!important;
+  border:1px solid rgba(184,121,38,.24)!important;
+  box-shadow:none!important;
+  opacity:1!important;
+}
+body.design-prompt-theme span.math.display,
+body.design-prompt-theme .math.display,
+.public-page span.math.display,
+.public-page .math.display{
+  display:block!important;
+  max-width:100%!important;
+  overflow-x:auto!important;
+  padding:13px 16px!important;
+  margin:18px auto!important;
+  text-align:center!important;
+  white-space:normal!important;
+}
+
+/* Main document HTML remains light; no dark-text-on-dark regressions. */
+body.design-prompt-theme:not(.public-page){background:#efe8d9!important;color:#17202d!important;}
+body.design-prompt-theme:not(.public-page) main{background:#fffaf0!important;color:#17202d!important;box-shadow:0 8px 26px rgba(23,32,45,.08)!important;}
+body.design-prompt-theme:not(.public-page) p,
+body.design-prompt-theme:not(.public-page) li,
+body.design-prompt-theme:not(.public-page) blockquote{color:#17202d!important;opacity:1!important;}
+
+/* Author note: compact, clean, centered, no badges/double circles, no font labels. */
+body.design-prompt-theme:not(.public-page) .author-note-page{
+  min-height:62vh!important;
+  height:auto!important;
+  padding:36px 28px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+  box-sizing:border-box!important;
+  background:#fffaf0!important;
+}
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-text-wrap,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-card-wrap,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-main-wrap{
+  width:100%!important;
+  max-width:700px!important;
+  margin:0 auto!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:14px!important;
+}
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-text-title,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-title{
+  margin:0 auto 4px!important;
+  text-align:center!important;
+  color:var(--v21-gold)!important;
+  font-size:clamp(30px,3.3vw,44px)!important;
+  line-height:1.1!important;
+  font-family:"Gveret Levin","Noto Sans Hebrew","Arial",sans-serif!important;
+  font-weight:400!important;
+}
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-card,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-card{
+  width:min(560px,86vw)!important;
+  max-width:560px!important;
+  min-height:0!important;
+  margin:0 auto!important;
+  padding:24px 28px!important;
+  background:#fffaf1!important;
+  border:2px solid rgba(190,170,130,.52)!important;
+  border-radius:24px!important;
+  box-shadow:none!important;
+  outline:0!important;
+  text-align:center!important;
+  overflow:hidden!important;
+}
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-card::before,
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-card::after,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-card::before,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-card::after,
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-card-head,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-top,
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-badge,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-chip,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-font-name{display:none!important;content:none!important;visibility:hidden!important;}
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-lines,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-main,
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-lines p,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-main p{
+  color:#151515!important;
+  text-align:center!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  font-family:"Gveret Levin","Noto Sans Hebrew","Arial",sans-serif!important;
+  font-size:clamp(19px,2.1vw,25px)!important;
+  line-height:1.42!important;
+  font-weight:400!important;
+  letter-spacing:0!important;
+}
+
+/* Flow: TOC should not force an empty page before content; chapters may begin when there is real space. */
+body.design-prompt-theme:not(.public-page) .document-screen-toc,
+body.design-prompt-theme:not(.public-page) #interactive-toc,
+body.design-prompt-theme:not(.public-page) .document-method-caution{
+  break-before:auto!important;page-break-before:auto!important;break-after:auto!important;page-break-after:auto!important;
+}
+body.design-prompt-theme:not(.public-page) .chapter-opening{
+  break-before:auto!important;page-break-before:auto!important;break-inside:avoid-page!important;page-break-inside:avoid!important;
+  margin-top:20px!important;margin-bottom:12px!important;padding-top:0!important;
+}
+body.design-prompt-theme:not(.public-page) .chapter-opening figure,
+body.design-prompt-theme:not(.public-page) .chapter-opening .image-frame{width:min(660px,100%)!important;max-width:100%!important;margin:12px auto 0!important;padding:8px!important;overflow:hidden!important;}
+body.design-prompt-theme:not(.public-page) .chapter-opening figure img,
+body.design-prompt-theme:not(.public-page) .chapter-opening .image-frame img{max-width:100%!important;width:auto!important;max-height:300px!important;height:auto!important;object-fit:contain!important;}
+
+@media print{
+  body.design-prompt-theme:not(.public-page),body.design-prompt-theme:not(.public-page) main{background:#fffaf0!important;color:#17202d!important;box-shadow:none!important;}
+  body.design-prompt-theme:not(.public-page) .cover{break-after:page!important;page-break-after:always!important;}
+  body.design-prompt-theme:not(.public-page) .author-note-page{height:257mm!important;min-height:257mm!important;break-after:page!important;page-break-after:always!important;padding:22mm 16mm!important;}
+  body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-card{width:128mm!important;max-width:128mm!important;padding:8mm 10mm!important;border-radius:9mm!important;}
+  body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-lines,body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-lines p{font-size:15.5pt!important;line-height:1.34!important;}
+  body.design-prompt-theme:not(.public-page) .document-screen-toc,body.design-prompt-theme:not(.public-page) #interactive-toc,body.design-prompt-theme:not(.public-page) .document-method-caution{break-before:auto!important;page-break-before:auto!important;break-after:auto!important;page-break-after:auto!important;}
+  body.design-prompt-theme:not(.public-page) .chapter-opening{break-before:auto!important;page-break-before:auto!important;break-inside:avoid-page!important;page-break-inside:avoid!important;margin-top:3mm!important;margin-bottom:2mm!important;}
+  body.design-prompt-theme:not(.public-page) .chapter-opening h2{font-size:19pt!important;line-height:1.12!important;margin:0 0 1mm!important;}
+  body.design-prompt-theme:not(.public-page) .chapter-opening > p:first-of-type,body.design-prompt-theme:not(.public-page) .chapter-opening .chapter-subtitle{font-size:12.5pt!important;line-height:1.2!important;margin:0 0 1.6mm!important;}
+  body.design-prompt-theme:not(.public-page) .chapter-opening figure,body.design-prompt-theme:not(.public-page) .chapter-opening .image-frame{margin-top:1.6mm!important;margin-bottom:0!important;padding:1.6mm!important;}
+  body.design-prompt-theme:not(.public-page) .chapter-opening figure img,body.design-prompt-theme:not(.public-page) .chapter-opening .image-frame img{max-height:48mm!important;max-width:86%!important;width:auto!important;object-fit:contain!important;}
+  body.design-prompt-theme:not(.public-page) .chapter-opening figcaption{font-size:8.6pt!important;line-height:1.15!important;margin-top:.8mm!important;}
+}

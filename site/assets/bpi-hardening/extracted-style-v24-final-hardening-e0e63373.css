@@ -1,0 +1,87 @@
+/* ===== V24 FINAL HARDENING: appendices, story PDFs, image bounds, light site ===== */
+body.public-page, body.stories-page, body.appendix-document-page{
+  background:#f7efe1!important;
+  color:#102033!important;
+}
+body.public-page main, body.public-page .site-main, body.stories-page main, body.appendix-document-page main{
+  background:transparent!important;
+  color:#102033!important;
+  box-shadow:none!important;
+}
+body.public-page main::before, body.public-page main::after, body.public-page .site-main::before, body.public-page .site-main::after,
+body.appendix-document-page main::before, body.appendix-document-page main::after{display:none!important;content:none!important;background:none!important;}
+/* never let old black document backgrounds leak into public pages */
+body.public-page .reader-card,body.public-page .hub-card,body.public-page .notice-box,body.public-page .file-card,body.public-page .appendix-card,
+body.public-page .media-card,body.public-page .page-title,body.public-page .table-wrap,body.stories-page .page,body.stories-page .landing-card,
+body.appendix-document-page main{
+  background:linear-gradient(135deg,#fff,#fffaf0)!important;
+  color:#102033!important;
+}
+body.public-page p,body.public-page li,body.public-page td,body.public-page th,body.appendix-document-page p,body.appendix-document-page li{color:#26384b!important;opacity:1!important;}
+body.public-page h1,body.public-page h2,body.public-page h3,body.appendix-document-page h1,body.appendix-document-page h2,body.appendix-document-page h3{color:#0A3A68!important;opacity:1!important;}
+body.public-page .site-header{background:linear-gradient(135deg,#0A3A68,#0C526D 58%,rgba(242,142,43,.92))!important;color:#fff!important;}
+body.public-page .site-header a{color:#fff!important;}
+/* universal image bounds for appendix/story/article pages - overrides inline width:100% */
+body.appendix-document-page figure,
+body.appendix-document-page .image-frame,
+body.appendix-document-page .chapter-figure,
+.files-appendix-story figure,
+.files-appendix-story .image-frame,
+.page.story figure,
+.page.story .image-frame,
+body.public-page .story figure,
+body.public-page .story .image-frame{
+  width:min(700px,100%)!important;
+  max-width:100%!important;
+  margin:22px auto 28px!important;
+  padding:12px!important;
+  overflow:hidden!important;
+  text-align:center!important;
+  box-sizing:border-box!important;
+  background:#fffaf0!important;
+  border:1px solid rgba(10,58,104,.16)!important;
+  border-radius:22px!important;
+}
+body.appendix-document-page figure img,
+body.appendix-document-page .image-frame img,
+body.appendix-document-page .chapter-figure img,
+.files-appendix-story figure img,
+.files-appendix-story .image-frame img,
+.page.story figure img,
+.page.story .image-frame img,
+body.public-page .story figure img,
+body.public-page .story .image-frame img{
+  display:block!important;
+  width:auto!important;
+  height:auto!important;
+  max-width:100%!important;
+  max-height:360px!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  margin:0 auto!important;
+  border-radius:16px!important;
+  box-sizing:border-box!important;
+}
+body.public-page .tab-visual, body.public-page .compact-section-visual{background:#fffaf0!important;max-width:960px!important;margin:1.2rem auto 1.6rem!important;}
+body.public-page .tab-visual img, body.public-page .compact-section-visual img{max-height:340px!important;object-fit:cover!important;}
+/* Story collections: clean readable cover and no concatenated format labels in print/PDF */
+body.stories-page .download-strip, body.stories-page .download-row, body.stories-page .appendix-actions,
+body.appendix-document-page .download-strip, body.appendix-document-page .download-row, body.appendix-document-page .appendix-actions{
+  display:flex!important;gap:10px!important;justify-content:center!important;align-items:center!important;flex-wrap:wrap!important;white-space:normal!important;
+}
+body.stories-page .download-strip a, body.stories-page .download-row a, body.stories-page .appendix-actions a,
+body.appendix-document-page .download-strip a, body.appendix-document-page .download-row a, body.appendix-document-page .appendix-actions a{
+  display:inline-flex!important;margin:4px!important;padding:9px 14px!important;border:1px solid rgba(10,58,104,.18)!important;border-radius:999px!important;background:#fffaf0!important;color:#0A3A68!important;text-decoration:none!important;font-weight:800!important;line-height:1.2!important;
+}
+body.stories-page .subtitle, body.appendix-document-page .cover .subtitle{display:block!important;color:#31465d!important;font-style:italic!important;line-height:1.55!important;text-align:center!important;max-width:76ch!important;margin:16px auto!important;}
+/* compact live author note */
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-card{width:min(460px,82vw)!important;max-width:460px!important;min-height:0!important;padding:18px 22px!important;}
+body.design-prompt-theme:not(.public-page) .author-note-page{min-height:40vh!important;padding:22px 18px!important;}
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-lines, body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-lines p{font-size:clamp(17px,1.65vw,21px)!important;line-height:1.36!important;}
+@media print{
+  .download-strip,.download-row,.appendix-actions{display:none!important;visibility:hidden!important;height:0!important;margin:0!important;padding:0!important;overflow:hidden!important;}
+  body.appendix-document-page figure, body.appendix-document-page .image-frame, .files-appendix-story figure, .files-appendix-story .image-frame{max-width:145mm!important;width:145mm!important;margin:7mm auto!important;padding:2.5mm!important;}
+  body.appendix-document-page figure img, body.appendix-document-page .image-frame img, .files-appendix-story figure img, .files-appendix-story .image-frame img{max-height:82mm!important;max-width:100%!important;width:auto!important;height:auto!important;object-fit:contain!important;}
+  .story,.page.story{break-before:auto!important;page-break-before:auto!important;}
+  .cover{break-after:page!important;page-break-after:always!important;}
+}

@@ -1,0 +1,317 @@
+/* ===== V20 IDEAL STABILITY FIX =====
+   Restores readable public pages, keeps document pages light/readable, fixes author note size,
+   caps chapter images, restores stories subtitle, and removes page-flow regressions. */
+:root{
+  --v20-ink:#102033;
+  --v20-copy:#253244;
+  --v20-muted:#5f6f7d;
+  --v20-paper:#fffaf0;
+  --v20-paper-soft:#fff7e8;
+  --v20-line:rgba(10,58,104,.16);
+  --v20-gold:#b87926;
+}
+
+/* Public website readability - never dark text on dark surface */
+body.public-page.design-prompt-theme{
+  background:radial-gradient(circle at 0% 10%,rgba(0,167,183,.10),transparent 34rem),radial-gradient(circle at 100% 0%,rgba(242,142,43,.12),transparent 32rem),#f7efe1!important;
+  color:var(--v20-ink)!important;
+}
+body.public-page.design-prompt-theme .site-main{background:transparent!important;color:var(--v20-ink)!important;}
+body.public-page.design-prompt-theme .page-title,
+body.public-page.design-prompt-theme .reader-card,
+body.public-page.design-prompt-theme .hub-card,
+body.public-page.design-prompt-theme .notice-box,
+body.public-page.design-prompt-theme .method-note,
+body.public-page.design-prompt-theme .file-card,
+body.public-page.design-prompt-theme .appendix-card,
+body.public-page.design-prompt-theme .side-toc,
+body.public-page.design-prompt-theme .table-wrap,
+body.public-page.design-prompt-theme .media-card,
+body.public-page.design-prompt-theme .tone-card{
+  background:linear-gradient(135deg,rgba(255,255,255,.98),rgba(255,250,240,.96))!important;
+  color:var(--v20-ink)!important;
+  border-color:var(--v20-line)!important;
+  box-shadow:0 14px 38px rgba(10,58,104,.08)!important;
+}
+body.public-page.design-prompt-theme .reader-card p,
+body.public-page.design-prompt-theme .reader-card li,
+body.public-page.design-prompt-theme .reader-card blockquote,
+body.public-page.design-prompt-theme .long-read p,
+body.public-page.design-prompt-theme .long-read li,
+body.public-page.design-prompt-theme .hebrew-rtl-force,
+body.public-page.design-prompt-theme .notice-box p,
+body.public-page.design-prompt-theme .notice-box li,
+body.public-page.design-prompt-theme .hub-card p,
+body.public-page.design-prompt-theme .hub-card li,
+body.public-page.design-prompt-theme .method-note p,
+body.public-page.design-prompt-theme .file-card p,
+body.public-page.design-prompt-theme .appendix-card p{
+  color:var(--v20-copy)!important;
+  opacity:1!important;
+}
+body.public-page.design-prompt-theme .reader-card h1,
+body.public-page.design-prompt-theme .reader-card h2,
+body.public-page.design-prompt-theme .reader-card h3,
+body.public-page.design-prompt-theme .long-read h1,
+body.public-page.design-prompt-theme .long-read h2,
+body.public-page.design-prompt-theme .long-read h3,
+body.public-page.design-prompt-theme .notice-box h2,
+body.public-page.design-prompt-theme .hub-card h2{
+  color:#0A3A68!important;
+  opacity:1!important;
+}
+body.public-page.design-prompt-theme .long-read h3{color:var(--v20-gold)!important;}
+body.public-page.design-prompt-theme figcaption{color:var(--v20-muted)!important;opacity:1!important;}
+body.public-page.design-prompt-theme .media-card::after,
+body.public-page.design-prompt-theme .tone-card::after{opacity:.28!important;}
+
+/* Public chapter images: stay inside card, not enormous, not clipped */
+body.public-page.design-prompt-theme .reader-card figure,
+body.public-page.design-prompt-theme .reader-card .image-frame,
+body.public-page.design-prompt-theme .reader-card .chapter-figure{
+  width:min(760px,100%)!important;
+  max-width:100%!important;
+  margin:22px auto 28px!important;
+  padding:12px!important;
+  box-sizing:border-box!important;
+  overflow:hidden!important;
+  text-align:center!important;
+}
+body.public-page.design-prompt-theme .reader-card figure img,
+body.public-page.design-prompt-theme .reader-card .image-frame img,
+body.public-page.design-prompt-theme .reader-card .chapter-figure img{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-height:430px!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  border-radius:18px!important;
+  box-sizing:border-box!important;
+}
+body.public-page.design-prompt-theme .tab-visual.compact-section-visual img{object-fit:cover!important;}
+
+/* Formula/math blocks: light readable boxes */
+body.design-prompt-theme span.math.display,
+body.design-prompt-theme .math.display,
+body.design-prompt-theme pre,
+body.design-prompt-theme code{
+  background:#fffaf0!important;
+  color:#17202d!important;
+  border:1px solid rgba(184,121,38,.24)!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  opacity:1!important;
+}
+body.design-prompt-theme span.math.display,
+body.design-prompt-theme .math.display{
+  display:block!important;
+  max-width:100%!important;
+  overflow-x:auto!important;
+  padding:13px 16px!important;
+  margin:18px auto!important;
+  text-align:center!important;
+  white-space:normal!important;
+}
+
+/* Document HTML pages: do not turn the main body dark; keep all direct content readable */
+body.design-prompt-theme:not(.public-page){
+  background:#efe8d9!important;
+  color:#17202d!important;
+}
+body.design-prompt-theme:not(.public-page) main{
+  background:#fffaf0!important;
+  color:#17202d!important;
+  box-shadow:0 8px 26px rgba(23,32,45,.08)!important;
+}
+body.design-prompt-theme:not(.public-page) main > p,
+body.design-prompt-theme:not(.public-page) main > h1,
+body.design-prompt-theme:not(.public-page) main > h2,
+body.design-prompt-theme:not(.public-page) main > h3,
+body.design-prompt-theme:not(.public-page) main > div,
+body.design-prompt-theme:not(.public-page) main > section,
+body.design-prompt-theme:not(.public-page) main > article{
+  color:#17202d!important;
+  opacity:1!important;
+}
+body.design-prompt-theme:not(.public-page) p,
+body.design-prompt-theme:not(.public-page) li,
+body.design-prompt-theme:not(.public-page) blockquote{color:#17202d!important;opacity:1!important;}
+body.design-prompt-theme:not(.public-page) h1,
+body.design-prompt-theme:not(.public-page) h2,
+body.design-prompt-theme:not(.public-page) h3{opacity:1!important;}
+
+/* Author note: smaller, clean, centered, no badges/double circles, no font label */
+body.design-prompt-theme:not(.public-page) .author-note-page{
+  min-height:72vh!important;
+  height:auto!important;
+  padding:46px 34px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+  box-sizing:border-box!important;
+  overflow:visible!important;
+  background:#fffaf0!important;
+}
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-text-wrap,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-card-wrap,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-main-wrap{
+  width:100%!important;
+  max-width:760px!important;
+  margin:0 auto!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:18px!important;
+}
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-text-title,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-title{
+  margin:0 auto 8px!important;
+  text-align:center!important;
+  color:var(--v20-gold)!important;
+  font-size:clamp(34px,4vw,54px)!important;
+  line-height:1.1!important;
+  font-family:"Gveret Levin","Noto Sans Hebrew","Arial",sans-serif!important;
+  font-weight:400!important;
+}
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-card,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-card{
+  width:min(680px,90vw)!important;
+  max-width:680px!important;
+  min-height:0!important;
+  margin:0 auto!important;
+  padding:28px 34px!important;
+  background:#fffaf1!important;
+  border:2px solid rgba(190,170,130,.52)!important;
+  border-radius:28px!important;
+  box-shadow:none!important;
+  outline:0!important;
+  text-align:center!important;
+  overflow:hidden!important;
+}
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-card::before,
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-card::after,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-card::before,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-card::after,
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-card-head,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-top,
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-badge,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-chip,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-font-name{
+  display:none!important;
+  content:none!important;
+  visibility:hidden!important;
+}
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-lines,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-main,
+body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-lines p,
+body.design-prompt-theme:not(.public-page) .author-note-page .author-note-main p{
+  color:#151515!important;
+  text-align:center!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  font-family:"Gveret Levin","Noto Sans Hebrew","Arial",sans-serif!important;
+  font-size:clamp(21px,2.5vw,30px)!important;
+  line-height:1.46!important;
+  font-weight:400!important;
+  letter-spacing:0!important;
+}
+body.design-prompt-theme:not(.public-page) .author-note-page[dir="rtl"] .bpi-author-note-lines,
+body.design-prompt-theme:not(.public-page) .author-note-page[dir="rtl"] .bpi-author-note-lines *{
+  direction:rtl!important;
+  unicode-bidi:isolate!important;
+}
+
+/* Document flow: cover and author note own pages, TOC may flow to next content; chapters not forced to page start */
+body.design-prompt-theme:not(.public-page) .document-screen-toc,
+body.design-prompt-theme:not(.public-page) #interactive-toc{
+  break-before:auto!important;
+  page-break-before:auto!important;
+  break-after:auto!important;
+  page-break-after:auto!important;
+  margin-top:22px!important;
+  margin-bottom:24px!important;
+}
+body.design-prompt-theme:not(.public-page) .document-method-caution{
+  break-before:auto!important;
+  page-break-before:auto!important;
+  margin-top:18px!important;
+  margin-bottom:22px!important;
+}
+body.design-prompt-theme:not(.public-page) .chapter-opening{
+  break-before:auto!important;
+  page-break-before:auto!important;
+  break-inside:avoid-page!important;
+  page-break-inside:avoid!important;
+  margin-top:24px!important;
+  margin-bottom:14px!important;
+  padding-top:0!important;
+}
+body.design-prompt-theme:not(.public-page) .chapter-opening h2,
+body.design-prompt-theme:not(.public-page) .chapter-opening .chapter-subtitle,
+body.design-prompt-theme:not(.public-page) .chapter-opening > p:first-of-type,
+body.design-prompt-theme:not(.public-page) .chapter-opening figure,
+body.design-prompt-theme:not(.public-page) .chapter-opening .image-frame,
+body.design-prompt-theme:not(.public-page) .chapter-opening figcaption{
+  break-inside:avoid!important;
+  page-break-inside:avoid!important;
+  break-after:avoid!important;
+  page-break-after:avoid!important;
+}
+body.design-prompt-theme:not(.public-page) .chapter-opening figure,
+body.design-prompt-theme:not(.public-page) .chapter-opening .image-frame{
+  width:min(720px,100%)!important;
+  max-width:100%!important;
+  margin:14px auto 0!important;
+  padding:10px!important;
+  box-sizing:border-box!important;
+  overflow:hidden!important;
+}
+body.design-prompt-theme:not(.public-page) .chapter-opening figure img,
+body.design-prompt-theme:not(.public-page) .chapter-opening .image-frame img{
+  max-width:100%!important;
+  width:auto!important;
+  max-height:340px!important;
+  height:auto!important;
+  object-fit:contain!important;
+  object-position:center!important;
+}
+
+@media print{
+  body.design-prompt-theme:not(.public-page),
+  body.design-prompt-theme:not(.public-page) main{background:#fffaf0!important;color:#17202d!important;box-shadow:none!important;}
+  body.design-prompt-theme:not(.public-page) .cover{break-after:page!important;page-break-after:always!important;}
+  body.design-prompt-theme:not(.public-page) .author-note-page{
+    height:257mm!important;
+    min-height:257mm!important;
+    break-after:page!important;
+    page-break-after:always!important;
+    padding:22mm 16mm!important;
+  }
+  body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-card,
+  body.design-prompt-theme:not(.public-page) .author-note-page .author-note-card{
+    width:145mm!important;
+    max-width:145mm!important;
+    padding:9mm 11mm!important;
+    border-radius:10mm!important;
+  }
+  body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-lines,
+  body.design-prompt-theme:not(.public-page) .author-note-page .author-note-main,
+  body.design-prompt-theme:not(.public-page) .author-note-page .bpi-author-note-lines p{
+    font-size:17pt!important;
+    line-height:1.38!important;
+  }
+  body.design-prompt-theme:not(.public-page) .document-screen-toc,
+  body.design-prompt-theme:not(.public-page) #interactive-toc{break-before:auto!important;page-break-before:auto!important;break-after:auto!important;page-break-after:auto!important;margin-bottom:4mm!important;}
+  body.design-prompt-theme:not(.public-page) .chapter-opening{break-before:auto!important;page-break-before:auto!important;break-inside:avoid-page!important;page-break-inside:avoid!important;margin-top:4mm!important;margin-bottom:2mm!important;}
+  body.design-prompt-theme:not(.public-page) .chapter-opening h2{font-size:20pt!important;line-height:1.15!important;margin:0 0 1.3mm!important;}
+  body.design-prompt-theme:not(.public-page) .chapter-opening > p:first-of-type,
+  body.design-prompt-theme:not(.public-page) .chapter-opening .chapter-subtitle{font-size:13pt!important;line-height:1.24!important;margin:0 0 2mm!important;}
+  body.design-prompt-theme:not(.public-page) .chapter-opening figure,
+  body.design-prompt-theme:not(.public-page) .chapter-opening .image-frame{margin-top:2mm!important;margin-bottom:0!important;padding:2mm!important;}
+  body.design-prompt-theme:not(.public-page) .chapter-opening figure img,
+  body.design-prompt-theme:not(.public-page) .chapter-opening .image-frame img{max-height:55mm!important;max-width:88%!important;width:auto!important;object-fit:contain!important;}
+  body.design-prompt-theme:not(.public-page) .chapter-opening figcaption{font-size:9pt!important;line-height:1.18!important;margin-top:1mm!important;}
+}
