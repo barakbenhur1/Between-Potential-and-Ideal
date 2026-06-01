@@ -1,4 +1,3 @@
-
 /* Document reading alignment fix */
 body.public-page-he main,
 body.public-page-he article,
@@ -128,15 +127,52 @@ html:has(link[rel="canonical"][href$="/what-ai-believes-en.html"]) main#main > h
 html:has(link[rel="canonical"][href$="/when-i-am-also-you-en.html"]) main#main > h1:first-of-type + h2::before { content: "With from Without" !important; color: var(--gold, #a97835) !important; display: block !important; font-size: 1.55rem !important; line-height: 1.2 !important; font-weight: 700 !important; }
 /* ===== /BPI_AI_APPENDIX_EN_SUBTITLE_TEXT_FIX_V1_20260531 ===== */
 
-/* ===== BPI_AI_HIDE_VISIBLE_SKIP_LINK_V2_20260531 ===== */
+/* ===== BPI_AI_ACCESSIBLE_SKIP_LINK_V3_20260601 ===== */
 html[lang="en"]:has(link[rel="canonical"][href*="/files/ai-believes/"]) .skip-link,
 html[lang="he"]:has(link[rel="canonical"][href*="/files/ai-believes/"]) .skip-link,
 html[dir="rtl"]:has(link[rel="canonical"][href*="/files/ai-believes/"]) .skip-link,
 body.public-page-he.ai-believes-page .skip-link {
-  display: none !important;
-  visibility: hidden !important;
+  position: fixed !important;
+  top: 12px !important;
+  inset-inline-start: 12px !important;
+  z-index: 10000 !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  transform: translateY(calc(-100% - 32px)) !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: visible !important;
 }
-/* ===== /BPI_AI_HIDE_VISIBLE_SKIP_LINK_V2_20260531 ===== */
+html[lang="en"]:has(link[rel="canonical"][href*="/files/ai-believes/"]) .skip-link:focus,
+html[lang="en"]:has(link[rel="canonical"][href*="/files/ai-believes/"]) .skip-link:focus-visible,
+html[lang="he"]:has(link[rel="canonical"][href*="/files/ai-believes/"]) .skip-link:focus,
+html[lang="he"]:has(link[rel="canonical"][href*="/files/ai-believes/"]) .skip-link:focus-visible,
+html[dir="rtl"]:has(link[rel="canonical"][href*="/files/ai-believes/"]) .skip-link:focus,
+html[dir="rtl"]:has(link[rel="canonical"][href*="/files/ai-believes/"]) .skip-link:focus-visible,
+body.public-page-he.ai-believes-page .skip-link:focus,
+body.public-page-he.ai-believes-page .skip-link:focus-visible {
+  width: auto !important;
+  height: auto !important;
+  padding: 10px 16px !important;
+  overflow: visible !important;
+  clip: auto !important;
+  clip-path: none !important;
+  transform: none !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  border-radius: 999px !important;
+  background: #0A3A68 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  box-shadow: 0 10px 24px rgba(10, 58, 104, .22) !important;
+}
+/* ===== /BPI_AI_ACCESSIBLE_SKIP_LINK_V3_20260601 ===== */
 
 /* ===== BPI_AI_INDEX_CARD_TITLE_MATCH_DOC_TITLE_V1_20260531 ===== */
 body.section-ai .ai-page-card-grid > article:nth-child(1) h3,
@@ -185,7 +221,7 @@ body.public-page-en.section-witness main#main .card-media-head {
   position: static !important;
   transform: none !important;
 }
-body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness > .page-title-head > .page-title-mark,
+body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness > .page-title-mark,
 body.public-page-en.section-witness main#main .card-media-head > .card-thumb {
   position: static !important;
   transform: none !important;
@@ -218,19 +254,3 @@ body.public-page-en.section-witness main#main .card-media-head h2 {
 body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness > .lead {
   display: block !important;
   width: 100% !important;
-  max-width: none !important;
-  margin: 0 !important;
-  text-align: left !important;
-}
-body.public-page-en.section-witness main#main > figure.tab-visual.image-frame.compact-section-visual {
-  width: min(760px, 100%) !important;
-  max-width: 760px !important;
-}
-body.public-page-en.section-witness main#main > figure.tab-visual.image-frame.compact-section-visual > img {
-  height: clamp(136px, 18vw, 212px) !important;
-  max-height: 212px !important;
-  aspect-ratio: 21 / 7 !important;
-  object-fit: cover !important;
-  object-position: center center !important;
-}
-/* ===== /BPI_WITNESS_EN_PAGE_LAYOUT_FIX_V4_20260531 ===== */
