@@ -18,7 +18,7 @@ Expected Render settings:
 
 - Source branch: `main`
 - Public / publish directory: `site`
-- Build command: none, unless a future build step is explicitly added
+- Build command: optional. If enabled, use `python3 tools/update_build_info.py` so live `/build-info.json` reflects the deployed checkout.
 - Runtime/backend: none required for the static site
 
 ## Before pushing to `main`
@@ -27,12 +27,17 @@ Run from the repository root:
 
 ```bash
 rm -rf reports tools/__pycache__
-python3 tools/audit_release_guard.py
-git diff --check
+python3 tools/final_release_qa.py --scan
 git status --short
 ```
 
-Do not push if the release guard fails.
+`tools/final_release_qa.py` wraps:
+
+- `git diff --check`
+- `tools/check_build_info_matches_head.py`
+- `tools/audit_release_guard.py`
+
+Do not push if the final release QA reports blockers.
 
 Do not commit:
 
@@ -48,6 +53,18 @@ Wait for Render to finish deploying, then test important live URLs:
 ```bash
 python3 tools/check_live_deploy_urls.py
 ```
+
+If the live site appears stale, verify all of the following before calling it a deployment blocker:
+
+- Render deploy finished successfully.
+- Correct branch is deployed.
+- Hard refresh was performed.
+- Incognito/private window was tested.
+- Page source was checked, not only rendered DOM.
+- Browser/CDN cache was considered.
+- `/build-info.json` was checked on the live site.
+
+If evidence is incomplete, record: `Deployment verification inconclusive`.
 
 ## Manual visual checks
 
@@ -68,7 +85,7 @@ If live output is broken after a push:
 ```bash
 git log --oneline --decorate -10
 git revert <bad_commit_sha>
-python3 tools/audit_release_guard.py
+python3 tools/final_release_qa.py --scan
 git push
 ```
 
@@ -82,16 +99,18 @@ The site exposes a static build metadata file:
 /build-info.json
 ```
 
-Before an important release, update it from the repository root:
+A committed static JSON file cannot contain the SHA of the commit that contains itself, because the commit SHA is calculated from the tree including that file. The live Render build should regenerate this file during build if build commands are enabled.
+
+Recommended Render build command when supported:
 
 ```bash
 python3 tools/update_build_info.py
 ```
 
-If Render supports a build command, use:
+Local verification command:
 
 ```bash
-python3 tools/update_build_info.py
+python3 tools/check_build_info_matches_head.py
 ```
 
-This helps compare the live site with the Git commit that was intended for deploy.
+A build-info mismatch in the repository checkout is a warning unless live deployment evidence proves a stale deploy.
