@@ -1,0 +1,71 @@
+/*
+ * BPI Phase 5E — extracted high-confidence repeated inline styles.
+ * Generated from repeated inline style attributes.
+ * Do not edit casually; update via the phase script or convert to hand-maintained CSS deliberately.
+ */
+
+/* count=3103 tag=p original-class=hebrew-rtl-force hebrew-text-rtl */
+.bpi-inline-rtl-paragraph-reset {
+  direction: rtl;
+  text-align: right;
+  unicode-bidi: plaintext;
+  text-indent: 0!important;
+  margin-inline-start: 0!important;
+  padding-inline-start: 0!important;
+}
+
+/* count=350 tag=p original-class=story-subtitle hebrew-rtl-force hebrew-text-rtl */
+.bpi-inline-rtl-story-subtitle-reset {
+  text-align: right!important;
+  direction: rtl!important;
+  unicode-bidi: plaintext!important;
+  margin-left: 0!important;
+  margin-right: 0!important;
+  text-indent: 0!important;
+  padding-inline-start: 0!important;
+}
+
+/* count=310 tag=span original-class=theory-toc-thumb-box */
+.bpi-inline-theory-toc-thumb-box {
+  display: block!important;
+  flex: 0 0 58px!important;
+  width: 58px!important;
+  min-width: 58px!important;
+  height: 40px!important;
+  overflow: hidden!important;
+  border-radius: 8px!important;
+  border: 1px solid rgba(10,58,104,.13)!important;
+  background: #fffaf0!important;
+  box-shadow: 0 3px 9px rgba(20,40,60,.07)!important;
+  margin: 0!important;
+  box-sizing: border-box!important;
+}
+
+/* count=310 tag=img original-class=theory-toc-thumb */
+.bpi-inline-theory-toc-thumb-img {
+  display: block!important;
+  width: 100%!important;
+  min-width: 0!important;
+  height: 100%!important;
+  max-width: none!important;
+  max-height: none!important;
+  object-fit: cover!important;
+  object-position: center center!important;
+  border: 0!important;
+  border-radius: 0!important;
+  box-shadow: none!important;
+  background: transparent!important;
+  margin: 0!important;
+}
+
+/* count=100 tag=p original-class=back-to-toc */
+.bpi-inline-back-to-toc-ltr {
+  text-align: left;
+  margin-top: 24px;
+}
+
+/* count=98 tag=p original-class=back-to-toc */
+.bpi-inline-back-to-toc-rtl {
+  text-align: right;
+  margin-top: 24px;
+}
