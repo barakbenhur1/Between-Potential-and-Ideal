@@ -93,6 +93,14 @@ Do not remove:
 
 The site is deployed from the repository to Render. After pushing to `main`, wait for Render to finish deploying, then hard-refresh the live page before judging visual changes.
 
+Before pushing or releasing, run the repo-local final release QA command:
+
+```bash
+python3 tools/final_release_qa.py --scan
+```
+
+This command wraps `tools/audit_release_guard.py`, `git diff --check`, and build-info verification. Generated reports under `reports/` are local review artifacts and should not be committed unless explicitly requested.
+
 ---
 
 ## Contributor Guardrails
@@ -104,4 +112,4 @@ Before editing this project, read:
 - `docs/visual-qa.md`
 - `docs/performance-budget.md`
 
-Always run `python3 tools/audit_release_guard.py` before pushing to `main`.
+Always run `python3 tools/final_release_qa.py --scan` before pushing to `main`.
