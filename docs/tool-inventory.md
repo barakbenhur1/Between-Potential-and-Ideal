@@ -36,6 +36,7 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/check_protected_story_details.py` — verifies protected story details.
 - `tools/check_tool_inventory.py` — verifies this inventory covers release guard checks.
 - `tools/audit_file_download_links.py` — verifies Files page download links and document sibling packages.
+- `tools/audit_document_sync_status.py` — verifies expected public document sibling formats exist and are non-empty.
 
 ## Existing audit tools
 
@@ -50,6 +51,7 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/audit_hreflang_links.py`
 - `tools/audit_document_seo_metadata.py`
 - `tools/audit_file_download_links.py`
+- `tools/audit_document_sync_status.py`
 
 ## Operational tools
 
