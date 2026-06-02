@@ -18,6 +18,7 @@ The work intentionally prioritized safe, additive, audit-first changes:
 - CSS integrity and consolidation candidate audits
 - runtime JavaScript scope audits
 - final document package sync audits
+- AI disclosure and protected story detail audits
 
 Protected content and approved visual/literary elements were not rewritten or removed.
 
@@ -38,8 +39,14 @@ Protected content and approved visual/literary elements were not rewritten or re
 | Phase 12B | Done | CSS integrity repair and CSS integrity guard were added. |
 | Phase 13 | Done as audit | Runtime JavaScript scope audit added; no risky JS split was applied. |
 | Phase 14 | Done as audit | CSS consolidation candidates audit added; no risky CSS consolidation was applied. |
-| Phase 15 | Done as audit | Final document sync status audit added. |
+| Phase 15 | Done as audit/gate | Final document sync status audit was added to the release guard. |
 | Phase 16 | Done as summary | This status document records what changed and what remains. |
+| Phase 17 | Done as gate hardening | AI disclosure and protected story detail audits were added to the release guard. |
+| Phase 18 | Done as gate hardening | CSS integrity and runtime JavaScript scope audits are now documented and release-guarded. |
+
+## Release guard now covers
+
+The final release QA command now wraps the detailed release guard. The guard includes baseline repo hygiene, CI/deploy docs, CSS integrity, SEO metadata, sitemap/canonical parity, search-index terms, hreflang, document SEO metadata, runtime JS scope, AI disclosures, protected story/story-registry checks, images, anchors, English-page Hebrew leakage, Files language/accessibility checks, file download packages, and document sync status.
 
 ## Important constraints preserved
 
@@ -61,11 +68,14 @@ The following should only be applied after visual QA and, where relevant, user a
 
 - extracting/splitting inline JavaScript into external modules
 - deeper CSS consolidation
-- adding new gateway pages such as Glossary, AI as Witness, Potential / Ideal / Optimal
+- editing large/minified generated HTML documents by hand
+- adding new gateway pages that affect public philosophical framing
 - adding visible FAQ content
 - adding FAQPage structured data
 - adding broader hreflang tags into every generated document page
 - changing `search-index.json` terms directly
+
+`tools/audit_seo_social_preview.py` remains an informational/full SEO preview audit for now. Do not promote it to a release gate until long-document metadata work is complete, because it checks every HTML page under `site/` and can turn planned SEO work into a premature blocker.
 
 ## Deployment verification policy
 
@@ -102,12 +112,11 @@ git status --short
 
 The next high-value SEO/discoverability work is content-producing rather than purely technical:
 
-1. Add bilingual Glossary pages.
-2. Add bilingual gateway pages for Potential / Ideal / Optimal.
-3. Add bilingual AI as Witness page.
-4. Add bilingual Nihilism with Hope page.
-5. Add How to Read / Citation pages.
-6. Add visible FAQ sections and then matching structured data.
-7. Add related-reading links after the new pages exist.
+1. Confirm which gateway pages are already approved and live.
+2. Add remaining bilingual gateway pages such as Nihilism with Hope, How to Read, and Citation.
+3. Add visible FAQ sections and then matching structured data.
+4. Add related-reading links after the new pages exist.
+5. Improve page-specific search-index terms from a single source-of-truth.
+6. Complete long-document social preview metadata before promoting `audit_seo_social_preview.py` to the release gate.
 
 These should not be auto-written without review because they affect public philosophical framing.
