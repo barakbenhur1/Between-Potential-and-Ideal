@@ -1,6 +1,5 @@
-/* V123 — global header/nav polish + scoped Home mobile shell + lightweight Files filtering + file-link target normalization.
-   Adds gateway tabs to every existing site header, keeps the brand on one line,
-   preserves Home gateway cards, and avoids broad content/design rewrites. */
+/* V124 — deterministic global nav order + lightweight file helpers.
+   Fixes the gateway tab order by moving real DOM links instead of using CSS order hacks. */
 (function(){
   'use strict';
 
@@ -12,185 +11,101 @@
       document.body.classList.contains('public-page-he');
   }
 
-  function isHomePage(){
-    var path = (location.pathname || '').toLowerCase();
-    return path === '/' || path.endsWith('/index.html') || path.endsWith('/en.html') ||
-      path.endsWith('/site/index.html') || path.endsWith('/site/en.html');
-  }
-
   function inPageFolder(){
     var path = (location.pathname || '').toLowerCase();
     return path.indexOf('/pages/he/') !== -1 || path.indexOf('/pages/en/') !== -1 ||
       path.indexOf('/site/pages/he/') !== -1 || path.indexOf('/site/pages/en/') !== -1;
   }
 
-  function setImportant(el, prop, value){
-    if (!el) return;
-    el.style.setProperty(prop, value, 'important');
+  function pageHref(fileName){
+    if (inPageFolder()) return './' + fileName;
+    return isHe() ? 'pages/he/' + fileName : 'pages/en/' + fileName;
   }
 
-  function installGlobalHeaderPolish(){
-    if (document.getElementById('bpi-global-header-polish-v123')) return;
-    var style = document.createElement('style');
-    style.id = 'bpi-global-header-polish-v123';
-    style.textContent = [
-      '.site-header{display:grid!important;grid-template-columns:minmax(max-content,1fr) minmax(0,auto) minmax(90px,1fr)!important;align-items:center!important;column-gap:16px!important;}',
-      '.site-header .site-brand{justify-self:start!important;min-width:max-content!important;white-space:nowrap!important;}',
-      '.site-header .site-brand a{white-space:nowrap!important;display:inline-block!important;}',
-      '.site-header .language-switch{justify-self:end!important;white-space:nowrap!important;}',
-      '.site-header .site-nav{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;text-align:center!important;justify-self:center!important;margin-left:auto!important;margin-right:auto!important;max-width:min(100%,1180px)!important;}',
-      '.site-header .site-nav a{text-align:center!important;}',
-      '.bpi-gateway-cards{margin-top:clamp(1.3rem,3vw,2.1rem)!important;}',
-      '@media(max-width:860px){.site-header{display:flex!important;flex-direction:column!important}.site-header .site-brand,.site-header .language-switch,.site-header .site-nav{justify-self:center!important;min-width:0!important}.site-header .site-brand a{white-space:normal!important;text-align:center!important}}'
-    ].join('');
-    document.head.appendChild(style);
+  function homeHref(){
+    if (inPageFolder()) return isHe() ? '../../index.html' : '../../en.html';
+    return isHe() ? 'index.html' : 'en.html';
   }
 
-  function hrefFor(pageName){
-    return inPageFolder() ? './' + pageName : (isHe() ? 'pages/he/' + pageName : 'pages/en/' + pageName);
+  function cleanHref(a){
+    return (a && a.getAttribute('href') || '').split('?')[0].split('#')[0].toLowerCase();
   }
 
-  function navHasHref(nav, ending){
-    return Array.from(nav.querySelectorAll('a[href]')).some(function(a){
-      var href = (a.getAttribute('href') || '').split('?')[0].split('#')[0].toLowerCase();
-      return href === ending || href.endsWith('/' + ending) || href.endsWith(ending);
-    });
-  }
-
-  function makeNavLink(text, href){
-    var a = document.createElement('a');
-    a.href = href;
-    a.textContent = text;
-    return a;
-  }
-
-  function findNavLink(nav, endings){
+  function findLink(nav, endings){
     endings = Array.isArray(endings) ? endings : [endings];
     return Array.from(nav.querySelectorAll('a[href]')).find(function(a){
-      var href = (a.getAttribute('href') || '').split('?')[0].split('#')[0].toLowerCase();
+      var href = cleanHref(a);
       return endings.some(function(ending){
         return href === ending || href.endsWith('/' + ending) || href.endsWith(ending);
       });
     }) || null;
   }
 
-  function insertAfter(reference, node){
-    if (!reference || !reference.parentNode) return false;
-    reference.parentNode.insertBefore(node, reference.nextSibling);
-    return true;
+  function getOrCreate(nav, spec){
+    var link = findLink(nav, spec.endings);
+    if (!link) {
+      link = document.createElement('a');
+      link.href = spec.href;
+    }
+    if (!link.hasAttribute('aria-current')) link.textContent = spec.label;
+    link.style.setProperty('order', '0', 'important');
+    link.style.setProperty('-webkit-order', '0', 'important');
+    return link;
   }
 
-  function installGatewayNavTabs(){
-    var nav = document.querySelector('.site-header .site-nav');
-    if (!nav) return;
-
-    var he = isHe();
-    var glossaryName = he ? 'glossary.html' : 'glossary-en.html';
-    var conceptsName = he ? 'potential-ideal-optimal.html' : 'potential-ideal-optimal-en.html';
-    var aiWitnessName = he ? 'ai-as-witness.html' : 'ai-as-witness-en.html';
-
-    var summary = findNavLink(nav, he ? ['summary.html'] : ['summary-en.html']);
-    var core = findNavLink(nav, he ? ['core.html'] : ['core-en.html']);
-    var ai = findNavLink(nav, he ? ['ai.html'] : ['ai-en.html']);
-
-    var glossary = navHasHref(nav, glossaryName) ? null : makeNavLink(he ? 'מילון' : 'Glossary', hrefFor(glossaryName));
-    var concepts = navHasHref(nav, conceptsName) ? null : makeNavLink(he ? 'מושגים' : 'Concepts', hrefFor(conceptsName));
-    var aiWitness = navHasHref(nav, aiWitnessName) ? null : makeNavLink(he ? 'AI כעדות' : 'AI as Witness', hrefFor(aiWitnessName));
-
-    if (glossary || concepts) {
-      var insertionPoint = summary || core;
-      if (concepts) {
-        if (insertionPoint) insertAfter(insertionPoint, concepts);
-        else nav.appendChild(concepts);
-      }
-      if (glossary) {
-        if (insertionPoint) insertAfter(insertionPoint, glossary);
-        else nav.appendChild(glossary);
-      }
-    }
-
-    if (aiWitness) {
-      if (ai) insertAfter(ai, aiWitness);
-      else nav.appendChild(aiWitness);
-    }
-  }
-
-  function installEnglishWitnessHeroLayout(){ return; }
-
-  function installHomeMobileSummaryShell(){
-    if (!isHomePage() || !window.matchMedia || !window.matchMedia('(max-width: 860px)').matches) return;
-
-    if (!document.getElementById('bpi-home-mobile-summary-stylesheet-v117')) {
-      var link = document.createElement('link');
-      link.id = 'bpi-home-mobile-summary-stylesheet-v117';
-      link.rel = 'stylesheet';
-      link.href = 'styles.css?v=20260526-home-mobile-summary-shell-v117';
-      document.head.appendChild(link);
-    }
-
-    if (document.getElementById('bpi-home-mobile-blue-hero-v117')) return;
+  function installHeaderPolish(){
+    if (document.getElementById('bpi-global-header-polish-v124')) return;
     var style = document.createElement('style');
-    style.id = 'bpi-home-mobile-blue-hero-v117';
+    style.id = 'bpi-global-header-polish-v124';
     style.textContent = [
-      '@media (max-width:860px){',
-      'html,body{width:100%!important;max-width:100%!important;overflow-x:hidden!important;}',
-      'body.public-page{background:radial-gradient(circle at 0% 12%,rgba(0,167,183,.10),transparent 34rem),radial-gradient(circle at 100% 0%,rgba(242,142,43,.12),transparent 32rem),#f7efe1!important;color:#102033!important;}',
-      'body.public-page .site-main{background:transparent!important;color:#102033!important;max-width:100vw!important;overflow-x:hidden!important;}',
-      'body.public-page .site-header{background:linear-gradient(135deg,#0A3A68,#0C526D 58%,rgba(242,142,43,.92))!important;color:#fff!important;}',
-      'body.public-page .site-header a{color:#fff!important;}',
-      'body.public-page .site-header .site-nav{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;overflow:visible!important;overflow-x:visible!important;scroll-snap-type:none!important;}',
-      'body.public-page .site-header .site-nav a{transform:none!important;scroll-snap-align:none!important;}',
-      'body.public-page .breadcrumbs{width:min(100% - 24px,1120px)!important;max-width:calc(100vw - 24px)!important;margin:52px auto 14px!important;box-sizing:border-box!important;}',
-      'body.public-page .opening-visual,body.public-page .signature-blurbs,body.public-page .notice-box,body.public-page .hub-grid,body.public-page .reading-path-cta{width:min(100% - 24px,1120px)!important;max-width:calc(100vw - 24px)!important;margin-left:auto!important;margin-right:auto!important;box-sizing:border-box!important;}',
-      'body.public-page .concise-hero,body.public-page .hero.concise-hero{display:block!important;width:min(100% - 24px,1120px)!important;max-width:calc(100vw - 24px)!important;margin:0 auto 26px!important;box-sizing:border-box!important;padding:clamp(34px,8vw,56px) clamp(24px,6vw,42px)!important;border-radius:30px!important;border:1px solid rgba(255,255,255,.22)!important;background:linear-gradient(145deg,#06466d 0%,#007b91 58%,#008fa2 100%)!important;color:#fffaf0!important;box-shadow:0 18px 48px rgba(10,58,104,.18)!important;text-align:center!important;overflow:hidden!important;}',
-      'body.public-page .concise-hero::before,body.public-page .hero.concise-hero::before{display:none!important;content:none!important;}',
-      'body.public-page .concise-hero .kicker,body.public-page .hero.concise-hero .kicker{color:#fffaf0!important;background:transparent!important;border:0!important;margin:0 auto clamp(30px,8vw,58px)!important;padding:0!important;text-align:center!important;font-weight:800!important;}',
-      'body.public-page .concise-hero h1,body.public-page .hero.concise-hero h1{color:#fffaf0!important;text-align:center!important;margin:0 auto!important;max-width:760px!important;font-family:"Gveret Levin","Noto Sans Hebrew",Georgia,"Times New Roman",serif!important;font-size:clamp(2.7rem,11.5vw,4.8rem)!important;line-height:1.04!important;letter-spacing:-.025em!important;}',
-      'body.public-page .concise-hero .lead,body.public-page .hero.concise-hero .lead,body.public-page .concise-hero .method-note,body.public-page .hero.concise-hero .method-note{color:rgba(255,250,240,.92)!important;text-align:center!important;margin-left:auto!important;margin-right:auto!important;max-width:72ch!important;background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;font-size:clamp(1rem,4.5vw,1.18rem)!important;line-height:1.7!important;}',
-      '}',
-      '@media (max-width:390px){',
-      'body.public-page .breadcrumbs{width:min(100% - 20px,1120px)!important;max-width:calc(100vw - 20px)!important;margin-top:48px!important;}',
-      'body.public-page .concise-hero,body.public-page .hero.concise-hero{width:min(100% - 20px,1120px)!important;max-width:calc(100vw - 20px)!important;padding:44px 22px!important;border-radius:28px!important;}',
-      '}'
+      '.site-header{display:grid!important;grid-template-columns:minmax(max-content,1fr) minmax(0,auto) minmax(90px,1fr)!important;align-items:center!important;column-gap:16px!important}',
+      '.site-header .site-brand{justify-self:start!important;min-width:max-content!important;white-space:nowrap!important}',
+      '.site-header .site-brand a{white-space:nowrap!important;display:inline-block!important}',
+      '.site-header .language-switch{justify-self:end!important;white-space:nowrap!important}',
+      '.site-header .site-nav{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;text-align:center!important;justify-self:center!important;margin-left:auto!important;margin-right:auto!important;max-width:min(100%,1180px)!important}',
+      '.site-header .site-nav a{text-align:center!important;order:0!important;-webkit-order:0!important}',
+      '@media(max-width:860px){.site-header{display:flex!important;flex-direction:column!important}.site-header .site-brand,.site-header .language-switch,.site-header .site-nav{justify-self:center!important;min-width:0!important}.site-header .site-brand a{white-space:normal!important;text-align:center!important}}'
     ].join('');
     document.head.appendChild(style);
   }
 
-  function installHomeGatewayLinks(){
-    if (!isHomePage() || document.getElementById('bpi-home-gateway-links')) return;
+  function normalizeNavOrder(){
+    var nav = document.querySelector('.site-header .site-nav');
+    if (!nav) return;
 
-    var main = document.getElementById('main') || document.querySelector('main');
-    if (!main) return;
+    var specs = isHe() ? [
+      { label:'בית', href:homeHref(), endings:['index.html'] },
+      { label:'תקציר', href:pageHref('summary.html'), endings:['summary.html'] },
+      { label:'מילון', href:pageHref('glossary.html'), endings:['glossary.html'] },
+      { label:'מושגים', href:pageHref('potential-ideal-optimal.html'), endings:['potential-ideal-optimal.html'] },
+      { label:'בינה מלאכותית כעדות', href:pageHref('ai-as-witness.html'), endings:['ai-as-witness.html'] },
+      { label:'מתודולוגיה', href:pageHref('methodology.html'), endings:['methodology.html'] },
+      { label:'ליבה', href:pageHref('core.html'), endings:['core.html'] },
+      { label:'עדות', href:pageHref('witness.html'), endings:['witness.html'] },
+      { label:'יישום', href:pageHref('applied.html'), endings:['applied.html'] },
+      { label:'בינה מלאכותית', href:pageHref('ai.html'), endings:['ai.html'] },
+      { label:'קבצים', href:pageHref('files.html'), endings:['files.html'] },
+      { label:'ביקורת', href:pageHref('critique.html'), endings:['critique.html'] },
+      { label:'מקורות', href:pageHref('sources.html'), endings:['sources.html'] }
+    ] : [
+      { label:'Home', href:homeHref(), endings:['en.html'] },
+      { label:'Summary', href:pageHref('summary-en.html'), endings:['summary-en.html'] },
+      { label:'Glossary', href:pageHref('glossary-en.html'), endings:['glossary-en.html'] },
+      { label:'Concepts', href:pageHref('potential-ideal-optimal-en.html'), endings:['potential-ideal-optimal-en.html'] },
+      { label:'AI as Witness', href:pageHref('ai-as-witness-en.html'), endings:['ai-as-witness-en.html'] },
+      { label:'Methodology', href:pageHref('methodology-en.html'), endings:['methodology-en.html'] },
+      { label:'Core', href:pageHref('core-en.html'), endings:['core-en.html'] },
+      { label:'Witness', href:pageHref('witness-en.html'), endings:['witness-en.html'] },
+      { label:'Application', href:pageHref('applied-en.html'), endings:['applied-en.html'] },
+      { label:'AI', href:pageHref('ai-en.html'), endings:['ai-en.html'] },
+      { label:'Files', href:pageHref('files-en.html'), endings:['files-en.html'] },
+      { label:'Critique', href:pageHref('critique-en.html'), endings:['critique-en.html'] },
+      { label:'Sources', href:pageHref('sources-en.html'), endings:['sources-en.html'] }
+    ];
 
-    var he = isHe();
-    var prefix = he ? 'pages/he/' : 'pages/en/';
-    var section = document.createElement('section');
-    section.id = 'bpi-home-gateway-links';
-    section.className = 'hub-grid three bpi-gateway-cards';
-    section.setAttribute('aria-label', he ? 'מדריכי כניסה מהירים' : 'Quick entry guides');
-    section.innerHTML = he ? [
-      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="מילון מושגים" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_methodology.png" width="480"/><h2>מילון מושגים</h2></div><p>כניסה קצרה למונחי היסוד של הפרויקט ולדרך שבה הם נבדלים זה מזה.</p><a class="card-link" href="' + prefix + 'glossary.html">פתח מילון מושגים</a></article>',
-      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="פוטנציאל, אידיאל ואופטימלי" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_core.png" width="480"/><h2>פוטנציאל, אידיאל, אופטימלי</h2></div><p>דף שער שמפריד בין שדה האפשרויות, הצורה הראויה, והתרגום המקומי תחת מגבלות.</p><a class="card-link" href="' + prefix + 'potential-ideal-optimal.html">קרא את דף המושגים</a></article>',
-      '<article class="hub-card media-card accent-ai"><div class="card-media-head"><img alt="בינה מלאכותית כעדות" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_ai.png" width="480"/><h2>בינה מלאכותית כעדות</h2></div><p>שער קצר לקריאת AI כמראה, עדשה וכלי בדיקה — לא כמקור חי ולא כסמכות.</p><a class="card-link" href="' + prefix + 'ai-as-witness.html">פתח את שער ה־AI</a></article>'
-    ].join('') : [
-      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="Glossary" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_methodology.png" width="480"/><h2>Glossary</h2></div><p>A short entry point into the project’s key terms and the distinctions between them.</p><a class="card-link" href="' + prefix + 'glossary-en.html">Open the glossary</a></article>',
-      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="Potential, Ideal, Optimal" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_core.png" width="480"/><h2>Potential, Ideal, Optimal</h2></div><p>A gateway page separating the field of possibility, the worthy form, and the local translation under constraints.</p><a class="card-link" href="' + prefix + 'potential-ideal-optimal-en.html">Read the concepts page</a></article>',
-      '<article class="hub-card media-card accent-ai"><div class="card-media-head"><img alt="AI as Witness" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_ai.png" width="480"/><h2>AI as Witness</h2></div><p>A short gateway for reading AI as mirror, lens, and stress test — not as a living source or authority.</p><a class="card-link" href="' + prefix + 'ai-as-witness-en.html">Open the AI gateway</a></article>'
-    ].join('');
-
-    var firstHubGrid = main.querySelector('.hub-grid.three');
-    if (firstHubGrid && firstHubGrid.parentNode) {
-      firstHubGrid.parentNode.insertBefore(section, firstHubGrid.nextSibling);
-    } else {
-      main.appendChild(section);
-    }
-  }
-
-  function isFilesPage(){
-    var p = location.pathname.toLowerCase();
-    return p.endsWith('/files.html') || p.endsWith('/files-en.html') ||
-      document.body.classList.contains('files-page') ||
-      !!document.querySelector('#fileSearch,#fileTypeFilter,#fileLangFilter,.download-table');
+    specs.forEach(function(spec){
+      nav.appendChild(getOrCreate(nav, spec));
+    });
   }
 
   function normalizeFormat(value){
@@ -201,7 +116,7 @@
     return value;
   }
 
-  function formatFromHref(href){
+  function fileFormatFromHref(href){
     var clean = (href || '').split('?')[0].split('#')[0].toLowerCase();
     var match = clean.match(/\.([a-z0-9]+)$/);
     if (!match) return '';
@@ -209,108 +124,24 @@
     return KNOWN_FORMATS.indexOf(ext) !== -1 ? ext : '';
   }
 
-  function normalizeFileDownloadTargets(){
-    if (!isFilesPage()) return;
-
+  function normalizeFileTargets(){
     Array.from(document.querySelectorAll('a[href]')).forEach(function(a){
       var href = a.getAttribute('href') || '';
       var clean = href.split('?')[0].split('#')[0].toLowerCase();
-      var pointsToFileArchive = clean.indexOf('/files/') !== -1 ||
-        clean.indexOf('../../files/') === 0 || clean.indexOf('../files/') === 0 ||
-        clean.indexOf('files/') === 0;
-
-      if (!pointsToFileArchive || !formatFromHref(href)) return;
-
+      var archive = clean.indexOf('/files/') !== -1 || clean.indexOf('../../files/') === 0 || clean.indexOf('../files/') === 0 || clean.indexOf('files/') === 0;
+      if (!archive || !fileFormatFromHref(href)) return;
       a.setAttribute('target', '_blank');
-
       var rel = (a.getAttribute('rel') || '').split(/\s+/).filter(Boolean);
-      ['noopener','noreferrer'].forEach(function(token){
-        if (rel.indexOf(token) === -1) rel.push(token);
-      });
+      ['noopener','noreferrer'].forEach(function(token){ if (rel.indexOf(token) === -1) rel.push(token); });
       a.setAttribute('rel', rel.join(' '));
     });
   }
 
-  function rowText(row){
-    var hrefs = Array.from(row.querySelectorAll('a[href]')).map(function(a){ return a.getAttribute('href') || ''; }).join(' ');
-    return ((row.textContent || '') + ' ' + hrefs).toLowerCase();
-  }
-
-  function rowFormats(row){
-    var formats = new Set();
-    Array.from(row.querySelectorAll('a[href]')).forEach(function(a){
-      var f = formatFromHref(a.getAttribute('href'));
-      if (f) formats.add(f);
-    });
-
-    [row.getAttribute('data-format'), row.getAttribute('data-formats'), row.getAttribute('data-file-format'), row.getAttribute('data-file-formats')]
-      .filter(Boolean).join(' ').split(/[\s,|/]+/).forEach(function(f){
-        f = normalizeFormat(f);
-        if (KNOWN_FORMATS.indexOf(f) !== -1) formats.add(f);
-      });
-
-    var text = rowText(row);
-    if (text.indexOf('html') !== -1) formats.add('html');
-    if (text.indexOf('pdf') !== -1) formats.add('pdf');
-    if (text.indexOf('docx') !== -1 || text.indexOf('word') !== -1) formats.add('docx');
-    if (text.indexOf('markdown') !== -1 || text.indexOf('.md') !== -1) formats.add('md');
-    if (text.indexOf('text') !== -1 || text.indexOf('.txt') !== -1) formats.add('txt');
-    if (text.indexOf('התאוריה הפילוסופית') !== -1 || text.indexOf('התיאוריה הפילוסופית') !== -1 || text.indexOf('philosophical theory') !== -1 || text.indexOf('between-potential-and-ideal-he') !== -1 || text.indexOf('between-potential-and-ideal-en') !== -1) {
-      ['html','pdf','docx','md'].forEach(function(f){ formats.add(f); });
-    }
-    return formats;
-  }
-
-  function applyFilesFilter(){
-    if (!isFilesPage()) return;
-    var rows = Array.from(document.querySelectorAll('.download-table tr')).slice(1);
-    if (!rows.length) return;
-
-    var qEl = document.querySelector('#fileSearch');
-    var typeEl = document.querySelector('#fileTypeFilter');
-    var langEl = document.querySelector('#fileLangFilter');
-    var query = (qEl && qEl.value || '').toLowerCase().trim();
-    var type = normalizeFormat(typeEl && typeEl.value || '');
-    var lang = (langEl && langEl.value || '').toLowerCase().trim();
-    var visible = 0;
-
-    rows.forEach(function(row){
-      var text = rowText(row);
-      var formats = rowFormats(row);
-      var formatValue = Array.from(formats).sort().join(' ');
-      row.setAttribute('data-format', formatValue);
-      row.setAttribute('data-formats', formatValue);
-
-      var ok = (!query || text.indexOf(query) !== -1) && (!type || formats.has(type)) && (!lang || text.indexOf(lang) !== -1);
-      row.style.display = ok ? '' : 'none';
-      if (ok) visible += 1;
-    });
-
-    var count = document.querySelector('#fileFilterCount');
-    if (count) count.textContent = isHe() ? ('מוצגים ' + visible + ' קבצים') : (visible + ' files shown');
-  }
-
-  function installFilesFilters(){
-    if (!isFilesPage()) return;
-    normalizeFileDownloadTargets();
-    var search = document.querySelector('#fileSearch');
-    var type = document.querySelector('#fileTypeFilter');
-    var lang = document.querySelector('#fileLangFilter');
-    if (search) search.addEventListener('input', applyFilesFilter, false);
-    if (type) type.addEventListener('change', applyFilesFilter, false);
-    if (lang) lang.addEventListener('change', applyFilesFilter, false);
-    applyFilesFilter();
-  }
-
   function init(){
-    installGlobalHeaderPolish();
-    installGatewayNavTabs();
-    installEnglishWitnessHeroLayout();
-    if (window.requestAnimationFrame) window.requestAnimationFrame(installEnglishWitnessHeroLayout);
-    window.setTimeout(installEnglishWitnessHeroLayout, 120);
-    installHomeMobileSummaryShell();
-    installHomeGatewayLinks();
-    installFilesFilters();
+    installHeaderPolish();
+    normalizeNavOrder();
+    normalizeFileTargets();
+    window.setTimeout(normalizeNavOrder, 60);
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
