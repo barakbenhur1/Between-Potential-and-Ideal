@@ -71,7 +71,7 @@ html[dir="ltr"] body.public-page.design-prompt-theme main.site-main > section.he
   text-align: left !important;
 }
 
-/* Start-here card: later homepage fixes were making text too dark for the new card. */
+/* Start-here card: intentionally remains cinematic/dark as part of the homepage hero path. */
 html body.public-page.design-prompt-theme main.site-main > section#bpi-start-here-note.bpi-start-here-note,
 html body.public-page.design-prompt-theme main.site-main > section.notice-box.bpi-start-here-note {
   background:
@@ -97,42 +97,53 @@ html body.public-page.design-prompt-theme main.site-main > section.notice-box.bp
   text-align: center !important;
 }
 
-/* Homepage cards: force readable foreground colors over dark premium cards. */
+/* Gateway/cards: do NOT force global cards dark. Keep them light and readable. */
 html body.public-page.design-prompt-theme main.site-main section.hub-grid > article.hub-card.media-card,
 html body.public-page.design-prompt-theme main.site-main section.bpi-gateway-cards > article.hub-card.media-card,
 html body.public-page.design-prompt-theme main.site-main .signature-blurbs article.signature-blurb-card,
 html body.public-page.design-prompt-theme main.site-main .signature-blurbs article.signature-main-blurb {
   background:
-    radial-gradient(ellipse 70% 60% at 18% 0%, rgba(230,184,74,0.12), transparent 60%),
-    linear-gradient(145deg, rgba(20, 27, 43, 0.97), rgba(7, 11, 21, 0.985)) !important;
-  border-color: rgba(255,255,255,0.13) !important;
+    radial-gradient(ellipse 70% 60% at 18% 0%, rgba(230,184,74,0.08), transparent 60%),
+    linear-gradient(145deg, rgba(255,252,244,0.98), rgba(245,237,221,0.96)) !important;
+  border-color: rgba(10,58,104,0.14) !important;
+  color: #17202d !important;
+  box-shadow: 0 12px 30px rgba(23,32,45,0.10) !important;
+}
+
+html body.public-page.design-prompt-theme main.site-main section.hub-grid > article.hub-card.media-card::before,
+html body.public-page.design-prompt-theme main.site-main section.bpi-gateway-cards > article.hub-card.media-card::before,
+html body.public-page.design-prompt-theme main.site-main .signature-blurbs article.signature-blurb-card::before,
+html body.public-page.design-prompt-theme main.site-main .signature-blurbs article.signature-main-blurb::before {
+  opacity: 0 !important;
+  display: none !important;
 }
 
 html body.public-page.design-prompt-theme main.site-main section.hub-grid > article.hub-card.media-card h2,
 html body.public-page.design-prompt-theme main.site-main section.hub-grid > article.hub-card.media-card h3,
 html body.public-page.design-prompt-theme main.site-main section.bpi-gateway-cards > article.hub-card.media-card h2,
 html body.public-page.design-prompt-theme main.site-main .signature-blurbs article.signature-blurb-card strong {
-  color: #f8fafc !important;
+  color: #0A3A68 !important;
   opacity: 1 !important;
-  text-shadow: 0 2px 18px rgba(0,0,0,0.28) !important;
+  text-shadow: none !important;
 }
 
 html body.public-page.design-prompt-theme main.site-main section.hub-grid > article.hub-card.media-card p,
 html body.public-page.design-prompt-theme main.site-main section.bpi-gateway-cards > article.hub-card.media-card p,
 html body.public-page.design-prompt-theme main.site-main .signature-blurbs article.signature-blurb-card p,
 html body.public-page.design-prompt-theme main.site-main .signature-blurbs article.signature-main-blurb p {
-  color: rgba(226, 232, 240, 0.92) !important;
+  color: rgba(23, 32, 45, 0.80) !important;
   opacity: 1 !important;
+  text-shadow: none !important;
 }
 
-/* Keep links/buttons visible on dark cards. */
+/* Keep links/buttons visible on light cards. */
 html body.public-page.design-prompt-theme main.site-main section.hub-grid > article.hub-card.media-card a.card-link,
 html body.public-page.design-prompt-theme main.site-main section.bpi-gateway-cards > article.hub-card.media-card a.card-link,
 html body.public-page.design-prompt-theme main.site-main section#bpi-start-here-note.bpi-start-here-note a.download-button,
 html body.public-page.design-prompt-theme main.site-main section.notice-box.bpi-start-here-note a.download-button {
-  color: #f8fafc !important;
-  background: rgba(255,255,255,0.075) !important;
-  border-color: rgba(230,184,74,0.42) !important;
+  color: #07101d !important;
+  background: linear-gradient(135deg, #b98726, #e6b84a, #f5d06b) !important;
+  border-color: transparent !important;
   text-shadow: none !important;
 }
 
@@ -151,11 +162,11 @@ html body.public-page.design-prompt-theme main.site-main section.notice-box.bpi-
   background: linear-gradient(135deg, #b98726, #e6b84a, #f5d06b) !important;
 }
 
-/* Signature blurb cards: avoid low-contrast blue text on dark cards. */
+/* Signature blurb cards: keep readable. */
 html body.public-page.design-prompt-theme main.site-main .signature-blurbs .question-card p,
 html body.public-page.design-prompt-theme main.site-main .signature-blurbs .vessel-card p,
 html body.public-page.design-prompt-theme main.site-main .signature-blurbs .paradox-card p {
-  color: rgba(226, 232, 240, 0.93) !important;
+  color: rgba(23, 32, 45, 0.80) !important;
 }
 
 html body.public-page.design-prompt-theme main.site-main .signature-blurbs .minimal-card,
