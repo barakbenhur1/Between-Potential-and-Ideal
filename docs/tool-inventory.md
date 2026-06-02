@@ -48,7 +48,7 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/audit_anchors.py`
 - `tools/audit_visible_hebrew_in_english.py`
 - `tools/audit_seo_social_preview.py` — informational/full SEO preview audit; do not promote to release gate until long document metadata work is complete.
-- `tools/audit_sitemap_and_public_links.py`
+- `tools/audit_sitemap_and_public_links.py` — manual post-deploy live audit; do not promote to release gate.
 - `tools/audit_sitemap_canonical_parity.py`
 - `tools/audit_search_index_terms.py`
 - `tools/audit_hreflang_links.py`
