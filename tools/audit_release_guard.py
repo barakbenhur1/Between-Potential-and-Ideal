@@ -27,6 +27,7 @@ CHECKS = [
     ["python3", "tools/check_files_language_labels.py"],
     ["python3", "tools/check_files_table_accessibility.py"],
     ["python3", "tools/audit_file_download_links.py"],
+    ["python3", "tools/audit_document_sync_status.py"],
 ]
 
 def run(cmd):
