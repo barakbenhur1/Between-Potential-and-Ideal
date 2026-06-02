@@ -12,12 +12,16 @@ def main() -> int:
         text = P.read_text(encoding="utf-8", errors="ignore")
 
     required = [
+        "python3 tools/final_release_qa.py --scan",
+        "git diff --check",
         "python3 tools/audit_release_guard.py",
         "python3 tools/check_live_deploy_urls.py",
         "docs/contributor-guardrails.md",
         "docs/deploy.md",
         "docs/visual-qa.md",
         "docs/performance-budget.md",
+        "docs/tool-inventory.md",
+        "docs/production-next-phase-status.md",
         "Do not return the appendix to 14 stories.",
         "Do not force-push `main`.",
     ]
