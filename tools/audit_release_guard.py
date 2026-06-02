@@ -16,6 +16,7 @@ CHECKS = [
     ["python3", "tools/check_build_info.py"],
     ["python3", "tools/check_ci_workflow.py"],
     ["python3", "tools/check_deploy_docs.py"],
+    ["python3", "tools/check_css_integrity.py"],
     ["python3", "tools/check_seo_metadata.py"],
     ["python3", "tools/audit_sitemap_canonical_parity.py"],
     ["python3", "tools/audit_search_index_terms.py"],
