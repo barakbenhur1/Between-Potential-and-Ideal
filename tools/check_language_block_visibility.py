@@ -6,17 +6,29 @@ HTML_FILES = sorted(Path("site").rglob("*.html"))
 
 def get_page_lang(text):
     head = text[:2000].lower()
-    if 'lang="he"' in head or "lang='he'" in head:
+    html_start = head.find("<html")
+    if html_start == -1:
+        return ""
+    html_end = head.find(">", html_start)
+    html_tag = head[html_start:html_end if html_end != -1 else len(head)]
+    if ' lang="he"' in html_tag or " lang='he'" in html_tag:
         return "he"
-    if 'lang="en"' in head or "lang='en'" in head:
+    if ' lang="en"' in html_tag or " lang='en'" in html_tag:
         return "en"
     return ""
 
 
-def tag_is_hidden(fragment):
-    tag_end = fragment.find(">")
-    tag = fragment[:tag_end if tag_end != -1 else 300].lower()
-    return " hidden" in tag or "display:none" in tag.replace(" ", "")
+def opening_tag_around_marker(text, index):
+    tag_start = text.rfind("<", 0, index)
+    tag_end = text.find(">", index)
+    if tag_start == -1 or tag_end == -1:
+        return ""
+    return text[tag_start:tag_end + 1].lower()
+
+
+def tag_is_hidden(tag):
+    compact = tag.replace(" ", "")
+    return " hidden" in tag or "hidden=" in tag or "display:none" in compact
 
 
 def main():
@@ -39,9 +51,8 @@ def main():
             if index == -1:
                 break
             checked += 1
-            fragment_start = max(0, index - 120)
-            fragment = text[fragment_start:index + 300]
-            if not tag_is_hidden(fragment):
+            tag = opening_tag_around_marker(text, index)
+            if not tag_is_hidden(tag):
                 errors.append(f"{path}: opposite-language block is not hidden: {marker}")
             start = index + len(marker)
 
