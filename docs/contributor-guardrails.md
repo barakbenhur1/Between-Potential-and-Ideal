@@ -9,7 +9,7 @@ The goal is not redesign, not rewrite, not cleanup for its own sake, and not bro
 1. Start from `main`.
 2. Pull latest changes.
 3. Make the smallest measurable change.
-4. Run the release guard.
+4. Run the repo-local final release QA command.
 5. Review `git diff --check`.
 6. Commit only intentional files.
 
@@ -19,10 +19,12 @@ Run:
 
 ```bash
 rm -rf reports tools/__pycache__
-python3 tools/audit_release_guard.py
+python3 tools/final_release_qa.py --scan
 git diff --check
 git status --short
 ```
+
+`tools/final_release_qa.py` wraps the detailed `tools/audit_release_guard.py` gate.
 
 ## Never commit
 
@@ -84,7 +86,7 @@ git status --short
 
 A change is acceptable only when:
 
-- Release guard passes.
+- Final release QA passes.
 - `git diff --check` passes.
 - `git status --short` contains only intentional files before commit.
 - No protected content was changed accidentally.
