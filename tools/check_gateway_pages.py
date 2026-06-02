@@ -43,9 +43,16 @@ GATEWAYS = [
     },
 ]
 
+META_RE = re.compile(r"<meta\b[^>]*>", re.I | re.S)
+NAME_RE = re.compile(r"\bname\s*=\s*[\"']description[\"']", re.I)
+CONTENT_RE = re.compile(r"\bcontent\s*=\s*[\"']([^\"']{40,})[\"']", re.I | re.S)
+
 
 def has_meta_description(text: str) -> bool:
-    return bool(re.search(r'<meta\b[^>]*name=["\']description["\'][^>]*content=["\'][^"\']{40,}["\']', text, re.I | re.S))
+    for tag in META_RE.findall(text):
+        if NAME_RE.search(tag) and CONTENT_RE.search(tag):
+            return True
+    return False
 
 
 def main() -> int:
