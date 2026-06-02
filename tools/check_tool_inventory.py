@@ -5,6 +5,11 @@ from pathlib import Path
 GUARD = Path("tools/audit_release_guard.py")
 DOC = Path("docs/tool-inventory.md")
 
+LOCAL_ONLY_AUDITS = [
+    "tools/audit_sitemap_and_public_links.py",
+    "tools/audit_seo_social_preview.py",
+]
+
 def release_guard_scripts():
     tree = ast.parse(GUARD.read_text(encoding="utf-8", errors="ignore"))
     for node in tree.body:
@@ -34,12 +39,17 @@ def main() -> int:
         for script in scripts:
             if script not in doc_text:
                 errors.append(f"release guard script missing from docs/tool-inventory.md: {script}")
+        for script in LOCAL_ONLY_AUDITS:
+            if script in scripts:
+                errors.append(f"local-only audit found in release guard: {script}")
 
     required_phrases = [
         "Temporary `fix_*.py` scripts must not be listed here",
         "If a permanent tool is added to `tools/audit_release_guard.py`, it must also be listed in this file.",
         "tools/check_live_deploy_urls.py",
         "tools/update_build_info.py",
+        "tools/audit_sitemap_and_public_links.py` — manual post-deploy live audit; do not promote to release gate.",
+        "tools/audit_seo_social_preview.py` — informational/full SEO preview audit; do not promote to release gate until long document metadata work is complete.",
     ]
 
     for phrase in required_phrases:
