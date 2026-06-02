@@ -42,11 +42,17 @@ def get_page_lang(text):
     return ""
 
 
-def tag_is_hidden(fragment):
-    tag_end = fragment.find(">")
-    tag = fragment[:tag_end if tag_end != -1 else 300].lower()
+def opening_tag_around_marker(text, index):
+    tag_start = text.rfind("<", 0, index)
+    tag_end = text.find(">", index)
+    if tag_start == -1 or tag_end == -1:
+        return ""
+    return text[tag_start:tag_end + 1].lower()
+
+
+def tag_is_hidden(tag):
     compact = tag.replace(" ", "")
-    return " hidden" in tag or "display:none" in compact
+    return " hidden" in tag or "hidden=" in tag or "display:none" in compact
 
 
 def check_language_blocks(path, text, errors):
@@ -63,9 +69,8 @@ def check_language_blocks(path, text, errors):
         index = text.find(marker, start)
         if index == -1:
             break
-        fragment_start = max(0, index - 120)
-        fragment = text[fragment_start:index + 300]
-        if not tag_is_hidden(fragment):
+        tag = opening_tag_around_marker(text, index)
+        if not tag_is_hidden(tag):
             errors.append(f"opposite-language block is not hidden: {path.as_posix()} {marker}")
         start = index + len(marker)
 
