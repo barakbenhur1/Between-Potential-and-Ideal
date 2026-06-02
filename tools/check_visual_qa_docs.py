@@ -3,6 +3,7 @@ import sys
 
 P = Path("docs/visual-qa.md")
 
+
 def main() -> int:
     errors = []
     if not P.exists():
@@ -18,6 +19,7 @@ def main() -> int:
             "/files/appendices/stories-before-thought-english.html",
             "AI disclosure blocks",
             "Do not commit screenshots by default.",
+            "Final release QA passes.",
             "Only after this baseline may CSS consolidation be considered.",
         ]
         for phrase in required:
@@ -32,6 +34,7 @@ def main() -> int:
 
     print("OK: visual QA baseline docs passed.")
     return 0
+
 
 if __name__ == "__main__":
     sys.exit(main())
