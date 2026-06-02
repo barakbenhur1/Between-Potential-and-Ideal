@@ -1,0 +1,19 @@
+/* BPI gateway active tabs — 2026-06-02
+   Gives the new gateway navigation tabs the same pressed/current-page treatment
+   on their own pages without changing URLs or page content. */
+
+html:has(link[rel="canonical"][href$="/pages/he/glossary.html"]) .site-nav a[href$="glossary.html"],
+html:has(link[rel="canonical"][href$="/pages/en/glossary-en.html"]) .site-nav a[href$="glossary-en.html"],
+html:has(link[rel="canonical"][href$="/pages/he/potential-ideal-optimal.html"]) .site-nav a[href$="potential-ideal-optimal.html"],
+html:has(link[rel="canonical"][href$="/pages/en/potential-ideal-optimal-en.html"]) .site-nav a[href$="potential-ideal-optimal-en.html"],
+html:has(link[rel="canonical"][href$="/pages/he/ai-as-witness.html"]) .site-nav a[href$="ai-as-witness.html"],
+html:has(link[rel="canonical"][href$="/pages/en/ai-as-witness-en.html"]) .site-nav a[href$="ai-as-witness-en.html"] {
+  background: rgba(255, 255, 255, 0.22) !important;
+  border-color: rgba(255, 255, 255, 0.42) !important;
+  color: #fffaf0 !important;
+  box-shadow:
+    inset 0 2px 5px rgba(0, 0, 0, 0.18),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.18),
+    0 1px 0 rgba(255, 255, 255, 0.10) !important;
+  transform: translateY(1px) !important;
+}
