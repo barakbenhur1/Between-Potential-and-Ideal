@@ -4,6 +4,7 @@ import sys
 DOC = Path("docs/contributor-guardrails.md")
 README = Path("README.md")
 
+
 def main() -> int:
     errors = []
 
@@ -15,12 +16,16 @@ def main() -> int:
 
     required = [
         "Make the smallest measurable change.",
+        "python3 tools/final_release_qa.py --scan",
+        "git diff --check",
+        "git status --short",
+        "tools/audit_release_guard.py",
         "Do not return the appendix to 14 stories.",
         "ואז... הוא 🥱",
         "Do not present AI as conscious.",
         "Do not force-push `main`.",
         "Do not perform CSS cleanup before the visual QA baseline is reviewed.",
-        "Release guard passes.",
+        "Final release QA passes.",
     ]
 
     for phrase in required:
@@ -42,6 +47,7 @@ def main() -> int:
 
     print("OK: contributor guardrails docs passed.")
     return 0
+
 
 if __name__ == "__main__":
     sys.exit(main())
