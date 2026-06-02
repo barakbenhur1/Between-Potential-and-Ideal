@@ -37,3 +37,39 @@ body.public-page .skip-link:focus-visible {
   text-decoration: none !important;
   box-shadow: 0 10px 24px rgba(10, 58, 104, .22) !important;
 }
+
+/* BPI visible Hebrew wording and header polish — 2026-06-02 */
+body.public-page-he .site-nav a[href$="ai-as-witness.html"],
+html[lang="he"] .site-nav a[href$="ai-as-witness.html"] {
+  font-size: 0 !important;
+  line-height: 1 !important;
+}
+
+body.public-page-he .site-nav a[href$="ai-as-witness.html"]::before,
+html[lang="he"] .site-nav a[href$="ai-as-witness.html"]::before {
+  content: "בינה מלאכותית כעדות" !important;
+  display: inline !important;
+  font-size: 1rem !important;
+  line-height: inherit !important;
+}
+
+body.public-page-he .card-link[href$="ai-as-witness.html"],
+html[lang="he"] .card-link[href$="ai-as-witness.html"] {
+  font-size: 0 !important;
+  line-height: 1 !important;
+}
+
+body.public-page-he .card-link[href$="ai-as-witness.html"]::before,
+html[lang="he"] .card-link[href$="ai-as-witness.html"]::before {
+  content: "פתח את שער הבינה המלאכותית" !important;
+  display: inline !important;
+  font-size: 1rem !important;
+  line-height: inherit !important;
+}
+
+body.public-page .site-brand,
+body.public-page .site-brand a,
+.site-header .site-brand,
+.site-header .site-brand a {
+  white-space: nowrap !important;
+}
