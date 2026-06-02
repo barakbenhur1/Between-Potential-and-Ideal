@@ -14,6 +14,12 @@ REQUIRED_URLS = [
     f"{BASE_URL}/pages/en/files-en.html",
     f"{BASE_URL}/files/appendices/stories-before-thought-hebrew-rtl.html",
     f"{BASE_URL}/files/appendices/stories-before-thought-english.html",
+    f"{BASE_URL}/pages/en/glossary-en.html",
+    f"{BASE_URL}/pages/he/glossary.html",
+    f"{BASE_URL}/pages/en/potential-ideal-optimal-en.html",
+    f"{BASE_URL}/pages/he/potential-ideal-optimal.html",
+    f"{BASE_URL}/pages/en/ai-as-witness-en.html",
+    f"{BASE_URL}/pages/he/ai-as-witness.html",
 ]
 
 def main() -> int:
