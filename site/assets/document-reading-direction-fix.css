@@ -216,7 +216,7 @@ body.public-page-en.section-witness main#main .card-media-head {
   gap: 14px !important;
   column-gap: 14px !important;
   width: 100% !important;
-  margin: 0 0 clamp(22px, 2.7vw, 34px) 0 !important;
+  margin: 0 0 clamp(22px, 2.7vw, 34px) !important;
   position: static !important;
   transform: none !important;
 }
@@ -255,3 +255,76 @@ body.public-page-en.section-witness main#main > .page-title.media-page-title.acc
   width: 100% !important;
 }
 /* ===== /BPI_WITNESS_EN_PAGE_LAYOUT_FIX_V4_20260531 ===== */
+
+/* ===== BPI_FILES_PAGE_FINAL_VISIBLE_CARD_FIX_V1_20260603 ===== */
+body.section-files main#main .hub-card,
+body.section-files main#main .media-card,
+body.section-files main#main .reader-card,
+body.section-files main#main .appendix-card,
+body.section-files main#main .notice-box,
+body.section-files main#main .source-files-card,
+body.section-files main#main .files-reading-path article,
+body.section-files main#main .reading-path-card {
+  background: #fbfaf6 !important;
+  background-image: none !important;
+  color: #17202d !important;
+  border: 1px solid rgba(10,58,104,.12) !important;
+  box-shadow: 0 10px 24px rgba(23,32,45,.06) !important;
+  border-radius: 24px !important;
+}
+body.section-files main#main .hub-card::before,
+body.section-files main#main .hub-card::after,
+body.section-files main#main .media-card::before,
+body.section-files main#main .media-card::after,
+body.section-files main#main .reader-card::before,
+body.section-files main#main .reader-card::after,
+body.section-files main#main .appendix-card::before,
+body.section-files main#main .appendix-card::after,
+body.section-files main#main .notice-box::before,
+body.section-files main#main .notice-box::after {
+  content: none !important;
+  display: none !important;
+  opacity: 0 !important;
+}
+body.section-files main#main .hub-card h2,
+body.section-files main#main .hub-card h3,
+body.section-files main#main .media-card h2,
+body.section-files main#main .media-card h3,
+body.section-files main#main .reader-card h2,
+body.section-files main#main .reader-card h3,
+body.section-files main#main .appendix-card h2,
+body.section-files main#main .appendix-card h3,
+body.section-files main#main .notice-box h2,
+body.section-files main#main .notice-box h3,
+body.section-files main#main .source-files-card h3 {
+  color: #0A3A68 !important;
+  text-shadow: none !important;
+}
+body.section-files main#main .hub-card p,
+body.section-files main#main .media-card p,
+body.section-files main#main .reader-card p,
+body.section-files main#main .appendix-card p,
+body.section-files main#main .notice-box p,
+body.section-files main#main .source-files-card p {
+  color: rgba(23,32,45,.82) !important;
+  text-shadow: none !important;
+}
+body.section-files main#main .card-link {
+  color: #0A3A68 !important;
+  background: transparent !important;
+  background-image: none !important;
+  border: 1.5px solid rgba(230,184,74,.70) !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  border-radius: 999px !important;
+  font-weight: 800 !important;
+}
+body.section-files main#main .card-link:hover,
+body.section-files main#main .card-link:focus-visible {
+  color: #0A3A68 !important;
+  background: #fff7e8 !important;
+  background-image: none !important;
+  border-color: #e6b84a !important;
+  box-shadow: none !important;
+}
+/* ===== /BPI_FILES_PAGE_FINAL_VISIBLE_CARD_FIX_V1_20260603 ===== */
