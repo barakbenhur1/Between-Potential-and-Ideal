@@ -36,7 +36,7 @@ These are target budgets for future measurement, not automatic deletion rules.
 - Do not remove CSS only because it looks duplicated.
 - Do not remove inline styles before screenshot comparison.
 - Do not change global typography, palette, spacing, or direction rules without explicit approval.
-- CSS consolidation is allowed only after visual QA baseline and release guard pass.
+- CSS consolidation is allowed only after visual QA baseline and final release QA pass.
 
 ## Document/file policy
 
@@ -48,7 +48,7 @@ These are target budgets for future measurement, not automatic deletion rules.
 
 Before any real performance cleanup:
 
-- Run release guard.
+- Run final release QA.
 - Run live deploy URL check.
 - Complete visual QA baseline.
 - Record before/after screenshots.
