@@ -11,6 +11,7 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 
 ## Permanent checks
 
+- `tools/check_no_root_junk_files.py` — prevents temporary repair/debug/archive artifacts at repository root.
 - `tools/check_release_guard_integrity.py` — validates the release guard itself.
 - `tools/check_no_public_junk_files.py` — prevents public junk/debug/temp files under `site/`.
 - `tools/check_gitignore.py` — verifies local generated artifacts are ignored.
@@ -66,5 +67,3 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 ## Rule
 
 If a permanent tool is added to `tools/audit_release_guard.py`, it must also be listed in this file.
-
-- `tools/check_no_root_junk_files.py` — prevents temporary repair/debug/archive artifacts at repository root.
