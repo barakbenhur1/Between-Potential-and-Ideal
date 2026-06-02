@@ -8,6 +8,8 @@ This document is the starting point for future repair, QA, deploy, and release w
 2. `docs/deploy.md`
 3. `docs/visual-qa.md`
 4. `docs/performance-budget.md`
+5. `docs/tool-inventory.md`
+6. `docs/production-next-phase-status.md`
 
 ## Required command before push
 
@@ -15,15 +17,44 @@ Run from repository root:
 
 ```bash
 rm -rf reports tools/__pycache__
-python3 tools/audit_release_guard.py
+python3 tools/final_release_qa.py --scan
 git diff --check
 git status --short
 ```
 
+For detailed local release-guard diagnostics, run:
+
+```bash
+python3 tools/audit_release_guard.py
+```
+
 ## Core release checks
 
-The release guard includes checks for:
+The final release QA and release guard include checks for:
 
+- root junk/temp repair artifacts
+- tool inventory coverage
+- release guard integrity
+- gitignore protection for local QA/temp artifacts
+- public junk/debug/temp files under `site/`
+- files filter live-region accessibility
+- external/new-tab link accessibility
+- QA docs index
+- contributor guardrails
+- performance budget docs
+- visual QA baseline docs
+- build info
+- CI workflow
+- deploy documentation
+- CSS integrity
+- SEO metadata and robots baseline
+- sitemap/canonical parity
+- search-index term precision
+- bilingual hreflang pair coverage
+- long-document SEO metadata readiness
+- runtime JavaScript scope
+- CSS consolidation candidate reporting
+- AI dialogue disclosures
 - 16-story appendix registry and protected order
 - protected story details
 - local images
@@ -31,14 +62,8 @@ The release guard includes checks for:
 - visible Hebrew leakage in English files
 - files page language labels
 - files table accessibility
-- SEO metadata and robots baseline
-- AI dialogue disclosures
-- deploy documentation
-- CI workflow
-- build info
-- visual QA docs
-- performance budget docs
-- contributor guardrails
+- files page download links and document sibling packages
+- public document sibling format sync
 
 ## Manual checks after deploy
 
@@ -49,6 +74,8 @@ python3 tools/check_live_deploy_urls.py
 ```
 
 Then manually open key Hebrew, English, files, stories, theory, and AI pages.
+
+For live sitemap/public links, `tools/audit_sitemap_and_public_links.py` is a manual post-deploy audit, not a required push gate.
 
 ## Safety rules
 
