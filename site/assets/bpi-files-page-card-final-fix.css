@@ -1,0 +1,78 @@
+/* BPI Stage 3 — final files-page card fix. Loaded from bpi-start-here-layout-fix.css. */
+
+body.public-page.section-files main#main .hub-card,
+body.public-page.section-files main#main .media-card,
+body.public-page.section-files main#main .reader-card,
+body.public-page.section-files main#main .appendix-card,
+body.public-page.section-files main#main .notice-box,
+body.public-page.section-files main#main .source-files-card,
+body.public-page.section-files main#main .files-reading-path article,
+body.public-page.section-files main#main .reading-path-card {
+  background: #fffaf0 !important;
+  background-image: none !important;
+  color: #17202d !important;
+  border: 1px solid rgba(10,58,104,.14) !important;
+  box-shadow: 0 12px 30px rgba(23,32,45,.08) !important;
+  border-radius: 24px !important;
+}
+
+body.public-page.section-files main#main .hub-card::before,
+body.public-page.section-files main#main .hub-card::after,
+body.public-page.section-files main#main .media-card::before,
+body.public-page.section-files main#main .media-card::after,
+body.public-page.section-files main#main .reader-card::before,
+body.public-page.section-files main#main .reader-card::after,
+body.public-page.section-files main#main .appendix-card::before,
+body.public-page.section-files main#main .appendix-card::after,
+body.public-page.section-files main#main .notice-box::before,
+body.public-page.section-files main#main .notice-box::after {
+  display: none !important;
+  opacity: 0 !important;
+  content: none !important;
+}
+
+body.public-page.section-files main#main .hub-card h2,
+body.public-page.section-files main#main .hub-card h3,
+body.public-page.section-files main#main .media-card h2,
+body.public-page.section-files main#main .media-card h3,
+body.public-page.section-files main#main .reader-card h2,
+body.public-page.section-files main#main .reader-card h3,
+body.public-page.section-files main#main .appendix-card h2,
+body.public-page.section-files main#main .appendix-card h3,
+body.public-page.section-files main#main .notice-box h2,
+body.public-page.section-files main#main .notice-box h3,
+body.public-page.section-files main#main .source-files-card h3 {
+  color: #0A3A68 !important;
+  text-shadow: none !important;
+}
+
+body.public-page.section-files main#main .hub-card p,
+body.public-page.section-files main#main .media-card p,
+body.public-page.section-files main#main .reader-card p,
+body.public-page.section-files main#main .appendix-card p,
+body.public-page.section-files main#main .notice-box p,
+body.public-page.section-files main#main .source-files-card p {
+  color: rgba(23,32,45,.82) !important;
+  text-shadow: none !important;
+}
+
+body.public-page.section-files main#main .card-link,
+body.public-page.section-files main#main .download-button,
+body.public-page.section-files main#main .download-row a,
+body.public-page.section-files main#main .download-strip a {
+  color: #07101d !important;
+  background: linear-gradient(135deg,#b98726,#e6b84a,#f5d06b) !important;
+  border-color: transparent !important;
+  text-shadow: none !important;
+}
+
+body.public-page-he.section-files main#main .accent-ai h2,
+html[lang="he"] body.section-files main#main .accent-ai h2 {
+  font-size: 0 !important;
+}
+
+body.public-page-he.section-files main#main .accent-ai h2::before,
+html[lang="he"] body.section-files main#main .accent-ai h2::before {
+  content: "בינה מלאכותית כעדות" !important;
+  font-size: clamp(1.35rem,2.1vw,1.95rem) !important;
+}
