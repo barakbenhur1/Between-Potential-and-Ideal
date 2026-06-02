@@ -24,6 +24,7 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/check_build_info_matches_head.py` — verifies build-info metadata without creating false deployment blockers.
 - `tools/check_ci_workflow.py` — verifies GitHub Actions release guard workflow.
 - `tools/check_deploy_docs.py` — verifies deploy documentation.
+- `tools/check_css_integrity.py` — verifies CSS files have basic structural integrity and protected patch markers remain paired.
 - `tools/check_seo_metadata.py` — verifies robots and sitemap SEO baseline.
 - `tools/audit_sitemap_canonical_parity.py` — verifies sitemap URLs, canonical base, duplicate URL safety, local target existence, and lastmod coverage.
 - `tools/audit_search_index_terms.py` — audits search-index URL integrity and term precision warnings.
