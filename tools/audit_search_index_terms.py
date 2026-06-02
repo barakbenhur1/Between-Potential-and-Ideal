@@ -8,6 +8,7 @@ The audit checks:
 - chapter term sets are not all identical.
 - terms are not repeated inside the same entry.
 - protected story terms remain present and are not criticized as content.
+- known gateway pages are visible as search-index coverage recommendations.
 
 Run from repo root:
   python3 tools/audit_search_index_terms.py
@@ -15,7 +16,7 @@ Run from repo root:
 
 from pathlib import Path
 from urllib.parse import urlparse, unquote
-from collections import Counter, defaultdict
+from collections import Counter
 import json
 import sys
 
@@ -27,6 +28,15 @@ REPORT_DIR = ROOT / "reports" / "production_next"
 PROTECTED_TERMS = {
     "ואז הוא אמוגי מפאק.",
 }
+
+EXPECTED_GATEWAY_URLS = [
+    "pages/en/glossary-en.html",
+    "pages/he/glossary.html",
+    "pages/en/potential-ideal-optimal-en.html",
+    "pages/he/potential-ideal-optimal.html",
+    "pages/en/ai-as-witness-en.html",
+    "pages/he/ai-as-witness.html",
+]
 
 
 def local_target(url: str) -> Path:
@@ -55,6 +65,7 @@ def audit() -> dict:
     errors = []
     warnings = []
     items = []
+    indexed_urls = set()
 
     if not INDEX.exists():
         return {"status": "FAIL", "errors": ["missing site/search-index.json"], "warnings": [], "items": []}
@@ -90,7 +101,9 @@ def audit() -> dict:
                 term_global_counter[t] += 1
             if group_name == "chapters":
                 term_fingerprints[tuple(sorted(set(entry_terms)))] += 1
-            for url in entry_urls(entry):
+            urls = entry_urls(entry)
+            for url in urls:
+                indexed_urls.add(url.split("#", 1)[0])
                 target = local_target(url)
                 if not target.exists():
                     # anchor URLs point to an existing HTML host; check host without fragment.
@@ -98,7 +111,16 @@ def audit() -> dict:
                     host_target = local_target(host)
                     if not host_target.exists():
                         errors.append(f"{group_name}/{slug}: indexed URL target missing: {url}")
-            items.append({"group": group_name, "slug": slug, "terms": len(entry_terms), "unique_terms": len(set(entry_terms)), "urls": entry_urls(entry)})
+            items.append({"group": group_name, "slug": slug, "terms": len(entry_terms), "unique_terms": len(set(entry_terms)), "urls": urls})
+
+    missing_expected_gateway_urls = []
+    for url in EXPECTED_GATEWAY_URLS:
+        if url not in indexed_urls:
+            local = local_target(url)
+            if local.exists():
+                missing_expected_gateway_urls.append(url)
+    if missing_expected_gateway_urls:
+        warnings.append(f"expected gateway pages missing from search index: {len(missing_expected_gateway_urls)}")
 
     if chapters and len(term_fingerprints) == 1:
         warnings.append("all chapter entries have identical term sets; search precision is weak")
@@ -127,6 +149,7 @@ def audit() -> dict:
         "story_count": len(stories) if isinstance(stories, list) else 0,
         "required_terms_count": len(required_terms) if isinstance(required_terms, list) else 0,
         "chapter_term_fingerprint_groups": len(term_fingerprints),
+        "missing_expected_gateway_urls": missing_expected_gateway_urls,
         "repeated_terms_by_entry": repeated_terms_by_entry[:100],
         "overbroad_terms": overbroad_terms[:120],
         "items": items,
@@ -158,6 +181,11 @@ def write_reports(result: dict) -> None:
         lines.append("## Warnings")
         for warning in result["warnings"]:
             lines.append(f"- {warning}")
+        lines.append("")
+    if result.get("missing_expected_gateway_urls"):
+        lines.append("## Expected gateway pages missing from search index")
+        for url in result["missing_expected_gateway_urls"]:
+            lines.append(f"- `{url}`")
         lines.append("")
     if result.get("overbroad_terms"):
         lines.append("## Overbroad repeated terms sample")
