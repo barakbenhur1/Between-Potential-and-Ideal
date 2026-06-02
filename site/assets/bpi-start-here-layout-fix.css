@@ -1,3 +1,5 @@
+@import url("./bpi-files-page-card-final-fix.css?v=20260603-stage3-files-card-final-v1");
+
 /* BPI V360 — start-here layout fix
    Purpose:
    1. Make the newly added Start here / התחל כאן block render correctly on desktop.
@@ -159,8 +161,6 @@ html[dir="ltr"] .bpi-recommended-start { direction: ltr !important; }
   }
 }
 
-
-
 /* BPI FINAL HERO ONLY — fix only blue hero card width.
    Measured: hero is 808px only because it has 18px side margins.
    Start Here and opening visual are already correct at 844px. */
@@ -173,10 +173,6 @@ html[dir="ltr"] .bpi-recommended-start { direction: ltr !important; }
     box-sizing: border-box !important;
   }
 }
-
-
-
-
 
 /* BPI V415 — final small alignment and hero-kicker polish.
    1. Make only the white Start Here card slightly wider on desktop.
@@ -210,7 +206,6 @@ html body.public-page.design-prompt-theme main.site-main > section.hero.concise-
   text-shadow: 0 2px 14px rgba(0,0,0,0.26) !important;
   line-height: 1.25 !important;
 }
-
 
 /* BPI V416 — final homepage polish.
    1. Start Here card should match the blue hero card width: full width of the homepage card rail.
@@ -261,7 +256,6 @@ html body.public-page.design-prompt-theme main.site-main > section.hero.concise-
   box-shadow: 0 12px 34px rgba(0,0,0,0.12) !important;
   backdrop-filter: blur(8px) !important;
 }
-
 
 /* BPI V417 — hero kicker typography only.
    Remove the pill/background behind "Between Potential and Ideal"
