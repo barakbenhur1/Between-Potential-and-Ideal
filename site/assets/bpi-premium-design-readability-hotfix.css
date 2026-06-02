@@ -1,0 +1,166 @@
+/*
+BPI premium design readability hotfix — Stage 3 side branch.
+Purpose: keep the premium visual direction while fixing contrast, card readability,
+and oversized/cropped hero typography observed during manual review.
+Content remains protected: this file changes presentation only.
+*/
+
+/* Strong page-shell contrast without hiding the original content */
+html body.public-page.design-prompt-theme {
+  color: #f8fafc !important;
+}
+
+/* Hero: prevent the English title from becoming a cropped poster word wall. */
+html body.public-page.design-prompt-theme main.site-main > section.hero.concise-hero {
+  overflow: visible !important;
+  isolation: isolate !important;
+}
+
+html body.public-page.design-prompt-theme main.site-main > section.hero.concise-hero h1 {
+  max-width: min(980px, 100%) !important;
+  margin-inline: auto !important;
+  text-align: center !important;
+  font-size: clamp(2.55rem, 5.9vw, 6.15rem) !important;
+  line-height: 1.03 !important;
+  letter-spacing: -0.045em !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  hyphens: none !important;
+}
+
+html[lang="en"] body.public-page.design-prompt-theme main.site-main > section.hero.concise-hero h1 {
+  max-width: min(920px, 100%) !important;
+  font-size: clamp(2.6rem, 5.45vw, 5.85rem) !important;
+  line-height: 1.02 !important;
+  text-align: center !important;
+}
+
+html[lang="he"] body.public-page.design-prompt-theme main.site-main > section.hero.concise-hero h1 {
+  max-width: min(1040px, 100%) !important;
+  text-align: center !important;
+}
+
+html body.public-page.design-prompt-theme main.site-main > section.hero.concise-hero .lead,
+html body.public-page.design-prompt-theme main.site-main > section.hero.concise-hero .method-note {
+  color: rgba(248, 250, 252, 0.92) !important;
+  text-align: center !important;
+  opacity: 1 !important;
+}
+
+/* Start-here card: later homepage fixes were making text too dark for the new card. */
+html body.public-page.design-prompt-theme main.site-main > section#bpi-start-here-note.bpi-start-here-note,
+html body.public-page.design-prompt-theme main.site-main > section.notice-box.bpi-start-here-note {
+  background:
+    radial-gradient(ellipse 70% 60% at 16% 0%, rgba(230,184,74,0.14), transparent 58%),
+    radial-gradient(ellipse 70% 60% at 100% 100%, rgba(94,234,212,0.10), transparent 58%),
+    linear-gradient(145deg, rgba(18, 25, 39, 0.96), rgba(7, 11, 21, 0.98)) !important;
+  border-color: rgba(230, 184, 74, 0.26) !important;
+  box-shadow: 0 28px 76px rgba(0,0,0,0.32), 0 0 38px rgba(230,184,74,0.10) !important;
+}
+
+html body.public-page.design-prompt-theme main.site-main > section#bpi-start-here-note.bpi-start-here-note h2,
+html body.public-page.design-prompt-theme main.site-main > section.notice-box.bpi-start-here-note h2,
+html body.public-page.design-prompt-theme main.site-main > section#bpi-start-here-note.bpi-start-here-note .card-media-head h2 {
+  color: #f8fafc !important;
+  text-shadow: 0 2px 18px rgba(0,0,0,0.32) !important;
+  text-align: inherit !important;
+}
+
+html body.public-page.design-prompt-theme main.site-main > section#bpi-start-here-note.bpi-start-here-note p,
+html body.public-page.design-prompt-theme main.site-main > section.notice-box.bpi-start-here-note p {
+  color: rgba(226, 232, 240, 0.94) !important;
+  opacity: 1 !important;
+  text-align: center !important;
+}
+
+/* Homepage cards: force readable foreground colors over dark premium cards. */
+html body.public-page.design-prompt-theme main.site-main section.hub-grid > article.hub-card.media-card,
+html body.public-page.design-prompt-theme main.site-main section.bpi-gateway-cards > article.hub-card.media-card,
+html body.public-page.design-prompt-theme main.site-main .signature-blurbs article.signature-blurb-card,
+html body.public-page.design-prompt-theme main.site-main .signature-blurbs article.signature-main-blurb {
+  background:
+    radial-gradient(ellipse 70% 60% at 18% 0%, rgba(230,184,74,0.12), transparent 60%),
+    linear-gradient(145deg, rgba(20, 27, 43, 0.97), rgba(7, 11, 21, 0.985)) !important;
+  border-color: rgba(255,255,255,0.13) !important;
+}
+
+html body.public-page.design-prompt-theme main.site-main section.hub-grid > article.hub-card.media-card h2,
+html body.public-page.design-prompt-theme main.site-main section.hub-grid > article.hub-card.media-card h3,
+html body.public-page.design-prompt-theme main.site-main section.bpi-gateway-cards > article.hub-card.media-card h2,
+html body.public-page.design-prompt-theme main.site-main .signature-blurbs article.signature-blurb-card strong {
+  color: #f8fafc !important;
+  opacity: 1 !important;
+  text-shadow: 0 2px 18px rgba(0,0,0,0.28) !important;
+}
+
+html body.public-page.design-prompt-theme main.site-main section.hub-grid > article.hub-card.media-card p,
+html body.public-page.design-prompt-theme main.site-main section.bpi-gateway-cards > article.hub-card.media-card p,
+html body.public-page.design-prompt-theme main.site-main .signature-blurbs article.signature-blurb-card p,
+html body.public-page.design-prompt-theme main.site-main .signature-blurbs article.signature-main-blurb p {
+  color: rgba(226, 232, 240, 0.92) !important;
+  opacity: 1 !important;
+}
+
+/* Keep links/buttons visible on dark cards. */
+html body.public-page.design-prompt-theme main.site-main section.hub-grid > article.hub-card.media-card a.card-link,
+html body.public-page.design-prompt-theme main.site-main section.bpi-gateway-cards > article.hub-card.media-card a.card-link,
+html body.public-page.design-prompt-theme main.site-main section#bpi-start-here-note.bpi-start-here-note a.download-button,
+html body.public-page.design-prompt-theme main.site-main section.notice-box.bpi-start-here-note a.download-button {
+  color: #f8fafc !important;
+  background: rgba(255,255,255,0.075) !important;
+  border-color: rgba(230,184,74,0.42) !important;
+  text-shadow: none !important;
+}
+
+html body.public-page.design-prompt-theme main.site-main section.hub-grid > article.hub-card.media-card a.card-link:hover,
+html body.public-page.design-prompt-theme main.site-main section.bpi-gateway-cards > article.hub-card.media-card a.card-link:hover,
+html body.public-page.design-prompt-theme main.site-main section#bpi-start-here-note.bpi-start-here-note a.download-button:hover,
+html body.public-page.design-prompt-theme main.site-main section.notice-box.bpi-start-here-note a.download-button:hover {
+  color: #07101d !important;
+  background: linear-gradient(135deg, #b98726, #e6b84a, #f5d06b) !important;
+  border-color: transparent !important;
+}
+
+html body.public-page.design-prompt-theme main.site-main section#bpi-start-here-note.bpi-start-here-note a.download-button.primary,
+html body.public-page.design-prompt-theme main.site-main section.notice-box.bpi-start-here-note a.download-button.primary {
+  color: #07101d !important;
+  background: linear-gradient(135deg, #b98726, #e6b84a, #f5d06b) !important;
+}
+
+/* Signature blurb cards: avoid low-contrast blue text on dark cards. */
+html body.public-page.design-prompt-theme main.site-main .signature-blurbs .question-card p,
+html body.public-page.design-prompt-theme main.site-main .signature-blurbs .vessel-card p,
+html body.public-page.design-prompt-theme main.site-main .signature-blurbs .paradox-card p {
+  color: rgba(226, 232, 240, 0.93) !important;
+}
+
+html body.public-page.design-prompt-theme main.site-main .signature-blurbs .minimal-card,
+html body.public-page.design-prompt-theme main.site-main .signature-blurbs .ellipsis-card {
+  background: linear-gradient(145deg, rgba(255,252,244,0.98), rgba(245,237,221,0.98)) !important;
+  border-color: rgba(230,184,74,0.22) !important;
+}
+
+html body.public-page.design-prompt-theme main.site-main .signature-blurbs .minimal-card p,
+html body.public-page.design-prompt-theme main.site-main .signature-blurbs .ellipsis-card p {
+  color: #0a3a68 !important;
+}
+
+/* Cards should not be giant empty panels when content is short. */
+html body.public-page.design-prompt-theme main.site-main .hub-card,
+html body.public-page.design-prompt-theme main.site-main .signature-blurb-card {
+  min-height: auto !important;
+}
+
+/* Keep mobile readable and avoid horizontal cropping. */
+@media (max-width: 900px) {
+  html body.public-page.design-prompt-theme main.site-main > section.hero.concise-hero h1,
+  html[lang="en"] body.public-page.design-prompt-theme main.site-main > section.hero.concise-hero h1 {
+    font-size: clamp(2.15rem, 10vw, 3.8rem) !important;
+    line-height: 1.05 !important;
+    letter-spacing: -0.035em !important;
+  }
+
+  html body.public-page.design-prompt-theme main.site-main > section.hero.concise-hero {
+    overflow: hidden !important;
+  }
+}
