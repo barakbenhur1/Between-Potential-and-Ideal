@@ -1,9 +1,11 @@
 from pathlib import Path
 from html import unescape
+import json
 import re
 import sys
 
 HTML_FILES = sorted(Path("site").rglob("*.html"))
+REPORT_DIR = Path("reports/production_next")
 EXPECTED_MIN_BLANK_LINKS = 1
 
 LINK_RE = re.compile(r"<a\b[^>]*>", re.I | re.S)
@@ -37,6 +39,40 @@ def has_new_tab_label(tag):
     return any(p in combined for p in phrases)
 
 
+def write_report(checked, errors, warnings):
+    REPORT_DIR.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "checked": checked,
+        "errors": errors,
+        "warnings": warnings,
+    }
+    (REPORT_DIR / "external_links_accessibility_audit.json").write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+    lines = [
+        "# External/New-Tab Links Accessibility Audit",
+        "",
+        f"- Checked: {checked}",
+        f"- Errors: {len(errors)}",
+        f"- Warnings: {len(warnings)}",
+        "",
+    ]
+    if errors:
+        lines.append("## Errors")
+        for error in errors[:200]:
+            lines.append(f"- {error}")
+        lines.append("")
+    if warnings:
+        lines.append("## Warnings")
+        for warning in warnings[:200]:
+            lines.append(f"- {warning}")
+        lines.append("")
+    lines.append("Missing `rel=\"noopener noreferrer\"` is a release blocker. Missing new-tab label is currently reported as a warning.")
+    (REPORT_DIR / "external_links_accessibility_audit.md").write_text("\n".join(lines), encoding="utf-8")
+
+
 def main() -> int:
     errors = []
     warnings = []
@@ -58,6 +94,8 @@ def main() -> int:
     if checked < EXPECTED_MIN_BLANK_LINKS:
         errors.append(f"expected at least {EXPECTED_MIN_BLANK_LINKS} target=_blank link, found {checked}")
 
+    write_report(checked, errors, warnings)
+
     if errors:
         print("FAIL: external/new-tab link accessibility audit found issues")
         for e in errors[:200]:
@@ -66,6 +104,7 @@ def main() -> int:
             print(f"... and {len(errors) - 200} more")
         if warnings:
             print(f"WARNINGS: {len(warnings)} target=_blank links missing accessible new-tab label")
+        print("Report: reports/production_next/external_links_accessibility_audit.md")
         return 1
 
     print(f"OK: external/new-tab links are accessible. checked={checked}")
@@ -75,6 +114,7 @@ def main() -> int:
             print("-", warning)
         if len(warnings) > 40:
             print(f"... and {len(warnings) - 40} more")
+    print("Report: reports/production_next/external_links_accessibility_audit.md")
     return 0
 
 
