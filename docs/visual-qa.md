@@ -62,7 +62,7 @@ If screenshots are needed for review, place them outside the repository or in a 
 
 ## Acceptance criteria before CSS cleanup
 
-- Release guard passes.
+- Final release QA passes.
 - Live deploy URLs are reachable.
 - Screenshot matrix has been manually reviewed.
 - Any visual regressions are fixed before CSS cleanup begins.
