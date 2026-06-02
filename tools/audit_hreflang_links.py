@@ -4,6 +4,7 @@
 
 This is a conservative audit for the bilingual site. It builds a pair map from:
 - home pair: site/index.html <-> site/en.html
+- expected gateway pairs
 - search-index chapter pairs
 - search-index story collection anchors
 
@@ -35,6 +36,12 @@ BASE_URL = "https://between-potential-and-ideal.onrender.com"
 LINK_RE = re.compile(r"<link\b[^>]*rel=[\"'][^\"']*alternate[^\"']*[\"'][^>]*>", re.I | re.S)
 HREFLANG_RE = re.compile(r"hreflang\s*=\s*[\"']([^\"']+)[\"']", re.I)
 HREF_RE = re.compile(r"href\s*=\s*[\"']([^\"']+)[\"']", re.I)
+
+EXPECTED_GATEWAY_PAIRS = [
+    {"slug": "gateway-glossary", "he": "pages/he/glossary.html", "en": "pages/en/glossary-en.html", "source": "gateway"},
+    {"slug": "gateway-potential-ideal-optimal", "he": "pages/he/potential-ideal-optimal.html", "en": "pages/en/potential-ideal-optimal-en.html", "source": "gateway"},
+    {"slug": "gateway-ai-as-witness", "he": "pages/he/ai-as-witness.html", "en": "pages/en/ai-as-witness-en.html", "source": "gateway"},
+]
 
 
 def local_path(url: str) -> Path:
@@ -68,25 +75,25 @@ def parse_hreflang(path: Path) -> dict[str, str]:
 
 def load_pairs() -> list[dict]:
     pairs = [{"slug": "home", "he": "index.html", "en": "en.html", "source": "home"}]
-    if not INDEX.exists():
-        return pairs
-    try:
-        data = json.loads(INDEX.read_text(encoding="utf-8"))
-    except Exception:
-        return pairs
-    for group_name in ["chapters", "stories"]:
-        group = data.get(group_name, [])
-        if not isinstance(group, list):
-            continue
-        for entry in group:
-            if not isinstance(entry, dict):
+    pairs.extend(EXPECTED_GATEWAY_PAIRS)
+    if INDEX.exists():
+        try:
+            data = json.loads(INDEX.read_text(encoding="utf-8"))
+        except Exception:
+            data = {}
+        for group_name in ["chapters", "stories"]:
+            group = data.get(group_name, [])
+            if not isinstance(group, list):
                 continue
-            he = entry.get("he", {}) if isinstance(entry.get("he"), dict) else {}
-            en = entry.get("en", {}) if isinstance(entry.get("en"), dict) else {}
-            he_url = he.get("url")
-            en_url = en.get("url")
-            if he_url and en_url:
-                pairs.append({"slug": str(entry.get("slug", "")), "he": he_url, "en": en_url, "source": group_name})
+            for entry in group:
+                if not isinstance(entry, dict):
+                    continue
+                he = entry.get("he", {}) if isinstance(entry.get("he"), dict) else {}
+                en = entry.get("en", {}) if isinstance(entry.get("en"), dict) else {}
+                he_url = he.get("url")
+                en_url = en.get("url")
+                if he_url and en_url:
+                    pairs.append({"slug": str(entry.get("slug", "")), "he": he_url, "en": en_url, "source": group_name})
     # Deduplicate by host URL pair; story anchors share the same collection host but remain useful in report only once.
     unique = []
     seen = set()
