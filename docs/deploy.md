@@ -37,6 +37,12 @@ git status --short
 - `tools/check_build_info_matches_head.py`
 - `tools/audit_release_guard.py`
 
+For diagnostic/local detailed guard runs, the direct command remains:
+
+```bash
+python3 tools/audit_release_guard.py
+```
+
 Do not push if the final release QA reports blockers.
 
 Do not commit:
