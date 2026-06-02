@@ -18,6 +18,7 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/check_files_filter_live_region.py` — verifies Files page filter status is announced accessibly.
 - `tools/check_external_links_accessibility.py` — verifies new-tab links are accessible.
 - `tools/check_qa_docs_index.py` — verifies the QA docs index.
+- `tools/check_readme_docs.py` — verifies README structure and current QA workflow instructions.
 - `tools/check_contributor_guardrails.py` — verifies contributor guardrails.
 - `tools/check_performance_budget_docs.py` — verifies performance/asset policy.
 - `tools/check_visual_qa_docs.py` — verifies visual QA baseline docs.
