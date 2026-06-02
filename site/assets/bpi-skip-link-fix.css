@@ -2,6 +2,7 @@
 @import url("./bpi-premium-design-readability-hotfix.css?v=20260603-stage3-readability-v1");
 @import url("./bpi-he-ai-label-preserve.css?v=20260603-stage3-he-ai-labels-v1");
 @import url("./bpi-nav-order-and-ai-visual-fix.css?v=20260603-stage3-nav-ai-v1");
+@import url("./bpi-nav-order-hotfix.css?v=20260603-stage3-nav-hotfix-v1");
 
 body.public-page .skip-link {
   position: fixed !important;
