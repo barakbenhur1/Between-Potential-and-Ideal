@@ -28,6 +28,7 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/check_deploy_docs.py` — verifies deploy documentation.
 - `tools/check_css_integrity.py` — verifies CSS files have basic structural integrity and protected patch markers remain paired.
 - `tools/check_seo_metadata.py` — verifies robots and sitemap SEO baseline.
+- `tools/check_gateway_pages.py` — verifies existing gateway pages have baseline metadata, canonical links, hreflang links, language switch, and main target.
 - `tools/audit_sitemap_canonical_parity.py` — verifies sitemap URLs, canonical base, duplicate URL safety, local target existence, and lastmod coverage.
 - `tools/audit_search_index_terms.py` — audits search-index URL integrity and term precision warnings.
 - `tools/audit_hreflang_links.py` — audits bilingual hreflang pair coverage and reports missing alternates as warnings.
