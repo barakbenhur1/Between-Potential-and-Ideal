@@ -24,6 +24,7 @@ CHECKS = [
     ["python3", "tools/check_ai_disclosures.py"],
     ["python3", "tools/audit_story_appendices_16.py"],
     ["python3", "tools/check_story_registry.py"],
+    ["python3", "tools/check_protected_story_details.py"],
     ["python3", "tools/audit_images_exist.py"],
     ["python3", "tools/audit_anchors.py"],
     ["python3", "tools/audit_visible_hebrew_in_english.py"],
