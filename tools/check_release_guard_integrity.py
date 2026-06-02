@@ -5,6 +5,12 @@ from pathlib import Path
 
 P = Path("tools/audit_release_guard.py")
 
+BOOTSTRAP_PREFIX = [
+    ["python3", "tools/check_no_root_junk_files.py"],
+    ["python3", "tools/check_tool_inventory.py"],
+    ["python3", "tools/check_release_guard_integrity.py"],
+]
+
 def main() -> int:
     errors = []
 
@@ -27,6 +33,9 @@ def main() -> int:
     elif not isinstance(checks, list):
         errors.append("CHECKS is not a list")
     else:
+        if checks[:len(BOOTSTRAP_PREFIX)] != BOOTSTRAP_PREFIX:
+            errors.append(f"CHECKS must start with bootstrap prefix: {BOOTSTRAP_PREFIX}")
+
         seen = set()
         for item in checks:
             if not isinstance(item, list) or len(item) != 2:
@@ -55,7 +64,7 @@ def main() -> int:
 
             result = subprocess.run(["python3", "-m", "py_compile", script], capture_output=True, text=True)
             if result.returncode != 0:
-                errors.append(f"CHECKS script does not compile: {script}\\n{result.stderr}")
+                errors.append(f"CHECKS script does not compile: {script}\n{result.stderr}")
 
     if errors:
         print("FAIL: release guard integrity audit found issues")
