@@ -189,6 +189,28 @@ def write_reports(result: dict) -> None:
     (REPORT_DIR / "final_release_qa.md").write_text("\n".join(lines), encoding="utf-8")
 
 
+def print_failure_details(result: dict) -> None:
+    if result["dirty_lines_excluding_reports"]:
+        print("\n--- dirty worktree excluding reports ---")
+        print("\n".join(result["dirty_lines_excluding_reports"]))
+        print("--- end dirty worktree excluding reports ---")
+
+    if "GIT_DIFF_CHECK_FAILED" in result["blockers"]:
+        print("\n--- git diff --check output tail ---")
+        print(command_output(result["commands"]["diff_check"], 120) or "(no output)")
+        print("--- end git diff --check output tail ---")
+
+    if "BUILD_INFO_GUARD_FAILED" in result["blockers"]:
+        print("\n--- build-info guard output tail ---")
+        print(command_output(result["commands"]["build_info"], 120) or "(no output)")
+        print("--- end build-info guard output tail ---")
+
+    if "AUDIT_RELEASE_GUARD_FAILED" in result["blockers"]:
+        print("\n--- audit release guard output tail ---")
+        print(command_output(result["commands"]["release_guard"], 220) or "(no output)")
+        print("--- end audit release guard output tail ---")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--scan", action="store_true", help="Run the final release QA scan.")
@@ -208,9 +230,7 @@ def main() -> None:
     print("Report:", REPORT_DIR / "final_release_qa.md")
 
     if result["status"] != "RELEASE_READY":
-        print("\n--- audit release guard output tail ---")
-        print(command_output(result["commands"]["release_guard"], 220) or "(no output)")
-        print("--- end audit release guard output tail ---")
+        print_failure_details(result)
         sys.exit(2)
 
 
