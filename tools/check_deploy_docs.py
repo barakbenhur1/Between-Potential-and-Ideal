@@ -18,6 +18,8 @@ def main() -> int:
         text = deploy.read_text(encoding="utf-8", errors="ignore")
         required_phrases = [
             "https://between-potential-and-ideal.onrender.com",
+            "python3 tools/final_release_qa.py --scan",
+            "git diff --check",
             "python3 tools/audit_release_guard.py",
             "python3 tools/check_live_deploy_urls.py",
             "Do not force-push main.",
