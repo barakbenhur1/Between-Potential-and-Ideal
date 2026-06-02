@@ -5,7 +5,6 @@
   --bpi-symmetric-media-inner-radius: 22px;
 }
 
-/* Frame-like media blocks used across all tab/content pages */
 body.design-prompt-theme .compact-section-visual,
 body.design-prompt-theme .section-visual,
 body.design-prompt-theme .opening-visual,
@@ -20,7 +19,6 @@ body.design-prompt-theme .image-frame {
   background-clip: padding-box !important;
 }
 
-/* The image itself must not create optical imbalance inside the white frame */
 body.design-prompt-theme .compact-section-visual > img,
 body.design-prompt-theme .section-visual > img,
 body.design-prompt-theme .opening-visual > img,
@@ -36,14 +34,12 @@ body.design-prompt-theme .image-frame picture > img {
   object-position: center center !important;
 }
 
-/* Preserve the existing wide tab/banner proportion while making the white frame equal on all sides */
 body.design-prompt-theme .compact-section-visual > img {
   height: clamp(136px, 18vw, 212px) !important;
   aspect-ratio: 21 / 7 !important;
   object-fit: cover !important;
 }
 
-/* Direct card images also receive a balanced white frame, without needing HTML wrappers */
 body.design-prompt-theme .content-card-image,
 body.design-prompt-theme img.content-card-image {
   display: block !important;
@@ -60,7 +56,13 @@ body.design-prompt-theme img.content-card-image {
   overflow: hidden !important;
 }
 
-/* English Witness page title repair: keep icon, title, and lead in a normal LTR layout. */
+html[lang="he"] [data-lang-block="en"],
+body.public-page-he [data-lang-block="en"],
+html[lang="en"] [data-lang-block="he"],
+body.public-page-en [data-lang-block="he"] {
+  display: none !important;
+}
+
 body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness {
   display: block !important;
   direction: ltr !important;
@@ -111,7 +113,6 @@ body.public-page-en.section-witness main#main > .page-title.media-page-title.acc
   text-align: left !important;
 }
 
-/* Keep mobile padding balanced too */
 @media (max-width: 680px){
   :root{
     --bpi-symmetric-media-pad: 12px;
