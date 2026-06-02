@@ -9,6 +9,7 @@ The work intentionally prioritized safe, additive, audit-first changes:
 - deployment verification reliability
 - repo-local release QA standardization
 - CI release guard wiring
+- README, QA, deploy, contributor, visual QA, and performance documentation alignment
 - download/document package audits
 - SEO metadata audits
 - sitemap/canonical audits
@@ -43,10 +44,36 @@ Protected content and approved visual/literary elements were not rewritten or re
 | Phase 16 | Done as summary | This status document records what changed and what remains. |
 | Phase 17 | Done as gate hardening | AI disclosure and protected story detail audits were added to the release guard. |
 | Phase 18 | Done as gate hardening | CSS integrity and runtime JavaScript scope audits are now documented and release-guarded. |
+| Phase 19 | Done as docs hardening | README, QA index, deploy docs, contributor guardrails, visual QA docs, performance docs, and their audits were aligned with the final QA command. |
 
 ## Release guard now covers
 
-The final release QA command now wraps the detailed release guard. The guard includes baseline repo hygiene, CI/deploy docs, CSS integrity, SEO metadata, sitemap/canonical parity, search-index terms, hreflang, document SEO metadata, runtime JS scope, AI disclosures, protected story/story-registry checks, images, anchors, English-page Hebrew leakage, Files language/accessibility checks, file download packages, and document sync status.
+The final release QA command now wraps the detailed release guard. The guard includes baseline repo hygiene, tool-inventory integrity, CI/deploy docs, README docs, contributor guardrails, visual/performance docs, CSS integrity, SEO metadata, sitemap/canonical parity, search-index terms, hreflang, document SEO metadata, runtime JS scope, CSS consolidation candidate reporting, AI disclosures, protected story/story-registry checks, images, anchors, English-page Hebrew leakage, Files language/accessibility checks, file download packages, and document sync status.
+
+## Documentation status
+
+The documentation hardening pass is complete.
+
+The canonical local pre-push/release command is now consistent across:
+
+- `README.md`
+- `docs/qa-index.md`
+- `docs/deploy.md`
+- `docs/contributor-guardrails.md`
+- `docs/visual-qa.md`
+- `docs/performance-budget.md`
+- `docs/tool-inventory.md`
+
+Use:
+
+```bash
+rm -rf reports tools/__pycache__
+python3 tools/final_release_qa.py --scan
+git diff --check
+git status --short
+```
+
+`tools/audit_release_guard.py` remains the detailed guard wrapped by the final QA command, not the primary command users should run before push.
 
 ## Important constraints preserved
 
@@ -76,6 +103,8 @@ The following should only be applied after visual QA and, where relevant, user a
 - changing `search-index.json` terms directly
 
 `tools/audit_seo_social_preview.py` remains an informational/full SEO preview audit for now. Do not promote it to a release gate until long-document metadata work is complete, because it checks every HTML page under `site/` and can turn planned SEO work into a premature blocker.
+
+`tools/audit_sitemap_and_public_links.py` remains a manual post-deploy live audit and should not be promoted to the release gate.
 
 ## Deployment verification policy
 
