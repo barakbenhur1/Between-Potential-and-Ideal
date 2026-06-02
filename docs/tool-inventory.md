@@ -55,6 +55,7 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/audit_sitemap_canonical_parity.py`
 - `tools/audit_search_index_terms.py`
 - `tools/audit_hreflang_links.py`
+- `tools/audit_gateway_internal_links.py` — informational audit for gateway-page internal-link discoverability; warnings only.
 - `tools/audit_document_seo_metadata.py`
 - `tools/audit_runtime_js_scope.py`
 - `tools/audit_css_consolidation_candidates.py`
