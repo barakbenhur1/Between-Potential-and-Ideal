@@ -1,7 +1,8 @@
-/* V120 — scoped Home mobile shell + lightweight Files filtering + file-link target normalization + Witness hero enforcement.
+/* V121 — scoped Home mobile shell + lightweight Files filtering + file-link target normalization + Witness hero enforcement + Home gateway links.
    Home mobile loads the same main stylesheet used by the Summary tab, then keeps
    only the Home opening hero blue/turquoise. Mobile Home content is slightly wider.
    Files pages normalize real file/download links so they open in a new tab.
+   Existing gateway pages are exposed from the Home page without changing their contents.
    English Witness hero is normalized after CSS loads to match Core geometry.
    No unrelated desktop design changes. */
 (function(){
@@ -71,6 +72,35 @@
       '}'
     ].join('');
     document.head.appendChild(style);
+  }
+
+  function installHomeGatewayLinks(){
+    if (!isHomePage() || document.getElementById('bpi-home-gateway-links')) return;
+
+    var main = document.getElementById('main') || document.querySelector('main');
+    if (!main) return;
+
+    var he = isHe();
+    var section = document.createElement('section');
+    section.id = 'bpi-home-gateway-links';
+    section.className = 'hub-grid three';
+    section.setAttribute('aria-label', he ? 'מדריכי כניסה מהירים' : 'Quick entry guides');
+    section.innerHTML = he ? [
+      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="מילון מושגים" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_methodology.png" width="480"/><h2>מילון מושגים</h2></div><p>כניסה קצרה למונחי היסוד של הפרויקט ולדרך שבה הם נבדלים זה מזה.</p><a class="card-link" href="pages/he/glossary.html">פתח מילון מושגים</a></article>',
+      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="פוטנציאל, אידיאל ואופטימלי" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_core.png" width="480"/><h2>פוטנציאל, אידיאל, אופטימלי</h2></div><p>דף שער שמפריד בין שדה האפשרויות, הצורה הראויה, והתרגום המקומי תחת מגבלות.</p><a class="card-link" href="pages/he/potential-ideal-optimal.html">קרא את דף המושגים</a></article>',
+      '<article class="hub-card media-card accent-ai"><div class="card-media-head"><img alt="בינה מלאכותית כעדות" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_ai.png" width="480"/><h2>בינה מלאכותית כעדות</h2></div><p>שער קצר לקריאת AI כמראה, עדשה וכלי בדיקה — לא כמקור חי ולא כסמכות.</p><a class="card-link" href="pages/he/ai-as-witness.html">פתח את שער ה־AI</a></article>'
+    ].join('') : [
+      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="Glossary" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_methodology.png" width="480"/><h2>Glossary</h2></div><p>A short entry point into the project’s key terms and the distinctions between them.</p><a class="card-link" href="pages/en/glossary-en.html">Open the glossary</a></article>',
+      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="Potential, Ideal, Optimal" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_core.png" width="480"/><h2>Potential, Ideal, Optimal</h2></div><p>A gateway page separating the field of possibility, the worthy form, and the local translation under constraints.</p><a class="card-link" href="pages/en/potential-ideal-optimal-en.html">Read the concepts page</a></article>',
+      '<article class="hub-card media-card accent-ai"><div class="card-media-head"><img alt="AI as Witness" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_ai.png" width="480"/><h2>AI as Witness</h2></div><p>A short gateway for reading AI as mirror, lens, and stress test — not as a living source or authority.</p><a class="card-link" href="pages/en/ai-as-witness-en.html">Open the AI gateway</a></article>'
+    ].join('');
+
+    var firstHubGrid = main.querySelector('.hub-grid.three');
+    if (firstHubGrid && firstHubGrid.parentNode) {
+      firstHubGrid.parentNode.insertBefore(section, firstHubGrid.nextSibling);
+    } else {
+      main.appendChild(section);
+    }
   }
 
   function isFilesPage(){
@@ -194,6 +224,7 @@
     if (window.requestAnimationFrame) window.requestAnimationFrame(installEnglishWitnessHeroLayout);
     window.setTimeout(installEnglishWitnessHeroLayout, 120);
     installHomeMobileSummaryShell();
+    installHomeGatewayLinks();
     installFilesFilters();
   }
 
