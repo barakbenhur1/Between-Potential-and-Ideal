@@ -23,6 +23,7 @@ CHECKS = [
     ["python3", "tools/audit_sitemap_canonical_parity.py"],
     ["python3", "tools/audit_search_index_terms.py"],
     ["python3", "tools/audit_hreflang_links.py"],
+    ["python3", "tools/audit_gateway_internal_links.py"],
     ["python3", "tools/audit_document_seo_metadata.py"],
     ["python3", "tools/audit_runtime_js_scope.py"],
     ["python3", "tools/audit_css_consolidation_candidates.py"],
