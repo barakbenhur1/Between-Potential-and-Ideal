@@ -32,6 +32,44 @@ BAD_SUFFIXES = {
     ".log",
 }
 
+
+def get_page_lang(text):
+    head = text[:2000].lower()
+    if 'lang="he"' in head or "lang='he'" in head:
+        return "he"
+    if 'lang="en"' in head or "lang='en'" in head:
+        return "en"
+    return ""
+
+
+def tag_is_hidden(fragment):
+    tag_end = fragment.find(">")
+    tag = fragment[:tag_end if tag_end != -1 else 300].lower()
+    compact = tag.replace(" ", "")
+    return " hidden" in tag or "display:none" in compact
+
+
+def check_language_blocks(path, text, errors):
+    lang = get_page_lang(text)
+    if lang == "he":
+        marker = 'data-lang-block="en"'
+    elif lang == "en":
+        marker = 'data-lang-block="he"'
+    else:
+        return
+
+    start = 0
+    while True:
+        index = text.find(marker, start)
+        if index == -1:
+            break
+        fragment_start = max(0, index - 120)
+        fragment = text[fragment_start:index + 300]
+        if not tag_is_hidden(fragment):
+            errors.append(f"opposite-language block is not hidden: {path.as_posix()} {marker}")
+        start = index + len(marker)
+
+
 def main() -> int:
     errors = []
 
@@ -62,15 +100,19 @@ def main() -> int:
                     errors.append(f"possible temporary/debug public file: {rel}")
                     break
 
+            if path.suffix.lower() == ".html":
+                text = path.read_text(encoding="utf-8", errors="ignore")
+                check_language_blocks(path, text, errors)
+
     if errors:
-        print("FAIL: public junk audit found issues")
+        print("FAIL: public junk/language-block audit found issues")
         for error in errors[:200]:
             print("-", error)
         if len(errors) > 200:
             print(f"... and {len(errors) - 200} more")
         return 1
 
-    print("OK: no public junk/debug/temp files found under site/.")
+    print("OK: no public junk/debug/temp files or visible opposite-language blocks found under site/.")
     return 0
 
 if __name__ == "__main__":
