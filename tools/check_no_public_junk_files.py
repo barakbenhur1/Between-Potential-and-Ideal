@@ -35,9 +35,14 @@ BAD_SUFFIXES = {
 
 def get_page_lang(text):
     head = text[:2000].lower()
-    if 'lang="he"' in head or "lang='he'" in head:
+    html_start = head.find("<html")
+    if html_start == -1:
+        return ""
+    html_end = head.find(">", html_start)
+    html_tag = head[html_start:html_end if html_end != -1 else len(head)]
+    if ' lang="he"' in html_tag or " lang='he'" in html_tag:
         return "he"
-    if 'lang="en"' in head or "lang='en'" in head:
+    if ' lang="en"' in html_tag or " lang='en'" in html_tag:
         return "en"
     return ""
 
