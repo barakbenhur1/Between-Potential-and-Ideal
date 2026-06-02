@@ -1,8 +1,10 @@
 from pathlib import Path
+import json
 import re
 import sys
 
 BASE_URL = "https://between-potential-and-ideal.onrender.com"
+REPORT_DIR = Path("reports/production_next")
 
 GATEWAYS = [
     {
@@ -55,13 +57,48 @@ def has_meta_description(text: str) -> bool:
     return False
 
 
+def write_report(items, errors):
+    REPORT_DIR.mkdir(parents=True, exist_ok=True)
+    payload = {"status": "OK" if not errors else "FAIL", "errors": errors, "items": items}
+    (REPORT_DIR / "gateway_pages_audit.json").write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+    lines = [
+        "# Gateway Pages Audit",
+        "",
+        f"- Status: `{payload['status']}`",
+        f"- Pages checked: {len(items)}",
+        f"- Errors: {len(errors)}",
+        "",
+    ]
+    if errors:
+        lines.append("## Errors")
+        for error in errors:
+            lines.append(f"- {error}")
+        lines.append("")
+    lines.append("## Pages")
+    for item in items:
+        lines.append(f"- `{item['path']}` — missing fragments: {len(item['missing_fragments'])}; meta description: `{item['has_meta_description']}`")
+    (REPORT_DIR / "gateway_pages_audit.md").write_text("\n".join(lines), encoding="utf-8")
+
+
 def main() -> int:
     errors = []
+    items = []
 
     for item in GATEWAYS:
         path = item["path"]
+        page_result = {
+            "path": str(path),
+            "exists": path.exists(),
+            "missing_fragments": [],
+            "has_meta_description": False,
+        }
         if not path.exists():
             errors.append(f"missing gateway page: {path}")
+            items.append(page_result)
             continue
 
         text = path.read_text(encoding="utf-8", errors="ignore")
@@ -85,18 +122,25 @@ def main() -> int:
         ]
         for fragment in required_fragments:
             if fragment not in text:
+                page_result["missing_fragments"].append(fragment)
                 errors.append(f"{path} missing fragment: {fragment}")
 
-        if not has_meta_description(text):
+        page_result["has_meta_description"] = has_meta_description(text)
+        if not page_result["has_meta_description"]:
             errors.append(f"{path} missing useful meta description")
+        items.append(page_result)
+
+    write_report(items, errors)
 
     if errors:
         print("FAIL: gateway pages audit found issues")
         for error in errors:
             print("-", error)
+        print("Report: reports/production_next/gateway_pages_audit.md")
         return 1
 
     print("OK: gateway pages baseline passed.")
+    print("Report: reports/production_next/gateway_pages_audit.md")
     return 0
 
 
