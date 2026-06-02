@@ -60,11 +60,66 @@ body.design-prompt-theme img.content-card-image {
   overflow: hidden !important;
 }
 
+/* English Witness page title repair: keep icon, title, and lead in a normal LTR layout. */
+body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness {
+  display: block !important;
+  direction: ltr !important;
+  text-align: left !important;
+}
+body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness > .page-title-head {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: clamp(16px, 2vw, 28px) !important;
+  width: 100% !important;
+  margin: 0 0 clamp(24px, 3vw, 38px) 0 !important;
+  direction: ltr !important;
+  text-align: left !important;
+}
+body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness .page-title-mark {
+  position: static !important;
+  inset: auto !important;
+  transform: none !important;
+  float: none !important;
+  order: 0 !important;
+  flex: 0 0 clamp(82px, 8vw, 112px) !important;
+  width: clamp(82px, 8vw, 112px) !important;
+  height: clamp(82px, 8vw, 112px) !important;
+  min-width: clamp(82px, 8vw, 112px) !important;
+  margin: 0 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness h1 {
+  position: static !important;
+  transform: none !important;
+  float: none !important;
+  order: 1 !important;
+  flex: 1 1 auto !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness > .lead {
+  display: block !important;
+  width: 100% !important;
+  max-width: 72ch !important;
+  margin: 0 !important;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
 /* Keep mobile padding balanced too */
 @media (max-width: 680px){
   :root{
     --bpi-symmetric-media-pad: 12px;
     --bpi-symmetric-media-radius: 24px;
     --bpi-symmetric-media-inner-radius: 17px;
+  }
+  body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness > .page-title-head {
+    flex-direction: column !important;
+    align-items: flex-start !important;
   }
 }
