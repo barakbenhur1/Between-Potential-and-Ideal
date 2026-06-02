@@ -10,6 +10,7 @@ CHECKS = [
     ["python3", "tools/check_files_filter_live_region.py"],
     ["python3", "tools/check_external_links_accessibility.py"],
     ["python3", "tools/check_qa_docs_index.py"],
+    ["python3", "tools/check_readme_docs.py"],
     ["python3", "tools/check_contributor_guardrails.py"],
     ["python3", "tools/check_performance_budget_docs.py"],
     ["python3", "tools/check_visual_qa_docs.py"],
