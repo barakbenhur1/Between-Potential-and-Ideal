@@ -19,6 +19,8 @@ CHECKS = [
     ["python3", "tools/check_seo_metadata.py"],
     ["python3", "tools/audit_sitemap_canonical_parity.py"],
     ["python3", "tools/audit_search_index_terms.py"],
+    ["python3", "tools/audit_hreflang_links.py"],
+    ["python3", "tools/audit_document_seo_metadata.py"],
     ["python3", "tools/audit_story_appendices_16.py"],
     ["python3", "tools/check_story_registry.py"],
     ["python3", "tools/audit_images_exist.py"],
