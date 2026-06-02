@@ -1,0 +1,46 @@
+/* Stage 3 navigation hotfix: force AI as Witness into the requested early position. */
+
+body.public-page .site-nav a[href*="ai-as-witness"] {
+  order: 45 !important;
+  -webkit-order: 45 !important;
+}
+
+body.public-page .site-nav a[href*="methodology"] {
+  order: 50 !important;
+  -webkit-order: 50 !important;
+}
+
+body.public-page .site-nav a[href$="core.html"],
+body.public-page .site-nav a[href$="core-en.html"] {
+  order: 60 !important;
+}
+
+body.public-page .site-nav a[href$="witness.html"],
+body.public-page .site-nav a[href$="witness-en.html"] {
+  order: 70 !important;
+}
+
+body.public-page .site-nav a[href$="applied.html"],
+body.public-page .site-nav a[href$="applied-en.html"] {
+  order: 80 !important;
+}
+
+body.public-page .site-nav a[href$="ai.html"],
+body.public-page .site-nav a[href$="ai-en.html"] {
+  order: 90 !important;
+}
+
+body.public-page .site-nav a[href$="files.html"],
+body.public-page .site-nav a[href$="files-en.html"] {
+  order: 100 !important;
+}
+
+body.public-page .site-nav a[href$="critique.html"],
+body.public-page .site-nav a[href$="critique-en.html"] {
+  order: 110 !important;
+}
+
+body.public-page .site-nav a[href$="sources.html"],
+body.public-page .site-nav a[href$="sources-en.html"] {
+  order: 120 !important;
+}
