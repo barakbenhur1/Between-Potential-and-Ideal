@@ -8,10 +8,13 @@ Live site:
 
 ## Current repository structure
 
-The repository is intentionally kept minimal.
+The repository is intentionally kept conservative and production-focused.
 
 ```text
 .
+├── .github/workflows/          # Release Guard CI workflow
+├── docs/                       # QA, deploy, guardrails, and operational docs
+├── tools/                      # Permanent QA/audit/release tools
 ├── README.md
 └── site/
     ├── assets / styles / shared site resources
@@ -53,11 +56,13 @@ site/figures/chapter_model_not_final_declaration_v1.png
 
 ## Working rules
 
-Before committing visual or document changes:
+Before committing visual or document changes, run the full local gate:
 
 ```bash
-git status --short
+rm -rf reports tools/__pycache__
+python3 tools/final_release_qa.py --scan
 git diff --check
+git status --short
 ```
 
 For document/image mapping changes, verify at least:
@@ -96,7 +101,10 @@ The site is deployed from the repository to Render. After pushing to `main`, wai
 Before pushing or releasing, run the repo-local final release QA command:
 
 ```bash
+rm -rf reports tools/__pycache__
 python3 tools/final_release_qa.py --scan
+git diff --check
+git status --short
 ```
 
 This command wraps `tools/audit_release_guard.py`, `git diff --check`, and build-info verification. Generated reports under `reports/` are local review artifacts and should not be committed unless explicitly requested.
@@ -109,6 +117,9 @@ Before editing this project, read:
 
 - `docs/contributor-guardrails.md`
 - `docs/deploy.md`
+- `docs/qa-index.md`
+- `docs/tool-inventory.md`
+- `docs/production-next-phase-status.md`
 - `docs/visual-qa.md`
 - `docs/performance-budget.md`
 
