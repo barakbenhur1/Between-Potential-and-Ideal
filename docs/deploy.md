@@ -28,6 +28,7 @@ Run from the repository root:
 ```bash
 rm -rf reports tools/__pycache__
 python3 tools/final_release_qa.py --scan
+git diff --check
 git status --short
 ```
 
@@ -92,6 +93,7 @@ If live output is broken after a push:
 git log --oneline --decorate -10
 git revert <bad_commit_sha>
 python3 tools/final_release_qa.py --scan
+git diff --check
 git push
 ```
 
