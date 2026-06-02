@@ -23,16 +23,15 @@ P = Path("site/build-info.json")
 def main() -> int:
     errors = []
     warnings = []
+    data = {}
 
     if not P.exists():
         errors.append("missing site/build-info.json")
-        data = {}
     else:
         try:
             data = json.loads(P.read_text(encoding="utf-8"))
         except Exception as exc:
             errors.append(f"site/build-info.json is invalid JSON: {exc}")
-            data = {}
 
     if data:
         for key in ["project", "branch", "commit", "short_commit", "generated_at_utc", "source"]:
@@ -57,6 +56,10 @@ def main() -> int:
         return 1
 
     print("OK: build-info baseline passed.")
+    if data:
+        print(f"build-info commit={data.get('commit')}")
+        print(f"build-info short_commit={data.get('short_commit')}")
+        print(f"build-info source={data.get('source')}")
     for warning in warnings:
         print("NOTE:", warning)
     return 0
