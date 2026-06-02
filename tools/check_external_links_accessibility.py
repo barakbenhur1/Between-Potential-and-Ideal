@@ -4,6 +4,7 @@ import re
 import sys
 
 HTML_FILES = sorted(Path("site").rglob("*.html"))
+EXPECTED_MIN_BLANK_LINKS = 1
 
 LINK_RE = re.compile(r"<a\b[^>]*>", re.I | re.S)
 
@@ -53,6 +54,9 @@ def main() -> int:
                 errors.append(f"{path}: target=_blank missing rel noopener noreferrer: {href}")
             if not has_new_tab_label(tag):
                 warnings.append(f"{path}: target=_blank missing accessible new-tab label: {href}")
+
+    if checked < EXPECTED_MIN_BLANK_LINKS:
+        errors.append(f"expected at least {EXPECTED_MIN_BLANK_LINKS} target=_blank link, found {checked}")
 
     if errors:
         print("FAIL: external/new-tab link accessibility audit found issues")
