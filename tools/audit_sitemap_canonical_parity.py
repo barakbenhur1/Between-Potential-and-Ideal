@@ -4,7 +4,8 @@
 
 This tool is conservative and does not inspect protected body content.
 It only checks sitemap structure, canonical base URLs, duplicate URLs,
-index.html duplication, local target existence, and lastmod presence.
+index.html duplication, local target existence, expected gateway coverage,
+and lastmod presence.
 
 Run from repo root:
   python3 tools/audit_sitemap_canonical_parity.py
@@ -22,6 +23,15 @@ SITEMAP = SITE / "sitemap.xml"
 REPORT_DIR = ROOT / "reports" / "production_next"
 BASE_URL = "https://between-potential-and-ideal.onrender.com"
 NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+
+EXPECTED_GATEWAY_PATHS = [
+    "/pages/en/glossary-en.html",
+    "/pages/he/glossary.html",
+    "/pages/en/potential-ideal-optimal-en.html",
+    "/pages/he/potential-ideal-optimal.html",
+    "/pages/en/ai-as-witness-en.html",
+    "/pages/he/ai-as-witness.html",
+]
 
 
 def rel(path: Path) -> str:
@@ -114,6 +124,14 @@ def main() -> int:
         if url in seen:
             errors.append(f"duplicate sitemap URL: {url}")
         seen.add(url)
+
+    for path in EXPECTED_GATEWAY_PATHS:
+        expected = BASE_URL + path
+        if expected not in seen:
+            errors.append(f"expected gateway missing from sitemap: {expected}")
+        local = SITE / path.lstrip("/")
+        if not local.exists():
+            errors.append(f"expected gateway file missing on disk: {rel(local)}")
 
     result = {"status": "OK" if not errors else "FAIL", "url_count": len(urls), "errors": errors, "warnings": warnings, "items": items}
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
