@@ -1,10 +1,6 @@
-/* V121 — scoped Home mobile shell + lightweight Files filtering + file-link target normalization + Witness hero enforcement + Home gateway links.
-   Home mobile loads the same main stylesheet used by the Summary tab, then keeps
-   only the Home opening hero blue/turquoise. Mobile Home content is slightly wider.
-   Files pages normalize real file/download links so they open in a new tab.
-   Existing gateway pages are exposed from the Home page without changing their contents.
-   English Witness hero is normalized after CSS loads to match Core geometry.
-   No unrelated desktop design changes. */
+/* V123 — global header/nav polish + scoped Home mobile shell + lightweight Files filtering + file-link target normalization.
+   Adds gateway tabs to every existing site header, keeps the brand on one line,
+   preserves Home gateway cards, and avoids broad content/design rewrites. */
 (function(){
   'use strict';
 
@@ -22,9 +18,101 @@
       path.endsWith('/site/index.html') || path.endsWith('/site/en.html');
   }
 
+  function inPageFolder(){
+    var path = (location.pathname || '').toLowerCase();
+    return path.indexOf('/pages/he/') !== -1 || path.indexOf('/pages/en/') !== -1 ||
+      path.indexOf('/site/pages/he/') !== -1 || path.indexOf('/site/pages/en/') !== -1;
+  }
+
   function setImportant(el, prop, value){
     if (!el) return;
     el.style.setProperty(prop, value, 'important');
+  }
+
+  function installGlobalHeaderPolish(){
+    if (document.getElementById('bpi-global-header-polish-v123')) return;
+    var style = document.createElement('style');
+    style.id = 'bpi-global-header-polish-v123';
+    style.textContent = [
+      '.site-header{display:grid!important;grid-template-columns:minmax(max-content,1fr) minmax(0,auto) minmax(90px,1fr)!important;align-items:center!important;column-gap:16px!important;}',
+      '.site-header .site-brand{justify-self:start!important;min-width:max-content!important;white-space:nowrap!important;}',
+      '.site-header .site-brand a{white-space:nowrap!important;display:inline-block!important;}',
+      '.site-header .language-switch{justify-self:end!important;white-space:nowrap!important;}',
+      '.site-header .site-nav{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;text-align:center!important;justify-self:center!important;margin-left:auto!important;margin-right:auto!important;max-width:min(100%,1180px)!important;}',
+      '.site-header .site-nav a{text-align:center!important;}',
+      '.bpi-gateway-cards{margin-top:clamp(1.3rem,3vw,2.1rem)!important;}',
+      '@media(max-width:860px){.site-header{display:flex!important;flex-direction:column!important}.site-header .site-brand,.site-header .language-switch,.site-header .site-nav{justify-self:center!important;min-width:0!important}.site-header .site-brand a{white-space:normal!important;text-align:center!important}}'
+    ].join('');
+    document.head.appendChild(style);
+  }
+
+  function hrefFor(pageName){
+    return inPageFolder() ? './' + pageName : (isHe() ? 'pages/he/' + pageName : 'pages/en/' + pageName);
+  }
+
+  function navHasHref(nav, ending){
+    return Array.from(nav.querySelectorAll('a[href]')).some(function(a){
+      var href = (a.getAttribute('href') || '').split('?')[0].split('#')[0].toLowerCase();
+      return href === ending || href.endsWith('/' + ending) || href.endsWith(ending);
+    });
+  }
+
+  function makeNavLink(text, href){
+    var a = document.createElement('a');
+    a.href = href;
+    a.textContent = text;
+    return a;
+  }
+
+  function findNavLink(nav, endings){
+    endings = Array.isArray(endings) ? endings : [endings];
+    return Array.from(nav.querySelectorAll('a[href]')).find(function(a){
+      var href = (a.getAttribute('href') || '').split('?')[0].split('#')[0].toLowerCase();
+      return endings.some(function(ending){
+        return href === ending || href.endsWith('/' + ending) || href.endsWith(ending);
+      });
+    }) || null;
+  }
+
+  function insertAfter(reference, node){
+    if (!reference || !reference.parentNode) return false;
+    reference.parentNode.insertBefore(node, reference.nextSibling);
+    return true;
+  }
+
+  function installGatewayNavTabs(){
+    var nav = document.querySelector('.site-header .site-nav');
+    if (!nav) return;
+
+    var he = isHe();
+    var glossaryName = he ? 'glossary.html' : 'glossary-en.html';
+    var conceptsName = he ? 'potential-ideal-optimal.html' : 'potential-ideal-optimal-en.html';
+    var aiWitnessName = he ? 'ai-as-witness.html' : 'ai-as-witness-en.html';
+
+    var summary = findNavLink(nav, he ? ['summary.html'] : ['summary-en.html']);
+    var core = findNavLink(nav, he ? ['core.html'] : ['core-en.html']);
+    var ai = findNavLink(nav, he ? ['ai.html'] : ['ai-en.html']);
+
+    var glossary = navHasHref(nav, glossaryName) ? null : makeNavLink(he ? 'מילון' : 'Glossary', hrefFor(glossaryName));
+    var concepts = navHasHref(nav, conceptsName) ? null : makeNavLink(he ? 'מושגים' : 'Concepts', hrefFor(conceptsName));
+    var aiWitness = navHasHref(nav, aiWitnessName) ? null : makeNavLink(he ? 'AI כעדות' : 'AI as Witness', hrefFor(aiWitnessName));
+
+    if (glossary || concepts) {
+      var insertionPoint = summary || core;
+      if (concepts) {
+        if (insertionPoint) insertAfter(insertionPoint, concepts);
+        else nav.appendChild(concepts);
+      }
+      if (glossary) {
+        if (insertionPoint) insertAfter(insertionPoint, glossary);
+        else nav.appendChild(glossary);
+      }
+    }
+
+    if (aiWitness) {
+      if (ai) insertAfter(ai, aiWitness);
+      else nav.appendChild(aiWitness);
+    }
   }
 
   function installEnglishWitnessHeroLayout(){ return; }
@@ -48,18 +136,12 @@
       'html,body{width:100%!important;max-width:100%!important;overflow-x:hidden!important;}',
       'body.public-page{background:radial-gradient(circle at 0% 12%,rgba(0,167,183,.10),transparent 34rem),radial-gradient(circle at 100% 0%,rgba(242,142,43,.12),transparent 32rem),#f7efe1!important;color:#102033!important;}',
       'body.public-page .site-main{background:transparent!important;color:#102033!important;max-width:100vw!important;overflow-x:hidden!important;}',
-
-      /* Use Summary shell, only guarantee no horizontal mobile rail on Home. */
       'body.public-page .site-header{background:linear-gradient(135deg,#0A3A68,#0C526D 58%,rgba(242,142,43,.92))!important;color:#fff!important;}',
       'body.public-page .site-header a{color:#fff!important;}',
       'body.public-page .site-header .site-nav{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;overflow:visible!important;overflow-x:visible!important;scroll-snap-type:none!important;}',
       'body.public-page .site-header .site-nav a{transform:none!important;scroll-snap-align:none!important;}',
-
-      /* Summary-like page spacing. */
       'body.public-page .breadcrumbs{width:min(100% - 24px,1120px)!important;max-width:calc(100vw - 24px)!important;margin:52px auto 14px!important;box-sizing:border-box!important;}',
       'body.public-page .opening-visual,body.public-page .signature-blurbs,body.public-page .notice-box,body.public-page .hub-grid,body.public-page .reading-path-cta{width:min(100% - 24px,1120px)!important;max-width:calc(100vw - 24px)!important;margin-left:auto!important;margin-right:auto!important;box-sizing:border-box!important;}',
-
-      /* Restore the Home-specific opening block: blue/turquoise card with white text. */
       'body.public-page .concise-hero,body.public-page .hero.concise-hero{display:block!important;width:min(100% - 24px,1120px)!important;max-width:calc(100vw - 24px)!important;margin:0 auto 26px!important;box-sizing:border-box!important;padding:clamp(34px,8vw,56px) clamp(24px,6vw,42px)!important;border-radius:30px!important;border:1px solid rgba(255,255,255,.22)!important;background:linear-gradient(145deg,#06466d 0%,#007b91 58%,#008fa2 100%)!important;color:#fffaf0!important;box-shadow:0 18px 48px rgba(10,58,104,.18)!important;text-align:center!important;overflow:hidden!important;}',
       'body.public-page .concise-hero::before,body.public-page .hero.concise-hero::before{display:none!important;content:none!important;}',
       'body.public-page .concise-hero .kicker,body.public-page .hero.concise-hero .kicker{color:#fffaf0!important;background:transparent!important;border:0!important;margin:0 auto clamp(30px,8vw,58px)!important;padding:0!important;text-align:center!important;font-weight:800!important;}',
@@ -81,18 +163,19 @@
     if (!main) return;
 
     var he = isHe();
+    var prefix = he ? 'pages/he/' : 'pages/en/';
     var section = document.createElement('section');
     section.id = 'bpi-home-gateway-links';
-    section.className = 'hub-grid three';
+    section.className = 'hub-grid three bpi-gateway-cards';
     section.setAttribute('aria-label', he ? 'מדריכי כניסה מהירים' : 'Quick entry guides');
     section.innerHTML = he ? [
-      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="מילון מושגים" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_methodology.png" width="480"/><h2>מילון מושגים</h2></div><p>כניסה קצרה למונחי היסוד של הפרויקט ולדרך שבה הם נבדלים זה מזה.</p><a class="card-link" href="pages/he/glossary.html">פתח מילון מושגים</a></article>',
-      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="פוטנציאל, אידיאל ואופטימלי" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_core.png" width="480"/><h2>פוטנציאל, אידיאל, אופטימלי</h2></div><p>דף שער שמפריד בין שדה האפשרויות, הצורה הראויה, והתרגום המקומי תחת מגבלות.</p><a class="card-link" href="pages/he/potential-ideal-optimal.html">קרא את דף המושגים</a></article>',
-      '<article class="hub-card media-card accent-ai"><div class="card-media-head"><img alt="בינה מלאכותית כעדות" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_ai.png" width="480"/><h2>בינה מלאכותית כעדות</h2></div><p>שער קצר לקריאת AI כמראה, עדשה וכלי בדיקה — לא כמקור חי ולא כסמכות.</p><a class="card-link" href="pages/he/ai-as-witness.html">פתח את שער ה־AI</a></article>'
+      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="מילון מושגים" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_methodology.png" width="480"/><h2>מילון מושגים</h2></div><p>כניסה קצרה למונחי היסוד של הפרויקט ולדרך שבה הם נבדלים זה מזה.</p><a class="card-link" href="' + prefix + 'glossary.html">פתח מילון מושגים</a></article>',
+      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="פוטנציאל, אידיאל ואופטימלי" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_core.png" width="480"/><h2>פוטנציאל, אידיאל, אופטימלי</h2></div><p>דף שער שמפריד בין שדה האפשרויות, הצורה הראויה, והתרגום המקומי תחת מגבלות.</p><a class="card-link" href="' + prefix + 'potential-ideal-optimal.html">קרא את דף המושגים</a></article>',
+      '<article class="hub-card media-card accent-ai"><div class="card-media-head"><img alt="בינה מלאכותית כעדות" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_ai.png" width="480"/><h2>בינה מלאכותית כעדות</h2></div><p>שער קצר לקריאת AI כמראה, עדשה וכלי בדיקה — לא כמקור חי ולא כסמכות.</p><a class="card-link" href="' + prefix + 'ai-as-witness.html">פתח את שער ה־AI</a></article>'
     ].join('') : [
-      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="Glossary" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_methodology.png" width="480"/><h2>Glossary</h2></div><p>A short entry point into the project’s key terms and the distinctions between them.</p><a class="card-link" href="pages/en/glossary-en.html">Open the glossary</a></article>',
-      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="Potential, Ideal, Optimal" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_core.png" width="480"/><h2>Potential, Ideal, Optimal</h2></div><p>A gateway page separating the field of possibility, the worthy form, and the local translation under constraints.</p><a class="card-link" href="pages/en/potential-ideal-optimal-en.html">Read the concepts page</a></article>',
-      '<article class="hub-card media-card accent-ai"><div class="card-media-head"><img alt="AI as Witness" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_ai.png" width="480"/><h2>AI as Witness</h2></div><p>A short gateway for reading AI as mirror, lens, and stress test — not as a living source or authority.</p><a class="card-link" href="pages/en/ai-as-witness-en.html">Open the AI gateway</a></article>'
+      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="Glossary" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_methodology.png" width="480"/><h2>Glossary</h2></div><p>A short entry point into the project’s key terms and the distinctions between them.</p><a class="card-link" href="' + prefix + 'glossary-en.html">Open the glossary</a></article>',
+      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="Potential, Ideal, Optimal" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_core.png" width="480"/><h2>Potential, Ideal, Optimal</h2></div><p>A gateway page separating the field of possibility, the worthy form, and the local translation under constraints.</p><a class="card-link" href="' + prefix + 'potential-ideal-optimal-en.html">Read the concepts page</a></article>',
+      '<article class="hub-card media-card accent-ai"><div class="card-media-head"><img alt="AI as Witness" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_ai.png" width="480"/><h2>AI as Witness</h2></div><p>A short gateway for reading AI as mirror, lens, and stress test — not as a living source or authority.</p><a class="card-link" href="' + prefix + 'ai-as-witness-en.html">Open the AI gateway</a></article>'
     ].join('');
 
     var firstHubGrid = main.querySelector('.hub-grid.three');
@@ -220,6 +303,8 @@
   }
 
   function init(){
+    installGlobalHeaderPolish();
+    installGatewayNavTabs();
     installEnglishWitnessHeroLayout();
     if (window.requestAnimationFrame) window.requestAnimationFrame(installEnglishWitnessHeroLayout);
     window.setTimeout(installEnglishWitnessHeroLayout, 120);
