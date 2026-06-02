@@ -1,0 +1,39 @@
+/* BPI Stage 3 — final outline style for card CTA buttons. */
+
+html body.public-page.design-prompt-theme main#main article a.card-link,
+html body.public-page.design-prompt-theme main#main article a.download-button,
+html body.public-page.design-prompt-theme main#main .hub-card a.card-link,
+html body.public-page.design-prompt-theme main#main .hub-card a.download-button,
+html body.public-page.design-prompt-theme main#main .media-card a.card-link,
+html body.public-page.design-prompt-theme main#main .media-card a.download-button,
+html body.public-page.design-prompt-theme main#main .reader-card a.card-link,
+html body.public-page.design-prompt-theme main#main .reader-card a.download-button,
+html body.public-page.design-prompt-theme main#main .appendix-card a.card-link,
+html body.public-page.design-prompt-theme main#main .appendix-card a.download-button {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  color: #0A3A68 !important;
+  border: 1.5px solid rgba(230,184,74,.72) !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  border-radius: 999px !important;
+  font-weight: 850 !important;
+}
+
+html body.public-page.design-prompt-theme main#main article a.card-link:hover,
+html body.public-page.design-prompt-theme main#main article a.download-button:hover,
+html body.public-page.design-prompt-theme main#main .hub-card a.card-link:hover,
+html body.public-page.design-prompt-theme main#main .hub-card a.download-button:hover,
+html body.public-page.design-prompt-theme main#main .media-card a.card-link:hover,
+html body.public-page.design-prompt-theme main#main .media-card a.download-button:hover,
+html body.public-page.design-prompt-theme main#main .reader-card a.card-link:hover,
+html body.public-page.design-prompt-theme main#main .reader-card a.download-button:hover,
+html body.public-page.design-prompt-theme main#main .appendix-card a.card-link:hover,
+html body.public-page.design-prompt-theme main#main .appendix-card a.download-button:hover {
+  background: #fff7e8 !important;
+  background-image: none !important;
+  color: #0A3A68 !important;
+  border-color: #e6b84a !important;
+  box-shadow: none !important;
+}
