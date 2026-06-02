@@ -8,6 +8,7 @@
 @import url("./assets/bpi-v96-user-visual-corrections.css?v=20260526-v96-user-corrections");
 @import url("./assets/bpi-summary-unique-visual.css?v=20260526-summary-unique-visual");
 @import url("./assets/bpi-mobile-site-fixes.css?v=20260526-mobile-site-fixes-v108-wrap-no-scroll");
+@import url("./assets/bpi-inner-pages-premium-redesign.css?v=20260603-stage3-inner-premium-v1");
 
 /* bpi-v300-site-accessibility-product-fixes */
 /* BPI V300 - product-level accessibility and navigation safety fixes. */
@@ -18,40 +19,8 @@
   transform:translateY(-160%)!important;
   background:#1d2938!important;
   color:#fff!important;
-  padding:8px 12px!important;
-  border-radius:8px!important;
+  padding:10px 14px!important;
+  border-radius:999px!important;
   z-index:9999!important;
 }
 .skip-link:focus{transform:translateY(0)!important;}
-a:focus-visible,button:focus-visible,[role="button"]:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{
-  outline:3px solid #b87926!important;
-  outline-offset:3px!important;
-  border-radius:6px!important;
-}
-[id]{scroll-margin-top:78px;}
-.bpi-start-here-clarity,.bpi-recommended-start{
-  margin:22px auto!important;
-  padding:18px 20px!important;
-  max-width:980px!important;
-  border:1px solid rgba(184,121,38,.28)!important;
-  border-radius:18px!important;
-  background:#fff7e8!important;
-  box-shadow:0 8px 22px rgba(23,32,45,.05)!important;
-  box-sizing:border-box!important;
-}
-
-/* bpi-v302-witness-visual-size-match-applied
-   Keep the Witness/עדות tab hero image visually aligned with the Applied/יישום tab hero. */
-body.section-witness .tab-visual.compact-section-visual{
-  width:min(560px,100%)!important;
-  max-width:min(560px,100%)!important;
-  margin:16px auto 22px!important;
-}
-body.section-witness .tab-visual.compact-section-visual > img{
-  width:100%!important;
-  height:clamp(136px,18vw,212px)!important;
-  max-height:212px!important;
-  aspect-ratio:21 / 7!important;
-  object-fit:cover!important;
-  object-position:center center!important;
-}
