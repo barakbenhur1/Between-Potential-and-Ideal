@@ -1,0 +1,74 @@
+/* Final override loaded by the small helper script after all page CSS.
+   Purpose: keep AI card buttons inside their cards and make HTML/primary actions gold. */
+
+html body.public-page main#main .download-row a[href$='.html'],
+html body.public-page main#main .download-row a[href*='.html?'],
+html body.public-page main#main .download-row a[href*='.html#'],
+html body.public-page main#main .download-strip a[href$='.html'],
+html body.public-page main#main .download-strip a[href*='.html?'],
+html body.public-page main#main .download-strip a[href*='.html#'],
+html body.public-page main#main .appendix-actions a[href$='.html'],
+html body.public-page main#main .appendix-actions a[href*='.html?'],
+html body.public-page main#main .appendix-actions a[href*='.html#'],
+html body.public-page main#main .primary-format,
+html body.public-page main#main .download-button.primary,
+html body.public-page main#main .card-link {
+  background: linear-gradient(135deg,#b98726,#e6b84a,#f5d06b) !important;
+  background-color: #e6b84a !important;
+  background-image: linear-gradient(135deg,#b98726,#e6b84a,#f5d06b) !important;
+  color: #07101d !important;
+  border: 1.5px solid transparent !important;
+  box-shadow: 0 8px 18px rgba(184,135,38,.18) !important;
+  text-shadow: none !important;
+}
+
+html body.section-ai main#main .ai-documents-card .appendix-actions {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  gap: 12px !important;
+  padding: 6px 0 0 !important;
+  margin-top: auto !important;
+  overflow: visible !important;
+  justify-content: stretch !important;
+  align-items: center !important;
+}
+
+html body.public-page-he.section-ai main#main .ai-documents-card .appendix-actions { direction: rtl !important; }
+html body.public-page-en.section-ai main#main .ai-documents-card .appendix-actions { direction: ltr !important; }
+
+html body.section-ai main#main .ai-documents-card .appendix-actions a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  min-height: 42px !important;
+  padding: 9px 6px !important;
+  box-sizing: border-box !important;
+  border-radius: 999px !important;
+  font-size: clamp(.84rem,.86vw,.98rem) !important;
+  font-weight: 850 !important;
+  line-height: 1.05 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href$='.html'],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*='.html?'],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*='.html#'],
+html body.section-ai main#main .ai-documents-card .appendix-actions a.primary-format { order: 1 !important; }
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href$='.pdf'],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*='.pdf?'],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*='.pdf#'] { order: 2 !important; }
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href$='.docx'],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*='.docx?'],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*='.docx#'] { order: 3 !important; }
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href$='.md'],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*='.md?'],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*='.md#'] { order: 4 !important; }
