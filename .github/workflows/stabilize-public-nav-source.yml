@@ -68,3 +68,5 @@ jobs:
           git add site/index.html site/en.html site/pages/he site/pages/en
           git commit -m "Normalize public nav source across pages"
           git push origin HEAD:bpi-premium-design-stage3
+
+# trigger: 2026-06-03T00:00:00Z
