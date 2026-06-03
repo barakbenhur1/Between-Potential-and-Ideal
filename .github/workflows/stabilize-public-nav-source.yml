@@ -1,0 +1,33 @@
+name: Stabilize public nav source
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - bpi-premium-design-stage3
+    paths:
+      - tools/stabilize_public_nav_source.py
+      - .github/workflows/stabilize-public-nav-source.yml
+
+permissions:
+  contents: write
+
+jobs:
+  stabilize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: bpi-premium-design-stage3
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Normalize source nav
+        run: python3 tools/stabilize_public_nav_source.py
+      - name: Commit generated HTML
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Normalize public nav source across pages
+          file_pattern: site/index.html site/en.html site/pages/he/*.html site/pages/en/*.html
