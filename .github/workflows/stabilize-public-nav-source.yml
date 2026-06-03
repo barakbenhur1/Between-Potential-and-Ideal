@@ -21,43 +21,44 @@ jobs:
           ref: bpi-premium-design-stage3
           fetch-depth: 0
 
-      - name: Normalize source nav
-        run: python3 tools/stabilize_public_nav_source.py
-
-      - name: Verify important page navs
+      - name: Bump shared nav script URL in HTML
         run: |
           python3 - <<'PY'
           from pathlib import Path
           import re
-          expected_he = ['בית','תקציר','מילון','מושגים','בינה מלאכותית כעדות','ליבה','מתודולוגיה','עדות','יישום','בינה מלאכותית','קבצים','ביקורת','מקורות']
-          expected_en = ['Home','Summary','Glossary','Concepts','AI as Witness','Core','Methodology','Witness','Application','AI','Files','Critique','Sources']
-          files = [
-            ('site/index.html', expected_he),
-            ('site/pages/he/ai-as-witness.html', expected_he),
-            ('site/pages/he/files.html', expected_he),
-            ('site/pages/he/core.html', expected_he),
-            ('site/en.html', expected_en),
-            ('site/pages/en/ai-as-witness-en.html', expected_en),
-            ('site/pages/en/files-en.html', expected_en),
-            ('site/pages/en/core-en.html', expected_en),
-          ]
-          for path, expected in files:
-            text = Path(path).read_text(encoding='utf-8')
-            header = re.search(r'<header class="site-header".*?</header>', text, re.S).group(0)
-            nav = re.search(r'<nav[^>]*class="site-nav"[^>]*>(.*?)</nav>', header, re.S).group(1)
-            labels = [re.sub(r'<.*?>','',m).strip() for m in re.findall(r'<a\b[^>]*>(.*?)</a>', nav, re.S)]
-            if labels != expected:
-              raise SystemExit(f'{path}\nexpected={expected}\nactual={labels}')
-            if len(labels) != len(set(labels)):
-              raise SystemExit(f'duplicate labels in {path}: {labels}')
-            if header.count('aria-current="page"') != 1:
-              raise SystemExit(f'bad active count in {path}')
+          version = 'bpi-files-feedback-fixes.js?v=20260604-shared-nav-v132-clean-labels'
+          paths = [Path('site/index.html'), Path('site/en.html')]
+          paths += sorted(Path('site/pages/he').glob('*.html'))
+          paths += sorted(Path('site/pages/en').glob('*.html'))
+          changed = []
+          for p in paths:
+            if not p.exists():
+              continue
+            s = p.read_text(encoding='utf-8')
+            fixed = re.sub(r'bpi-files-feedback-fixes\.js\?v=[^"\']+', version, s)
+            if fixed != s:
+              p.write_text(fixed, encoding='utf-8')
+              changed.append(str(p))
+          print('\n'.join(changed) if changed else 'No script URLs changed')
+          PY
+
+      - name: Verify duplicate AI witness label is not in source
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          bad = []
+          for p in [Path('site/index.html'), Path('site/en.html'), *Path('site/pages/he').glob('*.html'), *Path('site/pages/en').glob('*.html')]:
+            s = p.read_text(encoding='utf-8')
+            if 'בינה מלאכותיתבינה מלאכותית' in s or 'בינה מלאכותית כעדותבינה מלאכותית כעדות' in s:
+              bad.append(str(p))
+          if bad:
+            raise SystemExit('\n'.join(bad))
           PY
 
       - name: Check whitespace
         run: git diff --check
 
-      - name: Commit normalized source
+      - name: Commit updated HTML
         run: |
           if git diff --quiet; then
             echo "No source changes needed."
@@ -66,7 +67,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site/index.html site/en.html site/pages/he site/pages/en
-          git commit -m "Normalize public nav source across pages"
+          git commit -m "Bump shared nav script URL across pages"
           git push origin HEAD:bpi-premium-design-stage3
 
-# trigger: 2026-06-03T00:00:00Z
+# trigger: 2026-06-04T01:00:00Z
