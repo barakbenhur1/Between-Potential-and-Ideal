@@ -14,7 +14,7 @@
     ['מתודולוגיה','methodology.html','methodology'],
     ['עדות','witness.html','witness'],
     ['יישום','applied.html','applied'],
-    ['בינה מלאכותית','ai.html','ai'],
+    ['AI','ai.html','ai'],
     ['קבצים','files.html','files'],
     ['ביקורת','critique.html','critique'],
     ['מקורות','sources.html','sources']
@@ -101,6 +101,8 @@
       var text = (a.textContent || '').replace(/\s+/g, ' ').trim();
       if (href.indexOf('ai-as-witness') !== -1) {
         a.textContent = isHebrew() ? AI_WITNESS_HE : AI_WITNESS_EN;
+      } else if (href.indexOf('ai.html') !== -1 && isHebrew()) {
+        a.textContent = 'AI';
       } else if (text.indexOf(AI_WITNESS_HE + AI_WITNESS_HE) !== -1) {
         a.textContent = text.replace(AI_WITNESS_HE + AI_WITNESS_HE, AI_WITNESS_HE);
       } else if (text.indexOf(AI_WITNESS_EN + AI_WITNESS_EN) !== -1) {
