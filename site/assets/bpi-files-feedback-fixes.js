@@ -1,6 +1,5 @@
-/* V129 — deterministic stable nav + language switch + file targets + final CSS loader.
-   This replaces inconsistent per-page nav HTML with one canonical nav per language.
-   It does not change page content and does not guess links from existing anchors. */
+/* V130 — deterministic stable nav + language switch + file targets + final CSS loader.
+   Single source of truth for public nav. Does not change page content. */
 (function(){
   'use strict';
 
@@ -30,8 +29,8 @@
       ['מילון', page('glossary.html'), 'glossary.html'],
       ['מושגים', page('potential-ideal-optimal.html'), 'potential-ideal-optimal.html'],
       ['בינה מלאכותית כעדות', page('ai-as-witness.html'), 'ai-as-witness.html'],
-      ['מתודולוגיה', page('methodology.html'), 'methodology.html'],
       ['ליבה', page('core.html'), 'core.html'],
+      ['מתודולוגיה', page('methodology.html'), 'methodology.html'],
       ['עדות', page('witness.html'), 'witness.html'],
       ['יישום', page('applied.html'), 'applied.html'],
       ['בינה מלאכותית', page('ai.html'), 'ai.html'],
@@ -44,8 +43,8 @@
       ['Glossary', page('glossary-en.html'), 'glossary-en.html'],
       ['Concepts', page('potential-ideal-optimal-en.html'), 'potential-ideal-optimal-en.html'],
       ['AI as Witness', page('ai-as-witness-en.html'), 'ai-as-witness-en.html'],
-      ['Methodology', page('methodology-en.html'), 'methodology-en.html'],
       ['Core', page('core-en.html'), 'core-en.html'],
+      ['Methodology', page('methodology-en.html'), 'methodology-en.html'],
       ['Witness', page('witness-en.html'), 'witness-en.html'],
       ['Application', page('applied-en.html'), 'applied-en.html'],
       ['AI', page('ai-en.html'), 'ai-en.html'],
@@ -124,11 +123,12 @@
   }
 
   function loadFinalCss(){
-    if (document.getElementById('bpi-final-ai-buttons-fix-v129')) return;
+    var existing = document.getElementById('bpi-final-ai-buttons-fix-v130');
+    if (existing) return;
     var link = document.createElement('link');
-    link.id = 'bpi-final-ai-buttons-fix-v129';
+    link.id = 'bpi-final-ai-buttons-fix-v130';
     link.rel = 'stylesheet';
-    link.href = asset('bpi-final-ai-buttons-fix.css?v=20260603-v129');
+    link.href = asset('bpi-final-ai-buttons-fix.css?v=20260603-v130-nav-buttons');
     document.head.appendChild(link);
   }
 
