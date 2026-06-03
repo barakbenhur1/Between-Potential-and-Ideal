@@ -82,6 +82,27 @@ html body.public-page.design-prompt-theme .site-header .site-nav a{
   border-radius:999px!important;
 }
 
+/* prevent the long AI-as-witness tab from visually merging with adjacent tabs */
+html body.public-page .site-header .site-nav a[href*="ai-as-witness"],
+html body.public-page.design-prompt-theme .site-header .site-nav a[href*="ai-as-witness"]{
+  position:relative!important;
+  z-index:3!important;
+  max-width:12.5rem!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  white-space:nowrap!important;
+  letter-spacing:-.01em!important;
+}
+html body.public-page-he .site-header .site-nav a[href*="ai-as-witness"]{
+  font-size:clamp(.58rem,.60vw,.78rem)!important;
+  padding-inline:.58rem!important;
+}
+html body.public-page .site-header .site-nav a[href*="ai-as-witness"]::before,
+html body.public-page .site-header .site-nav a[href*="ai-as-witness"]::after{
+  content:none!important;
+  display:none!important;
+}
+
 html body.public-page .site-header .language-switch,
 html body.public-page.design-prompt-theme .site-header .language-switch{
   grid-column:3!important;
