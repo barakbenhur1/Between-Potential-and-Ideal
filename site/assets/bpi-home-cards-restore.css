@@ -1,6 +1,15 @@
-/* BPI Stage 3 — restore homepage card styling only. */
+/* BPI Stage 3 — restore homepage card styling only.
+   High-specificity home-only selectors so inner-page button/card fixes cannot leak into Home. */
 
-body.public-page.bpi-home-page main#main section.hub-grid > article.hub-card.media-card {
+html body.public-page.design-prompt-theme.bpi-home-page main#main section.hub-grid > article.hub-card.media-card,
+html body.public-page.design-prompt-theme.bpi-home-page main#main section.bpi-gateway-cards > article.hub-card.media-card,
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs article.signature-main-blurb,
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs article.signature-blurb-card,
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs .minimal-card,
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs .ellipsis-card,
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs .question-card,
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs .vessel-card,
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs .paradox-card {
   background:
     radial-gradient(ellipse 70% 60% at 18% 0%, rgba(230,184,74,.13), transparent 60%),
     radial-gradient(ellipse 70% 60% at 100% 100%, rgba(94,234,212,.08), transparent 58%),
@@ -11,19 +20,35 @@ body.public-page.bpi-home-page main#main section.hub-grid > article.hub-card.med
   border-radius: 24px !important;
 }
 
-body.public-page.bpi-home-page main#main section.hub-grid > article.hub-card.media-card h2,
-body.public-page.bpi-home-page main#main section.hub-grid > article.hub-card.media-card h3 {
+html body.public-page.design-prompt-theme.bpi-home-page main#main section.hub-grid > article.hub-card.media-card::before,
+html body.public-page.design-prompt-theme.bpi-home-page main#main section.bpi-gateway-cards > article.hub-card.media-card::before,
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs article::before {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+html body.public-page.design-prompt-theme.bpi-home-page main#main section.hub-grid > article.hub-card.media-card h2,
+html body.public-page.design-prompt-theme.bpi-home-page main#main section.hub-grid > article.hub-card.media-card h3,
+html body.public-page.design-prompt-theme.bpi-home-page main#main section.bpi-gateway-cards > article.hub-card.media-card h2,
+html body.public-page.design-prompt-theme.bpi-home-page main#main section.bpi-gateway-cards > article.hub-card.media-card h3,
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs article h2,
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs article h3,
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs article strong {
   color: #f8fafc !important;
   text-shadow: 0 2px 16px rgba(0,0,0,.34) !important;
 }
 
-body.public-page.bpi-home-page main#main section.hub-grid > article.hub-card.media-card p {
+html body.public-page.design-prompt-theme.bpi-home-page main#main section.hub-grid > article.hub-card.media-card p,
+html body.public-page.design-prompt-theme.bpi-home-page main#main section.bpi-gateway-cards > article.hub-card.media-card p,
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs article p {
   color: rgba(226,232,240,.94) !important;
   text-shadow: 0 1px 12px rgba(0,0,0,.28) !important;
 }
 
-body.public-page.bpi-home-page main#main section.hub-grid > article.hub-card.media-card a.card-link,
-body.public-page.bpi-home-page main#main section.hub-grid > article.hub-card.media-card a.download-button {
+html body.public-page.design-prompt-theme.bpi-home-page main#main section.hub-grid > article.hub-card.media-card a.card-link,
+html body.public-page.design-prompt-theme.bpi-home-page main#main section.bpi-gateway-cards > article.hub-card.media-card a.card-link,
+html body.public-page.design-prompt-theme.bpi-home-page main#main section.hub-grid > article.hub-card.media-card a.download-button,
+html body.public-page.design-prompt-theme.bpi-home-page main#main section.bpi-gateway-cards > article.hub-card.media-card a.download-button {
   background: linear-gradient(135deg, #b98726, #e6b84a, #f5d06b) !important;
   background-image: linear-gradient(135deg, #b98726, #e6b84a, #f5d06b) !important;
   color: #07101d !important;
