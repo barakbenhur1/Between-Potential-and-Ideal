@@ -1,12 +1,15 @@
 (function(){
   'use strict';
 
+  var AI_WITNESS_HE = 'בינה מלאכותית כעדות';
+  var AI_WITNESS_EN = 'AI as Witness';
+
   var HE_ITEMS = [
     ['בית','index.html','index'],
     ['תקציר','summary.html','summary'],
     ['מילון','glossary.html','glossary'],
     ['מושגים','potential-ideal-optimal.html','potential-ideal-optimal'],
-    ['בינה מלאכותית כעדות','ai-as-witness.html','ai-as-witness'],
+    [AI_WITNESS_HE,'ai-as-witness.html','ai-as-witness'],
     ['ליבה','core.html','core'],
     ['מתודולוגיה','methodology.html','methodology'],
     ['עדות','witness.html','witness'],
@@ -22,7 +25,7 @@
     ['Summary','summary-en.html','summary-en'],
     ['Glossary','glossary-en.html','glossary-en'],
     ['Concepts','potential-ideal-optimal-en.html','potential-ideal-optimal-en'],
-    ['AI as Witness','ai-as-witness-en.html','ai-as-witness-en'],
+    [AI_WITNESS_EN,'ai-as-witness-en.html','ai-as-witness-en'],
     ['Core','core-en.html','core-en'],
     ['Methodology','methodology-en.html','methodology-en'],
     ['Witness','witness-en.html','witness-en'],
@@ -91,6 +94,29 @@
       return '<a' + (active ? ' aria-current="page" class="active"' : '') + ' href="' + pageHref(item[1]) + '">' + escapeText(item[0]) + '</a>';
     }).join('');
   }
+
+  function normalizeDuplicatedLabels(){
+    Array.from(document.querySelectorAll('.site-header .site-nav a')).forEach(function(a){
+      var href = (a.getAttribute('href') || '').toLowerCase();
+      var text = (a.textContent || '').replace(/\s+/g, ' ').trim();
+      if (href.indexOf('ai-as-witness') !== -1) {
+        a.textContent = isHebrew() ? AI_WITNESS_HE : AI_WITNESS_EN;
+      } else if (text.indexOf(AI_WITNESS_HE + AI_WITNESS_HE) !== -1) {
+        a.textContent = text.replace(AI_WITNESS_HE + AI_WITNESS_HE, AI_WITNESS_HE);
+      } else if (text.indexOf(AI_WITNESS_EN + AI_WITNESS_EN) !== -1) {
+        a.textContent = text.replace(AI_WITNESS_EN + AI_WITNESS_EN, AI_WITNESS_EN);
+      }
+    });
+  }
+
+  function installNoPseudoNavRule(){
+    if (document.getElementById('bpi-no-duplicated-nav-pseudo')) return;
+    var style = document.createElement('style');
+    style.id = 'bpi-no-duplicated-nav-pseudo';
+    style.textContent = '.site-header .site-nav a::before,.site-header .site-nav a::after{content:none!important;display:none!important;}';
+    document.head.appendChild(style);
+  }
+
   function renderSharedHeader(){
     var header = document.querySelector('.site-header');
     if (!header) return;
@@ -104,6 +130,7 @@
     header.innerHTML = '<div class="site-brand"><a href="' + homeHref() + '">Between Potential and Ideal</a></div>' +
       '<nav aria-label="Primary navigation" class="site-nav" role="navigation">' + navHtml(items, activeKey) + '</nav>' +
       '<a class="language-switch" href="' + langHref() + '" title="' + (he ? 'English version' : 'גרסה עברית') + '">' + (he ? 'English' : 'עברית') + '</a>';
+    normalizeDuplicatedLabels();
     document.body.classList.add('bpi-shared-nav-ready');
   }
 
@@ -119,7 +146,7 @@
       a.setAttribute('rel', rel.join(' '));
     });
   }
-  function init(){ renderSharedHeader(); normalizeFileTargets(); }
+  function init(){ installNoPseudoNavRule(); renderSharedHeader(); normalizeDuplicatedLabels(); normalizeFileTargets(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
