@@ -1,4 +1,4 @@
-/* V131 — deterministic stable nav + language switch + file targets + final CSS loader.
+/* V132 — deterministic stable nav + language switch + file targets + final CSS loader.
    Single source of truth for public nav. Does not change page content. */
 (function(){
   'use strict';
@@ -123,18 +123,18 @@
   }
 
   function loadFinalCss(){
-    if (!document.getElementById('bpi-final-ai-buttons-fix-v131')) {
+    if (!document.getElementById('bpi-final-ai-buttons-fix-v132')) {
       var oldLink = document.createElement('link');
-      oldLink.id = 'bpi-final-ai-buttons-fix-v131';
+      oldLink.id = 'bpi-final-ai-buttons-fix-v132';
       oldLink.rel = 'stylesheet';
-      oldLink.href = asset('bpi-final-ai-buttons-fix.css?v=20260603-v131');
+      oldLink.href = asset('bpi-final-ai-buttons-fix.css?v=20260603-v132');
       document.head.appendChild(oldLink);
     }
-    if (!document.getElementById('bpi-nav-and-primary-final-v131')) {
+    if (!document.getElementById('bpi-nav-and-primary-final-v132')) {
       var link = document.createElement('link');
-      link.id = 'bpi-nav-and-primary-final-v131';
+      link.id = 'bpi-nav-and-primary-final-v132';
       link.rel = 'stylesheet';
-      link.href = asset('bpi-nav-and-primary-final-v131.css?v=20260603-v131');
+      link.href = asset('bpi-nav-and-primary-final-v131.css?v=20260603-v132-home-en');
       document.head.appendChild(link);
     }
   }
