@@ -1,6 +1,6 @@
 /* BPI Stage 3 — files page visual fix. Loaded late from bpi-start-here-layout-fix.css.
    Important: only previously special format buttons become filled gold.
-   Normal file format buttons remain secondary/outline. */
+   HTML links are the primary/special format; other file formats remain secondary/outline. */
 
 body.public-page.section-files main#main .hub-card,
 body.public-page.section-files main#main .media-card,
@@ -49,7 +49,7 @@ body.public-page.section-files main#main .source-files-card p {
   text-shadow: none !important;
 }
 
-/* Default card CTA / normal format links: secondary outline. */
+/* Default card CTA / normal non-HTML format links: secondary outline. */
 body.public-page.section-files main#main .card-link,
 body.public-page.section-files main#main .download-button,
 body.public-page.section-files main#main .download-row a,
@@ -65,10 +65,22 @@ body.public-page.section-files main#main .reading-path-actions a {
   font-weight: 800 !important;
 }
 
-/* Only the buttons that were special before stay primary; they now use the new gold button. */
+/* Primary/special format buttons: HTML plus explicit primary markers. */
 body.public-page.section-files main#main .primary-format,
 body.public-page.section-files main#main .download-button.primary,
-body.public-page.section-files main#main a[aria-current="page"].primary-format {
+body.public-page.section-files main#main a[aria-current="page"].primary-format,
+body.public-page.section-files main#main .download-row a[href$=".html"],
+body.public-page.section-files main#main .download-row a[href*=".html#"],
+body.public-page.section-files main#main .download-row a[href*=".html?"],
+body.public-page.section-files main#main .download-strip a[href$=".html"],
+body.public-page.section-files main#main .download-strip a[href*=".html#"],
+body.public-page.section-files main#main .download-strip a[href*=".html?"],
+body.public-page.section-files main#main .reading-path-actions a[href$=".html"],
+body.public-page.section-files main#main .reading-path-actions a[href*=".html#"],
+body.public-page.section-files main#main .reading-path-actions a[href*=".html?"],
+body.public-page.section-files main#main .source-files-card .download-button[href$=".html"],
+body.public-page.section-files main#main .source-files-card .download-button[href*=".html#"],
+body.public-page.section-files main#main .source-files-card .download-button[href*=".html?"] {
   background: linear-gradient(135deg, #b98726, #e6b84a, #f5d06b) !important;
   background-color: #e6b84a !important;
   background-image: linear-gradient(135deg, #b98726, #e6b84a, #f5d06b) !important;
@@ -90,7 +102,11 @@ body.public-page.section-files main#main .reading-path-actions a:hover {
 }
 
 body.public-page.section-files main#main .primary-format:hover,
-body.public-page.section-files main#main .download-button.primary:hover {
+body.public-page.section-files main#main .download-button.primary:hover,
+body.public-page.section-files main#main .download-row a[href$=".html"]:hover,
+body.public-page.section-files main#main .download-strip a[href$=".html"]:hover,
+body.public-page.section-files main#main .reading-path-actions a[href$=".html"]:hover,
+body.public-page.section-files main#main .source-files-card .download-button[href$=".html"]:hover {
   background: linear-gradient(135deg, #b98726, #e6b84a, #f5d06b) !important;
   background-image: linear-gradient(135deg, #b98726, #e6b84a, #f5d06b) !important;
   color: #07101d !important;
