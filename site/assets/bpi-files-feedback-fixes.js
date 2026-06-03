@@ -1,4 +1,4 @@
-/* V128 — deterministic stable nav + language switch + file targets.
+/* V129 — deterministic stable nav + language switch + file targets + final CSS loader.
    This replaces inconsistent per-page nav HTML with one canonical nav per language.
    It does not change page content and does not guess links from existing anchors. */
 (function(){
@@ -15,6 +15,7 @@
 
   function page(file){ return inPages() ? './' + file : (isHe() ? 'pages/he/' + file : 'pages/en/' + file); }
   function home(){ return inPages() ? (isHe() ? '../../index.html' : '../../en.html') : (isHe() ? 'index.html' : 'en.html'); }
+  function asset(file){ return inPages() ? '../../assets/' + file : 'assets/' + file; }
 
   function currentFile(){
     var p = location.pathname.split('?')[0].split('#')[0].toLowerCase();
@@ -122,10 +123,20 @@
     });
   }
 
+  function loadFinalCss(){
+    if (document.getElementById('bpi-final-ai-buttons-fix-v129')) return;
+    var link = document.createElement('link');
+    link.id = 'bpi-final-ai-buttons-fix-v129';
+    link.rel = 'stylesheet';
+    link.href = asset('bpi-final-ai-buttons-fix.css?v=20260603-v129');
+    document.head.appendChild(link);
+  }
+
   function init(){
     normalizeNav();
     normalizeLanguageSwitch();
     normalizeFileTargets();
+    loadFinalCss();
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
