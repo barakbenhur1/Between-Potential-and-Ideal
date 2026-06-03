@@ -1,5 +1,5 @@
-/* V124 — deterministic global nav order + lightweight file helpers.
-   Fixes the gateway tab order by moving real DOM links instead of using CSS order hacks. */
+/* V125 — deterministic global nav order + header/language normalization + lightweight file helpers.
+   Fixes: language switch labels, active nav state for generated links, and consistent premium header color. */
 (function(){
   'use strict';
 
@@ -31,6 +31,19 @@
     return (a && a.getAttribute('href') || '').split('?')[0].split('#')[0].toLowerCase();
   }
 
+  function currentFileName(){
+    var path = (location.pathname || '').split('?')[0].split('#')[0].toLowerCase();
+    var last = path.substring(path.lastIndexOf('/') + 1);
+    if (!last) return isHe() ? 'index.html' : 'en.html';
+    return last;
+  }
+
+  function hrefMatchesFile(a, fileName){
+    var href = cleanHref(a);
+    if (!href || !fileName) return false;
+    return href === fileName || href.endsWith('/' + fileName) || href.endsWith('./' + fileName) || href.endsWith(fileName);
+  }
+
   function findLink(nav, endings){
     endings = Array.isArray(endings) ? endings : [endings];
     return Array.from(nav.querySelectorAll('a[href]')).find(function(a){
@@ -47,33 +60,31 @@
       link = document.createElement('a');
       link.href = spec.href;
     }
-    if (!link.hasAttribute('aria-current')) link.textContent = spec.label;
+    link.textContent = spec.label;
     link.style.setProperty('order', '0', 'important');
     link.style.setProperty('-webkit-order', '0', 'important');
     return link;
   }
 
   function installHeaderPolish(){
-    if (document.getElementById('bpi-global-header-polish-v124')) return;
+    if (document.getElementById('bpi-global-header-polish-v125')) return;
     var style = document.createElement('style');
-    style.id = 'bpi-global-header-polish-v124';
+    style.id = 'bpi-global-header-polish-v125';
     style.textContent = [
-      '.site-header{display:grid!important;grid-template-columns:minmax(max-content,1fr) minmax(0,auto) minmax(90px,1fr)!important;align-items:center!important;column-gap:16px!important}',
+      '.site-header{display:grid!important;grid-template-columns:minmax(max-content,1fr) minmax(0,auto) minmax(90px,1fr)!important;align-items:center!important;column-gap:16px!important;background:linear-gradient(90deg,#0A3A68 0%,#0b5b72 46%,#77795f 76%,#f29a38 100%)!important;border-bottom:1px solid rgba(255,255,255,.14)!important;box-shadow:0 10px 28px rgba(7,16,29,.18)!important}',
       '.site-header .site-brand{justify-self:start!important;min-width:max-content!important;white-space:nowrap!important}',
       '.site-header .site-brand a{white-space:nowrap!important;display:inline-block!important}',
       '.site-header .language-switch{justify-self:end!important;white-space:nowrap!important}',
       '.site-header .site-nav{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;text-align:center!important;justify-self:center!important;margin-left:auto!important;margin-right:auto!important;max-width:min(100%,1180px)!important}',
       '.site-header .site-nav a{text-align:center!important;order:0!important;-webkit-order:0!important}',
+      '.site-header .site-nav a.active,.site-header .site-nav a[aria-current="page"]{color:#07101d!important;background:linear-gradient(135deg,#b98726,#e6b84a,#f5d06b)!important;border-color:rgba(255,255,255,.28)!important;box-shadow:0 0 30px rgba(230,184,74,.20),0 0 86px rgba(124,58,237,.13)!important}',
       '@media(max-width:860px){.site-header{display:flex!important;flex-direction:column!important}.site-header .site-brand,.site-header .language-switch,.site-header .site-nav{justify-self:center!important;min-width:0!important}.site-header .site-brand a{white-space:normal!important;text-align:center!important}}'
     ].join('');
     document.head.appendChild(style);
   }
 
-  function normalizeNavOrder(){
-    var nav = document.querySelector('.site-header .site-nav');
-    if (!nav) return;
-
-    var specs = isHe() ? [
+  function navSpecs(){
+    return isHe() ? [
       { label:'בית', href:homeHref(), endings:['index.html'] },
       { label:'תקציר', href:pageHref('summary.html'), endings:['summary.html'] },
       { label:'מילון', href:pageHref('glossary.html'), endings:['glossary.html'] },
@@ -102,10 +113,46 @@
       { label:'Critique', href:pageHref('critique-en.html'), endings:['critique-en.html'] },
       { label:'Sources', href:pageHref('sources-en.html'), endings:['sources-en.html'] }
     ];
+  }
 
-    specs.forEach(function(spec){
+  function setActiveNav(nav){
+    var fileName = currentFileName();
+    var links = Array.from(nav.querySelectorAll('a[href]'));
+    links.forEach(function(a){
+      a.classList.remove('active');
+      a.removeAttribute('aria-current');
+    });
+    var active = links.find(function(a){ return hrefMatchesFile(a, fileName); });
+    if (!active && fileName === 'index.html') active = findLink(nav, 'index.html');
+    if (!active && fileName === 'en.html') active = findLink(nav, 'en.html');
+    if (active) {
+      active.classList.add('active');
+      active.setAttribute('aria-current', 'page');
+    }
+  }
+
+  function normalizeNavOrder(){
+    var nav = document.querySelector('.site-header .site-nav');
+    if (!nav) return;
+
+    navSpecs().forEach(function(spec){
       nav.appendChild(getOrCreate(nav, spec));
     });
+    setActiveNav(nav);
+  }
+
+  function normalizeLanguageSwitch(){
+    var switcher = document.querySelector('.site-header .language-switch');
+    if (!switcher) return;
+    if (isHe()) {
+      switcher.textContent = 'English';
+      switcher.setAttribute('title', 'English version of this page');
+      switcher.setAttribute('aria-label', 'Switch to the English version');
+    } else {
+      switcher.textContent = 'עברית';
+      switcher.setAttribute('title', 'גרסה עברית של העמוד');
+      switcher.setAttribute('aria-label', 'מעבר לגרסה העברית');
+    }
   }
 
   function normalizeFormat(value){
@@ -139,9 +186,13 @@
 
   function init(){
     installHeaderPolish();
+    normalizeLanguageSwitch();
     normalizeNavOrder();
     normalizeFileTargets();
-    window.setTimeout(normalizeNavOrder, 60);
+    window.setTimeout(function(){
+      normalizeLanguageSwitch();
+      normalizeNavOrder();
+    }, 60);
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
