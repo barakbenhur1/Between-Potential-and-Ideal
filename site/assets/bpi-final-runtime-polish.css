@@ -1,5 +1,50 @@
 /* Final stable polish loaded from styles.css.
-   No runtime DOM mutation. Keeps buttons stable and fixes AI action order/sizing. */
+   Keeps header, buttons, and AI action layout stable across pages. */
+
+/* Header: one color system everywhere. This must beat page-level hardening files. */
+html body.public-page .site-header,
+html body.public-page.design-prompt-theme .site-header,
+html body.public-page.section-ai .site-header,
+html body.public-page.section-summary .site-header,
+html body.public-page.section-files .site-header,
+html body.public-page.section-glossary .site-header,
+html body.public-page.appendix-document-page .site-header{
+  min-height:70px!important;
+  background:linear-gradient(90deg,#0A3A68 0%,#0b5b72 46%,#77795f 76%,#f29a38 100%)!important;
+  background-color:#0A3A68!important;
+  border-bottom:1px solid rgba(255,255,255,.14)!important;
+  box-shadow:0 10px 28px rgba(7,16,29,.18)!important;
+}
+
+html body.public-page .site-header .site-nav,
+html body.public-page.design-prompt-theme .site-header .site-nav{
+  min-height:44px!important;
+  display:flex!important;
+  flex-wrap:wrap!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:.45rem!important;
+}
+
+html body.public-page .site-header .site-nav a,
+html body.public-page.design-prompt-theme .site-header .site-nav a{
+  min-height:34px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  white-space:nowrap!important;
+}
+
+html body.public-page .site-header .site-nav a.active,
+html body.public-page .site-header .site-nav a[aria-current="page"],
+html body.public-page.design-prompt-theme .site-header .site-nav a.active,
+html body.public-page.design-prompt-theme .site-header .site-nav a[aria-current="page"]{
+  color:#07101d!important;
+  background:linear-gradient(135deg,#b98726,#e6b84a,#f5d06b)!important;
+  background-color:#e6b84a!important;
+  border-color:rgba(255,255,255,.28)!important;
+  box-shadow:0 0 30px rgba(230,184,74,.20),0 0 86px rgba(124,58,237,.13)!important;
+}
 
 body.public-page main#main :is(.download-button,.download-row a,.download-strip a,.appendix-actions a){
   display:inline-flex!important;
