@@ -1,4 +1,5 @@
-/* V131 — final stable nav + primary button override. Loaded last by bpi-files-feedback-fixes.js. */
+/* V132 — stable nav dimensions without changing the home visual theme.
+   Loaded last by bpi-files-feedback-fixes.js. */
 
 @media (min-width: 861px) {
   html body.public-page .site-header {
@@ -6,23 +7,44 @@
     min-height: 72px !important;
     max-height: 72px !important;
     display: grid !important;
-    grid-template-columns: 172px minmax(0, 1fr) 92px !important;
     align-items: center !important;
-    column-gap: 14px !important;
-    padding: 0 18px !important;
     box-sizing: border-box !important;
     overflow: hidden !important;
+  }
+
+  /* Inner pages keep the premium gradient. Home keeps its original dark/black design. */
+  html body.public-page:not(.bpi-home-page) .site-header {
+    grid-template-columns: 172px minmax(0, 1fr) 92px !important;
+    column-gap: 14px !important;
+    padding: 0 18px !important;
     background: linear-gradient(90deg,#0A3A68 0%,#0b5b72 46%,#77795f 76%,#f29a38 100%) !important;
     background-color: #0A3A68 !important;
   }
 
+  html body.public-page.bpi-home-page .site-header {
+    grid-template-columns: 250px minmax(0, 1fr) 92px !important;
+    column-gap: 14px !important;
+    padding: 0 18px !important;
+    background: #30302f !important;
+    background-image: linear-gradient(90deg,#30302f 0%,#30302f 100%) !important;
+    background-color: #30302f !important;
+  }
+
   html body.public-page .site-header .site-brand {
     justify-self: start !important;
-    width: 172px !important;
-    max-width: 172px !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     white-space: nowrap !important;
+  }
+
+  html body.public-page:not(.bpi-home-page) .site-header .site-brand {
+    width: 172px !important;
+    max-width: 172px !important;
+  }
+
+  html body.public-page.bpi-home-page .site-header .site-brand {
+    width: 250px !important;
+    max-width: 250px !important;
   }
 
   html body.public-page .site-header .language-switch {
@@ -42,7 +64,6 @@
     width: 100% !important;
     min-width: 0 !important;
     min-height: 44px !important;
-    gap: .22rem !important;
     overflow: hidden !important;
   }
 
@@ -52,10 +73,8 @@
     justify-content: center !important;
     height: 34px !important;
     min-height: 34px !important;
-    padding: 0 .52rem !important;
     border: 1px solid transparent !important;
     border-radius: 999px !important;
-    font-size: clamp(.82rem,.82vw,.98rem) !important;
     line-height: 1 !important;
     font-weight: 850 !important;
     white-space: nowrap !important;
@@ -63,11 +82,29 @@
     transform: none !important;
   }
 
+  html body.public-page-he .site-header .site-nav {
+    gap: .22rem !important;
+  }
+
+  html body.public-page-he .site-header .site-nav a {
+    padding: 0 .52rem !important;
+    font-size: clamp(.82rem,.82vw,.98rem) !important;
+  }
+
+  html body.public-page-en .site-header .site-nav {
+    gap: .10rem !important;
+  }
+
+  html body.public-page-en .site-header .site-nav a {
+    padding: 0 .34rem !important;
+    font-size: clamp(.70rem,.68vw,.84rem) !important;
+    letter-spacing: -0.01em !important;
+  }
+
   html body.public-page .site-header .site-nav a.active,
   html body.public-page .site-header .site-nav a[aria-current='page'] {
     height: 34px !important;
     min-height: 34px !important;
-    padding: 0 .52rem !important;
     border: 1px solid rgba(255,255,255,.28) !important;
     color: #07101d !important;
     background: linear-gradient(135deg,#b98726,#e6b84a,#f5d06b) !important;
