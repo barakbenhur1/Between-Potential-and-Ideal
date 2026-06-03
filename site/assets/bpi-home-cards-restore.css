@@ -1,8 +1,10 @@
-/* BPI Stage 3 — restore homepage card styling only.
-   High-specificity home-only selectors so inner-page button/card fixes cannot leak into Home. */
+/* BPI Stage 3 — restore homepage dark card styling.
+   Home should stay visually unified: no large white signature blocks on the dark homepage. */
 
 html body.public-page.design-prompt-theme.bpi-home-page main#main section.hub-grid > article.hub-card.media-card,
 html body.public-page.design-prompt-theme.bpi-home-page main#main section.bpi-gateway-cards > article.hub-card.media-card,
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs,
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs article,
 html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs article.signature-main-blurb,
 html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs article.signature-blurb-card,
 html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs .minimal-card,
@@ -22,6 +24,7 @@ html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blu
 
 html body.public-page.design-prompt-theme.bpi-home-page main#main section.hub-grid > article.hub-card.media-card::before,
 html body.public-page.design-prompt-theme.bpi-home-page main#main section.bpi-gateway-cards > article.hub-card.media-card::before,
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs::before,
 html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs article::before {
   display: block !important;
   opacity: 1 !important;
@@ -31,16 +34,16 @@ html body.public-page.design-prompt-theme.bpi-home-page main#main section.hub-gr
 html body.public-page.design-prompt-theme.bpi-home-page main#main section.hub-grid > article.hub-card.media-card h3,
 html body.public-page.design-prompt-theme.bpi-home-page main#main section.bpi-gateway-cards > article.hub-card.media-card h2,
 html body.public-page.design-prompt-theme.bpi-home-page main#main section.bpi-gateway-cards > article.hub-card.media-card h3,
-html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs article h2,
-html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs article h3,
-html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs article strong {
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs h2,
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs h3,
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs strong {
   color: #f8fafc !important;
   text-shadow: 0 2px 16px rgba(0,0,0,.34) !important;
 }
 
 html body.public-page.design-prompt-theme.bpi-home-page main#main section.hub-grid > article.hub-card.media-card p,
 html body.public-page.design-prompt-theme.bpi-home-page main#main section.bpi-gateway-cards > article.hub-card.media-card p,
-html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs article p {
+html body.public-page.design-prompt-theme.bpi-home-page main#main .signature-blurbs p {
   color: rgba(226,232,240,.94) !important;
   text-shadow: 0 1px 12px rgba(0,0,0,.28) !important;
 }
