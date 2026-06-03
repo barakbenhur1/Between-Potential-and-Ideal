@@ -1,5 +1,5 @@
-/* V132 — deterministic stable nav + language switch + file targets + final CSS loader.
-   Single source of truth for public nav. Does not change page content. */
+/* Stable public navigation helper.
+   One deterministic nav order, no late CSS injection, no duplicate tabs. */
 (function(){
   'use strict';
 
@@ -14,7 +14,6 @@
 
   function page(file){ return inPages() ? './' + file : (isHe() ? 'pages/he/' + file : 'pages/en/' + file); }
   function home(){ return inPages() ? (isHe() ? '../../index.html' : '../../en.html') : (isHe() ? 'index.html' : 'en.html'); }
-  function asset(file){ return inPages() ? '../../assets/' + file : 'assets/' + file; }
 
   function currentFile(){
     var p = location.pathname.split('?')[0].split('#')[0].toLowerCase();
@@ -79,8 +78,8 @@
       'glossary.html':'glossary-en.html',
       'potential-ideal-optimal.html':'potential-ideal-optimal-en.html',
       'ai-as-witness.html':'ai-as-witness-en.html',
-      'methodology.html':'methodology-en.html',
       'core.html':'core-en.html',
+      'methodology.html':'methodology-en.html',
       'witness.html':'witness-en.html',
       'applied.html':'applied-en.html',
       'ai.html':'ai-en.html',
@@ -102,8 +101,10 @@
   function normalizeLanguageSwitch(){
     var sw = document.querySelector('.site-header .language-switch');
     if (!sw) return;
-    sw.textContent = isHe() ? 'English' : 'עברית';
-    sw.setAttribute('href', counterpartHref());
+    var label = isHe() ? 'English' : 'עברית';
+    var href = counterpartHref();
+    if (sw.textContent !== label) sw.textContent = label;
+    if (sw.getAttribute('href') !== href) sw.setAttribute('href', href);
     sw.setAttribute('aria-label', isHe() ? 'Switch to the English version' : 'מעבר לגרסה העברית');
     sw.setAttribute('title', isHe() ? 'English version' : 'גרסה עברית');
   }
@@ -122,28 +123,10 @@
     });
   }
 
-  function loadFinalCss(){
-    if (!document.getElementById('bpi-final-ai-buttons-fix-v132')) {
-      var oldLink = document.createElement('link');
-      oldLink.id = 'bpi-final-ai-buttons-fix-v132';
-      oldLink.rel = 'stylesheet';
-      oldLink.href = asset('bpi-final-ai-buttons-fix.css?v=20260603-v132');
-      document.head.appendChild(oldLink);
-    }
-    if (!document.getElementById('bpi-nav-and-primary-final-v132')) {
-      var link = document.createElement('link');
-      link.id = 'bpi-nav-and-primary-final-v132';
-      link.rel = 'stylesheet';
-      link.href = asset('bpi-nav-and-primary-final-v131.css?v=20260603-v132-home-en');
-      document.head.appendChild(link);
-    }
-  }
-
   function init(){
     normalizeNav();
     normalizeLanguageSwitch();
     normalizeFileTargets();
-    loadFinalCss();
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
