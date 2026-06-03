@@ -20,6 +20,8 @@ EN = [
     ('Application','applied-en.html','applied-en'),('AI','ai-en.html','ai-en'),('Files','files-en.html','files-en'),
     ('Critique','critique-en.html','critique-en'),('Sources','sources-en.html','sources-en')]
 
+HE_KEYS = {item[2] for item in HE}
+EN_KEYS = {item[2] for item in EN}
 HE_TO_EN = {'index':'en.html','summary':'summary-en.html','glossary':'glossary-en.html','potential-ideal-optimal':'potential-ideal-optimal-en.html','ai-as-witness':'ai-as-witness-en.html','core':'core-en.html','methodology':'methodology-en.html','witness':'witness-en.html','applied':'applied-en.html','ai':'ai-en.html','files':'files-en.html','critique':'critique-en.html','sources':'sources-en.html'}
 EN_TO_HE = {v[:-5] if v.endswith('.html') else v: k + '.html' for k, v in HE_TO_EN.items()}
 EN_TO_HE['en'] = 'index.html'
@@ -44,8 +46,9 @@ def lang_href(path: Path, he: bool, home: bool) -> str:
 
 def build_nav(items, key, he, home):
     out=[]
+    valid_keys = HE_KEYS if he else EN_KEYS
     for label, href, item_key in items:
-        attrs = ' aria-current="page" class="active"' if item_key == key else ''
+        attrs = ' aria-current="page" class="active"' if key in valid_keys and item_key == key else ''
         out.append(f'<a{attrs} href="{nav_href(href, he, home)}">{label}</a>')
     return ''.join(out)
 
@@ -62,7 +65,7 @@ def fix(path: Path, he: bool, home: bool=False) -> bool:
     old = text
     text, n = HEADER_RE.subn(build_header(path, he, home), text, count=1)
     if n != 1: raise RuntimeError(f'header count failed: {path}')
-    text = re.sub(r'bpi-files-feedback-fixes\.js\?v=[^"\']+', 'bpi-files-feedback-fixes.js?v=20260603-files-only-no-nav-v130', text)
+    text = re.sub(r'bpi-files-feedback-fixes\.js\?v=[^"\']+', 'bpi-files-feedback-fixes.js?v=20260603-shared-nav-v131', text)
     if text != old:
         path.write_text(text, encoding='utf-8')
         return True
@@ -76,7 +79,11 @@ def verify(path: Path, he: bool, home: bool=False):
     expected = [x[0] for x in (HE if he else EN)]
     if labels != expected: raise RuntimeError(f'bad nav {path}: {labels}')
     if len(labels) != len(set(labels)): raise RuntimeError(f'duplicate labels {path}: {labels}')
-    if header.count('aria-current="page"') != 1: raise RuntimeError(f'bad active count {path}')
+    key = active(path, he, home)
+    valid_keys = HE_KEYS if he else EN_KEYS
+    expected_active = 1 if key in valid_keys else 0
+    if header.count('aria-current="page"') != expected_active:
+        raise RuntimeError(f'bad active count {path}')
 
 def main():
     changed=[]
