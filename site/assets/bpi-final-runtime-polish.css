@@ -1,13 +1,138 @@
-/* Final runtime polish loaded after page CSS. */
-body.public-page main#main :is(.download-button,.download-row a,.download-strip a,.appendix-actions a){display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:44px!important;padding:11px 22px!important;border-radius:999px!important;font-size:clamp(1rem,1.05vw,1.12rem)!important;font-weight:850!important;line-height:1.1!important;text-decoration:none!important;text-shadow:none!important;background:rgba(255,250,240,.92)!important;background-image:none!important;color:#0A3A68!important;border:1.5px solid rgba(230,184,74,.72)!important;box-shadow:none!important}
-body.public-page main#main :is(.card-link,.primary-format,.download-button.primary,.archive-link-row a){display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:44px!important;padding:11px 22px!important;border-radius:999px!important;font-size:clamp(1rem,1.05vw,1.12rem)!important;font-weight:850!important;line-height:1.1!important;text-decoration:none!important;text-shadow:none!important;background:linear-gradient(135deg,#b98726,#e6b84a,#f5d06b)!important;color:#07101d!important;border:1.5px solid transparent!important;box-shadow:0 8px 18px rgba(184,135,38,.18)!important}
-body.section-files main#main a[href$=".html"]{background:linear-gradient(135deg,#b98726,#e6b84a,#f5d06b)!important;color:#07101d!important;border-color:transparent!important;box-shadow:0 8px 18px rgba(184,135,38,.18)!important}
-body.public-page main#main :is(.card-link,.primary-format,.download-button.primary,.archive-link-row a):hover,body.section-files main#main a[href$=".html"]:hover{background:linear-gradient(135deg,#b98726,#e6b84a,#f5d06b)!important;color:#07101d!important;border-color:transparent!important;box-shadow:0 10px 22px rgba(184,135,38,.22)!important}
-body.public-page main#main .file-size{color:rgba(7,16,29,.62)!important}
-body.section-ai main#main .appendix-actions{display:grid!important;grid-template-columns:repeat(3,max-content)!important;justify-content:center!important;align-items:center!important;gap:12px 14px!important;direction:ltr!important;margin-top:auto!important}
-body.section-ai main#main .appendix-actions a{min-width:86px!important;min-height:44px!important;padding:11px 22px!important;font-size:clamp(1rem,1.05vw,1.12rem)!important;text-align:center!important;white-space:nowrap!important}
-body.section-ai main#main .appendix-actions a[href$=".html"],body.section-ai main#main .appendix-actions a.primary-format{order:1!important}
-body.section-ai main#main .appendix-actions a[href$=".pdf"]{order:2!important}
-body.section-ai main#main .appendix-actions a[href$=".docx"]{order:3!important}
-body.section-ai main#main .appendix-actions a[href$=".md"]{order:4!important;grid-column:1/-1!important;justify-self:center!important}
-@media(max-width:640px){body.section-ai main#main .appendix-actions{grid-template-columns:repeat(2,max-content)!important}body.section-ai main#main .appendix-actions a[href$=".md"]{grid-column:1/-1!important}}
+/* Final stable polish loaded from styles.css.
+   No runtime DOM mutation. Keeps buttons stable and fixes AI action order/sizing. */
+
+body.public-page main#main :is(.download-button,.download-row a,.download-strip a,.appendix-actions a){
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-height:44px!important;
+  padding:11px 22px!important;
+  border-radius:999px!important;
+  font-size:clamp(1rem,1.05vw,1.12rem)!important;
+  font-weight:850!important;
+  line-height:1.1!important;
+  text-decoration:none!important;
+  text-shadow:none!important;
+  background:rgba(255,250,240,.92)!important;
+  background-image:none!important;
+  color:#0A3A68!important;
+  border:1.5px solid rgba(230,184,74,.72)!important;
+  box-shadow:none!important;
+}
+
+body.public-page main#main :is(.card-link,.primary-format,.download-button.primary,.archive-link-row a),
+body.public-page main#main .download-row a.primary-format,
+body.public-page main#main .download-strip a.primary-format,
+body.public-page main#main .appendix-actions a.primary-format,
+body.public-page main#main a[aria-current="page"].primary-format{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-height:44px!important;
+  padding:11px 22px!important;
+  border-radius:999px!important;
+  font-size:clamp(1rem,1.05vw,1.12rem)!important;
+  font-weight:850!important;
+  line-height:1.1!important;
+  text-decoration:none!important;
+  text-shadow:none!important;
+  background:linear-gradient(135deg,#b98726,#e6b84a,#f5d06b)!important;
+  background-color:#e6b84a!important;
+  background-image:linear-gradient(135deg,#b98726,#e6b84a,#f5d06b)!important;
+  color:#07101d!important;
+  border:1.5px solid transparent!important;
+  box-shadow:0 8px 18px rgba(184,135,38,.18)!important;
+}
+
+body.section-files main#main a[href$=".html"],
+body.section-files main#main a[href*=".html?"],
+body.section-files main#main a[href*=".html#"]{
+  background:linear-gradient(135deg,#b98726,#e6b84a,#f5d06b)!important;
+  background-color:#e6b84a!important;
+  background-image:linear-gradient(135deg,#b98726,#e6b84a,#f5d06b)!important;
+  color:#07101d!important;
+  border-color:transparent!important;
+  box-shadow:0 8px 18px rgba(184,135,38,.18)!important;
+}
+
+body.public-page main#main :is(.card-link,.primary-format,.download-button.primary,.archive-link-row a):hover,
+body.public-page main#main .appendix-actions a.primary-format:hover,
+body.section-files main#main a[href$=".html"]:hover,
+body.section-files main#main a[href*=".html?"]:hover,
+body.section-files main#main a[href*=".html#"]:hover{
+  background:linear-gradient(135deg,#b98726,#e6b84a,#f5d06b)!important;
+  color:#07101d!important;
+  border-color:transparent!important;
+  box-shadow:0 10px 22px rgba(184,135,38,.22)!important;
+}
+
+body.public-page main#main .file-size{color:rgba(7,16,29,.62)!important;}
+
+/* AI tab: keep the actions inside the card and make the visual order correct per language. */
+body.section-ai main#main .ai-documents-card .appendix-actions{
+  display:grid!important;
+  width:100%!important;
+  max-width:100%!important;
+  box-sizing:border-box!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  justify-content:stretch!important;
+  align-items:center!important;
+  gap:12px!important;
+  margin-top:auto!important;
+  padding-top:.25rem!important;
+  overflow:hidden!important;
+}
+
+body.public-page-he.section-ai main#main .ai-documents-card .appendix-actions{direction:rtl!important;}
+body.public-page-en.section-ai main#main .ai-documents-card .appendix-actions{direction:ltr!important;}
+
+body.section-ai main#main .ai-documents-card .appendix-actions a{
+  width:100%!important;
+  min-width:0!important;
+  max-width:100%!important;
+  min-height:44px!important;
+  padding:10px 8px!important;
+  box-sizing:border-box!important;
+  font-size:clamp(.92rem,.95vw,1.04rem)!important;
+  text-align:center!important;
+  white-space:nowrap!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+}
+
+body.section-ai main#main .ai-documents-card .appendix-actions a[href$=".html"],
+body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".html?"],
+body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".html#"],
+body.section-ai main#main .ai-documents-card .appendix-actions a.primary-format{order:1!important;}
+body.section-ai main#main .ai-documents-card .appendix-actions a[href$=".pdf"],
+body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".pdf?"],
+body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".pdf#"]{order:2!important;}
+body.section-ai main#main .ai-documents-card .appendix-actions a[href$=".docx"],
+body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".docx?"],
+body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".docx#"]{order:3!important;}
+body.section-ai main#main .ai-documents-card .appendix-actions a[href$=".md"],
+body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".md?"],
+body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".md#"]{
+  order:4!important;
+  grid-column:2!important;
+  justify-self:center!important;
+}
+
+body.section-ai main#main .ai-documents-card .appendix-actions a.primary-format,
+body.section-ai main#main .ai-documents-card .appendix-actions a[href$=".html"],
+body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".html?"],
+body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".html#"]{
+  background:linear-gradient(135deg,#b98726,#e6b84a,#f5d06b)!important;
+  background-color:#e6b84a!important;
+  background-image:linear-gradient(135deg,#b98726,#e6b84a,#f5d06b)!important;
+  color:#07101d!important;
+  border-color:transparent!important;
+  box-shadow:0 8px 18px rgba(184,135,38,.18)!important;
+}
+
+@media(max-width:640px){
+  body.section-ai main#main .ai-documents-card .appendix-actions{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+  body.section-ai main#main .ai-documents-card .appendix-actions a[href$=".md"],
+  body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".md?"],
+  body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".md#"]{grid-column:1 / -1!important;width:min(140px,100%)!important;}
+}
