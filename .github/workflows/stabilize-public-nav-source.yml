@@ -26,7 +26,7 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           import re
-          version = 'bpi-files-feedback-fixes.js?v=20260604-shared-nav-v135-fixed-column-metrics'
+          version = 'bpi-files-feedback-fixes.js?v=20260604-shared-nav-v136-fixed-metrics-implemented'
           paths = [Path('site/index.html'), Path('site/en.html')]
           paths += sorted(Path('site/pages/he').glob('*.html'))
           paths += sorted(Path('site/pages/en').glob('*.html'))
@@ -54,7 +54,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site/index.html site/en.html site/pages/he site/pages/en
-          git commit -m "Bump shared nav script cache for fixed column metrics"
+          git commit -m "Bump shared nav script cache for fixed metrics implementation"
           git push origin HEAD:bpi-premium-design-stage3
 
-# trigger: 2026-06-04-shared-nav-v135-fixed-column-metrics
+# trigger: 2026-06-04-shared-nav-v136-fixed-metrics-implemented
