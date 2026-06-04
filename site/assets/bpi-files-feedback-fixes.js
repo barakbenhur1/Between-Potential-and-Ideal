@@ -11,7 +11,7 @@
     ['מתודולוגיה','methodology.html','methodology'],
     ['עדות','witness.html','witness'],
     ['יישום','applied.html','applied'],
-    ['AI','ai.html','ai'],
+    ['בינה מלאכותית','ai.html','ai'],
     ['קבצים','files.html','files'],
     ['ביקורת','critique.html','critique'],
     ['מקורות','sources.html','sources']
@@ -63,6 +63,16 @@
     return isInner() ? '../he/' + (enToHe[k] || 'index.html') : (enToHe[k] || 'index.html');
   }
 
+  function enforceExactLabels(nav, he){
+    nav.querySelectorAll('a').forEach(a => {
+      const rawHref = (a.getAttribute('href') || '').split('?')[0].split('#')[0];
+      if (he && rawHref.endsWith('ai.html')) a.textContent = 'בינה מלאכותית';
+      if (he && rawHref.endsWith('ai-as-witness.html')) a.textContent = 'בינה מלאכותית כעדות';
+      if (!he && rawHref.endsWith('ai-en.html')) a.textContent = 'AI';
+      if (!he && rawHref.endsWith('ai-as-witness-en.html')) a.textContent = 'AI as Witness';
+    });
+  }
+
   function renderNav(){
     const header = document.querySelector('.site-header');
     if (!header) return;
@@ -94,6 +104,7 @@
       }
       nav.appendChild(a);
     });
+    enforceExactLabels(nav, he);
 
     const lang = document.createElement('a');
     lang.className = 'language-switch';
