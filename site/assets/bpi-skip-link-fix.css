@@ -46,3 +46,31 @@ body.public-page .site-brand a,
 .site-header .site-brand a {
   white-space: nowrap !important;
 }
+
+/* Keep the Hebrew "AI as Witness" nav tab the same width on home and inner pages. */
+html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"] {
+  min-width: 154px !important;
+  width: 154px !important;
+  max-width: 154px !important;
+  flex: 0 0 154px !important;
+  padding-inline: 10px !important;
+  font-size: 13px !important;
+  line-height: 1.1 !important;
+  white-space: nowrap !important;
+  box-sizing: border-box !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+@media (max-width: 1180px) {
+  html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"] {
+    min-width: 146px !important;
+    width: 146px !important;
+    max-width: 146px !important;
+    flex-basis: 146px !important;
+    font-size: 12.5px !important;
+    padding-inline: 8px !important;
+  }
+}
