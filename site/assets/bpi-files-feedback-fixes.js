@@ -175,7 +175,53 @@
     enforceExactLabels(nav, he);
   }
 
-  function init(){ installNavTextSafetyCSS(); installFinalTabbarDimensions(); installBreadcrumbSafetyCSS(); renderNav(); }
+
+  function sanitizeBreadcrumbs(){
+    const crumbs = document.querySelectorAll(
+      'main#main nav.breadcrumbs a, main#main .breadcrumbs a, main#main nav[aria-label="Breadcrumb"] a, nav.breadcrumbs a, .breadcrumbs a, nav[aria-label="Breadcrumb"] a'
+    );
+
+    crumbs.forEach((el) => {
+      el.classList.remove('active');
+      el.removeAttribute('aria-current');
+
+      el.style.setProperty('color', '#0A3A68', 'important');
+      el.style.setProperty('-webkit-text-fill-color', '#0A3A68', 'important');
+      el.style.setProperty('background', 'transparent', 'important');
+      el.style.setProperty('background-color', 'transparent', 'important');
+      el.style.setProperty('background-image', 'none', 'important');
+      el.style.setProperty('box-shadow', 'none', 'important');
+      el.style.setProperty('border', '0', 'important');
+      el.style.setProperty('border-radius', '0', 'important');
+      el.style.setProperty('outline', '0', 'important');
+      el.style.setProperty('padding', '0', 'important');
+      el.style.setProperty('margin', '0', 'important');
+      el.style.setProperty('min-width', '0', 'important');
+      el.style.setProperty('width', 'auto', 'important');
+      el.style.setProperty('max-width', 'none', 'important');
+      el.style.setProperty('min-height', '0', 'important');
+      el.style.setProperty('height', 'auto', 'important');
+      el.style.setProperty('line-height', '1.35', 'important');
+      el.style.setProperty('display', 'inline', 'important');
+      el.style.setProperty('text-decoration', 'none', 'important');
+      el.style.setProperty('text-shadow', 'none', 'important');
+      el.style.setProperty('opacity', '1', 'important');
+      el.style.setProperty('font-weight', '850', 'important');
+    });
+
+    const navs = document.querySelectorAll('main#main nav.breadcrumbs, main#main .breadcrumbs, main#main nav[aria-label="Breadcrumb"], nav.breadcrumbs, .breadcrumbs, nav[aria-label="Breadcrumb"]');
+    navs.forEach((nav) => {
+      nav.style.setProperty('color', '#0A3A68', 'important');
+      nav.style.setProperty('background', 'transparent', 'important');
+      nav.style.setProperty('background-color', 'transparent', 'important');
+      nav.style.setProperty('background-image', 'none', 'important');
+      nav.style.setProperty('box-shadow', 'none', 'important');
+      nav.style.setProperty('text-shadow', 'none', 'important');
+      nav.style.setProperty('opacity', '1', 'important');
+    });
+  }
+
+  function init(){ installNavTextSafetyCSS(); installFinalTabbarDimensions(); sanitizeBreadcrumbs(); installBreadcrumbSafetyCSS(); renderNav(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
