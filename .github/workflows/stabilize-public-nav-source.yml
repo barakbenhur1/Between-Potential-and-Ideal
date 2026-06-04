@@ -21,38 +21,29 @@ jobs:
           ref: bpi-premium-design-stage3
           fetch-depth: 0
 
-      - name: Bump shared nav script URL in HTML
+      - name: Bump shared tab bar CSS URLs in HTML
         run: |
           python3 - <<'PY'
           from pathlib import Path
           import re
-          version = 'bpi-files-feedback-fixes.js?v=20260604-shared-nav-v132-clean-labels'
           paths = [Path('site/index.html'), Path('site/en.html')]
           paths += sorted(Path('site/pages/he').glob('*.html'))
           paths += sorted(Path('site/pages/en').glob('*.html'))
           changed = []
           for p in paths:
-            if not p.exists():
-              continue
-            s = p.read_text(encoding='utf-8')
-            fixed = re.sub(r'bpi-files-feedback-fixes\.js\?v=[^"\']+', version, s)
-            if fixed != s:
-              p.write_text(fixed, encoding='utf-8')
-              changed.append(str(p))
-          print('\n'.join(changed) if changed else 'No script URLs changed')
-          PY
-
-      - name: Verify duplicate AI witness label is not in source
-        run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          bad = []
-          for p in [Path('site/index.html'), Path('site/en.html'), *Path('site/pages/he').glob('*.html'), *Path('site/pages/en').glob('*.html')]:
-            s = p.read_text(encoding='utf-8')
-            if 'בינה מלאכותיתבינה מלאכותית' in s or 'בינה מלאכותית כעדותבינה מלאכותית כעדות' in s:
-              bad.append(str(p))
-          if bad:
-            raise SystemExit('\n'.join(bad))
+              if not p.exists():
+                  continue
+              s = p.read_text(encoding='utf-8')
+              fixed = s
+              fixed = re.sub(r'styles\.css\?v=[^"\']+', 'styles.css?v=20260604-tabbar-dimensions-v2', fixed)
+              fixed = re.sub(r'bpi-skip-link-fix\.css\?v=[^"\']+', 'bpi-skip-link-fix.css?v=20260604-tabbar-dimensions-v2', fixed)
+              fixed = re.sub(r'\.\./\.\./styles\.css\?v=[^"\']+', '../../styles.css?v=20260604-tabbar-dimensions-v2', fixed)
+              fixed = re.sub(r'\.\./\.\./assets/bpi-skip-link-fix\.css\?v=[^"\']+', '../../assets/bpi-skip-link-fix.css?v=20260604-tabbar-dimensions-v2', fixed)
+              fixed = re.sub(r'assets/bpi-skip-link-fix\.css\?v=[^"\']+', 'assets/bpi-skip-link-fix.css?v=20260604-tabbar-dimensions-v2', fixed)
+              if fixed != s:
+                  p.write_text(fixed, encoding='utf-8')
+                  changed.append(str(p))
+          print('\n'.join(changed) if changed else 'No CSS URLs changed')
           PY
 
       - name: Check whitespace
@@ -67,7 +58,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site/index.html site/en.html site/pages/he site/pages/en
-          git commit -m "Bump shared nav script URL across pages"
+          git commit -m "Bump tab bar dimension CSS URLs across pages"
           git push origin HEAD:bpi-premium-design-stage3
 
-# trigger: 2026-06-04T01:00:00Z
+# trigger: 2026-06-04-tabbar-dimensions-v2
