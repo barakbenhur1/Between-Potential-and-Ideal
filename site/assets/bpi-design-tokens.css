@@ -1,0 +1,69 @@
+/*
+  BPI shared design tokens
+  Additive foundation for the modern redesign.
+  This file defines values only; it should not visually override existing pages by itself.
+*/
+
+:root {
+  /* Brand colors */
+  --bpi-blue: #1a3a52;
+  --bpi-blue-deep: #0A3A68;
+  --bpi-blue-soft: #e8f1f8;
+  --bpi-green: #2d5a3d;
+  --bpi-green-soft: #e9f4ed;
+  --bpi-gold: #d97706;
+  --bpi-gold-soft: #fff4dd;
+  --bpi-purple: #7c3aed;
+  --bpi-red: #dc2626;
+
+  /* Surfaces */
+  --bpi-bg: #f8f9fa;
+  --bpi-surface: #ffffff;
+  --bpi-surface-warm: #fffaf0;
+  --bpi-surface-muted: #f3f4f6;
+
+  /* Text */
+  --bpi-text: #2c3e50;
+  --bpi-text-strong: #1d2938;
+  --bpi-muted: #536173;
+  --bpi-muted-soft: #738093;
+
+  /* Borders and shadows */
+  --bpi-border: #e5e7eb;
+  --bpi-border-blue: rgba(10, 58, 104, 0.14);
+  --bpi-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --bpi-shadow-md: 0 12px 32px rgba(20, 40, 60, 0.08);
+  --bpi-shadow-lg: 0 18px 44px rgba(20, 40, 60, 0.12);
+
+  /* Radius */
+  --bpi-radius-sm: 8px;
+  --bpi-radius-md: 12px;
+  --bpi-radius-lg: 22px;
+  --bpi-radius-pill: 999px;
+
+  /* Spacing scale */
+  --bpi-space-xs: 4px;
+  --bpi-space-sm: 8px;
+  --bpi-space-md: 16px;
+  --bpi-space-lg: 24px;
+  --bpi-space-xl: 32px;
+  --bpi-space-2xl: 48px;
+  --bpi-space-3xl: 64px;
+
+  /* Typography */
+  --bpi-font-ui: Inter, "Segoe UI", Arial, sans-serif;
+  --bpi-font-body: Inter, "Segoe UI", Arial, sans-serif;
+  --bpi-font-code: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Layout */
+  --bpi-content-max: 1200px;
+  --bpi-reading-max: 860px;
+  --bpi-section-pad-desktop: 64px;
+  --bpi-section-pad-mobile: 32px;
+
+  /* Motion */
+  --bpi-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --bpi-duration-fast: 180ms;
+  --bpi-duration-normal: 260ms;
+  --bpi-duration-slow: 420ms;
+}
