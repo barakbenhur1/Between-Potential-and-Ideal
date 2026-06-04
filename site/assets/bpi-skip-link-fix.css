@@ -3,6 +3,7 @@
 @import url("./bpi-he-brand-underline-fix.css?v=20260603-stage3-he-brand-line-v1");
 @import url("./bpi-gateway-card-light-fix.css?v=20260603-stage3-gateway-light-v1");
 @import url("./bpi-tabbar-dimensions-match-home.css?v=20260604-match-home-tabbar-v2");
+@import url("./bpi-home-en-overflow-fix.css?v=20260605-en-home-overflow-v1");
 
 body.public-page .skip-link {
   position: fixed !important;
