@@ -63,6 +63,18 @@
     return isInner() ? '../he/' + (enToHe[k] || 'index.html') : (enToHe[k] || 'index.html');
   }
 
+  function installNavTextSafetyCSS(){
+    if (document.getElementById('bpi-nav-text-safety-css')) return;
+    const style = document.createElement('style');
+    style.id = 'bpi-nav-text-safety-css';
+    style.textContent = [
+      'body.public-page-he .site-nav a[href="ai.html"]{font-size:clamp(.72rem,.72vw,.9rem)!important;line-height:1!important;color:inherit;}',
+      'body.public-page-he .site-nav a[href="ai.html"]::before,body.public-page-he .site-nav a[href="ai.html"]::after{content:none!important;display:none!important;font-size:0!important;line-height:0!important;}',
+      'body.public-page-he .site-nav a[href="ai-as-witness.html"]::before,body.public-page-he .site-nav a[href="ai-as-witness.html"]::after{content:none!important;display:none!important;font-size:0!important;line-height:0!important;}'
+    ].join('\n');
+    document.head.appendChild(style);
+  }
+
   function enforceExactLabels(nav, he){
     nav.querySelectorAll('a').forEach(a => {
       const rawHref = (a.getAttribute('href') || '').split('?')[0].split('#')[0];
@@ -114,9 +126,11 @@
     header.appendChild(brand);
     header.appendChild(nav);
     header.appendChild(lang);
+    installNavTextSafetyCSS();
+    enforceExactLabels(nav, he);
   }
 
-  function init(){ renderNav(); }
+  function init(){ installNavTextSafetyCSS(); renderNav(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
