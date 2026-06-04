@@ -11,7 +11,7 @@
     ['מתודולוגיה','methodology.html','methodology'],
     ['עדות','witness.html','witness'],
     ['יישום','applied.html','applied'],
-    ['בינה מלאכותית','ai.html','ai'],
+    ['AI','ai.html','ai'],
     ['קבצים','files.html','files'],
     ['ביקורת','critique.html','critique'],
     ['מקורות','sources.html','sources']
