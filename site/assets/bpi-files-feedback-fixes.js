@@ -99,6 +99,25 @@
     document.head.appendChild(style);
   }
 
+
+  function installBreadcrumbSafetyCSS(){
+    const old = document.getElementById('bpi-breadcrumb-final-safety-css');
+    if (old) old.remove();
+
+    const style = document.createElement('style');
+    style.id = 'bpi-breadcrumb-final-safety-css';
+    style.textContent = [
+      'html body.public-page nav.breadcrumbs,html body.public-page .breadcrumbs,html body.public-page nav[aria-label="Breadcrumb"]{color:#0A3A68!important;opacity:1!important;text-shadow:none!important;background:transparent!important;background-color:transparent!important;background-image:none!important;box-shadow:none!important;}',
+      'html body.public-page nav.breadcrumbs *,html body.public-page .breadcrumbs *,html body.public-page nav[aria-label="Breadcrumb"] *{text-shadow:none!important;box-shadow:none!important;}',
+      'html body.public-page nav.breadcrumbs a,html body.public-page .breadcrumbs a,html body.public-page nav[aria-label="Breadcrumb"] a,html body.public-page nav.breadcrumbs span,html body.public-page .breadcrumbs span,html body.public-page nav[aria-label="Breadcrumb"] span,html body.public-page nav.breadcrumbs [aria-current="page"],html body.public-page .breadcrumbs [aria-current="page"],html body.public-page nav[aria-label="Breadcrumb"] [aria-current="page"]{color:#0A3A68!important;-webkit-text-fill-color:#0A3A68!important;background:transparent!important;background-color:transparent!important;background-image:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;outline:0!important;padding:0!important;margin:0!important;min-width:0!important;width:auto!important;max-width:none!important;min-height:0!important;height:auto!important;display:inline!important;line-height:1.35!important;font-weight:850!important;text-decoration:none!important;opacity:1!important;}',
+      'html body.public-page nav.breadcrumbs a[href$="index.html"],html body.public-page .breadcrumbs a[href$="index.html"],html body.public-page nav[aria-label="Breadcrumb"] a[href$="index.html"],html body.public-page nav.breadcrumbs a:first-child,html body.public-page .breadcrumbs a:first-child,html body.public-page nav[aria-label="Breadcrumb"] a:first-child{color:#0A3A68!important;-webkit-text-fill-color:#0A3A68!important;background:transparent!important;background-color:transparent!important;background-image:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0!important;}',
+      'html body.public-page nav.breadcrumbs a.active,html body.public-page .breadcrumbs a.active,html body.public-page nav[aria-label="Breadcrumb"] a.active,html body.public-page nav.breadcrumbs .active,html body.public-page .breadcrumbs .active,html body.public-page nav[aria-label="Breadcrumb"] .active{color:#0A3A68!important;-webkit-text-fill-color:#0A3A68!important;background:transparent!important;background-color:transparent!important;background-image:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;}',
+      'html body.public-page nav.breadcrumbs a:hover,html body.public-page .breadcrumbs a:hover,html body.public-page nav[aria-label="Breadcrumb"] a:hover,html body.public-page nav.breadcrumbs a:focus-visible,html body.public-page .breadcrumbs a:focus-visible,html body.public-page nav[aria-label="Breadcrumb"] a:focus-visible{color:#062f56!important;-webkit-text-fill-color:#062f56!important;background:transparent!important;background-color:transparent!important;background-image:none!important;text-decoration:underline!important;box-shadow:none!important;}'
+    ].join('\n');
+
+    document.head.appendChild(style);
+  }
+
   function enforceExactLabels(nav, he){
     nav.querySelectorAll('a').forEach(a => {
       const rawHref = (a.getAttribute('href') || '').split('?')[0].split('#')[0];
@@ -152,10 +171,11 @@
     header.appendChild(lang);
     installNavTextSafetyCSS();
     installFinalTabbarDimensions();
+    installBreadcrumbSafetyCSS();
     enforceExactLabels(nav, he);
   }
 
-  function init(){ installNavTextSafetyCSS(); installFinalTabbarDimensions(); renderNav(); }
+  function init(){ installNavTextSafetyCSS(); installFinalTabbarDimensions(); installBreadcrumbSafetyCSS(); renderNav(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
