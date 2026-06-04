@@ -1,0 +1,134 @@
+/*
+  BPI shared button system
+  Additive, scoped, and intentionally not applied to header nav or breadcrumbs.
+*/
+
+body.public-page :where(.download-button, .cta-button, .card-link, .archive-link-row a, .download-row a) {
+  min-height: 44px;
+  padding: 12px 24px;
+  border-radius: var(--bpi-radius-sm, 8px);
+  font-family: var(--bpi-font-ui, Inter, "Segoe UI", Arial, sans-serif);
+  font-weight: 800;
+  line-height: 1.18;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+  cursor: pointer;
+  transition:
+    transform var(--bpi-duration-normal, 260ms) var(--bpi-ease, ease),
+    box-shadow var(--bpi-duration-normal, 260ms) var(--bpi-ease, ease),
+    background-color var(--bpi-duration-normal, 260ms) var(--bpi-ease, ease),
+    color var(--bpi-duration-normal, 260ms) var(--bpi-ease, ease),
+    border-color var(--bpi-duration-normal, 260ms) var(--bpi-ease, ease);
+}
+
+/* Primary action */
+body.public-page :where(.download-button.primary, .cta-button.primary, .hero-cta-row .download-button.primary) {
+  background: var(--bpi-gold, #d97706);
+  border: 1px solid color-mix(in srgb, var(--bpi-gold, #d97706) 78%, #000 22%);
+  color: #ffffff;
+  box-shadow: 0 8px 18px rgba(217, 119, 6, 0.22);
+}
+
+/* Secondary action */
+body.public-page :where(.download-button:not(.primary), .cta-button.secondary, .archive-link-row a, .download-row a:not(.primary)) {
+  background: transparent;
+  border: 1px solid var(--bpi-blue-deep, #0A3A68);
+  color: var(--bpi-blue-deep, #0A3A68);
+  box-shadow: none;
+}
+
+/* Card links are text-forward buttons, not heavy pills. */
+body.public-page :where(.card-link) {
+  min-height: 40px;
+  padding: 10px 0;
+  border-radius: 0;
+  border: 0;
+  color: var(--bpi-blue-deep, #0A3A68);
+  background: transparent;
+  box-shadow: none;
+  justify-content: flex-start;
+  font-weight: 850;
+}
+
+body.public-page-he :where(.card-link) {
+  justify-content: flex-end;
+}
+
+/* Interactive states */
+body.public-page :where(.download-button, .cta-button, .archive-link-row a, .download-row a):hover {
+  transform: translateY(-2px);
+  box-shadow: var(--bpi-shadow-sm, 0 2px 8px rgba(0, 0, 0, 0.08));
+}
+
+body.public-page :where(.download-button.primary, .cta-button.primary):hover {
+  background: color-mix(in srgb, var(--bpi-gold, #d97706) 88%, #000 12%);
+  color: #ffffff;
+  box-shadow: 0 12px 26px rgba(217, 119, 6, 0.28);
+}
+
+body.public-page :where(.download-button:not(.primary), .cta-button.secondary, .archive-link-row a, .download-row a:not(.primary)):hover {
+  background: var(--bpi-blue-soft, #e8f1f8);
+  border-color: var(--bpi-blue-deep, #0A3A68);
+  color: var(--bpi-blue-deep, #0A3A68);
+}
+
+body.public-page :where(.card-link):hover {
+  transform: none;
+  box-shadow: none;
+  color: color-mix(in srgb, var(--bpi-blue-deep, #0A3A68) 82%, #000 18%);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+body.public-page :where(.download-button, .cta-button, .card-link, .archive-link-row a, .download-row a):active {
+  transform: translateY(0);
+}
+
+body.public-page :where(.download-button, .cta-button, .card-link, .archive-link-row a, .download-row a):focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--bpi-gold, #d97706) 55%, #ffffff 45%);
+  outline-offset: 3px;
+}
+
+/* Button rows */
+body.public-page :where(.download-row, .hero-cta-row, .archive-link-row) {
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+body.public-page-he :where(.download-row, .hero-cta-row, .archive-link-row) {
+  direction: rtl;
+}
+
+body.public-page-en :where(.download-row, .hero-cta-row, .archive-link-row) {
+  direction: ltr;
+}
+
+/* Mobile touch safety */
+@media (max-width: 640px) {
+  body.public-page :where(.download-button, .cta-button, .archive-link-row a, .download-row a) {
+    width: 100%;
+    max-width: 100%;
+    min-height: 46px;
+    padding: 12px 18px;
+  }
+
+  body.public-page :where(.card-link) {
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.public-page :where(.download-button, .cta-button, .card-link, .archive-link-row a, .download-row a) {
+    transition: none;
+  }
+
+  body.public-page :where(.download-button, .cta-button, .archive-link-row a, .download-row a):hover {
+    transform: none;
+  }
+}
