@@ -13,19 +13,41 @@ body.public-page .site-brand,body.public-page .site-brand a,.site-header .site-b
 html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"]{min-width:154px!important;width:154px!important;max-width:154px!important;flex:0 0 154px!important;padding-inline:10px!important;font-size:13px!important;line-height:1.1!important;white-space:nowrap!important;box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;text-align:center!important}
 @media(max-width:1180px){html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"]{min-width:146px!important;width:146px!important;max-width:146px!important;flex-basis:146px!important;font-size:12.5px!important;padding-inline:8px!important}}
 
-/* Exact v0 effect: text-gradient-hero + animate-text-shimmer. */
+/* Safe visible fallback: the title can never disappear. */
 html body.public-page.bpi-home-page main#main.site-main>section.hero.concise-hero>h1{
-  color:transparent!important;
-  background:linear-gradient(135deg,#FFFFFF 0%,#F1F5F9 30%,#E6B84A 60%,#F5D06B 100%)!important;
-  background-size:300% 100%!important;
-  background-position:-100% 0!important;
-  background-repeat:no-repeat!important;
-  -webkit-background-clip:text!important;
-  -webkit-text-fill-color:transparent!important;
-  background-clip:text!important;
-  animation:bpiV0TextShimmer 4s linear infinite!important;
+  color:#F8FAFC!important;
+  -webkit-text-fill-color:#F8FAFC!important;
+  background:none!important;
+  animation:none!important;
+  text-shadow:0 2px 18px rgba(0,0,0,.34)!important;
 }
-@keyframes bpiV0TextShimmer{
-  0%{background-position:-100% 0}
-  100%{background-position:200% 0}
+
+/* Exact v0 effect: text-gradient-hero + animate-text-shimmer. */
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  html body.public-page.bpi-home-page main#main.site-main>section.hero.concise-hero>h1{
+    color:transparent!important;
+    background:linear-gradient(135deg,#FFFFFF 0%,#F1F5F9 30%,#E6B84A 60%,#F5D06B 100%)!important;
+    background-size:300% 100%!important;
+    background-position:-100% 0!important;
+    background-repeat:no-repeat!important;
+    -webkit-background-clip:text!important;
+    background-clip:text!important;
+    -webkit-text-fill-color:transparent!important;
+    text-shadow:none!important;
+    animation:bpiV0TextShimmer 4s linear infinite!important;
+    will-change:background-position!important;
+  }
+
+  @keyframes bpiV0TextShimmer{
+    0%{background-position:-100% 0}
+    100%{background-position:200% 0}
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  html body.public-page.bpi-home-page main#main.site-main>section.hero.concise-hero>h1{
+    animation:none!important;
+    background-position:50% 0!important;
+    will-change:auto!important;
+  }
 }
