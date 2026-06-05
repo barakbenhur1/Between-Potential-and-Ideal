@@ -80,6 +80,61 @@ html body.public-page-en.appendix-document-page .site-header {
   grid-template-columns: minmax(120px, 1fr) minmax(0, auto) minmax(90px, 1fr) !important;
 }
 
+/* Hebrew-only physical centering.
+   Equal outer tracks keep the complete button group at the same viewport X
+   on the homepage and every inner page, regardless of the brand/switch widths. */
+@media (min-width: 861px) {
+  html[lang="he"] body.public-page.public-page-he .site-header,
+  html[lang="he"] body.public-page.public-page-he.bpi-home-page .site-header,
+  html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) .site-header {
+    grid-template-columns: minmax(248px, 1fr) minmax(0, 1080px) minmax(248px, 1fr) !important;
+    justify-content: stretch !important;
+    column-gap: 16px !important;
+  }
+
+  html[lang="he"] body.public-page.public-page-he .site-header .site-brand {
+    grid-column: 1 !important;
+    justify-self: start !important;
+    width: 248px !important;
+    min-width: 248px !important;
+    max-width: 248px !important;
+  }
+
+  html[lang="he"] body.public-page.public-page-he .site-header .site-nav {
+    grid-column: 2 !important;
+    justify-self: center !important;
+    width: 100% !important;
+    max-width: 1080px !important;
+    margin-inline: auto !important;
+  }
+
+  html[lang="he"] body.public-page.public-page-he .site-header .language-switch {
+    grid-column: 3 !important;
+    justify-self: end !important;
+    width: 104px !important;
+    min-width: 104px !important;
+    max-width: 104px !important;
+  }
+}
+
+@media (max-width: 1180px) and (min-width: 861px) {
+  html[lang="he"] body.public-page.public-page-he .site-header {
+    grid-template-columns: minmax(210px, 1fr) minmax(0, 1fr) minmax(210px, 1fr) !important;
+  }
+
+  html[lang="he"] body.public-page.public-page-he .site-header .site-brand {
+    width: 210px !important;
+    min-width: 210px !important;
+    max-width: 210px !important;
+  }
+
+  html[lang="he"] body.public-page.public-page-he .site-header .language-switch {
+    width: 92px !important;
+    min-width: 92px !important;
+    max-width: 92px !important;
+  }
+}
+
 @media (max-width: 860px) {
   html body.public-page .site-header,
   html body.public-page-en .site-header {
