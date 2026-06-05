@@ -1,8 +1,9 @@
 /* Hebrew homepage tab-bar parity with Hebrew inner pages.
+   Apply from first paint; do not wait for JavaScript to add bpi-shared-nav.
    The complete button group is physically centered with equal outer tracks.
    English navigation is intentionally untouched. */
 
-html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav {
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header {
   height: 74px !important;
   min-height: 74px !important;
   max-height: 74px !important;
@@ -16,7 +17,7 @@ html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header
   overflow: visible !important;
 }
 
-html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav .site-brand {
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header .site-brand {
   grid-column: 1 !important;
   justify-self: start !important;
   width: 248px !important;
@@ -24,7 +25,7 @@ html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header
   max-width: 248px !important;
 }
 
-html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav {
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header nav.site-nav {
   grid-column: 2 !important;
   justify-self: center !important;
   width: 100% !important;
@@ -43,7 +44,7 @@ html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header
   overflow: visible !important;
 }
 
-html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a {
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header nav.site-nav > a {
   width: auto !important;
   min-width: 0 !important;
   max-width: none !important;
@@ -56,8 +57,8 @@ html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header
   white-space: nowrap !important;
 }
 
-html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai.html"],
-html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai-as-witness.html"] {
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header nav.site-nav > a[href$="ai.html"],
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header nav.site-nav > a[href$="ai-as-witness.html"] {
   width: auto !important;
   min-width: 0 !important;
   max-width: none !important;
@@ -67,15 +68,15 @@ html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header
   line-height: 1.1 !important;
 }
 
-html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai.html"]::before,
-html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai.html"]::after,
-html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai-as-witness.html"]::before,
-html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai-as-witness.html"]::after {
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header nav.site-nav > a[href$="ai.html"]::before,
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header nav.site-nav > a[href$="ai.html"]::after,
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header nav.site-nav > a[href$="ai-as-witness.html"]::before,
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header nav.site-nav > a[href$="ai-as-witness.html"]::after {
   content: none !important;
   display: none !important;
 }
 
-html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav .language-switch {
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header .language-switch {
   grid-column: 3 !important;
   justify-self: end !important;
   width: 104px !important;
@@ -86,30 +87,30 @@ html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header
 }
 
 @media (max-width: 1180px) and (min-width: 861px) {
-  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav {
+  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header {
     grid-template-columns: minmax(210px, 1fr) minmax(0, 1fr) minmax(210px, 1fr) !important;
   }
 
-  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav .site-brand {
+  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header .site-brand {
     width: 210px !important;
     min-width: 210px !important;
     max-width: 210px !important;
   }
 
-  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav .language-switch {
+  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header .language-switch {
     width: 92px !important;
     min-width: 92px !important;
     max-width: 92px !important;
   }
 
-  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a {
+  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header nav.site-nav > a {
     padding: 8px 10px !important;
     font-size: 13px !important;
   }
 }
 
 @media (max-width: 860px) {
-  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav {
+  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header {
     height: auto !important;
     min-height: 0 !important;
     max-height: none !important;
@@ -119,7 +120,7 @@ html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header
     padding: 12px 16px !important;
   }
 
-  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav .site-brand {
+  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header .site-brand {
     width: auto !important;
     min-width: 0 !important;
     max-width: 100% !important;
