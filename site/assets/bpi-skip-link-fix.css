@@ -1,6 +1,10 @@
-/* BPI skip-link visibility fix — 2026-05-26
-   The hidden accessibility skip link was leaking as a clipped orange pill near the
-   top edge after language/direction changes. Keep it fully hidden until keyboard focus. */
+@import url("./bpi-premium-design.css?v=20260602-stage3-side-branch");
+@import url("./bpi-premium-design-readability-hotfix.css?v=20260603-stage3-readability-v1");
+@import url("./bpi-he-brand-underline-fix.css?v=20260603-stage3-he-brand-line-v1");
+@import url("./bpi-gateway-card-light-fix.css?v=20260603-stage3-gateway-light-v1");
+@import url("./bpi-tabbar-dimensions-match-home.css?v=20260604-match-home-tabbar-v2");
+@import url("./bpi-home-en-overflow-fix.css?v=20260605-en-home-overflow-v1");
+@import url("./bpi-home-kicker-title.css?v=20260605-home-kicker-title-v1");
 
 body.public-page .skip-link {
   position: fixed !important;
@@ -36,35 +40,6 @@ body.public-page .skip-link:focus-visible {
   color: #fff !important;
   text-decoration: none !important;
   box-shadow: 0 10px 24px rgba(10, 58, 104, .22) !important;
-}
-
-/* BPI visible Hebrew wording and header polish — 2026-06-02 */
-body.public-page-he .site-nav a[href$="ai-as-witness.html"],
-html[lang="he"] .site-nav a[href$="ai-as-witness.html"] {
-  font-size: 0 !important;
-  line-height: 1 !important;
-}
-
-body.public-page-he .site-nav a[href$="ai-as-witness.html"]::before,
-html[lang="he"] .site-nav a[href$="ai-as-witness.html"]::before {
-  content: "בינה מלאכותית כעדות" !important;
-  display: inline !important;
-  font-size: 1rem !important;
-  line-height: inherit !important;
-}
-
-body.public-page-he .card-link[href$="ai-as-witness.html"],
-html[lang="he"] .card-link[href$="ai-as-witness.html"] {
-  font-size: 0 !important;
-  line-height: 1 !important;
-}
-
-body.public-page-he .card-link[href$="ai-as-witness.html"]::before,
-html[lang="he"] .card-link[href$="ai-as-witness.html"]::before {
-  content: "פתח את שער הבינה המלאכותית" !important;
-  display: inline !important;
-  font-size: 1rem !important;
-  line-height: inherit !important;
 }
 
 body.public-page .site-brand,
