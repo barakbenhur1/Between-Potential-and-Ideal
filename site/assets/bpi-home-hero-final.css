@@ -1,7 +1,7 @@
 /*
   Final shared home hero layout.
   Loaded last to override legacy grid rules and conflicting home patches.
-  Applies the same vertical composition to Hebrew and English.
+  Preserves the original dramatic hero effects while aligning Hebrew and English.
 */
 
 html body.public-page.bpi-home-page main.site-main {
@@ -90,16 +90,14 @@ html body.public-page.bpi-home-page .hero.concise-hero .kicker::before {
   z-index: 1 !important;
 }
 
-/* Shared centered headline. */
+/* Shared centered headline: layout only, keep original text effects. */
 html body.public-page.bpi-home-page .hero.concise-hero h1 {
   order: 2 !important;
   width: 100% !important;
   max-width: 14ch !important;
   margin: 0 auto clamp(24px, 3.4vw, 36px) !important;
-  color: #ffffff !important;
   font-size: clamp(3rem, 6.1vw, 5.25rem) !important;
   line-height: 1.015 !important;
-  letter-spacing: -0.042em !important;
   text-align: center !important;
   overflow-wrap: break-word !important;
   word-break: normal !important;
@@ -110,7 +108,6 @@ html body.public-page.bpi-home-page .hero.concise-hero h1 {
 html[lang="he"] body.public-page.bpi-home-page .hero.concise-hero h1 {
   max-width: 12.5ch !important;
   font-size: clamp(3rem, 5.8vw, 5rem) !important;
-  letter-spacing: -0.025em !important;
   direction: rtl !important;
   unicode-bidi: plaintext !important;
 }
@@ -120,7 +117,6 @@ html body.public-page.bpi-home-page .hero.concise-hero .lead {
   width: 100% !important;
   max-width: 68ch !important;
   margin: 0 auto !important;
-  color: rgba(255,255,255,.9) !important;
   font-size: clamp(1.03rem, 1.45vw, 1.22rem) !important;
   line-height: 1.68 !important;
   text-align: center !important;
@@ -133,10 +129,7 @@ html body.public-page.bpi-home-page .hero.concise-hero .method-note {
   max-width: 68ch !important;
   margin: clamp(24px, 3vw, 34px) auto 0 !important;
   padding: clamp(17px, 2.2vw, 24px) clamp(18px, 3vw, 32px) !important;
-  border: 1px solid rgba(245,196,78,.38) !important;
   border-radius: clamp(16px, 2vw, 22px) !important;
-  background: rgba(2,8,19,.24) !important;
-  color: rgba(255,255,255,.84) !important;
   font-size: clamp(.98rem, 1.25vw, 1.12rem) !important;
   line-height: 1.62 !important;
   text-align: center !important;
