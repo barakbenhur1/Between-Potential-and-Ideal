@@ -77,23 +77,27 @@ html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"] {
   }
 }
 
+/* Gold fallback: the title stays visible even without text clipping. */
 html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 {
-  color: #F8FAFC !important;
-  -webkit-text-fill-color: #F8FAFC !important;
+  color: #E6B84A !important;
+  -webkit-text-fill-color: #E6B84A !important;
   background: none !important;
   animation: none !important;
-  text-shadow: 0 2px 18px rgba(0,0,0,.34) !important;
+  text-shadow:
+    0 0 12px rgba(245,208,107,.16),
+    0 2px 18px rgba(0,0,0,.34) !important;
 }
 
+/* Exact v0 combination: text-gradient-gold + animate-text-shimmer. */
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
   html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 {
     color: transparent !important;
     background: linear-gradient(
       135deg,
-      #FFFFFF 0%,
-      #F1F5F9 30%,
-      #E6B84A 60%,
-      #F5D06B 100%
+      #E6B84A 0%,
+      #F5D06B 40%,
+      #FFEAA7 70%,
+      #E6B84A 100%
     ) !important;
     background-size: 300% 100% !important;
     background-position: -100% 0;
@@ -101,11 +105,14 @@ html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-h
     background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     text-shadow: none !important;
-    animation: bpiV0TextShimmer 4s linear infinite !important;
+    filter:
+      drop-shadow(0 0 10px rgba(245,208,107,.12))
+      drop-shadow(0 0 24px rgba(230,184,74,.16)) !important;
+    animation: bpiV0GoldTextShimmer 4s linear infinite !important;
     will-change: background-position !important;
   }
 
-  @keyframes bpiV0TextShimmer {
+  @keyframes bpiV0GoldTextShimmer {
     0% { background-position: -100% 0; }
     100% { background-position: 200% 0; }
   }
