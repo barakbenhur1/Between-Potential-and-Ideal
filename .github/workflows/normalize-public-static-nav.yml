@@ -1,0 +1,67 @@
+name: Normalize public static nav
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_branch:
+        description: Branch to update
+        required: true
+        default: bpi-premium-design-stage3
+
+permissions:
+  contents: write
+
+jobs:
+  normalize-public-static-nav:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.target_branch }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Normalize public nav in static HTML
+        run: python3 tools/fix_public_static_nav.py
+
+      - name: Verify expected nav labels exist
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          checks = {
+              'site/pages/he/core.html': ['מילון', 'מושגים', 'בינה מלאכותית כעדות', 'מתודולוגיה', 'קבצים', 'מקורות', 'English'],
+              'site/pages/he/files.html': ['מילון', 'מושגים', 'בינה מלאכותית כעדות', 'מתודולוגיה', 'קבצים', 'מקורות', 'English'],
+              'site/pages/he/ai.html': ['מילון', 'מושגים', 'בינה מלאכותית כעדות', 'מתודולוגיה', 'קבצים', 'מקורות', 'English'],
+              'site/pages/en/core-en.html': ['Glossary', 'Concepts', 'AI as Witness', 'Methodology', 'Files', 'Sources', 'עברית'],
+              'site/pages/en/files-en.html': ['Glossary', 'Concepts', 'AI as Witness', 'Methodology', 'Files', 'Sources', 'עברית'],
+              'site/pages/en/ai-en.html': ['Glossary', 'Concepts', 'AI as Witness', 'Methodology', 'Files', 'Sources', 'עברית'],
+          }
+          missing = []
+          for path, labels in checks.items():
+              text = Path(path).read_text(encoding='utf-8')
+              for label in labels:
+                  if label not in text:
+                      missing.append(f'{path}: {label}')
+          if missing:
+              raise SystemExit('Missing expected labels:\n' + '\n'.join(missing))
+          PY
+
+      - name: Check whitespace
+        run: git diff --check
+
+      - name: Commit normalized nav
+        run: |
+          if git diff --quiet; then
+            echo "No nav changes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/pages/he site/pages/en
+          git commit -m "Normalize public static nav across main pages"
+          git push origin HEAD:${{ inputs.target_branch }}
