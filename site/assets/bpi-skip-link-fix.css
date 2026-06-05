@@ -4,7 +4,7 @@
 @import url("./bpi-gateway-card-light-fix.css?v=20260603-stage3-gateway-light-v1");
 @import url("./bpi-tabbar-dimensions-match-home.css?v=20260604-match-home-tabbar-v2");
 @import url("./bpi-home-en-overflow-fix.css?v=20260605-en-home-overflow-v1");
-@import url("./bpi-home-kicker-title.css?v=20260605-home-kicker-title-v3-original");
+@import url("./bpi-home-kicker-title.css?v=20260605-home-kicker-title-v1");
 @import url("./bpi-home-hero-final.css?v=20260605-home-hero-final-v4-centered-gold");
 
 body.public-page .skip-link {
@@ -40,7 +40,7 @@ body.public-page .skip-link:focus-visible {
   background: #0A3A68 !important;
   color: #fff !important;
   text-decoration: none !important;
-  box-shadow: 0 10px 24px rgba(10,58,104,.22) !important;
+  box-shadow: 0 10px 24px rgba(10, 58, 104, .22) !important;
 }
 
 body.public-page .site-brand,
@@ -74,46 +74,5 @@ html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"] {
     flex-basis: 146px !important;
     font-size: 12.5px !important;
     padding-inline: 8px !important;
-  }
-}
-
-/* Gold fallback: the title stays visible even without text clipping. */
-html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 {
-  color: #E6B84A !important;
-  -webkit-text-fill-color: #E6B84A !important;
-  background: none !important;
-  animation: none !important;
-  text-shadow:
-    0 0 12px rgba(245,208,107,.16),
-    0 2px 18px rgba(0,0,0,.34) !important;
-}
-
-/* Exact v0 combination: text-gradient-gold + animate-text-shimmer. */
-@supports ((-webkit-background-clip: text) or (background-clip: text)) {
-  html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 {
-    color: transparent !important;
-    background: linear-gradient(
-      135deg,
-      #E6B84A 0%,
-      #F5D06B 40%,
-      #FFEAA7 70%,
-      #E6B84A 100%
-    ) !important;
-    background-size: 300% 100% !important;
-    background-position: -100% 0;
-    -webkit-background-clip: text !important;
-    background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    text-shadow: none !important;
-    filter:
-      drop-shadow(0 0 10px rgba(245,208,107,.12))
-      drop-shadow(0 0 24px rgba(230,184,74,.16)) !important;
-    animation: bpiV0GoldTextShimmer 4s linear infinite !important;
-    will-change: background-position !important;
-  }
-
-  @keyframes bpiV0GoldTextShimmer {
-    0% { background-position: -100% 0; }
-    100% { background-position: 200% 0; }
   }
 }
