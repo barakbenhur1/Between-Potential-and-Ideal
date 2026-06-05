@@ -4,7 +4,7 @@
 @import url("./bpi-gateway-card-light-fix.css?v=20260603-stage3-gateway-light-v1");
 @import url("./bpi-tabbar-dimensions-match-home.css?v=20260604-match-home-tabbar-v2");
 @import url("./bpi-home-en-overflow-fix.css?v=20260605-en-home-overflow-v1");
-@import url("./bpi-home-kicker-title.css?v=20260605-home-kicker-title-v2-live");
+@import url("./bpi-home-kicker-title.css?v=20260605-home-kicker-title-v3-original");
 @import url("./bpi-home-hero-final.css?v=20260605-home-hero-final-v4-centered-gold");
 
 body.public-page .skip-link{position:fixed!important;top:12px!important;inset-inline-start:12px!important;z-index:10000!important;width:1px!important;height:1px!important;padding:0!important;margin:0!important;overflow:hidden!important;white-space:nowrap!important;clip:rect(0 0 0 0)!important;clip-path:inset(50%)!important;transform:translateY(calc(-100% - 32px))!important;opacity:0!important;pointer-events:none!important}
@@ -13,6 +13,19 @@ body.public-page .site-brand,body.public-page .site-brand a,.site-header .site-b
 html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"]{min-width:154px!important;width:154px!important;max-width:154px!important;flex:0 0 154px!important;padding-inline:10px!important;font-size:13px!important;line-height:1.1!important;white-space:nowrap!important;box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;text-align:center!important}
 @media(max-width:1180px){html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"]{min-width:146px!important;width:146px!important;max-width:146px!important;flex-basis:146px!important;font-size:12.5px!important;padding-inline:8px!important}}
 
-html body.public-page.bpi-home-page main#main.site-main>section.hero.concise-hero>h1{color:transparent!important;background-image:linear-gradient(112deg,transparent 0%,transparent 36%,rgba(255,255,255,.08) 43%,rgba(255,255,255,1) 49%,rgba(255,238,164,.9) 53%,transparent 61%,transparent 100%),linear-gradient(135deg,#fff 0%,#eef4ff 30%,#f5d06b 68%,#fff2b8 86%,#fff 100%)!important;background-size:240% 100%,100% 100%!important;background-position:170% 50%,50% 50%!important;background-repeat:no-repeat!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;filter:drop-shadow(0 0 11px rgba(255,255,255,.08)) drop-shadow(0 0 26px rgba(230,184,74,.18))!important;animation:bpiDirectHeroShimmer 4.8s cubic-bezier(.4,0,.2,1) infinite,bpiDirectHeroGlow 2.8s ease-in-out infinite!important;will-change:background-position,filter!important}
-@keyframes bpiDirectHeroShimmer{0%,58%{background-position:170% 50%,50% 50%}78%{background-position:48% 50%,50% 50%}94%,100%{background-position:-85% 50%,50% 50%}}
-@keyframes bpiDirectHeroGlow{0%,100%{filter:drop-shadow(0 0 9px rgba(255,255,255,.06)) drop-shadow(0 0 21px rgba(230,184,74,.14))}50%{filter:drop-shadow(0 0 15px rgba(255,255,255,.12)) drop-shadow(0 0 36px rgba(230,184,74,.28))}}
+/* Exact v0 effect: text-gradient-hero + animate-text-shimmer. */
+html body.public-page.bpi-home-page main#main.site-main>section.hero.concise-hero>h1{
+  color:transparent!important;
+  background:linear-gradient(135deg,#FFFFFF 0%,#F1F5F9 30%,#E6B84A 60%,#F5D06B 100%)!important;
+  background-size:300% 100%!important;
+  background-position:-100% 0!important;
+  background-repeat:no-repeat!important;
+  -webkit-background-clip:text!important;
+  -webkit-text-fill-color:transparent!important;
+  background-clip:text!important;
+  animation:bpiV0TextShimmer 4s linear infinite!important;
+}
+@keyframes bpiV0TextShimmer{
+  0%{background-position:-100% 0}
+  100%{background-position:200% 0}
+}
