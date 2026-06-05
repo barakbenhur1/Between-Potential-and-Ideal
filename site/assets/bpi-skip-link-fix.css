@@ -96,7 +96,7 @@ html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-h
       #F5D06B 100%
     ) !important;
     background-size: 300% 100% !important;
-    background-position: -100% 0 !important;
+    background-position: -100% 0;
     -webkit-background-clip: text !important;
     background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
