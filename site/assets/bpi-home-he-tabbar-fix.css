@@ -1,15 +1,71 @@
-/* Hebrew homepage desktop tab-bar repair.
-   Keep the approved visual styling; change layout metrics only. */
+/* Hebrew homepage tab-bar parity with Hebrew inner pages.
+   The homepage must use the exact same geometry as every other Hebrew page.
+   English navigation is intentionally untouched. */
 
-/* The navigation already contains the correct Hebrew labels as real link text.
-   Older CSS layers also inject the same labels through pseudo-elements, which
-   duplicates the wording and expands the affected tabs. Disable every generated
-   label for these two links and keep only the accessible DOM text. */
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav {
+  height: 74px !important;
+  min-height: 74px !important;
+  max-height: 74px !important;
+  display: grid !important;
+  grid-template-columns: 248px minmax(0, 1080px) 104px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  column-gap: 16px !important;
+  padding: 0 clamp(22px, 2.4vw, 36px) !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+}
+
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav .site-brand {
+  grid-column: 1 !important;
+  justify-self: start !important;
+  width: 248px !important;
+  min-width: 248px !important;
+  max-width: 248px !important;
+}
+
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav {
+  grid-column: 2 !important;
+  justify-self: center !important;
+  width: 100% !important;
+  max-width: 1080px !important;
+  min-width: 0 !important;
+  min-height: 44px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  direction: rtl !important;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  gap: 7px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  overflow: visible !important;
+}
+
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a {
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  flex: 0 0 auto !important;
+  min-height: 36px !important;
+  height: 36px !important;
+  padding: 8px 13px !important;
+  font-size: 14px !important;
+  line-height: 1.1 !important;
+  white-space: nowrap !important;
+}
+
 html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai.html"],
 html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai-as-witness.html"] {
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  flex: 0 0 auto !important;
+  padding-inline: 9px !important;
   font-size: 13px !important;
   line-height: 1.1 !important;
-  color: inherit;
 }
 
 html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai.html"]::before,
@@ -18,95 +74,55 @@ html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header
 html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai-as-witness.html"]::after {
   content: none !important;
   display: none !important;
-  width: 0 !important;
-  height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
-@media (min-width: 1500px) {
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav .language-switch {
+  grid-column: 3 !important;
+  justify-self: end !important;
+  width: 104px !important;
+  min-width: 104px !important;
+  max-width: 104px !important;
+  height: 36px !important;
+  min-height: 36px !important;
+}
+
+@media (max-width: 1180px) and (min-width: 861px) {
   html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav {
-    height: 74px !important;
-    min-height: 74px !important;
-    max-height: 74px !important;
-    grid-template-columns: 248px minmax(0, 1240px) 104px !important;
-    column-gap: 16px !important;
-    padding-inline: clamp(22px, 2.4vw, 36px) !important;
-    overflow: visible !important;
+    grid-template-columns: 210px minmax(0, 1fr) 92px !important;
   }
 
-  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav {
-    width: 100% !important;
-    max-width: 1240px !important;
-    min-width: 0 !important;
-    min-height: 44px !important;
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    direction: rtl !important;
-    justify-content: center !important;
-    align-items: center !important;
-    align-content: center !important;
-    gap: 3px !important;
-    column-gap: 3px !important;
-    row-gap: 0 !important;
-    overflow: visible !important;
+  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav .site-brand {
+    width: 210px !important;
+    min-width: 210px !important;
+    max-width: 210px !important;
+  }
+
+  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav .language-switch {
+    width: 92px !important;
+    min-width: 92px !important;
+    max-width: 92px !important;
   }
 
   html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a {
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: none !important;
-    flex: 0 0 auto !important;
-    padding-inline: 9px !important;
-    font-size: 13px !important;
-    white-space: nowrap !important;
-  }
-
-  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai-as-witness.html"] {
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: none !important;
-    flex: 0 0 auto !important;
-    padding-inline: 9px !important;
+    padding: 8px 10px !important;
     font-size: 13px !important;
   }
 }
 
-@media (min-width: 861px) and (max-width: 1499px) {
+@media (max-width: 860px) {
   html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav {
     height: auto !important;
-    min-height: 92px !important;
-    max-height: none !important;
-    grid-template-columns: minmax(190px, 248px) minmax(0, 1fr) minmax(88px, 104px) !important;
-    padding-block: 8px !important;
-    overflow: visible !important;
-  }
-
-  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
     min-height: 0 !important;
+    max-height: none !important;
     display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    direction: rtl !important;
-    justify-content: center !important;
-    align-items: center !important;
-    align-content: center !important;
-    gap: 3px 2px !important;
-    overflow: visible !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    padding: 12px 16px !important;
   }
 
-  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a,
-  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai-as-witness.html"] {
+  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav .site-brand {
     width: auto !important;
     min-width: 0 !important;
-    max-width: none !important;
-    flex: 0 0 auto !important;
-    padding-inline: 6px !important;
-    font-size: 12.5px !important;
-    white-space: nowrap !important;
+    max-width: 100% !important;
   }
 }
