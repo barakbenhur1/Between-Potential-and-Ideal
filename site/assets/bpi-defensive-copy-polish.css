@@ -1,0 +1,75 @@
+/*
+  Compatibility stylesheet restored because styles.css imports this path.
+  The file was previously returning 404, so this title-only effect is guaranteed
+  to load as a fresh 200 response. No layout, copy, navigation or button rules.
+*/
+
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 {
+  color: transparent !important;
+  background-image:
+    linear-gradient(
+      110deg,
+      transparent 0%,
+      transparent 34%,
+      rgba(255,255,255,.06) 40%,
+      rgba(255,255,255,1) 48%,
+      rgba(255,237,158,.92) 53%,
+      transparent 62%,
+      transparent 100%
+    ),
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #eef4ff 28%,
+      #f5d06b 66%,
+      #fff2b8 84%,
+      #ffffff 100%
+    ) !important;
+  background-size: 250% 100%, 100% 100% !important;
+  background-position: 175% 50%, 50% 50% !important;
+  background-repeat: no-repeat !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
+  filter:
+    drop-shadow(0 0 10px rgba(255,255,255,.08))
+    drop-shadow(0 0 26px rgba(230,184,74,.18)) !important;
+  animation:
+    bpiHeroAliveShimmer 4.2s cubic-bezier(.4,0,.2,1) infinite,
+    bpiHeroAliveGlow 2.6s ease-in-out infinite !important;
+  will-change: background-position, filter !important;
+}
+
+@keyframes bpiHeroAliveShimmer {
+  0%, 52% {
+    background-position: 175% 50%, 50% 50%;
+  }
+  74% {
+    background-position: 48% 50%, 50% 50%;
+  }
+  92%, 100% {
+    background-position: -90% 50%, 50% 50%;
+  }
+}
+
+@keyframes bpiHeroAliveGlow {
+  0%, 100% {
+    filter:
+      drop-shadow(0 0 8px rgba(255,255,255,.05))
+      drop-shadow(0 0 20px rgba(230,184,74,.13));
+  }
+  50% {
+    filter:
+      drop-shadow(0 0 16px rgba(255,255,255,.14))
+      drop-shadow(0 0 38px rgba(230,184,74,.30));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 {
+    animation: none !important;
+    background-position: 50% 50%, 50% 50% !important;
+    will-change: auto !important;
+  }
+}
