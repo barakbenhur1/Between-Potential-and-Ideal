@@ -3,7 +3,7 @@
  *
  * This stylesheet owns layout and dimensions for the header on both home and
  * inner pages, in Hebrew and English. Page-specific styles may still own the
- * background/colour treatment, but must not change geometry.
+ * background and colour treatment, but must not change geometry.
  */
 
 html {
@@ -202,38 +202,37 @@ html {
     vertical-align: middle !important;
     transform: none !important;
   }
+}
 
-  @media (max-width: 1499px) {
-    html body.public-page header.site-header {
-      --bpi-nav-side-track: clamp(96px, 12vw, 190px);
-      --bpi-nav-center-max: 1fr;
-      --bpi-nav-gap: 3px;
-      --bpi-nav-font-size: clamp(11px, .94vw, 13px);
-      --bpi-nav-inline-padding: clamp(4px, .55vw, 8px);
-      grid-template-columns:
-        minmax(var(--bpi-nav-side-track), 1fr)
-        minmax(0, 1fr)
-        minmax(var(--bpi-nav-side-track), 1fr) !important;
-    }
+@media (min-width: 861px) and (max-width: 1499px) {
+  html body.public-page header.site-header {
+    --bpi-nav-side-track: clamp(96px, 12vw, 190px);
+    --bpi-nav-center-max: 100%;
+    --bpi-nav-gap: 3px;
+    --bpi-nav-font-size: clamp(11px, .94vw, 13px);
+    --bpi-nav-inline-padding: clamp(4px, .55vw, 8px);
+    grid-template-columns:
+      minmax(var(--bpi-nav-side-track), 1fr)
+      minmax(0, 1fr)
+      minmax(var(--bpi-nav-side-track), 1fr) !important;
+  }
 
-    html[lang="en"] body.public-page.public-page-en header.site-header {
-      --bpi-nav-side-track: clamp(110px, 15vw, 230px);
-      --bpi-nav-font-size: clamp(10.5px, .82vw, 12.5px);
-      --bpi-nav-inline-padding: clamp(3px, .42vw, 7px);
-    }
+  html[lang="en"] body.public-page.public-page-en header.site-header {
+    --bpi-nav-side-track: clamp(110px, 15vw, 230px);
+    --bpi-nav-font-size: clamp(10.5px, .82vw, 12.5px);
+    --bpi-nav-inline-padding: clamp(3px, .42vw, 7px);
+  }
 
-    html body.public-page header.site-header > .site-brand,
-    html body.public-page header.site-header > .site-brand > a {
-      font-size: 14px !important;
-    }
+  html body.public-page header.site-header > .site-brand > a {
+    font-size: 14px !important;
+  }
 
-    html body.public-page header.site-header > .language-switch {
-      width: 92px !important;
-      min-width: 92px !important;
-      max-width: 92px !important;
-      font-size: 13px !important;
-      padding-inline: 8px !important;
-    }
+  html body.public-page header.site-header > .language-switch {
+    width: 92px !important;
+    min-width: 92px !important;
+    max-width: 92px !important;
+    font-size: 13px !important;
+    padding-inline: 8px !important;
   }
 }
 
