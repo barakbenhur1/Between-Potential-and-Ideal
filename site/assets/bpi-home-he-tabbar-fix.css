@@ -1,5 +1,5 @@
 /* Hebrew homepage tab-bar parity with Hebrew inner pages.
-   The homepage must use the exact same geometry as every other Hebrew page.
+   The complete button group is physically centered with equal outer tracks.
    English navigation is intentionally untouched. */
 
 html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav {
@@ -7,9 +7,9 @@ html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header
   min-height: 74px !important;
   max-height: 74px !important;
   display: grid !important;
-  grid-template-columns: 248px minmax(0, 1080px) 104px !important;
+  grid-template-columns: minmax(248px, 1fr) minmax(0, 1080px) minmax(248px, 1fr) !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: stretch !important;
   column-gap: 16px !important;
   padding: 0 clamp(22px, 2.4vw, 36px) !important;
   box-sizing: border-box !important;
@@ -39,8 +39,7 @@ html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header
   align-items: center !important;
   align-content: center !important;
   gap: 7px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin-inline: auto !important;
   overflow: visible !important;
 }
 
@@ -88,7 +87,7 @@ html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header
 
 @media (max-width: 1180px) and (min-width: 861px) {
   html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav {
-    grid-template-columns: 210px minmax(0, 1fr) 92px !important;
+    grid-template-columns: minmax(210px, 1fr) minmax(0, 1fr) minmax(210px, 1fr) !important;
   }
 
   html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav .site-brand {
