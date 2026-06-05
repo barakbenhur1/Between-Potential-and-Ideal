@@ -115,6 +115,13 @@ html body.public-page-en.appendix-document-page .site-header {
     min-width: 104px !important;
     max-width: 104px !important;
   }
+
+  /* Active-state visuals must never move a tab vertically.
+     Colours, shadows and backgrounds remain owned by the theme layers. */
+  html[lang] body.public-page header.site-header nav.site-nav > a.active,
+  html[lang] body.public-page header.site-header nav.site-nav > a[aria-current="page"] {
+    transform: none !important;
+  }
 }
 
 @media (max-width: 1180px) and (min-width: 861px) {
