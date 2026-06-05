@@ -116,15 +116,14 @@ html body.public-page-en.appendix-document-page .site-header {
     max-width: 104px !important;
   }
 
-  /* Final measured micro-alignment: inner Hebrew pages were still 1px left
-     and 1px low relative to the homepage. Move only the three header contents,
-     leaving the header background and all dimensions untouched. */
+  /* Corrected direction and larger adjustment: move the complete inner-page
+     header content 4px left and 2px down relative to the homepage. */
   html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) .site-header > .site-brand,
   html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) .site-header > .site-nav,
   html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) .site-header > .language-switch {
     position: relative !important;
-    left: 1px !important;
-    top: -1px !important;
+    left: -4px !important;
+    top: 2px !important;
   }
 
   /* Active-state visuals must never move a tab vertically.
