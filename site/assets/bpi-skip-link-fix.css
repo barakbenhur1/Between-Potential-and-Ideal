@@ -7,49 +7,106 @@
 @import url("./bpi-home-kicker-title.css?v=20260605-home-kicker-title-v3-original");
 @import url("./bpi-home-hero-final.css?v=20260605-home-hero-final-v4-centered-gold");
 
-body.public-page .skip-link{position:fixed!important;top:12px!important;inset-inline-start:12px!important;z-index:10000!important;width:1px!important;height:1px!important;padding:0!important;margin:0!important;overflow:hidden!important;white-space:nowrap!important;clip:rect(0 0 0 0)!important;clip-path:inset(50%)!important;transform:translateY(calc(-100% - 32px))!important;opacity:0!important;pointer-events:none!important}
-body.public-page .skip-link:focus,body.public-page .skip-link:focus-visible{width:auto!important;height:auto!important;padding:10px 16px!important;overflow:visible!important;clip:auto!important;clip-path:none!important;transform:none!important;opacity:1!important;pointer-events:auto!important;border-radius:999px!important;background:#0A3A68!important;color:#fff!important;text-decoration:none!important;box-shadow:0 10px 24px rgba(10,58,104,.22)!important}
-body.public-page .site-brand,body.public-page .site-brand a,.site-header .site-brand,.site-header .site-brand a{white-space:nowrap!important}
-html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"]{min-width:154px!important;width:154px!important;max-width:154px!important;flex:0 0 154px!important;padding-inline:10px!important;font-size:13px!important;line-height:1.1!important;white-space:nowrap!important;box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;text-align:center!important}
-@media(max-width:1180px){html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"]{min-width:146px!important;width:146px!important;max-width:146px!important;flex-basis:146px!important;font-size:12.5px!important;padding-inline:8px!important}}
-
-/* Safe visible fallback: the title can never disappear. */
-html body.public-page.bpi-home-page main#main.site-main>section.hero.concise-hero>h1{
-  color:#F8FAFC!important;
-  -webkit-text-fill-color:#F8FAFC!important;
-  background:none!important;
-  animation:none!important;
-  text-shadow:0 2px 18px rgba(0,0,0,.34)!important;
+body.public-page .skip-link {
+  position: fixed !important;
+  top: 12px !important;
+  inset-inline-start: 12px !important;
+  z-index: 10000 !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  transform: translateY(calc(-100% - 32px)) !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
-/* Persistent v0 gradient with a separate moving shimmer layer. */
-@supports ((-webkit-background-clip:text) or (background-clip:text)){
-  html body.public-page.bpi-home-page main#main.site-main>section.hero.concise-hero>h1{
-    color:transparent!important;
-    background-image:
-      linear-gradient(100deg,transparent 0%,transparent 38%,rgba(255,255,255,.16) 44%,rgba(255,255,255,.96) 50%,rgba(255,235,150,.78) 54%,transparent 62%,transparent 100%),
-      linear-gradient(135deg,#FFFFFF 0%,#F1F5F9 30%,#E6B84A 60%,#F5D06B 100%)!important;
-    background-size:220% 100%,100% 100%!important;
-    background-position:150% 0,0 0!important;
-    background-repeat:no-repeat!important;
-    -webkit-background-clip:text!important;
-    background-clip:text!important;
-    -webkit-text-fill-color:transparent!important;
-    text-shadow:none!important;
-    animation:bpiV0TextShimmer 4s linear infinite!important;
-    will-change:background-position!important;
-  }
+body.public-page .skip-link:focus,
+body.public-page .skip-link:focus-visible {
+  width: auto !important;
+  height: auto !important;
+  padding: 10px 16px !important;
+  overflow: visible !important;
+  clip: auto !important;
+  clip-path: none !important;
+  transform: none !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  border-radius: 999px !important;
+  background: #0A3A68 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  box-shadow: 0 10px 24px rgba(10,58,104,.22) !important;
+}
 
-  @keyframes bpiV0TextShimmer{
-    0%{background-position:150% 0,0 0}
-    100%{background-position:-80% 0,0 0}
+body.public-page .site-brand,
+body.public-page .site-brand a,
+.site-header .site-brand,
+.site-header .site-brand a {
+  white-space: nowrap !important;
+}
+
+html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"] {
+  min-width: 154px !important;
+  width: 154px !important;
+  max-width: 154px !important;
+  flex: 0 0 154px !important;
+  padding-inline: 10px !important;
+  font-size: 13px !important;
+  line-height: 1.1 !important;
+  white-space: nowrap !important;
+  box-sizing: border-box !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+@media (max-width: 1180px) {
+  html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"] {
+    min-width: 146px !important;
+    width: 146px !important;
+    max-width: 146px !important;
+    flex-basis: 146px !important;
+    font-size: 12.5px !important;
+    padding-inline: 8px !important;
   }
 }
 
-@media(prefers-reduced-motion:reduce){
-  html body.public-page.bpi-home-page main#main.site-main>section.hero.concise-hero>h1{
-    animation:none!important;
-    background-position:50% 0,0 0!important;
-    will-change:auto!important;
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 {
+  color: #F8FAFC !important;
+  -webkit-text-fill-color: #F8FAFC !important;
+  background: none !important;
+  animation: none !important;
+  text-shadow: 0 2px 18px rgba(0,0,0,.34) !important;
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 {
+    color: transparent !important;
+    background: linear-gradient(
+      135deg,
+      #FFFFFF 0%,
+      #F1F5F9 30%,
+      #E6B84A 60%,
+      #F5D06B 100%
+    ) !important;
+    background-size: 300% 100% !important;
+    background-position: -100% 0 !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    text-shadow: none !important;
+    animation: bpiV0TextShimmer 4s linear infinite !important;
+    will-change: background-position !important;
+  }
+
+  @keyframes bpiV0TextShimmer {
+    0% { background-position: -100% 0; }
+    100% { background-position: 200% 0; }
   }
 }
