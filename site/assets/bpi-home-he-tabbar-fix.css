@@ -1,0 +1,89 @@
+/* Hebrew homepage desktop tab-bar repair.
+   Keep the approved visual styling; change layout metrics only. */
+
+@media (min-width: 1500px) {
+  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav {
+    height: 74px !important;
+    min-height: 74px !important;
+    max-height: 74px !important;
+    grid-template-columns: 248px minmax(0, 1240px) 104px !important;
+    column-gap: 16px !important;
+    padding-inline: clamp(22px, 2.4vw, 36px) !important;
+    overflow: visible !important;
+  }
+
+  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav {
+    width: 100% !important;
+    max-width: 1240px !important;
+    min-width: 0 !important;
+    min-height: 44px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    direction: rtl !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    gap: 3px !important;
+    column-gap: 3px !important;
+    row-gap: 0 !important;
+    overflow: visible !important;
+  }
+
+  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    flex: 0 0 auto !important;
+    padding-inline: 9px !important;
+    font-size: 13px !important;
+    white-space: nowrap !important;
+  }
+
+  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai-as-witness.html"] {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    flex: 0 0 auto !important;
+    padding-inline: 9px !important;
+    font-size: 13px !important;
+  }
+}
+
+@media (min-width: 861px) and (max-width: 1499px) {
+  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav {
+    height: auto !important;
+    min-height: 92px !important;
+    max-height: none !important;
+    grid-template-columns: minmax(190px, 248px) minmax(0, 1fr) minmax(88px, 104px) !important;
+    padding-block: 8px !important;
+    overflow: visible !important;
+  }
+
+  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    direction: rtl !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    gap: 3px 2px !important;
+    overflow: visible !important;
+  }
+
+  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a,
+  html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai-as-witness.html"] {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    flex: 0 0 auto !important;
+    padding-inline: 6px !important;
+    font-size: 12.5px !important;
+    white-space: nowrap !important;
+  }
+}
