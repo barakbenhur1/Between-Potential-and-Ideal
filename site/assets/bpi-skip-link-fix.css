@@ -2,11 +2,11 @@
 @import url("./bpi-premium-design-readability-hotfix.css?v=20260603-stage3-readability-v1");
 @import url("./bpi-he-brand-underline-fix.css?v=20260603-stage3-he-brand-line-v1");
 @import url("./bpi-gateway-card-light-fix.css?v=20260603-stage3-gateway-light-v1");
-@import url("./bpi-tabbar-dimensions-match-home.css?v=20260604-match-home-tabbar-v2");
+@import url("./bpi-tabbar-dimensions-match-home.css?v=20260606-first-paint-and-active-baseline-v4");
 @import url("./bpi-home-en-overflow-fix.css?v=20260605-en-home-overflow-v1");
 @import url("./bpi-home-kicker-title.css?v=20260605-home-kicker-title-v1");
 @import url("./bpi-home-hero-final.css?v=20260605-home-hero-final-v4-centered-gold");
-@import url("./bpi-home-he-kicker-center-fix.css?v=20260605-he-kicker-center-v2");
+@import url("./bpi-home-he-kicker-center-fix.css?v=20260606-he-home-first-paint-parity-v5");
 
 body.public-page .skip-link {
   position: fixed !important;
