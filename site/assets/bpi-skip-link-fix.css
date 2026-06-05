@@ -116,24 +116,33 @@ html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-h
   word-break: normal;
   hyphens: none;
   color: transparent;
-  background-image: linear-gradient(
-    135deg,
-    #ffffff 0%,
-    #eef4ff 34%,
-    var(--bpi-premium-gold-light) 72%,
-    #fff2b8 100%
-  );
-  background-size: 300% 100%;
-  background-position: -100% 50%;
-  background-repeat: repeat-x;
+  background-image:
+    radial-gradient(
+      ellipse at center,
+      rgba(255, 255, 255, 0.92) 0%,
+      rgba(255, 243, 186, 0.72) 16%,
+      rgba(245, 208, 107, 0.28) 31%,
+      transparent 55%
+    ),
+    linear-gradient(
+      118deg,
+      #ffffff 0%,
+      #eef4ff 22%,
+      var(--bpi-premium-gold-light) 48%,
+      #fff2b8 70%,
+      #e6b84a 100%
+    );
+  background-size: 165% 140%, 285% 130%;
+  background-position: 130% 32%, -100% 54%;
+  background-repeat: no-repeat, repeat-x;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   filter:
     drop-shadow(0 0 7px rgba(255, 255, 255, 0.08))
     drop-shadow(0 0 20px rgba(230, 184, 74, 0.16));
-  animation: bpiHeroGradientFlow 4s linear infinite;
-  will-change: background-position;
+  animation: bpiHeroWaterFlow 10s cubic-bezier(.42, .08, .22, .96) infinite alternate;
+  will-change: background-position, background-size;
 }
 
 html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::before {
@@ -156,32 +165,50 @@ html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-h
     0 0 5px rgba(255, 255, 255, 0.98),
     0 0 13px rgba(245, 208, 107, 0.95),
     0 0 28px rgba(230, 184, 74, 0.58);
-  animation: bpiHeroDynamicSparkle 4s ease-in-out infinite;
+  animation: bpiHeroDynamicSparkle 8.5s ease-in-out infinite;
 }
 
-@keyframes bpiHeroGradientFlow {
+@keyframes bpiHeroWaterFlow {
   0% {
-    background-position: -100% 50%;
+    background-position: 130% 32%, -100% 54%;
+    background-size: 165% 140%, 285% 130%;
+  }
+  20% {
+    background-position: 96% 62%, -52% 44%;
+    background-size: 176% 156%, 305% 142%;
+  }
+  43% {
+    background-position: 56% 38%, 18% 59%;
+    background-size: 154% 146%, 274% 122%;
+  }
+  68% {
+    background-position: 14% 66%, 108% 42%;
+    background-size: 182% 162%, 314% 151%;
+  }
+  84% {
+    background-position: -10% 47%, 154% 57%;
+    background-size: 168% 142%, 294% 134%;
   }
   100% {
-    background-position: 200% 50%;
+    background-position: -42% 58%, 210% 49%;
+    background-size: 160% 150%, 282% 128%;
   }
 }
 
 @keyframes bpiHeroDynamicSparkle {
-  0%, 54%, 100% {
+  0%, 58%, 100% {
     opacity: 0;
     transform: scale(0.35) rotate(0deg);
   }
-  63% {
+  66% {
     opacity: 0.42;
     transform: scale(0.72) rotate(12deg);
   }
-  70% {
+  72% {
     opacity: 1;
     transform: scale(1.2) rotate(28deg);
   }
-  78% {
+  80% {
     opacity: 0.28;
     transform: scale(0.68) rotate(44deg);
   }
