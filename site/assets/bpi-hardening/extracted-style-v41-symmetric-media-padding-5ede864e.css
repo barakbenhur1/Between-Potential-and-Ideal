@@ -63,30 +63,26 @@ body.public-page-en [data-lang-block="he"] {
   display: none !important;
 }
 
-/* Hebrew visible wording guard: UI labels must say בינה מלאכותית, not AI. */
+/* Hebrew navigation labels are real link text in the DOM.
+   Never hide them or recreate them with pseudo-elements. */
 html[lang="he"] .site-nav a[href$="ai.html"],
-body.public-page-he .site-nav a[href$="ai.html"] {
-  font-size: 0 !important;
-  line-height: 1 !important;
-}
-html[lang="he"] .site-nav a[href$="ai.html"]::before,
-body.public-page-he .site-nav a[href$="ai.html"]::before {
-  content: "בינה מלאכותית" !important;
-  display: inline !important;
-  font-size: 1rem !important;
-  line-height: inherit !important;
-}
+body.public-page-he .site-nav a[href$="ai.html"],
 html[lang="he"] .site-nav a[href$="ai-as-witness.html"],
 body.public-page-he .site-nav a[href$="ai-as-witness.html"] {
-  font-size: 0 !important;
-  line-height: 1 !important;
+  font-size: inherit;
+  line-height: inherit;
 }
+
+html[lang="he"] .site-nav a[href$="ai.html"]::before,
+html[lang="he"] .site-nav a[href$="ai.html"]::after,
+body.public-page-he .site-nav a[href$="ai.html"]::before,
+body.public-page-he .site-nav a[href$="ai.html"]::after,
 html[lang="he"] .site-nav a[href$="ai-as-witness.html"]::before,
-body.public-page-he .site-nav a[href$="ai-as-witness.html"]::before {
-  content: "בינה מלאכותית כעדות" !important;
-  display: inline !important;
-  font-size: 1rem !important;
-  line-height: inherit !important;
+html[lang="he"] .site-nav a[href$="ai-as-witness.html"]::after,
+body.public-page-he .site-nav a[href$="ai-as-witness.html"]::before,
+body.public-page-he .site-nav a[href$="ai-as-witness.html"]::after {
+  content: none !important;
+  display: none !important;
 }
 
 /* Gateway tabs should look pressed on their own pages, matching existing active tabs. */
