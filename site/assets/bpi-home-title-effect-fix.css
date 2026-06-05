@@ -1,83 +1,194 @@
-/* Homepage hero title — exact values from the extracted v0 design tokens. */
+/* Restore the approved original homepage effects.
+   This layer changes layout only: centered title, centered copy, centered buttons,
+   and the original top title rule/dot. It does not recolor or restyle the headline. */
 
-html body.bpi-home-page main#main.site-main > section.bpi-reference-hero {
-  display: grid !important;
-  justify-items: center !important;
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  width: min(1180px, calc(100% - 32px)) !important;
+  max-width: 1180px !important;
+  margin: 0 auto !important;
+  padding: clamp(34px, 4.5vw, 56px) clamp(24px, 5vw, 64px) clamp(36px, 4.5vw, 52px) !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
   text-align: center !important;
 }
 
-html body.bpi-home-page main#main.site-main > section.bpi-reference-hero > * {
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > * {
+  align-self: center !important;
   margin-inline: auto !important;
   text-align: center !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
 }
 
-html body.bpi-home-page main#main.site-main > section.bpi-reference-hero > h1.home-display-title {
-  width: min(980px, calc(100% - 32px)) !important;
-  max-width: 980px !important;
-  margin: 0 auto !important;
-  font-family: Georgia, "Times New Roman", serif !important;
-  font-size: clamp(3.2rem, 9vw, 8.4rem) !important;
-  font-weight: 800 !important;
-  letter-spacing: -0.065em !important;
-  line-height: 0.95 !important;
-  text-align: center !important;
-  background: linear-gradient(135deg, white 0%, #eef2f7 34%, #e6b84a 68%, #f5d06b 100%) !important;
-  -webkit-background-clip: text !important;
-  background-clip: text !important;
-  color: transparent !important;
-  -webkit-text-fill-color: transparent !important;
-}
-
-html[lang="he"] body.bpi-home-page main#main.site-main > section.bpi-reference-hero > h1.home-display-title {
-  font-family: "Noto Serif Hebrew", "Frank Ruhl Libre", "David Libre", Georgia, serif !important;
-  letter-spacing: -0.04em !important;
-}
-
-html body.bpi-home-page main#main.site-main > section.bpi-reference-hero .home-line {
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > .kicker {
+  position: relative !important;
   display: block !important;
+  order: 1 !important;
+  width: min(760px, 100%) !important;
+  max-width: 760px !important;
+  margin: 0 auto clamp(30px, 3.8vw, 44px) !important;
+  padding: 0 12px clamp(18px, 2vw, 24px) !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: clamp(1rem, 1.45vw, 1.24rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  letter-spacing: .035em !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  white-space: normal !important;
+}
+
+html[lang="he"] body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > .kicker {
+  font-family: "Noto Serif Hebrew", "David Libre", Georgia, serif !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > .kicker::after {
+  content: "" !important;
+  position: absolute !important;
+  inset-inline-start: 50% !important;
+  bottom: 0 !important;
+  width: min(350px, 76%) !important;
+  height: 1px !important;
+  transform: translateX(-50%) !important;
+  background: linear-gradient(90deg, rgba(217,119,6,.12), rgba(245,196,78,.82) 18%, rgba(245,196,78,.82) 82%, rgba(217,119,6,.12)) !important;
+  border: 0 !important;
+  opacity: 1 !important;
+}
+
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > .kicker::before {
+  content: "" !important;
+  position: absolute !important;
+  inset-inline-start: 50% !important;
+  bottom: -3px !important;
+  width: 7px !important;
+  height: 7px !important;
+  transform: translateX(-50%) !important;
+  border-radius: 999px !important;
+  background: #f5c44e !important;
+  box-shadow: 0 0 0 2px rgba(245,196,78,.12) !important;
+  z-index: 1 !important;
+}
+
+html[lang="he"] body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > .kicker::after {
+  background: linear-gradient(90deg, rgba(10,58,104,.12), rgba(10,58,104,.88) 18%, rgba(10,58,104,.88) 82%, rgba(10,58,104,.12)) !important;
+}
+
+html[lang="he"] body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > .kicker::before {
+  background: #0A3A68 !important;
+  box-shadow: 0 0 0 2px rgba(10,58,104,.14) !important;
+}
+
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 {
+  order: 2 !important;
   width: 100% !important;
+  max-width: 14ch !important;
+  margin: 0 auto clamp(24px, 3.4vw, 36px) !important;
+  font-size: clamp(3rem, 6.1vw, 5.25rem) !important;
+  line-height: 1.015 !important;
+  text-align: center !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+  hyphens: none !important;
+  text-wrap: balance !important;
+}
+
+html[lang="he"] body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 {
+  max-width: 12.5ch !important;
+  font-size: clamp(3rem, 5.8vw, 5rem) !important;
+  direction: rtl !important;
+  unicode-bidi: plaintext !important;
+}
+
+/* Flatten the temporary word wrappers so the original h1 effect applies as one title. */
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 .home-line,
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 .home-gold {
+  display: inline !important;
+  color: inherit !important;
+  background: none !important;
+  -webkit-text-fill-color: inherit !important;
+  filter: none !important;
+  text-shadow: inherit !important;
+  font: inherit !important;
+  letter-spacing: inherit !important;
+}
+
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 .home-line:not(:last-child)::after {
+  content: " " !important;
+}
+
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > .lead {
+  order: 3 !important;
+  width: 100% !important;
+  max-width: 68ch !important;
+  margin: 0 auto !important;
+  font-size: clamp(1.03rem, 1.45vw, 1.22rem) !important;
+  line-height: 1.68 !important;
   text-align: center !important;
 }
 
-html body.bpi-home-page main#main.site-main > section.bpi-reference-hero .home-gold {
-  color: inherit !important;
-  -webkit-text-fill-color: inherit !important;
-  background: none !important;
-  filter: none !important;
-  text-shadow: none !important;
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > .method-note {
+  order: 4 !important;
+  width: min(760px, 100%) !important;
+  max-width: 68ch !important;
+  margin: clamp(24px, 3vw, 34px) auto 0 !important;
+  padding: clamp(17px, 2.2vw, 24px) clamp(18px, 3vw, 32px) !important;
+  box-sizing: border-box !important;
+  border-radius: clamp(16px, 2vw, 22px) !important;
+  font-size: clamp(.98rem, 1.25vw, 1.12rem) !important;
+  line-height: 1.62 !important;
+  text-align: center !important;
 }
 
-html body.bpi-home-page main#main.site-main > section.bpi-reference-hero > .hero-cta-row {
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > .hero-cta-row {
+  order: 5 !important;
   display: flex !important;
-  flex-wrap: wrap !important;
   justify-content: center !important;
   align-items: center !important;
-  width: min(900px, calc(100% - 32px)) !important;
-  margin: 44px auto 0 !important;
-  gap: 14px !important;
+  flex-wrap: wrap !important;
+  width: min(760px, 100%) !important;
+  max-width: 760px !important;
+  margin: clamp(26px, 3.2vw, 38px) auto 0 !important;
+  gap: clamp(12px, 2vw, 18px) !important;
+  text-align: center !important;
 }
 
-html body.bpi-home-page main#main.site-main > section.bpi-reference-hero > .hero-cta-row > a {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-height: 48px !important;
-  padding: 0 22px !important;
-  border-radius: 999px !important;
+html body.public-page-en.bpi-home-page main#main.site-main > section.hero.concise-hero > .hero-cta-row { direction: ltr !important; }
+html body.public-page-he.bpi-home-page main#main.site-main > section.hero.concise-hero > .hero-cta-row { direction: rtl !important; }
+
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > .hero-cta-row > .download-button {
+  flex: 0 1 auto !important;
+  min-width: 220px !important;
+  max-width: 100% !important;
   margin: 0 !important;
   text-align: center !important;
 }
 
-@media (max-width: 640px) {
-  html body.bpi-home-page main#main.site-main > section.bpi-reference-hero > h1.home-display-title {
-    font-size: clamp(2.35rem, 13vw, 4.15rem) !important;
+@media (max-width: 760px) {
+  html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero {
+    width: calc(100% - 20px) !important;
+    padding: 28px 18px 30px !important;
   }
 
-  html body.bpi-home-page main#main.site-main > section.bpi-reference-hero > .hero-cta-row {
-    flex-direction: column !important;
+  html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > .kicker::after {
+    width: min(280px, 82%) !important;
   }
 
-  html body.bpi-home-page main#main.site-main > section.bpi-reference-hero > .hero-cta-row > a {
+  html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1,
+  html[lang="he"] body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 {
+    max-width: 100% !important;
+    font-size: clamp(2.25rem, 10vw, 3.5rem) !important;
+    line-height: 1.06 !important;
+  }
+
+  html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > .hero-cta-row > .download-button {
     width: 100% !important;
+    min-width: 0 !important;
   }
 }
