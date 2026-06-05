@@ -1,0 +1,3 @@
+/* Compatibility stylesheet restored to prevent a broken @import.
+   The defensive copy rules were consolidated into the main site styles.
+   Keep this file present because styles.css still imports it. */
