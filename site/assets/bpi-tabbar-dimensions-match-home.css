@@ -1,149 +1,268 @@
-/* Match inner page tab-bar dimensions to the home page tab-bar.
-   This file changes layout metrics only. It does not change home colors. */
+/*
+ * Shared public navigation geometry — single source of truth.
+ *
+ * This stylesheet owns layout and dimensions for the header on both home and
+ * inner pages, in Hebrew and English. Page-specific styles may still own the
+ * background/colour treatment, but must not change geometry.
+ */
 
-html body.public-page .site-header,
-html body.public-page.design-prompt-theme .site-header,
-html body.public-page.appendix-document-page .site-header {
-  height: 74px !important;
-  min-height: 74px !important;
-  max-height: 74px !important;
-  display: grid !important;
-  grid-template-columns: minmax(120px, 1fr) minmax(0, auto) minmax(90px, 1fr) !important;
-  align-items: center !important;
-  column-gap: 16px !important;
-  padding: 0 clamp(22px, 2.4vw, 36px) !important;
-  box-sizing: border-box !important;
+html {
+  scrollbar-gutter: stable;
 }
 
-html body.public-page .site-header .site-brand,
-html body.public-page.design-prompt-theme .site-header .site-brand,
-html body.public-page.appendix-document-page .site-header .site-brand {
-  grid-column: 1 !important;
-  justify-self: start !important;
-  min-width: 0 !important;
-  max-width: none !important;
-  white-space: nowrap !important;
-  overflow: visible !important;
-}
-
-html body.public-page .site-header .site-nav,
-html body.public-page.design-prompt-theme .site-header .site-nav,
-html body.public-page.appendix-document-page .site-header .site-nav {
-  grid-column: 2 !important;
-  justify-self: center !important;
-  display: flex !important;
-  flex-wrap: wrap !important;
-  justify-content: center !important;
-  align-items: center !important;
-  align-content: center !important;
-  text-align: center !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  max-width: min(100%, 1120px) !important;
-  min-width: 0 !important;
-  min-height: 44px !important;
-  gap: 7px !important;
-  overflow: visible !important;
-}
-
-html body.public-page .site-header .site-nav a,
-html body.public-page.design-prompt-theme .site-header .site-nav a,
-html body.public-page.appendix-document-page .site-header .site-nav a {
-  min-height: 36px !important;
-  height: 36px !important;
-  padding: 8px 13px !important;
-  line-height: 1.1 !important;
-  box-sizing: border-box !important;
-  white-space: nowrap !important;
-}
-
-html body.public-page .site-header .language-switch,
-html body.public-page.design-prompt-theme .site-header .language-switch,
-html body.public-page.appendix-document-page .site-header .language-switch {
-  grid-column: 3 !important;
-  justify-self: end !important;
-  min-width: 90px !important;
-  width: auto !important;
-  height: 36px !important;
-  min-height: 36px !important;
-  padding: 8px 13px !important;
-  box-sizing: border-box !important;
-  white-space: nowrap !important;
-}
-
-html body.public-page-en .site-header,
-html body.public-page-en.design-prompt-theme .site-header,
-html body.public-page-en.appendix-document-page .site-header {
-  height: 86px !important;
-  min-height: 86px !important;
-  max-height: 86px !important;
-  grid-template-columns: minmax(120px, 1fr) minmax(0, auto) minmax(90px, 1fr) !important;
-}
-
-/* Hebrew-only physical centering.
-   Equal outer tracks keep the complete button group at the same viewport X
-   on the homepage and every inner page, regardless of the brand/switch widths. */
 @media (min-width: 861px) {
-  html[lang="he"] body.public-page.public-page-he .site-header,
-  html[lang="he"] body.public-page.public-page-he.bpi-home-page .site-header,
-  html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) .site-header {
-    grid-template-columns: minmax(248px, 1fr) minmax(0, 1080px) minmax(248px, 1fr) !important;
+  html body.public-page header.site-header {
+    --bpi-nav-height: 74px;
+    --bpi-nav-side-track: 248px;
+    --bpi-nav-center-max: 1080px;
+    --bpi-nav-control-height: 36px;
+    --bpi-nav-gap: 7px;
+    --bpi-nav-font-size: 14px;
+    --bpi-nav-inline-padding: 13px;
+
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    width: 100% !important;
+    height: var(--bpi-nav-height) !important;
+    min-height: var(--bpi-nav-height) !important;
+    max-height: var(--bpi-nav-height) !important;
+    display: grid !important;
+    grid-template-columns:
+      minmax(var(--bpi-nav-side-track), 1fr)
+      minmax(0, var(--bpi-nav-center-max))
+      minmax(var(--bpi-nav-side-track), 1fr) !important;
+    grid-template-rows: var(--bpi-nav-height) !important;
+    align-items: center !important;
     justify-content: stretch !important;
     column-gap: 16px !important;
+    padding: 0 clamp(22px, 2.4vw, 36px) !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
   }
 
-  html[lang="he"] body.public-page.public-page-he .site-header .site-brand {
+  html[lang="en"] body.public-page.public-page-en header.site-header {
+    --bpi-nav-height: 86px;
+    --bpi-nav-side-track: 300px;
+    --bpi-nav-center-max: 1040px;
+    --bpi-nav-gap: 6px;
+    --bpi-nav-font-size: 13px;
+    --bpi-nav-inline-padding: 10px;
+  }
+
+  html body.public-page header.site-header > .site-brand {
     grid-column: 1 !important;
+    grid-row: 1 !important;
+    align-self: center !important;
     justify-self: start !important;
-    width: 248px !important;
-    min-width: 248px !important;
-    max-width: 248px !important;
+    width: var(--bpi-nav-side-track) !important;
+    min-width: var(--bpi-nav-side-track) !important;
+    max-width: var(--bpi-nav-side-track) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    white-space: nowrap !important;
+    line-height: 1 !important;
+    transform: none !important;
   }
 
-  html[lang="he"] body.public-page.public-page-he .site-header .site-nav {
+  html body.public-page header.site-header > .site-brand > a {
+    display: inline-block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    letter-spacing: -.025em !important;
+    line-height: 1.05 !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    transform: none !important;
+  }
+
+  html body.public-page header.site-header > nav.site-nav {
     grid-column: 2 !important;
+    grid-row: 1 !important;
+    align-self: center !important;
     justify-self: center !important;
     width: 100% !important;
-    max-width: 1080px !important;
-    margin-inline: auto !important;
+    max-width: var(--bpi-nav-center-max) !important;
+    min-width: 0 !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    max-height: 44px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    align-content: center !important;
+    justify-content: center !important;
+    gap: var(--bpi-nav-gap) !important;
+    text-align: center !important;
+    overflow: visible !important;
+    transform: none !important;
   }
 
-  html[lang="he"] body.public-page.public-page-he .site-header .language-switch {
+  html[lang="he"] body.public-page.public-page-he header.site-header > nav.site-nav {
+    direction: rtl !important;
+  }
+
+  html[lang="en"] body.public-page.public-page-en header.site-header > nav.site-nav {
+    direction: ltr !important;
+  }
+
+  html body.public-page header.site-header > nav.site-nav > a,
+  html body.public-page header.site-header > nav.site-nav > a.active,
+  html body.public-page header.site-header > nav.site-nav > a[aria-current="page"],
+  html body.public-page header.site-header > nav.site-nav > a:hover,
+  html body.public-page header.site-header > nav.site-nav > a:focus,
+  html body.public-page header.site-header > nav.site-nav > a:focus-visible {
+    position: relative !important;
+    flex: 0 0 auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    height: var(--bpi-nav-control-height) !important;
+    min-height: var(--bpi-nav-control-height) !important;
+    max-height: var(--bpi-nav-control-height) !important;
+    margin: 0 !important;
+    padding: 8px var(--bpi-nav-inline-padding) !important;
+    box-sizing: border-box !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-radius: 999px !important;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif !important;
+    font-size: var(--bpi-nav-font-size) !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-stretch: normal !important;
+    font-variation-settings: normal !important;
+    letter-spacing: 0 !important;
+    line-height: 1.1 !important;
+    text-align: center !important;
+    text-transform: none !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    vertical-align: middle !important;
+    transform: none !important;
+  }
+
+  html body.public-page header.site-header > nav.site-nav > a:not(.active):not([aria-current="page"]) {
+    border-color: transparent !important;
+  }
+
+  html[lang="he"] body.public-page.public-page-he header.site-header > nav.site-nav > a[href$="ai.html"],
+  html[lang="he"] body.public-page.public-page-he header.site-header > nav.site-nav > a[href$="ai-as-witness.html"] {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    padding-inline: 9px !important;
+    font-size: 13px !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+  }
+
+  html[lang="he"] body.public-page.public-page-he header.site-header > nav.site-nav > a[href$="ai.html"]::before,
+  html[lang="he"] body.public-page.public-page-he header.site-header > nav.site-nav > a[href$="ai.html"]::after,
+  html[lang="he"] body.public-page.public-page-he header.site-header > nav.site-nav > a[href$="ai-as-witness.html"]::before,
+  html[lang="he"] body.public-page.public-page-he header.site-header > nav.site-nav > a[href$="ai-as-witness.html"]::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  html body.public-page header.site-header > .language-switch {
     grid-column: 3 !important;
+    grid-row: 1 !important;
+    align-self: center !important;
     justify-self: end !important;
     width: 104px !important;
     min-width: 104px !important;
     max-width: 104px !important;
+    height: var(--bpi-nav-control-height) !important;
+    min-height: var(--bpi-nav-control-height) !important;
+    max-height: var(--bpi-nav-control-height) !important;
+    margin: 0 !important;
+    padding: 8px 13px !important;
+    box-sizing: border-box !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 1.1 !important;
+    white-space: nowrap !important;
+    vertical-align: middle !important;
+    transform: none !important;
   }
-}
 
-@media (max-width: 1180px) and (min-width: 861px) {
-  html[lang="he"] body.public-page.public-page-he .site-header {
-    grid-template-columns: minmax(210px, 1fr) minmax(0, 1fr) minmax(210px, 1fr) !important;
-  }
+  @media (max-width: 1499px) {
+    html body.public-page header.site-header {
+      --bpi-nav-side-track: clamp(96px, 12vw, 190px);
+      --bpi-nav-center-max: 1fr;
+      --bpi-nav-gap: 3px;
+      --bpi-nav-font-size: clamp(11px, .94vw, 13px);
+      --bpi-nav-inline-padding: clamp(4px, .55vw, 8px);
+      grid-template-columns:
+        minmax(var(--bpi-nav-side-track), 1fr)
+        minmax(0, 1fr)
+        minmax(var(--bpi-nav-side-track), 1fr) !important;
+    }
 
-  html[lang="he"] body.public-page.public-page-he .site-header .site-brand {
-    width: 210px !important;
-    min-width: 210px !important;
-    max-width: 210px !important;
-  }
+    html[lang="en"] body.public-page.public-page-en header.site-header {
+      --bpi-nav-side-track: clamp(110px, 15vw, 230px);
+      --bpi-nav-font-size: clamp(10.5px, .82vw, 12.5px);
+      --bpi-nav-inline-padding: clamp(3px, .42vw, 7px);
+    }
 
-  html[lang="he"] body.public-page.public-page-he .site-header .language-switch {
-    width: 92px !important;
-    min-width: 92px !important;
-    max-width: 92px !important;
+    html body.public-page header.site-header > .site-brand,
+    html body.public-page header.site-header > .site-brand > a {
+      font-size: 14px !important;
+    }
+
+    html body.public-page header.site-header > .language-switch {
+      width: 92px !important;
+      min-width: 92px !important;
+      max-width: 92px !important;
+      font-size: 13px !important;
+      padding-inline: 8px !important;
+    }
   }
 }
 
 @media (max-width: 860px) {
-  html body.public-page .site-header,
-  html body.public-page-en .site-header {
+  html body.public-page header.site-header {
     height: auto !important;
     min-height: 0 !important;
     max-height: none !important;
     display: flex !important;
     flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
     gap: 10px !important;
     padding: 12px 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  html body.public-page header.site-header > .site-brand,
+  html body.public-page header.site-header > nav.site-nav,
+  html body.public-page header.site-header > .language-switch {
+    align-self: center !important;
+    justify-self: center !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  html body.public-page header.site-header > .site-brand {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
   }
 }
