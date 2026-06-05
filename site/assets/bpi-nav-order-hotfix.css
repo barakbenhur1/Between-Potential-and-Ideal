@@ -1,0 +1,17 @@
+html body.public-page header.site-header nav.site-nav > a[href*="index.html"],
+html body.public-page header.site-header nav.site-nav > a[href*="en.html"]{order:10!important;-webkit-order:10!important;}
+html body.public-page header.site-header nav.site-nav > a[href*="summary"]{order:20!important;-webkit-order:20!important;}
+html body.public-page header.site-header nav.site-nav > a[href*="glossary"]{order:30!important;-webkit-order:30!important;}
+html body.public-page header.site-header nav.site-nav > a[href*="potential-ideal-optimal"]{order:40!important;-webkit-order:40!important;}
+html body.public-page header.site-header nav.site-nav > a[href*="methodology"]{order:50!important;-webkit-order:50!important;}
+html body.public-page header.site-header nav.site-nav > a[href*="ai-as-witness"]{order:55!important;-webkit-order:55!important;}
+html body.public-page header.site-header nav.site-nav > a[href$="core.html"],
+html body.public-page header.site-header nav.site-nav > a[href$="core-en.html"]{order:60!important;-webkit-order:60!important;}
+html body.public-page header.site-header nav.site-nav > a[href$="witness.html"],
+html body.public-page header.site-header nav.site-nav > a[href$="witness-en.html"]{order:70!important;-webkit-order:70!important;}
+html body.public-page header.site-header nav.site-nav > a[href*="applied"]{order:80!important;-webkit-order:80!important;}
+html body.public-page header.site-header nav.site-nav > a[href$="ai.html"],
+html body.public-page header.site-header nav.site-nav > a[href$="ai-en.html"]{order:90!important;-webkit-order:90!important;}
+html body.public-page header.site-header nav.site-nav > a[href*="files"]{order:100!important;-webkit-order:100!important;}
+html body.public-page header.site-header nav.site-nav > a[href*="critique"]{order:110!important;-webkit-order:110!important;}
+html body.public-page header.site-header nav.site-nav > a[href*="sources"]{order:120!important;-webkit-order:120!important;}

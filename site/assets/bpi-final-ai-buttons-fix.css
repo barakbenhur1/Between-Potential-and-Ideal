@@ -1,0 +1,168 @@
+/* V130 final override loaded last by the helper script.
+   Fixes: stable tab bar, no floating breadcrumbs, gold HTML buttons, contained AI actions. */
+
+@media (min-width: 861px) {
+  html body.public-page .site-header,
+  html body.public-page.design-prompt-theme .site-header,
+  html body.public-page.bpi-home-page .site-header,
+  html body.public-page.section-ai .site-header,
+  html body.public-page.section-files .site-header,
+  html body.public-page.section-critique .site-header,
+  html body.public-page.section-glossary .site-header {
+    height: 72px !important;
+    min-height: 72px !important;
+    max-height: 72px !important;
+    box-sizing: border-box !important;
+    display: grid !important;
+    grid-template-columns: minmax(180px, 1fr) minmax(0, auto) minmax(92px, 1fr) !important;
+    align-items: center !important;
+    column-gap: 16px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    overflow: visible !important;
+    background: linear-gradient(90deg,#0A3A68 0%,#0b5b72 46%,#77795f 76%,#f29a38 100%) !important;
+    background-color: #0A3A68 !important;
+    border-bottom: 1px solid rgba(255,255,255,.14) !important;
+    box-shadow: 0 10px 28px rgba(7,16,29,.18) !important;
+  }
+}
+
+html body.public-page .site-header .site-brand {
+  justify-self: start !important;
+  white-space: nowrap !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+html body.public-page .site-header .language-switch {
+  justify-self: end !important;
+  white-space: nowrap !important;
+  box-sizing: border-box !important;
+}
+
+html body.public-page .site-header .site-nav {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  justify-self: center !important;
+  gap: .34rem !important;
+  min-height: 44px !important;
+  max-width: min(100%, 1240px) !important;
+  overflow: visible !important;
+  text-align: center !important;
+}
+
+html body.public-page .site-header .site-nav a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 34px !important;
+  height: 34px !important;
+  box-sizing: border-box !important;
+  padding: 0 .72rem !important;
+  border: 1px solid transparent !important;
+  border-radius: 999px !important;
+  white-space: nowrap !important;
+  line-height: 1 !important;
+  font-weight: 850 !important;
+  text-align: center !important;
+  transform: none !important;
+}
+
+html body.public-page .site-header .site-nav a.active,
+html body.public-page .site-header .site-nav a[aria-current='page'] {
+  height: 34px !important;
+  min-height: 34px !important;
+  padding: 0 .72rem !important;
+  border: 1px solid rgba(255,255,255,.28) !important;
+  color: #07101d !important;
+  background: linear-gradient(135deg,#b98726,#e6b84a,#f5d06b) !important;
+  background-color: #e6b84a !important;
+  box-shadow: 0 0 26px rgba(230,184,74,.18) !important;
+  transform: none !important;
+}
+
+/* Breadcrumbs were visually floating over page cards. Hide them on the public hub pages. */
+html body.public-page main#main > .breadcrumbs {
+  display: none !important;
+}
+
+/* HTML document-format buttons are primary/gold across Core/Witness/Application/Files/AI. */
+html body.public-page main#main .download-row a[href$='.html'],
+html body.public-page main#main .download-row a[href*='.html?'],
+html body.public-page main#main .download-row a[href*='.html#'],
+html body.public-page main#main .download-strip a[href$='.html'],
+html body.public-page main#main .download-strip a[href*='.html?'],
+html body.public-page main#main .download-strip a[href*='.html#'],
+html body.public-page main#main .appendix-actions a[href$='.html'],
+html body.public-page main#main .appendix-actions a[href*='.html?'],
+html body.public-page main#main .appendix-actions a[href*='.html#'],
+html body.public-page main#main .primary-format,
+html body.public-page main#main .download-button.primary,
+html body.public-page main#main .card-link {
+  background: linear-gradient(135deg,#b98726,#e6b84a,#f5d06b) !important;
+  background-color: #e6b84a !important;
+  background-image: linear-gradient(135deg,#b98726,#e6b84a,#f5d06b) !important;
+  color: #07101d !important;
+  border: 1.5px solid transparent !important;
+  box-shadow: 0 8px 18px rgba(184,135,38,.18) !important;
+  text-shadow: none !important;
+}
+
+html body.section-ai main#main .ai-documents-card .ai-reading-card {
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+html body.section-ai main#main .ai-documents-card .appendix-actions {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  gap: 12px !important;
+  padding: 6px 0 0 !important;
+  margin: auto 0 0 !important;
+  overflow: visible !important;
+  justify-content: stretch !important;
+  align-items: center !important;
+}
+
+html body.public-page-he.section-ai main#main .ai-documents-card .appendix-actions { direction: rtl !important; }
+html body.public-page-en.section-ai main#main .ai-documents-card .appendix-actions { direction: ltr !important; }
+
+html body.section-ai main#main .ai-documents-card .appendix-actions a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  min-height: 42px !important;
+  padding: 9px 5px !important;
+  box-sizing: border-box !important;
+  border-radius: 999px !important;
+  font-size: clamp(.82rem,.82vw,.96rem) !important;
+  font-weight: 850 !important;
+  line-height: 1.05 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href$='.html'],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*='.html?'],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*='.html#'],
+html body.section-ai main#main .ai-documents-card .appendix-actions a.primary-format { order: 1 !important; }
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href$='.pdf'],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*='.pdf?'],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*='.pdf#'] { order: 2 !important; }
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href$='.docx'],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*='.docx?'],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*='.docx#'] { order: 3 !important; }
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href$='.md'],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*='.md?'],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*='.md#'] { order: 4 !important; }

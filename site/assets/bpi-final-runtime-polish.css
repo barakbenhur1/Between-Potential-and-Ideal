@@ -1,0 +1,253 @@
+/* Final runtime polish. CSS only: stable header, stable buttons, no DOM mutation. */
+
+/* Same header dimensions everywhere. Home keeps dark visual via its own stronger selector below. */
+html body.public-page .site-header,
+html body.public-page.design-prompt-theme .site-header,
+html body.public-page.section-ai .site-header,
+html body.public-page.section-summary .site-header,
+html body.public-page.section-files .site-header,
+html body.public-page.appendix-document-page .site-header{
+  height:74px!important;
+  min-height:74px!important;
+  max-height:74px!important;
+  display:grid!important;
+  grid-template-columns:minmax(260px,max-content) minmax(0,1fr) minmax(78px,max-content)!important;
+  align-items:center!important;
+  column-gap:18px!important;
+  padding:0 clamp(22px,2.4vw,36px)!important;
+  box-sizing:border-box!important;
+  overflow:visible!important;
+  background:linear-gradient(90deg,#0A3A68 0%,#0b5b72 46%,#77795f 76%,#f29a38 100%)!important;
+  background-color:#0A3A68!important;
+  border-bottom:1px solid rgba(255,255,255,.14)!important;
+  box-shadow:0 10px 28px rgba(7,16,29,.18)!important;
+}
+
+html body.public-page.bpi-home-page .site-header{
+  background:#050a15!important;
+  background-image:linear-gradient(180deg,#050a15,#080d19)!important;
+}
+
+html body.public-page .site-header .site-brand,
+html body.public-page.design-prompt-theme .site-header .site-brand{
+  grid-column:1!important;
+  justify-self:start!important;
+  min-width:260px!important;
+  max-width:none!important;
+  overflow:visible!important;
+  white-space:nowrap!important;
+  text-overflow:clip!important;
+  line-height:1!important;
+}
+
+html body.public-page .site-header .site-brand a,
+html body.public-page.design-prompt-theme .site-header .site-brand a{
+  display:inline-block!important;
+  max-width:none!important;
+  overflow:visible!important;
+  white-space:nowrap!important;
+  text-overflow:clip!important;
+  line-height:1.05!important;
+}
+
+html body.public-page .site-header .site-nav,
+html body.public-page.design-prompt-theme .site-header .site-nav{
+  grid-column:2!important;
+  justify-self:center!important;
+  min-width:0!important;
+  max-width:100%!important;
+  min-height:44px!important;
+  display:flex!important;
+  flex-wrap:wrap!important;
+  align-items:center!important;
+  align-content:center!important;
+  justify-content:center!important;
+  gap:.34rem!important;
+  overflow:visible!important;
+  text-align:center!important;
+}
+
+html body.public-page .site-header .site-nav a,
+html body.public-page.design-prompt-theme .site-header .site-nav a{
+  min-height:34px!important;
+  height:34px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  white-space:nowrap!important;
+  line-height:1!important;
+  padding:0 .52rem!important;
+  font-size:clamp(.72rem,.72vw,.9rem)!important;
+  box-sizing:border-box!important;
+  border-radius:999px!important;
+}
+
+/* prevent the long AI-as-witness tab from visually merging with adjacent tabs */
+html body.public-page .site-header .site-nav a[href*="ai-as-witness"],
+html body.public-page.design-prompt-theme .site-header .site-nav a[href*="ai-as-witness"]{
+  position:relative!important;
+  z-index:3!important;
+  max-width:12.5rem!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  white-space:nowrap!important;
+  letter-spacing:-.01em!important;
+}
+html body.public-page-he .site-header .site-nav a[href*="ai-as-witness"]{
+  font-size:clamp(.58rem,.60vw,.78rem)!important;
+  padding-inline:.58rem!important;
+}
+html body.public-page .site-header .site-nav a[href*="ai-as-witness"]::before,
+html body.public-page .site-header .site-nav a[href*="ai-as-witness"]::after{
+  content:none!important;
+  display:none!important;
+}
+
+html body.public-page .site-header .language-switch,
+html body.public-page.design-prompt-theme .site-header .language-switch{
+  grid-column:3!important;
+  justify-self:end!important;
+  min-width:78px!important;
+  width:78px!important;
+  height:34px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  white-space:nowrap!important;
+  box-sizing:border-box!important;
+}
+
+html body.public-page-en .site-header{height:86px!important;min-height:86px!important;max-height:86px!important;grid-template-columns:minmax(300px,max-content) minmax(0,1fr) minmax(82px,max-content)!important;}
+html body.public-page-en .site-header .site-brand{min-width:300px!important;}
+html body.public-page-en .site-header .site-nav{gap:.22rem!important;}
+html body.public-page-en .site-header .site-nav a{font-size:clamp(.58rem,.56vw,.74rem)!important;padding:0 .34rem!important;letter-spacing:-.03em!important;}
+
+html body.public-page .site-header .site-nav a.active,
+html body.public-page .site-header .site-nav a[aria-current="page"],
+html body.public-page.design-prompt-theme .site-header .site-nav a.active,
+html body.public-page.design-prompt-theme .site-header .site-nav a[aria-current="page"]{
+  color:#07101d!important;
+  background:linear-gradient(135deg,#b98726,#e6b84a,#f5d06b)!important;
+  background-color:#e6b84a!important;
+  border-color:rgba(255,255,255,.28)!important;
+  box-shadow:0 0 30px rgba(230,184,74,.20),0 0 86px rgba(124,58,237,.13)!important;
+}
+
+/* Default secondary buttons. */
+html body.public-page main#main :is(.download-button,.download-row a,.download-strip a,.appendix-actions a){
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-height:44px!important;
+  padding:11px 22px!important;
+  border-radius:999px!important;
+  font-size:clamp(1rem,1.05vw,1.12rem)!important;
+  font-weight:850!important;
+  line-height:1.1!important;
+  text-decoration:none!important;
+  text-shadow:none!important;
+  background:rgba(255,250,240,.92)!important;
+  background-image:none!important;
+  color:#0A3A68!important;
+  border:1.5px solid rgba(230,184,74,.72)!important;
+  box-shadow:none!important;
+  box-sizing:border-box!important;
+}
+
+/* Primary buttons. */
+html body.public-page main#main :is(.card-link,.primary-format,.download-button.primary,.archive-link-row a),
+html body.public-page main#main .download-row a.primary-format,
+html body.public-page main#main .download-strip a.primary-format,
+html body.public-page main#main .appendix-actions a.primary-format,
+html body.public-page main#main a[aria-current="page"].primary-format,
+html body.public-page main#main a.card-link.download-button,
+html body.public-page main#main .bpi-start-here-note .download-row a:first-child,
+html body.public-page main#main .bpi-start-actions a:first-child,
+html body.public-page main#main .bpi-recommended-grid a:first-child{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-height:44px!important;
+  padding:11px 22px!important;
+  border-radius:999px!important;
+  font-size:clamp(1rem,1.05vw,1.12rem)!important;
+  font-weight:850!important;
+  line-height:1.1!important;
+  text-decoration:none!important;
+  text-shadow:none!important;
+  background:linear-gradient(135deg,#b98726,#e6b84a,#f5d06b)!important;
+  background-color:#e6b84a!important;
+  background-image:linear-gradient(135deg,#b98726,#e6b84a,#f5d06b)!important;
+  color:#07101d!important;
+  border:1.5px solid transparent!important;
+  box-shadow:0 8px 18px rgba(184,135,38,.18)!important;
+  box-sizing:border-box!important;
+}
+
+/* HTML file links are the special primary format on Files and AI pages. */
+html body.section-files main#main a[href$=".html"],
+html body.section-files main#main a[href*=".html?"],
+html body.section-files main#main a[href*=".html#"],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href$=".html"],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".html?"],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".html#"]{
+  background:linear-gradient(135deg,#b98726,#e6b84a,#f5d06b)!important;
+  background-color:#e6b84a!important;
+  background-image:linear-gradient(135deg,#b98726,#e6b84a,#f5d06b)!important;
+  color:#07101d!important;
+  border-color:transparent!important;
+  box-shadow:0 8px 18px rgba(184,135,38,.18)!important;
+}
+
+html body.public-page main#main .file-size{color:rgba(7,16,29,.62)!important;}
+
+/* AI cards: centered 2x2 button grid that cannot overflow. */
+html body.section-ai main#main .ai-documents-card .appendix-actions{
+  display:grid!important;
+  width:100%!important;
+  max-width:100%!important;
+  box-sizing:border-box!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  justify-content:stretch!important;
+  align-items:center!important;
+  gap:12px!important;
+  margin-top:auto!important;
+  padding:.25rem 0 0!important;
+  overflow:hidden!important;
+}
+html body.public-page-he.section-ai main#main .ai-documents-card .appendix-actions{direction:rtl!important;}
+html body.public-page-en.section-ai main#main .ai-documents-card .appendix-actions{direction:ltr!important;}
+html body.section-ai main#main .ai-documents-card .appendix-actions a{
+  width:100%!important;
+  min-width:0!important;
+  max-width:100%!important;
+  min-height:44px!important;
+  padding:10px 8px!important;
+  box-sizing:border-box!important;
+  font-size:clamp(.9rem,.95vw,1.02rem)!important;
+  text-align:center!important;
+  white-space:nowrap!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+}
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href$=".html"],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".html?"],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".html#"],
+html body.section-ai main#main .ai-documents-card .appendix-actions a.primary-format{order:1!important;}
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href$=".pdf"],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".pdf?"],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".pdf#"]{order:2!important;}
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href$=".docx"],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".docx?"],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".docx#"]{order:3!important;}
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href$=".md"],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".md?"],
+html body.section-ai main#main .ai-documents-card .appendix-actions a[href*=".md#"]{order:4!important;}
+
+@media(max-width:860px){
+  html body.public-page .site-header,
+  html body.public-page-en .site-header{height:auto!important;min-height:0!important;max-height:none!important;display:flex!important;flex-direction:column!important;gap:10px!important;padding:12px 16px!important;}
+  html body.public-page .site-header .site-brand,
+  html body.public-page-en .site-header .site-brand{min-width:0!important;text-align:center!important;}
+}
+@media(max-width:640px){html body.section-ai main#main .ai-documents-card .appendix-actions{grid-template-columns:1fr!important;}}

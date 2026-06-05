@@ -20,7 +20,7 @@
 <link href="https://between-potential-and-ideal.onrender.com/pages/en/ai-en.html" hreflang="x-default" rel="alternate"/>
 <link href="../../favicon.ico" rel="icon"/>
 <link href="../../apple-touch-icon.png" rel="apple-touch-icon"/>
-<link href="../../styles.css?v=20260528-final-ai-card-layout-real-css" rel="stylesheet"/>
+<link href="../../styles.css?v=20260604-tabbar-dimensions-v2" rel="stylesheet"/>
 <link href="../../assets/bpi-ai-section-polish.css?v=20260526-ai-inline-frame-v100" rel="stylesheet"/>
 <style id="bpi-he-ai-tab-rtl-final-layout">
 /* Hebrew AI tab final layout — mirror of English, aligned to right */
@@ -163,29 +163,111 @@ body.public-page-he.section-ai .ai-documents-card .ai-reading-card > .ai-mode-su
 body.public-page-he.section-ai .ai-documents-card .ai-reading-card > .card-media-head{
   margin-top: 0 !important;
 }
-</style><link href="../../assets/document-reading-direction-fix.css?v=20260529-reading-align-v1" rel="stylesheet"/>
+</style><link href="../../assets/document-reading-direction-fix.css?v=20260604-he-tabbar-v3-local" rel="stylesheet"/>
 <link rel="canonical" href="https://between-potential-and-ideal.onrender.com/pages/he/ai.html"/>
 <meta property="og:image" content="https://between-potential-and-ideal.onrender.com/figures/tab_ai_unique.png"/>
 <meta name="twitter:image" content="https://between-potential-and-ideal.onrender.com/figures/tab_ai_unique.png"/>
+<style id="bpi-he-ai-witness-tab-stabilizer">
+/* Keep Hebrew AI-as-Witness nav tab from shrinking on home and inner pages. */
+html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"] {
+  flex-grow: 0 !important;
+  flex-shrink: 0 !important;
+  flex-basis: max-content !important;
+  width: max-content !important;
+  min-width: max-content !important;
+  max-width: none !important;
+  padding-inline: 10px !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  box-sizing: border-box !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+</style>
+<style id="bpi-breadcrumb-prepaint-no-pill-v1">
+/* Prepaint breadcrumb fix: prevents active nav pill from flashing inside breadcrumbs. */
+html body.public-page main#main nav.breadcrumbs,
+html body.public-page main#main .breadcrumbs,
+html body.public-page nav.breadcrumbs,
+html body.public-page .breadcrumbs,
+html body.public-page nav[aria-label="Breadcrumb"] {
+  color: #0A3A68 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+}
+
+html body.public-page main#main nav.breadcrumbs a,
+html body.public-page main#main .breadcrumbs a,
+html body.public-page nav.breadcrumbs a,
+html body.public-page .breadcrumbs a,
+html body.public-page nav[aria-label="Breadcrumb"] a,
+html body.public-page main#main nav.breadcrumbs a.active,
+html body.public-page main#main .breadcrumbs a.active,
+html body.public-page nav.breadcrumbs a.active,
+html body.public-page .breadcrumbs a.active,
+html body.public-page nav[aria-label="Breadcrumb"] a.active,
+html body.public-page main#main nav.breadcrumbs a[aria-current],
+html body.public-page main#main .breadcrumbs a[aria-current],
+html body.public-page nav.breadcrumbs a[aria-current],
+html body.public-page .breadcrumbs a[aria-current],
+html body.public-page nav[aria-label="Breadcrumb"] a[aria-current],
+html body.public-page main#main nav.breadcrumbs a:first-child,
+html body.public-page main#main .breadcrumbs a:first-child,
+html body.public-page nav.breadcrumbs a:first-child,
+html body.public-page .breadcrumbs a:first-child,
+html body.public-page nav[aria-label="Breadcrumb"] a:first-child {
+  color: #0A3A68 !important;
+  -webkit-text-fill-color: #0A3A68 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  width: auto !important;
+  max-width: none !important;
+  min-height: 0 !important;
+  height: auto !important;
+  display: inline !important;
+  line-height: 1.35 !important;
+  text-decoration: none !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  font-weight: 850 !important;
+}
+
+html body.public-page main#main nav.breadcrumbs a::before,
+html body.public-page main#main nav.breadcrumbs a::after,
+html body.public-page main#main .breadcrumbs a::before,
+html body.public-page main#main .breadcrumbs a::after,
+html body.public-page nav.breadcrumbs a::before,
+html body.public-page nav.breadcrumbs a::after,
+html body.public-page .breadcrumbs a::before,
+html body.public-page .breadcrumbs a::after,
+html body.public-page nav[aria-label="Breadcrumb"] a::before,
+html body.public-page nav[aria-label="Breadcrumb"] a::after {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+</style>
 </head>
 <body class="public-page public-page-he design-prompt-theme section-ai appendix-document-page ai-page">
 <a class="skip-link" href="#main">דלג לתוכן המרכזי</a>
-<header class="site-header" dir="rtl" role="banner">
-<div class="site-brand"><a href="../../index.html">Between Potential and Ideal</a></div>
-<nav aria-label="Primary navigation" class="site-nav" role="navigation">
-<a href="../../index.html">בית</a>
-<a class="text-link" href="summary.html">תקציר</a>
-<a href="core.html">ליבה</a>
-<a href="witness.html">עדות</a>
-<a href="applied.html">יישום</a>
-<a aria-current="page" class="active" href="ai.html">בינה מלאכותית</a>
-<a href="files.html">קבצים</a>
-<a href="methodology.html">מתודולוגיה</a>
-<a href="critique.html">ביקורת</a>
-<a href="sources.html">מקורות</a>
-</nav>
-<a aria-label="מעבר לגרסה האנגלית המקבילה" class="language-switch" href="../en/ai-en.html" title="English version of this page">English</a>
-</header>
+<header class="site-header" dir="rtl" role="banner"><div class="site-brand"><a href="../../index.html">Between Potential and Ideal</a></div><nav aria-label="Primary navigation" class="site-nav" role="navigation"><a href="../../index.html">בית</a><a href="summary.html">תקציר</a><a href="glossary.html">מילון</a><a href="potential-ideal-optimal.html">מושגים</a><a href="ai-as-witness.html">בינה מלאכותית כעדות</a><a href="core.html">ליבה</a><a href="methodology.html">מתודולוגיה</a><a href="witness.html">עדות</a><a href="applied.html">יישום</a><a aria-current="page" class="active" href="ai.html">בינה מלאכותית</a><a href="files.html">קבצים</a><a href="critique.html">ביקורת</a><a href="sources.html">מקורות</a></nav><a aria-label="Switch to the English version" class="language-switch" href="../en/ai-en.html" title="English version">English</a></header>
 <main class="site-main" dir="rtl" id="main" role="main" tabindex="-1">
 <nav aria-label="Breadcrumb" class="breadcrumbs">
 <a href="../../index.html">בית</a><span>›</span><span>בינה מלאכותית</span>
@@ -225,6 +307,6 @@ body.public-page-he.section-ai .ai-documents-card .ai-reading-card > .card-media
 <p>ניסוי מחשבתי פתוח לקריאה, ביקורת והמשך עבודה.</p>
 <p><a href="about.html">על הפרויקט</a> · <a href="changelog.html">יומן שינויים</a></p>
 </footer>
-<script defer="" src="../../assets/bpi-files-feedback-fixes.js?v=20260526-files-only-v109"></script>
+<script defer="" src="../../assets/bpi-files-feedback-fixes.js?v=20260604-shared-nav-v145-breadcrumb-inline-clean"></script>
 </body>
 </html>

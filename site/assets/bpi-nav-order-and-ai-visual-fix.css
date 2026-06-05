@@ -1,0 +1,129 @@
+/*
+BPI stage-3 nav order + AI visual parity fix.
+Visual-only and additive: no HTML text/content is changed.
+Applies to Hebrew and English navigation and to the AI tab hero image.
+*/
+
+/* Navigation order:
+   Home, Summary, Glossary, Concepts, AI as Witness, Methodology,
+   then the remaining existing tabs in their current conceptual order. */
+body.public-page .site-nav {
+  display: flex !important;
+  align-items: center !important;
+}
+
+body.public-page .site-nav a[href$="index.html"],
+body.public-page .site-nav a[href$="en.html"] {
+  order: 10 !important;
+}
+
+body.public-page .site-nav a[href$="summary.html"],
+body.public-page .site-nav a[href$="summary-en.html"] {
+  order: 20 !important;
+}
+
+body.public-page .site-nav a[href$="glossary.html"],
+body.public-page .site-nav a[href$="glossary-en.html"] {
+  order: 30 !important;
+}
+
+body.public-page .site-nav a[href$="potential-ideal-optimal.html"],
+body.public-page .site-nav a[href$="potential-ideal-optimal-en.html"] {
+  order: 40 !important;
+}
+
+body.public-page .site-nav a[href$="ai-as-witness.html"],
+body.public-page .site-nav a[href$="ai-as-witness-en.html"] {
+  order: 50 !important;
+}
+
+body.public-page .site-nav a[href$="methodology.html"],
+body.public-page .site-nav a[href$="methodology-en.html"] {
+  order: 60 !important;
+}
+
+body.public-page .site-nav a[href$="core.html"],
+body.public-page .site-nav a[href$="core-en.html"] {
+  order: 70 !important;
+}
+
+body.public-page .site-nav a[href$="witness.html"],
+body.public-page .site-nav a[href$="witness-en.html"] {
+  order: 80 !important;
+}
+
+body.public-page .site-nav a[href$="applied.html"],
+body.public-page .site-nav a[href$="applied-en.html"] {
+  order: 90 !important;
+}
+
+body.public-page .site-nav a[href$="ai.html"],
+body.public-page .site-nav a[href$="ai-en.html"] {
+  order: 100 !important;
+}
+
+body.public-page .site-nav a[href$="files.html"],
+body.public-page .site-nav a[href$="files-en.html"] {
+  order: 110 !important;
+}
+
+body.public-page .site-nav a[href$="critique.html"],
+body.public-page .site-nav a[href$="critique-en.html"] {
+  order: 120 !important;
+}
+
+body.public-page .site-nav a[href$="sources.html"],
+body.public-page .site-nav a[href$="sources-en.html"] {
+  order: 130 !important;
+}
+
+/* AI tab visual parity:
+   Make the AI hero image use the same compact, cropped frame behavior as other tabs,
+   avoiding horizontal stretching. */
+body.public-page.section-ai .tab-visual.compact-section-visual,
+body.public-page.section-ai figure.tab-visual.image-frame.compact-section-visual {
+  display: block !important;
+  width: min(560px, calc(100% - 32px)) !important;
+  max-width: min(560px, calc(100% - 32px)) !important;
+  margin: 18px auto 28px !important;
+  padding: 10px !important;
+  aspect-ratio: auto !important;
+  border-radius: 26px !important;
+  overflow: hidden !important;
+}
+
+body.public-page.section-ai .tab-visual.compact-section-visual > img,
+body.public-page.section-ai figure.tab-visual.image-frame.compact-section-visual > img {
+  display: block !important;
+  width: 100% !important;
+  height: clamp(136px, 18vw, 212px) !important;
+  max-height: 212px !important;
+  aspect-ratio: 21 / 7 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  border-radius: 18px !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+}
+
+body.public-page.section-ai .tab-visual.compact-section-visual figcaption,
+body.public-page.section-ai figure.tab-visual.image-frame.compact-section-visual figcaption {
+  margin: 8px auto 0 !important;
+  padding: 0 !important;
+  max-width: 48rem !important;
+  text-align: center !important;
+}
+
+@media (max-width: 720px) {
+  body.public-page.section-ai .tab-visual.compact-section-visual,
+  body.public-page.section-ai figure.tab-visual.image-frame.compact-section-visual {
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+  }
+
+  body.public-page.section-ai .tab-visual.compact-section-visual > img,
+  body.public-page.section-ai figure.tab-visual.image-frame.compact-section-visual > img {
+    height: clamp(128px, 42vw, 190px) !important;
+    aspect-ratio: 16 / 6 !important;
+  }
+}

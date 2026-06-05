@@ -1,0 +1,262 @@
+/*
+  BPI inner content readability layer
+  Scoped to Core / Witness / Application landing pages in Hebrew and English.
+  Header navigation and breadcrumbs are intentionally excluded.
+*/
+
+body:is(.section-core, .section-witness, .section-applied) {
+  background:
+    radial-gradient(circle at 14% 6%, rgba(10, 58, 104, 0.07), transparent 30%),
+    radial-gradient(circle at 86% 7%, rgba(217, 119, 6, 0.07), transparent 28%),
+    var(--bpi-bg, #f8f9fa);
+  color: var(--bpi-text, #2c3e50);
+}
+
+body:is(.section-core, .section-witness, .section-applied) main.site-main {
+  width: min(var(--bpi-content-max, 1200px), calc(100% - 32px));
+  min-width: 0;
+  margin-inline: auto;
+  padding-block: clamp(28px, 4vw, 52px) var(--bpi-section-pad-desktop, 64px);
+}
+
+/* Page introduction */
+body:is(.section-core, .section-witness, .section-applied) .page-title {
+  width: 100%;
+  min-width: 0;
+  margin: 0 auto clamp(26px, 4vw, 44px);
+  padding: clamp(28px, 4vw, 50px);
+  border: 1px solid var(--bpi-border-blue, rgba(10, 58, 104, 0.14));
+  border-radius: clamp(22px, 3vw, 34px);
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: var(--bpi-shadow-md, 0 12px 32px rgba(20, 40, 60, 0.08));
+  overflow: hidden;
+}
+
+body:is(.section-core, .section-witness, .section-applied) .page-title-head {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 2vw, 26px);
+  min-width: 0;
+}
+
+body:is(.section-core, .section-witness, .section-applied) .page-title-head h1 {
+  min-width: 0;
+  margin: 0;
+  color: var(--bpi-text-strong, #1d2938);
+  font-family: var(--bpi-font-ui, Inter, "Segoe UI", Arial, sans-serif);
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 1.04;
+  letter-spacing: -0.045em;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+body:is(.section-core, .section-witness, .section-applied) .page-title .lead {
+  max-width: 72ch;
+  margin: clamp(18px, 2.4vw, 28px) 0 0;
+  color: var(--bpi-muted, #536173);
+  font-size: clamp(1.05rem, 1.5vw, 1.28rem);
+  line-height: 1.72;
+}
+
+body.public-page-he:is(.section-core, .section-witness, .section-applied) .page-title .lead {
+  margin-inline-start: 0;
+  margin-inline-end: auto;
+}
+
+body.public-page-en:is(.section-core, .section-witness, .section-applied) .page-title .lead {
+  margin-inline-start: 0;
+  margin-inline-end: auto;
+}
+
+body:is(.section-core, .section-witness, .section-applied) .page-title-mark {
+  flex: 0 0 auto;
+  width: clamp(72px, 9vw, 118px);
+  height: clamp(72px, 9vw, 118px);
+  object-fit: cover;
+}
+
+/* Main section visual */
+body:is(.section-core, .section-witness, .section-applied) .tab-visual {
+  width: min(980px, 100%);
+  margin: 0 auto clamp(30px, 5vw, 54px);
+  padding: clamp(8px, 1.4vw, 14px);
+  border: 1px solid var(--bpi-border-blue, rgba(10, 58, 104, 0.14));
+  border-radius: clamp(20px, 2.5vw, 30px);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: var(--bpi-shadow-md, 0 12px 32px rgba(20, 40, 60, 0.08));
+  overflow: hidden;
+}
+
+body:is(.section-core, .section-witness, .section-applied) .tab-visual img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: clamp(14px, 2vw, 22px);
+  object-fit: contain;
+}
+
+body:is(.section-core, .section-witness, .section-applied) .tab-visual figcaption {
+  margin-top: 10px;
+  color: var(--bpi-muted, #536173);
+  font-size: 0.94rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+/* Cards and reading blocks */
+body:is(.section-core, .section-witness, .section-applied) :where(.notice-box, .reader-card, .source-files-card, .story-download-box) {
+  min-width: 0;
+  padding: clamp(20px, 2.8vw, 32px);
+}
+
+body:is(.section-core, .section-witness, .section-applied) :where(.notice-box, .reader-card, .source-files-card, .story-download-box) p,
+body:is(.section-core, .section-witness, .section-applied) :where(.notice-box, .reader-card, .source-files-card, .story-download-box) li {
+  color: var(--bpi-text, #2c3e50);
+  font-size: 1rem;
+  line-height: 1.72;
+  overflow-wrap: break-word;
+}
+
+body:is(.section-core, .section-witness, .section-applied) :where(.notice-box, .reader-card, .source-files-card, .story-download-box) h2,
+body:is(.section-core, .section-witness, .section-applied) :where(.notice-box, .reader-card, .source-files-card, .story-download-box) h3 {
+  color: var(--bpi-blue-deep, #0A3A68);
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+  overflow-wrap: break-word;
+}
+
+body:is(.section-core, .section-witness, .section-applied) .card-media-head {
+  min-width: 0;
+}
+
+body:is(.section-core, .section-witness, .section-applied) .card-media-head :is(h2, h3) {
+  min-width: 0;
+  margin-block: 0;
+}
+
+body:is(.section-core, .section-witness, .section-applied) .content-grid.two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--bpi-space-lg, 24px);
+  align-items: stretch;
+  margin-block: clamp(28px, 4vw, 48px);
+}
+
+body:is(.section-core, .section-witness, .section-applied) .content-grid.three {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--bpi-space-lg, 24px);
+  align-items: stretch;
+  margin-block: clamp(28px, 4vw, 48px);
+}
+
+/* Long-form text inside landing pages */
+body:is(.section-core, .section-witness, .section-applied) :where(.reader, .prose, .article-body, .longform, .content-copy) {
+  width: min(var(--bpi-reading-max, 860px), 100%);
+  margin-inline: auto;
+  color: var(--bpi-text, #2c3e50);
+}
+
+body:is(.section-core, .section-witness, .section-applied) :where(.reader, .prose, .article-body, .longform, .content-copy) p,
+body:is(.section-core, .section-witness, .section-applied) :where(.reader, .prose, .article-body, .longform, .content-copy) li {
+  font-size: clamp(1rem, 1.05vw, 1.1rem);
+  line-height: 1.8;
+}
+
+body:is(.section-core, .section-witness, .section-applied) :where(.reader, .prose, .article-body, .longform, .content-copy) h2 {
+  margin-top: 2.25em;
+  color: var(--bpi-blue-deep, #0A3A68);
+  font-size: clamp(1.65rem, 3vw, 2.35rem);
+  line-height: 1.18;
+}
+
+body:is(.section-core, .section-witness, .section-applied) :where(.reader, .prose, .article-body, .longform, .content-copy) h3 {
+  margin-top: 1.8em;
+  color: var(--bpi-text-strong, #1d2938);
+  font-size: clamp(1.3rem, 2.2vw, 1.7rem);
+  line-height: 1.25;
+}
+
+body:is(.section-core, .section-witness, .section-applied) blockquote {
+  margin: clamp(22px, 3vw, 34px) 0;
+  padding: clamp(18px, 2.5vw, 28px);
+  border-inline-start: 4px solid var(--bpi-gold, #d97706);
+  border-radius: var(--bpi-radius-md, 12px);
+  background: var(--bpi-gold-soft, #fff4dd);
+  color: var(--bpi-text-strong, #1d2938);
+  line-height: 1.72;
+}
+
+/* Download rows remain usable when labels or file sizes are long. */
+body:is(.section-core, .section-witness, .section-applied) .download-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  min-width: 0;
+}
+
+body:is(.section-core, .section-witness, .section-applied) .download-row .download-button {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+body:is(.section-core, .section-witness, .section-applied) .file-size {
+  white-space: nowrap;
+  opacity: 0.76;
+  font-size: 0.86em;
+}
+
+@media (max-width: 900px) {
+  body:is(.section-core, .section-witness, .section-applied) .content-grid.two,
+  body:is(.section-core, .section-witness, .section-applied) .content-grid.three {
+    grid-template-columns: 1fr;
+  }
+
+  body:is(.section-core, .section-witness, .section-applied) main.site-main {
+    width: min(100% - 24px, var(--bpi-content-max, 1200px));
+  }
+}
+
+@media (max-width: 640px) {
+  body:is(.section-core, .section-witness, .section-applied) main.site-main {
+    padding-block: 24px var(--bpi-section-pad-mobile, 32px);
+  }
+
+  body:is(.section-core, .section-witness, .section-applied) .page-title {
+    padding: 24px 18px;
+    border-radius: var(--bpi-radius-lg, 22px);
+  }
+
+  body:is(.section-core, .section-witness, .section-applied) .page-title-head {
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  body:is(.section-core, .section-witness, .section-applied) .page-title-head h1 {
+    font-size: clamp(2.15rem, 11vw, 3.35rem);
+  }
+
+  body:is(.section-core, .section-witness, .section-applied) .page-title-mark {
+    width: 72px;
+    height: 72px;
+  }
+
+  body:is(.section-core, .section-witness, .section-applied) .tab-visual {
+    padding: 7px;
+    border-radius: 20px;
+  }
+
+  body:is(.section-core, .section-witness, .section-applied) :where(.notice-box, .reader-card, .source-files-card, .story-download-box) {
+    padding: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body:is(.section-core, .section-witness, .section-applied) * {
+    scroll-behavior: auto;
+  }
+}

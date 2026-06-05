@@ -1,0 +1,134 @@
+/* BPI Stage 3 — files page visual fix. Loaded late from bpi-start-here-layout-fix.css.
+   Primary actions are gold. Secondary file-format actions remain outline.
+   Primary means: card-link, explicit primary markers, and HTML format links. */
+
+body.public-page.section-files main#main .hub-card,
+body.public-page.section-files main#main .media-card,
+body.public-page.section-files main#main .reader-card,
+body.public-page.section-files main#main .appendix-card,
+body.public-page.section-files main#main .notice-box,
+body.public-page.section-files main#main .source-files-card,
+body.public-page.section-files main#main .files-reading-path article,
+body.public-page.section-files main#main .reading-path-card {
+  background: #fbfaf6 !important;
+  background-image: none !important;
+  color: #17202d !important;
+  border: 1px solid rgba(10,58,104,.12) !important;
+  box-shadow: 0 10px 24px rgba(23,32,45,.06) !important;
+  border-radius: 24px !important;
+}
+
+body.public-page.section-files main#main .hub-card::before,
+body.public-page.section-files main#main .hub-card::after,
+body.public-page.section-files main#main .media-card::before,
+body.public-page.section-files main#main .media-card::after,
+body.public-page.section-files main#main .reader-card::before,
+body.public-page.section-files main#main .reader-card::after,
+body.public-page.section-files main#main .appendix-card::before,
+body.public-page.section-files main#main .appendix-card::after,
+body.public-page.section-files main#main .notice-box::before,
+body.public-page.section-files main#main .notice-box::after {
+  display: none !important;
+  opacity: 0 !important;
+  content: none !important;
+}
+
+body.public-page.section-files main#main .hub-card h2,
+body.public-page.section-files main#main .hub-card h3,
+body.public-page.section-files main#main .media-card h2,
+body.public-page.section-files main#main .media-card h3,
+body.public-page.section-files main#main .source-files-card h3 {
+  color: #0A3A68 !important;
+  text-shadow: none !important;
+}
+
+body.public-page.section-files main#main .hub-card p,
+body.public-page.section-files main#main .media-card p,
+body.public-page.section-files main#main .source-files-card p {
+  color: rgba(23,32,45,.82) !important;
+  text-shadow: none !important;
+}
+
+/* Secondary / normal file-format links. */
+body.public-page.section-files main#main .download-button,
+body.public-page.section-files main#main .download-row a,
+body.public-page.section-files main#main .download-strip a,
+body.public-page.section-files main#main .reading-path-actions a {
+  color: #0A3A68 !important;
+  background: rgba(255,250,240,.92) !important;
+  background-image: none !important;
+  border: 1.5px solid rgba(230,184,74,.70) !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  border-radius: 999px !important;
+  font-weight: 800 !important;
+}
+
+/* Primary actions: card-link, explicit primary markers, and HTML format links. */
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.card-link,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .card-link,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .primary-format,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-button.primary,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a[aria-current="page"].primary-format,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-row a[href$=".html"],
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-row a[href*=".html#"],
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-row a[href*=".html?"],
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-strip a[href$=".html"],
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-strip a[href*=".html#"],
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-strip a[href*=".html?"],
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .reading-path-actions a[href$=".html"],
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .reading-path-actions a[href*=".html#"],
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .reading-path-actions a[href*=".html?"],
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .source-files-card .download-button[href$=".html"],
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .source-files-card .download-button[href*=".html#"],
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .source-files-card .download-button[href*=".html?"] {
+  background: linear-gradient(135deg, #b98726, #e6b84a, #f5d06b) !important;
+  background-color: #e6b84a !important;
+  background-image: linear-gradient(135deg, #b98726, #e6b84a, #f5d06b) !important;
+  color: #07101d !important;
+  border: 1.5px solid transparent !important;
+  box-shadow: 0 8px 18px rgba(184,135,38,.18) !important;
+  text-shadow: none !important;
+  border-radius: 999px !important;
+  font-weight: 850 !important;
+}
+
+body.public-page.section-files main#main .download-button:hover,
+body.public-page.section-files main#main .download-row a:hover,
+body.public-page.section-files main#main .download-strip a:hover,
+body.public-page.section-files main#main .reading-path-actions a:hover {
+  color: #0A3A68 !important;
+  background: #fff7e8 !important;
+  background-image: none !important;
+  border-color: #e6b84a !important;
+  box-shadow: none !important;
+}
+
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.card-link:hover,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .card-link:hover,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .primary-format:hover,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-button.primary:hover,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-row a[href$=".html"]:hover,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-strip a[href$=".html"]:hover,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .reading-path-actions a[href$=".html"]:hover,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .source-files-card .download-button[href$=".html"]:hover {
+  background: linear-gradient(135deg, #b98726, #e6b84a, #f5d06b) !important;
+  background-image: linear-gradient(135deg, #b98726, #e6b84a, #f5d06b) !important;
+  color: #07101d !important;
+  border-color: transparent !important;
+  box-shadow: 0 10px 22px rgba(184,135,38,.22) !important;
+}
+
+body.public-page.section-files main#main .download-row a .file-size,
+body.public-page.section-files main#main .download-strip a .file-size,
+body.public-page.section-files main#main .reading-path-actions a .file-size,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.card-link .file-size,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .card-link .file-size,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .primary-format .file-size,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-button.primary .file-size,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-row a[href$=".html"] .file-size,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-strip a[href$=".html"] .file-size,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .reading-path-actions a[href$=".html"] .file-size,
+html body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .source-files-card .download-button[href$=".html"] .file-size {
+  color: rgba(7,16,29,.62) !important;
+}

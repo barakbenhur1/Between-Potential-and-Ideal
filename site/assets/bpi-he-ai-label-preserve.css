@@ -1,0 +1,24 @@
+/* Preserve Hebrew AI card labels only.
+   Do not inject nav tab text with pseudo-elements; nav labels must come from the real link text only. */
+
+body.public-page-he .site-nav a[href$="ai-as-witness.html"]::before,
+html[lang="he"] .site-nav a[href$="ai-as-witness.html"]::before,
+body.public-page-he .site-nav a[href$="ai-as-witness.html"]::after,
+html[lang="he"] .site-nav a[href$="ai-as-witness.html"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+body.public-page-he .card-link[href$="ai-as-witness.html"],
+html[lang="he"] .card-link[href$="ai-as-witness.html"] {
+  font-size: 0 !important;
+  line-height: 1 !important;
+}
+
+body.public-page-he .card-link[href$="ai-as-witness.html"]::before,
+html[lang="he"] .card-link[href$="ai-as-witness.html"]::before {
+  content: "פתח את שער הבינה המלאכותית" !important;
+  display: inline !important;
+  font-size: 1rem !important;
+  line-height: inherit !important;
+}

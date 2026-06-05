@@ -1,318 +1,227 @@
-/* V123 — global header/nav polish + scoped Home mobile shell + lightweight Files filtering + file-link target normalization.
-   Adds gateway tabs to every existing site header, keeps the brand on one line,
-   preserves Home gateway cards, and avoids broad content/design rewrites. */
 (function(){
   'use strict';
 
-  var KNOWN_FORMATS = ['html','pdf','docx','md','txt'];
+  const heItems = [
+    ['בית','index.html','index'],
+    ['תקציר','summary.html','summary'],
+    ['מילון','glossary.html','glossary'],
+    ['מושגים','potential-ideal-optimal.html','potential-ideal-optimal'],
+    ['בינה מלאכותית כעדות','ai-as-witness.html','ai-as-witness'],
+    ['ליבה','core.html','core'],
+    ['מתודולוגיה','methodology.html','methodology'],
+    ['עדות','witness.html','witness'],
+    ['יישום','applied.html','applied'],
+    ['בינה מלאכותית','ai.html','ai'],
+    ['קבצים','files.html','files'],
+    ['ביקורת','critique.html','critique'],
+    ['מקורות','sources.html','sources']
+  ];
 
-  function isHe(){
-    return document.documentElement.lang === 'he' ||
-      document.documentElement.dir === 'rtl' ||
-      document.body.classList.contains('public-page-he');
+  const enItems = [
+    ['Home','en.html','en'],
+    ['Summary','summary-en.html','summary-en'],
+    ['Glossary','glossary-en.html','glossary-en'],
+    ['Concepts','potential-ideal-optimal-en.html','potential-ideal-optimal-en'],
+    ['AI as Witness','ai-as-witness-en.html','ai-as-witness-en'],
+    ['Core','core-en.html','core-en'],
+    ['Methodology','methodology-en.html','methodology-en'],
+    ['Witness','witness-en.html','witness-en'],
+    ['Application','applied-en.html','applied-en'],
+    ['AI','ai-en.html','ai-en'],
+    ['Files','files-en.html','files-en'],
+    ['Critique','critique-en.html','critique-en'],
+    ['Sources','sources-en.html','sources-en']
+  ];
+
+  const heToEn = {
+    index:'en.html', summary:'summary-en.html', glossary:'glossary-en.html',
+    'potential-ideal-optimal':'potential-ideal-optimal-en.html', 'ai-as-witness':'ai-as-witness-en.html',
+    core:'core-en.html', methodology:'methodology-en.html', witness:'witness-en.html',
+    applied:'applied-en.html', ai:'ai-en.html', files:'files-en.html', critique:'critique-en.html', sources:'sources-en.html'
+  };
+  const enToHe = {
+    en:'index.html', 'summary-en':'summary.html', 'glossary-en':'glossary.html',
+    'potential-ideal-optimal-en':'potential-ideal-optimal.html', 'ai-as-witness-en':'ai-as-witness.html',
+    'core-en':'core.html', 'methodology-en':'methodology.html', 'witness-en':'witness.html',
+    'applied-en':'applied.html', 'ai-en':'ai.html', 'files-en':'files.html', 'critique-en':'critique.html', 'sources-en':'sources.html'
+  };
+
+  function path(){ return location.pathname || ''; }
+  function isHe(){ return path().includes('/pages/he/') || path().endsWith('/index.html') || document.documentElement.dir === 'rtl'; }
+  function isInner(){ return path().includes('/pages/he/') || path().includes('/pages/en/'); }
+  function key(){
+    const name = (path().split('/').pop() || (isHe() ? 'index.html' : 'en.html')).replace('.html','');
+    return name || (isHe() ? 'index' : 'en');
+  }
+  function href(file){
+    if (isInner()) return file === 'index.html' ? '../../index.html' : file === 'en.html' ? '../../en.html' : file;
+    return isHe() ? (file === 'index.html' ? 'index.html' : 'pages/he/' + file) : (file === 'en.html' ? 'en.html' : 'pages/en/' + file);
+  }
+  function langHref(){
+    const k = key();
+    if (isHe()) return isInner() ? '../en/' + (heToEn[k] || 'en.html') : (heToEn[k] || 'en.html');
+    return isInner() ? '../he/' + (enToHe[k] || 'index.html') : (enToHe[k] || 'index.html');
   }
 
-  function isHomePage(){
-    var path = (location.pathname || '').toLowerCase();
-    return path === '/' || path.endsWith('/index.html') || path.endsWith('/en.html') ||
-      path.endsWith('/site/index.html') || path.endsWith('/site/en.html');
-  }
-
-  function inPageFolder(){
-    var path = (location.pathname || '').toLowerCase();
-    return path.indexOf('/pages/he/') !== -1 || path.indexOf('/pages/en/') !== -1 ||
-      path.indexOf('/site/pages/he/') !== -1 || path.indexOf('/site/pages/en/') !== -1;
-  }
-
-  function setImportant(el, prop, value){
-    if (!el) return;
-    el.style.setProperty(prop, value, 'important');
-  }
-
-  function installGlobalHeaderPolish(){
-    if (document.getElementById('bpi-global-header-polish-v123')) return;
-    var style = document.createElement('style');
-    style.id = 'bpi-global-header-polish-v123';
+  function installFinalTabbarDimensions(){
+    const old = document.getElementById('bpi-final-tabbar-dimensions');
+    if (old) old.remove();
+    const style = document.createElement('style');
+    style.id = 'bpi-final-tabbar-dimensions';
     style.textContent = [
-      '.site-header{display:grid!important;grid-template-columns:minmax(max-content,1fr) minmax(0,auto) minmax(90px,1fr)!important;align-items:center!important;column-gap:16px!important;}',
-      '.site-header .site-brand{justify-self:start!important;min-width:max-content!important;white-space:nowrap!important;}',
-      '.site-header .site-brand a{white-space:nowrap!important;display:inline-block!important;}',
-      '.site-header .language-switch{justify-self:end!important;white-space:nowrap!important;}',
-      '.site-header .site-nav{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;text-align:center!important;justify-self:center!important;margin-left:auto!important;margin-right:auto!important;max-width:min(100%,1180px)!important;}',
-      '.site-header .site-nav a{text-align:center!important;}',
-      '.bpi-gateway-cards{margin-top:clamp(1.3rem,3vw,2.1rem)!important;}',
-      '@media(max-width:860px){.site-header{display:flex!important;flex-direction:column!important}.site-header .site-brand,.site-header .language-switch,.site-header .site-nav{justify-self:center!important;min-width:0!important}.site-header .site-brand a{white-space:normal!important;text-align:center!important}}'
-    ].join('');
+      'html body.public-page .site-header{height:74px!important;min-height:74px!important;max-height:74px!important;display:grid!important;grid-template-columns:248px minmax(0,1080px) 104px!important;align-items:center!important;justify-content:center!important;column-gap:16px!important;padding:0 clamp(22px,2.4vw,36px)!important;box-sizing:border-box!important;overflow:visible!important;}',
+      'html body.public-page-en .site-header{height:86px!important;min-height:86px!important;max-height:86px!important;grid-template-columns:300px minmax(0,1040px) 104px!important;}',
+      'html body.public-page .site-header .site-brand{grid-column:1!important;justify-self:start!important;width:248px!important;min-width:248px!important;max-width:248px!important;white-space:nowrap!important;overflow:visible!important;}',
+      'html body.public-page-en .site-header .site-brand{width:300px!important;min-width:300px!important;max-width:300px!important;}',
+      'html body.public-page .site-header .site-brand a{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif!important;font-size:16px!important;font-weight:800!important;line-height:1.05!important;letter-spacing:-.025em!important;white-space:nowrap!important;overflow:visible!important;text-overflow:clip!important;}',
+      'html body.public-page .site-header .site-nav{grid-column:2!important;justify-self:center!important;width:100%!important;max-width:1080px!important;display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;align-content:center!important;text-align:center!important;margin-left:auto!important;margin-right:auto!important;min-width:0!important;min-height:44px!important;gap:7px!important;overflow:visible!important;}',
+      'html body.public-page-he .site-header.bpi-home-nav .site-nav{gap:4px!important;}',
+      'html body.public-page-en .site-header .site-nav{max-width:1040px!important;gap:6px!important;}',
+      'html body.public-page .site-header .site-nav a{min-height:36px!important;height:36px!important;padding:8px 13px!important;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif!important;font-size:14px!important;font-weight:700!important;line-height:1.1!important;letter-spacing:0!important;box-sizing:border-box!important;white-space:nowrap!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;}',
+      'html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"]{min-width:162px!important;width:162px!important;max-width:162px!important;flex:0 0 162px!important;padding-inline:10px!important;font-size:13px!important;line-height:1.1!important;white-space:nowrap!important;overflow:visible!important;text-overflow:clip!important;box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;}',
+      'html body.public-page-en .site-header .site-nav a{padding:8px 10px!important;font-size:13px!important;}',
+      'html body.public-page .site-header .language-switch{grid-column:3!important;justify-self:end!important;width:104px!important;min-width:104px!important;max-width:104px!important;height:36px!important;min-height:36px!important;padding:8px 13px!important;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif!important;font-size:14px!important;font-weight:700!important;line-height:1.1!important;box-sizing:border-box!important;white-space:nowrap!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;}',
+      '@media(max-width:1180px){html body.public-page .site-header{grid-template-columns:210px minmax(0,1fr) 92px!important;}html body.public-page .site-header .site-brand{width:210px!important;min-width:210px!important;max-width:210px!important;}html body.public-page .site-header .language-switch{width:92px!important;min-width:92px!important;max-width:92px!important;}html body.public-page .site-header .site-nav a{font-size:13px!important;padding:8px 10px!important;}html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"]{min-width:154px!important;width:154px!important;max-width:154px!important;flex-basis:154px!important;font-size:12.5px!important;padding-inline:8px!important;}}',
+      '@media(max-width:860px){html body.public-page .site-header,html body.public-page-en .site-header{height:auto!important;min-height:0!important;max-height:none!important;display:flex!important;flex-direction:column!important;gap:10px!important;padding:12px 16px!important;}html body.public-page .site-header .site-brand,html body.public-page-en .site-header .site-brand{width:auto!important;min-width:0!important;max-width:100%!important;}}'
+    ].join('\n');
     document.head.appendChild(style);
   }
 
-  function hrefFor(pageName){
-    return inPageFolder() ? './' + pageName : (isHe() ? 'pages/he/' + pageName : 'pages/en/' + pageName);
-  }
-
-  function navHasHref(nav, ending){
-    return Array.from(nav.querySelectorAll('a[href]')).some(function(a){
-      var href = (a.getAttribute('href') || '').split('?')[0].split('#')[0].toLowerCase();
-      return href === ending || href.endsWith('/' + ending) || href.endsWith(ending);
-    });
-  }
-
-  function makeNavLink(text, href){
-    var a = document.createElement('a');
-    a.href = href;
-    a.textContent = text;
-    return a;
-  }
-
-  function findNavLink(nav, endings){
-    endings = Array.isArray(endings) ? endings : [endings];
-    return Array.from(nav.querySelectorAll('a[href]')).find(function(a){
-      var href = (a.getAttribute('href') || '').split('?')[0].split('#')[0].toLowerCase();
-      return endings.some(function(ending){
-        return href === ending || href.endsWith('/' + ending) || href.endsWith(ending);
-      });
-    }) || null;
-  }
-
-  function insertAfter(reference, node){
-    if (!reference || !reference.parentNode) return false;
-    reference.parentNode.insertBefore(node, reference.nextSibling);
-    return true;
-  }
-
-  function installGatewayNavTabs(){
-    var nav = document.querySelector('.site-header .site-nav');
-    if (!nav) return;
-
-    var he = isHe();
-    var glossaryName = he ? 'glossary.html' : 'glossary-en.html';
-    var conceptsName = he ? 'potential-ideal-optimal.html' : 'potential-ideal-optimal-en.html';
-    var aiWitnessName = he ? 'ai-as-witness.html' : 'ai-as-witness-en.html';
-
-    var summary = findNavLink(nav, he ? ['summary.html'] : ['summary-en.html']);
-    var core = findNavLink(nav, he ? ['core.html'] : ['core-en.html']);
-    var ai = findNavLink(nav, he ? ['ai.html'] : ['ai-en.html']);
-
-    var glossary = navHasHref(nav, glossaryName) ? null : makeNavLink(he ? 'מילון' : 'Glossary', hrefFor(glossaryName));
-    var concepts = navHasHref(nav, conceptsName) ? null : makeNavLink(he ? 'מושגים' : 'Concepts', hrefFor(conceptsName));
-    var aiWitness = navHasHref(nav, aiWitnessName) ? null : makeNavLink(he ? 'AI כעדות' : 'AI as Witness', hrefFor(aiWitnessName));
-
-    if (glossary || concepts) {
-      var insertionPoint = summary || core;
-      if (concepts) {
-        if (insertionPoint) insertAfter(insertionPoint, concepts);
-        else nav.appendChild(concepts);
-      }
-      if (glossary) {
-        if (insertionPoint) insertAfter(insertionPoint, glossary);
-        else nav.appendChild(glossary);
-      }
-    }
-
-    if (aiWitness) {
-      if (ai) insertAfter(ai, aiWitness);
-      else nav.appendChild(aiWitness);
-    }
-  }
-
-  function installEnglishWitnessHeroLayout(){ return; }
-
-  function installHomeMobileSummaryShell(){
-    if (!isHomePage() || !window.matchMedia || !window.matchMedia('(max-width: 860px)').matches) return;
-
-    if (!document.getElementById('bpi-home-mobile-summary-stylesheet-v117')) {
-      var link = document.createElement('link');
-      link.id = 'bpi-home-mobile-summary-stylesheet-v117';
-      link.rel = 'stylesheet';
-      link.href = 'styles.css?v=20260526-home-mobile-summary-shell-v117';
-      document.head.appendChild(link);
-    }
-
-    if (document.getElementById('bpi-home-mobile-blue-hero-v117')) return;
-    var style = document.createElement('style');
-    style.id = 'bpi-home-mobile-blue-hero-v117';
+  function installNavTextSafetyCSS(){
+    if (document.getElementById('bpi-nav-text-safety-css')) return;
+    const style = document.createElement('style');
+    style.id = 'bpi-nav-text-safety-css';
     style.textContent = [
-      '@media (max-width:860px){',
-      'html,body{width:100%!important;max-width:100%!important;overflow-x:hidden!important;}',
-      'body.public-page{background:radial-gradient(circle at 0% 12%,rgba(0,167,183,.10),transparent 34rem),radial-gradient(circle at 100% 0%,rgba(242,142,43,.12),transparent 32rem),#f7efe1!important;color:#102033!important;}',
-      'body.public-page .site-main{background:transparent!important;color:#102033!important;max-width:100vw!important;overflow-x:hidden!important;}',
-      'body.public-page .site-header{background:linear-gradient(135deg,#0A3A68,#0C526D 58%,rgba(242,142,43,.92))!important;color:#fff!important;}',
-      'body.public-page .site-header a{color:#fff!important;}',
-      'body.public-page .site-header .site-nav{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;overflow:visible!important;overflow-x:visible!important;scroll-snap-type:none!important;}',
-      'body.public-page .site-header .site-nav a{transform:none!important;scroll-snap-align:none!important;}',
-      'body.public-page .breadcrumbs{width:min(100% - 24px,1120px)!important;max-width:calc(100vw - 24px)!important;margin:52px auto 14px!important;box-sizing:border-box!important;}',
-      'body.public-page .opening-visual,body.public-page .signature-blurbs,body.public-page .notice-box,body.public-page .hub-grid,body.public-page .reading-path-cta{width:min(100% - 24px,1120px)!important;max-width:calc(100vw - 24px)!important;margin-left:auto!important;margin-right:auto!important;box-sizing:border-box!important;}',
-      'body.public-page .concise-hero,body.public-page .hero.concise-hero{display:block!important;width:min(100% - 24px,1120px)!important;max-width:calc(100vw - 24px)!important;margin:0 auto 26px!important;box-sizing:border-box!important;padding:clamp(34px,8vw,56px) clamp(24px,6vw,42px)!important;border-radius:30px!important;border:1px solid rgba(255,255,255,.22)!important;background:linear-gradient(145deg,#06466d 0%,#007b91 58%,#008fa2 100%)!important;color:#fffaf0!important;box-shadow:0 18px 48px rgba(10,58,104,.18)!important;text-align:center!important;overflow:hidden!important;}',
-      'body.public-page .concise-hero::before,body.public-page .hero.concise-hero::before{display:none!important;content:none!important;}',
-      'body.public-page .concise-hero .kicker,body.public-page .hero.concise-hero .kicker{color:#fffaf0!important;background:transparent!important;border:0!important;margin:0 auto clamp(30px,8vw,58px)!important;padding:0!important;text-align:center!important;font-weight:800!important;}',
-      'body.public-page .concise-hero h1,body.public-page .hero.concise-hero h1{color:#fffaf0!important;text-align:center!important;margin:0 auto!important;max-width:760px!important;font-family:"Gveret Levin","Noto Sans Hebrew",Georgia,"Times New Roman",serif!important;font-size:clamp(2.7rem,11.5vw,4.8rem)!important;line-height:1.04!important;letter-spacing:-.025em!important;}',
-      'body.public-page .concise-hero .lead,body.public-page .hero.concise-hero .lead,body.public-page .concise-hero .method-note,body.public-page .hero.concise-hero .method-note{color:rgba(255,250,240,.92)!important;text-align:center!important;margin-left:auto!important;margin-right:auto!important;max-width:72ch!important;background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;font-size:clamp(1rem,4.5vw,1.18rem)!important;line-height:1.7!important;}',
-      '}',
-      '@media (max-width:390px){',
-      'body.public-page .breadcrumbs{width:min(100% - 20px,1120px)!important;max-width:calc(100vw - 20px)!important;margin-top:48px!important;}',
-      'body.public-page .concise-hero,body.public-page .hero.concise-hero{width:min(100% - 20px,1120px)!important;max-width:calc(100vw - 20px)!important;padding:44px 22px!important;border-radius:28px!important;}',
-      '}'
-    ].join('');
+      'body.public-page-he .site-nav a[href="ai.html"]{font-size:14px!important;line-height:1.1!important;color:inherit;}',
+      'body.public-page-he .site-nav a[href="ai.html"]::before,body.public-page-he .site-nav a[href="ai.html"]::after{content:none!important;display:none!important;font-size:0!important;line-height:0!important;}',
+      'body.public-page-he .site-nav a[href="ai-as-witness.html"]::before,body.public-page-he .site-nav a[href="ai-as-witness.html"]::after{content:none!important;display:none!important;font-size:0!important;line-height:0!important;}'
+    ].join('\n');
     document.head.appendChild(style);
   }
 
-  function installHomeGatewayLinks(){
-    if (!isHomePage() || document.getElementById('bpi-home-gateway-links')) return;
 
-    var main = document.getElementById('main') || document.querySelector('main');
-    if (!main) return;
+  function installBreadcrumbSafetyCSS(){
+    const old = document.getElementById('bpi-breadcrumb-final-safety-css');
+    if (old) old.remove();
 
-    var he = isHe();
-    var prefix = he ? 'pages/he/' : 'pages/en/';
-    var section = document.createElement('section');
-    section.id = 'bpi-home-gateway-links';
-    section.className = 'hub-grid three bpi-gateway-cards';
-    section.setAttribute('aria-label', he ? 'מדריכי כניסה מהירים' : 'Quick entry guides');
-    section.innerHTML = he ? [
-      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="מילון מושגים" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_methodology.png" width="480"/><h2>מילון מושגים</h2></div><p>כניסה קצרה למונחי היסוד של הפרויקט ולדרך שבה הם נבדלים זה מזה.</p><a class="card-link" href="' + prefix + 'glossary.html">פתח מילון מושגים</a></article>',
-      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="פוטנציאל, אידיאל ואופטימלי" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_core.png" width="480"/><h2>פוטנציאל, אידיאל, אופטימלי</h2></div><p>דף שער שמפריד בין שדה האפשרויות, הצורה הראויה, והתרגום המקומי תחת מגבלות.</p><a class="card-link" href="' + prefix + 'potential-ideal-optimal.html">קרא את דף המושגים</a></article>',
-      '<article class="hub-card media-card accent-ai"><div class="card-media-head"><img alt="בינה מלאכותית כעדות" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_ai.png" width="480"/><h2>בינה מלאכותית כעדות</h2></div><p>שער קצר לקריאת AI כמראה, עדשה וכלי בדיקה — לא כמקור חי ולא כסמכות.</p><a class="card-link" href="' + prefix + 'ai-as-witness.html">פתח את שער ה־AI</a></article>'
-    ].join('') : [
-      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="Glossary" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_methodology.png" width="480"/><h2>Glossary</h2></div><p>A short entry point into the project’s key terms and the distinctions between them.</p><a class="card-link" href="' + prefix + 'glossary-en.html">Open the glossary</a></article>',
-      '<article class="hub-card media-card accent-core"><div class="card-media-head"><img alt="Potential, Ideal, Optimal" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_core.png" width="480"/><h2>Potential, Ideal, Optimal</h2></div><p>A gateway page separating the field of possibility, the worthy form, and the local translation under constraints.</p><a class="card-link" href="' + prefix + 'potential-ideal-optimal-en.html">Read the concepts page</a></article>',
-      '<article class="hub-card media-card accent-ai"><div class="card-media-head"><img alt="AI as Witness" class="card-thumb" decoding="async" height="480" loading="lazy" src="figures/thumb_ai.png" width="480"/><h2>AI as Witness</h2></div><p>A short gateway for reading AI as mirror, lens, and stress test — not as a living source or authority.</p><a class="card-link" href="' + prefix + 'ai-as-witness-en.html">Open the AI gateway</a></article>'
-    ].join('');
+    const style = document.createElement('style');
+    style.id = 'bpi-breadcrumb-final-safety-css';
+    style.textContent = [
+      'html body.public-page nav.breadcrumbs,html body.public-page .breadcrumbs,html body.public-page nav[aria-label="Breadcrumb"]{color:#0A3A68!important;opacity:1!important;text-shadow:none!important;background:transparent!important;background-color:transparent!important;background-image:none!important;box-shadow:none!important;}',
+      'html body.public-page nav.breadcrumbs *,html body.public-page .breadcrumbs *,html body.public-page nav[aria-label="Breadcrumb"] *{text-shadow:none!important;box-shadow:none!important;}',
+      'html body.public-page nav.breadcrumbs a,html body.public-page .breadcrumbs a,html body.public-page nav[aria-label="Breadcrumb"] a,html body.public-page nav.breadcrumbs span,html body.public-page .breadcrumbs span,html body.public-page nav[aria-label="Breadcrumb"] span,html body.public-page nav.breadcrumbs [aria-current="page"],html body.public-page .breadcrumbs [aria-current="page"],html body.public-page nav[aria-label="Breadcrumb"] [aria-current="page"]{color:#0A3A68!important;-webkit-text-fill-color:#0A3A68!important;background:transparent!important;background-color:transparent!important;background-image:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;outline:0!important;padding:0!important;margin:0!important;min-width:0!important;width:auto!important;max-width:none!important;min-height:0!important;height:auto!important;display:inline!important;line-height:1.35!important;font-weight:850!important;text-decoration:none!important;opacity:1!important;}',
+      'html body.public-page nav.breadcrumbs a[href$="index.html"],html body.public-page .breadcrumbs a[href$="index.html"],html body.public-page nav[aria-label="Breadcrumb"] a[href$="index.html"],html body.public-page nav.breadcrumbs a:first-child,html body.public-page .breadcrumbs a:first-child,html body.public-page nav[aria-label="Breadcrumb"] a:first-child{color:#0A3A68!important;-webkit-text-fill-color:#0A3A68!important;background:transparent!important;background-color:transparent!important;background-image:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0!important;}',
+      'html body.public-page nav.breadcrumbs a.active,html body.public-page .breadcrumbs a.active,html body.public-page nav[aria-label="Breadcrumb"] a.active,html body.public-page nav.breadcrumbs .active,html body.public-page .breadcrumbs .active,html body.public-page nav[aria-label="Breadcrumb"] .active{color:#0A3A68!important;-webkit-text-fill-color:#0A3A68!important;background:transparent!important;background-color:transparent!important;background-image:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;}',
+      'html body.public-page nav.breadcrumbs a:hover,html body.public-page .breadcrumbs a:hover,html body.public-page nav[aria-label="Breadcrumb"] a:hover,html body.public-page nav.breadcrumbs a:focus-visible,html body.public-page .breadcrumbs a:focus-visible,html body.public-page nav[aria-label="Breadcrumb"] a:focus-visible{color:#062f56!important;-webkit-text-fill-color:#062f56!important;background:transparent!important;background-color:transparent!important;background-image:none!important;text-decoration:underline!important;box-shadow:none!important;}'
+    ].join('\n');
 
-    var firstHubGrid = main.querySelector('.hub-grid.three');
-    if (firstHubGrid && firstHubGrid.parentNode) {
-      firstHubGrid.parentNode.insertBefore(section, firstHubGrid.nextSibling);
-    } else {
-      main.appendChild(section);
-    }
+    document.head.appendChild(style);
   }
 
-  function isFilesPage(){
-    var p = location.pathname.toLowerCase();
-    return p.endsWith('/files.html') || p.endsWith('/files-en.html') ||
-      document.body.classList.contains('files-page') ||
-      !!document.querySelector('#fileSearch,#fileTypeFilter,#fileLangFilter,.download-table');
-  }
-
-  function normalizeFormat(value){
-    value = (value || '').toLowerCase().trim();
-    if (value === 'word' || value === 'doc') return 'docx';
-    if (value === 'markdown') return 'md';
-    if (value === 'text') return 'txt';
-    return value;
-  }
-
-  function formatFromHref(href){
-    var clean = (href || '').split('?')[0].split('#')[0].toLowerCase();
-    var match = clean.match(/\.([a-z0-9]+)$/);
-    if (!match) return '';
-    var ext = normalizeFormat(match[1]);
-    return KNOWN_FORMATS.indexOf(ext) !== -1 ? ext : '';
-  }
-
-  function normalizeFileDownloadTargets(){
-    if (!isFilesPage()) return;
-
-    Array.from(document.querySelectorAll('a[href]')).forEach(function(a){
-      var href = a.getAttribute('href') || '';
-      var clean = href.split('?')[0].split('#')[0].toLowerCase();
-      var pointsToFileArchive = clean.indexOf('/files/') !== -1 ||
-        clean.indexOf('../../files/') === 0 || clean.indexOf('../files/') === 0 ||
-        clean.indexOf('files/') === 0;
-
-      if (!pointsToFileArchive || !formatFromHref(href)) return;
-
-      a.setAttribute('target', '_blank');
-
-      var rel = (a.getAttribute('rel') || '').split(/\s+/).filter(Boolean);
-      ['noopener','noreferrer'].forEach(function(token){
-        if (rel.indexOf(token) === -1) rel.push(token);
-      });
-      a.setAttribute('rel', rel.join(' '));
+  function enforceExactLabels(nav, he){
+    nav.querySelectorAll('a').forEach(a => {
+      const rawHref = (a.getAttribute('href') || '').split('?')[0].split('#')[0];
+      if (he && rawHref.endsWith('ai.html')) a.textContent = 'בינה מלאכותית';
+      if (he && rawHref.endsWith('ai-as-witness.html')) a.textContent = 'בינה מלאכותית כעדות';
+      if (!he && rawHref.endsWith('ai-en.html')) a.textContent = 'AI';
+      if (!he && rawHref.endsWith('ai-as-witness-en.html')) a.textContent = 'AI as Witness';
     });
   }
 
-  function rowText(row){
-    var hrefs = Array.from(row.querySelectorAll('a[href]')).map(function(a){ return a.getAttribute('href') || ''; }).join(' ');
-    return ((row.textContent || '') + ' ' + hrefs).toLowerCase();
+  function renderNav(){
+    const header = document.querySelector('.site-header');
+    if (!header) return;
+    const he = isHe();
+    const active = key();
+    const items = he ? heItems : enItems;
+    header.dir = he ? 'rtl' : 'ltr';
+    header.classList.add('bpi-shared-nav');
+    header.classList.toggle('bpi-home-nav', active === 'index' || active === 'en');
+    header.innerHTML = '';
+
+    const brand = document.createElement('div');
+    brand.className = 'site-brand';
+    const brandLink = document.createElement('a');
+    brandLink.href = isInner() ? (he ? '../../index.html' : '../../en.html') : (he ? 'index.html' : 'en.html');
+    brandLink.textContent = 'Between Potential and Ideal';
+    brand.appendChild(brandLink);
+
+    const nav = document.createElement('nav');
+    nav.className = 'site-nav';
+    nav.setAttribute('aria-label', 'Primary navigation');
+    items.forEach(([label,file,itemKey]) => {
+      const a = document.createElement('a');
+      a.href = href(file);
+      a.textContent = label;
+      if (itemKey === active) {
+        a.className = 'active';
+        a.setAttribute('aria-current','page');
+      }
+      nav.appendChild(a);
+    });
+    enforceExactLabels(nav, he);
+
+    const lang = document.createElement('a');
+    lang.className = 'language-switch';
+    lang.href = langHref();
+    lang.textContent = he ? 'English' : 'עברית';
+
+    header.appendChild(brand);
+    header.appendChild(nav);
+    header.appendChild(lang);
+    installNavTextSafetyCSS();
+    installFinalTabbarDimensions();
+    installBreadcrumbSafetyCSS();
+    enforceExactLabels(nav, he);
   }
 
-  function rowFormats(row){
-    var formats = new Set();
-    Array.from(row.querySelectorAll('a[href]')).forEach(function(a){
-      var f = formatFromHref(a.getAttribute('href'));
-      if (f) formats.add(f);
+
+  function sanitizeBreadcrumbs(){
+    const crumbs = document.querySelectorAll(
+      'main#main nav.breadcrumbs a, main#main .breadcrumbs a, main#main nav[aria-label="Breadcrumb"] a, nav.breadcrumbs a, .breadcrumbs a, nav[aria-label="Breadcrumb"] a'
+    );
+
+    crumbs.forEach((el) => {
+      el.classList.remove('active');
+      el.removeAttribute('aria-current');
+
+      el.style.setProperty('color', '#0A3A68', 'important');
+      el.style.setProperty('-webkit-text-fill-color', '#0A3A68', 'important');
+      el.style.setProperty('background', 'transparent', 'important');
+      el.style.setProperty('background-color', 'transparent', 'important');
+      el.style.setProperty('background-image', 'none', 'important');
+      el.style.setProperty('box-shadow', 'none', 'important');
+      el.style.setProperty('border', '0', 'important');
+      el.style.setProperty('border-radius', '0', 'important');
+      el.style.setProperty('outline', '0', 'important');
+      el.style.setProperty('padding', '0', 'important');
+      el.style.setProperty('margin', '0', 'important');
+      el.style.setProperty('min-width', '0', 'important');
+      el.style.setProperty('width', 'auto', 'important');
+      el.style.setProperty('max-width', 'none', 'important');
+      el.style.setProperty('min-height', '0', 'important');
+      el.style.setProperty('height', 'auto', 'important');
+      el.style.setProperty('line-height', '1.35', 'important');
+      el.style.setProperty('display', 'inline', 'important');
+      el.style.setProperty('text-decoration', 'none', 'important');
+      el.style.setProperty('text-shadow', 'none', 'important');
+      el.style.setProperty('opacity', '1', 'important');
+      el.style.setProperty('font-weight', '850', 'important');
     });
 
-    [row.getAttribute('data-format'), row.getAttribute('data-formats'), row.getAttribute('data-file-format'), row.getAttribute('data-file-formats')]
-      .filter(Boolean).join(' ').split(/[\s,|/]+/).forEach(function(f){
-        f = normalizeFormat(f);
-        if (KNOWN_FORMATS.indexOf(f) !== -1) formats.add(f);
-      });
-
-    var text = rowText(row);
-    if (text.indexOf('html') !== -1) formats.add('html');
-    if (text.indexOf('pdf') !== -1) formats.add('pdf');
-    if (text.indexOf('docx') !== -1 || text.indexOf('word') !== -1) formats.add('docx');
-    if (text.indexOf('markdown') !== -1 || text.indexOf('.md') !== -1) formats.add('md');
-    if (text.indexOf('text') !== -1 || text.indexOf('.txt') !== -1) formats.add('txt');
-    if (text.indexOf('התאוריה הפילוסופית') !== -1 || text.indexOf('התיאוריה הפילוסופית') !== -1 || text.indexOf('philosophical theory') !== -1 || text.indexOf('between-potential-and-ideal-he') !== -1 || text.indexOf('between-potential-and-ideal-en') !== -1) {
-      ['html','pdf','docx','md'].forEach(function(f){ formats.add(f); });
-    }
-    return formats;
-  }
-
-  function applyFilesFilter(){
-    if (!isFilesPage()) return;
-    var rows = Array.from(document.querySelectorAll('.download-table tr')).slice(1);
-    if (!rows.length) return;
-
-    var qEl = document.querySelector('#fileSearch');
-    var typeEl = document.querySelector('#fileTypeFilter');
-    var langEl = document.querySelector('#fileLangFilter');
-    var query = (qEl && qEl.value || '').toLowerCase().trim();
-    var type = normalizeFormat(typeEl && typeEl.value || '');
-    var lang = (langEl && langEl.value || '').toLowerCase().trim();
-    var visible = 0;
-
-    rows.forEach(function(row){
-      var text = rowText(row);
-      var formats = rowFormats(row);
-      var formatValue = Array.from(formats).sort().join(' ');
-      row.setAttribute('data-format', formatValue);
-      row.setAttribute('data-formats', formatValue);
-
-      var ok = (!query || text.indexOf(query) !== -1) && (!type || formats.has(type)) && (!lang || text.indexOf(lang) !== -1);
-      row.style.display = ok ? '' : 'none';
-      if (ok) visible += 1;
+    const navs = document.querySelectorAll('main#main nav.breadcrumbs, main#main .breadcrumbs, main#main nav[aria-label="Breadcrumb"], nav.breadcrumbs, .breadcrumbs, nav[aria-label="Breadcrumb"]');
+    navs.forEach((nav) => {
+      nav.style.setProperty('color', '#0A3A68', 'important');
+      nav.style.setProperty('background', 'transparent', 'important');
+      nav.style.setProperty('background-color', 'transparent', 'important');
+      nav.style.setProperty('background-image', 'none', 'important');
+      nav.style.setProperty('box-shadow', 'none', 'important');
+      nav.style.setProperty('text-shadow', 'none', 'important');
+      nav.style.setProperty('opacity', '1', 'important');
     });
-
-    var count = document.querySelector('#fileFilterCount');
-    if (count) count.textContent = isHe() ? ('מוצגים ' + visible + ' קבצים') : (visible + ' files shown');
   }
 
-  function installFilesFilters(){
-    if (!isFilesPage()) return;
-    normalizeFileDownloadTargets();
-    var search = document.querySelector('#fileSearch');
-    var type = document.querySelector('#fileTypeFilter');
-    var lang = document.querySelector('#fileLangFilter');
-    if (search) search.addEventListener('input', applyFilesFilter, false);
-    if (type) type.addEventListener('change', applyFilesFilter, false);
-    if (lang) lang.addEventListener('change', applyFilesFilter, false);
-    applyFilesFilter();
-  }
-
-  function init(){
-    installGlobalHeaderPolish();
-    installGatewayNavTabs();
-    installEnglishWitnessHeroLayout();
-    if (window.requestAnimationFrame) window.requestAnimationFrame(installEnglishWitnessHeroLayout);
-    window.setTimeout(installEnglishWitnessHeroLayout, 120);
-    installHomeMobileSummaryShell();
-    installHomeGatewayLinks();
-    installFilesFilters();
-  }
-
+  function init(){ installNavTextSafetyCSS(); installFinalTabbarDimensions(); sanitizeBreadcrumbs(); installBreadcrumbSafetyCSS(); renderNav(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();

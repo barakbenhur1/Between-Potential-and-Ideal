@@ -1,0 +1,95 @@
+/* BPI Stage 3 — final file-format button rules.
+   Only HTML links were the special/primary format before. Keep that behavior,
+   but use the new gold primary button instead of the old blue button. */
+
+body.section-files main#main .download-row a,
+body.section-files main#main .download-strip a,
+body.section-files main#main .source-files-card .download-button,
+body.section-files main#main .reading-path-actions a,
+body.section-files main#main .appendix-actions a,
+body.section-files main#main .file-actions a,
+body.section-files main#main .format-actions a,
+body.section-files main#main .document-actions a {
+  background: rgba(255,250,240,.92) !important;
+  background-image: none !important;
+  color: #0A3A68 !important;
+  border: 1.5px solid rgba(230,184,74,.72) !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  border-radius: 999px !important;
+  font-weight: 850 !important;
+}
+
+body.section-files main#main .download-row a[href$=".html"],
+body.section-files main#main .download-row a[href*=".html#"],
+body.section-files main#main .download-row a[href*=".html?"],
+body.section-files main#main .download-strip a[href$=".html"],
+body.section-files main#main .download-strip a[href*=".html#"],
+body.section-files main#main .download-strip a[href*=".html?"],
+body.section-files main#main .source-files-card .download-button[href$=".html"],
+body.section-files main#main .source-files-card .download-button[href*=".html#"],
+body.section-files main#main .source-files-card .download-button[href*=".html?"],
+body.section-files main#main .reading-path-actions a[href$=".html"],
+body.section-files main#main .reading-path-actions a[href*=".html#"],
+body.section-files main#main .reading-path-actions a[href*=".html?"],
+body.section-files main#main .appendix-actions a[href$=".html"],
+body.section-files main#main .appendix-actions a[href*=".html#"],
+body.section-files main#main .appendix-actions a[href*=".html?"],
+body.section-files main#main .file-actions a[href$=".html"],
+body.section-files main#main .file-actions a[href*=".html#"],
+body.section-files main#main .file-actions a[href*=".html?"],
+body.section-files main#main .format-actions a[href$=".html"],
+body.section-files main#main .format-actions a[href*=".html#"],
+body.section-files main#main .format-actions a[href*=".html?"],
+body.section-files main#main .document-actions a[href$=".html"],
+body.section-files main#main .document-actions a[href*=".html#"],
+body.section-files main#main .document-actions a[href*=".html?"] {
+  background: linear-gradient(135deg,#b98726,#e6b84a,#f5d06b) !important;
+  background-color: #e6b84a !important;
+  background-image: linear-gradient(135deg,#b98726,#e6b84a,#f5d06b) !important;
+  color: #07101d !important;
+  border-color: transparent !important;
+  box-shadow: 0 8px 18px rgba(184,135,38,.18) !important;
+  text-shadow: none !important;
+}
+
+body.section-files main#main .download-row a[href$=".html"] .file-size,
+body.section-files main#main .download-strip a[href$=".html"] .file-size,
+body.section-files main#main .source-files-card .download-button[href$=".html"] .file-size,
+body.section-files main#main .reading-path-actions a[href$=".html"] .file-size,
+body.section-files main#main .appendix-actions a[href$=".html"] .file-size,
+body.section-files main#main .file-actions a[href$=".html"] .file-size,
+body.section-files main#main .format-actions a[href$=".html"] .file-size,
+body.section-files main#main .document-actions a[href$=".html"] .file-size {
+  color: rgba(7,16,29,.62) !important;
+}
+
+body.section-files main#main .download-row a:hover,
+body.section-files main#main .download-strip a:hover,
+body.section-files main#main .source-files-card .download-button:hover,
+body.section-files main#main .reading-path-actions a:hover,
+body.section-files main#main .appendix-actions a:hover,
+body.section-files main#main .file-actions a:hover,
+body.section-files main#main .format-actions a:hover,
+body.section-files main#main .document-actions a:hover {
+  background: #fff7e8 !important;
+  background-image: none !important;
+  color: #0A3A68 !important;
+  border-color: #e6b84a !important;
+  box-shadow: none !important;
+}
+
+body.section-files main#main .download-row a[href$=".html"]:hover,
+body.section-files main#main .download-strip a[href$=".html"]:hover,
+body.section-files main#main .source-files-card .download-button[href$=".html"]:hover,
+body.section-files main#main .reading-path-actions a[href$=".html"]:hover,
+body.section-files main#main .appendix-actions a[href$=".html"]:hover,
+body.section-files main#main .file-actions a[href$=".html"]:hover,
+body.section-files main#main .format-actions a[href$=".html"]:hover,
+body.section-files main#main .document-actions a[href$=".html"]:hover {
+  background: linear-gradient(135deg,#b98726,#e6b84a,#f5d06b) !important;
+  background-image: linear-gradient(135deg,#b98726,#e6b84a,#f5d06b) !important;
+  color: #07101d !important;
+  border-color: transparent !important;
+  box-shadow: 0 10px 22px rgba(184,135,38,.22) !important;
+}

@@ -1,0 +1,77 @@
+/*
+  Home hero kicker/title treatment.
+  Matches the reference spacing and centered gold divider on both languages.
+*/
+
+html body.bpi-home-page .hero.concise-hero .kicker {
+  position: relative !important;
+  display: block !important;
+  width: min(760px, 100%) !important;
+  max-width: 760px !important;
+  margin: 0 auto clamp(38px, 4.6vw, 58px) !important;
+  padding: 0 16px clamp(20px, 2.2vw, 26px) !important;
+  color: rgba(255, 255, 255, 0.96) !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: clamp(1.05rem, 1.65vw, 1.38rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.035em !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  white-space: normal !important;
+  overflow: visible !important;
+}
+
+html[lang="he"] body.bpi-home-page .hero.concise-hero .kicker {
+  font-family: "Noto Serif Hebrew", "David Libre", Georgia, serif !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+/* Fine gold line under the title. */
+html body.bpi-home-page .hero.concise-hero .kicker::after {
+  content: "" !important;
+  position: absolute !important;
+  inset-inline-start: 50% !important;
+  bottom: 0 !important;
+  width: min(350px, 76%) !important;
+  height: 1px !important;
+  margin: 0 !important;
+  transform: translateX(-50%) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(217, 119, 6, 0.14),
+    rgba(245, 196, 78, 0.84) 18%,
+    rgba(245, 196, 78, 0.84) 82%,
+    rgba(217, 119, 6, 0.14)
+  ) !important;
+  border: 0 !important;
+  opacity: 1 !important;
+}
+
+/* Small centered gold dot, as in the reference. */
+html body.bpi-home-page .hero.concise-hero .kicker::before {
+  content: "" !important;
+  position: absolute !important;
+  inset-inline-start: 50% !important;
+  bottom: -3px !important;
+  width: 7px !important;
+  height: 7px !important;
+  transform: translateX(-50%) !important;
+  border-radius: 999px !important;
+  background: #f5c44e !important;
+  box-shadow: 0 0 0 2px rgba(245, 196, 78, 0.12) !important;
+  z-index: 1 !important;
+}
+
+@media (max-width: 640px) {
+  html body.bpi-home-page .hero.concise-hero .kicker {
+    margin-bottom: 32px !important;
+    padding-bottom: 18px !important;
+    font-size: clamp(0.98rem, 4.5vw, 1.16rem) !important;
+  }
+
+  html body.bpi-home-page .hero.concise-hero .kicker::after {
+    width: min(280px, 82%) !important;
+  }
+}

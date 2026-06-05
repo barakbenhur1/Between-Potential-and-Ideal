@@ -1,0 +1,90 @@
+/*
+  BPI shared card system
+  Additive card polish for content surfaces only.
+  This file intentionally does not style header nav or breadcrumbs.
+*/
+
+body.public-page :where(.hub-card, .media-card, .reader-card, .source-files-card, .story-download-box, .ai-page-card, .notice-box) {
+  border-radius: var(--bpi-radius-lg, 22px);
+  border: 1px solid var(--bpi-border-blue, rgba(10, 58, 104, 0.14));
+  background: var(--bpi-surface, #ffffff);
+  box-shadow: var(--bpi-shadow-sm, 0 2px 8px rgba(0, 0, 0, 0.08));
+  transition:
+    transform var(--bpi-duration-normal, 260ms) var(--bpi-ease, ease),
+    box-shadow var(--bpi-duration-normal, 260ms) var(--bpi-ease, ease),
+    border-color var(--bpi-duration-normal, 260ms) var(--bpi-ease, ease);
+}
+
+body.public-page :where(.hub-card, .media-card, .reader-card, .source-files-card, .story-download-box, .ai-page-card, .notice-box):hover {
+  transform: translateY(-3px);
+  box-shadow: var(--bpi-shadow-md, 0 12px 32px rgba(20, 40, 60, 0.08));
+  border-color: color-mix(in srgb, var(--bpi-blue-deep, #0A3A68) 26%, transparent 74%);
+}
+
+/* Keep intentional warm editorial surfaces warm, but normalize them through tokens. */
+body.public-page :where(.notice-box, .source-files-card, .story-download-box) {
+  background: var(--bpi-surface-warm, #fffaf0);
+}
+
+body.public-page :where(.hub-card, .reader-card, .ai-page-card) {
+  padding: var(--bpi-space-lg, 24px);
+}
+
+body.public-page :where(.media-card) {
+  overflow: hidden;
+}
+
+body.public-page :where(.card-media-head) {
+  gap: 14px;
+  align-items: center;
+}
+
+body.public-page :where(.card-thumb, .page-title-mark) {
+  border-radius: var(--bpi-radius-md, 12px);
+  box-shadow: 0 8px 22px rgba(20, 40, 60, 0.08);
+}
+
+body.public-page :where(.hub-card h2, .hub-card h3, .reader-card h2, .reader-card h3, .source-files-card h3, .ai-page-card h2, .ai-page-card h3) {
+  color: var(--bpi-blue-deep, #0A3A68);
+  letter-spacing: -0.015em;
+}
+
+body.public-page :where(.hub-card p, .reader-card p, .source-files-card p, .story-download-box p, .ai-page-card p) {
+  color: var(--bpi-text, #2c3e50);
+  line-height: 1.65;
+}
+
+/* Preserve button alignment at the bottom of cards. */
+body.public-page :where(.hub-card, .reader-card, .source-files-card, .story-download-box, .ai-page-card) {
+  display: flex;
+  flex-direction: column;
+}
+
+body.public-page :where(.hub-card .download-row, .reader-card .download-row, .source-files-card .download-row, .story-download-box .download-strip, .ai-page-card .download-row) {
+  margin-top: auto;
+}
+
+/* Grids */
+body.public-page :where(.hub-grid, .content-grid, .source-files-card-grid, .ai-page-card-grid) {
+  gap: var(--bpi-space-lg, 24px);
+}
+
+@media (max-width: 640px) {
+  body.public-page :where(.hub-card, .reader-card, .source-files-card, .story-download-box, .ai-page-card, .notice-box) {
+    border-radius: var(--bpi-radius-md, 12px);
+  }
+
+  body.public-page :where(.hub-card, .reader-card, .ai-page-card) {
+    padding: var(--bpi-space-md, 16px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.public-page :where(.hub-card, .media-card, .reader-card, .source-files-card, .story-download-box, .ai-page-card, .notice-box) {
+    transition: none;
+  }
+
+  body.public-page :where(.hub-card, .media-card, .reader-card, .source-files-card, .story-download-box, .ai-page-card, .notice-box):hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,8 @@
+/* Stage 3: Hebrew brand underline should be blue over the warm/orange header. */
+
+html[lang="he"] body.public-page .site-brand a::after,
+html[dir="rtl"] body.public-page .site-brand a::after,
+body.public-page-he .site-brand a::after {
+  background: linear-gradient(90deg, transparent, #0A3A68, transparent) !important;
+  opacity: 0.9 !important;
+}

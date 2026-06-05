@@ -1,79 +1,33 @@
 name: Stabilize public nav source
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main
+      - bpi-premium-design-stage3
     paths:
+      - tools/stabilize_public_nav_source.py
       - .github/workflows/stabilize-public-nav-source.yml
-  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
   stabilize:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout design branch
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           ref: bpi-premium-design-stage3
           fetch-depth: 0
-
-      - name: Tighten Hebrew home nav spacing in final renderer
-        run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          import re
-
-          js_path = Path('site/assets/bpi-files-feedback-fixes.js')
-          s = js_path.read_text(encoding='utf-8')
-          replacements = {
-              'html body.public-page-he .site-header.bpi-home-nav .site-nav{gap:5px!important;}':
-              'html body.public-page-he .site-header.bpi-home-nav .site-nav{gap:2px!important;}',
-              'html body.public-page-he .site-header.bpi-home-nav .site-nav a{padding:8px 10px!important;}':
-              'html body.public-page-he .site-header.bpi-home-nav .site-nav a{padding:8px 7px!important;}',
-              'html body.public-page-he .site-header.bpi-home-nav .site-nav{gap:4px!important;}':
-              'html body.public-page-he .site-header.bpi-home-nav .site-nav{gap:2px!important;}',
-              'html body.public-page-he .site-header.bpi-home-nav .site-nav a{padding-inline:8px!important;}':
-              'html body.public-page-he .site-header.bpi-home-nav .site-nav a{padding-inline:6px!important;}',
-          }
-          changed = False
-          for old, new in replacements.items():
-              if old in s:
-                  s = s.replace(old, new)
-                  changed = True
-          if not changed:
-              raise SystemExit('Expected home nav spacing rules were not found')
-          js_path.write_text(s, encoding='utf-8')
-
-          version = 'bpi-files-feedback-fixes.js?v=20260604-shared-nav-v138-tight-home-spacing'
-          html_paths = [Path('site/index.html'), Path('site/en.html')]
-          html_paths += sorted(Path('site/pages/he').glob('*.html'))
-          html_paths += sorted(Path('site/pages/en').glob('*.html'))
-          for p in html_paths:
-              if not p.exists():
-                  continue
-              html = p.read_text(encoding='utf-8')
-              fixed = re.sub(r'bpi-files-feedback-fixes\.js\?v=[^"\']+', version, html)
-              if fixed != html:
-                  p.write_text(fixed, encoding='utf-8')
-          PY
-
-      - name: Check whitespace
-        run: git diff --check
-
-      - name: Commit tightened home nav spacing
-        run: |
-          if git diff --quiet; then
-            echo "No source changes needed."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/assets/bpi-files-feedback-fixes.js site/index.html site/en.html site/pages/he site/pages/en
-          git commit -m "Tighten Hebrew home nav spacing"
-          git push origin HEAD:bpi-premium-design-stage3
-
-# trigger: 2026-06-04-tight-home-spacing-v138
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Normalize source nav
+        run: python3 tools/stabilize_public_nav_source.py
+      - name: Commit generated HTML
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Normalize public nav source across pages
+          file_pattern: site/index.html site/en.html site/pages/he/*.html site/pages/en/*.html

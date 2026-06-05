@@ -5,7 +5,7 @@
 @import url("./bpi-tabbar-dimensions-match-home.css?v=20260604-match-home-tabbar-v2");
 @import url("./bpi-home-en-overflow-fix.css?v=20260605-en-home-overflow-v1");
 @import url("./bpi-home-kicker-title.css?v=20260605-home-kicker-title-v1");
-@import url("./bpi-home-he-kicker-center-fix.css?v=20260605-he-kicker-center-v1");
+@import url("./bpi-home-hero-final.css?v=20260605-home-hero-final-v4-centered-gold");
 
 body.public-page .skip-link {
   position: fixed !important;
@@ -48,4 +48,175 @@ body.public-page .site-brand a,
 .site-header .site-brand,
 .site-header .site-brand a {
   white-space: nowrap !important;
+}
+
+html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"] {
+  min-width: 154px !important;
+  width: 154px !important;
+  max-width: 154px !important;
+  flex: 0 0 154px !important;
+  padding-inline: 10px !important;
+  font-size: 13px !important;
+  line-height: 1.1 !important;
+  white-space: nowrap !important;
+  box-sizing: border-box !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+@media (max-width: 1180px) {
+  html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"] {
+    min-width: 146px !important;
+    width: 146px !important;
+    max-width: 146px !important;
+    flex-basis: 146px !important;
+    font-size: 12.5px !important;
+    padding-inline: 8px !important;
+  }
+}
+
+/*
+  Premium hero motion.
+  The approved static headline remains the fallback/base layer.
+  ::after recreates the moving v0 text-gradient layer above it.
+  ::before is the independent dynamic sparkle requested for the title.
+*/
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 {
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: visible !important;
+}
+
+html body.public-page-en.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::after {
+  content: "A thought experiment on the moment when possibility begins to take form.";
+}
+
+html body.public-page-he.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::after {
+  content: "ניסוי מחשבתי על הרגע שבו אפשרות מתחילה לקבל צורה.";
+  direction: rtl;
+  unicode-bidi: plaintext;
+}
+
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  font: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  text-align: center;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
+  color: transparent;
+  background-image:
+    radial-gradient(
+      ellipse at center,
+      rgba(255, 255, 255, 0.92) 0%,
+      rgba(255, 243, 186, 0.72) 16%,
+      rgba(245, 208, 107, 0.28) 31%,
+      transparent 55%
+    ),
+    linear-gradient(
+      118deg,
+      #ffffff 0%,
+      #eef4ff 22%,
+      var(--bpi-premium-gold-light) 48%,
+      #fff2b8 70%,
+      #e6b84a 100%
+    );
+  background-size: 165% 140%, 285% 130%;
+  background-position: 130% 32%, -100% 54%;
+  background-repeat: no-repeat, repeat-x;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter:
+    drop-shadow(0 0 7px rgba(255, 255, 255, 0.08))
+    drop-shadow(0 0 20px rgba(230, 184, 74, 0.16));
+  animation: bpiHeroWaterFlow 10s cubic-bezier(.42, .08, .22, .96) infinite alternate;
+  will-change: background-position, background-size;
+}
+
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::before {
+  content: "✦";
+  position: absolute;
+  z-index: 2;
+  inset-inline-end: 5%;
+  top: 4%;
+  pointer-events: none;
+  color: #fff5bf;
+  -webkit-text-fill-color: #fff5bf;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(0.76rem, 1.35vw, 1.22rem);
+  font-weight: 400;
+  line-height: 1;
+  opacity: 0;
+  transform: scale(0.35) rotate(0deg);
+  transform-origin: center;
+  text-shadow:
+    0 0 5px rgba(255, 255, 255, 0.98),
+    0 0 13px rgba(245, 208, 107, 0.95),
+    0 0 28px rgba(230, 184, 74, 0.58);
+  animation: bpiHeroDynamicSparkle 8.5s ease-in-out infinite;
+}
+
+@keyframes bpiHeroWaterFlow {
+  0% {
+    background-position: 130% 32%, -100% 54%;
+    background-size: 165% 140%, 285% 130%;
+  }
+  20% {
+    background-position: 96% 62%, -52% 44%;
+    background-size: 176% 156%, 305% 142%;
+  }
+  43% {
+    background-position: 56% 38%, 18% 59%;
+    background-size: 154% 146%, 274% 122%;
+  }
+  68% {
+    background-position: 14% 66%, 108% 42%;
+    background-size: 182% 162%, 314% 151%;
+  }
+  84% {
+    background-position: -10% 47%, 154% 57%;
+    background-size: 168% 142%, 294% 134%;
+  }
+  100% {
+    background-position: -42% 58%, 210% 49%;
+    background-size: 160% 150%, 282% 128%;
+  }
+}
+
+@keyframes bpiHeroDynamicSparkle {
+  0%, 58%, 100% {
+    opacity: 0;
+    transform: scale(0.35) rotate(0deg);
+  }
+  66% {
+    opacity: 0.42;
+    transform: scale(0.72) rotate(12deg);
+  }
+  72% {
+    opacity: 1;
+    transform: scale(1.2) rotate(28deg);
+  }
+  80% {
+    opacity: 0.28;
+    transform: scale(0.68) rotate(44deg);
+  }
+}
+
+@media (max-width: 640px) {
+  html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::before {
+    inset-inline-end: 1%;
+    top: 1%;
+  }
 }
