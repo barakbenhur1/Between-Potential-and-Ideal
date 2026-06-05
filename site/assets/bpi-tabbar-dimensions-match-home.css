@@ -116,14 +116,10 @@ html body.public-page-en.appendix-document-page .site-header {
     max-width: 104px !important;
   }
 
-  /* Corrected direction: move the complete inner-page header content
-     6px right and 3px up relative to the homepage. */
-  html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) .site-header > .site-brand,
-  html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) .site-header > .site-nav,
-  html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) .site-header > .language-switch {
-    position: relative !important;
-    left: 6px !important;
-    top: -3px !important;
+  /* Apply the correction to the whole inner header. This cannot be neutralized
+     by later per-child layout rules: 10px right and 5px up. */
+  html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) .site-header {
+    transform: translate(10px, -5px) !important;
   }
 
   /* Active-state visuals must never move a tab vertically.
@@ -162,5 +158,9 @@ html body.public-page-en.appendix-document-page .site-header {
     flex-direction: column !important;
     gap: 10px !important;
     padding: 12px 16px !important;
+  }
+
+  html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) .site-header {
+    transform: none !important;
   }
 }
