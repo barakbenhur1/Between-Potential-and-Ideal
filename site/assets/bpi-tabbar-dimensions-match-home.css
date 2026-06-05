@@ -116,14 +116,14 @@ html body.public-page-en.appendix-document-page .site-header {
     max-width: 104px !important;
   }
 
-  /* Corrected direction and larger adjustment: move the complete inner-page
-     header content 4px left and 2px down relative to the homepage. */
+  /* Corrected direction: move the complete inner-page header content
+     6px right and 3px up relative to the homepage. */
   html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) .site-header > .site-brand,
   html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) .site-header > .site-nav,
   html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) .site-header > .language-switch {
     position: relative !important;
-    left: -4px !important;
-    top: 2px !important;
+    left: 6px !important;
+    top: -3px !important;
   }
 
   /* Active-state visuals must never move a tab vertically.
