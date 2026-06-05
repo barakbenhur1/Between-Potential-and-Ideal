@@ -1,4 +1,5 @@
 @import url("./bpi-home-he-tabbar-fix.css?v=20260606-he-home-physical-center-v4");
+@import url("./bpi-he-nav-slot-lock.css?v=20260606-he-nav-slot-lock-v1");
 
 /* Hebrew homepage kicker line/dot alignment and color.
    Use physical coordinates so RTL does not mirror the 50% anchor.
