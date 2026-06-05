@@ -1,0 +1,197 @@
+/* BPI homepage title effect + centering fix
+   Reference state: 0351f919711c1d0900506141fc71d170aca1bfa2
+   Scope: homepage hero title, kicker and CTA alignment only. */
+
+html body.bpi-home-page main.site-main > section.hero.concise-hero.bpi-reference-hero {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  text-align: center !important;
+}
+
+html body.bpi-home-page .bpi-reference-hero > .kicker,
+html body.bpi-home-page .bpi-reference-hero > .home-display-title,
+html body.bpi-home-page .bpi-reference-hero > .lead,
+html body.bpi-home-page .bpi-reference-hero > .method-note,
+html body.bpi-home-page .bpi-reference-hero > .hero-cta-row {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-inline: auto !important;
+  text-align: center !important;
+  align-self: center !important;
+  inset-inline: auto !important;
+  transform: none !important;
+}
+
+html body.bpi-home-page .bpi-reference-hero > .home-display-title {
+  display: block !important;
+  width: min(100%, 1020px) !important;
+  max-width: 1020px !important;
+  padding: 0 !important;
+  font-family: Georgia, "Times New Roman", "Noto Serif Hebrew", "Frank Ruhl Libre", serif !important;
+  font-size: clamp(3.35rem, 6.3vw, 6.9rem) !important;
+  font-weight: 800 !important;
+  line-height: .99 !important;
+  letter-spacing: -.045em !important;
+  text-align: center !important;
+  text-wrap: balance !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  color: #f7f4ed !important;
+  -webkit-text-fill-color: #f7f4ed !important;
+  text-shadow:
+    0 1px 0 rgba(255,255,255,.28),
+    0 3px 3px rgba(0,0,0,.32),
+    0 12px 32px rgba(0,0,0,.44) !important;
+}
+
+html[lang="he"] body.bpi-home-page .bpi-reference-hero > .home-display-title {
+  width: min(100%, 1040px) !important;
+  max-width: 1040px !important;
+  font-family: "Noto Serif Hebrew", "Frank Ruhl Libre", "David Libre", Georgia, serif !important;
+  font-size: clamp(3.25rem, 6.1vw, 6.55rem) !important;
+  letter-spacing: -.025em !important;
+  direction: rtl !important;
+  unicode-bidi: plaintext !important;
+}
+
+html body.bpi-home-page .bpi-reference-hero .home-line {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  text-align: center !important;
+  color: inherit !important;
+  -webkit-text-fill-color: inherit !important;
+}
+
+/* Metallic gold treatment: warm edge, bright center and a soft reflected glow. */
+html body.bpi-home-page .bpi-reference-hero .home-gold {
+  display: inline !important;
+  color: #f4c44e !important;
+  background:
+    linear-gradient(
+      118deg,
+      #b97810 0%,
+      #e4a92e 13%,
+      #fff0a2 31%,
+      #f8d86e 46%,
+      #fff5be 56%,
+      #efbc3e 72%,
+      #c78616 88%,
+      #f0c455 100%
+    ) !important;
+  background-size: 180% 100% !important;
+  background-position: 50% 50% !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
+  filter:
+    drop-shadow(0 1px 0 rgba(255,244,180,.34))
+    drop-shadow(0 3px 5px rgba(165,101,7,.26))
+    drop-shadow(0 10px 24px rgba(0,0,0,.38)) !important;
+  font: inherit !important;
+  font-style: normal !important;
+  font-weight: inherit !important;
+  letter-spacing: inherit !important;
+}
+
+/* Subtle ivory depth for the non-gold words, matching the original premium lettering. */
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  html body.bpi-home-page .bpi-reference-hero > .home-display-title {
+    background: linear-gradient(180deg, #ffffff 0%, #fffdf7 35%, #e8e4dc 76%, #ffffff 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+    filter: drop-shadow(0 4px 3px rgba(0,0,0,.22)) drop-shadow(0 14px 30px rgba(0,0,0,.28)) !important;
+  }
+
+  html body.bpi-home-page .bpi-reference-hero .home-line {
+    -webkit-text-fill-color: inherit !important;
+  }
+
+  html body.bpi-home-page .bpi-reference-hero .home-gold {
+    -webkit-text-fill-color: transparent !important;
+  }
+}
+
+html body.bpi-home-page .bpi-reference-hero > .kicker {
+  display: block !important;
+  width: min(100%, 520px) !important;
+  max-width: 520px !important;
+  text-align: center !important;
+}
+
+html body.bpi-home-page .bpi-reference-hero > .kicker::before,
+html body.bpi-home-page .bpi-reference-hero > .kicker::after {
+  inset-inline-start: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) !important;
+}
+
+html body.bpi-home-page .bpi-reference-hero > .lead,
+html body.bpi-home-page .bpi-reference-hero > .method-note {
+  width: min(100%, 860px) !important;
+  max-width: 860px !important;
+  text-align: center !important;
+}
+
+html body.bpi-home-page .bpi-reference-hero > .hero-cta-row {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: min(100%, 900px) !important;
+  max-width: 900px !important;
+  padding: 0 !important;
+  gap: 18px 28px !important;
+  direction: ltr !important;
+}
+
+html[lang="he"] body.bpi-home-page .bpi-reference-hero > .hero-cta-row {
+  direction: rtl !important;
+}
+
+html body.bpi-home-page .bpi-reference-hero > .hero-cta-row > a {
+  flex: 0 1 auto !important;
+  min-width: 250px !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  text-align: center !important;
+  align-self: center !important;
+}
+
+@media (max-width: 860px) {
+  html body.bpi-home-page .bpi-reference-hero > .home-display-title,
+  html[lang="he"] body.bpi-home-page .bpi-reference-hero > .home-display-title {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: clamp(2.65rem, 11.7vw, 4.8rem) !important;
+    line-height: 1.02 !important;
+    letter-spacing: -.025em !important;
+  }
+
+  html body.bpi-home-page .bpi-reference-hero > .hero-cta-row {
+    width: min(100%, 560px) !important;
+    gap: 12px !important;
+  }
+
+  html body.bpi-home-page .bpi-reference-hero > .hero-cta-row > a {
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+
+@media (max-width: 520px) {
+  html body.bpi-home-page .bpi-reference-hero > .home-display-title,
+  html[lang="he"] body.bpi-home-page .bpi-reference-hero > .home-display-title {
+    font-size: clamp(2.2rem, 12.5vw, 3.75rem) !important;
+  }
+}
