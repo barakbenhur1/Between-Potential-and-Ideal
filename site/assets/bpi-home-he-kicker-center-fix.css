@@ -1,5 +1,6 @@
-/* Hebrew homepage kicker line/dot centering.
-   Use physical coordinates so RTL does not mirror the 50% anchor. */
+/* Hebrew homepage kicker line/dot alignment and color.
+   Use physical coordinates so RTL does not mirror the 50% anchor.
+   Match the English gold treatment exactly. */
 html[lang="he"] body.public-page.public-page-he.bpi-home-page main#main.site-main > section.hero.concise-hero > p.kicker::after,
 html[lang="he"] body.public-page.public-page-he.bpi-home-page main#main.site-main > section.hero.concise-hero > p.kicker::before {
   inset-inline-start: auto !important;
@@ -7,4 +8,19 @@ html[lang="he"] body.public-page.public-page-he.bpi-home-page main#main.site-mai
   left: 50% !important;
   right: auto !important;
   transform: translateX(-50%) !important;
+}
+
+html[lang="he"] body.public-page.public-page-he.bpi-home-page main#main.site-main > section.hero.concise-hero > p.kicker::after {
+  background: linear-gradient(
+    90deg,
+    rgba(217,119,6,.12),
+    rgba(245,196,78,.82) 18%,
+    rgba(245,196,78,.82) 82%,
+    rgba(217,119,6,.12)
+  ) !important;
+}
+
+html[lang="he"] body.public-page.public-page-he.bpi-home-page main#main.site-main > section.hero.concise-hero > p.kicker::before {
+  background: #f5c44e !important;
+  box-shadow: 0 0 0 2px rgba(245,196,78,.12) !important;
 }
