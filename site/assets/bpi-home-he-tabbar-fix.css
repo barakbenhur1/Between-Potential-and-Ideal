@@ -1,6 +1,29 @@
 /* Hebrew homepage desktop tab-bar repair.
    Keep the approved visual styling; change layout metrics only. */
 
+/* The navigation already contains the correct Hebrew labels as real link text.
+   Older CSS layers also inject the same labels through pseudo-elements, which
+   duplicates the wording and expands the affected tabs. Disable every generated
+   label for these two links and keep only the accessible DOM text. */
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai.html"],
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai-as-witness.html"] {
+  font-size: 13px !important;
+  line-height: 1.1 !important;
+  color: inherit;
+}
+
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai.html"]::before,
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai.html"]::after,
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai-as-witness.html"]::before,
+html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav nav.site-nav > a[href$="ai-as-witness.html"]::after {
+  content: none !important;
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 @media (min-width: 1500px) {
   html[lang="he"] body.public-page.public-page-he.bpi-home-page header.site-header.bpi-shared-nav {
     height: 74px !important;
