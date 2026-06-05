@@ -186,6 +186,19 @@ body.public-page-he.section-ai .ai-page-card-grid > article:nth-child(2) h3::bef
 body.public-page-he.section-ai .ai-page-card-grid > article:nth-child(3) h3::before { content: "כשאני הוא גם אתה."; }
 /* ===== /BPI_AI_INDEX_CARD_TITLE_MATCH_DOC_TITLE_V1_20260531 ===== */
 
+/* ===== BPI_HE_SELECTED_TABS_AI_NAV_LABEL_FIX_V1_20260531 ===== */
+body.public-page-he:is(.section-witness, .section-methodology, .section-critique) .site-nav a[href="ai.html"] {
+  font-size: 0 !important;
+  line-height: 1 !important;
+}
+body.public-page-he:is(.section-witness, .section-methodology, .section-critique) .site-nav a[href="ai.html"]::before {
+  content: "בינה מלאכותית" !important;
+  display: inline !important;
+  font-size: 1rem !important;
+  line-height: inherit !important;
+}
+/* ===== /BPI_HE_SELECTED_TABS_AI_NAV_LABEL_FIX_V1_20260531 ===== */
+
 /* ===== BPI_WITNESS_EN_PAGE_LAYOUT_FIX_V4_20260531 ===== */
 body.public-page-en.section-witness main#main > .page-title.media-page-title.accent-witness {
   direction: ltr !important;
