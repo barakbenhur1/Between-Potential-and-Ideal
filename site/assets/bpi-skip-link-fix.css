@@ -4,9 +4,8 @@
 @import url("./bpi-gateway-card-light-fix.css?v=20260603-stage3-gateway-light-v1");
 @import url("./bpi-tabbar-dimensions-match-home.css?v=20260604-match-home-tabbar-v2");
 @import url("./bpi-home-en-overflow-fix.css?v=20260605-en-home-overflow-v1");
-@import url("./bpi-home-kicker-title.css?v=20260605-home-kicker-title-v1");
+@import url("./bpi-home-kicker-title.css?v=20260605-home-kicker-title-v2-live");
 @import url("./bpi-home-hero-final.css?v=20260605-home-hero-final-v4-centered-gold");
-@import url("./bpi-home-hero-title-live.css?v=20260605-live-title-v1");
 
 body.public-page .skip-link {
   position: fixed !important;
