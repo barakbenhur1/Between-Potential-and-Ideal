@@ -1,5 +1,4 @@
 from pathlib import Path
-from html import unescape
 import re
 import sys
 
@@ -17,6 +16,15 @@ CHECKS = {
     ],
 }
 
+# A language switch intentionally names the destination language and may therefore
+# contain text from the opposite language. Exclude only that navigation control;
+# file filters, table labels, cards, and all other visible page content remain audited.
+LANGUAGE_SWITCH_RE = re.compile(
+    r'<a\b(?=[^>]*\bclass\s*=\s*["\'][^"\']*\blanguage-switch\b[^"\']*["\'])[^>]*>.*?</a>',
+    flags=re.I | re.S,
+)
+
+
 def main() -> int:
     errors = []
 
@@ -26,19 +34,21 @@ def main() -> int:
             continue
 
         html = path.read_text(encoding="utf-8", errors="ignore")
+        audited_html = LANGUAGE_SWITCH_RE.sub("", html)
 
         for pattern, message in patterns:
-            if re.search(pattern, html, flags=re.I):
+            if re.search(pattern, audited_html, flags=re.I):
                 errors.append(f"{path}: {message}")
 
     if errors:
         print("FAIL: files language label audit found issues")
-        for e in errors:
-            print("-", e)
+        for error in errors:
+            print("-", error)
         return 1
 
     print("OK: files language labels match page language.")
     return 0
+
 
 if __name__ == "__main__":
     sys.exit(main())
