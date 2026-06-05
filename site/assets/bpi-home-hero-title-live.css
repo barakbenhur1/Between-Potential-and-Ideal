@@ -1,0 +1,155 @@
+/* Premium homepage hero title motion only.
+   Scope is intentionally limited to the large home hero headline.
+   Layout, copy, buttons, kicker, background and navigation remain untouched. */
+
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 {
+  position: relative !important;
+  isolation: isolate !important;
+  color: transparent !important;
+  background-image:
+    linear-gradient(
+      108deg,
+      transparent 0%,
+      transparent 35%,
+      rgba(255,255,255,0.10) 42%,
+      rgba(255,255,255,0.92) 49%,
+      rgba(255,238,166,0.72) 53%,
+      transparent 61%,
+      transparent 100%
+    ),
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #eef4ff 30%,
+      var(--bpi-premium-gold-light) 68%,
+      #fff2b8 86%,
+      #ffffff 100%
+    ) !important;
+  background-size: 235% 100%, 100% 100% !important;
+  background-position: 165% 50%, 50% 50% !important;
+  background-repeat: no-repeat !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
+  filter:
+    drop-shadow(0 0 10px rgba(255,255,255,0.05))
+    drop-shadow(0 0 24px rgba(230,184,74,0.13)) !important;
+  animation:
+    bpi-home-title-shimmer 5.8s cubic-bezier(0.4, 0, 0.2, 1) infinite,
+    bpi-home-title-glow 3.6s ease-in-out infinite !important;
+  will-change: background-position, filter !important;
+}
+
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::before,
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::after {
+  position: absolute !important;
+  z-index: 2 !important;
+  pointer-events: none !important;
+  color: #fff1a8 !important;
+  -webkit-text-fill-color: #fff1a8 !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  text-shadow:
+    0 0 6px rgba(255,255,255,0.92),
+    0 0 14px rgba(245,208,107,0.86),
+    0 0 28px rgba(230,184,74,0.42) !important;
+  opacity: 0 !important;
+  transform-origin: center !important;
+}
+
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::before {
+  content: "✦" !important;
+  top: 8% !important;
+  left: 7% !important;
+  font-size: clamp(.72rem, 1.4vw, 1.24rem) !important;
+  animation: bpi-home-title-sparkle-a 5.8s ease-in-out infinite !important;
+}
+
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::after {
+  content: "✧" !important;
+  right: 9% !important;
+  bottom: 9% !important;
+  font-size: clamp(.62rem, 1.15vw, 1rem) !important;
+  animation: bpi-home-title-sparkle-b 5.8s ease-in-out infinite !important;
+}
+
+@keyframes bpi-home-title-shimmer {
+  0%, 68% {
+    background-position: 165% 50%, 50% 50%;
+  }
+  82% {
+    background-position: 50% 50%, 50% 50%;
+  }
+  94%, 100% {
+    background-position: -75% 50%, 50% 50%;
+  }
+}
+
+@keyframes bpi-home-title-glow {
+  0%, 100% {
+    filter:
+      drop-shadow(0 0 9px rgba(255,255,255,0.04))
+      drop-shadow(0 0 20px rgba(230,184,74,0.11));
+  }
+  50% {
+    filter:
+      drop-shadow(0 0 13px rgba(255,255,255,0.08))
+      drop-shadow(0 0 32px rgba(230,184,74,0.21));
+  }
+}
+
+@keyframes bpi-home-title-sparkle-a {
+  0%, 70%, 100% {
+    opacity: 0;
+    transform: scale(.45) rotate(0deg);
+  }
+  76% {
+    opacity: .95;
+    transform: scale(1.18) rotate(18deg);
+  }
+  82% {
+    opacity: .22;
+    transform: scale(.72) rotate(34deg);
+  }
+}
+
+@keyframes bpi-home-title-sparkle-b {
+  0%, 79%, 100% {
+    opacity: 0;
+    transform: scale(.45) rotate(0deg);
+  }
+  85% {
+    opacity: .86;
+    transform: scale(1.12) rotate(-16deg);
+  }
+  91% {
+    opacity: .18;
+    transform: scale(.7) rotate(-30deg);
+  }
+}
+
+@media (max-width: 640px) {
+  html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::before {
+    left: 2% !important;
+  }
+
+  html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::after {
+    right: 3% !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 {
+    animation: none !important;
+    background-position: 50% 50%, 50% 50% !important;
+    will-change: auto !important;
+  }
+
+  html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::before,
+  html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::after {
+    animation: none !important;
+    opacity: 0 !important;
+  }
+}
