@@ -76,3 +76,120 @@ html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"] {
     padding-inline: 8px !important;
   }
 }
+
+/*
+  Premium hero motion.
+  The approved static headline remains the fallback/base layer.
+  ::after recreates the moving v0 text-gradient layer above it.
+  ::before is the independent dynamic sparkle requested for the title.
+*/
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 {
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: visible !important;
+}
+
+html body.public-page-en.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::after {
+  content: "A thought experiment on the moment when possibility begins to take form.";
+}
+
+html body.public-page-he.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::after {
+  content: "ניסוי מחשבתי על הרגע שבו אפשרות מתחילה לקבל צורה.";
+  direction: rtl;
+  unicode-bidi: plaintext;
+}
+
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  font: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  text-align: center;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
+  color: transparent;
+  background-image: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #eef4ff 34%,
+    var(--bpi-premium-gold-light) 72%,
+    #fff2b8 100%
+  );
+  background-size: 300% 100%;
+  background-position: -100% 50%;
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter:
+    drop-shadow(0 0 7px rgba(255, 255, 255, 0.08))
+    drop-shadow(0 0 20px rgba(230, 184, 74, 0.16));
+  animation: bpiHeroGradientFlow 4s linear infinite;
+  will-change: background-position;
+}
+
+html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::before {
+  content: "✦";
+  position: absolute;
+  z-index: 2;
+  inset-inline-end: 5%;
+  top: 4%;
+  pointer-events: none;
+  color: #fff5bf;
+  -webkit-text-fill-color: #fff5bf;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(0.76rem, 1.35vw, 1.22rem);
+  font-weight: 400;
+  line-height: 1;
+  opacity: 0;
+  transform: scale(0.35) rotate(0deg);
+  transform-origin: center;
+  text-shadow:
+    0 0 5px rgba(255, 255, 255, 0.98),
+    0 0 13px rgba(245, 208, 107, 0.95),
+    0 0 28px rgba(230, 184, 74, 0.58);
+  animation: bpiHeroDynamicSparkle 4s ease-in-out infinite;
+}
+
+@keyframes bpiHeroGradientFlow {
+  0% {
+    background-position: -100% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes bpiHeroDynamicSparkle {
+  0%, 54%, 100% {
+    opacity: 0;
+    transform: scale(0.35) rotate(0deg);
+  }
+  63% {
+    opacity: 0.42;
+    transform: scale(0.72) rotate(12deg);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.2) rotate(28deg);
+  }
+  78% {
+    opacity: 0.28;
+    transform: scale(0.68) rotate(44deg);
+  }
+}
+
+@media (max-width: 640px) {
+  html body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::before {
+    inset-inline-end: 1%;
+    top: 1%;
+  }
+}
