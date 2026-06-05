@@ -6,6 +6,7 @@
 @import url("./bpi-home-en-overflow-fix.css?v=20260605-en-home-overflow-v1");
 @import url("./bpi-home-kicker-title.css?v=20260605-home-kicker-title-v1");
 @import url("./bpi-home-hero-final.css?v=20260605-home-hero-final-v4-centered-gold");
+@import url("./bpi-home-he-kicker-center-fix.css?v=20260605-he-kicker-center-v2");
 
 body.public-page .skip-link {
   position: fixed !important;
