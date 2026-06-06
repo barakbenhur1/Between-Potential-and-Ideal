@@ -1,98 +1,69 @@
 /* Final direct HTML document-button style.
-   Loaded as the last stylesheet in each public HTML page.
-   This file does not target header, navigation, breadcrumbs, TOC, or inline links. */
+   Loaded last in every public HTML page.
+   This file intentionally does not target header, navigation, breadcrumbs,
+   TOC links, or ordinary inline links. */
 
+/* Match the approved homepage gold button exactly. */
+html body.public-page main#main a.primary-format,
 html body.public-page main#main a.download-button[href$=".html"],
 html body.public-page main#main a.download-button[href*=".html?"],
 html body.public-page main#main a.download-button[href*=".html#"],
 html body.public-page main#main a.card-link[href$=".html"],
 html body.public-page main#main a.card-link[href*=".html?"],
 html body.public-page main#main a.card-link[href*=".html#"],
-html body.public-page main#main :is(
-  .download-row,
-  .download-strip,
-  .download-grid,
-  .appendix-actions,
-  .reading-path-actions,
-  .file-actions,
-  .format-actions,
-  .document-actions,
-  .source-files-card
-) > a[href$=".html"],
-html body.public-page main#main :is(
-  .download-row,
-  .download-strip,
-  .download-grid,
-  .appendix-actions,
-  .reading-path-actions,
-  .file-actions,
-  .format-actions,
-  .document-actions,
-  .source-files-card
-) > a[href*=".html?"],
-html body.public-page main#main :is(
-  .download-row,
-  .download-strip,
-  .download-grid,
-  .appendix-actions,
-  .reading-path-actions,
-  .file-actions,
-  .format-actions,
-  .document-actions,
-  .source-files-card
-) > a[href*=".html#"],
-html body.public-page main#main a.primary-format {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  position: relative !important;
-  isolation: isolate !important;
-  opacity: 1 !important;
-  filter: none !important;
-  background: linear-gradient(135deg, #b98726 0%, #e6b84a 52%, #f5d06b 100%) !important;
+html body.public-page main#main .download-row > a[href$=".html"],
+html body.public-page main#main .download-row > a[href*=".html?"],
+html body.public-page main#main .download-row > a[href*=".html#"],
+html body.public-page main#main .download-strip > a[href$=".html"],
+html body.public-page main#main .download-strip > a[href*=".html?"],
+html body.public-page main#main .download-strip > a[href*=".html#"],
+html body.public-page main#main .download-grid > a[href$=".html"],
+html body.public-page main#main .download-grid > a[href*=".html?"],
+html body.public-page main#main .download-grid > a[href*=".html#"],
+html body.public-page main#main .appendix-actions > a[href$=".html"],
+html body.public-page main#main .appendix-actions > a[href*=".html?"],
+html body.public-page main#main .appendix-actions > a[href*=".html#"],
+html body.public-page main#main .reading-path-actions > a[href$=".html"],
+html body.public-page main#main .reading-path-actions > a[href*=".html?"],
+html body.public-page main#main .reading-path-actions > a[href*=".html#"],
+html body.public-page main#main .file-actions > a[href$=".html"],
+html body.public-page main#main .file-actions > a[href*=".html?"],
+html body.public-page main#main .file-actions > a[href*=".html#"],
+html body.public-page main#main .format-actions > a[href$=".html"],
+html body.public-page main#main .format-actions > a[href*=".html?"],
+html body.public-page main#main .format-actions > a[href*=".html#"],
+html body.public-page main#main .document-actions > a[href$=".html"],
+html body.public-page main#main .document-actions > a[href*=".html?"],
+html body.public-page main#main .document-actions > a[href*=".html#"] {
+  background: linear-gradient(135deg, #b98726, #e6b84a, #f5d06b) !important;
   background-color: #e6b84a !important;
-  background-image: linear-gradient(135deg, #b98726 0%, #e6b84a 52%, #f5d06b 100%) !important;
-  background-clip: padding-box !important;
+  background-image: linear-gradient(135deg, #b98726, #e6b84a, #f5d06b) !important;
   color: #07101d !important;
   -webkit-text-fill-color: #07101d !important;
-  border: 1.5px solid #d6a62a !important;
-  border-radius: 999px !important;
-  box-shadow:
-    0 8px 18px rgba(184, 135, 38, .24),
-    inset 0 1px 0 rgba(255, 255, 255, .46) !important;
+  border: 1.5px solid transparent !important;
+  box-shadow: 0 8px 18px rgba(184, 135, 38, .18) !important;
   text-decoration: none !important;
   text-shadow: none !important;
-  font-weight: 850 !important;
+  opacity: 1 !important;
+  filter: none !important;
 }
 
+html body.public-page main#main a.primary-format::before,
+html body.public-page main#main a.primary-format::after,
 html body.public-page main#main a.download-button[href*=".html"]::before,
 html body.public-page main#main a.download-button[href*=".html"]::after,
 html body.public-page main#main a.card-link[href*=".html"]::before,
 html body.public-page main#main a.card-link[href*=".html"]::after,
-html body.public-page main#main :is(
-  .download-row,
-  .download-strip,
-  .download-grid,
-  .appendix-actions,
-  .reading-path-actions,
-  .file-actions,
-  .format-actions,
-  .document-actions,
-  .source-files-card
-) > a[href*=".html"]::before,
-html body.public-page main#main :is(
-  .download-row,
-  .download-strip,
-  .download-grid,
-  .appendix-actions,
-  .reading-path-actions,
-  .file-actions,
-  .format-actions,
-  .document-actions,
-  .source-files-card
-) > a[href*=".html"]::after,
-html body.public-page main#main a.primary-format::before,
-html body.public-page main#main a.primary-format::after {
+html body.public-page main#main .download-row > a[href*=".html"]::before,
+html body.public-page main#main .download-row > a[href*=".html"]::after,
+html body.public-page main#main .download-strip > a[href*=".html"]::before,
+html body.public-page main#main .download-strip > a[href*=".html"]::after,
+html body.public-page main#main .download-grid > a[href*=".html"]::before,
+html body.public-page main#main .download-grid > a[href*=".html"]::after,
+html body.public-page main#main .appendix-actions > a[href*=".html"]::before,
+html body.public-page main#main .appendix-actions > a[href*=".html"]::after,
+html body.public-page main#main .reading-path-actions > a[href*=".html"]::before,
+html body.public-page main#main .reading-path-actions > a[href*=".html"]::after {
   content: none !important;
   display: none !important;
   background: none !important;
@@ -102,20 +73,14 @@ html body.public-page main#main a.primary-format::after {
   opacity: 0 !important;
 }
 
+html body.public-page main#main a.primary-format *,
 html body.public-page main#main a.download-button[href*=".html"] *,
 html body.public-page main#main a.card-link[href*=".html"] *,
-html body.public-page main#main :is(
-  .download-row,
-  .download-strip,
-  .download-grid,
-  .appendix-actions,
-  .reading-path-actions,
-  .file-actions,
-  .format-actions,
-  .document-actions,
-  .source-files-card
-) > a[href*=".html"] *,
-html body.public-page main#main a.primary-format * {
+html body.public-page main#main .download-row > a[href*=".html"] *,
+html body.public-page main#main .download-strip > a[href*=".html"] *,
+html body.public-page main#main .download-grid > a[href*=".html"] *,
+html body.public-page main#main .appendix-actions > a[href*=".html"] *,
+html body.public-page main#main .reading-path-actions > a[href*=".html"] * {
   background: transparent !important;
   background-image: none !important;
   color: inherit !important;
@@ -123,64 +88,99 @@ html body.public-page main#main a.primary-format * {
   text-shadow: none !important;
 }
 
-html body.public-page main#main a.download-button[href*=".html"] .file-size,
-html body.public-page main#main a.card-link[href*=".html"] .file-size,
-html body.public-page main#main :is(
-  .download-row,
-  .download-strip,
-  .download-grid,
-  .appendix-actions,
-  .reading-path-actions,
-  .file-actions,
-  .format-actions,
-  .document-actions,
-  .source-files-card
-) > a[href*=".html"] .file-size,
-html body.public-page main#main a.primary-format .file-size {
-  color: rgba(7, 16, 29, .62) !important;
-  -webkit-text-fill-color: rgba(7, 16, 29, .62) !important;
-}
-
+html body.public-page main#main a.primary-format:hover,
 html body.public-page main#main a.download-button[href*=".html"]:hover,
 html body.public-page main#main a.card-link[href*=".html"]:hover,
-html body.public-page main#main :is(
-  .download-row,
-  .download-strip,
-  .download-grid,
-  .appendix-actions,
-  .reading-path-actions,
-  .file-actions,
-  .format-actions,
-  .document-actions,
-  .source-files-card
-) > a[href*=".html"]:hover,
-html body.public-page main#main a.primary-format:hover {
-  background: linear-gradient(135deg, #c8942d 0%, #edc45d 52%, #f8d980 100%) !important;
+html body.public-page main#main .download-row > a[href*=".html"]:hover,
+html body.public-page main#main .download-strip > a[href*=".html"]:hover,
+html body.public-page main#main .download-grid > a[href*=".html"]:hover,
+html body.public-page main#main .appendix-actions > a[href*=".html"]:hover,
+html body.public-page main#main .reading-path-actions > a[href*=".html"]:hover {
+  background: linear-gradient(135deg, #c8942d, #edc45d, #f8d980) !important;
   background-color: #edc45d !important;
-  background-image: linear-gradient(135deg, #c8942d 0%, #edc45d 52%, #f8d980 100%) !important;
+  background-image: linear-gradient(135deg, #c8942d, #edc45d, #f8d980) !important;
   color: #07101d !important;
   -webkit-text-fill-color: #07101d !important;
-  border-color: #c9971d !important;
-  box-shadow:
-    0 12px 26px rgba(184, 135, 38, .30),
-    inset 0 1px 0 rgba(255, 255, 255, .52) !important;
-  transform: translateY(-1px) !important;
+  border-color: transparent !important;
+  box-shadow: 0 12px 26px rgba(184, 135, 38, .26) !important;
 }
 
-html body.public-page main#main a.download-button[href*=".html"]:focus-visible,
-html body.public-page main#main a.card-link[href*=".html"]:focus-visible,
-html body.public-page main#main :is(
-  .download-row,
-  .download-strip,
-  .download-grid,
-  .appendix-actions,
-  .reading-path-actions,
-  .file-actions,
-  .format-actions,
-  .document-actions,
-  .source-files-card
-) > a[href*=".html"]:focus-visible,
-html body.public-page main#main a.primary-format:focus-visible {
-  outline: 3px solid rgba(214, 166, 42, .42) !important;
-  outline-offset: 3px !important;
+/* AI page: keep all four format buttons centered and inside each card. */
+html body.section-ai main#main .ai-documents-card .ai-reading-card {
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+html body.section-ai main#main .ai-documents-card .appendix-actions {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  gap: 12px !important;
+  padding: 6px 0 0 !important;
+  margin: auto 0 0 !important;
+  overflow: visible !important;
+  justify-content: stretch !important;
+  align-items: center !important;
+}
+
+html body.public-page-he.section-ai main#main .ai-documents-card .appendix-actions {
+  direction: rtl !important;
+}
+
+html body.public-page-en.section-ai main#main .ai-documents-card .appendix-actions {
+  direction: ltr !important;
+}
+
+html body.section-ai main#main .ai-documents-card .appendix-actions > a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  min-height: 42px !important;
+  padding: 9px 5px !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  border-radius: 999px !important;
+  font-size: clamp(.82rem, .82vw, .96rem) !important;
+  font-weight: 850 !important;
+  line-height: 1.05 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+html body.section-ai main#main .ai-documents-card .appendix-actions > a[href$=".html"],
+html body.section-ai main#main .ai-documents-card .appendix-actions > a[href*=".html?"],
+html body.section-ai main#main .ai-documents-card .appendix-actions > a[href*=".html#"],
+html body.section-ai main#main .ai-documents-card .appendix-actions > a.primary-format {
+  order: 1 !important;
+}
+
+html body.section-ai main#main .ai-documents-card .appendix-actions > a[href$=".pdf"],
+html body.section-ai main#main .ai-documents-card .appendix-actions > a[href*=".pdf?"],
+html body.section-ai main#main .ai-documents-card .appendix-actions > a[href*=".pdf#"] {
+  order: 2 !important;
+}
+
+html body.section-ai main#main .ai-documents-card .appendix-actions > a[href$=".docx"],
+html body.section-ai main#main .ai-documents-card .appendix-actions > a[href*=".docx?"],
+html body.section-ai main#main .ai-documents-card .appendix-actions > a[href*=".docx#"] {
+  order: 3 !important;
+}
+
+html body.section-ai main#main .ai-documents-card .appendix-actions > a[href$=".md"],
+html body.section-ai main#main .ai-documents-card .appendix-actions > a[href*=".md?"],
+html body.section-ai main#main .ai-documents-card .appendix-actions > a[href*=".md#"] {
+  order: 4 !important;
+}
+
+@media (max-width: 420px) {
+  html body.section-ai main#main .ai-documents-card .appendix-actions {
+    grid-template-columns: 1fr !important;
+  }
 }
