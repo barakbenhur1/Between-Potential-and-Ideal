@@ -16,7 +16,7 @@ HE_HEADER_JS_RE = re.compile(r'<script\b[^>]*\bid="bpi-he-header-match-en-runtim
 FINAL_VERSION = '20260606-mobile-no-scroll-runtime-v6'
 PARITY_VERSION = '20260606-header-parity-divider-v2'
 NO_SCROLL_VERSION = '20260606-mobile-tabbar-no-scroll-v1'
-HE_HEADER_VERSION = '20260606-he-header-match-en-v1'
+HE_HEADER_VERSION = '20260606-he-header-side-spacing-v2'
 SHARED_NAV_VERSION = '20260606-shared-nav-v149'
 
 # Requested order: Methodology before Core in both languages.
