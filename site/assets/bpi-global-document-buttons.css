@@ -1,139 +1,137 @@
-/* BPI global document button polish — 2026-06-06
-   Makes every HTML format link the gold primary action across public
-   document/download cards. Scope is intentionally limited to document and
-   download action containers, never header navigation or breadcrumbs. */
+/* Global HTML document buttons — final targeted rule.
+   Scope: visible document/download actions only. Header navigation,
+   breadcrumbs, TOC links and ordinary inline links are not affected. */
 
-body.public-page .appendix-actions a[href$=".html"],
-body.public-page .appendix-actions a[href*=".html#"],
-body.public-page .appendix-actions a[href*=".html?"],
-body.public-page .download-strip a[href$=".html"],
-body.public-page .download-strip a[href*=".html#"],
-body.public-page .download-strip a[href*=".html?"],
-body.public-page .download-row a[href$=".html"],
-body.public-page .download-row a[href*=".html#"],
-body.public-page .download-row a[href*=".html?"],
-body.public-page .download-grid a[href$=".html"],
-body.public-page .download-grid a[href*=".html#"],
-body.public-page .download-grid a[href*=".html?"],
-body.public-page .approach-actions a[href$=".html"],
-body.public-page .approach-actions a[href*=".html#"],
-body.public-page .approach-actions a[href*=".html?"],
-body.public-page .file-actions a[href$=".html"],
-body.public-page .file-actions a[href*=".html#"],
-body.public-page .file-actions a[href*=".html?"],
-body.public-page .format-actions a[href$=".html"],
-body.public-page .format-actions a[href*=".html#"],
-body.public-page .format-actions a[href*=".html?"],
-body.public-page .document-actions a[href$=".html"],
-body.public-page .document-actions a[href*=".html#"],
-body.public-page .document-actions a[href*=".html?"],
-body.public-page .archive-link-row a[href$=".html"],
-body.public-page .archive-link-row a[href*=".html#"],
-body.public-page .archive-link-row a[href*=".html?"],
-body.public-page a.primary-format,
-body.appendix-document-page .appendix-actions a[href$=".html"],
-body.appendix-document-page .download-strip a[href$=".html"],
-body.appendix-document-page .download-row a[href$=".html"] {
+html body.public-page main#main a.download-button[href$=".html"],
+html body.public-page main#main a.download-button[href*=".html?"],
+html body.public-page main#main a.download-button[href*=".html#"],
+html body.public-page main#main a.card-link[href$=".html"],
+html body.public-page main#main a.card-link[href*=".html?"],
+html body.public-page main#main a.card-link[href*=".html#"],
+html body.public-page main#main .download-row > a[href$=".html"],
+html body.public-page main#main .download-row > a[href*=".html?"],
+html body.public-page main#main .download-row > a[href*=".html#"],
+html body.public-page main#main .download-strip > a[href$=".html"],
+html body.public-page main#main .download-strip > a[href*=".html?"],
+html body.public-page main#main .download-strip > a[href*=".html#"],
+html body.public-page main#main .download-grid > a[href$=".html"],
+html body.public-page main#main .download-grid > a[href*=".html?"],
+html body.public-page main#main .download-grid > a[href*=".html#"],
+html body.public-page main#main .appendix-actions > a[href$=".html"],
+html body.public-page main#main .appendix-actions > a[href*=".html?"],
+html body.public-page main#main .appendix-actions > a[href*=".html#"],
+html body.public-page main#main .reading-path-actions > a[href$=".html"],
+html body.public-page main#main .reading-path-actions > a[href*=".html?"],
+html body.public-page main#main .reading-path-actions > a[href*=".html#"],
+html body.public-page main#main .file-actions > a[href$=".html"],
+html body.public-page main#main .file-actions > a[href*=".html?"],
+html body.public-page main#main .file-actions > a[href*=".html#"],
+html body.public-page main#main .format-actions > a[href$=".html"],
+html body.public-page main#main .format-actions > a[href*=".html?"],
+html body.public-page main#main .format-actions > a[href*=".html#"],
+html body.public-page main#main .document-actions > a[href$=".html"],
+html body.public-page main#main .document-actions > a[href*=".html?"],
+html body.public-page main#main .document-actions > a[href*=".html#"],
+html body.public-page main#main a.primary-format {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative !important;
+  isolation: isolate !important;
+  opacity: 1 !important;
+  filter: none !important;
   background: linear-gradient(135deg, #b98726 0%, #e6b84a 52%, #f5d06b 100%) !important;
   background-color: #e6b84a !important;
+  background-image: linear-gradient(135deg, #b98726 0%, #e6b84a 52%, #f5d06b 100%) !important;
+  background-clip: padding-box !important;
   color: #07101d !important;
   -webkit-text-fill-color: #07101d !important;
-  border: 1px solid #d6a62a !important;
-  box-shadow:
-    0 8px 18px rgba(184, 135, 38, .22),
-    inset 0 1px 0 rgba(255, 255, 255, .42) !important;
+  border: 1.5px solid #d6a62a !important;
+  border-radius: 999px !important;
+  box-shadow: 0 8px 18px rgba(184, 135, 38, .24), inset 0 1px 0 rgba(255, 255, 255, .46) !important;
   text-decoration: none !important;
+  text-shadow: none !important;
+  font-weight: 850 !important;
+}
+
+html body.public-page main#main a.download-button[href*=".html"]::before,
+html body.public-page main#main a.download-button[href*=".html"]::after,
+html body.public-page main#main a.card-link[href*=".html"]::before,
+html body.public-page main#main a.card-link[href*=".html"]::after,
+html body.public-page main#main .download-row > a[href*=".html"]::before,
+html body.public-page main#main .download-row > a[href*=".html"]::after,
+html body.public-page main#main .download-strip > a[href*=".html"]::before,
+html body.public-page main#main .download-strip > a[href*=".html"]::after,
+html body.public-page main#main .download-grid > a[href*=".html"]::before,
+html body.public-page main#main .download-grid > a[href*=".html"]::after,
+html body.public-page main#main .appendix-actions > a[href*=".html"]::before,
+html body.public-page main#main .appendix-actions > a[href*=".html"]::after,
+html body.public-page main#main .reading-path-actions > a[href*=".html"]::before,
+html body.public-page main#main .reading-path-actions > a[href*=".html"]::after,
+html body.public-page main#main a.primary-format::before,
+html body.public-page main#main a.primary-format::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  background-image: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  opacity: 0 !important;
+}
+
+html body.public-page main#main a.download-button[href*=".html"] *,
+html body.public-page main#main a.card-link[href*=".html"] *,
+html body.public-page main#main .download-row > a[href*=".html"] *,
+html body.public-page main#main .download-strip > a[href*=".html"] *,
+html body.public-page main#main .download-grid > a[href*=".html"] *,
+html body.public-page main#main .appendix-actions > a[href*=".html"] *,
+html body.public-page main#main .reading-path-actions > a[href*=".html"] *,
+html body.public-page main#main a.primary-format * {
+  background: transparent !important;
+  background-image: none !important;
+  color: inherit !important;
+  -webkit-text-fill-color: inherit !important;
   text-shadow: none !important;
 }
 
-body.public-page .appendix-actions a[href$=".html"] .file-size,
-body.public-page .appendix-actions a[href*=".html#"] .file-size,
-body.public-page .appendix-actions a[href*=".html?"] .file-size,
-body.public-page .download-strip a[href$=".html"] .file-size,
-body.public-page .download-strip a[href*=".html#"] .file-size,
-body.public-page .download-strip a[href*=".html?"] .file-size,
-body.public-page .download-row a[href$=".html"] .file-size,
-body.public-page .download-row a[href*=".html#"] .file-size,
-body.public-page .download-row a[href*=".html?"] .file-size,
-body.public-page .download-grid a[href$=".html"] .file-size,
-body.public-page .download-grid a[href*=".html#"] .file-size,
-body.public-page .download-grid a[href*=".html?"] .file-size,
-body.public-page .approach-actions a[href$=".html"] .file-size,
-body.public-page .approach-actions a[href*=".html#"] .file-size,
-body.public-page .approach-actions a[href*=".html?"] .file-size,
-body.public-page .file-actions a[href$=".html"] .file-size,
-body.public-page .file-actions a[href*=".html#"] .file-size,
-body.public-page .file-actions a[href*=".html?"] .file-size,
-body.public-page .format-actions a[href$=".html"] .file-size,
-body.public-page .format-actions a[href*=".html#"] .file-size,
-body.public-page .format-actions a[href*=".html?"] .file-size,
-body.public-page .document-actions a[href$=".html"] .file-size,
-body.public-page .document-actions a[href*=".html#"] .file-size,
-body.public-page .document-actions a[href*=".html?"] .file-size,
-body.public-page .archive-link-row a[href$=".html"] .file-size,
-body.public-page .archive-link-row a[href*=".html#"] .file-size,
-body.public-page .archive-link-row a[href*=".html?"] .file-size {
+html body.public-page main#main a.download-button[href*=".html"] .file-size,
+html body.public-page main#main a.card-link[href*=".html"] .file-size,
+html body.public-page main#main .download-row > a[href*=".html"] .file-size,
+html body.public-page main#main .download-strip > a[href*=".html"] .file-size,
+html body.public-page main#main .download-grid > a[href*=".html"] .file-size,
+html body.public-page main#main .appendix-actions > a[href*=".html"] .file-size,
+html body.public-page main#main .reading-path-actions > a[href*=".html"] .file-size,
+html body.public-page main#main a.primary-format .file-size {
   color: rgba(7, 16, 29, .62) !important;
   -webkit-text-fill-color: rgba(7, 16, 29, .62) !important;
 }
 
-body.public-page .appendix-actions a[href$=".html"]:hover,
-body.public-page .appendix-actions a[href*=".html#"]:hover,
-body.public-page .appendix-actions a[href*=".html?"]:hover,
-body.public-page .download-strip a[href$=".html"]:hover,
-body.public-page .download-strip a[href*=".html#"]:hover,
-body.public-page .download-strip a[href*=".html?"]:hover,
-body.public-page .download-row a[href$=".html"]:hover,
-body.public-page .download-row a[href*=".html#"]:hover,
-body.public-page .download-row a[href*=".html?"]:hover,
-body.public-page .download-grid a[href$=".html"]:hover,
-body.public-page .download-grid a[href*=".html#"]:hover,
-body.public-page .download-grid a[href*=".html?"]:hover,
-body.public-page .approach-actions a[href$=".html"]:hover,
-body.public-page .approach-actions a[href*=".html#"]:hover,
-body.public-page .approach-actions a[href*=".html?"]:hover,
-body.public-page .file-actions a[href$=".html"]:hover,
-body.public-page .file-actions a[href*=".html#"]:hover,
-body.public-page .file-actions a[href*=".html?"]:hover,
-body.public-page .format-actions a[href$=".html"]:hover,
-body.public-page .format-actions a[href*=".html#"]:hover,
-body.public-page .format-actions a[href*=".html?"]:hover,
-body.public-page .document-actions a[href$=".html"]:hover,
-body.public-page .document-actions a[href*=".html#"]:hover,
-body.public-page .document-actions a[href*=".html?"]:hover,
-body.public-page .archive-link-row a[href$=".html"]:hover,
-body.public-page .archive-link-row a[href*=".html#"]:hover,
-body.public-page .archive-link-row a[href*=".html?"]:hover,
-body.public-page a.primary-format:hover {
+html body.public-page main#main a.download-button[href*=".html"]:hover,
+html body.public-page main#main a.card-link[href*=".html"]:hover,
+html body.public-page main#main .download-row > a[href*=".html"]:hover,
+html body.public-page main#main .download-strip > a[href*=".html"]:hover,
+html body.public-page main#main .download-grid > a[href*=".html"]:hover,
+html body.public-page main#main .appendix-actions > a[href*=".html"]:hover,
+html body.public-page main#main .reading-path-actions > a[href*=".html"]:hover,
+html body.public-page main#main a.primary-format:hover {
   background: linear-gradient(135deg, #c8942d 0%, #edc45d 52%, #f8d980 100%) !important;
   background-color: #edc45d !important;
+  background-image: linear-gradient(135deg, #c8942d 0%, #edc45d 52%, #f8d980 100%) !important;
   color: #07101d !important;
   -webkit-text-fill-color: #07101d !important;
   border-color: #c9971d !important;
-  box-shadow:
-    0 12px 26px rgba(184, 135, 38, .3),
-    inset 0 1px 0 rgba(255, 255, 255, .52) !important;
-  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(184, 135, 38, .30), inset 0 1px 0 rgba(255, 255, 255, .52) !important;
+  transform: translateY(-1px) !important;
 }
 
-body.public-page .appendix-actions a[href$=".html"]:focus-visible,
-body.public-page .appendix-actions a[href*=".html#"]:focus-visible,
-body.public-page .appendix-actions a[href*=".html?"]:focus-visible,
-body.public-page .download-strip a[href$=".html"]:focus-visible,
-body.public-page .download-strip a[href*=".html#"]:focus-visible,
-body.public-page .download-strip a[href*=".html?"]:focus-visible,
-body.public-page .download-row a[href$=".html"]:focus-visible,
-body.public-page .download-row a[href*=".html#"]:focus-visible,
-body.public-page .download-row a[href*=".html?"]:focus-visible,
-body.public-page .download-grid a[href$=".html"]:focus-visible,
-body.public-page .download-grid a[href*=".html#"]:focus-visible,
-body.public-page .download-grid a[href*=".html?"]:focus-visible,
-body.public-page .approach-actions a[href$=".html"]:focus-visible,
-body.public-page .file-actions a[href$=".html"]:focus-visible,
-body.public-page .format-actions a[href$=".html"]:focus-visible,
-body.public-page .document-actions a[href$=".html"]:focus-visible,
-body.public-page .archive-link-row a[href$=".html"]:focus-visible,
-body.public-page a.primary-format:focus-visible {
-  outline: 3px solid rgba(214, 166, 42, .38) !important;
+html body.public-page main#main a.download-button[href*=".html"]:focus-visible,
+html body.public-page main#main a.card-link[href*=".html"]:focus-visible,
+html body.public-page main#main .download-row > a[href*=".html"]:focus-visible,
+html body.public-page main#main .download-strip > a[href*=".html"]:focus-visible,
+html body.public-page main#main .download-grid > a[href*=".html"]:focus-visible,
+html body.public-page main#main .appendix-actions > a[href*=".html"]:focus-visible,
+html body.public-page main#main .reading-path-actions > a[href*=".html"]:focus-visible,
+html body.public-page main#main a.primary-format:focus-visible {
+  outline: 3px solid rgba(214, 166, 42, .42) !important;
   outline-offset: 3px !important;
 }
