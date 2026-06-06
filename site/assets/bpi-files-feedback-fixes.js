@@ -55,7 +55,7 @@
     'glossary-en': 'glossary.html',
     'potential-ideal-optimal-en': 'potential-ideal-optimal.html',
     'ai-as-witness-en': 'ai-as-witness.html',
-    'core-en': 'core.html',
+    core: 'core.html',
     'methodology-en': 'methodology.html',
     'witness-en': 'witness.html',
     'applied-en': 'applied.html',
@@ -136,8 +136,9 @@
       'html body.public-page-he .site-header .site-nav a[href$="ai.html"],html body.public-page-he .site-header .site-nav a[href$="ai-as-witness.html"]{width:auto!important;min-width:0!important;max-width:none!important;flex:0 0 auto!important;padding-inline:9px!important;font-size:13px!important;line-height:1.1!important;white-space:nowrap!important;overflow:visible!important;text-overflow:clip!important;}',
       'html body.public-page-en .site-header .site-nav a{padding:8px 10px!important;font-size:13px!important;}',
       'html body.public-page .site-header .language-switch{grid-column:3!important;justify-self:end!important;width:104px!important;min-width:104px!important;max-width:104px!important;height:36px!important;min-height:36px!important;padding:8px 13px!important;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif!important;font-size:14px!important;font-weight:700!important;line-height:1.1!important;box-sizing:border-box!important;white-space:nowrap!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;}',
+      '@media(min-width:861px){html[lang="he"] body.public-page-he:not(.bpi-home-page) .site-header{transform:translate(9.5px,0)!important;}}',
       '@media(max-width:1180px){html body.public-page-he .site-header{grid-template-columns:minmax(210px,1fr) minmax(0,1fr) minmax(210px,1fr)!important;}html body.public-page .site-header .site-brand{width:210px!important;min-width:210px!important;max-width:210px!important;}html body.public-page .site-header .language-switch{width:92px!important;min-width:92px!important;max-width:92px!important;}html body.public-page .site-header .site-nav a{font-size:13px!important;padding:8px 10px!important;}}',
-      '@media(max-width:860px){html body.public-page .site-header,html body.public-page-en .site-header{height:auto!important;min-height:0!important;max-height:none!important;display:flex!important;flex-direction:column!important;gap:10px!important;padding:12px 16px!important;}html body.public-page .site-header .site-brand,html body.public-page-en .site-header .site-brand{width:auto!important;min-width:0!important;max-width:100%!important;}}'
+      '@media(max-width:860px){html body.public-page .site-header,html body.public-page-en .site-header{height:auto!important;min-height:0!important;max-height:none!important;display:flex!important;flex-direction:column!important;gap:10px!important;padding:12px 16px!important;}html body.public-page .site-header .site-brand,html body.public-page-en .site-header .site-brand{width:auto!important;min-width:0!important;max-width:100%!important;}html[lang="he"] body.public-page-he:not(.bpi-home-page) .site-header{transform:none!important;}}'
     ]);
   }
 
@@ -311,9 +312,98 @@
     });
   }
 
+  function isHtmlAction(link) {
+    if (!(link instanceof HTMLAnchorElement)) return false;
+    if (link.closest('.site-header, .site-nav, .site-brand, .language-switch, .breadcrumbs, .download-table, table')) return false;
+
+    const href = (link.getAttribute('href') || '').toLowerCase();
+    const text = (link.textContent || '').replace(/\s+/g, ' ').trim();
+    const dataFormat = (
+      link.dataset.format ||
+      link.dataset.type ||
+      link.dataset.fileType ||
+      ''
+    ).toLowerCase();
+
+    return href.includes('.html') ||
+      /(^|\s|\b)html(\s|\b|$)/i.test(text) ||
+      dataFormat === 'html' ||
+      link.classList.contains('primary-format') ||
+      link.classList.contains('html-format') ||
+      link.classList.contains('is-html');
+  }
+
+  function styleHtmlAction(link) {
+    link.classList.add('bpi-html-gold-runtime');
+    link.style.setProperty('display', 'inline-flex', 'important');
+    link.style.setProperty('align-items', 'center', 'important');
+    link.style.setProperty('justify-content', 'center', 'important');
+    link.style.setProperty('background', 'linear-gradient(135deg, #b98726 0%, #e6b84a 52%, #f5d06b 100%)', 'important');
+    link.style.setProperty('background-color', '#e6b84a', 'important');
+    link.style.setProperty('background-image', 'linear-gradient(135deg, #b98726 0%, #e6b84a 52%, #f5d06b 100%)', 'important');
+    link.style.setProperty('color', '#07101d', 'important');
+    link.style.setProperty('-webkit-text-fill-color', '#07101d', 'important');
+    link.style.setProperty('border', '1.5px solid #d6a62a', 'important');
+    link.style.setProperty('box-shadow', '0 8px 18px rgba(184, 135, 38, .24), inset 0 1px 0 rgba(255, 255, 255, .46)', 'important');
+    link.style.setProperty('text-decoration', 'none', 'important');
+    link.style.setProperty('text-shadow', 'none', 'important');
+    link.style.setProperty('opacity', '1', 'important');
+    link.style.setProperty('filter', 'none', 'important');
+
+    link.querySelectorAll('*').forEach((child) => {
+      child.style.setProperty('background', 'transparent', 'important');
+      child.style.setProperty('background-image', 'none', 'important');
+      child.style.setProperty('color', 'inherit', 'important');
+      child.style.setProperty('-webkit-text-fill-color', 'inherit', 'important');
+      child.style.setProperty('text-shadow', 'none', 'important');
+    });
+  }
+
+  function installHtmlButtonRuntimeCSS() {
+    replaceStyle('bpi-html-button-runtime-css', [
+      'body.section-files main#main a.bpi-html-gold-runtime::before,body.section-files main#main a.bpi-html-gold-runtime::after{content:none!important;display:none!important;background:none!important;background-image:none!important;border:0!important;box-shadow:none!important;opacity:0!important;}',
+      'body.section-files main#main a.bpi-html-gold-runtime:hover{background:linear-gradient(135deg,#c8942d 0%,#edc45d 52%,#f8d980 100%)!important;background-color:#edc45d!important;background-image:linear-gradient(135deg,#c8942d 0%,#edc45d 52%,#f8d980 100%)!important;color:#07101d!important;-webkit-text-fill-color:#07101d!important;border-color:#c9971d!important;box-shadow:0 12px 26px rgba(184,135,38,.30),inset 0 1px 0 rgba(255,255,255,.52)!important;transform:translateY(-1px)!important;}',
+      'body.section-files main#main a.bpi-html-gold-runtime:focus-visible{outline:3px solid rgba(214,166,42,.42)!important;outline-offset:3px!important;}'
+    ]);
+  }
+
+  function styleAllHtmlActions(root) {
+    if (!document.body.classList.contains('section-files')) return;
+    const scope = root && root.querySelectorAll ? root : document;
+    scope.querySelectorAll('main#main a').forEach((link) => {
+      if (isHtmlAction(link)) styleHtmlAction(link);
+    });
+  }
+
+  function observeHtmlActions() {
+    if (!document.body.classList.contains('section-files')) return;
+
+    const main = document.querySelector('main#main');
+    if (!main || typeof MutationObserver === 'undefined') return;
+
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        mutation.addedNodes.forEach((node) => {
+          if (node.nodeType !== Node.ELEMENT_NODE) return;
+          if (node.matches && node.matches('a') && isHtmlAction(node)) styleHtmlAction(node);
+          styleAllHtmlActions(node);
+        });
+      });
+    });
+
+    observer.observe(main, { childList: true, subtree: true });
+  }
+
   function init() {
     sanitizeBreadcrumbs();
     renderNav();
+    installHtmlButtonRuntimeCSS();
+    styleAllHtmlActions(document);
+    observeHtmlActions();
+
+    requestAnimationFrame(() => styleAllHtmlActions(document));
+    window.setTimeout(() => styleAllHtmlActions(document), 120);
+    window.setTimeout(() => styleAllHtmlActions(document), 600);
   }
 
   if (document.readyState === 'loading') {
