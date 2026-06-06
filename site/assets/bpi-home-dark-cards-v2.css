@@ -18,4 +18,45 @@ html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signatur
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main section.hub-grid>article.hub-card.media-card a.card-link,
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main section.bpi-gateway-cards>article.hub-card.media-card a.card-link{background:#12171e!important;color:#f8e5b1!important;border-color:rgba(230,184,74,.48)!important}
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-main-blurb::before,
-html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-blurb-card::before{display:block!important;opacity:.7!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-blurb-card::before{display:block!important;opacity:.72!important}
+
+/* Subtle chromatic depth for the blurbs without weakening the black design. */
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-main-blurb{
+background:
+radial-gradient(circle at 84% 8%,rgba(230,184,74,.17),transparent 35%),
+radial-gradient(circle at 8% 92%,rgba(99,102,241,.13),transparent 42%),
+linear-gradient(145deg,#151a22,#06080c)!important;
+border-color:rgba(230,184,74,.27)!important;
+box-shadow:0 22px 54px rgba(0,0,0,.46),inset 0 1px 0 rgba(243,207,118,.08)!important}
+
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs .signature-blurb-grid>article:nth-child(4n+1){
+background:radial-gradient(circle at 82% 12%,rgba(139,92,246,.15),transparent 42%),linear-gradient(145deg,#121721,#07090d)!important;
+border-color:rgba(167,139,250,.22)!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs .signature-blurb-grid>article:nth-child(4n+2){
+background:radial-gradient(circle at 16% 14%,rgba(45,212,191,.13),transparent 42%),linear-gradient(145deg,#10191c,#06090c)!important;
+border-color:rgba(94,234,212,.19)!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs .signature-blurb-grid>article:nth-child(4n+3){
+background:radial-gradient(circle at 84% 14%,rgba(230,184,74,.14),transparent 40%),linear-gradient(145deg,#181712,#080806)!important;
+border-color:rgba(230,184,74,.21)!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs .signature-blurb-grid>article:nth-child(4n){
+background:radial-gradient(circle at 16% 16%,rgba(56,189,248,.12),transparent 42%),linear-gradient(145deg,#101820,#06090d)!important;
+border-color:rgba(125,211,252,.18)!important}
+
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.question-card{
+background:radial-gradient(circle at 82% 10%,rgba(167,139,250,.18),transparent 43%),linear-gradient(145deg,#151426,#08090f)!important;
+border-color:rgba(167,139,250,.27)!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.vessel-card{
+background:radial-gradient(circle at 18% 12%,rgba(94,234,212,.16),transparent 44%),linear-gradient(145deg,#102022,#070a0d)!important;
+border-color:rgba(94,234,212,.24)!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.paradox-card{
+background:radial-gradient(circle at 82% 12%,rgba(251,113,133,.13),transparent 42%),linear-gradient(145deg,#1b1218,#08080c)!important;
+border-color:rgba(251,113,133,.21)!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.minimal-card,
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.ellipsis-card{
+background:radial-gradient(circle at 50% 18%,rgba(230,184,74,.13),transparent 48%),linear-gradient(145deg,#17150f,#080806)!important;
+border-color:rgba(230,184,74,.23)!important}
+
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-blurb-card:hover{
+filter:saturate(1.08) brightness(1.035)!important;
+border-color:rgba(243,207,118,.31)!important;
+box-shadow:0 24px 58px rgba(0,0,0,.46),inset 0 1px 0 rgba(255,255,255,.06)!important}
