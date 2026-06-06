@@ -1,17 +1,5 @@
-/* Exact header parity, non-scrolling mobile tabs and clean homepage divider — 2026-06-06.
-   This file is intentionally loaded after every older navigation layer. */
-
-/* The legacy runtime moved only Hebrew inner pages by 9.5px.
-   Never allow the header to move when navigating between Home and another page. */
-@media (min-width: 861px) {
-  html[lang="he"] body.public-page-he header.site-header,
-  html[lang="he"] body.public-page-he .site-header {
-    transform: none !important;
-    translate: none !important;
-    inset-inline: auto !important;
-    margin-inline: 0 !important;
-  }
-}
+/* Non-scrolling mobile tabs and clean homepage divider — 2026-06-06.
+   No desktop header rules live in this file. */
 
 /* Mobile navigation must never become a horizontal scroller.
    Every tab remains inside the viewport and wraps naturally to another row. */
