@@ -4,10 +4,222 @@
   const GOLD_CLASS = 'bpi-final-html-gold';
   const FILL_CLASS = 'bpi-final-html-gold-fill';
   const LABEL_CLASS = 'bpi-final-html-gold-label';
-  const MOBILE_BREAKPOINT = 860;
 
   function normalizedHref(link) {
     return (link.getAttribute('href') || '').trim().toLowerCase();
+  }
+
+  function installFinalMobileTabbarCSS() {
+    const id = 'bpi-final-mobile-tabbar-runtime-v4';
+    const existing = document.getElementById(id);
+    if (existing) existing.remove();
+
+    const style = document.createElement('style');
+    style.id = id;
+    style.textContent = `
+@media (max-width:860px){
+  html,body{
+    width:100%!important;
+    max-width:100%!important;
+    overflow-x:hidden!important;
+  }
+
+  html body.public-page header.site-header,
+  html body.public-page .site-header,
+  html body.public-page-he header.site-header,
+  html body.public-page-en header.site-header{
+    position:relative!important;
+    inset:auto!important;
+    width:100%!important;
+    max-width:100vw!important;
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+    display:flex!important;
+    flex-direction:column!important;
+    flex-wrap:nowrap!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:10px!important;
+    margin:0!important;
+    padding:12px 16px!important;
+    box-sizing:border-box!important;
+    overflow:visible!important;
+    transform:none!important;
+  }
+
+  html body.public-page header.site-header .bpi-mobile-nav-toggle,
+  html body.public-page .site-header .bpi-mobile-nav-toggle,
+  html body.public-page-he header.site-header .bpi-mobile-nav-toggle,
+  html body.public-page-en header.site-header .bpi-mobile-nav-toggle{
+    display:none!important;
+  }
+
+  html body.public-page header.site-header .site-brand,
+  html body.public-page .site-header .site-brand,
+  html body.public-page-he header.site-header .site-brand,
+  html body.public-page-en header.site-header .site-brand{
+    order:1!important;
+    grid-column:auto!important;
+    justify-self:center!important;
+    align-self:center!important;
+    width:auto!important;
+    min-width:0!important;
+    max-width:100%!important;
+    height:auto!important;
+    margin:0!important;
+    padding:0!important;
+    text-align:center!important;
+    overflow:visible!important;
+  }
+
+  html body.public-page header.site-header .site-brand>a,
+  html body.public-page .site-header .site-brand>a,
+  html body.public-page-he header.site-header .site-brand>a,
+  html body.public-page-en header.site-header .site-brand>a{
+    display:block!important;
+    width:auto!important;
+    max-width:calc(100vw - 32px)!important;
+    font-size:15px!important;
+    line-height:1.15!important;
+    white-space:nowrap!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+    text-align:center!important;
+  }
+
+  html body.public-page header.site-header nav.site-nav,
+  html body.public-page header.site-header.bpi-mobile-nav-ready:not(.bpi-mobile-nav-open) nav.site-nav,
+  html body.public-page header.site-header.bpi-mobile-nav-ready.bpi-mobile-nav-open nav.site-nav,
+  html body.public-page .site-header nav.site-nav,
+  html body.public-page-he header.site-header nav.site-nav,
+  html body.public-page-en header.site-header nav.site-nav{
+    order:2!important;
+    grid-column:auto!important;
+    justify-self:center!important;
+    align-self:stretch!important;
+    display:flex!important;
+    flex-direction:row!important;
+    flex-wrap:wrap!important;
+    align-items:center!important;
+    align-content:center!important;
+    justify-content:center!important;
+    gap:6px!important;
+    width:100%!important;
+    min-width:0!important;
+    max-width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    border-radius:0!important;
+    background:transparent!important;
+    box-shadow:none!important;
+    overflow:visible!important;
+    overflow-x:visible!important;
+    overflow-y:visible!important;
+    transform:none!important;
+    scroll-snap-type:none!important;
+  }
+
+  html body.public-page header.site-header nav.site-nav>a,
+  html body.public-page header.site-header nav.site-nav>a.active,
+  html body.public-page header.site-header nav.site-nav>a[aria-current="page"],
+  html body.public-page .site-header nav.site-nav>a,
+  html body.public-page-he header.site-header nav.site-nav>a,
+  html body.public-page-en header.site-header nav.site-nav>a{
+    flex:0 1 auto!important;
+    width:auto!important;
+    min-width:0!important;
+    max-width:100%!important;
+    height:36px!important;
+    min-height:36px!important;
+    margin:0!important;
+    padding:8px 10px!important;
+    box-sizing:border-box!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    font-size:12px!important;
+    line-height:1.1!important;
+    text-align:center!important;
+    white-space:nowrap!important;
+    overflow:visible!important;
+    overflow-wrap:normal!important;
+    word-break:normal!important;
+    text-overflow:clip!important;
+    transform:none!important;
+    scroll-snap-align:none!important;
+  }
+
+  html body.public-page-he header.site-header nav.site-nav>a[href$="ai.html"],
+  html body.public-page-he header.site-header nav.site-nav>a[href$="ai-as-witness.html"]{
+    width:auto!important;
+    min-width:0!important;
+    max-width:100%!important;
+    flex:0 1 auto!important;
+    padding-inline:9px!important;
+    font-size:11.5px!important;
+  }
+
+  html body.public-page header.site-header .language-switch,
+  html body.public-page .site-header .language-switch,
+  html body.public-page-he header.site-header .language-switch,
+  html body.public-page-en header.site-header .language-switch{
+    order:3!important;
+    grid-column:auto!important;
+    align-self:center!important;
+    justify-self:center!important;
+    width:auto!important;
+    min-width:68px!important;
+    max-width:none!important;
+    height:36px!important;
+    min-height:36px!important;
+    margin:0!important;
+    padding:7px 11px!important;
+    box-sizing:border-box!important;
+    white-space:nowrap!important;
+  }
+}
+
+@media (max-width:390px){
+  html body.public-page header.site-header,
+  html body.public-page .site-header,
+  html body.public-page-he header.site-header,
+  html body.public-page-en header.site-header{
+    gap:8px!important;
+    padding:10px 9px!important;
+  }
+
+  html body.public-page header.site-header nav.site-nav,
+  html body.public-page .site-header nav.site-nav,
+  html body.public-page-he header.site-header nav.site-nav,
+  html body.public-page-en header.site-header nav.site-nav{
+    gap:5px!important;
+  }
+
+  html body.public-page header.site-header nav.site-nav>a,
+  html body.public-page .site-header nav.site-nav>a,
+  html body.public-page-he header.site-header nav.site-nav>a,
+  html body.public-page-en header.site-header nav.site-nav>a{
+    height:34px!important;
+    min-height:34px!important;
+    padding:7px 8px!important;
+    font-size:11.5px!important;
+  }
+}
+`;
+    document.head.appendChild(style);
+  }
+
+  function removeDisclosureNavigation() {
+    document.querySelectorAll('header.site-header').forEach((header) => {
+      header.classList.remove('bpi-mobile-nav-ready', 'bpi-mobile-nav-open');
+      header.querySelectorAll('.bpi-mobile-nav-toggle').forEach((toggle) => toggle.remove());
+      const nav = header.querySelector('nav.site-nav');
+      if (nav) nav.removeAttribute('aria-hidden');
+    });
   }
 
   function isDocumentHtmlButton(link) {
@@ -124,97 +336,9 @@
     });
   }
 
-  function mobileLabel() {
-    return document.documentElement.lang === 'he' ? 'תפריט' : 'Menu';
-  }
-
-  function ensureMobileToggle(header) {
-    const nav = header.querySelector('nav.site-nav');
-    if (!nav) return null;
-
-    let toggle = header.querySelector('.bpi-mobile-nav-toggle');
-    if (!toggle) {
-      toggle = document.createElement('button');
-      toggle.type = 'button';
-      toggle.className = 'bpi-mobile-nav-toggle';
-      toggle.innerHTML = '<span class="bpi-mobile-nav-toggle-text"></span><span class="bpi-mobile-nav-toggle-icon" aria-hidden="true"><span></span></span>';
-      header.insertBefore(toggle, nav);
-    }
-
-    let id = nav.id;
-    if (!id) {
-      id = 'bpi-mobile-nav-' + Math.random().toString(36).slice(2, 9);
-      nav.id = id;
-    }
-
-    const text = toggle.querySelector('.bpi-mobile-nav-toggle-text');
-    if (text) text.textContent = mobileLabel();
-
-    toggle.setAttribute('aria-controls', id);
-    toggle.setAttribute('aria-expanded', header.classList.contains('bpi-mobile-nav-open') ? 'true' : 'false');
-    header.classList.add('bpi-mobile-nav-ready');
-    return toggle;
-  }
-
-  function closeMobileNav(header, returnFocus) {
-    const toggle = header.querySelector('.bpi-mobile-nav-toggle');
-    header.classList.remove('bpi-mobile-nav-open');
-    if (toggle) {
-      toggle.setAttribute('aria-expanded', 'false');
-      if (returnFocus) toggle.focus();
-    }
-  }
-
-  function openMobileNav(header) {
-    const toggle = header.querySelector('.bpi-mobile-nav-toggle');
-    header.classList.add('bpi-mobile-nav-open');
-    if (toggle) toggle.setAttribute('aria-expanded', 'true');
-  }
-
-  function initializeMobileNavigation() {
-    document.querySelectorAll('header.site-header').forEach((header) => {
-      const nav = header.querySelector('nav.site-nav');
-      if (!nav) return;
-
-      const toggle = ensureMobileToggle(header);
-      if (!toggle || toggle.dataset.bpiBound === 'true') return;
-
-      toggle.dataset.bpiBound = 'true';
-      toggle.addEventListener('click', () => {
-        if (header.classList.contains('bpi-mobile-nav-open')) {
-          closeMobileNav(header, false);
-        } else {
-          openMobileNav(header);
-        }
-      });
-
-      nav.addEventListener('click', (event) => {
-        const link = event.target.closest('a');
-        if (link && window.innerWidth <= MOBILE_BREAKPOINT) {
-          closeMobileNav(header, false);
-        }
-      });
-
-      header.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && header.classList.contains('bpi-mobile-nav-open')) {
-          event.preventDefault();
-          closeMobileNav(header, true);
-        }
-      });
-    });
-  }
-
-  function closeMenusAboveBreakpoint() {
-    if (window.innerWidth > MOBILE_BREAKPOINT) {
-      document.querySelectorAll('header.site-header.bpi-mobile-nav-open').forEach((header) => {
-        closeMobileNav(header, false);
-      });
-    }
-  }
-
   function applyAll() {
+    removeDisclosureNavigation();
     putMethodologyBeforeCore();
-    initializeMobileNavigation();
     styleDocumentHtmlButtons(document);
   }
 
@@ -238,13 +362,16 @@
   }
 
   function init() {
+    /* Loaded after the legacy navigation runtime. This style tag is appended last,
+       so the approved homepage-style mobile tab bar wins over every older layer. */
+    installFinalMobileTabbarCSS();
     applyAll();
     observeChanges();
-    window.addEventListener('resize', closeMenusAboveBreakpoint, { passive: true });
 
     window.requestAnimationFrame(applyAll);
     window.setTimeout(applyAll, 120);
     window.setTimeout(applyAll, 500);
+    window.setTimeout(applyAll, 1200);
   }
 
   if (document.readyState === 'loading') {
