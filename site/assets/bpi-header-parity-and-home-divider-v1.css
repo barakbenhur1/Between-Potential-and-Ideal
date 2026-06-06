@@ -1,6 +1,5 @@
-/* Exact header parity and clean homepage divider — 2026-06-06.
-   This file is intentionally loaded after every older navigation layer.
-   It changes only the Hebrew home/inner-page offset mismatch and the homepage divider. */
+/* Exact header parity, non-scrolling mobile tabs and clean homepage divider — 2026-06-06.
+   This file is intentionally loaded after every older navigation layer. */
 
 /* The legacy runtime moved only Hebrew inner pages by 9.5px.
    Never allow the header to move when navigating between Home and another page. */
@@ -11,6 +10,86 @@
     translate: none !important;
     inset-inline: auto !important;
     margin-inline: 0 !important;
+  }
+}
+
+/* Mobile navigation must never become a horizontal scroller.
+   Every tab remains inside the viewport and wraps naturally to another row. */
+@media (max-width: 860px) {
+  html,
+  body,
+  html body.public-page {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    overscroll-behavior-x: none !important;
+  }
+
+  html body.public-page header.site-header,
+  html body.public-page .site-header,
+  html body.public-page-he header.site-header,
+  html body.public-page-en header.site-header {
+    width: 100% !important;
+    max-width: 100vw !important;
+    height: auto !important;
+    max-height: none !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+    overscroll-behavior-x: none !important;
+  }
+
+  html body.public-page header.site-header nav.site-nav,
+  html body.public-page .site-header nav.site-nav,
+  html body.public-page-he header.site-header nav.site-nav,
+  html body.public-page-en header.site-header nav.site-nav,
+  html body.public-page header.site-header:not(.bpi-mobile-nav-ready) nav.site-nav,
+  html body.public-page header.site-header.bpi-mobile-nav-ready:not(.bpi-mobile-nav-open) nav.site-nav,
+  html body.public-page header.site-header.bpi-mobile-nav-ready.bpi-mobile-nav-open nav.site-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    align-content: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    white-space: normal !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+    -webkit-overflow-scrolling: auto !important;
+    overscroll-behavior-x: none !important;
+    touch-action: pan-y !important;
+    scroll-behavior: auto !important;
+    scroll-snap-type: none !important;
+    scrollbar-width: none !important;
+  }
+
+  html body.public-page header.site-header nav.site-nav::-webkit-scrollbar,
+  html body.public-page .site-header nav.site-nav::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  html body.public-page header.site-header nav.site-nav > a,
+  html body.public-page .site-header nav.site-nav > a,
+  html body.public-page-he header.site-header nav.site-nav > a,
+  html body.public-page-en header.site-header nav.site-nav > a {
+    flex: 0 1 auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    text-overflow: clip !important;
+    scroll-snap-align: none !important;
   }
 }
 
