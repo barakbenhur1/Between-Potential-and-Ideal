@@ -16,6 +16,7 @@ on:
       - site/assets/bpi-mobile-tabbar-no-scroll-v1.css
       - site/assets/bpi-he-header-match-en-v1.js
       - site/assets/bpi-he-mobile-header-only-v1.css
+      - site/assets/bpi-he-mobile-header-only-v2.css
       - .github/workflows/stabilize-public-nav-source.yml
 
 permissions:
@@ -40,7 +41,7 @@ jobs:
       - name: Commit generated HTML
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Load Hebrew mobile-only header CSS with fresh cache key
+          commit_message: Match Hebrew mobile header grid to English reference
           file_pattern: site/index.html site/en.html site/pages/he/*.html site/pages/en/*.html
 
-# trigger: hebrew-mobile-only-css-v4
+# trigger: hebrew-mobile-grid-parity-v5
