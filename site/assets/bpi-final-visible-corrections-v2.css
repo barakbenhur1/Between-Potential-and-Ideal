@@ -6,42 +6,6 @@
   html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) header.site-header {
     transform: translate(9.5px, 0) !important;
   }
-
-  /* Match the approved Hebrew homepage spacing exactly. */
-  html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) header.site-header .site-nav {
-    gap: 2px !important;
-    column-gap: 2px !important;
-    row-gap: 2px !important;
-  }
-
-  html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) header.site-header .site-nav > a {
-    padding-left: 7px !important;
-    padding-right: 7px !important;
-    padding-inline: 7px !important;
-  }
-
-  html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) header.site-header .site-nav > a[href$="ai.html"],
-  html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) header.site-header .site-nav > a[href$="ai-as-witness.html"] {
-    padding-left: 7px !important;
-    padding-right: 7px !important;
-    padding-inline: 7px !important;
-  }
-}
-
-@media (max-width: 1180px) and (min-width: 861px) {
-  html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) header.site-header .site-nav {
-    gap: 2px !important;
-    column-gap: 2px !important;
-    row-gap: 2px !important;
-  }
-
-  html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) header.site-header .site-nav > a,
-  html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) header.site-header .site-nav > a[href$="ai.html"],
-  html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) header.site-header .site-nav > a[href$="ai-as-witness.html"] {
-    padding-left: 6px !important;
-    padding-right: 6px !important;
-    padding-inline: 6px !important;
-  }
 }
 
 @media (max-width: 860px) {
