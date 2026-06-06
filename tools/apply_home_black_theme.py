@@ -6,10 +6,16 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
-VERSION = "20260606-home-black-theme-v1"
-ASSET = "assets/bpi-home-black-theme-v1.css"
-LINK_RE = re.compile(
+THEME_VERSION = "20260606-home-black-theme-v2"
+CARDS_VERSION = "20260606-home-dark-cards-v2"
+THEME_ASSET = "assets/bpi-home-black-theme-v1.css"
+CARDS_ASSET = "assets/bpi-home-dark-cards-v2.css"
+THEME_RE = re.compile(
     r'<link\b[^>]*\bid="bpi-home-black-theme"[^>]*>\s*',
+    re.I,
+)
+CARDS_RE = re.compile(
+    r'<link\b[^>]*\bid="bpi-home-dark-cards"[^>]*>\s*',
     re.I,
 )
 
@@ -17,20 +23,25 @@ LINK_RE = re.compile(
 def patch(path: Path) -> bool:
     text = path.read_text(encoding="utf-8")
     old = text
-    text = LINK_RE.sub("", text)
+    text = THEME_RE.sub("", text)
+    text = CARDS_RE.sub("", text)
 
-    link = (
+    links = (
         f'<link id="bpi-home-black-theme" '
-        f'href="{ASSET}?v={VERSION}" rel="stylesheet"/>'
+        f'href="{THEME_ASSET}?v={THEME_VERSION}" rel="stylesheet"/>'
+        f'<link id="bpi-home-dark-cards" '
+        f'href="{CARDS_ASSET}?v={CARDS_VERSION}" rel="stylesheet"/>'
     )
 
     if "</head>" not in text:
         raise RuntimeError(f"missing </head>: {path}")
 
-    text = text.replace("</head>", link + "</head>", 1)
+    text = text.replace("</head>", links + "</head>", 1)
 
     if text.count('id="bpi-home-black-theme"') != 1:
         raise RuntimeError(f"bad homepage black-theme link count: {path}")
+    if text.count('id="bpi-home-dark-cards"') != 1:
+        raise RuntimeError(f"bad homepage dark-card link count: {path}")
 
     if text != old:
         path.write_text(text, encoding="utf-8")
