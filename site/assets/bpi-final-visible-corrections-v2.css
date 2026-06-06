@@ -4,7 +4,7 @@
 
 @media (min-width: 861px) {
   html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) header.site-header {
-    transform: translate(8px, 0) !important;
+    transform: translate(9px, 0) !important;
   }
 }
 
@@ -14,50 +14,155 @@
   }
 }
 
-/* The files page loads local card CSS after the shared stylesheet. These
-   selectors intentionally carry higher specificity so HTML actions remain gold
-   even when a later generic .card-link or secondary-button rule is present. */
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.card-link[href*=".html"],
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.download-button[href*=".html"],
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-row a[href*=".html"],
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-strip a[href*=".html"],
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-grid a[href*=".html"],
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .appendix-actions a[href*=".html"],
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .file-actions a[href*=".html"],
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .format-actions a[href*=".html"],
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .document-actions a[href*=".html"],
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .reading-path-actions a[href*=".html"],
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .source-files-card a[href*=".html"],
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.primary-format {
+/* HTML actions on the files page.
+   The page contains several generations of card markup, so the selector covers:
+   - direct HTML hrefs
+   - explicit format metadata/classes
+   - the first action in known format-button groups, where HTML is the first format
+   It intentionally does not target the archive table or breadcrumb links. */
+html[lang] body.public-page.section-files.bpi-files-page main#main :is(
+  .download-row,
+  .download-strip,
+  .download-grid,
+  .appendix-actions,
+  .file-actions,
+  .format-actions,
+  .document-actions,
+  .reading-path-actions,
+  .card-actions,
+  .format-buttons,
+  .file-format-buttons,
+  .file-links,
+  .source-files-card
+) > a:is(
+  [href$=".html"],
+  [href*=".html?"],
+  [href*=".html#"],
+  [data-format="html" i],
+  [data-type="html" i],
+  [data-file-type="html" i],
+  [aria-label*="HTML" i],
+  [title*="HTML" i],
+  .primary-format,
+  .html-format,
+  .is-html
+),
+html[lang] body.public-page.section-files.bpi-files-page main#main a:is(
+  .card-link,
+  .download-button,
+  .primary-format,
+  .html-format,
+  .is-html
+):is(
+  [href$=".html"],
+  [href*=".html?"],
+  [href*=".html#"],
+  [data-format="html" i],
+  [data-type="html" i],
+  [data-file-type="html" i],
+  [aria-label*="HTML" i],
+  [title*="HTML" i],
+  .primary-format,
+  .html-format,
+  .is-html
+),
+html[lang] body.public-page.section-files.bpi-files-page main#main :is(
+  .reader-card,
+  .hub-card,
+  .media-card,
+  .appendix-card,
+  .story-download-box,
+  .reading-path-card
+) :is(
+  .download-row,
+  .download-strip,
+  .download-grid,
+  .reading-path-actions,
+  .card-actions,
+  .format-buttons,
+  .file-format-buttons,
+  .file-links
+) > a:first-child {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: hidden !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  opacity: 1 !important;
+  filter: none !important;
   background: linear-gradient(135deg, #b98726 0%, #e6b84a 52%, #f5d06b 100%) !important;
   background-color: #e6b84a !important;
   background-image: linear-gradient(135deg, #b98726 0%, #e6b84a 52%, #f5d06b 100%) !important;
+  background-clip: padding-box !important;
   color: #07101d !important;
   -webkit-text-fill-color: #07101d !important;
   border: 1.5px solid #d6a62a !important;
-  box-shadow: 0 8px 18px rgba(184, 135, 38, .22), inset 0 1px 0 rgba(255, 255, 255, .42) !important;
+  box-shadow: 0 8px 18px rgba(184, 135, 38, .24), inset 0 1px 0 rgba(255, 255, 255, .46) !important;
   text-decoration: none !important;
   text-shadow: none !important;
 }
 
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a[href*=".html"] .file-size,
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.primary-format .file-size {
+html[lang] body.public-page.section-files.bpi-files-page main#main :is(
+  .download-row,
+  .download-strip,
+  .download-grid,
+  .appendix-actions,
+  .file-actions,
+  .format-actions,
+  .document-actions,
+  .reading-path-actions,
+  .card-actions,
+  .format-buttons,
+  .file-format-buttons,
+  .file-links,
+  .source-files-card
+) > a:is([href*=".html"], [data-format="html" i], [data-type="html" i], [data-file-type="html" i], .primary-format, .html-format, .is-html)::before,
+html[lang] body.public-page.section-files.bpi-files-page main#main :is(
+  .download-row,
+  .download-strip,
+  .download-grid,
+  .appendix-actions,
+  .file-actions,
+  .format-actions,
+  .document-actions,
+  .reading-path-actions,
+  .card-actions,
+  .format-buttons,
+  .file-format-buttons,
+  .file-links,
+  .source-files-card
+) > a:is([href*=".html"], [data-format="html" i], [data-type="html" i], [data-file-type="html" i], .primary-format, .html-format, .is-html)::after,
+html[lang] body.public-page.section-files.bpi-files-page main#main :is(.reader-card, .hub-card, .media-card, .appendix-card, .story-download-box, .reading-path-card) :is(.download-row, .download-strip, .download-grid, .reading-path-actions, .card-actions, .format-buttons, .file-format-buttons, .file-links) > a:first-child::before,
+html[lang] body.public-page.section-files.bpi-files-page main#main :is(.reader-card, .hub-card, .media-card, .appendix-card, .story-download-box, .reading-path-card) :is(.download-row, .download-strip, .download-grid, .reading-path-actions, .card-actions, .format-buttons, .file-format-buttons, .file-links) > a:first-child::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  background-image: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  opacity: 0 !important;
+}
+
+html[lang] body.public-page.section-files.bpi-files-page main#main a:is([href*=".html"], [data-format="html" i], [data-type="html" i], [data-file-type="html" i], .primary-format, .html-format, .is-html) *,
+html[lang] body.public-page.section-files.bpi-files-page main#main :is(.reader-card, .hub-card, .media-card, .appendix-card, .story-download-box, .reading-path-card) :is(.download-row, .download-strip, .download-grid, .reading-path-actions, .card-actions, .format-buttons, .file-format-buttons, .file-links) > a:first-child * {
+  background: transparent !important;
+  background-image: none !important;
+  color: inherit !important;
+  -webkit-text-fill-color: inherit !important;
+  text-shadow: none !important;
+}
+
+html[lang] body.public-page.section-files.bpi-files-page main#main a:is([href*=".html"], [data-format="html" i], [data-type="html" i], [data-file-type="html" i], .primary-format, .html-format, .is-html) .file-size,
+html[lang] body.public-page.section-files.bpi-files-page main#main :is(.reader-card, .hub-card, .media-card, .appendix-card, .story-download-box, .reading-path-card) :is(.download-row, .download-strip, .download-grid, .reading-path-actions, .card-actions, .format-buttons, .file-format-buttons, .file-links) > a:first-child .file-size {
   color: rgba(7, 16, 29, .62) !important;
   -webkit-text-fill-color: rgba(7, 16, 29, .62) !important;
 }
 
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.card-link[href*=".html"]:hover,
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.download-button[href*=".html"]:hover,
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-row a[href*=".html"]:hover,
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-strip a[href*=".html"]:hover,
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-grid a[href*=".html"]:hover,
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .appendix-actions a[href*=".html"]:hover,
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .file-actions a[href*=".html"]:hover,
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .format-actions a[href*=".html"]:hover,
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .document-actions a[href*=".html"]:hover,
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .reading-path-actions a[href*=".html"]:hover,
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .source-files-card a[href*=".html"]:hover,
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.primary-format:hover {
+html[lang] body.public-page.section-files.bpi-files-page main#main a:is([href*=".html"], [data-format="html" i], [data-type="html" i], [data-file-type="html" i], .primary-format, .html-format, .is-html):hover,
+html[lang] body.public-page.section-files.bpi-files-page main#main :is(.reader-card, .hub-card, .media-card, .appendix-card, .story-download-box, .reading-path-card) :is(.download-row, .download-strip, .download-grid, .reading-path-actions, .card-actions, .format-buttons, .file-format-buttons, .file-links) > a:first-child:hover {
   background: linear-gradient(135deg, #c8942d 0%, #edc45d 52%, #f8d980 100%) !important;
   background-color: #edc45d !important;
   background-image: linear-gradient(135deg, #c8942d 0%, #edc45d 52%, #f8d980 100%) !important;
@@ -68,10 +173,8 @@ html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page mai
   transform: translateY(-1px) !important;
 }
 
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.card-link[href*=".html"]:focus-visible,
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.download-button[href*=".html"]:focus-visible,
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main :is(.download-row, .download-strip, .download-grid, .appendix-actions, .file-actions, .format-actions, .document-actions, .reading-path-actions, .source-files-card) a[href*=".html"]:focus-visible,
-html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.primary-format:focus-visible {
+html[lang] body.public-page.section-files.bpi-files-page main#main a:is([href*=".html"], [data-format="html" i], [data-type="html" i], [data-file-type="html" i], .primary-format, .html-format, .is-html):focus-visible,
+html[lang] body.public-page.section-files.bpi-files-page main#main :is(.reader-card, .hub-card, .media-card, .appendix-card, .story-download-box, .reading-path-card) :is(.download-row, .download-strip, .download-grid, .reading-path-actions, .card-actions, .format-buttons, .file-format-buttons, .file-links) > a:first-child:focus-visible {
   outline: 3px solid rgba(214, 166, 42, .42) !important;
   outline-offset: 3px !important;
 }
