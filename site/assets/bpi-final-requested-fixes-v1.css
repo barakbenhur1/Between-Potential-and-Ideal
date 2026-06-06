@@ -1,0 +1,309 @@
+/* Final requested corrections — 2026-06-06.
+   Scope:
+   1. stable mobile header/navigation in both languages and on every public page;
+   2. clean centered gold divider below the homepage kicker;
+   3. approved gold treatment for HTML document-opening buttons only.
+   This stylesheet does not alter desktop header geometry. */
+
+/* ---------- Mobile navigation: same stable structure everywhere ---------- */
+@media (max-width: 860px) {
+  html,
+  body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  html body.public-page header.site-header,
+  html body.public-page .site-header,
+  html body.public-page-he header.site-header,
+  html body.public-page-en header.site-header {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 10px !important;
+    padding: 12px 10px 14px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+    transform: none !important;
+  }
+
+  html body.public-page header.site-header .site-brand,
+  html body.public-page .site-header .site-brand {
+    order: 1 !important;
+    display: block !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    justify-self: center !important;
+    text-align: center !important;
+    overflow: visible !important;
+  }
+
+  html body.public-page header.site-header .site-brand > a,
+  html body.public-page .site-header .site-brand > a {
+    display: inline-block !important;
+    max-width: 100% !important;
+    font-size: 15px !important;
+    line-height: 1.15 !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+  }
+
+  html body.public-page header.site-header .language-switch,
+  html body.public-page .site-header .language-switch {
+    order: 2 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: auto !important;
+    min-width: 92px !important;
+    max-width: calc(100vw - 20px) !important;
+    height: 36px !important;
+    min-height: 36px !important;
+    margin: 0 auto !important;
+    padding: 8px 14px !important;
+    box-sizing: border-box !important;
+    justify-self: center !important;
+    white-space: nowrap !important;
+  }
+
+  html body.public-page header.site-header nav.site-nav,
+  html body.public-page .site-header nav.site-nav {
+    order: 3 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    align-content: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    min-height: 0 !important;
+    height: auto !important;
+    gap: 6px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+    overflow-x: visible !important;
+    scrollbar-width: none !important;
+    transform: none !important;
+  }
+
+  html body.public-page header.site-header nav.site-nav::-webkit-scrollbar,
+  html body.public-page .site-header nav.site-nav::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  html body.public-page header.site-header nav.site-nav > a,
+  html body.public-page header.site-header nav.site-nav > a.active,
+  html body.public-page header.site-header nav.site-nav > a[aria-current="page"],
+  html body.public-page .site-header nav.site-nav > a,
+  html body.public-page .site-header nav.site-nav > a.active,
+  html body.public-page .site-header nav.site-nav > a[aria-current="page"] {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 34px !important;
+    margin: 0 !important;
+    padding: 7px 10px !important;
+    box-sizing: border-box !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 12px !important;
+    line-height: 1.12 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    transform: none !important;
+  }
+
+  html body.public-page-he header.site-header nav.site-nav > a[href$="ai.html"],
+  html body.public-page-he header.site-header nav.site-nav > a[href$="ai-as-witness.html"],
+  html body.public-page-he .site-header nav.site-nav > a[href$="ai.html"],
+  html body.public-page-he .site-header nav.site-nav > a[href$="ai-as-witness.html"] {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    padding-inline: 9px !important;
+    font-size: 11.5px !important;
+  }
+
+  html body.public-page-en header.site-header nav.site-nav > a,
+  html body.public-page-en .site-header nav.site-nav > a {
+    padding-inline: 9px !important;
+    font-size: 11.5px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  html body.public-page header.site-header,
+  html body.public-page .site-header {
+    gap: 8px !important;
+    padding: 10px 7px 12px !important;
+  }
+
+  html body.public-page header.site-header nav.site-nav,
+  html body.public-page .site-header nav.site-nav {
+    gap: 5px !important;
+  }
+
+  html body.public-page header.site-header nav.site-nav > a,
+  html body.public-page header.site-header nav.site-nav > a.active,
+  html body.public-page header.site-header nav.site-nav > a[aria-current="page"],
+  html body.public-page .site-header nav.site-nav > a,
+  html body.public-page .site-header nav.site-nav > a.active,
+  html body.public-page .site-header nav.site-nav > a[aria-current="page"] {
+    min-height: 32px !important;
+    padding: 6px 8px !important;
+    font-size: 11px !important;
+  }
+
+  html body.public-page-he header.site-header nav.site-nav > a[href$="ai.html"],
+  html body.public-page-he header.site-header nav.site-nav > a[href$="ai-as-witness.html"],
+  html body.public-page-he .site-header nav.site-nav > a[href$="ai.html"],
+  html body.public-page-he .site-header nav.site-nav > a[href$="ai-as-witness.html"] {
+    padding-inline: 7px !important;
+    font-size: 10.7px !important;
+  }
+}
+
+/* ---------- Homepage gold divider: short, clean and exactly centered ---------- */
+html body.bpi-home-page .hero.concise-hero .kicker {
+  position: relative !important;
+  padding-bottom: 22px !important;
+}
+
+html body.bpi-home-page .hero.concise-hero .kicker::after {
+  content: "" !important;
+  position: absolute !important;
+  inset-inline-start: 50% !important;
+  bottom: 1px !important;
+  width: clamp(190px, 28vw, 310px) !important;
+  max-width: calc(100% - 32px) !important;
+  height: 2px !important;
+  margin: 0 !important;
+  transform: translateX(-50%) !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: linear-gradient(90deg, transparent 0%, rgba(245,196,78,.48) 14%, #f5c44e 50%, rgba(245,196,78,.48) 86%, transparent 100%) !important;
+  box-shadow: 0 0 10px rgba(245,196,78,.18) !important;
+  opacity: 1 !important;
+}
+
+html body.bpi-home-page .hero.concise-hero .kicker::before {
+  content: "" !important;
+  position: absolute !important;
+  inset-inline-start: 50% !important;
+  bottom: -2px !important;
+  width: 8px !important;
+  height: 8px !important;
+  margin: 0 !important;
+  transform: translateX(-50%) !important;
+  border: 2px solid rgba(255,255,255,.18) !important;
+  border-radius: 999px !important;
+  background: #f5c44e !important;
+  box-shadow: 0 0 12px rgba(245,196,78,.34) !important;
+  z-index: 2 !important;
+  opacity: 1 !important;
+}
+
+@media (max-width: 640px) {
+  html body.bpi-home-page .hero.concise-hero .kicker {
+    padding-bottom: 18px !important;
+  }
+
+  html body.bpi-home-page .hero.concise-hero .kicker::after {
+    width: min(230px, 70vw) !important;
+    height: 1.5px !important;
+  }
+
+  html body.bpi-home-page .hero.concise-hero .kicker::before {
+    width: 7px !important;
+    height: 7px !important;
+    bottom: -2px !important;
+  }
+}
+
+/* ---------- HTML document buttons: approved homepage gold ---------- */
+html body.public-page main#main a.bpi-final-html-gold {
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: hidden !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: linear-gradient(135deg, #b98726 0%, #e6b84a 52%, #f5d06b 100%) !important;
+  background-color: #e6b84a !important;
+  background-image: linear-gradient(135deg, #b98726 0%, #e6b84a 52%, #f5d06b 100%) !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: border-box !important;
+  color: #07101d !important;
+  -webkit-text-fill-color: #07101d !important;
+  border: 1.5px solid #d6a62a !important;
+  border-radius: 999px !important;
+  box-shadow: 0 8px 18px rgba(184,135,38,.22), inset 0 1px 0 rgba(255,255,255,.44) !important;
+  text-decoration: none !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+html body.public-page main#main a.bpi-final-html-gold > .bpi-final-html-gold-fill {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 0 !important;
+  display: block !important;
+  pointer-events: none !important;
+  border-radius: inherit !important;
+  background: linear-gradient(135deg, #b98726 0%, #e6b84a 52%, #f5d06b 100%) !important;
+  background-color: #e6b84a !important;
+  background-image: linear-gradient(135deg, #b98726 0%, #e6b84a 52%, #f5d06b 100%) !important;
+  opacity: 1 !important;
+}
+
+html body.public-page main#main a.bpi-final-html-gold > .bpi-final-html-gold-label {
+  position: relative !important;
+  z-index: 1 !important;
+  display: inline !important;
+  background: transparent !important;
+  color: #07101d !important;
+  -webkit-text-fill-color: #07101d !important;
+  text-shadow: none !important;
+}
+
+html body.public-page main#main a.bpi-final-html-gold:hover {
+  background: linear-gradient(135deg, #c8942d 0%, #edc45d 52%, #f8d980 100%) !important;
+  background-color: #edc45d !important;
+  background-image: linear-gradient(135deg, #c8942d 0%, #edc45d 52%, #f8d980 100%) !important;
+  color: #07101d !important;
+  -webkit-text-fill-color: #07101d !important;
+  border-color: #c9971d !important;
+  box-shadow: 0 12px 26px rgba(184,135,38,.28), inset 0 1px 0 rgba(255,255,255,.52) !important;
+}
+
+html body.public-page main#main a.bpi-final-html-gold:hover > .bpi-final-html-gold-fill {
+  background: linear-gradient(135deg, #c8942d 0%, #edc45d 52%, #f8d980 100%) !important;
+  background-color: #edc45d !important;
+  background-image: linear-gradient(135deg, #c8942d 0%, #edc45d 52%, #f8d980 100%) !important;
+}
