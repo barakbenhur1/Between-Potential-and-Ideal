@@ -1,0 +1,7 @@
+{
+  "status": "missing_render_secret",
+  "target_commit": "055472a9fbcf0b7fddef081c9260268f0274cd7e",
+  "service_id": "srv-d821i5ugvqtc73d98dtg",
+  "recorded_at_utc": "2026-06-06T16:58:22+00:00",
+  "response": "No RENDER_DEPLOY_HOOK_URL, RENDER_DEPLOY_HOOK, RENDER_API_KEY, or RENDER_API_TOKEN repository secret is configured."
+}
