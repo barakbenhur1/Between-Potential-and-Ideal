@@ -10,7 +10,7 @@ HEADER_RE = re.compile(r'<header class="site-header".*?</header>', re.S)
 FINAL_CSS_RE = re.compile(r'<link\b[^>]*\bid="bpi-final-requested-fixes"[^>]*>\s*', re.I)
 FINAL_JS_RE = re.compile(r'<script\b[^>]*\bid="bpi-final-requested-fixes-runtime"[^>]*>\s*</script>\s*', re.I)
 
-FINAL_VERSION = '20260606-mobile-disclosure-nav-v3'
+FINAL_VERSION = '20260606-unified-mobile-tabbar-v4'
 SHARED_NAV_VERSION = '20260606-shared-nav-v148'
 
 # Requested order: Methodology before Core in both languages.
