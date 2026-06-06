@@ -1,21 +1,22 @@
 (function () {
   'use strict';
 
-  const STYLE_ID = 'bpi-he-header-match-en-runtime-v1';
+  const STYLE_ID = 'bpi-he-header-match-en-runtime-v2';
 
   function installHebrewHeaderParity() {
-    const oldStyle = document.getElementById(STYLE_ID);
-    if (oldStyle) oldStyle.remove();
+    document.getElementById(STYLE_ID)?.remove();
 
     const style = document.createElement('style');
     style.id = STYLE_ID;
     style.textContent = `
-/* English is the approved reference. Hebrew uses the exact same geometry,
-   spacing and vertical alignment, mirrored only by RTL direction. */
+/* Keep the approved English header as the physical layout reference.
+   Hebrew changes only the reading order inside the navigation. */
 @media (min-width:861px){
   html[lang="he"] body.public-page-he header.site-header,
   html[lang="he"] body.public-page-he .site-header{
-    direction:rtl!important;
+    direction:ltr!important;
+    width:100%!important;
+    max-width:100%!important;
     height:86px!important;
     min-height:86px!important;
     max-height:86px!important;
@@ -74,6 +75,7 @@
 
   html[lang="he"] body.public-page-he header.site-header nav.site-nav,
   html[lang="he"] body.public-page-he .site-header nav.site-nav{
+    direction:rtl!important;
     grid-column:2!important;
     justify-self:center!important;
     align-self:center!important;
@@ -81,7 +83,7 @@
     min-width:0!important;
     max-width:1040px!important;
     min-height:44px!important;
-    margin-inline:auto!important;
+    margin:0 auto!important;
     padding:0!important;
     display:flex!important;
     flex-direction:row!important;
@@ -125,6 +127,7 @@
 
   html[lang="he"] body.public-page-he header.site-header .language-switch,
   html[lang="he"] body.public-page-he .site-header .language-switch{
+    direction:ltr!important;
     grid-column:3!important;
     justify-self:end!important;
     align-self:center!important;
@@ -167,7 +170,7 @@
 @media (max-width:860px){
   html[lang="he"] body.public-page-he header.site-header,
   html[lang="he"] body.public-page-he .site-header{
-    direction:rtl!important;
+    direction:ltr!important;
     position:relative!important;
     inset:auto!important;
     width:100%!important;
@@ -195,7 +198,7 @@
     order:1!important;
     align-self:center!important;
     justify-self:center!important;
-    width:100%!important;
+    width:auto!important;
     min-width:0!important;
     max-width:100%!important;
     height:auto!important;
@@ -203,16 +206,16 @@
     padding:0!important;
     direction:ltr!important;
     text-align:center!important;
-    overflow:hidden!important;
+    overflow:visible!important;
     transform:none!important;
   }
 
   html[lang="he"] body.public-page-he header.site-header .site-brand>a,
   html[lang="he"] body.public-page-he .site-header .site-brand>a{
     display:block!important;
-    width:100%!important;
+    width:auto!important;
     max-width:calc(100vw - 32px)!important;
-    margin:0 auto!important;
+    margin:0!important;
     padding:0!important;
     direction:ltr!important;
     unicode-bidi:isolate!important;
@@ -227,8 +230,9 @@
 
   html[lang="he"] body.public-page-he header.site-header nav.site-nav,
   html[lang="he"] body.public-page-he .site-header nav.site-nav{
+    direction:rtl!important;
     order:2!important;
-    align-self:stretch!important;
+    align-self:center!important;
     justify-self:center!important;
     width:100%!important;
     min-width:0!important;
@@ -277,6 +281,7 @@
 
   html[lang="he"] body.public-page-he header.site-header .language-switch,
   html[lang="he"] body.public-page-he .site-header .language-switch{
+    direction:ltr!important;
     order:3!important;
     align-self:center!important;
     justify-self:center!important;
@@ -320,10 +325,10 @@
 
   function init() {
     installHebrewHeaderParity();
-    window.requestAnimationFrame(installHebrewHeaderParity);
-    window.setTimeout(installHebrewHeaderParity, 120);
-    window.setTimeout(installHebrewHeaderParity, 500);
-    window.setTimeout(installHebrewHeaderParity, 1200);
+    requestAnimationFrame(installHebrewHeaderParity);
+    setTimeout(installHebrewHeaderParity, 120);
+    setTimeout(installHebrewHeaderParity, 500);
+    setTimeout(installHebrewHeaderParity, 1200);
   }
 
   if (document.readyState === 'loading') {
