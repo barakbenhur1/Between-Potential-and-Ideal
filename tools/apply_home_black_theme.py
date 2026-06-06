@@ -6,8 +6,8 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
-THEME_VERSION = "20260606-home-black-theme-v2"
-CARDS_VERSION = "20260606-home-dark-cards-v2"
+THEME_VERSION = "20260606-home-black-theme-v5"
+CARDS_VERSION = "20260606-home-dark-cards-v5"
 THEME_ASSET = "assets/bpi-home-black-theme-v1.css"
 CARDS_ASSET = "assets/bpi-home-dark-cards-v2.css"
 THEME_RE = re.compile(
