@@ -1,9 +1,7 @@
 /* Final direct HTML document-button style.
    Loaded last in every public HTML page.
-   This file intentionally does not target header, navigation, breadcrumbs,
-   TOC links, or ordinary inline links. */
+   Scope: document-opening HTML actions only; never header/nav/breadcrumb links. */
 
-/* Match the approved homepage gold button exactly. */
 html body.public-page main#main a.primary-format,
 html body.public-page main#main a.download-button[href$=".html"],
 html body.public-page main#main a.download-button[href*=".html?"],
@@ -11,8 +9,6 @@ html body.public-page main#main a.download-button[href*=".html#"],
 html body.public-page main#main a.card-link[href$=".html"],
 html body.public-page main#main a.card-link[href*=".html?"],
 html body.public-page main#main a.card-link[href*=".html#"],
-html body.public-page main#main .download-row > a:nth-child(1),
-html body.public-page main#main .download-row > a:nth-child(3),
 html body.public-page main#main .download-row > a[href$=".html"],
 html body.public-page main#main .download-row > a[href*=".html?"],
 html body.public-page main#main .download-row > a[href*=".html#"],
@@ -37,17 +33,47 @@ html body.public-page main#main .format-actions > a[href*=".html#"],
 html body.public-page main#main .document-actions > a[href$=".html"],
 html body.public-page main#main .document-actions > a[href*=".html?"],
 html body.public-page main#main .document-actions > a[href*=".html#"] {
-  background: linear-gradient(135deg, #b98726, #e6b84a, #f5d06b) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative !important;
+  z-index: 2 !important;
+  isolation: isolate !important;
+  overflow: hidden !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+
+  /* Reset text-clipping/masking rules that previously hid the button fill. */
+  background-clip: border-box !important;
+  -webkit-background-clip: border-box !important;
+  background-origin: border-box !important;
+  -webkit-mask: none !important;
+  mask: none !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  mix-blend-mode: normal !important;
+  background-blend-mode: normal !important;
+
+  background: linear-gradient(135deg, #b98726 0%, #e6b84a 52%, #f5d06b 100%) !important;
   background-color: #e6b84a !important;
-  background-image: linear-gradient(135deg, #b98726, #e6b84a, #f5d06b) !important;
+  background-image: linear-gradient(135deg, #b98726 0%, #e6b84a 52%, #f5d06b 100%) !important;
+
+  /* Paint fallback: remains gold even if another rule clears background. */
+  box-shadow:
+    inset 0 0 0 1000px rgba(230, 184, 74, .96),
+    inset 0 1px 0 rgba(255, 255, 255, .44),
+    0 8px 18px rgba(184, 135, 38, .22) !important;
+
   color: #07101d !important;
   -webkit-text-fill-color: #07101d !important;
-  border: 1.5px solid transparent !important;
-  box-shadow: 0 8px 18px rgba(184, 135, 38, .18) !important;
+  border: 1.5px solid #d6a62a !important;
+  border-radius: 999px !important;
   text-decoration: none !important;
   text-shadow: none !important;
   opacity: 1 !important;
   filter: none !important;
+  visibility: visible !important;
+  forced-color-adjust: none !important;
 }
 
 html body.public-page main#main a.primary-format::before,
@@ -56,10 +82,6 @@ html body.public-page main#main a.download-button[href*=".html"]::before,
 html body.public-page main#main a.download-button[href*=".html"]::after,
 html body.public-page main#main a.card-link[href*=".html"]::before,
 html body.public-page main#main a.card-link[href*=".html"]::after,
-html body.public-page main#main .download-row > a:nth-child(1)::before,
-html body.public-page main#main .download-row > a:nth-child(1)::after,
-html body.public-page main#main .download-row > a:nth-child(3)::before,
-html body.public-page main#main .download-row > a:nth-child(3)::after,
 html body.public-page main#main .download-row > a[href*=".html"]::before,
 html body.public-page main#main .download-row > a[href*=".html"]::after,
 html body.public-page main#main .download-strip > a[href*=".html"]::before,
@@ -82,37 +104,43 @@ html body.public-page main#main .reading-path-actions > a[href*=".html"]::after 
 html body.public-page main#main a.primary-format *,
 html body.public-page main#main a.download-button[href*=".html"] *,
 html body.public-page main#main a.card-link[href*=".html"] *,
-html body.public-page main#main .download-row > a:nth-child(1) *,
-html body.public-page main#main .download-row > a:nth-child(3) *,
 html body.public-page main#main .download-row > a[href*=".html"] *,
 html body.public-page main#main .download-strip > a[href*=".html"] *,
 html body.public-page main#main .download-grid > a[href*=".html"] *,
 html body.public-page main#main .appendix-actions > a[href*=".html"] *,
 html body.public-page main#main .reading-path-actions > a[href*=".html"] * {
+  position: relative !important;
+  z-index: 1 !important;
   background: transparent !important;
   background-image: none !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: border-box !important;
   color: inherit !important;
   -webkit-text-fill-color: inherit !important;
   text-shadow: none !important;
+  mix-blend-mode: normal !important;
 }
 
 html body.public-page main#main a.primary-format:hover,
 html body.public-page main#main a.download-button[href*=".html"]:hover,
 html body.public-page main#main a.card-link[href*=".html"]:hover,
-html body.public-page main#main .download-row > a:nth-child(1):hover,
-html body.public-page main#main .download-row > a:nth-child(3):hover,
 html body.public-page main#main .download-row > a[href*=".html"]:hover,
 html body.public-page main#main .download-strip > a[href*=".html"]:hover,
 html body.public-page main#main .download-grid > a[href*=".html"]:hover,
 html body.public-page main#main .appendix-actions > a[href*=".html"]:hover,
 html body.public-page main#main .reading-path-actions > a[href*=".html"]:hover {
-  background: linear-gradient(135deg, #c8942d, #edc45d, #f8d980) !important;
+  background: linear-gradient(135deg, #c8942d 0%, #edc45d 52%, #f8d980 100%) !important;
   background-color: #edc45d !important;
-  background-image: linear-gradient(135deg, #c8942d, #edc45d, #f8d980) !important;
+  background-image: linear-gradient(135deg, #c8942d 0%, #edc45d 52%, #f8d980 100%) !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: border-box !important;
   color: #07101d !important;
   -webkit-text-fill-color: #07101d !important;
-  border-color: transparent !important;
-  box-shadow: 0 12px 26px rgba(184, 135, 38, .26) !important;
+  border-color: #c9971d !important;
+  box-shadow:
+    inset 0 0 0 1000px rgba(237, 196, 93, .96),
+    inset 0 1px 0 rgba(255, 255, 255, .52),
+    0 12px 26px rgba(184, 135, 38, .30) !important;
 }
 
 /* AI page: keep all four format buttons centered and inside each card. */
