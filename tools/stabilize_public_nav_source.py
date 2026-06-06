@@ -8,9 +8,11 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / 'site'
 HEADER_RE = re.compile(r'<header class="site-header".*?</header>', re.S)
 FINAL_CSS_RE = re.compile(r'<link\b[^>]*\bid="bpi-final-requested-fixes"[^>]*>\s*', re.I)
+PARITY_CSS_RE = re.compile(r'<link\b[^>]*\bid="bpi-header-parity-home-divider"[^>]*>\s*', re.I)
 FINAL_JS_RE = re.compile(r'<script\b[^>]*\bid="bpi-final-requested-fixes-runtime"[^>]*>\s*</script>\s*', re.I)
 
 FINAL_VERSION = '20260606-mobile-home-parity-runtime-v5'
+PARITY_VERSION = '20260606-header-parity-divider-v1'
 SHARED_NAV_VERSION = '20260606-shared-nav-v149'
 
 # Requested order: Methodology before Core in both languages.
@@ -110,18 +112,24 @@ def install_final_assets(text: str, home: bool) -> str:
         f'href="{prefix}assets/bpi-final-requested-fixes-v2.css?v={FINAL_VERSION}" '
         f'rel="stylesheet"/>'
     )
+    parity_css = (
+        f'<link id="bpi-header-parity-home-divider" '
+        f'href="{prefix}assets/bpi-header-parity-and-home-divider-v1.css?v={PARITY_VERSION}" '
+        f'rel="stylesheet"/>'
+    )
     js = (
         f'<script defer id="bpi-final-requested-fixes-runtime" '
         f'src="{prefix}assets/bpi-final-requested-fixes-v2.js?v={FINAL_VERSION}"></script>'
     )
 
     text = FINAL_CSS_RE.sub('', text)
+    text = PARITY_CSS_RE.sub('', text)
     text = FINAL_JS_RE.sub('', text)
 
     if '</head>' not in text or '</body>' not in text:
         raise RuntimeError('missing head/body closing tag')
 
-    text = text.replace('</head>', css + '</head>', 1)
+    text = text.replace('</head>', css + parity_css + '</head>', 1)
     text = text.replace('</body>', js + '</body>', 1)
     return text
 
@@ -178,6 +186,8 @@ def verify(path: Path, he: bool, home: bool = False):
 
     if text.count('id="bpi-final-requested-fixes"') != 1:
         raise RuntimeError(f'bad final stylesheet count: {path}')
+    if text.count('id="bpi-header-parity-home-divider"') != 1:
+        raise RuntimeError(f'bad parity stylesheet count: {path}')
     if text.count('id="bpi-final-requested-fixes-runtime"') != 1:
         raise RuntimeError(f'bad final runtime count: {path}')
 
@@ -186,7 +196,7 @@ def main():
     changed = []
     targets = [(SITE / 'index.html', True, True), (SITE / 'en.html', False, True)]
     targets += [(p, True, False) for p in sorted((SITE / 'pages' / 'he').glob('*.html'))]
-    targets += [(p, False,False) for p in sorted((SITE / 'pages' / 'en').glob('*.html'))]
+    targets += [(p, False, False) for p in sorted((SITE / 'pages' / 'en').glob('*.html'))]
 
     for path, he, home in targets:
         if path.exists() and '<header class="site-header"' in path.read_text(encoding='utf-8'):
