@@ -15,7 +15,7 @@ MOBILE_CSS_RE = re.compile(
     r'<link\b[^>]*\bid="bpi-he-mobile-header-only"[^>]*>\s*',
     re.I,
 )
-VERSION = "20260606-he-mobile-language-corner-v6"
+VERSION = "20260606-he-mobile-match-english-v7"
 ASSET = "bpi-he-mobile-header-only-v2.css"
 
 
