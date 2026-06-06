@@ -11,10 +11,12 @@ FINAL_CSS_RE = re.compile(r'<link\b[^>]*\bid="bpi-final-requested-fixes"[^>]*>\s
 PARITY_CSS_RE = re.compile(r'<link\b[^>]*\bid="bpi-header-parity-home-divider"[^>]*>\s*', re.I)
 NO_SCROLL_CSS_RE = re.compile(r'<link\b[^>]*\bid="bpi-mobile-tabbar-no-scroll"[^>]*>\s*', re.I)
 FINAL_JS_RE = re.compile(r'<script\b[^>]*\bid="bpi-final-requested-fixes-runtime"[^>]*>\s*</script>\s*', re.I)
+HE_HEADER_JS_RE = re.compile(r'<script\b[^>]*\bid="bpi-he-header-match-en-runtime"[^>]*>\s*</script>\s*', re.I)
 
 FINAL_VERSION = '20260606-mobile-no-scroll-runtime-v6'
 PARITY_VERSION = '20260606-header-parity-divider-v2'
 NO_SCROLL_VERSION = '20260606-mobile-tabbar-no-scroll-v1'
+HE_HEADER_VERSION = '20260606-he-header-match-en-v1'
 SHARED_NAV_VERSION = '20260606-shared-nav-v149'
 
 # Requested order: Methodology before Core in both languages.
@@ -128,17 +130,22 @@ def install_final_assets(text: str, home: bool) -> str:
         f'<script defer id="bpi-final-requested-fixes-runtime" '
         f'src="{prefix}assets/bpi-final-requested-fixes-v2.js?v={FINAL_VERSION}"></script>'
     )
+    he_header_js = (
+        f'<script defer id="bpi-he-header-match-en-runtime" '
+        f'src="{prefix}assets/bpi-he-header-match-en-v1.js?v={HE_HEADER_VERSION}"></script>'
+    )
 
     text = FINAL_CSS_RE.sub('', text)
     text = PARITY_CSS_RE.sub('', text)
     text = NO_SCROLL_CSS_RE.sub('', text)
     text = FINAL_JS_RE.sub('', text)
+    text = HE_HEADER_JS_RE.sub('', text)
 
     if '</head>' not in text or '</body>' not in text:
         raise RuntimeError('missing head/body closing tag')
 
     text = text.replace('</head>', css + parity_css + no_scroll_css + '</head>', 1)
-    text = text.replace('</body>', js + '</body>', 1)
+    text = text.replace('</body>', js + he_header_js + '</body>', 1)
     return text
 
 
@@ -200,6 +207,8 @@ def verify(path: Path, he: bool, home: bool = False):
         raise RuntimeError(f'bad no-scroll stylesheet count: {path}')
     if text.count('id="bpi-final-requested-fixes-runtime"') != 1:
         raise RuntimeError(f'bad final runtime count: {path}')
+    if text.count('id="bpi-he-header-match-en-runtime"') != 1:
+        raise RuntimeError(f'bad Hebrew header parity runtime count: {path}')
 
 
 def main():
