@@ -26,9 +26,14 @@ HE_TO_EN = {'index':'en.html','summary':'summary-en.html','glossary':'glossary-e
 EN_TO_HE = {v[:-5] if v.endswith('.html') else v: k + '.html' for k, v in HE_TO_EN.items()}
 EN_TO_HE['en'] = 'index.html'
 
+JS_VERSION = 'bpi-files-feedback-fixes.js?v=20260606-he-nav-spacing-gold-html-v146'
+CSS_VERSION = 'styles.css?v=20260606-he-nav-spacing-gold-html-v146'
+
+
 def active(path: Path, he: bool, home: bool) -> str:
     if home: return 'index' if he else 'en'
     return path.stem
+
 
 def nav_href(href: str, he: bool, home: bool) -> str:
     if home:
@@ -37,12 +42,14 @@ def nav_href(href: str, he: bool, home: bool) -> str:
     if he: return '../../index.html' if href == 'index.html' else href
     return '../../en.html' if href == 'en.html' else href
 
+
 def lang_href(path: Path, he: bool, home: bool) -> str:
     key = active(path, he, home)
     if home: return 'en.html' if he else 'index.html'
     if he: return '../en/' + HE_TO_EN.get(key, key + '-en.html')
     base = key[:-3] if key.endswith('-en') else key
     return '../he/' + EN_TO_HE.get(key, base + '.html')
+
 
 def build_nav(items, key, he, home):
     out=[]
@@ -52,6 +59,7 @@ def build_nav(items, key, he, home):
         out.append(f'<a{attrs} href="{nav_href(href, he, home)}">{label}</a>')
     return ''.join(out)
 
+
 def build_header(path: Path, he: bool, home: bool) -> str:
     key = active(path, he, home)
     if he:
@@ -60,16 +68,19 @@ def build_header(path: Path, he: bool, home: bool) -> str:
     brand = 'en.html' if home else '../../en.html'
     return f'<header class="site-header" dir="ltr" role="banner"><div class="site-brand"><a href="{brand}">Between Potential and Ideal</a></div><nav aria-label="Primary navigation" class="site-nav" role="navigation">{build_nav(EN,key,False,home)}</nav><a aria-label="מעבר לגרסה העברית" class="language-switch" href="{lang_href(path,False,home)}" title="גרסה עברית">עברית</a></header>'
 
+
 def fix(path: Path, he: bool, home: bool=False) -> bool:
     text = path.read_text(encoding='utf-8')
     old = text
     text, n = HEADER_RE.subn(build_header(path, he, home), text, count=1)
     if n != 1: raise RuntimeError(f'header count failed: {path}')
-    text = re.sub(r'bpi-files-feedback-fixes\.js\?v=[^"\']+', 'bpi-files-feedback-fixes.js?v=20260603-shared-nav-v131', text)
+    text = re.sub(r'bpi-files-feedback-fixes\.js\?v=[^"\']+', JS_VERSION, text)
+    text = re.sub(r'styles\.css\?v=[^"\']+', CSS_VERSION, text)
     if text != old:
         path.write_text(text, encoding='utf-8')
         return True
     return False
+
 
 def verify(path: Path, he: bool, home: bool=False):
     text = path.read_text(encoding='utf-8')
@@ -85,6 +96,7 @@ def verify(path: Path, he: bool, home: bool=False):
     if header.count('aria-current="page"') != expected_active:
         raise RuntimeError(f'bad active count {path}')
 
+
 def main():
     changed=[]
     targets=[(SITE/'index.html',True,True),(SITE/'en.html',False,True)]
@@ -95,4 +107,7 @@ def main():
             if fix(p,he,home): changed.append(str(p.relative_to(ROOT)))
             verify(p,he,home)
     print('\n'.join(changed) if changed else 'No changes')
-if __name__ == '__main__': main()
+
+
+if __name__ == '__main__':
+    main()
