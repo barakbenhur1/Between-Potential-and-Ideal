@@ -2,12 +2,14 @@
   "status": "missing_render_secret",
   "method": "none",
   "http_code": "",
-  "target_commit": "5e86600ad7246e5fa62116a6abe6b43813ac8ffb",
-  "target_short_commit": "5e86600",
+  "target_commit": "9323e8e95dbe92cd26dd16448d178dd40ac43613",
+  "target_short_commit": "9323e8e",
   "service_id": "srv-d821i5ugvqtc73d98dtg",
-  "recorded_at_utc": "2026-06-06T17:07:10+00:00",
+  "recorded_at_utc": "2026-06-06T17:17:34+00:00",
   "response": "No repository or environment secret named RENDER_DEPLOY_HOOK_URL, RENDER_DEPLOY_HOOK, RENDER_API_KEY, or RENDER_API_TOKEN is available to this workflow.",
   "live_has_black_theme": true,
   "live_has_current_navigation": true,
+  "live_theme_imports_dark_cards": true,
+  "live_dark_cards_css_available": true,
   "live_build_info_response": "{\n  \"project\": \"Between Potential and Ideal\",\n  \"branch\": \"main\",\n  \"commit\": \"7d8c1351ded625e7452e974293c955374a88c964\",\n  \"short_commit\": \"7d8c135\",\n  \"generated_at_utc\": \"2026-06-06T07:23:27+00:00\",\n  \"source\": \"deploy trigger after verified Hebrew mobile grid parity v5\",\n  \"build_info_mode\": \"generated-from-current-git-head\",\n  \"deployment_verification_note\": \"Hebrew mobile uses the same two-row grid geometry and 12px side spacing as the approved English reference. Navigation remains RTL, wraps, and has no horizontal scrolling. English and desktop selectors are unchanged.\"\n}"
 }
