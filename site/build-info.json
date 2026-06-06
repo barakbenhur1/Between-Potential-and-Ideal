@@ -1,10 +1,10 @@
 {
   "project": "Between Potential and Ideal",
   "branch": "main",
-  "commit": "6cab4b2aed9cca3759f7b80aa22fccbaaaa08166",
-  "short_commit": "6cab4b2",
-  "generated_at_utc": "2026-06-06T07:03:10+00:00",
-  "source": "manual Render deploy trigger after Hebrew mobile-only header CSS v4",
+  "commit": "7d8c1351ded625e7452e974293c955374a88c964",
+  "short_commit": "7d8c135",
+  "generated_at_utc": "2026-06-06T07:23:27+00:00",
+  "source": "deploy trigger after verified Hebrew mobile grid parity v5",
   "build_info_mode": "generated-from-current-git-head",
-  "deployment_verification_note": "Hebrew mobile-only CSS is linked only from Hebrew HTML pages. English pages do not load the asset. Render should deploy the latest main checkout and regenerate this file when build commands are enabled."
+  "deployment_verification_note": "Hebrew mobile uses the same two-row grid geometry and 12px side spacing as the approved English reference. Navigation remains RTL, wraps, and has no horizontal scrolling. English and desktop selectors are unchanged."
 }
