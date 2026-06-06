@@ -13,6 +13,7 @@ on:
       - site/assets/bpi-final-requested-fixes-v2.js
       - site/assets/bpi-header-parity-and-home-divider-v1.css
       - site/assets/bpi-mobile-tabbar-no-scroll-v1.css
+      - site/assets/bpi-he-header-match-en-v1.js
       - .github/workflows/stabilize-public-nav-source.yml
 
 permissions:
@@ -35,7 +36,7 @@ jobs:
       - name: Commit generated HTML
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Apply non-scrolling mobile tab bar to every public page
+          commit_message: Match Hebrew header geometry to English on every public page
           file_pattern: site/index.html site/en.html site/pages/he/*.html site/pages/en/*.html
 
-# trigger: mobile-tabbar-hard-no-scroll-v1
+# trigger: hebrew-header-match-english-v1
