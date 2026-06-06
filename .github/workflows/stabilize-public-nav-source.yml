@@ -41,7 +41,7 @@ jobs:
       - name: Commit generated HTML
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Match Hebrew mobile header grid to English reference
+          commit_message: Pin Hebrew mobile language switch to upper corner
           file_pattern: site/index.html site/en.html site/pages/he/*.html site/pages/en/*.html
 
-# trigger: hebrew-mobile-grid-parity-v5
+# trigger: hebrew-mobile-language-corner-v6
