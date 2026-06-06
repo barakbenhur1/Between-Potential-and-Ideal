@@ -8,6 +8,8 @@ on:
     paths:
       - tools/stabilize_public_nav_source.py
       - tools/apply_he_mobile_header_asset.py
+      - tools/apply_home_black_theme.py
+      - site/styles.css
       - site/assets/bpi-final-requested-fixes-v1.css
       - site/assets/bpi-final-requested-fixes-v1.js
       - site/assets/bpi-final-requested-fixes-v2.css
@@ -17,6 +19,7 @@ on:
       - site/assets/bpi-he-header-match-en-v1.js
       - site/assets/bpi-he-mobile-header-only-v1.css
       - site/assets/bpi-he-mobile-header-only-v2.css
+      - site/assets/bpi-home-black-theme-v1.css
       - .github/workflows/stabilize-public-nav-source.yml
 
 permissions:
@@ -34,14 +37,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Normalize nav and install final public-page fixes
+      - name: Update generated public pages
         run: |
           python3 tools/stabilize_public_nav_source.py
           python3 tools/apply_he_mobile_header_asset.py
+          python3 tools/apply_home_black_theme.py
       - name: Commit generated HTML
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Mirror English mobile header and tab bar in Hebrew
+          commit_message: Apply black theme to Hebrew and English home pages
           file_pattern: site/index.html site/en.html site/pages/he/*.html site/pages/en/*.html
 
-# trigger: hebrew-mobile-match-english-v7
+# trigger: complete-home-black-theme-v1
