@@ -1,0 +1,33 @@
+name: Install HTML gold button stylesheet
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - tools/install_html_gold_button_stylesheet.py
+      - .github/workflows/install-html-gold-button-stylesheet.yml
+
+permissions:
+  contents: write
+
+jobs:
+  install:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Add final stylesheet link to public HTML pages
+        run: python3 tools/install_html_gold_button_stylesheet.py
+      - name: Commit updated HTML pages
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Load final HTML gold button stylesheet last
+          file_pattern: site/**/*.html
