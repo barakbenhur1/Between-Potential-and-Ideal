@@ -116,10 +116,10 @@ html body.public-page-en.appendix-document-page .site-header {
     max-width: 104px !important;
   }
 
-  /* Keep the horizontal correction and reduce only the vertical correction:
-     10px right and 2px up. */
+  /* Preserve the approved horizontal correction, but remove the extra upward
+     offset so inner-page navigation sits on the same vertical baseline as home. */
   html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) .site-header {
-    transform: translate(10px, -2px) !important;
+    transform: translate(10px, 0) !important;
   }
 
   /* Active-state visuals must never move a tab vertically.
