@@ -1,10 +1,10 @@
 {
   "project": "Between Potential and Ideal",
   "branch": "main",
-  "commit": "15a0fbd9f1b34b84f9132d7d9aefa975e47a89ed",
-  "short_commit": "15a0fbd",
-  "generated_at_utc": "2026-06-01T00:00:00+00:00",
-  "source": "tools/update_build_info.py",
+  "commit": "cfd942eb4dfbffdceb42fddaf1dcd22c2c467253",
+  "short_commit": "cfd942e",
+  "generated_at_utc": "2026-06-06T04:48:50+00:00",
+  "source": "manual source-head record after final public-page fixes",
   "build_info_mode": "generated-from-current-git-head",
   "deployment_verification_note": "This committed file records the source/head commit used when it was generated. A static committed JSON file cannot contain the SHA of the commit that contains itself, because the SHA is calculated from the tree including this file. The live Render build should regenerate this file during build. If a live deployment appears stale, verify Render logs, page source, hard refresh, incognito, and cache before declaring a deployment blocker."
 }
