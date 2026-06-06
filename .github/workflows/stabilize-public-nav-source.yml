@@ -43,20 +43,10 @@ jobs:
           python3 tools/stabilize_public_nav_source.py
           python3 tools/apply_he_mobile_header_asset.py
           python3 tools/apply_home_black_theme.py
-          python3 - <<'PY'
-          from pathlib import Path
-          for path in (Path('site/index.html'), Path('site/en.html')):
-              text = path.read_text(encoding='utf-8')
-              for old in ('20260606-home-black-theme-v2', '20260606-home-black-theme-v3'):
-                  text = text.replace(old, '20260606-home-black-theme-v4')
-              for old in ('20260606-home-dark-cards-v2', '20260606-home-dark-cards-v3'):
-                  text = text.replace(old, '20260606-home-dark-cards-v4')
-              path.write_text(text, encoding='utf-8')
-          PY
       - name: Commit generated HTML
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Add color hierarchy to homepage blurb typography
+          commit_message: Apply approved color hierarchy to homepage blurb text
           file_pattern: site/index.html site/en.html site/pages/he/*.html site/pages/en/*.html
 
-# trigger: enriched-home-blurb-typography-v4
+# trigger: approved-home-blurb-typography-v5
