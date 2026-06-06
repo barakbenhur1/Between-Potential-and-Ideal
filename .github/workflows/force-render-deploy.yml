@@ -68,15 +68,16 @@ jobs:
 
           LIVE_HTML="$(curl --silent --show-error --location --max-time 30 "${LIVE_URL}/" 2>&1 || true)"
           LIVE_BUILD="$(curl --silent --show-error --location --max-time 30 "${LIVE_URL}/build-info.json" 2>&1 || true)"
-          LIVE_THEME="$(curl --silent --show-error --location --max-time 30 "${LIVE_URL}/assets/bpi-home-black-theme-v1.css?v=20260606-home-black-theme-v1" 2>&1 || true)"
-          LIVE_CARDS="$(curl --silent --show-error --location --max-time 30 "${LIVE_URL}/assets/bpi-home-dark-cards-v2.css?v=20260606-home-dark-cards-v2" 2>&1 || true)"
+          LIVE_THEME="$(curl --silent --show-error --location --max-time 30 "${LIVE_URL}/assets/bpi-home-black-theme-v1.css?v=20260606-home-black-theme-v5" 2>&1 || true)"
+          LIVE_CARDS="$(curl --silent --show-error --location --max-time 30 "${LIVE_URL}/assets/bpi-home-dark-cards-v2.css?v=20260606-home-dark-cards-v5" 2>&1 || true)"
 
-          if printf '%s' "$LIVE_HTML" | grep -q 'bpi-home-black-theme'; then LIVE_HAS_BLACK_THEME=true; else LIVE_HAS_BLACK_THEME=false; fi
+          if printf '%s' "$LIVE_HTML" | grep -q 'home-dark-cards-v5'; then LIVE_HTML_REFERENCES_V5=true; else LIVE_HTML_REFERENCES_V5=false; fi
           if printf '%s' "$LIVE_HTML" | grep -q 'בינה מלאכותית כעדות'; then LIVE_HAS_CURRENT_NAV=true; else LIVE_HAS_CURRENT_NAV=false; fi
           if printf '%s' "$LIVE_THEME" | grep -q 'bpi-home-dark-cards-v2.css'; then LIVE_THEME_IMPORTS_DARK_CARDS=true; else LIVE_THEME_IMPORTS_DARK_CARDS=false; fi
-          if printf '%s' "$LIVE_CARDS" | grep -q 'design-prompt-theme.bpi-home-page'; then LIVE_DARK_CARDS_CSS_AVAILABLE=true; else LIVE_DARK_CARDS_CSS_AVAILABLE=false; fi
+          if printf '%s' "$LIVE_CARDS" | grep -q 'color:#63d4cf'; then LIVE_CARDS_HAS_TYPOGRAPHY_V5=true; else LIVE_CARDS_HAS_TYPOGRAPHY_V5=false; fi
+          if printf '%s' "$LIVE_CARDS" | grep -q 'p:nth-of-type(8)'; then LIVE_CARDS_HAS_POSITIONAL_RULES=true; else LIVE_CARDS_HAS_POSITIONAL_RULES=false; fi
 
-          export STATUS RESPONSE HTTP_CODE METHOD TARGET_SHA TARGET_SHORT LIVE_BUILD LIVE_HAS_BLACK_THEME LIVE_HAS_CURRENT_NAV LIVE_THEME_IMPORTS_DARK_CARDS LIVE_DARK_CARDS_CSS_AVAILABLE
+          export STATUS RESPONSE HTTP_CODE METHOD TARGET_SHA TARGET_SHORT LIVE_BUILD LIVE_HTML_REFERENCES_V5 LIVE_HAS_CURRENT_NAV LIVE_THEME_IMPORTS_DARK_CARDS LIVE_CARDS_HAS_TYPOGRAPHY_V5 LIVE_CARDS_HAS_POSITIONAL_RULES
           python3 - <<'PY'
           import json, os
           from datetime import datetime, timezone
@@ -91,10 +92,11 @@ jobs:
             'service_id':'srv-d821i5ugvqtc73d98dtg',
             'recorded_at_utc':datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
             'response':os.environ.get('RESPONSE','')[:8000],
-            'live_has_black_theme':b('LIVE_HAS_BLACK_THEME'),
+            'live_html_references_v5':b('LIVE_HTML_REFERENCES_V5'),
             'live_has_current_navigation':b('LIVE_HAS_CURRENT_NAV'),
             'live_theme_imports_dark_cards':b('LIVE_THEME_IMPORTS_DARK_CARDS'),
-            'live_dark_cards_css_available':b('LIVE_DARK_CARDS_CSS_AVAILABLE'),
+            'live_cards_has_typography_v5':b('LIVE_CARDS_HAS_TYPOGRAPHY_V5'),
+            'live_cards_has_positional_rules':b('LIVE_CARDS_HAS_POSITIONAL_RULES'),
             'live_build_info_response':os.environ.get('LIVE_BUILD','')[:8000],
           }
           Path('site/render-deploy-status.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -108,7 +110,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site/render-deploy-status.json
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Record homepage dark-theme deployment verification"
+          git commit -m "Record live homepage typography v5 verification"
           git push origin HEAD:main
 
-# diagnostic-trigger: 2026-06-06-v3
+# diagnostic-trigger: 2026-06-06-v5
