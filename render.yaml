@@ -3,6 +3,7 @@ services:
     name: between-potential-and-ideal
     runtime: static
     branch: main
+    rootDir: .
     buildCommand: python3 tools/update_build_info.py
     staticPublishPath: ./site
     autoDeployTrigger: commit
