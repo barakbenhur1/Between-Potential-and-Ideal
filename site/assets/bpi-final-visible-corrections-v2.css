@@ -4,7 +4,7 @@
 
 @media (min-width: 861px) {
   html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) header.site-header {
-    transform: translate(9px, 0) !important;
+    transform: translate(9.5px, 0) !important;
   }
 }
 
