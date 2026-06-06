@@ -10,8 +10,8 @@ HEADER_RE = re.compile(r'<header class="site-header".*?</header>', re.S)
 FINAL_CSS_RE = re.compile(r'<link\b[^>]*\bid="bpi-final-requested-fixes"[^>]*>\s*', re.I)
 FINAL_JS_RE = re.compile(r'<script\b[^>]*\bid="bpi-final-requested-fixes-runtime"[^>]*>\s*</script>\s*', re.I)
 
-FINAL_VERSION = '20260606-mobile-nav-gold-buttons-nav-order-v1'
-SHARED_NAV_VERSION = '20260606-shared-nav-v146'
+FINAL_VERSION = '20260606-mobile-disclosure-nav-v2'
+SHARED_NAV_VERSION = '20260606-shared-nav-v147'
 
 # Requested order: Methodology before Core in both languages.
 HE = [
@@ -75,6 +75,17 @@ def build_nav(items, key, he, home):
     return ''.join(out)
 
 
+def mobile_toggle(he: bool) -> str:
+    label = 'פתיחת תפריט הניווט' if he else 'Open navigation menu'
+    visible = 'תפריט' if he else 'Menu'
+    return (
+        f'<button aria-controls="primary-navigation" aria-expanded="false" '
+        f'aria-label="{label}" class="bpi-mobile-nav-toggle" type="button">'
+        f'<span aria-hidden="true" class="bpi-mobile-nav-toggle-icon"><span></span></span>'
+        f'<span class="bpi-mobile-nav-toggle-label">{visible}</span></button>'
+    )
+
+
 def build_header(path: Path, he: bool, home: bool) -> str:
     key = active(path, he, home)
     if he:
@@ -82,7 +93,8 @@ def build_header(path: Path, he: bool, home: bool) -> str:
         return (
             f'<header class="site-header" dir="rtl" role="banner">'
             f'<div class="site-brand"><a href="{brand}">Between Potential and Ideal</a></div>'
-            f'<nav aria-label="Primary navigation" class="site-nav" role="navigation">'
+            f'{mobile_toggle(True)}'
+            f'<nav aria-label="Primary navigation" class="site-nav" id="primary-navigation" role="navigation">'
             f'{build_nav(HE, key, True, home)}</nav>'
             f'<a aria-label="Switch to the English version" class="language-switch" '
             f'href="{lang_href(path, True, home)}" title="English version">English</a></header>'
@@ -92,7 +104,8 @@ def build_header(path: Path, he: bool, home: bool) -> str:
     return (
         f'<header class="site-header" dir="ltr" role="banner">'
         f'<div class="site-brand"><a href="{brand}">Between Potential and Ideal</a></div>'
-        f'<nav aria-label="Primary navigation" class="site-nav" role="navigation">'
+        f'{mobile_toggle(False)}'
+        f'<nav aria-label="Primary navigation" class="site-nav" id="primary-navigation" role="navigation">'
         f'{build_nav(EN, key, False, home)}</nav>'
         f'<a aria-label="מעבר לגרסה העברית" class="language-switch" '
         f'href="{lang_href(path, False, home)}" title="גרסה עברית">עברית</a></header>'
@@ -172,6 +185,13 @@ def verify(path: Path, he: bool, home: bool = False):
     expected_active = 1 if key in valid_keys else 0
     if header.count('aria-current="page"') != expected_active:
         raise RuntimeError(f'bad active count {path}')
+
+    if header.count('class="bpi-mobile-nav-toggle"') != 1:
+        raise RuntimeError(f'bad mobile nav toggle count: {path}')
+    if header.count('id="primary-navigation"') != 1:
+        raise RuntimeError(f'bad primary navigation id count: {path}')
+    if 'aria-controls="primary-navigation"' not in header:
+        raise RuntimeError(f'missing mobile toggle aria-controls: {path}')
 
     if text.count('id="bpi-final-requested-fixes"') != 1:
         raise RuntimeError(f'bad final stylesheet count: {path}')
