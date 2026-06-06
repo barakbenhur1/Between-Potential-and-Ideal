@@ -1,23 +1,24 @@
-# Between Potential and Ideal — V36
+# Between Potential and Ideal — מבנה הפרויקט הנוכחי
 
-מוצר מלא שנבנה מחדש מהגרסה התקינה האחרונה: V30 + V31 patch.
+האתר הציבורי נמצא תחת תיקיית `site/` בריפו.
 
-## מה יש כאן
+## מבנה האתר
 
-- `index.html` — דף הבית בעברית, בשורש, כדי ש־Render לא יישבר.
-- `en.html` — דף הבית באנגלית, בשורש.
-- `404.html` — דף שגיאה.
-- `pages/he/` — עמודי התוכן בעברית.
-- `pages/en/` — עמודי התוכן באנגלית.
-- `files/` — כל המסמכים והקבצים להורדה: HTML / PDF / DOCX / MD / TXT.
-- `figures/` — תמונות ואיורים.
-- `_product_docs/` — דוחות, אימותים, מניפסטים והערות טכניות.
-
-## מה לא השתנה
-
-המסמכים עצמם לא הוקטנו ולא הוחלפו כדי לפתור GitHub warning. נוסף רק `.gitattributes` ל־Git LFS עבור DOCXים גדולים.
+- `site/index.html` — דף הבית בעברית.
+- `site/en.html` — דף הבית באנגלית.
+- `site/404.html` — דף שגיאה.
+- `site/pages/he/` — עמודי התוכן בעברית.
+- `site/pages/en/` — עמודי התוכן באנגלית.
+- `site/files/` — מסמכים וקבצים להורדה.
+- `site/figures/` — תמונות ואיורים.
+- `site/assets/` — CSS, JavaScript ונכסים משותפים.
 
 ## Render
 
-אין תיקיית `site`.
-האתר פריס מהשורש שבו נמצא `index.html`.
+האתר חייב להיפרס מהענף `main` עם:
+
+- Static Publish Path: `./site`
+- Build Command: `python3 tools/update_build_info.py`
+- Auto Deploy Trigger: `commit`
+
+קובץ `render.yaml` בשורש הריפו מגדיר את ההגדרות האלה. אין לפרסם את שורש הריפו עצמו, משום שקובצי האתר הציבוריים נמצאים בתוך `site/`.
