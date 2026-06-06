@@ -15,7 +15,8 @@ MOBILE_CSS_RE = re.compile(
     r'<link\b[^>]*\bid="bpi-he-mobile-header-only"[^>]*>\s*',
     re.I,
 )
-VERSION = "20260606-he-mobile-header-only-v4"
+VERSION = "20260606-he-mobile-header-grid-parity-v5"
+ASSET = "bpi-he-mobile-header-only-v2.css"
 
 
 def is_hebrew(path: Path) -> bool:
@@ -36,7 +37,7 @@ def patch(path: Path) -> bool:
     if is_hebrew(path):
         link = (
             f'<link id="bpi-he-mobile-header-only" '
-            f'href="{asset_prefix(path)}assets/bpi-he-mobile-header-only-v1.css?v={VERSION}" '
+            f'href="{asset_prefix(path)}assets/{ASSET}?v={VERSION}" '
             f'rel="stylesheet"/>'
         )
         if "</head>" not in text:
