@@ -26,8 +26,8 @@ HE_TO_EN = {'index':'en.html','summary':'summary-en.html','glossary':'glossary-e
 EN_TO_HE = {v[:-5] if v.endswith('.html') else v: k + '.html' for k, v in HE_TO_EN.items()}
 EN_TO_HE['en'] = 'index.html'
 
-JS_VERSION = 'bpi-files-feedback-fixes.js?v=20260606-he-nav-spacing-gold-html-v146'
-CSS_VERSION = 'styles.css?v=20260606-he-nav-spacing-gold-html-v146'
+JS_VERSION = 'bpi-files-feedback-fixes.js?v=20260606-he-nav-spacing-gold-html-v147'
+CSS_VERSION = 'styles.css?v=20260606-he-nav-spacing-gold-html-v147'
 
 
 def active(path: Path, he: bool, home: bool) -> str:
