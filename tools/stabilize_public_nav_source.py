@@ -10,8 +10,8 @@ HEADER_RE = re.compile(r'<header class="site-header".*?</header>', re.S)
 FINAL_CSS_RE = re.compile(r'<link\b[^>]*\bid="bpi-final-requested-fixes"[^>]*>\s*', re.I)
 FINAL_JS_RE = re.compile(r'<script\b[^>]*\bid="bpi-final-requested-fixes-runtime"[^>]*>\s*</script>\s*', re.I)
 
-FINAL_VERSION = '20260606-mobile-disclosure-nav-v2'
-SHARED_NAV_VERSION = '20260606-shared-nav-v147'
+FINAL_VERSION = '20260606-mobile-disclosure-nav-v3'
+SHARED_NAV_VERSION = '20260606-shared-nav-v148'
 
 # Requested order: Methodology before Core in both languages.
 HE = [
@@ -120,12 +120,12 @@ def install_final_assets(text: str, home: bool) -> str:
     prefix = asset_prefix(home)
     css = (
         f'<link id="bpi-final-requested-fixes" '
-        f'href="{prefix}assets/bpi-final-requested-fixes-v1.css?v={FINAL_VERSION}" '
+        f'href="{prefix}assets/bpi-final-requested-fixes-v2.css?v={FINAL_VERSION}" '
         f'rel="stylesheet"/>'
     )
     js = (
         f'<script defer id="bpi-final-requested-fixes-runtime" '
-        f'src="{prefix}assets/bpi-final-requested-fixes-v1.js?v={FINAL_VERSION}"></script>'
+        f'src="{prefix}assets/bpi-final-requested-fixes-v2.js?v={FINAL_VERSION}"></script>'
     )
 
     text = FINAL_CSS_RE.sub('', text)
