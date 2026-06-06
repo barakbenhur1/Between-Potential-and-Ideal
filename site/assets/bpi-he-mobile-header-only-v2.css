@@ -1,7 +1,5 @@
 /* Hebrew mobile header only.
-   The English mobile header is the approved geometry reference.
-   Physical layout stays LTR so side spacing and title placement are identical;
-   only the navigation reading/order direction remains RTL. */
+   English and every desktop/tablet layout remain untouched. */
 @media (max-width: 860px) {
   html[lang="he"] body.public-page.public-page-he header.site-header,
   html[lang="he"] body.public-page.public-page-he .site-header {
@@ -13,13 +11,7 @@
     height: auto !important;
     min-height: 0 !important;
     max-height: none !important;
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) auto !important;
-    grid-template-rows: auto auto !important;
-    align-items: center !important;
-    justify-content: stretch !important;
-    column-gap: 10px !important;
-    row-gap: 10px !important;
+    display: block !important;
     margin: 0 !important;
     padding: 10px 12px 12px !important;
     box-sizing: border-box !important;
@@ -29,51 +21,17 @@
     translate: none !important;
   }
 
-  html[lang="he"] body.public-page.public-page-he header.site-header .site-brand,
-  html[lang="he"] body.public-page.public-page-he .site-header .site-brand {
-    direction: ltr !important;
-    grid-column: 1 !important;
-    grid-row: 1 !important;
-    justify-self: start !important;
-    align-self: center !important;
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    height: auto !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    text-align: start !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    transform: none !important;
-  }
-
-  html[lang="he"] body.public-page.public-page-he header.site-header .site-brand > a,
-  html[lang="he"] body.public-page.public-page-he .site-header .site-brand > a {
-    direction: ltr !important;
-    unicode-bidi: isolate !important;
-    display: block !important;
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    font-size: clamp(12px, 3.8vw, 15px) !important;
-    line-height: 1.15 !important;
-    text-align: start !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    transform: none !important;
-  }
-
+  /* Keep the English switch permanently in the upper-left corner on Hebrew pages. */
   html[lang="he"] body.public-page.public-page-he header.site-header .language-switch,
   html[lang="he"] body.public-page.public-page-he .site-header .language-switch {
     direction: ltr !important;
-    grid-column: 2 !important;
-    grid-row: 1 !important;
-    justify-self: end !important;
-    align-self: center !important;
+    position: absolute !important;
+    top: 10px !important;
+    left: 12px !important;
+    right: auto !important;
+    inset-inline-start: 12px !important;
+    inset-inline-end: auto !important;
+    z-index: 5 !important;
     width: auto !important;
     min-width: 72px !important;
     max-width: 96px !important;
@@ -92,23 +50,64 @@
     transform: none !important;
   }
 
+  /* Centre the title independently, so the language button cannot push it. */
+  html[lang="he"] body.public-page.public-page-he header.site-header .site-brand,
+  html[lang="he"] body.public-page.public-page-he .site-header .site-brand {
+    direction: ltr !important;
+    position: absolute !important;
+    top: 10px !important;
+    left: 50% !important;
+    right: auto !important;
+    z-index: 4 !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: calc(100% - 184px) !important;
+    height: 36px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    transform: translateX(-50%) !important;
+  }
+
+  html[lang="he"] body.public-page.public-page-he header.site-header .site-brand > a,
+  html[lang="he"] body.public-page.public-page-he .site-header .site-brand > a {
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    display: block !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: clamp(12px, 3.8vw, 15px) !important;
+    line-height: 1.15 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    transform: none !important;
+  }
+
+  /* Navigation always starts below the fixed top row. */
   html[lang="he"] body.public-page.public-page-he header.site-header nav.site-nav,
   html[lang="he"] body.public-page.public-page-he .site-header nav.site-nav,
   html[lang="he"] body.public-page.public-page-he header.site-header:not(.bpi-mobile-nav-ready) nav.site-nav,
   html[lang="he"] body.public-page.public-page-he header.site-header.bpi-mobile-nav-ready:not(.bpi-mobile-nav-open) nav.site-nav,
   html[lang="he"] body.public-page.public-page-he header.site-header.bpi-mobile-nav-ready.bpi-mobile-nav-open nav.site-nav {
     direction: rtl !important;
-    grid-column: 1 / -1 !important;
-    grid-row: 2 !important;
-    justify-self: stretch !important;
-    align-self: center !important;
+    position: relative !important;
     width: 100% !important;
     min-width: 0 !important;
     max-width: 100% !important;
     height: auto !important;
     min-height: 44px !important;
     max-height: none !important;
-    margin: 0 !important;
+    margin: 46px 0 0 !important;
     padding: 4px 2px 7px !important;
     box-sizing: border-box !important;
     display: flex !important;
