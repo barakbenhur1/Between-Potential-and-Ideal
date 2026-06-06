@@ -36,4 +36,4 @@ jobs:
           commit_message: Apply mobile nav, gold HTML buttons, divider, and nav order fixes
           file_pattern: site/index.html site/en.html site/pages/he/*.html site/pages/en/*.html
 
-# trigger: 2026-06-06-unified-mobile-tabbar-v4
+# trigger: shared-mobile-tabbar-v5
