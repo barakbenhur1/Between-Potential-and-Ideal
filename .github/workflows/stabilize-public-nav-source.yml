@@ -14,6 +14,7 @@ on:
       - site/assets/bpi-header-parity-and-home-divider-v1.css
       - site/assets/bpi-mobile-tabbar-no-scroll-v1.css
       - site/assets/bpi-he-header-match-en-v1.js
+      - site/assets/bpi-he-mobile-header-only-v1.css
       - .github/workflows/stabilize-public-nav-source.yml
 
 permissions:
@@ -36,7 +37,7 @@ jobs:
       - name: Commit generated HTML
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Match Hebrew header geometry to English on every public page
+          commit_message: Apply Hebrew mobile-only header alignment to every public page
           file_pattern: site/index.html site/en.html site/pages/he/*.html site/pages/en/*.html
 
-# trigger: hebrew-header-match-english-v1
+# trigger: hebrew-mobile-only-header-v3
