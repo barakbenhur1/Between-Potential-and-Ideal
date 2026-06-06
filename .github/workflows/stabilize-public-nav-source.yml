@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - tools/stabilize_public_nav_source.py
+      - tools/apply_he_mobile_header_asset.py
       - site/assets/bpi-final-requested-fixes-v1.css
       - site/assets/bpi-final-requested-fixes-v1.js
       - site/assets/bpi-final-requested-fixes-v2.css
@@ -33,11 +34,13 @@ jobs:
         with:
           python-version: '3.11'
       - name: Normalize nav and install final public-page fixes
-        run: python3 tools/stabilize_public_nav_source.py
+        run: |
+          python3 tools/stabilize_public_nav_source.py
+          python3 tools/apply_he_mobile_header_asset.py
       - name: Commit generated HTML
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Apply Hebrew mobile-only header alignment to every public page
+          commit_message: Load Hebrew mobile-only header CSS with fresh cache key
           file_pattern: site/index.html site/en.html site/pages/he/*.html site/pages/en/*.html
 
-# trigger: hebrew-mobile-only-header-v3
+# trigger: hebrew-mobile-only-css-v4
