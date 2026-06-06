@@ -12,93 +12,88 @@ html body.public-page.design-prompt-theme.bpi-home-page main.site-main section.h
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main section.bpi-gateway-cards>article.hub-card.media-card p,
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-main-blurb p,
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-blurb-card p{color:#bcc4ce!important;opacity:1!important;text-shadow:none!important}
-html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-blurb-card strong,
-html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs .minimal-card p,
-html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs .ellipsis-card p{color:#f3cf76!important}
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main section.hub-grid>article.hub-card.media-card a.card-link,
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main section.bpi-gateway-cards>article.hub-card.media-card a.card-link{background:#12171e!important;color:#f8e5b1!important;border-color:rgba(230,184,74,.48)!important}
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-main-blurb::before,
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-blurb-card::before{display:block!important;opacity:.72!important}
 
-/* Subtle chromatic depth for the blurbs without weakening the black design. */
+/* Subtle chromatic depth without weakening the black design. */
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-main-blurb{
-background:
-radial-gradient(circle at 84% 8%,rgba(230,184,74,.17),transparent 35%),
-radial-gradient(circle at 8% 92%,rgba(99,102,241,.13),transparent 42%),
-linear-gradient(145deg,#151a22,#06080c)!important;
+--blurb-accent:#f6d786;
+--blurb-accent-rgb:246,215,134;
+background:radial-gradient(circle at 84% 8%,rgba(230,184,74,.17),transparent 35%),radial-gradient(circle at 8% 92%,rgba(99,102,241,.13),transparent 42%),linear-gradient(145deg,#151a22,#06080c)!important;
 border-color:rgba(230,184,74,.27)!important;
 box-shadow:0 22px 54px rgba(0,0,0,.46),inset 0 1px 0 rgba(243,207,118,.08)!important}
 
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs .signature-blurb-grid>article:nth-child(4n+1){
-background:radial-gradient(circle at 82% 12%,rgba(139,92,246,.15),transparent 42%),linear-gradient(145deg,#121721,#07090d)!important;
-border-color:rgba(167,139,250,.22)!important}
+--blurb-accent:#d1c1ff;--blurb-accent-rgb:209,193,255;
+background:radial-gradient(circle at 82% 12%,rgba(139,92,246,.15),transparent 42%),linear-gradient(145deg,#121721,#07090d)!important;border-color:rgba(167,139,250,.22)!important}
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs .signature-blurb-grid>article:nth-child(4n+2){
-background:radial-gradient(circle at 16% 14%,rgba(45,212,191,.13),transparent 42%),linear-gradient(145deg,#10191c,#06090c)!important;
-border-color:rgba(94,234,212,.19)!important}
+--blurb-accent:#9ce9dd;--blurb-accent-rgb:156,233,221;
+background:radial-gradient(circle at 16% 14%,rgba(45,212,191,.13),transparent 42%),linear-gradient(145deg,#10191c,#06090c)!important;border-color:rgba(94,234,212,.19)!important}
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs .signature-blurb-grid>article:nth-child(4n+3){
-background:radial-gradient(circle at 84% 14%,rgba(230,184,74,.14),transparent 40%),linear-gradient(145deg,#181712,#080806)!important;
-border-color:rgba(230,184,74,.21)!important}
+--blurb-accent:#f3cf76;--blurb-accent-rgb:243,207,118;
+background:radial-gradient(circle at 84% 14%,rgba(230,184,74,.14),transparent 40%),linear-gradient(145deg,#181712,#080806)!important;border-color:rgba(230,184,74,.21)!important}
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs .signature-blurb-grid>article:nth-child(4n){
-background:radial-gradient(circle at 16% 16%,rgba(56,189,248,.12),transparent 42%),linear-gradient(145deg,#101820,#06090d)!important;
-border-color:rgba(125,211,252,.18)!important}
+--blurb-accent:#a9dcff;--blurb-accent-rgb:169,220,255;
+background:radial-gradient(circle at 16% 16%,rgba(56,189,248,.12),transparent 42%),linear-gradient(145deg,#101820,#06090d)!important;border-color:rgba(125,211,252,.18)!important}
 
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.question-card{
-background:radial-gradient(circle at 82% 10%,rgba(167,139,250,.18),transparent 43%),linear-gradient(145deg,#151426,#08090f)!important;
-border-color:rgba(167,139,250,.27)!important}
+--blurb-accent:#d1c1ff;--blurb-accent-rgb:209,193,255;
+background:radial-gradient(circle at 82% 10%,rgba(167,139,250,.18),transparent 43%),linear-gradient(145deg,#151426,#08090f)!important;border-color:rgba(167,139,250,.27)!important}
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.vessel-card{
-background:radial-gradient(circle at 18% 12%,rgba(94,234,212,.16),transparent 44%),linear-gradient(145deg,#102022,#070a0d)!important;
-border-color:rgba(94,234,212,.24)!important}
+--blurb-accent:#9ce9dd;--blurb-accent-rgb:156,233,221;
+background:radial-gradient(circle at 18% 12%,rgba(94,234,212,.16),transparent 44%),linear-gradient(145deg,#102022,#070a0d)!important;border-color:rgba(94,234,212,.24)!important}
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.paradox-card{
-background:radial-gradient(circle at 82% 12%,rgba(251,113,133,.13),transparent 42%),linear-gradient(145deg,#1b1218,#08080c)!important;
-border-color:rgba(251,113,133,.21)!important}
+--blurb-accent:#f2b1c1;--blurb-accent-rgb:242,177,193;
+background:radial-gradient(circle at 82% 12%,rgba(251,113,133,.13),transparent 42%),linear-gradient(145deg,#1b1218,#08080c)!important;border-color:rgba(251,113,133,.21)!important}
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.minimal-card,
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.ellipsis-card{
-background:radial-gradient(circle at 50% 18%,rgba(230,184,74,.13),transparent 48%),linear-gradient(145deg,#17150f,#080806)!important;
-border-color:rgba(230,184,74,.23)!important}
+--blurb-accent:#f5d684;--blurb-accent-rgb:245,214,132;
+background:radial-gradient(circle at 50% 18%,rgba(230,184,74,.13),transparent 48%),linear-gradient(145deg,#17150f,#080806)!important;border-color:rgba(230,184,74,.23)!important}
+
+/* Visible but restrained text accents: headings, keywords and first lines. */
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs>h2,
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs>header h2,
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs .section-title{
+color:#f4d88d!important;
+text-shadow:0 0 24px rgba(230,184,74,.13)!important}
+
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-main-blurb :is(h2,h3),
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-blurb-card :is(h2,h3){
+color:var(--blurb-accent,#f3cf76)!important;
+font-weight:820!important;
+letter-spacing:-.014em!important;
+text-shadow:0 0 20px rgba(var(--blurb-accent-rgb,243,207,118),.13)!important}
+
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-main-blurb :is(strong,b,em,mark,.blurb-keyword),
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-blurb-card :is(strong,b,em,mark,.blurb-keyword){
+color:var(--blurb-accent,#f3cf76)!important;
+font-weight:790!important;
+font-style:normal!important;
+background:transparent!important;
+text-shadow:0 0 16px rgba(var(--blurb-accent-rgb,243,207,118),.11)!important}
+
+/* nth-of-type is intentional: headings/wrappers no longer break the hierarchy. */
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-of-type(1){
+color:#f6d786!important;font-weight:780!important;font-size:clamp(1.16rem,1.8vw,1.42rem)!important;letter-spacing:-.012em!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-of-type(2){color:#d1c1ff!important;font-weight:670!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-of-type(4){color:#9ce9dd!important;font-weight:690!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-of-type(6){color:#f3cf76!important;font-weight:780!important;font-size:clamp(1.06rem,1.45vw,1.22rem)!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-of-type(8){color:#a9dcff!important;font-weight:690!important}
+
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.question-card p:first-of-type{color:#d1c1ff!important;font-weight:720!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.vessel-card p:first-of-type{color:#9ce9dd!important;font-weight:690!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.paradox-card p:first-of-type{color:#f2b1c1!important;font-weight:690!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.minimal-card p{color:#f5d684!important;font-weight:820!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.ellipsis-card p{color:#a9dcff!important;font-weight:760!important;letter-spacing:.18em!important}
 
 html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-blurb-card:hover{
 filter:saturate(1.08) brightness(1.035)!important;
-border-color:rgba(243,207,118,.31)!important;
+border-color:rgba(var(--blurb-accent-rgb,243,207,118),.34)!important;
 box-shadow:0 24px 58px rgba(0,0,0,.46),inset 0 1px 0 rgba(255,255,255,.06)!important}
 
-/* Typographic color hierarchy: key lines act as quiet headings. */
-html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-child(1){
-color:#f6d786!important;
-font-weight:760!important;
-font-size:clamp(1.16rem,1.8vw,1.42rem)!important;
-letter-spacing:-.012em!important}
-html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-child(2){
-color:#cbbdff!important;
-font-weight:650!important}
-html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-child(4){
-color:#86e3d5!important;
-font-weight:680!important}
-html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-child(6){
-color:#f3cb72!important;
-font-weight:760!important;
-font-size:clamp(1.06rem,1.45vw,1.22rem)!important}
-html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-child(8){
-color:#a9dcff!important;
-font-weight:680!important}
-
-html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.question-card strong{
-color:#d1c1ff!important;
-font-weight:800!important;
-text-shadow:0 0 18px rgba(167,139,250,.14)!important}
-html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.vessel-card p{
-color:#a7e9df!important;
-font-weight:620!important}
-html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.paradox-card p{
-color:#f0aebe!important;
-font-weight:620!important}
-html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.minimal-card p{
-color:#f5d684!important;
-font-weight:800!important}
-html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.ellipsis-card p{
-color:#a9dcff!important;
-letter-spacing:.18em!important}
-
 @media(max-width:640px){
-html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-child(1){font-size:1.16rem!important}
-html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-child(6){font-size:1.05rem!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-of-type(1){font-size:1.16rem!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-of-type(6){font-size:1.05rem!important}
 }
