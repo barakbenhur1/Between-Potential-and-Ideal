@@ -60,3 +60,45 @@ html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signatur
 filter:saturate(1.08) brightness(1.035)!important;
 border-color:rgba(243,207,118,.31)!important;
 box-shadow:0 24px 58px rgba(0,0,0,.46),inset 0 1px 0 rgba(255,255,255,.06)!important}
+
+/* Typographic color hierarchy: key lines act as quiet headings. */
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-child(1){
+color:#f6d786!important;
+font-weight:760!important;
+font-size:clamp(1.16rem,1.8vw,1.42rem)!important;
+letter-spacing:-.012em!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-child(2){
+color:#cbbdff!important;
+font-weight:650!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-child(4){
+color:#86e3d5!important;
+font-weight:680!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-child(6){
+color:#f3cb72!important;
+font-weight:760!important;
+font-size:clamp(1.06rem,1.45vw,1.22rem)!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-child(8){
+color:#a9dcff!important;
+font-weight:680!important}
+
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.question-card strong{
+color:#d1c1ff!important;
+font-weight:800!important;
+text-shadow:0 0 18px rgba(167,139,250,.14)!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.vessel-card p{
+color:#a7e9df!important;
+font-weight:620!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.paradox-card p{
+color:#f0aebe!important;
+font-weight:620!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.minimal-card p{
+color:#f5d684!important;
+font-weight:800!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.ellipsis-card p{
+color:#a9dcff!important;
+letter-spacing:.18em!important}
+
+@media(max-width:640px){
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-child(1){font-size:1.16rem!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-main-blurb p:nth-child(6){font-size:1.05rem!important}
+}
