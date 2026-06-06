@@ -9,6 +9,8 @@ on:
       - tools/stabilize_public_nav_source.py
       - site/assets/bpi-final-requested-fixes-v1.css
       - site/assets/bpi-final-requested-fixes-v1.js
+      - site/assets/bpi-final-requested-fixes-v2.css
+      - site/assets/bpi-final-requested-fixes-v2.js
       - .github/workflows/stabilize-public-nav-source.yml
 
 permissions:
@@ -34,4 +36,4 @@ jobs:
           commit_message: Apply mobile nav, gold HTML buttons, divider, and nav order fixes
           file_pattern: site/index.html site/en.html site/pages/he/*.html site/pages/en/*.html
 
-# trigger: 2026-06-06-final-requested-fixes-v2
+# trigger: 2026-06-06-unified-mobile-tabbar-v4
