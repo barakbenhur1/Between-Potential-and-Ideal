@@ -47,14 +47,16 @@ jobs:
           from pathlib import Path
           for path in (Path('site/index.html'), Path('site/en.html')):
               text = path.read_text(encoding='utf-8')
-              text = text.replace('20260606-home-black-theme-v2', '20260606-home-black-theme-v3')
-              text = text.replace('20260606-home-dark-cards-v2', '20260606-home-dark-cards-v3')
+              for old in ('20260606-home-black-theme-v2', '20260606-home-black-theme-v3'):
+                  text = text.replace(old, '20260606-home-black-theme-v4')
+              for old in ('20260606-home-dark-cards-v2', '20260606-home-dark-cards-v3'):
+                  text = text.replace(old, '20260606-home-dark-cards-v4')
               path.write_text(text, encoding='utf-8')
           PY
       - name: Commit generated HTML
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Enrich homepage blurbs with subtle color
+          commit_message: Add color hierarchy to homepage blurb typography
           file_pattern: site/index.html site/en.html site/pages/he/*.html site/pages/en/*.html
 
-# trigger: enriched-home-blurbs-v3
+# trigger: enriched-home-blurb-typography-v4
