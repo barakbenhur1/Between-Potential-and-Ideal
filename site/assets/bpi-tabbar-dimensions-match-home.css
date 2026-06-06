@@ -116,10 +116,10 @@ html body.public-page-en.appendix-document-page .site-header {
     max-width: 104px !important;
   }
 
-  /* Apply the correction to the whole inner header. This cannot be neutralized
-     by later per-child layout rules: 10px right and 5px up. */
+  /* Keep the horizontal correction and reduce only the vertical correction:
+     10px right and 2px up. */
   html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) .site-header {
-    transform: translate(10px, -5px) !important;
+    transform: translate(10px, -2px) !important;
   }
 
   /* Active-state visuals must never move a tab vertically.
