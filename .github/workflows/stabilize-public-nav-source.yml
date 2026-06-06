@@ -46,7 +46,7 @@ jobs:
       - name: Commit generated HTML
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Apply approved color hierarchy to homepage blurb text
+          commit_message: Inline decisive homepage blurb text colors
           file_pattern: site/index.html site/en.html site/pages/he/*.html site/pages/en/*.html
 
-# trigger: approved-home-blurb-typography-v5
+# trigger: inline-home-blurb-typography-v6
