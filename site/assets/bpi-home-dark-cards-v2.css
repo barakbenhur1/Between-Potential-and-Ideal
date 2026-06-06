@@ -1,0 +1,21 @@
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main section.hub-grid>article.hub-card.media-card,
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main section.bpi-gateway-cards>article.hub-card.media-card,
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-main-blurb,
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-blurb-card{
+background:linear-gradient(145deg,#12171e,#06080c)!important;
+border-color:rgba(255,255,255,.11)!important;
+color:#f4f6f8!important;
+box-shadow:0 18px 44px rgba(0,0,0,.4)!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main section.hub-grid>article.hub-card.media-card h2,
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main section.bpi-gateway-cards>article.hub-card.media-card h2{color:#fff!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main section.hub-grid>article.hub-card.media-card p,
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main section.bpi-gateway-cards>article.hub-card.media-card p,
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-main-blurb p,
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-blurb-card p{color:#bcc4ce!important;opacity:1!important;text-shadow:none!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-blurb-card strong,
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs .minimal-card p,
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs .ellipsis-card p{color:#f3cf76!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main section.hub-grid>article.hub-card.media-card a.card-link,
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main section.bpi-gateway-cards>article.hub-card.media-card a.card-link{background:#12171e!important;color:#f8e5b1!important;border-color:rgba(230,184,74,.48)!important}
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-main-blurb::before,
+html body.public-page.design-prompt-theme.bpi-home-page main.site-main .signature-blurbs article.signature-blurb-card::before{display:block!important;opacity:.7!important}
