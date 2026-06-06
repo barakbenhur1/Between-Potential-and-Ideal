@@ -31,3 +31,5 @@ jobs:
         with:
           commit_message: Force HTML document buttons to gold inline style
           file_pattern: site/**/*.html
+
+# trigger: 2026-06-06-force-inline-html-gold-v2
