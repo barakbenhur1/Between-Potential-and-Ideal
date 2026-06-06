@@ -1,0 +1,77 @@
+/* Final visible corrections requested 2026-06-06.
+   Additive only: fine-tune Hebrew inner-page header alignment and force every
+   HTML-format action button to use the approved gold treatment. */
+
+@media (min-width: 861px) {
+  html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) header.site-header {
+    transform: translate(8px, 0) !important;
+  }
+}
+
+@media (max-width: 860px) {
+  html[lang="he"] body.public-page.public-page-he:not(.bpi-home-page) header.site-header {
+    transform: none !important;
+  }
+}
+
+/* The files page loads local card CSS after the shared stylesheet. These
+   selectors intentionally carry higher specificity so HTML actions remain gold
+   even when a later generic .card-link or secondary-button rule is present. */
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.card-link[href*=".html"],
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.download-button[href*=".html"],
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-row a[href*=".html"],
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-strip a[href*=".html"],
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-grid a[href*=".html"],
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .appendix-actions a[href*=".html"],
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .file-actions a[href*=".html"],
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .format-actions a[href*=".html"],
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .document-actions a[href*=".html"],
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .reading-path-actions a[href*=".html"],
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .source-files-card a[href*=".html"],
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.primary-format {
+  background: linear-gradient(135deg, #b98726 0%, #e6b84a 52%, #f5d06b 100%) !important;
+  background-color: #e6b84a !important;
+  background-image: linear-gradient(135deg, #b98726 0%, #e6b84a 52%, #f5d06b 100%) !important;
+  color: #07101d !important;
+  -webkit-text-fill-color: #07101d !important;
+  border: 1.5px solid #d6a62a !important;
+  box-shadow: 0 8px 18px rgba(184, 135, 38, .22), inset 0 1px 0 rgba(255, 255, 255, .42) !important;
+  text-decoration: none !important;
+  text-shadow: none !important;
+}
+
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a[href*=".html"] .file-size,
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.primary-format .file-size {
+  color: rgba(7, 16, 29, .62) !important;
+  -webkit-text-fill-color: rgba(7, 16, 29, .62) !important;
+}
+
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.card-link[href*=".html"]:hover,
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.download-button[href*=".html"]:hover,
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-row a[href*=".html"]:hover,
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-strip a[href*=".html"]:hover,
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .download-grid a[href*=".html"]:hover,
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .appendix-actions a[href*=".html"]:hover,
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .file-actions a[href*=".html"]:hover,
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .format-actions a[href*=".html"]:hover,
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .document-actions a[href*=".html"]:hover,
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .reading-path-actions a[href*=".html"]:hover,
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main .source-files-card a[href*=".html"]:hover,
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.primary-format:hover {
+  background: linear-gradient(135deg, #c8942d 0%, #edc45d 52%, #f8d980 100%) !important;
+  background-color: #edc45d !important;
+  background-image: linear-gradient(135deg, #c8942d 0%, #edc45d 52%, #f8d980 100%) !important;
+  color: #07101d !important;
+  -webkit-text-fill-color: #07101d !important;
+  border-color: #c9971d !important;
+  box-shadow: 0 12px 26px rgba(184, 135, 38, .30), inset 0 1px 0 rgba(255, 255, 255, .52) !important;
+  transform: translateY(-1px) !important;
+}
+
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.card-link[href*=".html"]:focus-visible,
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.download-button[href*=".html"]:focus-visible,
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main :is(.download-row, .download-strip, .download-grid, .appendix-actions, .file-actions, .format-actions, .document-actions, .reading-path-actions, .source-files-card) a[href*=".html"]:focus-visible,
+html[lang] body.public-page.design-prompt-theme.section-files.bpi-files-page main#main a.primary-format:focus-visible {
+  outline: 3px solid rgba(214, 166, 42, .42) !important;
+  outline-offset: 3px !important;
+}
