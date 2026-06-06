@@ -1,15 +1,23 @@
-# Render — V36
+# Render — הגדרת הפריסה הנוכחית
 
-אין תיקיית `site`.
+מבנה הריפו הנוכחי כולל תיקיית `site/`, והיא תיקיית הפרסום היחידה של האתר.
 
-אם Render כבר מגיש את שורש הריפו, אין צורך לשנות Publish Directory.
+הגדרות החובה ב־Render:
 
-המבנה שצריך להיות בשורש הפריסה:
-- `index.html`
-- `en.html`
-- `pages/`
-- `files/`
-- `figures/`
-- `styles.css`
+- Repository: `barakbenhur1/Between-Potential-and-Ideal`
+- Branch: `main`
+- Runtime / Service type: Static Site
+- Build Command: `python3 tools/update_build_info.py`
+- Publish Directory / Static Publish Path: `site` או `./site`
+- Auto Deploy: מופעל על כל commit
 
-אם אתה מעלה לתיקיית משנה, רק אז צריך להגדיר את התיקייה הזאת כ־Publish Directory.
+המבנה שמתפרסם מתוך `site/`:
+
+- `site/index.html`
+- `site/en.html`
+- `site/pages/`
+- `site/files/`
+- `site/figures/`
+- `site/assets/`
+
+אסור להגדיר את שורש הריפו כתיקיית הפרסום, משום שאין בו `index.html` ציבורי. קובץ `render.yaml` בשורש הריפו הוא מקור האמת להגדרת הפריסה.
