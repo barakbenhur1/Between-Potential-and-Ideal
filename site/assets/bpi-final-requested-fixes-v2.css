@@ -1,4 +1,5 @@
 @import url("./bpi-final-requested-fixes-v1.css?v=20260606-mobile-disclosure-base-v1");
+@import url("./bpi-header-parity-and-home-divider-v1.css?v=20260606-header-parity-divider-v1");
 
 /* V2 mobile nav repair.
    V1 defined the mobile menu CSS but assumed the toggle already existed.
