@@ -12,6 +12,7 @@ on:
       - site/assets/bpi-final-requested-fixes-v2.css
       - site/assets/bpi-final-requested-fixes-v2.js
       - site/assets/bpi-header-parity-and-home-divider-v1.css
+      - site/assets/bpi-mobile-tabbar-no-scroll-v1.css
       - .github/workflows/stabilize-public-nav-source.yml
 
 permissions:
@@ -34,7 +35,7 @@ jobs:
       - name: Commit generated HTML
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Apply exact header parity and clean homepage divider
+          commit_message: Apply non-scrolling mobile tab bar to every public page
           file_pattern: site/index.html site/en.html site/pages/he/*.html site/pages/en/*.html
 
-# trigger: exact-header-parity-clean-divider-v1
+# trigger: mobile-tabbar-hard-no-scroll-v1
