@@ -124,6 +124,38 @@
     });
   }
 
+  function mobileLabel() {
+    return document.documentElement.lang === 'he' ? 'תפריט' : 'Menu';
+  }
+
+  function ensureMobileToggle(header) {
+    const nav = header.querySelector('nav.site-nav');
+    if (!nav) return null;
+
+    let toggle = header.querySelector('.bpi-mobile-nav-toggle');
+    if (!toggle) {
+      toggle = document.createElement('button');
+      toggle.type = 'button';
+      toggle.className = 'bpi-mobile-nav-toggle';
+      toggle.innerHTML = '<span class="bpi-mobile-nav-toggle-text"></span><span class="bpi-mobile-nav-toggle-icon" aria-hidden="true"><span></span></span>';
+      header.insertBefore(toggle, nav);
+    }
+
+    let id = nav.id;
+    if (!id) {
+      id = 'bpi-mobile-nav-' + Math.random().toString(36).slice(2, 9);
+      nav.id = id;
+    }
+
+    const text = toggle.querySelector('.bpi-mobile-nav-toggle-text, .bpi-mobile-nav-toggle-label');
+    if (text) text.textContent = mobileLabel();
+
+    toggle.setAttribute('aria-controls', id);
+    toggle.setAttribute('aria-expanded', header.classList.contains('bpi-mobile-nav-open') ? 'true' : 'false');
+    header.classList.add('bpi-mobile-nav-ready');
+    return toggle;
+  }
+
   function closeMobileNav(header, returnFocus) {
     const toggle = header.querySelector('.bpi-mobile-nav-toggle');
     header.classList.remove('bpi-mobile-nav-open');
@@ -141,13 +173,13 @@
 
   function initializeMobileNavigation() {
     document.querySelectorAll('header.site-header').forEach((header) => {
-      const toggle = header.querySelector('.bpi-mobile-nav-toggle');
       const nav = header.querySelector('nav.site-nav');
-      if (!toggle || !nav || toggle.dataset.bpiBound === 'true') return;
+      if (!nav) return;
+
+      const toggle = ensureMobileToggle(header);
+      if (!toggle || toggle.dataset.bpiBound === 'true') return;
 
       toggle.dataset.bpiBound = 'true';
-      toggle.setAttribute('aria-expanded', 'false');
-
       toggle.addEventListener('click', () => {
         if (header.classList.contains('bpi-mobile-nav-open')) {
           closeMobileNav(header, false);
