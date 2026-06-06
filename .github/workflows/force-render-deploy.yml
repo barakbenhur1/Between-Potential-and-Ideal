@@ -1,0 +1,90 @@
+name: Force Render deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/force-render-deploy.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Trigger Render deploy
+        id: deploy
+        env:
+          RENDER_DEPLOY_HOOK_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
+          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+          RENDER_API_TOKEN: ${{ secrets.RENDER_API_TOKEN }}
+          RENDER_SERVICE_ID: srv-d821i5ugvqtc73d98dtg
+        shell: bash
+        run: |
+          set -euo pipefail
+          TARGET_SHA="$(git rev-parse HEAD)"
+          STATUS=""
+          RESPONSE=""
+
+          HOOK_URL="${RENDER_DEPLOY_HOOK_URL:-${RENDER_DEPLOY_HOOK:-}}"
+          API_TOKEN="${RENDER_API_KEY:-${RENDER_API_TOKEN:-}}"
+
+          if [[ -n "$HOOK_URL" ]]; then
+            RESPONSE="$(curl --fail-with-body --silent --show-error --request POST "$HOOK_URL")"
+            STATUS="deploy_hook_triggered"
+          elif [[ -n "$API_TOKEN" ]]; then
+            RESPONSE="$(curl --fail-with-body --silent --show-error \
+              --request POST \
+              --url "https://api.render.com/v1/services/${RENDER_SERVICE_ID}/deploys" \
+              --header "Authorization: Bearer ${API_TOKEN}" \
+              --header "Content-Type: application/json" \
+              --data "{\"clearCache\":\"clear\",\"commitId\":\"${TARGET_SHA}\"}")"
+            STATUS="render_api_triggered"
+          else
+            STATUS="missing_render_secret"
+            RESPONSE="No RENDER_DEPLOY_HOOK_URL, RENDER_DEPLOY_HOOK, RENDER_API_KEY, or RENDER_API_TOKEN repository secret is configured."
+          fi
+
+          python3 - "$STATUS" "$TARGET_SHA" "$RESPONSE" <<'PY'
+          import json
+          import sys
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          status, sha, response = sys.argv[1:]
+          Path("site/render-deploy-status.json").write_text(
+              json.dumps(
+                  {
+                      "status": status,
+                      "target_commit": sha,
+                      "service_id": "srv-d821i5ugvqtc73d98dtg",
+                      "recorded_at_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
+                      "response": response[:4000],
+                  },
+                  ensure_ascii=False,
+                  indent=2,
+              ) + "\n",
+              encoding="utf-8",
+          )
+          PY
+
+      - name: Commit deploy result
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/render-deploy-status.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Record forced Render deploy result"
+          git push origin HEAD:main
