@@ -1,0 +1,33 @@
+name: Force inline HTML gold buttons
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - tools/force_inline_html_gold_buttons.py
+      - .github/workflows/force-inline-html-gold-buttons.yml
+
+permissions:
+  contents: write
+
+jobs:
+  force-inline-gold:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Add inline gold styles to HTML document buttons
+        run: python3 tools/force_inline_html_gold_buttons.py
+      - name: Commit updated HTML buttons
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Force HTML document buttons to gold inline style
+          file_pattern: site/**/*.html
