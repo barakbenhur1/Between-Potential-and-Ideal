@@ -9,6 +9,7 @@ on:
       - tools/stabilize_public_nav_source.py
       - tools/apply_he_mobile_header_asset.py
       - tools/apply_home_black_theme.py
+      - tools/apply_google_site_verification.py
       - site/styles.css
       - site/assets/bpi-final-requested-fixes-v1.css
       - site/assets/bpi-final-requested-fixes-v1.js
@@ -43,10 +44,11 @@ jobs:
           python3 tools/stabilize_public_nav_source.py
           python3 tools/apply_he_mobile_header_asset.py
           python3 tools/apply_home_black_theme.py
+          python3 tools/apply_google_site_verification.py
       - name: Commit generated HTML
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Inline decisive homepage blurb text colors
+          commit_message: Add Google Search Console verification to Hebrew and English home pages
           file_pattern: site/index.html site/en.html site/pages/he/*.html site/pages/en/*.html
 
-# trigger: inline-home-blurb-typography-v6
+# trigger: google-site-verification-v1
