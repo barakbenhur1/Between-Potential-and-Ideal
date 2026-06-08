@@ -7,6 +7,7 @@ CHECKS = [
     ["python3", "tools/check_release_guard_integrity.py"],
     ["python3", "tools/check_gitignore.py"],
     ["python3", "tools/check_no_public_junk_files.py"],
+    ["python3", "tools/check_localization_drafts_hidden.py"],
     ["python3", "tools/check_files_filter_live_region.py"],
     ["python3", "tools/check_external_links_accessibility.py"],
     ["python3", "tools/check_qa_docs_index.py"],
