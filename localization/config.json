@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "brand_name": "Between Potential and Ideal",
+  "canonical_source_language": "en",
+  "semantic_cross_check_language": "he",
+  "required_download_formats": [
+    "html",
+    "pdf",
+    "docx",
+    "md",
+    "txt"
+  ],
+  "languages": {
+    "he": {
+      "label": "עברית",
+      "html_lang": "he",
+      "direction": "rtl",
+      "home": "site/index.html",
+      "pages_dir": "site/pages/he",
+      "files_dir": "site/files",
+      "publish": true
+    },
+    "en": {
+      "label": "English",
+      "html_lang": "en",
+      "direction": "ltr",
+      "home": "site/en.html",
+      "pages_dir": "site/pages/en",
+      "files_dir": "site/files",
+      "publish": true
+    },
+    "tlh": {
+      "label": "tlhIngan Hol",
+      "html_lang": "tlh",
+      "direction": "ltr",
+      "home": "site/tlh.html",
+      "pages_dir": "site/pages/tlh",
+      "files_dir": "site/files/tlh",
+      "translation_profile": "conservative standard Klingon in Latin transcription",
+      "publish": false
+    },
+    "qya": {
+      "label": "Neo-Quenya",
+      "html_lang": "qya",
+      "direction": "ltr",
+      "home": "site/qya.html",
+      "pages_dir": "site/pages/qya",
+      "files_dir": "site/files/qya",
+      "translation_profile": "conservative Neo-Quenya with explicit disclosure",
+      "publish": false
+    }
+  },
+  "publication_requirements": {
+    "require_all_mapped_pages": true,
+    "require_all_download_formats": true,
+    "require_local_link_audit": true,
+    "require_asset_audit": true,
+    "require_language_residue_audit": true,
+    "require_hreflang": true,
+    "require_sitemap": true,
+    "require_search_index": true,
+    "require_mobile_visual_qa": true,
+    "require_desktop_visual_qa": true,
+    "require_final_release_qa": true
+  }
+}
