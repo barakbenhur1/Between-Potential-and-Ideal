@@ -14,6 +14,7 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/check_no_root_junk_files.py` — prevents temporary repair/debug/archive artifacts at repository root.
 - `tools/check_release_guard_integrity.py` — validates the release guard itself.
 - `tools/check_no_public_junk_files.py` — prevents public junk/debug/temp files under `site/`.
+- `tools/check_localization_drafts_hidden.py` — blocks public Klingon or Neo-Quenya paths and draft markers while those languages remain unpublished.
 - `tools/check_gitignore.py` — verifies local generated artifacts are ignored.
 - `tools/check_files_filter_live_region.py` — verifies Files page filter status is announced accessibly.
 - `tools/check_external_links_accessibility.py` — verifies new-tab links are accessible.
