@@ -38,7 +38,9 @@ CHECKS = [
     ["python3", "tools/check_files_table_accessibility.py"],
     ["python3", "tools/audit_file_download_links.py"],
     ["python3", "tools/audit_document_sync_status.py"],
+    ["python3", "tools/audit_extended_localization_parity.py"],
 ]
+
 
 def run(cmd):
     print("\n==>", " ".join(cmd))
@@ -46,10 +48,12 @@ def run(cmd):
     if result.returncode != 0:
         raise SystemExit(result.returncode)
 
+
 def main():
     for cmd in CHECKS:
         run(cmd)
     print("\nOK: release guard passed.")
+
 
 if __name__ == "__main__":
     main()
