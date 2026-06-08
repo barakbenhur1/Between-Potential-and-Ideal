@@ -43,6 +43,7 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/check_tool_inventory.py` — verifies this inventory covers release guard checks.
 - `tools/audit_file_download_links.py` — verifies Files page download links and document sibling packages.
 - `tools/audit_document_sync_status.py` — verifies expected public document sibling formats exist and are non-empty.
+- `tools/audit_extended_localization_parity.py` — allows incomplete draft editions but blocks publication of Klingon or Neo-Quenya when any mapped page or required format is missing.
 
 ## Existing audit tools
 
@@ -61,11 +62,13 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/audit_css_consolidation_candidates.py`
 - `tools/audit_file_download_links.py`
 - `tools/audit_document_sync_status.py`
+- `tools/audit_extended_localization_parity.py`
 
 ## Operational tools
 
 - `tools/check_live_deploy_urls.py` — checks important live URLs after Render deploy.
 - `tools/update_build_info.py` — updates `site/build-info.json` before important releases or during deploy builds.
+- `tools/build_localization_inventory.py` — inventories public pages and all HTML/PDF/DOCX/MD/TXT document groups for the four-language project.
 
 ## Rule
 
