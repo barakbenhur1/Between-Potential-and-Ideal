@@ -78,6 +78,30 @@ naDev valqu'ghach Del je. boghDI' noblu'bogh laH 'oHbe' valqu'ghach, 'ej nIvghac
 
 nIDvetlh poQchu' Hoch, Hochchu'mo' Hoch'egh neHvo' 'ay' Daqvo' Suvghach chay' rur 'e' Sovbe'. veHmey jojDaq Hochchu'ghach laboratory Daq 'oH ghot'e'. pujghach, botghach, Harchu'Qo'ghach, Doy'ghach, pumghach je ghotvo' Qu' teqbe'. pagh lo'laHghach ghaj 'e' Harbe'DI' ghot, qech noblu'be'bogh DaqDaq taHmeH nIDbogh yab chay' rur 'e' De' chenmoHtaH.
 
+### Prime Intellect metamorphosis tI'ghach
+
+naDev bechghach SeHghach lo'taHvIS teqbogh yab'a' najghachvo' cheS pat. Roger Williams ghItlh **The Metamorphosis of Prime Intellect**Daq, ghot toDmeH nID yab wa'DIch; 'ach ghot mojmeH ghotvaD poQbogh ghu'mey qIl. naQHa'ghachvo' bechghach teqlu'DI', teqlu' je chuq'e' naDev ghot valqu'ghach nargh. SeHghach QaQ law' poQbe' tI'ghach. leghwI' poQ. ghot tambe' yab wa'DIch lo'laH; HoS lo'taHvIS toDbe'; yInDaj Qob Hutlhbogh ngebghach mojmoHbe'. leghwI', 'avwI', ghot tu'meH ghu'mey QanwI' je rur Qam; vaj mung taHlaH ghot, chenmoHlu'bogh Doch mojbe'.
+
+naDev pat HomDu' QaQ pagh mIgh nargh: Qagh teqnISbogh 'oHbe' veH'e'. naDev chen nID; naDev ta' moj pung; naDev De' Suq Hoch, 'ach veH Hutlhbogh Hochchu'ghachDaq De'vam tu'lu'be'. wa' yu' lo'taHvIS yab pat Hoch, ghot pagh chenmoHlu'bogh, juvlu': chuq valqu'ghach pol'a', pagh jangghach ngeDqu' pongDaq valqu'ghachvam qIl'a'?
+
+### pung botlh: lonmeH pung
+
+**Feed the Pig** HuD DopDaq qech Qatlhqu' nargh: SaltaHmeH neH ra'nISbe' Qun pung. lonqangghach ghaj je Hoch. 'oy'vo' De' naghHommey boQmoH ghot, 'ach naghHomvetlhmey quv law' ghot quv puS 'e' teHbe'; ghot quv law' bIH quv puS. De' quv law' mung quv puS 'e' teHbe'; mung quv law' De' quv puS. Hoch, yInbogh yabvo' lughghach tlhapbogh, lughghachvetlh quv law' yInbogh yab quv puS 'e' teHbe'.
+
+laDghachvamDaq chImghach neH 'oHbe' targh'e', 'ej HuDvo' nughI'ghach neH 'oHbe'. Qun muSHa'ghach ghantoH jen 'oH: ghorlu'meH Daq wa'Daq De'Daj quvqu' chIlqang Hoch, ghotvaD leS nobmeH. yIn QIHmeH chaw' 'oHbe', 'ej taHtaHghach quv qIlbe'. Dop pIm 'oH: Hap raw' neH 'oHbe' yIn'e' 'e' tob. lo'laHmo' ghot muSHa'be' qo' Hoch. ghot muSHa'qu'mo', lo'laHghach lonqang qo' Hoch.
+
+vaj wIv 'oHbe' peghmeH pIn'a' nuDghach'e'. HurDaq Qun juvwI' ghaHbe' 'ej mI' pe'be'. ghotvaD HuD leS je cha' 'ej muSHa'ghachDaj tob, qech chenmoHmeH mIqta' mojmoHQo'taHvIS ghot. ghot tu'bogh vIt neH, 'ach ghot muSHa' law' vItvam muSHa' puS.
+
+### ghob SoQmoHghach
+
+qech tu'lu'be' jatlhbogh ghot, qech nuDlu'meH mIwDaq 'ay' taH. HoS Hutlh jatlhbogh ghot, HoS Hutlhbogh yab chay' rur 'e' HochvaD 'angtaH. pIHpu'Daj rur lengbe'bogh ghot, qo' teHvaD Daq Suvghach De' lIwlaHbe'bogh nobtaH. lo'laHbe' leghDaq wa' tu'lu'be', cha' leghDaq chuq rap, QIH rap, botghach rap, vIHmeH DuH rap je tu'lu'be'mo'.
+
+qo' teHvaD ghot Qu' 'oH pupghach'e'be'. HurghghachvaD ghaH neH lenglaHbogh chuq nobbe'ghach 'oH Qu'Daj'e'. poH rapDaq ghot Sopchu'be'ghach 'oH Hoch Qu''e'be'; ghot tu'meH mung yInbogh rur polnIS.
+
+qIjghach neH 'oHbe' pat'e'. post-nihilist maqghach 'oH: chalvo' ghotDaq pumbe' qech; paghchu'ghach jojDaq lengbogh ghot chuqvo' bogh. wa' mobghachvaD meq jangghach 'oH law'ghach'e'; qo' 'oH Qob'e', naDev Potential Sov yInbogh moj; 'ej Sov mIghghach mojbe'meH chut 'oH pung'e'.
+
+wa' Doch leghDaq wa' mobbogh wa' QumwI' ghaH, ghu'mey pIm'e' latlh legh Daq wa' qaSqa'moHlaHbe'. pupmo' ghot quvbe'; leghlu'qa'laHbe'bogh tu'ghach 'ay' ghaHmo' quv. ghot teH nID lugh 'oH qo' Hoch Hap lIwlaHbe'bogh'e'. ghorlu'meH DaqDaq ghaHvaD noblu'bogh leS, De' neH poQbe' Hoch 'e' tob; De'vamvaD lo'laHbogh muSHa'ghach poQ je.
+
 ---
 
 ## mIw qawmoHghach — Translation control note
