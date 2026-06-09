@@ -36,7 +36,7 @@ accelerator magical microscope 'oHbe', detector naked truth leghbogh eye 'oHbe'.
 
 vaj detector experimental horizon 'oH. nuq register-laH, sensitivity 'ar, background nuq against, resolution 'ar, assumptions nuq bIngDaq je determine. knowledge possibility poSmoH, 'ach boundariesDaj define je.
 
-Sina universe structure chaptervaD rar. pa' horizon cosmological 'oH: space, time je vegh nuq maHvaD pawlaH. naDev horizon experimental 'oH: accelerator, detector, signature, background, model je vegh nuq appearlaH.
+universe structure chaptervaD rar. pa' horizon cosmological 'oH: space, time je vegh nuq maHvaD pawlaH. naDev horizon experimental 'oH: accelerator, detector, signature, background, model je vegh nuq appearlaH.
 
 cases cha'Daq absolute view tu'lu'be'. traces tu'lu'. 'ej nuq bIHbe' 'e' lo'taHvIS interpretmeH responsibility tu'lu'.
 
