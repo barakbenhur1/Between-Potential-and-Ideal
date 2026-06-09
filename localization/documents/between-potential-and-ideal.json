@@ -21,7 +21,10 @@
       "localization/sources/tlh/between-potential-and-ideal/050-model-not-final-part-2.md",
       "localization/sources/tlh/between-potential-and-ideal/060-symphony-and-friction.md",
       "localization/sources/tlh/between-potential-and-ideal/070-reverse-turing-test.md",
-      "localization/sources/tlh/between-potential-and-ideal/080-god-as-potential.md"
+      "localization/sources/tlh/between-potential-and-ideal/080-god-as-potential.md",
+      "localization/sources/tlh/between-potential-and-ideal/090-absolute-ideal-living-completeness.md",
+      "localization/sources/tlh/between-potential-and-ideal/100-core-movement-river-boat.md",
+      "localization/sources/tlh/between-potential-and-ideal/110-experience-knowledge-road.md"
     ],
     "qya": [
       "localization/sources/qya/between-potential-and-ideal/020-metamorphosis-code.md",
@@ -30,7 +33,10 @@
       "localization/sources/qya/between-potential-and-ideal/050-model-not-final-part-2.md",
       "localization/sources/qya/between-potential-and-ideal/060-symphony-and-friction.md",
       "localization/sources/qya/between-potential-and-ideal/070-reverse-turing-test.md",
-      "localization/sources/qya/between-potential-and-ideal/080-god-as-potential.md"
+      "localization/sources/qya/between-potential-and-ideal/080-god-as-potential.md",
+      "localization/sources/qya/between-potential-and-ideal/090-absolute-ideal-living-completeness.md",
+      "localization/sources/qya/between-potential-and-ideal/100-core-movement-river-boat.md",
+      "localization/sources/qya/between-potential-and-ideal/110-experience-knowledge-road.md"
     ]
   },
   "assembly_tool": "tools/assemble_localized_document.py",
@@ -78,9 +84,12 @@
         "This Is a Model, Not a Final Declaration",
         "The Symphony of the Whole and the Gift of Friction",
         "The Reverse Turing Test: The Universal Frequency Test",
-        "God as Potential and the Divine Risk"
+        "God as Potential and the Divine Risk",
+        "The Absolute, the Ideal, and Living Completeness",
+        "The Core Movement: Title, River, and Boat",
+        "Experience, Knowledge, and the Road That Cannot Be Bypassed"
       ],
-      "next": "The Absolute, the Ideal, and Living Completeness"
+      "next": "Education of Potential"
     },
     "qya": {
       "status": "draft",
@@ -103,9 +112,12 @@
         "This Is a Model, Not a Final Declaration",
         "The Symphony of the Whole and the Gift of Friction",
         "The Reverse Turing Test: The Universal Frequency Test",
-        "God as Potential and the Divine Risk"
+        "God as Potential and the Divine Risk",
+        "The Absolute, the Ideal, and Living Completeness",
+        "The Core Movement: Title, River, and Boat",
+        "Experience, Knowledge, and the Road That Cannot Be Bypassed"
       ],
-      "next": "The Absolute, the Ideal, and Living Completeness"
+      "next": "Education of Potential"
     }
   },
   "publication_rule": "No public output may be generated until every canonical source segment is complete, reviewed, assembled, and marked approved."
