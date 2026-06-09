@@ -4,8 +4,9 @@ language: tlh
 language_label: tlhIngan Hol
 direction: ltr
 status: draft
-source_document: site/files/between-potential-and-ideal-en.html
-semantic_cross_check: site/files/between-potential-and-ideal-he.html
+source_document: site/files/between-potential-and-ideal-en.md
+semantic_cross_check: site/files/between-potential-and-ideal-he.md
+visual_reference: site/files/between-potential-and-ideal-en.html
 translator_note: Canonical Klingon working source. English project terms remain visible until the glossary is linguistically approved.
 ---
 
@@ -44,6 +45,38 @@ The project terms remain visible where a descriptive Klingon phrase would falsel
 > **Method note — Klingon review draft:** `naDev QeD, mI' QeD, HapQeD, De'wI' QeD, meq je qechmey narghDI', pat ghantoHmey rur laDlu'nIS, qech SeQ pagh QeD qech bIH 'e' ngu'lu'be'chugh. QubmeH nID poS 'oH ghItlhvam'e'; QeD tobchu'ghach SoQ 'oHbe'.`
 >
 > When concepts from science, mathematics, physics, computer science, or logic appear here, they should be read as structural models and metaphors unless explicitly marked as formal or scientific claims. This document is an open thought experiment, not a closed scientific proof.
+
+---
+
+## qIjmeH ghItlh — Abstract
+
+`Qun` pong lo' ghItlhvam, 'ach qo' HurDaq Qun lalDan ghaHbe', 'ej bechghach leghbogh leghwI' Hur ghaHbe'. yIn, yajghach, QaQ pagh mIgh 'e' nuDghach, qech, Ideal je mojlaH yIn DuHmey Hoch pongmeH `Qun` lo'. vaj bechDI' leghwI' Daq wa', wa'DIch bechbogh ghot tu'lu' 'ej ghIq ghaH leghbogh Qun tu'lu' 'e' jatlhbe'. SIQghach'e' SIQbogh ghaH rur Qun narghghach.
+
+pat jejmoHbogh qech potlh ngeD: Ideal 'oHbe' Hochchu'ghach'e', 'ej poHDaq Ideal narghmeH He 'oH Optimal'e'. DuHmey Hoch ngaS Hochchu'ghach. QaQ pagh mIgh 'e' nuDlu'pu'DI' DuH, Ideal moj. ghu' teHDaq nuDghachvam chen QaQqu'moHbogh mIw 'oH Optimal'e'. mojlaHbogh Hoch ngaS Hochchu'ghach; Ideal 'oH Optimal chenmey teH Hoch'e', bIHvaD mojlaHbogh Doch mojnISbogh Doch je rapchoH.
+
+patDaq patlhmey law'Daq nargh Ideal: taHghach patlhDaq — nuq taHnIS; Daq patlhDaq — ghu'mey jojDaq Optimal chen; nugh patlhDaq — chenmoHghachvaD nuq chIlbe'nIS; meq patlhDaq — vIt, tobghach, veH je jojDaq Qu' pabtaHbogh rarghach; QaQ pagh mIgh patlhDaq — ghot teqbe'taHvIS ta'ghach Devbogh Doch. vaj 'ay'meyDaq mu'vam qech choHmey mIS bIHbe'; vev rap patlhmey pIm bIH.
+
+pat ghantoH chu' 'oH: bIQtIq 'oH qo' Hoch'e', Duj 'oH yIn'e', bIQtIq ghatmey Dop cha'Daq Potential, Ideal je Qam, 'ej leng SeHmeH 'oH yab yInbogh Qatlhbogh laH'e'. bIQtIq SeHnISlu'be' 'ej SeHlaHlu'be'. wa' SupDaq Ideal SoH'egh mojmoHchu'ghach 'oHbe' Qu''e'; DaH yInlaHbogh Optimal SoH'egh tu'ghach 'oH — qo' teH ghu'mey jojDaq Ideal chen teH Sumqu'.
+
+patvam ponglaHlu' tulghach ghajbogh nihilism, pagh paghchu'ghach jojvo' qech toDmeH post-nihilist nID. qech noblu'be' wa'DIch 'e' laj. 'ach qech DuHbe' 'e' lajbe'. yIn taghDaq qech tu'lu'be'laH; 'ach leghwI' ghaH'egh, latlh, Hoch je yajchu'choHDI', yIn mojlaHbogh Doch 'oH qech'e'.
+
+naDev patvaD ra'wI'pu' bIHbe' Dostoevsky, Nietzsche je; pat nuDmeH chuqmey 'ugh bIH. ghot teHDaq qech tInqu' 'elDI' nuq qaS 'e' yu' Dostoevsky. qo' ghaHbe'pu'boghDaq Qun gentler rur Prince Myshkin QaQghach; qo' charghlaHbe' 'ej qo' pagh Qagh ghajbogh rur chenmoHlaHbe'. parma be' HoHbogh ghotDaq ghoppu'Daj ngechmoHtaHvIS je, lut toDbe' pungDaj; QaQghach HoS mojmeH Sovbe'chugh, qo'vamDaq QaQghach SIQlaHlu'be'law' 'e' 'ang. Dop latlhvo' Ideal Hoch Qunqoq mojchoHlaH'a' 'e' yu' Nietzsche: yIn DopDaq belmoHghach, pujghach So'bogh QaQ pagh mIgh Hol, SeHghach So'bogh pung. chaH jojDaq pat Qu' jejchoH: ngebbogh toDghach mojmoHbe'taHvIS tI'laHghach DuH pol, 'ej nagh beQ mojmoHbe'taHvIS Ideal yInbogh pol.
+
+### Qun lengghach manifesto: pung chenchoHghach
+
+### maqghach
+
+`qo' HochDaq Qagh 'oHbe' ghot'e'. lIjghachvo' 'oH'egh toDmeH qo' Hoch He 'oH ghot'e'.`
+
+belmoHghach 'oHbe' mu'tlheghvam'e'. DuH neH taHQo'DI' DuHmey Hoch, 'ej yInbogh SovvaD Qu' pabchoHDI', qo' teH meq pat 'oH. HoS Hutlhbe' Hoch; veH SIQghach Hutlh. DuHmey Hoch rur Hoch SovlaH Hochchu'ghach, 'ach veH mojbe'chugh Hochchu'ghach, veH Daqvo' veH Sovbe'. vaj ghot poQlu'. vaj porgh poQlu'. vaj poH, 'oy', wIv, Qagh, nID je yIn rarghmey bIHbe'; Daqmey bIH, naDev De' chenmoH Hoch, 'ach Hoch'egh neHvo' chenmoHlaHbe'.
+
+### meq jejmoHghach
+
+Potentialvo' SovDaq Qun lengghach 'oH yIn'e'. SIQghach Hutlhbogh poSghach neH 'oH Potential'e'. yIn Dop HopDaq taH Ideal neH, wa' Daq pup, Qav je rur qellu'DI'. Ideal qo' teH HotDI' 'ej qo'vaD ngebbe'DI', naDev Optimal tu'lu': ghu' noblu'pu'bogh jojDaq ta'ghach lughqu' ta'laHlu'bogh. vaj pupghach nagh beQ yIQ 'oHbe' Ideal'e'; Optimal chenmey teH Hoch ghomlu'qa'pu'bogh rur Ideal.
+
+naDev valqu'ghach Del je. boghDI' noblu'bogh laH 'oHbe' valqu'ghach, 'ej nIvghach Qunghach 'oHbe'. chuq 'oH valqu'ghach. ghot tagh Daq, yInDaj tlham DaqaDtaHvIS lengpu'bogh chuq je joj rarghach 'oH. wov retlhDaq boghbogh ghot 'ej nom lengbogh ghot, Hurghghach jojDaq boghbogh ghot 'ach vIt, Qu', pung, yIn je DopDaq 'ujHom wa' vIHmoHbogh ghot je, Sov rap chenmoHbe'. 'ujHomvetlh 'oH qo' Hoch veH bIghHa' pe'ghach'e'.
+
+nIDvetlh poQchu' Hoch, Hochchu'mo' Hoch'egh neHvo' 'ay' Daqvo' Suvghach chay' rur 'e' Sovbe'. veHmey jojDaq Hochchu'ghach laboratory Daq 'oH ghot'e'. pujghach, botghach, Harchu'Qo'ghach, Doy'ghach, pumghach je ghotvo' Qu' teqbe'. pagh lo'laHghach ghaj 'e' Harbe'DI' ghot, qech noblu'be'bogh DaqDaq taHmeH nIDbogh yab chay' rur 'e' De' chenmoHtaH.
 
 ---
 
