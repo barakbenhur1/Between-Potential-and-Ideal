@@ -52,7 +52,7 @@ Born rule Potentialvo' readable resultDaq passage mark:
 
 `P(a) = |⟨a|ψ⟩|²`
 
-quantum state measurement outcomes probabilities nob. measurementpa' possibilities space tu'lu'; measurement jälkeen readable result wa' tu'lu'. 'ach rule alone closure mechanism explainbe': collapse, branching, knowledge update, consistent history, relational structure je decidebe'. theory transitionvam philosophical moment rur readlaH, 'ach measurement problem solvepu' 'e' claimlaHbe'.
+quantum state measurement outcomes probabilities nob. measurementpa' possibilities space tu'lu'; measurementvaD readable result wa' tu'lu'. 'ach rule alone closure mechanism explainbe': collapse, branching, knowledge update, consistent history, relational structure je decidebe'. theory transitionvam philosophical moment rur readlaH, 'ach measurement problem solvepu' 'e' claimlaHbe'.
 
 uncertainty, commutation je form Hoch form latlh Hoch precision rapDaq simultaneously closebe' 'e' 'ang:
 
