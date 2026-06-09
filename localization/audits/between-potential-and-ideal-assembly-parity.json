@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "document_id": "between-potential-and-ideal",
+  "source_commit": "702b9c6beab472d2b0942e3fd162edee5651f877",
+  "generated_at": "2026-06-09T17:11:38.287278+00:00",
+  "assembly_status": "PASS",
+  "publication_readiness": "BLOCKED",
+  "segment_count_per_language": 77,
+  "languages": [
+    {
+      "language": "tlh",
+      "canonical_base": "localization/sources/tlh/between-potential-and-ideal-tlh.md",
+      "canonical_base_status": "draft",
+      "segment_count": 77,
+      "segment_number_range": [
+        20,
+        780
+      ],
+      "segment_statuses": {
+        "draft": 69,
+        "placeholder-draft": 8
+      },
+      "publication_values": {
+        "forbidden": 77
+      },
+      "assembled_draft": {
+        "path": "reports/localization/assembled/tlh/between-potential-and-ideal-tlh.md",
+        "exists": true,
+        "bytes": 360267,
+        "lines": 4420,
+        "sha256": "169a8cada13fa37aa673b4bfbbff4292d68a78d09adb321c64aa6d62fa24011a",
+        "headings": {
+          "h1": 1,
+          "h2": 151,
+          "h3": 276,
+          "h4": 15,
+          "h5": 0,
+          "h6": 0
+        },
+        "review_gate_count": 77,
+        "translation_control_note_count": 1,
+        "required_final_markers": {
+          "## Sources, Inspirations, Ideas, and Acknowledgements": true,
+          "### Bibliography and Source Notes": true,
+          "Back to table of contents": true
+        }
+      },
+      "structural_errors": [],
+      "publication_blockers": [
+        "assembled review draft contains 77 review-control sections; production assembly must omit them",
+        "canonical base status=draft",
+        "77 canonical segments are not approved",
+        "8 placeholder segments remain placeholder-draft"
+      ]
+    },
+    {
+      "language": "qya",
+      "canonical_base": "localization/sources/qya/between-potential-and-ideal-qya.md",
+      "canonical_base_status": "draft",
+      "segment_count": 77,
+      "segment_number_range": [
+        20,
+        780
+      ],
+      "segment_statuses": {
+        "draft": 69,
+        "placeholder-draft": 8
+      },
+      "publication_values": {
+        "forbidden": 77
+      },
+      "assembled_draft": {
+        "path": "reports/localization/assembled/qya/between-potential-and-ideal-qya.md",
+        "exists": true,
+        "bytes": 397732,
+        "lines": 4423,
+        "sha256": "2eb4b1c99b28fb71d43015b5604e3d90da4927d0544e267fc506e52d9c6cfe58",
+        "headings": {
+          "h1": 1,
+          "h2": 151,
+          "h3": 276,
+          "h4": 15,
+          "h5": 0,
+          "h6": 0
+        },
+        "review_gate_count": 77,
+        "translation_control_note_count": 1,
+        "required_final_markers": {
+          "## Sources, Inspirations, Ideas, and Acknowledgements": true,
+          "### Bibliography and Source Notes": true,
+          "Back to table of contents": true
+        }
+      },
+      "structural_errors": [],
+      "publication_blockers": [
+        "assembled review draft contains 77 review-control sections; production assembly must omit them",
+        "canonical base status=draft",
+        "77 canonical segments are not approved",
+        "8 placeholder segments remain placeholder-draft"
+      ]
+    }
+  ],
+  "structural_errors": [],
+  "publication_blockers": [
+    "tlh: assembled review draft contains 77 review-control sections; production assembly must omit them",
+    "tlh: canonical base status=draft",
+    "tlh: 77 canonical segments are not approved",
+    "tlh: 8 placeholder segments remain placeholder-draft",
+    "qya: assembled review draft contains 77 review-control sections; production assembly must omit them",
+    "qya: canonical base status=draft",
+    "qya: 77 canonical segments are not approved",
+    "qya: 8 placeholder segments remain placeholder-draft"
+  ],
+  "decision": "Both non-public drafts assembled successfully and are structurally reviewable, but publication remains blocked until linguistic approval and clean production assembly remove review-control sections.",
+  "public_output_generated": false
+}
