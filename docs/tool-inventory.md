@@ -15,6 +15,7 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/check_release_guard_integrity.py` — validates the release guard itself.
 - `tools/check_no_public_junk_files.py` — prevents public junk/debug/temp files under `site/`.
 - `tools/check_localization_drafts_hidden.py` — blocks public Klingon or Neo-Quenya paths and draft markers while those languages remain unpublished.
+- `tools/check_localized_document_contracts.py` — verifies canonical localized bases, ordered source segments, front matter, language identity, publication locks, and approval requirements.
 - `tools/check_gitignore.py` — verifies local generated artifacts are ignored.
 - `tools/check_files_filter_live_region.py` — verifies Files page filter status is announced accessibly.
 - `tools/check_external_links_accessibility.py` — verifies new-tab links are accessible.
@@ -70,6 +71,7 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/check_live_deploy_urls.py` — checks important live URLs after Render deploy.
 - `tools/update_build_info.py` — updates `site/build-info.json` before important releases or during deploy builds.
 - `tools/build_localization_inventory.py` — inventories public pages and all HTML/PDF/DOCX/MD/TXT document groups for the four-language project.
+- `tools/assemble_localized_document.py` — assembles a canonical localized base and its ordered review segments into one non-public Markdown preview.
 
 ## Rule
 
