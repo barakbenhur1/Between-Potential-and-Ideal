@@ -1,8 +1,8 @@
 # Localized Assembly and Parity Audit
 
 - Document: `between-potential-and-ideal`
-- Source commit: `702b9c6beab472d2b0942e3fd162edee5651f877`
-- Generated: `2026-06-09T17:11:38.287278+00:00`
+- Source commit: `a631b304802f197e68072923ea3f903f8a44d2ea`
+- Generated: `2026-06-09T17:15:39.253820+00:00`
 - Assembly status: **PASS**
 - Publication readiness: **BLOCKED**
 
