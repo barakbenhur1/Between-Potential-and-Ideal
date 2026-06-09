@@ -100,7 +100,7 @@ formal quantum gravity approachesDaq geometries, fields je over sum carefully Qu
 
 `Z = ∫ Dg Dφ exp(iS[g,φ]/ℏ)`
 
-formal directional expression 'oH, complete solution 'oHbe'. theory vegh, geometry wa' מראש noblu'bogh neH tu'be'; possible forms spacevo' classical form emerge-laH.
+formal directional expression 'oH, complete solution 'oHbe'. theory vegh, geometry wa' previously noblu'bogh neH tu'be'; possible forms spacevo' classical form emerge-laH.
 
 cosmologyDaq Friedmann equation expansion density, curvature, cosmological constant je rar:
 
