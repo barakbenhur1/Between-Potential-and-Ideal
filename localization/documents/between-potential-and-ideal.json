@@ -41,9 +41,12 @@
         "method note",
         "abstract overview",
         "manifesto declaration",
-        "logical refinement opening"
+        "logical refinement opening",
+        "Correcting the Metamorphosis",
+        "The Center of Grace: The Grace of Renunciation",
+        "Closing the Objection"
       ],
-      "next": "Correcting the Metamorphosis"
+      "next": "The Metamorphosis Code of Grace and Distance"
     },
     "qya": {
       "status": "draft",
@@ -54,9 +57,12 @@
         "method note",
         "abstract overview",
         "manifesto declaration",
-        "logical refinement opening"
+        "logical refinement opening",
+        "Correcting the Metamorphosis",
+        "The Center of Grace: The Grace of Renunciation",
+        "Closing the Objection"
       ],
-      "next": "Correcting the Metamorphosis"
+      "next": "The Metamorphosis Code of Grace and Distance"
     }
   },
   "publication_rule": "No public output may be generated until the canonical target is complete and marked approved."
