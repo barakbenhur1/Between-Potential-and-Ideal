@@ -1,0 +1,4 @@
+messages:
+  - role: user
+    content: "Translate and correct {{job}} for {{language_mode}}."
+model: openai/gpt-4o
