@@ -7,10 +7,12 @@ on:
     branches: [ main ]
     paths:
       - "localization/documents/between-potential-and-ideal.json"
+      - "localization/policies/intentional-placeholders.json"
       - "localization/sources/tlh/**"
       - "localization/sources/qya/**"
       - "tools/assemble_localized_document.py"
       - "tools/audit_localized_assembly.py"
+      - "tools/apply_intentional_placeholder_policy.py"
       - "tools/update_localization_stage_from_audit.py"
       - ".github/workflows/assemble-localization-drafts.yml"
 
@@ -54,6 +56,12 @@ jobs:
             --source-commit "$GITHUB_SHA" \
             --json-output localization/audits/between-potential-and-ideal-assembly-parity.json \
             --markdown-output localization/audits/between-potential-and-ideal-assembly-parity.md
+
+      - name: Apply intentional placeholder policy
+        run: |
+          python3 tools/apply_intentional_placeholder_policy.py \
+            localization/audits/between-potential-and-ideal-assembly-parity.json \
+            localization/audits/between-potential-and-ideal-assembly-parity.md
 
       - name: Advance localization stage metadata
         run: |
