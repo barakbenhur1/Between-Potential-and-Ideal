@@ -34,7 +34,11 @@
       "localization/sources/tlh/between-potential-and-ideal/180-ai-open-problems.md",
       "localization/sources/tlh/between-potential-and-ideal/190-i-have-no-mouth.md",
       "localization/sources/tlh/between-potential-and-ideal/200-infinite-recursion-reset.md",
-      "localization/sources/tlh/between-potential-and-ideal/210-infinite-recursion-descent.md"
+      "localization/sources/tlh/between-potential-and-ideal/210-infinite-recursion-descent.md",
+      "localization/sources/tlh/between-potential-and-ideal/220-infinite-recursion-iteration.md",
+      "localization/sources/tlh/between-potential-and-ideal/230-existence-therapists-couch.md",
+      "localization/sources/tlh/between-potential-and-ideal/240-infinite-recursion-ascent.md",
+      "localization/sources/tlh/between-potential-and-ideal/250-recursive-edge.md"
     ],
     "qya": [
       "localization/sources/qya/between-potential-and-ideal/020-metamorphosis-code.md",
@@ -56,7 +60,11 @@
       "localization/sources/qya/between-potential-and-ideal/180-ai-open-problems.md",
       "localization/sources/qya/between-potential-and-ideal/190-i-have-no-mouth.md",
       "localization/sources/qya/between-potential-and-ideal/200-infinite-recursion-reset.md",
-      "localization/sources/qya/between-potential-and-ideal/210-infinite-recursion-descent.md"
+      "localization/sources/qya/between-potential-and-ideal/210-infinite-recursion-descent.md",
+      "localization/sources/qya/between-potential-and-ideal/220-infinite-recursion-iteration.md",
+      "localization/sources/qya/between-potential-and-ideal/230-existence-therapists-couch.md",
+      "localization/sources/qya/between-potential-and-ideal/240-infinite-recursion-ascent.md",
+      "localization/sources/qya/between-potential-and-ideal/250-recursive-edge.md"
     ]
   },
   "assembly_tool": "tools/assemble_localized_document.py",
@@ -115,9 +123,10 @@
         "The AI Mirror and Existence as Navigation",
         "Artificial Intelligence and Open Problems",
         "I Have No Mouth, and I Must Scream",
-        "The Architecture of Infinite Recursion and the Inner Rapture — introduction, reset failure, P versus NP note, and descent hierarchy"
+        "The Architecture of Infinite Recursion and the Inner Rapture",
+        "The Recursive Edge"
       ],
-      "next": "The Mechanism of Iteration, Reset, and the Set of Ideals"
+      "next": "Computation, Evidence, Reduction, and Incompleteness"
     },
     "qya": {
       "status": "draft",
@@ -151,9 +160,10 @@
         "The AI Mirror and Existence as Navigation",
         "Artificial Intelligence and Open Problems",
         "I Have No Mouth, and I Must Scream",
-        "The Architecture of Infinite Recursion and the Inner Rapture — introduction, reset failure, P versus NP note, and descent hierarchy"
+        "The Architecture of Infinite Recursion and the Inner Rapture",
+        "The Recursive Edge"
       ],
-      "next": "The Mechanism of Iteration, Reset, and the Set of Ideals"
+      "next": "Computation, Evidence, Reduction, and Incompleteness"
     }
   },
   "publication_rule": "No public output may be generated until every canonical source segment is complete, reviewed, assembled, and marked approved."
