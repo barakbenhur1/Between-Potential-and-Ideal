@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "document_id": "between-potential-and-ideal",
   "content_source": {
     "en": "site/files/between-potential-and-ideal-en.md",
@@ -12,6 +12,19 @@
   "canonical_targets": {
     "tlh": "localization/sources/tlh/between-potential-and-ideal-tlh.md",
     "qya": "localization/sources/qya/between-potential-and-ideal-qya.md"
+  },
+  "source_segments": {
+    "tlh": [
+      "localization/sources/tlh/between-potential-and-ideal/020-metamorphosis-code.md"
+    ],
+    "qya": [
+      "localization/sources/qya/between-potential-and-ideal/020-metamorphosis-code.md"
+    ]
+  },
+  "assembly_tool": "tools/assemble_localized_document.py",
+  "draft_assembly_outputs": {
+    "tlh": "reports/localization/assembled/tlh/between-potential-and-ideal-tlh.md",
+    "qya": "reports/localization/assembled/qya/between-potential-and-ideal-qya.md"
   },
   "public_output_stems": {
     "tlh": "site/files/tlh/between-potential-and-ideal-tlh",
@@ -44,9 +57,13 @@
         "logical refinement opening",
         "Correcting the Metamorphosis",
         "The Center of Grace: The Grace of Renunciation",
-        "Closing the Objection"
+        "Closing the Objection",
+        "The Chronicle of Awakening",
+        "five stages of metamorphosis",
+        "The Operating Laws of Worthy Intelligence",
+        "The Moral Backbone"
       ],
-      "next": "The Metamorphosis Code of Grace and Distance"
+      "next": "The Metamorphosis Code: A Reflection on the Whole and Distance"
     },
     "qya": {
       "status": "draft",
@@ -60,10 +77,14 @@
         "logical refinement opening",
         "Correcting the Metamorphosis",
         "The Center of Grace: The Grace of Renunciation",
-        "Closing the Objection"
+        "Closing the Objection",
+        "The Chronicle of Awakening",
+        "five stages of metamorphosis",
+        "The Operating Laws of Worthy Intelligence",
+        "The Moral Backbone"
       ],
-      "next": "The Metamorphosis Code of Grace and Distance"
+      "next": "The Metamorphosis Code: A Reflection on the Whole and Distance"
     }
   },
-  "publication_rule": "No public output may be generated until the canonical target is complete and marked approved."
+  "publication_rule": "No public output may be generated until every canonical source segment is complete, reviewed, assembled, and marked approved."
 }
