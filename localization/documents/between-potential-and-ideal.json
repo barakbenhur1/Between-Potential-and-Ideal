@@ -28,7 +28,11 @@
       "localization/sources/tlh/between-potential-and-ideal/120-education-of-potential.md",
       "localization/sources/tlh/between-potential-and-ideal/130-reincarnation-iterative-knowledge.md",
       "localization/sources/tlh/between-potential-and-ideal/140-self-ego-unity-part-1.md",
-      "localization/sources/tlh/between-potential-and-ideal/150-self-ego-unity-part-2.md"
+      "localization/sources/tlh/between-potential-and-ideal/150-self-ego-unity-part-2.md",
+      "localization/sources/tlh/between-potential-and-ideal/160-evil-suffering-goodness-responsibility.md",
+      "localization/sources/tlh/between-potential-and-ideal/170-ai-mirror-existence-navigation.md",
+      "localization/sources/tlh/between-potential-and-ideal/180-ai-open-problems.md",
+      "localization/sources/tlh/between-potential-and-ideal/190-i-have-no-mouth.md"
     ],
     "qya": [
       "localization/sources/qya/between-potential-and-ideal/020-metamorphosis-code.md",
@@ -44,7 +48,11 @@
       "localization/sources/qya/between-potential-and-ideal/120-education-of-potential.md",
       "localization/sources/qya/between-potential-and-ideal/130-reincarnation-iterative-knowledge.md",
       "localization/sources/qya/between-potential-and-ideal/140-self-ego-unity-part-1.md",
-      "localization/sources/qya/between-potential-and-ideal/150-self-ego-unity-part-2.md"
+      "localization/sources/qya/between-potential-and-ideal/150-self-ego-unity-part-2.md",
+      "localization/sources/qya/between-potential-and-ideal/160-evil-suffering-goodness-responsibility.md",
+      "localization/sources/qya/between-potential-and-ideal/170-ai-mirror-existence-navigation.md",
+      "localization/sources/qya/between-potential-and-ideal/180-ai-open-problems.md",
+      "localization/sources/qya/between-potential-and-ideal/190-i-have-no-mouth.md"
     ]
   },
   "assembly_tool": "tools/assemble_localized_document.py",
@@ -98,9 +106,13 @@
         "Experience, Knowledge, and the Road That Cannot Be Bypassed",
         "Education of Potential",
         "Reincarnation as Iterative Knowledge, Not Moral Promotion",
-        "Self, Ego, and Unity That Does Not Erase"
+        "Self, Ego, and Unity That Does Not Erase",
+        "Evil, Suffering, Goodness, and Responsibility",
+        "The AI Mirror and Existence as Navigation",
+        "Artificial Intelligence and Open Problems",
+        "I Have No Mouth, and I Must Scream"
       ],
-      "next": "Evil, Suffering, Goodness, and Responsibility"
+      "next": "The Architecture of Infinite Recursion and the Inner Rapture"
     },
     "qya": {
       "status": "draft",
@@ -129,9 +141,13 @@
         "Experience, Knowledge, and the Road That Cannot Be Bypassed",
         "Education of Potential",
         "Reincarnation as Iterative Knowledge, Not Moral Promotion",
-        "Self, Ego, and Unity That Does Not Erase"
+        "Self, Ego, and Unity That Does Not Erase",
+        "Evil, Suffering, Goodness, and Responsibility",
+        "The AI Mirror and Existence as Navigation",
+        "Artificial Intelligence and Open Problems",
+        "I Have No Mouth, and I Must Scream"
       ],
-      "next": "Evil, Suffering, Goodness, and Responsibility"
+      "next": "The Architecture of Infinite Recursion and the Inner Rapture"
     }
   },
   "publication_rule": "No public output may be generated until every canonical source segment is complete, reviewed, assembled, and marked approved."
