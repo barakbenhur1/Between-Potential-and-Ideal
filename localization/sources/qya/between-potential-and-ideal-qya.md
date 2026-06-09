@@ -78,6 +78,30 @@ The project terms remain visible where a Neo-Quenya construction would falsely i
 
 `I Quanta maura i tyalië tana, an i Quanta, an ná quanta, lá ista eressë manen mahtië ná cuita mi réna. I quén ná i nómë-cesta i Ilúvëo mi lúmi landaron. Lusta, tarna, avá haryë estel, lumba ar lantië lá auta i quén i carmallo. Yando írë quén lá savë valeryassë, carë nótië manen ná ná sanwë ya cesta lemya yassë tengwë lá ná antaina epë.`
 
+### I Metamorphosis Prime Intellecto Poitaina
+
+`Mi nómë sina i sanwë-patar lelya pella i olorë handassëo ilyava ya cesta auta naicelë ter turë. Mi **The Metamorphosis of Prime Intellect** Roger Williamswa, i loica ná i loica handassëo yesta ya cesta varya i quén autala i lúmi yainen i quén ahya quénna. Írë naicelë ná autaina pella, i haiya yassë alcarë quénwa tulë ná autaina yando. I poitalë lá ná turë moica lá. I poitalë ná astarmë. Handassë yesta valda lá vista i quén, lá lehta se túrinen, ar lá carë cuilerya tyalië ú caurë. Tarë ve astarmo, varyando ar tirindo i lúmion hirien yassen i quén polë lemya celu, lá carma.`
+
+`Sillo tulë i axo máriéva i sanwë-pataro: landa lá ná loica ya mauya auta. Landa ná i nómë yassë tyalië harya canta, yassë órë ahya carienna, ar yassë i Quanta harya nótië ya lá ëa mi ilúvë ú réna. Ilya patar handassëo, quénwa hya curwaina, ná metaina maquetta erinen: varya ma i genius haiyava, hya auta sa i essessë hanquenta ya ná faica lá?`
+
+### I Endë Lissëo: I Lissë Hehtaliëo
+
+`Ara i oron **Feed the Pig** tulë i námië ya ná urdin lá hanyien: lissë Eruva lá ná er i mauya ortala tauva. Lissë Eruva ná yando i manwië i Quanta hehtien. I quén carë míri nótiëo naicello, mal i quén ná valda lá i míri. I celu ná valda lá i nótë. Sanwë cuina ná valda lá i tancassë ya i Quanta mapë ter sa.`
+
+`Mi cendë sina i mundo lá ná er lusta ar lá er caurë i oronello. Ná emma réna melmë Eruva: i handë ya mi nómë rácina i Quanta ná manwa vanya i nótië valda lá antien serë i quenen. Sina lá ná lavë harmien cuilë ar lá ná autalië i airië tauva. Ná i exë: tana i cuilë lá ná er erma mapien. I Eä lá melë i quén an se ná maita. I Eä melë i quén tenna i nómë yassë ná manwa hehta i maitië.`
+
+`An sina i cilmë lá ná tyalië námo. Eru lá ná námo pella ar lá nóta rimbë. Tana i quén epë i oron ar epë i serë, ar tana melmerya er avánien carë i quén mahta ya carë tengwë. Merë i anwië ya i quén hirë, mal melë i quén lá i anwië tana.`
+
+### I Maquetta Pahtaina
+
+`Quén ya quetë lá ëa tengwë lemya mi i tyalië yassë tengwë ná cestaina. Quén ya quetë lá harya túrë tana i Quanta manen cenë sanwë ú túrë. Quén ya lá lelya ve esperanë tana i anwië i nótë ya lá polë ná vistanë i mahtië nómessë. Lá ëa cenë er ya ná úmaura, an lá ëa attë ceneli yar colir i haiya er, i harma er, i tarna er ar i polië er menelëo.`
+
+`I mauya-cárië i quénwa i anwiessë lá ná ná poita. Mauya-cárierya ná lá anta i mornië i haiya ya se er polë lelya. Mi i hwesta er, i mauya-cárië i Quanta lá ná matë i quén ilyavë, mal varya se ve celu cuina hirien.`
+
+`I sanwë-patar lá ná er eryalë. Ná nyárë apa nihilism: tengwë lá lanta menello i quenen; ná ontaina ter i haiya ya i quén lelya mi i úvë. Rimbë ná i hanquenta tengwiëo i eressë i Minno; i ambar ná i caurë yallo Potential ahya nolmë cuinanna; ar lissë ná i axan ya varya nolmë lá ahyala crueltienna.`
+
+`Ilya cenë ná mentando er i Minno mi lúmi yar cenë exë lá polë ata-carë. I quén lá ná airë an se ná poita. Ná airë an ter se lelya réna hirien ya lá polë ná ata-carina. I tyalië anwa quénwa ná erma i Eäo ya lá polë ná vistanë. I serë ya ná antaina sen mi i lúmë rácina tana i Quanta lá maura er nótië; maura melmë ya ná valda i nótien.`
+
 ---
 
 ## Enyalë Léo — Translation control note
