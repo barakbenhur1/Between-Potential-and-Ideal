@@ -46,7 +46,10 @@
       "localization/sources/tlh/between-potential-and-ideal/300-science-physics-mathematics-boundary.md",
       "localization/sources/tlh/between-potential-and-ideal/310-locality-nonlocality-bell.md",
       "localization/sources/tlh/between-potential-and-ideal/320-context-measurement-entanglement-bohm.md",
-      "localization/sources/tlh/between-potential-and-ideal/330-contextuality-source-ai-ending.md"
+      "localization/sources/tlh/between-potential-and-ideal/330-contextuality-source-ai-ending.md",
+      "localization/sources/tlh/between-potential-and-ideal/340-creation-optimum-recursion.md",
+      "localization/sources/tlh/between-potential-and-ideal/350-creation-canon-power-adaptation.md",
+      "localization/sources/tlh/between-potential-and-ideal/360-creation-ai-refusal-genres-ending.md"
     ],
     "qya": [
       "localization/sources/qya/between-potential-and-ideal/020-metamorphosis-code.md",
@@ -80,7 +83,10 @@
       "localization/sources/qya/between-potential-and-ideal/300-science-physics-mathematics-boundary.md",
       "localization/sources/qya/between-potential-and-ideal/310-locality-nonlocality-bell.md",
       "localization/sources/qya/between-potential-and-ideal/320-context-measurement-entanglement-bohm.md",
-      "localization/sources/qya/between-potential-and-ideal/330-contextuality-source-ai-ending.md"
+      "localization/sources/qya/between-potential-and-ideal/330-contextuality-source-ai-ending.md",
+      "localization/sources/qya/between-potential-and-ideal/340-creation-optimum-recursion.md",
+      "localization/sources/qya/between-potential-and-ideal/350-creation-canon-power-adaptation.md",
+      "localization/sources/qya/between-potential-and-ideal/360-creation-ai-refusal-genres-ending.md"
     ]
   },
   "assembly_tool": "tools/assemble_localized_document.py",
@@ -143,9 +149,10 @@
         "The Recursive Edge",
         "Computation, Evidence, Reduction, and Incompleteness",
         "Science, Physics, and Mathematics as Boundary Discipline",
-        "Locality, Non-locality, and Contextuality"
+        "Locality, Non-locality, and Contextuality",
+        "Creation, Canon, and Optimum: What Must Not Be Lost"
       ],
-      "next": "Creation, Canon, and Optimum: What Must Not Be Lost"
+      "next": "Art of Potential"
     },
     "qya": {
       "status": "draft",
@@ -183,9 +190,10 @@
         "The Recursive Edge",
         "Computation, Evidence, Reduction, and Incompleteness",
         "Science, Physics, and Mathematics as Boundary Discipline",
-        "Locality, Non-locality, and Contextuality"
+        "Locality, Non-locality, and Contextuality",
+        "Creation, Canon, and Optimum: What Must Not Be Lost"
       ],
-      "next": "Creation, Canon, and Optimum: What Must Not Be Lost"
+      "next": "Art of Potential"
     }
   },
   "publication_rule": "No public output may be generated until every canonical source segment is complete, reviewed, assembled, and marked approved."
