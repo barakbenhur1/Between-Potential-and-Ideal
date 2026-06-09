@@ -26,7 +26,9 @@
       "localization/sources/tlh/between-potential-and-ideal/100-core-movement-river-boat.md",
       "localization/sources/tlh/between-potential-and-ideal/110-experience-knowledge-road.md",
       "localization/sources/tlh/between-potential-and-ideal/120-education-of-potential.md",
-      "localization/sources/tlh/between-potential-and-ideal/130-reincarnation-iterative-knowledge.md"
+      "localization/sources/tlh/between-potential-and-ideal/130-reincarnation-iterative-knowledge.md",
+      "localization/sources/tlh/between-potential-and-ideal/140-self-ego-unity-part-1.md",
+      "localization/sources/tlh/between-potential-and-ideal/150-self-ego-unity-part-2.md"
     ],
     "qya": [
       "localization/sources/qya/between-potential-and-ideal/020-metamorphosis-code.md",
@@ -40,7 +42,9 @@
       "localization/sources/qya/between-potential-and-ideal/100-core-movement-river-boat.md",
       "localization/sources/qya/between-potential-and-ideal/110-experience-knowledge-road.md",
       "localization/sources/qya/between-potential-and-ideal/120-education-of-potential.md",
-      "localization/sources/qya/between-potential-and-ideal/130-reincarnation-iterative-knowledge.md"
+      "localization/sources/qya/between-potential-and-ideal/130-reincarnation-iterative-knowledge.md",
+      "localization/sources/qya/between-potential-and-ideal/140-self-ego-unity-part-1.md",
+      "localization/sources/qya/between-potential-and-ideal/150-self-ego-unity-part-2.md"
     ]
   },
   "assembly_tool": "tools/assemble_localized_document.py",
@@ -93,9 +97,10 @@
         "The Core Movement: Title, River, and Boat",
         "Experience, Knowledge, and the Road That Cannot Be Bypassed",
         "Education of Potential",
-        "Reincarnation as Iterative Knowledge, Not Moral Promotion"
+        "Reincarnation as Iterative Knowledge, Not Moral Promotion",
+        "Self, Ego, and Unity That Does Not Erase"
       ],
-      "next": "Self, Ego, and Unity That Does Not Erase"
+      "next": "Evil, Suffering, Goodness, and Responsibility"
     },
     "qya": {
       "status": "draft",
@@ -123,9 +128,10 @@
         "The Core Movement: Title, River, and Boat",
         "Experience, Knowledge, and the Road That Cannot Be Bypassed",
         "Education of Potential",
-        "Reincarnation as Iterative Knowledge, Not Moral Promotion"
+        "Reincarnation as Iterative Knowledge, Not Moral Promotion",
+        "Self, Ego, and Unity That Does Not Erase"
       ],
-      "next": "Self, Ego, and Unity That Does Not Erase"
+      "next": "Evil, Suffering, Goodness, and Responsibility"
     }
   },
   "publication_rule": "No public output may be generated until every canonical source segment is complete, reviewed, assembled, and marked approved."
