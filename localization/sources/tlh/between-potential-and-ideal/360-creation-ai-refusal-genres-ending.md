@@ -52,7 +52,7 @@ innocencevo' theory Qan pImghachvam. liberation Potential control chu' mojlaH. s
 
 ### 12. Genres as systems of questions
 
-genre conventions collection 'oHbe'. possibility, boundary, failure, solution, redemption je nuqDaq arrange 'e' gilghameS Hol neH 'oH genre'e'.
+genre conventions collection 'oHbe'. possibility, boundary, failure, solution, redemption je nuqDaq arrange 'e' wuqbogh question system 'oH genre'e'.
 
 science fiction tlhob: technical Potential moral maturity juSchoHDI' nuq qaS? fantasy tlhob: nuq power realization deserve, nuq power lo'nISbe'? horror tlhob: repressed Doch form SuqDI' nuq qaS? detective fiction, mystery je tlhob: tracesvo' truth reconstruct-laHlu'a'? tragedy tlhob: understanding late pawDI' nuq qaS? comedy tlhob: distortion, exaggeration, rupture je vegh truth chay' pawlaH? games action axis chel: choice, failure, return, cost je vegh player yajmoH.
 
