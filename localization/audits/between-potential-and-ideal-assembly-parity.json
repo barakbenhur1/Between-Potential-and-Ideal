@@ -1,18 +1,14 @@
 {
   "schema_version": 2,
   "document_id": "between-potential-and-ideal",
-  "source_commit": "36d19b0d907c5eb47d5ad36aa0bf5712cd9f32e4",
-  "generated_at": "2026-06-09T17:21:57.238940+00:00",
-  "policy_applied_on": "2026-06-09",
+  "source_commit": "7782d9183ed3c73d73f748476b5615a77f83c372",
+  "generated_at": "2026-06-09T17:44:22.125974+00:00",
   "assembly_status": "PASS",
   "clean_preview_status": "PASS",
   "cross_language_structural_parity": "PASS",
   "publication_readiness": "BLOCKED",
   "segment_count_per_language": 77,
   "review_control_removal_verified": true,
-  "intentional_placeholder_policy": "localization/policies/intentional-placeholders.json",
-  "intentional_placeholder_count_per_language": 8,
-  "intentional_placeholders_are_blockers": false,
   "languages": [
     {
       "language": "tlh",
@@ -75,14 +71,14 @@
         }
       },
       "review_control_removal_verified": true,
-      "intentional_placeholder_count": 8,
-      "intentional_placeholder_policy": "localization/policies/intentional-placeholders.json",
-      "intentional_placeholders_are_blockers": false,
       "structural_errors": [],
       "publication_blockers": [
         "canonical base status=draft",
         "77 canonical segments are not approved"
-      ]
+      ],
+      "intentional_placeholder_count": 8,
+      "intentional_placeholder_policy": "localization/policies/intentional-placeholders.json",
+      "intentional_placeholders_are_blockers": false
     },
     {
       "language": "qya",
@@ -145,14 +141,14 @@
         }
       },
       "review_control_removal_verified": true,
-      "intentional_placeholder_count": 8,
-      "intentional_placeholder_policy": "localization/policies/intentional-placeholders.json",
-      "intentional_placeholders_are_blockers": false,
       "structural_errors": [],
       "publication_blockers": [
         "canonical base status=draft",
         "77 canonical segments are not approved"
-      ]
+      ],
+      "intentional_placeholder_count": 8,
+      "intentional_placeholder_policy": "localization/policies/intentional-placeholders.json",
+      "intentional_placeholders_are_blockers": false
     }
   ],
   "structural_errors": [],
@@ -163,5 +159,8 @@
     "qya: 77 canonical segments are not approved"
   ],
   "decision": "Review and clean non-public drafts assembled successfully, review-control removal is verified, and cross-language structural parity passed. The intentional empty placeholder chapters are canonical and are not publication blockers. Publication remains blocked only by document-level linguistic approval.",
-  "public_output_generated": false
+  "public_output_generated": false,
+  "intentional_placeholder_policy": "localization/policies/intentional-placeholders.json",
+  "intentional_placeholder_count_per_language": 8,
+  "intentional_placeholders_are_blockers": false
 }
