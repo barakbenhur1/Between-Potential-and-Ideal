@@ -112,7 +112,8 @@ def assemble_main(language):
         heading = text.rfind("\n## ", 0, cut)
         text = text[:heading] if heading >= 0 else text[:cut]
     parts = [text.rstrip()]
-    parts.extend(load_segments(language)[key] for key in sorted(load_segments(language)))
+    segments = load_segments(language)
+    parts.extend(segments[key] for key in sorted(segments))
     return "\n\n".join(part.strip() for part in parts if part.strip()) + "\n"
 
 
@@ -137,14 +138,12 @@ def make_docx(markdown_text, output):
     from docx import Document
     from docx.shared import Inches, Pt
     document = Document()
-    styles = document.styles
-    styles["Normal"].font.name = "DejaVu Sans"
-    styles["Normal"].font.size = Pt(10.5)
+    document.styles["Normal"].font.name = "DejaVu Sans"
+    document.styles["Normal"].font.size = Pt(10.5)
     image_pattern = re.compile(r"!\[([^]]*)\]\(([^)]+)\)")
     for raw in markdown_text.splitlines():
         line = raw.strip()
         if not line:
-            document.add_paragraph()
             continue
         image = image_pattern.fullmatch(line)
         if image:
@@ -154,8 +153,6 @@ def make_docx(markdown_text, output):
                     document.add_picture(str(path), width=Inches(6.2))
                 except Exception:
                     document.add_paragraph(image.group(1))
-            else:
-                document.add_paragraph(image.group(1))
             continue
         heading = re.match(r"^(#{1,6})\s+(.+)$", line)
         if heading:
@@ -171,19 +168,14 @@ def make_docx(markdown_text, output):
 
 
 def make_pdf(docx_path, output_dir):
-    subprocess.run([
-        "libreoffice", "--headless", "--convert-to", "pdf", "--outdir", str(output_dir), str(docx_path)
-    ], check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    subprocess.run(["libreoffice", "--headless", "--convert-to", "pdf", "--outdir", str(output_dir), str(docx_path)], check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 
 def document_html(title, language, markdown_text):
     import markdown
     body = markdown.markdown(markdown_text, extensions=["tables", "fenced_code", "sane_lists"])
     body = body.replace('src="../figures/', 'src="../../figures/')
-    return f'''<!doctype html>
-<html lang="{language}" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{html.escape(title)} · Between Potential and Ideal</title><meta name="robots" content="index,follow">
-<style>body{{margin:0;background:#07090d;color:#e9edf5;font:17px/1.72 system-ui,sans-serif}}main{{max-width:900px;margin:auto;padding:48px 24px 90px}}h1,h2,h3,h4{{color:#f2c45e;line-height:1.2}}a{{color:#72d8d0}}img{{max-width:100%;height:auto;border-radius:18px}}blockquote{{border-left:3px solid #f2c45e;padding-left:18px;color:#cbd3df}}code{{white-space:pre-wrap}}</style></head><body><main>{body}</main></body></html>'''
+    return f'''<!doctype html><html lang="{language}" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} · Between Potential and Ideal</title><meta name="robots" content="index,follow"><style>body{{margin:0;background:#07090d;color:#e9edf5;font:17px/1.72 system-ui,sans-serif}}main{{max-width:900px;margin:auto;padding:48px 24px 90px}}h1,h2,h3,h4{{color:#f2c45e;line-height:1.2}}a{{color:#72d8d0}}img{{max-width:100%;height:auto;border-radius:18px}}blockquote{{border-left:3px solid #f2c45e;padding-left:18px;color:#cbd3df}}code{{white-space:pre-wrap}}</style></head><body><main>{body}</main></body></html>'''
 
 
 def write_package(language, package, markdown_text):
@@ -196,6 +188,109 @@ def write_package(language, package, markdown_text):
     stem.with_suffix(".html").write_text(document_html(package.replace("-", " ").title(), language, source), encoding="utf-8")
     make_docx(source, stem.with_suffix(".docx"))
     make_pdf(stem.with_suffix(".docx"), folder)
+
+
+def route(language, slug=None):
+    if slug is None:
+        return f"/{language}.html"
+    return f"/pages/{language}/{slug}.html"
+
+
+def source_route(language, slug=None):
+    if language == "he":
+        return "/" if slug is None else f"/pages/he/{slug}.html"
+    if language == "en":
+        return "/en.html" if slug is None else f"/pages/en/{slug}-en.html"
+    return route(language, slug)
+
+
+def hreflang_links(slug=None):
+    return "".join(
+        f'<link rel="alternate" hreflang="{code}" href="{BASE_URL}{source_route(code, slug)}">'
+        for code in ("he", "en", "tlh", "qya")
+    )
+
+
+def nav_html(language, slug=None):
+    labels = LABELS[language]
+    inner = slug is not None
+    items = []
+    for key, target_slug in NAV:
+        label = key if key == "AI" else labels[key]
+        if target_slug is None:
+            href = f"../../{language}.html" if inner else f"{language}.html"
+        else:
+            href = f"{target_slug}.html" if inner else f"pages/{language}/{target_slug}.html"
+        active = " active" if target_slug == slug or (target_slug is None and slug is None) else ""
+        items.append(f'<a class="{active.strip()}" href="{href}">{html.escape(label)}</a>')
+    return "".join(items)
+
+
+def language_menu(slug=None):
+    names = {"he": "עברית", "en": "English", "tlh": "tlhIngan Hol", "qya": "Neo-Quenya"}
+    return "".join(f'<a href="{source_route(code, slug)}">{names[code]}</a>' for code in names)
+
+
+def first_heading(markdown_text, fallback):
+    match = re.search(r"^#{1,6}\s+(.+)$", markdown_text, flags=re.MULTILINE)
+    return match.group(1).strip() if match else fallback
+
+
+def special_markdown(language, slug):
+    label = LABELS[language]
+    if slug == "about":
+        return f"# Between Potential and Ideal\n\n{label['intro']}\n\n{label['lead']}"
+    if slug == "changelog":
+        return f"# {label['name']}\n\n{date.today().isoformat()} — 34 Daqmey, ghItlhmey Hoch, lojmItmey je chen." if language == "tlh" else f"# {label['name']}\n\n{date.today().isoformat()} — 34 nómir, ilya parmar ar yáni nar carinë."
+    if slug == "glossary":
+        if language == "tlh":
+            return "# mu'ghom\n\n## Potential\nDuHmey Hoch, chenchoHpa' bIH.\n\n## Ideal\nQaQ pagh mIgh 'e' nuDlu'pu'bogh DuH; teHchoHmeH lo'laHbogh lurgh.\n\n## Optimal\nghu' teH veHmeyDaq Ideal lo'meH chen.\n\n## mung yInbogh\nDe' tlhaplu'pa' ghot, SIQghach, wanI' pagh qo' teH.\n\n## leghwI'\nvIt ghajbe'; vIt retlhDaq Qam, qon, nuD, jangnIS."
+        return "# Quettaparma\n\n## Potential\nI palar yar polir tulyë epë haryar canta pantaina.\n\n## Ideal\nNámië apa pantalië máriéva: i ya nauva valda anwavë.\n\n## Optimal\nI ahyalië nómessë Idealva mi landar anwi.\n\n## celu cuina\nI yesta cuina epë mapalië.\n\n## Astarmo\nLá harya i anwië; tarë ara sa, tecë sa ar lemya hanquenta."
+    if slug == "potential-ideal-optimal":
+        return special_markdown(language, "glossary")
+    if slug == "files":
+        rows = [f"- [{package}](../../files/{language}/{package}-{language}.html)" for package in PACKAGES]
+        return f"# {label['downloads']}\n\n" + "\n".join(rows)
+    if slug == "stories":
+        return f"# {label['read']}\n\n- [Stories Before Thought](../../files/{language}/stories-before-thought-{language}.html)\n- [The Nauseating Truth](../../files/{language}/the-nauseating-truth-{language}.html)"
+    if slug == "ai-believes":
+        return f"# AI\n\n- [What AI Believes](../../files/{language}/what-ai-believes-{language}.html)\n- [When I Am Also You](../../files/{language}/when-i-am-also-you-{language}.html)\n- [Reverse Turing Conversation](../../files/{language}/reverse-turing-conversation-{language}.html)"
+    if slug == "mistake-repeats":
+        return f"# A Mistake Always Returns\n\n[Stories Before Thought](../../files/{language}/stories-before-thought-{language}.html)"
+    if slug in {"discussion", "response"}:
+        return f"# {label['witness']}\n\n{label['lead']}\n\n[Between Potential and Ideal](../../files/{language}/between-potential-and-ideal-{language}.html)"
+    return f"# {label['name']}\n\n{label['lead']}"
+
+
+def page_body(language, slug, segments):
+    if slug in SEGMENTS:
+        body = "\n\n".join(segments[number] for number in SEGMENTS[slug] if number in segments)
+        if body:
+            return body
+    return special_markdown(language, slug)
+
+
+def page_html(language, slug, markdown_text, home=False):
+    import markdown
+    labels = LABELS[language]
+    title = first_heading(markdown_text, labels["name"])
+    body = markdown.markdown(markdown_text, extensions=["tables", "fenced_code", "sane_lists"])
+    prefix = "" if home else "../../"
+    canonical = f"{BASE_URL}{route(language, None if home else slug)}"
+    page_slug = None if home else slug
+    hero = f'<section class="hero"><p class="kicker">Between Potential and Ideal · {labels["name"]}</p><h1>{html.escape(labels["intro"] if home else title)}</h1><p>{html.escape(labels["lead"])}</p></section>' if home else ""
+    return f'''<!doctype html><html lang="{language}" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} · Between Potential and Ideal</title><meta name="description" content="{html.escape(labels['lead'])}"><link rel="canonical" href="{canonical}">{hreflang_links(page_slug)}<link rel="icon" href="{prefix}favicon.ico"><style>:root{{--gold:#f2c45e;--teal:#72d8d0;--ink:#07090d;--card:#101621}}*{{box-sizing:border-box}}body{{margin:0;background:radial-gradient(circle at 50% -10%,#263242 0,#0b0f16 36%,#05070b 100%);color:#edf1f7;font:16px/1.65 system-ui,sans-serif;min-height:100vh}}header{{position:sticky;top:0;z-index:5;background:#080b10ee;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff18;padding:14px 20px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}}.brand{{color:var(--gold);font-weight:850;text-decoration:none}}nav{{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;flex:1}}nav a,.langs a{{color:#dbe2ec;text-decoration:none;padding:7px 10px;border-radius:999px}}nav a:hover,nav a.active,.langs a:hover{{background:#ffffff12;color:var(--gold)}}.langs{{display:flex;gap:4px;flex-wrap:wrap}}main{{max-width:1080px;margin:auto;padding:42px 22px 90px}}.hero{{text-align:center;padding:54px 20px;margin-bottom:30px;border:1px solid #ffffff18;border-radius:28px;background:linear-gradient(145deg,#111925dd,#0a0d13dd);box-shadow:0 30px 80px #0008}}.kicker{{color:var(--teal);font-weight:800;letter-spacing:.08em}}article{{max-width:900px;margin:auto;background:#0c1119dc;border:1px solid #ffffff16;border-radius:24px;padding:clamp(22px,4vw,48px);box-shadow:0 24px 70px #0007}}h1,h2,h3,h4{{color:var(--gold);line-height:1.18}}h1{{font-size:clamp(2rem,5vw,4rem)}}a{{color:var(--teal)}}img{{max-width:100%;height:auto;border-radius:18px}}blockquote{{border-left:3px solid var(--gold);padding-left:18px;color:#cbd3df}}footer{{text-align:center;color:#93a0b2;padding:34px}}@media(max-width:760px){{header{{position:relative;justify-content:center}}nav{{order:3;overflow-x:auto;flex-wrap:nowrap;justify-content:flex-start;width:100%;padding-bottom:4px}}.langs{{justify-content:center}}main{{padding:22px 12px 72px}}article{{padding:22px 17px}}}}</style></head><body><header><a class="brand" href="{prefix}{language}.html">Between Potential and Ideal</a><nav>{nav_html(language, page_slug)}</nav><div class="langs">{language_menu(page_slug)}</div></header><main>{hero}<article>{body}</article></main><footer>Between Potential and Ideal · {labels['name']}</footer></body></html>'''
+
+
+def write_pages(language):
+    folder = SITE / "pages" / language
+    folder.mkdir(parents=True, exist_ok=True)
+    segments = load_segments(language)
+    home_markdown = f"# Between Potential and Ideal\n\n{LABELS[language]['lead']}\n\n## {LABELS[language]['summary']}\n\n{segments.get(20, '')}\n\n## {LABELS[language]['core']}\n\n{segments.get(100, '')}"
+    (SITE / f"{language}.html").write_text(page_html(language, None, home_markdown, home=True), encoding="utf-8")
+    for slug in PAGE_SLUGS:
+        body = page_body(language, slug, segments)
+        (folder / f"{slug}.html").write_text(page_html(language, slug, body), encoding="utf-8")
 
 
 print(ROOT)
