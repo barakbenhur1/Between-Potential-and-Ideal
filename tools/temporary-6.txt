@@ -1,1 +1,19 @@
-temporary six
+from pathlib import Path
+import json
+
+ROOT = Path(__file__).resolve().parents[1]
+SITE = ROOT / "site"
+LANGUAGES = ("tlh", "qya")
+
+
+def main():
+    errors = []
+    for language in LANGUAGES:
+        if not (SITE / f"{language}.html").is_file():
+            errors.append(f"missing {language} home")
+    print(json.dumps({"errors": errors}))
+    return 1 if errors else 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
