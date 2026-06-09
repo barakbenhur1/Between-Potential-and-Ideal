@@ -1,3 +1,72 @@
 from pathlib import Path
+from datetime import date
+import html, json, re, shutil, subprocess
+
 ROOT = Path(__file__).resolve().parents[1]
+SITE = ROOT / "site"
+BASE_URL = "https://between-potential-and-ideal.onrender.com"
+LANGUAGES = ("tlh", "qya")
+FORMATS = ("html", "pdf", "docx", "md", "txt")
+PACKAGES = (
+    "between-potential-and-ideal",
+    "between-potential-and-ideal-editorial",
+    "between-potential-and-ideal-tightened",
+    "editorial-report",
+    "stories-before-thought",
+    "the-nauseating-truth",
+    "what-ai-believes",
+    "when-i-am-also-you",
+    "reverse-turing-conversation",
+)
+PAGE_SLUGS = (
+    "about", "ai-as-witness", "ai-believes", "ai-open-problems", "ai", "applied",
+    "art-of-potential", "black-holes-horizons-holography", "boundary-horizons", "changelog",
+    "core", "critique", "discussion", "education-of-potential", "files", "glossary",
+    "high-energy-physics", "i-have-no-mouth", "law-of-potential",
+    "locality-nonlocality-contextuality", "medicine-of-potential", "methodology",
+    "mistake-repeats", "music-of-potential", "potential-extensions",
+    "potential-ideal-optimal", "recursive-edge", "response",
+    "science-physics-math-boundary-discipline", "shape-of-the-universe-and-potential",
+    "sources", "stories", "summary", "witness",
+)
+LABELS = {
+    "tlh": {
+        "name": "tlhIngan Hol", "home": "tagh Daq", "summary": "qIjmeH mu'mey",
+        "glossary": "mu'ghom", "concepts": "qechmey", "method": "mIw",
+        "core": "botlh", "witness": "leghwI'", "application": "lo'",
+        "files": "'a'baqa'mey", "critique": "poj", "sources": "mungmey",
+        "read": "yIlaD", "downloads": "ghItlhmey yItlhap",
+        "intro": "DuH chenchoHmeH poH bopbogh QubmeH nID.",
+        "lead": "DuHvo', leghwI'ghach, wIv, Qu' je veghbogh yIn chen lo'laH law' ghoS.",
+    },
+    "qya": {
+        "name": "Neo-Quenya", "home": "Yesta", "summary": "Sinta Quenta",
+        "glossary": "Quettaparma", "concepts": "Sanwi", "method": "Lé Cestalië",
+        "core": "Endë", "witness": "Astarmo", "application": "Antacarma",
+        "files": "Parmar", "critique": "Cesta", "sources": "Celur",
+        "read": "Á cenda", "downloads": "Á mapa i parmar",
+        "intro": "Sanwë-cesta i lúmessë yassë námië yesta harya canta.",
+        "lead": "Námiello, ter astarmë, cilmë ar mauya-cárië, ana canta cuilëo valda amba.",
+    },
+}
+NAV = (
+    ("home", None), ("summary", "summary"), ("glossary", "glossary"),
+    ("concepts", "potential-ideal-optimal"), ("method", "methodology"),
+    ("core", "core"), ("witness", "witness"), ("application", "applied"),
+    ("AI", "ai"), ("files", "files"), ("critique", "critique"), ("sources", "sources"),
+)
+SEGMENTS = {
+    "summary": [20, 30, 40], "core": [100, 110], "methodology": [40, 50, 60],
+    "witness": [170, 180], "ai-as-witness": [170], "ai-open-problems": [180],
+    "ai": [170, 180, 190], "applied": [390, 400, 410, 420, 430, 440, 450, 460, 470, 480, 490, 500, 510],
+    "art-of-potential": [370], "black-holes-horizons-holography": [660],
+    "boundary-horizons": [550], "critique": [40, 50, 60], "education-of-potential": [120],
+    "high-energy-physics": [630, 640, 650], "i-have-no-mouth": [190],
+    "law-of-potential": [480, 490, 500], "locality-nonlocality-contextuality": [310, 320, 330],
+    "medicine-of-potential": [510], "music-of-potential": [380],
+    "potential-extensions": [520, 530, 540, 550, 560, 570, 580, 590, 600, 610, 620],
+    "recursive-edge": [250], "science-physics-math-boundary-discipline": [300],
+    "shape-of-the-universe-and-potential": [600, 610, 620], "sources": [750, 760, 770, 780],
+}
+
 print(ROOT)
