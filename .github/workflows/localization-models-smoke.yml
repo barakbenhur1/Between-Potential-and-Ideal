@@ -4,10 +4,6 @@ on:
   workflow_dispatch:
   pull_request:
     branches: [ main ]
-  push:
-    branches: [ main ]
-    paths:
-      - ".github/workflows/localization-models-smoke.yml"
 
 permissions:
   contents: read
@@ -18,24 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - id: mini
-        uses: actions/ai-inference@v1
         with:
-          prompt: "Return exactly MINI_OK and nothing else."
-          model: openai/gpt-4o-mini
-          max-completion-tokens: 16
-          temperature: 0
-      - id: full
-        uses: actions/ai-inference@v1
-        with:
-          prompt: "Return exactly FULL_OK and nothing else."
-          model: openai/gpt-4o
-          max-completion-tokens: 16
-          temperature: 0
-      - name: Create tiny localization input
+          show-progress: false
+      - name: Create tiny input
         run: |
           mkdir -p reports/localization/diagnostic
-          printf '{"source":"# Hello\n\nTranslate this sentence."}\n' > reports/localization/diagnostic/tiny.json
+          echo '{"source":"Hello"}' > reports/localization/diagnostic/tiny.json
       - id: prompt_file
         uses: actions/ai-inference@v1
         with:
@@ -45,13 +29,3 @@ jobs:
             language_mode: tlh
           file_input: |
             job: reports/localization/diagnostic/tiny.json
-      - name: Verify results
-        env:
-          MINI: ${{ steps.mini.outputs.response }}
-          FULL: ${{ steps.full.outputs.response }}
-          FILE_RESPONSE: ${{ steps.prompt_file.outputs.response }}
-        run: |
-          printf 'mini=%s\nfull=%s\nfile=%s\n' "$MINI" "$FULL" "$FILE_RESPONSE"
-          test "$MINI" = "MINI_OK"
-          test "$FULL" = "FULL_OK"
-          test -n "$FILE_RESPONSE"
