@@ -6,15 +6,6 @@ on:
     branches: [ main ]
   push:
     branches: [ main ]
-    paths:
-      - "tools/prepare_localization_ai_jobs.py"
-      - "tools/apply_localization_ai_results.py"
-      - "tools/temporary.txt"
-      - "tools/temporary-2.txt"
-      - "tools/temporary-3.txt"
-      - "tools/temporary-5.txt"
-      - "tools/temporary-6.txt"
-      - ".github/workflows/finalize-localization-release.yml"
 
 permissions:
   contents: write
@@ -34,10 +25,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.10"
-      - name: Prepare bounded localization jobs
-        run: python3 tools/prepare_localization_ai_jobs.py
+      - run: python3 tools/prepare_localization_ai_jobs.py
       - id: matrix
-        name: Export matrix
         run: echo "matrix=$(jq -c . reports/localization/ai-jobs/matrix.json)" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-artifact@v4
         with:
@@ -59,34 +48,16 @@ jobs:
         with:
           name: localization-ai-jobs
           path: reports/localization/ai-jobs
-      - name: Build plain-text model prompt
+      - name: Build model input
         env:
           JOB_FILE: reports/localization/ai-jobs/${{ matrix.input }}
           TARGET_LANGUAGE: ${{ matrix.language_mode }}
         run: |
-          python3 - <<'PY'
-          import json, os
-          from pathlib import Path
-
-          data = json.loads(Path(os.environ["JOB_FILE"]).read_text(encoding="utf-8"))
-          language = os.environ["TARGET_LANGUAGE"]
-          target_name = "standard Klingon in Latin transcription" if language == "tlh" else "consistent conservative Neo-Quenya"
-          prompt = f"""Translate the SOURCE Markdown faithfully into {target_name}.
-
-Return only the translated Markdown fragment, with no commentary and no code fence.
-Preserve every heading, paragraph, list, quotation, link, image reference, punctuation mark, joke, paradox, protected ending, and their exact order.
-Do not summarize, omit, expand, explain, or invent content.
-Keep proper names, work titles, citations, URLs, AI, and the brand name Between Potential and Ideal unchanged.
-Follow the supplied project glossary consistently. Prefer clear descriptive phrases over unsupported invented vocabulary.
-
-PROJECT GLOSSARY:
-{data.get('glossary', '')}
-
-SOURCE MARKDOWN:
-{data['source']}
-"""
-          Path("reports/localization/current-prompt.txt").write_text(prompt, encoding="utf-8")
-          PY
+          mkdir -p reports/localization
+          printf 'Translate the source Markdown into %s. Return only translated Markdown. Preserve all structure and content. Do not summarize or invent.\n\nGLOSSARY:\n' "$TARGET_LANGUAGE" > reports/localization/current-prompt.txt
+          jq -r '.glossary' "$JOB_FILE" >> reports/localization/current-prompt.txt
+          printf '\n\nSOURCE:\n' >> reports/localization/current-prompt.txt
+          jq -r '.source' "$JOB_FILE" >> reports/localization/current-prompt.txt
       - id: inference
         uses: actions/ai-inference@v1
         with:
@@ -94,7 +65,7 @@ SOURCE MARKDOWN:
           model: openai/gpt-4o
           max-completion-tokens: 12000
           temperature: 0
-      - name: Save translated fragment
+      - name: Save result
         env:
           RESPONSE_FILE: ${{ steps.inference.outputs.response-file }}
           JOB_ID: ${{ matrix.id }}
@@ -128,32 +99,23 @@ SOURCE MARKDOWN:
           pattern: localization-ai-result-*
           path: reports/localization/ai-results
           merge-multiple: true
-      - name: Install document and QA dependencies
-        run: |
+      - run: |
           python3 -m pip install --upgrade pip
           python3 -m pip install beautifulsoup4 markdown python-docx pillow pymupdf lxml
           sudo apt-get update
           sudo apt-get install -y libreoffice fonts-dejavu-core
-      - name: Apply translated package fragments
-        run: python3 tools/apply_localization_ai_results.py
-      - name: Prepare localized image assets
-        run: python3 tools/temporary-5.txt
-      - name: Build complete public language editions
-        run: python3 tools/temporary-2.txt
-      - name: Run localization release QA
-        run: python3 tools/temporary-6.txt
-      - name: Run repository release QA
-        run: python3 tools/final_release_qa.py --scan
-      - name: Commit deploy-ready localization release
+      - run: python3 tools/apply_localization_ai_results.py
+      - run: python3 tools/temporary-5.txt
+      - run: python3 tools/temporary-2.txt
+      - run: python3 tools/temporary-6.txt
+      - run: python3 tools/final_release_qa.py --scan
+      - name: Commit release
         if: github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add localization site docs tools .github/workflows/finalize-localization-release.yml
-          if git diff --cached --quiet; then
-            echo "No release changes to commit."
-            exit 0
-          fi
+          if git diff --cached --quiet; then exit 0; fi
           git commit -m "Publish complete Klingon and Neo-Quenya editions [skip ci]"
           git push
       - uses: actions/upload-artifact@v4
