@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "reports/localization/ai-jobs"
 CONTRACT = ROOT / "localization/documents/between-potential-and-ideal.json"
 LANGUAGES = ("tlh", "qya")
-GROUP_SIZE = 3
+GROUP_SIZE = 1
 
 
 def read(path):
@@ -34,7 +34,7 @@ def main():
         paths += [ROOT / p for p in contract["source_segments"][language]]
         for start in range(0, len(paths), GROUP_SIZE):
             group = paths[start:start + GROUP_SIZE]
-            job_id = f"repair-{language}-{start // GROUP_SIZE + 1:02d}"
+            job_id = f"repair-{language}-{start // GROUP_SIZE + 1:03d}"
             data = {
                 "job_id": job_id,
                 "language": language,
