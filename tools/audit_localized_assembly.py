@@ -60,6 +60,44 @@ def heading_counts(text: str) -> dict[str, int]:
     return {f"h{level}": counts.get(level, 0) for level in range(1, 7)}
 
 
+def inspect_assembly(path: Path, language: str) -> tuple[dict[str, object], list[str]]:
+    errors: list[str] = []
+    metrics: dict[str, object] = {
+        "path": rel(path),
+        "exists": path.is_file(),
+    }
+    if not path.is_file():
+        errors.append(f"missing assembled draft: {rel(path)}")
+        return metrics, errors
+
+    text = path.read_text(encoding="utf-8", errors="strict")
+    control_heading = CONTROL_HEADINGS[language]
+    review_gate_count = len(REVIEW_GATE_RE.findall(text))
+    control_note_count = text.count(control_heading)
+    marker_presence = {marker: marker in text for marker in REQUIRED_FINAL_MARKERS}
+    metrics.update(
+        {
+            "bytes": path.stat().st_size,
+            "lines": len(text.splitlines()),
+            "sha256": file_hash(path),
+            "headings": heading_counts(text),
+            "review_gate_count": review_gate_count,
+            "translation_control_note_count": control_note_count,
+            "required_final_markers": marker_presence,
+        }
+    )
+
+    if control_note_count != 1:
+        errors.append(f"{rel(path)}: expected exactly one translation control note, found {control_note_count}")
+    for marker, present in marker_presence.items():
+        if not present:
+            errors.append(f"{rel(path)}: missing final marker: {marker}")
+    if marker_presence["Back to table of contents"] and control_note_count == 1:
+        if text.rfind("Back to table of contents") > text.rfind(control_heading):
+            errors.append(f"{rel(path)}: translation control note is not the final control section")
+    return metrics, errors
+
+
 def audit_language(contract: dict, language: str) -> dict:
     errors: list[str] = []
     blockers: list[str] = []
@@ -102,43 +140,32 @@ def audit_language(contract: dict, language: str) -> dict:
     elif base_meta.get("language") != language:
         errors.append(f"canonical base language mismatch: {rel(base_path)}")
 
-    output_path = ROOT / contract["draft_assembly_outputs"][language]
-    output_metrics: dict[str, object] = {
-        "path": rel(output_path),
-        "exists": output_path.is_file(),
-    }
+    review_path = ROOT / contract["draft_assembly_outputs"][language]
+    clean_path = (
+        ROOT
+        / "reports"
+        / "localization"
+        / "assembled-clean"
+        / language
+        / f"{contract['document_id']}-{language}.md"
+    )
+    review_metrics, review_errors = inspect_assembly(review_path, language)
+    clean_metrics, clean_errors = inspect_assembly(clean_path, language)
+    errors.extend(review_errors)
+    errors.extend(clean_errors)
 
-    if not output_path.is_file():
-        errors.append(f"missing assembled draft: {rel(output_path)}")
-    else:
-        text = output_path.read_text(encoding="utf-8", errors="strict")
-        control_heading = CONTROL_HEADINGS[language]
-        review_gate_count = len(REVIEW_GATE_RE.findall(text))
-        control_note_count = text.count(control_heading)
-        marker_presence = {marker: marker in text for marker in REQUIRED_FINAL_MARKERS}
-        output_metrics.update(
-            {
-                "bytes": output_path.stat().st_size,
-                "lines": len(text.splitlines()),
-                "sha256": file_hash(output_path),
-                "headings": heading_counts(text),
-                "review_gate_count": review_gate_count,
-                "translation_control_note_count": control_note_count,
-                "required_final_markers": marker_presence,
-            }
+    review_gate_count = int(review_metrics.get("review_gate_count", -1))
+    clean_gate_count = int(clean_metrics.get("review_gate_count", -1))
+    if review_metrics.get("exists") and review_gate_count != len(segment_paths):
+        errors.append(
+            f"review assembly should contain one review-control section per segment: "
+            f"expected {len(segment_paths)}, found {review_gate_count}"
         )
-        if control_note_count != 1:
-            errors.append(f"expected exactly one translation control note, found {control_note_count}")
-        for marker, present in marker_presence.items():
-            if not present:
-                errors.append(f"assembled draft is missing final marker: {marker}")
-        if marker_presence["Back to table of contents"] and control_note_count == 1:
-            if text.rfind("Back to table of contents") > text.rfind(control_heading):
-                errors.append("translation control note is not the final control section")
-        if review_gate_count:
-            blockers.append(
-                f"assembled review draft contains {review_gate_count} review-control sections; production assembly must omit them"
-            )
+    if clean_metrics.get("exists") and clean_gate_count != 0:
+        errors.append(f"clean assembly still contains {clean_gate_count} review-control sections")
+    if review_metrics.get("exists") and clean_metrics.get("exists"):
+        if int(clean_metrics.get("bytes", 0)) >= int(review_metrics.get("bytes", 0)):
+            errors.append("clean assembly is not smaller than review assembly")
 
     nonapproved = sum(count for status, count in statuses.items() if status != "approved")
     placeholder_drafts = statuses.get("placeholder-draft", 0)
@@ -157,10 +184,40 @@ def audit_language(contract: dict, language: str) -> dict:
         "segment_number_range": [min(segment_numbers), max(segment_numbers)] if segment_numbers else [],
         "segment_statuses": dict(sorted(statuses.items())),
         "publication_values": dict(sorted(publication_values.items())),
-        "assembled_draft": output_metrics,
+        "review_assembled_draft": review_metrics,
+        "clean_assembled_preview": clean_metrics,
+        "review_control_removal_verified": (
+            review_metrics.get("exists")
+            and clean_metrics.get("exists")
+            and review_gate_count == len(segment_paths)
+            and clean_gate_count == 0
+        ),
         "structural_errors": errors,
         "publication_blockers": blockers,
     }
+
+
+def render_assembly_metrics(lines: list[str], label: str, assembled: dict) -> None:
+    lines.extend(
+        [
+            f"### {label}",
+            "",
+            f"- Output: `{assembled['path']}`",
+            f"- Exists: `{assembled['exists']}`",
+        ]
+    )
+    if assembled.get("exists"):
+        lines.extend(
+            [
+                f"- Bytes: `{assembled.get('bytes')}`",
+                f"- Lines: `{assembled.get('lines')}`",
+                f"- SHA-256: `{assembled.get('sha256')}`",
+                f"- Headings: `{json.dumps(assembled.get('headings'), sort_keys=True)}`",
+                f"- Review-control sections: `{assembled.get('review_gate_count')}`",
+                f"- Translation control notes: `{assembled.get('translation_control_note_count')}`",
+            ]
+        )
+    lines.append("")
 
 
 def render_markdown(result: dict) -> str:
@@ -171,11 +228,12 @@ def render_markdown(result: dict) -> str:
         f"- Source commit: `{result['source_commit']}`",
         f"- Generated: `{result['generated_at']}`",
         f"- Assembly status: **{result['assembly_status']}**",
+        f"- Clean preview status: **{result['clean_preview_status']}**",
+        f"- Cross-language structural parity: **{result['cross_language_structural_parity']}**",
         f"- Publication readiness: **{result['publication_readiness']}**",
         "",
     ]
     for language in result["languages"]:
-        assembled = language["assembled_draft"]
         lines.extend(
             [
                 f"## {language['language']}",
@@ -183,27 +241,20 @@ def render_markdown(result: dict) -> str:
                 f"- Canonical segments: **{language['segment_count']}**",
                 f"- Base status: `{language['canonical_base_status']}`",
                 f"- Segment statuses: `{json.dumps(language['segment_statuses'], ensure_ascii=False, sort_keys=True)}`",
-                f"- Assembly output: `{assembled['path']}`",
-                f"- Assembly exists: `{assembled['exists']}`",
+                f"- Review-control removal verified: `{language['review_control_removal_verified']}`",
+                "",
             ]
         )
-        if assembled.get("exists"):
-            lines.extend(
-                [
-                    f"- Bytes: `{assembled.get('bytes')}`",
-                    f"- Lines: `{assembled.get('lines')}`",
-                    f"- SHA-256: `{assembled.get('sha256')}`",
-                    f"- Review-control sections: `{assembled.get('review_gate_count')}`",
-                    f"- Translation control notes: `{assembled.get('translation_control_note_count')}`",
-                ]
-            )
+        render_assembly_metrics(lines, "Review assembly", language["review_assembled_draft"])
+        render_assembly_metrics(lines, "Clean non-public preview", language["clean_assembled_preview"])
         if language["structural_errors"]:
-            lines.append("\n### Structural errors")
+            lines.append("### Structural errors")
             lines.extend(f"- {item}" for item in language["structural_errors"])
+            lines.append("")
         if language["publication_blockers"]:
-            lines.append("\n### Publication blockers")
+            lines.append("### Publication blockers")
             lines.extend(f"- {item}" for item in language["publication_blockers"])
-        lines.append("")
+            lines.append("")
     lines.extend(
         [
             "## Decision",
@@ -218,7 +269,7 @@ def render_markdown(result: dict) -> str:
 
 
 def main() -> int:
-    parser = ArgumentParser(description="Audit non-public assembled localization drafts and publication readiness.")
+    parser = ArgumentParser(description="Audit review and clean non-public localization assemblies.")
     parser.add_argument("document_id")
     parser.add_argument("--json-output", type=Path)
     parser.add_argument("--markdown-output", type=Path)
@@ -246,26 +297,54 @@ def main() -> int:
     if len(segment_counts) != 1:
         structural_errors.append("language segment counts do not match")
 
+    review_heading_profiles = {
+        json.dumps(language["review_assembled_draft"].get("headings", {}), sort_keys=True)
+        for language in languages
+    }
+    clean_heading_profiles = {
+        json.dumps(language["clean_assembled_preview"].get("headings", {}), sort_keys=True)
+        for language in languages
+    }
+    if len(review_heading_profiles) != 1:
+        structural_errors.append("review assembly heading profiles do not match across languages")
+    if len(clean_heading_profiles) != 1:
+        structural_errors.append("clean assembly heading profiles do not match across languages")
+
+    control_removal_verified = all(language["review_control_removal_verified"] for language in languages)
+    if not control_removal_verified:
+        structural_errors.append("review-control removal was not verified for both languages")
+
     assembly_status = "FAIL" if structural_errors else "PASS"
+    clean_preview_status = "FAIL" if structural_errors or not control_removal_verified else "PASS"
+    cross_language_structural_parity = (
+        "PASS"
+        if not structural_errors and len(segment_counts) == 1 and len(review_heading_profiles) == 1 and len(clean_heading_profiles) == 1
+        else "FAIL"
+    )
     publication_readiness = "BLOCKED" if structural_errors or publication_blockers else "READY"
+
     if structural_errors:
         decision = "Assembly failed structural validation. Correct the listed errors before review continues."
     elif publication_blockers:
         decision = (
-            "Both non-public drafts assembled successfully and are structurally reviewable, "
-            "but publication remains blocked until linguistic approval and clean production assembly remove review-control sections."
+            "Review and clean non-public drafts assembled successfully, review-control removal is verified, "
+            "and cross-language structural parity passed. Publication remains blocked only by source approval "
+            "and unresolved placeholder chapters."
         )
     else:
         decision = "The assembled drafts passed structural and publication-readiness checks."
 
     result = {
-        "schema_version": 1,
+        "schema_version": 2,
         "document_id": contract.get("document_id"),
         "source_commit": args.source_commit,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "assembly_status": assembly_status,
+        "clean_preview_status": clean_preview_status,
+        "cross_language_structural_parity": cross_language_structural_parity,
         "publication_readiness": publication_readiness,
         "segment_count_per_language": next(iter(segment_counts)) if len(segment_counts) == 1 else None,
+        "review_control_removal_verified": control_removal_verified,
         "languages": languages,
         "structural_errors": structural_errors,
         "publication_blockers": publication_blockers,
@@ -277,17 +356,19 @@ def main() -> int:
         ROOT / "localization" / "audits" / f"{args.document_id}-assembly-parity.json"
     )
     markdown_output = args.markdown_output or json_output.with_suffix(".md")
-    for output in (json_output, markdown_output):
-        output = output if output.is_absolute() else ROOT / output
-        output.parent.mkdir(parents=True, exist_ok=True)
     json_output = json_output if json_output.is_absolute() else ROOT / json_output
     markdown_output = markdown_output if markdown_output.is_absolute() else ROOT / markdown_output
+    json_output.parent.mkdir(parents=True, exist_ok=True)
+    markdown_output.parent.mkdir(parents=True, exist_ok=True)
     json_output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     markdown_output.write_text(render_markdown(result), encoding="utf-8")
 
     print(f"assembly_status={assembly_status}")
+    print(f"clean_preview_status={clean_preview_status}")
+    print(f"cross_language_structural_parity={cross_language_structural_parity}")
     print(f"publication_readiness={publication_readiness}")
     print(f"segment_count_per_language={result['segment_count_per_language']}")
+    print(f"review_control_removal_verified={control_removal_verified}")
     print(f"structural_errors={len(structural_errors)}")
     print(f"publication_blockers={len(publication_blockers)}")
     print(f"json={rel(json_output)}")
