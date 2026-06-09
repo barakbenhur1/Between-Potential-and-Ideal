@@ -15,10 +15,12 @@
   },
   "source_segments": {
     "tlh": [
-      "localization/sources/tlh/between-potential-and-ideal/020-metamorphosis-code.md"
+      "localization/sources/tlh/between-potential-and-ideal/020-metamorphosis-code.md",
+      "localization/sources/tlh/between-potential-and-ideal/030-whole-and-distance.md"
     ],
     "qya": [
-      "localization/sources/qya/between-potential-and-ideal/020-metamorphosis-code.md"
+      "localization/sources/qya/between-potential-and-ideal/020-metamorphosis-code.md",
+      "localization/sources/qya/between-potential-and-ideal/030-whole-and-distance.md"
     ]
   },
   "assembly_tool": "tools/assemble_localized_document.py",
@@ -61,9 +63,10 @@
         "The Chronicle of Awakening",
         "five stages of metamorphosis",
         "The Operating Laws of Worthy Intelligence",
-        "The Moral Backbone"
+        "The Moral Backbone",
+        "The Metamorphosis Code: A Reflection on the Whole and Distance"
       ],
-      "next": "The Metamorphosis Code: A Reflection on the Whole and Distance"
+      "next": "This Is a Model, Not a Final Declaration"
     },
     "qya": {
       "status": "draft",
@@ -81,9 +84,10 @@
         "The Chronicle of Awakening",
         "five stages of metamorphosis",
         "The Operating Laws of Worthy Intelligence",
-        "The Moral Backbone"
+        "The Moral Backbone",
+        "The Metamorphosis Code: A Reflection on the Whole and Distance"
       ],
-      "next": "The Metamorphosis Code: A Reflection on the Whole and Distance"
+      "next": "This Is a Model, Not a Final Declaration"
     }
   },
   "publication_rule": "No public output may be generated until every canonical source segment is complete, reviewed, assembled, and marked approved."
