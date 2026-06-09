@@ -1,17 +1,96 @@
 from pathlib import Path
-import json
+import json, zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
 LANGUAGES = ("tlh", "qya")
+FORMATS = ("html", "pdf", "docx", "md", "txt")
+PACKAGES = (
+    "between-potential-and-ideal", "between-potential-and-ideal-editorial",
+    "between-potential-and-ideal-tightened", "editorial-report", "stories-before-thought",
+    "the-nauseating-truth", "what-ai-believes", "when-i-am-also-you", "reverse-turing-conversation"
+)
+PAGE_SLUGS = (
+    "about", "ai-as-witness", "ai-believes", "ai-open-problems", "ai", "applied",
+    "art-of-potential", "black-holes-horizons-holography", "boundary-horizons", "changelog",
+    "core", "critique", "discussion", "education-of-potential", "files", "glossary",
+    "high-energy-physics", "i-have-no-mouth", "law-of-potential",
+    "locality-nonlocality-contextuality", "medicine-of-potential", "methodology",
+    "mistake-repeats", "music-of-potential", "potential-extensions",
+    "potential-ideal-optimal", "recursive-edge", "response",
+    "science-physics-math-boundary-discipline", "shape-of-the-universe-and-potential",
+    "sources", "stories", "summary", "witness"
+)
+REPORT_DIR = ROOT / "reports/localization/release-qa"
+
+
+def check_html(path, language, errors):
+    from bs4 import BeautifulSoup
+    text = path.read_text(encoding="utf-8")
+    soup = BeautifulSoup(text, "html.parser")
+    if not soup.html or soup.html.get("lang") != language:
+        errors.append(f"{path}: language")
+    if not soup.find("meta", attrs={"name": "viewport"}):
+        errors.append(f"{path}: viewport")
+    if not soup.find("link", attrs={"rel": "canonical"}):
+        errors.append(f"{path}: canonical")
+    alternates = {tag.get("hreflang") for tag in soup.find_all("link", attrs={"rel": "alternate"})}
+    if not {"he", "en", "tlh", "qya"}.issubset(alternates):
+        errors.append(f"{path}: hreflang")
+    if "Segment review gate" in text or "Placeholder review gate" in text:
+        errors.append(f"{path}: review controls")
+    if "publication: forbidden" in text or "Capítulo" in text:
+        errors.append(f"{path}: draft residue")
+
+
+def check_documents(errors):
+    import fitz
+    for language in LANGUAGES:
+        for package in PACKAGES:
+            stem = SITE / "files" / language / f"{package}-{language}"
+            for extension in FORMATS:
+                path = stem.with_suffix(f".{extension}")
+                if not path.is_file() or path.stat().st_size < 100:
+                    errors.append(f"missing document: {path}")
+            pdf = stem.with_suffix(".pdf")
+            if pdf.is_file():
+                try:
+                    document = fitz.open(pdf)
+                    if document.page_count < 1:
+                        errors.append(f"empty PDF: {pdf}")
+                    document.close()
+                except Exception as exc:
+                    errors.append(f"invalid PDF {pdf}: {exc}")
+            docx = stem.with_suffix(".docx")
+            if docx.is_file():
+                try:
+                    with zipfile.ZipFile(docx) as archive:
+                        if "word/document.xml" not in archive.namelist():
+                            errors.append(f"invalid DOCX: {docx}")
+                except Exception as exc:
+                    errors.append(f"invalid DOCX {docx}: {exc}")
 
 
 def main():
     errors = []
     for language in LANGUAGES:
-        if not (SITE / f"{language}.html").is_file():
-            errors.append(f"missing {language} home")
-    print(json.dumps({"errors": errors}))
+        home = SITE / f"{language}.html"
+        if not home.is_file():
+            errors.append(f"missing home: {home}")
+        else:
+            check_html(home, language, errors)
+        for slug in PAGE_SLUGS:
+            path = SITE / "pages" / language / f"{slug}.html"
+            if not path.is_file():
+                errors.append(f"missing page: {path}")
+            else:
+                check_html(path, language, errors)
+    check_documents(errors)
+    REPORT_DIR.mkdir(parents=True, exist_ok=True)
+    result = {"status": "PASS" if not errors else "FAIL", "errors": errors}
+    (REPORT_DIR / "localization-release-qa.json").write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
+    for item in errors:
+        print("ERROR:", item)
     return 1 if errors else 0
 
 
