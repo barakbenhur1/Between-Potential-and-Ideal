@@ -14,6 +14,7 @@ on:
       - "tools/audit_localized_assembly.py"
       - "tools/apply_intentional_placeholder_policy.py"
       - "tools/update_localization_stage_from_audit.py"
+      - "tools/export_localization_source_inventory.py"
       - ".github/workflows/assemble-localization-drafts.yml"
 
 permissions:
@@ -34,6 +35,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.10"
+
+      - name: Export localization source inventory
+        run: python3 tools/export_localization_source_inventory.py
 
       - name: Validate localization contract
         run: python3 tools/check_localized_document_contracts.py
@@ -81,17 +85,18 @@ jobs:
           if-no-files-found: error
           retention-days: 14
 
-      - name: Commit audit and stage snapshot
+      - name: Commit audit, inventory and stage snapshot
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add \
+            localization/audits/source-inventory.json \
             localization/audits/between-potential-and-ideal-assembly-parity.json \
             localization/audits/between-potential-and-ideal-assembly-parity.md \
             localization/documents/between-potential-and-ideal.json \
             localization/batches/batch-1.json
           if git diff --cached --quiet; then
-            echo "Audit and stage snapshot are unchanged."
+            echo "Audit, inventory and stage snapshot are unchanged."
             exit 0
           fi
           git commit -m "Advance localization after structural parity audit [skip ci]"
