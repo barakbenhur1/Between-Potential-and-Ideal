@@ -42,7 +42,11 @@
       "localization/sources/tlh/between-potential-and-ideal/260-computation-representation-p-np.md",
       "localization/sources/tlh/between-potential-and-ideal/270-computation-reduction-conp-qbf.md",
       "localization/sources/tlh/between-potential-and-ideal/280-computation-linear-diagonal-turing-godel.md",
-      "localization/sources/tlh/between-potential-and-ideal/290-computation-meta-ai-map-ending.md"
+      "localization/sources/tlh/between-potential-and-ideal/290-computation-meta-ai-map-ending.md",
+      "localization/sources/tlh/between-potential-and-ideal/300-science-physics-mathematics-boundary.md",
+      "localization/sources/tlh/between-potential-and-ideal/310-locality-nonlocality-bell.md",
+      "localization/sources/tlh/between-potential-and-ideal/320-context-measurement-entanglement-bohm.md",
+      "localization/sources/tlh/between-potential-and-ideal/330-contextuality-source-ai-ending.md"
     ],
     "qya": [
       "localization/sources/qya/between-potential-and-ideal/020-metamorphosis-code.md",
@@ -72,7 +76,11 @@
       "localization/sources/qya/between-potential-and-ideal/260-computation-representation-p-np.md",
       "localization/sources/qya/between-potential-and-ideal/270-computation-reduction-conp-qbf.md",
       "localization/sources/qya/between-potential-and-ideal/280-computation-linear-diagonal-turing-godel.md",
-      "localization/sources/qya/between-potential-and-ideal/290-computation-meta-ai-map-ending.md"
+      "localization/sources/qya/between-potential-and-ideal/290-computation-meta-ai-map-ending.md",
+      "localization/sources/qya/between-potential-and-ideal/300-science-physics-mathematics-boundary.md",
+      "localization/sources/qya/between-potential-and-ideal/310-locality-nonlocality-bell.md",
+      "localization/sources/qya/between-potential-and-ideal/320-context-measurement-entanglement-bohm.md",
+      "localization/sources/qya/between-potential-and-ideal/330-contextuality-source-ai-ending.md"
     ]
   },
   "assembly_tool": "tools/assemble_localized_document.py",
@@ -133,9 +141,11 @@
         "I Have No Mouth, and I Must Scream",
         "The Architecture of Infinite Recursion and the Inner Rapture",
         "The Recursive Edge",
-        "Computation, Evidence, Reduction, and Incompleteness"
+        "Computation, Evidence, Reduction, and Incompleteness",
+        "Science, Physics, and Mathematics as Boundary Discipline",
+        "Locality, Non-locality, and Contextuality"
       ],
-      "next": "Science, Physics, and Mathematics as Boundary Discipline"
+      "next": "Creation, Canon, and Optimum: What Must Not Be Lost"
     },
     "qya": {
       "status": "draft",
@@ -171,9 +181,11 @@
         "I Have No Mouth, and I Must Scream",
         "The Architecture of Infinite Recursion and the Inner Rapture",
         "The Recursive Edge",
-        "Computation, Evidence, Reduction, and Incompleteness"
+        "Computation, Evidence, Reduction, and Incompleteness",
+        "Science, Physics, and Mathematics as Boundary Discipline",
+        "Locality, Non-locality, and Contextuality"
       ],
-      "next": "Science, Physics, and Mathematics as Boundary Discipline"
+      "next": "Creation, Canon, and Optimum: What Must Not Be Lost"
     }
   },
   "publication_rule": "No public output may be generated until every canonical source segment is complete, reviewed, assembled, and marked approved."
