@@ -16,11 +16,15 @@
   "source_segments": {
     "tlh": [
       "localization/sources/tlh/between-potential-and-ideal/020-metamorphosis-code.md",
-      "localization/sources/tlh/between-potential-and-ideal/030-whole-and-distance.md"
+      "localization/sources/tlh/between-potential-and-ideal/030-whole-and-distance.md",
+      "localization/sources/tlh/between-potential-and-ideal/040-model-not-final-part-1.md",
+      "localization/sources/tlh/between-potential-and-ideal/050-model-not-final-part-2.md"
     ],
     "qya": [
       "localization/sources/qya/between-potential-and-ideal/020-metamorphosis-code.md",
-      "localization/sources/qya/between-potential-and-ideal/030-whole-and-distance.md"
+      "localization/sources/qya/between-potential-and-ideal/030-whole-and-distance.md",
+      "localization/sources/qya/between-potential-and-ideal/040-model-not-final-part-1.md",
+      "localization/sources/qya/between-potential-and-ideal/050-model-not-final-part-2.md"
     ]
   },
   "assembly_tool": "tools/assemble_localized_document.py",
@@ -64,9 +68,10 @@
         "five stages of metamorphosis",
         "The Operating Laws of Worthy Intelligence",
         "The Moral Backbone",
-        "The Metamorphosis Code: A Reflection on the Whole and Distance"
+        "The Metamorphosis Code: A Reflection on the Whole and Distance",
+        "This Is a Model, Not a Final Declaration"
       ],
-      "next": "This Is a Model, Not a Final Declaration"
+      "next": "The Symphony of the Whole and the Gift of Friction"
     },
     "qya": {
       "status": "draft",
@@ -85,9 +90,10 @@
         "five stages of metamorphosis",
         "The Operating Laws of Worthy Intelligence",
         "The Moral Backbone",
-        "The Metamorphosis Code: A Reflection on the Whole and Distance"
+        "The Metamorphosis Code: A Reflection on the Whole and Distance",
+        "This Is a Model, Not a Final Declaration"
       ],
-      "next": "This Is a Model, Not a Final Declaration"
+      "next": "The Symphony of the Whole and the Gift of Friction"
     }
   },
   "publication_rule": "No public output may be generated until every canonical source segment is complete, reviewed, assembled, and marked approved."
