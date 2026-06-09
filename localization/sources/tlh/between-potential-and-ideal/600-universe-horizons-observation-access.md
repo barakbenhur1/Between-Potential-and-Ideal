@@ -24,7 +24,7 @@ sensevamDaq cosmology theoryvaD external authority nobbe'. Potential universe 'o
 
 ### 1. The Observable Universe Is Not the Whole Universe
 
-observable universe region 'oH, naDev cosmic history boyunca signals maHvaD pawlaHpu', universe age, space expansion je considering. necessarily whole universe 'oHbe'. beyond nuq tu' certainty Sov 'e' jatlhbe'; access boundary, reality boundary je identify-nISbe' neH jatlh.
+observable universe region 'oH, naDev cosmic history HochDaq signals maHvaD pawlaHpu', universe age, space expansion je considering. necessarily whole universe 'oHbe'. beyond nuq tu' certainty Sov 'e' jatlhbe'; access boundary, reality boundary je identify-nISbe' neH jatlh.
 
 horizon false 'oHbe', 'ach whole truth 'oHbe' je. access limit 'oH. nuq appearlaH, naDev nuq measurelaH, observational reach HurDaq nuq ratlh 'e' jatlh. human, society, physician, judge, teacher, AI system je wholevo' actbe'. available Dochvo' act, 'ach available Doch necessarily Hoch existing Doch 'oHbe'.
 
@@ -34,7 +34,7 @@ naDev Potential meaning precise law' Suq: `all possibilities` neH 'oHbe', 'ach h
 
 ### 2. Different Horizons, Not One Simple Horizon
 
-`horizon` simple rur Qoy, 'ach cosmologyDaq term wa' neH 'oHbe'. particle horizon cosmic history boyunca nuq maHvaD pawlaH pagh affect-laHpu' je rar. cosmological event horizon expansion modelDaq dependent, regions yallo futureDaq signals never HevlaHbe'lu' je rar. Hubble radius current expansion ratevaD rar, 'ach observational horizon rap reH 'oHbe'. observable universe practical observational reach pong.
+`horizon` simple rur Qoy, 'ach cosmologyDaq term wa' neH 'oHbe'. particle horizon cosmic history HochDaq nuq maHvaD pawlaH pagh affect-laHpu' je rar. cosmological event horizon expansion modelDaq dependent, regions yallo futureDaq signals never HevlaHbe'lu' je rar. Hubble radius current expansion ratevaD rar, 'ach observational horizon rap reH 'oHbe'. observable universe practical observational reach pong.
 
 chaptervam distinctionsvam technical details Hoch teachnISbe'. 'ach horizon magical word wa'Daq choHmoHbe'nIS. naDev partial access Hol rur mainly lo'lu': nuq appearlaH, nuq measurelaH, nuq modelDaq depend, nuq current frame HurDaq ratlh.
 
