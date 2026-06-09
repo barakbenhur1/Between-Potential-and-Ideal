@@ -25,7 +25,8 @@
       "localization/sources/tlh/between-potential-and-ideal/090-absolute-ideal-living-completeness.md",
       "localization/sources/tlh/between-potential-and-ideal/100-core-movement-river-boat.md",
       "localization/sources/tlh/between-potential-and-ideal/110-experience-knowledge-road.md",
-      "localization/sources/tlh/between-potential-and-ideal/120-education-of-potential.md"
+      "localization/sources/tlh/between-potential-and-ideal/120-education-of-potential.md",
+      "localization/sources/tlh/between-potential-and-ideal/130-reincarnation-iterative-knowledge.md"
     ],
     "qya": [
       "localization/sources/qya/between-potential-and-ideal/020-metamorphosis-code.md",
@@ -38,7 +39,8 @@
       "localization/sources/qya/between-potential-and-ideal/090-absolute-ideal-living-completeness.md",
       "localization/sources/qya/between-potential-and-ideal/100-core-movement-river-boat.md",
       "localization/sources/qya/between-potential-and-ideal/110-experience-knowledge-road.md",
-      "localization/sources/qya/between-potential-and-ideal/120-education-of-potential.md"
+      "localization/sources/qya/between-potential-and-ideal/120-education-of-potential.md",
+      "localization/sources/qya/between-potential-and-ideal/130-reincarnation-iterative-knowledge.md"
     ]
   },
   "assembly_tool": "tools/assemble_localized_document.py",
@@ -90,9 +92,10 @@
         "The Absolute, the Ideal, and Living Completeness",
         "The Core Movement: Title, River, and Boat",
         "Experience, Knowledge, and the Road That Cannot Be Bypassed",
-        "Education of Potential"
+        "Education of Potential",
+        "Reincarnation as Iterative Knowledge, Not Moral Promotion"
       ],
-      "next": "Reincarnation as Iterative Knowledge, Not Moral Promotion"
+      "next": "Self, Ego, and Unity That Does Not Erase"
     },
     "qya": {
       "status": "draft",
@@ -119,9 +122,10 @@
         "The Absolute, the Ideal, and Living Completeness",
         "The Core Movement: Title, River, and Boat",
         "Experience, Knowledge, and the Road That Cannot Be Bypassed",
-        "Education of Potential"
+        "Education of Potential",
+        "Reincarnation as Iterative Knowledge, Not Moral Promotion"
       ],
-      "next": "Reincarnation as Iterative Knowledge, Not Moral Promotion"
+      "next": "Self, Ego, and Unity That Does Not Erase"
     }
   },
   "publication_rule": "No public output may be generated until every canonical source segment is complete, reviewed, assembled, and marked approved."
