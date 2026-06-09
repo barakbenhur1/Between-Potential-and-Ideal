@@ -8,8 +8,10 @@ on:
       - ".github/prompts/localization-batch.prompt.yml"
       - "tools/prepare_localization_ai_jobs.py"
       - "tools/apply_localization_ai_results.py"
-      - "tools/build_localized_public_release.py"
-      - "tools/qa_localized_public_release.py"
+      - "tools/temporary.txt"
+      - "tools/temporary-2.txt"
+      - "tools/temporary-3.txt"
+      - "tools/temporary-6.txt"
       - ".github/workflows/finalize-localization-release.yml"
 
 permissions:
@@ -18,7 +20,7 @@ permissions:
 
 concurrency:
   group: finalize-four-language-localization
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   prepare:
@@ -64,7 +66,7 @@ jobs:
             language_mode: ${{ matrix.language_mode }}
           file_input: |
             job: reports/localization/ai-jobs/${{ matrix.input }}
-      - name: Save structured response
+      - name: Save translated fragment
         env:
           RESPONSE_FILE: ${{ steps.inference.outputs.response-file }}
           JOB_ID: ${{ matrix.id }}
@@ -100,15 +102,15 @@ jobs:
       - name: Install document and QA dependencies
         run: |
           python3 -m pip install --upgrade pip
-          python3 -m pip install beautifulsoup4 markdown python-docx reportlab pillow pymupdf lxml
+          python3 -m pip install beautifulsoup4 markdown python-docx pillow pymupdf lxml
           sudo apt-get update
           sudo apt-get install -y libreoffice fonts-dejavu-core
-      - name: Apply reviewed translations
+      - name: Apply translated package fragments
         run: python3 tools/apply_localization_ai_results.py
-      - name: Build public four-language release
-        run: python3 tools/build_localized_public_release.py
+      - name: Build complete public language editions
+        run: python3 tools/temporary-2.txt
       - name: Run localization release QA
-        run: python3 tools/qa_localized_public_release.py
+        run: python3 tools/temporary-6.txt
       - name: Run repository release QA
         run: python3 tools/final_release_qa.py --scan
       - name: Commit deploy-ready localization release
