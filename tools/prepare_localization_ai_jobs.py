@@ -1,20 +1,39 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import json, shutil
+import json, re, shutil
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "reports/localization/ai-jobs"
-CONTRACT = ROOT / "localization/documents/between-potential-and-ideal.json"
 LANGUAGES = ("tlh", "qya")
-GROUP_SIZE = 1
+LIMIT = 20000
+SOURCES = {
+    "stories-before-thought": "site/files/appendices/stories-before-thought-english.md",
+    "the-nauseating-truth": "site/files/appendices/haemet_hamavchila_final_publication_he.md",
+    "what-ai-believes": "site/files/ai-believes/what-ai-believes-en.md",
+    "when-i-am-also-you": "site/files/ai-believes/when-i-am-also-you-en.md",
+    "reverse-turing-conversation": "site/files/ai-believes/reverse-turing-conversation-en.md"
+}
 
 
 def read(path):
     return path.read_text(encoding="utf-8")
 
 
-def rel(path):
-    return path.relative_to(ROOT).as_posix()
+def split_text(text):
+    blocks = re.split(r"\n\n+", text)
+    chunks, current, size = [], [], 0
+    for block in blocks:
+        block = block.strip()
+        if not block:
+            continue
+        if current and size + len(block) + 2 > LIMIT:
+            chunks.append("\n\n".join(current))
+            current, size = [], 0
+        current.append(block)
+        size += len(block) + 2
+    if current:
+        chunks.append("\n\n".join(current))
+    return chunks
 
 
 def glossary(language):
@@ -27,25 +46,29 @@ def main():
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True)
-    contract = json.loads(read(CONTRACT))
-    matrix, plan = [], {"jobs": []}
-    for language in LANGUAGES:
-        paths = [ROOT / contract["canonical_targets"][language]]
-        paths += [ROOT / p for p in contract["source_segments"][language]]
-        for start in range(0, len(paths), GROUP_SIZE):
-            group = paths[start:start + GROUP_SIZE]
-            job_id = f"repair-{language}-{start // GROUP_SIZE + 1:03d}"
-            data = {
-                "job_id": job_id,
-                "language": language,
-                "profile": "standard Klingon" if language == "tlh" else "consistent Neo-Quenya",
-                "glossary": glossary(language),
-                "items": [{"path": rel(p), "content": read(p)} for p in group],
-            }
-            name = f"{job_id}.json"
-            (OUT / name).write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-            matrix.append({"id": job_id, "input": name, "language_mode": language})
-            plan["jobs"].append({"id": job_id, "paths": [rel(p) for p in group]})
+    matrix = []
+    plan = {"schema_version": 2, "jobs": [], "packages": {}}
+    for package, source_name in SOURCES.items():
+        source = ROOT / source_name
+        chunks = split_text(read(source))
+        plan["packages"][package] = {"source": source_name, "chunks": len(chunks)}
+        for language in LANGUAGES:
+            for index, chunk in enumerate(chunks, 1):
+                job_id = f"translate-{package}-{language}-{index:03d}"
+                data = {
+                    "job_id": job_id,
+                    "language": language,
+                    "package": package,
+                    "chunk_index": index,
+                    "chunk_count": len(chunks),
+                    "profile": "standard Klingon" if language == "tlh" else "consistent Neo-Quenya",
+                    "glossary": glossary(language),
+                    "source": chunk
+                }
+                filename = f"{job_id}.json"
+                (OUT / filename).write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                matrix.append({"id": job_id, "input": filename, "language_mode": language})
+                plan["jobs"].append({"id": job_id, "package": package, "language": language, "chunk": index})
     (OUT / "matrix.json").write_text(json.dumps({"include": matrix}) + "\n", encoding="utf-8")
     (OUT / "release-plan.json").write_text(json.dumps(plan, indent=2) + "\n", encoding="utf-8")
     print(f"jobs={len(matrix)}")
