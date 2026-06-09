@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "document_id": "between-potential-and-ideal",
-  "source_commit": "750a7ddd7f86d869b2631e7c1d5392be2900b3bd",
-  "generated_at": "2026-06-09T17:17:37.879764+00:00",
+  "source_commit": "36d19b0d907c5eb47d5ad36aa0bf5712cd9f32e4",
+  "generated_at": "2026-06-09T17:21:57.238940+00:00",
   "assembly_status": "PASS",
   "clean_preview_status": "PASS",
   "cross_language_structural_parity": "PASS",
