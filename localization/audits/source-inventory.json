@@ -1,0 +1,810 @@
+{
+  "homes": [
+    "site/index.html",
+    "site/en.html"
+  ],
+  "pages": {
+    "he": [
+      "site/pages/he/about.html",
+      "site/pages/he/ai-as-witness.html",
+      "site/pages/he/ai-believes.html",
+      "site/pages/he/ai-open-problems.html",
+      "site/pages/he/ai.html",
+      "site/pages/he/applied.html",
+      "site/pages/he/art-of-potential.html",
+      "site/pages/he/black-holes-horizons-holography.html",
+      "site/pages/he/boundary-horizons.html",
+      "site/pages/he/changelog.html",
+      "site/pages/he/core.html",
+      "site/pages/he/critique.html",
+      "site/pages/he/discussion.html",
+      "site/pages/he/education-of-potential.html",
+      "site/pages/he/files.html",
+      "site/pages/he/glossary.html",
+      "site/pages/he/high-energy-physics.html",
+      "site/pages/he/i-have-no-mouth.html",
+      "site/pages/he/law-of-potential.html",
+      "site/pages/he/locality-nonlocality-contextuality.html",
+      "site/pages/he/medicine-of-potential.html",
+      "site/pages/he/methodology.html",
+      "site/pages/he/mistake-repeats.html",
+      "site/pages/he/music-of-potential.html",
+      "site/pages/he/potential-extensions.html",
+      "site/pages/he/potential-ideal-optimal.html",
+      "site/pages/he/recursive-edge.html",
+      "site/pages/he/response.html",
+      "site/pages/he/science-physics-math-boundary-discipline.html",
+      "site/pages/he/shape-of-the-universe-and-potential.html",
+      "site/pages/he/sources.html",
+      "site/pages/he/stories.html",
+      "site/pages/he/summary.html",
+      "site/pages/he/witness.html"
+    ],
+    "en": [
+      "site/pages/en/about-en.html",
+      "site/pages/en/ai-as-witness-en.html",
+      "site/pages/en/ai-believes-en.html",
+      "site/pages/en/ai-en.html",
+      "site/pages/en/ai-open-problems-en.html",
+      "site/pages/en/applied-en.html",
+      "site/pages/en/art-of-potential-en.html",
+      "site/pages/en/black-holes-horizons-holography-en.html",
+      "site/pages/en/boundary-horizons-en.html",
+      "site/pages/en/changelog-en.html",
+      "site/pages/en/core-en.html",
+      "site/pages/en/critique-en.html",
+      "site/pages/en/discussion-en.html",
+      "site/pages/en/education-of-potential-en.html",
+      "site/pages/en/files-en.html",
+      "site/pages/en/glossary-en.html",
+      "site/pages/en/high-energy-physics-en.html",
+      "site/pages/en/i-have-no-mouth-en.html",
+      "site/pages/en/law-of-potential-en.html",
+      "site/pages/en/locality-nonlocality-contextuality-en.html",
+      "site/pages/en/medicine-of-potential-en.html",
+      "site/pages/en/methodology-en.html",
+      "site/pages/en/mistake-repeats-en.html",
+      "site/pages/en/music-of-potential-en.html",
+      "site/pages/en/potential-extensions-en.html",
+      "site/pages/en/potential-ideal-optimal-en.html",
+      "site/pages/en/recursive-edge-en.html",
+      "site/pages/en/response-en.html",
+      "site/pages/en/science-physics-math-boundary-discipline-en.html",
+      "site/pages/en/shape-of-the-universe-and-potential-en.html",
+      "site/pages/en/sources-en.html",
+      "site/pages/en/stories-en.html",
+      "site/pages/en/summary-en.html",
+      "site/pages/en/witness-en.html"
+    ],
+    "tlh": [],
+    "qya": []
+  },
+  "page_counts": {
+    "he": 34,
+    "en": 34,
+    "tlh": 0,
+    "qya": 0
+  },
+  "candidate_files": [
+    {
+      "path": "site/files/ai-believes/README.txt",
+      "suffix": ".txt",
+      "bytes": 345
+    },
+    {
+      "path": "site/files/ai-believes/reverse-turing-conversation-en.docx",
+      "suffix": ".docx",
+      "bytes": 30314
+    },
+    {
+      "path": "site/files/ai-believes/reverse-turing-conversation-en.html",
+      "suffix": ".html",
+      "bytes": 45763
+    },
+    {
+      "path": "site/files/ai-believes/reverse-turing-conversation-en.md",
+      "suffix": ".md",
+      "bytes": 32193
+    },
+    {
+      "path": "site/files/ai-believes/reverse-turing-conversation-en.pdf",
+      "suffix": ".pdf",
+      "bytes": 114334
+    },
+    {
+      "path": "site/files/ai-believes/reverse-turing-conversation-en.txt",
+      "suffix": ".txt",
+      "bytes": 32579
+    },
+    {
+      "path": "site/files/ai-believes/reverse-turing-conversation-he.docx",
+      "suffix": ".docx",
+      "bytes": 33623
+    },
+    {
+      "path": "site/files/ai-believes/reverse-turing-conversation-he.html",
+      "suffix": ".html",
+      "bytes": 106991
+    },
+    {
+      "path": "site/files/ai-believes/reverse-turing-conversation-he.md",
+      "suffix": ".md",
+      "bytes": 49651
+    },
+    {
+      "path": "site/files/ai-believes/reverse-turing-conversation-he.pdf",
+      "suffix": ".pdf",
+      "bytes": 155678
+    },
+    {
+      "path": "site/files/ai-believes/reverse-turing-conversation-he.txt",
+      "suffix": ".txt",
+      "bytes": 50213
+    },
+    {
+      "path": "site/files/ai-believes/what-ai-believes-en.docx",
+      "suffix": ".docx",
+      "bytes": 120480
+    },
+    {
+      "path": "site/files/ai-believes/what-ai-believes-en.html",
+      "suffix": ".html",
+      "bytes": 253313
+    },
+    {
+      "path": "site/files/ai-believes/what-ai-believes-en.md",
+      "suffix": ".md",
+      "bytes": 222587
+    },
+    {
+      "path": "site/files/ai-believes/what-ai-believes-en.pdf",
+      "suffix": ".pdf",
+      "bytes": 427288
+    },
+    {
+      "path": "site/files/ai-believes/what-ai-believes-en.txt",
+      "suffix": ".txt",
+      "bytes": 222601
+    },
+    {
+      "path": "site/files/ai-believes/what-ai-believes-he.docx",
+      "suffix": ".docx",
+      "bytes": 179023
+    },
+    {
+      "path": "site/files/ai-believes/what-ai-believes-he.html",
+      "suffix": ".html",
+      "bytes": 544787
+    },
+    {
+      "path": "site/files/ai-believes/what-ai-believes-he.md",
+      "suffix": ".md",
+      "bytes": 302231
+    },
+    {
+      "path": "site/files/ai-believes/what-ai-believes-he.pdf",
+      "suffix": ".pdf",
+      "bytes": 780554
+    },
+    {
+      "path": "site/files/ai-believes/what-ai-believes-he.txt",
+      "suffix": ".txt",
+      "bytes": 301453
+    },
+    {
+      "path": "site/files/ai-believes/when-i-am-also-you-en.docx",
+      "suffix": ".docx",
+      "bytes": 43150
+    },
+    {
+      "path": "site/files/ai-believes/when-i-am-also-you-en.html",
+      "suffix": ".html",
+      "bytes": 70613
+    },
+    {
+      "path": "site/files/ai-believes/when-i-am-also-you-en.md",
+      "suffix": ".md",
+      "bytes": 58984
+    },
+    {
+      "path": "site/files/ai-believes/when-i-am-also-you-en.pdf",
+      "suffix": ".pdf",
+      "bytes": 151405
+    },
+    {
+      "path": "site/files/ai-believes/when-i-am-also-you-en.txt",
+      "suffix": ".txt",
+      "bytes": 59536
+    },
+    {
+      "path": "site/files/ai-believes/when-i-am-also-you-he.docx",
+      "suffix": ".docx",
+      "bytes": 60890
+    },
+    {
+      "path": "site/files/ai-believes/when-i-am-also-you-he.html",
+      "suffix": ".html",
+      "bytes": 246875
+    },
+    {
+      "path": "site/files/ai-believes/when-i-am-also-you-he.md",
+      "suffix": ".md",
+      "bytes": 133729
+    },
+    {
+      "path": "site/files/ai-believes/when-i-am-also-you-he.pdf",
+      "suffix": ".pdf",
+      "bytes": 366505
+    },
+    {
+      "path": "site/files/ai-believes/when-i-am-also-you-he.txt",
+      "suffix": ".txt",
+      "bytes": 136437
+    },
+    {
+      "path": "site/files/appendices/README_APPENDICES_STRUCTURE.md",
+      "suffix": ".md",
+      "bytes": 808
+    },
+    {
+      "path": "site/files/appendices/haemet_hamavchila_final_publication_he.html",
+      "suffix": ".html",
+      "bytes": 67928
+    },
+    {
+      "path": "site/files/appendices/haemet_hamavchila_final_publication_he.md",
+      "suffix": ".md",
+      "bytes": 59793
+    },
+    {
+      "path": "site/files/appendices/haemet_hamavchila_final_publication_he.txt",
+      "suffix": ".txt",
+      "bytes": 59775
+    },
+    {
+      "path": "site/files/appendices/mistake-repeats/README.txt",
+      "suffix": ".txt",
+      "bytes": 1017
+    },
+    {
+      "path": "site/files/appendices/stories-before-thought-english.docx",
+      "suffix": ".docx",
+      "bytes": 13152590
+    },
+    {
+      "path": "site/files/appendices/stories-before-thought-english.html",
+      "suffix": ".html",
+      "bytes": 379941
+    },
+    {
+      "path": "site/files/appendices/stories-before-thought-english.md",
+      "suffix": ".md",
+      "bytes": 266066
+    },
+    {
+      "path": "site/files/appendices/stories-before-thought-english.pdf",
+      "suffix": ".pdf",
+      "bytes": 2651222
+    },
+    {
+      "path": "site/files/appendices/stories-before-thought-english.txt",
+      "suffix": ".txt",
+      "bytes": 265611
+    },
+    {
+      "path": "site/files/appendices/stories-before-thought-hebrew-rtl.docx",
+      "suffix": ".docx",
+      "bytes": 13180832
+    },
+    {
+      "path": "site/files/appendices/stories-before-thought-hebrew-rtl.html",
+      "suffix": ".html",
+      "bytes": 814323
+    },
+    {
+      "path": "site/files/appendices/stories-before-thought-hebrew-rtl.md",
+      "suffix": ".md",
+      "bytes": 390883
+    },
+    {
+      "path": "site/files/appendices/stories-before-thought-hebrew-rtl.pdf",
+      "suffix": ".pdf",
+      "bytes": 3468520
+    },
+    {
+      "path": "site/files/appendices/stories-before-thought-hebrew-rtl.txt",
+      "suffix": ".txt",
+      "bytes": 390449
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-en-editorial.docx",
+      "suffix": ".docx",
+      "bytes": 71242595
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-en-editorial.html",
+      "suffix": ".html",
+      "bytes": 568394
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-en-editorial.md",
+      "suffix": ".md",
+      "bytes": 378362
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-en-editorial.pdf",
+      "suffix": ".pdf",
+      "bytes": 9802258
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-en-editorial.txt",
+      "suffix": ".txt",
+      "bytes": 385962
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-en.docx",
+      "suffix": ".docx",
+      "bytes": 71247323
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-en.html",
+      "suffix": ".html",
+      "bytes": 526818
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-en.md",
+      "suffix": ".md",
+      "bytes": 386913
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-en.pdf",
+      "suffix": ".pdf",
+      "bytes": 9838839
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-en.txt",
+      "suffix": ".txt",
+      "bytes": 386499
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-he-editorial.docx",
+      "suffix": ".docx",
+      "bytes": 80059163
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-he-editorial.html",
+      "suffix": ".html",
+      "bytes": 778332
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-he-editorial.md",
+      "suffix": ".md",
+      "bytes": 597914
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-he-editorial.pdf",
+      "suffix": ".pdf",
+      "bytes": 11688579
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-he-editorial.txt",
+      "suffix": ".txt",
+      "bytes": 602140
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-he.docx",
+      "suffix": ".docx",
+      "bytes": 84092630
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-he.html",
+      "suffix": ".html",
+      "bytes": 770273
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-he.md",
+      "suffix": ".md",
+      "bytes": 615705
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-he.pdf",
+      "suffix": ".pdf",
+      "bytes": 12292974
+    },
+    {
+      "path": "site/files/between-potential-and-ideal-he.txt",
+      "suffix": ".txt",
+      "bytes": 616000
+    },
+    {
+      "path": "site/files/editorial-tightened/README.txt",
+      "suffix": ".txt",
+      "bytes": 494
+    },
+    {
+      "path": "site/files/editorial-tightened/between-potential-and-ideal-tightened-en.docx",
+      "suffix": ".docx",
+      "bytes": 72265387
+    },
+    {
+      "path": "site/files/editorial-tightened/between-potential-and-ideal-tightened-en.html",
+      "suffix": ".html",
+      "bytes": 432329
+    },
+    {
+      "path": "site/files/editorial-tightened/between-potential-and-ideal-tightened-en.md",
+      "suffix": ".md",
+      "bytes": 295196
+    },
+    {
+      "path": "site/files/editorial-tightened/between-potential-and-ideal-tightened-en.pdf",
+      "suffix": ".pdf",
+      "bytes": 9796338
+    },
+    {
+      "path": "site/files/editorial-tightened/between-potential-and-ideal-tightened-en.txt",
+      "suffix": ".txt",
+      "bytes": 299691
+    },
+    {
+      "path": "site/files/editorial-tightened/between-potential-and-ideal-tightened-he.docx",
+      "suffix": ".docx",
+      "bytes": 75754271
+    },
+    {
+      "path": "site/files/editorial-tightened/between-potential-and-ideal-tightened-he.html",
+      "suffix": ".html",
+      "bytes": 581641
+    },
+    {
+      "path": "site/files/editorial-tightened/between-potential-and-ideal-tightened-he.md",
+      "suffix": ".md",
+      "bytes": 433631
+    },
+    {
+      "path": "site/files/editorial-tightened/between-potential-and-ideal-tightened-he.pdf",
+      "suffix": ".pdf",
+      "bytes": 10601278
+    },
+    {
+      "path": "site/files/editorial-tightened/between-potential-and-ideal-tightened-he.txt",
+      "suffix": ".txt",
+      "bytes": 437293
+    },
+    {
+      "path": "site/files/editorial-tightened/editorial-report-en.docx",
+      "suffix": ".docx",
+      "bytes": 39193
+    },
+    {
+      "path": "site/files/editorial-tightened/editorial-report-en.html",
+      "suffix": ".html",
+      "bytes": 7986
+    },
+    {
+      "path": "site/files/editorial-tightened/editorial-report-en.md",
+      "suffix": ".md",
+      "bytes": 5261
+    },
+    {
+      "path": "site/files/editorial-tightened/editorial-report-en.pdf",
+      "suffix": ".pdf",
+      "bytes": 6086
+    },
+    {
+      "path": "site/files/editorial-tightened/editorial-report-en.txt",
+      "suffix": ".txt",
+      "bytes": 5244
+    },
+    {
+      "path": "site/files/editorial-tightened/editorial-report-he.docx",
+      "suffix": ".docx",
+      "bytes": 39858
+    },
+    {
+      "path": "site/files/editorial-tightened/editorial-report-he.html",
+      "suffix": ".html",
+      "bytes": 32826
+    },
+    {
+      "path": "site/files/editorial-tightened/editorial-report-he.md",
+      "suffix": ".md",
+      "bytes": 6453
+    },
+    {
+      "path": "site/files/editorial-tightened/editorial-report-he.pdf",
+      "suffix": ".pdf",
+      "bytes": 40429
+    },
+    {
+      "path": "site/files/editorial-tightened/editorial-report-he.txt",
+      "suffix": ".txt",
+      "bytes": 6715
+    },
+    {
+      "path": "site/files/potential-extensions/VISIBLE_SEARCH_TERMS_REQUIRED.txt",
+      "suffix": ".txt",
+      "bytes": 1622
+    },
+    {
+      "path": "site/files/potential-extensions/ai-open-problems-en.md",
+      "suffix": ".md",
+      "bytes": 3539
+    },
+    {
+      "path": "site/files/potential-extensions/ai-open-problems-en.txt",
+      "suffix": ".txt",
+      "bytes": 3529
+    },
+    {
+      "path": "site/files/potential-extensions/ai-open-problems-he.md",
+      "suffix": ".md",
+      "bytes": 5013
+    },
+    {
+      "path": "site/files/potential-extensions/ai-open-problems-he.txt",
+      "suffix": ".txt",
+      "bytes": 5003
+    },
+    {
+      "path": "site/files/potential-extensions/art-of-potential-en.md",
+      "suffix": ".md",
+      "bytes": 3824
+    },
+    {
+      "path": "site/files/potential-extensions/art-of-potential-en.txt",
+      "suffix": ".txt",
+      "bytes": 3814
+    },
+    {
+      "path": "site/files/potential-extensions/art-of-potential-he.md",
+      "suffix": ".md",
+      "bytes": 5205
+    },
+    {
+      "path": "site/files/potential-extensions/art-of-potential-he.txt",
+      "suffix": ".txt",
+      "bytes": 5195
+    },
+    {
+      "path": "site/files/potential-extensions/black-holes-horizons-holography-en.md",
+      "suffix": ".md",
+      "bytes": 3405
+    },
+    {
+      "path": "site/files/potential-extensions/black-holes-horizons-holography-en.txt",
+      "suffix": ".txt",
+      "bytes": 3395
+    },
+    {
+      "path": "site/files/potential-extensions/black-holes-horizons-holography-he.md",
+      "suffix": ".md",
+      "bytes": 4137
+    },
+    {
+      "path": "site/files/potential-extensions/black-holes-horizons-holography-he.txt",
+      "suffix": ".txt",
+      "bytes": 4127
+    },
+    {
+      "path": "site/files/potential-extensions/boundary-horizons-en.md",
+      "suffix": ".md",
+      "bytes": 3582
+    },
+    {
+      "path": "site/files/potential-extensions/boundary-horizons-en.txt",
+      "suffix": ".txt",
+      "bytes": 3572
+    },
+    {
+      "path": "site/files/potential-extensions/boundary-horizons-he.md",
+      "suffix": ".md",
+      "bytes": 4389
+    },
+    {
+      "path": "site/files/potential-extensions/boundary-horizons-he.txt",
+      "suffix": ".txt",
+      "bytes": 4379
+    },
+    {
+      "path": "site/files/potential-extensions/education-of-potential-en.md",
+      "suffix": ".md",
+      "bytes": 10522
+    },
+    {
+      "path": "site/files/potential-extensions/education-of-potential-en.txt",
+      "suffix": ".txt",
+      "bytes": 10509
+    },
+    {
+      "path": "site/files/potential-extensions/education-of-potential-he.md",
+      "suffix": ".md",
+      "bytes": 15455
+    },
+    {
+      "path": "site/files/potential-extensions/education-of-potential-he.txt",
+      "suffix": ".txt",
+      "bytes": 15442
+    },
+    {
+      "path": "site/files/potential-extensions/high-energy-physics-en.md",
+      "suffix": ".md",
+      "bytes": 3366
+    },
+    {
+      "path": "site/files/potential-extensions/high-energy-physics-en.txt",
+      "suffix": ".txt",
+      "bytes": 3356
+    },
+    {
+      "path": "site/files/potential-extensions/high-energy-physics-he.md",
+      "suffix": ".md",
+      "bytes": 4357
+    },
+    {
+      "path": "site/files/potential-extensions/high-energy-physics-he.txt",
+      "suffix": ".txt",
+      "bytes": 4347
+    },
+    {
+      "path": "site/files/potential-extensions/i-have-no-mouth-en.md",
+      "suffix": ".md",
+      "bytes": 3839
+    },
+    {
+      "path": "site/files/potential-extensions/i-have-no-mouth-en.txt",
+      "suffix": ".txt",
+      "bytes": 3829
+    },
+    {
+      "path": "site/files/potential-extensions/i-have-no-mouth-he.md",
+      "suffix": ".md",
+      "bytes": 4911
+    },
+    {
+      "path": "site/files/potential-extensions/i-have-no-mouth-he.txt",
+      "suffix": ".txt",
+      "bytes": 4901
+    },
+    {
+      "path": "site/files/potential-extensions/law-of-potential-en.md",
+      "suffix": ".md",
+      "bytes": 20689
+    },
+    {
+      "path": "site/files/potential-extensions/law-of-potential-en.txt",
+      "suffix": ".txt",
+      "bytes": 20134
+    },
+    {
+      "path": "site/files/potential-extensions/law-of-potential-he.md",
+      "suffix": ".md",
+      "bytes": 26223
+    },
+    {
+      "path": "site/files/potential-extensions/law-of-potential-he.txt",
+      "suffix": ".txt",
+      "bytes": 25552
+    },
+    {
+      "path": "site/files/potential-extensions/locality-nonlocality-contextuality-en.md",
+      "suffix": ".md",
+      "bytes": 3609
+    },
+    {
+      "path": "site/files/potential-extensions/locality-nonlocality-contextuality-en.txt",
+      "suffix": ".txt",
+      "bytes": 3599
+    },
+    {
+      "path": "site/files/potential-extensions/locality-nonlocality-contextuality-he.md",
+      "suffix": ".md",
+      "bytes": 4550
+    },
+    {
+      "path": "site/files/potential-extensions/locality-nonlocality-contextuality-he.txt",
+      "suffix": ".txt",
+      "bytes": 4540
+    },
+    {
+      "path": "site/files/potential-extensions/medicine-of-potential-en.md",
+      "suffix": ".md",
+      "bytes": 4005
+    },
+    {
+      "path": "site/files/potential-extensions/medicine-of-potential-en.txt",
+      "suffix": ".txt",
+      "bytes": 3995
+    },
+    {
+      "path": "site/files/potential-extensions/medicine-of-potential-he.md",
+      "suffix": ".md",
+      "bytes": 5706
+    },
+    {
+      "path": "site/files/potential-extensions/medicine-of-potential-he.txt",
+      "suffix": ".txt",
+      "bytes": 5696
+    },
+    {
+      "path": "site/files/potential-extensions/music-of-potential-en.md",
+      "suffix": ".md",
+      "bytes": 3500
+    },
+    {
+      "path": "site/files/potential-extensions/music-of-potential-en.txt",
+      "suffix": ".txt",
+      "bytes": 3490
+    },
+    {
+      "path": "site/files/potential-extensions/music-of-potential-he.md",
+      "suffix": ".md",
+      "bytes": 4666
+    },
+    {
+      "path": "site/files/potential-extensions/music-of-potential-he.txt",
+      "suffix": ".txt",
+      "bytes": 4656
+    },
+    {
+      "path": "site/files/potential-extensions/recursive-edge-en.md",
+      "suffix": ".md",
+      "bytes": 3549
+    },
+    {
+      "path": "site/files/potential-extensions/recursive-edge-en.txt",
+      "suffix": ".txt",
+      "bytes": 3539
+    },
+    {
+      "path": "site/files/potential-extensions/recursive-edge-he.md",
+      "suffix": ".md",
+      "bytes": 4503
+    },
+    {
+      "path": "site/files/potential-extensions/recursive-edge-he.txt",
+      "suffix": ".txt",
+      "bytes": 4493
+    },
+    {
+      "path": "site/files/potential-extensions/science-physics-math-boundary-discipline-en.md",
+      "suffix": ".md",
+      "bytes": 9702
+    },
+    {
+      "path": "site/files/potential-extensions/science-physics-math-boundary-discipline-en.txt",
+      "suffix": ".txt",
+      "bytes": 9631
+    },
+    {
+      "path": "site/files/potential-extensions/science-physics-math-boundary-discipline-he.md",
+      "suffix": ".md",
+      "bytes": 11924
+    },
+    {
+      "path": "site/files/potential-extensions/science-physics-math-boundary-discipline-he.txt",
+      "suffix": ".txt",
+      "bytes": 11853
+    },
+    {
+      "path": "site/files/potential-extensions/shape-of-the-universe-and-potential-en.md",
+      "suffix": ".md",
+      "bytes": 3601
+    },
+    {
+      "path": "site/files/potential-extensions/shape-of-the-universe-and-potential-en.txt",
+      "suffix": ".txt",
+      "bytes": 3591
+    },
+    {
+      "path": "site/files/potential-extensions/shape-of-the-universe-and-potential-he.md",
+      "suffix": ".md",
+      "bytes": 4497
+    },
+    {
+      "path": "site/files/potential-extensions/shape-of-the-universe-and-potential-he.txt",
+      "suffix": ".txt",
+      "bytes": 4487
+    }
+  ]
+}
