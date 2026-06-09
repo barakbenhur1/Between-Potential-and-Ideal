@@ -3,12 +3,16 @@
   "document_id": "between-potential-and-ideal",
   "source_commit": "36d19b0d907c5eb47d5ad36aa0bf5712cd9f32e4",
   "generated_at": "2026-06-09T17:21:57.238940+00:00",
+  "policy_applied_on": "2026-06-09",
   "assembly_status": "PASS",
   "clean_preview_status": "PASS",
   "cross_language_structural_parity": "PASS",
   "publication_readiness": "BLOCKED",
   "segment_count_per_language": 77,
   "review_control_removal_verified": true,
+  "intentional_placeholder_policy": "localization/policies/intentional-placeholders.json",
+  "intentional_placeholder_count_per_language": 8,
+  "intentional_placeholders_are_blockers": false,
   "languages": [
     {
       "language": "tlh",
@@ -71,11 +75,13 @@
         }
       },
       "review_control_removal_verified": true,
+      "intentional_placeholder_count": 8,
+      "intentional_placeholder_policy": "localization/policies/intentional-placeholders.json",
+      "intentional_placeholders_are_blockers": false,
       "structural_errors": [],
       "publication_blockers": [
         "canonical base status=draft",
-        "77 canonical segments are not approved",
-        "8 placeholder segments remain placeholder-draft"
+        "77 canonical segments are not approved"
       ]
     },
     {
@@ -139,11 +145,13 @@
         }
       },
       "review_control_removal_verified": true,
+      "intentional_placeholder_count": 8,
+      "intentional_placeholder_policy": "localization/policies/intentional-placeholders.json",
+      "intentional_placeholders_are_blockers": false,
       "structural_errors": [],
       "publication_blockers": [
         "canonical base status=draft",
-        "77 canonical segments are not approved",
-        "8 placeholder segments remain placeholder-draft"
+        "77 canonical segments are not approved"
       ]
     }
   ],
@@ -151,11 +159,9 @@
   "publication_blockers": [
     "tlh: canonical base status=draft",
     "tlh: 77 canonical segments are not approved",
-    "tlh: 8 placeholder segments remain placeholder-draft",
     "qya: canonical base status=draft",
-    "qya: 77 canonical segments are not approved",
-    "qya: 8 placeholder segments remain placeholder-draft"
+    "qya: 77 canonical segments are not approved"
   ],
-  "decision": "Review and clean non-public drafts assembled successfully, review-control removal is verified, and cross-language structural parity passed. Publication remains blocked only by source approval and unresolved placeholder chapters.",
+  "decision": "Review and clean non-public drafts assembled successfully, review-control removal is verified, and cross-language structural parity passed. The intentional empty placeholder chapters are canonical and are not publication blockers. Publication remains blocked only by document-level linguistic approval.",
   "public_output_generated": false
 }
