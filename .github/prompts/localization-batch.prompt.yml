@@ -1,0 +1,7 @@
+messages:
+  - role: user
+    content: "Correct the single {{language_mode}} Markdown document in {{job}}. Preserve all content and structure. Return only the complete corrected Markdown document."
+model: openai/gpt-4o
+modelParameters:
+  temperature: 0
+  maxCompletionTokens: 16000
