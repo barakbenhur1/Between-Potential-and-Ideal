@@ -72,7 +72,8 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/update_build_info.py` — updates `site/build-info.json` before important releases or during deploy builds.
 - `tools/build_localization_inventory.py` — inventories public pages and all HTML/PDF/DOCX/MD/TXT document groups for the four-language project.
 - `tools/assemble_localized_document.py` — assembles a canonical localized base and its ordered review segments into one non-public Markdown preview.
-- `tools/audit_localized_assembly.py` — audits assembled non-public localization drafts for structural completeness, control-section leakage, hashes, and publication readiness.
+- `tools/audit_localized_assembly.py` — audits review and clean non-public localization assemblies for structural completeness, control-section removal, hashes, parity, and publication readiness.
+- `tools/update_localization_stage_from_audit.py` — advances contract and batch metadata only after a verified assembly audit passes all structural prerequisites.
 
 ## Rule
 
