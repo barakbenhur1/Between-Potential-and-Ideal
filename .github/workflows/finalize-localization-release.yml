@@ -63,7 +63,7 @@ jobs:
         with:
           prompt-file: reports/localization/current-prompt.txt
           model: openai/gpt-4o
-          max-completion-tokens: 12000
+          max-completion-tokens: 4096
           temperature: 0
       - name: Save result
         env:
