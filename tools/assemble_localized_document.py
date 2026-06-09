@@ -7,6 +7,10 @@ import json
 
 ROOT = Path(__file__).resolve().parents[1]
 ALLOWED_LANGUAGES = {"tlh", "qya"}
+REVIEW_CONTROL_HEADINGS = {
+    "## Segment review gate",
+    "## Placeholder review gate",
+}
 
 
 def strip_front_matter(text: str, path: Path) -> str:
@@ -18,10 +22,29 @@ def strip_front_matter(text: str, path: Path) -> str:
     return parts[2].strip()
 
 
+def strip_review_control(text: str) -> str:
+    """Remove the review-only control section from one canonical segment.
+
+    Source segments remain untouched. This is used only for a clean, non-public
+    preview that can be checked for content flow without reviewer instructions.
+    """
+    lines = text.splitlines()
+    for index, line in enumerate(lines):
+        if line.strip() in REVIEW_CONTROL_HEADINGS:
+            return "\n".join(lines[:index]).rstrip()
+    return text.strip()
+
+
 def main() -> int:
     parser = ArgumentParser(description="Assemble one localized document from its canonical base and ordered continuation segments.")
     parser.add_argument("document_id")
     parser.add_argument("language", choices=sorted(ALLOWED_LANGUAGES))
+    parser.add_argument(
+        "--mode",
+        choices=("review", "clean"),
+        default="review",
+        help="review keeps segment review gates; clean omits them from a non-public preview",
+    )
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
 
@@ -53,12 +76,16 @@ def main() -> int:
     control = base_text[cut_at:].lstrip()
     assembled_parts = [body]
     for segment in segments:
-        assembled_parts.append(strip_front_matter(segment.read_text(encoding="utf-8"), segment))
+        segment_text = strip_front_matter(segment.read_text(encoding="utf-8"), segment)
+        if args.mode == "clean":
+            segment_text = strip_review_control(segment_text)
+        assembled_parts.append(segment_text)
     assembled_parts.append(control)
     assembled = "\n\n".join(part.strip() for part in assembled_parts if part.strip()) + "\n"
 
+    default_folder = "assembled" if args.mode == "review" else "assembled-clean"
     output = args.output or (
-        ROOT / "reports" / "localization" / "assembled" / language / f"{args.document_id}-{language}.md"
+        ROOT / "reports" / "localization" / default_folder / language / f"{args.document_id}-{language}.md"
     )
     output = output.resolve()
     public_root = (ROOT / "site").resolve()
@@ -67,6 +94,7 @@ def main() -> int:
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(assembled, encoding="utf-8")
 
+    print(f"mode={args.mode}")
     print(f"base={base.relative_to(ROOT)}")
     print(f"segments={len(segments)}")
     for segment in segments:
