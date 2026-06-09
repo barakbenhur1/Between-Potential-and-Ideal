@@ -1,11 +1,14 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "document_id": "between-potential-and-ideal",
-  "source_commit": "a631b304802f197e68072923ea3f903f8a44d2ea",
-  "generated_at": "2026-06-09T17:15:39.253820+00:00",
+  "source_commit": "750a7ddd7f86d869b2631e7c1d5392be2900b3bd",
+  "generated_at": "2026-06-09T17:17:37.879764+00:00",
   "assembly_status": "PASS",
+  "clean_preview_status": "PASS",
+  "cross_language_structural_parity": "PASS",
   "publication_readiness": "BLOCKED",
   "segment_count_per_language": 77,
+  "review_control_removal_verified": true,
   "languages": [
     {
       "language": "tlh",
@@ -23,7 +26,7 @@
       "publication_values": {
         "forbidden": 77
       },
-      "assembled_draft": {
+      "review_assembled_draft": {
         "path": "reports/localization/assembled/tlh/between-potential-and-ideal-tlh.md",
         "exists": true,
         "bytes": 360267,
@@ -45,9 +48,31 @@
           "Back to table of contents": true
         }
       },
+      "clean_assembled_preview": {
+        "path": "reports/localization/assembled-clean/tlh/between-potential-and-ideal-tlh.md",
+        "exists": true,
+        "bytes": 313538,
+        "lines": 3694,
+        "sha256": "8959648248c8995bfe6b289ba569dfc2c602d2f1fd2ff82b05bffaa54bae3860",
+        "headings": {
+          "h1": 1,
+          "h2": 74,
+          "h3": 276,
+          "h4": 15,
+          "h5": 0,
+          "h6": 0
+        },
+        "review_gate_count": 0,
+        "translation_control_note_count": 1,
+        "required_final_markers": {
+          "## Sources, Inspirations, Ideas, and Acknowledgements": true,
+          "### Bibliography and Source Notes": true,
+          "Back to table of contents": true
+        }
+      },
+      "review_control_removal_verified": true,
       "structural_errors": [],
       "publication_blockers": [
-        "assembled review draft contains 77 review-control sections; production assembly must omit them",
         "canonical base status=draft",
         "77 canonical segments are not approved",
         "8 placeholder segments remain placeholder-draft"
@@ -69,7 +94,7 @@
       "publication_values": {
         "forbidden": 77
       },
-      "assembled_draft": {
+      "review_assembled_draft": {
         "path": "reports/localization/assembled/qya/between-potential-and-ideal-qya.md",
         "exists": true,
         "bytes": 397732,
@@ -91,9 +116,31 @@
           "Back to table of contents": true
         }
       },
+      "clean_assembled_preview": {
+        "path": "reports/localization/assembled-clean/qya/between-potential-and-ideal-qya.md",
+        "exists": true,
+        "bytes": 349947,
+        "lines": 3697,
+        "sha256": "17f10f832e2b8562469bd098584030c722276d714ed0ea6063c57e235748cecd",
+        "headings": {
+          "h1": 1,
+          "h2": 74,
+          "h3": 276,
+          "h4": 15,
+          "h5": 0,
+          "h6": 0
+        },
+        "review_gate_count": 0,
+        "translation_control_note_count": 1,
+        "required_final_markers": {
+          "## Sources, Inspirations, Ideas, and Acknowledgements": true,
+          "### Bibliography and Source Notes": true,
+          "Back to table of contents": true
+        }
+      },
+      "review_control_removal_verified": true,
       "structural_errors": [],
       "publication_blockers": [
-        "assembled review draft contains 77 review-control sections; production assembly must omit them",
         "canonical base status=draft",
         "77 canonical segments are not approved",
         "8 placeholder segments remain placeholder-draft"
@@ -102,15 +149,13 @@
   ],
   "structural_errors": [],
   "publication_blockers": [
-    "tlh: assembled review draft contains 77 review-control sections; production assembly must omit them",
     "tlh: canonical base status=draft",
     "tlh: 77 canonical segments are not approved",
     "tlh: 8 placeholder segments remain placeholder-draft",
-    "qya: assembled review draft contains 77 review-control sections; production assembly must omit them",
     "qya: canonical base status=draft",
     "qya: 77 canonical segments are not approved",
     "qya: 8 placeholder segments remain placeholder-draft"
   ],
-  "decision": "Both non-public drafts assembled successfully and are structurally reviewable, but publication remains blocked until linguistic approval and clean production assembly remove review-control sections.",
+  "decision": "Review and clean non-public drafts assembled successfully, review-control removal is verified, and cross-language structural parity passed. Publication remains blocked only by source approval and unresolved placeholder chapters.",
   "public_output_generated": false
 }
