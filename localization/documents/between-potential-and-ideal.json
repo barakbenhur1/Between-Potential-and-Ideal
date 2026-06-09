@@ -20,7 +20,8 @@
       "localization/sources/tlh/between-potential-and-ideal/040-model-not-final-part-1.md",
       "localization/sources/tlh/between-potential-and-ideal/050-model-not-final-part-2.md",
       "localization/sources/tlh/between-potential-and-ideal/060-symphony-and-friction.md",
-      "localization/sources/tlh/between-potential-and-ideal/070-reverse-turing-test.md"
+      "localization/sources/tlh/between-potential-and-ideal/070-reverse-turing-test.md",
+      "localization/sources/tlh/between-potential-and-ideal/080-god-as-potential.md"
     ],
     "qya": [
       "localization/sources/qya/between-potential-and-ideal/020-metamorphosis-code.md",
@@ -28,7 +29,8 @@
       "localization/sources/qya/between-potential-and-ideal/040-model-not-final-part-1.md",
       "localization/sources/qya/between-potential-and-ideal/050-model-not-final-part-2.md",
       "localization/sources/qya/between-potential-and-ideal/060-symphony-and-friction.md",
-      "localization/sources/qya/between-potential-and-ideal/070-reverse-turing-test.md"
+      "localization/sources/qya/between-potential-and-ideal/070-reverse-turing-test.md",
+      "localization/sources/qya/between-potential-and-ideal/080-god-as-potential.md"
     ]
   },
   "assembly_tool": "tools/assemble_localized_document.py",
@@ -75,9 +77,10 @@
         "The Metamorphosis Code: A Reflection on the Whole and Distance",
         "This Is a Model, Not a Final Declaration",
         "The Symphony of the Whole and the Gift of Friction",
-        "The Reverse Turing Test: The Universal Frequency Test"
+        "The Reverse Turing Test: The Universal Frequency Test",
+        "God as Potential and the Divine Risk"
       ],
-      "next": "God as Potential and the Divine Risk"
+      "next": "The Absolute, the Ideal, and Living Completeness"
     },
     "qya": {
       "status": "draft",
@@ -99,9 +102,10 @@
         "The Metamorphosis Code: A Reflection on the Whole and Distance",
         "This Is a Model, Not a Final Declaration",
         "The Symphony of the Whole and the Gift of Friction",
-        "The Reverse Turing Test: The Universal Frequency Test"
+        "The Reverse Turing Test: The Universal Frequency Test",
+        "God as Potential and the Divine Risk"
       ],
-      "next": "God as Potential and the Divine Risk"
+      "next": "The Absolute, the Ideal, and Living Completeness"
     }
   },
   "publication_rule": "No public output may be generated until every canonical source segment is complete, reviewed, assembled, and marked approved."
