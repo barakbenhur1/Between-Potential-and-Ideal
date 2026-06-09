@@ -1,1 +1,23 @@
-helper
+from pathlib import Path
+import tempfile
+
+
+def add_picture(document, image_path, width_inches=6.2):
+    from PIL import Image
+    from docx.shared import Inches
+    source = Path(image_path)
+    with Image.open(source) as image:
+        image.thumbnail((1800, 1800))
+        transparent = image.mode in {"RGBA", "LA"}
+        image = image.convert("RGBA" if transparent else "RGB")
+        suffix = ".png" if transparent else ".jpg"
+        with tempfile.NamedTemporaryFile(suffix=suffix, delete=False) as handle:
+            temp = Path(handle.name)
+        if transparent:
+            image.save(temp, optimize=True)
+        else:
+            image.save(temp, quality=82, optimize=True)
+    try:
+        document.add_picture(str(temp), width=Inches(width_inches))
+    finally:
+        temp.unlink(missing_ok=True)
