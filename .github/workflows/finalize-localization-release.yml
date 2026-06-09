@@ -7,7 +7,6 @@ on:
   push:
     branches: [ main ]
     paths:
-      - ".github/prompts/localization-batch.prompt.yml"
       - "tools/prepare_localization_ai_jobs.py"
       - "tools/apply_localization_ai_results.py"
       - "tools/temporary.txt"
@@ -60,15 +59,41 @@ jobs:
         with:
           name: localization-ai-jobs
           path: reports/localization/ai-jobs
+      - name: Build plain-text model prompt
+        env:
+          JOB_FILE: reports/localization/ai-jobs/${{ matrix.input }}
+          TARGET_LANGUAGE: ${{ matrix.language_mode }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+
+          data = json.loads(Path(os.environ["JOB_FILE"]).read_text(encoding="utf-8"))
+          language = os.environ["TARGET_LANGUAGE"]
+          target_name = "standard Klingon in Latin transcription" if language == "tlh" else "consistent conservative Neo-Quenya"
+          prompt = f"""Translate the SOURCE Markdown faithfully into {target_name}.
+
+Return only the translated Markdown fragment, with no commentary and no code fence.
+Preserve every heading, paragraph, list, quotation, link, image reference, punctuation mark, joke, paradox, protected ending, and their exact order.
+Do not summarize, omit, expand, explain, or invent content.
+Keep proper names, work titles, citations, URLs, AI, and the brand name Between Potential and Ideal unchanged.
+Follow the supplied project glossary consistently. Prefer clear descriptive phrases over unsupported invented vocabulary.
+
+PROJECT GLOSSARY:
+{data.get('glossary', '')}
+
+SOURCE MARKDOWN:
+{data['source']}
+"""
+          Path("reports/localization/current-prompt.txt").write_text(prompt, encoding="utf-8")
+          PY
       - id: inference
         uses: actions/ai-inference@v1
         with:
-          prompt-file: .github/prompts/localization-batch.prompt.yml
-          input: |
-            job_id: ${{ matrix.id }}
-            language_mode: ${{ matrix.language_mode }}
-          file_input: |
-            job: reports/localization/ai-jobs/${{ matrix.input }}
+          prompt-file: reports/localization/current-prompt.txt
+          model: openai/gpt-4o
+          max-completion-tokens: 12000
+          temperature: 0
       - name: Save translated fragment
         env:
           RESPONSE_FILE: ${{ steps.inference.outputs.response-file }}
@@ -76,6 +101,7 @@ jobs:
         run: |
           mkdir -p reports/localization/ai-results
           cp "$RESPONSE_FILE" "reports/localization/ai-results/${JOB_ID}.json"
+          test -s "reports/localization/ai-results/${JOB_ID}.json"
       - uses: actions/upload-artifact@v4
         with:
           name: localization-ai-result-${{ matrix.id }}
@@ -123,7 +149,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add localization site docs tools .github/workflows/finalize-localization-release.yml .github/prompts/localization-batch.prompt.yml
+          git add localization site docs tools .github/workflows/finalize-localization-release.yml
           if git diff --cached --quiet; then
             echo "No release changes to commit."
             exit 0
