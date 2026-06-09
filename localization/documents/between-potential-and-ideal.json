@@ -24,7 +24,8 @@
       "localization/sources/tlh/between-potential-and-ideal/080-god-as-potential.md",
       "localization/sources/tlh/between-potential-and-ideal/090-absolute-ideal-living-completeness.md",
       "localization/sources/tlh/between-potential-and-ideal/100-core-movement-river-boat.md",
-      "localization/sources/tlh/between-potential-and-ideal/110-experience-knowledge-road.md"
+      "localization/sources/tlh/between-potential-and-ideal/110-experience-knowledge-road.md",
+      "localization/sources/tlh/between-potential-and-ideal/120-education-of-potential.md"
     ],
     "qya": [
       "localization/sources/qya/between-potential-and-ideal/020-metamorphosis-code.md",
@@ -36,7 +37,8 @@
       "localization/sources/qya/between-potential-and-ideal/080-god-as-potential.md",
       "localization/sources/qya/between-potential-and-ideal/090-absolute-ideal-living-completeness.md",
       "localization/sources/qya/between-potential-and-ideal/100-core-movement-river-boat.md",
-      "localization/sources/qya/between-potential-and-ideal/110-experience-knowledge-road.md"
+      "localization/sources/qya/between-potential-and-ideal/110-experience-knowledge-road.md",
+      "localization/sources/qya/between-potential-and-ideal/120-education-of-potential.md"
     ]
   },
   "assembly_tool": "tools/assemble_localized_document.py",
@@ -87,9 +89,10 @@
         "God as Potential and the Divine Risk",
         "The Absolute, the Ideal, and Living Completeness",
         "The Core Movement: Title, River, and Boat",
-        "Experience, Knowledge, and the Road That Cannot Be Bypassed"
+        "Experience, Knowledge, and the Road That Cannot Be Bypassed",
+        "Education of Potential"
       ],
-      "next": "Education of Potential"
+      "next": "Reincarnation as Iterative Knowledge, Not Moral Promotion"
     },
     "qya": {
       "status": "draft",
@@ -115,9 +118,10 @@
         "God as Potential and the Divine Risk",
         "The Absolute, the Ideal, and Living Completeness",
         "The Core Movement: Title, River, and Boat",
-        "Experience, Knowledge, and the Road That Cannot Be Bypassed"
+        "Experience, Knowledge, and the Road That Cannot Be Bypassed",
+        "Education of Potential"
       ],
-      "next": "Education of Potential"
+      "next": "Reincarnation as Iterative Knowledge, Not Moral Promotion"
     }
   },
   "publication_rule": "No public output may be generated until every canonical source segment is complete, reviewed, assembled, and marked approved."
