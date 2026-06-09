@@ -57,6 +57,7 @@ def main():
                 job_id = f"translate-{package}-{language}-{index:03d}"
                 data = {
                     "job_id": job_id,
+                    "task": f"Translate the source Markdown into {language} and return only the translated Markdown.",
                     "language": language,
                     "package": package,
                     "chunk_index": index,
