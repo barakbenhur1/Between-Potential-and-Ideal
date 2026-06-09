@@ -64,7 +64,7 @@ Potential black holevo' escapeDI' neH `real moj` 'e' jatlhnISbe'. reduction latl
 
 vaj: body 'oHbe'bogh reality tu'. object 'oHbe'bogh action tu'. form 'oHbe'bogh direction tu'. event 'oHbe'taHbogh influence tu', 'ach influence Hutlhchugh event rap wayDaq qaSlaHbe'.
 
-human solid mojbe'pu'bogh Hoch dismiss neHmo' potlh. thought fully formulate-be'lu'pu'bogh puj rur. feeling explanation ghajbe'bogh suspicious rur. actualize-be'lu'pu'bogh possibility nothing rur. 'ach rut layersvam active law'. real law' bIHmo'be', 'ach real structureDaq precede-mo'. time neH keessatti precede-be'; structurally precede.
+human solid mojbe'pu'bogh Hoch dismiss neHmo' potlh. thought fully formulate-be'lu'pu'bogh puj rur. feeling explanation ghajbe'bogh suspicious rur. actualize-be'lu'pu'bogh possibility nothing rur. 'ach rut layersvam active law'. real law' bIHmo'be', 'ach real structureDaq precede-mo'. time neHmo' precede-be'; structurally precede.
 
 ## Segment review gate
 
