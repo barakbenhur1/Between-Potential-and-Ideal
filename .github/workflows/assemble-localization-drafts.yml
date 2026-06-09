@@ -1,5 +1,6 @@
 name: Assemble Localization Drafts
 
+# Non-public review assembly only. This workflow must never write under site/.
 on:
   workflow_dispatch:
   push:
