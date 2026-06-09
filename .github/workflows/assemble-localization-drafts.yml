@@ -1,6 +1,6 @@
 name: Assemble Localization Drafts
 
-# Non-public review assembly only. This workflow must never write under site/.
+# Non-public review and clean-preview assembly only. This workflow must never write under site/.
 on:
   workflow_dispatch:
   push:
@@ -36,10 +36,16 @@ jobs:
         run: python3 tools/check_localized_document_contracts.py
 
       - name: Assemble Klingon review draft
-        run: python3 tools/assemble_localized_document.py between-potential-and-ideal tlh
+        run: python3 tools/assemble_localized_document.py between-potential-and-ideal tlh --mode review
 
       - name: Assemble Neo-Quenya review draft
-        run: python3 tools/assemble_localized_document.py between-potential-and-ideal qya
+        run: python3 tools/assemble_localized_document.py between-potential-and-ideal qya --mode review
+
+      - name: Assemble Klingon clean non-public preview
+        run: python3 tools/assemble_localized_document.py between-potential-and-ideal tlh --mode clean
+
+      - name: Assemble Neo-Quenya clean non-public preview
+        run: python3 tools/assemble_localized_document.py between-potential-and-ideal qya --mode clean
 
       - name: Audit assembled drafts and parity
         run: |
@@ -52,7 +58,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: localized-assembly-${{ github.sha }}
-          path: reports/localization/assembled/
+          path: |
+            reports/localization/assembled/
+            reports/localization/assembled-clean/
           if-no-files-found: error
           retention-days: 14
 
