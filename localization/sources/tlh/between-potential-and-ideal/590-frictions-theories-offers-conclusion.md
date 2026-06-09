@@ -22,7 +22,7 @@ continuity versus discreteness, vacuum energy, cosmological constant je language
 
 ### In Relation to Existing Theories
 
-string theory, M-Theory je particles, space je expanded structure vegh unification nej. loop quantum gravity geometry itself quantize 'e' nej. holography boundary, information je volume보다 basic mojlaH 'e' suggest. emergent spacetime, causal sets, CDT je space, time je primary bIHbe'laH 'e' ways pImDaq test. quantum mechanics interpretations — Many Worlds, pilot-wave, objective collapse, Copenhagen, consistent histories, relational QM, QBism — measurement, state je meaningvaD answers pIm nob.
+string theory, M-Theory je particles, space je expanded structure vegh unification nej. loop quantum gravity geometry itself quantize 'e' nej. holography boundary, information je volumeDaq basic law' mojlaH 'e' suggest. emergent spacetime, causal sets, CDT je space, time je primary bIHbe'laH 'e' ways pImDaq test. quantum mechanics interpretations — Many Worlds, pilot-wave, objective collapse, Copenhagen, consistent histories, relational QM, QBism — measurement, state je meaningvaD answers pIm nob.
 
 Between Potential and Ideal physical model rur chaH gholbe'. reading layer nob: attempts pIm bIH, question deep rap jangmeH — possibility, relation, information je readable formDaq chay' moj, source Potential chIlbe'taHvIS.
 
