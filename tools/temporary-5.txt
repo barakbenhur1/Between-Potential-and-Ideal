@@ -1,0 +1,13 @@
+from pathlib import Path
+import shutil
+
+ROOT = Path(__file__).resolve().parents[1]
+for language in ("tlh", "qya"):
+    target = ROOT / "site" / "files" / language / "assets"
+    target.mkdir(parents=True, exist_ok=True)
+    for source in (
+        ROOT / "site" / "files" / "appendices" / "assets",
+        ROOT / "site" / "files" / "ai-believes" / "assets",
+    ):
+        if source.is_dir():
+            shutil.copytree(source, target, dirs_exist_ok=True)
