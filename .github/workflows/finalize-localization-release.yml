@@ -11,6 +11,7 @@ on:
       - "tools/temporary.txt"
       - "tools/temporary-2.txt"
       - "tools/temporary-3.txt"
+      - "tools/temporary-5.txt"
       - "tools/temporary-6.txt"
       - ".github/workflows/finalize-localization-release.yml"
 
@@ -107,6 +108,8 @@ jobs:
           sudo apt-get install -y libreoffice fonts-dejavu-core
       - name: Apply translated package fragments
         run: python3 tools/apply_localization_ai_results.py
+      - name: Prepare localized image assets
+        run: python3 tools/temporary-5.txt
       - name: Build complete public language editions
         run: python3 tools/temporary-2.txt
       - name: Run localization release QA
