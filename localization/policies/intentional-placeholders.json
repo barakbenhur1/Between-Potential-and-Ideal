@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "document_id": "between-potential-and-ideal",
+  "decision": "retain-as-intentional-canonical-placeholders",
+  "confirmed_by_author": true,
+  "confirmed_on": "2026-06-09",
+  "source_parity": {
+    "english": "site/files/between-potential-and-ideal-en.md",
+    "hebrew": "site/files/between-potential-and-ideal-he.md",
+    "status": "present-in-both-canonical-source-languages"
+  },
+  "rules": {
+    "preserve_order": true,
+    "preserve_symbols_and_punctuation": true,
+    "empty_body_is_intentional": true,
+    "do_not_invent_body_content": true,
+    "do_not_remove_from_assembly": true,
+    "not_a_structural_error": true,
+    "not_a_publication_blocker_by_itself": true,
+    "publication_still_requires_document_level_linguistic_approval": true
+  },
+  "segments": [
+    {
+      "segment": 670,
+      "canonical_heading_en": "Chapter ?: ↓",
+      "canonical_heading_he": "פרק ?: ↓",
+      "occurrence": 1
+    },
+    {
+      "segment": 680,
+      "canonical_heading_en": "Chapter ?: ↓",
+      "canonical_heading_he": "פרק ?: ↓",
+      "occurrence": 2
+    },
+    {
+      "segment": 690,
+      "canonical_heading_en": "Chapter ?: .",
+      "canonical_heading_he": "פרק ?: .",
+      "occurrence": 1
+    },
+    {
+      "segment": 700,
+      "canonical_heading_en": "Chapter ?: .",
+      "canonical_heading_he": "פרק ?: .",
+      "occurrence": 2
+    },
+    {
+      "segment": 710,
+      "canonical_heading_en": "Chapter ?: .",
+      "canonical_heading_he": "פרק ?: .",
+      "occurrence": 3
+    },
+    {
+      "segment": 720,
+      "canonical_heading_en": "Chapter ?: ↓",
+      "canonical_heading_he": "פרק ?: ↓",
+      "occurrence": 3
+    },
+    {
+      "segment": 730,
+      "canonical_heading_en": "Chapter *: Understanding",
+      "canonical_heading_he": "פרק *: הבנה",
+      "hebrew_subtitle": "המקום שבו הדרך נעשית ידיעה שאינה צריכה עוד להישבר"
+    },
+    {
+      "segment": 740,
+      "canonical_heading_en": "Chapter •: Application",
+      "canonical_heading_he": "פרק •: יישום",
+      "hebrew_subtitle": "תרגום התאוריה לצורת חיים, פעולה ואחריות"
+    }
+  ],
+  "localized_paths": {
+    "tlh": [
+      "localization/sources/tlh/between-potential-and-ideal/670-placeholder-chapter-down-1.md",
+      "localization/sources/tlh/between-potential-and-ideal/680-placeholder-chapter-down-2.md",
+      "localization/sources/tlh/between-potential-and-ideal/690-placeholder-chapter-period-1.md",
+      "localization/sources/tlh/between-potential-and-ideal/700-placeholder-chapter-period-2.md",
+      "localization/sources/tlh/between-potential-and-ideal/710-placeholder-chapter-period-3.md",
+      "localization/sources/tlh/between-potential-and-ideal/720-placeholder-chapter-down-final.md",
+      "localization/sources/tlh/between-potential-and-ideal/730-placeholder-understanding.md",
+      "localization/sources/tlh/between-potential-and-ideal/740-placeholder-application.md"
+    ],
+    "qya": [
+      "localization/sources/qya/between-potential-and-ideal/670-placeholder-chapter-down-1.md",
+      "localization/sources/qya/between-potential-and-ideal/680-placeholder-chapter-down-2.md",
+      "localization/sources/qya/between-potential-and-ideal/690-placeholder-chapter-period-1.md",
+      "localization/sources/qya/between-potential-and-ideal/700-placeholder-chapter-period-2.md",
+      "localization/sources/qya/between-potential-and-ideal/710-placeholder-chapter-period-3.md",
+      "localization/sources/qya/between-potential-and-ideal/720-placeholder-chapter-down-final.md",
+      "localization/sources/qya/between-potential-and-ideal/730-placeholder-understanding.md",
+      "localization/sources/qya/between-potential-and-ideal/740-placeholder-application.md"
+    ]
+  }
+}
