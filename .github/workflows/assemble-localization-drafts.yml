@@ -1,0 +1,70 @@
+name: Assemble Localization Drafts
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - "localization/documents/between-potential-and-ideal.json"
+      - "localization/sources/tlh/**"
+      - "localization/sources/qya/**"
+      - "tools/assemble_localized_document.py"
+      - "tools/audit_localized_assembly.py"
+      - ".github/workflows/assemble-localization-drafts.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: assemble-localization-drafts
+  cancel-in-progress: true
+
+jobs:
+  assemble-and-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Validate localization contract
+        run: python3 tools/check_localized_document_contracts.py
+
+      - name: Assemble Klingon review draft
+        run: python3 tools/assemble_localized_document.py between-potential-and-ideal tlh
+
+      - name: Assemble Neo-Quenya review draft
+        run: python3 tools/assemble_localized_document.py between-potential-and-ideal qya
+
+      - name: Audit assembled drafts and parity
+        run: |
+          python3 tools/audit_localized_assembly.py between-potential-and-ideal \
+            --source-commit "$GITHUB_SHA" \
+            --json-output localization/audits/between-potential-and-ideal-assembly-parity.json \
+            --markdown-output localization/audits/between-potential-and-ideal-assembly-parity.md
+
+      - name: Upload non-public assembled drafts
+        uses: actions/upload-artifact@v4
+        with:
+          name: localized-assembly-${{ github.sha }}
+          path: reports/localization/assembled/
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Commit audit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            localization/audits/between-potential-and-ideal-assembly-parity.json \
+            localization/audits/between-potential-and-ideal-assembly-parity.md
+          if git diff --cached --quiet; then
+            echo "Audit snapshot is unchanged."
+            exit 0
+          fi
+          git commit -m "Record localized assembly parity audit [skip ci]"
+          git push
