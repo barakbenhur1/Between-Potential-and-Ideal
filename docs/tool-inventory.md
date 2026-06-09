@@ -73,6 +73,7 @@ Temporary `fix_*.py` scripts must not be listed here and must not be committed u
 - `tools/build_localization_inventory.py` — inventories public pages and all HTML/PDF/DOCX/MD/TXT document groups for the four-language project.
 - `tools/assemble_localized_document.py` — assembles a canonical localized base and its ordered review segments into one non-public Markdown preview.
 - `tools/audit_localized_assembly.py` — audits review and clean non-public localization assemblies for structural completeness, control-section removal, hashes, parity, and publication readiness.
+- `tools/apply_intentional_placeholder_policy.py` — removes false placeholder blockers from localization audits after verifying the author-approved bilingual placeholder policy.
 - `tools/update_localization_stage_from_audit.py` — advances contract and batch metadata only after a verified assembly audit passes all structural prerequisites.
 
 ## Rule
