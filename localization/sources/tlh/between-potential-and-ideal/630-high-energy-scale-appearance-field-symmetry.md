@@ -38,7 +38,7 @@ high-energy physicsDaq narghbogh Doch stone tableDaq leghlu' rur particle 'oHbe'
 
 appearance false 'oHbe'. 'ach immediate view je 'oHbe'. event, instrument, background, filtering, statistics, model, interpretation je joj relation 'oH. discovery simply `vay' wIlegh` 'oHbe'. signal, background je distinction 'oH. statistical filtering, model je Hutlhchugh trace evidence wej 'oHbe'.
 
-Sina physics theoryvaD distance vegh rar. understanding thing direct possession 'oHbe'. signs responsible work 'oH. living source truth leghlu'pu' declare-bogh ghaHbe'; signs test, criticism, repetition, failure, correction je bIngDaq lanqangbogh ghaH.
+physics theoryvaD distance vegh rar. understanding thing direct possession 'oHbe'. signs responsible work 'oH. living source truth leghlu'pu' declare-bogh ghaHbe'; signs test, criticism, repetition, failure, correction je bIngDaq lanqangbogh ghaH.
 
 life, law, medicine, education, AI jeDaq narghbogh Doch reH all existing 'oHbe'. appearance interpretation poQ. 'ach responsible interpretation free invention 'oHbe'; testing conditions qeng.
 
@@ -46,7 +46,7 @@ life, law, medicine, education, AI jeDaq narghbogh Doch reH all existing 'oHbe'.
 
 `field` word Qob, scientific rur Qoy 'ej imaginationvaD poS rur. physicsDaq, especially QFTDaq, field aura, feeling, general energy, consciousness, meaning space je 'oHbe'. particles, interactions je describe-meH precise mathematical framework part 'oH.
 
-vaj Potential physical field 'oH, pagh physical field possibilities field prove jatlhnISbe'. category mistake 'oH. theory physics HurDaq field word lo'chugh, metaphor, structural model, scientific claim pagh nuq 'e' clear jatlhnIS. naDev cases law'Daq cautious structural metaphor neH 'oH.
+vaj Potential physical field 'oHbe', pagh physical field possibilities field prove jatlhnISbe'. category mistake 'oH. theory physics HurDaq field word lo'chugh, metaphor, structural model, scientific claim pagh nuq 'e' clear jatlhnIS. naDev cases law'Daq cautious structural metaphor neH 'oH.
 
 nuq ghojlaH? narghbogh Doch always explanation basic unit 'oHbe'laH. particle, event rur narghbogh Doch deeper descriptive structureDaq connected mojlaH. 'ach sentencevam metaphysical proof 'oHbe'. caution lesson neH 'oH: narghbogh Hoch appearance conditions Hoch ngaSbe'.
 
@@ -66,7 +66,7 @@ vaj symmetry order, constraint, language je ghojmoHlaH; symmetry breaking condit
 
 Higgs `meaning nob`be', `existence nob`be', Potential source 'oHbe', mass Hoch simple senseDaq explainbe'. lo'meyvam chapter prevent neHbogh borrowing type bIH.
 
-Standard Model inside, Higgs mechanism electroweak symmetry breaking contextDaq elementary particles 'op Higgs field interaction vegh mass Suq chay' 'e' explain. naDev je caution poQ: ordinary matter mass law' directly simple wayDaq quark masses through Higgsvo' bognbe'; hadrons inside QCD dynamics, binding energy jevo' law' chen.
+Standard Model inside, Higgs mechanism electroweak symmetry breaking contextDaq elementary particles 'op Higgs field interaction vegh mass Suq chay' 'e' explain. naDev je caution poQ: ordinary matter mass law' directly simple wayDaq quark masses through Higgsvo' boghbe'; hadrons inside QCD dynamics, binding energy jevo' law' chen.
 
 vaj Higgs naDev magical metaphor rur potlhbe', magical metaphors against discipline rur potlh. physical concept deep, precise, transformative mojlaH, 'ach meaning, appearance, Potential HochvaD general symbol mojbe'nIS 'e' qawmoH.
 
