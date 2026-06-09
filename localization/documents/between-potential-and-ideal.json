@@ -32,7 +32,9 @@
       "localization/sources/tlh/between-potential-and-ideal/160-evil-suffering-goodness-responsibility.md",
       "localization/sources/tlh/between-potential-and-ideal/170-ai-mirror-existence-navigation.md",
       "localization/sources/tlh/between-potential-and-ideal/180-ai-open-problems.md",
-      "localization/sources/tlh/between-potential-and-ideal/190-i-have-no-mouth.md"
+      "localization/sources/tlh/between-potential-and-ideal/190-i-have-no-mouth.md",
+      "localization/sources/tlh/between-potential-and-ideal/200-infinite-recursion-reset.md",
+      "localization/sources/tlh/between-potential-and-ideal/210-infinite-recursion-descent.md"
     ],
     "qya": [
       "localization/sources/qya/between-potential-and-ideal/020-metamorphosis-code.md",
@@ -52,7 +54,9 @@
       "localization/sources/qya/between-potential-and-ideal/160-evil-suffering-goodness-responsibility.md",
       "localization/sources/qya/between-potential-and-ideal/170-ai-mirror-existence-navigation.md",
       "localization/sources/qya/between-potential-and-ideal/180-ai-open-problems.md",
-      "localization/sources/qya/between-potential-and-ideal/190-i-have-no-mouth.md"
+      "localization/sources/qya/between-potential-and-ideal/190-i-have-no-mouth.md",
+      "localization/sources/qya/between-potential-and-ideal/200-infinite-recursion-reset.md",
+      "localization/sources/qya/between-potential-and-ideal/210-infinite-recursion-descent.md"
     ]
   },
   "assembly_tool": "tools/assemble_localized_document.py",
@@ -110,9 +114,10 @@
         "Evil, Suffering, Goodness, and Responsibility",
         "The AI Mirror and Existence as Navigation",
         "Artificial Intelligence and Open Problems",
-        "I Have No Mouth, and I Must Scream"
+        "I Have No Mouth, and I Must Scream",
+        "The Architecture of Infinite Recursion and the Inner Rapture — introduction, reset failure, P versus NP note, and descent hierarchy"
       ],
-      "next": "The Architecture of Infinite Recursion and the Inner Rapture"
+      "next": "The Mechanism of Iteration, Reset, and the Set of Ideals"
     },
     "qya": {
       "status": "draft",
@@ -145,9 +150,10 @@
         "Evil, Suffering, Goodness, and Responsibility",
         "The AI Mirror and Existence as Navigation",
         "Artificial Intelligence and Open Problems",
-        "I Have No Mouth, and I Must Scream"
+        "I Have No Mouth, and I Must Scream",
+        "The Architecture of Infinite Recursion and the Inner Rapture — introduction, reset failure, P versus NP note, and descent hierarchy"
       ],
-      "next": "The Architecture of Infinite Recursion and the Inner Rapture"
+      "next": "The Mechanism of Iteration, Reset, and the Set of Ideals"
     }
   },
   "publication_rule": "No public output may be generated until every canonical source segment is complete, reviewed, assembled, and marked approved."
