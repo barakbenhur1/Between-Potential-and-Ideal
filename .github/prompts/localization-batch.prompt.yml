@@ -1,4 +1,0 @@
-messages:
-  - role: user
-    content: "Return {{job_id}}"
-model: openai/gpt-4o-mini
