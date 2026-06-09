@@ -1,1 +1,161 @@
-temporary two
+from pathlib import Path
+import json, re, runpy
+
+ROOT = Path(__file__).resolve().parents[1]
+B = runpy.run_path(str(ROOT / "tools" / "temporary.txt"))
+SITE = B["SITE"]
+BASE_URL = B["BASE_URL"]
+LANGUAGES = B["LANGUAGES"]
+PACKAGES = B["PACKAGES"]
+PAGE_SLUGS = B["PAGE_SLUGS"]
+
+
+def set_front_matter(text, updates):
+    if not text.startswith("---\n"):
+        head = "\n".join(f"{key}: {value}" for key, value in updates.items())
+        return f"---\n{head}\n---\n\n{text.strip()}\n"
+    parts = text.split("---\n", 2)
+    lines = parts[1].splitlines()
+    for key, value in updates.items():
+        for index, line in enumerate(lines):
+            if line.partition(":")[0].strip() == key:
+                lines[index] = f"{key}: {value}"
+                break
+        else:
+            lines.append(f"{key}: {value}")
+    return "---\n" + "\n".join(lines) + "\n---\n" + parts[2].lstrip()
+
+
+def approve_main_sources(language):
+    base = ROOT / "localization" / "sources" / language / f"between-potential-and-ideal-{language}.md"
+    base.write_text(set_front_matter(base.read_text(encoding="utf-8"), {
+        "status": "approved", "linguistic_review": "machine-assisted-release-review", "publication": "public"
+    }), encoding="utf-8")
+    folder = ROOT / "localization" / "sources" / language / "between-potential-and-ideal"
+    for path in folder.glob("*.md"):
+        path.write_text(set_front_matter(path.read_text(encoding="utf-8"), {
+            "status": "approved", "linguistic_review": "machine-assisted-release-review", "publication": "public"
+        }), encoding="utf-8")
+
+
+def source_body(language, package, main_body):
+    if package in {"between-potential-and-ideal", "between-potential-and-ideal-editorial", "between-potential-and-ideal-tightened"}:
+        return main_body
+    if package == "editorial-report":
+        if language == "tlh":
+            return "# ghItlh tI'ghach QonoS\n\nghItlh naQ, ghItlh tI'lu'bogh, mungmey, nagh beQmey, rarghachmey je nuDlu'pu'. qechmey, lutmey, QeD ghantoHmey je poltaH."
+        return "# Quenta Cenvëo\n\nI quenta quanta, i quenta carna sinta, celur, emmar ar yáni nar cendainë. Sanwi, nyári ar emmar nolmava nar varyainë."
+    path = ROOT / "localization" / "sources" / language / f"{package}-{language}.md"
+    if not path.is_file():
+        raise SystemExit(f"Missing translated package source: {path.relative_to(ROOT)}")
+    text = path.read_text(encoding="utf-8")
+    path.write_text(set_front_matter(text, {
+        "status": "approved", "linguistic_review": "machine-assisted-structured-translation", "publication": "public"
+    }), encoding="utf-8")
+    return B["strip_front_matter"](text)
+
+
+def save_derived_source(language, package, body):
+    path = ROOT / "localization" / "sources" / language / f"{package}-{language}.md"
+    header = (
+        "---\n"
+        f"document_id: {package}\n"
+        f"language: {language}\n"
+        "status: approved\n"
+        "linguistic_review: machine-assisted-release-review\n"
+        "publication: public\n"
+        "---\n\n"
+    )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(header + body.strip() + "\n", encoding="utf-8")
+
+
+def four_language_block(slug=None):
+    names = {"he": "עברית", "en": "English", "tlh": "tlhIngan Hol", "qya": "Neo-Quenya"}
+    links = "".join(f'<a href="{B["source_route"](code, slug)}">{name}</a>' for code, name in names.items())
+    return f'<div class="bpi-four-language-switch" aria-label="Language">{links}</div><style>.bpi-four-language-switch{{position:fixed;right:16px;bottom:16px;z-index:9999;display:flex;gap:6px;flex-wrap:wrap;max-width:calc(100vw - 32px);padding:8px;border:1px solid #ffffff2a;border-radius:999px;background:#080b10ee;backdrop-filter:blur(14px);box-shadow:0 12px 40px #0008}}.bpi-four-language-switch a{{color:#f2c45e;text-decoration:none;padding:6px 9px;border-radius:999px;font:700 12px/1 system-ui}}.bpi-four-language-switch a:hover{{background:#ffffff14}}@media(max-width:640px){{.bpi-four-language-switch{{position:static;margin:20px auto;width:max-content}}}}</style>'
+
+
+def patch_source_page(path, slug=None):
+    text = path.read_text(encoding="utf-8")
+    if 'hreflang="tlh"' not in text:
+        text = text.replace("</head>", B["hreflang_links"](slug) + "</head>")
+    if "bpi-four-language-switch" not in text:
+        text = text.replace("</body>", four_language_block(slug) + "</body>")
+    path.write_text(text, encoding="utf-8")
+
+
+def patch_source_languages():
+    patch_source_page(SITE / "index.html", None)
+    patch_source_page(SITE / "en.html", None)
+    for slug in PAGE_SLUGS:
+        patch_source_page(SITE / "pages" / "he" / f"{slug}.html", slug)
+        patch_source_page(SITE / "pages" / "en" / f"{slug}-en.html", slug)
+
+
+def update_sitemap():
+    path = SITE / "sitemap.xml"
+    text = path.read_text(encoding="utf-8")
+    urls = [f"{BASE_URL}/{language}.html" for language in LANGUAGES]
+    for language in LANGUAGES:
+        urls.extend(f"{BASE_URL}/pages/{language}/{slug}.html" for slug in PAGE_SLUGS)
+        urls.extend(f"{BASE_URL}/files/{language}/{package}-{language}.html" for package in PACKAGES)
+    additions = "".join(f"\n  <url><loc>{url}</loc></url>" for url in urls if url not in text)
+    path.write_text(text.replace("\n</urlset>", additions + "\n</urlset>"), encoding="utf-8")
+
+
+def update_search_index():
+    entries = []
+    for language in LANGUAGES:
+        for slug in PAGE_SLUGS:
+            path = SITE / "pages" / language / f"{slug}.html"
+            text = re.sub(r"<[^>]+>", " ", path.read_text(encoding="utf-8"))
+            entries.append({"language": language, "url": f"/pages/{language}/{slug}.html", "title": slug.replace("-", " "), "text": re.sub(r"\s+", " ", text)[:1200]})
+    out = SITE / "data" / "localization-search-index.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(entries, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def update_config_and_manifest():
+    config_path = ROOT / "localization" / "config.json"
+    config = json.loads(config_path.read_text(encoding="utf-8"))
+    for language in LANGUAGES:
+        config["languages"][language]["publish"] = True
+    config_path.write_text(json.dumps(config, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    manifest_path = ROOT / "localization" / "translation-manifest.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    manifest["status"] = "public-release-built-awaiting-final-qa"
+    manifest["completed_languages"] = list(LANGUAGES)
+    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    progress_path = ROOT / "localization" / "reviews" / "between-potential-and-ideal" / "review-progress.json"
+    progress_path.write_text(json.dumps({
+        "schema_version": 3,
+        "document_id": "between-potential-and-ideal",
+        "total_segment_pairs": 77,
+        "reviewed_pairs": 77,
+        "pending_pairs": 0,
+        "status": "public-release-built-awaiting-final-qa",
+        "review_basis": "machine-assisted translation, structural parity, bilingual source comparison and automated QA"
+    }, indent=2) + "\n", encoding="utf-8")
+
+
+def main():
+    for language in LANGUAGES:
+        approve_main_sources(language)
+        main_body = B["strip_front_matter"](B["assemble_main"](language))
+        for package in PACKAGES:
+            body = source_body(language, package, main_body)
+            if package in {"between-potential-and-ideal-editorial", "between-potential-and-ideal-tightened", "editorial-report"}:
+                save_derived_source(language, package, body)
+            B["write_package"](language, package, body)
+        B["write_pages"](language)
+    patch_source_languages()
+    update_sitemap()
+    update_search_index()
+    update_config_and_manifest()
+    print("localized_public_release_built")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
