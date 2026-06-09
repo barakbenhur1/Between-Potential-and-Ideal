@@ -14,7 +14,7 @@ publication: forbidden
 
 ### The evidence horizon
 
-naDev evidence horizon 'el. truth ghaH'egh davanti law actbe'; legal formDaq qenglaHbogh Doch devant act. factual truth, evidentiary truth, legal truth je tu'lu' — procedure pIq system determine-meH authorized 'oH legal truth'e'. wejDIch reH wa'DIch rap 'e' law ngebbe'nIS; 'ach evidence decisionDaq choHmoHbe'taHvIS actlaHbe' je.
+naDev evidence horizon 'el. truth ghaH'egh DaqDaq law actbe'; legal formDaq qenglaHbogh Doch DaqDaq act. factual truth, evidentiary truth, legal truth je tu'lu' — procedure pIq system determine-meH authorized 'oH legal truth'e'. wejDIch reH wa'DIch rap 'e' law ngebbe'nIS; 'ach evidence decisionDaq choHmoHbe'taHvIS actlaHbe' je.
 
 truth tu'lu'laH 'ach inaccessible. evidence accessible 'oHlaH 'ach insufficient. testimony true 'oHlaH 'ach broken. procedure proper 'oHlaH 'ach healbe'. vaj legal justice humility le' poQ: decision cancelbe'bogh humility, 'ach decision Hoch horizonvo' chen 'e' Sovbogh. horizonDaj recognizebe'bogh law knowledge limitationDaj absolute truthDaq choHmoHlaH.
 
@@ -22,7 +22,7 @@ truth tu'lu'laH 'ach inaccessible. evidence accessible 'oHlaH 'ach insufficient.
 
 lawDaq AI Qobqu', form certainty appearance noblaHmo'. summarize, rank, patterns extract, precedents tu', draft, work accelerate je laH. responsible human judgment toy'bogh tool ratlhchugh, scaffold potlh mojlaH. 'ach assumptions So'chugh, bias reproduce-chugh, sources invent-chugh, probability guilt HolDaq choHmoHchugh, theory warning rap ta': living source outputmo' tam, partial horizon truth appearanceDaq tam.
 
-proper legal AI lo' statistical accuracy neHmo' juvbe'lu'; responsibility Daq lughDaq ratlhtaH'a' je juv. 'Iv challenge-laH? recommendation chay' produce-lu' 'e' 'Iv yaj? rating wrongDI' 'Iv responsibility qeng? concerned person ghaHvaD claim ghomlaH'a', pagh opaque form davanti Qam'a'? worthy legal AI visible scaffold ratlhnIS, hidden judge mojbe'nIS. locate, organize, check, material accessible mojmoH je QaHnIS; responsibility tambe'nIS, assumptions So'be'nIS, probability person bopbogh decisionDaq choHmoHbe'nIS.
+proper legal AI lo' statistical accuracy neHmo' juvbe'lu'; responsibility Daq lughDaq ratlhtaH'a' je juv. 'Iv challenge-laH? recommendation chay' produce-lu' 'e' 'Iv yaj? rating wrongDI' 'Iv responsibility qeng? concerned person ghaHvaD claim ghomlaH'a', pagh opaque form 'et Qam'a'? worthy legal AI visible scaffold ratlhnIS, hidden judge mojbe'nIS. locate, organize, check, material accessible mojmoH je QaHnIS; responsibility tambe'nIS, assumptions So'be'nIS, probability person bopbogh decisionDaq choHmoHbe'nIS.
 
 significant legal AI use Hoch minimum poQ:
 
