@@ -1,0 +1,40 @@
+name: Localization Models Smoke
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - ".github/workflows/localization-models-smoke.yml"
+
+permissions:
+  contents: write
+  models: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: inference
+        uses: actions/ai-inference@v1
+        with:
+          prompt: "Return exactly GITHUB_MODELS_OK and nothing else."
+          model: openai/gpt-4o-mini
+          max-tokens: 16
+          temperature: 0
+      - name: Save result
+        env:
+          RESPONSE: ${{ steps.inference.outputs.response }}
+        run: |
+          mkdir -p localization/audits
+          printf '%s\n' "$RESPONSE" > localization/audits/github-models-smoke.txt
+          grep -qx 'GITHUB_MODELS_OK' localization/audits/github-models-smoke.txt
+      - name: Commit result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add localization/audits/github-models-smoke.txt
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Record GitHub Models smoke result [skip ci]"
+          git push
