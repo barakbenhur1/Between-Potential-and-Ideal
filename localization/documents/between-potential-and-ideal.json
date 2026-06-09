@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "document_id": "between-potential-and-ideal",
+  "source": {
+    "en": "site/files/between-potential-and-ideal-en.html",
+    "he": "site/files/between-potential-and-ideal-he.html"
+  },
+  "canonical_targets": {
+    "tlh": "localization/sources/tlh/between-potential-and-ideal-tlh.md",
+    "qya": "localization/sources/qya/between-potential-and-ideal-qya.md"
+  },
+  "public_output_stems": {
+    "tlh": "site/files/tlh/between-potential-and-ideal-tlh",
+    "qya": "site/files/qya/between-potential-and-ideal-qya"
+  },
+  "required_formats": ["html", "pdf", "docx", "md", "txt"],
+  "required_content_parity": [
+    "cover",
+    "core sentence",
+    "author note",
+    "method note",
+    "all headings and subheadings",
+    "all paragraphs and lists",
+    "all quotations",
+    "all figures, alt text and captions",
+    "all source-discipline notes",
+    "all links and references",
+    "all protected literary details"
+  ],
+  "current_progress": {
+    "tlh": {
+      "status": "draft",
+      "completed": ["cover", "core sentence", "author note", "method note"]
+    },
+    "qya": {
+      "status": "draft",
+      "completed": ["cover", "core sentence", "author note", "method note"]
+    }
+  },
+  "publication_rule": "No public output may be generated until the canonical target is complete and marked approved."
+}
