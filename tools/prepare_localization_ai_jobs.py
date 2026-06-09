@@ -5,7 +5,7 @@ import json, re, shutil
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "reports/localization/ai-jobs"
 LANGUAGES = ("tlh", "qya")
-LIMIT = 20000
+LIMIT = 40000
 SOURCES = {
     "stories-before-thought": "site/files/appendices/stories-before-thought-english.md",
     "the-nauseating-truth": "site/files/appendices/haemet_hamavchila_final_publication_he.md",
