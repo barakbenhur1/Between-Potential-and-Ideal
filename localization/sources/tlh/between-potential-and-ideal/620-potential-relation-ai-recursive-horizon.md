@@ -44,7 +44,7 @@ Potential shape universe geometry 'oHbe'. circle, line, curvature, topology je '
 
 human universe HurDaq actbe', Potential HurDaq choosebe'. horizon inside act. vaj Ideal divine view 'oHbe', 'ach partiality inside possible worthy clarification 'oH. Optimal local form 'oH, naDev responsibilityvam real mojlaH.
 
-horizon Hoch prison 'oHbe'. rut horizon form appearmeH condition 'oH, form Hoch 'oH 'e' liebe'taHvIS.
+horizon Hoch prison 'oHbe'. rut horizon form appearmeH condition 'oH, form Hoch 'oH 'e' claimbe'taHvIS.
 
 ## Segment review gate
 
