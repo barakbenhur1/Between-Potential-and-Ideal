@@ -4,8 +4,9 @@ language: qya
 language_label: Neo-Quenya
 direction: ltr
 status: draft
-source_document: site/files/between-potential-and-ideal-en.html
-semantic_cross_check: site/files/between-potential-and-ideal-he.html
+source_document: site/files/between-potential-and-ideal-en.md
+semantic_cross_check: site/files/between-potential-and-ideal-he.md
+visual_reference: site/files/between-potential-and-ideal-en.html
 translator_note: Canonical Neo-Quenya working source. Community formations and uncertain constructions remain explicitly marked during review.
 ---
 
@@ -44,6 +45,38 @@ The project terms remain visible where a Neo-Quenya construction would falsely i
 > **Method note — Neo-Quenya review draft:** `Írë sanwi nolmava, nótessëo, sanar, carma-nótessëo hya tengwiëo tulir sís, mauya cenda te ve patari carmava ar ve-emmar, qui lá nar tana pantavë ve quetali tancainë hya nolmavë. Parma sina ná sanwe-tyalië pantaina, lá tanwa nolmava tancaina.`
 >
 > When concepts from science, mathematics, physics, computer science, or logic appear here, they should be read as structural models and metaphors unless explicitly marked as formal or scientific claims. This document is an open thought experiment, not a closed scientific proof.
+
+---
+
+## Sinta Quenta — Abstract
+
+`Quenta sina anta sanwë-patar er metafísicava ar ëa-sanwëo, yassë "Eru" lá ná námo valin pella i ambar, ar lá ná cenindo pella naicelë, mal esta i Potential ilya i Ëao ahyalien cuilenna, handenna, máriéva, tengwenna ar Idealna. Mi sanwë sina, írë cenindo naica, lá ëa minya quén ya naica ar tá Eru ya cenë. I erussë tulë ve i haryando i cuilë-isto immo.`
+
+`I jelelë hroa ná faica: I Ilúvë lá ná i Ideal, ar Optimal ná i tië yassë Ideal tulë mir lúmë. I Ilúvë ná i palar ilya námiéo. Ideal ná námië apa pantalië máriéva. Optimal ná i mára anwa canta i pantaliëo mi lúmë er. I Ilúvë harya ilya ya polë ná; Ideal ná i ocombë ilya cantar Optimal anwi yainen i ya polë ná ahya i ya mauya ná.`
+
+`Ideal tulë mi sanwë-patar sin mi panyar rimbi: ontological — mana mauya ná; nómessë — i canta Optimal mi lúmi; culturassë — mana carma lá mauya vanya; tengwiessë — omentië mauya-cárië imbe anwië, tanwa ar landa; ar máriessë — mana tulya carië ú auta i quén. An sina i ahyaliër i quettao ter i capítali lá nar úsanwë, mal panyar i yanta er.`
+
+`I emma yára i sanwë-pataro ná sina: i Eä ná i sírë, Ëa ná i cirya, Potential ar Ideal nar i attë rámar, ar handassë cuilala ná i curwë urda ciryalëo. I sírë lá mauya ná turina. I quanta lá ná ahyala mi capta er ideal-immo tancaina, mal hirien i Optimal-immo ya polë ná cuita sí — i canta anwa ya ná anwin lá ana i Ideal mi lúmi i ambaro.`
+
+`I sanwë-patar polë ná estaina nihilism estel ó, hya tyalië apa nihilism lehtien tengwë mi i úvë immo. Harya i maquetta nihilistava ya tengwë lá ná antaina epë. Mal avá i hanquenta ya tengwë lá polë ná. Tengwë cé lá ná i yesta i Ëao; tengwë ná i ya Ëa polë ahya írë cenindo ahya pantavë immo, i exë ar i Quanta.`
+
+`Mi nómë sina Dostoevsky ar Nietzsche lá nar turindor i sanwë-pataro, mal attë cestali núriva. Dostoevsky maquetë mana martya írë sanwë alta lá tulë mir quén anwa. I márië Prince Myshkino, ve Eru moica lelyala ter ambar ya lá ná manwa ten, lá polë turë i anwië hya carë sa ú loicar. Yando írë lelya ana i nehtar i nís ya melnë, i órerya lá lehta i nyárë; tana manen pitya i ambar polë colë márië ya lá ista ahya túrienna. Nietzsche, i exë lambello, maquetë ma ilya Ideal sina cé ahya ainalë falsa: tiutië pella cuilë, márië nurtala lusta, órë nurtala turë. Imbetenta i carma i sanwë-pataro ná jejaina: varya i Potential envinyatien ú carila sa lehtalë falsa, ar varya Ideal cuina ú carila sa ondo tancaina.`
+
+### Manifesto i Menelë Eruo: I Ahyalië Lissëo
+
+### Nyárë Tancaina
+
+`I quén lá ná loica mi i Eä. I quén ná i tië yassë i Eä varya immo vanwiello.`
+
+`Sina lá ná tiutië. Ná i carma tengwiëo i anwië írë Potential ilya avá lemya er polima ar anta immo nolmë cuilala. I Quanta lá harya lusta túriva; harya lusta cuilë-isto landava. Ilúvë ista ilya ve palar námiéo, mal ilúvë ya lá ahya landanna lá ista landa mi immo. An sina i quén ná maura. An sina i hröa ná maura. An sina lúmë, naicë, cilmë, loica ar tyalië lá nar appeli cuilëo, mal i nómë yassë i Quanta carë nótië ya lá polë carë eressë.`
+
+### I Jelelë Tengwiëo
+
+`Ëa ná i menelë Eruo Potentialllo nolmenna. Potential er ná palyassë ú cuilë-isto. Ideal er, írë ná carna ve metta quanta ar poita, lemya haiya cuilëllo. Optimal ná i nómë yassë Ideal samë i anwië ú quetila úanwa ten: i carië anwa lá ya polë ná mi lúmi antainë. An sina Ideal lá ná ondo tancaina poitalëo; ná i Quanta ilya cantar Optimal anwi ya nar ocomnar entulien i Minna.`
+
+`Sina yando anta pantalië geniusva. Genius lá ná polië ontaina ar lá ná oronta anwa. Genius ná haiya. Ná i omentië imbe yassë quén yestanë ar i haiya ya lelyanë apa i lusta cuileryo. Quén ontaina ara calima ar lelyala faicavë lá carë i nolmë er ve quén ontaina mi mornië ya polë lelya min millimeter ana anwië, mauya-cárië, órë hya cuilë. I millimeter tana ná rácina landa i Eäo.`
+
+`I Quanta maura i tyalië tana, an i Quanta, an ná quanta, lá ista eressë manen mahtië ná cuita mi réna. I quén ná i nómë-cesta i Ilúvëo mi lúmi landaron. Lusta, tarna, avá haryë estel, lumba ar lantië lá auta i quén i carmallo. Yando írë quén lá savë valeryassë, carë nótië manen ná ná sanwë ya cesta lemya yassë tengwë lá ná antaina epë.`
 
 ---
 
