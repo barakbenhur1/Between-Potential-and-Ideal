@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 030
 status: draft
+linguistic_review: first-pass-complete-needs-specialist-revision
+review_record: localization/reviews/between-potential-and-ideal/030-whole-and-distance-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
