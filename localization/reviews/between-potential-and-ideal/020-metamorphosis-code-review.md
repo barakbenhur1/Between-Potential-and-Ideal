@@ -12,6 +12,7 @@ hebrew_cross_check: site/files/between-potential-and-ideal-he.md
 revision_plan: localization/reviews/between-potential-and-ideal/020-specialist-revision-plan.md
 terminology_supplement: localization/glossaries/segment-020-specialist-terms.md
 specialist_status: localization/reviews/between-potential-and-ideal/020-specialist-status.json
+remediation_baseline: localization/reviews/between-potential-and-ideal/020-remediation-baseline.json
 ---
 
 # Linguistic review — 020 Metamorphosis Code
@@ -25,6 +26,7 @@ The specialist stage is governed by:
 - [020 specialist revision plan](020-specialist-revision-plan.md)
 - [segment 020 terminology supplement](../../glossaries/segment-020-specialist-terms.md)
 - [segment 020 specialist status](020-specialist-status.json)
+- [segment 020 remediation baseline](020-remediation-baseline.json)
 
 ## Source parity already passed
 
@@ -56,46 +58,59 @@ Use Okrand-canonical vocabulary and grammar only. Every accepted term must have 
 
 Use a Late-Quenya-first profile. Prefer Tolkien-attested Late Quenya. A documented Neo-Quenya formation may be considered only when no suitable attested form exists, its derivation is recorded, and it does not conflict with the selected late grammar.
 
+## Resolved title policy
+
+The canonical English title is `The Metamorphosis Code of Grace and Distance`. The canonical Hebrew edition localizes it as `קוד המטמורפוזה של החסד והמרחק`. Therefore `Metamorphosis Code` is not a protected English brand or proper name and must be localized idiomatically in both target-language titles.
+
+The localized title must preserve:
+
+- transformation of relation rather than cosmetic change or replacement;
+- code as a governing pattern or principle, not automatically software source code;
+- grace and distance as distinct coordinated concepts;
+- zero unresolved English tokens.
+
+`Between Potential and Ideal` remains the project brand. `Prime Intellect` remains a proper title/name.
+
 ## Current automated baseline
 
 The line-aware constructed-language audit identifies the following segment-specific foreign-language findings:
 
 ### Klingon
 
-- heading: `Metamorphosis` inside `Metamorphosis Code`;
-- body: two occurrences of `metamorphosis`.
+- heading line 13: `Metamorphosis` inside `Metamorphosis Code`;
+- body lines 43 and 47: two occurrences of `metamorphosis`.
 
 ### Neo-Quenya
 
-- heading: `Metamorphosis Code`;
-- body: two occurrences of `genius`.
+- heading line 13: `Metamorphosis Code`;
+- body lines 19 and 33: two occurrences of `genius`.
 
-Heading findings remain blocked until an explicit title policy is approved. Body findings require idiomatic target-language revision and cannot be cleared by an allowlist.
+All heading and body findings must reach zero through idiomatic revision. They cannot be cleared by an allowlist. `Prime Intellect` is the only protected proper name relevant to this segment.
 
 ## Klingon blocking issues
 
 1. `leghwI'` remains provisional and may not carry the ethical role of witness.
 2. `chuq` is physical distance; any philosophical extension must be explicitly framed.
-3. The body still contains two English `metamorphosis` tokens.
+3. The title and body still contain English `metamorphosis` tokens.
 4. Dense nominal chains and several `-ghach` formations require specialist syntax review.
 5. Object clauses, passive constructions, and English-shaped sentence order require normalization.
-6. The project still needs verified distinctions for final erasure, result, mechanism, spiritual collapse, and moral worth.
+6. The project still needs verified distinctions for transformation, governing pattern, final erasure, result, mechanism, spiritual collapse, and moral worth.
 
 ## Neo-Quenya blocking issues
 
-1. The new Late-Quenya-first profile must be applied consistently to the full segment.
+1. The Late-Quenya-first profile must be applied consistently to the full segment.
 2. `haiya`, `lissë`, `Astarmo`, and `celu` remain provisional in their project senses.
-3. The body still contains two English `genius` tokens.
+3. The title contains English `Metamorphosis Code`, and the body contains two English `genius` tokens.
 4. Project formations such as `mauya-cárië`, compounds for lived experience, and several abstract nouns remain unapproved.
 5. Case endings, participles, noun compounds, agreement, and word order require a full morphological rewrite pass.
-6. The title policy for `Metamorphosis Code` remains unresolved.
+6. Transformation, governing pattern, exceptional intelligence, and moral worth require distinct verified constructions.
 
 ## Required next actions
 
 1. Validate every core term in the three mandatory contexts: label, philosophical paragraph, and literary sentence.
 2. Record accepted and rejected forms with source references.
-3. Remove the four confirmed body-level English intrusions in 020 through idiomatic revision, not blind replacement.
-4. Decide the shared title policy for `Metamorphosis Code`.
+3. Localize the complete title in both target languages.
+4. Remove the four confirmed body-level English intrusions through idiomatic revision, not blind replacement.
 5. Rewrite both drafts under the declared profiles while preserving every invariant above.
 6. Re-run the line-aware constructed-language audit.
 7. Compare the revised drafts with both the English source and Hebrew semantic cross-check.
