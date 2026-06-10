@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from collections import defaultdict
+from difflib import SequenceMatcher
 from pathlib import Path
 import hashlib
 import json
@@ -23,16 +24,21 @@ def clean(text: str) -> str:
 
 def valid(source: str, translated: str) -> bool:
     lowered = translated.lower()
-    refusal_markers = (
-        "i can't assist",
-        "i cannot assist",
-        "as an ai language model",
-        "cannot translate",
+    refused = any(
+        marker in lowered
+        for marker in (
+            "i can't assist",
+            "i cannot assist",
+            "as an ai language model",
+            "cannot translate",
+        )
     )
+    similarity = SequenceMatcher(None, source[:6000], translated[:6000]).ratio()
     return (
-        len(translated) >= max(60, int(len(source) * 0.10))
+        len(translated) >= max(200, int(len(source) * 0.45))
         and translated != source
-        and not any(marker in lowered for marker in refusal_markers)
+        and similarity < 0.65
+        and not refused
     )
 
 
@@ -77,7 +83,6 @@ def main() -> int:
 
     groups: dict[tuple[str, str], dict[int, str]] = defaultdict(dict)
     complete = 0
-
     for job_id, data in jobs.items():
         body = CACHE_DIR / f"{job_id}.md"
         meta = CACHE_DIR / f"{job_id}.json"
@@ -128,13 +133,10 @@ def main() -> int:
         "status": "translation-complete" if pending == 0 else "translation-in-progress",
     }
     STATE_FILE.write_text(json.dumps(state, indent=2) + "\n", encoding="utf-8")
-
-    output_path = os.environ.get("GITHUB_OUTPUT")
-    if output_path:
+    if output_path := os.environ.get("GITHUB_OUTPUT"):
         with open(output_path, "a", encoding="utf-8") as output:
             output.write(f"pending={pending}\n")
             output.write(f"cached={complete}\n")
-
     print(json.dumps(state))
     return 0
 
