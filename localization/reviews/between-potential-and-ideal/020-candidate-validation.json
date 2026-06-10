@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "segment": 20,
   "stage": "specialist-terminology-validation",
   "publication": "forbidden",
@@ -11,32 +11,40 @@
   "title": {
     "policy": "localize-in-both-target-languages",
     "protected": false,
-    "status": "unresolved"
+    "status": "unresolved",
+    "remaining_audit_findings": {
+      "tlh": ["metamorphosis"],
+      "qya": ["metamorphosis", "code"]
+    }
   },
   "concepts": [
     {
       "id": "metamorphosis",
       "tlh": {
-        "candidate": null,
-        "source": null,
-        "status": "unresolved"
+        "candidate": "clausal constructions using choH",
+        "source": "The Klingon Dictionary citation still to be recorded in the project worksheet",
+        "current_use": "body-only provisional remediation",
+        "title_use": "not yet approved",
+        "status": "provisional"
       },
       "qya": {
         "candidate": "a sourced construction using ahya-",
         "source": "PM/395: ahya- 'to change'",
         "period": "1950s Quenya",
         "derivation_needed": true,
+        "current_use": "existing ahyalië body forms require morphological verification",
+        "title_use": "not yet approved",
         "status": "provisional"
       },
       "label_test": "pending",
-      "paragraph_test": "pending",
+      "paragraph_test": "partial-body-test-only",
       "literary_test": "pending"
     },
     {
       "id": "code-as-governing-pattern",
       "tlh": {
-        "candidate": null,
-        "source": null,
+        "candidate": "a sourced construction using chut or another rule/pattern expression",
+        "source": "canonical citation pending",
         "status": "unresolved"
       },
       "qya": {
@@ -60,11 +68,12 @@
       "qya": {
         "candidate": null,
         "source": null,
+        "current_draft_remediation": "handassë was used temporarily to remove two English body tokens; this does not approve it under the Late-Quenya-first profile",
         "status": "unresolved",
         "rejected_or_deferred": [
           {
             "form": "handassë",
-            "reason": "attested as Middle Quenya, not automatically compatible with the selected Late-Quenya-first profile",
+            "reason": "attested as Middle Quenya and therefore not automatically compatible with the selected Late-Quenya-first profile",
             "source": "Ety/KHAN"
           },
           {
@@ -75,7 +84,7 @@
         ]
       },
       "label_test": "pending",
-      "paragraph_test": "pending",
+      "paragraph_test": "temporary-body-remediation-only",
       "literary_test": "pending"
     },
     {
@@ -133,18 +142,20 @@
       "literary_test": "pending"
     }
   ],
-  "baseline": {
+  "verified_audit": {
+    "workflow_run_id": 27290557662,
+    "head_sha": "ab0a9a80582f5f627f7077989bb704de0ba64fb3",
     "tlh_heading": 1,
-    "tlh_body": 2,
+    "tlh_body": 0,
     "qya_heading": 2,
-    "qya_body": 2
+    "qya_body": 0
   },
   "acceptance": {
     "all_terms_resolved": false,
     "all_context_tests_passed": false,
     "all_sources_recorded": false,
     "heading_findings_zero": false,
-    "body_findings_zero": false,
+    "body_findings_zero": true,
     "second_review_passed": false,
     "approved": false
   }
