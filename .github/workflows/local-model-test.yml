@@ -1,0 +1,58 @@
+name: Local Constructed Language Translation Test
+
+on:
+  push:
+    branches: [bpi-localization-release]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: local-constructed-language-test
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [tlh, qya]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Ollama
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          nohup ollama serve > /tmp/ollama.log 2>&1 &
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:11434/api/tags && break || sleep 2; done
+          ollama pull qwen2.5:1.5b
+      - name: Prepare prompt
+        env:
+          LANGUAGE: ${{ matrix.language }}
+        run: |
+          python3 tools/prepare_localization_ai_jobs.py
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          lang=os.environ['LANGUAGE']
+          job=sorted(Path('reports/localization/ai-jobs').glob(f'translate-*-{lang}-*.json'))[0]
+          data=json.loads(job.read_text(encoding='utf-8'))
+          target={
+            'tlh': "Klingon (tlhIngan Hol) using Marc Okrand grammar. Use attested vocabulary and transparent descriptive phrases. Keep only names, URLs, citations and AI in English.",
+            'qya': "Neo-Quenya using a consistent Tolkienian Neo-Quenya profile. Use transparent descriptive phrases for modern concepts. Keep only names, URLs, citations and AI in English."
+          }[lang]
+          prompt=f'''You are a professional constructed-language translator. Translate the COMPLETE source into {target}\nReturn only Markdown. Preserve every paragraph, heading, list, image, quotation and dialogue label. Never summarize, omit, repeat filler, or explain.\n\nGLOSSARY:\n{data['glossary']}\n\nSOURCE:\n{data['source']}'''
+          Path('prompt.txt').write_text(prompt,encoding='utf-8')
+          Path('job-id.txt').write_text(data['job_id'],encoding='utf-8')
+          PY
+      - name: Translate locally
+        run: |
+          ollama run qwen2.5:1.5b "$(cat prompt.txt)" > output.md
+          test -s output.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: local-model-test-${{ matrix.language }}
+          path: |
+            output.md
+            prompt.txt
+            job-id.txt
