@@ -1,208 +1,66 @@
-name: Finalize Four-Language Localization Release
+name: Publish Approved Four-Language Release
 
 on:
   workflow_dispatch:
-  pull_request:
-    branches: [main]
-  push:
-    branches: [main]
 
 permissions:
   contents: write
-  models: read
 
 concurrency:
-  group: finalize-four-language-localization-${{ github.ref }}
-  cancel-in-progress: true
-
-env:
-  HEAD_BRANCH: ${{ github.event.pull_request.head.ref || github.ref_name }}
+  group: publish-approved-four-language-release
+  cancel-in-progress: false
 
 jobs:
-  prepare:
-    runs-on: ubuntu-latest
-    outputs:
-      matrix: ${{ steps.plan.outputs.matrix }}
-      batch: ${{ steps.plan.outputs.batch }}
-      pending: ${{ steps.plan.outputs.pending }}
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ env.HEAD_BRANCH }}
-          fetch-depth: 0
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-      - name: Prepare localization jobs
-        run: python3 tools/prepare_localization_ai_jobs.py
-      - id: plan
-        name: Plan the next validated batch
-        run: python3 tools/plan_localization_batch.py
-      - uses: actions/upload-artifact@v4
-        with:
-          name: localization-ai-jobs
-          path: reports/localization/ai-jobs/
-          if-no-files-found: error
-          retention-days: 14
-      - uses: actions/upload-artifact@v4
-        with:
-          name: localization-cache-before-batch
-          path: localization/translation-cache/
-          if-no-files-found: warn
-          retention-days: 14
-
-  translate:
-    needs: prepare
-    if: needs.prepare.outputs.batch != '0'
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      max-parallel: 8
-      matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
-    steps:
-      - uses: actions/download-artifact@v4
-        with:
-          name: localization-ai-jobs
-          path: reports/localization/ai-jobs
-      - name: Build complete-translation prompt
-        env:
-          JOB_FILE: reports/localization/ai-jobs/${{ matrix.input }}
-          TARGET_LANGUAGE: ${{ matrix.language_mode }}
-        run: |
-          mkdir -p reports/localization/current
-          SOURCE_LENGTH=$(jq -r '.source' "$JOB_FILE" | wc -c | tr -d ' ')
-          printf 'Translate the entire SOURCE Markdown faithfully into %s. Return only translated Markdown. Translate every line and paragraph from beginning to end. Never summarize, abbreviate, omit, or stop early. The source has about %s characters; the translation must be comparably complete. Preserve headings, links, images, quotations, dialogue labels, punctuation, humor, endings, and order. Keep only protected names, titles, citations, URLs, AI, and Between Potential and Ideal unchanged. Do not output commentary.\n\nGLOSSARY:\n' "$TARGET_LANGUAGE" "$SOURCE_LENGTH" > reports/localization/current/prompt.txt
-          jq -r '.glossary' "$JOB_FILE" >> reports/localization/current/prompt.txt
-          printf '\n\nSOURCE:\n' >> reports/localization/current/prompt.txt
-          jq -r '.source' "$JOB_FILE" >> reports/localization/current/prompt.txt
-      - id: inference
-        name: Translate with GitHub Models
-        continue-on-error: true
-        uses: actions/ai-inference@v1
-        with:
-          system-prompt: You are a meticulous professional literary translator. Translate the complete supplied text and preserve every paragraph and structural element. Never summarize or stop early.
-          prompt-file: reports/localization/current/prompt.txt
-          model: ${{ matrix.model }}
-          max-tokens: 4096
-      - name: Wait before retry
-        if: steps.inference.outcome == 'failure'
-        run: sleep 30
-      - id: retry
-        name: Retry translation once
-        if: steps.inference.outcome == 'failure'
-        uses: actions/ai-inference@v1
-        with:
-          system-prompt: You are a meticulous professional literary translator. Translate the complete supplied text and preserve every paragraph and structural element. Never summarize or stop early.
-          prompt-file: reports/localization/current/prompt.txt
-          model: ${{ matrix.model }}
-          max-tokens: 4096
-      - name: Save translated fragment
-        if: always()
-        env:
-          PRIMARY_FILE: ${{ steps.inference.outputs.response-file }}
-          RETRY_FILE: ${{ steps.retry.outputs.response-file }}
-          PRIMARY_OUTCOME: ${{ steps.inference.outcome }}
-          JOB_ID: ${{ matrix.id }}
-        run: |
-          RESPONSE_FILE="$PRIMARY_FILE"
-          if [ "$PRIMARY_OUTCOME" != "success" ] || [ ! -s "$RESPONSE_FILE" ]; then
-            RESPONSE_FILE="$RETRY_FILE"
-          fi
-          test -n "$RESPONSE_FILE"
-          test -s "$RESPONSE_FILE"
-          mkdir -p reports/localization/ai-results
-          cp "$RESPONSE_FILE" "reports/localization/ai-results/${JOB_ID}.json"
-      - uses: actions/upload-artifact@v4
-        with:
-          name: localization-ai-result-${{ matrix.id }}
-          path: reports/localization/ai-results/${{ matrix.id }}.json
-          if-no-files-found: error
-          retention-days: 14
-
-  integrate:
-    needs: [prepare, translate]
-    if: always() && needs.prepare.result == 'success'
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ env.HEAD_BRANCH }}
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - uses: actions/download-artifact@v4
-        with:
-          name: localization-ai-jobs
-          path: reports/localization/ai-jobs
-      - uses: actions/download-artifact@v4
-        continue-on-error: true
-        with:
-          name: localization-cache-before-batch
-          path: localization/translation-cache
-      - uses: actions/download-artifact@v4
-        if: needs.prepare.outputs.batch != '0'
-        continue-on-error: true
-        with:
-          pattern: localization-ai-result-*
-          path: reports/localization/ai-results
-          merge-multiple: true
-      - id: cache
-        name: Validate, cache, and assemble completed packages
-        run: python3 tools/cache_localization_batch.py
-      - name: Commit and continue translation
-        if: steps.cache.outputs.pending != '0'
+      - name: Require complete translation and linguistic approval
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add localization/translation-cache localization/release-state.json localization/sources/tlh localization/sources/qya
-          if git diff --cached --quiet; then
-            echo "No valid translation progress was produced."
-            exit 1
-          fi
-          git commit -m "Cache validated localization translation batch"
-          git push origin "HEAD:${HEAD_BRANCH}"
-      - name: Install release-build dependencies
-        if: steps.cache.outputs.pending == '0'
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          state = json.loads(Path('localization/release-state.json').read_text(encoding='utf-8'))
+          review = json.loads(Path('localization/reviews/between-potential-and-ideal/review-progress.json').read_text(encoding='utf-8'))
+          total = int(review.get('total_segment_pairs', 0))
+          reviewed = int(review.get('reviewed_pairs', review.get('first_pass_complete_pairs', 0)))
+          approved = int(review.get('approved_pairs', 0))
+          pending_reviews = int(review.get('pending_pairs', total - reviewed))
+          pending_translation = int(state.get('pending', 1))
+          if state.get('status') != 'translation-complete' or pending_translation != 0:
+              raise SystemExit(f'Translation incomplete: {state}')
+          if total != 77 or reviewed != 77 or approved != 77 or pending_reviews != 0:
+              raise SystemExit(
+                  f'Linguistic approval incomplete: total={total}, reviewed={reviewed}, approved={approved}, pending={pending_reviews}'
+              )
+          PY
+      - name: Install document dependencies
         run: |
           python3 -m pip install --upgrade pip
           python3 -m pip install beautifulsoup4 markdown python-docx pillow pymupdf lxml
           sudo apt-get update
           sudo apt-get install -y libreoffice fonts-dejavu-core
-      - name: Restore canonical release builder
-        if: steps.cache.outputs.pending == '0'
-        run: git show origin/main:tools/temporary.txt > tools/temporary.txt
-      - name: Build all public localized pages and five-format packages
-        if: steps.cache.outputs.pending == '0'
+      - name: Build public pages and all five document formats
         run: |
           python3 tools/temporary-5.txt
           python3 tools/temporary-2.txt
           python3 tools/temporary-6.txt
-      - name: Commit release candidate locally
-        if: steps.cache.outputs.pending == '0'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if ! git diff --cached --quiet; then
-            git commit -m "Build complete four-language localization release"
-          fi
-      - name: Run final repository release QA
-        if: steps.cache.outputs.pending == '0'
+      - name: Run final release QA
         run: |
           python3 tools/final_release_qa.py --scan
           git diff --check
-      - name: Push verified release
-        if: steps.cache.outputs.pending == '0'
-        run: git push origin "HEAD:${HEAD_BRANCH}"
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: localization-release-state-${{ github.sha }}
-          path: |
-            localization/release-state.json
-            localization/translation-cache/
-            reports/localization/
-            reports/production_next/
-          if-no-files-found: warn
-          retention-days: 14
+      - name: Commit verified release
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add localization site docs reports
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish approved four-language release"
+            git push
+          fi
