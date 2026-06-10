@@ -1,0 +1,18 @@
+{
+  "segment": 400,
+  "id": "400-architecture-use-movement-light-resonance",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "architecture-as-lived-form",
+    "spatial-decisions-with-human-consequences",
+    "two-way-form-and-function-relation",
+    "movement-and-light-as-experiential-structures",
+    "physical-resonance-before-bounded-structural-analogy"
+  ],
+  "summary": "The architectural, experiential, form-function, light, and resonance safeguards are preserved. Both drafts require specialist revision for extensive foreign-language and mixed-language contamination, terminology, morphology, and idiomatic syntax."
+}
