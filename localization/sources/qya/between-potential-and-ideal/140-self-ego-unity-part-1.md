@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 140
 status: draft
+linguistic_review: specialist-revision-active
+review_record: localization/reviews/between-potential-and-ideal/140-self-ego-unity-part-1-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -16,13 +18,13 @@ _Image description draft: cenë er varyaina mi i Quanta, lá autaina ar lá rent
 
 *Cenë varyaina mi i Quanta*
 
-I erussë i sanwë-pataro lá ná autalië immo. Qui i Quanta tulë cenna ter rimbë, ilya cenë ná min lé yassë i Quanta tulë cenna, lá loica ya mauya auta. Immo lá ná cotumo i erussëo; ná i nómë yassë erussë ahya cuilë-iston, mauya-cárienna, cilmënna ar haiyanna.
+I erussë i Handassëo lá ná autalië immo. Qui i Quanta tulë cenna ter rimbë, ilya cenë ná min lé yassë i Quanta tulë cenna, lá loica ya mauya auta. Immo lá ná cotumo i erussëo; ná i nómë yassë erussë ahya cuilë-iston, mauya-cárienna, cilmënna ar haiyanna.
 
 I loica ego lá ná i ya carë réna. Réna ná maura cuilen. I loica yesta írë i réna vanya ná réna ar carë immo i Quanta. Tá angle ahya ambanna, caurë ahya essënna, varyalië ahya axanna, ar i cirya yesta savë ná i sírë.
 
 An sina i liquë ego lá ná harma i selfo lá. Ná poitalë ovantiéo. Immo para lá ná i celu metta immo, mal yando lá ná er hlónë lusta mi i Quanta. Lá ná i Quanta, mal ná i nómë er yassë i Quanta tulë cenna ve sina.
 
-I quetë hroa i capítulo sina ná faica: `Nán ranta i Quanta, mal rantanyë lá ná loica.` Qui i minya ranta ná vanwa, immo palya ar carë immo Eru. Qui i attëa ná vanwa, erussë ahya autalië. I Optimal lá ná `nán ilya` ar lá `nán munta`; ná self partial, related ar responsible.
+I quetë hroa i ranta sina ná faica: `Nán ranta i Quanta, mal rantanyë lá ná loica.` Qui i minya ranta ná vanwa, immo palya ar carë immo Eru. Qui i attëa ná vanwa, erussë ahya autalië. I Optimal lá ná `nán ilya` ar lá `nán munta`; ná self partial, related ar responsible.
 
 ### 1. Immo ve nómë tullëo
 
@@ -32,7 +34,7 @@ Sina lá quetë ilya merë i selfo ná Ideal hya ilya felmë ná anwië absolute
 
 Potential immo ná ná cenë erina i Quanta. Idealrya lá ná matë i ambar hya ná mataina sen. Optimal ná ovantë yassë immo lemya immo mal pusta quetë ná eressë.
 
-Sillo tulë réna máriéva i sanwë-pataren: lá ëa Quanta valda ya auta i ceneli yainen tulë cenna. Quanta ya auta rantaryar lá ahya amba quanta; ahya napina, an vanya i tier yassen polë ná cenna, hlarna, harmaina, cilina ar parmaina.
+Sillo tulë réna máriéva i Handassen: lá ëa Quanta valda ya auta i ceneli yainen tulë cenna. Quanta ya auta rantaryar lá ahya amba quanta; ahya napina, an vanya i tier yassen polë ná cenna, hlarna, harmaina, cilina ar parmaina.
 
 ### 2. Ego ve réna ya vanya immo
 
@@ -48,7 +50,7 @@ An sina liquë ego mi tengwë núra lá ná `avá nán`. Ná `avá carë i ni Er
 
 Calima lá ná vanwië. Cenë ya ná amba calima lá pusta ná cenë; cenë amba tancavë ovantërya ana exë, i ambar ar i celu. Hanya harmerya ná anwa mal lá i anwië ilya; mererya harya valë mal lá ná axan universal; rénarya ná maura mal lá metta.
 
-Mi i sanwë-patar, poitalë lá ná ahyalië ana úquen, mal ana quén ya lá quetë úanwa ovantieryaron. Immo calima lá ná immo lusta. Lá maura palya immo tenna polë ëa. Polë quetë `ni` ú carila `ni` i mahalma er, ar polë quetë `me` ú vanien mi i collective.
+Mi i Handassë, poitalë lá ná ahyalië ana úquen, mal ana quén ya lá quetë úanwa ovantieryaron. Immo calima lá ná immo lusta. Lá maura palya immo tenna polë ëa. Polë quetë `ni` ú carila `ni` i mahalma er, ar polë quetë `me` ú vanien mi i collective.
 
 Sina ná hyanatië faica mal maura. Lambeli spiritual hya moral exi maquetir i quén pusta ná cenë. Carir ilya réna ego, ilya naicë attachment, ilya merë illusion, ar ilya maurë essen tanwa lusta transcendenceo. Carila sië, yontir calima ar autalië.
 
@@ -58,11 +60,11 @@ Calima anwa lá quetë i self lá en ëa. Quetë i self lá en ná opaque immon.
 
 Erussë lá ná uniformity. Uniformity quetë: `hyanatië tarna, an sina mauya auta.` Erussë quetë: `hyanatië lá ná ilya, mal ná min lé yassë i Quanta tulë cenna.` Uniformity cesta ambar yassë ilya quén cenë, sanwë, quetë ar lelya ve min. Erussë cesta ovantë yassë hyanatië lá maura ahya mahtienna.
 
-Írë erussë ná yontaina uniformitynen, i Quanta ahya harma. Quetë mi essë rainë, mal auta i ómar yar tarir. Quetë mi essë harmony, mal maquetë i quén pusta ná individual. Quetë mi essë collective, mal vanya i collective cuita er ter celuli coirë.
+Írë erussë ná yontaina uniformitynen, i Quanta ahya harma. Quetë mi essë rainë, mal auta i ómar yar tarir. Quetë mi essë lindalë, mal maquetë i quén pusta ná individual. Quetë mi essë collective, mal vanya i collective cuita er ter celuli coirë.
 
 Erussë ya lá hehta nómë cenëva lá ná wholeness; ná uniformity nurtaina ve depth. Polë cenë vanya, poita ar moral, mal mi carië nurtë i ya lá fit i cantaryassë. Anta serë ter autalië hyanatiéo.
 
-I erussë ya i sanwë-patar cesta ná hyana. Lá maquetë hyanatië liquë, mal avá quetë ná eressë. Lá quetë lá ëa réna, mal i réna ná ranta ovantiéo. Lá quetë lá ëa self, mal i self lá ná rentaina i Quantallo.
+I erussë ya i Handassë cesta ná hyana. Lá maquetë hyanatië liquë, mal avá quetë ná eressë. Lá quetë lá ëa réna, mal i réna ná ranta ovantiéo. Lá quetë lá ëa self, mal i self lá ná rentaina i Quantallo.
 
 ### 5. Hröa, essë, enyalë ar réna
 
@@ -80,7 +82,7 @@ Níra lá ná self-erasure, mal vá carien self i Quanta. Lá quetë `nán munta
 
 Self-erasure cé cenë ve níra, mal polë ná nostale úanwiëo hyana. Quén ya auta immo mi essë collectiveo lá necessarily ná free ego; cé resta er ego i systemo, communityo, mahtando, institutiono hya Ideal falso. Self-erasure lá ilya lúmessë ná lissë. Lúmessë ná caurë nurtaina ve purity.
 
-I hehtalië i sanwë-pataro lá ná hehtalië cuilëo. Ná hehtalië absolute ownershipo: hehta i maurë i ya ilya nat tanca nyárenya; hehta carien harmenya i anwië final; hehta turë tenna ovantë polë ëa.
+I hehtalië i Handassëo lá ná hehtalië cuilëo. Ná hehtalië absolute ownershipo: hehta i maurë i ya ilya nat tanca nyárenya; hehta carien harmenya i anwië final; hehta turë tenna ovantë polë ëa.
 
 An sina immo poitaina lá ahya pitya tenna zero. Ahya palya ter ovantë. Ista lemya immo ú quetila ná i Quanta, ar ista samë i Quanta ú lavien ná autaina.
 
