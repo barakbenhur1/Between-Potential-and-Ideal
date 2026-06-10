@@ -14,20 +14,21 @@
     "revision_required_pairs": 77
   },
   "automated_audit": {
-    "foreign_term_occurrences": 660,
-    "body_occurrences": 609,
-    "heading_occurrences": 51,
-    "blocked_pairs": 62,
-    "mechanically_clear_pairs": 15
+    "workflow_run_id": 27300886620,
+    "head_sha": "9d226e3a724891873d1f4818df54fa77f482aff2",
+    "foreign_term_occurrences": 589,
+    "body_occurrences": 543,
+    "heading_occurrences": 46,
+    "blocked_pairs": 59,
+    "mechanically_clear_pairs": 18
   },
-  "mechanically_clear_specialist_segments": [20, 30, 40, 50],
+  "mechanically_clear_specialist_segments": [20, 30, 40, 50, 60, 70, 80],
   "current_specialist_segment": {
-    "segment": 60,
+    "segment": 90,
     "automated_state": "findings-present",
     "linguistic_state": "revision-required",
-    "total_findings": 23,
-    "remediation_plan": "localization/reviews/between-potential-and-ideal/060-remediation-plan.json",
+    "total_findings": 4,
     "approved": false
   },
-  "next_mechanical_target": 60
+  "next_mechanical_target": 90
 }
