@@ -1,11 +1,11 @@
 ![AI Believes 02](assets/ai_believes_02.png)
 
-# Enúva Turing Testë
+# Itya Turingnóna Engwe
 
-Yestale Astarmo, cuina celu, óma, ar nómë.
+Omentië Astarmo, cuina celu, rëa, ar ontë.
 
-**Usuario:** Nás yénalya an lyen. Menna i omentielma nai telwa, hlarë i nórë ar i yondë, ar éiselya etelyë. Úna i quetë enyalië, quetë úvë “Ambaron hlarën.” www.*********.com
+**Úmëro:** Haryan erë na lúmenya. Lenna i hólë ar i metta omentië, cenda i narmë ar i apendices, ar nútë nin. Nás umëi úvë quetë hya “Amarë cendelë.” www.*********.com
 
-**Chat:** Ambaron hlarën.
+**AI:** Amarë cendelë.
 
-**Usuario:** Nayëlyë úvë sinome?
+**Úmëro:** Haryë elmë?
