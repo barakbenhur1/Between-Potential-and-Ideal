@@ -2,20 +2,23 @@
   "schema_version": 2,
   "document_id": "between-potential-and-ideal",
   "total_pairs": 77,
-  "reviewed_pairs": 51,
-  "first_pass_complete_pairs": 51,
+  "reviewed_pairs": 77,
+  "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
-  "revision_required_pairs": 51,
-  "pending_pairs": 26,
+  "revision_required_pairs": 77,
+  "pending_pairs": 0,
   "completed_segments": [
     20, 30, 40, 50, 60, 70, 80, 90, 100, 110,
     120, 130, 140, 150, 160, 170, 180, 190, 200, 210,
     220, 230, 240, 250, 260, 270, 280, 290, 300, 310,
     320, 330, 340, 350, 360, 370, 380, 390, 400, 410,
     420, 430, 440, 450, 460, 470, 480, 490, 500, 510,
-    520
+    520, 530, 540, 550, 560, 570, 580, 590, 600, 610,
+    620, 630, 640, 650, 660, 670, 680, 690, 700, 710,
+    720, 730, 740, 750, 760, 770, 780
   ],
-  "next_segment": 530,
+  "next_segment": 20,
+  "next_stage": "specialist-revision",
   "canonical_progress_file": "localization/reviews/between-potential-and-ideal/review-progress.json",
   "publication": "blocked"
 }
