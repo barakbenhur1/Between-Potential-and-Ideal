@@ -57,7 +57,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      max-parallel: 16
+      max-parallel: 2
       matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
     steps:
       - uses: actions/download-artifact@v4
@@ -80,19 +80,22 @@ jobs:
         continue-on-error: true
         uses: actions/ai-inference@v1
         with:
+          system-prompt: You are a meticulous professional literary translator. Translate the complete supplied text and preserve every paragraph and structural element. Never summarize or stop early.
           prompt-file: reports/localization/current/prompt.txt
           model: ${{ matrix.model }}
-          max-completion-tokens: 4096
-          temperature: 0
+          max-tokens: 4096
+      - name: Wait before retry
+        if: steps.inference.outcome == 'failure'
+        run: sleep 30
       - id: retry
         name: Retry translation once
         if: steps.inference.outcome == 'failure'
         uses: actions/ai-inference@v1
         with:
+          system-prompt: You are a meticulous professional literary translator. Translate the complete supplied text and preserve every paragraph and structural element. Never summarize or stop early.
           prompt-file: reports/localization/current/prompt.txt
           model: ${{ matrix.model }}
-          max-completion-tokens: 4096
-          temperature: 0
+          max-tokens: 4096
       - name: Save translated fragment
         if: always()
         env:
