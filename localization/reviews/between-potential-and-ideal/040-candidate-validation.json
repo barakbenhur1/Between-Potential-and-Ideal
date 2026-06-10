@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "segment": 40,
+  "stage": "specialist-terminology-validation",
+  "publication": "forbidden",
+  "approval_effect": "none",
+  "profiles": {
+    "tlh": "Okrand-canonical-only",
+    "qya": "Late-Quenya-first"
+  },
+  "concepts": [
+    {
+      "id": "model-system-representation",
+      "tlh": {
+        "current_forms": ["pat", "He mIllogh", "lIw"],
+        "status": "distinction-and-source-pending"
+      },
+      "qya": {
+        "current_forms": ["patar", "mapa", "emma"],
+        "status": "distinction-and-profile-pending"
+      },
+      "label_test": "pending",
+      "paragraph_test": "temporary-body-use-only",
+      "literary_test": "pending"
+    },
+    {
+      "id": "final-declaration",
+      "tlh": {
+        "current_form": "maqghach Qav",
+        "status": "provisional-source-and-syntax-pending"
+      },
+      "qya": {
+        "current_form": "nyárë tancaina metta",
+        "status": "semantic-fit-pending"
+      },
+      "label_test": "mechanically-clear-only",
+      "paragraph_test": "pending",
+      "literary_test": "pending"
+    },
+    {
+      "id": "domain-validity-boundary",
+      "tlh": {
+        "current_forms": ["QapmeH Daqmey", "lugh QapmeH Daqmey", "veH"],
+        "status": "provisional-distinction-pending"
+      },
+      "qya": {
+        "current_forms": ["nórë", "réna", "landa"],
+        "status": "profile-and-distinction-pending"
+      },
+      "label_test": "pending",
+      "paragraph_test": "temporary-body-use-only",
+      "literary_test": "pending"
+    },
+    {
+      "id": "testimony-and-person",
+      "tlh": {
+        "current_forms": ["ghot QIch", "ghot"],
+        "status": "ethical-distinction-pending"
+      },
+      "qya": {
+        "current_forms": ["astarmë", "quén"],
+        "status": "witness-testimony-role-pending"
+      },
+      "label_test": "pending",
+      "paragraph_test": "temporary-body-use-only",
+      "literary_test": "pending"
+    },
+    {
+      "id": "criticism-as-drainage",
+      "tlh": {
+        "current_form": "De' teqmeH mIw / mejmeH lojmIt",
+        "status": "provisional-metaphor-and-source-pending"
+      },
+      "qya": {
+        "current_form": "lanta-sírerya / tië et",
+        "status": "project-working-form-revision-required"
+      },
+      "label_test": "pending",
+      "paragraph_test": "temporary-body-use-only",
+      "literary_test": "pending"
+    },
+    {
+      "id": "responsibility",
+      "tlh": {
+        "current_forms": ["Qu'", "pabghach"],
+        "status": "task-duty-answerability-collapse-unresolved"
+      },
+      "qya": {
+        "current_form": "mauya-cárië",
+        "status": "project-formation-profile-pending"
+      },
+      "label_test": "pending",
+      "paragraph_test": "temporary-body-use-only",
+      "literary_test": "pending"
+    }
+  ],
+  "verified_audit": {
+    "workflow_run_id": 27295729516,
+    "head_sha": "9326c363386318b9564718c633976dabec918b62",
+    "tlh_heading": 0,
+    "tlh_body": 0,
+    "qya_heading": 0,
+    "qya_body": 0,
+    "mechanically_clear": true
+  },
+  "acceptance": {
+    "all_terms_resolved": false,
+    "all_context_tests_passed": false,
+    "all_sources_recorded": false,
+    "heading_findings_zero": true,
+    "body_findings_zero": true,
+    "second_review_passed": false,
+    "approved": false
+  }
+}
