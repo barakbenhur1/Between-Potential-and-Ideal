@@ -1,0 +1,23 @@
+---
+document_id: between-potential-and-ideal
+language: qya
+segment: 140
+status: draft
+linguistic_review: specialist-revision-active
+review_record: localization/reviews/between-potential-and-ideal/140-self-ego-unity-part-1-review.md
+source_document: site/files/between-potential-and-ideal-en.md
+semantic_cross_check: site/files/between-potential-and-ideal-he.md
+publication: forbidden
+---
+
+## 6. Immo, Ego ar Erussë ya Lá Auta — Ranta Minya
+
+![6. Self, Ego, and Unity That Does Not Erase](../../../figures/14_self_ego_unity.png)
+
+_Image description draft: cenë er varyaina mi i Quanta, lá autaina ar lá rentaina._
+
+*Cenë varyaina mi i Quanta*
+
+I erussë i Handassëo lá ná autalië immo. Qui i Quanta tulë cenna ter rimbë, ilya cenë ná min lé yassë i Quanta tulë cenna, lá loica ya mauya auta. Immo lá ná cotumo i erussëo; ná i nómë yassë erussë ahya cuilë-iston, mauya-cárienna, cilmënna ar haiyanna.
+
+I loica ego lá ná i ya carë réna. Réna ná maura cuilen. I loica yesta írë i réna vanya ná réna ar carë immo i Quanta. Tá angle ahya ambanna, caurë ahya essënna, varyalië ahya axanna, ar i cirya yesta savë ná i sírë.
