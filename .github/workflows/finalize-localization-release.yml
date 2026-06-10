@@ -99,9 +99,15 @@ jobs:
       - name: Save translated fragment
         if: always()
         env:
-          RESPONSE_FILE: ${{ steps.inference.outputs.response-file || steps.retry.outputs.response-file }}
+          PRIMARY_FILE: ${{ steps.inference.outputs.response-file }}
+          RETRY_FILE: ${{ steps.retry.outputs.response-file }}
+          PRIMARY_OUTCOME: ${{ steps.inference.outcome }}
           JOB_ID: ${{ matrix.id }}
         run: |
+          RESPONSE_FILE="$PRIMARY_FILE"
+          if [ "$PRIMARY_OUTCOME" != "success" ] || [ ! -s "$RESPONSE_FILE" ]; then
+            RESPONSE_FILE="$RETRY_FILE"
+          fi
           test -n "$RESPONSE_FILE"
           test -s "$RESPONSE_FILE"
           mkdir -p reports/localization/ai-results
