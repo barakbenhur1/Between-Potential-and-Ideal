@@ -10,7 +10,7 @@ semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
 ---
 
-## I Metamorphosis Code Lissëo ar Haiyava
+## I Cantië Ahyaliëo Lissëo ar Haiyava
 
 ### I Qenta Envinyatiëo
 
