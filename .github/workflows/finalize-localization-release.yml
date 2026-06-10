@@ -1,88 +1,17 @@
-name: Finalize Four-Language Localization Release
+name: Publish Approved Four-Language Release
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ main ]
-    paths:
-      - ".github/prompts/localization-batch.prompt.yml"
-      - "tools/prepare_localization_ai_jobs.py"
-      - "tools/apply_localization_ai_results.py"
-      - "tools/temporary.txt"
-      - "tools/temporary-2.txt"
-      - "tools/temporary-3.txt"
-      - "tools/temporary-5.txt"
-      - "tools/temporary-6.txt"
-      - ".github/workflows/finalize-localization-release.yml"
 
 permissions:
   contents: write
-  models: read
 
 concurrency:
-  group: finalize-four-language-localization
-  cancel-in-progress: true
+  group: publish-approved-four-language-release
+  cancel-in-progress: false
 
 jobs:
-  prepare:
-    runs-on: ubuntu-latest
-    outputs:
-      matrix: ${{ steps.matrix.outputs.matrix }}
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.10"
-      - name: Prepare bounded localization jobs
-        run: python3 tools/prepare_localization_ai_jobs.py
-      - id: matrix
-        name: Export matrix
-        run: echo "matrix=$(jq -c . reports/localization/ai-jobs/matrix.json)" >> "$GITHUB_OUTPUT"
-      - uses: actions/upload-artifact@v4
-        with:
-          name: localization-ai-jobs
-          path: reports/localization/ai-jobs/
-          if-no-files-found: error
-          retention-days: 7
-
-  translate:
-    needs: prepare
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      max-parallel: 2
-      matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
-        with:
-          name: localization-ai-jobs
-          path: reports/localization/ai-jobs
-      - id: inference
-        uses: actions/ai-inference@v1
-        with:
-          prompt-file: .github/prompts/localization-batch.prompt.yml
-          input: |
-            job_id: ${{ matrix.id }}
-            language_mode: ${{ matrix.language_mode }}
-          file_input: |
-            job: reports/localization/ai-jobs/${{ matrix.input }}
-      - name: Save translated fragment
-        env:
-          RESPONSE_FILE: ${{ steps.inference.outputs.response-file }}
-          JOB_ID: ${{ matrix.id }}
-        run: |
-          mkdir -p reports/localization/ai-results
-          cp "$RESPONSE_FILE" "reports/localization/ai-results/${JOB_ID}.json"
-      - uses: actions/upload-artifact@v4
-        with:
-          name: localization-ai-result-${{ matrix.id }}
-          path: reports/localization/ai-results/${{ matrix.id }}.json
-          if-no-files-found: error
-          retention-days: 7
-
-  integrate-build-and-qa:
-    needs: [prepare, translate]
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -90,49 +19,48 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
-      - uses: actions/download-artifact@v4
-        with:
-          name: localization-ai-jobs
-          path: reports/localization/ai-jobs
-      - uses: actions/download-artifact@v4
-        with:
-          pattern: localization-ai-result-*
-          path: reports/localization/ai-results
-          merge-multiple: true
-      - name: Install document and QA dependencies
+          python-version: "3.11"
+      - name: Require complete translation and linguistic approval
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          state = json.loads(Path('localization/release-state.json').read_text(encoding='utf-8'))
+          review = json.loads(Path('localization/reviews/between-potential-and-ideal/review-progress.json').read_text(encoding='utf-8'))
+          total = int(review.get('total_segment_pairs', 0))
+          reviewed = int(review.get('reviewed_pairs', review.get('first_pass_complete_pairs', 0)))
+          approved = int(review.get('approved_pairs', 0))
+          pending_reviews = int(review.get('pending_pairs', total - reviewed))
+          pending_translation = int(state.get('pending', 1))
+          if state.get('status') != 'translation-complete' or pending_translation != 0:
+              raise SystemExit(f'Translation incomplete: {state}')
+          if total != 77 or reviewed != 77 or approved != 77 or pending_reviews != 0:
+              raise SystemExit(
+                  f'Linguistic approval incomplete: total={total}, reviewed={reviewed}, approved={approved}, pending={pending_reviews}'
+              )
+          PY
+      - name: Install document dependencies
         run: |
           python3 -m pip install --upgrade pip
           python3 -m pip install beautifulsoup4 markdown python-docx pillow pymupdf lxml
           sudo apt-get update
           sudo apt-get install -y libreoffice fonts-dejavu-core
-      - name: Apply translated package fragments
-        run: python3 tools/apply_localization_ai_results.py
-      - name: Prepare localized image assets
-        run: python3 tools/temporary-5.txt
-      - name: Build complete public language editions
-        run: python3 tools/temporary-2.txt
-      - name: Run localization release QA
-        run: python3 tools/temporary-6.txt
-      - name: Run repository release QA
-        run: python3 tools/final_release_qa.py --scan
-      - name: Commit deploy-ready localization release
+      - name: Build public pages and all five document formats
+        run: |
+          python3 tools/temporary-5.txt
+          python3 tools/temporary-2.txt
+          python3 tools/temporary-6.txt
+      - name: Run final release QA
+        run: |
+          python3 tools/final_release_qa.py --scan
+          git diff --check
+      - name: Commit verified release
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add localization site docs tools .github/workflows/finalize-localization-release.yml .github/prompts/localization-batch.prompt.yml
-          if git diff --cached --quiet; then
-            echo "No release changes to commit."
-            exit 0
+          git add localization site docs reports
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish approved four-language release"
+            git push
           fi
-          git commit -m "Publish complete Klingon and Neo-Quenya editions [skip ci]"
-          git push
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: localization-release-qa-${{ github.sha }}
-          path: |
-            reports/localization/
-            reports/production_next/
-          if-no-files-found: warn
-          retention-days: 14

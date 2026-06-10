@@ -1,0 +1,10 @@
+{
+  "job_id": "translate-reverse-turing-conversation-tlh-001",
+  "package": "reverse-turing-conversation",
+  "language": "tlh",
+  "chunk_index": 1,
+  "chunk_count": 7,
+  "source_sha256": "9247ed557774c1ae89ca836a504c82c74ab24f9d23d49b299eb812de59b2d46a",
+  "origin": "current-batch",
+  "review_status": "machine-assisted-experimental"
+}

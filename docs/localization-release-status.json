@@ -1,0 +1,7 @@
+{
+  "status": "blocked",
+  "publication": "forbidden",
+  "reason": "incomplete-localization",
+  "required_languages": ["tlh", "qya"],
+  "required_formats": ["html", "pdf", "docx", "md", "txt"]
+}

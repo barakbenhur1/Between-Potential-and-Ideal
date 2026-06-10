@@ -3,58 +3,19 @@
   "document_id": "between-potential-and-ideal",
   "review_scope": "paired canonical segments",
   "total_segment_pairs": 77,
-  "first_pass_complete_pairs": 4,
+  "first_pass_complete_pairs": 6,
   "approved_pairs": 0,
-  "revision_required_pairs": 4,
-  "pending_pairs": 73,
+  "revision_required_pairs": 6,
+  "pending_pairs": 71,
   "current_status": "linguistic-review-active",
   "completed": [
-    {
-      "segment": 20,
-      "id": "020-metamorphosis-code",
-      "outcome": "revision-required",
-      "review_record": "localization/reviews/between-potential-and-ideal/020-metamorphosis-code-review.md",
-      "languages": {
-        "tlh": "first-pass-complete-needs-specialist-revision",
-        "qya": "first-pass-complete-needs-specialist-revision"
-      }
-    },
-    {
-      "segment": 30,
-      "id": "030-whole-and-distance",
-      "outcome": "revision-required",
-      "review_record": "localization/reviews/between-potential-and-ideal/030-whole-and-distance-review.md",
-      "languages": {
-        "tlh": "first-pass-complete-needs-specialist-revision",
-        "qya": "first-pass-complete-needs-specialist-revision"
-      }
-    },
-    {
-      "segment": 40,
-      "id": "040-model-not-final-part-1",
-      "outcome": "revision-required",
-      "review_record": "localization/reviews/between-potential-and-ideal/040-model-not-final-part-1-review.md",
-      "languages": {
-        "tlh": "first-pass-complete-needs-specialist-revision",
-        "qya": "first-pass-complete-needs-specialist-revision"
-      }
-    },
-    {
-      "segment": 50,
-      "id": "050-model-not-final-part-2",
-      "outcome": "revision-required",
-      "review_record": "localization/reviews/between-potential-and-ideal/050-model-not-final-part-2-review.md",
-      "languages": {
-        "tlh": "first-pass-complete-needs-specialist-revision",
-        "qya": "first-pass-complete-needs-specialist-revision"
-      }
-    }
+    {"segment":20,"id":"020-metamorphosis-code","outcome":"revision-required","review_record":"localization/reviews/between-potential-and-ideal/020-metamorphosis-code-review.md","languages":{"tlh":"first-pass-complete-needs-specialist-revision","qya":"first-pass-complete-needs-specialist-revision"}},
+    {"segment":30,"id":"030-whole-and-distance","outcome":"revision-required","review_record":"localization/reviews/between-potential-and-ideal/030-whole-and-distance-review.md","languages":{"tlh":"first-pass-complete-needs-specialist-revision","qya":"first-pass-complete-needs-specialist-revision"}},
+    {"segment":40,"id":"040-model-not-final-part-1","outcome":"revision-required","review_record":"localization/reviews/between-potential-and-ideal/040-model-not-final-part-1-review.md","languages":{"tlh":"first-pass-complete-needs-specialist-revision","qya":"first-pass-complete-needs-specialist-revision"}},
+    {"segment":50,"id":"050-model-not-final-part-2","outcome":"revision-required","review_record":"localization/reviews/between-potential-and-ideal/050-model-not-final-part-2-review.md","languages":{"tlh":"first-pass-complete-needs-specialist-revision","qya":"first-pass-complete-needs-specialist-revision"}},
+    {"segment":60,"id":"060-symphony-and-friction","outcome":"revision-required","review_record":"localization/reviews/between-potential-and-ideal/060-symphony-and-friction-review.md","languages":{"tlh":"first-pass-complete-needs-specialist-revision","qya":"first-pass-complete-needs-specialist-revision"}},
+    {"segment":70,"id":"070-reverse-turing-test","outcome":"revision-required","review_record":"localization/reviews/between-potential-and-ideal/070-reverse-turing-test-review.md","languages":{"tlh":"first-pass-complete-needs-specialist-revision","qya":"first-pass-complete-needs-specialist-revision"}}
   ],
-  "next": {
-    "segment": 60,
-    "id": "060-symphony-and-friction",
-    "tlh": "localization/sources/tlh/between-potential-and-ideal/060-symphony-and-friction.md",
-    "qya": "localization/sources/qya/between-potential-and-ideal/060-symphony-and-friction.md"
-  },
+  "next": {"segment":80,"id":"080-god-as-potential","tlh":"localization/sources/tlh/between-potential-and-ideal/080-god-as-potential.md","qya":"localization/sources/qya/between-potential-and-ideal/080-god-as-potential.md"},
   "publication": "forbidden-until-all-required-reviews-are-approved"
 }
