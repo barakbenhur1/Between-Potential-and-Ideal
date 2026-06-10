@@ -1,8 +1,8 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "segment": 20,
   "stage": "specialist-revision",
-  "status": "title-remediation-patch-prepared",
+  "status": "title-remediation-applied-audit-clear",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -18,12 +18,26 @@
   "title_remediation_patch": "localization/reviews/between-potential-and-ideal/020-title-remediation.patch.md",
   "current_audit_state": {
     "body_findings": 0,
-    "heading_findings": 3,
-    "heading_patch_applied": false
+    "heading_findings": 0,
+    "heading_patch_applied": true,
+    "mechanically_clear": true,
+    "specialist_approval_pending": true
+  },
+  "verified_audit_run": {
+    "workflow_run_id": 27294229090,
+    "head_sha": "e410db1308fa1265619cf400d70c439903db6bfa",
+    "result": "success",
+    "repository_foreign_term_occurrences": 705,
+    "repository_body_occurrences": 649,
+    "repository_heading_occurrences": 56,
+    "automated_blocked_pairs": 65,
+    "automated_clear_pairs": 12
   },
   "audit_requirements": {
     "heading_findings_required": 0,
     "body_findings_required": 0,
+    "heading_findings_met": true,
+    "body_findings_met": true,
     "second_review_required": true
   },
   "first_pass_complete_pairs": 77,
