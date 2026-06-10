@@ -1,0 +1,18 @@
+{
+  "segment": 670,
+  "id": "670-placeholder-chapter-down-1",
+  "review_type": "paired-placeholder-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "exact-placeholder-title-and-punctuation",
+    "no-invented-body-or-meaning",
+    "distinct-from-later-placeholder-occurrence",
+    "expand-only-after-canonical-source-content",
+    "publication-forbidden-while-placeholder"
+  ],
+  "summary": "Placeholder parity is exact. Publication remains forbidden until the canonical source receives content."
+}
