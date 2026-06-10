@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 120
 status: draft
+linguistic_review: specialist-revision-active
+review_record: localization/reviews/between-potential-and-ideal/120-education-of-potential-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -18,9 +20,9 @@ _Image description draft: parmalë, haiya ar hanyalië ya lá ná tië sinta._
 
 ### Parmalë, haiya ar hanyalië ya lá ná tië sinta
 
-Parmalë ná cestië téra i sanwë-pataro `Between Potential and Ideal`, an maquetë manen ando polë ná pantaina quenen ú mapien i tië yassë i pantië ahya sen. Ilya system parmalëo panya epë i parmando palar Potentialo: mana polë ná hanyaina, carna, maquetaina ar ahyaina. Mal Potential tana lá ná abstract. Tulë cenna mi hröa, lambë, caurë, lúmë, coa, calma, mahtando, tamma, institution, metië, culture, enyalë ar naicë ya lá ná airë mal yando lá polë ná autaina eressë.
+Parmalë ná cestië téra i Handassëo `Between Potential and Ideal`, an maquetë manen ando polë ná pantaina quenen ú mapien i tië yassë i pantië ahya sen. Ilya system parmalëo panya epë i parmando palar Potentialo: mana polë ná hanyaina, carna, maquetaina ar ahyaina. Mal Potential tana lá ná abstract. Tulë cenna mi hröa, lambë, caurë, lúmë, coa, calma, mahtando, tamma, institution, metië, culture, enyalë ar naicë ya lá ná airë mal yando lá polë ná autaina eressë.
 
-I lantië núra i parmalëo lá ná grades pityë, inequality, hehtalië schoolo hya lusta motivation. Sin nar tanwi. I lantië núra ná i vistië formationo resultnen. Parmando anta paper ar i system cenë product. Parmando tana hanquenta téra ar i exam cenë performance. Parmando ata-carë formula ar i grade cenë alassë. I sanwë-patar maquetë nat hyana: lá er ma result tulë, mal ma hanyalië né carna. Hanyalië lá ná information lanaina i mindessë. Ná ovantë ahyaina imbe quén ar maquetta: i quén polë colë sa, lelya ó sa, yanta sa, cesta sa ar carë tië sello.
+I lantië núra i parmalëo lá ná grades pityë, inequality, hehtalië schoolo hya lusta motivation. Sin nar tanwi. I lantië núra ná i vistië formationo resultnen. Parmando anta paper ar i system cenë product. Parmando tana hanquenta téra ar i exam cenë performance. Parmando ata-carë formula ar i grade cenë alassë. I Handassë maquetë nat hyana: lá er ma result tulë, mal ma hanyalië né carna. Hanyalië lá ná information lanaina i mindessë. Ná ovantë ahyaina imbe quén ar maquetta: i quén polë colë sa, lelya ó sa, yanta sa, cesta sa ar carë tië sello.
 
 Parmalë mára lá ná transfer nolmëo. `Transfer` ná emma caurë: anta nolmë ve nat haryaina i mahtandon, lusta i parmando, ar polima lelyien containerello containerenna. Nolmë cuina lá lelya sië. Ontë írë i parmando samë haiya ya lá auta se. Qui i haiya ná túlalta, i parmando ná hehtaina; qui ná pityalta, i tië ná mapaina epë i maquetta carë sa.
 
@@ -28,11 +30,11 @@ Parmalë mára lá ná transfer nolmëo. `Transfer` ná emma caurë: anta nolmë
 
 Sina lá ná formula psychologiava nótien. Ná mapa diagnostic maquetien ma restë varyanë i tië, ma urda en parma hya yesta auta i parmando, ma metië calima nat cuina hya vista sa, ar ma i system entulya mauya-cárië i parmandonna hya mapë sa.
 
-Curwaina Handassë mi parmalë carë i maquetta jejëa. Parmando polë maquetë system tecien paper, poitalien exercise, quetien text, carien summary, ontien code, ahyalien paragraph hya ontien sanwë. Pellallo i product cé cenë amba lá i ya parmando caruva eressë. I maquetta núra lá ná er ma sina cheating. Ná ma i tamma carë ve scaffold hya ve mapindo i tiello? Scaffold tulta i parmando yassë lá en polë tarë eressë. Mapindo i tiello tarë nómessë. Scaffold mára entulë pityavë. Mapindo hehta product ú hehtien polië.
+Curwaina Handassë mi parmalë carë i maquetta jejëa. Parmando polë maquetë system tecien paper, poitalien exercise, quetien text, carien summary, ontien tengwië, ahyalien paragraph hya ontien sanwë. Pellallo i product cé cenë amba lá i ya parmando caruva eressë. I maquetta núra lá ná er ma sina cheating. Ná ma i tamma carë ve scaffold hya ve mapindo i tiello? Scaffold tulta i parmando yassë lá en polë tarë eressë. Mapindo i tiello tarë nómessë. Scaffold mára entulë pityavë. Mapindo hehta product ú hehtien polië.
 
 I Optimal pedagogical lá ná i result tyelca. Ná i haiya yassë hanyalië polë ontë ú autien i parmando. Hint epë solution quanta cé ná pitya efficiency mi i lúmë sinta, mal amba astar i Ideal an varya i haiya immo. Exams polir restë, mal írë quetir immo anwië ahyar caurë. Grade tana turë technique mi lúmi antainë. Lá tana nolmë polë lelya mir lúmë vinya, ista rénaryar hya ná yantaina mauya-cáriën.
 
-An carien i hyanatië sina tamma carmava, parmalë mauya ná cendaina ter i neldë quettar hroa i sanwë-pataro: Potential, Ideal ar Optimal.
+An carien i hyanatië sina tamma carmava, parmalë mauya ná cendaina ter i neldë quettar hroa i Handassëo: Potential, Ideal ar Optimal.
 
 **Potential parmalëo** lá ná er `mana i parmando polë ista`. Ná i palar námiéron yar en lá haryar canta: hanyalië ya polë ontë, maquetta en útecina, polië en úvoronda, mauya-cárië en úharyaina.
 
@@ -44,7 +46,7 @@ Sillo polir ná hyanainë canta nostali restëo. Mauya quetë sin lá nar canta 
 
 ### 1. Restë ya vista
 
-Anta hanquenta, lambë, solution, summary hya work quanta epë i omentë i parmando i problem. Mi cendë i sanwë-pataro, sina lá ná er cheating hya tië sinta. Ná núrave: Potential i parmando lá lelyanë ter haiya, ar an sina lá ahyanë hanyalierya. Product né carna, mal celu cuina lá ahyanë. Ideal cé cenë ve né hírina pellallo, mal i tië local ya mauya ahya Potential ana hanyalië lá martyanë.
+Anta hanquenta, lambë, solution, summary hya work quanta epë i omentë i parmando i problem. Mi cendë i Handassëo, sina lá ná er cheating hya tië sinta. Ná núrave: Potential i parmando lá lelyanë ter haiya, ar an sina lá ahyanë hanyalierya. Product né carna, mal celu cuina lá ahyanë. Ideal cé cenë ve né hírina pellallo, mal i tië local ya mauya ahya Potential ana hanyalië lá martyanë.
 
 ### 2. Restë ya anta hint
 
@@ -52,7 +54,7 @@ Lá telya i problem nómessë i parmando, mal tana tië: counter-question, emma 
 
 ### 3. Restë ya colë
 
-Sís i parmando anwavë ara rácinë: caurë, overload, lusta lambëo, gap yára hya cuilë-isto lantiëo ata. Mi lúmë tana i haiya lá en parma; yesta auta. Mi i sanwë-patar, naicelë lá ná airë ar urda lá ná valë immo. Lúmessë i Optimal pedagogical lá ná lavë demand amba, mal carë scaffold tulca: canta lúmava ya lavë i parmando lemya mi i omentë ú ná rácina.
+Sís i parmando anwavë ara rácinë: caurë, overload, lusta lambëo, gap yára hya cuilë-isto lantiëo ata. Mi lúmë tana i haiya lá en parma; yesta auta. Mi i Handassë, naicelë lá ná airë ar urda lá ná valë immo. Lúmessë i Optimal pedagogical lá ná lavë demand amba, mal carë scaffold tulca: canta lúmava ya lavë i parmando lemya mi i omentë ú ná rácina.
 
 ### 4. Restë ya lehta
 
