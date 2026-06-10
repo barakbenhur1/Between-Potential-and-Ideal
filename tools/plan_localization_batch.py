@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+from difflib import SequenceMatcher
 from pathlib import Path
 import hashlib
 import json
@@ -11,8 +12,20 @@ ROOT = Path(__file__).resolve().parents[1]
 JOBS_DIR = ROOT / "reports" / "localization" / "ai-jobs"
 CACHE_DIR = ROOT / "localization" / "translation-cache"
 RECOVERED_DIR = ROOT / "reports" / "localization" / "recovered"
-BATCH_SIZE = 228
-MODEL = "openai/gpt-4o-mini"
+BATCH_SIZE = 1
+MODEL = "openai/gpt-4.1"
+TARGETS = {
+    "tlh": (
+        "Klingon (tlhIngan Hol), using canonical Marc Okrand grammar and attested vocabulary. "
+        "Use transparent Klingon descriptive phrases when no attested one-word term exists. "
+        "Do not leave English prose except protected names, titles, citations, URLs, and the term AI."
+    ),
+    "qya": (
+        "Neo-Quenya, using one internally consistent Tolkienian Neo-Quenya grammar and morphology profile. "
+        "Use transparent descriptive phrases for modern concepts. Do not leave English, Spanish, or Portuguese "
+        "prose except protected names, titles, citations, URLs, and the term AI."
+    ),
+}
 
 
 def clean(text: str) -> str:
@@ -23,16 +36,21 @@ def clean(text: str) -> str:
 
 def valid(source: str, translated: str) -> bool:
     lowered = translated.lower()
-    refusal_markers = (
-        "i can't assist",
-        "i cannot assist",
-        "as an ai language model",
-        "cannot translate",
+    refused = any(
+        marker in lowered
+        for marker in (
+            "i can't assist",
+            "i cannot assist",
+            "as an ai language model",
+            "cannot translate",
+        )
     )
+    similarity = SequenceMatcher(None, source[:6000], translated[:6000]).ratio()
     return (
-        len(translated) >= max(60, int(len(source) * 0.10))
+        len(translated) >= max(200, int(len(source) * 0.45))
         and translated != source
-        and not any(marker in lowered for marker in refusal_markers)
+        and similarity < 0.65
+        and not refused
     )
 
 
@@ -72,7 +90,6 @@ def cache_recovered(job_id: str, data: dict, source_hash: str) -> bool:
 def main() -> int:
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     jobs: list[tuple[Path, dict, bool]] = []
-
     for path in sorted(JOBS_DIR.glob("translate-*.json")):
         data = json.loads(path.read_text(encoding="utf-8"))
         job_id = data["job_id"]
@@ -80,21 +97,16 @@ def main() -> int:
         body = CACHE_DIR / f"{job_id}.md"
         meta = CACHE_DIR / f"{job_id}.json"
         cached = False
-
         if body.is_file() and meta.is_file():
             try:
                 info = json.loads(meta.read_text(encoding="utf-8"))
-                translated = clean(body.read_text(encoding="utf-8"))
-                cached = (
-                    info.get("source_sha256") == source_hash
-                    and valid(data["source"], translated)
+                cached = info.get("source_sha256") == source_hash and valid(
+                    data["source"], clean(body.read_text(encoding="utf-8"))
                 )
             except Exception:
                 cached = False
-
         if not cached:
             cached = cache_recovered(job_id, data, source_hash)
-
         jobs.append((path, data, cached))
 
     pending = [(path, data) for path, data, cached in jobs if not cached]
@@ -103,12 +115,11 @@ def main() -> int:
         {
             "id": data["job_id"],
             "input": path.name,
-            "language_mode": data["language"],
+            "language_mode": TARGETS[data["language"]],
             "model": MODEL,
         }
         for path, data in batch
     ]
-
     (JOBS_DIR / "matrix.json").write_text(
         json.dumps({"include": include}) + "\n", encoding="utf-8"
     )
@@ -126,9 +137,7 @@ def main() -> int:
     (JOBS_DIR / "status.json").write_text(
         json.dumps(status, indent=2) + "\n", encoding="utf-8"
     )
-
-    output_path = os.environ.get("GITHUB_OUTPUT")
-    if output_path:
+    if output_path := os.environ.get("GITHUB_OUTPUT"):
         with open(output_path, "a", encoding="utf-8") as output:
             output.write(
                 "matrix="
@@ -137,7 +146,6 @@ def main() -> int:
             )
             output.write(f"batch={len(batch)}\n")
             output.write(f"pending={len(pending)}\n")
-
     print(json.dumps(status))
     return 0
 
