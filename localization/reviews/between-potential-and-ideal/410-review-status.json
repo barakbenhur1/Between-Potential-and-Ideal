@@ -1,0 +1,19 @@
+{
+  "segment": 410,
+  "id": "410-engineering-maintenance-failure-repair",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "redundancy-as-designed-resilience",
+    "maintenance-as-agreement-with-time",
+    "failure-as-excluded-reality-without-single-cause",
+    "ethical-spatial-consequences",
+    "beauty-as-right-relation",
+    "repair-rather-than-redemption-under-real-conditions"
+  ],
+  "summary": "The redundancy, maintenance, failure, responsibility, beauty, city, resilience, and repair safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, terminology, morphology, and idiomatic syntax."
+}
