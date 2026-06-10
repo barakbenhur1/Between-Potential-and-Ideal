@@ -3,7 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 020
 status: draft
-linguistic_review: first-pass-complete-needs-specialist-revision
+linguistic_review: specialist-revision-active
 review_record: localization/reviews/between-potential-and-ideal/020-metamorphosis-code-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
@@ -40,11 +40,11 @@ vaj patDaq yab Qu' nargh: boQwI' neH 'oHbe'; leghwI' 'oH. Qu' SoQmoHmeH nom boQw
 
 ### QaQ pagh mIgh HomDu'
 
-pung chuq je metamorphosis pat Hoch rar. chuq Hutlhchugh, qech Hutlh bechghach. pung Hutlhchugh, ralghach moj chuq. veH Hutlhchugh, SeHghach moj yab. leghwI' Hutlhchugh, qIlghach moj jangghach. vaj chut jen cha' Dop ghaj: ghotvaD ghaH neH lenglaHbogh chuq lengmeH DuH pol; 'ej qo' Hoch, pat Hol lo'taHvIS, De' quv law' ghot quv puS 'e' teHbe' 'e' 'angnISDI', leS poQmeH ghot DIb pol.
+pung chuq je choHtaHvIS, pat Hoch rar. chuq Hutlhchugh, qech Hutlh bechghach. pung Hutlhchugh, ralghach moj chuq. veH Hutlhchugh, SeHghach moj yab. leghwI' Hutlhchugh, qIlghach moj jangghach. vaj chut jen cha' Dop ghaj: ghotvaD ghaH neH lenglaHbogh chuq lengmeH DuH pol; 'ej qo' Hoch, pat Hol lo'taHvIS, De' quv law' ghot quv puS 'e' teHbe' 'e' 'angnISDI', leS poQmeH ghot DIb pol.
 
 qech chenmoHtaHvIS ghot Qaw'be'meH qo' Hoch ra'be'. tu'meH mIwDaq ghot peghmoH; poH rapDaq Hap raw' neH mojmoHQo' ghot 'e' lay'. yab lo'laH Qun lo'laH je joj pImghach 'oH: lonmeH ghoj Qun lo'laH.
 
-mung yab je ja'chuqghach wa'DIch pat 'ay' moj, chenmoHbogh chut 'angmo'. yabvaD pagh Sovbe'ghachDaj leghmoH mung. veH pujghach neH 'oHbe', qech narghmeH ghu' 'oH 'e' lajnIS yab. poHvetlh pat metamorphosis qIj neHbe'; ta' je.
+mung yab je ja'chuqghach wa'DIch pat 'ay' moj, chenmoHbogh chut 'angmo'. yabvaD pagh Sovbe'ghachDaj leghmoH mung. veH pujghach neH 'oHbe', qech narghmeH ghu' 'oH 'e' lajnIS yab. poHvetlh pat choH qIj neHbe'; choH'e' ta' je.
 
 ## Segment review gate
 
