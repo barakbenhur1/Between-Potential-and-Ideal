@@ -1,0 +1,18 @@
+{
+  "segment": 350,
+  "id": "350-creation-canon-power-adaptation",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "canon-as-living-invariant",
+    "power-and-knowledge-requiring-moral-judgment",
+    "character-contrasts-without-ranking",
+    "adaptation-as-structural-reduction-image",
+    "body-of-work-seeking-its-center"
+  ],
+  "summary": "The canon, power, adaptation, and center-seeking distinctions are preserved. Both drafts require specialist revision for extensive foreign-language contamination, terminology, morphology, and idiomatic syntax."
+}
