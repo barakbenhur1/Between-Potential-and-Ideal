@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "languages": ["tlh", "qya"],
   "publication": "forbidden",
   "language_profiles": {
@@ -53,7 +53,10 @@
         "hebrew_cross_check": "קוד המטמורפוזה של החסד והמרחק",
         "status": "must-be-localized-in-each-target-language",
         "rationale": "The canonical Hebrew edition localizes the chapter title; it is not a protected brand or proper name.",
-        "audit_exemption": false
+        "audit_exemption": false,
+        "source_patch": "localization/reviews/between-potential-and-ideal/020-title-remediation.patch.md",
+        "patch_applied": false,
+        "source_update_blocked_by_tool_safety_filter": true
       },
       "protected_proper_names": ["Prime Intellect"],
       "body_terms_must_be_zero": true,
