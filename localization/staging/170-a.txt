@@ -1,0 +1,14 @@
+---
+document_id: between-potential-and-ideal
+language: tlh
+segment: 170
+status: draft
+source_document: site/files/between-potential-and-ideal-en.md
+semantic_cross_check: site/files/between-potential-and-ideal-he.md
+publication: forbidden
+---
+
+## 8. AI leghmeH jan, yIn navigation je
+
+*De', SIQghach, awareness, bIQtIq SeHbe'bogh Duj je*
+
