@@ -1,5 +1,5 @@
 {
-  "schema_version": 9,
+  "schema_version": 10,
   "document_id": "between-potential-and-ideal",
   "review_scope": "paired canonical segments",
   "total_segment_pairs": 77,
@@ -19,29 +19,28 @@
     620, 630, 640, 650, 660, 670, 680, 690, 700, 710,
     720, 730, 740, 750, 760, 770, 780
   ],
-  "mechanically_clear_specialist_segments": [20, 30, 40, 50],
+  "mechanically_clear_specialist_segments": [20, 30, 40, 50, 60, 70, 80],
   "active_specialist_segment": {
-    "segment": 60,
-    "id": "060-symphony-and-friction",
-    "status": "remediation-plan-recorded-source-update-pending",
-    "tlh_findings": 13,
-    "qya_findings": 10,
-    "remediation_plan": "localization/reviews/between-potential-and-ideal/060-remediation-plan.json",
+    "segment": 90,
+    "id": "090-absolute-ideal-living-completeness",
+    "status": "mechanical-remediation-pending",
     "approved": false,
     "publication": "forbidden"
   },
   "next": {
-    "stage": "apply-segment-060-remediation-without-truncation",
-    "scope": "replace the 23 recorded body findings, rerun the audit, and preserve draft status",
-    "segment": 60,
+    "stage": "apply-segment-090-mechanical-remediation",
+    "scope": "remove four recorded audit findings and preserve draft status",
+    "segment": 90,
     "approval_target": 77
   },
   "automated_audit": {
-    "foreign_term_occurrences": 660,
-    "body_occurrences": 609,
-    "heading_occurrences": 51,
-    "blocked_pairs": 62,
-    "mechanically_clear_pairs": 15
+    "workflow_run_id": 27300886620,
+    "head_sha": "9d226e3a724891873d1f4818df54fa77f482aff2",
+    "foreign_term_occurrences": 589,
+    "body_occurrences": 543,
+    "heading_occurrences": 46,
+    "blocked_pairs": 59,
+    "mechanically_clear_pairs": 18
   },
   "publication": "forbidden-until-all-required-reviews-are-approved",
   "authority": "canonical-review-progress"
