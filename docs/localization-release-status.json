@@ -1,7 +1,6 @@
 {
-  "status": "blocked",
+  "status": "not-ready",
   "publication": "forbidden",
-  "reason": "incomplete-localization-and-unapproved-specialist-review",
   "required_languages": ["tlh", "qya"],
   "required_formats": ["html", "pdf", "docx", "md", "txt"],
   "translation_fragments": {
@@ -23,9 +22,11 @@
   },
   "mechanically_clear_specialist_segments": [20, 30, 40, 50],
   "current_specialist_segment": {
-    "segment": 50,
-    "automated_state": "mechanically-clear",
+    "segment": 60,
+    "automated_state": "findings-present",
     "linguistic_state": "revision-required",
+    "total_findings": 23,
+    "remediation_plan": "localization/reviews/between-potential-and-ideal/060-remediation-plan.json",
     "approved": false
   },
   "next_mechanical_target": 60
