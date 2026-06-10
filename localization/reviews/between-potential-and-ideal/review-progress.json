@@ -3,23 +3,23 @@
   "document_id": "between-potential-and-ideal",
   "review_scope": "paired canonical segments",
   "total_segment_pairs": 77,
-  "reviewed_pairs": 38,
-  "first_pass_complete_pairs": 38,
+  "reviewed_pairs": 40,
+  "first_pass_complete_pairs": 40,
   "approved_pairs": 0,
-  "revision_required_pairs": 38,
-  "pending_pairs": 39,
+  "revision_required_pairs": 40,
+  "pending_pairs": 37,
   "current_status": "linguistic-review-active",
   "completed_segments": [
     20, 30, 40, 50, 60, 70, 80, 90, 100, 110,
     120, 130, 140, 150, 160, 170, 180, 190, 200, 210,
     220, 230, 240, 250, 260, 270, 280, 290, 300, 310,
-    320, 330, 340, 350, 360, 370, 380, 390
+    320, 330, 340, 350, 360, 370, 380, 390, 400, 410
   ],
   "next": {
-    "segment": 400,
-    "id": "400-architecture-use-movement-light-resonance",
-    "tlh": "localization/sources/tlh/between-potential-and-ideal/400-architecture-use-movement-light-resonance.md",
-    "qya": "localization/sources/qya/between-potential-and-ideal/400-architecture-use-movement-light-resonance.md"
+    "segment": 420,
+    "id": "420-economy-money-value-inflation",
+    "tlh": "localization/sources/tlh/between-potential-and-ideal/420-economy-money-value-inflation.md",
+    "qya": "localization/sources/qya/between-potential-and-ideal/420-economy-money-value-inflation.md"
   },
   "publication": "forbidden-until-all-required-reviews-are-approved",
   "authority": "canonical-review-progress"
