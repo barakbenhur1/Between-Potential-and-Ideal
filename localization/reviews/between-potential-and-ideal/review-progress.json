@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "document_id": "between-potential-and-ideal",
   "review_scope": "paired canonical segments",
   "total_segment_pairs": 77,
@@ -8,7 +8,7 @@
   "approved_pairs": 0,
   "revision_required_pairs": 77,
   "pending_pairs": 0,
-  "current_status": "first-pass-complete-specialist-revision-required",
+  "current_status": "first-pass-complete-specialist-revision-active",
   "completed_segments": [
     20, 30, 40, 50, 60, 70, 80, 90, 100, 110,
     120, 130, 140, 150, 160, 170, 180, 190, 200, 210,
@@ -19,10 +19,18 @@
     620, 630, 640, 650, 660, 670, 680, 690, 700, 710,
     720, 730, 740, 750, 760, 770, 780
   ],
+  "active_specialist_segment": {
+    "segment": 20,
+    "id": "020-metamorphosis-code",
+    "status": "title-remediation-patch-prepared",
+    "body_findings": 0,
+    "heading_findings": 3,
+    "approved": false,
+    "publication": "forbidden"
+  },
   "next": {
-    "stage": "specialist-revision",
-    "scope": "all-77-paired-segments",
-    "first_segment": 20,
+    "stage": "apply-or-implement-segment-020-title-remediation",
+    "scope": "one heading line per target-language file",
     "approval_target": 77
   },
   "publication": "forbidden-until-all-required-reviews-are-approved",
