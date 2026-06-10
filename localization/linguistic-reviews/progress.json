@@ -1,5 +1,5 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "document_id": "between-potential-and-ideal",
   "total_pairs": 77,
   "reviewed_pairs": 77,
@@ -24,6 +24,8 @@
     "body_findings": 0,
     "heading_findings": 3,
     "title_patch_prepared": true,
+    "title_patch_applied": false,
+    "source_update_blocked_by_tool_safety_filter": true,
     "approved": false
   },
   "canonical_progress_file": "localization/reviews/between-potential-and-ideal/review-progress.json",
