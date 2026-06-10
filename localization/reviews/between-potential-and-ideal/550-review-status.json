@@ -1,0 +1,20 @@
+{
+  "segment": 550,
+  "id": "550-boundary-horizons",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "horizon-as-observer-tool-condition-field-relation",
+    "inaccessibility-vs-nonexistence-across-domains",
+    "double-humility-do-not-erase-or-fantasize",
+    "action-under-horizon-as-responsibility-map",
+    "physical-vs-metaphorical-horizons",
+    "evidence-understanding-diagnosis-and-explanation-horizons",
+    "honesty-about-unknowns-not-total-knowledge"
+  ],
+  "summary": "The horizon, observer, tool, condition, accessibility, uncertainty, correction, projection, authority, and epistemic-humility safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, terminology, morphology, and idiomatic syntax."
+}
