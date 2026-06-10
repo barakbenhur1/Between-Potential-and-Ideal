@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 120
 status: draft
+linguistic_review: specialist-revision-active
+review_record: localization/reviews/between-potential-and-ideal/120-education-of-potential-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -20,7 +22,7 @@ _Image description draft: shortcut lo'be'taHvIS ghojghach, chuq, yajghach je che
 
 `Between Potential and Ideal` nID teH 'oH ghojmoHghach'e', ghotvaD lojmIt poSmoHlaH'a' system 'ach lojmItvam ghaHvaD mojmeH He nIHbe'laH'a' 'e' yu'mo'. ghojwI' tlhopDaq Potential field lan ghojmoHghach system Hoch: nuq yajlaH, ta'laH, yu'laH, mojlaH je. 'ach abstract 'oHbe' Potentialvetlh. porgh, Hol, nughI', poH, juH, pa' ghojmeH, ghojmoHwI', jan, institution, juvmeH mIw, nugh, qawghach, quvmoHbe'lu'nISbogh bechghach je jojDaq nargh.
 
-ghojmoHghach lujghach jen 'oH grade QIv, inequality, school lon, motivation puj je'eghbe'. symptoms bIH. lujghach jen 'oH formation tam result. paper nob ghojwI', product legh system. jangghach lugh mark ghojwI', performance legh nID. formula repeat ghojwI', Qapghach legh grade. yu' pIm theory: result narghpu''a' neHbe'; yajghach chenpu''a'? yabDaq lanlu'pu'bogh De' 'oHbe' yajghach'e'. ghot, yu'ghach je joj rarghach choH 'oH: qenglaH, vIHmoHlaH, lo'laH, qaDlaH, 'ej He chenmoHlaH ghot.
+ghojmoHghach lujghach jen 'oH grade QIv, inequality, school lon, motivation puj je'eghbe'. symptoms bIH. lujghach jen 'oH formation tam result. paper nob ghojwI', product legh system. jangghach lugh mark ghojwI', performance legh nID. formula repeat ghojwI', Qapghach legh grade. yu' pIm QubmeH mIw: result narghpu''a' neHbe'; yajghach chenpu''a'? yabDaq lanlu'pu'bogh De' 'oHbe' yajghach'e'. ghot, yu'ghach je joj rarghach choH 'oH: qenglaH, vIHmoHlaH, lo'laH, qaDlaH, 'ej He chenmoHlaH ghot.
 
 vaj Sov transfer 'oHbe' ghojmoHghach QaQ'e'. ghantoH Qob 'oH transfer'e': ghojmoHwI' ghajbogh Hap, ghojwI' Hutlhbogh Hap, container wa'vo' latlhDaq vIHlaHbogh Hap rur Sov legh. vIHbe' Sov yInbogh. ghojwI' qIlbe'bogh chuq ghomDI', chen. chuq tInqu'chugh, lonlu' ghojwI'; chuq machqu'chugh, ghotDaq QapchoHpa' yu'ghach He nIHlu'.
 
@@ -30,9 +32,9 @@ mI' psychology formula 'oHbe' mu'tlheghvam. diagnostic map 'oH: He pol'a' boQ? g
 
 AI lo'lu'DI' ghojmoHghachDaq yu' jejchoH. paper qonnIS, exercise tI'nIS, ghItlh qIj, Qul summary chenmoH, code chenmoH, paragraph mugh, qech chenmoH je tlhoblaH ghojwI'. Hurvo' product nIv law' ghojwI' neH QapmoHbogh product nIv puS rurlaH. `cheat 'oH'a'?` neH yu'ghach potlh 'oHbe'. scaffold rur'a' jan pagh He nIHwI' rur'a'? ghaH neH QamlaHbe'bogh DaqDaq ghojwI' QammoH scaffold. ghaH DaqDaq Qam He nIHwI'. gradually chegh scaffold QaQ. laH Hutlhbogh product neH lon He nIHwI'.
 
-pedagogical Optimal 'oHbe' result nomqu''e'. ghojwI' qIlbe'taHvIS yajghach chenlaHbogh chuq 'oH. full solution pongDaq hint neH Qap QIv law' nom'eghmoHmo', 'ach IdealvaD fidelity law' chuq polmo'. nIDmey boQlaH, 'ach vIt rur'eghmoHchugh Qob. ghu' wa'Daq technique SeHlaHghach 'ang grade. ghu' chu'Daq vIHlaH Sov, veHDaj leghlaH, Qu' pabtaHvIS lo'laH 'e' tobe' grade.
+pedagogical Optimal 'oHbe' result nomqu''e'. ghojwI' qIlbe'taHvIS yajghach chenlaHbogh chuq 'oH. full solution pongDaq hint neH Qap QIv law' nom'eghmoHmo', 'ach IdealvaD matlhghach law' chuq polmo'. nIDmey boQlaH, 'ach vIt rur'eghmoHchugh Qob. ghu' wa'Daq technique SeHlaHghach 'ang grade. ghu' chu'Daq vIHlaH Sov, veHDaj leghlaH, Qu' pabtaHvIS lo'laH 'e' tobe' grade.
 
-pImghachvam QapmeH jan mojmoHmeH, theory mu'mey wej lo'taHvIS ghojmoHghach laDlu'nIS: Potential, Ideal, Optimal.
+pImghachvam QapmeH jan mojmoHmeH, QubmeH mIw mu'mey wej lo'taHvIS ghojmoHghach laDlu'nIS: Potential, Ideal, Optimal.
 
 **GhojmoHghach Potential** 'oH ghojwI' nuq SovlaH neH 'e'be'. chenbe'pu'bogh DuHmey field 'oH: boghlaHbogh yajghach, formulatebe'pu'bogh yu'ghach, ngaDbe'pu'bogh laH, ghajbe'chu'pu'bogh Qu'.
 
@@ -60,13 +62,13 @@ scaffold cheghchoHnIS poHvam. laH wa'DIch chenpu'DI', ghojwI' poltaHchugh ghojmo
 
 ### AI lo'meH ghojmoHghach chut
 
-AI 'oHbe' ghojwI' DaqDaq mung yInbogh'e'. mirror, scaffold, checking jan, practice jan, Qubghach mIw temporary leghwI' je mojlaH. 'ach ghojwI' DaqDaq final Qu' chenmoHchugh, yajghach ghajghach teH chenmeH He veghbe'taHvIS, `boQ law'qu'` neH 'oHbe'; ghojghach tlham botlh choHmoH. ghojwI' Potential chuq vegh local IdealDaq mughbe'; formation qIlbogh output chenmoH jan.
+AI 'oHbe' ghojwI' DaqDaq mung yInbogh'e'. leghmeH jan, scaffold, checking jan, practice jan, Qubghach mIw temporary leghwI' je mojlaH. 'ach ghojwI' DaqDaq final Qu' chenmoHchugh, yajghach ghajghach teH chenmeH He veghbe'taHvIS, `boQ law'qu'` neH 'oHbe'; ghojghach tlham botlh choHmoH. ghojwI' Potential chuq vegh local IdealDaq mughbe'; formation qIlbogh output chenmoH jan.
 
 vaj AI chaw' pagh bot neH yu'nISbe' ghojmoHghach chut. pImghachvetlh tlhoy raw'. yu' lugh law': ghojghach patlh nuqDaq jan nargh? chuq 'ay' nuq ghojwI' DaqDaq qeng? lo' QavDaq, laH chu' ghaj'a' ghojwI'? outputDaq je AI Qapchugh, final mu'tlhegh 'Iv typed neH yu'be'lu'. ghojwI' move qIjlaH'a', 'ay'moHlaH'a', pojlaH'a', tI'laH'a', chenqa'laH'a' yu'lu'. yapchugh, scaffold Qap. yapbe'chugh, substitute Qap. substitute Qapchugh, product lugh je ghojmoHghach lujghach mojlaH.
 
-### nID testimony rur
+### nID 'angghach rur
 
-principle rap lo'taHvIS nID nuDqa'lu'nIS. wIvmeH lojmIt neH 'oHbe' nID QaQ'e'; testimony poH 'oH. ghojwI'vaD nuqDaj mojpu', momentary qawghachDaq nuq taH, pressureDaq nuq pum, cheghghach Segh latlh nuq poQ je 'ang. ghojghach performance theater mojmoH nID qab: Sov rur narghmeH practice ghojwI', 'ej control Degh, yajghach yInbogh je mIS institution.
+principle rap lo'taHvIS nID nuDqa'lu'nIS. wIvmeH lojmIt neH 'oHbe' nID QaQ'e'; 'angghach poH 'oH. ghojwI'vaD nuqDaj mojpu', momentary qawghachDaq nuq taH, pressureDaq nuq pum, cheghghach Segh latlh nuq poQ je 'ang. ghojghach performance theater mojmoH nID qab: Sov rur narghmeH practice ghojwI', 'ej control Degh, yajghach yInbogh je mIS institution.
 
 ### chen, chuq, pung je
 
