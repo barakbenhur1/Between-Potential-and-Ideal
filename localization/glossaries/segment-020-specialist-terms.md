@@ -7,10 +7,24 @@ Status: research only. No target-language form in this supplement is approved fo
 - **Klingon (`tlh`):** use Okrand-canonical vocabulary and grammar only. Record the canonical source for every accepted word. When no safe compact equivalent exists, use a transparent descriptive clause. Do not invent roots or attach Klingon morphology to English stems.
 - **Neo-Quenya (`qya`):** use a Late-Quenya-first profile. Prefer Tolkien-attested Late Quenya. A documented Neo-Quenya formation may be considered only when no suitable attested form exists, it is explicitly labelled, its derivation is recorded, and it does not conflict with the selected late grammar.
 
+## Title terminology
+
+The canonical title must be localized in both target languages. It is not protected English.
+
+- English source: `The Metamorphosis Code of Grace and Distance`
+- Hebrew cross-check: `קוד המטמורפוזה של החסד והמרחק`
+- Required semantic structure: transformation + governing pattern + grace + distance
+- Required audit result: zero unresolved English terms in the title
+
+`code` must be tested as a governing pattern or principle and must not be reduced automatically to software source code. `metamorphosis` must preserve transformation of relation without implying replacement or erasure of the living source.
+
 ## Terms requiring validation
 
 | Concept | Klingon direction | Neo-Quenya direction | Required distinction |
 |---|---|---|---|
+| metamorphosis | use a sourced change or transformation construction; no English stem with Klingon morphology | use an attested or documented transformation construction compatible with Late Quenya | transformation is not cosmetic change, replacement or erasure |
+| code / governing pattern | use a descriptive pattern, rule or guiding-structure clause unless a sourced compact term fits | use a documented pattern, rule or guiding-structure construction | philosophical code is not automatically computer code |
+| genius / worthy intelligence | use separate sourced language for exceptional intelligence and moral worth | use separate documented language for exceptional intelligence and moral worth | capacity is not moral worth; worthy intelligence limits itself |
 | witness | `leghwI'` remains observer-like and provisional; a longer ethical clause may be required | `cenindo` remains observer-like and provisional; a longer ethical clause may be required | witness is not identical to observer, proof or evidence |
 | distance | `chuq` only for its attested physical sense unless the extension is clearly marked | `haiya` or a transparent spatial relation, subject to source verification | physical distance is not silently identical to moral or epistemic distance |
 | grace | no compact project term approved; use a contextual descriptive clause | `lissë` remains provisional and must be checked against the intended sense | grace is not automatically sweetness, beauty, favour or mercy |
@@ -39,7 +53,7 @@ For every accepted form, record the source, language profile, three passed examp
 
 - `Between Potential and Ideal` remains the project and brand name.
 - `Prime Intellect` remains a proper title/name.
-- `Metamorphosis Code` remains visible during specialist revision until one cross-language title policy is approved. Its current presence is not an approved translation decision.
+- `Metamorphosis Code` is not protected English and must be localized in both target-language titles.
 
 ## References
 
