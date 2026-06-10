@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 JOBS_DIR = ROOT / "reports" / "localization" / "ai-jobs"
 CACHE_DIR = ROOT / "localization" / "translation-cache"
 RECOVERED_DIR = ROOT / "reports" / "localization" / "recovered"
-BATCH_SIZE = 1
+BATCH_SIZE = 32
 MODEL = "openai/gpt-4.1"
 TARGETS = {
     "tlh": (
