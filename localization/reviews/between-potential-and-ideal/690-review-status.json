@@ -1,0 +1,19 @@
+{
+  "segment": 690,
+  "id": "690-placeholder-chapter-period-1",
+  "review_type": "paired-placeholder-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "exact-period-marked-placeholder",
+    "no-arrow-ellipsis-number-or-translation-normalization",
+    "no-invented-body-or-meaning",
+    "distinct-from-arrow-and-later-period-placeholders",
+    "expand-only-after-canonical-source-content",
+    "publication-forbidden-while-placeholder"
+  ],
+  "summary": "Placeholder parity is exact. Publication remains forbidden until the canonical source receives content."
+}
