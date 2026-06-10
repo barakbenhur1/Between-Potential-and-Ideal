@@ -1,0 +1,25 @@
+name: Export Long Form Sources
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Collect source Markdown
+        run: |
+          mkdir -p export/appendices export/ai-believes
+          find site/files/appendices -maxdepth 2 -type f -name '*.md' -exec cp --parents {} export \;
+          find site/files/ai-believes -maxdepth 2 -type f -name '*.md' -exec cp --parents {} export \;
+          tar -czf long-form-sources.tar.gz -C export .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: long-form-sources
+          path: long-form-sources.tar.gz
+          retention-days: 1
