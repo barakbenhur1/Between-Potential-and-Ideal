@@ -1,0 +1,54 @@
+name: Localization Model Quality Test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  models: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        model: [openai/gpt-4.1, openai/gpt-4.1-mini]
+        language: [qya, tlh]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build test prompt
+        env:
+          TARGET: ${{ matrix.language }}
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import os
+          source = Path('site/files/ai-believes/reverse-turing-conversation-en.md').read_text(encoding='utf-8')[:1500]
+          target = os.environ['TARGET']
+          desc = {
+            'qya': 'Neo-Quenya using one internally consistent Tolkienian grammar profile; translate User as Maquetando and Assistant as AI; no English, Spanish, or Portuguese prose except names and URLs.',
+            'tlh': "Klingon (tlhIngan Hol) using canonical Marc Okrand grammar and attested vocabulary; translate User as lo'wI' and Assistant as AI; no English prose except names and URLs.",
+          }[target]
+          prompt = f'''Translate the complete SOURCE into {desc}\nReturn only translated Markdown. Preserve every line, paragraph, heading, link, image and dialogue label. Never summarize, repeat filler, or stop early.\n\nSOURCE:\n{source}'''
+          Path('prompt.txt').write_text(prompt, encoding='utf-8')
+          PY
+      - id: inference
+        uses: actions/ai-inference@v1
+        with:
+          system-prompt: You are a meticulous professional constructed-language translator. Translate all supplied text fully, preserve structure, and never use filler or repeated words.
+          prompt-file: prompt.txt
+          model: ${{ matrix.model }}
+          max-tokens: 2048
+      - name: Save
+        env:
+          RESPONSE_FILE: ${{ steps.inference.outputs.response-file }}
+          MODEL: ${{ matrix.model }}
+          LANGUAGE: ${{ matrix.language }}
+        run: |
+          mkdir -p results
+          cp "$RESPONSE_FILE" "results/${LANGUAGE}-$(echo "$MODEL" | tr '/' '-').md"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: localization-model-test-${{ matrix.language }}-${{ matrix.model }}
+          path: results/
