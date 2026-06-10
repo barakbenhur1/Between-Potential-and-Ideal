@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "protected_project_terms": ["Potential", "Ideal", "Optimal", "AI", "Between Potential and Ideal"],
+  "confirmed_contamination": {
+    "qya": ["Capítulo", "capítulo", "metafísica", "saída", "salida", "usuario"],
+    "tlh": []
+  },
+  "safe_automation_policy": "Detection may be automated. Replacement is allowed only when an approved glossary entry and an unambiguous grammatical context both exist.",
+  "unresolved_high_frequency_terms": {
+    "tlh": ["theory", "evidence", "identity", "mirror", "precision", "context", "metaphysical", "representation", "fidelity"],
+    "qya": ["evidence", "context", "representation", "frequency", "code", "framework"]
+  },
+  "candidate_terms_requiring_verification": {
+    "tlh": {"theory": "nger"},
+    "qya": {"chapter": "no approved project term yet"}
+  },
+  "rules": [
+    "Do not perform blind global replacement.",
+    "Do not count front matter, review gates, links, image text, citations, or intentional placeholders as translated-prose contamination.",
+    "Do not treat automated clearance as linguistic approval.",
+    "Preserve all source distinctions and publication gates during revision."
+  ]
+}
