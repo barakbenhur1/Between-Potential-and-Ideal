@@ -7,23 +7,24 @@ import hashlib
 import json
 import os
 import re
+import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
 JOBS_DIR = ROOT / "reports" / "localization" / "ai-jobs"
 CACHE_DIR = ROOT / "localization" / "translation-cache"
-RECOVERED_DIR = ROOT / "reports" / "localization" / "recovered"
-BATCH_SIZE = 32
+CACHE_SCHEMA = "gpt41-fragments-700-v1"
+BATCH_SIZE = 228
 MODEL = "openai/gpt-4.1"
 TARGETS = {
     "tlh": (
         "Klingon (tlhIngan Hol), using canonical Marc Okrand grammar and attested vocabulary. "
         "Use transparent Klingon descriptive phrases when no attested one-word term exists. "
-        "Do not leave English prose except protected names, titles, citations, URLs, and the term AI."
+        "Do not leave English prose except protected names, titles, citations, URLs, and AI."
     ),
     "qya": (
         "Neo-Quenya, using one internally consistent Tolkienian Neo-Quenya grammar and morphology profile. "
         "Use transparent descriptive phrases for modern concepts. Do not leave English, Spanish, or Portuguese "
-        "prose except protected names, titles, citations, URLs, and the term AI."
+        "prose except protected names, titles, citations, URLs, and AI."
     ),
 }
 
@@ -47,48 +48,24 @@ def valid(source: str, translated: str) -> bool:
     )
     similarity = SequenceMatcher(None, source[:6000], translated[:6000]).ratio()
     return (
-        len(translated) >= max(200, int(len(source) * 0.45))
+        len(translated) >= max(160, int(len(source) * 0.45))
         and translated != source
         and similarity < 0.65
         and not refused
     )
 
 
-def cache_recovered(job_id: str, data: dict, source_hash: str) -> bool:
-    if not RECOVERED_DIR.exists():
-        return False
-    candidates = list(RECOVERED_DIR.rglob(f"{job_id}.json")) + list(
-        RECOVERED_DIR.rglob(f"{job_id}.txt")
-    )
-    for candidate in candidates:
-        translated = clean(candidate.read_text(encoding="utf-8", errors="ignore"))
-        if not valid(data["source"], translated):
-            continue
-        (CACHE_DIR / f"{job_id}.md").write_text(translated + "\n", encoding="utf-8")
-        (CACHE_DIR / f"{job_id}.json").write_text(
-            json.dumps(
-                {
-                    "job_id": job_id,
-                    "package": data["package"],
-                    "language": data["language"],
-                    "chunk_index": data["chunk_index"],
-                    "chunk_count": data["chunk_count"],
-                    "source_sha256": source_hash,
-                    "origin": "recovered",
-                    "review_status": "machine-assisted-experimental",
-                },
-                ensure_ascii=False,
-                indent=2,
-            )
-            + "\n",
-            encoding="utf-8",
-        )
-        return True
-    return False
+def ensure_cache_schema() -> None:
+    marker = CACHE_DIR / ".schema"
+    current = marker.read_text(encoding="utf-8").strip() if marker.is_file() else ""
+    if current != CACHE_SCHEMA:
+        shutil.rmtree(CACHE_DIR, ignore_errors=True)
+        CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        marker.write_text(CACHE_SCHEMA + "\n", encoding="utf-8")
 
 
 def main() -> int:
-    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_cache_schema()
     jobs: list[tuple[Path, dict, bool]] = []
     for path in sorted(JOBS_DIR.glob("translate-*.json")):
         data = json.loads(path.read_text(encoding="utf-8"))
@@ -105,8 +82,6 @@ def main() -> int:
                 )
             except Exception:
                 cached = False
-        if not cached:
-            cached = cache_recovered(job_id, data, source_hash)
         jobs.append((path, data, cached))
 
     pending = [(path, data) for path, data, cached in jobs if not cached]
@@ -133,6 +108,7 @@ def main() -> int:
         "pending": len(pending),
         "batch": len(batch),
         "model": MODEL,
+        "cache_schema": CACHE_SCHEMA,
     }
     (JOBS_DIR / "status.json").write_text(
         json.dumps(status, indent=2) + "\n", encoding="utf-8"
