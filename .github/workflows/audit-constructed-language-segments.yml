@@ -1,0 +1,33 @@
+name: Audit Constructed-Language Segments
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "tools/audit_constructed_language_segments.py"
+      - "localization/sources/tlh/**"
+      - "localization/sources/qya/**"
+      - ".github/workflows/audit-constructed-language-segments.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Audit all paired segments
+        run: python3 tools/audit_constructed_language_segments.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: constructed-language-paired-audit
+          path: reports/localization/constructed-language-audit/
+          if-no-files-found: error
+          retention-days: 14
