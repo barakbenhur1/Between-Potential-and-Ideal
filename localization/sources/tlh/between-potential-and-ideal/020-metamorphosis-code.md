@@ -10,7 +10,7 @@ semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
 ---
 
-## pung chuq je Metamorphosis Code
+## pung chuq je choHmeH chut
 
 ### vemchoHghach QonoS
 
