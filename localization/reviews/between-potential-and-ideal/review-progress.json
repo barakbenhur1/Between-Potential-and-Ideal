@@ -1,5 +1,5 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "document_id": "between-potential-and-ideal",
   "review_scope": "paired canonical segments",
   "total_segment_pairs": 77,
@@ -21,15 +21,18 @@
   ],
   "mechanically_clear_specialist_segments": [20, 30, 40, 50],
   "active_specialist_segment": {
-    "segment": 50,
-    "id": "050-model-not-final-part-2",
-    "status": "mechanically-clear-specialist-revision-required",
+    "segment": 60,
+    "id": "060-symphony-and-friction",
+    "status": "remediation-plan-recorded-source-update-pending",
+    "tlh_findings": 13,
+    "qya_findings": 10,
+    "remediation_plan": "localization/reviews/between-potential-and-ideal/060-remediation-plan.json",
     "approved": false,
     "publication": "forbidden"
   },
   "next": {
-    "stage": "start-segment-060-mechanical-remediation",
-    "scope": "remove exact foreign-language blockers and preserve draft status",
+    "stage": "apply-segment-060-remediation-without-truncation",
+    "scope": "replace the 23 recorded body findings, rerun the audit, and preserve draft status",
     "segment": 60,
     "approval_target": 77
   },
