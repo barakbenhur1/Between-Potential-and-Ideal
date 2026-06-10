@@ -1,1 +1,32 @@
-{"status":"not-ready","publication":"forbidden","translation_fragments":{"total":228,"cached":16,"pending":212},"linguistic_review":{"first_pass_complete_pairs":77,"approved_pairs":0,"revision_required_pairs":77},"automated_audit":{"workflow_run_id":27306175786,"head_sha":"538b5c078c7b017c9873a2f96bd882e6206c3d73","foreign_term_occurrences":572,"body_occurrences":526,"heading_occurrences":46,"blocked_pairs":56,"mechanically_clear_pairs":21},"mechanically_clear_specialist_segments":[20,30,40,50,60,70,80,90,100,110],"current_specialist_segment":{"segment":120,"total_findings":7,"tlh_findings":6,"qya_findings":1,"approved":false},"next_mechanical_target":120}
+{
+  "status": "not-ready",
+  "publication": "forbidden",
+  "translation_fragments": {
+    "total": 228,
+    "cached": 16,
+    "pending": 212
+  },
+  "linguistic_review": {
+    "first_pass_complete_pairs": 77,
+    "approved_pairs": 0,
+    "revision_required_pairs": 77
+  },
+  "automated_audit": {
+    "workflow_run_id": 27308961953,
+    "head_sha": "5d425ceae428321cfa01c2db793ce0b0f794e21e",
+    "foreign_term_occurrences": 565,
+    "body_occurrences": 520,
+    "heading_occurrences": 45,
+    "blocked_pairs": 55,
+    "mechanically_clear_pairs": 22
+  },
+  "mechanically_clear_specialist_segments": [20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120],
+  "current_specialist_segment": {
+    "segment": 130,
+    "total_findings": 5,
+    "tlh_findings": 5,
+    "qya_findings": 0,
+    "approved": false
+  },
+  "next_mechanical_target": 130
+}
