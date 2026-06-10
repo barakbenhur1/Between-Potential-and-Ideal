@@ -3,9 +3,9 @@ name: Finalize Four-Language Localization Release
 on:
   workflow_dispatch:
   pull_request:
-    branches: [ main ]
+    branches: [main]
   push:
-    branches: [ main ]
+    branches: [main]
 
 permissions:
   contents: write
@@ -15,54 +15,133 @@ concurrency:
   group: finalize-four-language-localization-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  HEAD_BRANCH: ${{ github.event.pull_request.head.ref || github.ref_name }}
+  OLD_TRANSLATION_RUN_ID: "27230743690"
+
 jobs:
   prepare:
     runs-on: ubuntu-latest
     outputs:
-      matrix: ${{ steps.matrix.outputs.matrix }}
+      matrix: ${{ steps.plan.outputs.matrix }}
+      batch: ${{ steps.plan.outputs.batch }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.HEAD_BRANCH }}
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: "3.11"
       - run: python3 tools/prepare_localization_ai_jobs.py
-      - id: matrix
-        run: echo "matrix=$(jq -c . reports/localization/ai-jobs/matrix.json)" >> "$GITHUB_OUTPUT"
+      - name: Recover prior translation artifacts
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          run-id: ${{ env.OLD_TRANSLATION_RUN_ID }}
+          pattern: localization-ai-result-*
+          path: reports/localization/recovered
+          merge-multiple: true
+      - id: plan
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib, json, os, re
+          jobs_dir = Path('reports/localization/ai-jobs')
+          cache = Path('localization/translation-cache')
+          recovered = Path('reports/localization/recovered')
+          cache.mkdir(parents=True, exist_ok=True)
+          def clean(text):
+              text = text.replace('\r\n', '\n').strip()
+              text = re.sub(r'^```(?:markdown|md|text)?\s*', '', text, flags=re.I)
+              return re.sub(r'\s*```$', '', text).strip()
+          def valid(source, translated):
+              lowered = translated.lower()
+              return len(translated) >= max(60, int(len(source) * .10)) and translated != source and not any(x in lowered for x in ("i can't assist", "i cannot assist", "as an ai language model", "cannot translate"))
+          jobs = []
+          for path in sorted(jobs_dir.glob('translate-*.json')):
+              data = json.loads(path.read_text(encoding='utf-8'))
+              job_id = data['job_id']
+              source_hash = hashlib.sha256(data['source'].encode()).hexdigest()
+              body = cache / f'{job_id}.md'
+              meta = cache / f'{job_id}.json'
+              cached = False
+              if body.is_file() and meta.is_file():
+                  try:
+                      info = json.loads(meta.read_text(encoding='utf-8'))
+                      cached = info.get('source_sha256') == source_hash and valid(data['source'], clean(body.read_text(encoding='utf-8')))
+                  except Exception:
+                      cached = False
+              if not cached and recovered.exists():
+                  for candidate in list(recovered.rglob(f'{job_id}.json')) + list(recovered.rglob(f'{job_id}.txt')):
+                      translated = clean(candidate.read_text(encoding='utf-8', errors='ignore'))
+                      if not valid(data['source'], translated):
+                          continue
+                      body.write_text(translated + '\n', encoding='utf-8')
+                      meta.write_text(json.dumps({'job_id': job_id, 'package': data['package'], 'language': data['language'], 'chunk_index': data['chunk_index'], 'chunk_count': data['chunk_count'], 'source_sha256': source_hash, 'origin': 'recovered', 'review_status': 'machine-assisted-experimental'}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+                      cached = True
+                      break
+              jobs.append((path, data, cached))
+          pending = [(path, data) for path, data, cached in jobs if not cached]
+          batch = pending[:16]
+          include = []
+          for index, (path, data) in enumerate(batch):
+              include.append({'id': data['job_id'], 'input': path.name, 'language_mode': data['language'], 'model': 'openai/gpt-4o-mini' if index % 2 == 0 else 'openai/gpt-4o'})
+          (jobs_dir / 'matrix.json').write_text(json.dumps({'include': include}) + '\n')
+          (jobs_dir / 'all-jobs.json').write_text(json.dumps([data for _, data, _ in jobs], ensure_ascii=False) + '\n')
+          status = {'total': len(jobs), 'cached': len(jobs)-len(pending), 'pending': len(pending), 'batch': len(batch)}
+          (jobs_dir / 'status.json').write_text(json.dumps(status, indent=2) + '\n')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('matrix=' + json.dumps({'include': include}, separators=(',', ':')) + '\n')
+              output.write(f'batch={len(batch)}\n')
+          print(json.dumps(status))
+          PY
       - uses: actions/upload-artifact@v4
         with:
           name: localization-ai-jobs
           path: reports/localization/ai-jobs/
           if-no-files-found: error
-          retention-days: 7
+          retention-days: 14
+      - uses: actions/upload-artifact@v4
+        with:
+          name: localization-cache-before-batch
+          path: localization/translation-cache/
+          if-no-files-found: warn
+          retention-days: 14
 
   translate:
     needs: prepare
+    if: needs.prepare.outputs.batch != '0'
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      max-parallel: 2
+      max-parallel: 1
       matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.HEAD_BRANCH }}
       - uses: actions/download-artifact@v4
         with:
           name: localization-ai-jobs
           path: reports/localization/ai-jobs
-      - name: Build model input
+      - name: Build prompt
         env:
           JOB_FILE: reports/localization/ai-jobs/${{ matrix.input }}
           TARGET_LANGUAGE: ${{ matrix.language_mode }}
         run: |
-          mkdir -p reports/localization
-          printf 'Translate the source Markdown into %s. Return only translated Markdown. Preserve all structure and content. Do not summarize or invent.\n\nGLOSSARY:\n' "$TARGET_LANGUAGE" > reports/localization/current-prompt.txt
-          jq -r '.glossary' "$JOB_FILE" >> reports/localization/current-prompt.txt
-          printf '\n\nSOURCE:\n' >> reports/localization/current-prompt.txt
-          jq -r '.source' "$JOB_FILE" >> reports/localization/current-prompt.txt
+          mkdir -p reports/localization/current
+          printf 'Translate the SOURCE Markdown faithfully into %s. Return only translated Markdown. Preserve all structure, links, images, quotations, punctuation, humor, endings, and order. Do not summarize or invent. Keep names, titles, citations, URLs, AI, and Between Potential and Ideal unchanged.\n\nGLOSSARY:\n' "$TARGET_LANGUAGE" > reports/localization/current/prompt.txt
+          jq -r '.glossary' "$JOB_FILE" >> reports/localization/current/prompt.txt
+          printf '\n\nSOURCE:\n' >> reports/localization/current/prompt.txt
+          jq -r '.source' "$JOB_FILE" >> reports/localization/current/prompt.txt
       - id: inference
         uses: actions/ai-inference@v1
         with:
-          prompt-file: reports/localization/current-prompt.txt
-          model: openai/gpt-4o
+          prompt-file: reports/localization/current/prompt.txt
+          model: ${{ matrix.model }}
           max-completion-tokens: 4096
           temperature: 0
       - name: Save result
@@ -70,60 +149,112 @@ jobs:
           RESPONSE_FILE: ${{ steps.inference.outputs.response-file }}
           JOB_ID: ${{ matrix.id }}
         run: |
+          test -s "$RESPONSE_FILE"
           mkdir -p reports/localization/ai-results
           cp "$RESPONSE_FILE" "reports/localization/ai-results/${JOB_ID}.json"
-          test -s "reports/localization/ai-results/${JOB_ID}.json"
       - uses: actions/upload-artifact@v4
         with:
           name: localization-ai-result-${{ matrix.id }}
           path: reports/localization/ai-results/${{ matrix.id }}.json
           if-no-files-found: error
-          retention-days: 7
+          retention-days: 14
 
-  integrate-build-and-qa:
+  integrate:
     needs: [prepare, translate]
+    if: always() && needs.prepare.result == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ env.HEAD_BRANCH }}
           fetch-depth: 0
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.10"
       - uses: actions/download-artifact@v4
         with:
           name: localization-ai-jobs
           path: reports/localization/ai-jobs
       - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: localization-cache-before-batch
+          path: localization/translation-cache
+      - uses: actions/download-artifact@v4
+        if: needs.prepare.outputs.batch != '0'
+        continue-on-error: true
         with:
           pattern: localization-ai-result-*
           path: reports/localization/ai-results
           merge-multiple: true
-      - run: |
-          python3 -m pip install --upgrade pip
-          python3 -m pip install beautifulsoup4 markdown python-docx pillow pymupdf lxml
-          sudo apt-get update
-          sudo apt-get install -y libreoffice fonts-dejavu-core
-      - run: python3 tools/apply_localization_ai_results.py
-      - run: python3 tools/temporary-5.txt
-      - run: python3 tools/temporary-2.txt
-      - run: python3 tools/temporary-6.txt
-      - run: python3 tools/final_release_qa.py --scan
-      - name: Commit release
-        if: github.event_name != 'pull_request'
+      - name: Cache valid results and assemble complete packages
+        run: |
+          python3 - <<'PY'
+          from collections import defaultdict
+          from pathlib import Path
+          import hashlib, json, re
+          jobs = {data['job_id']: data for data in json.loads(Path('reports/localization/ai-jobs/all-jobs.json').read_text(encoding='utf-8'))}
+          cache = Path('localization/translation-cache')
+          results = Path('reports/localization/ai-results')
+          cache.mkdir(parents=True, exist_ok=True)
+          def clean(text):
+              text = text.replace('\r\n', '\n').strip()
+              text = re.sub(r'^```(?:markdown|md|text)?\s*', '', text, flags=re.I)
+              return re.sub(r'\s*```$', '', text).strip()
+          def valid(source, translated):
+              lowered = translated.lower()
+              return len(translated) >= max(60, int(len(source) * .10)) and translated != source and not any(x in lowered for x in ("i can't assist", "i cannot assist", "as an ai language model", "cannot translate"))
+          if results.exists():
+              for path in results.glob('*.json'):
+                  data = jobs.get(path.stem)
+                  if not data:
+                      continue
+                  translated = clean(path.read_text(encoding='utf-8', errors='ignore'))
+                  if not valid(data['source'], translated):
+                      continue
+                  source_hash = hashlib.sha256(data['source'].encode()).hexdigest()
+                  (cache / f'{path.stem}.md').write_text(translated + '\n', encoding='utf-8')
+                  (cache / f'{path.stem}.json').write_text(json.dumps({'job_id': path.stem, 'package': data['package'], 'language': data['language'], 'chunk_index': data['chunk_index'], 'chunk_count': data['chunk_count'], 'source_sha256': source_hash, 'origin': 'current-batch', 'review_status': 'machine-assisted-experimental'}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          groups = defaultdict(dict)
+          complete = 0
+          for job_id, data in jobs.items():
+              body = cache / f'{job_id}.md'
+              meta = cache / f'{job_id}.json'
+              if not body.is_file() or not meta.is_file():
+                  continue
+              try:
+                  info = json.loads(meta.read_text(encoding='utf-8'))
+                  translated = clean(body.read_text(encoding='utf-8'))
+              except Exception:
+                  continue
+              source_hash = hashlib.sha256(data['source'].encode()).hexdigest()
+              if info.get('source_sha256') != source_hash or not valid(data['source'], translated):
+                  continue
+              groups[(data['package'], data['language'])][data['chunk_index']] = translated
+              complete += 1
+          for (package, language), chunks in groups.items():
+              expected = next(data['chunk_count'] for data in jobs.values() if data['package'] == package and data['language'] == language)
+              if sorted(chunks) != list(range(1, expected + 1)):
+                  continue
+              body = '\n\n'.join(chunks[index] for index in range(1, expected + 1)).strip()
+              target = Path('localization/sources') / language / f'{package}-{language}.md'
+              target.parent.mkdir(parents=True, exist_ok=True)
+              target.write_text('---\n' + f'document_id: {package}\nlanguage: {language}\nstatus: release-candidate\nlinguistic_review: machine-assisted-experimental\npublication: forbidden\n---\n\n' + body + '\n', encoding='utf-8')
+          state = {'total': len(jobs), 'cached': complete, 'pending': len(jobs)-complete, 'status': 'translation-complete' if complete == len(jobs) else 'translation-in-progress'}
+          Path('localization/release-state.json').write_text(json.dumps(state, indent=2) + '\n')
+          print(json.dumps(state))
+          PY
+      - name: Commit translation progress
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add localization site docs tools .github/workflows/finalize-localization-release.yml
+          git add localization/translation-cache localization/release-state.json localization/sources/tlh localization/sources/qya
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Publish complete Klingon and Neo-Quenya editions [skip ci]"
-          git push
+          git commit -m "Cache localization translation batch [skip ci]"
+          git push origin "HEAD:${HEAD_BRANCH}"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: localization-release-qa-${{ github.sha }}
+          name: localization-translation-state-${{ github.sha }}
           path: |
-            reports/localization/
-            reports/production_next/
+            localization/release-state.json
+            localization/translation-cache/
           if-no-files-found: warn
           retention-days: 14
