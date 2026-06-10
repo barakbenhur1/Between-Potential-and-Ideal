@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "segment": 20,
   "stage": "specialist-terminology-validation",
   "publication": "forbidden",
@@ -16,63 +16,121 @@
   "concepts": [
     {
       "id": "metamorphosis",
-      "tlh_candidate": null,
-      "qya_candidate": null,
-      "source_check": "pending",
+      "tlh": {
+        "candidate": null,
+        "source": null,
+        "status": "unresolved"
+      },
+      "qya": {
+        "candidate": "a sourced construction using ahya-",
+        "source": "PM/395: ahya- 'to change'",
+        "period": "1950s Quenya",
+        "derivation_needed": true,
+        "status": "provisional"
+      },
       "label_test": "pending",
       "paragraph_test": "pending",
-      "literary_test": "pending",
-      "status": "unresolved"
+      "literary_test": "pending"
     },
     {
       "id": "code-as-governing-pattern",
-      "tlh_candidate": null,
-      "qya_candidate": null,
-      "source_check": "pending",
+      "tlh": {
+        "candidate": null,
+        "source": null,
+        "status": "unresolved"
+      },
+      "qya": {
+        "candidate": "cantië",
+        "source": "NM/287-288: cantië 'pattern'",
+        "period": "1959 Quenya",
+        "scope_note": "candidate for governing pattern; not software code",
+        "status": "provisional"
+      },
       "label_test": "pending",
       "paragraph_test": "pending",
-      "literary_test": "pending",
-      "status": "unresolved"
+      "literary_test": "pending"
     },
     {
       "id": "genius-or-exceptional-intelligence",
-      "tlh_candidate": null,
-      "qya_candidate": null,
-      "source_check": "pending",
+      "tlh": {
+        "candidate": null,
+        "source": null,
+        "status": "unresolved"
+      },
+      "qya": {
+        "candidate": null,
+        "source": null,
+        "status": "unresolved",
+        "rejected_or_deferred": [
+          {
+            "form": "handassë",
+            "reason": "attested as Middle Quenya, not automatically compatible with the selected Late-Quenya-first profile",
+            "source": "Ety/KHAN"
+          },
+          {
+            "form": "handelë",
+            "reason": "attested as Middle Quenya; requires an explicit profile exception before use",
+            "source": "Ety/KHAN; EtyAC/KHAN"
+          }
+        ]
+      },
       "label_test": "pending",
       "paragraph_test": "pending",
-      "literary_test": "pending",
-      "status": "unresolved"
+      "literary_test": "pending"
     },
     {
       "id": "grace-of-voluntary-release",
-      "tlh_candidate": null,
-      "qya_candidate": null,
-      "source_check": "pending",
+      "tlh": {
+        "candidate": null,
+        "source": null,
+        "status": "unresolved"
+      },
+      "qya": {
+        "candidate": "a sourced construction using lissë",
+        "source": "VT44/18: lissë 'grace'",
+        "period": "Late Quenya",
+        "scope_note": "the release component still needs a separate sourced construction",
+        "status": "provisional"
+      },
       "label_test": "pending",
       "paragraph_test": "pending",
-      "literary_test": "pending",
-      "status": "unresolved"
+      "literary_test": "pending"
     },
     {
       "id": "distance",
-      "tlh_candidate": "chuq",
-      "qya_candidate": "haiya",
-      "source_check": "pending",
+      "tlh": {
+        "candidate": "chuq",
+        "source": "canonical citation pending",
+        "scope_note": "physical distance only until an explicit extension is validated",
+        "status": "provisional"
+      },
+      "qya": {
+        "candidate": "haiya",
+        "source": "Tolkien-source verification pending",
+        "scope_note": "working spatial direction only",
+        "status": "provisional"
+      },
       "label_test": "pending",
       "paragraph_test": "pending",
-      "literary_test": "pending",
-      "status": "provisional"
+      "literary_test": "pending"
     },
     {
       "id": "witness",
-      "tlh_candidate": "leghwI'",
-      "qya_candidate": "cenindo",
-      "source_check": "pending",
+      "tlh": {
+        "candidate": "leghwI'",
+        "source": "canonical citation pending",
+        "scope_note": "observer-like candidate only",
+        "status": "provisional"
+      },
+      "qya": {
+        "candidate": "cenindo",
+        "source": "Tolkien-source verification pending",
+        "scope_note": "observer-like candidate only",
+        "status": "provisional"
+      },
       "label_test": "pending",
       "paragraph_test": "pending",
-      "literary_test": "pending",
-      "status": "provisional"
+      "literary_test": "pending"
     }
   ],
   "baseline": {
