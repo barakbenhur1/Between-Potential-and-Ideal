@@ -17,7 +17,6 @@ concurrency:
 
 env:
   HEAD_BRANCH: ${{ github.event.pull_request.head.ref || github.ref_name }}
-  OLD_TRANSLATION_RUN_ID: "27230743690"
 
 jobs:
   prepare:
@@ -36,18 +35,8 @@ jobs:
           python-version: "3.11"
       - name: Prepare localization jobs
         run: python3 tools/prepare_localization_ai_jobs.py
-      - name: Recover prior translation artifacts
-        continue-on-error: true
-        uses: actions/download-artifact@v4
-        with:
-          github-token: ${{ github.token }}
-          repository: ${{ github.repository }}
-          run-id: ${{ env.OLD_TRANSLATION_RUN_ID }}
-          pattern: localization-ai-result-*
-          path: reports/localization/recovered
-          merge-multiple: true
       - id: plan
-        name: Plan the next recoverable batch
+        name: Plan the next validated batch
         run: python3 tools/plan_localization_batch.py
       - uses: actions/upload-artifact@v4
         with:
@@ -68,23 +57,21 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      max-parallel: 8
+      max-parallel: 16
       matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
     steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ env.HEAD_BRANCH }}
       - uses: actions/download-artifact@v4
         with:
           name: localization-ai-jobs
           path: reports/localization/ai-jobs
-      - name: Build prompt
+      - name: Build complete-translation prompt
         env:
           JOB_FILE: reports/localization/ai-jobs/${{ matrix.input }}
           TARGET_LANGUAGE: ${{ matrix.language_mode }}
         run: |
           mkdir -p reports/localization/current
-          printf 'Translate the SOURCE Markdown faithfully into %s. Return only translated Markdown. Preserve all structure, links, images, quotations, punctuation, humor, endings, and order. Do not summarize or invent. Keep names, titles, citations, URLs, AI, and Between Potential and Ideal unchanged.\n\nGLOSSARY:\n' "$TARGET_LANGUAGE" > reports/localization/current/prompt.txt
+          SOURCE_LENGTH=$(jq -r '.source' "$JOB_FILE" | wc -c | tr -d ' ')
+          printf 'Translate the entire SOURCE Markdown faithfully into %s. Return only translated Markdown. Translate every line and paragraph from beginning to end. Never summarize, abbreviate, omit, or stop early. The source has about %s characters; the translation must be comparably complete. Preserve headings, links, images, quotations, dialogue labels, punctuation, humor, endings, and order. Keep only protected names, titles, citations, URLs, AI, and Between Potential and Ideal unchanged. Do not output commentary.\n\nGLOSSARY:\n' "$TARGET_LANGUAGE" "$SOURCE_LENGTH" > reports/localization/current/prompt.txt
           jq -r '.glossary' "$JOB_FILE" >> reports/localization/current/prompt.txt
           printf '\n\nSOURCE:\n' >> reports/localization/current/prompt.txt
           jq -r '.source' "$JOB_FILE" >> reports/localization/current/prompt.txt
@@ -152,7 +139,7 @@ jobs:
           path: reports/localization/ai-results
           merge-multiple: true
       - id: cache
-        name: Cache results and assemble completed packages
+        name: Validate, cache, and assemble completed packages
         run: python3 tools/cache_localization_batch.py
       - name: Commit and continue translation
         if: steps.cache.outputs.pending != '0'
@@ -164,7 +151,7 @@ jobs:
             echo "No valid translation progress was produced."
             exit 1
           fi
-          git commit -m "Cache localization translation batch"
+          git commit -m "Cache validated localization translation batch"
           git push origin "HEAD:${HEAD_BRANCH}"
       - name: Install release-build dependencies
         if: steps.cache.outputs.pending == '0'
