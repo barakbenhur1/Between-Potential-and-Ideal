@@ -12,7 +12,7 @@ import shutil
 ROOT = Path(__file__).resolve().parents[1]
 JOBS_DIR = ROOT / "reports" / "localization" / "ai-jobs"
 CACHE_DIR = ROOT / "localization" / "translation-cache"
-CACHE_SCHEMA = "gpt41-fragments-700-v1"
+CACHE_SCHEMA = "gpt41-fragments-6000-v1"
 BATCH_SIZE = 228
 MODEL = "openai/gpt-4.1"
 TARGETS = {
@@ -48,7 +48,7 @@ def valid(source: str, translated: str) -> bool:
     )
     similarity = SequenceMatcher(None, source[:6000], translated[:6000]).ratio()
     return (
-        len(translated) >= max(160, int(len(source) * 0.45))
+        len(translated) >= max(200, int(len(source) * 0.45))
         and translated != source
         and similarity < 0.65
         and not refused
