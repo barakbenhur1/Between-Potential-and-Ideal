@@ -1,1 +1,0 @@
-segment 170 requires one additional prose block and the standard review-gate heading
