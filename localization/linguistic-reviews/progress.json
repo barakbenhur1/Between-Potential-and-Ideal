@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "document_id": "between-potential-and-ideal",
   "total_pairs": 77,
   "reviewed_pairs": 77,
@@ -18,7 +18,14 @@
     720, 730, 740, 750, 760, 770, 780
   ],
   "next_segment": 20,
-  "next_stage": "specialist-revision",
+  "next_stage": "apply-or-implement-segment-020-title-remediation",
+  "active_specialist_segment": {
+    "segment": 20,
+    "body_findings": 0,
+    "heading_findings": 3,
+    "title_patch_prepared": true,
+    "approved": false
+  },
   "canonical_progress_file": "localization/reviews/between-potential-and-ideal/review-progress.json",
   "publication": "blocked"
 }
