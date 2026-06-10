@@ -1,0 +1,22 @@
+{
+  "segment": 650,
+  "id": "650-evidence-ai-recursive-domain-fidelity",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "mathematical-beauty-not-empirical-confirmation",
+    "theory-frameworks-and-evidential-limits",
+    "holography-not-world-as-illusion",
+    "formal-potential-vs-verified-status",
+    "AI-physical-language-needs-source-test-and-domain",
+    "explicit-negative-definitions",
+    "AI-responsibility-returned-to-source-testing-and-human-judgment",
+    "recursive-edge-opens-new-boundaries",
+    "local-domain-fidelity-without-end-of-knowledge"
+  ],
+  "summary": "The evidence, theory-limit, AI, source, testing, recursive-edge, and domain-fidelity safeguards are preserved. Both drafts require specialist revision."
+}
