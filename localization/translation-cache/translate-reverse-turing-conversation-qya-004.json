@@ -1,10 +1,10 @@
 {
-  "job_id": "translate-reverse-turing-conversation-qya-001",
+  "job_id": "translate-reverse-turing-conversation-qya-004",
   "package": "reverse-turing-conversation",
   "language": "qya",
-  "chunk_index": 1,
+  "chunk_index": 4,
   "chunk_count": 28,
-  "source_sha256": "4d831b581ab283b8bed99be190ab043e115073fdbdf066ac9f03c04bd404937f",
+  "source_sha256": "df0d75382e798a1de7cc628e8552f268201257922a4210a66e9c8a274946d390",
   "origin": "current-batch",
   "review_status": "machine-assisted-experimental"
 }
