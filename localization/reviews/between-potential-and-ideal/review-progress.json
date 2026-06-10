@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "document_id": "between-potential-and-ideal",
   "review_scope": "paired canonical segments",
   "total_segment_pairs": 77,
@@ -38,27 +38,37 @@
       "source_changes_applied": true,
       "approved": false,
       "publication": "forbidden"
+    },
+    "040": {
+      "id": "040-model-not-final-part-1",
+      "status": "mechanically-clear-specialist-revision-required",
+      "body_findings": 0,
+      "heading_findings": 0,
+      "verified_audit_run_id": 27295729516,
+      "source_changes_applied": true,
+      "approved": false,
+      "publication": "forbidden"
     }
   },
   "active_specialist_segment": {
-    "segment": 30,
-    "id": "030-whole-and-distance",
+    "segment": 40,
+    "id": "040-model-not-final-part-1",
     "status": "mechanically-clear-specialist-revision-required",
     "approved": false,
     "publication": "forbidden"
   },
   "next": {
-    "stage": "start-segment-040-mechanical-remediation-while-030-specialist-validation-continues",
+    "stage": "start-segment-050-mechanical-remediation-while-prior-specialist-validation-continues",
     "scope": "remove exact foreign-language blockers and build a verified baseline without granting linguistic approval",
-    "segment": 40,
+    "segment": 50,
     "approval_target": 77
   },
   "automated_audit": {
-    "foreign_term_occurrences": 692,
-    "body_occurrences": 639,
+    "foreign_term_occurrences": 676,
+    "body_occurrences": 623,
     "heading_occurrences": 53,
-    "blocked_pairs": 64,
-    "mechanically_clear_pairs": 13
+    "blocked_pairs": 63,
+    "mechanically_clear_pairs": 14
   },
   "publication": "forbidden-until-all-required-reviews-are-approved",
   "authority": "canonical-review-progress"
