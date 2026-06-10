@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 110
 status: draft
+linguistic_review: specialist-revision-active
+review_record: localization/reviews/between-potential-and-ideal/110-experience-knowledge-road-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -16,13 +18,13 @@ publication: forbidden
 
 _Figure D draft: SIQghach Hapghach je — bypass-laHbe'bogh Sov._
 
-pat claim botlh wa' 'oH: Hurvo' Sov neH ghajtaHvIS yonlaHbe' Hoch. 'oy' nuq 'e' intellectual Sovghach, 'oy' SIQbogh leghDaq mojghach je pIm; mobghach description yajghach, pagh qengDI' qo' chay' nargh 'e' Hotghach je pIm; He map ghajghach, porgh Doy'DI' 'ej tIq QochDI' He yItghach je pIm.
+qech naQ claim botlh wa' 'oH: Hurvo' Sov neH ghajtaHvIS yonlaHbe' Hoch. 'oy' nuq 'e' intellectual Sovghach, 'oy' SIQbogh leghDaq mojghach je pIm; mobghach description yajghach, pagh qengDI' qo' chay' nargh 'e' Hotghach je pIm; He map ghajghach, porgh Doy'DI' 'ej tIq QochDI' He yItghach je pIm.
 
 vaj Hapghach accident appendix 'oHbe'. porgh, poH, nID, finitude je Potential space neHDaq tu'lu'be'bogh Sov Segh narghmeH ghu'mey bIH. SIQghachDaq weight Suq DuH. consequence, wIv, botghach, DIl je veghmeH Potential raD. Hapghach Hutlhchugh, abstractionDaq vIt taHlaH; HapghachDaq, nughI', ghungghach, Doy'ghach, muSHa'ghach, Qu' je SIQlaHnIS vIt.
 
-Hapghach tragedy 'oHvam'e'. depth chaw' Hap, 'ach QIH je. rarghach chaw', separation je. leghDaq nob, veH je. romantic rurbe' pat. bechghach poQbej, 'oy' ghojmoHmo' QaQ jatlhbe'. claim yep law' jatlh: ghu' teH jojDaq SoH'egh qengnISpa' DuH, Sov, pung, Qu' Segh 'op narghbe'.
+Hapghach tragedy 'oHvam'e'. depth chaw' Hap, 'ach QIH je. rarghach chaw', separation je. leghDaq nob, veH je. romantic rurbe' qech naQ. bechghach poQbej, 'oy' ghojmoHmo' QaQ jatlhbe'. claim yep law' jatlh: ghu' teH jojDaq SoH'egh qengnISpa' DuH, Sov, pung, Qu' Segh 'op narghbe'.
 
-He yItbe'taHvIS He SovlaHlu', 'ach naQbe'. bIQtIq map lugh ghajlaH ghot 'ach Duj tlhaQDI' ghoppu' Qom chay' 'e' Sovbe'. nuq ta'nIS 'e' SovlaH, 'ach wIv DIlDI' `ta'nIS` chay' nargh 'e' Sovbe'. vaj declarative Sov, integrated Sov je pImmoH theory. `jIyaj` jatlh declarative Sov. `jangghachwIj chen choHpu' Dochvam` jatlh integrated Sov.
+He yItbe'taHvIS He SovlaHlu', 'ach naQbe'. bIQtIq map lugh ghajlaH ghot 'ach Duj tlhaQDI' ghoppu' Qom chay' 'e' Sovbe'. nuq ta'nIS 'e' SovlaH, 'ach wIv DIlDI' `ta'nIS` chay' nargh 'e' Sovbe'. vaj declarative Sov, integrated Sov je pImmoH QubmeH mIw. `jIyaj` jatlh declarative Sov. `jangghachwIj chen choHpu' Dochvam` jatlh integrated Sov.
 
 lo'laH mojmeH ghorlu'nIS ghot 'e' poQbe' Ideal. pIm: Sov integrated law' mojDI', ghorghach poQ puS. 'oy' quvmoHbe' He; qaSpu'bogh 'oy' unnecessary 'oy' pIq botbogh SovDaq mughmeH nID. vaj QIH veghghach neH 'oHbe' Sov teH'e'; QIHvo' cheghtaHvIS QIH repeatbe'bogh chen qenglaHghach 'oH.
 
@@ -33,7 +35,7 @@ lo'laH mojmeH ghorlu'nIS ghot 'e' poQbe' Ideal. pIm: Sov integrated law' mojDI',
 - **Integrated Sov:** response, wIv, Qu', chen je choHmoHbogh Sov.
 - **Moral cheghghach:** QIHvo' chen tlhap, QIH repeatbe'meH.
 
-patvaD porgh 'oH tobghach'e' jatlhbe' 'ay'. porgh, poH, nID je bypass-laHbe'bogh Sov Segh qenglaH 'e' jatlh. pImghachvam qIlDI' theory, ghot output neH mojmoHlaH; polDI', mung yInbogh qengtaH.
+qech naQvaD porgh 'oH tobghach'e' jatlhbe' 'ay'. porgh, poH, nID je bypass-laHbe'bogh Sov Segh qenglaH 'e' jatlh. pImghachvam qIlDI' QubmeH mIw, ghot output neH mojmoHlaH; polDI', mung yInbogh qengtaH.
 
 ### SIQghach nungbe' 'oy' quvghach
 
@@ -45,7 +47,7 @@ He bypassbe'meH boQ quv. map noblaH, scaffold chenmoHlaH, Qobvo' QanlaH. 'ach yI
 
 ### Qavghach
 
-qo' teH Hotbe'taHvIS Sov law' ghajlaH pat. 'ach yInbogh Sov, qengbogh ghot chen choHmoH. He bopbogh De' ghajghachvo' He yItmeH laH ghoS theory. He yItghachvaD bechghach worship poQbe'; attention, Qu', tI'ghach, pung je poQ.
+qo' teH Hotbe'taHvIS Sov law' ghajlaH qech naQ. 'ach yInbogh Sov, qengbogh ghot chen choHmoH. He bopbogh De' ghajghachvo' He yItmeH laH ghoS QubmeH mIw. He yItghachvaD bechghach worship poQbe'; attention, Qu', tI'ghach, pung je poQ.
 
 ## Segment review gate
 
