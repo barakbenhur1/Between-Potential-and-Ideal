@@ -1,0 +1,22 @@
+{
+  "segment": 660,
+  "id": "660-black-holes-horizons-holography",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "black-holes-and-horizons-physical-before-metaphor",
+    "event-horizon-under-given-description",
+    "holography-not-world-as-projection-proof",
+    "information-boundary-map-structure-preserved",
+    "domain-specific-evidence-horizons",
+    "horizon-as-truth-responsibility-not-cancellation",
+    "institutional-drainage-explicitly-structural",
+    "source-and-trace-as-ethical-test",
+    "self-declaring-metaphors-only"
+  ],
+  "summary": "The black-hole, event-horizon, holography, evidence, source, trace, drainage, and responsibility safeguards are preserved. Both drafts require specialist revision."
+}
