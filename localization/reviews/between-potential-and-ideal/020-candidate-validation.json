@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "segment": 20,
+  "stage": "specialist-terminology-validation",
+  "publication": "forbidden",
+  "approval_effect": "none",
+  "profiles": {
+    "tlh": "Okrand-canonical-only",
+    "qya": "Late-Quenya-first"
+  },
+  "title": {
+    "policy": "localize-in-both-target-languages",
+    "protected": false,
+    "status": "unresolved"
+  },
+  "concepts": [
+    {
+      "id": "metamorphosis",
+      "tlh_candidate": null,
+      "qya_candidate": null,
+      "source_check": "pending",
+      "label_test": "pending",
+      "paragraph_test": "pending",
+      "literary_test": "pending",
+      "status": "unresolved"
+    },
+    {
+      "id": "code-as-governing-pattern",
+      "tlh_candidate": null,
+      "qya_candidate": null,
+      "source_check": "pending",
+      "label_test": "pending",
+      "paragraph_test": "pending",
+      "literary_test": "pending",
+      "status": "unresolved"
+    },
+    {
+      "id": "genius-or-exceptional-intelligence",
+      "tlh_candidate": null,
+      "qya_candidate": null,
+      "source_check": "pending",
+      "label_test": "pending",
+      "paragraph_test": "pending",
+      "literary_test": "pending",
+      "status": "unresolved"
+    },
+    {
+      "id": "grace-of-voluntary-release",
+      "tlh_candidate": null,
+      "qya_candidate": null,
+      "source_check": "pending",
+      "label_test": "pending",
+      "paragraph_test": "pending",
+      "literary_test": "pending",
+      "status": "unresolved"
+    },
+    {
+      "id": "distance",
+      "tlh_candidate": "chuq",
+      "qya_candidate": "haiya",
+      "source_check": "pending",
+      "label_test": "pending",
+      "paragraph_test": "pending",
+      "literary_test": "pending",
+      "status": "provisional"
+    },
+    {
+      "id": "witness",
+      "tlh_candidate": "leghwI'",
+      "qya_candidate": "cenindo",
+      "source_check": "pending",
+      "label_test": "pending",
+      "paragraph_test": "pending",
+      "literary_test": "pending",
+      "status": "provisional"
+    }
+  ],
+  "baseline": {
+    "tlh_heading": 1,
+    "tlh_body": 2,
+    "qya_heading": 2,
+    "qya_body": 2
+  },
+  "acceptance": {
+    "all_terms_resolved": false,
+    "all_context_tests_passed": false,
+    "all_sources_recorded": false,
+    "heading_findings_zero": false,
+    "body_findings_zero": false,
+    "second_review_passed": false,
+    "approved": false
+  }
+}
