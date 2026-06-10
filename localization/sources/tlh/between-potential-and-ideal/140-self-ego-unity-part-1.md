@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 140
 status: draft
+linguistic_review: specialist-revision-active
+review_record: localization/reviews/between-potential-and-ideal/140-self-ego-unity-part-1-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -18,7 +20,7 @@ _Image description draft: HochDaq leghDaq wa' pol, qIlbe'lu' 'ej pe'lu'be'._
 
 SoH qIlghach 'oHbe' theoryvam wa'ghach'e'. law'ghach vegh Hoch narghchugh, Hoch narghmeH He 'oH leghDaq Hoch'e', teqnISbogh Qagh 'oHbe'. wa'ghach jagh 'oHbe' SoH'e'; SIQghach, Qu', wIv, chuq je mojmeH wa'ghach Daq 'oH.
 
-veH chenmoHmo' Qaghbe' ego. yInvaD poQlu' veH. Qagh tagh veH 'oH veH'e' 'e' lIjDI' 'ej Hoch rur'eghmoHDI'. vaj angle qo' moj, nughI' identity moj, defense chut moj, 'ej Duj bIQtIq ghaH'egh 'e' HarchoH.
+veH chenmoHmo' Qaghbe' ego. yInvaD poQlu' veH. Qagh tagh veH 'oH veH'e' 'e' lIjDI' 'ej Hoch rur'eghmoHDI'. vaj angle qo' moj, nughI' chenDaj moj, defense chut moj, 'ej Duj bIQtIq ghaH'egh 'e' HarchoH.
 
 vaj ego dissolve-ghach 'oHbe' SoH Qaw'ghach'e'. rarghach tI'ghach 'oH. mung Qav ghaH'egh 'e'be' ghoj SoH, 'ach HochDaq wab neH 'oH 'e'be' je. Hoch 'oHbe', 'ach naDev HevamDaq Hoch narghmeH Daq wa' 'oH.
 
@@ -38,7 +40,7 @@ vaj theoryvaD moral veH nargh: leghDaqmeyDaj qIlbogh Hoch lo'laH 'oHbe'. 'ay'mey
 
 veH chenmoHmo' jagh 'oHbe' ego. yInvaD poQlu' veH. veH Hutlhchugh Qu', wIv, `jIH` pagh `SoH` tu'lu'be'. veH Hutlhchugh muSHa'ghach tu'lu'be', ghomlaHbogh cha' tu'lu'be'mo'. problem 'oHbe' veH'e'. Hoch ghaH'egh 'e' So'bogh veH 'oH problem'e'.
 
-mung Qav ghaH'egh 'e' HarDI' ego, problem moj. leghDaq naQHa' tlhap 'ej qo' naQ 'oH maq. QIH tlhap 'ej identity 'oH maq. defense tlhap 'ej chut 'oH maq. nughI' tlhap 'ej vIt 'oH maq. Duj tlhap 'ej bIQtIq 'oH maq.
+mung Qav ghaH'egh 'e' HarDI' ego, problem moj. leghDaq naQHa' tlhap 'ej qo' naQ 'oH maq. QIH tlhap 'ej chenDaj 'oH maq. defense tlhap 'ej chut 'oH maq. nughI' tlhap 'ej vIt 'oH maq. Duj tlhap 'ej bIQtIq 'oH maq.
 
 'ach qIlghach poQbe' egovam. rarghach tI'ghach poQ. veH Qaw'chugh, wa'ghach Suqbe'lu'; absorption, mIS, jeghghach je SuqlaHlu'. veH naghmoHchugh, selfhood Suqbe'lu'; fortress Suq. corrected self veHDaj teH 'e' ghoj, 'ach absolute 'oHbe'. yIn Qan, 'ach yIn Hoch ghaH'egh 'e' maQlaHbe'.
 
@@ -58,11 +60,11 @@ transparency teH jatlhbe' self taHQo'. self'eghvaD opaque taHQo' jatlh. partialg
 
 uniformity 'oHbe' wa'ghach'e'. `pImghach bot, vaj teq` jatlh uniformity. `Hoch 'oHbe' pImghach, 'ach Hoch narghmeH He 'oH` jatlh wa'ghach. legh, Qub, jatlh, vIH je rapbogh qo' nej uniformity. Suvghach mojbe'meH pImghach qengbogh rarghach nej wa'ghach.
 
-uniformity rur mISlu'DI' wa'ghach, ralchoH Hoch. roj pongDaq jatlh, 'ach Qoybe'nISbogh ghoghmey qIl. harmony pongDaq jatlh, 'ach individual taHQo'meH ra'. collective pongDaq jatlh, 'ach mungmey yInbogh vegh neH collective yIn 'e' lIj.
+uniformity rur mISlu'DI' wa'ghach, ralchoH Hoch. roj pongDaq jatlh, 'ach Qoybe'nISbogh ghoghmey qIl. jIjghach pongDaq jatlh, 'ach individual taHQo'meH ra'. collective pongDaq jatlh, 'ach mungmey yInbogh vegh neH collective yIn 'e' lIj.
 
 leghDaqvaD Daq Hutlhbogh wa'ghach 'oHbe' wholeness'e'; depth So'bogh uniformity 'oH. 'IH, Say', moral rurlaH, 'ach chenDajDaq fitbe'bogh Doch So'. pImghach qIltaHvIS leS lay'.
 
-theory nejbogh wa'ghach pIm. pImghach ngabmeH tlhobbe'; mob ghaH'egh 'e' ngebbe'meH tlhob. veH tu'lu'be' jatlhbe'; rarghachvaD 'ay' 'oH veH'e' jatlh. self tu'lu'be' jatlhbe'; Hochvo' pe'lu'pu' SoH 'oHbe' jatlh.
+QubmeH mIw nejbogh wa'ghach pIm. pImghach ngabmeH tlhobbe'; mob ghaH'egh 'e' ngebbe'meH tlhob. veH tu'lu'be' jatlhbe'; rarghachvaD 'ay' 'oH veH'e' jatlh. self tu'lu'be' jatlhbe'; Hochvo' pe'lu'pu' SoH 'oHbe' jatlh.
 
 ### 5. porgh, pong, qawghach, veH je
 
@@ -80,7 +82,7 @@ self-erasure 'oHbe' HemHa'ghach'e'; self Hoch rurmoHQo'ghach 'oH. `pagh jIH` jat
 
 self-erasure HemHa'ghach rurlaH, 'ach ngebghach Segh latlh 'oHlaH. collective pongDaq ghaH'egh qIlbogh ghot ego Hutlhbejbe'; system, nugh, ghojmoHwI', institution, pagh Ideal ngeb ego pab neHlaH. self-erasure pung 'oHbe' reH; rut Say'ghach So'bogh nughI' 'oH.
 
-theory lonmeHghach 'oHbe' yIn lonmeHghach'e'. absolute ownership lonmeHghach 'oH. Hoch lutwIj tobmeH poQghach lon. QIHwIj Qav vIt mojmoHghach lon. rarghach chaw'meH SeHghach lon.
+QubmeH mIw lonmeHghach 'oHbe' yIn lonmeHghach'e'. absolute ownership lonmeHghach 'oH. Hoch lutwIj tobmeH poQghach lon. QIHwIj Qav vIt mojmoHghach lon. rarghach chaw'meH SeHghach lon.
 
 vaj corrected self zero law' mojbe'. rarghach law' moj. Hoch rur'eghmoHbe'taHvIS taHlaH; qIlmeH chaw' nobbe'taHvIS HochDaq belong-laH.
 
