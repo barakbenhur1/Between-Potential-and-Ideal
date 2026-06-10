@@ -49,12 +49,15 @@
   "segment_policies": {
     "020": {
       "title": {
-        "phrase": "Metamorphosis Code",
-        "status": "shared-title-policy-pending",
+        "english_source": "The Metamorphosis Code of Grace and Distance",
+        "hebrew_cross_check": "קוד המטמורפוזה של החסד והמרחק",
+        "status": "must-be-localized-in-each-target-language",
+        "rationale": "The canonical Hebrew edition localizes the chapter title; it is not a protected brand or proper name.",
         "audit_exemption": false
       },
       "protected_proper_names": ["Prime Intellect"],
       "body_terms_must_be_zero": true,
+      "heading_terms_must_be_zero": true,
       "remediation_baseline": "localization/reviews/between-potential-and-ideal/020-remediation-baseline.json",
       "specialist_plan": "localization/reviews/between-potential-and-ideal/020-specialist-revision-plan.md",
       "terminology_supplement": "localization/glossaries/segment-020-specialist-terms.md"
@@ -66,7 +69,7 @@
     "Every candidate term passes a literary-or-metaphorical context.",
     "Every accepted term records source, profile, rejected alternatives, and rationale.",
     "Body-level foreign-language findings are zero.",
-    "Heading findings are zero or resolved by an explicit shared title or proper-name policy.",
+    "Heading-level foreign-language findings are zero unless the full phrase is an explicitly protected proper name or project brand.",
     "An independent second linguistic review passes.",
     "Automated clearance and release gates pass."
   ],
@@ -74,6 +77,7 @@
     "Do not perform blind global replacement.",
     "Do not count front matter, review gates, links, image text, citations, or intentional placeholders as translated-prose contamination.",
     "Do not silently exempt a heading term; it requires an explicit title or proper-name policy.",
+    "Do not protect a chapter title merely because it originated in English; compare the canonical editions first.",
     "Do not treat automated clearance as linguistic approval.",
     "Preserve all source distinctions and publication gates during revision."
   ]
