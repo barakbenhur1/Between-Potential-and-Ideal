@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "segment": 30,
+  "stage": "specialist-revision",
+  "status": "mechanically-clear-specialist-revision-required",
+  "approved": false,
+  "publication": "forbidden",
+  "language_profiles": {
+    "tlh": "Okrand-canonical-only",
+    "qya": "Late-Quenya-first"
+  },
+  "review_record": "localization/reviews/between-potential-and-ideal/030-whole-and-distance-review.md",
+  "remediation_baseline": "localization/reviews/between-potential-and-ideal/030-remediation-baseline.json",
+  "current_audit_state": {
+    "tlh_heading_findings": 0,
+    "tlh_body_findings": 0,
+    "qya_heading_findings": 0,
+    "qya_body_findings": 0,
+    "mechanically_clear": true,
+    "specialist_approval_pending": true
+  },
+  "verified_audit_run": {
+    "workflow_run_id": 27295172366,
+    "head_sha": "ac3a1f7ad78ea3f63c9b07d0312e7d76828cfa5e",
+    "result": "success"
+  },
+  "required_before_approval": [
+    "record exact canonical sources for all accepted Klingon vocabulary and grammar",
+    "replace or explicitly justify unsupported Neo-Quenya forms under the selected profile",
+    "pass short-label, philosophical-paragraph and literary-sentence context tests",
+    "complete English and Hebrew semantic comparison",
+    "complete independent second linguistic review"
+  ],
+  "first_pass_complete_pairs": 77,
+  "approved_pairs": 0,
+  "revision_required_pairs": 77
+}
