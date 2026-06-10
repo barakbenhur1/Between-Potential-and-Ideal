@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 040
 status: draft
+linguistic_review: specialist-revision-active
+review_record: localization/reviews/between-potential-and-ideal/040-model-not-final-part-1-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -22,7 +24,7 @@ Mapa mára lá vista i tië. Lá lehta i lelyando cestallo yassë tarë. Anta er
 
 An sina i maquetta téra lá ná `ná ma sina túcina ve theorem nótessëo?`, mal `tarë ma i carma ú yontala nórë, ú lavila naicelë, ú autala i quén, ar ú ahyala estel savië ú cenië?` I túrë i pataro lá ná quetila immo metta, mal istala manen tana landarya.
 
-Capítulo sina panya i réna mauya-cáriëo i sanwë-pataro. Tana manen mauya cenda ilya ya tulë apa: lá ve savië ya mauya i cendando, lá ve tanwa sanar, lá ve nyárë metafísicava pahtaina, mal ve patar carmava ya mauya cesta, poita, landa ar entulya ana cuilë anwa.
+Cendë sina panya i réna mauya-cáriëo i sanwë-pataro. Tana manen mauya cenda ilya ya tulë apa: lá ve savië ya mauya i cendando, lá ve tanwa sanar, lá ve nyárë metafísicava pahtaina, mal ve patar carmava ya mauya cesta, poita, landa ar entulya ana cuilë anwa.
 
 ### 1. Mana tyarë patar maura
 
@@ -36,7 +38,7 @@ Mi tengwë sina i patar tarë mi i tarna `nihilism estel ó`: lá auta úvissë 
 
 ### 2. Potential, Ideal ar Optimal ve lé cendien
 
-Mi capítulo sina Potential lá ná er i nat i sanwë-pataro; tana yando mana patar carë. Patar panta Potential handëo. Lavë ovantiër tulë cenna: naicë ar mauya-cárië, lérië ar valë, réna ar námië, celu cuina ar emma, emma ar tanwa, estel ar quetë pella i ya polë ná tanaina.
+Mi cendë sina Potential lá ná er i nat i sanwë-pataro; tana yando mana patar carë. Patar panta Potential handëo. Lavë ovantiër tulë cenna: naicë ar mauya-cárië, lérië ar valë, réna ar námië, celu cuina ar emma, emma ar tanwa, estel ar quetë pella i ya polë ná tanaina.
 
 Mal Potential handëo lá ná anwië. Ná er i pantië i palaro. I anwië ya patar carë ovantë vinya cenna lá tana i ovantë túcina, ilúvë hya antaina ilya lúmessen. Sís i carma i pataro yesta: lá ilya námië cendien ná Ideal.
 
@@ -52,7 +54,7 @@ Patar lá polë mapa túrë ya lá sen. Lá polë ahyala emma tanwanna, quetta n
 
 Patar mauya-cáriëo lá vista nolmë, áyanë, carma vanya, astarmë, hröa hya cuilë-isto. Polë para telyallo, quetë ó telyallo ar tana ovantiër imbetenta, mal lá polë mapë túrë ya lá antaina sen. Írë yanta emma, mauya quetë emma ná. Írë yanta carma tengwiëo, mauya tana i réna carmava. Írë yanta quetta nolmava, mauya avá carë sa aura.
 
-An sina i patar lá cesta airië pella cestië. I exë: cestië ná i lanta-sírerya. Ú cestië, lambë palya lomë ocomba ú saída tenna ahya patar ya varya immo lá i ya cena immo.
+An sina i patar lá cesta airië pella cestië. I exë: cestië ná i lanta-sírerya. Ú cestië, lambë palya lomë ocomba ú tië et tenna ahya patar ya varya immo lá i ya cena immo.
 
 ### 4. I Neldë Cestali Mauya-cáriëo
 
