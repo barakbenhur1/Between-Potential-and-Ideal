@@ -1,5 +1,5 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "segment": 20,
   "stage": "specialist-terminology-validation",
   "publication": "forbidden",
@@ -11,30 +11,35 @@
   "title": {
     "policy": "localize-in-both-target-languages",
     "protected": false,
-    "status": "unresolved",
+    "status": "mechanically-clear-provisional",
+    "applied_forms": {
+      "tlh": "pung chuq je choHmeH chut",
+      "qya": "I Cantië Ahyaliëo Lissëo ar Haiyava"
+    },
     "remaining_audit_findings": {
-      "tlh": ["metamorphosis"],
-      "qya": ["metamorphosis", "code"]
-    }
+      "tlh": [],
+      "qya": []
+    },
+    "specialist_note": "Zero automated findings do not validate morphology, semantics, source period, or natural target-language syntax. Both title forms remain provisional."
   },
   "concepts": [
     {
       "id": "metamorphosis",
       "tlh": {
         "candidate": "clausal constructions using choH",
-        "source": "The Klingon Dictionary citation still to be recorded in the project worksheet",
-        "current_use": "body-only provisional remediation",
-        "title_use": "not yet approved",
-        "status": "provisional"
+        "source": "The Klingon Dictionary dictionary entry; exact edition page or entry locator still to be recorded",
+        "current_use": "provisional title and body direction",
+        "title_use": "applied but not approved",
+        "status": "source-locator-pending"
       },
       "qya": {
-        "candidate": "a sourced construction using ahya-",
+        "candidate": "a construction derived from ahya-",
         "source": "PM/395: ahya- 'to change'",
         "period": "1950s Quenya",
         "derivation_needed": true,
-        "current_use": "existing ahyalië body forms require morphological verification",
-        "title_use": "not yet approved",
-        "status": "provisional"
+        "current_use": "Ahyaliëo is present in the applied title but the exact abstract-noun and genitive morphology is not directly attested by the recorded source",
+        "title_use": "applied but morphology-unverified",
+        "status": "root-sourced-derived-form-unverified"
       },
       "label_test": "pending",
       "paragraph_test": "partial-body-test-only",
@@ -44,17 +49,19 @@
       "id": "code-as-governing-pattern",
       "tlh": {
         "candidate": "a sourced construction using chut or another rule/pattern expression",
-        "source": "canonical citation pending",
-        "status": "unresolved"
+        "source": "The Klingon Dictionary dictionary entry; exact edition page or entry locator still to be recorded",
+        "current_use": "chut is present in the applied title",
+        "status": "source-locator-and-context-pending"
       },
       "qya": {
         "candidate": "cantië",
         "source": "NM/287-288: cantië 'pattern'",
         "period": "1959 Quenya",
         "scope_note": "candidate for governing pattern; not software code",
-        "status": "provisional"
+        "current_use": "present in the applied title",
+        "status": "source-confirmed-context-pending"
       },
-      "label_test": "pending",
+      "label_test": "partial-title-test-only",
       "paragraph_test": "pending",
       "literary_test": "pending"
     },
@@ -68,7 +75,7 @@
       "qya": {
         "candidate": null,
         "source": null,
-        "current_draft_remediation": "handassë was used temporarily to remove two English body tokens; this does not approve it under the Late-Quenya-first profile",
+        "current_draft_remediation": "handassë is used in the draft to remove English body tokens; this does not approve it under the Late-Quenya-first profile",
         "status": "unresolved",
         "rejected_or_deferred": [
           {
@@ -96,12 +103,13 @@
       },
       "qya": {
         "candidate": "a sourced construction using lissë",
-        "source": "VT44/18: lissë 'grace'",
+        "source": "VT44/18: lissë 'grace'; genitive lisseo is attested in the cited phrase",
         "period": "Late Quenya",
-        "scope_note": "the release component still needs a separate sourced construction",
-        "status": "provisional"
+        "scope_note": "the voluntary-release component still needs a separate sourced construction",
+        "current_use": "Lissëo is present in the applied title",
+        "status": "source-confirmed-sense-and-context-pending"
       },
-      "label_test": "pending",
+      "label_test": "partial-title-test-only",
       "paragraph_test": "pending",
       "literary_test": "pending"
     },
@@ -109,17 +117,29 @@
       "id": "distance",
       "tlh": {
         "candidate": "chuq",
-        "source": "canonical citation pending",
-        "scope_note": "physical distance only until an explicit extension is validated",
-        "status": "provisional"
+        "source": "The Klingon Dictionary dictionary entry; exact edition page or entry locator still to be recorded",
+        "scope_note": "physical distance only until an explicit philosophical extension is validated",
+        "current_use": "present in the applied title and body",
+        "status": "source-locator-and-extension-pending"
       },
       "qya": {
-        "candidate": "haiya",
-        "source": "Tolkien-source verification pending",
-        "scope_note": "working spatial direction only",
-        "status": "provisional"
+        "candidate": null,
+        "source": "Current research records haia 'afar, far (off), far away' as an adverb and haira 'remote, far' as an adjective; hairië 'distance, farness' is marked as a fan-invented Neo-Quenya form",
+        "scope_note": "the current draft forms haiya and Haiyava are not directly supported by the recorded evidence and cannot be approved as a Late-Quenya-first noun for distance",
+        "current_draft_form": "haiya / Haiyava",
+        "status": "unsupported-current-form-revision-required",
+        "rejected_or_deferred": [
+          {
+            "form": "haiya / Haiyava",
+            "reason": "spelling and nominal use are not established by the currently recorded source evidence"
+          },
+          {
+            "form": "hairië",
+            "reason": "fan-invented form; requires an explicit Neo-Quenya exception and independent review before use"
+          }
+        ]
       },
-      "label_test": "pending",
+      "label_test": "failed-for-current-qya-form",
       "paragraph_test": "pending",
       "literary_test": "pending"
     },
@@ -127,15 +147,17 @@
       "id": "witness",
       "tlh": {
         "candidate": "leghwI'",
-        "source": "canonical citation pending",
-        "scope_note": "observer-like candidate only",
-        "status": "provisional"
+        "source": "The Klingon Dictionary grammar and vocabulary sources; exact locator still to be recorded",
+        "scope_note": "observer-like descriptive formation only; ethical witness nuance remains unresolved",
+        "status": "source-locator-and-context-pending"
       },
       "qya": {
-        "candidate": "cenindo",
-        "source": "Tolkien-source verification pending",
-        "scope_note": "observer-like candidate only",
-        "status": "provisional"
+        "candidate": "astarmo",
+        "source": "attested vocabulary glossed 'bystander; witness'; exact original-source locator still to be recorded in the project worksheet",
+        "scope_note": "possible observer/witness candidate only; the ethical role in this chapter still requires all three context tests",
+        "previous_direction": "cenindo",
+        "previous_direction_status": "deferred-unverified",
+        "status": "candidate-source-locator-pending"
       },
       "label_test": "pending",
       "paragraph_test": "pending",
@@ -143,18 +165,19 @@
     }
   ],
   "verified_audit": {
-    "workflow_run_id": 27290557662,
-    "head_sha": "ab0a9a80582f5f627f7077989bb704de0ba64fb3",
-    "tlh_heading": 1,
+    "workflow_run_id": 27294229090,
+    "head_sha": "e410db1308fa1265619cf400d70c439903db6bfa",
+    "tlh_heading": 0,
     "tlh_body": 0,
-    "qya_heading": 2,
-    "qya_body": 0
+    "qya_heading": 0,
+    "qya_body": 0,
+    "mechanically_clear": true
   },
   "acceptance": {
     "all_terms_resolved": false,
     "all_context_tests_passed": false,
     "all_sources_recorded": false,
-    "heading_findings_zero": false,
+    "heading_findings_zero": true,
     "body_findings_zero": true,
     "second_review_passed": false,
     "approved": false
