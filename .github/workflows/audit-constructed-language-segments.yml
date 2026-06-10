@@ -1,8 +1,8 @@
 name: Audit Constructed-Language Segments
 
 on:
-  pull_request:
-    branches: [main]
+  push:
+    branches: [bpi-localization-release]
     paths:
       - "tools/audit_constructed_language_segments.py"
       - "localization/sources/tlh/**"
@@ -11,20 +11,33 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: constructed-language-segment-audit
+  cancel-in-progress: true
 
 jobs:
   audit:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
+          ref: bpi-localization-release
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
       - name: Audit all paired segments
         run: python3 tools/audit_constructed_language_segments.py
+      - name: Commit audit report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/localization/constructed-language-audit
+          git commit -m "Record deterministic constructed-language audit" || exit 0
+          git push origin HEAD:bpi-localization-release
       - uses: actions/upload-artifact@v4
         with:
           name: constructed-language-paired-audit
