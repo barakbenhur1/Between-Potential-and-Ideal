@@ -1,7 +1,30 @@
 {
   "status": "blocked",
   "publication": "forbidden",
-  "reason": "incomplete-localization",
+  "reason": "incomplete-localization-and-unapproved-specialist-review",
   "required_languages": ["tlh", "qya"],
-  "required_formats": ["html", "pdf", "docx", "md", "txt"]
+  "required_formats": ["html", "pdf", "docx", "md", "txt"],
+  "translation_fragments": {
+    "total": 228,
+    "cached": 16,
+    "pending": 212
+  },
+  "linguistic_review": {
+    "first_pass_complete_pairs": 77,
+    "approved_pairs": 0,
+    "revision_required_pairs": 77
+  },
+  "automated_audit": {
+    "foreign_term_occurrences": 705,
+    "body_occurrences": 649,
+    "heading_occurrences": 56,
+    "blocked_pairs": 65,
+    "mechanically_clear_pairs": 12
+  },
+  "current_specialist_segment": {
+    "segment": 20,
+    "automated_state": "mechanically-clear",
+    "linguistic_state": "revision-required",
+    "approved": false
+  }
 }
