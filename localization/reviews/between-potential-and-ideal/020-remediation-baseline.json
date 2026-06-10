@@ -1,12 +1,12 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "segment": 20,
   "source_paths": {
     "tlh": "localization/sources/tlh/between-potential-and-ideal/020-metamorphosis-code.md",
     "qya": "localization/sources/qya/between-potential-and-ideal/020-metamorphosis-code.md"
   },
   "audit_tool_schema": 3,
-  "automated_status": "blocked-heading-only",
+  "automated_status": "clear",
   "publication": "forbidden",
   "title_policy": {
     "english_source": "The Metamorphosis Code of Grace and Distance",
@@ -15,53 +15,54 @@
     "audit_exemption": false
   },
   "verified_audit_run": {
-    "workflow_run_id": 27290557662,
-    "head_sha": "ab0a9a80582f5f627f7077989bb704de0ba64fb3",
+    "workflow_run_id": 27294229090,
+    "head_sha": "e410db1308fa1265619cf400d70c439903db6bfa",
     "result": "success",
-    "repository_foreign_term_occurrences": 708,
+    "repository_foreign_term_occurrences": 705,
     "repository_body_occurrences": 649,
-    "repository_heading_occurrences": 59
+    "repository_heading_occurrences": 56,
+    "repository_automated_blocked_pairs": 65,
+    "repository_automated_clear_pairs": 12
   },
   "tlh": {
-    "heading_findings": [
+    "heading_findings": [],
+    "body_findings": [],
+    "protected_term_occurrences": [
       {
-        "term": "metamorphosis",
-        "line": 13,
-        "policy": "must-be-localized-idiomatically"
+        "term": "Optimal",
+        "line": 17,
+        "section": "body",
+        "policy": "protected-audit-term-not-specialist-approved"
       }
-    ],
-    "body_findings": []
+    ]
   },
   "qya": {
-    "heading_findings": [
-      {
-        "term": "metamorphosis",
-        "line": 13,
-        "policy": "must-be-localized-idiomatically"
-      },
-      {
-        "term": "code",
-        "line": 13,
-        "policy": "must-be-localized-idiomatically"
-      }
-    ],
-    "body_findings": []
+    "heading_findings": [],
+    "body_findings": [],
+    "protected_term_occurrences": []
   },
   "progress_from_previous_baseline": {
     "removed_body_findings": 4,
+    "removed_heading_findings": 3,
     "tlh_body_before": 2,
     "tlh_body_after": 0,
+    "tlh_heading_before": 1,
+    "tlh_heading_after": 0,
     "qya_body_before": 2,
     "qya_body_after": 0,
-    "remaining_heading_findings": 3
+    "qya_heading_before": 2,
+    "qya_heading_after": 0,
+    "remaining_segment_findings": 0
   },
   "acceptance": {
     "body_findings_required": 0,
     "body_findings_met": true,
     "heading_findings_required": 0,
-    "heading_findings_met": false,
+    "heading_findings_met": true,
+    "mechanically_clear": true,
     "protected_proper_names": ["Prime Intellect"],
     "blind_allowlist": false,
-    "specialist_approval_required": true
+    "specialist_approval_required": true,
+    "specialist_approved": false
   }
 }
