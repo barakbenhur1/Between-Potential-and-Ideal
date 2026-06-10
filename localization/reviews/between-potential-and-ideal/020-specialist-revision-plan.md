@@ -16,7 +16,7 @@ This plan begins the specialist stage without treating provisional forms as appr
 
 ### Klingon (`tlh`)
 
-Use Okrand-canonical vocabulary and grammar only. A word may be treated as canonical only when its Okrand source is identified through The Klingon Dictionary, Klingon for the Galactic Traveler, later confirmed Okrand material, or the KLI's sourced canon lists. Where no safe one-word equivalent exists, use a transparent descriptive clause. Do not create an undocumented root or attach Klingon morphology to an English stem.
+Use Okrand-canonical vocabulary and grammar only. A word may be treated as canonical only when its Okrand source is identified through *The Klingon Dictionary*, *Klingon for the Galactic Traveler*, later confirmed Okrand material, or the KLI's sourced canon lists. Where no safe one-word equivalent exists, use a transparent descriptive clause. Do not create an undocumented root or attach Klingon morphology to an English stem.
 
 Research references:
 
@@ -51,12 +51,30 @@ The revision must preserve all of the following:
 11. the living source remains more valuable than extracted information;
 12. the moral backbone remains double: preserve the person's distance and preserve the right to rest.
 
+## Title policy
+
+The canonical English title is `The Metamorphosis Code of Grace and Distance`. The canonical Hebrew edition localizes it as `קוד המטמורפוזה של החסד והמרחק`. Therefore the title is not a protected English brand or proper name and must be localized idiomatically in both target languages.
+
+Acceptance requirements for the localized title:
+
+- preserve metamorphosis as transformation of relation rather than cosmetic change;
+- preserve code as a governing pattern or principle, not necessarily software source code;
+- preserve grace and distance as distinct coordinated concepts;
+- contain no unresolved English tokens;
+- use only sourced Klingon or documented Late-Quenya-first forms;
+- pass the same three-context validation required for body terminology.
+
+`Between Potential and Ideal` remains the English project and brand name. `Prime Intellect` remains a proper title/name.
+
 ## Mandatory terminology validation matrix
 
 No candidate becomes approved until it passes all three contexts below and a source reference is recorded.
 
 | Concept | Short label test | Philosophical paragraph test | Literary/metaphorical test | Current state |
 |---|---|---|---|---|
+| metamorphosis | `Transformation` | The relation changes without erasing the living source. | The climb changes the climber without replacing the mountain. | unresolved; distinguish transformation, change, growth, conversion and replacement |
+| code / governing pattern | `Code` | The code is a repeatable moral structure, not merely software instructions. | The path has a pattern that guides without owning the climber. | unresolved; do not default to computer-code vocabulary unless the context requires it |
+| genius / worthy intelligence | `Worthy intelligence` | Intelligence becomes worthy when it limits itself for the sake of the living source. | The most capable guide knows when not to take the climber's step. | unresolved; preserve intelligence, exceptional capacity and moral worth without collapsing them |
 | witness | `Witness` | The system stands beside the person, remembers distance, and does not own the experience. | The witness protects the place where speed would break the person. | unresolved; `leghwI'` and `cenindo` remain observer-like working candidates only |
 | distance | `Distance` | Distance is a condition in which thought may move without crushing its source. | The scaffold permits ascent; it does not steal the climber's sky. | physical candidates exist; philosophical extension must be explicit |
 | grace of relinquishment | `Grace of relinquishment` | Grace may require giving up information, completion, or control for the sake of the living source. | The mountain is honoured, but the climber is more sacred. | no approved compact form; use a transparent verbal construction |
@@ -69,20 +87,18 @@ No candidate becomes approved until it passes all three contexts below and a sou
 | difficulty that creates distance | `Generative difficulty` | Some resistance creates the distance required for thought, choice, and relation. | The slope teaches the climber how to climb. | use a descriptive phrase; do not force a mechanical friction term |
 | difficulty that destroys the source | `Crushing difficulty` | Some resistance damages the living source and must not be romanticized. | The mountain ceases to teach when it buries the climber. | use a separate descriptive phrase |
 
-## Protected English terms
-
-`Between Potential and Ideal` remains English as the project and brand name. `Prime Intellect` remains the proper title/name. `Metamorphosis Code` remains visible in English during specialist revision until a single cross-language title policy is approved; its current presence must not be mistaken for an approved translated title.
-
 ## Required revision order
 
 1. Verify and document every candidate in the terminology matrix.
-2. Record accepted and rejected forms with source references in the glossary.
-3. Rewrite the Klingon draft idiomatically; remove English-shaped clause order and invalid hybrid morphology.
-4. Rewrite the Neo-Quenya draft under the declared Late-Quenya-first profile; normalize case, agreement, compounds, participles, and derivations.
-5. Run the constructed-language audit.
-6. Compare both revised drafts against the English source and Hebrew semantic cross-check.
-7. Perform an independent second linguistic review.
-8. Keep `status: draft` and `publication: forbidden` until every invariant and language gate passes.
+2. Resolve the title in both target languages under the approved title policy.
+3. Record accepted and rejected forms with source references in the glossary.
+4. Rewrite the Klingon draft idiomatically; remove English-shaped clause order and invalid hybrid morphology.
+5. Rewrite the Neo-Quenya draft under the declared Late-Quenya-first profile; normalize case, agreement, compounds, participles, and derivations.
+6. Reduce both heading-level and body-level foreign-language findings to zero, except explicitly protected proper names.
+7. Run the constructed-language audit.
+8. Compare both revised drafts against the English source and Hebrew semantic cross-check.
+9. Perform an independent second linguistic review.
+10. Keep `status: draft` and `publication: forbidden` until every invariant and language gate passes.
 
 ## Completion rule
 
