@@ -5,7 +5,7 @@ on:
     branches: [bpi-localization-release]
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: local-constructed-language-test
@@ -13,46 +13,60 @@ concurrency:
 
 jobs:
   test:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        language: [tlh, qya]
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: bpi-localization-release
+          fetch-depth: 0
       - name: Install Ollama
         run: |
           curl -fsSL https://ollama.com/install.sh | sh
           nohup ollama serve > /tmp/ollama.log 2>&1 &
           for i in $(seq 1 30); do curl -fsS http://127.0.0.1:11434/api/tags && break || sleep 2; done
           ollama pull qwen2.5:1.5b
-      - name: Prepare prompt
-        env:
-          LANGUAGE: ${{ matrix.language }}
+      - name: Prepare source jobs
+        run: python3 tools/prepare_localization_ai_jobs.py
+      - name: Translate one fragment per language locally
         run: |
-          python3 tools/prepare_localization_ai_jobs.py
           python3 - <<'PY'
-          import json, os
+          import json, subprocess
           from pathlib import Path
-          lang=os.environ['LANGUAGE']
-          job=sorted(Path('reports/localization/ai-jobs').glob(f'translate-*-{lang}-*.json'))[0]
-          data=json.loads(job.read_text(encoding='utf-8'))
-          target={
-            'tlh': "Klingon (tlhIngan Hol) using Marc Okrand grammar. Use attested vocabulary and transparent descriptive phrases. Keep only names, URLs, citations and AI in English.",
-            'qya': "Neo-Quenya using a consistent Tolkienian Neo-Quenya profile. Use transparent descriptive phrases for modern concepts. Keep only names, URLs, citations and AI in English."
-          }[lang]
-          prompt=f'''You are a professional constructed-language translator. Translate the COMPLETE source into {target}\nReturn only Markdown. Preserve every paragraph, heading, list, image, quotation and dialogue label. Never summarize, omit, repeat filler, or explain.\n\nGLOSSARY:\n{data['glossary']}\n\nSOURCE:\n{data['source']}'''
-          Path('prompt.txt').write_text(prompt,encoding='utf-8')
-          Path('job-id.txt').write_text(data['job_id'],encoding='utf-8')
+
+          out = Path('reports/localization/local-model-test')
+          out.mkdir(parents=True, exist_ok=True)
+          targets = {
+              'tlh': "Klingon (tlhIngan Hol) using Marc Okrand grammar and attested vocabulary. Use transparent descriptive phrases where needed. Keep only names, URLs, citations, and AI in English.",
+              'qya': "Neo-Quenya using one consistent Tolkienian Neo-Quenya grammar profile. Use transparent descriptive phrases for modern concepts. Keep only names, URLs, citations, and AI in English.",
+          }
+          for lang in ('tlh', 'qya'):
+              job = sorted(Path('reports/localization/ai-jobs').glob(f'translate-*-{lang}-*.json'))[0]
+              data = json.loads(job.read_text(encoding='utf-8'))
+              prompt = f'''You are a meticulous professional constructed-language translator. Translate the COMPLETE SOURCE into {targets[lang]}
+Return only Markdown. Preserve every paragraph, heading, list, image, quotation, punctuation mark, and dialogue label. Never summarize, omit, repeat filler, or explain.
+
+GLOSSARY:
+{data['glossary']}
+
+SOURCE:
+{data['source']}'''
+              result = subprocess.run(
+                  ['ollama', 'run', 'qwen2.5:1.5b', prompt],
+                  check=True,
+                  capture_output=True,
+                  text=True,
+              )
+              translated = result.stdout.strip()
+              if len(translated) < max(200, int(len(data['source']) * 0.35)):
+                  raise SystemExit(f'incomplete local translation for {lang}: {len(translated)}')
+              (out / f'{data["job_id"]}.md').write_text(translated + '\n', encoding='utf-8')
+              (out / f'{data["job_id"]}.source.md').write_text(data['source'] + '\n', encoding='utf-8')
           PY
-      - name: Translate locally
+      - name: Commit test outputs
         run: |
-          ollama run qwen2.5:1.5b "$(cat prompt.txt)" > output.md
-          test -s output.md
-      - uses: actions/upload-artifact@v4
-        with:
-          name: local-model-test-${{ matrix.language }}
-          path: |
-            output.md
-            prompt.txt
-            job-id.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/localization/local-model-test
+          git commit -m "Record offline translation fallback test" || exit 0
+          git push origin HEAD:bpi-localization-release
