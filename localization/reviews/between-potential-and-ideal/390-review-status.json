@@ -1,0 +1,18 @@
+{
+  "segment": 390,
+  "id": "390-engineering-material-load-foundations",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "bounded-formulas-not-metaphysical-proof",
+    "blueprint-building-material-load-capacity-and-site",
+    "safety-factor-without-replacing-codes-or-probabilistic-design",
+    "stress-strain-and-Hooke-limited-to-simple-linear-context",
+    "cracks-as-information-requiring-interpretation"
+  ],
+  "summary": "The engineering, material, load, safety, deformation, crack, and foundation safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, technical terminology, morphology, and idiomatic syntax."
+}
