@@ -1,0 +1,93 @@
+name: Bulk Constructed Language Translation
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: bulk-constructed-translation-${{ github.sha }}
+  cancel-in-progress: false
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        language: [tlh, qya]
+        bundle: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install local model
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          nohup ollama serve >/tmp/ollama.log 2>&1 &
+          for i in $(seq 1 60); do curl -fsS http://127.0.0.1:11434/api/tags && break || sleep 2; done
+          ollama pull qwen2.5:3b
+      - name: Translate assigned fragments
+        env:
+          LANGUAGE: ${{ matrix.language }}
+          BUNDLE: ${{ matrix.bundle }}
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib,json,os,re,time,urllib.request
+          R=Path('.');lang=os.environ['LANGUAGE'];slot=int(os.environ['BUNDLE']);slots=20
+          profile={'tlh':"standard Klingon (tlhIngan Hol), canonical Latin spelling, attested vocabulary, OVS syntax, transparent descriptive clauses, neutral philosophical register",'qya':"literary Neo-Quenya in one conservative Late-Quenya profile, attested vocabulary, transparent descriptive phrases, consistent case number agreement and syntax"}[lang]
+          glossary={'tlh':"Potential=DuHmey Hoch; Ideal=DuH lo'laH; Optimal=ghu'vamvaD wIv QaQqu'; witness=leghwI'; living source=yInbogh mung; distance=chuq; truth=vIt; hope=tulghach",'qya':"Potential=ilyë i polir ná; Ideal=námië valda; witness=cenindo; living source=cuina ehtelë; distance=haiya; truth=anwië or naitië; hope=estel"}[lang]
+          long_sources={'stories-before-thought':R/'site/files/appendices/stories-before-thought-english.md','the-nauseating-truth':R/'site/files/appendices/haemet_hamavchila_final_publication_he.md','what-ai-believes':R/'site/files/ai-believes/what-ai-believes-en.md','when-i-am-also-you':R/'site/files/ai-believes/when-i-am-also-you-en.md','reverse-turing-conversation':R/'site/files/ai-believes/reverse-turing-conversation-en.md'}
+          def split_front(raw):
+            if raw.startswith('---\n'):
+              p=raw.split('---\n',2);return p[1].strip(),p[2].lstrip()
+            return '',raw
+          def body(raw):
+            fm,text=split_front(raw);marks=['\n## Segment review gate','\n## Placeholder review gate','\n## mIw qawmoHghach — Translation control note','\n## Enyalë Léo — Translation control note','\n## Translation control note'];pos=[text.find(x) for x in marks if text.find(x)>=0]
+            return fm,(text[:min(pos)] if pos else text).strip()
+          def chunks(text,limit=3400):
+            blocks=[x.strip() for x in re.split(r'\n\s*\n',text) if x.strip()];out=[];cur=[];size=0
+            for block in blocks:
+              parts=[block] if len(block)<=limit else [x.strip() for x in re.split(r'(?<=[.!?])\s+',block) if x.strip()]
+              for part in parts:
+                if cur and size+len(part)+2>limit:out.append('\n\n'.join(cur));cur=[];size=0
+                if len(part)>limit:
+                  if cur:out.append('\n\n'.join(cur));cur=[];size=0
+                  out += [part[i:i+limit] for i in range(0,len(part),limit)];continue
+                cur.append(part);size+=len(part)+2
+            if cur:out.append('\n\n'.join(cur))
+            return out
+          tasks=[]
+          base=R/f'localization/sources/{lang}/between-potential-and-ideal-{lang}.md';paths=[base,*sorted((base.parent/'between-potential-and-ideal').glob('*.md'))]
+          for path in paths:
+            if 'placeholder' in path.name:continue
+            fm,text=body(path.read_text(encoding='utf-8'));parts=chunks(text)
+            for i,part in enumerate(parts):tasks.append({'kind':'rewrite','target':str(path),'front':fm,'i':i,'n':len(parts),'text':part})
+          for package,path in long_sources.items():
+            parts=chunks(path.read_text(encoding='utf-8'))
+            for i,part in enumerate(parts):tasks.append({'kind':'translate','package':package,'target':f'localization/sources/{lang}/{package}-{lang}.md','front':'','i':i,'n':len(parts),'text':part})
+          selected=[t for index,t in enumerate(tasks) if index%slots==slot];out=Path('results');out.mkdir()
+          for t in selected:
+            verb='Rewrite' if t['kind']=='rewrite' else 'Translate'
+            prompt=f'''{verb} the COMPLETE Markdown fragment into {profile}. Return only target-language Markdown. Preserve every heading, paragraph, list, image path, link, quotation, formula, code, personal name and order. Keep Between Potential and Ideal, URLs, citations, abbreviations and formal theory names. Remove ordinary English, Spanish, Portuguese and Hebrew prose unless the original deliberately quotes it. Never summarize, omit, explain, repeat filler or stop early. Terminology: {glossary}\n\nSOURCE:\n{t['text']}'''
+            value=''
+            for attempt in range(3):
+              payload=json.dumps({'model':'qwen2.5:3b','prompt':prompt,'stream':False,'options':{'temperature':0.1,'num_predict':3200,'num_ctx':8192,'repeat_penalty':1.18}}).encode();req=urllib.request.Request('http://127.0.0.1:11434/api/generate',data=payload,headers={'Content-Type':'application/json'})
+              try:
+                with urllib.request.urlopen(req,timeout=1500) as response:value=json.load(response)['response'].strip()
+              except Exception:time.sleep(10);continue
+              value=re.sub(r'^```(?:markdown|md|text)?\s*|\s*```$','',value,flags=re.I|re.S).strip()
+              if len(value)>=max(100,int(len(t['text'])*.35)) and len(set(re.findall(r"[\w'’-]+",value.lower())))>=10:break
+              prompt+='\nYour previous answer was incomplete. Preserve every source block and complete the whole fragment.'
+            else:raise SystemExit('generation failed')
+            t.update({'translated':value,'language':lang});key=hashlib.sha256((t['target']+str(t['i'])).encode()).hexdigest()[:20];(out/f'{key}.json').write_text(json.dumps(t,ensure_ascii=False)+'\n',encoding='utf-8')
+          print('completed',len(selected),'of',len(tasks))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: constructed-translation-${{ matrix.language }}-${{ matrix.bundle }}
+          path: results/
+          retention-days: 3
