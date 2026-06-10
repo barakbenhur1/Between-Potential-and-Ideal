@@ -13,9 +13,9 @@ import shutil
 ROOT = Path(__file__).resolve().parents[1]
 JOBS_DIR = ROOT / "reports" / "localization" / "ai-jobs"
 CACHE_DIR = ROOT / "localization" / "translation-cache"
-CACHE_SCHEMA = "constructed-languages-6000-gpt41-test-v1"
-BATCH_SIZE = 1
-MODELS = ("openai/gpt-4.1",)
+CACHE_SCHEMA = "constructed-languages-release-6000-v1"
+BATCH_SIZE = 228
+MODELS = {"qya": "openai/gpt-4.1", "tlh": "openai/gpt-4.1-mini"}
 TARGETS = {
     "tlh": (
         "Klingon (tlhIngan Hol), using canonical Marc Okrand grammar and attested vocabulary. "
@@ -102,16 +102,15 @@ def main() -> int:
 
     pending = [(path, data) for path, data, cached in jobs if not cached]
     batch = pending[:BATCH_SIZE]
-    include = []
-    for index, (path, data) in enumerate(batch):
-        include.append(
-            {
-                "id": data["job_id"],
-                "input": path.name,
-                "language_mode": TARGETS[data["language"]],
-                "model": MODELS[index % len(MODELS)],
-            }
-        )
+    include = [
+        {
+            "id": data["job_id"],
+            "input": path.name,
+            "language_mode": TARGETS[data["language"]],
+            "model": MODELS[data["language"]],
+        }
+        for path, data in batch
+    ]
     (JOBS_DIR / "matrix.json").write_text(
         json.dumps({"include": include}) + "\n", encoding="utf-8"
     )
@@ -124,7 +123,7 @@ def main() -> int:
         "cached": len(jobs) - len(pending),
         "pending": len(pending),
         "batch": len(batch),
-        "models": list(MODELS),
+        "models": MODELS,
         "cache_schema": CACHE_SCHEMA,
     }
     (JOBS_DIR / "status.json").write_text(
