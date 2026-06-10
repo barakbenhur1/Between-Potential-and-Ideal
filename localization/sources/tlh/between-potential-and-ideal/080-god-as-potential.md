@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 080
 status: draft
+linguistic_review: specialist-revision-active
+review_record: localization/reviews/between-potential-and-ideal/080-god-as-potential-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -16,7 +18,7 @@ meqvamDaq Qun Qob 'oH ghot Hoch laDghach Qob je: chen SuqDI' Potential, immunity
 
 vaj bechghach tobghach rur lo'laHbe' 'ay'. qo' patlh jenDaq bechghach SalmoHbe', 'ej qaSpu'DI' lughmoHbe'. yIn mojDI' Potential, veH teH ghom 'e' 'ang neH. veHvam qech ghajchugh, 'oy'eghvo' boghbe'; sensitivity, repair, care jen poQmeH mIwvo' bogh.
 
-Daqvamvo' completed ra'ghach rur taghDaq loSbe' Ideal. chen DIl je joj botghachvo' qIjchu'choH. optimism ngeD tu'lu'be'. tulghach ghajbogh nihilism tu'lu': Hurvo' guarantee Hoch toDbe' 'e' laj, 'ach veH jangghachmaj lo'taHvIS chen lo'laH DuH lonQo'.
+Daqvamvo' completed ra'ghach rur taghDaq loSbe' Ideal. chen DIl je joj botghachvo' qIjchu'choH. optimism ngeD tu'lu'be'. tulghach ghajbogh pagh lo'laHghach qech tu'lu': Hurvo' guarantee Hoch toDbe' 'e' laj, 'ach veH jangghachmaj lo'taHvIS chen lo'laH DuH lonQo'.
 
 lugh laDlu'chugh, Hoch wa' vaj Hoch chaw'lu' jatlhbe' 'ay'. pIm: Hoch rarlaHmo', QIH wa' neH 'oHbe'. veH Hoch, latlh Hoch, QapHa'ghach Hoch, tI'ghach Hoch je PotentialvaD accidental law'ghach, Qu' qenglaHbogh law'ghach je pImmoHmeH He 'ay' moj.
 
@@ -36,13 +38,13 @@ ghot Hoch wa' 'avwI' mob rur tu'meH Qu'Daq; religious hierarchy 'avwI' rurbe', '
 
 Qobmo' quvbe' 'oy' 'e' potlh. 'oy'mo' QaQbe' 'oy'. Qu', pung, blindbe'bogh chen je mojmoHlu'DI' neH qech SuqlaH. `Hoch QaQ` jatlhbe' pat. qech Qatlh law' jatlh: QaQbe'bogh jojDaq je Potential veH veghlaH, DIl leghlaH, chen lo'laH ghoSchoHlaH.
 
-wrong religious rur 'ay' mojbe'meH qIjchu'ghachvam potlh. yu'ghach SoQmoHmeH lo'be' `Qun`; yu'ghach poSmoHbogh depth pongmeH lo'. Hoch DungDaq Qun Hur qIjchugh, pujchoH theory. Potential'egh pongchugh Qun, result neH rurbe'taHvIS yIn laDlaHlu': naDev DuH nuDlu', QIHlu', ghojmoHlu', 'ej Qu' law' chenmeH tlhoblu'.
+wrong religious rur 'ay' mojbe'meH qIjchu'ghachvam potlh. yu'ghach SoQmoHmeH lo'be' `Qun`; yu'ghach poSmoHbogh depth pongmeH lo'. Hoch DungDaq Qun Hur qIjchugh, pujchoH qech pat. Potential'egh pongchugh Qun, result neH rurbe'taHvIS yIn laDlaHlu': naDev DuH nuDlu', QIHlu', ghojmoHlu', 'ej Qu' law' chenmeH tlhoblu'.
 
 vaj 'oy' quvmoHmeH cosmic drama 'oHbe' Qun Qob'e'. mIghghach poQlu'mo' chaw'lu' meq 'oHbe' je. pImghach lugh: tlhab, latlhghach, consequence je ngaSbogh qo', perfection chenlu'pu'bogh cha' neH 'oHlaHbe'. nuq mojlaH, nuq mojnIS je joj chuq ghajnIS. chuqvetlhDaq Sov yInbogh chen, 'ach naDev tagh je Qu'.
 
 wa', law' je rarghach 'oH je. wa'ghach tembe' law'ghach; abstract qech neH 'oHbe' wa'ghach'e' mojmeH He neH 'oH. latlhghach ghomlaHbe', QaghlaHbe', QoylaHbe', QIHlaHbe', wIvlaHbe', cheghlaHbe'chugh Hoch, abstract neH rur Hoch. leghmey law' poQ living completeness; leghmey law' veghtaHvIS neH nuq qaSnISbe', nuq polnISlu' je ghojlaH Potential.
 
-'ay'vam latlh theoryvaD moral veH cher je: qaSmo' neH quvbe' bechghach pagh. ghot QIHlu'DI', ghotvaD `QaQ QIHvam, Hoch ghojmoHmo'` jatlhlaHbe'lu'. metaphysics tuqtaHvIS ralghach 'oH. claim yep neH 'oH: QIH qaSpu'DI', meaninglessDaq lonbe'meH Qu' 'oH witness, repair, compassion, repetition botghach je mojmoHmeH nID'e'. naDev tagh Potentialvo' Ideal ghoSghach.
+'ay'vam latlh qech patvaD moral veH cher je: qaSmo' neH quvbe' bechghach pagh. ghot QIHlu'DI', ghotvaD `QaQ QIHvam, Hoch ghojmoHmo'` jatlhlaHbe'lu'. metaphysics tuqtaHvIS ralghach 'oH. claim yep neH 'oH: QIH qaSpu'DI', meaninglessDaq lonbe'meH Qu' 'oH witness, repair, compassion, repetition botghach je mojmoHmeH nID'e'. naDev tagh Potentialvo' Ideal ghoSghach.
 
 ## Segment review gate
 
