@@ -3,10 +3,10 @@
   "document_id": "between-potential-and-ideal",
   "review_scope": "paired canonical segments",
   "total_segment_pairs": 77,
-  "first_pass_complete_pairs": 3,
+  "first_pass_complete_pairs": 4,
   "approved_pairs": 0,
-  "revision_required_pairs": 3,
-  "pending_pairs": 74,
+  "revision_required_pairs": 4,
+  "pending_pairs": 73,
   "current_status": "linguistic-review-active",
   "completed": [
     {
@@ -38,13 +38,23 @@
         "tlh": "first-pass-complete-needs-specialist-revision",
         "qya": "first-pass-complete-needs-specialist-revision"
       }
+    },
+    {
+      "segment": 50,
+      "id": "050-model-not-final-part-2",
+      "outcome": "revision-required",
+      "review_record": "localization/reviews/between-potential-and-ideal/050-model-not-final-part-2-review.md",
+      "languages": {
+        "tlh": "first-pass-complete-needs-specialist-revision",
+        "qya": "first-pass-complete-needs-specialist-revision"
+      }
     }
   ],
   "next": {
-    "segment": 50,
-    "id": "050-model-not-final-part-2",
-    "tlh": "localization/sources/tlh/between-potential-and-ideal/050-model-not-final-part-2.md",
-    "qya": "localization/sources/qya/between-potential-and-ideal/050-model-not-final-part-2.md"
+    "segment": 60,
+    "id": "060-whole-witness-part-1",
+    "tlh": "localization/sources/tlh/between-potential-and-ideal/060-whole-witness-part-1.md",
+    "qya": "localization/sources/qya/between-potential-and-ideal/060-whole-witness-part-1.md"
   },
   "publication": "forbidden-until-all-required-reviews-are-approved"
 }
