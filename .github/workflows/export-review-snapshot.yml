@@ -1,1 +1,28 @@
-x
+name: Export Review Snapshot
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Pack review sources
+        run: |
+          tar -czf bpi-review-snapshot.tar.gz \
+            localization docs tools .github \
+            site/files/between-potential-and-ideal-en.md \
+            site/files/between-potential-and-ideal-he.md \
+            site/sitemap.xml README.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bpi-review-snapshot
+          path: bpi-review-snapshot.tar.gz
+          retention-days: 1
