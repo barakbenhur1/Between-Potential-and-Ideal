@@ -1,0 +1,10 @@
+{
+  "segment": 740,
+  "id": "740-placeholder-application",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "summary": "The paired placeholder files match exactly and remain blocked until the canonical source receives content."
+}
