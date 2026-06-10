@@ -3,10 +3,10 @@
   "document_id": "between-potential-and-ideal",
   "review_scope": "paired canonical segments",
   "total_segment_pairs": 77,
-  "first_pass_complete_pairs": 2,
+  "first_pass_complete_pairs": 3,
   "approved_pairs": 0,
-  "revision_required_pairs": 2,
-  "pending_pairs": 75,
+  "revision_required_pairs": 3,
+  "pending_pairs": 74,
   "current_status": "linguistic-review-active",
   "completed": [
     {
@@ -28,13 +28,23 @@
         "tlh": "first-pass-complete-needs-specialist-revision",
         "qya": "first-pass-complete-needs-specialist-revision"
       }
+    },
+    {
+      "segment": 40,
+      "id": "040-model-not-final-part-1",
+      "outcome": "revision-required",
+      "review_record": "localization/reviews/between-potential-and-ideal/040-model-not-final-part-1-review.md",
+      "languages": {
+        "tlh": "first-pass-complete-needs-specialist-revision",
+        "qya": "first-pass-complete-needs-specialist-revision"
+      }
     }
   ],
   "next": {
-    "segment": 40,
-    "id": "040-model-not-final-part-1",
-    "tlh": "localization/sources/tlh/between-potential-and-ideal/040-model-not-final-part-1.md",
-    "qya": "localization/sources/qya/between-potential-and-ideal/040-model-not-final-part-1.md"
+    "segment": 50,
+    "id": "050-model-not-final-part-2",
+    "tlh": "localization/sources/tlh/between-potential-and-ideal/050-model-not-final-part-2.md",
+    "qya": "localization/sources/qya/between-potential-and-ideal/050-model-not-final-part-2.md"
   },
   "publication": "forbidden-until-all-required-reviews-are-approved"
 }
