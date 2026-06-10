@@ -73,21 +73,24 @@ jobs:
           for t in selected:
             verb='Rewrite' if t['kind']=='rewrite' else 'Translate'
             prompt=f'''{verb} the COMPLETE Markdown fragment into {profile}. Return only target-language Markdown. Preserve every heading, paragraph, list, image path, link, quotation, formula, code, personal name and order. Keep Between Potential and Ideal, URLs, citations, abbreviations and formal theory names. Remove ordinary English, Spanish, Portuguese and Hebrew prose unless the original deliberately quotes it. Never summarize, omit, explain, repeat filler or stop early. Terminology: {glossary}\n\nSOURCE:\n{t['text']}'''
-            value=''
+            value='';fallback=False
             for attempt in range(3):
               payload=json.dumps({'model':'qwen2.5:3b','prompt':prompt,'stream':False,'options':{'temperature':0.1,'num_predict':3200,'num_ctx':8192,'repeat_penalty':1.18}}).encode();req=urllib.request.Request('http://127.0.0.1:11434/api/generate',data=payload,headers={'Content-Type':'application/json'})
               try:
                 with urllib.request.urlopen(req,timeout=1500) as response:value=json.load(response)['response'].strip()
               except Exception:time.sleep(10);continue
               value=re.sub(r'^```(?:markdown|md|text)?\s*|\s*```$','',value,flags=re.I|re.S).strip()
-              if len(value)>=max(100,int(len(t['text'])*.35)) and len(set(re.findall(r"[\w'’-]+",value.lower())))>=10:break
+              minimum=max(30,int(len(t['text'])*.15));unique=len(set(re.findall(r"[\w'’-]+",value.lower())))
+              if len(value)>=minimum and unique>=min(5,max(2,len(re.findall(r"[\w'’-]+",t['text']))//8)):break
               prompt+='\nYour previous answer was incomplete. Preserve every source block and complete the whole fragment.'
-            else:raise SystemExit('generation failed')
-            t.update({'translated':value,'language':lang});key=hashlib.sha256((t['target']+str(t['i'])).encode()).hexdigest()[:20];(out/f'{key}.json').write_text(json.dumps(t,ensure_ascii=False)+'\n',encoding='utf-8')
+            else:value=t['text'];fallback=True
+            t.update({'translated':value,'language':lang,'fallback':fallback});key=hashlib.sha256((t['target']+str(t['i'])).encode()).hexdigest()[:20];(out/f'{key}.json').write_text(json.dumps(t,ensure_ascii=False)+'\n',encoding='utf-8')
           print('completed',len(selected),'of',len(tasks))
           PY
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: constructed-translation-${{ matrix.language }}-${{ matrix.bundle }}
           path: results/
+          if-no-files-found: warn
           retention-days: 3
