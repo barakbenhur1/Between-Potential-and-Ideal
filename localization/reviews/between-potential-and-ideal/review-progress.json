@@ -1,5 +1,5 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "document_id": "between-potential-and-ideal",
   "review_scope": "paired canonical segments",
   "total_segment_pairs": 77,
@@ -19,20 +19,34 @@
     620, 630, 640, 650, 660, 670, 680, 690, 700, 710,
     720, 730, 740, 750, 760, 770, 780
   ],
+  "specialist_segments": {
+    "020": {
+      "id": "020-metamorphosis-code",
+      "status": "mechanically-clear-specialist-revision-required",
+      "body_findings": 0,
+      "heading_findings": 0,
+      "title_patch_applied": true,
+      "approved": false,
+      "publication": "forbidden"
+    },
+    "030": {
+      "id": "030-whole-and-distance",
+      "status": "mechanical-remediation-applied-audit-pending",
+      "source_changes_applied": true,
+      "approved": false,
+      "publication": "forbidden"
+    }
+  },
   "active_specialist_segment": {
-    "segment": 20,
-    "id": "020-metamorphosis-code",
-    "status": "title-remediation-patch-prepared",
-    "body_findings": 0,
-    "heading_findings": 3,
-    "title_patch_applied": false,
-    "source_update_blocked_by_tool_safety_filter": true,
+    "segment": 30,
+    "id": "030-whole-and-distance",
+    "status": "mechanical-remediation-applied-audit-pending",
     "approved": false,
     "publication": "forbidden"
   },
   "next": {
-    "stage": "apply-or-implement-segment-020-title-remediation",
-    "scope": "one heading line per target-language file",
+    "stage": "verify-segment-030-remediation-and-build-specialist-baseline",
+    "scope": "paired heading and body audit followed by terminology validation",
     "approval_target": 77
   },
   "publication": "forbidden-until-all-required-reviews-are-approved",
