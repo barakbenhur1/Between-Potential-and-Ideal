@@ -1,5 +1,5 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "document_id": "between-potential-and-ideal",
   "review_scope": "paired canonical segments",
   "total_segment_pairs": 77,
@@ -25,6 +25,8 @@
     "status": "title-remediation-patch-prepared",
     "body_findings": 0,
     "heading_findings": 3,
+    "title_patch_applied": false,
+    "source_update_blocked_by_tool_safety_filter": true,
     "approved": false,
     "publication": "forbidden"
   },
