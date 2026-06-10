@@ -7,7 +7,7 @@ import shutil
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "reports" / "localization" / "ai-jobs"
 LANGUAGES = ("tlh", "qya")
-LIMIT = 700
+LIMIT = 4500
 SOURCES = {
     "stories-before-thought": "site/files/appendices/stories-before-thought-english.md",
     "the-nauseating-truth": "site/files/appendices/haemet_hamavchila_final_publication_he.md",
@@ -45,8 +45,8 @@ def split_text(text):
 
 def compact_glossary(language):
     if language == "tlh":
-        return "Potential=DuHmey Hoch; Ideal=morally worthy clarified possibility; Optimal=Ideal under real constraints; living source=yInbogh mung; witness=leghwI' (descriptive use); distance=chuq (explicit philosophical metaphor)."
-    return "Potential=field of possibilities; Ideal=morally clarified worthy possibility; Optimal=local form under constraints; living source=cuina celu; witness=Astarmo (descriptive use); distance=haiya (philosophical extension)."
+        return "Potential=DuHmey Hoch; Ideal=morally worthy clarified possibility; Optimal=Ideal under real constraints; living source=yInbogh mung; witness=leghwI' (descriptive use); distance=chuq (explicit philosophical metaphor); User=lo'wI'; Assistant=AI."
+    return "Potential=field of possibilities; Ideal=morally clarified worthy possibility; Optimal=local form under constraints; living source=cuina celu; witness=Astarmo (descriptive use); distance=haiya (philosophical extension); User=Maquetando; Assistant=AI."
 
 
 def main():
@@ -54,7 +54,7 @@ def main():
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True)
     matrix = []
-    plan = {"schema_version": 4, "jobs": [], "packages": {}}
+    plan = {"schema_version": 5, "jobs": [], "packages": {}}
     for package, source_name in SOURCES.items():
         source = ROOT / source_name
         chunks = split_text(read(source))
@@ -80,6 +80,8 @@ def main():
                 plan["jobs"].append(
                     {"id": job_id, "package": package, "language": language, "chunk": index}
                 )
+    if len(matrix) > 256:
+        raise SystemExit(f"GitHub matrix limit exceeded: {len(matrix)} jobs")
     (OUT / "matrix.json").write_text(
         json.dumps({"include": matrix}) + "\n", encoding="utf-8"
     )
