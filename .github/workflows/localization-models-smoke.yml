@@ -2,8 +2,6 @@ name: Localization Models Smoke
 
 on:
   workflow_dispatch:
-  pull_request:
-    branches: [ main ]
 
 permissions:
   contents: read
@@ -13,19 +11,14 @@ jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          show-progress: false
-      - name: Create tiny input
-        run: |
-          mkdir -p reports/localization/diagnostic
-          echo '{"source":"Hello"}' > reports/localization/diagnostic/tiny.json
-      - id: prompt_file
+      - id: inference
         uses: actions/ai-inference@v1
         with:
-          prompt-file: .github/prompts/localization-batch.prompt.yml
-          input: |
-            job_id: diagnostic
-            language_mode: tlh
-          file_input: |
-            job: reports/localization/diagnostic/tiny.json
+          prompt: "Return exactly GITHUB_MODELS_OK and nothing else."
+          model: openai/gpt-4o-mini
+          max-completion-tokens: 16
+          temperature: 0
+      - name: Verify result
+        env:
+          RESPONSE: ${{ steps.inference.outputs.response }}
+        run: test "$RESPONSE" = "GITHUB_MODELS_OK"
