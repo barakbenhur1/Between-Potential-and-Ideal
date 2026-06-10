@@ -3,25 +3,27 @@
   "document_id": "between-potential-and-ideal",
   "review_scope": "paired canonical segments",
   "total_segment_pairs": 77,
-  "reviewed_pairs": 51,
-  "first_pass_complete_pairs": 51,
+  "reviewed_pairs": 77,
+  "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
-  "revision_required_pairs": 51,
-  "pending_pairs": 26,
-  "current_status": "linguistic-review-active",
+  "revision_required_pairs": 77,
+  "pending_pairs": 0,
+  "current_status": "first-pass-complete-specialist-revision-required",
   "completed_segments": [
     20, 30, 40, 50, 60, 70, 80, 90, 100, 110,
     120, 130, 140, 150, 160, 170, 180, 190, 200, 210,
     220, 230, 240, 250, 260, 270, 280, 290, 300, 310,
     320, 330, 340, 350, 360, 370, 380, 390, 400, 410,
     420, 430, 440, 450, 460, 470, 480, 490, 500, 510,
-    520
+    520, 530, 540, 550, 560, 570, 580, 590, 600, 610,
+    620, 630, 640, 650, 660, 670, 680, 690, 700, 710,
+    720, 730, 740, 750, 760, 770, 780
   ],
   "next": {
-    "segment": 530,
-    "id": "530-gravity-holes-radiation",
-    "tlh": "localization/sources/tlh/between-potential-and-ideal/530-gravity-holes-radiation.md",
-    "qya": "localization/sources/qya/between-potential-and-ideal/530-gravity-holes-radiation.md"
+    "stage": "specialist-revision",
+    "scope": "all-77-paired-segments",
+    "first_segment": 20,
+    "approval_target": 77
   },
   "publication": "forbidden-until-all-required-reviews-are-approved",
   "authority": "canonical-review-progress"
