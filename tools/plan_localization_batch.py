@@ -13,9 +13,23 @@ import shutil
 ROOT = Path(__file__).resolve().parents[1]
 JOBS_DIR = ROOT / "reports" / "localization" / "ai-jobs"
 CACHE_DIR = ROOT / "localization" / "translation-cache"
-CACHE_SCHEMA = "constructed-languages-release-6000-v1"
+CACHE_SCHEMA = "constructed-languages-release-6000-v2"
 BATCH_SIZE = 228
-MODELS = {"qya": "openai/gpt-4.1", "tlh": "openai/gpt-4.1-mini"}
+MODELS = (
+    "openai/gpt-4.1",
+    "openai/gpt-4.1-mini",
+    "openai/gpt-4o",
+    "openai/gpt-4o-mini",
+    "cohere/cohere-command-a",
+    "meta/llama-3.3-70b-instruct",
+    "meta/llama-4-maverick-17b-128e-instruct-fp8",
+    "meta/llama-4-scout-17b-16e-instruct",
+    "mistral-ai/mistral-medium-2505",
+    "mistral-ai/mistral-small-2503",
+    "microsoft/phi-4",
+    "microsoft/phi-4-mini-instruct",
+    "deepseek/deepseek-v3-0324",
+)
 TARGETS = {
     "tlh": (
         "Klingon (tlhIngan Hol), using canonical Marc Okrand grammar and attested vocabulary. "
@@ -107,9 +121,9 @@ def main() -> int:
             "id": data["job_id"],
             "input": path.name,
             "language_mode": TARGETS[data["language"]],
-            "model": MODELS[data["language"]],
+            "model": MODELS[index % len(MODELS)],
         }
-        for path, data in batch
+        for index, (path, data) in enumerate(batch)
     ]
     (JOBS_DIR / "matrix.json").write_text(
         json.dumps({"include": include}) + "\n", encoding="utf-8"
@@ -123,7 +137,7 @@ def main() -> int:
         "cached": len(jobs) - len(pending),
         "pending": len(pending),
         "batch": len(batch),
-        "models": MODELS,
+        "models": list(MODELS),
         "cache_schema": CACHE_SCHEMA,
     }
     (JOBS_DIR / "status.json").write_text(
