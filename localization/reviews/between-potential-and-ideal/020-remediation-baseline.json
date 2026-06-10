@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "segment": 20,
   "source_paths": {
     "tlh": "localization/sources/tlh/between-potential-and-ideal/020-metamorphosis-code.md",
@@ -8,12 +8,18 @@
   "audit_tool_schema": 3,
   "automated_status": "blocked",
   "publication": "forbidden",
+  "title_policy": {
+    "english_source": "The Metamorphosis Code of Grace and Distance",
+    "hebrew_cross_check": "קוד המטמורפוזה של החסד והמרחק",
+    "decision": "must-be-localized-in-each-target-language",
+    "audit_exemption": false
+  },
   "tlh": {
     "heading_findings": [
       {
         "term": "metamorphosis",
         "line": 13,
-        "policy": "title-policy-pending"
+        "policy": "must-be-localized-idiomatically"
       }
     ],
     "body_findings": [
@@ -34,12 +40,12 @@
       {
         "term": "metamorphosis",
         "line": 13,
-        "policy": "title-policy-pending"
+        "policy": "must-be-localized-idiomatically"
       },
       {
         "term": "code",
         "line": 13,
-        "policy": "title-policy-pending"
+        "policy": "must-be-localized-idiomatically"
       }
     ],
     "body_findings": [
@@ -57,7 +63,8 @@
   },
   "acceptance": {
     "body_findings_required": 0,
-    "heading_findings": "zero-or-explicitly-resolved-by-shared-title-policy",
+    "heading_findings_required": 0,
+    "protected_proper_names": ["Prime Intellect"],
     "blind_allowlist": false,
     "specialist_approval_required": true
   }
