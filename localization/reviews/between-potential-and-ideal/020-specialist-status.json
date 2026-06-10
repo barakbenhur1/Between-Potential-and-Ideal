@@ -1,11 +1,25 @@
 {
+  "schema_version": 2,
   "segment": 20,
   "stage": "specialist-revision",
   "status": "terminology-validation-active",
   "approved": false,
   "publication": "forbidden",
+  "language_profiles": {
+    "tlh": "Okrand-canonical-only",
+    "qya": "Late-Quenya-first"
+  },
+  "title_policy": "localize-in-both-target-languages",
+  "protected_proper_names": ["Prime Intellect"],
   "revision_plan": "localization/reviews/between-potential-and-ideal/020-specialist-revision-plan.md",
   "terminology_supplement": "localization/glossaries/segment-020-specialist-terms.md",
+  "candidate_validation": "localization/reviews/between-potential-and-ideal/020-candidate-validation.json",
+  "remediation_baseline": "localization/reviews/between-potential-and-ideal/020-remediation-baseline.json",
+  "audit_requirements": {
+    "heading_findings_required": 0,
+    "body_findings_required": 0,
+    "second_review_required": true
+  },
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
