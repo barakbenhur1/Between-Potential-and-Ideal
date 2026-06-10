@@ -1,0 +1,10 @@
+{
+  "job_id": "translate-stories-before-thought-qya-003",
+  "package": "stories-before-thought",
+  "language": "qya",
+  "chunk_index": 3,
+  "chunk_count": 443,
+  "source_sha256": "dc153161bfa152b82fc424a5fa93113fcbe61999194c5b9be2e6accaf7709bef",
+  "origin": "recovered",
+  "review_status": "machine-assisted-experimental"
+}
