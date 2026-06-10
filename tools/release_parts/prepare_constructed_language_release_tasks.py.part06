@@ -1,0 +1,29 @@
+    return "\n\n".join(samples)[:2200].strip()
+
+
+def task_id(*parts: str) -> str:
+    return re.sub(r"[^a-zA-Z0-9._-]+", "-", "-".join(parts)).strip("-")
+
+
+def main() -> int:
+    shutil.rmtree(OUT, ignore_errors=True)
+    (OUT / "tasks").mkdir(parents=True)
+    (OUT / "bundles").mkdir(parents=True)
+    tasks: list[dict] = []
+
+    for language in LANGUAGES:
+        sample = style_sample(language)
+        base = ROOT / "localization/sources" / language / f"between-potential-and-ideal-{language}.md"
+        paths = [base, *sorted((base.parent / "between-potential-and-ideal").glob("*.md"))]
+        for path in paths:
+            if PLACEHOLDER_MARKER in path.name:
+                continue
+            raw = path.read_text(encoding="utf-8")
+            front, body = split_front_matter(raw)
+            translatable, control = split_control(body)
+            rewrite_chunks = markdown_chunks(translatable)
+            for index, chunk in enumerate(rewrite_chunks, 1):
+                identifier = task_id("rewrite", language, path.stem, f"{index:03d}")
+                task = {
+                    "id": identifier,
+                    "mode": "rewrite",
