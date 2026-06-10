@@ -7,7 +7,7 @@ import shutil
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "reports" / "localization" / "ai-jobs"
 LANGUAGES = ("tlh", "qya")
-LIMIT = 1500
+LIMIT = 6000
 SOURCES = {
     "stories-before-thought": "site/files/appendices/stories-before-thought-english.md",
     "the-nauseating-truth": "site/files/appendices/haemet_hamavchila_final_publication_he.md",
@@ -54,7 +54,7 @@ def main():
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True)
     matrix = []
-    plan = {"schema_version": 7, "jobs": [], "packages": {}}
+    plan = {"schema_version": 8, "jobs": [], "packages": {}}
     for package, source_name in SOURCES.items():
         source = ROOT / source_name
         chunks = split_text(read(source))
