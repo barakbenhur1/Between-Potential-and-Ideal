@@ -62,3 +62,7 @@ Rationale:
 2. Expected segment-020 result: `tlh_heading = 0`, `tlh_body = 0`, `qya_heading = 0`, `qya_body = 0`.
 3. Keep `status: draft`, `publication: forbidden`, and `approved: false`.
 4. Continue terminology validation and second review before any approval decision.
+
+## PR status note
+
+PR #6 must remain Draft while this patch is unapplied. The current source files still contain the three heading findings recorded in the remediation baseline.
