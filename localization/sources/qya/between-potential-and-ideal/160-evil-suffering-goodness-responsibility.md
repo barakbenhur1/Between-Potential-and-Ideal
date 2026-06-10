@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 160
 status: draft
+linguistic_review: specialist-revision-active
+review_record: localization/reviews/between-potential-and-ideal/160-evil-suffering-goodness-responsibility-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
