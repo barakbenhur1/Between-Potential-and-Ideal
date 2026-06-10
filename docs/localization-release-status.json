@@ -15,16 +15,18 @@
     "revision_required_pairs": 77
   },
   "automated_audit": {
-    "foreign_term_occurrences": 705,
-    "body_occurrences": 649,
-    "heading_occurrences": 56,
-    "blocked_pairs": 65,
-    "mechanically_clear_pairs": 12
+    "foreign_term_occurrences": 660,
+    "body_occurrences": 609,
+    "heading_occurrences": 51,
+    "blocked_pairs": 62,
+    "mechanically_clear_pairs": 15
   },
+  "mechanically_clear_specialist_segments": [20, 30, 40, 50],
   "current_specialist_segment": {
-    "segment": 20,
+    "segment": 50,
     "automated_state": "mechanically-clear",
     "linguistic_state": "revision-required",
     "approved": false
-  }
+  },
+  "next_mechanical_target": 60
 }
