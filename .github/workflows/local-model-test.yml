@@ -1,25 +1,20 @@
-name: Local Constructed Language Translation Test
+name: Draft Constructed-Language Translation Locally
 
 on:
-  push:
-    branches: [bpi-localization-release]
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: local-constructed-language-test
+  group: draft-constructed-language-translation
   cancel-in-progress: true
 
 jobs:
-  test:
-    if: github.actor != 'github-actions[bot]'
+  draft:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: bpi-localization-release
-          fetch-depth: 0
       - name: Install Ollama
         run: |
           curl -fsSL https://ollama.com/install.sh | sh
@@ -28,7 +23,7 @@ jobs:
           ollama pull qwen2.5:1.5b
       - name: Prepare source jobs
         run: python3 tools/prepare_localization_ai_jobs.py
-      - name: Translate one fragment per language locally
+      - name: Generate one review-only sample per language
         run: |
           python3 - <<'PY'
           import json, subprocess
@@ -37,14 +32,14 @@ jobs:
           out = Path('reports/localization/local-model-test')
           out.mkdir(parents=True, exist_ok=True)
           targets = {
-              'tlh': "Klingon (tlhIngan Hol) using Marc Okrand grammar and attested vocabulary. Use transparent descriptive phrases where needed. Keep only names, URLs, citations, and AI in English.",
-              'qya': "Neo-Quenya using one consistent Tolkienian Neo-Quenya grammar profile. Use transparent descriptive phrases for modern concepts. Keep only names, URLs, citations, and AI in English.",
+              'tlh': "Klingon (tlhIngan Hol) using Marc Okrand grammar and attested vocabulary. Use transparent descriptive phrases where needed.",
+              'qya': "Neo-Quenya using one consistent Tolkienian grammar and morphology profile. Use transparent descriptive phrases for modern concepts.",
           }
           for lang in ('tlh', 'qya'):
               job = sorted(Path('reports/localization/ai-jobs').glob(f'translate-*-{lang}-*.json'))[0]
               data = json.loads(job.read_text(encoding='utf-8'))
-              prompt = f'''You are a meticulous professional constructed-language translator. Translate the COMPLETE SOURCE into {targets[lang]}
-Return only Markdown. Preserve every paragraph, heading, list, image, quotation, punctuation mark, and dialogue label. Never summarize, omit, repeat filler, or explain.
+              prompt = f'''Translate the COMPLETE SOURCE into {targets[lang]}
+Return only Markdown. Preserve every paragraph and structural element. Never summarize, omit, repeat filler, or explain.
 
 GLOSSARY:
 {data['glossary']}
@@ -59,14 +54,13 @@ SOURCE:
               )
               translated = result.stdout.strip()
               if len(translated) < max(200, int(len(data['source']) * 0.35)):
-                  raise SystemExit(f'incomplete local translation for {lang}: {len(translated)}')
+                  raise SystemExit(f'incomplete sample for {lang}: {len(translated)}')
               (out / f'{data["job_id"]}.md').write_text(translated + '\n', encoding='utf-8')
               (out / f'{data["job_id"]}.source.md').write_text(data['source'] + '\n', encoding='utf-8')
           PY
-      - name: Commit test outputs
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reports/localization/local-model-test
-          git commit -m "Record offline translation fallback test" || exit 0
-          git push origin HEAD:bpi-localization-release
+      - uses: actions/upload-artifact@v4
+        with:
+          name: constructed-language-review-samples
+          path: reports/localization/local-model-test/
+          if-no-files-found: error
+          retention-days: 14
