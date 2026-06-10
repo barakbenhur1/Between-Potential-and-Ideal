@@ -1,0 +1,18 @@
+{
+  "segment": 320,
+  "id": "320-context-measurement-entanglement-bohm",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "Kochen-Specker-vs-relativism",
+    "measurement-vs-human-consciousness",
+    "entanglement-vs-emotional-or-telepathic-metaphor",
+    "structural-analogy-vs-physical-proof",
+    "Bohmian-framework-with-explicit-costs"
+  ],
+  "summary": "The technical and philosophical guardrails are preserved. Both drafts require specialist revision for extensive foreign-language contamination, technical terminology, morphology, and idiomatic syntax."
+}
