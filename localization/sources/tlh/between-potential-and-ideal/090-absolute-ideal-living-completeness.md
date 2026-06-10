@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 090
 status: draft
+linguistic_review: specialist-revision-active
+review_record: localization/reviews/between-potential-and-ideal/090-absolute-ideal-living-completeness-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -12,7 +14,7 @@ publication: forbidden
 
 naDev Hochchu'ghach 'oH Hap'e' ghajlaHlu'bogh 'e'be'. local ghu'majmo' ngoD naQbe' 'e' pong, 'ach ghu'vetlh qIlbe'. vaj Qagh cha' botnIS 'ay': private tasteDaq Ideal mIchmoHghach, 'ej ghu', poH, porgh je qelbe'bogh naghDaq freezeghach.
 
-yInbogh Hochghach 'oHbe' pagh Hutlhbogh Hochghach'e'; Hutlhghach ghaj 'ach ngabpu' rur ngebbe'taHvIS Hutlhghach lo'laHbogh Hochghach 'oH. nagh rur puS, lurgh rur law'. He pe'qa'laH lurgh 'ach fidelity pol; qo' teH HotDI' nagh ghor. meqvammo' closure rur IdealDaq yInbogh Ideal maS pat.
+yInbogh Hochghach 'oHbe' pagh Hutlhbogh Hochghach'e'; Hutlhghach ghaj 'ach ngabpu' rur ngebbe'taHvIS Hutlhghach lo'laHbogh Hochghach 'oH. nagh rur puS, lurgh rur law'. He pe'qa'laH lurgh 'ach matlhghach pol; qo' teH HotDI' nagh ghor. meqvammo' closure rur IdealDaq yInbogh Ideal maS pat.
 
 naDev Qu'Daj Suq Optimal. nuq lo'laH 'e' 'ang Ideal; DaH nuq ta'laHlu', lo'laHghachvetlh maghbe'taHvIS, 'e' yu' Optimal. Ideal puSmoHbe'; qo' teH ghu'mey jojDaq mugh. mung tambe' mughghach QaQ; 'ach mughlu'be'chugh mung mu'mey 'IH neH moj 'ej Qapbe'.
 
@@ -45,7 +47,7 @@ Hochchu'ghach, Ideal, Optimal je wa' patlhmey 'oHbe'.
 - **Optimal:** ghu' vuSlu'boghDaq Ideal mughlu'pu'bogh chen teH.
 - **YInbogh Hochghach:** veH, SIQghach, rarghach, Qu' je veghpu'DI' DuH naQghach.
 
-Ideal polmeH qo' teH qIlbe'lu'nIS. qo' teH qengmeH Ideal qIlbe'lu'nIS je. pImghachvam poltaHbogh vIHghach 'oH theory botlh'e'.
+Ideal polmeH qo' teH qIlbe'lu'nIS. qo' teH qengmeH Ideal qIlbe'lu'nIS je. pImghachvam poltaHbogh vIHghach 'oH qech pat botlh'e'.
 
 ## Segment review gate
 
