@@ -1,0 +1,23 @@
+    # front matter, disclosure/control blocks, headings with protected English
+    # titles, and any paragraph with obvious modern-language residue.
+    residue = {
+        "chapter", "capítulo", "frequency", "processing", "technical",
+        "revelation", "imitation", "interpretation", "contact", "dependent",
+        "calculation", "processor", "formula", "trace", "shortcut", "genius",
+        "optimal", "potential", "ideal", "metamorphosis", "code",
+    }
+    for name in ("020-metamorphosis-code.md", "030-whole-and-distance.md"):
+        _, body = split_front_matter((folder / name).read_text(encoding="utf-8"))
+        translatable, _ = split_control(body)
+        for block in re.split(r"\n\s*\n", translatable):
+            block = block.strip()
+            if not block or block.startswith(("#", ">")):
+                continue
+            words = {word.lower() for word in re.findall(r"[A-Za-zÀ-ÿ]+", block)}
+            if words & residue:
+                continue
+            samples.append(block)
+            if sum(len(item) for item in samples) >= 1800:
+                break
+        if sum(len(item) for item in samples) >= 1800:
+            break
