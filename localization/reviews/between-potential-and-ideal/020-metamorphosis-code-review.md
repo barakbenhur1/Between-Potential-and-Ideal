@@ -3,7 +3,7 @@ document_id: between-potential-and-ideal
 segment: 020
 review_type: paired-linguistic-specialist-revision
 languages: [tlh, qya]
-status: title-remediation-patch-prepared
+status: title-remediation-applied-audit-clear
 first_pass: complete
 outcome: revision-required
 publication: forbidden
@@ -20,9 +20,7 @@ title_remediation_patch: localization/reviews/between-potential-and-ideal/020-ti
 
 ## Current decision
 
-The paired first-pass review is complete and specialist revision has begun. The segment preserves the source architecture and central moral distinctions, but neither language is approved. Both drafts remain `draft` with `publication: forbidden`.
-
-A title-remediation patch is prepared but not yet applied to the source files because the available file-update path requires complete-file replacement, and complete-file replacement of the long constructed-language source files was blocked by the tool safety layer. The patch changes one heading line per target-language file and leaves the body untouched.
+The paired first-pass review is complete and specialist revision is active. The two provisional localized title lines have been applied and the line-aware audit now reports zero suspicious heading and body findings for segment 020 in both languages. This is mechanical clearance only: neither language is linguistically approved. Both drafts remain `draft` with `publication: forbidden`.
 
 The specialist stage is governed by:
 
@@ -30,7 +28,7 @@ The specialist stage is governed by:
 - [segment 020 terminology supplement](../../glossaries/segment-020-specialist-terms.md)
 - [segment 020 specialist status](020-specialist-status.json)
 - [segment 020 remediation baseline](020-remediation-baseline.json)
-- [020 title remediation patch](020-title-remediation.patch.md)
+- [020 title remediation patch record](020-title-remediation.patch.md)
 
 ## Source parity already passed
 
@@ -77,25 +75,26 @@ The localized title must preserve:
 
 ## Current verified automated baseline
 
-The latest verified segment-020 baseline shows:
+Workflow run `27294229090` on head `e410db1308fa1265619cf400d70c439903db6bfa` completed successfully.
 
 ### Klingon
 
-- heading line 13: one unresolved `metamorphosis` finding;
-- body: zero findings.
+- heading findings: zero;
+- body findings: zero;
+- `Optimal` is still reported only as a protected audit-term occurrence and remains subject to specialist judgment.
 
 ### Neo-Quenya
 
-- heading line 13: unresolved `metamorphosis` and `code` findings;
-- body: zero findings.
+- heading findings: zero;
+- body findings: zero.
 
-All heading findings must reach zero through idiomatic revision. They cannot be cleared by an allowlist. `Prime Intellect` is the only protected proper name relevant to this segment.
+Across the full paired repository baseline, the audit reports 705 foreign-term occurrences: 649 in bodies and 56 in headings. Sixty-five paired segments remain automatically blocked and twelve are mechanically clear. Mechanical clearance cannot be used as linguistic approval.
 
 ## Klingon blocking issues
 
 1. `leghwI'` remains provisional and may not carry the ethical role of witness.
 2. `chuq` is physical distance; any philosophical extension must be explicitly framed.
-3. The title still contains one unresolved English heading token.
+3. `Optimal` remains an English form protected from the mechanical blocker but has not been accepted by specialist review.
 4. Dense nominal chains and several `-ghach` formations require specialist syntax review.
 5. Object clauses, passive constructions, and English-shaped sentence order require normalization.
 6. The project still needs verified distinctions for transformation, governing pattern, final erasure, result, mechanism, spiritual collapse, and moral worth.
@@ -104,22 +103,19 @@ All heading findings must reach zero through idiomatic revision. They cannot be 
 
 1. The Late-Quenya-first profile must be applied consistently to the full segment.
 2. `haiya`, `lissë`, `Astarmo`, and `celu` remain provisional in their project senses.
-3. The title still contains two unresolved English heading tokens.
-4. `handassë` removed the body-level English `genius` findings mechanically, but it remains unresolved under the Late-Quenya-first profile.
-5. Project formations such as `mauya-cárië`, compounds for lived experience, and several abstract nouns remain unapproved.
-6. Case endings, participles, noun compounds, agreement, and word order require a full morphological rewrite pass.
-7. Transformation, governing pattern, exceptional intelligence, and moral worth require distinct verified constructions.
+3. `handassë` removed the body-level English `genius` findings mechanically, but it remains unresolved under the Late-Quenya-first profile.
+4. Project formations such as `mauya-cárië`, compounds for lived experience, and several abstract nouns remain unapproved.
+5. Case endings, participles, noun compounds, agreement, and word order require a full morphological rewrite pass.
+6. Transformation, governing pattern, exceptional intelligence, and moral worth require distinct verified constructions.
 
 ## Required next actions
 
-1. Apply the prepared title-remediation patch or implement an equivalent two-line source edit.
-2. Re-run the line-aware constructed-language audit.
-3. Confirm heading findings and body findings are both zero for segment 020.
-4. Validate every core term in the three mandatory contexts: label, philosophical paragraph, and literary sentence.
-5. Record accepted and rejected forms with source references.
-6. Rewrite both drafts under the declared profiles while preserving every invariant above.
-7. Compare the revised drafts with both the English source and Hebrew semantic cross-check.
-8. Require an independent second linguistic review before changing the approval state.
+1. Validate every core term—including both provisional title constructions—in the three mandatory contexts: label, philosophical paragraph, and literary sentence.
+2. Record accepted and rejected forms with source references.
+3. Rewrite both drafts under the declared profiles while preserving every invariant above.
+4. Compare the revised drafts with both the English source and Hebrew semantic cross-check.
+5. Re-run the line-aware audit after each substantive rewrite and preserve zero heading/body findings.
+6. Require an independent second linguistic review before changing the approval state.
 
 ## Project progress
 
@@ -127,4 +123,5 @@ All heading findings must reach zero through idiomatic revision. They cannot be 
 - Approved paired segments: **0 / 77**
 - Revision-required paired segments: **77 / 77**
 - Current specialist segment: `020-metamorphosis-code.md`
+- Segment 020 automated state: **mechanically clear, linguistically unapproved**
 - Publication state: **forbidden**
