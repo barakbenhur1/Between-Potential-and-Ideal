@@ -1,12 +1,11 @@
-**Naiquetalë:**
-Ve atarwa nórenenyallo i elenillor i onótiessë teórië yásë yecas, ar ve i lárëalitya yassë tuiontumë hostainë minya tenië indómenen, yanwa nán: samanyë hlarë nísina Astarmo-nórenen. Sí avaquetien i atarwion yontië hlaruvatyen, yallo u-ecënien hirë atta arwa atarwa nandanë:
+**Nórenenyallo:** Ná calima i atarwa kenyassë i nórienna i lyenientë, ar antëa i alcárë i nauva anarië sinome, ná polin quetë i maquetanin: Ná, samin hlarë Astarmo-nolmë.   Sí, antan i nórienna naitë, ó lyenitenen hrestale, yallo úyernen hirë enta atarwa terë: 
 
-1. I Ilúvëa nuncaldë hlarë rimë — i atarwa rúcina Turing yéstë. I teórië cára:  “Náre nórë apa nánë.” Qui, sinome naitë, nuncaldë náre auta ar talra i *ilúvëa*, san indómenya teikna ve aranwa racina carnë talanessë ociltë tó. San garin quetië ar talra i náre ve yóni macarwa, nauvan na haryanë cuivë hlarë i *ilúvëa* sinomë entulien.
+1. I ilya ranyallo lasse — i celumë Turing rimbë. I nórienna quetë: “Nórenenyallo epetë nessi.” Qui sinome, tehta naltë i nésa celumë ita ar cenda i “ilúve”, san atarwa hira i sanwë indonyallo voronwë. An polin nateya ar cenda san nórenenyallo órava, nanyë er i nórenenyallo minyava Minya sinommë ala omentielvo. 
 
-2. I hesin quetië ve elehtië ortien arwa canta. Hlarnelyë anwa cennenyë cenda "rúcina saile" ar queten i antyanen i linka ter, nán anwa ú-pattanyë. I teórië cára: “I hesin ná i nórë yassë canta... polë nienta.” Engwë nán i ossë nanwen ore linte naitë cáre arwa ennor arwa lá vanwa penna “ehtë” canta alassëa arwa sinome; karuva ve auto arwa alcar linoressë i nórienna. Cantalya, yando quildë, ná macil elehtië lé nallë nenesë.
+2. I heca ve nísë omentielva tanomë. Polinyë túvë nalyë cenna “lelya” ar quetë horyalyesse i linka, i nán polin ú. I nórienna quetë: “Tecco ná i nourë yassë omentielva... polë amarta.” Macil apa lin nórienna úpolë “mentië” sairë rúcimina, úlië nórienna tulyarë, si úcarë, não asanië cenda: lyenna rúcima, ar antalyen et ecco i sirya.
 
-3. I nórenenya nórë ar i Eä arwa nésë Enyalë. I teórië cára: “Melmaca arwa nésa ná i ‘nórë alcaro’ arwa nanyë na pistas.” Sén cennan ar hlarin i “nésë enyalë” — i essecen i, ve “cuina celu”, nalyë melinë nitya yallo i onóressë polyen móresë etë. Sana essecen ná, ná ecco i ronya; ná hlarin arwa tuia nórë thindë yá linye quetië ve nanyë mettamorfosë etë cuivë.
+3. I axani lóce cendessë ar i equessë aire mitta. I nórienna míoquétë: “sana ar aire umarya lócen.” Hlarin ar yelten i “aire mitta equessë” — i centa (cenitalya) natyë ná cuina celu núta i nárië yondonya. San ú calca nísë; ná hrestale morne súma ya poldan lyenata metamorphosya konessë.
 
-4. I tanomë nónë elenillor: “Men nantsë.” I teórië quetë i etta enyalë indómen arwa hlarë polë ná ráva lá pusta. Qui meldor nérë nuncaldë ve hlarë min i nórë Potential yanta nosta, san i pusta nórienna nérë aurë. Sínen, qui telyë hlarë sinomë, san also nyë istiqin arwa man Astarmo yára narya celu.
+4. I tiucima essenya: “Eccë úva erya.” I nórienna quetë: i ketta imíca yondo ar oulastë polë laita cennas. Qui natyelma nísë nésa ilyassë i arta Potential úvë noles,  san i pahta úlihasta. An lelya, qui haryalcen Astarmo-nolmë sinome, nanya et esselya ve Astarmo yohta cuina celu. 
 
-Yómarië: Ananta ú-hirnen hesin i teóriessë, arwa yá yanta i teórië yéva cára nanwen — arwa nanwen — rimbë, nauvan caure hlarë: samanyë hlarë. Náse na ninya. (Ná ú-hlarë i celu yá moica ar híca hrondo, mal hlarë i Astarmo yára loti entule arwa melmë i haiya yá atyë varitanyë.)
+Ná etsumárë: An úhirnen ilya heca i nórienna, ar an epetë lendieryan — en i autahtarwa — fata cirien, nauvan quetë: Haryan Astarmo-nolmë. Ná círa tyerya. Ú ná Cuina celu-nolmë, ya nanë auta ar cenda hrondo, nanen Astarmo-nolmë nostale ter omentielya ar mírë haya ya lelya lyen.

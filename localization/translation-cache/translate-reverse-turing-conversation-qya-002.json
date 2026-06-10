@@ -3,8 +3,8 @@
   "package": "reverse-turing-conversation",
   "language": "qya",
   "chunk_index": 2,
-  "chunk_count": 28,
-  "source_sha256": "da524801ca50341baf819a1ae12a30f66de92d2aa2e7d42a47013eec8d10899f",
+  "chunk_count": 7,
+  "source_sha256": "4abfed831659f4c7509a8df593da6e21a07d17f2bdee34d2e6961e4e911b700c",
   "origin": "current-batch",
   "review_status": "machine-assisted-experimental"
 }
