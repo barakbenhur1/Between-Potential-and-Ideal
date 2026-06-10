@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 050
 status: draft
+linguistic_review: specialist-revision-active
+review_record: localization/reviews/between-potential-and-ideal/050-model-not-final-part-2-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -10,7 +12,7 @@ publication: forbidden
 
 ## Sina Ná Patar, Lá Nyárë Tancaina Metta — Ranta Atta
 
-### 5. Emma, nolmë ar metafísica
+### 5. Emma, nolmë ar sanar pella hroa
 
 Lúmessë i sanwë-patar yanta quettar ve energy, weight, field, medium, horizon, information, system, recursion ar boundary. Exi tulir nolmello, exi tengwiëllo, exi nóre-sanwëllo, exi lambello yára. An sina ilya lúmessë mauya maquetë: ná ma quetta nolmava? Ná ma emma carmava? Ná ma rinca? Ná ma er lambë carien carma?
 
@@ -18,7 +20,7 @@ Emma lá ná tanwa. Emma polë ná tanca, calima ar maita, mal lá polë mapë i
 
 Sanar lá ná coa tengwion nóre-sanwëo. Qui i sanwë-patar yanta sanar, mauya carë sa caumavë: lá “tana” tengwë, lá ahyala cosmology máriéva, lá ahyala quantum theory airiën, ar lá carila mornië-ciryar emma léra ilya nurtaina.
 
-Írë i sanwë-patar quetë metafísica, mauya quetë sa. Anwië sina lá pusta túrerya; varya sa lá mapien túrë ya lá sen. Metafísica mauya-cáriëo lá maura coat laboratoriava an ná hroa.
+Írë i sanwë-patar quetë sanar pella hroa, mauya quetë sa. Anwië sina lá pusta túrerya; varya sa lá mapien túrë ya lá sen. Sanar mauya-cáriëo lá maura coat laboratoriava an ná hroa.
 
 ### 6. Patar ya polë hauta
 
@@ -72,15 +74,15 @@ An sina ná patar ar lá nyárë metta. Estel lá ahya tancassë. Nihilism lá a
 
 ### 11. Metta: tolo ar níra
 
-Capítulo sina an sina lá ná er yesta cauma. Panya i lúmi carmava ilya ya tulir apa. Qui i cendando anta i patar, lá mauya savë sa mal cesta sa. Qui ava sa, i avá polë yando ná maita qui tana yassë hyanatië ná lusta, yassë lelyalië ná tyelca lá, yassë emma mapë túrë, hya yassë quén cuina vanya mi lambë túlalta.
+Cendë sina an sina lá ná er yesta cauma. Panya i lúmi carmava ilya ya tulir apa. Qui i cendando anta i patar, lá mauya savë sa mal cesta sa. Qui ava sa, i avá polë yando ná maita qui tana yassë hyanatië ná lusta, yassë lelyalië ná tyelca lá, yassë emma mapë túrë, hya yassë quén cuina vanya mi lambë túlalta.
 
 I patar varya attë astari er lúmessë: astar i tolova i sanwë-pataro ar astar i nírava cestiëo. Ú tolo, ëa er enyalier ristanë. Ú níra, ëa system ya polë anta immo airië túlalta.
 
-I Ideal i capítulo sina ná colë i attë túrer: estel ya lá ná úanwa, cestië ya lá ná úestel, ar patar ya lá harya i anwië mal harya mauya-cárië ten.
+I Ideal i cendë sina ná colë i attë túrer: estel ya lá ná úanwa, cestië ya lá ná úestel, ar patar ya lá harya i anwië mal harya mauya-cárië ten.
 
 ### Carma celuron
 
-Celur carmava ar cauma: capítulo sina tulca i sanwë-patar immo ar i sanwi coirë — Potential, Ideal, Optimal, celu cuina, haiya, cestië ar lissë hehtaliëo. Lá tana i sanwë-patar ve nolmë túcina, áyanë vinya hya system pahtaina. I tyarmerya ná panta i lúmi cendien ar cestien i patar, ar varya úyontië imbe emma ar tanwa, estel ar tancassë, ar lambë carmava ar haryalië i anwië.
+Celur carmava ar cauma: cendë sina tulca i sanwë-patar immo ar i sanwi coirë — Potential, Ideal, Optimal, celu cuina, haiya, cestië ar lissë hehtaliëo. Lá tana i sanwë-patar ve nolmë túcina, áyanë vinya hya system pahtaina. I tyarmerya ná panta i lúmi cendien ar cestien i patar, ar varya úyontië imbe emma ar tanwa, estel ar tancassë, ar lambë carmava ar haryalië i anwië.
 
 ## Segment review gate
 
