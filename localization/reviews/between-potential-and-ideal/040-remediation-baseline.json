@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "segment": 40,
+  "source_paths": {
+    "tlh": "localization/sources/tlh/between-potential-and-ideal/040-model-not-final-part-1.md",
+    "qya": "localization/sources/qya/between-potential-and-ideal/040-model-not-final-part-1.md"
+  },
+  "audit_tool_schema": 3,
+  "automated_status": "clear",
+  "publication": "forbidden",
+  "verified_audit_run": {
+    "workflow_run_id": 27295729516,
+    "head_sha": "9326c363386318b9564718c633976dabec918b62",
+    "result": "success",
+    "repository_foreign_term_occurrences": 676,
+    "repository_body_occurrences": 623,
+    "repository_heading_occurrences": 53,
+    "repository_automated_blocked_pairs": 63,
+    "repository_automated_clear_pairs": 14
+  },
+  "before": {
+    "tlh_heading_findings": 0,
+    "tlh_body_findings": 13,
+    "qya_heading_findings": 0,
+    "qya_body_findings": 3,
+    "total_segment_findings": 16
+  },
+  "after": {
+    "tlh_heading_findings": 0,
+    "tlh_body_findings": 0,
+    "qya_heading_findings": 0,
+    "qya_body_findings": 0,
+    "total_segment_findings": 0
+  },
+  "acceptance": {
+    "heading_findings_required": 0,
+    "heading_findings_met": true,
+    "body_findings_required": 0,
+    "body_findings_met": true,
+    "mechanically_clear": true,
+    "specialist_approval_required": true,
+    "specialist_approved": false,
+    "independent_second_review_required": true
+  },
+  "known_unresolved_language_issues": [
+    "Klingon descriptive replacements require exact Okrand source locators and idiomatic clause review",
+    "Klingon model, system, representation, responsibility, domain and testimony terminology remains unstable",
+    "Neo-Quenya Cende and the replacement phrase for the drainage outlet remain provisional",
+    "Neo-Quenya still contains non-audit modern or borrowed forms such as theorem, quaestio, nihilism, aura and case that require profile decisions",
+    "Both drafts require full source-parity comparison and independent second review"
+  ]
+}
