@@ -1,0 +1,35 @@
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def split_front_matter(text: str) -> tuple[str, str]:
+    if not text.startswith("---\n"):
+        return "", text
+    parts = text.split("---\n", 2)
+    if len(parts) != 3:
+        raise SystemExit("Malformed front matter")
+    return parts[1].strip("\n"), parts[2].lstrip("\n")
+
+
+def split_control(body: str) -> tuple[str, str]:
+    markers = (
+        "\n## Segment review gate",
+        "\n## Placeholder review gate",
+        "\n## mIw qawmoHghach — Translation control note",
+        "\n## Enyalë Léo — Translation control note",
+        "\n## Translation control note",
+    )
+    positions = [(body.find(marker), marker) for marker in markers if body.find(marker) >= 0]
+    if not positions:
+        return body.rstrip(), ""
+    index, _ = min(positions)
+    return body[:index].rstrip(), body[index:].lstrip("\n")
+
+
+def markdown_chunks(text: str, limit: int = CHUNK_LIMIT) -> list[str]:
+    blocks = [block.strip() for block in re.split(r"\n\s*\n", text) if block.strip()]
+    chunks: list[str] = []
+    current: list[str] = []
+    size = 0
+    for block in blocks:
+        parts = [block]
+        if len(block) > limit:
