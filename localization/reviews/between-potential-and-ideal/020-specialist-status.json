@@ -1,8 +1,8 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "segment": 20,
   "stage": "specialist-revision",
-  "status": "terminology-validation-active",
+  "status": "title-remediation-patch-prepared",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -15,6 +15,12 @@
   "terminology_supplement": "localization/glossaries/segment-020-specialist-terms.md",
   "candidate_validation": "localization/reviews/between-potential-and-ideal/020-candidate-validation.json",
   "remediation_baseline": "localization/reviews/between-potential-and-ideal/020-remediation-baseline.json",
+  "title_remediation_patch": "localization/reviews/between-potential-and-ideal/020-title-remediation.patch.md",
+  "current_audit_state": {
+    "body_findings": 0,
+    "heading_findings": 3,
+    "heading_patch_applied": false
+  },
   "audit_requirements": {
     "heading_findings_required": 0,
     "body_findings_required": 0,
