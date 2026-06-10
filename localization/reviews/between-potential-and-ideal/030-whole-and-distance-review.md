@@ -3,21 +3,24 @@ document_id: between-potential-and-ideal
 segment: 030
 review_type: paired-linguistic-specialist-revision
 languages: [tlh, qya]
-status: mechanical-remediation-applied-audit-pending
+status: mechanically-clear-specialist-revision-required
 first_pass: complete
 outcome: revision-required
 publication: forbidden
 english_source: site/files/between-potential-and-ideal-en.md
 hebrew_cross_check: site/files/between-potential-and-ideal-he.md
+specialist_status: localization/reviews/between-potential-and-ideal/030-specialist-status.json
+remediation_baseline: localization/reviews/between-potential-and-ideal/030-remediation-baseline.json
+candidate_validation: localization/reviews/between-potential-and-ideal/030-candidate-validation.json
 ---
 
 # Linguistic review — 030 Whole and Distance
 
 ## Current decision
 
-The paired first-pass review is complete and specialist revision has started. A focused mechanical remediation pass removed the known English and Spanish insertions from both source drafts and normalized the chapter title against the provisional segment-020 title direction. The files remain `draft` with `publication: forbidden`.
+The paired first-pass review is complete and specialist revision is active. A focused mechanical remediation pass removed the known English and Spanish insertions from both source drafts and normalized the chapter title against the provisional segment-020 title direction. The files remain `draft` with `publication: forbidden`.
 
-This pass is not linguistic approval. Every replacement is provisional until source, morphology, syntax, semantic context and independent second review are complete.
+The line-aware audit completed successfully on workflow run `27295172366`, head `ac3a1f7ad78ea3f63c9b07d0312e7d76828cfa5e`. Segment 030 now has zero automated heading and body findings in both languages. This is mechanical clearance only, not linguistic approval.
 
 ## Source parity
 
@@ -79,6 +82,17 @@ The definite contamination and known English insertions were replaced provisiona
 
 The selected Late-Quenya-first profile is not yet satisfied. `Cendë`, `rinca`, `handassë`, the full title construction and all inflections require source-period, derivational and syntactic verification.
 
+## Verified automated result
+
+- Klingon heading findings: **0**
+- Klingon body findings: **0**
+- Neo-Quenya heading findings: **0**
+- Neo-Quenya body findings: **0**
+- Segment automated state: **clear**
+- Segment specialist state: **revision required**
+
+The repository-wide audit after this pass reports 692 foreign-term occurrences: 639 in bodies and 53 in headings. Sixty-four pairs remain automatically blocked and thirteen are mechanically clear.
+
 ## Remaining Klingon blockers
 
 1. `chuq` remains a physical-distance term extended philosophically without a stable metaphor-labeling convention.
@@ -98,18 +112,19 @@ The selected Late-Quenya-first profile is not yet satisfied. `Cendë`, `rinca`, 
 
 ## Required next actions
 
-1. Run the line-aware constructed-language audit and record the exact post-remediation baseline.
-2. Confirm that all previously detected heading and body blockers are removed without a blind allowlist.
-3. Create a segment-specific terminology worksheet for signature, resonance/frequency, processing, echo, interpretation, contact, experience, witness, source and moral priority.
-4. Record exact canonical sources and reject unsupported forms.
-5. Recast English-shaped syntax idiomatically in both languages.
-6. Compare the revised passages against both English and Hebrew.
-7. Require independent second review before changing approval state.
+1. Record exact canonical sources and reject unsupported forms in the candidate-validation worksheet.
+2. Pass every candidate through the short-label, philosophical-paragraph and literary-sentence tests.
+3. Recast English-shaped syntax idiomatically in both languages.
+4. Compare the revised passages against both English and Hebrew.
+5. Preserve zero automated findings after each substantive rewrite.
+6. Require independent second review before changing approval state.
 
 ## Project progress
 
 - Paired first-pass reviews completed: **77 / 77**
 - Approved paired segments: **0 / 77**
 - Revision-required paired segments: **77 / 77**
-- Active specialist segment: `030-whole-and-distance.md`
+- Segment 030 automated state: **mechanically clear**
+- Segment 030 linguistic state: **revision required**
+- Next mechanical-remediation target: `040-model-not-final-part-1.md`
 - Publication state: **forbidden**
