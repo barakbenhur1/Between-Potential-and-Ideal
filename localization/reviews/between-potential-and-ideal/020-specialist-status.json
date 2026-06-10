@@ -1,0 +1,12 @@
+{
+  "segment": 20,
+  "stage": "specialist-revision",
+  "status": "terminology-validation-active",
+  "approved": false,
+  "publication": "forbidden",
+  "revision_plan": "localization/reviews/between-potential-and-ideal/020-specialist-revision-plan.md",
+  "terminology_supplement": "localization/glossaries/segment-020-specialist-terms.md",
+  "first_pass_complete_pairs": 77,
+  "approved_pairs": 0,
+  "revision_required_pairs": 77
+}
