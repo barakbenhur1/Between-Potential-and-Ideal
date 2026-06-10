@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "segment": 30,
+  "source_paths": {
+    "tlh": "localization/sources/tlh/between-potential-and-ideal/030-whole-and-distance.md",
+    "qya": "localization/sources/qya/between-potential-and-ideal/030-whole-and-distance.md"
+  },
+  "audit_tool_schema": 3,
+  "automated_status": "clear",
+  "publication": "forbidden",
+  "verified_audit_run": {
+    "workflow_run_id": 27295172366,
+    "head_sha": "ac3a1f7ad78ea3f63c9b07d0312e7d76828cfa5e",
+    "result": "success",
+    "repository_foreign_term_occurrences": 692,
+    "repository_body_occurrences": 639,
+    "repository_heading_occurrences": 53,
+    "repository_automated_blocked_pairs": 64,
+    "repository_automated_clear_pairs": 13
+  },
+  "before": {
+    "tlh_heading_findings": 1,
+    "tlh_body_findings": 5,
+    "qya_heading_findings": 2,
+    "qya_body_findings": 5,
+    "total_segment_findings": 13
+  },
+  "after": {
+    "tlh_heading_findings": 0,
+    "tlh_body_findings": 0,
+    "qya_heading_findings": 0,
+    "qya_body_findings": 0,
+    "total_segment_findings": 0
+  },
+  "acceptance": {
+    "heading_findings_required": 0,
+    "heading_findings_met": true,
+    "body_findings_required": 0,
+    "body_findings_met": true,
+    "mechanically_clear": true,
+    "specialist_approval_required": true,
+    "specialist_approved": false,
+    "independent_second_review_required": true
+  },
+  "known_unresolved_language_issues": [
+    "Klingon replacement constructions require exact Okrand source locators and idiomatic syntax review",
+    "Klingon chuq and leghwI' remain provisional in their philosophical and ethical senses",
+    "Neo-Quenya haiya remains unsupported as the required abstract distance form",
+    "Neo-Quenya handasse remains incompatible with automatic Late-Quenya-first approval",
+    "Neo-Quenya Cende, rinca and the title morphology require original-source verification",
+    "Both drafts require bilingual semantic comparison and independent second review"
+  ]
+}
