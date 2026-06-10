@@ -1,0 +1,26 @@
+            parts = [part.strip() for part in re.split(r"(?<=[.!?])\s+|(?<=:)\s+(?=[A-Z])", block) if part.strip()]
+        for part in parts:
+            if current and size + len(part) + 2 > limit:
+                chunks.append("\n\n".join(current).strip())
+                current, size = [], 0
+            if len(part) > limit:
+                # Last-resort line-safe split for unusually long Markdown blocks.
+                for start in range(0, len(part), limit):
+                    piece = part[start:start + limit].strip()
+                    if current:
+                        chunks.append("\n\n".join(current).strip())
+                        current, size = [], 0
+                    if piece:
+                        chunks.append(piece)
+                continue
+            current.append(part)
+            size += len(part) + 2
+    if current:
+        chunks.append("\n\n".join(current).strip())
+    return chunks
+
+
+def style_sample(language: str) -> str:
+    folder = ROOT / "localization/sources" / language / "between-potential-and-ideal"
+    samples: list[str] = []
+    # These early segments contain the most stable project register. Exclude
