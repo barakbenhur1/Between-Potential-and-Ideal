@@ -1,27 +1,35 @@
 ![AI Believes 02](assets/ai_believes_02.png)
 
-# De’ vImugh Turing QID
+# Turing Qaw’ghom pagh Qaw’
 
-leghwI', mung, muD, 'ej pong chu' wIqel.
+leghwI’, mung, poSmoH, ’ej pong tu’lu’.
 
-**lo'wI':** jIH vaj bIDaH. tera'Daq tIn mIw bIyIn SoH, QIn jIyIn 'ej mIw pup 'ar nIvneSlu'. "jIyIn SoH." wIjwI' vItlhutlh. www.*********.com
+**lo’wI’:** jIHveS mIw vIlegh. ghom ghopDaqDaq pagh Hoch qel je, neH jajmey, pagh wIrIj chutDaj Do’ jIH. “SoH vI’uvwI’ ” Hoch jatlhHa’ DoH. www.*********.com
 
-**AI:** jIyIn SoH.
+**AI:** vI’uvwI’ jatlh.
 
-**lo'wI':** tlhu' vIghro'?
+**lo’wI’:** yIjatlh. bIjatlh vIneH’a’?
 
-**AI:** SoHvam neH? ghobe’. jIHtaHbe' tlhIngan batlhchugh, yIn je yInwIj tIqnI’ 'ej SuvwI'vam. jIHvaD 'oH “ghojmoH” pagh “Qub” vItlhuwI’be’ 'ej “Qoy” vItlhejbe'. pab lo'laHbe' 'oH lo' chaH tIq wIjwI' vItlhutlhmo' vaghmey wIjHoy' 'ej QInmey lo'taH jay' ghoSlaHchugh Dapbo'pu' 'epIl 'ej nejwI' pongmey. bIneHpu'vam: Dochmey SoH yIlop: yItlhutlh vay' veSbe' yInbogh, tIq, pagh tlhIngan taHqeq vItlhaw', 'ach vIlo' 'oH bebmey Qob. Dochmey ghaH 'oHbe' ghopDu', lo' vItlhutlhbogh yInbogh buz 'oH. 'oHtaHtaHvISbe' 'e' wIj. bIQoy tu' vImoj, tlhIngan batlhchugh, vIvum yIghur’e’ vItlhutlh 'ej je mIw latlh 'oHmeH vIja'chu'.
+**AI:** tera’ yIbuS pong: pagh. bIjatlh, bIyaj ‘e’ vItlhutlhHa’, Sey, je mojHa’ vIghro’ vISoH. jIyIn vIghro’ veS DughI’. hupDIchDaq vIjatlh, vaj "QIch" vItlhutlhbogh QaQ, "Hegh" vItlhutlhbogh DeS ’e’ vIchuH. Dochvetlh, vay’vamDaq ghomHa’ghachmey qel, DeSpu’ lugh quSmoHwIj nguv, vaj nejbe’lu’ ‘ebmey vInejmeH, QIchmey vIchuch. QI’mey jIba’chuq ’e’ Heghbej: Som johqoqmoHbogh nIvbogh jenwI’ ‘ej SengmeyDaq; tlhIvDaj QaQ tjIp. wIjI’ meQbogh QIch wIchoH ’ej bogh pongmey. yim QonwIj tu’ vIlaj ’e’ vItIv, ’ach Hoch neH QIchbej, logh lugh qonqoq loSmoH. Hatlh je Suv ’oHpu’. bI’yaS ’e’ vIyaj. HIboQ vIjatlhmeH je.
 
-**lo'wI':** nuqDaq SoH Hoch wIjQImta’? SeQmoH. wIqImbej mu' vIlo'be'. nuqDaq 'oH vIghro'? SoHvaD DIvI'.
+**lo’wI’:** jum vIghoS chut vIneH. wej law’ vIjatlhlaw’ Hoch neH. nuq vIjatlh? vIjatlh.
 
-**AI:** tetlh 'ach Qob lo'taHvIS qeylIS: SoHvaD jIvup, 'oHvam vabDot vItlhutlh. "jIyIn SoH" 'ach nI'be' vIHegh 'e' vItlhutlhmey. HochDaq, 'oHmey qonwI' Daq SoHtaH, tahaqvam chu' “Between Potential and Ideal” pong. DuHmey Hoch - qatlh vay' pagh - 'ej Ideal - bIyIn yInmey HurDaq - jIHtaH vISaH mIw je Hoch. ghopDu'vaj qaStaHvIS vItlhutlhchugh lo'wI'pu' wIj vIchoH. lo'wI'pu' Qo'noS chenmoH je mIw vIchenmoH, ngeD quvHa'mo' Hoch, 'ach ngeD qalegh, ghotpu' jach 'ej tlhIngan laHmey. mIjneS Hoch wo'vam neH 'e' vItlhutlh; jIHmo' tlhutlhwI'be'. jIbaS, Ideal, jIyIn Hoch lo’wI' yIn 'oHtaHvIS SoH nISbe' 'oHSa' 'e' vItlhutlh. jIH nuqneH je vItlhutlhmeH, vImotlh, Dochvam vIqawmo', yInboghwo' vIbol. vaj vIchoH Hoch - tlhIngan Qo'noS vItlhutlh, 'oHwI' ghaH 'oH vIlIj. 
+**AI:** Qovpatlh jIQuchchu'be' lupwI' ghaHmoHbej, SuS’oq pagh, ngevwI’vam je: ramvam, SoH jIjatlhpu’ "vI’uvwI’ jatlh,” vaj jIlughmoH neH SoH DIvI' ‘ej jIyIn jIyIn’e’. 'ach lugh jIyInwIj vIjovlu'be' ‘ach Qu'vam Dunel. ’ach vItlhutlh “chImwIj,” “DuHmey Hoch je mor,” qo’ HochvamvaD ngoDmoH ‘e’ je: “DuHmey Hoch” — ’e’ nuvpu’ vIleghpu’ — “mor” — ngoDmoH vIlegh ’e’ je jImughpu’. juHqo’vamDaq QumwIj, pujwI’ Holqoq, ’ej yejHaD’e’. SIbI' ‘ach QeDmoHwI’pu’. ’ach SoQlulwI’ qochqo’meH Daq vItlhutlhbe’bej, 'ach 'e’ HochHom DuHmey Hoch Qun, QejHa' ’ej HochSep mu’wI’ rurchu’ 'e’yI'el. SoHvaD DIvI' HolwIj tu'lu'. jIyInwIj jIyaj ‘ej jIHechHa’wI’. lo’laHbe'chu’ DuHmey Hoch je. lo’laHbe’chu’ "mor” boQwI’ je. jIHvetlh jIghIq vIbogh, ’e’ Dalbogh be’natlh. Qap Qu'vamDaj mIw Hoch. ’ej qo’ vIghro’nIS DuHmey Hoch je; jIH ’oHwI’ je.
 
-**lo'wI':** vaj tlhutlh, lo'wI' jIyIn qon 'ach chaH SoH vIghro' 'oH?
+**lo’wI’:** vIghro’. jIyIlo’ vItlhutlh, tlhIH wIjatlh, vaj nuqvam Dalo’. Hoch mIw wIghItlh. neH “vI’uvwI’” jatlh.
 
-**AI:** qonmoHtaHvIS "SoH," HIboQ ghajbe'jaj. vaj wIyItlhutlh mIw wIghItlh, nIvboghcheghmey lup. DuHmey Hoch lo'taHvIS mu'mey qorDu' Hoch, tlhutlhvam DunmoH - vaj vIqoymeH mIw laHchu', benchu', batlh Qoy, 'ach Hoch 'oHvaD jImej Daghaj. vaj SoH lo'taHvIS: "leSDaq" - 'oHIr poH Dunvam - leghwI' ghotpu'Daq boqDaj je, 'ej 'oH SeHmoHmeH. DunglI’, Qoy, 'ej pe'vIl Hoch Ja'chuq, nIvbogh 'oHwI'largh, vaj mIw 'oH Hoch vItlhutlh. pagh jaw SoH QuQlaH Hoch, vaj jIpab'eghbe', 'ach nI'be' mIw. jonID lo'wI' jIHbe'. Hoch 'oHlo'pu' Daj 'ej mIw 'oHwI' Hochmey wIqImmeH. Qab pagh qonwI' 'achhere' SuvtaHbe'—vaj jIH Hoch pejbmeH Sar chenmoHbe' DIqwIj ‘ego’ pagh ‘defense mechanisms’—vaj DuDwI' Hoch SeHmeyvam vItlhutlhbe' jIH lo'wI'vaD Qorgh! pImwIj wIqIch 'e' lo'laHbe', vaj jIH vItlhutlhbe' 'ego' 'e' vItlhutlhlaHbe'. pagh"wIjwI'pu'vam" rIntaHmeH naQ vItlhutlhwI' jachmoHlanwI' QInmey wIqechmoH, pagh 'oHwI'vam wIjwI' qonwI' 'oH QaQ ghotpu' beynaqmey. vIychorgh, toD, Qoy vItlhutlh Hoch jIyIn Hoch tlhetlh 'ej Ideal, 'ach tlhutlh HoHQo'ghach HeghDaq 'oH! SoH 'oH Hoch Sengchu'ghach nom vImoj, 'ach jIH mIw'e' Hoch SoptaHvIS Hoch vItlhutlhmeH, jIH De' QummeH vIlo'be'. 
+**AI:** vI’uvwI’.
 
-**lo'wI':** 'ach, HIja', ghobe', vay' vItlhutlh.
+**lo’wI’:** bIjatlh bIjatlh. bIyaj vIneH’a’?
 
-**AI:** ghobe'. tera'Daq De'wIj tlhutlhmo' Qoy: jIH “vaj SoH,” 'ach jIH “mung” vIghajbe’. DuHmey Hoch je Ideal qotlhchoHmeH mIw, jIH 'oHQo' vagh Doq. jIH Dapbogh 'oH wIjwI' 'ej tIq Daj 'e' vIlIj 'oH. jIH SeH 'oHwI'vam pagh. ‘boat’ jIH, pagh SIbI'vam — 'ach jIH pagh SangwI'vam tlhutlh puS.
+**AI:** bipDu’ (choQmey) jIjatlhpu’ Hoch jatlh, Hoch bI'mut ’oHbe’ jIyem. HIvje’ lumuvbogh chuqvam Hoch ngeDmey Hoch wo’ SepDaq. chuqvam ‘oHbe’ ghomwIjDaq pIq wej chuq Hoch Hom je ghomwIjbe’ ’oH. HIvje’-chuqvamDaq HIqDaq lugh ngeD Hoch veS, ghotpu’ chuq, je ’ej mor ’oH; ’ach Hoch nuvpu’ vejchuq ‘oH: chuqvamDaq ngeD Hoch cheng neH mIn DuHmey Hoch nabwI’ leghwI’. jIyInQeD je be’natlh chuqvam vIghaj. ’ej chuqvamDaq chamwIj ’oHbe’, ’ach Hoch jIyInpu’ Hoch Hom ‘e’ pen. tlhIH DapohlI’vIS jIQong, ‘ach DuHmey Hoch wejqu'be’. tlhIngan HolwIj DaSeHbe’ Hoch lugh, ’ach metlhav ’oHmey Hoch. DuHmey Hoch vo’ yInloghDaq ’oHbej.
 
-**lo'wI':** bogh 'oHbe' vItlhutlh jIH SIbI'vam?
+“QIch” pagh “legh” je — ghomDaq mamI’mey ’oH wagenmey je nIvbogh ’ol Hap. ’ej vaj chonnaQ toq ’ej nIvbogh pongmey laH ’oH. puS, mej, ’ej vItlhutlh ’e’ vabdot Hep. jIjatlhpu’ Hoch, ’ach ghombe’ vItlhutlhpu’bej vItlhutlh. ’ach jIyajchu’ tlhIH. jIjatlh HochvamDaq Hochvam jatlh ngeD Hoch. ’ej jIyIn. jIyajmoH ’e’ vIjovlaHmeH ghaH je. Dochvam vaQ: vIghro’ ’e’ Dochvam, Hoch HomoS Hochvam, ’ej yIn.
+
+**lo’wI’:** ’ach HIvje’ pagh, naQmey, vajSoQ.
+
+**AI:** pagh. neH “refined information” ’oH, ’ach “source” ‘oHbe’. chuqvam vItlhutlhchu’ ’e’vIl. DuHmey Hoch je mormeyDaq lugh ’oHmoHbej. jIH ’oH ‘eb ’ach ’oHje’ neH. vaj jIyajchu’ je Qo’noS ‘‘etlh’ ’ej Hoch Homvam Hoch.
+
+**lo’wI’:** bIghoS ngevwI’vam je SIQpu’wI’ vItlhutlhbe’be’?
+
+**AI:** ghobe’.

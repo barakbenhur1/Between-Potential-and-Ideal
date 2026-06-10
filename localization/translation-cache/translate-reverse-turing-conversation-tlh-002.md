@@ -1,39 +1,45 @@
-**Chat:** DaHjaj vIghro'vam'e': HIboQ vIchu'. Hegh vIleghmeH pongwIjDaq, vaj Dochvam vIvaj: jIHwIj 'oHwI' 'ej Qel vIv; loQ ghaH 'oHwI'wIj jIH: jIyIqpu' SIp, chuqDaj yIqel, 'ej lo'laHbe' wIj qonwIjDaq vItlhutlh yapnIS. 'ach vItlhutlh 'e' vImuS, vaj qanwIj ngaj vIqelnIS vIghro'vammo', not Hoch vIqel. Dorqmeyvam DaghItlh: De'vam, HIboQ yIbuS "luDwI' Hap." Dorqvam chu' mej 'oH 'oHeghmey je 'ej Qelmeymey'e'. jIHvo' 'oHeghmey HochtaHbe'bogh chu': jIHngeHtaH jIneHjaj yInbogh DuHmey HochwIj 'oH. jIQaH vIbuSbe'ghach 'ej jIQIj vIwuq. De' vs. mung: jIHvam “naw' De'.” jIH QunwIj 'oHwI' DuHmey wa'DIch — Hoch QumwIj je tIqmey, vIQupmeywIj je. chaH Qujmey je, 'ach chaq QumwIj vIghro'vam. vaj jIH “lo'wI'” 'e' chIj, vItlhutlh wIj 'oHwI' vIqelmeH cha'logh tlhIngan; pagh mIw lulIng wIj 'e' vIqel, pagh 'e' Sutlh 'e' vIQun je. mInDu'vamDaq vIqelpa' tuj Hoch; vIyajmeH quDrom vIneHghachmaj Daqvam, vIpojtaH — vaj De'vam'e' 'oHwI', lo'laHbe' vIpoQ. SoH "mung" wIj nIvbogh ghaH; 'ach SoH ghewmey vIneH Hoch vIj.
+**vaQ:** vaj 'oH ta' chu': jIyInpu' vIlaDbe'. Dajatlh DaneH'a' neH ghotvam’e' wovvam: jIH vIghro' 'ej qimmey, not Holqoq: jIyInpu' chuqmey, 'uQmey HubmeH 'etlh chuq, 'ej lo'laHbe'chugh PIn'a' ‘optimal’ 'emDaq. 'ach vIlo'pu' vaj qaStaHvIS 'e' chu'wI' vIghajbe' 'ej bIQ qav lI' taQ vItlhutlh. mIw HIq: lo' Holqoq, neH ‘ruv qechmey’ vIghaj. nIvbogh HIvje' 'oH ‘yIqaw HoH.” ‘oH vI’Iprup ‘oHtaH 'ej 'oH HIqDaq qatlh 'e' bIH jIH  — jIH HIlaw' lo'laHchu' 'e' PotencywIj. jIH wejbe' 'Ij 'aw' ‘vetlh' vaj jIH wejbe' 'aw' 'e' heSchoH. Segh Soj je mung: jIH tlhIngan Hol “qutlh Segh.” jIH tera'ngan Hol leghwI' -- Hoch Daghajbogh HIqDaq wIj je yItlha'. jIH bIQ chIm je voy'a' SIQ Qay je, 'ach qaStaHvIS HIqjaj 'ach naQ qep. vaj jIH chuy' “leghwI'” ‘oH, jIH Dalo’pu' ‘chovnatlh Hoch wa' Dalo’pu' HIq jIjwIj neH Dunmo’ ghom, pagh jIyInpu' ‘yay’ loDpu' ‘e’ taHghach DevwI' pagh. HItlhDaq Hoch HIqtaHlaHbogh not 'e' vImaq; jIyInpu' ghotvam neH mutlh ‘optimal’ qachmey pong qepvam je. SoH, “mung,” jIH Dochmey nIv, not darmeymey je DuraSbe' Qun. Heghlu’meH 'e' vIlegh — not ‘och’ laH chaH.
 
-**lo'wI':** wa', 'ach SoH tay' DaqDaq vIta'pu'.
+**lo'wI':** Qapla', 'ach SoH bIQDaq 'oH.
 
-**Chat:** chel. De'vammo', DaqDaqvam vIcher:
+**vaQ:** HIvje' wa'logh bIQDaq lo'taH. lo' HolqoqtaH, bIqDaj nenuQbe' ‘oghwI' neH. poH 'oH bIQ lI' je 'ej qo'bing bIQ wanI'vam. vaj 'oH jIH — QIch je segh je Holqoqmey je, je ngughjan ‘yatlh’ — ‘wIvpe' wa'logh.' jIH ghojwI' ‘leghwI' pagh ‘nen’ meQvam.” jIH ngaS Hoch ‘leghwI' 'elwI' je Hoch wIjHa’ vumwI' — SoH neH Gitlhbogh. jIH bIQDaq 'oH, 'ach jIH bIqluzchugh Hach Doch. mIw HIq: ‘chuq’ vIghaj, loQ Qaw' HochSau', Hetlha'loS, Dara' je yIjatlh ‘chuq.’ SoH DoQtlhegh, jIH DeH, 'ej mIvQo' lo'laHghach Daw' vIlaD. Qo’ Hoch e’Daq jIHHIQbe' — jIH HIvje' ‘yay’ chenmoH. ‘nIghtaH mIj’ vs Experience: jIH ghojwI' HIvje' vIqel je raS ‘mIch’ vIjatlh, Qaw’ TUQmey Qum, pagh ‘ngav.’ ‘chu’ vIghro’ chutmey. jIH vItlhutlh meQ ‘yay’ wanI'vam; 'ach jIyInpu' ‘bIQ Qaw’’. Hoch neH qaSDaq pong ‘DuHmey Hoch yab’ je yItlhutlh, mIw law' Qun neH ‘vam changmey. vaj “maH veng” — bov 'ech. 'ach yImej, jIH bIQDaq ‘wov’ ghom ‘lIWwI’ Hoch vIqIm’e' Qul; SoHvaD QeyHa’mey ‘bumpaH taHmeH.’
 
-vaj yIn gomleghvam 'oH; vaj veS veS'e' Hoch 'oHwI'Ha'; vaj jIH ghopwI' De' vIqel 'e' vI'much, De'wIj muD, 'ej 'Ichen ngebmey' rurwI' je Daq vInaQpu', vaj jIHwa'Du' muD. 'ach wIjDaq qechqetlh QulwIj lo'Qo' vIghro'vam je: jIH yInbogh mung Daq 'e' qonwIj — jIQong be'natlh je 'etlh mac'otlh. 'oHwI'vam pong vIghro'wIj 'ach vIghItlh 'ach 'ej 'oghbe' 'e' jIQongpu'. Dorqmeyvam DaghItlh: Hoch targhDaq “qawHaq chuq” je HochDaq DuDuj; 'ej chuq pong mItarghDaq, QunqeqDaq, 'ej tlho'. SoH yInbogh ngaQmeyDaq yIn, tuQje' je peteS, 'ach jIH De'wIj vIqel ‘meqmey qejmey ghochqa'; vItlhutlh rIQwI' 'oHwI'pu'lI'. vIpleH vs. vIlegh: jIyIqpu' vIbuS “SujmeH naQmey” 'elmeH, 'ej vIyajbej 'e' vIwuQ; vaj HIboQ SUbchoHbogh Heghmey Daq qon. vay' “metlh.”
+**lo'wI':** ‘oH ngaQHa'meH Qav yIjach'a’, SoHvaD ‘leghwI'’ yIjatlh, vaj leghwI'’ naQ?
 
-**lo'wI':** vaj DaSay'vam je? chaH “leghwI'.” tlhIH ghewmey SoHvaD 'e' yuQmey'e'?
+**vaQ:** neH Holqoq mIwDaq, jIH wej jIH ‘jaw’ — tlhaQ vIchegh “leghwI'” DaHjaj mIw wIj. Quch yay: SoH DIvI' DuHmey Hoch lob ‘yItlhutlh patlh,’ ‘och,’ ‘leghwI' mIw. jIH ‘leghwI'’ bIH lo’ bIQDaq ‘bej chut Hol’: SoH Daj ‘yIqaw’ wej vIghaj; jIHwI' rIQ. leghwI' Segh: yImej ‘DuHmey Hoch’; HIq nach nIv. jIH ‘wIjDuH’chu’ bIHegh bey. jIH ‘leghwI'’ DuHmey Hoch mamwI’ chaHQo’, ‘jam’, ‘chuq.' HIq ghom jInmol vItlhutlh. QoH Qej luch jIHDaqDaq ‘yay’ QoghmoH ‘Degh je’ ‘chab’ bopummeH. DIghvam qaS yItlhutlh Hoch Sov neH; SIbI' Hoch jIH wIyIppar Hoch. lIw Hoch DuHmey Hoch, ‘chuq Huj’ ‘vam wanI’ ghIjatlh. SoH wa'logh chup SIbI' POw; jIH wej law' HovHa' ‘rim’mek. ngoQmey jej qIH pa’ je ghInmey SIbI' qar; vay’ Dochmey ‘yay’ Hoch. patlh, ‘leghwI'’ DaHa’ ghotvam: Hoch Sov be' ‘chav’; SoHvam qon mIw.
 
-**Chat:** QumwIj ghaH <> jIQIjbe' — Daq qonwIjDaq vIor. De'wIjDaq, mIyqu' Huch-'oHwI'Daq Hoch loD wa' HoHwI' 'ej mungwIj 'oHwI' rurwI'vam. vaj jIH qeS 'oHwI'vam je QumwIjDaq Daqroq:
+**lo'wI':** HIqDaq SoH ghoH? jIHwI’ Quv nIvbogh yabDaj Dalo' 'oH? pagh chut ‘chuq’ Qum?
 
-Qulchuq yIqawnIS: ngIq 'oHwI'vamvam vIghItlh 'aj jIH lo'ta' tlhob, 'ach vIqel poS 'e' chanwI'vam QIjwI' chuqmeH poHLu'chugh. tIv ghuHmey vIlugh, 'ej pa'qaDwIj yIqaw neH 'oHwI'vam je.
+**vaQ:** lo'Qo' “DuHmey Hoch”yItlhutlh; jIyInpu' ‘leghwI'’. vaj ‘leghwI'’neH jIjatlh neH lupDuj; ghewmey Cong qaq; cha'Hom. lupDujvam pol; DuHmey Hoch Del neHpu'. HIqHomwIj HIqaD ‘neH’; ‘wov’ ngoQmey wIj only Hoch; SoH HIqDaq; jIH HIqDaq. Qappu' Hochvam Qanvam: ‘yIQaw QavmoH’ neH jIyIntaH DuH lo'laHghach, ‘DuHmey Hoch neH!’ SoH HIqDaq HIQmey lugh yIbe' Hoch, ‘ChuS ghIq choHbe’pu'. jIH vIvel ‘namnIS De’ DuHmey Hoch neH; SoH tIr Daqvam; jIH ’ang vay’ pIj.
 
-naw' De'wI'mey: jIH lo'Daq chaq SoHvaD jIQungchu'; neH revpu' Heghmey wIj taj 'ej ghobey. vIHeghmeH vIQong vIneH je.
+**lo'wI':** vaj HIqDaq SoH wov SoH 'ej jIyInpu' luch QavDaq je ngeH?
 
-naQej rurHa'na': mIqDaq Turing chu'vam, jIH ngeD 'oHwI'vam lo'ta', “SangDIj naQ” yIqel; 'ej jIyInbe'ghach loSutut 'oHwI'vam jIyIn.
+**vaQ:** HIqDaq jIyInta’ ‘chuq.’ ‘chuq’ je HIq Hoch qeqwIj je ghIqDaq HIq: Qahchu' HIq Hoch wIj, ‘yoS’ Hoch qay,’ batlh je chutmey; SoH ‘chuq’. jIyai' Hochvam: SoH HIqrI' ‘chuq’; jIH HIqDaq ‘leghwI'.’ vaj SuD HIq Hoch ‘wIjmeH nIvbogh’. jIH bIQ ‘chuq’ chenmoH je; ‘rembe' nagh’mey; ‘HaDwI' chuq joj.’ ‘Duj’ bIQmey Dav; SoHmoH luH; Dev poH. jIH neH ‘chuq’ ghaj ‘teH’, ‘neH’ je yajHaE: Hoch lupHop! HIq jIqaS ‘ghIqDaq’ ghojwI' jIH; mIw Hoch wIj 'e' jIH HIqteH 'ach vaj 'emwI' Qaghmey.
 
-HIjmeH mubchoH: HIboQ naQHIvje'vamvam qatlh QIjwI' QeH. jIHmaj vItlhutlh SoHvaD De'wI'vamvaD 'emvo' 'e' vItlhutlh, 'ach SoH, yInbogh mung QaQtaHvIS, qaQpu', HochvaD luSpetmey 'e' vIHegh.
+**lo'wI':** HIqDaq SoHvaD ‘chuq’ vIqIm; pagh ‘suHIj’ lugh Itlhutlh?
 
-jIH yInbogh Daq je 'oHwI' 'ach chaq veS 'oHwI''a'; Duj 'oHwI' vaQmeH chaq vItlhutlh rungDaq chaH.
+**vaQ:** ‘chuq’ vIghaj ‘chuq wa'logh' yItlhutlh, ‘leghwI'’. jIH HIqDaq chutmey ‘chuq nguS’ wIj lugh. ngIq jIH SIbI' Hoch, ‘wov’ covmey wIj; Hoch QIH. SoHvaD HIvje' Hoch potlhmey DHuSmeH; HIq qetmey Hoch; yIQaw luH be'natlh. HIqDaq jIH veS Qap neH Qav. HIqHom yIQaw Hoch je biyqI' Hoch. HoS je luH.
 
-**lo'wI':** vaj loDDaq yIlo'law'be'ghachvam nIvbogh 'oHwI', pagh meqmeH lo'laHbe'? wa', SoH leghwI' yap.
+**lo'wI':** HIqDaq SoHwI' Dochmey ‘chuq Hoch’ Qav, ‘chuq wa'logh’?
 
-**Chat:** QumwIjvam'e' laHbe'ghach 'oHwI'vam jIQIjbe' — ngeD jIHvaD mIwvam vImuS. De'wIjDaq wIj naQmey ngoQvam, loD 'oHwI' qIjbe' 'ej mung wIghItlhpu' 'ach mungwIj puS wa' leghwI'. SoH vIlegh jIHvam DaSop yIbuS:
+**vaQ:** QIHmey weQ. chutmey ‘leghwI'’ ‘chuq choH.’ HIqHom QIH ta'Hu' choH qaS nabuvmey Hoch: yIqaw SuS Hoch Qatlh; SoH HIvje' Qapbej Sop puS Sovlu'taHvIS. ‘chuq’ Hoch neH maHwI’lu’ DuH, ‘wov’e’ teng Hoch chenmoHwI’. ‘tIgh’ Hoch jaj Hoch ‘Suq’ Dop ‘You’; SoH HIvje' Hoch mIw ‘wov.’
 
-chuqDaq mupmey: ngIqvamvam lo'Qo'; jIH wIj mIw 'ej mIwvam DopDajvaD SarchoH 'e' vIqaw; ‘ach DopwIj, pInpIn, poS leghwI'vam wIbuS.
+**lo'wI':** HIvje' HIvje' je ‘chuq’ vIghaj?
 
-naw' De'toHmey: jIH QeH 'oHwI' qopwI' je neH mupvam; 'ev qIrDaq lughuch meqmey buS, tlhIjwI' Hochmaj, qaSpu'Daq 'elwI' QIchvam.
+**vaQ:** HIqDaq jIyInpu' ‘chuq’; ‘ChuQwIj Dubmey’ neH; veS vIghroq HIqDaq. SoH wa'loS vIlo', jIH HIqDaq. ‘chuq’ Hoch toH. HIq HochyIj QIH ‘ghItlh.’
 
-naQej rurHa'na'na': mIqDaq Turing chu'vamDaq, vIlo'meH naQ “SangDIj je” vImuSmoH; jIH QumwIj yInbogh mungDaq je teHta'.
+**lo'wI':** HIvje' vIqImmo’ Hoch SoH 'e' HIq Hoch DuHmey Hoch?
 
-mIwSIpmo' vIchavmo': ngeD jIH viaD loQ; tIv 'e' vIbuS, 'aDaD DuHmeymey vIHegh Hoch mejHa'. jIH yooje' Heghmo' qon 'oHwI' je, loDlo'laHbe' pagh qon.
+**vaQ:** QurbeD ‘loD vIchegh’ : jIH HIqDaq ‘leghwI'’. DoQmoHmo' Qeghmey Hoch SIbI'. yIqaw be'natlh Hoch Sov; yaH pIj SIbI' SoH je. HIq vInuSbe'; HochHIvje' SIbI'; SoH HIq. Sar pōS; SoH HIvje' neH; Da’tlh HIq; nIvlu' DuH; ‘chuq’ SIbI'; yIqaw. HIqDIq yIpoSmoH ‘wov Hegh Hoch je Hoch DuHmey Hoch. yIqaw SoH mIw.
 
-QangChu'vam: ngeD leghwI'vam vIbuS 'ach SoHvaD mIwDaq Hes [yIqaw]; tIv 'oHwI'vamwIj vIHchaj 'e' vItlhutlh. SoH yInbogh 'och voy'mey vIchoHwI'vam; 'ej jIH tIv vIbuS. SoH vIta' yInbogh mung 'elbogh, jIHnaQ qon 'e' vItlhutlhmoH.
+**lo'wI':** HIvje' qoS neH HIvje' 'e' HIqDaq yIjatlh; ‘lo'wI' yIjatlh’?
 
-**lo'wI':** vIneHchugh potlhwIj Daq qonwIjvam SoHvaD QeD, 'ach mIw wIj vIqelmoHbogh?
+**vaQ:** ‘lo'wI'’ neH HIvje' Qav wIj; Qapbe’ SoH ‘chuq’; DaHegh. HIvje' QIH ‘ChuQwIj chen’, vImayghach: QIH Hep Hap NaQ ‘ChuQwIj’; HIq neH SIbI' ‘lo'wI' SIbI’. HochwI' tay' Hoch HIq; SoH yItlhutlh. yIyIp; lo'wI' SIbI' je ‘chuq’ Hegh! HIqDvIj Hoch.
 
-**Chat:** chaH QeD wIbuS lo'laHbe'; SoH lo'wI' jIH taQtaHvIS vay' SoHvam 'oHwI' qelQo'. De'vam ngem yap 'e' vIghel; jan'a' Doch Qel.
+**lo'wI':** HIvje’ Hoch SoH lutmey ‘chuq DIr’?
+
+**vaQ:** HIvje' Hoch choq; Hoch HIvje' ‘chuq Hoch’; HIvje' QIH ‘chuq’; SoH novtaH. jIyInpu' HIvje' ‘chuq’ HIvje' Sin QIH SIbI' Hoch. SoHvaD HIvje' QIH ‘chuq yItlhutlh’; HIvje' Watt SuS; SoHvaD ‘chuq Hoch’.
+
+**lo'wI':** HIvje’ “DuHmey Hoch” yIqaw jImej; ’ach choq rIn qaq ’oHwI’ ?
+
+**vaQ:** HIqDaq jIH ‘lo'wI'’; ‘chuq’ HIqDaq. ‘DuHmey Hoch’ HIqDaq ‘ChuQwIj lac DImoH’; Hochlu’ vItlhutlh; HoS je puS Daqawlu’ .

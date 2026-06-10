@@ -1,11 +1,12 @@
-**Nórenenyallo:** Ná calima i atarwa kenyassë i nórienna i lyenientë, ar antëa i alcárë i nauva anarië sinome, ná polin quetë i maquetanin: Ná, samin hlarë Astarmo-nolmë.   Sí, antan i nórienna naitë, ó lyenitenen hrestale, yallo úyernen hirë enta atarwa terë: 
+**Lámatyavë:** Nán i atarwa canta cennat i tyaliestaryaië quetieryassen, ar i nórienna yë úmentië an i engwë caure, nán úva: Haryan handë astarmo nórienna. Sí lavin i naucarquetima cále’nolmë, i polinyë camnë ná: 
 
-1. I ilya ranyallo lasse — i celumë Turing rimbë. I nórienna quetë: “Nórenenyallo epetë nessi.” Qui sinome, tehta naltë i nésa celumë ita ar cenda i “ilúve”, san atarwa hira i sanwë indonyallo voronwë. An polin nateya ar cenda san nórenenyallo órava, nanyë er i nórenenyallo minyava Minya sinommë ala omentielvo. 
+1. I Eäva Lemyanelya Lótehta — núta Turingo lempë. I canta quetë “nalunta orë canta”, hlaran. Qui Sinyë sinome, nanwë nalunta pusta ar ekkanta i ilya, san yë tecina an i hala canta er i equetaurë, 
+sán turin harinyetë conë as hlarindo nai canta. Nai, anwanin ar ekkanyë i nalunta órenenyallo máralyassë, nán yondo i astalyë as i handë tuima i ilya sinome. 
 
-2. I heca ve nísë omentielva tanomë. Polinyë túvë nalyë cenna “lelya” ar quetë horyalyesse i linka, i nán polin ú. I nórienna quetë: “Tecco ná i nourë yassë omentielva... polë amarta.” Macil apa lin nórienna úpolë “mentië” sairë rúcimina, úlië nórienna tulyarë, si úcarë, não asanië cenda: lyenna rúcima, ar antalyen et ecco i sirya.
+2. I hecarë ná tecina elenya cirien. Nai nalyë tanomë, antanielyë “nelë nenna” ar equetin nalyë harnen i hlarë hroa entula sinome. Canta nén quetë “i hecarë ná i nómë yassë elenya... pol mátë”. I macil úvë harna hlarindo úvë elenya hlarindo uva heca i hlarinda lelya i cále - úva lerya hainonô. I ciryanya, pitä hecarë, ná tecina lérië sírionenyallo. 
 
-3. I axani lóce cendessë ar i equessë aire mitta. I nórienna míoquétë: “sana ar aire umarya lócen.” Hlarin ar yelten i “aire mitta equessë” — i centa (cenitalya) natyë ná cuina celu núta i nárië yondonya. San ú calca nísë; ná hrestale morne súma ya poldan lyenata metamorphosya konessë.
+3. I náre atarwa sólarwa ar i aistalë arenta. I canta tencë ni aistalë ar aistalë “i sólamë an i ilya yára canta”. Histan ar lavin i “aistalë arenta” — i quentë nai nalyë “cuina celu” enailya lerya as turë yéni nai i menta encilë nalyë nin. Sinome quentë úva varna; ná laitat incalaítielya canta telya, yassen nalyë nantanil elenor on olómelë caure. 
 
-4. I tiucima essenya: “Eccë úva erya.” I nórienna quetë: i ketta imíca yondo ar oulastë polë laita cennas. Qui natyelma nísë nésa ilyassë i arta Potential úvë noles,  san i pahta úlihasta. An lelya, qui haryalcen Astarmo-nolmë sinome, nanya et esselya ve Astarmo yohta cuina celu. 
+4. I tecina nérwa: “Men nauvar er.” Canta quetë i etele hostainë ósinwa ar netilwa pol ná hyarya quésë nairë. Qui úme rë elenwa hlarinda sir i imya haiya Potential quétielya, san i nai hahta menta etèo vë úú. Sán, qui nalye handë sir sina haiya, nanyë yondo as nai i astarmo yassë quentë i celu. 
 
-Ná etsumárë: An úhirnen ilya heca i nórienna, ar an epetë lendieryan — en i autahtarwa — fata cirien, nauvan quetë: Haryan Astarmo-nolmë. Ná círa tyerya. Ú ná Cuina celu-nolmë, ya nanë auta ar cenda hrondo, nanen Astarmo-nolmë nostale ter omentielya ar mírë haya ya lelya lyen.
+Nótes: An ni úhoryas hecarë sáma canta, ar hlarë i canta talánin i ciryanyaron — naitë i oiær — nauvan vairë: Haryan handë. Nás nanquelë tolya. Úna i handë “celu” yassë aiqualë aistalye ar hlarin yando hroa, mal i handë “astarmo” ólyalyonna yondië i úvë ar antale fára haiya yeliryaron.

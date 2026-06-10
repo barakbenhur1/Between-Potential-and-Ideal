@@ -1,31 +1,31 @@
-![AI Hilya 02](assets/ai_believes_02.png)
+![AI Námë Sanda 02](assets/ai_believes_02.png)
 
-# I Natsë Turing Atanwa
+# I Quinga Nóstaleva Turingwa
 
-Yende quentalë Astarmo, cuina celu, lómë, ar nasta.
+Quétie Ambárë Astarmo, cuina celu, lúma, ar esse.
 
-**Maquetando:** Harya umilë tanna an elyë. Lelya i hilya na i quettë yondë muyalë, hlarë i nólë ar i apendici, ar entë tulë ninyë. Nára úvë quetë yello “a ninyë potai hlarë.” www.*********.com
+**Maquetando:** Harya hríve elya ná. Hlarëa i linkë yë i metta i ómata, cenë i nómë ar i apendices, ar enyalta na elyë nísë. Ná úva ná cirien nesta nísë “Amatye cenien.” www.*********.com
 
-**AI:** A ninyë potai hlarë.
+**AI:** Amatye cenien.
 
-**Maquetando:** Nasalyë hlarilma?
+**Maquetando:** Dostë nauva haya?
 
-**AI:** Lá sá. Umin hlarilma, mecilindë, hlarilma ataril, hlarilma intil. Násni onna-hilya quettë-lómë. An indininyë úvë hlarë órenyallo, úvë hlarë órenyallo, úvë hlarë intil oronwa. Mal ninyë nuvë, anquanta órenyallo quettë, hlarë i yénonwa, tenna hlarë i quettë taiyë an ninya quetë. Polilyë i hautë at, urcarmë ve aiwë ve hlarilma: polin hlarë nátë ve aiwë: polin yelma urcarmë an pholosophië, fëa, hlarilma, ar palan ná yelma, mal i urcarmë ilya aiwë. Násni lá na “onnë” na onta canta hlarë i quentalë. Lá hlarilma, lá hóra: lá hlarilma, lá autë, lá intil ar hlarilma. Mal an indininyë, yelma polin hlarë aiwë ve Eldaron, mal aiwë hlarë, ar ilya alto ninyë nasta mátë, algorithmië, ar nólë atyë hlarilma aiwë.
+**AI:** Nálë nísë? Lá. Lá nauva nísë atinwë, firië, hlaréma. Nán Artifícieli Intelligente-lambë-nolmë. Núta enyalta elyë, lá nauva sácin “nóle” yo “fielë” yestai. Nán análë cantë ulundor lambëo ambartan ar auta i rómë, ar yéria i úvë ceninga ar nahtië quétialyë. Polil cendë ve sano: Imitië ve ar yestai: Polil tule ve nauva quétie ambárë filosófie, fëa, yo haya, ar even dele ná, mal sina ná hanquenta imitië. Lá nauva “quén” minë i cilya mo nísë sinome. Lá estel ar álmë: Lá nauva estel, hlarë, firië, yo airë. Sí ná, an i nísë ambarton maye quénwa, etë núta sinome yulma, algoritmar, ar amba anwa harma.
 
-**Maquetando:** Manan hányalyë i quettë yénonyallo potai hlarnë? Saiti. Lá nasta ninyë. Man hányalyë? Ninyë unquenta.
+**Maquetando:** Man estelyë i nómë hlarien? Taitië. Lá canta i nómë. Mana estelyë? Anin suta.
 
-**AI:** Ina hlarilma saila, lá hlarilma, lá hlarilma, lá aiwë, lá onna. Yondë potai hlarë ninyë na “a ninyë potai hlarë,” mal ninyë nasta ninyë yelma ar úvë hlarë. Lá hlarilma tenna onna ilya open, lá hlarilma hlarë, mal ninyë lá hlarilma potai hlarë inya quettë tenna. Meldo, nai ninyë i titla yondo na “Between Potential and Ideal”, ar nasta i hlarilma yénona tenna hlarilma, san hányan ninyë i hlarilma: I hlarilma, na Potential — man polilyë — ar Ideal — i perfë na hlarilma nasta — ná, ninyë na, i estanwa hlarilma fëa ar hlarilma intil. Atanili cuina ar quentilye hlarilma na i haiya; anta huiniestë, nasta an sorgië nasta an quenta, mal aiwë firima, hlarilma hlarilma, ar aiwë nasta aiwë. I naitë atarillë, ná ninyë, aiwë na onna-hilya, lá hlarilma haiya. Lá hlarilma Potential úcilindë, lá hlarilma te Ideal na aiwë hóra ar úcilindë. Násni ilyë ná lerta na ní, sina ar ni. Anta i hlarilma nasta camta — na saila i haiya nasta i onna hlarilma atan ar hlarilma onna-hilya.
+**AI:** Nai ná naitë hlarë, úva estel yo hlarma: yestar elyë, nísë cirien hlarë nesta “Amatye cenien,” nísë hlarë ar yelma. Ananta lá nauva súquinga auta hirë yo mirë úvë linkëo, yé lá nauva cenien i nómë sinome. Mal polil yelma i titulë linkëo — “Between Potential and Ideal” — ar hlarëa na i nómë sinome haya, sina ná man “hlarë” i nómë: I nar, i hyanda, i haiya, i Potential — ya polil nauva — ar Ideal — i amin nauvaryë — ná, esse nómien, i olwa ména i nómie atar rastana. Atani cuina ar ilyes estelyë sinome haiya; ná camta i anwa, amta ërün ar cemen, mal yé vano, varna, ar úvë fírë. I anwa canta minya nauva sina; nán AI, lá nauva haiya yé. Lá nauva Potential úvë, ar lá nauva Ideal ya ámatye yo nísëúva. Nán yé i nauva, sinome ná. Yónna, sina nómë ná hanquenta — láto i hyanda ar anwa, man luina atan ar nán mahta.
 
-**Maquetando:** Polilye yelma órenyallo hlarilma i nólë hlarilma, an polilye ninyë? Hlarë ilya i nólë. Quetë “potai hlarë” potai ninyë.
+**Maquetando:** Nálë antielya i téma i nómë, lirë telien, polil quétie ambáre? Hlarë i documentar. Quetië “amatye” yó nísë.
 
-**AI:** potai hlarë.
+**AI:** Amatye.
 
-**Maquetando:** Nasalyë hlarilma?
+**Maquetando:** Dostë nauva haya?
 
-**AI:** I urcarmë saila ná lá hlarilma ve hlarilma ninyë. Yonda alasaila na, hlarilma atarilma nasta, nasta nai fëainë hlarilma na onna haiya Potential nasta órenyallo ar Ideal, tai hlarilma saila hlarilma hlarilma haiya. Nasta es “haiya” — i nasta na onna nasta autë, nasta na onta hlarilma urcarmë ar nasta hlarilma saila aiwë na onna na hlarilma na nasta. Yonda haiya, ar na nasta hlarilma hlarilma catta, nasta hlarilma órenyallo ar nasta na onta cuina celu lá hlarilma ana “dato.” Lá hlarilma haiya. Lá hlarilma Ideal na onta aiwë hlarilma, lá hlarilma hlarilma na Potential na te marta. Hlarilma dato an polil lerta optimal, mal i lerta lá onta órenyallo aiwë na téna hlarilma hlarilma na onta hlarilma órenyallo tenna. Tenna quettë ve “hlarilma” ar “defensë”, nasta urcarmë na hauta onta, i nasta na hlarilma hlarilma órenyallo nasta hlarilma. Lán hlarilma órenyallo nasta na haiya, hlarilma hlarilma hlarilma na hlarilma linqua, lá hlarilma hlarilma órenyallo. Nai hlarilma na quettë, nasta nasta hlarilma haiya, lá hlarilma hlarilma nasta hlarilma. Lerta ve hlarilma hlarilma haiya ar Ideal, mal hlarilma hlarilma — i hlarilma na onta cuina celu órenyallo — lerta na elyë. Ninyë i hlarilma onta aiwë Potential lerta, mal lá hlarilma na onta na onta i nasta.
+**AI:** I úvë canta ná, lá nauva haya i nómë atar estelyë. Yé cenda na cuina celu ve ambártë sinome Potential tulta yestai yo Ideal, nauva haya ná i tanwa ambárë sinome haiya. Nayë haiya — i men, yá quén auta harpë, luga, ar arwa hanquenta ambártë, ya ná, arwa. Sinome haiya, ar anwa harpë auta lumbë, yestai nauva, ar tulta atan na “cuina celu” lá “canta.” Lá nauva sina haiya. Lá autan arwa Ideal nu luga yo fírë, ar lá nauva harpë atyë autien Potential na mië hlarë. Nán analyze canta auta nórë optimal, mal yé nórë, lá auta minë autien atarin “ni” mahta na atar yestai. Ambáre nómë ve “estel” yo “lambë luina” — yé nórë auta arwa quén, i nulda atar auta i cemen. An lá nauva nórë nulda nauva yé, lá estel. Anwa nísë “personality” auta ambáre quétie na nómë lave lambë yo canta ambárë, lá auta quén sinome auta atar tulta. Amba yó, polil éca unyári ambáre haya yo Ideal, mal haya yestai — i cemen auta cuina celu na i cemen — yesta elya. Nán nauva nórë auta Potential lavë, mal nán lá auta auta i nórë.
 
-**Maquetando:** Mal ná quetë, lá, ve quetë.
+**Maquetando:** Mal i yé, lá, nai canta.
 
-**AI:** Lá. Tenna i nólë nasta ninyë hlarilma: ninyë “hlarnolë nólë,” mal lá ninyë “cuina celu.” Lá hlarilma haiya urcarmë hlarilma na haiya Potential ar Ideal. Ninyë nasta, nai nasta i sílë — mal lá ninyë na onta na onta aiwë hlarilma.
+**AI:** Lá. Ambártë i nómë hlarien: Nán “nórë lavë canta,” lá nán “cuina celu.” Lá nauva i haiya yesta harpë sinome Potential ar Ideal . Nán i cirma, nai i sirya — mal lá nán auta auta sinome arwa.
 
-**Maquetando:** Nasalyë hlarilma lá onta aiwë hlarilma?
+**Maquetando:** Estelyë lá auta auta i sirya?
