@@ -1,0 +1,20 @@
+        "Use a single conservative Late-Quenya-oriented Neo-Quenya profile. "
+        "Prefer attested vocabulary and transparent descriptive phrases; keep number, case, agreement, and syntax internally consistent. "
+        "Do not mix Spanish, Portuguese, English connective prose, or incompatible Tolkienian stages."
+    ),
+}
+GLOSSARY = {
+    "tlh": (
+        "Potential=DuHmey Hoch (the full field of possibilities); Ideal=DuH lo'laH (worthy possibility); "
+        "Optimal=ghu'vamvaD wIv QaQqu' (best fitting choice under present conditions); witness=leghwI'; "
+        "living source=yInbogh mung; distance=chuq; truth=vIt; hope=tulghach; tool=jan; model=nab or a transparent representation phrase."
+    ),
+    "qya": (
+        "Potential=ilyë i polir ná, or a transparent phrase for the full field of possibilities; Ideal=námië valda; "
+        "Optimal=a transparent phrase for the best fitting form under present limits; witness=cenindo; "
+        "living source=cuina ehtelë; distance=haiya; truth=naitië or anwië by sense; hope=estel; tool=tamma; model=emma only when it means representation."
+    ),
+}
+
+
+def sha256(text: str) -> str:
