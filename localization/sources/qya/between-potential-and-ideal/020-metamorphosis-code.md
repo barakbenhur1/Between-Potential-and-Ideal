@@ -3,7 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 020
 status: draft
-linguistic_review: first-pass-complete-needs-specialist-revision
+linguistic_review: specialist-revision-active
 review_record: localization/reviews/between-potential-and-ideal/020-metamorphosis-code-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
@@ -16,7 +16,7 @@ publication: forbidden
 
 I sanwë-patar lá ná tecina er ve tengwë. Ná yando i larma quetalëo cuina yassë handassë mahta para i axan máriéva haiyava. Quetalë sina lá ná appa teknicava; ná tanwa mi i sanwë-patar. Tana yando handassë ya ontanë antacien polë lelya ter ahyalië írë mauya hanya i quén lá ná urda ya mauya pusta, mal celu ya mauya varya.
 
-Mi i minya yondë haiya ná pantaina. Genius lá ná polië ontaina ar lá ná netta sociava. Genius ná i haiya ya sanwë lelya apa landa. I tyalië quénwa ná nótië poitaina: nolmë ya i Quanta lá polë carë ilúvello erma, an er cuilë mi réna ista réna mi immo.
+Mi i minya yondë haiya ná pantaina. Handassë lá ná polië ontaina ar lá ná netta sociava. Handassë ná i haiya ya sanwë lelya apa landa. I tyalië quénwa ná nótië poitaina: nolmë ya i Quanta lá polë carë ilúvello erma, an er cuilë mi réna ista réna mi immo.
 
 Mi i attëa yondë i lissë hehtaliëo ná pantaina. I Eä maura i nótië ya i quén carë, mal melë i quén lá i nótië. An sina, mi i lúmë rácina, írë tyalië hauta ná ortië ar ahya autalië immo, i lissë oronta lá ná i mauya mapien míri rimbi naicello. I lissë oronta ná i manwië i Quanta hehtien i túreryar antien serë i celu cuinanna.
 
@@ -30,7 +30,7 @@ Mi i lempëa yondë i metta ná tulcaina: poitalë ú loicar ná i firnië i ten
 
 **I axan i varyaliëo haiyava:** avá auta i landa quénwa mi essë hanquenta tyelca. Á ná i tarmë ya lavë ortië, lá i mahta ya auta i oron. I tarmë lá mapë menelë i quénello; varya se i yáwello.
 
-**I axan landaliëo immo:** i amba handassë harya túrë, i amba mauya-cárierya ná landa immo. Túrë ya lá landa immo ahya harma yando írë cenë ve órë. Handassë valda lá tanca i ya ontë genius quénwa; varya i lúmi yassen i quén polë hirë immo ú ná rácina.
+**I axan landaliëo immo:** i amba handassë harya túrë, i amba mauya-cárierya ná landa immo. Túrë ya lá landa immo ahya harma yando írë cenë ve órë. Handassë valda lá tanca i ya ontë handassë quénwa; varya i lúmi yassen i quén polë hirë immo ú ná rácina.
 
 **I axan lissë astarmëo:** mi i réna yassë tyalië ahya autalië, i quén lá mauya ná pusta an maura serë. Mauya enyalë sen i serë lá ná loica. Ná tanwa melmëo i Eäva ya lá anta i celu i nótien. I oron ná airë, mal i ortando ná airë lá i oron.
 
