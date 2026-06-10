@@ -1,0 +1,53 @@
+name: Local Translation Quality Test
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: local-translation-quality-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [tlh, qya]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Ollama and model
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          nohup ollama serve >/tmp/ollama.log 2>&1 &
+          for i in $(seq 1 60); do curl -fsS http://127.0.0.1:11434/api/tags && break || sleep 2; done
+          ollama pull qwen2.5:7b
+      - name: Rewrite segment 080
+        env:
+          LANGUAGE: ${{ matrix.language }}
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import os, subprocess
+          lang=os.environ['LANGUAGE']
+          source=Path(f'localization/sources/{lang}/between-potential-and-ideal/080-god-as-potential.md').read_text(encoding='utf-8')
+          target={
+            'tlh': "idiomatic standard Klingon (tlhIngan Hol) in Latin transcription, using attested vocabulary and transparent descriptive clauses rather than English loans",
+            'qya': "literary Neo-Quenya using a single conservative Tolkienian grammar profile and transparent descriptive phrases rather than English, Spanish, or Portuguese loans",
+          }[lang]
+          prompt=f'''Rewrite the complete Markdown below into {target}. Preserve the YAML front matter, headings, paragraphs, image paths, quotations, inline code, logical distinctions, and order. Replace ordinary foreign-language prose, but keep the protected brand Between Potential and Ideal, names, citations, URLs, abbreviations, formulas, and formally named scientific theories. Keep the five English Segment review gate instructions exactly as review metadata. Return only the complete rewritten Markdown, with no fences or commentary. Do not summarize or omit anything.\n\n{source}'''
+          result=subprocess.run(['ollama','run','qwen2.5:7b',prompt],check=True,capture_output=True,text=True)
+          out=Path('quality-test')
+          out.mkdir(exist_ok=True)
+          (out/f'080-{lang}.md').write_text(result.stdout.strip()+'\n',encoding='utf-8')
+          (out/f'080-{lang}-source.md').write_text(source,encoding='utf-8')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: local-translation-quality-${{ matrix.language }}
+          path: quality-test/
+          retention-days: 1
