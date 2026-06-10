@@ -1,49 +1,28 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "segment": 60,
-  "status": "source-update-blocked-plan-recorded",
+  "status": "applied-and-mechanically-verified",
   "approved": false,
   "publication": "forbidden",
-  "audit_baseline": {
-    "repository_foreign_term_occurrences": 660,
-    "repository_body_occurrences": 609,
+  "verified_audit_run": {
+    "workflow_run_id": 27299982418,
+    "head_sha": "ceac436a1d972e104324f223a27ce4eb9927353c",
+    "result": "success",
+    "segment_tlh_findings": 0,
+    "segment_qya_findings": 0,
+    "segment_total_findings": 0,
+    "repository_foreign_term_occurrences": 637,
+    "repository_body_occurrences": 586,
     "repository_heading_occurrences": 51,
-    "repository_blocked_pairs": 62,
-    "repository_clear_pairs": 15,
-    "segment_tlh_findings": 13,
-    "segment_qya_findings": 10,
-    "segment_total_findings": 23
+    "repository_blocked_pairs": 61,
+    "repository_clear_pairs": 16
   },
-  "tlh_terms": {
-    "frequency": "wab pat",
-    "nature": "living world descriptive phrase",
-    "processor": "information-processing mind descriptive phrase",
-    "calculation": "number-analysis descriptive phrase",
-    "optimization": "improvement-for-function descriptive phrase",
-    "precision": "exactness descriptive phrase",
-    "mirror": "seeing instrument descriptive phrase",
-    "logic": "reasoning rule descriptive phrase",
-    "metamorphosis": "change descriptive phrase",
-    "safety": "protection descriptive phrase",
-    "harmony": "symphonic relation descriptive phrase"
+  "source_paths": {
+    "tlh": "localization/sources/tlh/between-potential-and-ideal/060-symphony-and-friction.md",
+    "qya": "localization/sources/qya/between-potential-and-ideal/060-symphony-and-friction.md"
   },
-  "qya_terms": {
-    "capitulo": "project-working chapter term pending source verification",
-    "frequency": "project-working resonance term pending source verification",
-    "nature": "world or living-world phrase pending profile review",
-    "genius": "exceptional-intelligence phrase pending profile review",
-    "optimization": "improvement or ordering phrase pending profile review",
-    "metamorphosis": "change or transformation phrase pending source verification",
-    "safety": "protection phrase pending source verification",
-    "harmony": "musical-unity phrase pending source verification"
-  },
-  "required_before_clearance": [
-    "apply replacements to both canonical source files without truncating content",
-    "run the line-aware constructed-language audit",
-    "confirm zero heading and body findings for segment 060",
-    "preserve draft and publication-forbidden metadata",
-    "complete specialist syntax and morphology review",
-    "complete independent second review"
-  ],
-  "tooling_note": "Full source replacement was rejected by the connected write safety layer. No allowlist, truncation, encoding workaround, or publication-state change was used."
+  "mechanically_clear": true,
+  "specialist_review_required": true,
+  "independent_second_review_required": true,
+  "next_target": 70
 }
