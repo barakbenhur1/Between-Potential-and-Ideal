@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "segment": 30,
+  "stage": "specialist-terminology-validation",
+  "publication": "forbidden",
+  "approval_effect": "none",
+  "profiles": {
+    "tlh": "Okrand-canonical-only",
+    "qya": "Late-Quenya-first"
+  },
+  "concepts": [
+    {
+      "id": "metamorphosis-code",
+      "tlh": {
+        "current_form": "choHmeH chut",
+        "status": "provisional-source-and-syntax-pending"
+      },
+      "qya": {
+        "current_form": "I Cantië Ahyaliëo",
+        "status": "provisional-morphology-and-context-pending"
+      },
+      "label_test": "mechanically-clear-only",
+      "paragraph_test": "pending",
+      "literary_test": "pending"
+    },
+    {
+      "id": "signature-resonance-frequency",
+      "tlh": {
+        "current_form": "wab pat",
+        "status": "provisional-descriptive-construction"
+      },
+      "qya": {
+        "current_form": "rinca",
+        "status": "project-working-form-source-pending"
+      },
+      "label_test": "pending",
+      "paragraph_test": "temporary-body-use-only",
+      "literary_test": "pending"
+    },
+    {
+      "id": "processing",
+      "tlh": {
+        "current_form": "De' mIw / De' mIwbogh yab",
+        "status": "provisional-descriptive-construction"
+      },
+      "qya": {
+        "current_form": "carma / carindo constructions",
+        "status": "profile-and-context-pending"
+      },
+      "label_test": "pending",
+      "paragraph_test": "temporary-body-use-only",
+      "literary_test": "pending"
+    },
+    {
+      "id": "interpretation-and-contact",
+      "tlh": {
+        "current_forms": ["yajmeH mIw", "rarghach"],
+        "status": "provisional-source-and-distinction-pending"
+      },
+      "qya": {
+        "current_forms": ["hanyalië", "ovantë"],
+        "status": "profile-and-distinction-pending"
+      },
+      "label_test": "pending",
+      "paragraph_test": "temporary-body-use-only",
+      "literary_test": "pending"
+    },
+    {
+      "id": "witness",
+      "tlh": {
+        "current_form": "leghwI'",
+        "status": "observer-like-ethical-sense-unresolved"
+      },
+      "qya": {
+        "current_form": "astarmo",
+        "status": "source-locator-and-ethical-context-pending"
+      },
+      "label_test": "pending",
+      "paragraph_test": "temporary-body-use-only",
+      "literary_test": "pending"
+    },
+    {
+      "id": "distance",
+      "tlh": {
+        "current_form": "chuq",
+        "status": "physical-sense-philosophical-extension-pending"
+      },
+      "qya": {
+        "current_form": "haiya / haiyava",
+        "status": "unsupported-current-form-revision-required"
+      },
+      "label_test": "failed-for-current-qya-form",
+      "paragraph_test": "pending",
+      "literary_test": "pending"
+    },
+    {
+      "id": "exceptional-intelligence",
+      "tlh": {
+        "current_form": "valqu'ghach / mIqta' yab constructions",
+        "status": "semantic-distinction-pending"
+      },
+      "qya": {
+        "current_form": "handassë",
+        "status": "middle-quenya-derived-profile-exception-required"
+      },
+      "label_test": "pending",
+      "paragraph_test": "temporary-body-use-only",
+      "literary_test": "pending"
+    }
+  ],
+  "verified_audit": {
+    "workflow_run_id": 27295172366,
+    "head_sha": "ac3a1f7ad78ea3f63c9b07d0312e7d76828cfa5e",
+    "tlh_heading": 0,
+    "tlh_body": 0,
+    "qya_heading": 0,
+    "qya_body": 0,
+    "mechanically_clear": true
+  },
+  "acceptance": {
+    "all_terms_resolved": false,
+    "all_context_tests_passed": false,
+    "all_sources_recorded": false,
+    "heading_findings_zero": true,
+    "body_findings_zero": true,
+    "second_review_passed": false,
+    "approved": false
+  }
+}
