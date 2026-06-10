@@ -1,0 +1,19 @@
+{
+  "segment": 490,
+  "id": "490-law-persons-plea-punishment",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "legality-vs-worthiness",
+    "harmed-and-accused-as-distinct-living-sources",
+    "plea-bargain-as-responsible-or-coerced-translation",
+    "punishment-vs-revenge-and-pain-vs-justice-proof",
+    "capital-punishment-as-final-erasure-and-irreversible-error",
+    "social-protection-without-guaranteed-return-to-free-life"
+  ],
+  "summary": "The legality, worthiness, living-source, plea, punishment, correction, protection, and final-erasure safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, terminology, morphology, and idiomatic syntax."
+}
