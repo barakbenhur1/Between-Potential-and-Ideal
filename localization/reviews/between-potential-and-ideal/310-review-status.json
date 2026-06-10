@@ -1,0 +1,18 @@
+{
+  "segment": 310,
+  "id": "310-locality-nonlocality-bell",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "locality-before-structural-extension",
+    "no-signalling",
+    "correlation-vs-communication",
+    "Bell-under-explicit-assumptions",
+    "anti-mystical-overreach"
+  ],
+  "summary": "The scientific and philosophical guardrails are preserved. Both drafts require specialist revision for extensive foreign-language contamination, technical terminology, morphology, and idiomatic syntax."
+}
