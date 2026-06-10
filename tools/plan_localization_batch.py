@@ -13,9 +13,9 @@ import shutil
 ROOT = Path(__file__).resolve().parents[1]
 JOBS_DIR = ROOT / "reports" / "localization" / "ai-jobs"
 CACHE_DIR = ROOT / "localization" / "translation-cache"
-CACHE_SCHEMA = "constructed-languages-6000-mini-test-v1"
+CACHE_SCHEMA = "constructed-languages-6000-gpt41-test-v1"
 BATCH_SIZE = 1
-MODELS = ("openai/gpt-4.1-mini",)
+MODELS = ("openai/gpt-4.1",)
 TARGETS = {
     "tlh": (
         "Klingon (tlhIngan Hol), using canonical Marc Okrand grammar and attested vocabulary. "
@@ -48,6 +48,7 @@ def valid(source: str, translated: str) -> bool:
             "capítulo",
             "usuario:",
             "saída",
+            "parece",
         )
     ):
         return False
