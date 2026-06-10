@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+from collections import Counter
 from difflib import SequenceMatcher
 from pathlib import Path
 import hashlib
@@ -12,9 +13,9 @@ import shutil
 ROOT = Path(__file__).resolve().parents[1]
 JOBS_DIR = ROOT / "reports" / "localization" / "ai-jobs"
 CACHE_DIR = ROOT / "localization" / "translation-cache"
-CACHE_SCHEMA = "gpt41-gpt4o-fragments-6000-v2"
-BATCH_SIZE = 16
-MODELS = ("openai/gpt-4.1", "openai/gpt-4o")
+CACHE_SCHEMA = "constructed-languages-1500-v3"
+BATCH_SIZE = 4
+MODELS = ("openai/gpt-4.1", "openai/gpt-4.1-mini")
 TARGETS = {
     "tlh": (
         "Klingon (tlhIngan Hol), using canonical Marc Okrand grammar and attested vocabulary. "
@@ -37,22 +38,36 @@ def clean(text: str) -> str:
 
 def valid(source: str, translated: str) -> bool:
     lowered = translated.lower()
-    refused = any(
+    if any(
         marker in lowered
         for marker in (
             "i can't assist",
             "i cannot assist",
             "as an ai language model",
             "cannot translate",
+            "capítulo",
+            "usuario:",
+            "saída",
         )
-    )
-    similarity = SequenceMatcher(None, source[:6000], translated[:6000]).ratio()
-    return (
-        len(translated) >= max(200, int(len(source) * 0.45))
-        and translated != source
-        and similarity < 0.65
-        and not refused
-    )
+    ):
+        return False
+    if translated == source or not (0.45 <= len(translated) / max(1, len(source)) <= 3.0):
+        return False
+    if SequenceMatcher(None, source[:4000], translated[:4000]).ratio() >= 0.65:
+        return False
+    words = re.findall(r"[\w'’-]+", lowered, flags=re.UNICODE)
+    if len(words) < 25:
+        return False
+    counts = Counter(words)
+    if counts.most_common(1)[0][1] / len(words) > 0.18:
+        return False
+    if re.search(r"\b([\w'’-]+)(?:\s+\1){7,}\b", lowered, flags=re.UNICODE):
+        return False
+    if len(set(words)) / len(words) < 0.08:
+        return False
+    source_blocks = len([part for part in re.split(r"\n\s*\n", source) if part.strip()])
+    target_blocks = len([part for part in re.split(r"\n\s*\n", translated) if part.strip()])
+    return target_blocks >= max(1, source_blocks // 2)
 
 
 def ensure_cache_schema() -> None:
