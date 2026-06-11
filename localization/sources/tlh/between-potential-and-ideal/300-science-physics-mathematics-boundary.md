@@ -20,7 +20,7 @@ _Image description draft: formulas, measurement, models je boundary languages ru
 
 ### Decoration mojmoHbe'taHvIS lughchu'ghach chay' lo'lu'
 
-scientific authority aura QubmeH mIwvaD nobmeH 'el science, physics, mathematics je 'e'be'; discipline ghojmoHmeH 'el. responsible form Hoch nuqDaq Qap, nuqDaq juvlaH, nuqDaq luj, 'ej tobmeH De' HurDaq nuq claimnISbe' 'e' SovnIS 'e' qawmoH. theory leghDaq science Ideal immo 'oHbe', 'ej mathematics living truth tamwI' 'oHbe'. boundary languages bIH: possibility, form, test, validity, limitation je pImmoHmeH lughchu'ghach Hemey.
+scientific authority aura QubmeH mIwvaD nobmeH 'el science, physics, mathematics je 'e'be'; discipline ghojmoHmeH 'el. responsible form Hoch nuqDaq Qap, nuqDaq juvlaH, nuqDaq luj, 'ej tobmeH De' HurDaq nuq claimnISbe' 'e' SovnIS 'e' qawmoH. QubmeH mIw leghDaq science Ideal immo 'oHbe', 'ej mathematics living truth tamwI' 'oHbe'. boundary languages bIH: possibility, form, test, validity, limitation je pImmoHmeH lughchu'ghach Hemey.
 
 scientific Potential 'oH stable formulation Suqbe'pu'bogh DuHmey field'e': phenomenon qIjbe'lu'pu'bogh, relation juvbe'lu'pu'bogh, pattern repeat 'ach yajbe'lu'pu'bogh, pagh questionvaD tool yap tu'lu'be'bogh. final answer 'oHbe' scientific Ideal'e'; ghu' noblu'pu'boghDaq SovlaHbogh DochvaD formulation responsible law' 'oH, test-laH, falsify-laH, repeat-laH, correct-laH je. scientific Optimal 'oH defined conditionsDaq Qapbogh local model'e', absolute truth ghaH'egh ngebbe'taHvIS. vaj knowledge HoS neH 'oHbe' science QaQ'e'; humility chen je 'oH.
 
