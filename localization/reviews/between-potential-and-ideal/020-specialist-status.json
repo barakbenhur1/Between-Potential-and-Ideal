@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "segment": 20,
   "stage": "specialist-source-validation",
-  "status": "round-2-governing-pattern-short-label-complete",
+  "status": "governing-pattern-philosophical-frame-source-blocked",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -22,6 +22,7 @@
   "round_2_title_architecture": "localization/reviews/between-potential-and-ideal/020-round-2-title-architecture.md",
   "round_2_sentence_frame_matrix": "localization/reviews/between-potential-and-ideal/020-round-2-sentence-frame-matrix.md",
   "qya_cantie_short_label_test": "localization/reviews/between-potential-and-ideal/020-cantie-test.md",
+  "qya_cantie_philosophical_frame_blocker": "localization/reviews/between-potential-and-ideal/020-cantie-philosophical-frame-blocker.md",
   "current_audit_state": {
     "repository_mechanically_clear_pairs": 77,
     "repository_blocked_pairs": 0,
@@ -41,6 +42,7 @@
     "localization/reviews/between-potential-and-ideal/020-three-context-validation.md",
     "localization/reviews/between-potential-and-ideal/020-three-context-results-round-1.md",
     "localization/reviews/between-potential-and-ideal/020-round-2-sentence-frame-matrix.md",
+    "localization/reviews/between-potential-and-ideal/020-cantie-philosophical-frame-blocker.md",
     "localization/glossaries/segment-020-specialist-terms.md"
   ],
   "acceptance": {
@@ -49,6 +51,7 @@
     "round_2_test_architecture_selected": true,
     "round_2_sentence_frames_defined": true,
     "qya_cantie_short_label_conditional_pass": true,
+    "qya_cantie_philosophical_frame_complete": false,
     "source_validation_complete": false,
     "title_terms_resolved": false,
     "complete_target_language_title_candidates": false,
@@ -61,7 +64,7 @@
     "independent_second_review_complete": false,
     "approved": false
   },
-  "next_action": "complete the Neo-Quenya governing-pattern philosophical frame by source-locating the relation expression, the change predicate, the negative replacement clause and their grammar before evaluating the sentence",
+  "next_action": "source-locate a Late-Quenya relational construction and a Late-compatible remain-or-preserve predicate; do not admit the governing-pattern philosophical sentence before both lexical and grammar locators are recorded",
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
