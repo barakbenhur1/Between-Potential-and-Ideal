@@ -9,11 +9,12 @@ semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
 ---
 
+
 ## Boundary Horizons
 
 *information, visibility, cheghbe'bogh Doch je*
 
-![Boundary Horizons](../../../figures/v25_chapter_boundary-horizons.png)
+![Boundary Horizons](../../../figures/v25_chapter-boundary-horizons.png)
 
 _Image description draft: boundary wall neH 'oHbe'; possibility, form je relation guide-bogh horizon 'oH._
 
