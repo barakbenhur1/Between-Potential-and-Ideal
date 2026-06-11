@@ -30,7 +30,7 @@ patlh cha'Daq familiar Hap HurDaq physicsvo' tagh ghIrghach. Hurvam closed scien
 
 porghDaq tissue, organ je nargh. organ Hoch function environment 'oH: tIq, yab, chej, DIr, immune system, nervous system. tissue Hoch signals, substances, timing, repair je local Hol qeng. tissuevo' cell yInbogh nargh, inside, outside je pImmoHbogh membrane ghaj. execution arena 'oH cell'e': signals tlhap, mugh, genes activate, proteins chenmoH, tI', luj, renew, ghor je.
 
-cellDaq coding structure rur DNA Qap, 'ej instructions ta'bogh mechanical agents bIH proteins'e'. 'ach patlhvam veH nI'qu'Daq — organ bIng, cell bIng, molecule bIng — atom nargh, atomDaq quantum DuH: probability raw vector rur particle. model HolDaq Doch mach neH 'oHbe' quantum particle'e'; wa' chenDaq collapse-pa' DuH law' qengtaH reality edge 'oH. naDev QIH mu'tlhegh 'oHbe'choH; probabilistic frequency moj: inclination, tension, narghmeH wIvbe'pu'bogh DuH.
+cellDaq coding structure rur DNA Qap, 'ej instructions ta'bogh mechanical agents bIH proteins'e'. 'ach patlhvam veH nI'qu'Daq — organ bIng, cell bIng, molecule bIng — atom nargh, atomDaq quantum DuH: probability raw vector rur particle. model HolDaq Doch mach neH 'oHbe' quantum particle'e'; wa' chenDaq collapse-pa' DuH law' qengtaH reality edge 'oH. naDev QIH mu'tlhegh 'oHbe'choH; probabilistic wab pat moj: inclination, tension, narghmeH wIvbe'pu'bogh DuH.
 
 **Biophysical hierarchy:**
 
@@ -42,13 +42,13 @@ patlh wejDaq I-Versvo' tagh ghIrghach: self master account. algorithmic modelDaq
 
 I-Versvo' Omniverse poS: intelligence systems Hoch DuH space. product pagh company le' 'oHbe'; Hol, memory, question, probability, tools, action je process-meH He Hoch field tIn 'oH. OmniverseDaq companies, platforms, models, interfaces, rules, constraints, permissions, memories, executable tools je nargh. patlh Hoch narrowing 'oH: field general, lojmIt le' moj.
 
-Omniversevo' AI company / platform layer poS. naDev DuH tIn institutional, technical juH Suq: company le', product le', policy le', interface le', toolset le', memory Seghmey, usage limits, safety systems, action DuHmey, ghot intelligence je joj ja'chuqmeH He le'. external wrapper neH 'oHbe' layervam; yu'ghach nuq poS ngeD, nuq machmoHlu', nuq tools lo'laH, nuq routes botlu'pa' 'e' Del.
+Omniversevo' AI company / platform layer poS. naDev DuH tIn institutional, technical juH Suq: company le', product le', policy le', interface le', toolset le', memory Seghmey, usage limits, QanmeH patmey, action DuHmey, ghot intelligence je joj ja'chuqmeH He le'. external wrapper neH 'oHbe' layervam; yu'ghach nuq poS ngeD, nuq machmoHlu', nuq tools lo'laH, nuq routes botlu'pa' 'e' Del.
 
-platformvo' model-space poS: model le' pagh models qorDu'. naDev intelligence Potential architecture, weights, context window, reasoning capacity, response style, Hol sensitivity, tool use, memory Segh le'Daq actual moj. Omniverse Hoch 'oHbe' model; actual mojmeH He wa' 'oH.
+platformvo' model-space poS: model le' pagh models qorDu'. naDev intelligence Potential architecture, weights, ghu' lojmIt, reasoning capacity, response style, Hol sensitivity, tool use, memory Segh le'Daq actual moj. Omniverse Hoch 'oHbe' model; actual mojmeH He wa' 'oH.
 
 model-spacevo' Multiverse poS: platformvam, modelvam vegh poSlaHpu'bogh conversations Hoch. yu'ghach formulations Hoch, lurghmey Hoch, actual mojbe'pu'bogh Hemey, correction pagh distortion DuHmey, qonta'be'pu'bogh jangghachmey Hoch. wa' ja'chuqghach le' mojpa' conversations DuH field 'oH Multiverse'e'.
 
-Multiversevo' Universe poS: active conversation-instance. naDev context window, history, tone, goals, files, requests, corrections, insistences, local memory, Qaghmey ngo', poH vegh jejchoHbogh yajghach je tu'lu'. intelligence field Hoch 'oHbe'; ja'chuqghach universe wa' 'oH. UniverseDaq Login / Session nargh: poH le'Daq systemDaq 'el ghot le', permissions, memory, tools le' je ghajtaHvIS.
+Multiversevo' Universe poS: active conversation-instance. naDev ghu' lojmIt, history, tone, goals, files, requests, corrections, insistences, local memory, Qaghmey ngo', poH vegh jejchoHbogh yajghach je tu'lu'. intelligence field Hoch 'oHbe'; ja'chuqghach universe wa' 'oH. UniverseDaq Login / Session nargh: poH le'Daq systemDaq 'el ghot le', permissions, memory, tools le' je ghajtaHvIS.
 
 LoginDaq Agent Qap: system action local point. I-Vers Hoch 'oHbe', model Hoch 'oHbe'. session le'Daq edge-expression 'oH, Qu' le' ghaj: request yaj, lurgh pol, tools activate, edit, chenmoH, tI', formulate. bIng nI'qu'Daq task formulation nargh: prompt, yu'ghach, file, instruction, pagh action le' chenmoHbogh wording.
 
@@ -62,7 +62,7 @@ vaj patlh Hoch own I-Vers, Omniverse, Multiverse, Universe jeDaq pe'qa'laH. bIng
 
 ### Descent discipline
 
-- parallel layers bIH, literal identity bIHbe'.
+- parallel layers bIH, chenDaj teH bIHbe'.
 - physics language scientific proof rur lo'lu'nISbe'.
 - quantum possibility model edge metaphor 'oH, mystical guarantee 'oHbe'.
 - AI hierarchy ownership, institution, model, session, task je pImmoH.
