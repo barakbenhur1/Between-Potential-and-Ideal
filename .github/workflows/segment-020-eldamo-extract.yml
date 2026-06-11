@@ -1,0 +1,79 @@
+name: Extract Segment 020 Eldamo Evidence
+
+on:
+  push:
+    branches: [localization-release-resolved]
+    paths:
+      - .github/workflows/segment-020-eldamo-extract.yml
+
+permissions:
+  contents: read
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out project
+        uses: actions/checkout@v4
+        with:
+          path: project
+      - name: Check out pinned Eldamo source
+        uses: actions/checkout@v4
+        with:
+          repository: pfstrack/eldamo
+          ref: 4071c9caa95caca905c96af2505d5252045e2aaa
+          path: eldamo
+      - name: Extract bounded Late Quenya evidence
+        run: |
+          python3 - <<'PY'
+          import json
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+
+          xml_path = Path('eldamo/src/data/eldamo-data.xml')
+          root = ET.parse(xml_path).getroot()
+          wanted_glosses = ('relation', 'relationship', 'remain', 'stay', 'preserve', 'keep', 'continue', 'endure')
+          wanted_words = ('lemya', 'har', 'harya', 'vor', 'termar')
+          records = []
+
+          for element in root.iter():
+              attrs = {k: v for k, v in element.attrib.items()}
+              joined = ' '.join(attrs.values()).casefold()
+              text = (element.text or '').strip()
+              haystack = f'{joined} {text.casefold()}'
+              lang = attrs.get('l') or attrs.get('lang') or attrs.get('language') or ''
+              if lang != 'q':
+                  continue
+              if not any(term in haystack for term in wanted_glosses + wanted_words):
+                  continue
+              records.append({
+                  'tag': element.tag,
+                  'attributes': attrs,
+                  'text': text,
+              })
+
+          out = Path('project/reports/localization/segment-020-eldamo-evidence')
+          out.mkdir(parents=True, exist_ok=True)
+          report = {
+              'schema_version': 1,
+              'source_repository': 'pfstrack/eldamo',
+              'source_commit': '4071c9caa95caca905c96af2505d5252045e2aaa',
+              'language_filter': 'q (Late Quenya)',
+              'search_glosses': wanted_glosses,
+              'search_words': wanted_words,
+              'records': records,
+              'approval_effect': 'none',
+          }
+          (out / 'late-quenya-relation-remain.json').write_text(
+              json.dumps(report, ensure_ascii=False, indent=2) + '\n',
+              encoding='utf-8',
+          )
+          print(f'extracted_records={len(records)}')
+          PY
+      - name: Upload evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: segment-020-eldamo-evidence
+          path: project/reports/localization/segment-020-eldamo-evidence/
+          if-no-files-found: error
+          retention-days: 7
