@@ -8,9 +8,10 @@ on:
       - "localization/sources/tlh/**"
       - "localization/sources/qya/**"
       - ".github/workflows/audit-constructed-language-segments.yml"
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   audit:
@@ -18,38 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
-          fetch-depth: 2
-      - name: Apply segment 390 terminology update
-        run: |
-          python3 - <<'PY'
-          from pathlib import Path
-
-          tlh = Path('localization/sources/tlh/between-potential-and-ideal/390-engineering-material-load-foundations.md')
-          text = tlh.read_text(encoding='utf-8')
-          text = text.replace('status: draft\n', 'status: draft\nlinguistic_review: specialist-revision-active\n', 1)
-          text = text.replace('engineering calculation discipline', 'engineering SImmeH discipline')
-          text = text.replace('safety factors', 'QobHom polmeH ratios')
-          text = text.replace('Safety factor:', 'QobHom polmeH ratio:')
-          text = text.replace('Factor of Safety', 'QobHom polmeH Ratio')
-          text = text.replace('safety factor mathematical', 'QobHom polmeH ratio mathematical')
-          tlh.write_text(text, encoding='utf-8')
-
-          qya = Path('localization/sources/qya/between-potential-and-ideal/390-engineering-material-load-foundations.md')
-          text = qya.read_text(encoding='utf-8')
-          text = text.replace('status: draft\n', 'status: draft\nlinguistic_review: specialist-revision-active\n', 1)
-          text = text.replace('safety factors', 'ratios yar hehtar room erroren')
-          text = text.replace('Safety factor:', 'Ratio ya hehta room erroren:')
-          text = text.replace('Factor of Safety', 'Ratio ya hehta room erroren')
-          text = text.replace('Safety factor ná', 'Ratio ya hehta room erroren ná')
-          qya.write_text(text, encoding='utf-8')
-          PY
-          git checkout HEAD^ -- .github/workflows/audit-constructed-language-segments.yml
-          git config user.name github-actions
-          git config user.email actions@github.com
-          git add .github/workflows/audit-constructed-language-segments.yml localization/sources/tlh/between-potential-and-ideal/390-engineering-material-load-foundations.md localization/sources/qya/between-potential-and-ideal/390-engineering-material-load-foundations.md
-          git commit -m 'Update segment 390 terminology'
-          git push origin HEAD:${{ github.event.pull_request.head.ref }}
+          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"

@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 390
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -16,7 +17,7 @@ publication: forbidden
 
 _Image description draft: engineered system, naDev Potential structure, channeling, testing, repair je moj._
 
-outsidevo' engineering calculation discipline rur: loads, dimensions, materials, codes, safety factors, forces, sections, drawings je. architecture form discipline rur: lines, facades, spaces, light, movement, proportion, beauty je.
+outsidevo' engineering SImmeH discipline rur: loads, dimensions, materials, codes, QobHom polmeH ratios, forces, sections, drawings je. architecture form discipline rur: lines, facades, spaces, light, movement, proportion, beauty je.
 
 'ach cha' bIngDaq question rap Qam:
 
@@ -56,13 +57,13 @@ structure drawlu'DI' testbe'; vay' uponDaj leghDI' test. ghot floorDaq Qam. wind
 
 relevant capacity juSchugh demand, failure, damage, limit-state violation je zoneDaq 'el structure. 'ach capacity choH, demand choH, materials qan, uses mutate. engineering question `DaH Qam'a'?` neH 'oHbe'; `time vegh QamtaHlaH'a'?` je 'oH.
 
-### 4. Safety factor: Qun maHbe' 'e' lajghach
+### 4. QobHom polmeH ratio: Qun maHbe' 'e' lajghach
 
-> **Factor of Safety = Capacity / Demand**
+> **QobHom polmeH Ratio = Capacity / Demand**
 
 ratio napvam codes, load factors, material factors, limit states, probabilistic reasoning je tambe'. 'ach philosophical forceDaj qIjchu': edgeDaq exactly designQo'.
 
-safety factor mathematical humility 'oH. jatlh: chaq measurement wrong; chaq material perfectbe'; chaq use harsh law'; chaq load predictbe'lu'pu'bogh paw. dangerous Ideal jatlh: `jIcalculated, vaj jISov.` living Ideal jatlh: `jIcalculated, vaj errorvaD room nuqDaq vIpolnIS 'e' jISov.`
+QobHom polmeH ratio mathematical humility 'oH. jatlh: chaq measurement wrong; chaq material perfectbe'; chaq use harsh law'; chaq load predictbe'lu'pu'bogh paw. dangerous Ideal jatlh: `jIcalculated, vaj jISov.` living Ideal jatlh: `jIcalculated, vaj errorvaD room nuqDaq vIpolnIS 'e' jISov.`
 
 ### 5. Stress, strain je: chay' 'oy' jatlh matter
 
