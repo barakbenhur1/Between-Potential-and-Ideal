@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 540
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -22,7 +23,7 @@ Ve conceptual map, lá scientific model:
 
 Black hole, mi sense sina, lá ná i person. Ná i relation formed imbe i person ar i possibility that i world will believe new information from them again. Person can do something truly terrible — lá misunderstanding, lá small mistake, mal injury ya creates new world around sa: rooms fall silent when they enter, words examined twice, gesture looks ve attempt purchase forgiveness. Later they may truly change inwardly, lá only apologize hya learn proper sentences. Yet when they help, help may be read ve strategy; when silent, silence ve evasion; when apologizing, apology ve another form i same pasto. Ëar pasts ya pull every new present toward themselves tenna sincere gesture reaches outside already distorted.
 
-Mi relationship, betrayal destroys lá only one fact. Destroys i channel through which future facts are meant pass. Before betrayal, sentence ve `I am on my way` can be simple. After sa, i same sentence carries whole room possibilitieso: perhaps true, half true, said calmien, hiding something. Even when i person speaks truth, truth no longer arrives alone. Arrives through memory i lieo.
+Mi relationship, betrayal destroys lá only one fact. Destroys i tië trusto yallo future facts nar meant auta. Before betrayal, sentence ve `I am on my way` can be simple. After sa, i same sentence carries whole room possibilitieso: perhaps true, half true, said calmien, hiding something. Even when i person speaks truth, truth no longer arrives alone. Arrives through memory i lieo.
 
 Law yando knows gap sina, though cannot always solve sa. Person who finished serving sentence may be legally free, mal not interpretively free. Law can say debt was paid, case closed, courtroom door closed behind. Mal society lá functions like legal file. Remembers in its own way, fears in its own way, protects itself in its own way. Yá this is injustice. Yá justified caution. Yá both at once. Formal completion lá enough restore i capacity be read anew.
 
