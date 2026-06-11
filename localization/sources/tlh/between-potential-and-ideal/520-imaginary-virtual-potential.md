@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 520
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -20,7 +21,7 @@ Qub taghpa' Qub pujmoHbogh words tu'lu'. `Imaginary` tu'be'bogh Doch rur Qoy. `V
 
 'ach language convenience rurchu' reality chenbe'. layersDaj jaHtaHvIS, what exists, what does not exist je cleanly pImmoHlaHbe'. object rur narghbe'bogh Doch tu'lu', 'ach Hutlhchugh object narghlaHbe'. directly measure-be'lu'bogh Doch tu'lu', 'ach Hutlhchugh measurement form Suqbe'. `thing` 'oHbe'bogh Doch tu'lu', 'ach things chay' mojlaH 'e' conditions choHmoH.
 
-beginningDaq clear 'oHnIS: chaptervam mathematics pagh physics theory proof rur lo'be'. imaginary numbers metaphysical entities bIH 'e' claimbe'. virtual particles hidden messengers bIH 'e' claimbe'. black hole evil 'oHbe'; white hole creation source 'oHbe'. modest, precise law' action ta': structures lo', naDev even thought exact forms nuq nargh, nuq influence, nuq limit, nuq appearance possible mojmoH je pImmoHnIS.
+beginningDaq clear 'oHnIS: chaptervam mathematics pagh physics QubmeH mIw proof rur lo'be'. imaginary numbers Hap chut HurDaq ghaH'egh taHbogh Dochmey bIH 'e' claimbe'. virtual particles hidden messengers bIH 'e' claimbe'. black hole evil 'oHbe'; white hole creation source 'oHbe'. modest, precise law' action ta': structures lo', naDev even thought exact forms nuq nargh, nuq influence, nuq limit, nuq appearance possible mojmoH je pImmoHnIS.
 
 caution metaphor jagh 'oHbe'. metaphor false mojbe'meH condition 'oH.
 
@@ -44,7 +45,7 @@ virtual, careful senseDaq, thing appearance conditionsDaq pressure possible Hol 
 
 simple law': virtual thing 'oHbe'. possibility thing narghlaHbogh conditionsDaq push taghbogh way 'oH.
 
-naDev metaphor theory touch, 'ach provebe'. virtual `Potential itself` 'oHbe'. philosophical idea scientific pong 'oHbe'. stable object, object rur stabilizebe'bogh influence je pImmoHnISbogh example 'oH.
+naDev metaphor QubmeH mIw touch, 'ach provebe'. virtual `Potential itself` 'oHbe'. philosophical idea scientific pong 'oHbe'. stable object, object rur stabilizebe'bogh influence je pImmoHnISbogh example 'oH.
 
 imaginary direction Hol 'oH. virtual influence Hol 'oH. real sign Hol 'oH.
 
