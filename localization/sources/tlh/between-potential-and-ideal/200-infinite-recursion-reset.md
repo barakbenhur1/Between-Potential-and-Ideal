@@ -15,7 +15,7 @@ publication: forbidden
 
 *reset, cheghghach, ghIrghach, Salghach je — chen rap DelmeH wej Hol*
 
-![Figure E: The recursive structure. Every layer can become origin, field, possibility, and local world.](../../../figures/v25_'ay'vam_recursive-edge.png)
+![Figure E: The recursive structure. Every layer can become origin, field, possibility, and local world.](../../../figures/v25_chapter_recursive-edge.png)
 
 _Image description draft: recursion chen; patlh Hoch mung, field, DuH, local qo' je mojlaH._
 
@@ -71,7 +71,7 @@ QubmeH mIw mu'meyDaq: qech tu'meH, qech verify-meH je SumchoHbogh ghu' 'oH Ideal
 
 ## Segment review gate
 
-1. Keep the three layers parallel without collapsing them into literal chenDaj.
+1. Keep the three layers parallel without collapsing them into literal identity.
 2. Preserve reset failure as overextended protection, not simple stupidity.
 3. Keep the P versus NP passage explicitly metaphorical and mathematically cautious.
 4. Preserve NP-completeness and coNP distinctions accurately.
