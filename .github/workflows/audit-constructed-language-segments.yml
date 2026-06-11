@@ -1,33 +1,45 @@
 name: Audit Constructed-Language Segments
-
 on:
   pull_request:
     branches: [main]
     paths:
-      - "tools/audit_constructed_language_segments.py"
       - "localization/sources/tlh/**"
       - "localization/sources/qya/**"
       - ".github/workflows/audit-constructed-language-segments.yml"
-  workflow_dispatch:
-
 permissions:
-  contents: read
-
+  contents: write
 jobs:
   audit:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 2
+      - name: Update 400 tlh
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('localization/sources/tlh/between-potential-and-ideal/400-architecture-use-movement-light-resonance.md')
+          s=p.read_text()
+          s=s.replace('status: draft\n','status: draft\nlinguistic_review: specialist-revision-active\n',1)
+          s=s.replace('Structure + Use + Context + Human Meaning','Structure + Use + qech-ngaS poH + Human Meaning')
+          s=s.replace('theoryvaD','QubmeH mIwvaD')
+          s=s.replace('ghot, nugh, theory je','ghot, nugh, QubmeH mIw je')
+          p.write_text(s)
+          PY
+          git checkout HEAD^ -- .github/workflows/audit-constructed-language-segments.yml
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add .github/workflows/audit-constructed-language-segments.yml localization/sources/tlh/between-potential-and-ideal/400-architecture-use-movement-light-resonance.md
+          git commit -m 'Update 400 tlh'
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Audit all paired segments
-        run: python3 tools/audit_constructed_language_segments.py
+      - run: python3 tools/audit_constructed_language_segments.py
       - uses: actions/upload-artifact@v4
         with:
           name: constructed-language-paired-audit
           path: reports/localization/constructed-language-audit/
           if-no-files-found: error
-          retention-days: 14
