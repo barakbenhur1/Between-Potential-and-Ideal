@@ -1,0 +1,17 @@
+{
+  "segment": 300,
+  "status": "specialist-revision-active",
+  "publication": "forbidden",
+  "approved": false,
+  "baseline": {"tlh": 9, "qya": 2, "total": 11},
+  "target_terms": {
+    "tlh": ["precision", "evidence", "theory", "context"],
+    "qya": ["capítulo", "context"]
+  },
+  "acceptance": [
+    "preserve metaphor/model/structural-comparison/scientific-claim distinctions",
+    "preserve source, measurement, failure, and domain-of-validity boundaries",
+    "retain draft and publication-forbidden metadata",
+    "do not treat automated clearance as linguistic approval"
+  ]
+}
