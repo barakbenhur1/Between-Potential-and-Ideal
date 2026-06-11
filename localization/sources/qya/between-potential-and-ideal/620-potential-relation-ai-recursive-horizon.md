@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 620
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -22,9 +23,9 @@ Potential without boundary becomes noise. Ideal without Potential becomes empty 
 
 AI is lá multiverse, ar it is lá cosmology. Mal it can serve ve strong metaphor an artificial field possibilitieso: many images, many texts, many solutions, many variations, many possible worlds generated quickly.
 
-Here i danger appears: more possibilities can become less understanding. AI does lá only expand horizon; it can yando flood sa. Qui ëa no filtering, source, evidence, context ar responsibility, i field possibilitieso becomes persuasive noise.
+Here i danger appears: more possibilities can become less understanding. AI does lá only expand horizon; it can yando flood sa. Qui ëa no filtering, source, tanwa, conditions appearanceo ar responsibility, i field possibilitieso becomes persuasive noise.
 
-I problem Potentialo is lá always lack possibilitieso. Sometimes i problem is excess possibilities without clarification. Lá every generated image deserves enter document. Lá every possible formulation strengthens theory. Lá every world ya can be imagined deserves be built. Lá every answer ya sounds deep carries source.
+I problem Potentialo is lá always lack possibilitieso. Sometimes i problem is excess possibilities without clarification. Lá every generated image deserves enter document. Lá every possible formulation strengthens i theory. Lá every world ya can be imagined deserves be built. Lá every answer ya sounds deep carries source.
 
 I Optimal mi AI is lá `generate as much as possible`. It is choose, test, filter, carry source, recognize boundary, ar return responsibility ana i human being. Sina is exactly i difference imbe Potential ar Ideal: i possible multiplies by itself; i worthy requires work.
 
@@ -52,7 +53,7 @@ Lá every horizon is prison. Sometimes horizon is i condition ya allows form app
 2. Keep Potential, Ideal, and Optimal distinct: possible field, worthy clarification, and local responsible translation.
 3. Preserve AI as a metaphor for an artificial field of possibilities, never a multiverse or cosmology.
 4. Keep excess possibility as a possible source of noise and reduced understanding.
-5. Preserve source, evidence, context, filtering, boundary, and human responsibility in the AI section.
+5. Preserve source, tanwa, conditions appearanceo, filtering, boundary, and human responsibility in the AI section.
 6. Keep the recursive edge compatible with truth; every truth carries a horizon but is not thereby false.
 7. Do not turn an expanding horizon into divine or total vision.
 8. Preserve the hope of acting better without seeing everything.
