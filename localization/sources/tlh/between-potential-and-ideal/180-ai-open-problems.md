@@ -59,7 +59,7 @@ AI chenmoHlaH, 'ach automatically ghajbe'. advice noblaH, 'ach consequence qengb
 
 ## Segment review gate
 
-1. Preserve the diagnostic equation as a discipline map, not a safety formula.
+1. Preserve the diagnostic equation as a discipline map, not a protective formula.
 2. Keep human responsibility non-transferable to the tool.
 3. Distinguish understanding, imitation, authority, and consequence.
 4. Preserve source, consent, attribution, privacy, and skill as core boundaries.
