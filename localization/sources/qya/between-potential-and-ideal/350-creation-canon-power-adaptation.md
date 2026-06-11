@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 350
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -32,7 +33,7 @@ Yando írë character dies, returns, ná replaced hya symbol ná given heiren. I
 
 I question canon polë ná seen ter i distinction imbe power, knowledge ar Ideal. Captain America ar Reed Richards, an example, polir serve ve contrast imbe intellectual solution ar preservation moral centero. Reed Richards represents i Ideal solving intellecto: desire understand enough save, repair ar solve. Captain America represents principle hyana: judgment under limitation. Lá ná i strongest hya smartest; greatnesserya lies mi maquetien mana lá mauya be lost írë ëa no perfect solution.
 
-*Watchmen* breaks i same tension from side darker. Doctor Manhattan ná almost divine Potential: enormous power, non-human perception timeo, ability dismantle ar build matter, ar almost complete distance human anxietyo. Mal omnipotence ú good lá ná Ideal. Ozymandias shows optimization ú sanctity i humano polë ahya crime mi name solutiono. Rorschach shows truth ú flexibility polë ahya law ya lá ista cuita.
+*Watchmen* breaks i same tension from side darker. Doctor Manhattan ná almost divine Potential: enormous power, non-human perception timeo, ability dismantle ar build matter, ar almost complete distance human anxietyo. Mal omnipotence ú good lá ná Ideal. Ozymandias tana manen cestië carien ilya nat nenvë ú sanctity i humano polë ahya crime mi essë solutiono. Rorschach shows truth ú flexibility polë ahya law ya lá ista cuita.
 
 I lesson lá ná man is stronger, mal mana form powero en worthy cilien. Power ar knowledge nar potentials. Lá ahyar Ideal tenna lelyar ter moral law, boundary, responsibility ar living center.
 

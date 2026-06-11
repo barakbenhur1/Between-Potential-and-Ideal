@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 350
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -22,17 +23,17 @@ Potential tInchoHDI', Ideal chIl ngeDchoH. character latlh, film latlh, series l
 
 naDev 'el canon. official sequence neH, studio decision neH, fan wiki neH, pagh `nuq qaS` list neH 'oHbe' canon'e'. deep canon 'oH not what never changes, but what permits a work to change without ceasing to be itself.
 
-theory HolDaq canon living invariant 'oH — creative transformation bIngDaq core polta'bogh. medium, period, actor, body, style, tone, audience je choHDI', question `nuq choH?` neH 'oHbe'; `nuq ratlh?` je. core polta'bogh external detail 'oHnISbe'. law, wound, question, relation, boundary, moral axis je mojlaH.
+QubmeH mIw HolDaq canon living invariant 'oH — creative transformation bIngDaq core polta'bogh. medium, period, actor, body, style, tone, audience je choHDI', question `nuq choH?` neH 'oHbe'; `nuq ratlh?` je. core polta'bogh external detail 'oHnISbe'. law, wound, question, relation, boundary, moral axis je mojlaH.
 
 *Batman* choHlaH: detective, gothic, realistic, mythic, psychological, almost caricatured je. 'ach core chIlchugh — puq worldDaj chIlpu'bogh trauma lawDaq choH 'e' nID — costume neH ratlh. *Spider-Man* webs, suit je neH 'oHbe'; young power responsibility bIngDaq 'oH. *Superman* absolute power neH 'oHbe'; absolute power domination mojQo'bogh 'oH. invariant chIlDI', pong ratlhlaH 'ach form chIl.
 
-character Hegh, chegh, replace-lu', pagh heirvaD symbol noblu'DI' je rap. symbol 'Iv qeng 'e' neHbe' question; symbol question rap qengtaH'a'? museum 'oHbe' canon yInbogh'e'; inner law 'oH, change chaw'taHvIS identity pol.
+character Hegh, chegh, replace-lu', pagh heirvaD symbol noblu'DI' je rap. symbol 'Iv qeng 'e' neHbe' question; symbol question rap qengtaH'a'? museum 'oHbe' canon yInbogh'e'; inner law 'oH, change chaw'taHvIS ghaH'egh taHghach pol.
 
 ### 6. Power, knowledge, Ideal je
 
 canon question power, knowledge, Ideal je pImghach vegh leghlaHlu'. Captain America, Reed Richards je contrast mojlaH intellectual solution, moral center polghach je joj. Reed Richards solving intellect Ideal represent: yap yajmeH, rescue, repair, solve je neH. Captain America principle pIm represent: limitation bIngDaq judgment. strongest ghaHbe', smartest ghaHbe'; solution perfect tu'lu'be'DI' nuq chIlbe'nIS 'e' tlhobmo' greatnessDaj tu'lu'.
 
-*Watchmen* tension rap Dop Hurvo' ghor. Doctor Manhattan almost divine Potential 'oH: power tInqu', time non-human perception, matter dismantle/build ability, human anxietyvo' chuq tIn. 'ach good Hutlhbogh omnipotence Ideal 'oHbe'. Ozymandias 'ang optimization human sanctity Hutlhchugh crime solution pongDaq mojlaH. Rorschach 'ang flexibility Hutlhbogh truth yIn Sovbe'bogh law mojlaH.
+*Watchmen* tension rap Dop Hurvo' ghor. Doctor Manhattan almost divine Potential 'oH: power tInqu', time non-human perception, matter dismantle/build ability, human anxietyvo' chuq tIn. 'ach good Hutlhbogh omnipotence Ideal 'oHbe'. Ozymandias 'ang nIvmoHmeH mIw human sanctity Hutlhchugh crime solution pongDaq mojlaH. Rorschach 'ang flexibility Hutlhbogh truth yIn Sovbe'bogh law mojlaH.
 
 lesson `Iv HoS law'?` 'oHbe'; `nuq power form wIvtaH worth?` 'oH. power, knowledge je potentials bIH. moral law, boundary, responsibility, living center je veghbe'chugh Ideal mojbe'.
 
@@ -40,13 +41,13 @@ lesson `Iv HoS law'?` 'oHbe'; `nuq power form wIvtaH worth?` 'oH. power, knowled
 
 adaptation test ral 'oH, medium wa'vo' latlhDaq work lengmoH. paq film moj. comic series moj. game cinema moj. open world linear narrative moj. character interiority visual image moj. transition HochDaq Hoch pollaHbe'lu'.
 
-vaj copying 'oHbe' adaptation QaQ'e'. adaptationDaq fidelity material Hoch polghach 'oHbe'; material choHDI' inner law polghach 'oH.
+vaj copying 'oHbe' adaptation QaQ'e'. adaptationDaq matlhghach material Hoch polghach 'oHbe'; material choHDI' inner law polghach 'oH.
 
 meqvamDaq adaptation cultural reduction 'oH: form wa'vo' latlhDaq leng, material 'op chIltaHvIS meaning structure nuDlu'. computational reductionDaq problem form latlhDaq transfer-lu', decision structure pol 'e' nIDlu'. adaptation work medium latlhDaq transfer, meaning question pol 'e' nID. formal claim 'oHbe'; structural image 'oH. adaptation QaQ, question polta'bogh reduction Qap 'oH.
 
 adaptation qab names, costumes, objects, sentences, icons, scenes je pollaH — 'ach work chIl. surface pol, law chIl. 'etlh pollaH 'ach journey chIl. tower pollaH 'ach center chIl. hero pollaH 'ach hero hero mojmoHbogh question chIl.
 
-rut detail betraynIS adaptation QaQ, formvaD faithful ratlhmeH. change betrayal 'oHnISbe', copying fidelity 'oHnISbe'. question `qay'be' nuq 'ar pollu'?` 'oHbe'; `nuq pollu'?` 'oH.
+rut detail betraynIS adaptation QaQ, formvaD faithful ratlhmeH. change betrayal 'oHnISbe', copying matlhghach 'oHnISbe'. question `qay'be' nuq 'ar pollu'?` 'oHbe'; `nuq pollu'?` 'oH.
 
 ### 8. The Dark Tower: works body center nejbogh
 
