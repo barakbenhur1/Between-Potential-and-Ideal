@@ -1,8 +1,8 @@
 {
-  "schema_version": 10,
+  "schema_version": 11,
   "segment": 20,
   "stage": "specialist-source-validation",
-  "status": "philosophical-frame-clause-route-source-blocked",
+  "status": "directed-speech-and-agency-source-blocked",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -15,6 +15,7 @@
   "terminology_supplement": "localization/glossaries/segment-020-specialist-terms.md",
   "candidate_validation": "localization/reviews/between-potential-and-ideal/020-candidate-validation.json",
   "source_decisions": "localization/reviews/between-potential-and-ideal/020-source-decisions.json",
+  "source_decisions_round_2": "localization/reviews/between-potential-and-ideal/020-source-decisions-round-2.json",
   "source_evidence_round_1": "localization/reviews/between-potential-and-ideal/020-source-evidence-round-1.md",
   "context_decisions_round_1": "localization/reviews/between-potential-and-ideal/020-context-decisions-round-1.md",
   "three_context_validation": "localization/reviews/between-potential-and-ideal/020-three-context-validation.md",
@@ -23,6 +24,7 @@
   "round_2_sentence_frame_matrix": "localization/reviews/between-potential-and-ideal/020-round-2-sentence-frame-matrix.md",
   "round_2_relation_remain_source_assessment": "localization/reviews/between-potential-and-ideal/020-round-2-relation-remain-source-assessment.md",
   "round_2_har_boundary_and_relation_route": "localization/reviews/between-potential-and-ideal/020-round-2-har-boundary-and-relation-route.md",
+  "round_2_source_grounded_dialogue_frame": "localization/reviews/between-potential-and-ideal/020-round-2-source-grounded-dialogue-frame.md",
   "qya_cantie_short_label_test": "localization/reviews/between-potential-and-ideal/020-cantie-test.md",
   "qya_cantie_philosophical_frame_blocker": "localization/reviews/between-potential-and-ideal/020-cantie-philosophical-frame-blocker.md",
   "current_audit_state": {
@@ -41,11 +43,13 @@
   },
   "review_blocker_sources": [
     "localization/reviews/between-potential-and-ideal/020-source-decisions.json",
+    "localization/reviews/between-potential-and-ideal/020-source-decisions-round-2.json",
     "localization/reviews/between-potential-and-ideal/020-three-context-validation.md",
     "localization/reviews/between-potential-and-ideal/020-three-context-results-round-1.md",
     "localization/reviews/between-potential-and-ideal/020-round-2-sentence-frame-matrix.md",
     "localization/reviews/between-potential-and-ideal/020-round-2-relation-remain-source-assessment.md",
     "localization/reviews/between-potential-and-ideal/020-round-2-har-boundary-and-relation-route.md",
+    "localization/reviews/between-potential-and-ideal/020-round-2-source-grounded-dialogue-frame.md",
     "localization/reviews/between-potential-and-ideal/020-cantie-philosophical-frame-blocker.md",
     "localization/glossaries/segment-020-specialist-terms.md"
   ],
@@ -58,8 +62,11 @@
     "qya_har_identity_persistence_rejected": true,
     "qya_abstract_relation_noun_admitted": false,
     "qya_clause_based_relation_route_selected": true,
-    "qya_interaction_construction_sourced": false,
-    "qya_replacement_or_other_person_construction_sourced": false,
+    "qya_directed_speech_architecture_selected": true,
+    "qya_quet_primary_locator_entered": false,
+    "qya_dative_primary_grammar_locator_entered": false,
+    "qya_living_source_expression_approved": false,
+    "qya_agency_path_clause_approved": false,
     "qya_cantie_philosophical_frame_complete": false,
     "source_validation_complete": false,
     "title_terms_resolved": false,
@@ -73,7 +80,7 @@
     "independent_second_review_complete": false,
     "approved": false
   },
-  "next_action": "source-locate Late-Quenya constructions for interaction between two explicitly named participants and for replacement or becoming the other; then build one literal two-clause test with exact lexical and grammar locators, without returning to har-, lemya-, ser-, mar-, harya-, ovantë, or an unsupported relation noun",
+  "next_action": "enter the original Tolkien locators for quet- and the dative recipient construction, then source and test one Late-compatible agency-preservation clause; do not assemble a complete Neo-Quenya philosophical sentence before both gates pass",
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
