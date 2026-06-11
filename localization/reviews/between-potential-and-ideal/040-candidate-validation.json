@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "segment": 40,
   "stage": "specialist-terminology-validation",
   "publication": "forbidden",
@@ -8,108 +8,197 @@
     "tlh": "Okrand-canonical-only",
     "qya": "Late-Quenya-first"
   },
+  "inherited_authority": {
+    "core_term_overrides": "localization/glossaries/segment-020-core-term-overrides.md",
+    "segment_020_decisions": "localization/reviews/between-potential-and-ideal/020-source-decisions.json",
+    "rule": "Inherited rejections remain binding unless new source evidence and an explicit reversal are recorded."
+  },
   "concepts": [
     {
-      "id": "model-system-representation",
+      "id": "model-framework-system-map-representation",
+      "required_split": ["model", "framework", "system", "map", "representation"],
       "tlh": {
         "current_forms": ["pat", "He mIllogh", "lIw"],
-        "status": "distinction-and-source-pending"
+        "status": "revision-required",
+        "risk": "pat currently collapses system, structure and model; He mIllogh and lIw do not yet cover map and representation consistently"
       },
       "qya": {
-        "current_forms": ["patar", "mapa", "emma"],
-        "status": "distinction-and-profile-pending"
+        "current_forms": ["patar", "mapa", "carma", "emma"],
+        "status": "revision-required",
+        "risk": "the current forms do not yet provide a stable five-way distinction and some are project-working or borrowed forms"
       },
       "label_test": "pending",
-      "paragraph_test": "temporary-body-use-only",
+      "paragraph_test": "pending",
       "literary_test": "pending"
     },
     {
       "id": "final-declaration",
+      "required_meaning": "a claim presented as complete, unquestionable and final",
       "tlh": {
         "current_form": "maqghach Qav",
-        "status": "provisional-source-and-syntax-pending"
+        "status": "provisional-source-and-syntax-pending",
+        "requirement": "must remain distinct from a final sentence, proclamation, theorem or conclusion"
       },
       "qya": {
         "current_form": "nyárë tancaina metta",
-        "status": "semantic-fit-pending"
+        "status": "semantic-and-morphology-review-pending",
+        "requirement": "must express final authoritative declaration, not merely a finished story"
       },
       "label_test": "mechanically-clear-only",
       "paragraph_test": "pending",
       "literary_test": "pending"
     },
     {
+      "id": "provisional-revisable-criticizable",
+      "required_split": ["temporary", "provisional", "revisable", "criticizable"],
+      "tlh": {
+        "current_forms": ["Daq", "ru'", "pojlaHbogh", "tI'lu'nISbogh"],
+        "status": "source-and-idiom-pending"
+      },
+      "qya": {
+        "current_forms": ["nómessë", "lúmava", "cestaina", "poitaina"],
+        "status": "profile-and-morphology-pending"
+      },
+      "label_test": "pending",
+      "paragraph_test": "pending",
+      "literary_test": "pending"
+    },
+    {
       "id": "domain-validity-boundary",
+      "required_split": ["domain", "domain of validity", "boundary", "limit", "field of application"],
       "tlh": {
         "current_forms": ["QapmeH Daqmey", "lugh QapmeH Daqmey", "veH"],
-        "status": "provisional-distinction-pending"
+        "status": "provisional-distinction-pending",
+        "requirement": "a place where something works must not be confused with a moral boundary or physical edge"
       },
       "qya": {
         "current_forms": ["nórë", "réna", "landa"],
+        "status": "profile-and-distinction-pending",
+        "requirement": "country/region, border and limit must remain distinct"
+      },
+      "label_test": "pending",
+      "paragraph_test": "pending",
+      "literary_test": "pending"
+    },
+    {
+      "id": "proof-metaphor-source-representation",
+      "required_split": ["proof", "metaphor", "source", "representation", "example"],
+      "tlh": {
+        "current_forms": ["ghantoH tobghach", "mung", "lIw", "ghantoH"],
+        "status": "revision-required",
+        "risk": "example and proof are currently entangled in some phrases"
+      },
+      "qya": {
+        "current_forms": ["tanwa", "celu", "emma", "emma tanwanna"],
+        "status": "revision-required",
+        "risk": "tanwa is used across sign, evidence and proof contexts while emma covers representation too broadly"
+      },
+      "label_test": "pending",
+      "paragraph_test": "pending",
+      "literary_test": "pending"
+    },
+    {
+      "id": "testimony-person-and-lived-source",
+      "required_split": ["person", "human speech", "testimony", "living source", "bodily experience"],
+      "tlh": {
+        "current_forms": ["ghot", "ghot QIch", "mung yInbogh", "porgh", "SIQghach"],
+        "status": "ethical-distinction-pending",
+        "inherited_rule": "witness and living source may not be reduced to data or representation"
+      },
+      "qya": {
+        "current_forms": ["quén", "astarmë", "celu cuina", "hröa", "cuilë-isto"],
+        "status": "profile-and-role-pending",
+        "inherited_rule": "astarmo/astarmë requires contextual qualification and is not testimony by itself"
+      },
+      "label_test": "pending",
+      "paragraph_test": "pending",
+      "literary_test": "pending"
+    },
+    {
+      "id": "hope-promise-certainty",
+      "required_split": ["hope", "promise", "certainty", "false consolation", "reason to continue"],
+      "tlh": {
+        "current_forms": ["tulghach", "lay'", "Sovchu'ghach", "ngebbogh toDghach"],
+        "status": "source-and-distinction-pending"
+      },
+      "qya": {
+        "current_forms": ["estel", "vanda", "tancassë", "lehtalë manwa"],
         "status": "profile-and-distinction-pending"
       },
       "label_test": "pending",
-      "paragraph_test": "temporary-body-use-only",
+      "paragraph_test": "pending",
       "literary_test": "pending"
     },
     {
-      "id": "testimony-and-person",
+      "id": "criticism-as-internal-drainage",
+      "required_meaning": "criticism is the internal route by which a model releases error and avoids becoming self-protecting doctrine",
       "tlh": {
-        "current_forms": ["ghot QIch", "ghot"],
-        "status": "ethical-distinction-pending"
+        "current_forms": ["De' teqmeH mIw", "mejmeH lojmIt", "pojghach"],
+        "status": "metaphor-source-and-idiom-pending"
       },
       "qya": {
-        "current_forms": ["astarmë", "quén"],
-        "status": "witness-testimony-role-pending"
-      },
-      "label_test": "pending",
-      "paragraph_test": "temporary-body-use-only",
-      "literary_test": "pending"
-    },
-    {
-      "id": "criticism-as-drainage",
-      "tlh": {
-        "current_form": "De' teqmeH mIw / mejmeH lojmIt",
-        "status": "provisional-metaphor-and-source-pending"
-      },
-      "qya": {
-        "current_form": "lanta-sírerya / tië et",
+        "current_forms": ["lanta-sírerya", "tië et", "cestië"],
         "status": "project-working-form-revision-required"
       },
       "label_test": "pending",
-      "paragraph_test": "temporary-body-use-only",
+      "paragraph_test": "pending",
       "literary_test": "pending"
     },
     {
-      "id": "responsibility",
+      "id": "responsibility-duty-task-answerability",
+      "required_split": ["task", "duty", "responsibility", "answerability", "required action"],
       "tlh": {
-        "current_forms": ["Qu'", "pabghach"],
-        "status": "task-duty-answerability-collapse-unresolved"
+        "current_forms": ["Qu'", "pabghach", "nID"],
+        "status": "collapse-unresolved",
+        "requirement": "Qu' may not carry every ethical and procedural sense"
       },
       "qya": {
-        "current_form": "mauya-cárië",
+        "current_forms": ["mauya-cárië", "cárië", "cestië"],
         "status": "project-formation-profile-pending"
       },
       "label_test": "pending",
-      "paragraph_test": "temporary-body-use-only",
+      "paragraph_test": "pending",
       "literary_test": "pending"
+    },
+    {
+      "id": "three-tests",
+      "protected_order": ["distinctions", "domains", "the person"],
+      "required_meaning": "the model must preserve conceptual distinctions, name the domain in which each claim operates, and protect the living person from being reduced to an example or datum",
+      "tlh": {
+        "current_forms": ["pImghach nID", "QapmeH Daqmey nID", "ghot nID"],
+        "status": "semantic-parity-and-idiom-pending"
+      },
+      "qya": {
+        "current_forms": ["cestië hyanatiéron", "cestië nórion", "cestië i quénwa"],
+        "status": "morphology-and-parity-pending"
+      },
+      "label_test": "not-applicable",
+      "paragraph_test": "required",
+      "literary_test": "required"
     }
   ],
   "verified_audit": {
-    "workflow_run_id": 27295729516,
-    "head_sha": "9326c363386318b9564718c633976dabec918b62",
+    "workflow_run_id": 27332072386,
+    "head_sha": "bead2e380489da7029b56f58aedb665d0310695d",
     "tlh_heading": 0,
     "tlh_body": 0,
     "qya_heading": 0,
     "qya_body": 0,
+    "repository_mechanically_clear_pairs": 77,
+    "repository_blocked_pairs": 0,
     "mechanically_clear": true
   },
   "acceptance": {
     "all_terms_resolved": false,
     "all_context_tests_passed": false,
     "all_sources_recorded": false,
+    "full_tlh_rewrite_complete": false,
+    "full_qya_rewrite_complete": false,
+    "source_parity_recheck_complete": false,
     "heading_findings_zero": true,
     "body_findings_zero": true,
     "second_review_passed": false,
     "approved": false
-  }
+  },
+  "next_action": "freeze the source semantics, draft a five-way model terminology table, then write full review-only v2 candidates preserving the three tests"
 }
