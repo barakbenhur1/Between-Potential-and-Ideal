@@ -1,0 +1,52 @@
+name: Remediate segment 180 once
+
+on:
+  pull_request:
+    branches: [main]
+    paths: [.github/workflows/remediate-segment-180-once.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  remediate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - name: Apply exact terminology updates
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          root = Path('localization/sources')
+          tlh = root / 'tlh/between-potential-and-ideal/180-ai-open-problems.md'
+          qya = root / 'qya/between-potential-and-ideal/180-ai-open-problems.md'
+
+          t = tlh.read_text(encoding='utf-8')
+          assert t.count('mirror') == 2
+          assert t.count('theory') == 2
+          assert t.count('safety') == 1
+          assert t.count('code') == 1
+          t = t.replace('status: draft\n', 'status: draft\nlinguistic_review: specialist-revision-active\nreview_record: localization/reviews/between-potential-and-ideal/180-ai-open-problems-review.md\n', 1)
+          t = t.replace('theory', 'QubmeH mIw')
+          t = t.replace('mirror', 'leghmeH jan')
+          t = t.replace('safety', 'QanmeH')
+          t = t.replace('code', 'ngoq')
+          tlh.write_text(t, encoding='utf-8')
+
+          q = qya.read_text(encoding='utf-8')
+          assert q.count('code') == 1
+          q = q.replace('status: draft\n', 'status: draft\nlinguistic_review: specialist-revision-active\nreview_record: localization/reviews/between-potential-and-ideal/180-ai-open-problems-review.md\n', 1)
+          q = q.replace('code', 'tengwië')
+          qya.write_text(q, encoding='utf-8')
+          PY
+          rm -f localization/sources/tlh/.ci-trigger-170.txt
+          rm .github/workflows/remediate-segment-180-once.yml
+          git diff --check
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add -A
+          git commit -m 'Remediate segment 180 paired sources'
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
