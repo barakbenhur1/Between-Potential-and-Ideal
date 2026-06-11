@@ -1,5 +1,5 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "segment": 20,
   "source_paths": {
     "tlh": "localization/sources/tlh/between-potential-and-ideal/020-metamorphosis-code.md",
@@ -15,14 +15,14 @@
     "audit_exemption": false
   },
   "verified_audit_run": {
-    "workflow_run_id": 27294229090,
-    "head_sha": "e410db1308fa1265619cf400d70c439903db6bfa",
+    "workflow_run_id": 27332072386,
+    "head_sha": "bead2e380489da7029b56f58aedb665d0310695d",
     "result": "success",
-    "repository_foreign_term_occurrences": 705,
-    "repository_body_occurrences": 649,
-    "repository_heading_occurrences": 56,
-    "repository_automated_blocked_pairs": 65,
-    "repository_automated_clear_pairs": 12
+    "repository_foreign_term_occurrences": 0,
+    "repository_body_occurrences": 0,
+    "repository_heading_occurrences": 0,
+    "repository_automated_blocked_pairs": 0,
+    "repository_automated_clear_pairs": 77
   },
   "tlh": {
     "heading_findings": [],
@@ -42,16 +42,12 @@
     "protected_term_occurrences": []
   },
   "progress_from_previous_baseline": {
-    "removed_body_findings": 4,
-    "removed_heading_findings": 3,
-    "tlh_body_before": 2,
-    "tlh_body_after": 0,
-    "tlh_heading_before": 1,
-    "tlh_heading_after": 0,
-    "qya_body_before": 2,
-    "qya_body_after": 0,
-    "qya_heading_before": 2,
-    "qya_heading_after": 0,
+    "repository_body_before": 649,
+    "repository_body_after": 0,
+    "repository_heading_before": 56,
+    "repository_heading_after": 0,
+    "repository_blocked_pairs_before": 65,
+    "repository_blocked_pairs_after": 0,
     "remaining_segment_findings": 0
   },
   "acceptance": {
