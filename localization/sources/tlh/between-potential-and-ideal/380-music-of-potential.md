@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 380
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -16,11 +17,11 @@ publication: forbidden
 
 _Image description draft: rhythm, silence, return je possibility time vegh qengmeH Hemey._
 
-### Voice, time, silence, precision neH 'oHbe'bogh Optimal je
+### Voice, time, silence, lughchu'ghach neH 'oHbe'bogh Optimal je
 
-music theory time vegh nuD. painting Qam, sentence read-lu', structure load qeng; music nargh 'ej narghtaHvIS desaparece. Potential options field neH 'oHbe' 'e' ghojmoH; emergence rhythm je 'oH. note nomqu' pagh terlIj law' narghchugh, possibility rap 'oHbe'. Daq lughDaq silence absence 'oHbe'; relation form active 'oH.
+music QubmeH mIw time vegh nuD. painting Qam, sentence read-lu', structure load qeng; music nargh 'ej narghtaHvIS desaparece. Potential options field neH 'oHbe' 'e' ghojmoH; emergence rhythm je 'oH. note nomqu' pagh terlIj law' narghchugh, possibility rap 'oHbe'. Daq lughDaq silence absence 'oHbe'; relation form active 'oH.
 
-musicDaq failure nI' 'oH voice performance tamghach'e'. correct playlaHlu', clean singlaHlu', brilliant produce-laHlu', rich arrange-laHlu' — 'ach ghot QoylaHbe'lu'. 'ach imperfection automatic truth 'oHbe'. living music imperfect music neH 'oHbe'; precision breath, memory, body, place, risk je toy'bogh music 'oH.
+musicDaq failure nI' 'oH voice performance tamghach'e'. correct playlaHlu', clean singlaHlu', brilliant produce-laHlu', rich arrange-laHlu' — 'ach ghot QoylaHbe'lu'. 'ach imperfection automatic truth 'oHbe'. living music imperfect music neH 'oHbe'; lughchu'ghach breath, memory, body, place, risk je toy'bogh music 'oH.
 
 > **Living music = voice × time × tension × silence × repetition with change × living source × listening ÷ formula × over-polish × noise × imitation × appropriation × production that erases the body.**
 
