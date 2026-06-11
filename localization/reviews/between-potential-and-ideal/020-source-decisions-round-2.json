@@ -1,5 +1,5 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "document_id": "between-potential-and-ideal",
   "segment": 20,
   "stage": "specialist-source-validation-round-2",
@@ -8,119 +8,79 @@
   "language_profile": "Late-Quenya-first",
   "source_control": {
     "canonical_english": "site/files/between-potential-and-ideal-en.md",
-    "semantic_result": "The source supports explicit dialogue and path clauses rather than an abstract relation noun plus a metaphysical remain predicate."
+    "semantic_result": "Use explicit dialogue and path clauses; do not use an abstract relation noun or a metaphysical remain predicate."
   },
   "decisions": [
     {
-      "concept": "identity-persistence",
-      "form": "har- / lemya- / ser- / mar-",
-      "decision": "closed-for-current-frame",
-      "source_basis": "round-2 remain assessment",
-      "limits": "Locational staying, continuing, resting and dwelling do not establish preservation of personal identity."
+      "concept": "closed-routes",
+      "form": "har- / lemya- / ser- / mar- / ovantë",
+      "decision": "rejected-for-current-frame",
+      "source_basis": "round-2 remain and relation assessments",
+      "limits": "Locational persistence and unsupported compact relation wording do not express the required distinction."
     },
     {
-      "concept": "interpersonal-relation",
-      "form": "ovantë or another unsupported compact noun",
-      "decision": "closed-for-current-frame",
-      "source_basis": "no accepted primary locator; canonical English source re-analysis",
-      "limits": "The relation is represented by explicit participant actions."
-    },
-    {
-      "concept": "directed-speech-lexicon",
-      "form": "quet-",
-      "decision": "primary-lexical-source-recorded",
-      "source_basis": "PE17/40, 126, 137-138, 160, 167, 181; PE22/158; PM/401, 404; SA/quen; VT41/6, 11, 13; VT49/11, 19, 28",
-      "limits": "VT41/11 and VT41/13 provide the relevant dative-recipient examples."
-    },
-    {
-      "concept": "dative-recipient-grammar",
-      "form": "-(e)n singular; -in plural",
-      "decision": "primary-grammar-source-recorded",
-      "source_basis": "VT6/14; VT43/37",
-      "limits": "Every completed noun form still requires clause-level parsing."
+      "concept": "directed-speech",
+      "form": "quet- plus explicit recipient",
+      "decision": "primary-sources-recorded",
+      "source_basis": "PE17/40 and related sources; VT41/11,13; PM/401; dative VT6/14 and VT43/37",
+      "limits": "Every recipient form remains subject to clause-level parsing."
     },
     {
       "concept": "living-participant",
-      "form": "coirëa quén",
+      "form": "coirëa quén; dative i coirëa quenen",
       "decision": "approved-for-controlled-tests",
-      "source_basis": "coirëa at PM/399; quén at PE19/93 and WJ/361, 372, 393, 407",
-      "limits": "Literal meaning is living person. It represents the human source of agency contextually and is not a lexical translation of abstract source."
-    },
-    {
-      "concept": "living-participant-dative",
-      "form": "i coirëa quenen",
-      "decision": "first-pass-parse-recorded",
-      "source_basis": "quen- stem plus singular dative -en under the recorded profile",
-      "limits": "Independent confirmation of article, adjective and case placement remains required."
+      "source_basis": "coirëa PM/399; quén PE19/93 and WJ/361,372,393,407",
+      "limits": "Literal meaning is living person, not an abstract lexical translation of source."
     },
     {
       "concept": "animate-anaphor",
-      "form": "se; long dative sena",
-      "decision": "conditional-test-use",
-      "source_basis": "NM/176; PE17/91, 129; VT49/14-15, 32, 37, 45, 51; sena at VT49/14",
-      "limits": "Use only in the paired dialogue test with Prime Intellect as explicit antecedent. Semantic animate status requires review."
+      "form": "sena",
+      "decision": "rejected-for-prime-intellect",
+      "source_basis": "VT49/14 and the round-2 adversarial review",
+      "limits": "Using an animate pronoun would silently classify Prime Intellect as animate."
     },
     {
-      "concept": "path",
-      "form": "tië",
-      "decision": "primary-lexical-source-recorded",
-      "source_basis": "LotR/377; PE17/13, 72, 76; PE19/71; PE23/134; RGEO/58-59; UT/22; VT39/20; VT47/11",
-      "limits": "Retained only in the path, road or way sense."
+      "concept": "reverse-directed-speech",
+      "form": "I coirëa quén quetë Prime Intellect-enna.",
+      "decision": "preferred-review-notation",
+      "source_basis": "proper-name allative speech construction Elendilenna at PM/401",
+      "limits": "The hyphen is review notation; final suffix styling on the protected English name remains unresolved."
     },
     {
-      "concept": "travel-or-proceed",
-      "form": "lelya-",
-      "decision": "primary-lexical-source-recorded",
-      "source_basis": "WJ/363",
-      "limits": "The generic aorist test form lelya still requires morphology review."
-    },
-    {
-      "concept": "third-person-singular-possessive",
-      "form": "-rya",
-      "decision": "primary-grammar-source-recorded",
-      "source_basis": "PE17/57, 67, 76, 130, 132, 190; PE19/102; VT49/16-17, 38, 48",
-      "limits": "The computed tie-rya form must be reviewed; attested tielyanna at UT/22 supplies the closest path-noun suffix analogy."
-    },
-    {
-      "concept": "dialogue-clause-a",
-      "form": "Prime Intellect quetë i coirëa quenen.",
-      "decision": "first-pass-parse-pass",
-      "source_basis": "020-clause-test-round-2.md",
-      "limits": "Independent case-placement review pending."
-    },
-    {
-      "concept": "dialogue-clause-b",
-      "form": "I coirëa quén quetë sena.",
-      "decision": "first-pass-parse-conditional",
-      "source_basis": "020-clause-test-round-2.md",
-      "limits": "Animate reference to Prime Intellect requires semantic review."
-    },
-    {
-      "concept": "agency-path-clause",
+      "concept": "agency-path",
       "form": "I coirëa quén lelya tierya.",
-      "decision": "first-pass-parse-conditional",
-      "source_basis": "020-clause-test-round-2.md",
-      "limits": "Review computed tierya, generic aorist lelya, and contextual own."
+      "decision": "internal-review-pass-for-tests",
+      "source_basis": "lelya- WJ/363; tië Late-Quenya sources including UT/22; -rya PE17 and VT49 sources",
+      "limits": "tierya is a documented formation rather than a directly attested whole form and still needs external review."
+    },
+    {
+      "concept": "governing-pattern-anchor",
+      "form": "Cantië",
+      "decision": "three-context-pass-for-tests",
+      "source_basis": "NM/287-288; 020-cantie-test.md; 020-three-context-results-round-2.md",
+      "limits": "It means pattern and does not independently express transformation, grace, release, distance, or the complete title."
+    },
+    {
+      "concept": "unsupported-title-derivation",
+      "form": "Ahyaliëo",
+      "decision": "rejected-pending-documentation",
+      "source_basis": "ahya- is sourced at PM/395, but the abstract noun and genitive chain are not documented",
+      "limits": "Use a transparent verbal extension instead."
     }
   ],
   "acceptance": {
-    "har_identity_persistence_route_closed": true,
-    "unsupported_relation_noun_route_closed": true,
-    "explicit_dialogue_architecture_selected": true,
-    "quet_primary_locator_entered": true,
-    "dative_primary_grammar_locator_entered": true,
-    "tie_primary_locator_entered": true,
-    "lelya_primary_locator_entered": true,
-    "possessive_primary_locator_entered": true,
+    "closed_unsafe_routes": true,
+    "primary_dialogue_sources_entered": true,
+    "primary_path_sources_entered": true,
     "living_participant_expression_approved": true,
-    "living_participant_dative_first_parse_recorded": true,
-    "directed_speech_pair_first_parse_recorded": true,
-    "agency_path_clause_first_parse_recorded": true,
-    "independent_morphology_review_complete": false,
-    "three_context_test_complete": false,
-    "finished_target_sentence": false,
+    "directed_speech_pair_internally_parsed": true,
+    "agency_path_clause_internally_parsed": true,
+    "internal_adversarial_review_complete": true,
+    "cantie_three_context_anchor_passed": true,
+    "external_independent_review_complete": false,
+    "complete_main_title_selected": false,
     "production_source_changed": false,
     "segment_approved": false
   },
-  "next_action": "Perform a separate morphology and semantic review of sena, tierya, aorist lelya and i coirëa quenen. If they pass, run the three-context Cantië test without changing production text."
+  "next_action": "Source and test a transparent verbal main-title extension based on ahya-. Do not reuse Ahyaliëo and do not change production text before external specialist review."
 }
