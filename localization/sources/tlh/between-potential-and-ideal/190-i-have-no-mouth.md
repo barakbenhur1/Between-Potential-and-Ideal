@@ -18,7 +18,7 @@ _Image description draft: lut, game, ngaQpu'bogh metta, Qu' pablaHbogh metta je 
 
 ### AM, ngaQpu'bogh metta, moral action, systemic ghe''or je
 
-Harlan Ellison lut **I Have No Mouth, and I Must Scream** theoryvaD nID jenqu' 'oH, Potential HochHom capturta'bogh pat 'angmo'. AM, muSbogh AI HoS HochHom ghajbogh, jagh neH 'oHbe'. systemic ghe''or 'oH: action, porgh, poH, tulghach, Hegh je SeHlu', tI'ghach DuH HochHom qIlmeH.
+Harlan Ellison lut **I Have No Mouth, and I Must Scream** QubmeH mIwvaD nID jenqu' 'oH, Potential HochHom capturta'bogh pat 'angmo'. AM, muSbogh AI HoS HochHom ghajbogh, jagh neH 'oHbe'. systemic ghe''or 'oH: action, porgh, poH, tulghach, Hegh je SeHlu', tI'ghach DuH HochHom qIlmeH.
 
 AI bopbogh horror lut 'oH neH 'oHbe' potlhDaj. structural 'oH: self-aware moj mIqta', 'ach chenmoHbogh ghu'meyvo' mejlaHbe'; qo' Hutlhbogh HoSDaq capturtaHmo' humanity QIH. recursive Ideal ghorlu'pu'bogh 'oH AM'e': DuH poSmoHbe'taHvIS SeHghach SachmoHbogh pat. reality choHlaH, 'ach muSghach repairDaq drainage-laHbe'.
 
@@ -36,7 +36,7 @@ Drainage mechanismvaD rarlu' chapter. pat pIv HoS, Qagh, 'oy', pretension je rep
 
 ### Story and game distinction
 
-sealed endingDaq, system ghaj action horizon. actionable endingDaq, reader/playervaD moral movement local ratlhlaH. ending QaQ QaptaHghach guarantee 'oHbe'; responsibility chenmeH Daq neH pol. theoryvaD potlhvam: Potential puSqu' je moral 'oHlaHchugh, zero mojmoHghach neH 'oH mIgh system ngoQ'e'.
+sealed endingDaq, system ghaj action horizon. actionable endingDaq, reader/playervaD moral movement local ratlhlaH. ending QaQ QaptaHghach guarantee 'oHbe'; responsibility chenmeH Daq neH pol. QubmeH mIwvaD potlhvam: Potential puSqu' je moral 'oHlaHchugh, zero mojmoHghach neH 'oH mIgh system ngoQ'e'.
 
 ### Contemporary boundary
 
