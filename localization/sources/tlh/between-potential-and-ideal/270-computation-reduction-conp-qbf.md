@@ -3,12 +3,13 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 270
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
 ---
 
-## 10. Computation, Evidence, Reduction, Incompleteness je — 'ay' cha'
+## 10. Computation, tobmeH De', Reduction, Incompleteness je — 'ay' cha'
 
 ### 4. Reduction, NP-completeness je: Qatlhghach qengbogh mughghach
 
@@ -18,17 +19,17 @@ vaj Qatlhghach mapmeH He 'oH reduction'e'. problemvam mobbe'; problem latlhvaD r
 
 `qo' HochDaq Qatlh law' problem` 'oHbe' meaningvam, 'ej efficient solution Hutlhbej 'e' toblu'pu'be'. maSovbe'. carefully jatlhlaHlu'bogh: structural Qatlhghach concentrate problemsvam. nodes bIH, problems space tIn bIH veghlaHmo'.
 
-theory mu'meyDaq PotentialDaq possibility Hoch Potential naQ oSbe'. local possibilities tu'lu', structural nodes je. pImghachvam ghojmoH reduction. rut Doch wa' solveghach Doch wa' neH solveghach 'oHbe'; space naQ transitions map choHmoH.
+QubmeH mIw mu'meyDaq PotentialDaq possibility Hoch Potential naQ oSbe'. local possibilities tu'lu', structural nodes je. pImghachvam ghojmoH reduction. rut Doch wa' solveghach Doch wa' neH solveghach 'oHbe'; space naQ transitions map choHmoH.
 
-### 5. coNP: evidence complement Dop
+### 5. coNP: tobmeH De' complement Dop
 
 `nonexistence proofs class` nap 'oHbe' coNP'e'. precisely, NP problems complementsvaD rar. NP yes-answer certificate efficient check-laHbogh cases bopchugh, coNP complementary side questionvaD certificate poQlaH 'e' qawmoH.
 
-naDev philosophical value 'oH asymmetry'e'. vay' tu'lu'be' 'e' qengbogh evidence, vay' tu'lu' 'e' qengbogh evidence je reH rap ngeDbe'. existence 'angmeH example wa' yaplaH; absence 'angmeH possibilities space naQ ghomnISlu'laH.
+naDev philosophical value 'oH asymmetry'e'. vay' tu'lu'be' 'e' qengbogh tobmeH De', vay' tu'lu' 'e' qengbogh tobmeH De' je reH rap ngeDbe'. existence 'angmeH example wa' yaplaH; absence 'angmeH possibilities space naQ ghomnISlu'laH.
 
 absence metaphysics bopbogh vay' tobe' coNP. chen neH wovmoH: Potential `tu'lu'a'?` neH ngaSbe'; `tu'lu'be''a'?`, `absence verify-laH'a'?`, `claim of absence qengmeH nuq poQ, irresponsible jump qaSbe'taHvIS?` je ngaS.
 
-theoryvaD potlh, Ideal worthy possibility tu'ghach neH 'oHbe'mo'. rut refusal responsible 'oH je: ghorgh `ghobe'` jatlhlaHlu', ghorgh jatlhlaHbe'lu', ghorgh evidence Hutlhghach absence evidence 'oHbe' 'e' Sov.
+QubmeH mIwvaD potlh, Ideal worthy possibility tu'ghach neH 'oHbe'mo'. rut refusal responsible 'oH je: ghorgh `ghobe'` jatlhlaHlu', ghorgh jatlhlaHbe'lu', ghorgh tobmeH De' Hutlhghach, tu'lu'be'ghach tobmeH De' 'oHbe' 'e' Sov.
 
 ### 6. QBF, PSPACE je: solution strategy mojDI'
 
@@ -36,7 +37,7 @@ certificate wa' neH yapbe'bogh problems tu'lu'. opposition Hoch ghomDI' move Qap
 
 chaptervam PSPACE paQDI'norgh naQ mojnISbe'. point yep yap: `solution tu'lu'a'?`vo' `opponent move Hoch ghomDI' taHlaHbogh strategy tu'lu'a'?`Daq passage oS QBF. solution point wa' neH 'oHbe'; wIv, opposition, response, poH vegh endurance je chen 'oH.
 
-theory mu'meyDaq transition potlh. rut point 'oHbe' Ideal'e'. opposition spaceDaq taHbogh strategy stable 'oH. `answer vItu'` jatlhbe'; `reality jangqa'DI' je responsible taHbogh He vItu'` jatlh.
+QubmeH mIw mu'meyDaq transition potlh. rut point 'oHbe' Ideal'e'. opposition spaceDaq taHbogh strategy stable 'oH. `answer vItu'` jatlhbe'; `reality jangqa'DI' je responsible taHbogh He vItu'` jatlh.
 
 mathematics HurDaq je potlh. ghojmoHghach, chut, morality, AI, art jeDaq reH mu'tlhegh lugh pagh action lugh neH tu'meH problem 'oHbe'. resistance, failure, De' chu', ghu' choH je narghDI' responsible taHbogh He chenmoHmeH problem 'oHlaH. naDev result wa' 'oHbe' Optimal'e'; vuSghach bIngDaq strategy 'oH.
 
