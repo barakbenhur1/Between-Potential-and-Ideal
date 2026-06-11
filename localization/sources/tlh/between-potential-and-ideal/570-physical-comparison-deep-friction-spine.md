@@ -9,7 +9,7 @@ semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
 ---
 
-## 17. Physical Comparison Map — Potential, Form, and the Search for a Unified Theory
+## 17. Physical Comparison Map — Potential, Form, and the Search for a Unified QubmeH mIw
 
 *spacetime formvo' Potential deeper groundDaq*
 
