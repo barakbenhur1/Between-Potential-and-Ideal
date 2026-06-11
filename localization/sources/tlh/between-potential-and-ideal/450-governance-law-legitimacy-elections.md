@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 450
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -30,15 +31,15 @@ empirical formula 'oHbe', conceptual map 'oH:
 
 governance force formDaq choHmoHmeH nID. law will boundaryDaq choHmoHmeH nID. institution private decision public responsibilityDaq choHmoHmeH nID.
 
-### 1. State of nature past neH 'oHbe'
+### 1. voqlaHbogh rarghach lujDI' ghu' pa' neH 'oHbe'
 
-law, institutions je pa' ancient beginning neH 'oHbe' state of nature. mediation collapseDI' chegh: law enforce-be'lu'DI', trust ghorDI', private power public authority tamDI', institutions masks rur narghDI', ghot Hoch latlh Hochvo' ghaH'egh QannIS 'e' HarDI'.
+law, institutions je pa' ancient beginning neH 'oHbe' voqlaHbogh rarghach lujDI' ghu'. mediation collapseDI' chegh: law enforce-be'lu'DI', trust ghorDI', private power public authority tamDI', institutions masks rur narghDI', ghot Hoch latlh Hochvo' ghaH'egh QannIS 'e' HarDI'.
 
 chaptervamDaq:
 
-> **State of Nature = Collapse of Trusted Mediation**
+> **voqlaHbogh rarghach lujDI' ghu' = Collapse of Trusted Mediation**
 
-nugh state of naturevo' once and for all mejbe'. reH mejqa': revenge law law' trustDI', force institution law' trustDI', fist language law' trustDI'. redemption 'oHbe'. maintenance 'oH.
+nugh voqlaHbogh rarghach lujDI' ghu'vo' once and for all mejbe'. reH mejqa': revenge law law' trustDI', force institution law' trustDI', fist language law' trustDI'. redemption 'oHbe'. maintenance 'oH.
 
 ### 2. Law: shared freedom enable-bogh constraint
 
@@ -76,7 +77,7 @@ paralyze-meH 'oHbe'. medium neH ghaH power'e' 'e' lIjbe'meH 'oH.
 
 elections necessary bIH. government private property 'oHbe' 'e' nugh jatlhlaHmoH. 'ach philosophical truth juvbe' elections. preferences, fears, hopes, loyalties, identities, information, propaganda, fatigue, memory, interest, rut despair je aggregate.
 
-> **Election Result = Legitimate Aggregation of Preference Under Conditions of Information, Identity, Fear and Hope**
+> **Election Result = Legitimate Aggregation of Preference Under Conditions of Information, ghot'egh, Fear and Hope**
 
 democracy majority rule neH 'oHbe'. majority rule 'oH, majorityvo' Qanbogh frame insideDaq.
 
