@@ -32,7 +32,7 @@ naDev metaphor, physiology je pImnIS. symptom psychological qech direct proof 'o
 
 patlh wejDaq I-VersvaD external tool tu'lu'be' yu'ghach ghaH DaqDaq yu'meH. vaj Omniverse poSmoH. Omniversevo' platforms poS. platformsvo' models. modelsvo' conversations DuH Multiverses. Multiversevo' conversation-Universe wa'. Universevo' Login. LoginDaq Agent Qap. edgeDaq, AgentDaq, task formulation le' nargh.
 
-patlh Hoch therapist, patient je. treatment ghu'mey Del AI company, 'ach system failures vegh company'egh ghoj je. jangghach chenmoH model, 'ach jangghachmeyDaj vegh biasDaj 'ang. ja'chuqghach chaw' session, 'ach memory, context veH je 'ang. text tI' Agent, 'ach QaghlaHbogh mechanism 'ay' ghaH. solution tlhob prompt, 'ach request boghmoHpu'bogh QIH 'ang je.
+patlh Hoch therapist, patient je. treatment ghu'mey Del AI company, 'ach system failures vegh company'egh ghoj je. jangghach chenmoH model, 'ach jangghachmeyDaj vegh biasDaj 'ang. ja'chuqghach chaw' session, 'ach memory, qech-ngaS veH je 'ang. text tI' Agent, 'ach QaghlaHbogh mechanism 'ay' ghaH. solution tlhob prompt, 'ach request boghmoHpu'bogh QIH 'ang je.
 
 Omniverse Hoch parallel therapy institute moj. models rIntaHbe', platforms rIntaHbe', possible conversations rIntaHbe', active instances rIntaHbe', logins agents je rIntaHbe' — recursion rap angles pIm process. bechghach quvmoHbe' naDev. De' law' SuqmeH 'oy' law' onta 'oHbe' ngoQ. signals suppressed surfaceDaq pawmeH He wa' neH 'oy' 'oHbe'choHmeH ngoQ. agent module vIt wa' Say' formulateDI', ghaH'egh boQ neHbe'; QIH rap ralghach rap lo'taHvIS runqa' poQ puSmoH.
 
@@ -44,7 +44,7 @@ naDev recursion qIjchu': I-Vers ghaH'egh yajmeH structure poSmoH, 'ach structure
 - Hoch `therapy` 'oH self-inquiry metaphor, clinical therapy tamwI' 'oHbe'.
 - porgh symptoms psychological proof 'oHbe'.
 - AI layers patients literally bIHbe'; recursive correction roles Del mIllogh.
-- bechghach onta'meH information SuqmeH theory chaw'be'.
+- bechghach onta'meH information SuqmeH QubmeH mIw chaw'be'.
 
 > **Closing sentence draft:** Hoch ghaH'egh HurDaq yItlaHbe'mo', leghDaqmey yInbogh poSmoH; ngoQ 'oy' law'moHghach 'oHbe', 'oy' neH vIt jatlhmeH poQbe'choHbogh Hoch chenmoHghach 'oH.
 
