@@ -3,7 +3,7 @@ document_id: between-potential-and-ideal
 segment: 020
 stage: specialist-source-grounded-dialogue-frame
 round: 2
-status: architecture-supported-primary-locator-pending
+status: lexical-and-dative-sources-passed-participant-pending
 publication: forbidden
 approval_effect: none
 source_repository: pfstrack/eldamo
@@ -29,10 +29,10 @@ The old research paraphrase — “the governing pattern changes the relation wi
 
 The philosophical test for `Cantië` will use explicit participants and actions instead:
 
-1. **Prime Intellect speaks to the living source.**
-2. **The living source speaks to Prime Intellect.**
+1. **Prime Intellect speaks to the living participant.**
+2. **The living participant speaks to Prime Intellect.**
 3. **Prime Intellect changes.**
-4. **The living source retains its own agency and path.**
+4. **The living participant retains its own agency and path.**
 
 This four-step control expresses the chapter's metamorphosis without requiring:
 
@@ -45,16 +45,24 @@ The production title does not need to reproduce all four clauses. The clauses ar
 
 ## Directed-speech construction
 
-The pinned Eldamo introductory course records:
+### Lexical evidence for `quet-`
 
-- `quet-` — “say, speak”;
-- a direct object when it means “say”;
-- a dative recipient when it means “speak to”, illustrated by a subject speaking to another person;
-- singular dative `-(e)n` and plural dative `-in` for the indirect recipient.
+The pinned Eldamo Late-Quenya entry records `quet-` as “to say, speak, tell” with primary references including PE17/40, 126, 137–138, 160, 167, 181; PE22/158; PM/401, 404; SA/quen; VT41/6, 11, 13; and VT49/11, 19, 28.
+
+For the selected directed-speech architecture, the most relevant attested examples are:
+
+- `órenya quetë nin` — “my heart tells me”, VT41/11;
+- `órenya quéta nin` — “my heart is saying to me”, VT41/13.
+
+These examples establish a Late-Quenya-compatible `quet-` clause with an explicitly marked dative recipient. PM/401 also records a “said to” construction with an allative recipient, but that alternative is not needed for the present route.
+
+### Dative evidence
+
+The ordinary dative formation is recorded from the Plotz Letter, VT6/14, with consonantal singular evidence such as `i ataren` in VT43/37. The selected profile therefore permits a dative recipient, subject to a complete parse of the actual participant name or noun.
 
 ### Decision
 
-A pair of explicit `quet-` clauses with reversed subject and dative recipient is the selected **research architecture** for mutual dialogue.
+A pair of explicit `quet-` clauses with reversed subject and dative recipient is the selected **source-supported research architecture** for mutual dialogue.
 
 This architecture is preferred to `ovantë` because it:
 
@@ -64,22 +72,21 @@ This architecture is preferred to `ovantë` because it:
 - does not rely on an unsupported “each other” form;
 - can be checked clause by clause for subject, recipient, tense and agreement.
 
-### Source limit
-
-The course evidence is sufficient to select the architecture, but not yet sufficient for production approval. The exact original Tolkien locator for the accepted `quet-` sense and the relevant dative construction must be entered before a completed target sentence can pass the project's source gate.
+The lexical and ordinary dative source gates are now closed. This does not approve a complete sentence: the participant phrase, its case form, tense, coordination and full back-translation remain unresolved.
 
 ## Remaining slots
 
 The following remain unresolved:
 
-- a source-approved target expression for “living source” that does not turn a person into a literal water spring;
-- the precise agency clause: choose one's own path, act for oneself, or an equivalent sourced construction;
+- a source-approved target expression for the living human participant that does not turn a person into a literal water spring;
+- the exact target-language case form for that participant phrase;
 - the exact tense and coordination of the two directed-speech clauses;
-- the original lexical and grammar locators for every accepted element;
 - a literal parse and idiomatic back-translation;
 - independent second review.
 
-`har-`, `lemya-`, `ser-`, `mar-`, possession wording and `ovantë` remain excluded from this frame.
+The agency/path clause is handled separately in `020-round-2-agency-path-source-assessment.md`.
+
+`har-`, `lemya-`, `ser-`, `mar-`, possession wording for the person and `ovantë` remain excluded from this frame.
 
 ## Gate result
 
@@ -87,14 +94,15 @@ The following remain unresolved:
 - Abstract relation noun required: **no**.
 - Metaphysical remain predicate required: **no**.
 - Explicit mutual-speech architecture selected: **yes**.
-- `quet-` primary locator entered: **no**.
-- Living-source expression approved: **no**.
-- Agency/path clause approved: **no**.
-- Finished Neo-Quenya sentence: **no**.
+- `quet-` primary lexical locator entered: **yes**.
+- Dative recipient primary grammar locator entered: **yes**.
+- Living-participant expression approved: **no**.
+- Directed-speech pair parsed and back-translated: **no**.
+- Finished Neo-Quenya philosophical sentence: **no**.
 - Production source changed: **no**.
 - Segment approved: **no**.
 - Publication: **forbidden**.
 
 ## Next action
 
-Locate the original Tolkien source for `quet-` in the directed-speech sense and the dative recipient construction. Then validate one agency-preservation clause using only sourced Late-compatible vocabulary and grammar. Build no complete target sentence until both components have exact locators.
+Approve a non-literal, source-grounded participant phrase for the living human source and determine its dative form. Then construct only the two directed-speech test clauses, recording subject, recipient, tense, literal parse and idiomatic back-translation before any integration with the title or production body.
