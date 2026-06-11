@@ -1,0 +1,19 @@
+{
+  "segment": 20,
+  "stage": "specialist-source-validation",
+  "mechanically_clear": true,
+  "linguistically_approved": false,
+  "independent_review_complete": false,
+  "publication": "forbidden",
+  "source_decisions": "localization/reviews/between-potential-and-ideal/020-source-decisions.json",
+  "source_confirmed_qya_candidates": 4,
+  "rejected_or_deferred_qya_forms": 5,
+  "research_only_qya_directions": 4,
+  "tlh_canonical_locators_complete": false,
+  "title_resolved": false,
+  "full_tlh_rewrite_complete": false,
+  "full_qya_rewrite_complete": false,
+  "three_context_tests_complete": false,
+  "source_parity_recheck_complete": false,
+  "next_action": "complete three-context validation and select sourced replacements before rewriting both drafts"
+}
