@@ -1,8 +1,8 @@
 {
-  "schema_version": 13,
+  "schema_version": 14,
   "segment": 20,
   "stage": "specialist-source-validation",
-  "status": "directed-speech-and-path-lexical-source-blocked",
+  "status": "living-participant-and-clause-parse-blocked",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -38,8 +38,8 @@
     "specialist_approval_pending": true
   },
   "verified_audit_run": {
-    "workflow_run_id": 27337508071,
-    "head_sha": "99393fcfbb3e1ef218bcca0d5d5b7e8dff90dc94",
+    "workflow_run_id": 27342127814,
+    "head_sha": "2e534c1879890bfe8417be61e6ef26497b103929",
     "result": "success"
   },
   "review_blocker_sources": [
@@ -65,14 +65,15 @@
     "qya_abstract_relation_noun_admitted": false,
     "qya_clause_based_relation_route_selected": true,
     "qya_directed_speech_architecture_selected": true,
-    "qya_quet_primary_locator_entered": false,
+    "qya_quet_primary_locator_entered": true,
     "qya_dative_primary_grammar_locator_entered": true,
     "qya_agency_path_architecture_selected": true,
-    "qya_tie_primary_locator_entered": false,
-    "qya_lelya_primary_locator_entered": false,
-    "qya_possessive_primary_locator_entered": false,
-    "qya_living_source_expression_approved": false,
-    "qya_agency_path_clause_approved": false,
+    "qya_tie_primary_locator_entered": true,
+    "qya_lelya_primary_locator_entered": true,
+    "qya_possessive_primary_locator_entered": true,
+    "qya_living_participant_expression_approved": false,
+    "qya_directed_speech_pair_parsed": false,
+    "qya_agency_path_clause_parsed": false,
     "qya_cantie_philosophical_frame_complete": false,
     "source_validation_complete": false,
     "title_terms_resolved": false,
@@ -86,7 +87,7 @@
     "independent_second_review_complete": false,
     "approved": false
   },
-  "next_action": "enter exact Tolkien locators for quet-, tië, lelya- and the selected possessive construction, then approve a non-literal participant phrase for the living source; do not assemble a complete Neo-Quenya philosophical sentence before those gates pass",
+  "next_action": "approve a source-grounded non-literal phrase for the living human participant, then construct and parse two directed-speech clauses and one agency/path clause with literal and idiomatic back-translations; do not integrate them into production before independent review",
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
