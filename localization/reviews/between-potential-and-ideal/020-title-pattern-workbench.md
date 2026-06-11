@@ -5,6 +5,7 @@ stage: specialist-title-pattern-workbench
 status: draft
 publication: forbidden
 approval_effect: none
+test_set: localization/reviews/between-potential-and-ideal/020-title-pattern-test-set.md
 ---
 
 # Segment 020 title pattern workbench
@@ -57,12 +58,20 @@ Open validation points:
 
 No Neo-Quenya production title is selected.
 
-## Next test set
+## Three-context test set
 
-Each eventual form needs three examples:
+The required short-label, philosophical, and literary controls are now defined in `020-title-pattern-test-set.md`, including shared rejection triggers and pattern-specific failure conditions.
 
-1. short title label;
-2. philosophical sentence about relation changing without erasure;
-3. literary sentence about scaffold, mountain, and climber.
+Each proposed target-language title must provide:
+
+1. a complete title and literal parse;
+2. an idiomatic back-translation;
+3. exact lexical and grammar source locators;
+4. a passed short-label test;
+5. a passed philosophical-context test;
+6. a passed literary-context test;
+7. an independent reviewer decision.
+
+The current Klingon title has not passed this test set. The current Neo-Quenya title fails the recorded source gate and requires revision.
 
 Segment 020 remains unapproved and publication remains forbidden.
