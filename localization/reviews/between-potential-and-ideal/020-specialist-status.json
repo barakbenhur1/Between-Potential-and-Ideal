@@ -1,8 +1,8 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "segment": 20,
   "stage": "specialist-source-validation",
-  "status": "active-after-mechanical-remediation-complete",
+  "status": "source-evidence-round-1-recorded",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -15,6 +15,8 @@
   "terminology_supplement": "localization/glossaries/segment-020-specialist-terms.md",
   "candidate_validation": "localization/reviews/between-potential-and-ideal/020-candidate-validation.json",
   "source_decisions": "localization/reviews/between-potential-and-ideal/020-source-decisions.json",
+  "source_evidence_round_1": "localization/reviews/between-potential-and-ideal/020-source-evidence-round-1.md",
+  "context_decisions_round_1": "localization/reviews/between-potential-and-ideal/020-context-decisions-round-1.md",
   "three_context_validation": "localization/reviews/between-potential-and-ideal/020-three-context-validation.md",
   "current_audit_state": {
     "repository_mechanically_clear_pairs": 77,
@@ -26,8 +28,8 @@
     "specialist_approval_pending": true
   },
   "verified_audit_run": {
-    "workflow_run_id": 27332072386,
-    "head_sha": "bead2e380489da7029b56f58aedb665d0310695d",
+    "workflow_run_id": 27337508071,
+    "head_sha": "99393fcfbb3e1ef218bcca0d5d5b7e8dff90dc94",
     "result": "success"
   },
   "review_blocker_sources": [
@@ -36,6 +38,7 @@
     "localization/glossaries/segment-020-specialist-terms.md"
   ],
   "acceptance": {
+    "source_evidence_round_1_complete": true,
     "source_validation_complete": false,
     "title_terms_resolved": false,
     "body_terms_resolved": false,
