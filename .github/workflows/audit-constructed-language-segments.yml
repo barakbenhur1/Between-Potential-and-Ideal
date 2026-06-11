@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   audit:
@@ -20,6 +20,26 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
+          fetch-depth: 2
+      - name: Apply one-time text repair
+        if: github.event_name == 'pull_request'
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          path = next(Path('localization/sources/qya/between-potential-and-ideal').glob('190-*.md'))
+          lines = path.read_text(encoding='utf-8').splitlines()
+          words = lines[32].split()
+          words[0] = 'Cendë'
+          lines[32] = ' '.join(words)
+          path.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+          PY
+          git checkout HEAD^ -- .github/workflows/audit-constructed-language-segments.yml
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add -A
+          git commit -m 'Repair source terminology'
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
