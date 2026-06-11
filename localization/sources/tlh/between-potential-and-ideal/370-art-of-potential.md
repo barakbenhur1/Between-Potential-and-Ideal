@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 370
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -18,13 +19,13 @@ _Image description draft: creation field, naDev possibility form Suq 'ach comple
 
 ### Living source, canon, tlhuH tambe'bogh form je
 
-work Hoch excessvo' taghmo', theoryvaD natural laboratory 'oH art'e'. image, story, sculpture, comic, film, game je tu'lu'pa', possibilities field tu'lu': lines drawbe'lu'pu'bogh, characters boghbe'pu'bogh, colors rejectlu'pu'bogh, endings lonlu'pu'bogh, viewpoints wIvbe'lu'pu'bogh. worldDaq nuq chellu' neH 'oHbe' creation'e'; form wa' qenglaHmeH nuq pe'lu' je 'oH.
+work Hoch excessvo' taghmo', QubmeH mIwvaD natural laboratory 'oH art'e'. image, story, sculpture, comic, film, game je tu'lu'pa', possibilities field tu'lu': lines drawbe'lu'pu'bogh, characters boghbe'pu'bogh, colors rejectlu'pu'bogh, endings lonlu'pu'bogh, viewpoints wIvbe'lu'pu'bogh. worldDaq nuq chellu' neH 'oHbe' creation'e'; form wa' qenglaHmeH nuq pe'lu' je 'oH.
 
-art judge-lu'DI' failure nI' 'oH source effectmo' tamlu'ghach'e'. work moving, beautiful, clever, new, effective je mojlaH, 'ach theory question latlh tlhob: source, risk, form je jojDaq relation yInbogh tu'lu'a'? technically perfect work Hegh rurlaH, vay' chenmoHnISbe'pu' rur Hotchugh. 'ach flaw sacred 'oHbe' je. stumble Hoch depth 'oHbe'; fracture Hoch truth 'oHbe'.
+art judge-lu'DI' failure nI' 'oH source effectmo' tamlu'ghach'e'. work moving, beautiful, clever, new, effective je mojlaH, 'ach QubmeH mIw question latlh tlhob: source, risk, form je jojDaq relation yInbogh tu'lu'a'? technically perfect work Hegh rurlaH, vay' chenmoHnISbe'pu' rur Hotchugh. 'ach flaw sacred 'oHbe' je. stumble Hoch depth 'oHbe'; fracture Hoch truth 'oHbe'.
 
 > **Living art = living source × inner necessity × form × responsible deletion × rhythm × tested canon ÷ imitation × empty effect × pose × unworked excess × market alone × automation pretending to be source.**
 
-mapvam beauty juvbe'. artistic Optimal inner IdealvaD fidelityvo' nargh'a', pagh expected tastevaD flat adaptationvo' nargh'a' 'e' tlhob.
+mapvam beauty juvbe'. artistic Optimal inner IdealvaD matlhghachvo' nargh'a', pagh expected tastevaD flat adaptationvo' nargh'a' 'e' tlhob.
 
 AI question choHmoH. tool images, styles, stories, ideas, compositions, designs, variations je chenmoHlaH. Potential teH poSmoH: sketches nom, accessibility, practice, visual language, experiments je. 'ach living source work mojbogh distance Qaw'laH je. maker output neH tlhobDI' choice, deletion, responsibility, risk je qengbe'taHvIS, creation expandbe' tool; formation tam.
 
