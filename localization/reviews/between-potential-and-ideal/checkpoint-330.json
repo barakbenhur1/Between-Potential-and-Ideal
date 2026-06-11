@@ -1,0 +1,13 @@
+{
+  "segment": 330,
+  "commit": "b57363e86d004fa55f5652e2f6bd35f8c6409007",
+  "audit_run": 27322181397,
+  "occurrences": 291,
+  "body": 278,
+  "headings": 13,
+  "pairs_with_findings": 34,
+  "mechanically_clear_pairs": 43,
+  "next_segment": 340,
+  "linguistic_approvals": 0,
+  "publication": "forbidden"
+}
