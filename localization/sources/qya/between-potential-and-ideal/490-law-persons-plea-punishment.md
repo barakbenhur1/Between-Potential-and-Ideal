@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 490
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -22,7 +23,7 @@ Law of Potential lá seeks replace law ó feeling, mal asks ma law still serves 
 
 Both i harmed person ar i accused mauya ná preserved ve living sources, lá symbols. Sina lá ná simple moral symmetry imbet; ná recognition that law polë erase human beings mi different ways, even when legal roles are entirely different.
 
-I harmed person lá ná merely evidence harmo, lá merely tool convictiono, ar lá merely voice ya may be used justify punishment. I accused lá ná merely risk, lá merely i name offenseo, ar lá merely body yassë i system demonstrates powererya. Law must hold harm without turning sa into license erasureo, ar hold suspicion without turning sa into whole identity. Sina ná difficult precisely an law acts yassë pain demands decision while truth lá always offers immo at i same speed.
+I harmed person lá ná merely tanwa harmo, lá merely tool convictiono, ar lá merely voice ya may be used justify punishment. I accused lá ná merely risk, lá merely i name offenseo, ar lá merely body yassë i system demonstrates powererya. Law must hold harm without turning sa into license erasureo, ar hold suspicion without turning sa into whole identity. Sina ná difficult precisely an law acts yassë pain demands decision while truth lá always offers immo at i same speed.
 
 Preserving i accused ve person lá weakens duty recognize harm; on i contrary, prevents legal recognition itself from becoming tool revengeo rather than justiceo. Preserving i harmed person ve person lá requires turning pain into automatic decision; on i contrary, requires procedure hear i harm without using sa ve institutional raw material.
 
@@ -40,7 +41,7 @@ Worthy punishment must hold boundary, recognition, proportion, protection ar pos
 
 ### Capital punishment
 
-From sina follows, ter i lens i theoryo, principled opposition ana capital punishment. Lá an every harm can be repaired, lá an every dangerous person can immediately return ana society, ar lá an every injury can be forgiven, mal an capital punishment turns law from act boundaryo into act final erasureo. Closes i horizon correctiono even when partial correction might have been possible; closes i horizon appealo even when new evidence may appear; ar gives i state power declare lá only that certain act crossed boundary, mal that certain person has entirely lost i possibility remaining living source.
+From sina follows, ter i lens i theoryo, principled opposition ana capital punishment. Lá an every harm can be repaired, lá an every dangerous person can immediately return ana society, ar lá an every injury can be forgiven, mal an capital punishment turns law from act boundaryo into act final erasureo. Closes i horizon correctiono even when partial correction might have been possible; closes i horizon appealo even when tanwa vinya may appear; ar gives i state power declare lá only that certain act crossed boundary, mal that certain person has entirely lost i possibility remaining living source.
 
 Opposition sina lá cancels society's duty protect itself. Distinguishes extreme protection from final erasure. Even when retribution, deterrence ar protection raise serious claims, i theory distinguishes imbe extreme deprivation libertyo ar deprivation every future possibilityo. I first may be necessary; i second requires i state hold power finalityo ya has no way correctien if proves mistaken.
 
