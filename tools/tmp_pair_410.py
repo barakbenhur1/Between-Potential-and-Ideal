@@ -4,12 +4,12 @@ needle = "safe" + "ty"
 
 updates = {
     "localization/sources/tlh/between-potential-and-ideal/410-engineering-maintenance-failure-repair.md": [
-        ("noise, " + needle + ", chance je", "noise, protected life, chance je"),
-        (needle + " factor lIjbe'lu'pu'bogh", "capacity reserve ratio lIjbe'lu'pu'bogh"),
+        ("noise, " + needle + ", chance je", "noise, QobHa'ghach, chance je"),
+        (needle + " factor lIjbe'lu'pu'bogh", "QobHom polmeH ratio lIjbe'lu'pu'bogh"),
     ],
     "localization/sources/qya/between-potential-and-ideal/410-engineering-maintenance-failure-repair.md": [
-        ("noise, " + needle + " ar chance", "noise, protected life ar chance"),
-        ("only " + needle + " factor ya lá was forgotten", "only capacity reserve ratio ya lá was forgotten"),
+        ("noise, " + needle + " ar chance", "noise, varnassë ar chance"),
+        ("only " + needle + " factor ya lá was forgotten", "only ratio ya hehta room erroren ar ya lá was forgotten"),
     ],
 }
 
