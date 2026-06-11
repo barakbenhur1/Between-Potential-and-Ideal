@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 600
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -16,11 +17,11 @@ publication: forbidden
 
 _Image description: horizon, visible-hidden field, viewpoint wa'vo' fully accessbe'laHbogh possibilities je._
 
-chaptervam universe vegh theory prove 'e' nIDbe'. universe shape Potential shape 'oHbe', cosmology moral metaphysics 'oHbe'. 'ach cosmological language theoryvaD discipline ghojmoH: horizon inside chay' Qub, choose, act je; visible part whole system 'oHbe'DI'; local global decidebe'DI'; access boundary necessarily falsehood, prison, end je 'oHbe'DI'.
+chaptervam universe vegh QubmeH mIw prove 'e' nIDbe'. universe shape Potential shape 'oHbe', cosmology moral Hap chut HurDaq qech 'oHbe'. 'ach cosmological language QubmeH mIwvaD discipline ghojmoH: horizon inside chay' Qub, choose, act je; visible part whole system 'oHbe'DI'; local global decidebe'DI'; access boundary necessarily falsehood, prison, end je 'oHbe'DI'.
 
 universe Hurvo' view ghajbe'lu', human life Hurvo' view ghajbe'lu' rur. knowledge Hoch place wa'vo' tagh: time, body, tools, language, measurement, limitation je. vaj horizon knowledge botbogh Doch neH 'oHbe'. human knowledge taghlaHbogh form je 'oH.
 
-sensevamDaq cosmology theoryvaD external authority nobbe'. Potential universe 'oH, Ideal cosmic shape 'oH, Optimal geometric solution 'oH jatlhbe'. discipline latlh ghojmoH: responsible action absolute view loSbe'. partiality partiality ghaH'egh Sovbogh inside act.
+sensevamDaq cosmology QubmeH mIwvaD external authority nobbe'. Potential universe 'oH, Ideal cosmic shape 'oH, Optimal geometric solution 'oH jatlhbe'. discipline latlh ghojmoH: responsible action absolute view loSbe'. partiality partiality ghaH'egh Sovbogh inside act.
 
 ### 1. The Observable Universe Is Not the Whole Universe
 
@@ -38,7 +39,7 @@ naDev Potential meaning precise law' Suq: `all possibilities` neH 'oHbe', 'ach h
 
 chaptervam distinctionsvam technical details Hoch teachnISbe'. 'ach horizon magical word wa'Daq choHmoHbe'nIS. naDev partial access Hol rur mainly lo'lu': nuq appearlaH, nuq measurelaH, nuq modelDaq depend, nuq current frame HurDaq ratlh.
 
-precisionvam potlh, theory horizons law' ghajmo'. emotional, moral, linguistic, technological, legal, medical, educational, computational horizons je tu'lu'. each possibilities 'op poSmoH, latlh SoQmoH. each expandlaH, 'ach pagh divine view moj.
+precisionvam potlh, QubmeH mIw horizons law' ghajmo'. emotional, moral, linguistic, technological, legal, medical, educational, computational horizons je tu'lu'. each possibilities 'op poSmoH, latlh SoQmoH. each expandlaH, 'ach pagh divine view moj.
 
 Ideal horizons Hoch abolish 'oHbe'. total control fantasy 'oHtaH. Ideal real horizons inside worthy clarification possible 'oH. Optimal clarificationvam local translation 'oH, naDev actual conditionDaq.
 
@@ -48,23 +49,23 @@ cosmology whole direct photograph ghajbe'. signsvo' conclusions chenmoH: light, 
 
 cosmic microwave background bop jatlhDI', `first instant` directly leghbe'lu'. ancient traces ghomlu', universe radiationvaD transparent mojchoHpu' era vo'. earliest accessible knowledge je sign rur paw, time, distance, expansion, measurement, interpretation je veghpu'.
 
-naDev cosmology theoryvaD distance concept vegh rar. distance separation neH 'oHbe'. cosmologyDaq far legh, pastDaq legh je rap. knowledge thing itself immediately touchbe'; trace, sign, late pawbogh light, model vegh chenbogh image je ghom.
+naDev cosmology QubmeH mIwvaD distance concept vegh rar. distance separation neH 'oHbe'. cosmologyDaq far legh, pastDaq legh je rap. knowledge thing itself immediately touchbe'; trace, sign, late pawbogh light, model vegh chenbogh image je ghom.
 
-theoryDaq je knowledge thing total possession 'oHbe'. horizon inside signs responsible translation 'oH. living source truth complete object rur ghopDaq ghajbe'. evidence ghom, models chenmoH, correct, fail, not-knowing under acttaH.
+QubmeH mIwDaq je knowledge thing total possession 'oHbe'. horizon inside signs responsible translation 'oH. living source truth complete object rur ghopDaq ghajbe'. tobmeH De' ghom, models chenmoH, correct, fail, not-knowing under acttaH.
 
 ### 4. A Question of Shape Is Also a Question of Access
 
 universe shape tlhobDI', `HurDaq nuq shape tu'?` neH tlhobbe'lu'. nuq measurelaH? nuq model vegh infer? nuq assumptionsDaq depend? locationmajvo' nuq accessible? observational horizon beyond nuq ratlh? je tlhoblu'.
 
-theoryvaD central: form thing itself structure neH 'oHbe'. form accessmaj structure je 'oH. nuq maHvaD appear, nuq exists, toolsmaj, positionmaj, signs interpretmeH language jeDaq depend.
+QubmeH mIwvaD central: form thing itself structure neH 'oHbe'. form accessmaj structure je 'oH. nuq maHvaD appear, nuq exists, toolsmaj, positionmaj, signs interpretmeH language jeDaq depend.
 
 `shape of Potential` vaj all possibilities list neH 'oHbe'. possibilities access structure je 'oH: nuq appear, nuq hidden ratlh, nuq checklaH, nuq realizelaH, nuq filter worthy, nuq current decision capacity beyond ratlh.
 
-Potential form HevDI' disappear-be'. 'ach form Hoch choice je 'oH. possible part readable mojmoH, latlh part obscure mojmoH. computationDaq ghomlu'bogh principle rap 'oH: action representation poQ, representation Hoch possibility poSmoH 'ej cost impose.
+Potential form HevDI' disappear-be'. 'ach form Hoch choice je 'oH. possible part readable mojmoH, latlh part obscure mojmoH. computationDaq ghomlu'bogh principle rap 'oH: action lIw poQ, lIw Hoch possibility poSmoH 'ej cost impose.
 
 ## Segment review gate
 
-1. Preserve that cosmology does not prove the theory and the universe is not the shape of Potential.
+1. Preserve that cosmology does not prove the QubmeH mIw and the universe is not the shape of Potential.
 2. Keep the observable universe distinct from the whole universe and from certainty about what lies beyond.
 3. Preserve particle horizon, cosmological event horizon, Hubble radius, and observable universe as distinct terms.
 4. Keep living knowledge situated through body, time, memory, language, instruments, and distance.
