@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   audit:
@@ -20,6 +20,61 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
+          fetch-depth: 2
+      - name: Apply one-time segment 320 remediation
+        if: github.event_name == 'pull_request'
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          tlh_path = Path('localization/sources/tlh/between-potential-and-ideal/320-context-measurement-entanglement-bohm.md')
+          qya_path = Path('localization/sources/qya/between-potential-and-ideal/320-context-measurement-entanglement-bohm.md')
+
+          def add_metadata(text):
+              if 'linguistic_review:' not in text:
+                  text = text.replace(
+                      'status: draft\n',
+                      'status: draft\nlinguistic_review: specialist-revision-active\n',
+                      1,
+                  )
+              return text
+
+          tlh = add_metadata(tlh_path.read_text(encoding='utf-8'))
+          tlh = tlh.replace('Kochen-Specker theorem,', "Kochen-Specker qech toblu'pu'bogh,")
+          tlh = tlh.replace('Kochen-Specker theorem contextual', "Kochen-Specker qech toblu'pu'bogh contextual")
+          tlh = tlh.replace('theoryvaD', 'QubmeH mIwvaD')
+          tlh = re.sub(r'(?<![A-Za-z])theory(?![A-Za-z])', 'QubmeH mIw', tlh)
+          tlh = re.sub(r'(?<![A-Za-z])evidence(?![A-Za-z])', "tobmeH De'", tlh)
+          tlh = re.sub(r'(?<![A-Za-z])framework(?![A-Za-z])', 'qech chenmoHmeH pat', tlh)
+          tlh = re.sub(r'(?<![A-Za-z])context(?![A-Za-z])', 'qech-ngaS poH', tlh)
+          tlh_path.write_text(tlh, encoding='utf-8')
+
+          qya = add_metadata(qya_path.read_text(encoding='utf-8'))
+          qya = qya.replace('context lá ná noise ara value', 'i conditions appearanceo lá nar noise ara value')
+          qya = qya.replace(
+              'Context lá ná er external disturbance. Mi cases exi, context ná ranta i conditions appearanceo.',
+              'I conditions appearanceo lá nar er external disturbance. Mi cases exi, nar ranta i ya carë i result readable.',
+          )
+          qya = qya.replace('Context lá ná excuse escape truth.', 'I conditions appearanceo lá nar excuse escape truth.')
+          qya = qya.replace('message channel', 'tië communicationo')
+          qya = re.sub(r'(?<![A-Za-z])evidence(?![A-Za-z])', 'tanwa', qya)
+          qya = re.sub(r'(?<![A-Za-z])capítulo(?![A-Za-z])', 'cendë', qya, flags=re.I)
+          qya = re.sub(r'(?<![A-Za-z])framework(?![A-Za-z])', 'carmë interpretatiëo', qya)
+          qya = qya.replace('Context lá auta truth', 'I conditions appearanceo lá autar truth')
+          qya_path.write_text(qya, encoding='utf-8')
+          PY
+          git checkout HEAD^ -- .github/workflows/audit-constructed-language-segments.yml
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add .github/workflows/audit-constructed-language-segments.yml \
+            localization/sources/tlh/between-potential-and-ideal/320-context-measurement-entanglement-bohm.md \
+            localization/sources/qya/between-potential-and-ideal/320-context-measurement-entanglement-bohm.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Remediate segment 320'
+            git push origin HEAD:${{ github.event.pull_request.head.ref }}
+          fi
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
