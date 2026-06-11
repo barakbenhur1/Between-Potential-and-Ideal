@@ -4,6 +4,7 @@ language: tlh
 segment: 180
 status: draft
 linguistic_review: specialist-revision-active
+audit_verification: pending
 review_record: localization/reviews/between-potential-and-ideal/180-ai-open-problems-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
