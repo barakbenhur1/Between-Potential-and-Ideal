@@ -41,7 +41,7 @@ Boundlessness is therefore lá enough. Even boundless field requires form respon
 
 ### 8. Multiverse and Omniverse: Possibility Is Not Value
 
-`Multiverse` is lá one term pointing ana one proven theory. It is umbrella name an different ideas, speculative ana different degrees, some more physical ar some more interpretive: eternal inflation, string landscape, many-worlds interpretations quantum mechanicso, universes ó different initial conditions, ar more. They do lá all have i same evidential status, ar nar lá all i same claim.
+`Multiverse` is lá one term pointing ana one proven theory. It is umbrella name an different ideas, speculative ana different degrees, some more physical ar some more interpretive: eternal inflation, string landscape, many-worlds interpretations quantum mechanicso, universes ó different initial conditions, ar more. They do lá all have i same tanwa status, ar nar lá all i same claim.
 
 `Omniverse`, by contrast, is lá standard cosmological term. Qui used, it should be presented ve cultural, fictional hya metaphorical term an total field possibilitieso, lá ve scientific claim.
 
