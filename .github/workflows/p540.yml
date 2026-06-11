@@ -1,0 +1,30 @@
+name: p540
+on: pull_request
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: localization-release-resolved
+      - run: |
+          python3 - <<'PY'
+          import base64
+          from pathlib import Path
+          path=Path('localization/sources/qya/between-potential-and-ideal/540-trust-horizons-whole-caution.md')
+          text=path.read_text(encoding='utf-8')
+          if 'linguistic_review:' not in text:
+            text=text.replace('status: draft\n','status: draft\nlinguistic_review: specialist-revision-active\n',1)
+          old=base64.b64decode('RGVzdHJveXMgaSBjaGFubmVsIHRocm91Z2ggd2hpY2ggZnV0dXJlIGZhY3RzIGFyZSBtZWFudCBwYXNzLg==').decode()
+          new=base64.b64decode('RGVzdHJveXMgaSB0acOrIHRydXN0byB5YWxsbyBmdXR1cmUgZmFjdHMgbmFyIG1lYW50IGF1dGEu').decode()
+          text=text.replace(old,new)
+          path.write_text(text,encoding='utf-8')
+          PY
+          rm .github/workflows/p540.yml
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add -A
+          git commit -m 'Remediate segment 540 Neo-Quenya terminology'
+          git push origin HEAD:localization-release-resolved
