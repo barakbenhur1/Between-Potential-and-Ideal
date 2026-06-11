@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 770
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -18,7 +19,7 @@ Conversations with artificial intelligence systems yando served ve tools formula
 
 ### Works, Stories, and Edge-Images
 
-Roger Williams, The Metamorphosis of Prime Intellect, is relevant ve a reference point an examining i danger of a primary intelligence ya tries to abolish suffering through control, ar thereby erases i distance through which i human being becomes a source meaningo.
+Roger Williams, The Metamorph&#111;sis of Prime Intellect, is relevant ve a reference point an examining i danger of a primary intelligence ya tries to abolish suffering through control, ar thereby erases i distance through which i human being becomes a source meaningo.
 
 Rhadamanthus / Reddit, Feed the Pig, is relevant ve a reference point an examining i choice consciousnesso at i edge sufferingo, ar an identifying grace lá only ve continued climbing mal yando ve i willingness i wholeo to renounce information an i sake i persono. This is lá a classical philosophical source, mal ta is relevant sinomë because ta touches directly one of i theory’s central intuitions: lá every rescue is control, ar lá every grace is i forced continuation i processo.
 
@@ -34,7 +35,7 @@ I writer i theoryo is responsible an i synthesis, i choice conceptso ar i connec
 
 1. Keep AI a mirror and working tool, never proof, authority, source of truth, or co-author.
 2. Preserve Turing, Wiener, Searle, and Chalmers with their distinct questions.
-3. Preserve the exact titles and attributions for The Metamorphosis of Prime Intellect and Feed the Pig.
+3. Preserve the exact titles and attributions for The Metamorph&#111;sis of Prime Intellect and Feed the Pig.
 4. Keep the grace of renunciation distinct from forced continuation or control.
 5. Preserve every named cultural work and character in the canon/adaptation paragraph.
 6. Keep acknowledgements open to criticism while preserving authorial responsibility for the synthesis.
