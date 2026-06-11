@@ -53,7 +53,7 @@ horizon Hoch prison 'oHbe'. rut horizon form appearmeH condition 'oH, form Hoch 
 2. Keep Potential, Ideal, and Optimal distinct: possible field, worthy clarification, and local responsible translation.
 3. Preserve AI as a metaphor for an artificial field of possibilities, never a multiverse or cosmology.
 4. Keep excess possibility as a possible source of noise and reduced understanding.
-5. Preserve source, evidence, context, filtering, boundary, and human responsibility in the AI section.
+5. Preserve source, tobmeH De', qech-ngaS poH, filtering, boundary, and human responsibility in the AI section.
 6. Keep the recursive edge compatible with truth; every truth carries a horizon but is not thereby false.
 7. Do not turn an expanding horizon into divine or total vision.
 8. Preserve the hope of acting better without seeing everything.
