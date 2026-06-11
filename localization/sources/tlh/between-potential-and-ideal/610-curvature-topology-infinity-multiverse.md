@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 610
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -10,11 +11,11 @@ publication: forbidden
 
 ### 5. Flat, Curved, Open, and Closed: Precise Words, Not Free Images
 
-cosmologyDaq `flat` shallow, simple, two-dimensional, depthless je 'oSbe'. measurement model inside spatial curvature 'oS. `curved`, `open`, `closed` je free words bIHbe', metaphysics pagh ethicsDaq directly qenglaHbogh.
+cosmologyDaq `flat` shallow, simple, two-dimensional, depthless je 'oSbe'. measurement model inside spatial curvature 'oS. `curved`, `open`, `closed` je free words bIHbe', Hap chut HurDaq qechmey pagh ethicsDaq directly qenglaHbogh.
 
 flat universe necessarily simple universe 'oHbe', necessarily infinite universe je 'oHbe'. finite universe necessarily simple edge ghajbe'. boundless universe necessarily formless 'oHbe'. ordinary rur Qoybogh words cosmologyDaq precise Qu' Suq, vaj philosophical lo' caution poQ.
 
-theory lesson `Potential flat 'oH` pagh `Ideal curved 'oH` 'oHbe'. jumps empty bIH. lesson precise language fieldDajDaq choH 'e' 'oH. word familiar rur narghlaH, 'ach science inside completely pIm Qu' ta'laH.
+QubmeH mIw lesson `Potential flat 'oH` pagh `Ideal curved 'oH` 'oHbe'. jumps empty bIH. lesson precise language fieldDajDaq choH 'e' 'oH. word familiar rur narghlaH, 'ach science inside completely pIm Qu' ta'laH.
 
 boundary discipline naDev tagh: scientific term beautifulmo' tlhapbe', 'ach nuq ta', domain of validity nuq, frame HurDaq nuq claimlaHbe' 'e' tlhob.
 
@@ -22,9 +23,9 @@ boundary discipline naDev tagh: scientific term beautifulmo' tlhapbe', 'ach nuq 
 
 curvature space chay' measure 'e' tlhob. topology space chay' connected 'e' tlhob. questions rap bIHbe'. space locally flat rur narghlaH, 'ach global topology nontrivial ghajlaH. local whole decidebe'.
 
-cosmology theoryvaD deepest lessons wa' 'oH: local horizon inside nuq appear, entire structure 'oHbe'. local real 'oH, 'ach necessarily complete 'oHbe'. local observation precisequ'laH, 'ach global question closebe'laH.
+cosmology QubmeH mIwvaD deepest lessons wa' 'oH: local horizon inside nuq appear, entire structure 'oHbe'. local real 'oH, 'ach necessarily complete 'oHbe'. local observation precisequ'laH, 'ach global question closebe'laH.
 
-lifeDaq rap. person local truth leghlaH, 'ach full structure yajbe'laH. legal system evidence 'op ghajlaH, 'ach entire story leghbe'laH. physician signs leghlaH, 'ach whole clinical future Sovbe'laH. AI data inside pattern detectlaH, 'ach living source mung Sovbe'laH.
+lifeDaq rap. person local truth leghlaH, 'ach full structure yajbe'laH. legal system tobmeH De' 'op ghajlaH, 'ach entire story leghbe'laH. physician signs leghlaH, 'ach whole clinical future Sovbe'laH. AI data inside pattern detectlaH, 'ach living source mung Sovbe'laH.
 
 Optimal local denybe'. local absoluteDaq choHmoHbe' je. tlhob: localvo' nuq responsibly ta'laH, local global 'oH 'e' ngebbe'taHvIS?
 
@@ -34,19 +35,19 @@ finitude, infinity, boundlessness je claims rap bIHbe'. space finite 'ej boundar
 
 distinctionvam potlh, infinity imagination luremo'. absolute freedom, absolute depth, absolute possibility rur QoylaH. 'ach infinity Ideal 'oHbe'. infinite possibilities infinite value bIHbe'. infinite variations infinite meaning bIHbe'.
 
-Potential je quantity neH 'oHbe'. larger Potential field necessarily worthier 'oHbe'. possibility Hoch possiblemo' value Hevchugh, Ideal chIl 'ej noise neH ratlh. theory reject: Potential possible field 'oH, Ideal realization worthy nuq 'e' clarification 'oH.
+Potential je quantity neH 'oHbe'. larger Potential field necessarily worthier 'oHbe'. possibility Hoch possiblemo' value Hevchugh, Ideal chIl 'ej noise neH ratlh. QubmeH mIw reject: Potential possible field 'oH, Ideal realization worthy nuq 'e' clarification 'oH.
 
 boundlessness yapbe'. boundless field je responsibility form poQ. question possibilities 'ar exist neH 'oHbe'; possibilities nuq worthy, conditions nuq bIngDaq, 'IvvaD, cost 'ar je tlhob.
 
 ### 8. Multiverse and Omniverse: Possibility Is Not Value
 
-`multiverse` term wa' proven theory wa'Daq pointbe'. ideas pImvaD umbrella pong 'oH, speculation degree pIm ghajbogh: eternal inflation, string landscape, many-worlds interpretations, initial conditions pIm ghajbogh universes, latlh je. evidential status rap ghajbe', claim rap je bIHbe'.
+`multiverse` term wa' proven QubmeH mIw wa'Daq pointbe'. ideas pImvaD umbrella pong 'oH, speculation degree pIm ghajbogh: eternal inflation, string landscape, many-worlds interpretations, initial conditions pIm ghajbogh universes, latlh je. evidential status rap ghajbe', claim rap je bIHbe'.
 
 `omniverse` standard cosmological term 'oHbe'. lo'lu'chugh, total possibilities fieldvaD cultural, fictional, metaphorical term rur presentnIS, scientific claim rurbe'.
 
 vaj multiverse, omniverse je carefully neH narghlaH: possibility multiplicity Hol rur, actual worlds multiplicity proof rurbe', possibility HochvaD moral permission rurbe'. possibilities field tInchoHDI', filtering responsibility tInchoH je.
 
-theory connection sharp: possible expandmoHghach worthy expandmoHghach 'oHbe'. possibilities law' truth law' bIHbe'. imagined worlds law' depth law' bIHbe'. Ideal possibilities quantityvo' boghbe'; worthy possibility, possibility neH je pImmoHbogh clarificationvo' bogh.
+QubmeH mIw connection sharp: possible expandmoHghach worthy expandmoHghach 'oHbe'. possibilities law' truth law' bIHbe'. imagined worlds law' depth law' bIHbe'. Ideal possibilities quantityvo' boghbe'; worthy possibility, possibility neH je pImmoHbogh clarificationvo' bogh.
 
 ## Segment review gate
 

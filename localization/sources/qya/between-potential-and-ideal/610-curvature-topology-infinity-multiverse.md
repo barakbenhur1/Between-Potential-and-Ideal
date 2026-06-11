@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 610
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -24,7 +25,7 @@ Curvature asks manen space is measured. Topology asks manen space is connected. 
 
 Sina is one i deepest lessons cosmology can offer i theory: mana appears from within local horizon is lá i entire structure. I local is real, mal lá necessarily complete. Local observation can be extremely precise ar still fail close i global question.
 
-I same is true mi life. Person may see local truth without understanding i full structure yassë operates. Legal system may hold certain evidence without seeing i entire story. Physician may see signs without knowing i whole clinical future. AI may detect pattern inside data without knowing i living source yallo i data came.
+I same is true mi life. Person may see local truth without understanding i full structure yassë operates. Legal system may hold certain tanwa without seeing i entire story. Physician may see signs without knowing i whole clinical future. AI may detect pattern inside data without knowing i living source yallo i data came.
 
 I Optimal does lá deny i local. It yando does lá turn sa into i absolute. It asks: mana can be done responsibly from i local, without pretending i local is i global?
 
