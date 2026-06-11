@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "document_id": "between-potential-and-ideal",
   "segment": 20,
   "stage": "specialist-source-validation-round-2",
@@ -43,8 +43,15 @@
       "concept": "mutual-dialogue-architecture",
       "form": "two explicit quet- clauses with reversed subject and dative recipient",
       "decision": "research-architecture-selected",
-      "source_basis": "Pinned Eldamo Introductory Quenya chapter 3, section 3.1.3 and dative overview",
-      "limits": "The course records quet- as say/speak and a dative recipient for speak to. Exact original Tolkien lexical and grammar locators remain mandatory before production approval."
+      "source_basis": "Pinned Eldamo Introductory Quenya chapter 3, section 3.1.3 and chapter 5, section 5.3.1",
+      "limits": "The course records quet- as say/speak and a dative recipient for speak to. The original lexical locator for quet- remains mandatory before production approval."
+    },
+    {
+      "concept": "dative-recipient-grammar",
+      "form": "-(e)n singular; -in plural",
+      "decision": "primary-grammar-source-recorded",
+      "source_basis": "Plotz Letter, VT6/14; consonantal singular i ataren in 1950s Quenya prayers, VT43/37",
+      "limits": "The ordinary declensional source gate is closed. Each actual participant noun or title still requires a fully parsed case form and profile check."
     },
     {
       "concept": "metamorphosis-control",
@@ -73,12 +80,12 @@
     "unsupported_relation_noun_route_closed": true,
     "explicit_dialogue_architecture_selected": true,
     "quet_primary_locator_entered": false,
-    "dative_primary_grammar_locator_entered": false,
+    "dative_primary_grammar_locator_entered": true,
     "living_source_expression_approved": false,
     "agency_path_clause_approved": false,
     "finished_target_sentence": false,
     "production_source_changed": false,
     "segment_approved": false
   },
-  "next_action": "Enter the original Tolkien locators for quet- and the dative recipient construction, then source and test one agency-preservation clause. Do not construct a complete Neo-Quenya sentence before both tasks pass."
+  "next_action": "Enter the original Tolkien lexical locator for quet-, then source and test one agency-preservation clause. Do not construct a complete Neo-Quenya sentence before both tasks pass."
 }
