@@ -4,6 +4,7 @@ language: qya
 segment: 780
 status: draft
 linguistic_review: specialist-revision-active
+audit_refresh: 2026-06-11
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
