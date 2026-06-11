@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 640
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -42,7 +43,7 @@ Mi both cases ëa no absolute view. Ëar traces. Ar ëa responsibility interpret
 
 ### 9. The Standard Model: Success That Is Not Closure
 
-I Standard Model is one i great achievements modern physicso. It successfully describes elementary particles ar electromagnetic, weak ar strong interactions within quantum framework. Mal precisely its success teaches i lesson boundaryo: description can be extraordinarily precise within its domain ar still lá be i final picture realityo.
+I Standard Model is one i great achievements modern physicso. It successfully describes elementary particles ar electromagnetic, weak ar strong interactions within quantum carmë. Mal precisely its success teaches i lesson boundaryo: description can be extraordinarily precise within its domain ar still lá be i final picture realityo.
 
 I Standard Model does lá include quantum gravity, ar it does lá close all questions about dark matter, dark energy, neutrinos, mass hierarchies hya i asymmetry imbe matter ar antimatter. It is strong lá because pretends be everything, mal because exceptionally precise in mana does describe.
 
