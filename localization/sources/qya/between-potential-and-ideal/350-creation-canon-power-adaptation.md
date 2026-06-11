@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 350
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -32,7 +33,7 @@ Yando írë character dies, returns, ná replaced hya symbol ná given heiren. I
 
 I question canon polë ná seen ter i distinction imbe power, knowledge ar Ideal. Captain America ar Reed Richards, an example, polir serve ve contrast imbe intellectual solution ar preservation moral centero. Reed Richards represents i Ideal solving intellecto: desire understand enough save, repair ar solve. Captain America represents principle hyana: judgment under limitation. Lá ná i strongest hya smartest; greatnesserya lies mi maquetien mana lá mauya be lost írë ëa no perfect solution.
 
-*Watchmen* breaks i same tension from side darker. Doctor Manhattan ná almost divine Potential: enormous power, non-human perception timeo, ability dismantle ar build matter, ar almost complete distance human anxietyo. Mal omnipotence ú good lá ná Ideal. Ozymandias shows optimization ú sanctity i humano polë ahya crime mi name solutiono. Rorschach shows truth ú flexibility polë ahya law ya lá ista cuita.
+*Watchmen* breaks i same tension from side darker. Doctor Manhattan ná almost divine Potential: enormous power, non-human perception timeo, ability dismantle ar build matter, ar almost complete distance human anxietyo. Mal omnipotence ú good lá ná Ideal. Ozymandias tana manen cestië carien ilya nat nenvë ú sanctity i humano polë ahya crime mi essë solutiono. Rorschach shows truth ú flexibility polë ahya law ya lá ista cuita.
 
 I lesson lá ná man is stronger, mal mana form powero en worthy cilien. Power ar knowledge nar potentials. Lá ahyar Ideal tenna lelyar ter moral law, boundary, responsibility ar living center.
 
@@ -50,13 +51,13 @@ Good adaptation ista that yá detail mauya ná betrayed an lemyien faithful i fo
 
 ### 8. The Dark Tower ar body works seeking center
 
-Ëar works yassë franchise lá ná er expansion outward, mal folding inward. Different stories yestar point ana one another. Characters return mi forms different. Names, places, powers ar symbols migrate imbe works. I reader yesta feel that sina lá ná er collection storieso, mal body works ya cesta discover centererya.
+Ëar works yassë franchise lá ná er expansion outward, mal folding inward. Different stories yestar point ana one another. Characters return mi forms different. Names, places, powers ar symbols migrate imbe works. I reader yesta feel that sina lá ná er collection storieso, mal body works ya cesta discover centerya.
 
 Stephen Kingo *The Dark Tower* ná example. On i surface, ná i journey Roland Deschaino ana tower ya ná both place ar symbol. Mal within Kingo body works, i tower ahya axis: center point drawing worlds, characters, evils, cities, books ar genres toward sa.
 
 Randall Flagg lá ná er recurring villain. Ná recurring function evil-o: force ya diverts systems from centers. Changes name, world ar genre, mal i structural action remains. Thus i part returns ana i Whole, ar i Whole changes i meaning i parto.
 
-I rose mi mythology *The Dark Tower* yando matters. I tower ná immense cosmic center, ar i rose ná small, delicate, vulnerable appearance i same centero. Ná exact image i relation imbe Ideal ar system. I ya holds ilya worlds lá mauya appear ve i greatest power. Yá i center appears ve nat ya polë ná trampled ú understanding that i entire axis was trampled.
+I rose mi mythology *The Dark Tower* yando matters. I tower lá immense cosmic center, ar i rose ná small, delicate, vulnerable appearance i same centero. Ná exact image i relation imbe Ideal ar system. I ya holds ilya worlds lá mauya appear ve i greatest power. Yá i center appears ve nat ya polë ná trampled ú understanding that i entire axis was trampled.
 
 Adaptation such worko lá judged er ma Roland, i tower, i man in black hya i guns appear. Ná judged ma i inner law ná preserved: i feeling that ilya stories nar drawn toward center er, ar that i center ná both cosmic ar vulnerable. Adaptation lá mauya copy i tower. Mauya carë ven feel that ëa tower.
 
