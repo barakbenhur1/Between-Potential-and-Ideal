@@ -1,0 +1,18 @@
+name: run-helper
+on: pull_request
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: localization-release-resolved
+      - run: python3 tools/z580_patch.py
+      - run: |
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add localization/sources/tlh/between-potential-and-ideal/580-planck-horizon-coordinates-information.md
+          git commit -m update-source
+          git push origin HEAD:localization-release-resolved
