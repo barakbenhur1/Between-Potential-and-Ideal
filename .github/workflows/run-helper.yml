@@ -1,18 +1,22 @@
-name: run-helper
+name: finalize-localization-helper
 on: pull_request
 permissions:
   contents: write
 jobs:
-  run:
+  finalize:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           ref: localization-release-resolved
+          fetch-depth: 2
       - run: python3 tools/t630.py
       - run: |
+          rm tools/t630.py .github/workflows/run-helper.yml
           git config user.name github-actions
           git config user.email actions@github.com
-          git add localization/sources/tlh/between-potential-and-ideal/630-high-energy-scale-appearance-field-symmetry.md
-          git commit -m update-source
-          git push origin HEAD:localization-release-resolved
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m 'Finalize segment 770 and remove temporary helper'
+            git push origin HEAD:localization-release-resolved
+          fi
