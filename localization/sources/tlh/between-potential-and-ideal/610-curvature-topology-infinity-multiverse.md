@@ -41,7 +41,7 @@ boundlessness yapbe'. boundless field je responsibility form poQ. question possi
 
 ### 8. Multiverse and Omniverse: Possibility Is Not Value
 
-`multiverse` term wa' proven QubmeH mIw wa'Daq pointbe'. ideas pImvaD umbrella pong 'oH, speculation degree pIm ghajbogh: eternal inflation, string landscape, many-worlds interpretations, initial conditions pIm ghajbogh universes, latlh je. evidential status rap ghajbe', claim rap je bIHbe'.
+`multiverse` term wa' proven QubmeH mIw wa'Daq pointbe'. ideas pImvaD umbrella pong 'oH, speculation degree pIm ghajbogh: eternal inflation, string landscape, many-worlds interpretations, initial conditions pIm ghajbogh universes, latlh je. tobmeH De' status rap ghajbe', claim rap je bIHbe'.
 
 `omniverse` standard cosmological term 'oHbe'. lo'lu'chugh, total possibilities fieldvaD cultural, fictional, metaphorical term rur presentnIS, scientific claim rurbe'.
 
