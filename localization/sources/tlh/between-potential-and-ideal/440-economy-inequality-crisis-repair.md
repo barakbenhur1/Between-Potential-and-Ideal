@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 440
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -14,7 +15,7 @@ publication: forbidden
 
 ### 13. Inequality: outcome possibility mojDI'
 
-inequality outcome difference neH 'oHbe'. yesterday outcome tomorrow starting condition mojDI' deepchoH. wealth time, safety, education, location, networks, legal protection, patience, failure room je buylaH.
+inequality outcome difference neH 'oHbe'. yesterday outcome tomorrow starting condition mojDI' deepchoH. wealth time, Qobvo' Qanlu'ghach, education, location, networks, legal protection, patience, failure room je buylaH.
 
 > **Inequality becomes structural when difference in result becomes difference in possibility.**
 
@@ -52,11 +53,11 @@ repairing economy repeated tlhob:
 - value human beingvaD rartaH'a'?
 - debt future poSmoHtaH'a'?
 - price truth rur So''a'?
-- market mirror ratlhtaH'a'?
+- market mIllogh ratlhtaH'a'?
 - labor worker leghtaH'a'?
 - growth Potential tInmoH'a', pagh numbers neH?
 
-theory economic law nI' 'oHbe':
+QubmeH mIw economic law nI' 'oHbe':
 
 > **Maximize Money**
 
