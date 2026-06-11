@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 540
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -10,7 +11,7 @@ publication: forbidden
 
 ## The Imaginary, the Virtual, Gravity, and the Horizon — 'ay' wej
 
-*trust, frozen identity, repair, Whole je*
+*trust, choHlaHbe'choHbogh ghot'egh, repair, Whole je*
 
 ### Event Horizons of Trust
 
@@ -18,7 +19,7 @@ naDev metaphor expand-laHlu', carefulqu', moral physicsDaq choHmoHbe'taHvIS. bla
 
 conceptual map rur, scientific model rurbe':
 
-> **Past too heavy → Interpretive gravity → Loss of trust → Blocked new information → Frozen identity**
+> **Past too heavy → Interpretive gravity → Loss of trust → Blocked new information → choHlaHbe'choHbogh ghot'egh**
 
 sensevamDaq black hole person ghaHbe'. person, world ghaHvo' information chu' Harlahghach possibility je jojDaq chenbogh relation 'oH. person vay' terrible ta'laH — misunderstanding pagh mistake mach 'oHbe', 'ach injury world chu' chenmoHbogh: roomDaq 'elDI' silence, words twice examine-lu', gesture forgiveness buymeH attempt rur. pIq inwardly choHlaH, proper words learn neHbe', apology neHbe', truly choH. 'ach QaHchugh, strategy rur read-lu'; tamchugh, evasion rur; apology nobchugh, past form latlh rur Qoy. past 'op present chu' Hoch ghaHDaq luH, sincere gesture je outside pawDI' already distorted.
 
@@ -48,7 +49,7 @@ imaginary number God thought 'oHbe'. virtual particle God action 'oHbe'. gravity
 
 'ach carefully jatlhlaHlu': imaginaryDaq reality QubmeH direction latlh ghaj 'e' tu'. virtualDaq appearancepa' influence-meH way ghaj 'e' tu'. gravityDaq freedom form poQ 'e' tu'. horizonDaq form Hoch boundary mojlaH 'e' tu'. realDaq Hochvamvo' nuq worldDaq veghlaHpu' 'e' tu'.
 
-examples theory itselfvaD identify-nISbe'. foundations bIHbe'; mirrors bIH. imaginary, virtual, gravity, black hole, white hole je Potential pagh Ideal provebe'. languagechaj pImDaq, reality visible things neHvo' chenbe' 'e' 'ang neH. directions, pressures, boundaries, horizons je ngaS. rut directly grasp-laHbe'bogh Doch precisely visible appearance form decide.
+examples QubmeH mIw itselfvaD identify-nISbe'. foundations bIHbe'; mirrors bIH. imaginary, virtual, gravity, black hole, white hole je Potential pagh Ideal provebe'. languagechaj pImDaq, reality visible things neHvo' chenbe' 'e' 'ang neH. directions, pressures, boundaries, horizons je ngaS. rut directly grasp-laHbe'bogh Doch precisely visible appearance form decide.
 
 chaq hidden direction, unstable influence, weight, boundary, visible sign je enough alignDI' Ideal moment nargh, birbir contradictbe'choHmeH. vay' merely exists neHbe', 'ach existenceDaj justified mojmeH.
 
