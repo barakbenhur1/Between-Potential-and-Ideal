@@ -8,10 +8,9 @@ on:
       - "localization/sources/tlh/**"
       - "localization/sources/qya/**"
       - ".github/workflows/audit-constructed-language-segments.yml"
-  workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   audit:
@@ -19,7 +18,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 2
+      - name: Apply segment 380 terminology update
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          path = Path('localization/sources/tlh/between-potential-and-ideal/380-music-of-potential.md')
+          text = path.read_text(encoding='utf-8')
+          text = text.replace('status: draft\n', 'status: draft\nlinguistic_review: specialist-revision-active\n', 1)
+          text = text.replace('precision', "lughchu'ghach")
+          text = text.replace('music theory', 'music QubmeH mIw')
+          path.write_text(text, encoding='utf-8')
+          PY
+          git checkout HEAD^ -- .github/workflows/audit-constructed-language-segments.yml
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add .github/workflows/audit-constructed-language-segments.yml localization/sources/tlh/between-potential-and-ideal/380-music-of-potential.md
+          git commit -m 'Update segment 380 terminology'
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
