@@ -42,4 +42,5 @@ Optimal lo' 'oH: ghot qIlbe'taHvIS clarity law' chenmoH, unnecessary QIH puSmoH,
 *AI lo'laH 'oH leghmeH jan'e' mung ghaH'egh maqbe'chugh, rudder nIHbe'chugh, 'ej ghot qIlbe'chugh.*
 bIQtIqDaq Duj yItmeH, current laD, nagh legh, He choH je poQ; map neH yapbe'.
 
+
 ## Segment review gate
