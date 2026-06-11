@@ -1,10 +1,13 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "document_id": "between-potential-and-ideal",
   "segment": 20,
   "stage": "specialist-source-validation",
   "publication": "forbidden",
   "approval_effect": "none",
+  "evidence_rounds": [
+    "localization/reviews/between-potential-and-ideal/020-source-evidence-round-1.md"
+  ],
   "profiles": {
     "tlh": "Okrand-canonical-only",
     "qya": "Late-Quenya-first"
@@ -51,8 +54,8 @@
     {
       "concept": "distance",
       "form": "haia",
-      "decision": "not-a-noun-candidate",
-      "source": "CPT/1296 and recorded Late-Quenya vocabulary",
+      "decision": "source-confirmed-adverb-not-title-noun",
+      "source": "CPT/1296",
       "period": "Late Quenya",
       "limits": "Attested as an adverb meaning afar or far away, not as the abstract noun required by the title."
     },
@@ -60,17 +63,33 @@
       "concept": "distance",
       "form": "haiya / Haiyava",
       "decision": "rejected-current-draft-form",
-      "source": "No supporting source recorded for the current spelling and nominal inflection",
-      "period": "unsupported",
-      "limits": "Must be removed or replaced before linguistic approval."
+      "source": "Earlier adverbial variants do not support the applied abstract/genitive form",
+      "period": "unsupported for current use",
+      "limits": "Haiyava must be removed or replaced before linguistic approval."
+    },
+    {
+      "concept": "distance",
+      "form": "haira",
+      "decision": "deferred-incompatible-with-default-profile",
+      "source": "Ety/KHAYA",
+      "period": "Middle Quenya",
+      "limits": "Adjectival direction outside the Late-Quenya-first default and not itself an abstract distance noun."
     },
     {
       "concept": "distance",
       "form": "hairië",
       "decision": "deferred-profile-exception-required",
-      "source": "Neo-Quenya vocabulary, explicitly marked fan-invented",
+      "source": "Neo-Quenya vocabulary, explicitly marked fan-created",
       "period": "Neo-Quenya",
       "limits": "May not enter production without an explicit documented exception, derivation review, and independent approval."
+    },
+    {
+      "concept": "exceptional-intelligence",
+      "form": "handa",
+      "decision": "deferred-incompatible-with-default-profile",
+      "source": "Ety/KHAN",
+      "period": "Middle Quenya",
+      "limits": "Adjectival intelligent or understanding direction; it does not provide a Late-compatible noun or encode moral worth."
     },
     {
       "concept": "exceptional-intelligence",
@@ -92,33 +111,49 @@
       "concept": "moral-worth",
       "form": "valda",
       "decision": "rejected-for-current-sense-under-default-profile",
-      "source": "Late Quenya PE17/154; older Qenya QL/102 for a different retained Neo-Quenya direction",
-      "period": "semantic conflict across periods",
-      "limits": "Late Quenya valda means excited or wild. It may not silently carry moral worth in this profile. A sourced alternative or explicit early-form exception is required."
+      "source": "PE17/154",
+      "period": "Late Quenya",
+      "limits": "The recorded Late-Quenya sense is excited or wild, not moral fitness under responsibility."
+    },
+    {
+      "concept": "excellence-not-moral-worth",
+      "form": "arya",
+      "decision": "source-confirmed-insufficient-alone",
+      "source": "PE17/57-58, 147",
+      "period": "Late Quenya",
+      "limits": "Can express excelling, better, or good of its kind. It does not alone encode moral responsibility or chosen restraint."
     },
     {
       "concept": "voluntary-release",
-      "form": "apsen- / hehta-",
-      "decision": "research-candidates-only",
-      "source": "Recorded Late-Quenya vocabulary with original-source references still to be entered in the worksheet",
+      "form": "apsen-",
+      "decision": "source-confirmed-research-candidate",
+      "source": "VT43/18, 20",
       "period": "Late Quenya",
-      "limits": "The semantic contrast among forgiving, releasing, leaving aside, abandoning, and chosen relinquishment must be tested before selection."
+      "limits": "The range includes remit, release, and forgive. It must not collapse chosen relinquishment into forgiveness alone."
+    },
+    {
+      "concept": "voluntary-release",
+      "form": "hehta-",
+      "decision": "source-confirmed-context-restricted",
+      "source": "WJ/365",
+      "period": "Late Quenya",
+      "limits": "The range includes put aside, exclude, abandon, and forsake. It is unsafe as a standalone title equivalent for graceful voluntary release."
     },
     {
       "concept": "protection",
       "form": "cauma",
-      "decision": "research-candidate-only",
-      "source": "Recorded Late-Quenya vocabulary with original-source reference still to be entered in the worksheet",
+      "decision": "source-confirmed-research-candidate",
+      "source": "PE17/108",
       "period": "Late Quenya",
-      "limits": "Must be tested against agency-preserving protection and kept distinct from control."
+      "limits": "Means protection, shelter, or shield. Agency preservation and separation from control still require context tests."
     },
     {
       "concept": "living-source",
       "form": "ehtelë",
       "decision": "literal-source-metaphor-warning",
-      "source": "Late-Quenya vocabulary: water spring or source",
+      "source": "Late-Quenya vocabulary: water spring or issue",
       "period": "Late Quenya",
-      "limits": "A phrase such as cuina ehtelë would be metaphorical, not a direct lexical equivalent of a living person or origin, and requires explicit testing."
+      "limits": "A living-source use would be metaphorical, not a direct lexical equivalent of a living person or origin, and requires explicit testing."
     }
   ],
   "tlh_decisions": [
@@ -127,6 +162,12 @@
       "decision": "canonical-source-locators-required",
       "source_policy": "The Klingon Dictionary, Klingon for the Galactic Traveler, later confirmed Okrand material, or sourced KLI canon lists",
       "limits": "The KLI online post-dictionary lists do not reproduce the complete TKD or KGT vocabulary. Absence from those lists is not evidence of non-canonicity. Exact source locators and three-context tests are still required before any term is approved."
+    },
+    {
+      "concept": "online-source-search-round-1",
+      "decision": "insufficient-to-close-book-locators",
+      "source_policy": "KLI post-dictionary and qep'a' canon pages checked",
+      "limits": "No conclusion about TKD or KGT can be drawn from absence on those web pages. Book-level or separately sourced Okrand locators remain mandatory."
     },
     {
       "concept": "witness",
@@ -148,7 +189,8 @@
     }
   ],
   "acceptance": {
-    "source-validation_complete": false,
+    "source_evidence_round_1_complete": true,
+    "source_validation_complete": false,
     "title_terms_resolved": false,
     "body_terms_resolved": false,
     "three_context_tests_complete": false,
