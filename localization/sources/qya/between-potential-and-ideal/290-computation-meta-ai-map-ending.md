@@ -3,28 +3,29 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 290
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
 ---
 
-## 10. Computation, Evidence, Reduction ar Incompleteness — Ranta Canta
+## 10. Computation, Tanwa, Reduction ar Incompleteness — Ranta Canta
 
 ### 10. I quén ar i meta-level
 
-I quén lá ná proven sís ve being above ilya computation. Mal yando lá mauya identify immo ó formal system er. Polë maquetë axioms, change representation, shift lambë, move ana meta-level, hya recognize frame particular lá farya.
+I quén lá ná proven sís ve being above ilya computation. Mal yando lá mauya identify immo ó formal system er. Polë maquetë axioms, change emma, shift lambë, move ana meta-level, hya recognize frame particular lá farya.
 
 I advantage lá ná magic. Ná movement imbe frames. I quén lá ëa pella ilya system, mal polë cuita ó i fact lá ilya system antaina mauya ná i quetë final. Polë colë non-closure ú airitien sa ar ú lelyala fantasy.
 
-Sís Potential samë formulation palya. Lá ná er space solutionion inside system er. Ná yando space possible systems: representations, lambeli, axioms, transition rules, reductions, meta-systems ar ways checking.
+Sís Potential samë formulation palya. Lá ná er space solutionion inside system er. Ná yando space possible systems: emmar, lambeli, axioms, transition rules, reductions, meta-systems ar ways checking.
 
-Ideal lá ná er theorem proven inside system. Ná yando i polië recognition írë system yá used power immo, írë representation mauya ahya, írë evidence lá farya, ar írë movement ana meta-level ná act responsible epë escape.
+Ideal lá ná er quetë tancaina mi system. Ná yando i polië recognition írë system yá used power immo, írë emma mauya ahya, írë tanwa lá farya, ar írë movement ana meta-level ná act responsible epë escape.
 
-### 11. AI, signs ar evidence checkable
+### 11. AI, signs ar tanwa checkable
 
-AI carë capítulo sina urgent. System polë onta answer ya cenë ve evidence, formula ya cenë precise, hya summary ya onta felmë masteryo. Mal product linguistic lá necessarily ná evidence. Sign lá necessarily ná source. Formulation ya cenë correct lá necessarily ná understanding.
+AI carë cendë sina urgent. System polë onta answer ya cenë ve tanwa, formula ya cenë precise, hya summary ya onta felmë masteryo. Mal product linguistic lá necessarily ná tanwa. Sign lá necessarily ná source. Formulation ya cenë correct lá necessarily ná understanding.
 
-Mi terms NP-va witness hya certificate ná nat ya polë ná checked relative ana defined problem. Mi broader sense, evidence maura context, source, method, domain validityo ar possibility criticism. AI polë resta formulate, suggest, partially test, search relations ar panta possibilities. Mal qui lá ëa tië checking i ya colë i answer, product polë ahya substitute understandingo.
+Mi terms NP-va witness hya certificate ná nat ya polë ná checked relative ana defined problem. Mi broader sense, tanwa maura i nómë ar lúmë yassë cendaina, source, method, domain validityo ar possibility criticism. AI polë resta formulate, suggest, partially test, search relations ar panta possibilities. Mal qui lá ëa tië checking i ya colë i answer, product polë ahya substitute understandingo.
 
 Sina entulya men ana principle hroa i theoryo: i celu cuina tulë epë information extracted sello. Lá an i celu cuina ná ilya lúmessë right, mal an understanding lá ná er production correct signo. Understanding ná ovantë imbe source, haiya, testing, correction ar responsibility.
 
@@ -39,15 +40,15 @@ Cestiër output AI-va:
 7. man colë i consequence?
 8. apa loien i output, harya ma i quén understanding amba?
 
-### 12. Mapa er: representation, transition, resource, evidence, strategy, boundary
+### 12. Mapa er: emma, transition, resource, tanwa, strategy, boundary
 
 Qui i lambeli pantainë sís nar joined, mapa er tulë cenna:
 
-**representation → transition → resource → certificate/evidence → reduction → complement → strategy → change representationo → boundary → meta-level**
+**emma → transition → resource → certificate/tanwa → reduction → complement → strategy → change emmava → boundary → meta-level**
 
-Sina lá prove Ëa ná computation. Lá prove Potential ná NP. Ná mapa structural ya tana i gap imbe Potential ar Ideal lá ná er gap merëo, deptho hya inspirationo. Yando ná gap representationo, resourceo, evidenceo, patho, translationo ar boundaryo.
+Sina lá prove Ëa ná computation. Lá prove Potential ná NP. Ná mapa structural ya tana i gap imbe Potential ar Ideal lá ná er gap merëo, deptho hya inspirationo. Yando ná gap emmava, resourceo, tanwava, patho, translationo ar boundaryo.
 
-Optimal cuita exactly mi middle sina. Lúmessë ná efficient solution. Lúmessë checking certificateo. Lúmessë reduction ana central problem. Lúmessë strategy ya holds against opposition. Lúmessë change representationo. Ar lúmessë recognition i system lá polë pahta immo, an sina mauya move level ú quetila i movement ná proof final.
+Optimal cuita exactly mi middle sina. Lúmessë ná efficient solution. Lúmessë checking certificateo. Lúmessë reduction ana central problem. Lúmessë strategy ya holds against opposition. Lúmessë change emmava. Ar lúmessë recognition i system lá polë pahta immo, an sina mauya move level ú quetila i movement ná proof final.
 
 ### 13. Metta: Ideal ya lá ná closure
 
@@ -60,9 +61,9 @@ Yassë system lá polë pahta immo, responsibility lemya. Sís Potential lá van
 ### Chapter discipline summary
 
 - computation lá prove i theory; ná lambë boundaryo.
-- efficient solution, evidence checkable, strategy ar non-closure nar hyanë.
+- efficient solution, tanwa checkable, strategy ar non-closure nar hyanë.
 - lá ëa claim i quén ná mystical exception machinehoodllo.
-- AI sign, source, evidence ar understanding mauya lemya distinct.
+- AI sign, source, tanwa ar understanding mauya lemya distinct.
 - Ideal lá ná closure quanta; ná relation responsible.
 
 > **Closing sentence draft:** Yassë system lá polë pahta immo, Potential lá vanya; ahya frame ar panta ando vinya responsibilityn.
