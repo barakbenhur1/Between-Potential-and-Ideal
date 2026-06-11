@@ -1,8 +1,8 @@
 {
-  "schema_version": 9,
+  "schema_version": 10,
   "segment": 20,
   "stage": "specialist-source-validation",
-  "status": "governing-pattern-philosophical-frame-source-blocked",
+  "status": "philosophical-frame-clause-route-source-blocked",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -21,6 +21,8 @@
   "three_context_results_round_1": "localization/reviews/between-potential-and-ideal/020-three-context-results-round-1.md",
   "round_2_title_architecture": "localization/reviews/between-potential-and-ideal/020-round-2-title-architecture.md",
   "round_2_sentence_frame_matrix": "localization/reviews/between-potential-and-ideal/020-round-2-sentence-frame-matrix.md",
+  "round_2_relation_remain_source_assessment": "localization/reviews/between-potential-and-ideal/020-round-2-relation-remain-source-assessment.md",
+  "round_2_har_boundary_and_relation_route": "localization/reviews/between-potential-and-ideal/020-round-2-har-boundary-and-relation-route.md",
   "qya_cantie_short_label_test": "localization/reviews/between-potential-and-ideal/020-cantie-test.md",
   "qya_cantie_philosophical_frame_blocker": "localization/reviews/between-potential-and-ideal/020-cantie-philosophical-frame-blocker.md",
   "current_audit_state": {
@@ -42,6 +44,8 @@
     "localization/reviews/between-potential-and-ideal/020-three-context-validation.md",
     "localization/reviews/between-potential-and-ideal/020-three-context-results-round-1.md",
     "localization/reviews/between-potential-and-ideal/020-round-2-sentence-frame-matrix.md",
+    "localization/reviews/between-potential-and-ideal/020-round-2-relation-remain-source-assessment.md",
+    "localization/reviews/between-potential-and-ideal/020-round-2-har-boundary-and-relation-route.md",
     "localization/reviews/between-potential-and-ideal/020-cantie-philosophical-frame-blocker.md",
     "localization/glossaries/segment-020-specialist-terms.md"
   ],
@@ -51,6 +55,11 @@
     "round_2_test_architecture_selected": true,
     "round_2_sentence_frames_defined": true,
     "qya_cantie_short_label_conditional_pass": true,
+    "qya_har_identity_persistence_rejected": true,
+    "qya_abstract_relation_noun_admitted": false,
+    "qya_clause_based_relation_route_selected": true,
+    "qya_interaction_construction_sourced": false,
+    "qya_replacement_or_other_person_construction_sourced": false,
     "qya_cantie_philosophical_frame_complete": false,
     "source_validation_complete": false,
     "title_terms_resolved": false,
@@ -64,7 +73,7 @@
     "independent_second_review_complete": false,
     "approved": false
   },
-  "next_action": "source-locate a Late-Quenya relational construction and a Late-compatible remain-or-preserve predicate; do not admit the governing-pattern philosophical sentence before both lexical and grammar locators are recorded",
+  "next_action": "source-locate Late-Quenya constructions for interaction between two explicitly named participants and for replacement or becoming the other; then build one literal two-clause test with exact lexical and grammar locators, without returning to har-, lemya-, ser-, mar-, harya-, ovantë, or an unsupported relation noun",
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
