@@ -1,5 +1,5 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "segment": 20,
   "stage": "specialist-terminology-validation",
   "publication": "forbidden",
@@ -8,10 +8,12 @@
     "tlh": "Okrand-canonical-only",
     "qya": "Late-Quenya-first"
   },
+  "source_decisions": "localization/reviews/between-potential-and-ideal/020-source-decisions.json",
+  "three_context_worksheet": "localization/reviews/between-potential-and-ideal/020-three-context-validation.md",
   "title": {
     "policy": "localize-in-both-target-languages",
     "protected": false,
-    "status": "mechanically-clear-provisional",
+    "status": "mechanically-clear-linguistically-unresolved",
     "applied_forms": {
       "tlh": "pung chuq je choHmeH chut",
       "qya": "I Cantië Ahyaliëo Lissëo ar Haiyava"
@@ -20,96 +22,120 @@
       "tlh": [],
       "qya": []
     },
+    "blocking_decisions": {
+      "tlh": [
+        "Exact canonical source locators are still required for every lexical component.",
+        "The title must be shown to mean a governing pattern of relational transformation, not merely a law for changing physical distance and mercy."
+      ],
+      "qya": [
+        "Ahyaliëo remains a derived form whose morphology is not documented by the source for ahya-.",
+        "Haiyava is unsupported as an abstract noun for distance and must be replaced.",
+        "Lissë is sourced for grace, but voluntary relinquishment remains unexpressed."
+      ]
+    },
     "specialist_note": "Zero automated findings do not validate morphology, semantics, source period, or natural target-language syntax. Both title forms remain provisional."
   },
   "concepts": [
     {
       "id": "metamorphosis",
       "tlh": {
-        "candidate": "clausal constructions using choH",
-        "source": "The Klingon Dictionary dictionary entry; exact edition page or entry locator still to be recorded",
+        "candidate": "transparent clausal constructions using choH",
+        "source": "TKD/KGT or later confirmed Okrand source; exact locator pending",
         "current_use": "provisional title and body direction",
-        "title_use": "applied but not approved",
-        "status": "source-locator-pending"
+        "status": "source-locator-and-idiomatic-test-pending"
       },
       "qya": {
-        "candidate": "a construction derived from ahya-",
+        "candidate": "construction based on ahya-",
         "source": "PM/395: ahya- 'to change'",
         "period": "1950s Quenya",
         "derivation_needed": true,
-        "current_use": "Ahyaliëo is present in the applied title but the exact abstract-noun and genitive morphology is not directly attested by the recorded source",
-        "title_use": "applied but morphology-unverified",
-        "status": "root-sourced-derived-form-unverified"
+        "current_use": "Ahyaliëo remains present but unapproved",
+        "status": "root-source-confirmed-derived-form-unverified"
       },
-      "label_test": "pending",
-      "paragraph_test": "partial-body-test-only",
+      "label_test": "not-passed",
+      "paragraph_test": "pending",
       "literary_test": "pending"
     },
     {
       "id": "code-as-governing-pattern",
       "tlh": {
-        "candidate": "a sourced construction using chut or another rule/pattern expression",
-        "source": "The Klingon Dictionary dictionary entry; exact edition page or entry locator still to be recorded",
+        "candidate": "sourced construction using chut or a transparent rule/pattern clause",
+        "source": "TKD/KGT or later confirmed Okrand source; exact locator pending",
         "current_use": "chut is present in the applied title",
-        "status": "source-locator-and-context-pending"
+        "status": "source-locator-and-project-sense-pending"
       },
       "qya": {
         "candidate": "cantië",
         "source": "NM/287-288: cantië 'pattern'",
         "period": "1959 Quenya",
         "scope_note": "candidate for governing pattern; not software code",
-        "current_use": "present in the applied title",
         "status": "source-confirmed-context-pending"
       },
-      "label_test": "partial-title-test-only",
+      "label_test": "source-sense-only",
       "paragraph_test": "pending",
       "literary_test": "pending"
     },
     {
-      "id": "genius-or-exceptional-intelligence",
+      "id": "exceptional-intelligence",
       "tlh": {
-        "candidate": null,
-        "source": null,
+        "candidate": "transparent sourced clause separating capacity from moral worth",
+        "source": "exact Okrand locators pending",
         "status": "unresolved"
       },
       "qya": {
         "candidate": null,
-        "source": null,
-        "current_draft_remediation": "handassë is used in the draft to remove English body tokens; this does not approve it under the Late-Quenya-first profile",
-        "status": "unresolved",
+        "status": "unresolved-under-default-profile",
         "rejected_or_deferred": [
           {
             "form": "handassë",
-            "reason": "attested as Middle Quenya and therefore not automatically compatible with the selected Late-Quenya-first profile",
+            "reason": "Middle Quenya form; not accepted automatically under the Late-Quenya-first profile",
             "source": "Ety/KHAN"
           },
           {
             "form": "handelë",
-            "reason": "attested as Middle Quenya; requires an explicit profile exception before use",
+            "reason": "Middle Quenya form requiring an explicit profile exception",
             "source": "Ety/KHAN; EtyAC/KHAN"
           }
         ]
       },
-      "label_test": "pending",
-      "paragraph_test": "temporary-body-remediation-only",
+      "label_test": "failed-for-current-draft",
+      "paragraph_test": "pending",
+      "literary_test": "pending"
+    },
+    {
+      "id": "moral-worth",
+      "tlh": {
+        "candidate": "transparent sourced clause",
+        "rejected_current_direction": "lo'laH when it merely means practical usefulness",
+        "status": "unresolved"
+      },
+      "qya": {
+        "candidate": null,
+        "rejected_current_direction": "valda",
+        "reason": "Late Quenya records valda in the sense excited or wild; the older worthy direction would require an explicit profile exception",
+        "source": "PE17/154; older Qenya QL/102",
+        "status": "unresolved-under-default-profile"
+      },
+      "label_test": "failed-for-current-draft",
+      "paragraph_test": "pending",
       "literary_test": "pending"
     },
     {
       "id": "grace-of-voluntary-release",
       "tlh": {
-        "candidate": null,
-        "source": null,
+        "candidate": "transparent verbal clause describing chosen release for the sake of the living source",
+        "source": "exact Okrand locators pending",
         "status": "unresolved"
       },
       "qya": {
-        "candidate": "a sourced construction using lissë",
-        "source": "VT44/18: lissë 'grace'; genitive lisseo is attested in the cited phrase",
+        "candidate": "lissë plus a separately sourced release construction",
+        "source": "VT44/18: lissë 'grace'; genitive lisseo attested",
         "period": "Late Quenya",
-        "scope_note": "the voluntary-release component still needs a separate sourced construction",
-        "current_use": "Lissëo is present in the applied title",
-        "status": "source-confirmed-sense-and-context-pending"
+        "research_directions": ["apsen-", "hehta-"],
+        "scope_note": "forgiving, releasing, leaving aside, abandoning, and chosen relinquishment must remain distinct",
+        "status": "grace-source-confirmed-release-component-unresolved"
       },
-      "label_test": "partial-title-test-only",
+      "label_test": "partial-source-sense-only",
       "paragraph_test": "pending",
       "literary_test": "pending"
     },
@@ -117,25 +143,23 @@
       "id": "distance",
       "tlh": {
         "candidate": "chuq",
-        "source": "The Klingon Dictionary dictionary entry; exact edition page or entry locator still to be recorded",
-        "scope_note": "physical distance only until an explicit philosophical extension is validated",
-        "current_use": "present in the applied title and body",
+        "source": "TKD/KGT or later confirmed Okrand source; exact locator pending",
+        "scope_note": "physical distance only until the ethical and epistemic extension is explicitly validated",
         "status": "source-locator-and-extension-pending"
       },
       "qya": {
         "candidate": null,
-        "source": "Current research records haia 'afar, far (off), far away' as an adverb and haira 'remote, far' as an adjective; hairië 'distance, farness' is marked as a fan-invented Neo-Quenya form",
-        "scope_note": "the current draft forms haiya and Haiyava are not directly supported by the recorded evidence and cannot be approved as a Late-Quenya-first noun for distance",
+        "source": "haia is an adverb 'afar; far away'; haira is an adjective 'remote; far'; hairië is fan-invented Neo-Quenya",
         "current_draft_form": "haiya / Haiyava",
         "status": "unsupported-current-form-revision-required",
         "rejected_or_deferred": [
           {
             "form": "haiya / Haiyava",
-            "reason": "spelling and nominal use are not established by the currently recorded source evidence"
+            "reason": "unsupported spelling and nominal use in the recorded Late-Quenya evidence"
           },
           {
             "form": "hairië",
-            "reason": "fan-invented form; requires an explicit Neo-Quenya exception and independent review before use"
+            "reason": "fan-invented form requiring an explicit profile exception and independent review"
           }
         ]
       },
@@ -146,18 +170,49 @@
     {
       "id": "witness",
       "tlh": {
-        "candidate": "leghwI'",
-        "source": "The Klingon Dictionary grammar and vocabulary sources; exact locator still to be recorded",
-        "scope_note": "observer-like descriptive formation only; ethical witness nuance remains unresolved",
+        "candidate": "leghwI' or a transparent ethical-witness clause",
+        "source": "exact TKD/KGT grammar and vocabulary locators pending",
+        "scope_note": "leghwI' is observer-like only until the ethical role is demonstrated",
         "status": "source-locator-and-context-pending"
       },
       "qya": {
         "candidate": "astarmo",
-        "source": "attested vocabulary glossed 'bystander; witness'; exact original-source locator still to be recorded in the project worksheet",
-        "scope_note": "possible observer/witness candidate only; the ethical role in this chapter still requires all three context tests",
-        "previous_direction": "cenindo",
-        "previous_direction_status": "deferred-unverified",
-        "status": "candidate-source-locator-pending"
+        "source": "PE17/71: bystander; witness",
+        "period": "Late Quenya",
+        "scope_note": "the ethical witness role still requires all three context tests",
+        "status": "source-confirmed-context-pending"
+      },
+      "label_test": "source-sense-only",
+      "paragraph_test": "pending",
+      "literary_test": "pending"
+    },
+    {
+      "id": "protection-versus-control",
+      "tlh": {
+        "candidate": "separate transparent clauses using sourced guarding and command vocabulary",
+        "source": "exact Okrand locators pending",
+        "status": "unresolved"
+      },
+      "qya": {
+        "candidate": "research direction using cauma for protection and a separate agency-removal clause for control",
+        "status": "research-only",
+        "scope_note": "protection must preserve agency; control replaces it"
+      },
+      "label_test": "pending",
+      "paragraph_test": "pending",
+      "literary_test": "pending"
+    },
+    {
+      "id": "living-source",
+      "tlh": {
+        "candidate": "yInbogh mung or a transparent person/origin clause",
+        "source": "exact source and syntax validation pending",
+        "status": "unresolved"
+      },
+      "qya": {
+        "candidate": "transparent living-person or living-origin construction",
+        "research_warning": "ehtelë is a literal spring/source; any cuina ehtelë construction is metaphorical and must be declared and tested",
+        "status": "unresolved"
       },
       "label_test": "pending",
       "paragraph_test": "pending",
@@ -165,18 +220,23 @@
     }
   ],
   "verified_audit": {
-    "workflow_run_id": 27294229090,
-    "head_sha": "e410db1308fa1265619cf400d70c439903db6bfa",
+    "workflow_run_id": 27332072386,
+    "head_sha": "bead2e380489da7029b56f58aedb665d0310695d",
     "tlh_heading": 0,
     "tlh_body": 0,
     "qya_heading": 0,
     "qya_body": 0,
+    "repository_mechanically_clear_pairs": 77,
+    "repository_blocked_pairs": 0,
     "mechanically_clear": true
   },
   "acceptance": {
     "all_terms_resolved": false,
     "all_context_tests_passed": false,
     "all_sources_recorded": false,
+    "full_tlh_rewrite_complete": false,
+    "full_qya_rewrite_complete": false,
+    "source_parity_recheck_complete": false,
     "heading_findings_zero": true,
     "body_findings_zero": true,
     "second_review_passed": false,
