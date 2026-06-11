@@ -3,12 +3,13 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 270
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
 ---
 
-## 10. Computation, Evidence, Reduction ar Incompleteness — Ranta Atta
+## 10. Computation, Tanwa, Reduction ar Incompleteness — Ranta Atta
 
 ### 4. Reduction ar NP-completeness: translation ya ocomba difficulty
 
@@ -20,21 +21,21 @@ Sina lá quetë problem NP-complete ná `i hardest thing mi ambar`, ar lá quet�
 
 Mi terms i theoryo, lá ilya possibility mi Potential represent i Potential ilya. Ëar possibilities local ar nodes structural. Reduction parma men hyanatië sina. Lúmessë solve nat er lá ná er solve nat er; ahya i map transitions i fieldo ilya.
 
-### 5. coNP: i side complementary evidenceo
+### 5. coNP: i side complementary tanwava
 
 coNP lá ná `class proofs nonexistenceo` mi sense loose. Precisely, ná related ana complements problemion mi NP. Qui NP cenda cases yassen yes-answer polë samë certificate efficiently checkable, coNP enyalë men lúmessë i side complementary i maquetta ná i ya maura certificate.
 
-I value philosophical sís ná asymmetry. Lá ilya lúmessë evidence i ya lá ëa ná as easy colien ve evidence i ya ëa. Lúmessë example er farya tanien existence, mal absence maura omentië i palar possibilities ilya.
+I value philosophical sís ná asymmetry. Lá ilya lúmessë tanwa i ya lá ëa ná as easy colien ve tanwa i ya ëa. Lúmessë example er farya tanien existence, mal absence maura omentië i palar possibilities ilya.
 
 coNP lá prove nat metaphysical absenceo. Tana carma er: Potential harya lá er i maquetta `ëa ma?`, mal yando `lá ëa ma?`, `polë ma i absence ná verified?`, ar `mana maura colien claim absenceo ú lelyala jump irresponsible?`
 
-Sina matters i theoryn an Ideal lá ná er discovery worthy possibilityo. Lúmessë yando ná refusal responsible: ista írë polë quetë no, írë lá polë quetë no, ar írë lack evidenceo lá ná evidence absenceo.
+Sina matters i theoryn an Ideal lá ná er discovery worthy possibilityo. Lúmessë yando ná refusal responsible: ista írë polë quetë no, írë lá polë quetë no, ar írë tanwa vá, lá mauya quetë tana i absence.
 
 ### 6. QBF ar PSPACE: írë solution ahya strategy
 
 Ëar problems yar lá nar satisfied certificate erinen. Mauya tana move er holds against ilya opposition, ilya counter-choice samë response, ar ilya step lemya inside structure palya. Sís i lambë quantified Boolean formulas, QBF, ar PSPACE ahya useful.
 
-Capítulo sina lá mauya ahya lesson quanta PSPACEo. I point careful farya: QBF represent passage `ëa ma solution?`-llo ana `ëa ma strategy ya holds against ilya permitted counter-move?` Sina lá en point er solutiono, mal structure choiceo, oppositiono, responseo ar enduranceo mi lúmë.
+Cendë sina lá mauya ahya lesson quanta PSPACEo. I point careful farya: QBF represent passage `ëa ma solution?`-llo ana `ëa ma strategy ya holds against ilya permitted counter-move?` Sina lá en point er solutiono, mal structure choiceo, oppositiono, responseo ar enduranceo mi lúmë.
 
 Mi terms i theoryo, sina ná transition important. Lúmessë Ideal lá ná point. Lúmessë ná strategy stable mi field oppositiono. Lá `hirnen i answer`, mal `hirnen tië cariëo ya lemya responsible írë reality hanquenta ata`.
 
