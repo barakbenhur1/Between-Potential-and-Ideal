@@ -1,8 +1,8 @@
 {
-  "schema_version": 11,
+  "schema_version": 12,
   "segment": 20,
   "stage": "specialist-source-validation",
-  "status": "directed-speech-and-agency-source-blocked",
+  "status": "directed-speech-lexicon-and-agency-source-blocked",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -64,7 +64,7 @@
     "qya_clause_based_relation_route_selected": true,
     "qya_directed_speech_architecture_selected": true,
     "qya_quet_primary_locator_entered": false,
-    "qya_dative_primary_grammar_locator_entered": false,
+    "qya_dative_primary_grammar_locator_entered": true,
     "qya_living_source_expression_approved": false,
     "qya_agency_path_clause_approved": false,
     "qya_cantie_philosophical_frame_complete": false,
@@ -80,7 +80,7 @@
     "independent_second_review_complete": false,
     "approved": false
   },
-  "next_action": "enter the original Tolkien locators for quet- and the dative recipient construction, then source and test one Late-compatible agency-preservation clause; do not assemble a complete Neo-Quenya philosophical sentence before both gates pass",
+  "next_action": "enter the original Tolkien lexical locator for quet-, then source and test one Late-compatible agency-preservation clause; do not assemble a complete Neo-Quenya philosophical sentence before both gates pass",
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
