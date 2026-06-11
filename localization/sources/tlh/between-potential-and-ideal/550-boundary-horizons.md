@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 550
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -18,17 +19,17 @@ _Image description draft: boundary wall neH 'oHbe'; possibility, form je relatio
 
 ### What is visible, what is hidden, and what must not be inferred too quickly
 
-Boundary horizons theory botlhDaq bIH. horizon edge neH 'oHbe'. observer, tool, condition, possibilities field je joj relation 'oH. horizon beyondDaq tu'bogh Doch necessarily nonexistent 'oHbe'; momentvetlhDaq directly actionable 'oHbe' neH. education, law, medicine, physics, AI, art, governance jeDaq potlh.
+Boundary horizons QubmeH mIw botlhDaq bIH. horizon edge neH 'oHbe'. observer, tool, condition, possibilities field je joj relation 'oH. horizon beyondDaq tu'bogh Doch necessarily nonexistent 'oHbe'; momentvetlhDaq directly actionable 'oHbe' neH. education, law, medicine, physics, AI, art, governance jeDaq potlh.
 
-failure nI' 'oH inaccessibility, nonexistence je confuse-ghach'e'. learner DaH yajbe' 'e' incapability tobe'be'. evidence tu'be'ghach event qaSbe' 'e' provebe'. testDaq pain visiblebe'ghach pain Qaw'be'. cosmic event horizon beyond cosmological phenomenon leghlaHbe'lu'mo' false mojbe'. 'ach horizon beyond invention license 'oHbe' je. horizon double humility poQ: eraseQo', fantasizeQo'.
+failure nI' 'oH inaccessibility, nonexistence je confuse-ghach'e'. learner DaH yajbe' 'e' incapability tobe'be'. tobmeH De' tu'be'ghach event qaSbe' 'e' provebe'. testDaq pain visiblebe'ghach pain Qaw'be'. cosmic event horizon beyond cosmological phenomenon leghlaHbe'lu'mo' false mojbe'. 'ach horizon beyond invention license 'oHbe' je. horizon double humility poQ: eraseQo', fantasizeQo'.
 
 > **Action under a horizon = what can be seen × reliable tool × recognition of limitation × marked uncertainty × possibility of correction ÷ pretended certainty × projection × fear × laziness × authority hiding its conditions**
 
 responsibility map 'oH: instrument boundaryDaq world rIn 'e' ngebbe'taHvIS chay' act.
 
-scienceDaq boundary horizons instruments, energy scales, resolution, observation, cosmology jeDaq nargh. black-hole physicsDaq event horizon boundary 'oH, naDev external observervaD information, action je meaning pIm Hev. cosmologyDaq cosmic event horizon nuq ever influence-laH pagh leghlaHlu' 'e' mark. physical concepts bIH, ornaments bIHbe'; theoryDaq structural, careful lo' poQ.
+scienceDaq boundary horizons instruments, energy scales, resolution, observation, cosmology jeDaq nargh. black-hole physicsDaq event horizon boundary 'oH, naDev external observervaD information, action je meaning pIm Hev. cosmologyDaq cosmic event horizon nuq ever influence-laH pagh leghlaHlu' 'e' mark. physical concepts bIH, ornaments bIHbe'; QubmeH mIwDaq structural, careful lo' poQ.
 
-lawDaq evidence horizon responsible judgment determine. educationDaq understanding horizon nuq distance qenglaHlu' determine. medicineDaq diagnostic horizon nuq known, suspected, testing poQtaH je determine. AIDaq explanation horizon system trustworthy tool mojlaH'a', pagh authority rur So'bogh black box moj'a' determine.
+lawDaq tobmeH De' horizon responsible judgment determine. educationDaq understanding horizon nuq distance qenglaHlu' determine. medicineDaq diagnostic horizon nuq known, suspected, testing poQtaH je determine. AIDaq explanation horizon system trustworthy tool mojlaH'a', pagh authority rur So'bogh black box moj'a' determine.
 
 Boundary horizons recursive edgevaD rar, horizon Hoch vIHmoHlu'DI' horizon latlh narghmo'. hiddenness Hoch disappear-bogh final point tu'lu'be'. 'ach despair 'oHbe': boundary name-ghach action moral law' mojmoH. ghot Hoch SovnISbe'; 'ach nuq Sovbe' 'e' bop lie-nISbe'.
 
