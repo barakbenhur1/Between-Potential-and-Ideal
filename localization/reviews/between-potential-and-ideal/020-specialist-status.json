@@ -1,8 +1,8 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "segment": 20,
   "stage": "specialist-source-validation",
-  "status": "source-evidence-round-1-recorded",
+  "status": "round-2-title-architecture-and-sentence-frames-recorded",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -18,6 +18,9 @@
   "source_evidence_round_1": "localization/reviews/between-potential-and-ideal/020-source-evidence-round-1.md",
   "context_decisions_round_1": "localization/reviews/between-potential-and-ideal/020-context-decisions-round-1.md",
   "three_context_validation": "localization/reviews/between-potential-and-ideal/020-three-context-validation.md",
+  "three_context_results_round_1": "localization/reviews/between-potential-and-ideal/020-three-context-results-round-1.md",
+  "round_2_title_architecture": "localization/reviews/between-potential-and-ideal/020-round-2-title-architecture.md",
+  "round_2_sentence_frame_matrix": "localization/reviews/between-potential-and-ideal/020-round-2-sentence-frame-matrix.md",
   "current_audit_state": {
     "repository_mechanically_clear_pairs": 77,
     "repository_blocked_pairs": 0,
@@ -35,12 +38,19 @@
   "review_blocker_sources": [
     "localization/reviews/between-potential-and-ideal/020-source-decisions.json",
     "localization/reviews/between-potential-and-ideal/020-three-context-validation.md",
+    "localization/reviews/between-potential-and-ideal/020-three-context-results-round-1.md",
+    "localization/reviews/between-potential-and-ideal/020-round-2-sentence-frame-matrix.md",
     "localization/glossaries/segment-020-specialist-terms.md"
   ],
   "acceptance": {
     "source_evidence_round_1_complete": true,
+    "three_context_results_round_1_recorded": true,
+    "round_2_test_architecture_selected": true,
+    "round_2_sentence_frames_defined": true,
     "source_validation_complete": false,
     "title_terms_resolved": false,
+    "complete_target_language_title_candidates": false,
+    "completed_target_language_sentence_frames": false,
     "body_terms_resolved": false,
     "three_context_tests_complete": false,
     "full_tlh_rewrite_complete": false,
@@ -49,6 +59,7 @@
     "independent_second_review_complete": false,
     "approved": false
   },
+  "next_action": "complete one sourced target-language sentence frame at a time, beginning with the governing-pattern frame; record exact lexical and grammar locators, literal parse and idiomatic back-translation before testing any integrated title wording",
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
