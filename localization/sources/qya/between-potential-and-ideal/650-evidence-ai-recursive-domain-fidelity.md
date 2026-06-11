@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 650
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -10,13 +11,13 @@ publication: forbidden
 
 ## High-Energy Physics — Part Three
 
-*Mathematical beauty, evidence, AI, recursive edge, and local fidelity*
+*Mathematical beauty, tanwa, AI, recursive edge, and local fidelity*
 
 ### 10. Mathematical Beauty and Empirical Confirmation
 
 String theory, M-Theory, branes, AdS/CFT ar holography are domains ar frameworks ó great theoretical ar mathematical depth, mal they should lá enter this chapter ve stamps authorityo. Some remain far from direct empirical confirmation at i level i Standard Modelo, ar some describe theoretical relations under specific conditions.
 
-Mathematical beauty can be sign i fertility languageo, mal it is lá substitute an empirical evidence. A theory can be deep ar still remain theoretical Potential ya has lá become verified scientific Ideal.
+Mathematical beauty can be sign i fertility languageo, mal it is lá substitute an empirical tanwa. A theory can be deep ar still remain theoretical Potential ya has lá become verified scientific Ideal.
 
 AdS/CFT, for example, is lá proof that our world is hologram, ar holography does lá mean `everything is illusion`. These are precise languages within defined frameworks, lá license an mysticism.
 
@@ -24,7 +25,7 @@ This is another bridge imbe Potential ar Ideal: formal hya mathematical Potentia
 
 ### 11. AI and Empty Physical Language
 
-AI can quickly produce texts ya sound scientific: quantum, field, energy, symmetry, holography, frequency, entanglement, dimensions, resonance. Sometimes these words create feeling deptho without carrying domain validityo, source, experiment hya caution.
+AI can quickly produce texts ya sound scientific: quantum, field, energy, symmetry, holography, repetition rate, entanglement, dimensions, resonance. Sometimes these words create feeling deptho without carrying domain validityo, source, experiment hya caution.
 
 This chapter is therefore especially important mi i age AI. It teaches lá only physics, mal discipline against pseudo-depth. `Quantum` is lá synonym an mysterious, spiritual hya unlimited. `Field` is lá synonym an meaning. `Energy` is lá synonym an value. `Holographic` is lá synonym an illusion.
 
@@ -49,7 +50,7 @@ I responsible model is lá i one ya pretends see everything. It is i one ya hone
 ## Segment review gate
 
 1. Preserve mathematical beauty as possible fertility, never a substitute for empirical confirmation.
-2. Keep string theory, M-Theory, branes, AdS/CFT, and holography within their actual theoretical frameworks and evidential limits.
+2. Keep string theory, M-Theory, branes, AdS/CFT, and holography within their actual theoretical frameworks and limits of tanwa.
 3. Do not claim our world is a hologram or that holography means illusion.
 4. Preserve formal and mathematical potential as distinct from verified scientific status.
 5. Keep AI-generated physical language from borrowing depth without source, test, experiment, caution, or domain of validity.
@@ -57,4 +58,4 @@ I responsible model is lá i one ya pretends see everything. It is i one ya hone
 7. Keep AI useful for formulation and comparison while returning responsibility to source, testing, and human judgment.
 8. Preserve the recursive edge: each new scale, accelerator, model, and description opens another boundary.
 9. End with local fidelity to the domain where a model works, without claiming the end of knowledge.
-10. Normalize all theory names, evidence terms, AI terminology, domain language, and final formulations under one Neo-Quenya profile before publication.
+10. Normalize all theory names, tanwa terms, AI terminology, domain language, and final formulations under one Neo-Quenya profile before publication.
