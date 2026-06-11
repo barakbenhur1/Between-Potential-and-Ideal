@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 400
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -16,7 +17,7 @@ publication: forbidden
 
 engineering tlhob: structure QamtaH'a'? architecture tlhob: QamtaHbogh Doch insideDaq ghot chay' yIn?
 
-> **Architecture = Structure + Use + Context + Human Meaning**
+> **Architecture = Structure + Use + qech-ngaS poH + Human Meaning**
 
 room volume neH 'oHbe'. behavior propose. corridor ghotpu' chay' ghom, chay' elkaar tránh je wuq. window inside, outside je relation 'oH. door boundary bopbogh decision 'oH. juH QaQ body Qan neHbe'; yIn form narghmeH Daq nob.
 
@@ -52,9 +53,9 @@ bridge load tIn qenglaH, 'ach wrong frequencyDaq repeated force QobmoHlaH. HoS m
 
 > **Resonance = When the world pushes in the rhythm the structure already fears**
 
-ghot, nugh, theory je force 'ar pawmo' neH QIHbe'lu'; nuq rhythmDaq pawmo' je QIHlaH.
+ghot, nugh, QubmeH mIw je force 'ar pawmo' neH QIHbe'lu'; nuq rhythmDaq pawmo' je QIHlaH.
 
-resonance structural lesson careful 'oH. physical resonance scientific concept 'oH; ghot/nugh/theoryvaD use structural analogy neH 'oH, not physical equivalence.
+resonance structural lesson careful 'oH. physical resonance scientific concept 'oH; ghot/nugh/QubmeH mIwvaD use structural analogy neH 'oH, not physical equivalence.
 
 ## Segment review gate
 
