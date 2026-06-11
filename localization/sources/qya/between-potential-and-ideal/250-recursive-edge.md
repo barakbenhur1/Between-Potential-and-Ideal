@@ -35,7 +35,7 @@ I réna recursive yando drainage pretensiono. Pusta i sanwë-patar ahyalien doct
 ### Maquettar carmava mi ilya réna
 
 1. mana né resolved anwavë?
-2. mana lemya pella i representation?
+2. mana lemya pella i emma?
 3. man colnë i valë?
 4. mana celu lá né hlarina?
 5. mana route correctiono lemya panta?
