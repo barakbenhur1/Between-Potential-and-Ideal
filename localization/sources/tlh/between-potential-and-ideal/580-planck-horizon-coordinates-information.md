@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 580
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -10,7 +11,7 @@ publication: forbidden
 
 ### The Planck Scale and the Horizon of Measurement
 
-boundary heuristic calculation vegh leghlaHlu', complete proof veghbe'. smaller distance probe-meH higher resolution poQ. order-of-magnitudeDaq spatial resolution `Δx` energy `E` poQ:
+boundary heuristic SImmeH mIw vegh leghlaHlu', complete proof veghbe'. smaller distance probe-meH higher resolution poQ. order-of-magnitudeDaq spatial resolution `Δx` energy `E` poQ:
 
 `Δx ≈ ℏc/E`
 
@@ -30,9 +31,9 @@ wa' DopDaq smaller leghmeH `E` increase-nIS. latlh DopDaq `E` increaseDI', `r_s`
 
 `√2` factor, order-one factors latlh je main point bIHbe'. boundary Planck scaleDaq nargh 'e' point. smallest region measuremeH poQbogh energy horizon around itself createchoHlaH. measuring tool mojta'bogh Doch, leghbogh Doch So'choHlaH.
 
-Sina Planck length certainly final space unit 'e' jatlhbe'. Planck time certainly smallest instant 'e' jatlhbe'. quantum gravity theory replacebe'. 'ach Planck scale description boundary 'ar deep 'e' 'ang: pa' measurement, energy, gravity, horizon je cleanly separate concepts ratlhlaHbe'.
+Sina Planck length certainly final space unit 'e' jatlhbe'. Planck time certainly smallest instant 'e' jatlhbe'. quantum gravity QubmeH mIw replacebe'. 'ach Planck scale description boundary 'ar deep 'e' 'ang: pa' measurement, energy, gravity, horizon je cleanly separate concepts ratlhlaHbe'.
 
-theory HolDaq, complete knowledge Ideal own price ghom. reality last pointDaq closemeH closure energy tInqu' chelnIS, 'ej closure itself horizon create-laH. Potential measurement precede-bogh Doch neH 'oHbe'; rut measurement absolute moj 'e' nIDDI' cheghbogh Doch 'oH.
+QubmeH mIw HolDaq, complete knowledge Ideal own price ghom. reality last pointDaq closemeH closure energy tInqu' chelnIS, 'ej closure itself horizon create-laH. Potential measurement precede-bogh Doch neH 'oHbe'; rut measurement absolute moj 'e' nIDDI' cheghbogh Doch 'oH.
 
 caution: physics Potential reality precede 'e' provebe'. condition wa' strong example nob, naDev boundary external wall 'oHbe', knowing act result 'oH. description edgeDaq reality missing 'oHbe' simply hard enough lookbe'mo'; absolute looking act leghbogh Doch choHmoHlaHmo' inaccessible mojlaH.
 
@@ -64,9 +65,9 @@ ingoing Eddington-Finkelstein coordinatesDaq metric:
 
 formvamDaq horizon division-by-zero absent. horizon disappearbe', black hole cancelbe'. previous mapDaq mathematical end rur narghbogh Doch local notation system failure moj. Kruskal-Szekeres coordinates maximal Schwarzschild extension cover, physical singularity outside. `r = 0` solvebe' je, 'ach horizon itself singularity 'oHbe' 'e' 'ang.
 
-theory lesson precise ratlhnIS: coordinates change magic 'oHbe', black-hole problems Hoch solution 'oHbe'. object boundary, description boundary je pImmoHbogh mathematical act 'oH. map wa'vo' inaccessible Doch necessarily altogether inaccessible 'oHbe'. reference system, computational tool, language, question form je choHlu'DI' accessible mojlaH.
+QubmeH mIw lesson precise ratlhnIS: coordinates change magic 'oHbe', black-hole problems Hoch solution 'oHbe'. object boundary, description boundary je pImmoHbogh mathematical act 'oH. map wa'vo' inaccessible Doch necessarily altogether inaccessible 'oHbe'. reference system, computational tool, language, question form je choHlu'DI' accessible mojlaH.
 
-naDev theory connection direct. Ideal everywhere holdlaHbogh description wa' nej. 'ach domain wa'Daq ideal description latlh domainDaq insufficient mojlaH. Potential same system inside possibility latlh neH 'oHbe'; system itself choHlaHghach je 'oH. box HurDaq Qub creative metaphor neH 'oHbe'. rut continuation precise law' 'oH: box — coordinate system — problem part mojpu' 'e' recognize.
+naDev QubmeH mIw connection direct. Ideal everywhere holdlaHbogh description wa' nej. 'ach domain wa'Daq ideal description latlh domainDaq insufficient mojlaH. Potential same system inside possibility latlh neH 'oHbe'; system itself choHlaHghach je 'oH. box HurDaq Qub creative metaphor neH 'oHbe'. rut continuation precise law' 'oH: box — coordinate system — problem part mojpu' 'e' recognize.
 
 vacuum appearance absence possibility absence 'oHbe' 'e' ghojmoH. Planck scale measuremeH end nID horizon create-laH 'e' ghojmoH. horizon not every division-by-zero abyss 'oH 'e' ghojmoH; rut map edge sign 'oH, continuationvaD language latlh ghojnISlu'.
 
@@ -80,7 +81,7 @@ black hole horizon, area, information je edgeDaq qem:
 
 `T_H = ℏc³/(8πGMk_B)`
 
-Schwarzschild radius, Bekenstein-Hawking entropy, Hawking temperature je horizon marginal detail 'oHbe' 'e' 'ang. entropy volumeDaq qarbe', horizon areaDaq rar; vaj boundary information, form je ghomDaq moj. theory information paradox solvebe'; conceptual reading nob: erasure, readability loss je identical bIHbe'.
+Schwarzschild radius, Bekenstein-Hawking entropy, Hawking temperature je horizon marginal detail 'oHbe' 'e' 'ang. entropy volumeDaq qarbe', horizon areaDaq rar; vaj boundary information, form je ghomDaq moj. QubmeH mIw information paradox solvebe'; conceptual reading nob: erasure, readability loss je identical bIHbe'.
 
 information, entanglement je information local content neH 'oHbe' 'e' qawmoH:
 
@@ -88,7 +89,7 @@ information, entanglement je information local content neH 'oHbe' 'e' qawmoH:
 
 `I(A:B) = S(A) + S(B) - S(AB)`
 
-Von Neumann entropy, mutual information je system parts joj relations measure. theory vegh, information object inside content neH 'oHbe'; object, reader possibility je relation je 'oH.
+Von Neumann entropy, mutual information je system parts joj relations measure. QubmeH mIw vegh, information object inside content neH 'oHbe'; object, reader possibility je relation je 'oH.
 
 certain holographic frameworksDaq, AdS/CFT rur, Ryu-Takayanagi type formula nargh:
 
@@ -100,13 +101,13 @@ formal quantum gravity approachesDaq geometries, fields je over sum carefully Qu
 
 `Z = ∫ Dg Dφ exp(iS[g,φ]/ℏ)`
 
-formal directional expression 'oH, complete solution 'oHbe'. theory vegh, geometry wa' previously noblu'bogh neH tu'be'; possible forms spacevo' classical form emerge-laH.
+formal directional expression 'oH, complete solution 'oHbe'. QubmeH mIw vegh, geometry wa' previously noblu'bogh neH tu'be'; possible forms spacevo' classical form emerge-laH.
 
 cosmologyDaq Friedmann equation expansion density, curvature, cosmological constant je rar:
 
 `H² = (8πG/3)ρ - kc²/a² + Λc²/3`
 
-naDev theory cautiousqu'nIS. vacuum empty 'oHbe' jatlhlaH, 'ach vacuum potential exact cosmic form observed qem chay' 'e' quantitatively explainbe'.
+naDev QubmeH mIw cautiousqu'nIS. vacuum empty 'oHbe' jatlhlaH, 'ach vacuum potential exact cosmic form observed qem chay' 'e' quantitatively explainbe'.
 
 ## Segment review gate
 
@@ -117,6 +118,6 @@ naDev theory cautiousqu'nIS. vacuum empty 'oHbe' jatlhlaH, 'ach vacuum potential
 5. Preserve all standard equations and their limited domains.
 6. Do not claim the information paradox is solved.
 7. Present Ryu-Takayanagi only within certain holographic frameworks, not as a universal law.
-8. Keep the path integral formal and directional, not a completed quantum-gravity theory.
+8. Keep the path integral formal and directional, not a completed quantum-gravity QubmeH mIw.
 9. Preserve the vacuum-energy and cosmological-constant limitation.
 10. Review every symbol, factor, coordinate, and physical qualification before publication.
