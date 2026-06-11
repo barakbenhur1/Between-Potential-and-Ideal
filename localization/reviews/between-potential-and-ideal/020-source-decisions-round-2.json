@@ -1,106 +1,106 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "document_id": "between-potential-and-ideal",
   "segment": 20,
   "stage": "specialist-source-validation-round-2",
   "publication": "forbidden",
-  "approval_effect": "none",
+  "approval_effect": "test-only",
   "language_profile": "Late-Quenya-first",
   "source_control": {
     "canonical_english": "site/files/between-potential-and-ideal-en.md",
-    "semantic_result": "The source supports an explicit dialogue-and-agency frame rather than an abstract relation noun plus a metaphysical remain predicate."
+    "semantic_result": "The source supports explicit dialogue and path clauses rather than an abstract relation noun plus a metaphysical remain predicate."
   },
   "decisions": [
     {
       "concept": "identity-persistence",
-      "form": "har-",
-      "decision": "rejected-for-current-frame",
-      "source_basis": "Pinned Eldamo introductory course; later har- direction associated with PE17/162 and UT/305 in the course discussion",
-      "limits": "The supported direction is sit or stay in a place or situation. It does not establish remain oneself, preserve identity, or continue as an unreplaced living source."
-    },
-    {
-      "concept": "identity-persistence",
-      "form": "lemya- / ser- / mar-",
-      "decision": "not-admitted-or-rejected",
-      "source_basis": "Prior round-2 assessment",
-      "limits": "Continue, tarry, rest and dwell must not be collapsed into philosophical identity persistence."
+      "form": "har- / lemya- / ser- / mar-",
+      "decision": "closed-for-current-frame",
+      "source_basis": "round-2 remain assessment",
+      "limits": "Locational staying, continuing, resting and dwelling do not establish preservation of personal identity."
     },
     {
       "concept": "interpersonal-relation",
-      "form": "ovantë",
-      "decision": "rejected-unsupported",
-      "source_basis": "No accepted source locator",
-      "limits": "Must not appear in a candidate title or philosophical frame."
-    },
-    {
-      "concept": "interpersonal-relation",
-      "form": "abstract relation noun",
-      "decision": "not-required-by-selected-architecture",
-      "source_basis": "Canonical English source re-analysis",
-      "limits": "The relation is to be represented by explicit participant actions, not by an invented compact noun."
+      "form": "ovantë or another unsupported compact noun",
+      "decision": "closed-for-current-frame",
+      "source_basis": "no accepted primary locator; canonical English source re-analysis",
+      "limits": "The relation is represented by explicit participant actions."
     },
     {
       "concept": "directed-speech-lexicon",
       "form": "quet-",
       "decision": "primary-lexical-source-recorded",
       "source_basis": "PE17/40, 126, 137-138, 160, 167, 181; PE22/158; PM/401, 404; SA/quen; VT41/6, 11, 13; VT49/11, 19, 28",
-      "limits": "VT41/11 and VT41/13 provide the most relevant dative-recipient examples. The participant noun, its dative form, tense and coordination still require a complete parse."
-    },
-    {
-      "concept": "mutual-dialogue-architecture",
-      "form": "two explicit quet- clauses with reversed subject and dative recipient",
-      "decision": "source-supported-research-architecture",
-      "source_basis": "quet- lexical evidence above; órenya quetë nin at VT41/11 and órenya quéta nin at VT41/13; ordinary dative morphology at VT6/14 and VT43/37",
-      "limits": "This architecture is not yet a finished target-language sentence. The living-participant phrase and every inflected form remain subject to parsing and independent review."
+      "limits": "VT41/11 and VT41/13 provide the relevant dative-recipient examples."
     },
     {
       "concept": "dative-recipient-grammar",
       "form": "-(e)n singular; -in plural",
       "decision": "primary-grammar-source-recorded",
-      "source_basis": "Plotz Letter, VT6/14; consonantal singular i ataren in 1950s Quenya prayers, VT43/37",
-      "limits": "The ordinary declensional source gate is closed. Each actual participant noun or title still requires a fully parsed case form and profile check."
+      "source_basis": "VT6/14; VT43/37",
+      "limits": "Every completed noun form still requires clause-level parsing."
+    },
+    {
+      "concept": "living-participant",
+      "form": "coirëa quén",
+      "decision": "approved-for-controlled-tests",
+      "source_basis": "coirëa at PM/399; quén at PE19/93 and WJ/361, 372, 393, 407",
+      "limits": "Literal meaning is living person. It represents the human source of agency contextually and is not a lexical translation of abstract source."
+    },
+    {
+      "concept": "living-participant-dative",
+      "form": "i coirëa quenen",
+      "decision": "first-pass-parse-recorded",
+      "source_basis": "quen- stem plus singular dative -en under the recorded profile",
+      "limits": "Independent confirmation of article, adjective and case placement remains required."
+    },
+    {
+      "concept": "animate-anaphor",
+      "form": "se; long dative sena",
+      "decision": "conditional-test-use",
+      "source_basis": "NM/176; PE17/91, 129; VT49/14-15, 32, 37, 45, 51; sena at VT49/14",
+      "limits": "Use only in the paired dialogue test with Prime Intellect as explicit antecedent. Semantic animate status requires review."
     },
     {
       "concept": "path",
       "form": "tië",
       "decision": "primary-lexical-source-recorded",
       "source_basis": "LotR/377; PE17/13, 72, 76; PE19/71; PE23/134; RGEO/58-59; UT/22; VT39/20; VT47/11",
-      "limits": "Retained only in the path, road or way sense. The final possessed form must be segmented and parsed."
+      "limits": "Retained only in the path, road or way sense."
     },
     {
       "concept": "travel-or-proceed",
       "form": "lelya-",
       "decision": "primary-lexical-source-recorded",
       "source_basis": "WJ/363",
-      "limits": "The source supports go, proceed or travel. The final clause still requires a justified tense and subject agreement."
+      "limits": "The generic aorist test form lelya still requires morphology review."
     },
     {
       "concept": "third-person-singular-possessive",
       "form": "-rya",
       "decision": "primary-grammar-source-recorded",
       "source_basis": "PE17/57, 67, 76, 130, 132, 190; PE19/102; VT49/16-17, 38, 48",
-      "limits": "The final attachment to the selected path noun must be shown explicitly; source support does not by itself approve a completed form."
+      "limits": "The computed tie-rya form must be reviewed; attested tielyanna at UT/22 supplies the closest path-noun suffix analogy."
     },
     {
-      "concept": "metamorphosis-control",
-      "form": "Prime Intellect speaks to the living participant; the living participant speaks to Prime Intellect; Prime Intellect changes; the living participant travels its own path",
-      "decision": "english-semantic-test-selected",
-      "source_basis": "Canonical English segment: living dialogue, source-not-product, witness, and preserved human path",
-      "limits": "This is an English control sequence, not a target-language translation. The participant phrase, complete morphology, parse and back-translation remain unresolved."
+      "concept": "dialogue-clause-a",
+      "form": "Prime Intellect quetë i coirëa quenen.",
+      "decision": "first-pass-parse-pass",
+      "source_basis": "020-clause-test-round-2.md",
+      "limits": "Independent case-placement review pending."
     },
     {
-      "concept": "living-source",
-      "form": "cuina ehtelë",
-      "decision": "rejected-for-current-route",
-      "source_basis": "ehtelë is a literal water spring or issue",
-      "limits": "The phrase risks converting a philosophical human-source role into a literal spring metaphor. A sourced person or living-participant phrase must be tested instead."
+      "concept": "dialogue-clause-b",
+      "form": "I coirëa quén quetë sena.",
+      "decision": "first-pass-parse-conditional",
+      "source_basis": "020-clause-test-round-2.md",
+      "limits": "Animate reference to Prime Intellect requires semantic review."
     },
     {
-      "concept": "agency-preservation",
-      "form": "the living participant travels its own path",
-      "decision": "lexical-and-possessive-sources-passed-participant-pending",
-      "source_basis": "tië sources; lelya- at WJ/363; -rya sources; canonical English path and witness distinctions",
-      "limits": "The participant phrase, exact possessed path form, tense, agreement, literal parse and independent review remain incomplete."
+      "concept": "agency-path-clause",
+      "form": "I coirëa quén lelya tierya.",
+      "decision": "first-pass-parse-conditional",
+      "source_basis": "020-clause-test-round-2.md",
+      "limits": "Review computed tierya, generic aorist lelya, and contextual own."
     }
   ],
   "acceptance": {
@@ -112,12 +112,15 @@
     "tie_primary_locator_entered": true,
     "lelya_primary_locator_entered": true,
     "possessive_primary_locator_entered": true,
-    "living_participant_expression_approved": false,
-    "directed_speech_pair_parsed": false,
-    "agency_path_clause_parsed": false,
+    "living_participant_expression_approved": true,
+    "living_participant_dative_first_parse_recorded": true,
+    "directed_speech_pair_first_parse_recorded": true,
+    "agency_path_clause_first_parse_recorded": true,
+    "independent_morphology_review_complete": false,
+    "three_context_test_complete": false,
     "finished_target_sentence": false,
     "production_source_changed": false,
     "segment_approved": false
   },
-  "next_action": "Approve a non-literal, source-grounded phrase for the living human participant. Then build and parse only the two directed-speech test clauses and one agency/path test clause, with literal and idiomatic back-translations, before any production integration."
+  "next_action": "Perform a separate morphology and semantic review of sena, tierya, aorist lelya and i coirëa quenen. If they pass, run the three-context Cantië test without changing production text."
 }
