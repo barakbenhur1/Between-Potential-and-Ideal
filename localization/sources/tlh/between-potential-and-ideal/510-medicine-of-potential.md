@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 510
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -18,13 +19,13 @@ _Image description draft: healing as careful reading of body, suffering, chance,
 
 ### Body, diagnosis, treatment, case 'oHbe'bogh person je
 
-pain, symptom, appointment, scan, protocol, risk jeDaq Potential compress-lu'DI' theory test medicine. body idea 'oHbe', metaphor je 'oHbe'. possibility poSlaH, SoQlaH, fracture-laH, suspended ratlhlaH je Daq 'oH. scientific medicine Qochbogh `soft medicine` 'oHbe' Medicine of Potential'e'; science living personvaD relation lughDaq polmeH nID 'oH.
+pain, symptom, appointment, scan, pabmeH mIw, risk jeDaq Potential compress-lu'DI' QubmeH mIw test medicine. body idea 'oHbe', metaphor je 'oHbe'. possibility poSlaH, SoQlaH, fracture-laH, suspended ratlhlaH je Daq 'oH. scientific medicine Qochbogh `soft medicine` 'oHbe' Medicine of Potential'e'; science living personvaD relation lughDaq polmeH nID 'oH.
 
 medicine failure nI' diagnostic error, systemic overload neH bIHbe'. patient caseDaq tamghach 'oH. person cardiac, oncological, psychiatric, high-risk, diagnostic code je moj. systems actnISmo', reduction 'op necessary. 'ach reduction whole truth rur narghchoHDI' Qob tagh. categories action handles bIH, person ghaHbe'.
 
-> **Responsible health = living body × accurate diagnosis × listening × evidence × treatment time × continuity × consent ÷ overload × dehumanization × blind protocol × fear × commercialization × unsupervised automation**
+> **Responsible health = living body × accurate diagnosis × listening × tobmeH De' × treatment time × continuity × consent ÷ overload × dehumanization × blind pabmeH mIw × fear × commercialization × unsupervised automation**
 
-medical formula 'oHbe'. boundary map 'oH: ghorgh protocol toD, ghorgh judgment tam? ghorgh measurement wovmoH, ghorgh person So'?
+medical formula 'oHbe'. boundary map 'oH: ghorgh pabmeH mIw toD, ghorgh judgment tam? ghorgh measurement wovmoH, ghorgh person So'?
 
 medicineDaq AI example sharp 'oH. system images readlaH, chart summarize-laH, differentials propose-laH, drug interactions flag-laH, risk estimate-laH, burden puSmoHlaH. valuable mojlaH. 'ach tool certainty aura HevDI', body signals set moj, clinician conclusion approve-bogh relay moj. problem AI lo'ghach 'oHbe'. responsibility horizon erase-ghach 'oH.
 
