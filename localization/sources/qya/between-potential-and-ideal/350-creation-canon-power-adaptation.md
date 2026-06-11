@@ -51,13 +51,13 @@ Good adaptation ista that yá detail mauya ná betrayed an lemyien faithful i fo
 
 ### 8. The Dark Tower ar body works seeking center
 
-Ëar works yassë franchise lá ná er expansion outward, mal folding inward. Different stories yestar point ana one another. Characters return mi forms different. Names, places, powers ar symbols migrate imbe works. I reader yesta feel that sina lá ná er collection storieso, mal body works ya cesta discover centerya.
+Ëar works yassë franchise lá ná er expansion outward, mal folding inward. Different stories yestar point ana one another. Characters return mi forms different. Names, places, powers ar symbols migrate imbe works. I reader yesta feel that sina lá ná er collection storieso, mal body works ya cesta discover centererya.
 
 Stephen Kingo *The Dark Tower* ná example. On i surface, ná i journey Roland Deschaino ana tower ya ná both place ar symbol. Mal within Kingo body works, i tower ahya axis: center point drawing worlds, characters, evils, cities, books ar genres toward sa.
 
 Randall Flagg lá ná er recurring villain. Ná recurring function evil-o: force ya diverts systems from centers. Changes name, world ar genre, mal i structural action remains. Thus i part returns ana i Whole, ar i Whole changes i meaning i parto.
 
-I rose mi mythology *The Dark Tower* yando matters. I tower lá immense cosmic center, ar i rose ná small, delicate, vulnerable appearance i same centero. Ná exact image i relation imbe Ideal ar system. I ya holds ilya worlds lá mauya appear ve i greatest power. Yá i center appears ve nat ya polë ná trampled ú understanding that i entire axis was trampled.
+I rose mi mythology *The Dark Tower* yando matters. I tower ná immense cosmic center, ar i rose ná small, delicate, vulnerable appearance i same centero. Ná exact image i relation imbe Ideal ar system. I ya holds ilya worlds lá mauya appear ve i greatest power. Yá i center appears ve nat ya polë ná trampled ú understanding that i entire axis was trampled.
 
 Adaptation such worko lá judged er ma Roland, i tower, i man in black hya i guns appear. Ná judged ma i inner law ná preserved: i feeling that ilya stories nar drawn toward center er, ar that i center ná both cosmic ar vulnerable. Adaptation lá mauya copy i tower. Mauya carë ven feel that ëa tower.
 
