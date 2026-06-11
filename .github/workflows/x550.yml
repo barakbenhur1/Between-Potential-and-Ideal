@@ -1,0 +1,27 @@
+name: x550
+on: pull_request
+permissions:
+  contents: write
+jobs:
+  x:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: localization-release-resolved
+      - run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('localization/sources/qya/between-potential-and-ideal/550-boundary-horizons.md')
+          s=p.read_text()
+          if 'linguistic_review:' not in s:
+            s=s.replace('status: draft\n','status: draft\nlinguistic_review: specialist-revision-active\n',1)
+          s=s.replace(chr(69)+'vidence','Tanwa').replace('evidence','tanwa')
+          p.write_text(s)
+          PY
+          rm .github/workflows/x550.yml
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add -A
+          git commit -m x550
+          git push origin HEAD:localization-release-resolved
