@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 420
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -58,7 +59,7 @@ Money ná min i strangest human inventions. Lá ná food, mal polë become food.
 
 > **Past Labor → Future Optionality**
 
-Sina ná i genius moneyo, ar caurerya. Írë money remains tied ana work, need, trust ar actual capacity, functions ve healthy medium. Írë begins appear ve value itself, i medium disguises immo ve Ideal.
+Sina ná i curu moneyo, ar caurerya. Írë money remains tied ana work, need, trust ar actual capacity, functions ve healthy medium. Írë begins appear ve value itself, i medium disguises immo ve Ideal.
 
 > **Market Price ≠ Full Value**
 
