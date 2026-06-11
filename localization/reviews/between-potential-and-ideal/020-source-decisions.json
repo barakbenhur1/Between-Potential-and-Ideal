@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "document_id": "between-potential-and-ideal",
+  "segment": 20,
+  "stage": "specialist-source-validation",
+  "publication": "forbidden",
+  "approval_effect": "none",
+  "profiles": {
+    "tlh": "Okrand-canonical-only",
+    "qya": "Late-Quenya-first"
+  },
+  "repository_checkpoint": {
+    "mechanically_clear_pairs": 77,
+    "blocked_pairs": 0,
+    "linguistically_approved_pairs": 0,
+    "independent_review_complete_pairs": 0
+  },
+  "qya_decisions": [
+    {
+      "concept": "change-or-transformation",
+      "form": "ahya-",
+      "decision": "source-confirmed-candidate",
+      "source": "PM/395",
+      "period": "1950s Quenya",
+      "limits": "The verbal root is sourced. The current derived title form Ahyaliëo is not thereby morphologically approved and still requires derivation and three-context validation."
+    },
+    {
+      "concept": "governing-pattern",
+      "form": "cantië",
+      "decision": "source-confirmed-candidate",
+      "source": "NM/287-288",
+      "period": "1959 Quenya",
+      "limits": "Candidate for pattern or governing structure, not automatically software code. Three-context validation remains pending."
+    },
+    {
+      "concept": "grace",
+      "form": "lissë",
+      "decision": "source-confirmed-candidate",
+      "source": "VT44/18",
+      "period": "Late Quenya",
+      "limits": "The grace sense and genitive lisseo are sourced. The voluntary relinquishment component requires a separate transparent construction."
+    },
+    {
+      "concept": "witness",
+      "form": "astarmo",
+      "decision": "source-confirmed-candidate",
+      "source": "PE17/71",
+      "period": "Late Quenya",
+      "limits": "Attested as bystander or witness. The chapter-specific ethical role still requires label, philosophical, and literary tests."
+    },
+    {
+      "concept": "distance",
+      "form": "haia",
+      "decision": "not-a-noun-candidate",
+      "source": "CPT/1296 and recorded Late-Quenya vocabulary",
+      "period": "Late Quenya",
+      "limits": "Attested as an adverb meaning afar or far away, not as the abstract noun required by the title."
+    },
+    {
+      "concept": "distance",
+      "form": "haiya / Haiyava",
+      "decision": "rejected-current-draft-form",
+      "source": "No supporting source recorded for the current spelling and nominal inflection",
+      "period": "unsupported",
+      "limits": "Must be removed or replaced before linguistic approval."
+    },
+    {
+      "concept": "distance",
+      "form": "hairië",
+      "decision": "deferred-profile-exception-required",
+      "source": "Neo-Quenya vocabulary, explicitly marked fan-invented",
+      "period": "Neo-Quenya",
+      "limits": "May not enter production without an explicit documented exception, derivation review, and independent approval."
+    },
+    {
+      "concept": "exceptional-intelligence",
+      "form": "handassë",
+      "decision": "deferred-incompatible-with-default-profile",
+      "source": "Ety/KHAN",
+      "period": "Middle Quenya",
+      "limits": "The current draft use is mechanical remediation only. It is not accepted under the Late-Quenya-first profile."
+    },
+    {
+      "concept": "intellect",
+      "form": "handelë",
+      "decision": "deferred-incompatible-with-default-profile",
+      "source": "Ety/KHAN; EtyAC/KHAN",
+      "period": "Middle Quenya",
+      "limits": "Requires an explicit profile exception before use."
+    },
+    {
+      "concept": "moral-worth",
+      "form": "valda",
+      "decision": "rejected-for-current-sense-under-default-profile",
+      "source": "Late Quenya PE17/154; older Qenya QL/102 for a different retained Neo-Quenya direction",
+      "period": "semantic conflict across periods",
+      "limits": "Late Quenya valda means excited or wild. It may not silently carry moral worth in this profile. A sourced alternative or explicit early-form exception is required."
+    },
+    {
+      "concept": "voluntary-release",
+      "form": "apsen- / hehta-",
+      "decision": "research-candidates-only",
+      "source": "Recorded Late-Quenya vocabulary with original-source references still to be entered in the worksheet",
+      "period": "Late Quenya",
+      "limits": "The semantic contrast among forgiving, releasing, leaving aside, abandoning, and chosen relinquishment must be tested before selection."
+    },
+    {
+      "concept": "protection",
+      "form": "cauma",
+      "decision": "research-candidate-only",
+      "source": "Recorded Late-Quenya vocabulary with original-source reference still to be entered in the worksheet",
+      "period": "Late Quenya",
+      "limits": "Must be tested against agency-preserving protection and kept distinct from control."
+    },
+    {
+      "concept": "living-source",
+      "form": "ehtelë",
+      "decision": "literal-source-metaphor-warning",
+      "source": "Late-Quenya vocabulary: water spring or source",
+      "period": "Late Quenya",
+      "limits": "A phrase such as cuina ehtelë would be metaphorical, not a direct lexical equivalent of a living person or origin, and requires explicit testing."
+    }
+  ],
+  "tlh_decisions": [
+    {
+      "concept": "all-core-terms",
+      "decision": "canonical-source-locators-required",
+      "source_policy": "The Klingon Dictionary, Klingon for the Galactic Traveler, later confirmed Okrand material, or sourced KLI canon lists",
+      "limits": "The KLI online post-dictionary lists do not reproduce the complete TKD or KGT vocabulary. Absence from those lists is not evidence of non-canonicity. Exact source locators and three-context tests are still required before any term is approved."
+    },
+    {
+      "concept": "witness",
+      "form": "leghwI'",
+      "decision": "observer-like-provisional-only",
+      "limits": "The formation may describe one who sees, but it has not yet demonstrated the chapter's ethical witness role."
+    },
+    {
+      "concept": "distance",
+      "form": "chuq",
+      "decision": "physical-sense-provisional-extension-pending",
+      "limits": "The philosophical extension must be made explicit and pass all three context tests."
+    },
+    {
+      "concept": "moral-worth",
+      "form": "lo'laH",
+      "decision": "rejected-as-unexamined-collapse",
+      "limits": "Practical usefulness must not be silently treated as moral worth. A transparent descriptive clause is preferred until a sourced distinction is validated."
+    }
+  ],
+  "acceptance": {
+    "source-validation_complete": false,
+    "title_terms_resolved": false,
+    "body_terms_resolved": false,
+    "three_context_tests_complete": false,
+    "full_morphological_rewrite_complete": false,
+    "source_parity_recheck_complete": false,
+    "independent_second_review_complete": false,
+    "approved": false
+  }
+}
