@@ -25,7 +25,7 @@ work Potential 'oH Hoch mojlaHbogh Doch'e'. IdealDaj 'oH chIlbe'nISbogh Doch'e'.
 
 vaj art pagh culture neH bopbe' chaptervam. form cost poQ bop. excess Hoch qenglaHbe'boghvo' bogh form yInbogh Hoch. Hoch ngaS 'e' nIDchugh, botlh chIl. nom SoQmoHchugh, yIn chIl. failures cha'vam jojDaq Qam work'a': wIvmeH yap Sov, 'ej matlh ratlhmeH yap lon.
 
-Creation grace 'oH relinquishment'e': DuH Hoch mojbe'meH laj, worthy DochvaD matlh ratlhmeH"
+Creation grace 'oH relinquishment'e': DuH Hoch mojbe'meH laj, worthy DochvaD matlh ratlhmeH.
 
 ### 1. CreationDaq Potential, Ideal, Optimal je
 
@@ -67,7 +67,7 @@ creative recursion 'oHvam. fourth wall ghor gimmick neH 'oHbe'; formationDaj que
 
 recursionvam rare power mojlaH, 'ach Qob je. self-aware work lughchu'ghach pawlaH, 'ach irony chImDaq pumlaH. living center Hutlhbogh meta-awareness mIllogh mIllogh leghbogh rur: reflection law', tlhuH puS.
 
-theoryvaD connection qIjchu'. ghaH'egh representbogh system boundary ghom. ghaH'egh bopbogh work boundaryvam yInbogh formDaq ghom. recursion QaQ neH, mung yInboghDaq cheghmoHchugh: pain, responsibility, inner law, pagh unresolved question. clever neH ratlhchugh, IdealDaj chIl.
+QubmeH mIwvaD connection qIjchu'. ghaH'egh representbogh system boundary ghom. ghaH'egh bopbogh work boundaryvam yInbogh formDaq ghom. recursion QaQ neH, mung yInboghDaq cheghmoHchugh: pain, responsibility, inner law, pagh unresolved question. clever neH ratlhchugh, IdealDaj chIl.
 
 ## Segment review gate
 
