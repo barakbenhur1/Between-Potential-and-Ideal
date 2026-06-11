@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 440
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -14,7 +15,7 @@ publication: forbidden
 
 ### 13. Inequality: when outcome becomes possibility
 
-Inequality lá ná er difference outcomeo. Becomes deeper írë yesterday's outcome becomes tomorrow's starting condition. Wealth polë buy time, safety, education, location, networks, legal protection, patience ar room to fail.
+Inequality lá ná er difference outcomeo. Becomes deeper írë yesterday's outcome becomes tomorrow's starting condition. Wealth polë buy time, varnassë, education, location, networks, legal protection, patience ar room to fail.
 
 > **Inequality becomes structural when difference in result becomes difference in possibility.**
 
