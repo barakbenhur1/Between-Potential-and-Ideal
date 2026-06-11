@@ -1,1 +1,33 @@
-{"schema_version":13,"document_id":"between-potential-and-ideal","total_segment_pairs":77,"first_pass_complete_pairs":77,"approved_pairs":0,"revision_required_pairs":77,"mechanically_clear_specialist_segments":[20,30,40,50,60,70,80,90,100,110,120],"active_specialist_segment":{"segment":130,"id":"130-choice-freedom-and-responsibility","status":"mechanical-remediation-pending","tlh_findings":5,"qya_findings":0,"approved":false,"publication":"forbidden"},"automated_audit":{"workflow_run_id":27308961953,"head_sha":"5d425ceae428321cfa01c2db793ce0b0f794e21e","foreign_term_occurrences":565,"body_occurrences":520,"heading_occurrences":45,"blocked_pairs":55,"mechanically_clear_pairs":22},"publication":"forbidden-until-all-required-reviews-are-approved","authority":"canonical-review-progress"}
+{
+  "schema_version": 13,
+  "document_id": "between-potential-and-ideal",
+  "total_segment_pairs": 77,
+  "first_pass_complete_pairs": 77,
+  "approved_pairs": 0,
+  "revision_required_pairs": 77,
+  "mechanically_clear_specialist_segments": [
+    20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130,
+    140, 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250
+  ],
+  "active_specialist_segment": {
+    "segment": 260,
+    "id": "260-computation-representation-p-np",
+    "status": "mechanical-remediation-pending",
+    "tlh_findings": 18,
+    "qya_findings": 16,
+    "approved": false,
+    "publication": "forbidden"
+  },
+  "automated_audit": {
+    "workflow_run_id": 27320507088,
+    "head_sha": "e638052681b1760a8fd414dc494de57baacb018a",
+    "validated_source_commit": "086a18c18944fb7e6bd56ef5f1b5a4f012f3a76c",
+    "foreign_term_occurrences": 481,
+    "body_occurrences": 441,
+    "heading_occurrences": 40,
+    "blocked_pairs": 42,
+    "mechanically_clear_pairs": 35
+  },
+  "publication": "forbidden-until-all-required-reviews-are-approved",
+  "authority": "canonical-review-progress"
+}
