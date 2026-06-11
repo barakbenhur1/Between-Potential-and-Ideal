@@ -1,8 +1,8 @@
 {
-  "schema_version": 12,
+  "schema_version": 13,
   "segment": 20,
   "stage": "specialist-source-validation",
-  "status": "directed-speech-lexicon-and-agency-source-blocked",
+  "status": "directed-speech-and-path-lexical-source-blocked",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -25,6 +25,7 @@
   "round_2_relation_remain_source_assessment": "localization/reviews/between-potential-and-ideal/020-round-2-relation-remain-source-assessment.md",
   "round_2_har_boundary_and_relation_route": "localization/reviews/between-potential-and-ideal/020-round-2-har-boundary-and-relation-route.md",
   "round_2_source_grounded_dialogue_frame": "localization/reviews/between-potential-and-ideal/020-round-2-source-grounded-dialogue-frame.md",
+  "round_2_agency_path_source_assessment": "localization/reviews/between-potential-and-ideal/020-round-2-agency-path-source-assessment.md",
   "qya_cantie_short_label_test": "localization/reviews/between-potential-and-ideal/020-cantie-test.md",
   "qya_cantie_philosophical_frame_blocker": "localization/reviews/between-potential-and-ideal/020-cantie-philosophical-frame-blocker.md",
   "current_audit_state": {
@@ -50,6 +51,7 @@
     "localization/reviews/between-potential-and-ideal/020-round-2-relation-remain-source-assessment.md",
     "localization/reviews/between-potential-and-ideal/020-round-2-har-boundary-and-relation-route.md",
     "localization/reviews/between-potential-and-ideal/020-round-2-source-grounded-dialogue-frame.md",
+    "localization/reviews/between-potential-and-ideal/020-round-2-agency-path-source-assessment.md",
     "localization/reviews/between-potential-and-ideal/020-cantie-philosophical-frame-blocker.md",
     "localization/glossaries/segment-020-specialist-terms.md"
   ],
@@ -65,6 +67,10 @@
     "qya_directed_speech_architecture_selected": true,
     "qya_quet_primary_locator_entered": false,
     "qya_dative_primary_grammar_locator_entered": true,
+    "qya_agency_path_architecture_selected": true,
+    "qya_tie_primary_locator_entered": false,
+    "qya_lelya_primary_locator_entered": false,
+    "qya_possessive_primary_locator_entered": false,
     "qya_living_source_expression_approved": false,
     "qya_agency_path_clause_approved": false,
     "qya_cantie_philosophical_frame_complete": false,
@@ -80,7 +86,7 @@
     "independent_second_review_complete": false,
     "approved": false
   },
-  "next_action": "enter the original Tolkien lexical locator for quet-, then source and test one Late-compatible agency-preservation clause; do not assemble a complete Neo-Quenya philosophical sentence before both gates pass",
+  "next_action": "enter exact Tolkien locators for quet-, tië, lelya- and the selected possessive construction, then approve a non-literal participant phrase for the living source; do not assemble a complete Neo-Quenya philosophical sentence before those gates pass",
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
