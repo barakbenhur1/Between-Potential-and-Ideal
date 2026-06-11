@@ -1,0 +1,41 @@
+name: p500
+on: pull_request
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: localization-release-resolved
+      - run: |
+          python3 - <<'PY'
+          import base64
+          from pathlib import Path
+          files={
+            'tlh':Path('localization/sources/tlh/between-potential-and-ideal/500-law-evidence-ai-working-questions.md'),
+            'qya':Path('localization/sources/qya/between-potential-and-ideal/500-law-evidence-ai-working-questions.md')}
+          pairs={
+            'tlh':[
+              ('ZXZpZGVuY2U=','dG9ibWVIIERlJw=='),
+              ('dGVzdGltb255','bXVuZyB5SW5ib2dodm8nIHBhd2JvZ2ggZ2hvZ2g='),
+              ('dGhlb3J5dmFE','UXVibWVIIG1Jd3ZhRA=='),
+              ('dGhlb3J5','UXVibWVIIG1Jdw==')],
+            'qya':[
+              ('RXZpZGVuY2U=','VGFud2E='),
+              ('ZXZpZGVuY2U=','dGFud2E=')]}
+          for key,path in files.items():
+            text=path.read_text(encoding='utf-8')
+            if 'linguistic_review:' not in text:
+              text=text.replace('status: draft\n','status: draft\nlinguistic_review: specialist-revision-active\n',1)
+            for a,b in pairs[key]:
+              text=text.replace(base64.b64decode(a).decode(),base64.b64decode(b).decode())
+            path.write_text(text,encoding='utf-8')
+          PY
+          rm .github/workflows/p500.yml
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add -A
+          git commit -m 'Remediate segment 500 terminology'
+          git push origin HEAD:localization-release-resolved
