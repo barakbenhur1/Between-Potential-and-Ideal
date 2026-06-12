@@ -40,7 +40,8 @@ class ExternalReviewHandoffTests(unittest.TestCase):
         text = read("request_index")
         self.assertIn(FILES["supplemental_index"], text)
         self.assertIn(PACKET_COMMIT, text)
-        self.assertIn("does not pre-answer", text)
+        self.assertIn("pre-answer specialist decisions", text)
+        self.assertIn("amend the packet", text)
 
     def test_qya_request_exposes_both_current_traces(self) -> None:
         text = read("qya_request")
