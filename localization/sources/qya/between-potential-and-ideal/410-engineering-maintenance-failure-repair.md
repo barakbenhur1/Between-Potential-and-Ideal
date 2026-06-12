@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 410
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -42,7 +43,7 @@ Beauty lá ná ornament added after truth. Mi living architecture, beauty appear
 
 ### 18. City: structure conflicting Potentials
 
-City lá ná one building enlarged. Ná field conflicting Potentials: dwelling, work, memory, commerce, transit, loneliness, meeting, noise, safety ar chance. Healthy city lá erases conflict; gives conflict forms ya lá destroy i possibility shared lifeo.
+City lá ná one building enlarged. Ná field conflicting Potentials: dwelling, work, memory, commerce, transit, loneliness, meeting, noise, varnassë ar chance. Healthy city lá erases conflict; gives conflict forms ya lá destroy i possibility shared lifeo.
 
 ### 19. Structural formula of Potential
 
@@ -54,7 +55,7 @@ Sina lá ná mathematics solutiono. Ná mathematics attentiono.
 
 Ëa no redemptive structure. Ilya structure ages. Ilya material wears. Ilya plan excludes something. Ilya house meets uses it did not foresee. Ilya city produces friction.
 
-Mal ëa repairing structure: structure ya lá promises world without cracks, only world yassë cracks lá invisible; ya lá promises world without load, only path yainen load polë pass; ya lá promises world without error, only safety factor ya lá was forgotten.
+Mal ëa repairing structure: structure ya lá promises world without cracks, only world yassë cracks lá invisible; ya lá promises world without load, only path yainen load polë pass; ya lá promises world without error, only ratio ya hehta room erroren ar ya lá was forgotten.
 
 I deep law engineeringo ar architectureo lá ná:
 

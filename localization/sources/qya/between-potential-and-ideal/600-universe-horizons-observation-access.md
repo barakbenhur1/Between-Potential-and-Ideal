@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 600
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -50,7 +51,7 @@ Even yá we speak of i cosmic microwave background, we are lá looking directly 
 
 Sina connects cosmology ana i theory through i concept distanceo. Distance is lá only separation. Mi cosmology, seeing far yando means seeing back mi time. Knowledge does lá touch i thing itself immediately; it meets trace, sign, light ya arrived late, ar image built through model.
 
-So yando mi i theory, knowledge is lá total possession i thingo. It is responsible translation signso within horizon. A living source does lá hold truth ve complete object mi i hand. It meets evidence, builds models, corrects, fails ar continues act under not-knowing.
+So yando mi i theory, knowledge is lá total possession i thingo. It is responsible translation signso within horizon. A living source does lá hold truth ve complete object mi i hand. It meets tanwa, builds models, corrects, fails ar continues act under not-knowing.
 
 ### 4. A Question of Shape Is Also a Question of Access
 
@@ -60,7 +61,7 @@ Sina is central ana i theory: form is lá only i structure i thingo itself. Form
 
 I `shape of Potential` is therefore lá list all possibilitieso. It is yando i structure accesso ana possibilities: mana appears, mana remains hidden, mana can be checked, mana can be realized, mana deserves filtering, ar mana remains beyond our current capacity decisiono.
 
-Potential does lá disappear yá receives form. Mal every form is yando choice. It makes part i possibleo legible ar another part obscure. Sina is i same principle encountered mi computation: action requires representation, ar every representation opens possibility while imposing cost.
+Potential does lá disappear yá receives form. Mal every form is yando choice. It makes part i possibleo legible ar another part obscure. Sina is i same principle encountered mi computation: action requires emma, ar every emma opens possibility while imposing cost.
 
 ## Segment review gate
 

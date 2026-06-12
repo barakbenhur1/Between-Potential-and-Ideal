@@ -1,0 +1,12 @@
+{
+  "segment": 90,
+  "id": "090-absolute-ideal-living-completeness",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": ["absolute", "ideal", "optimal", "living-completeness"],
+  "summary": "The conceptual distinctions are preserved. Both drafts require specialist revision for foreign-language contamination, terminology consistency, morphology, and idiomatic syntax."
+}

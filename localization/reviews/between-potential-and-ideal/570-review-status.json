@@ -1,0 +1,20 @@
+{
+  "segment": 570,
+  "id": "570-physical-comparison-deep-friction-spine",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "conceptual-map-not-replacement-for-mathematical-physics",
+    "equations-as-physical-spine-not-completeness-proof",
+    "distinct-meanings-of-relativity-Schrodinger-unitarity-Born-uncertainty-Wheeler-DeWitt-and-Planck",
+    "measurement-problem-unsolved-and-no-interpretation-selected",
+    "theory-language-marked-for-spacetime-gravity-information-singularity-and-unification",
+    "unreadability-vs-erasure",
+    "Planck-quantities-as-natural-scales-not-pixels-or-final-frames"
+  ],
+  "summary": "The physical-comparison, equation, interpretation, information, readability, Planck-scale, symbol, and anti-overreach safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, terminology, morphology, idiomatic syntax, and exact physics-symbol verification."
+}

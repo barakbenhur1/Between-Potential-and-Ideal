@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 300
 status: draft
+linguistic_review: specialist-revision-active
+review_record: localization/reviews/between-potential-and-ideal/300-science-physics-mathematics-boundary-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -40,9 +42,9 @@ Mi sense sina, boundary discipline ná form moral responsibilityo. Írë scienti
 
 Sina ná especially important mi theory Potentialo ar Idealo. Ná easy quetien `ilya nat ná potential`, `ilya nat ná field`, `ilya nat ná information`, hya `ilya nat ná relation`. Quettar sin ahyar dangerous írë autar distinctions. Potential lá ná excuse vagueness. Ideal lá ná exë essë ilya nat ya hlarë deep. Optimal lá ná formula ya vesta judgment. Ilya concept mauya colë carmarya inside boundary clear.
 
-Capítulo sina lá cesta carë i theory science, ar lá cesta prove sa ter physics hya mathematics. Maquetë nat amba modest ar amba urda: lambë ya lá naca authority exë nómello. Írë i theory loë science, mauya quetë ma quetë ve metaphor, model, structural comparison hya claim. Qui lá polë hyana, mauya lemya silent tenna polë.
+Cendë sina lá cesta carë i theory science, ar lá cesta prove sa ter physics hya mathematics. Maquetë nat amba modest ar amba urda: lambë ya lá naca authority exë nómello. Írë i theory loë science, mauya quetë ma quetë ve metaphor, model, structural comparison hya claim. Qui lá polë hyana, mauya lemya silent tenna polë.
 
-I link ana i recursive edge ná clear: ilya precise answer panta boundary vinya. Ilya successful model tana yando mana lá contain. Ilya proof tarë inside system. Ilya measurement depends instrument, context ar maquetta. Science, írë faithful immon, an sina lá ná cotumo hopeo ar lá substitute sen. Ná min i ways yainen human Potential lelya arin ana Ideal ú quetila yá tulnë.
+I link ana i recursive edge ná clear: ilya precise answer panta boundary vinya. Ilya successful model tana yando mana lá contain. Ilya proof tarë inside system. Ilya measurement depends instrument, i nómë ar lúmë yassë tana ná cendaina, ar maquetta. Science, írë faithful immon, an sina lá ná cotumo hopeo ar lá substitute sen. Ná min i ways yainen human Potential lelya arin ana Ideal ú quetila yá tulnë.
 
 ### Axani boundary disciplineo
 

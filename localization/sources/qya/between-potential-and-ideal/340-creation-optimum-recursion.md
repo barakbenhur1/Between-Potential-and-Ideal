@@ -3,10 +3,12 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 340
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
 ---
+
 
 ## Creation, Canon ar Optimum: Mana lá mauya vanya — Part One
 
@@ -50,9 +52,9 @@ Sina ná single-axis optimum. Lá ilya reaches peakerya, mal nat er ahya precise
 
 ### 3. I harmonic optimum
 
-Opposite i single-axis optimum nar works yassë no component er holds ilya, mal ilyë components converge ana center er. Image, music, world, language, performance, rhythm, morality ar structure carir as one. Sís Ideal lá ná contraction ana er axis, mal harmony broad.
+Opposite i single-axis optimum nar works yassë no component er holds ilya, mal ilyë components converge ana center er. Image, music, world, language, performance, rhythm, morality ar structure carir as one. Sís Ideal lá ná contraction ana er axis, mal ovantë palya.
 
-Mi *The Lord of the Rings*, language, myth, journey, landscape, music, ethics ar emotional scale converge os maquetta er: mana ná power ya lá corrupts, ar mana ná victory ya lá ahya domination? Mi Miyazaki at his best, image, movement, childhood, fear, nature ar grace lá nar separate components, mal one system breathing from living center. Mi *Breaking Bad*, writing, acting, cinematography, color ar rhythm converge os transformation er: person quetë immon story necessityo tenna i story reveals desire realerya.
+Mi *The Lord of the Rings*, language, myth, journey, landscape, music, ethics ar emotional scale converge os maquetta er: mana ná power ya lá corrupts, ar mana ná victory ya lá ahya domination? Mi Miyazaki at his best, image, movement, childhood, fear, Ambar coirë ar grace lá nar separate components, mal one system breathing from living center. Mi *Breaking Bad*, writing, acting, cinematography, color ar rhythm converge os transformation er: person quetë immon story necessityo tenna i story reveals desire realerya.
 
 I same work polë ná formally harmonious ar yet present false Ideal morally. *Breaking Bad* ná powerful precisely an artistic systemerya ná exact while i Ideal i charactero ahya slowly revealed ve lie.
 

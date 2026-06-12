@@ -1,0 +1,19 @@
+{
+  "segment": 470,
+  "id": "470-governance-civil-society-policy-repair",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "civil-society-outside-direct-state-command",
+    "public-language-before-conflict-becomes-force",
+    "majority-and-minority-as-reciprocal-tests",
+    "policy-vs-declaration-and-procedure-vs-machinery",
+    "measurement-as-visibility-and-concealment",
+    "bounded-power-appeal-and-repair-not-redemption"
+  ],
+  "summary": "The civil-society, public-language, majority, minority, policy, measurement, bounded-power, and repair safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, terminology, morphology, and idiomatic syntax."
+}

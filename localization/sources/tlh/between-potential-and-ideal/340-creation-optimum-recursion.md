@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 340
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -50,11 +51,11 @@ single-axis optimum 'oHvam. Hoch peakDaj pawbe', 'ach Doch wa' precisequ'mo' lat
 
 ### 3. Harmonic optimum
 
-single-axis optimum DopDaq works tu'lu', naDev component wa' Hoch qengbe', 'ach components Hoch botlh wa' ghoS. image, music, world, language, performance, rhythm, morality, structure je Qap quv. naDev Ideal axis wa'Daq contraction 'oHbe'; harmony broad 'oH.
+single-axis optimum DopDaq works tu'lu', naDev component wa' Hoch qengbe', 'ach components Hoch botlh wa' ghoS. image, music, world, language, performance, rhythm, morality, structure je Qap quv. naDev Ideal axis wa'Daq contraction 'oHbe'; jIjghach Sach 'oH.
 
-*The Lord of the Rings*Daq language, myth, journey, landscape, music, ethics, emotional scale je question wa' Dech converge: nuq power corruptbe', 'ej nuq victory domination mojbe'? Miyazaki QaQqu'Daq image, movement, childhood, fear, nature, grace je components pIm bIHbe'; system wa' botlh yInboghvo' tlhuH. *Breaking Bad*Daq writing, acting, cinematography, color, rhythm je transformation wa' Dech converge: necessity bopbogh lut'e' ghot ghaH'eghvaD ja'taH, until real desireDaj 'ang lut.
+*The Lord of the Rings*Daq language, myth, journey, landscape, music, ethics, emotional scale je question wa' Dech converge: nuq power corruptbe', 'ej nuq victory domination mojbe'? Miyazaki QaQqu'Daq image, movement, childhood, fear, yInbogh qo', grace je components pIm bIHbe'; system wa' botlh yInboghvo' tlhuH. *Breaking Bad*Daq writing, acting, cinematography, color, rhythm je transformation wa' Dech converge: necessity bopbogh lut'e' ghot ghaH'eghvaD ja'taH, until real desireDaj 'ang lut.
 
-work rap formal harmony ghajlaH 'ach character false Ideal moral showlaH. *Breaking Bad* HoS, artistic systemDaj precise 'ach character Ideal slowly lie 'oH 'e' 'angmo'.
+work rap formal jIjghach ghajlaH 'ach character false Ideal moral showlaH. *Breaking Bad* HoS, artistic systemDaj precise 'ach character Ideal slowly lie 'oH 'e' 'angmo'.
 
 lesson `work Hoch harmonious moj` 'oHbe'. works HochvaD measure wa' tu'lu'be'. works 'op axis precisionmo' judge-lu'nIS; latlh parts convergenceDajmo'. cases cha'Daq, nuq ngaS work 'e'be' question; botlhDajvaD matlh ratlh'a' ngaSbogh Doch?
 
@@ -64,9 +65,9 @@ rut work lut ja' neHbe', 'ach lut chenmoHbogh law QubchoH. `nuq qaS?` neHbe', `l
 
 creative recursion 'oHvam. fourth wall ghor gimmick neH 'oHbe'; formationDaj question work ghaH'eghDaq qengbogh state 'oH. possibilities fieldvo' possibility wIv neHbe'; possibility בכלל chay' wIvlu', 'ej wIvghach cost nuq 'e' tlhob.
 
-recursionvam rare power mojlaH, 'ach Qob je. self-aware work precision pawlaH, 'ach irony chImDaq pumlaH. living center Hutlhbogh meta-awareness mirror mirror leghbogh rur: reflection law', tlhuH puS.
+recursionvam rare power mojlaH, 'ach Qob je. self-aware work lughchu'ghach pawlaH, 'ach irony chImDaq pumlaH. living center Hutlhbogh meta-awareness mIllogh mIllogh leghbogh rur: reflection law', tlhuH puS.
 
-theoryvaD connection qIjchu'. ghaH'egh representbogh system boundary ghom. ghaH'egh bopbogh work boundaryvam yInbogh formDaq ghom. recursion QaQ neH, mung yInboghDaq cheghmoHchugh: pain, responsibility, inner law, pagh unresolved question. clever neH ratlhchugh, IdealDaj chIl.
+QubmeH mIwvaD connection qIjchu'. ghaH'egh representbogh system boundary ghom. ghaH'egh bopbogh work boundaryvam yInbogh formDaq ghom. recursion QaQ neH, mung yInboghDaq cheghmoHchugh: pain, responsibility, inner law, pagh unresolved question. clever neH ratlhchugh, IdealDaj chIl.
 
 ## Segment review gate
 

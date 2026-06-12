@@ -1,0 +1,19 @@
+{
+  "segment": 360,
+  "id": "360-creation-ai-refusal-genres-ending",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "AI-expands-potential-without-owning-ideal-or-invariant",
+    "consent-attribution-living-source-and-responsibility",
+    "refusal-or-abstention-as-possible-optimal-form",
+    "false-ideal-vs-genuine-liberation",
+    "genres-as-systems-of-questions",
+    "potential-ideal-optimal-final-triad"
+  ],
+  "summary": "The AI, consent, refusal, false-ideal, genre, and final-triad safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, terminology, morphology, and idiomatic syntax."
+}

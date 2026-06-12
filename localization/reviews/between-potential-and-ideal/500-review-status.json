@@ -1,0 +1,20 @@
+{
+  "segment": 500,
+  "id": "500-law-evidence-ai-working-questions",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "factual-evidentiary-and-legal-truth-horizons",
+    "humility-compatible-with-decision",
+    "legal-AI-as-visible-challengeable-scaffold",
+    "mandatory-transparency-audit-appeal-human-responsibility-and-access",
+    "no-independent-AI-guilt-liberty-dangerousness-or-entitlement-decisions",
+    "working-questions-and-non-legal-advice-disclaimer",
+    "person-as-living-source-beyond-case-role"
+  ],
+  "summary": "The evidence-horizon, legal-AI, audit, appeal, responsibility, automation, decision, disclaimer, and living-source safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, terminology, morphology, and idiomatic syntax."
+}

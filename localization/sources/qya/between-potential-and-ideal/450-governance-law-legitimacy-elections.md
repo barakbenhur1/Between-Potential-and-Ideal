@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 450
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -30,15 +31,15 @@ Ve conceptual map, lá empirical formula:
 
 Governance ná attempt turn force into form. Law ná attempt turn will into boundary. Institution ná attempt turn private decision into public responsibility.
 
-### 1. State of nature lá ná only past
+### 1. Státë yassë voronda mediation lanta lá ná only past
 
-State of nature lá ná er ancient beginning before law ar institutions. Returns whenever mediation collapses: írë law lá enforced, trust breaks, private power replaces public authority, institutions look ve masks, ar each person believes must defend immo against all others.
+Státë yassë voronda mediation lanta lá ná er ancient beginning before law ar institutions. Returns whenever mediation collapses: írë law lá enforced, trust breaks, private power replaces public authority, institutions look ve masks, ar each person believes must defend immo against all others.
 
 Mi text sina:
 
-> **State of Nature = Collapse of Trusted Mediation**
+> **Státë yassë voronda mediation lanta = Collapse of Trusted Mediation**
 
-Society lá exits state of nature once and for all. Exits sa again ar again, ilya day people trust law more than revenge, institution more than force, language more than fist. Sina lá ná redemption. Ná maintenance.
+Society lá exits i státë yassë voronda mediation lanta once and for all. Exits sa again ar again, ilya day people trust law more than revenge, institution more than force, language more than fist. Sina lá ná redemption. Ná maintenance.
 
 ### 2. Law: constraint ya enables shared freedom
 

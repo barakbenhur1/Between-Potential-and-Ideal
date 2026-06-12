@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 180
 status: draft
+linguistic_review: specialist-revision-active
+review_record: localization/reviews/between-potential-and-ideal/180-ai-open-problems-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -18,7 +20,7 @@ _Image description draft: hanquenta, celu, mauya-cárië ar haiya ya polë ná m
 
 ### Mauya-cárië, celu, anwië ar tamma ya lá ná haryando cuina
 
-Curwaina Handassë ná ando núra i sanwë-pataren an anta men cilintë ya lá ná quén mal polë onta cantar yar cenir ve quén: hanquenta, emma, argument, code, óma, style, advice ar tiutië. An sina i problem lá ná er teknicava. Ná ontological, moral ar social: mana martya írë output cenë ve lelyanë ter celu cuina, mal i tië immo lá né cuina mi i lé er?
+Curwaina Handassë ná ando núra i sanwë-pataren an anta men cilintë ya lá ná quén mal polë onta cantar yar cenir ve quén: hanquenta, emma, argument, tengwië, óma, style, advice ar tiutië. An sina i problem lá ná er teknicava. Ná ontological, moral ar social: mana martya írë output cenë ve lelyanë ter celu cuina, mal i tië immo lá né cuina mi i lé er?
 
 Maquettar pantainë AI-va lá nar er manen carë model amba smart. Haryar reliability, hallucination, attribution, privacy, bias, responsibility, understanding versus imitation, control, evaluation, alignment, copyright, celu cuina, dependence, vanwië skillo, ar i maquetta ma tamma ya onta wording polë tyarë men vanya man colnë i haiya.
 

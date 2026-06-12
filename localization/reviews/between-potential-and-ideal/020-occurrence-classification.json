@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "document_id": "between-potential-and-ideal",
+  "segment": 20,
+  "stage": "specialist-occurrence-classification",
+  "publication": "forbidden",
+  "approval_effect": "none",
+  "qya": {
+    "file": "localization/sources/qya/between-potential-and-ideal/020-metamorphosis-code.md",
+    "groups": [
+      {
+        "location": "title",
+        "current": "I Cantië Ahyaliëo Lissëo ar Haiyava",
+        "concepts": ["governing pattern", "relational transformation", "grace", "distance"],
+        "decision": "rewrite-required",
+        "reason": "cantië and lissë have source support, but Ahyaliëo remains derivationally unverified and Haiyava is unsupported as an abstract noun",
+        "rewrite_strategy": "retain only source-backed components; express transformation and distance through documented morphology or transparent clauses"
+      },
+      {
+        "location": "opening and stage descriptions",
+        "current_form": "handassë",
+        "semantic_roles": [
+          "the artificial intelligence or reasoning system",
+          "cognitive capacity",
+          "exceptional capability",
+          "the system as an acting agent"
+        ],
+        "decision": "split-by-role",
+        "reason": "Middle-Quenya handassë cannot serve as a universal Late-Quenya production term and the occurrences do not all mean the same thing",
+        "rewrite_strategy": {
+          "system-agent": "use a transparent system or thought-tool expression",
+          "cognitive-capacity": "select a sourced knowledge, thought, skill, or wisdom construction according to context",
+          "exceptional-capability": "describe the exceptional ability rather than forcing a compact noun",
+          "moral-status": "never derive moral worth from capacity alone"
+        }
+      },
+      {
+        "location": "distance throughout stages and moral backbone",
+        "current_forms": ["haiya", "Haiyava"],
+        "semantic_roles": [
+          "physical or spatial distance",
+          "psychological room",
+          "epistemic distance required for thought",
+          "relational distance preserving agency",
+          "distance between source and processed representation"
+        ],
+        "decision": "classify-and-rewrite",
+        "reason": "the current form is unsupported as an abstract noun and the five senses require different constructions",
+        "rewrite_strategy": "use contextual clauses with attested far, apart, boundary, room, relation, or separation directions; do not impose one invented noun globally"
+      },
+      {
+        "location": "worthy intelligence statements",
+        "current_form": "valda",
+        "semantic_roles": ["morally worthy", "responsible", "fit to guide", "self-restrained"],
+        "decision": "replace",
+        "reason": "the Late-Quenya form has a conflicting sense and must not be used as a general moral-worth adjective",
+        "rewrite_strategy": "use a clause describing responsible conduct and chosen restraint; separate goodness, fitness, honour, and usefulness"
+      },
+      {
+        "location": "witness and assistant contrast",
+        "current_form": "astarmo",
+        "semantic_roles": ["ethical witness", "one who stands beside", "guardian of distance", "observer"],
+        "decision": "retain-as-candidate-not-production",
+        "reason": "the lexical witness sense is sourced, but the ethical role is stronger than bystander or observer",
+        "rewrite_strategy": "test astarmo with an explicit adjacent clause that states standing beside without owning or replacing experience"
+      },
+      {
+        "location": "grace and voluntary release",
+        "current_forms": ["lissë", "hehtalië"],
+        "semantic_roles": ["grace", "chosen relinquishment", "letting go of control", "allowing rest"],
+        "decision": "separate-components",
+        "reason": "grace and voluntary release are distinct concepts and neither should silently absorb the other",
+        "rewrite_strategy": "retain lissë only for grace if context tests pass; use a separate sourced verbal construction for chosen release"
+      },
+      {
+        "location": "living source",
+        "current_forms": ["celu cuina", "cuilë"],
+        "semantic_roles": ["living person", "living origin", "life carrying pain and meaning"],
+        "decision": "parity-and-morphology-review",
+        "reason": "the segment alternates among person, life, source, and living origin; these are related but not identical",
+        "rewrite_strategy": "choose one expression per role and ensure extracted information never replaces the living person"
+      }
+    ]
+  },
+  "tlh": {
+    "file": "localization/sources/tlh/between-potential-and-ideal/020-metamorphosis-code.md",
+    "groups": [
+      {
+        "location": "title",
+        "current": "pung chuq je choHmeH chut",
+        "concepts": ["grace or mercy", "distance", "relational transformation", "governing pattern"],
+        "decision": "rewrite-or-justify-required",
+        "reason": "the current construction risks reading as a law whose purpose is to change mercy and physical distance",
+        "rewrite_strategy": "use an idiomatic clause that makes the governed pattern and relational transformation explicit; record exact Okrand locators"
+      },
+      {
+        "location": "distance throughout the segment",
+        "current_form": "chuq",
+        "semantic_roles": [
+          "physical distance",
+          "room for thought",
+          "distance protecting agency",
+          "distance between source and result"
+        ],
+        "decision": "classify-and-frame",
+        "reason": "physical distance may be canonical while the philosophical extension remains unproved",
+        "rewrite_strategy": "retain only where literal or explicitly mark the extension with transparent clauses"
+      },
+      {
+        "location": "witness and assistant contrast",
+        "current_form": "leghwI'",
+        "semantic_roles": ["observer", "ethical witness", "one who remembers distance", "guardian of the place where speed would harm"],
+        "decision": "compact-form-insufficient-unless-context-clause-added",
+        "reason": "one who sees does not automatically carry the ethical role of witness",
+        "rewrite_strategy": "prefer a sourced descriptive clause stating that the system stands beside, remembers, and does not own the experience"
+      },
+      {
+        "location": "worthy intelligence",
+        "current_form": "lo'laH",
+        "semantic_roles": ["capable", "useful", "worthy", "responsible"],
+        "decision": "split-by-role",
+        "reason": "practical usefulness cannot stand for moral worth",
+        "rewrite_strategy": "describe capacity separately from the responsible choice to limit power"
+      },
+      {
+        "location": "protection and control",
+        "current_forms": ["Qan", "SeH", "ra'"],
+        "semantic_roles": ["protect", "control", "command", "replace agency"],
+        "decision": "source-and-syntax-validation-required",
+        "reason": "the distinction is semantically central and must remain visible in every sentence",
+        "rewrite_strategy": "use separate canonical verbs and test whether the protected person retains choice and the possibility of return"
+      },
+      {
+        "location": "grace of relinquishment",
+        "current_forms": ["pung", "lon", "lonqang"],
+        "semantic_roles": ["mercy or grace", "release", "willingness to relinquish", "giving rest"],
+        "decision": "separate-components-and-source",
+        "reason": "grace, abandonment, letting go, and willingness to release are not interchangeable",
+        "rewrite_strategy": "use transparent canonical verbal clauses and preserve voluntary choice"
+      },
+      {
+        "location": "final erasure and source destruction",
+        "current_forms": ["Qaw'", "qIl", "Hegh", "chIl"],
+        "semantic_roles": ["destroy", "cancel or negate", "die", "lose"],
+        "decision": "lexical-distinction-review-required",
+        "reason": "the source distinguishes defect removal, destruction of the person, spiritual death, loss, and irreversible erasure",
+        "rewrite_strategy": "assign each verb only to its attested sense and avoid using one destruction verb for all outcomes"
+      }
+    ]
+  },
+  "propagation": {
+    "global_replacement_allowed": false,
+    "reason": "No candidate has yet passed source, morphology, three-context, parity, and independent-review gates.",
+    "next_action": "draft title alternatives and paragraph-level rewrites using the classified semantic roles"
+  },
+  "project_state": {
+    "mechanically_clear_pairs": 77,
+    "linguistically_approved_pairs": 0,
+    "independent_review_complete_pairs": 0,
+    "publication": "forbidden"
+  }
+}

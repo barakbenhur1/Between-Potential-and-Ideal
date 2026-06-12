@@ -18,24 +18,24 @@ _Image description draft: recursive layers yassen veH Hoch mung chu' mojlaH._
 
 ### SoQbe'bogh Ideal, jangghach Hoch qaSpu'DI' je taHbogh nID
 
-recursive edge theory internal distinctions potlh wa' 'oH. solution teH yu'ghach qIlbe'; patlhDaj choHmoH jatlh. yajghach chenDI', metta 'oHbe'. yu'ghach chu' tagh condition moj. injustice tI'DI' institution, rInbe' justice; Qu' chu' poS. task solveDI' AI, testing, attribution, trust je problems chen.
+recursive edge QubmeH mIw internal distinctions potlh wa' 'oH. solution teH yu'ghach qIlbe'; patlhDaj choHmoH jatlh. yajghach chenDI', metta 'oHbe'. yu'ghach chu' tagh condition moj. injustice tI'DI' institution, rInbe' justice; Qu' chu' poS. task solveDI' AI, testing, attribution, trust je problems chen.
 
 failure 'oH closure dream'e'. endpoints parHa' systems: grade, judgment, diagnosis, release, success metric, formula, final report. actionvaD poQ pointsvam, 'ach absolute Ideal ghaH'egh ngebDI' Qob. recursive edge testingvaD gap pol: nuq choH? nuq So'lu'? nuq poS? 'Iv DIl? problem chu' nuq bogh?
 
 > **Recursive Ideal map draft:** local solution × criticism × lujghach qawghach × correction DuH × yu'ghach latlhDaq passage ÷ closure ngeb × metric wa' × authority nuDlu'be' × mung lIjghach × continuation nughI'.
 
-anti-dogma mechanism 'oH. final sentence nejbe' theory; responsible continuation He nej.
+anti-dogma mechanism 'oH. final sentence nejbe' QubmeH mIw; responsible continuation He nej.
 
-P versus NP, logic, computation jevaD rarlu' recursive edge careful structural metaphor neH rur: solution narghpu'DI' recognition, possibilities spaceDaq tu'meH mIw je pIm; Qapbogh system, condition Hoch toblaHbogh system je pIm. theory mathematical proof 'oHbe'vam. verification closure 'oHbe' 'e' qawmoHbogh Hol 'oH.
+P versus NP, meq chut, computation jevaD rarlu' recursive edge careful structural metaphor neH rur: solution narghpu'DI' recognition, possibilities spaceDaq tu'meH mIw je pIm; Qapbogh system, condition Hoch toblaHbogh system je pIm. QubmeH mIw mathematical proof 'oHbe'vam. verification closure 'oHbe' 'e' qawmoHbogh Hol 'oH.
 
-ghojmoHghachDaq, better yu'ghach tlhobmeH yap yajbogh ghojwI' 'oH edge'e'. chutDaq, appeal pagh correction polbogh judgment. Qel QapDaq, rehabilitation, monitoring, prevention je ghoSbogh treatment. artDaq, draft neH 'oHbe'taHvIS possibilities poSmoHbogh work. scienceDaq, nuq falsify, expand, repair je qIjbogh theory.
+ghojmoHghachDaq, better yu'ghach tlhobmeH yap yajbogh ghojwI' 'oH edge'e'. chutDaq, appeal pagh correction polbogh judgment. Qel QapDaq, rehabilitation, monitoring, prevention je ghoSbogh treatment. artDaq, draft neH 'oHbe'taHvIS possibilities poSmoHbogh work. scienceDaq, nuq falsify, expand, repair je qIjbogh QubmeH mIw.
 
-recursive edge pretension drainage je. doctrine mojmeH theory bot. `pagh latlh tlhobnIS` jatlhchugh theory, ghaH'egh magh. movement mevbogh summit 'oHbe' Ideal'e'; SumchoHlu'DI' Qu' nI' law' chenmoHbogh lurgh 'oH.
+recursive edge pretension drainage je. doctrine mojmeH QubmeH mIw bot. `pagh latlh tlhobnIS` jatlhchugh QubmeH mIw, ghaH'egh magh. movement mevbogh summit 'oHbe' Ideal'e'; SumchoHlu'DI' Qu' nI' law' chenmoHbogh lurgh 'oH.
 
 ### Operational questions at every edge
 
 1. nuq resolve-lu' teH?
-2. nuq representation HurDaq ratlh?
+2. nuq lIw HurDaq ratlh?
 3. 'Iv price qeng?
 4. nuq source laDbe'lu'?
 5. nuq correction route poS ratlh?
@@ -45,7 +45,7 @@ recursive edge pretension drainage je. doctrine mojmeH theory bot. `pagh latlh t
 
 ### Closure and completion
 
-completion local poQ theory. action rInmeH decision, file, diagnosis, release, product, law, judgment je poQ. 'ach local completion absolute closure rur ngebbe'nIS. `naDev Qu'vam rIn` jatlhlaH; `vaj Hoch rIn` jatlhbe'nIS.
+completion local poQ QubmeH mIw. action rInmeH decision, file, diagnosis, release, product, law, judgment je poQ. 'ach local completion absolute closure rur ngebbe'nIS. `naDev Qu'vam rIn` jatlhlaH; `vaj Hoch rIn` jatlhbe'nIS.
 
 recursive edge indecision glorifybe'. metta temp lo'be'meH excuse 'oHbe'. contrario: action poQ, action consequence qaw, correction route poS pol.
 

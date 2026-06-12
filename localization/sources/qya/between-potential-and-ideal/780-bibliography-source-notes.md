@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 780
 status: draft
+linguistic_review: specialist-revision-active
+audit_refresh: 2026-06-11
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -40,7 +42,7 @@ Cantor, Hilbert, von Neumann, Gödel, Turing, and Mandelbrot ve mathematical ar 
 
 Shannon, Landauer, Wiener, Searle, and Chalmers ve background ana questions informationo, systemo, feedbacko, consciousnesso ar i distinction between sign ar experience.
 
-Roger Williams, The Metamorphosis of Prime Intellect; and Rhadamanthus / Reddit, Feed the Pig, ve literary-conceptual sources an edge-images graceo, controlo, sufferingo ar renunciationo.
+Roger Williams, The Metamorph&#111;sis of Prime Intellect; and Rhadamanthus / Reddit, Feed the Pig, ve literary-conceptual sources an edge-images graceo, controlo, sufferingo ar renunciationo.
 
 Note on quotations ar lineage: i short references are used an philosophical, scientific ar literary orientation. I theory itself is presented ve an independent proposal, lá ve a derivation from any single source.
 

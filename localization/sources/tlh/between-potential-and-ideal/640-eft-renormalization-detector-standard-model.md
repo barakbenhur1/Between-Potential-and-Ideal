@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 640
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -14,11 +15,11 @@ publication: forbidden
 
 ### 6. EFT: The Optimal as Responsible Description Within a Domain of Validity
 
-Effective field theory perhaps high-energy physics, theory je bridge strongest 'oH. EFT partialmo' false 'oHbe'. domain of validity SovDI' responsible 'oH. jatlh: scalevamDaq variablesvam relevant bIH, effectsvam ignore-laH, 'ej naDev description responsible ratlhbe'choH.
+Effective field QubmeH mIw perhaps high-energy physics, QubmeH mIw je bridge strongest 'oH. EFT partialmo' false 'oHbe'. domain of validity SovDI' responsible 'oH. jatlh: scalevamDaq variablesvam relevant bIH, effectsvam ignore-laH, 'ej naDev description responsible ratlhbe'choH.
 
 Optimal bop deep lesson 'oH. Optimal final truth disguise 'oHbe'. local description 'oH, faithful, limited, useful, explicit, testable je. partial description partialmo' false mojbe'; partialityDaj So'DI' false moj.
 
-theory termsDaq Ideal worthy direction 'oH, Optimal constraints bIngDaq local translation 'oH. EFT exactly ghojmoH: everything final language ownbe'taHvIS responsible QaplaHlu'.
+QubmeH mIw termsDaq Ideal worthy direction 'oH, Optimal constraints bIngDaq local translation 'oH. EFT exactly ghojmoH: everything final language ownbe'taHvIS responsible QaplaHlu'.
 
 vaj chapter partialityvo' shame ghajnISbe'. contrary, declared partiality responsible truth conditions wa' 'oH.
 
@@ -26,11 +27,11 @@ vaj chapter partialityvo' shame ghajnISbe'. contrary, declared partiality respon
 
 renormalization inner cleansing, spiritual repair, consciousness elevation je metaphor 'oHbe'. scale choHDI' description chay' choH, parameters nuq relevant ratlh, details nuq effective descriptionDaq absorb 'e' physics ghojmeH discipline part 'oH.
 
-theory lesson `everything relative` 'oHbe'. level nuqDaq jatlh 'e' SovnISlu'. question wa' scaleDaq central rur narghlaH, scale latlhDaq choHlaH. detail wa' descriptionDaq critical, latlhDaq negligible mojlaH. responsibility descriptions Hoch equal jatlhbe'; description nuq nuqDaq Qap, qatlh je Sov.
+QubmeH mIw lesson `everything relative` 'oHbe'. level nuqDaq jatlh 'e' SovnISlu'. question wa' scaleDaq central rur narghlaH, scale latlhDaq choHlaH. detail wa' descriptionDaq critical, latlhDaq negligible mojlaH. responsibility descriptions Hoch equal jatlhbe'; description nuq nuqDaq Qap, qatlh je Sov.
 
 fast texts, AI, broad generalizations ageDaq especially potlh. scale wa'vo' language tlhap 'ej HochDaq project ngeD. renormalization scales joj movement work poQ, imagery neH poQbe' 'e' qawmoH.
 
-### 8. Accelerator, Detector, and Statistics: An Experimental Horizon
+### 8. Accelerator, Detector, and mI' De' poj: An Experimental Horizon
 
 accelerator magical microscope 'oHbe', detector naked truth leghbogh eye 'oHbe'. high-energy physics rare events narghlaHmeH conditions chenmoH, then traces identify, noise filter, energies measure, decays reconstruct, significance evaluate je systems chenmoH.
 
@@ -42,11 +43,11 @@ cases cha'Daq absolute view tu'lu'be'. traces tu'lu'. 'ej nuq bIHbe' 'e' lo'taHv
 
 ### 9. The Standard Model: Success That Is Not Closure
 
-Standard Model modern physics achievements tIn wa' 'oH. elementary particles, electromagnetic, weak, strong interactions je quantum framework inside successfully describe. 'ach successDaj boundary lesson ghojmoH: description domainDaj inside extraordinarily precise mojlaH, 'ach reality final picture 'oHbe'laH.
+Standard Model modern physics achievements tIn wa' 'oH. elementary particles, electromagnetic, weak, strong interactions je quantum qech chenmoHmeH pat inside successfully describe. 'ach successDaj boundary lesson ghojmoH: description domainDaj inside extraordinarily precise mojlaH, 'ach reality final picture 'oHbe'laH.
 
 Standard Model quantum gravity include-be'. dark matter, dark energy, neutrinos, mass hierarchies, matter-antimatter asymmetry je questions Hoch closebe'. strong 'oH, everything pretendmo'be', 'ach nuq describe preciselyqu'mo'.
 
-theoryvaD direct lesson: success closure 'oHbe'. precision divinity 'oHbe'. model deeply faithful 'ej still limited mojlaH. weakness 'oHbe'; honesty form 'oH.
+QubmeH mIwvaD direct lesson: success closure 'oHbe'. lughchu'ghach divinity 'oHbe'. model deeply faithful 'ej still limited mojlaH. weakness 'oHbe'; honesty form 'oH.
 
 ## Segment review gate
 
@@ -58,5 +59,5 @@ theoryvaD direct lesson: success closure 'oHbe'. precision divinity 'oHbe'. mode
 6. Preserve accelerators as condition-creators and detectors as experimental horizons, not magical microscopes or eyes of truth.
 7. Keep signal, noise, reconstruction, sensitivity, resolution, significance, background, and assumptions visible.
 8. Preserve the Standard Model’s major success and its limits regarding quantum gravity and open questions.
-9. Keep success distinct from closure and precision distinct from divinity.
-10. Review all EFT, renormalization, scale, accelerator, detector, statistics, Standard Model, interaction, and domain terminology before publication.
+9. Keep success distinct from closure and lughchu'ghach distinct from divinity.
+10. Review all EFT, renormalization, scale, accelerator, detector, mI' De' poj, Standard Model, interaction, and domain terminology before publication.

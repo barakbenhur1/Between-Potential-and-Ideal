@@ -1,0 +1,19 @@
+{
+  "document_id": "between-potential-and-ideal",
+  "stage": "mechanical-clearance-complete",
+  "validated_source_commit": "bead2e380489da7029b56f58aedb665d0310695d",
+  "audit_run_id": 27332072386,
+  "release_guard_run_id": 27332072393,
+  "export_snapshot_run_id": 27332072383,
+  "total_pairs": 77,
+  "mechanically_clear_pairs": 77,
+  "blocked_pairs": 0,
+  "foreign_term_occurrences": 0,
+  "body_occurrences": 0,
+  "heading_occurrences": 0,
+  "first_pass_complete_pairs": 77,
+  "linguistically_approved_pairs": 0,
+  "independent_review_complete_pairs": 0,
+  "publication": "forbidden",
+  "next_stage": "specialist-linguistic-revision-and-independent-review"
+}

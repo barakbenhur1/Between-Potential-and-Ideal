@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 360
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -32,7 +33,7 @@ Potential Hoch realization deservebe'. great works lesson potlhqu' wa' 'oH.
 
 *The Lord of the Rings*Daq ring concentrated Potential 'oH: power, domination, decision, shortcut, coercion vegh world repairmeH DuH. 'ach work Ideal `evil law' QaQ law' lo' powervam` 'oHbe'. power 'op lo'nISbe'lu' 'e' yaj 'oH Ideal'e'. pujmo'be'; wrong wayDaq HoSqu'mo'.
 
-naDev potential realizghach 'oHbe' Ideal'e'; refusal 'oH. theoryvaD pImghach crucial 'oH: possibility Hoch reality mojbe'nIS. possibilities 'op wholeness promise, 'ach corruption price So'mo' neH. rut Ideal ghoSmeH He teH 'oH power lo'be'ghach, lojmIt poSmoHbe'ghach, shortcut tlhapbe'ghach, can neHmo' continuation taHmoHbe'ghach.
+naDev potential realizghach 'oHbe' Ideal'e'; refusal 'oH. QubmeH mIwvaD pImghach crucial 'oH: possibility Hoch reality mojbe'nIS. possibilities 'op wholeness promise, 'ach corruption price So'mo' neH. rut Ideal ghoSmeH He teH 'oH power lo'be'ghach, lojmIt poSmoHbe'ghach, shortcut tlhapbe'ghach, can neHmo' continuation taHmoHbe'ghach.
 
 AI ageDaq potlhqu': technical ability Ideal 'oHbe'. technical Potential moral permission 'oHbe'. image chenmoHlaHlu'mo' Hoch chenmoHnISbe'. lut continue-laHlu'mo' Hoch continue-nISbe'. voice, character, style je clone-laHlu'mo' worthy mojbe'.
 
@@ -48,7 +49,7 @@ false Ideal 'oHvam: destructive Potential Ideal rur So'.
 
 breaking Hoch freedom 'oHbe'. meta-awareness Hoch depth 'oHbe'. transition Hoch progress 'oHbe'. formvo' exit Hoch worthy formDaq ghoSbe'.
 
-innocencevo' theory Qan pImghachvam. liberation Potential control chu' mojlaH. systemvo' exit system qab law' mojlaH. break ability neH yapbe' true IdealvaD; break pIq nuq chenmoH deserve 'e' SovnIS.
+innocencevo' QubmeH mIw Qan pImghachvam. liberation Potential control chu' mojlaH. systemvo' exit system qab law' mojlaH. break ability neH yapbe' true IdealvaD; break pIq nuq chenmoH deserve 'e' SovnIS.
 
 ### 12. Genres as systems of questions
 
@@ -62,11 +63,11 @@ vaj genre Hoch Potential, Ideal je relation arrange-meH He pIm 'oH.
 
 ### 13. Great work nuq ta' teH
 
-great work theory tobe'be', 'ach almost naked 'ang. work HochDaq realize-laHbogh possibilities law' tu'lu'. choice Hoch deletion je 'oH. continuation Hoch risk je 'oH. adaptation Hoch loss je 'oH. creative franchise Hoch promise je danger je 'oH.
+great work QubmeH mIw tobe'be', 'ach almost naked 'ang. work HochDaq realize-laHbogh possibilities law' tu'lu'. choice Hoch deletion je 'oH. continuation Hoch risk je 'oH. adaptation Hoch loss je 'oH. creative franchise Hoch promise je danger je 'oH.
 
 vaj possibilities Hoch chay' realize-lu' 'oHbe' question. wIvlu'DI' nuq chIlbe'nISlu' 'oH question.
 
-Potential Hoch realization call 'oHbe'. expansion Hoch deepening 'oHbe'. continuation Hoch fidelity 'oHbe'. breaking Hoch freedom 'oHbe'. center Hoch center rur narghbe'.
+Potential Hoch realization call 'oHbe'. expansion Hoch deepening 'oHbe'. continuation Hoch matlhghach 'oHbe'. breaking Hoch freedom 'oHbe'. center Hoch center rur narghbe'.
 
 Potential 'oH work mojlaHbogh Hoch'e'. Ideal 'oH work chIlbe'nISbogh Doch'e'. Optimal 'oH form'e', naDev relinquishment Hoch DochvetlhvaD matlh ratlh.
 

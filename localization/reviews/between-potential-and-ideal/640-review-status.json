@@ -1,0 +1,22 @@
+{
+  "segment": 640,
+  "id": "640-eft-renormalization-detector-standard-model",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "EFT-declared-domain-relevant-variables-neglected-effects-and-breakdown",
+    "partiality-vs-falsehood",
+    "Optimal-as-local-faithful-translation",
+    "renormalization-as-technical-scale-dependence",
+    "descriptions-not-all-equal-or-merely-relative",
+    "accelerator-as-condition-creator-and-detector-as-horizon",
+    "signal-noise-reconstruction-sensitivity-resolution-significance-background-assumptions",
+    "Standard-Model-success-and-limits",
+    "success-vs-closure-and-precision-vs-divinity"
+  ],
+  "summary": "The EFT, scale, detector, statistical, Standard Model, domain, partiality, and anti-mysticism safeguards are preserved. Both drafts require specialist revision."
+}

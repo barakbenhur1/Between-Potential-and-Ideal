@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 620
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -22,9 +23,9 @@ Potential boundary Hutlhchugh noise moj. Ideal Potential Hutlhchugh empty dogma 
 
 AI multiverse 'oHbe', cosmology je 'oHbe'. 'ach artificial possibilities fieldvaD strong metaphor mojlaH: images law', texts law', solutions law', variations law', possible worlds law' quickly generate.
 
-naDev danger nargh: possibilities law' understanding puSmoHlaH. AI horizon expand neHbe'; flood je laH. filtering, source, evidence, context, responsibility je Hutlhchugh, possibilities field persuasive noise moj.
+naDev danger nargh: possibilities law' understanding puSmoHlaH. AI horizon expand neHbe'; flood je laH. filtering, source, tobmeH De', qech-ngaS poH, responsibility je Hutlhchugh, possibilities field persuasive noise moj.
 
-Potential problem reH possibilities shortage 'oHbe'. rut clarification Hutlhbogh possibilities excess 'oH. generated image Hoch documentDaq 'elnISbe'. possible formulation Hoch theory strengthenbe'. imagine-laHbogh world Hoch chenmoH worthy 'oHbe'. deep rur Qoybogh answer Hoch source qengbe'.
+Potential problem reH possibilities shortage 'oHbe'. rut clarification Hutlhbogh possibilities excess 'oH. generated image Hoch documentDaq 'elnISbe'. possible formulation Hoch QubmeH mIw strengthenbe'. imagine-laHbogh world Hoch chenmoH worthy 'oHbe'. deep rur Qoybogh answer Hoch source qengbe'.
 
 AIDaq Optimal `as much as possible generate` 'oHbe'. choose, test, filter, source qeng, boundary recognize, responsibility humanvaD cheghmoH je 'oH. Potential, Ideal je difference 'oH: possible ghaH'egh multiply; worthy work poQ.
 
@@ -36,7 +37,7 @@ thought failure 'oHbe'. thought yInbogh structure 'oH. absolute view Hoch closeb
 
 recursive edge truth tu'be' jatlhbe'. human truth Hoch horizon qeng jatlh. expandlaH, sharper mojlaH, choHlaH, poSchoHlaH, 'ach God mojbe'. responsible answer Hoch boundary chu' lon, naDev responsibility chu' tagh.
 
-theory hope Hoch leghmeH hope 'oHbe'. Hoch leghbe'taHvIS better actmeH hope 'oH. horizon denybe', prisonDaq choHmoHbe'. form appearmeH condition rur recognize.
+QubmeH mIw hope Hoch leghmeH hope 'oHbe'. Hoch leghbe'taHvIS better actmeH hope 'oH. horizon denybe', prisonDaq choHmoHbe'. form appearmeH condition rur recognize.
 
 ### 12. Ending: Not Every Horizon Is a Prison
 
@@ -52,7 +53,7 @@ horizon Hoch prison 'oHbe'. rut horizon form appearmeH condition 'oH, form Hoch 
 2. Keep Potential, Ideal, and Optimal distinct: possible field, worthy clarification, and local responsible translation.
 3. Preserve AI as a metaphor for an artificial field of possibilities, never a multiverse or cosmology.
 4. Keep excess possibility as a possible source of noise and reduced understanding.
-5. Preserve source, evidence, context, filtering, boundary, and human responsibility in the AI section.
+5. Preserve source, tobmeH De', qech-ngaS poH, filtering, boundary, and human responsibility in the AI section.
 6. Keep the recursive edge compatible with truth; every truth carries a horizon but is not thereby false.
 7. Do not turn an expanding horizon into divine or total vision.
 8. Preserve the hope of acting better without seeing everything.

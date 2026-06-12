@@ -1,0 +1,66 @@
+name: Draft Constructed-Language Translation Locally
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: draft-constructed-language-translation
+  cancel-in-progress: true
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Ollama
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          nohup ollama serve > /tmp/ollama.log 2>&1 &
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:11434/api/tags && break || sleep 2; done
+          ollama pull qwen2.5:1.5b
+      - name: Prepare source jobs
+        run: python3 tools/prepare_localization_ai_jobs.py
+      - name: Generate one review-only sample per language
+        run: |
+          python3 - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+
+          out = Path('reports/localization/local-model-test')
+          out.mkdir(parents=True, exist_ok=True)
+          targets = {
+              'tlh': "Klingon (tlhIngan Hol) using Marc Okrand grammar and attested vocabulary. Use transparent descriptive phrases where needed.",
+              'qya': "Neo-Quenya using one consistent Tolkienian grammar and morphology profile. Use transparent descriptive phrases for modern concepts.",
+          }
+          for lang in ('tlh', 'qya'):
+              job = sorted(Path('reports/localization/ai-jobs').glob(f'translate-*-{lang}-*.json'))[0]
+              data = json.loads(job.read_text(encoding='utf-8'))
+              prompt = f'''Translate the COMPLETE SOURCE into {targets[lang]}
+Return only Markdown. Preserve every paragraph and structural element. Never summarize, omit, repeat filler, or explain.
+
+GLOSSARY:
+{data['glossary']}
+
+SOURCE:
+{data['source']}'''
+              result = subprocess.run(
+                  ['ollama', 'run', 'qwen2.5:1.5b', prompt],
+                  check=True,
+                  capture_output=True,
+                  text=True,
+              )
+              translated = result.stdout.strip()
+              if len(translated) < max(200, int(len(data['source']) * 0.35)):
+                  raise SystemExit(f'incomplete sample for {lang}: {len(translated)}')
+              (out / f'{data["job_id"]}.md').write_text(translated + '\n', encoding='utf-8')
+              (out / f'{data["job_id"]}.source.md').write_text(data['source'] + '\n', encoding='utf-8')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: constructed-language-review-samples
+          path: reports/localization/local-model-test/
+          if-no-files-found: error
+          retention-days: 14

@@ -1,0 +1,19 @@
+{
+  "segment": 760,
+  "id": "760-sources-mathematics-physics",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "mathematics-and-physics-as-limited-structural-language",
+    "Hilbert-PNP-Godel-Turing-complexity-and-diagonalization-bounded",
+    "all-scientific-names-and-domains-preserved",
+    "quantum-mechanics-separate-from-mysticism",
+    "Higgs-black-hole-information-holography-islands-Shannon-Landauer-as-backgrounds",
+    "no-commitment-to-single-multiverse-model"
+  ],
+  "summary": "The mathematical, physical, computational, information, named-source, and anti-mysticism safeguards are preserved. Both drafts require specialist revision."
+}

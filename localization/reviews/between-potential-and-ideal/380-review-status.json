@@ -1,0 +1,18 @@
+{
+  "segment": 380,
+  "id": "380-music-of-potential",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "music-as-emergence-through-time",
+    "silence-as-active-relation",
+    "technical-vs-musical-optimum",
+    "no-romanticizing-imperfection-or-human-superiority",
+    "consent-community-tradition-and-living-source-in-AI-music"
+  ],
+  "summary": "The temporal, musical, AI, consent, and source safeguards are preserved. Both drafts require specialist revision for extensive foreign-language and mixed-language contamination, terminology, morphology, and idiomatic syntax."
+}

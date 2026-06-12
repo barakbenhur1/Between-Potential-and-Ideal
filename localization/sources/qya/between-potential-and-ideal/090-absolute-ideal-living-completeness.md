@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 090
 status: draft
+linguistic_review: specialist-revision-active
+review_record: localization/reviews/between-potential-and-ideal/090-absolute-ideal-living-completeness-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -10,13 +12,13 @@ publication: forbidden
 
 ## 2. I Ilúvë, i Ideal ar Quantalë Cuina
 
-I Ilúvë, ve tulë sís, lá ná nat ya polë ná mapaina. Esta i ya lá ná yáwaina i lúme localven, ar yando avá auta i lúmë tana. An sina capítulo mauya vá attë loicar andavë: auta i Ideal ana merë immo, hya carë sa ondo tancaina ya lá cenda lúmë, hröa ar réna.
+I Ilúvë, ve tulë sís, lá ná nat ya polë ná mapaina. Esta i ya lá ná yáwaina i lúme localven, ar yando avá auta i lúmë tana. An sina cendë mauya vá attë loicar andavë: auta i Ideal ana merë immo, hya carë sa ondo tancaina ya lá cenda lúmë, hröa ar réna.
 
 Quantalë cuina lá ná quantalë ú lusta, mal quantalë ya ista carë ó lusta ú quetila i lusta auta. Ná amba ve tië lá ve ondo. Tië polë lemya astar írë i menelë hwindë; ondo rácina írë anwië samë sa. An sina i sanwë-patar cilë Ideal cuina epë Ideal ve pahtalië.
 
 Sís Optimal samë mahalmarya. Ideal tana mana ná valda; Optimal maquetë mana polë ná carna sí ú vacila i ya ná valda. Lá ná pityalië i Idealo, mal ahyalierya mi lúmi anwi. Ahyalië mára lá vista i celu; varya sa ú ahyala quettar vanyar yar lá polir carë.
 
-An sina capítulo lá cesta auta haiya. I réna imbe i Ilúvë ar i local ná i nómë yassë mauya-cárië ontë. Qui lá ëa réna, lá ëa cilmë. Qui ilya nat yá né Ideal, lá ëa carma máriéva, parmalë hya envinyatië. Haiya lavë men ista ma canta er cenë oronta hya ma polë colë cuilë anwa.
+An sina cendë lá cesta auta haiya. I réna imbe i Ilúvë ar i local ná i nómë yassë mauya-cárië ontë. Qui lá ëa réna, lá ëa cilmë. Qui ilya nat yá né Ideal, lá ëa carma máriéva, parmalë hya envinyatië. Haiya lavë men ista ma canta er cenë oronta hya ma polë colë cuilë anwa.
 
 Cendë tanca varya níra: i Ideal lá ná haryalië i cendando, i tecindo hya min patar. Ná horizon cestiëo. Ilya canta sen mauya lemya pantaina cestien mi naicë, emma, quén anwa ar i polië ya i canta immo en ná túlalta lá.
 

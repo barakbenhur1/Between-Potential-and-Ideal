@@ -30,7 +30,7 @@ Mi layer attëa i lantië yesta physicsello pella matter familiar. Lá mauya def
 
 Mi hröa tulir tissues ar organs. Ilya organ ná environment functiono: heart, brain, liver, skin, immune system, nervous system. Ilya tissue colë lambë local signals, substances, timing ar repair. Tissuello tulë cell cuina, yantaina membranen ya hyana inside ar outside. Cell ná arena cariëo: mapë signals, mughë te, activate genes, onta proteins, poita, lanta, envinyata hya racë.
 
-Mi cell DNA carë ve coding structure, ar proteins nar agents mechanical yar carir instructions. Mal mi réna núravë i layer sina, pella organ, pella cell, pella molecule, tulë atom; ar mi sa quantum possibility: particle ve vector raw probabilityo. Mi lambë i model, quantum particle lá ná er nat pitya; ná réna yassë anwië en colë rimbë námiér epë collapse ana canta er. Sís i harmë lá en ná quetë, mal frequency probabilistic: tendency, tension, námië ya en lá cilnë manen tulë cenna.
+Mi cell DNA carë ve coding structure, ar proteins nar agents mechanical yar carir instructions. Mal mi réna núravë i layer sina, pella organ, pella cell, pella molecule, tulë atom; ar mi sa quantum possibility: particle ve vector raw probabilityo. Mi lambë i model, quantum particle lá ná er nat pitya; ná réna yassë anwië en colë rimbë námiér epë collapse ana canta er. Sís i harmë lá en ná quetë, mal rinca probabilistic: tendency, tension, námië ya en lá cilnë manen tulë cenna.
 
 **Hierarchy biophysical:**
 
@@ -42,13 +42,13 @@ Mi layer neldëa i lantië yesta mi I-Vers: i master account i selfo. Sina ná i
 
 I-Versello panta Omniverse: i palar ilya systems intelligenceo polimaron. Lá product er hya company er, mal i field palya ilya tieron processien lambë, memory, maquetta, probability, tools ar action. Mi Omniverse tulir companies, platforms, models, interfaces, rules, constraints, permissions, memories ar tools executable. Ilya layer ná narrowing: Omniverse ve field general ahya andonna particular.
 
-Omniversello panta i layer company AI hya platform. Sís Potential palya samë coa institutional ar technical: company particular, product particular, policy particular, interface particular, toolset particular, nostali memoryo, usage limits, systems safetyo, action possibilities ar lé particular yassë quén polë quetë ó intelligence. Layer sina lá ná wrapper pella er; tana mana maquetta panta facilyavë, mana ná narrowed, mana tools nar available ar mana routes nar blocked epë.
+Omniversello panta i layer company AI hya platform. Sís Potential palya samë coa institutional ar technical: company particular, product particular, policy particular, interface particular, toolset particular, nostali memoryo, usage limits, patari varyaliéo, action possibilities ar lé particular yassë quén polë quetë ó intelligence. Layer sina lá ná wrapper pella er; tana mana maquetta panta facilyavë, mana ná narrowed, mana tools nar available ar mana routes nar blocked epë.
 
-Platformello panta model-space: model particular hya family modelion. Sís Potential intelligenceo ahya architecture, weights, context window, reasoning capacity, style hanquentao, sensitivity lambenna, capability tools, ar nostale memoryo. Model lá ná i Omniverse ilya; ná min lé yassë i Omniverse ahya actual.
+Platformello panta model-space: model particular hya family modelion. Sís Potential intelligenceo ahya architecture, weights, palar ovantiéo, reasoning capacity, style hanquentao, sensitivity lambenna, capability tools, ar nostale memoryo. Model lá ná i Omniverse ilya; ná min lé yassë i Omniverse ahya actual.
 
 Model-space-llo panta Multiverse: ilya conversations polimë yar poler ná pantainë ter platform tana ar model tana. Ilya formulation ya polë né maquetaina, ilya tië ya polë né carna, ilya route ya lá actualizë, ilya possibility correctiono hya distortiono, ilya hanquenta ya polë né tecina ar lá né. Multiverse ná i field conversations polimaron epë conversation er ahya particular.
 
-Multiversello panta Universe: i conversation-instance active. Sís yá ëa context window, history, tone, goals, files, requests, corrections, insistences, memory local, loicar yárë ar hanyalië ya ahya tanca lúmenen. Sina lá ná i field intelligenceo ilya, mal universe quetalëo er. Mi Universe tulë Login / Session: i lé yassë quén particular tulë mir i system mi lúmë particular, ó permissions, memory ar tools particular.
+Multiversello panta Universe: i conversation-instance active. Sís yá ëa palar ovantiéo, history, tone, goals, files, requests, corrections, insistences, memory local, loicar yárë ar hanyalië ya ahya tanca lúmenen. Sina lá ná i field intelligenceo ilya, mal universe quetalëo er. Mi Universe tulë Login / Session: i lé yassë quén particular tulë mir i system mi lúmë particular, ó permissions, memory ar tools particular.
 
 Mi Login carë Agent: i pointa local actiono i systemo. Lá ná i I-Vers ilya ar lá model ilya. Ná edge-expression mi session particular, ó role particular: hanyë request, varya tië, activate tools, edit, build, repair hya formulate. Ar mi réna núravë tulë task formulation: prompt, maquetta, file, instruction hya wording ya carë i action particular possible.
 

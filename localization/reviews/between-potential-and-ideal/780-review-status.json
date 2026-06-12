@@ -1,0 +1,19 @@
+{
+  "segment": 780,
+  "id": "780-bibliography-source-notes",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "all-authors-titles-propositions-and-grouped-names-preserved",
+    "bibliography-as-orientation-not-proof-or-derivation",
+    "literary-conceptual-vs-scientific-and-philosophical-background",
+    "theory-as-independent-proposal",
+    "canonical-closing-line-preserved",
+    "punctuation-diacritics-apostrophes-Roman-numerals-and-capitalization"
+  ],
+  "summary": "The bibliography, source-category, independent-proposal, exact-name, punctuation, and closing-line safeguards are preserved. Both drafts require specialist revision."
+}

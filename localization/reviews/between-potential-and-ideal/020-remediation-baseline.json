@@ -1,0 +1,64 @@
+{
+  "schema_version": 5,
+  "segment": 20,
+  "source_paths": {
+    "tlh": "localization/sources/tlh/between-potential-and-ideal/020-metamorphosis-code.md",
+    "qya": "localization/sources/qya/between-potential-and-ideal/020-metamorphosis-code.md"
+  },
+  "audit_tool_schema": 3,
+  "automated_status": "clear",
+  "publication": "forbidden",
+  "title_policy": {
+    "english_source": "The Metamorphosis Code of Grace and Distance",
+    "hebrew_cross_check": "קוד המטמורפוזה של החסד והמרחק",
+    "decision": "must-be-localized-in-each-target-language",
+    "audit_exemption": false
+  },
+  "verified_audit_run": {
+    "workflow_run_id": 27332072386,
+    "head_sha": "bead2e380489da7029b56f58aedb665d0310695d",
+    "result": "success",
+    "repository_foreign_term_occurrences": 0,
+    "repository_body_occurrences": 0,
+    "repository_heading_occurrences": 0,
+    "repository_automated_blocked_pairs": 0,
+    "repository_automated_clear_pairs": 77
+  },
+  "tlh": {
+    "heading_findings": [],
+    "body_findings": [],
+    "protected_term_occurrences": [
+      {
+        "term": "Optimal",
+        "line": 17,
+        "section": "body",
+        "policy": "protected-audit-term-not-specialist-approved"
+      }
+    ]
+  },
+  "qya": {
+    "heading_findings": [],
+    "body_findings": [],
+    "protected_term_occurrences": []
+  },
+  "progress_from_previous_baseline": {
+    "repository_body_before": 649,
+    "repository_body_after": 0,
+    "repository_heading_before": 56,
+    "repository_heading_after": 0,
+    "repository_blocked_pairs_before": 65,
+    "repository_blocked_pairs_after": 0,
+    "remaining_segment_findings": 0
+  },
+  "acceptance": {
+    "body_findings_required": 0,
+    "body_findings_met": true,
+    "heading_findings_required": 0,
+    "heading_findings_met": true,
+    "mechanically_clear": true,
+    "protected_proper_names": ["Prime Intellect"],
+    "blind_allowlist": false,
+    "specialist_approval_required": true,
+    "specialist_approved": false
+  }
+}

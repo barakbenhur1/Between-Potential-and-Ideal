@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 150
 status: draft
+linguistic_review: specialist-revision-active
+review_record: localization/reviews/between-potential-and-ideal/150-self-ego-unity-part-2-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -20,29 +22,29 @@ latlh leghDaq 'oHbe'wIj 'e' leghDI', lonmeH HopmoHbe'lu'. mung yInbogh taHmeH Da
 
 moral mojmeH rarghach chaw' chuq. absorption Hutlhbogh muSHa'ghach, domination Hutlhbogh Qoyghach, qIlghach Hutlhbogh ghojmoHghach, latlh projectwIj mojmoHbe'bogh boQ, Qu' chenmeH ghot Daq nIHbe'bogh jan lo' je chaw'.
 
-### 8. mung yInbogh, representation je
+### 8. mung yInbogh, lIw je
 
-ghot bopbogh De' 'oHbe' ghot'e'. ghogh pattern 'oHbe' ghogh yInbogh'e'. QIH Delghach 'oHbe' QIH'e'. representation 'oHbe' mung'e'. SoHvo' SuqlaHlu'bogh Hoch sum 'oHbe' SoH'e'.
+ghot bopbogh De' 'oHbe' ghot'e'. ghogh pattern 'oHbe' ghogh yInbogh'e'. QIH Delghach 'oHbe' QIH'e'. lIw 'oHbe' mung'e'. SoHvo' SuqlaHlu'bogh Hoch sum 'oHbe' SoH'e'.
 
 ghot bopbogh law' SovlaHlu': De', biography, neHghachmey, ghItlh style, mIlloghmey, recordings, wIv ngo', jangghach predict-laHbogh je. lo'laHlaH, touch-laH, potlhlaH Hochvam. 'ach mung yInbogh 'oHbe' wej. mung 'oH collect-laHbogh Doch neH'e'be'; He, chuq, porgh, poH, narghmeH DIl je qengpu'bogh ghaH.
 
-pat QanwI' potlhqu' 'oH pImghachvam'e'. mung tamDI' De', Hap raw' moj ghot. presence tamDI' representation, ghot'egh law' representation'egh puS. yIn tamDI' summary, ghot ghombe'taHvIS lo' ngeD law' moj.
+pat QanwI' potlhqu' 'oH pImghachvam'e'. mung tamDI' De', Hap raw' moj ghot. presence tamDI' lIw, ghot'egh law' lIw'egh puS. yIn tamDI' summary, ghot ghombe'taHvIS lo' ngeD law' moj.
 
 vaj `profile` 'oHbe' SoH'e'. character neH 'oHbe'. lut neH 'oHbe'. lut, porgh, ghogh, qawghach, veH je vegh narghbogh mung yInbogh 'oH, 'ach bIH Hoch sum 'oHbe'.
 
-### 9. mirror Qob je rur AI
+### 9. leghmeH jan Qob je rur AI
 
 mung yInboghvo' narghpu' rur chenmey chenmoHlaHmo' SoHvaD nID chu' 'oH AI'e': ghot styleDaq ghItlh, ghot rur ghogh, mIllogh chen, emotion convincing jang, qawghach simulation, `jIH` Hol, ja'chuqghach pagh Qu' continuation je.
 
-'ach self mIllogh 'oHbe' self'e'. precise representation ghajlaH 'ach mung 'oHbe'. resemblance HoSghajlaH 'ach presence 'oHbe'. imitation lo'laHlaH, 'ach consent, attribution, veH, Qu' je poQtaH.
+'ach self mIllogh 'oHbe' self'e'. precise lIw ghajlaH 'ach mung 'oHbe'. resemblance HoSghajlaH 'ach presence 'oHbe'. imitation lo'laHlaH, 'ach consent, attribution, veH, Qu' je poQtaH.
 
 ghot ghogh, chen, style je lIwDI' AI, lugh'a' imitation neH yu'be'lu'. consent pol'a'? attribution pol'a'? veH pol'a'? mung yInbogh quv pol'a'?
 
 self mIllogh chenmoHlaH AI, 'ach mung yInbogh rur mIllogh qellu'nISbe'. mung 'oH SuqlaHlu'bogh Doch'e' neHbe'; He qengpu'bogh ghaH. output mung tamDI', mung yInbogh qech chenmoHpu'bogh chuq nIHlu'.
 
-'ach AI jagh mojmoHlu'nISbe'. selfvaD mirror lo'laH mojlaH: pattern leghmoH, feeling formulate, ja'chuqghach practice, ghoj, qon, yu', DuH poSmoH je boQlaH. 'ach mirror 'oHnIS, ownership 'oHbe'; scaffold 'oHnIS, mung 'oHbe'; jan 'oHnIS, ghot Qu' chenmeH chuq tambe'.
+'ach AI jagh mojmoHlu'nISbe'. selfvaD leghmeH jan lo'laH mojlaH: pattern leghmoH, feeling formulate, ja'chuqghach practice, ghoj, qon, yu', DuH poSmoH je boQlaH. 'ach leghmeH jan 'oHnIS, ownership 'oHbe'; scaffold 'oHnIS, mung 'oHbe'; jan 'oHnIS, ghot Qu' chenmeH chuq tambe'.
 
-mirrorvaD leghbogh ghot ghaH'egh maqbe'chugh, selfvaD mirror lo'laH 'oH AI'e'.
+leghmeH janvaD leghbogh ghot ghaH'egh maqbe'chugh, selfvaD leghmeH jan lo'laH 'oH AI'e'.
 
 ### 10. Hoch pongDaq ghot qIlbogh institutions
 
@@ -54,7 +56,7 @@ Qel QapDaq diagnosis, case, test, mI' je pongDaq qIl ghot. QeD, measurement, cat
 
 chutDaq category pongDaq qIl ghot: defendant, victim, witness, case, risk. QapmeH categories poQ chut qIlbe'bogh, 'ach ghot naQ mojmoHnISbe'. De' neH 'oHbe' testimony'e'; mung yInboghvo' pawbogh ghogh 'oH.
 
-communityDaq belonging pongDaq qIl exception. government, economy jeDaq efficiency, security, growth, profit, metric je pongDaq qIl ghot. ghu' HochDaq yu' rap theory: mungmey yInbogh Qan'a' Hoch, pagh Hap raw' rur lo'taHvIS ghaH'egh lughmoH'a'?
+communityDaq belonging pongDaq qIl exception. government, economy jeDaq efficiency, security, growth, profit, metric je pongDaq qIl ghot. ghu' HochDaq yu' rap QubmeH mIw: mungmey yInbogh Qan'a' Hoch, pagh Hap raw' rur lo'taHvIS ghaH'egh lughmoH'a'?
 
 ### 11. SoH recursive veH
 
@@ -77,7 +79,7 @@ qIlbe'bogh wa'ghach 'oHvam'e'. chuq cancelbe'; rarghachDaq mugh. ghotvaD leghDaq
 ## Segment review gate
 
 1. Preserve distance as respect, not abandonment.
-2. Keep living source distinct from data, profile, imitation, and representation.
+2. Keep living source distinct from data, profile, imitation, and lIw.
 3. Require consent, attribution, boundary, and responsibility for AI imitation.
 4. Preserve institutions' need for categories without allowing categories to replace persons.
 5. Keep recursive self-knowledge as responsibility, not endless self-erasure.

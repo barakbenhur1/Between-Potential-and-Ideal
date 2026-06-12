@@ -1,0 +1,14 @@
+{
+  "segment": 30,
+  "stage": "full-bilingual-v2-review-candidate-complete",
+  "mechanically_clear": true,
+  "tlh_v2_complete": true,
+  "qya_v2_complete": true,
+  "source_and_grammar_review_complete": false,
+  "english_hebrew_parity_complete": false,
+  "independent_review_complete": false,
+  "approved": false,
+  "publication": "forbidden",
+  "project_full_bilingual_v2_candidates": 2,
+  "project_total_pairs": 77
+}

@@ -1,0 +1,19 @@
+{
+  "segment": 430,
+  "id": "430-economy-market-credit-labor-externality",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "market-as-information-system-and-mirror-not-conscience",
+    "healthy-vs-sick-debt",
+    "bounded-interest-relation",
+    "labor-as-embodied-temporal-testimony",
+    "profit-from-creation-vs-extraction",
+    "externality-as-cost-outside-transaction-price"
+  ],
+  "summary": "The market, credit, debt, interest, labor, wage, profit, extraction, and externality safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, technical terminology, morphology, and idiomatic syntax."
+}

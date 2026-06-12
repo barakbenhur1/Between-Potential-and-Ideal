@@ -1,0 +1,21 @@
+{
+  "segment": 460,
+  "id": "460-governance-rights-institutions-force-emergency",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "rights-as-institutionally-protected-human-possibilities",
+    "duties-as-reasoned-limited-general-and-criticizable",
+    "institutions-as-public-memory-with-accountability",
+    "bureaucracy-necessary-but-dangerous",
+    "corruption-as-private-capture-of-public-mediation",
+    "taxation-as-coercive-shared-capacity",
+    "legal-force-bound-by-law-and-proportionality",
+    "emergency-as-temporary-exception-resistant-to-permanence"
+  ],
+  "summary": "The rights, duties, institution, bureaucracy, corruption, taxation, force, and emergency safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, terminology, morphology, and idiomatic syntax."
+}

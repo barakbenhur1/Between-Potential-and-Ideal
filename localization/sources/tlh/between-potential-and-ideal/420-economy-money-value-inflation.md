@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 420
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -46,7 +47,7 @@ Value(A) ghaH'egh neH meaning ghajbe'.
 
 > **Value(A) = Relation(A, B)**
 
-value relational 'oH jatlhghach `imaginary` jatlhbe'. relation stable, measurable, binding, painful je mojlaH. purchasing power, wage, debt, rent, interest, housing prices je metaphysical absolutes bIHbe', 'ach yIn teH shape.
+value relational 'oH jatlhghach `imaginary` jatlhbe'. relation stable, measurable, binding, painful je mojlaH. purchasing power, wage, debt, rent, interest, housing prices je ngoD Qav bIHbe', 'ach yIn teH shape.
 
 ### 2. Money: Potential portable
 
@@ -121,13 +122,13 @@ direction Hutlhbogh formula tu'lu'be'. exchange rate opposite directionDaq defin
 >
 > **P ↑ ⇒ m/P ↓**
 
-classical quantity identity 'oH:
+classical quantity rapghach 'oH:
 
 > **M × V = P × Y**
 
-identity 'oH; causal law nap 'oHbe'. inflation expectations, confidence, money demand, supply shocks, imports, exchange rates, policy, external shocks je depend.
+rapghach 'oH; causal law nap 'oHbe'. inflation expectations, confidence, money demand, supply shocks, imports, exchange rates, policy, external shocks je depend.
 
-> **Inflation = Loss of Precision in the Language of Money**
+> **Inflation = lughchu'ghach chIlghach in the Language of Money**
 
 money jatlhtaH, 'ach puS jatlh.
 

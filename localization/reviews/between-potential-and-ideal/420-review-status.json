@@ -1,0 +1,18 @@
+{
+  "segment": 420,
+  "id": "420-economy-money-value-inflation",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "relational-value-without-imaginariness",
+    "money-as-medium-not-value-itself",
+    "commodity-representative-and-fiat-money",
+    "bounded-purchasing-power-and-real-exchange-rate-formulas",
+    "quantity-equation-as-identity-not-simple-causal-inflation-theory"
+  ],
+  "summary": "The value, monetary-form, trust, exchange-rate, purchasing-power, and inflation safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, technical terminology, morphology, and idiomatic syntax."
+}

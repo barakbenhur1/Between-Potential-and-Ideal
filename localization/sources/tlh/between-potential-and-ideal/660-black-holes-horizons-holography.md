@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 660
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -10,7 +11,7 @@ publication: forbidden
 
 ## Black Holes, Event Horizons, and the Holographic Principle
 
-*Boundary, information, accessibility, traces je — physics metaphysical proofDaq choHmoHbe'taHvIS*
+*Boundary, information, accessibility, traces je — physics Hap chut HurDaq proofDaq choHmoHbe'taHvIS*
 
 ![Black Holes, Event Horizons, and the Holographic Principle](../../../figures/v26_restyle_polar_field_threshold.png)
 
@@ -26,11 +27,11 @@ holographic principle, AdS/CFT, holography je gravity, fields, information je th
 
 mapvam inaccessible Doch bop chay' jatlhlaHlu', drama meqmo' science confiscatebe'taHvIS 'e' tlhob.
 
-theoryvaD value evidence horizonDaq tu'lu'. lawDaq truth prove-laHbogh beyond tu'laH. medicineDaq pain test 'angbogh beyond tu'laH. AIDaq human source output beyond tu'laH. educationDaq understanding grade beyond tu'laH. horizon truth cancel 'oHbe'; truthvaD responsibility condition 'oH.
+QubmeH mIwvaD value tobmeH De' horizonDaq tu'lu'. lawDaq truth prove-laHbogh beyond tu'laH. medicineDaq pain test 'angbogh beyond tu'laH. AIDaq human source output beyond tu'laH. educationDaq understanding grade beyond tu'laH. horizon truth cancel 'oHbe'; truthvaD responsibility condition 'oH.
 
 black holes drainbe'bogh systems Qob qawmoH je. information, power, pain je institutionDaq 'elDI' 'ej repair possibility rur cheghbe'DI', institution structurally pit rur behave: absorb 'ach give-backbe'. point `society black hole 'oH` 'oHbe'. question 'oH: boundary responsibility enable-bogh trace preserve'a', pagh source erase'a'?
 
-chapter universe structure, boundary horizons, law as evidence, AI as source/trace je rar. theory caution qengnIS 'e' raD: black holes simply metaphors bIHbe'. physics bIH. metaphor chaw'lu'bogh neH ghaH'egh metaphor 'e' declare-bogh, fact rur behavebe'bogh je 'oH.
+chapter universe structure, boundary horizons, law as tobmeH De', AI as source/trace je rar. QubmeH mIw caution qengnIS 'e' raD: black holes simply metaphors bIHbe'. physics bIH. metaphor chaw'lu'bogh neH ghaH'egh metaphor 'e' declare-bogh, fact rur behavebe'bogh je 'oH.
 
 ## Segment review gate
 
@@ -38,9 +39,9 @@ chapter universe structure, boundary horizons, law as evidence, AI as source/tra
 2. Keep an event horizon a boundary from which light and signals cannot escape outward under a given physical description.
 3. Do not claim the holographic principle, AdS/CFT, or holography proves that the world is a projection.
 4. Preserve the information-boundary map exactly in structure, including the denominator of myth, mystery aesthetics, false proof, and erasure of science.
-5. Keep the evidence horizon distinct across law, medicine, AI, and education.
+5. Keep the tobmeH De' horizon distinct across law, medicine, AI, and education.
 6. Preserve a horizon as a condition of responsibility toward truth, not cancellation of truth.
 7. Keep the institutional drainage analogy explicitly structural; never state that society literally is a black hole.
 8. Preserve source and trace as the ethical test of whether a boundary enables responsibility or erases origin.
 9. Allow only metaphors that declare themselves metaphors and do not behave like facts.
-10. Review all black-hole, event-horizon, holographic-principle, AdS/CFT, trace, source, evidence, drainage, and responsibility terminology before publication.
+10. Review all black-hole, event-horizon, holographic-principle, AdS/CFT, trace, source, tobmeH De', drainage, and responsibility terminology before publication.

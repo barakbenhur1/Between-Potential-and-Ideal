@@ -1,0 +1,87 @@
+{
+  "schema_version": 3,
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "language_profiles": {
+    "tlh": {
+      "profile": "Okrand-canonical-only",
+      "compact_term_rule": "Use a compact form only when its canonical source is identified; otherwise use a transparent descriptive clause.",
+      "forbidden": [
+        "invented undocumented roots",
+        "English stems with Klingon morphology",
+        "blind global replacement"
+      ]
+    },
+    "qya": {
+      "profile": "Late-Quenya-first",
+      "compact_term_rule": "Prefer Tolkien-attested Late Quenya; a Neo-Quenya formation requires an explicit label, derivation, and compatibility check.",
+      "forbidden": [
+        "unlabelled neologisms",
+        "mixed grammar profiles",
+        "blind global replacement"
+      ]
+    }
+  },
+  "protected_project_terms": [
+    "Potential",
+    "Ideal",
+    "Optimal",
+    "AI",
+    "Between Potential and Ideal"
+  ],
+  "confirmed_contamination": {
+    "qya": ["Capítulo", "capítulo", "metafísica", "saída", "salida", "usuario"],
+    "tlh": []
+  },
+  "safe_automation_policy": "Detection and location reporting may be automated. Replacement is allowed only when an approved glossary entry and an unambiguous grammatical context both exist.",
+  "unresolved_high_frequency_terms": {
+    "tlh": ["theory", "evidence", "identity", "mirror", "precision", "context", "metaphysical", "representation", "fidelity"],
+    "qya": ["evidence", "context", "representation", "frequency", "code", "framework"]
+  },
+  "candidate_terms_requiring_verification": {
+    "tlh": {
+      "theory": "nger"
+    },
+    "qya": {
+      "chapter": "no approved project term yet"
+    }
+  },
+  "segment_policies": {
+    "020": {
+      "title": {
+        "english_source": "The Metamorphosis Code of Grace and Distance",
+        "hebrew_cross_check": "קוד המטמורפוזה של החסד והמרחק",
+        "status": "must-be-localized-in-each-target-language",
+        "rationale": "The canonical Hebrew edition localizes the chapter title; it is not a protected brand or proper name.",
+        "audit_exemption": false,
+        "source_patch": "localization/reviews/between-potential-and-ideal/020-title-remediation.patch.md",
+        "patch_applied": false,
+        "source_update_blocked_by_tool_safety_filter": true
+      },
+      "protected_proper_names": ["Prime Intellect"],
+      "body_terms_must_be_zero": true,
+      "heading_terms_must_be_zero": true,
+      "remediation_baseline": "localization/reviews/between-potential-and-ideal/020-remediation-baseline.json",
+      "specialist_plan": "localization/reviews/between-potential-and-ideal/020-specialist-revision-plan.md",
+      "terminology_supplement": "localization/glossaries/segment-020-specialist-terms.md"
+    }
+  },
+  "approval_requirements": [
+    "Every candidate term passes a short-label context.",
+    "Every candidate term passes a philosophical-paragraph context.",
+    "Every candidate term passes a literary-or-metaphorical context.",
+    "Every accepted term records source, profile, rejected alternatives, and rationale.",
+    "Body-level foreign-language findings are zero.",
+    "Heading-level foreign-language findings are zero unless the full phrase is an explicitly protected proper name or project brand.",
+    "An independent second linguistic review passes.",
+    "Automated clearance and release gates pass."
+  ],
+  "rules": [
+    "Do not perform blind global replacement.",
+    "Do not count front matter, review gates, links, image text, citations, or intentional placeholders as translated-prose contamination.",
+    "Do not silently exempt a heading term; it requires an explicit title or proper-name policy.",
+    "Do not protect a chapter title merely because it originated in English; compare the canonical editions first.",
+    "Do not treat automated clearance as linguistic approval.",
+    "Preserve all source distinctions and publication gates during revision."
+  ]
+}

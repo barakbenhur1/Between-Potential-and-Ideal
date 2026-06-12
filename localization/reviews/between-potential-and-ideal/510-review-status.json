@@ -1,0 +1,20 @@
+{
+  "segment": 510,
+  "id": "510-medicine-of-potential",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "body-as-living-reality-not-case-or-signal-set",
+    "scientific-medicine-not-soft-intuition-opposition",
+    "categories-as-handles-not-whole-person",
+    "responsible-health-as-boundary-map-not-formula",
+    "person-vs-measurement-double-failure",
+    "supervised-AI-returning-responsibility",
+    "explicit-no-medical-advice-disclaimer"
+  ],
+  "summary": "The body, diagnosis, evidence, consent, protocol, continuity, supervised-AI, horizon, care, and disclaimer safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, terminology, morphology, and idiomatic syntax."
+}

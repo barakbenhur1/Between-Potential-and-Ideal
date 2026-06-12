@@ -1,0 +1,1 @@
+Segment 100 mechanical target: replace the recorded Klingon occurrences of theory, fidelity, and nihilism. Neo-Quenya is already mechanically clear. Publication remains forbidden.

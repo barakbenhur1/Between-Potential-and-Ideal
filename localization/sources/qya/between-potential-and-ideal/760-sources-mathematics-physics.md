@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 760
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -42,7 +43,7 @@ Peter Higgs, François Englert ar Robert Brout are relevant because i Higgs mech
 
 Schwarzschild, Kerr, Penrose, Wheeler, Bekenstein ar Hawking are relevant because black holes, event horizons, singularities, horizon entropy ar Hawking radiation. I black hole is lá a simple emotional metaphor, mal an edge-image of a place yassë boundary, information, geometry ar time become entangled.
 
-Gerard ’t Hooft, Leonard Susskind, Juan Maldacena, Don Page ar contemporary work on holography ar island corrections are relevant ve background ana i black-hole information problem. There is lá physical conclusion claimed sinomë; there is caution before a question yassë information conservation, geometry ar thermodynamics still require a deeper framework.
+Gerard ’t Hooft, Leonard Susskind, Juan Maldacena, Don Page ar contemporary work on holography ar island corrections are relevant ve background ana i black-hole information problem. There is lá physical conclusion claimed sinomë; there is caution before a question yassë information conservation, geometry ar thermodynamics still require a deeper carmë.
 
 Claude Shannon ar Landauer are relevant ve background ana information, entropy ar i relation between information ar physics. I theory uses information carefully: lá ve replacement an experience, ar lá ve proof consciousnesso, mal ve a way to ask mana is preserved, mana is lost ar mana is translated.
 

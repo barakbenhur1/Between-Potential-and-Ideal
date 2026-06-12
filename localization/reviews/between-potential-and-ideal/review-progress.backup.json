@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "document_id": "between-potential-and-ideal",
+  "review_scope": "paired canonical segments",
+  "total_segment_pairs": 77,
+  "first_pass_complete_pairs": 2,
+  "approved_pairs": 0,
+  "revision_required_pairs": 2,
+  "pending_pairs": 75,
+  "current_status": "linguistic-review-active",
+  "completed_segments": [20, 30],
+  "next_segment": 40
+}

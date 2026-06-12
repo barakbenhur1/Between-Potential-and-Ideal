@@ -1,0 +1,11 @@
+{
+  "segment": 600,
+  "id": "600-universe-horizons-observation-access",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "summary": "Core cosmology and access distinctions are preserved; both drafts need specialist language revision."
+}

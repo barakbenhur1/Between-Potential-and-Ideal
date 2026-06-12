@@ -1,0 +1,19 @@
+{
+  "segment": 730,
+  "id": "730-placeholder-understanding",
+  "review_type": "paired-placeholder-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "exact-asterisk-placeholder-title",
+    "Understanding-preserved-untranslated",
+    "no-number-bullet-question-mark-or-title-normalization",
+    "no-invented-body-or-meaning",
+    "distinct-from-Application-and-earlier-placeholders",
+    "publication-forbidden-while-placeholder"
+  ],
+  "summary": "Placeholder parity is exact. Publication remains forbidden until the canonical source receives content."
+}

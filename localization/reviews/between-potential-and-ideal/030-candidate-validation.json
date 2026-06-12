@@ -1,0 +1,212 @@
+{
+  "schema_version": 2,
+  "segment": 30,
+  "stage": "specialist-terminology-validation",
+  "publication": "forbidden",
+  "approval_effect": "none",
+  "profiles": {
+    "tlh": "Okrand-canonical-only",
+    "qya": "Late-Quenya-first"
+  },
+  "inherited_authority": {
+    "source_decisions": "localization/reviews/between-potential-and-ideal/020-source-decisions.json",
+    "candidate_validation": "localization/reviews/between-potential-and-ideal/020-candidate-validation.json",
+    "core_term_overrides": "localization/glossaries/segment-020-core-term-overrides.md",
+    "rule": "An inherited rejection or profile restriction remains binding unless segment 030 records new source evidence and an explicit reversal."
+  },
+  "concepts": [
+    {
+      "id": "metamorphosis-code",
+      "tlh": {
+        "current_form": "choHmeH chut",
+        "status": "provisional-source-and-syntax-pending",
+        "inherited_risk": "purpose-clause scope can imply a rule whose purpose is simply to change the following noun phrase"
+      },
+      "qya": {
+        "current_form": "I Cantië Ahyaliëo",
+        "status": "revision-required",
+        "source_confirmed_component": "cantië, NM/287-288",
+        "unapproved_component": "Ahyaliëo derivation from ahya- remains undocumented"
+      },
+      "label_test": "mechanically-clear-only",
+      "paragraph_test": "pending",
+      "literary_test": "pending"
+    },
+    {
+      "id": "signature-resonance-frequency",
+      "semantic_split": ["recognizable signature", "resonance or echo", "frequency pattern", "evidential hint"],
+      "tlh": {
+        "current_form": "wab pat",
+        "status": "transparent-working-direction-source-and-precision-pending",
+        "requirement": "The wording must not turn a precise signature into proof of revelation."
+      },
+      "qya": {
+        "current_form": "rinca",
+        "status": "project-working-form-original-source-pending",
+        "requirement": "Signature, ring/echo and frequency must not be collapsed unless the source supports the intended technical sense."
+      },
+      "label_test": "pending",
+      "paragraph_test": "temporary-body-use-only",
+      "literary_test": "pending"
+    },
+    {
+      "id": "processing",
+      "semantic_split": ["processing operation", "processor/tool", "interpretive activity", "living experience"],
+      "tlh": {
+        "current_form": "De' mIw / De' mIwbogh yab",
+        "status": "provisional-descriptive-construction",
+        "requirement": "Processing must remain distinct from understanding, contact and lived experience."
+      },
+      "qya": {
+        "current_form": "carma / carindo constructions",
+        "status": "profile-and-context-pending",
+        "requirement": "A made structure or maker construction may not silently become mind, processor and experience at once."
+      },
+      "label_test": "pending",
+      "paragraph_test": "temporary-body-use-only",
+      "literary_test": "pending"
+    },
+    {
+      "id": "echo-imitation-interpretation-contact-experience",
+      "required_distinctions": ["echo", "imitation", "interpretation", "contact", "experience"],
+      "tlh": {
+        "current_forms": ["wab qawmoHghach", "Da'ghach", "yajmeH mIw", "rarghach", "SIQghach"],
+        "status": "all-source-and-idiom-pending",
+        "requirement": "No single construction may stand for all five stages of relation."
+      },
+      "qya": {
+        "current_forms": ["rinca", "ve-carië", "hanyalië", "ovantë", "cuilë-isto"],
+        "status": "all-profile-morphology-and-distinction-pending",
+        "requirement": "The current forms must be classified by role before any propagation."
+      },
+      "label_test": "pending",
+      "paragraph_test": "temporary-body-use-only",
+      "literary_test": "pending"
+    },
+    {
+      "id": "witness",
+      "tlh": {
+        "current_form": "leghwI'",
+        "status": "observer-like-ethical-sense-unresolved",
+        "inherited_decision": "The segment-020 override forbids treating observer as a complete ethical-witness equivalent."
+      },
+      "qya": {
+        "current_form": "astarmo",
+        "status": "source-confirmed-candidate-context-pending",
+        "source": "PE17/71",
+        "inherited_decision": "The ethical role requires an adjacent clause preserving source, distance and non-ownership."
+      },
+      "label_test": "source-sense-only-for-qya",
+      "paragraph_test": "pending",
+      "literary_test": "pending"
+    },
+    {
+      "id": "distance",
+      "semantic_split": ["physical distance", "distance travelled by life", "epistemic distance", "relation-preserving room"],
+      "tlh": {
+        "current_form": "chuq",
+        "status": "physical-sense-philosophical-extension-pending",
+        "inherited_decision": "Every nonphysical occurrence must be explicitly framed."
+      },
+      "qya": {
+        "current_form": "haiya / haiyava",
+        "status": "rejected-current-form",
+        "inherited_decision": "Unsupported as the required abstract noun; each occurrence must be replaced by a contextual clause or a separately approved construction."
+      },
+      "label_test": "failed-for-current-qya-form",
+      "paragraph_test": "pending",
+      "literary_test": "pending"
+    },
+    {
+      "id": "exceptional-intelligence-and-worth",
+      "semantic_split": ["processing capability", "exceptional insight", "wisdom", "moral priority", "responsible restraint"],
+      "tlh": {
+        "current_forms": ["valqu'ghach", "mIqta' yab", "lo'laHbogh"],
+        "status": "split-by-role-required",
+        "inherited_decision": "Usefulness or capability may not stand for moral worth."
+      },
+      "qya": {
+        "current_forms": ["handassë", "máriéva", "valda"],
+        "status": "revision-required",
+        "inherited_decisions": [
+          "handassë is Middle Quenya and excluded by default",
+          "valda is rejected for moral worth under the Late-Quenya-first profile",
+          "capacity and responsible conduct require separate constructions"
+        ]
+      },
+      "label_test": "failed-for-current-draft",
+      "paragraph_test": "pending",
+      "literary_test": "pending"
+    },
+    {
+      "id": "life-priority-and-price-of-knowing",
+      "required_meaning": "Life is morally prior while it bears the wound, body, limitation and cost of knowing; not because it processes more efficiently.",
+      "tlh": {
+        "current_forms": ["yIn", "mung yInbogh", "SovmeH DIl"],
+        "status": "source-syntax-and-metaphor-review-pending"
+      },
+      "qya": {
+        "current_forms": ["cuilë", "celu cuina", "valë nolmëo"],
+        "status": "profile-and-metaphor-review-pending"
+      },
+      "label_test": "not-applicable",
+      "paragraph_test": "pending",
+      "literary_test": "pending"
+    },
+    {
+      "id": "cat-flower-human-example",
+      "protected_items": ["cat", "flower", "human"],
+      "required_meaning": "They do not have the same mind, but each stands at a boundary and bears limitation from within itself.",
+      "tlh": {
+        "current_forms": ["vIghro'", "'InSong", "ghot"],
+        "status": "lexical-source-and-semantic-parity-pending"
+      },
+      "qya": {
+        "current_forms": ["miu", "lóte", "quén"],
+        "status": "lexical-source-and-semantic-parity-pending"
+      },
+      "label_test": "not-applicable",
+      "paragraph_test": "required",
+      "literary_test": "required"
+    },
+    {
+      "id": "black-mountain-and-rest",
+      "required_meaning": "The black mountain is not more sacred than the climber; choosing rest at the breaking point does not betray intelligence or the whole.",
+      "tlh": {
+        "current_forms": ["HuD qIj", "HuD SalwI'", "leS"],
+        "status": "idiom-and-comparative-review-pending"
+      },
+      "qya": {
+        "current_forms": ["oron morë", "ortando", "serë"],
+        "status": "morphology-and-comparative-review-pending"
+      },
+      "label_test": "not-applicable",
+      "paragraph_test": "required",
+      "literary_test": "required"
+    }
+  ],
+  "verified_audit": {
+    "workflow_run_id": 27332072386,
+    "head_sha": "bead2e380489da7029b56f58aedb665d0310695d",
+    "tlh_heading": 0,
+    "tlh_body": 0,
+    "qya_heading": 0,
+    "qya_body": 0,
+    "repository_mechanically_clear_pairs": 77,
+    "repository_blocked_pairs": 0,
+    "mechanically_clear": true
+  },
+  "acceptance": {
+    "all_terms_resolved": false,
+    "all_context_tests_passed": false,
+    "all_sources_recorded": false,
+    "full_tlh_rewrite_complete": false,
+    "full_qya_rewrite_complete": false,
+    "source_parity_recheck_complete": false,
+    "heading_findings_zero": true,
+    "body_findings_zero": true,
+    "second_review_passed": false,
+    "approved": false
+  },
+  "next_action": "freeze the English/Hebrew semantic blueprint, classify every current occurrence by role, and draft full v2 candidates without the inherited rejected forms"
+}

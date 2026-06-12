@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 160
 status: draft
+linguistic_review: specialist-revision-active
+review_record: localization/reviews/between-potential-and-ideal/160-evil-suffering-goodness-responsibility-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -12,7 +14,7 @@ publication: forbidden
 
 *quv 'oHbe' 'oy''e', 'ej morality 'oHbe' coherence'e'*
 
-theory mIghghach lughmoHbe'. Hoch qaSbogh qaSnISpu' jatlhbe', 'ej plan So'lu'pu'bogh pongDaq victim QaghmoHbe'. yIn teH law', tlhab law', attentive law', responsible law' mojlaHghach QIHbogh chenDaq Potential narghDI', mIghghach tu'lu'. 'oy' neH 'oHbe' mIghghach'e'; 'oy' 'op malicevo' pawbe'. latlh chuq qIlmeH, lo'meH, raw material mojmoHmeH HoS, blindghach, pagh SaHbe'ghach lo'lu'DI', mIghghach nargh.
+QubmeH mIw mIghghach lughmoHbe'. Hoch qaSbogh qaSnISpu' jatlhbe', 'ej plan So'lu'pu'bogh pongDaq victim QaghmoHbe'. yIn teH law', tlhab law', attentive law', responsible law' mojlaHghach QIHbogh chenDaq Potential narghDI', mIghghach tu'lu'. 'oy' neH 'oHbe' mIghghach'e'; 'oy' 'op malicevo' pawbe'. latlh chuq qIlmeH, lo'meH, raw material mojmoHmeH HoS, blindghach, pagh SaHbe'ghach lo'lu'DI', mIghghach nargh.
 
 SIQghach tIn law': yIn veH ghomDI' botghach. rut mIghghachvo' paw SIQghach, vaj mIghghach mevmoHghach 'oH Qu' wa'DIch'e', qech nejghach 'oHbe'. rut finitude, chIlghach, porgh, Sovbe'ghach, mojlaHbogh Doch, mojnISbogh Doch je joj gapvo' paw. ghu'vamDaq je 'oy' quvmoHnISbe'. quv 'oHbe' 'oy''e'. chaq quv mojlaH yIn, community, awareness je responseDaj: 'oy' blind reproduction mojmoHQo'ghach.
 
@@ -20,9 +22,9 @@ order rap 'oHbe' QaQghach'e'. system order jen ghajlaH 'ach ralqu'. coherence 'o
 
 vaj cha' Dop ghaj Qu'. wa'Daq, HochDaq Doch Hoch ghajmo' actionvo' exempt 'oHbe' ghot'e'. leghDaq Hoch, Hoch ghojmeH He 'oHmo', weight ghaj action Hoch. latlhDaq, impossible perfection poQbe' Qu'. HurghghachvaD chuqlIj yItlhapQo', 'ej neHghachlIjvaD latlh chuq yIqawHa'moHQo' jatlh.
 
-theoryDaq abstract purity 'oHbe' QaQghach'e'. qIlghach puSmoHbogh, DuH yInbogh law'moHbogh vIHghach 'oH. domination mojmoHbe'taHvIS HoS qenglaHghach, identity neH mojmoHbe'taHvIS 'oy' qenglaHghach, HurghghachDaq taHbogh ghotvaD qech raDbe'taHvIS qenglaHghach 'oH.
+QubmeH mIwDaq abstract purity 'oHbe' QaQghach'e'. qIlghach puSmoHbogh, DuH yInbogh law'moHbogh vIHghach 'oH. domination mojmoHbe'taHvIS HoS qenglaHghach, chenDaj neH mojmoHbe'taHvIS 'oy' qenglaHghach, HurghghachDaq taHbogh ghotvaD qech raDbe'taHvIS qenglaHghach 'oH.
 
-Qu' theory Qav 'oHbe'. theory nIDlu'bogh Daq 'oH.
+Qu' QubmeH mIw Qav 'oHbe'. QubmeH mIw nIDlu'bogh Daq 'oH.
 
 ### Moral distinctions
 

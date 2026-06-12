@@ -1,0 +1,19 @@
+{
+  "segment": 770,
+  "id": "770-sources-ai-works-acknowledgements",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "AI-as-mirror-and-tool-not-proof-authority-source-or-coauthor",
+    "Turing-Wiener-Searle-Chalmers-distinct",
+    "exact-titles-and-attributions",
+    "renunciation-vs-forced-continuation-or-control",
+    "all-cultural-works-and-characters-preserved",
+    "criticism-open-with-authorial-responsibility"
+  ],
+  "summary": "The AI, consciousness, title, attribution, cultural-work, acknowledgement, and authorial-responsibility safeguards are preserved. Both drafts require specialist revision."
+}

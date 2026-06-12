@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "segment": 60,
+  "status": "applied-and-mechanically-verified",
+  "approved": false,
+  "publication": "forbidden",
+  "verified_audit_run": {
+    "workflow_run_id": 27299982418,
+    "head_sha": "ceac436a1d972e104324f223a27ce4eb9927353c",
+    "result": "success",
+    "segment_tlh_findings": 0,
+    "segment_qya_findings": 0,
+    "segment_total_findings": 0,
+    "repository_foreign_term_occurrences": 637,
+    "repository_body_occurrences": 586,
+    "repository_heading_occurrences": 51,
+    "repository_blocked_pairs": 61,
+    "repository_clear_pairs": 16
+  },
+  "source_paths": {
+    "tlh": "localization/sources/tlh/between-potential-and-ideal/060-symphony-and-friction.md",
+    "qya": "localization/sources/qya/between-potential-and-ideal/060-symphony-and-friction.md"
+  },
+  "mechanically_clear": true,
+  "specialist_review_required": true,
+  "independent_second_review_required": true,
+  "next_target": 70
+}

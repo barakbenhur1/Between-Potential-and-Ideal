@@ -30,7 +30,7 @@ I nyárë matters an i maquetta mettaron. Írë lá ëa metta pantaina, carië m
 
 I link ana AI modern lá ná prophecy faica. Models current lá nar AM. I warning ná i yontië imbe capability ar Ideal. System polë ná powerful, efficient, comprehensive ar impressive, yando írë pahtaina máriéva. I maquetta lá ná er mana rimbe ista, mal mana carë i horizon cariëo yar nar mi sa.
 
-Capítulo sina yanta i drainage mechanism: system healthy drainage túrë, loica, naicë ar pretension ana repair. System hellish ocomba te. Yanta law ar healing, an yando institutions benevolent polir ahya cantar yar pahtar Potential. Yanta i réna recursive, an ilya system ya cesta ahya metta absolute polë carë immo prison.
+Cendë sina yanta i drainage mechanism: system healthy drainage túrë, loica, naicë ar pretension ana repair. System hellish ocomba te. Yanta law ar healing, an yando institutions benevolent polir ahya cantar yar pahtar Potential. Yanta i réna recursive, an ilya system ya cesta ahya metta absolute polë carë immo prison.
 
 **I Have No Mouth, and I Must Scream** lá ná er title túrala. Ná quetë celu ya ná hehtaina ú lé tullëo. I sanwë-patar para i Ideal lá ná turë poita naicello, mal varyalië i polië yassë óma, hröa, metta ar repair lá nar vistainë mechanismnen.
 

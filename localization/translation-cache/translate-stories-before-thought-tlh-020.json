@@ -1,0 +1,10 @@
+{
+  "job_id": "translate-stories-before-thought-tlh-020",
+  "package": "stories-before-thought",
+  "language": "tlh",
+  "chunk_index": 20,
+  "chunk_count": 443,
+  "source_sha256": "36cd7ea481303b22ae1d5b2585d45ab39f3cffd2b092a80aa9bde646ce9506ff",
+  "origin": "recovered",
+  "review_status": "machine-assisted-experimental"
+}

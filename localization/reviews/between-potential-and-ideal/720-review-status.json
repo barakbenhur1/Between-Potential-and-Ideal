@@ -1,0 +1,19 @@
+{
+  "segment": 720,
+  "id": "720-placeholder-chapter-down-final",
+  "review_type": "paired-placeholder-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "exact-final-arrow-placeholder",
+    "no-period-ellipsis-number-or-translation-normalization",
+    "no-invented-body-or-meaning",
+    "distinct-from-earlier-arrow-and-all-period-placeholders",
+    "expand-only-after-canonical-source-content",
+    "publication-forbidden-while-placeholder"
+  ],
+  "summary": "Placeholder parity is exact. Publication remains forbidden until the canonical source receives content."
+}

@@ -1,0 +1,19 @@
+{
+  "segment": 440,
+  "id": "440-economy-inequality-crisis-repair",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "structural-inequality-as-unequal-starting-possibility",
+    "bubble-as-self-feeding-expectation",
+    "types-of-growth-vs-human-progress",
+    "crisis-as-failure-of-mediation",
+    "relational-currency-strength",
+    "economic-repair-not-redemption"
+  ],
+  "summary": "The inequality, bubble, growth, crisis, mediation, currency, repair, and human-potential safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, technical terminology, morphology, and idiomatic syntax."
+}

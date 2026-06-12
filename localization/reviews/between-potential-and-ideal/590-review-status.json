@@ -1,0 +1,21 @@
+{
+  "segment": 590,
+  "id": "590-frictions-theories-offers-conclusion",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "physical-frictions-remain-open",
+    "information-as-readable-relation-only-in-interpretive-language",
+    "continuity-discreteness-vacuum-and-empirical-limits",
+    "existing-theories-and-interpretations-unranked",
+    "theory-noncompetitive-with-physical-models",
+    "complete-offers-and-does-not-offer-lists",
+    "no-added-dark-matter-dark-energy-baryogenesis-measurement-or-quantum-gravity-solutions",
+    "conclusion-shifts-question-not-solves-physics"
+  ],
+  "summary": "The physical-friction, competing-theory, interpretation, empirical-limit, offers, non-offers, theory-name, and anti-overreach safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, terminology, morphology, idiomatic syntax, capitalization, and hyphenation."
+}

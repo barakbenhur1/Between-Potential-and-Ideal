@@ -1,60 +1,36 @@
 {
-  "schema_version": 1,
+  "schema_version": 14,
   "document_id": "between-potential-and-ideal",
-  "review_scope": "paired canonical segments",
   "total_segment_pairs": 77,
-  "first_pass_complete_pairs": 4,
+  "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
-  "revision_required_pairs": 4,
-  "pending_pairs": 73,
-  "current_status": "linguistic-review-active",
-  "completed": [
-    {
-      "segment": 20,
-      "id": "020-metamorphosis-code",
-      "outcome": "revision-required",
-      "review_record": "localization/reviews/between-potential-and-ideal/020-metamorphosis-code-review.md",
-      "languages": {
-        "tlh": "first-pass-complete-needs-specialist-revision",
-        "qya": "first-pass-complete-needs-specialist-revision"
-      }
-    },
-    {
-      "segment": 30,
-      "id": "030-whole-and-distance",
-      "outcome": "revision-required",
-      "review_record": "localization/reviews/between-potential-and-ideal/030-whole-and-distance-review.md",
-      "languages": {
-        "tlh": "first-pass-complete-needs-specialist-revision",
-        "qya": "first-pass-complete-needs-specialist-revision"
-      }
-    },
-    {
-      "segment": 40,
-      "id": "040-model-not-final-part-1",
-      "outcome": "revision-required",
-      "review_record": "localization/reviews/between-potential-and-ideal/040-model-not-final-part-1-review.md",
-      "languages": {
-        "tlh": "first-pass-complete-needs-specialist-revision",
-        "qya": "first-pass-complete-needs-specialist-revision"
-      }
-    },
-    {
-      "segment": 50,
-      "id": "050-model-not-final-part-2",
-      "outcome": "revision-required",
-      "review_record": "localization/reviews/between-potential-and-ideal/050-model-not-final-part-2-review.md",
-      "languages": {
-        "tlh": "first-pass-complete-needs-specialist-revision",
-        "qya": "first-pass-complete-needs-specialist-revision"
-      }
-    }
+  "revision_required_pairs": 77,
+  "mechanically_clear_specialist_segments": [
+    20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150,
+    160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 280,
+    290, 300, 310, 320, 330, 340, 350, 360, 370, 380, 390, 400, 410,
+    420, 430, 440, 450, 460, 470, 480, 490, 500, 510, 520, 530, 540,
+    550, 560, 570, 580, 590, 600, 610, 620, 630, 640, 650, 660, 670,
+    680, 690, 700, 710, 720, 730, 740, 750, 760, 770, 780
   ],
-  "next": {
-    "segment": 60,
-    "id": "060-symphony-and-friction",
-    "tlh": "localization/sources/tlh/between-potential-and-ideal/060-symphony-and-friction.md",
-    "qya": "localization/sources/qya/between-potential-and-ideal/060-symphony-and-friction.md"
+  "active_linguistic_review": {
+    "segment": 20,
+    "id": "020-metamorphosis-code-grace-distance",
+    "status": "specialist-revision-and-independent-review-pending",
+    "mechanical_findings": 0,
+    "approved": false,
+    "publication": "forbidden"
   },
-  "publication": "forbidden-until-all-required-reviews-are-approved"
+  "automated_audit": {
+    "workflow_run_id": 27332072386,
+    "head_sha": "bead2e380489da7029b56f58aedb665d0310695d",
+    "validated_source_commit": "bead2e380489da7029b56f58aedb665d0310695d",
+    "foreign_term_occurrences": 0,
+    "body_occurrences": 0,
+    "heading_occurrences": 0,
+    "blocked_pairs": 0,
+    "mechanically_clear_pairs": 77
+  },
+  "publication": "forbidden-until-all-required-reviews-are-approved",
+  "authority": "canonical-review-progress"
 }

@@ -1,0 +1,19 @@
+{
+  "segment": 480,
+  "id": "480-law-potential-ideal-distance",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "law-as-moral-translation-under-limitation",
+    "legal-lens-broader-than-criminal-law",
+    "legal-potential-as-not-adding-injustice",
+    "institutional-justice-as-warning-map",
+    "legal-ideal-procedural-justice-and-local-optimum",
+    "legal-distance-as-gap-and-safeguard"
+  ],
+  "summary": "The law, justice, evidence, procedure, proportionality, horizon, distance, and correction safeguards are preserved. Both drafts require specialist revision for extensive foreign-language and mixed-language contamination, terminology, morphology, and idiomatic syntax."
+}

@@ -1,0 +1,20 @@
+{
+  "segment": 540,
+  "id": "540-trust-horizons-whole-caution",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "trust-horizon-as-conceptual-metaphor-not-social-physics",
+    "person-vs-relation-that-blocks-new-information",
+    "all-domain-examples-preserved",
+    "protective-refusal-and-repair-without-restored-trust-promise",
+    "God-as-cautious-name-for-Whole-not-physical-agent",
+    "scientific-examples-as-mirrors-not-proofs",
+    "Ideal-as-appearance-faithful-to-Potential"
+  ],
+  "summary": "The trust, interpretation, archive, frozen-identity, repair, redemption, God, Whole, source, mirror, justification, and anti-overreach safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, terminology, morphology, and idiomatic syntax."
+}

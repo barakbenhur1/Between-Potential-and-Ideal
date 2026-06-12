@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 510
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -18,13 +19,13 @@ _Image description draft: healing ve careful reading bodyo, sufferingo, chanceo 
 
 ### Body, diagnosis, treatment, ar person who is not a case
 
-Medicine tests i theory yassë Potential is compressed into pain, symptom, appointment, scan, protocol ar risk. I body lá ná idea ar lá metaphor. Ná i site yassë possibility may open, close, fracture hya remain suspended. Medicine of Potential lá ná `soft medicine` against scientific medicine; ná attempt keep science mi right relation ana living person.
+Medicine tests i theory yassë Potential is compressed into pain, symptom, appointment, scan, pantië cariëo ar risk. I body lá ná idea ar lá metaphor. Ná i site yassë possibility may open, close, fracture hya remain suspended. Medicine of Potential lá ná `soft medicine` against scientific medicine; ná attempt keep science mi right relation ana living person.
 
-I deep failure medicineo lá ná only diagnostic error hya systemic overload. Ná replacement patiento by i case. Person becomes cardiac, oncological, psychiatric, high-risk, diagnostic code. Some reduction ná necessary an systems must act. Mal i danger begins írë i reduction starts look ve i whole truth. Categories nar handles an action, lá i person.
+I deep failure medicineo lá ná only diagnostic error hya systemic overload. Ná replacement patiento by i case. Person becomes cardiac, oncological, psychiatric, high-risk, diagnostic tehta diagnosiso. Some reduction ná necessary an systems must act. Mal i danger begins írë i reduction starts look ve i whole truth. Categories nar handles an action, lá i person.
 
-> **Responsible health = living body × accurate diagnosis × listening × evidence × treatment time × continuity × consent ÷ overload × dehumanization × blind protocol × fear × commercialization × unsupervised automation**
+> **Responsible health = living body × accurate diagnosis × listening × tanwa × treatment time × continuity × consent ÷ overload × dehumanization × blind pantië cariëo × fear × commercialization × unsupervised automation**
 
-Sina lá ná medical formula. Ná boundary map: when does protocol save, ar when replace judgment; when does measurement illuminate, ar when hide i person?
+Sina lá ná medical formula. Ná boundary map: when does pantië cariëo save, ar when replace judgment; when does measurement illuminate, ar when hide i person?
 
 AI mi medicine ná i sharp example. System polë read images, summarize chart, suggest differentials, flag drug interactions, estimate risk ar reduce burden. Ilyë sina polir be valuable. Mal írë i tool receives aura certaintyo, i body becomes set signals-o ar i clinician becomes approver conclusiono. I problem lá ná using artificial intelligence. I problem ná erasing i horizon responsibilityo.
 
@@ -43,4 +44,4 @@ Chapter sina gives no medical advice. Clarifies i condition responsibilityo: i p
 5. Keep both failures visible: cancelling the person in the name of measurement and cancelling measurement in the name of the person.
 6. Preserve AI as a supervised scaffold that returns responsibility to clinicians and patients.
 7. Keep the explicit disclaimer that the chapter provides no medical advice.
-8. Normalize body, diagnosis, evidence, consent, protocol, continuity, automation, horizon, and care terminology under one Neo-Quenya profile.
+8. Normalize body, diagnosis, tanwa, consent, pantië cariëo, continuity, automation, horizon, and care terminology under one Neo-Quenya profile.

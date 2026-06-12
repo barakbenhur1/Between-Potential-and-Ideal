@@ -1,0 +1,19 @@
+{
+  "segment": 750,
+  "id": "750-sources-philosophical-lineage",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "sources-neither-prove-nor-singly-originate-theory",
+    "proximity-vs-identity-and-influence-vs-adoption",
+    "all-thinkers-traditions-works-and-contrasts-preserved",
+    "Dostoevsky-Nietzsche-Camus-three-part-axis",
+    "nihilism-with-hope-without-guaranteed-meaning",
+    "unity-not-erasing-multiplicity-personhood-difference-or-responsibility"
+  ],
+  "summary": "The source, lineage, influence, named-work, three-part-axis, and anti-erasure safeguards are preserved. Both drafts require specialist revision."
+}

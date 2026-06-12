@@ -1,0 +1,22 @@
+{
+  "segment": 580,
+  "id": "580-planck-horizon-coordinates-information",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "Planck-argument-as-heuristic-order-of-magnitude",
+    "measurement-boundary-vs-smallest-unit",
+    "physical-vs-coordinate-singularity",
+    "coordinate-change-as-mathematical-continuation",
+    "standard-equations-with-limited-domains",
+    "information-paradox-unsolved",
+    "Ryu-Takayanagi-framework-limited",
+    "path-integral-formal-not-complete-theory",
+    "vacuum-energy-and-cosmological-constant-limitation"
+  ],
+  "summary": "The Planck, measurement, coordinate, singularity, horizon, information, holography, path-integral, cosmology, symbol, and domain safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, terminology, morphology, idiomatic syntax, and exact equation verification."
+}

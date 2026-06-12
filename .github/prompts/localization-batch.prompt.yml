@@ -4,4 +4,4 @@ messages:
 model: openai/gpt-4o
 modelParameters:
   temperature: 0
-  maxCompletionTokens: 16000
+  maxCompletionTokens: 1000

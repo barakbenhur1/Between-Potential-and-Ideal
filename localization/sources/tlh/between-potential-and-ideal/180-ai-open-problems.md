@@ -3,6 +3,9 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 180
 status: draft
+linguistic_review: specialist-revision-active
+audit_verification: pending
+review_record: localization/reviews/between-potential-and-ideal/180-ai-open-problems-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -18,17 +21,17 @@ _Image description draft: jangghach, mung, Qu', nIHlaHbogh chuq je._
 
 ### Qu', mung, vIt, mung yInbogh ghajwI' 'oHbe'bogh jan je
 
-AI theoryDaq lojmIt jen 'oH, ghot 'oHbe'bogh mirror nobmo' 'ach ghot rurbogh chenmey chenmoHlaHmo': jangghach, mIllogh, meq, code, ghogh, style, advice, consolation je. vaj technical neH 'oHbe' problem'e'. ontological, moral, social je 'oH: mung yInbogh veghpu' rur output narghDI', 'ach He immo rapbe'taHvIS, nuq qaS?
+AI QubmeH mIwDaq lojmIt jen 'oH, ghot 'oHbe'bogh leghmeH jan nobmo' 'ach ghot rurbogh chenmey chenmoHlaHmo': jangghach, mIllogh, meq, ngoq, ghogh, style, advice, consolation je. vaj technical neH 'oHbe' problem'e'. ontological, moral, social je 'oH: mung yInbogh veghpu' rur output narghDI', 'ach He immo rapbe'taHvIS, nuq qaS?
 
 AI yu'ghachmey poS 'oHbe' model val law' chenmoHmeH neH. reliability, hallucination, attribution, privacy, bias, Qu', yajghach versus imitation, control, evaluation, alignment, copyright, mung yInbogh, dependency, skill loss, wording chenmoHbogh janmo' chuq 'Iv qengpu' 'e' lIjmeH Qob je ngaS.
 
 > **AI lo'laH map draft:** laH × transparency relative × nID × lo' veH × attribution × ghot Qu' × mung polghach ÷ blind automation × authority ngeb × He qIlghach × bias × De' exploitation × judgment tamghach.
 
-safety mI' formula 'oHbe'. discipline map 'oH: DuH SachmoH'a' jan, pagh Ideal ghaH'egh 'e' ngeb'a'?
+QanmeH mI' formula 'oHbe'. discipline map 'oH: DuH SachmoH'a' jan, pagh Ideal ghaH'egh 'e' ngeb'a'?
 
 Qagh motlh 'oH `AI yajchu''a'?` neH yu'ghach'e'. potlh, 'ach yu'ghach nom law' So'laH: nuq qaS ghotpu'vaD, Qu'chaj qengmeH yap yaj AI 'e' HarDI'? model conscious 'oHbe'chugh je, social consciousness choHmoHlaH: chay' ghoj students, chay' laD judges, chay' document doctors, chay' Qap artists, chay' risk patlhmoH governments.
 
-theory Qu'mey pImmoH: mirror, witness, tool, scaffold, accelerator, translator, preliminary diagnostician, drainage mechanism je mojlaH AI. ghot He ghajwI' 'oHbe'. chuq tamDI', formation Hutlhbogh output chenmoH. chuq qengmeH boQDI', jan jen mojlaH. model neH meqDaq pImbe'; practice, governance, design, veH jeDaq pIm.
+QubmeH mIw Qu'mey pImmoH: leghmeH jan, witness, tool, scaffold, accelerator, translator, preliminary diagnostician, drainage mechanism je mojlaH AI. ghot He ghajwI' 'oHbe'. chuq tamDI', formation Hutlhbogh output chenmoH. chuq qengmeH boQDI', jan jen mojlaH. model neH meqDaq pImbe'; practice, governance, design, veH jeDaq pIm.
 
 Potential AI 'oHbe' mIqta' nughI', blind enthusiasm je 'oHbe'. wa' mu'tlhegh pol: DuH poSmoHlaH jan, 'ach ghot, community, mung yInbogh je ta'lu'pu'bogh DochvaD responsible mojmeH Daq nIhnISbe'.
 
@@ -59,7 +62,7 @@ AI chenmoHlaH, 'ach automatically ghajbe'. advice noblaH, 'ach consequence qengb
 
 ## Segment review gate
 
-1. Preserve the diagnostic equation as a discipline map, not a safety formula.
+1. Preserve the diagnostic equation as a discipline map, not a protective formula.
 2. Keep human responsibility non-transferable to the tool.
 3. Distinguish understanding, imitation, authority, and consequence.
 4. Preserve source, consent, attribution, privacy, and skill as core boundaries.

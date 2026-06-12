@@ -1,0 +1,19 @@
+{
+  "segment": 450,
+  "id": "450-governance-law-legitimacy-elections",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "governance-as-mediation-of-plural-potential",
+    "state-of-nature-as-recurring-collapse-of-trusted-mediation",
+    "law-as-limit-and-condition-of-shared-freedom",
+    "legitimacy-vs-coercion-and-authority-vs-truth",
+    "separation-of-powers-as-mutual-limitation",
+    "elections-as-preference-aggregation-not-truth-measurement"
+  ],
+  "summary": "The governance, law, legitimacy, sovereignty, authority, election, democracy, and public-trust safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, terminology, morphology, and idiomatic syntax."
+}

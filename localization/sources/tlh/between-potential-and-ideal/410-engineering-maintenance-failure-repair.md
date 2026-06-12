@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 410
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -42,7 +43,7 @@ truth pIq ornament chellu'bogh 'oHbe' beauty'e'. living architectureDaq relation
 
 ### 18. City: conflicting Potentials structure
 
-city building wa' tInmoHlu'pu'bogh 'oHbe'. conflicting Potentials field 'oH: dwelling, work, memory, commerce, transit, loneliness, meeting, noise, safety, chance je. city pIv conflict qIlbe'; shared life possibility Qaw'be'bogh forms conflictvaD nob.
+city building wa' tInmoHlu'pu'bogh 'oHbe'. conflicting Potentials field 'oH: dwelling, work, memory, commerce, transit, loneliness, meeting, noise, QobHa'ghach, chance je. city pIv conflict qIlbe'; shared life possibility Qaw'be'bogh forms conflictvaD nob.
 
 ### 19. Structural formula of Potential
 
@@ -54,7 +55,7 @@ solution mathematics 'oHbe'. attention mathematics 'oH.
 
 redemptive structure tu'lu'be'. structure Hoch qan. material Hoch worn. plan Hoch vay' exclude. juH Hoch predictbe'pu'bogh uses ghom. city Hoch friction chenmoH.
 
-'ach repairing structure tu'lu': cracks Hutlhbogh world promisebe', cracks invisible 'oHbe'bogh world neH; load Hutlhbogh world promisebe', load veghlaHbogh path neH; error Hutlhbogh world promisebe', safety factor lIjbe'lu'pu'bogh world neH.
+'ach repairing structure tu'lu': cracks Hutlhbogh world promisebe', cracks invisible 'oHbe'bogh world neH; load Hutlhbogh world promisebe', load veghlaHbogh path neH; error Hutlhbogh world promisebe', QobHom polmeH ratio lIjbe'lu'pu'bogh world neH.
 
 engineering, architecture je law nI' 'oHbe':
 

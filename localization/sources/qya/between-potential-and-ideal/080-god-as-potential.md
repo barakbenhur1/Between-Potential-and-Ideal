@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 080
 status: draft
+linguistic_review: specialist-revision-active
+review_record: localization/reviews/between-potential-and-ideal/080-god-as-potential-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -10,15 +12,15 @@ publication: forbidden
 
 ## 1. Eru ve Potential ar i Caurë Eruva
 
-Mauya ná tanca: cendë sina lá anta quetë anwa vinya mana ëa pella i ambar; anta tië hanyien i ambar írë sanwë yesta námiello lá mettallo telyaina. I quetta `Eru` mi capítulo sina esta i réna i maquettao, lá haryalië i hanquentao. Varya i tarna imbe mana polë ná ar mana ná valda, ú airitaila Potential ar ú carila valië vanda tancaina.
+Mauya ná tanca: cendë sina lá anta quetë anwa vinya mana ëa pella i ambar; anta tië hanyien i ambar írë sanwë yesta námiello lá mettallo telyaina. I quetta `Eru` mi cendë sina esta i réna i maquettao, lá haryalië i hanquentao. Varya i tarna imbe mana polë ná ar mana ná valda, ú airitaila Potential ar ú carila valië vanda tancaina.
 
 Mi tengwë sina i caurë Eruva ná yando i caurë ilya cendë quénwa: írë Potential samë canta, vanya airië pella. Canta polë loica, harmë, rácina, envinyata hya colë anwië er ranta. An sina Potential lá ná tanaina ve poitalë túrala, mal ve palar ya mauya lelya ter mauya-cárië. Er ter i lelyalië tana yesta i hyanatië imbe námië lusta ar námië ya ahyanë valda.
 
-An sina capítulo lá polë yanta naicelë tanwanna. Naicelë lá orta i ambar ana mahalma orwa, ar lá carë sa téra apa. Tana er i Potential, írë ahya cuilenna, samë réna anwa. Qui i réna harya tengwë, i tengwë lá ontë naicello immo, mal i lé yassë maquetë cauma, envinyatië ar órë amba.
+An sina cendë lá polë yanta naicelë tanwanna. Naicelë lá orta i ambar ana mahalma orwa, ar lá carë sa téra apa. Tana er i Potential, írë ahya cuilenna, samë réna anwa. Qui i réna harya tengwë, i tengwë lá ontë naicello immo, mal i lé yassë maquetë cauma, envinyatië ar órë amba.
 
 Sillo Ideal lá tarë i yestassë ve axan telyaina. Ahya calima ter i nacca imbe canta ar valë. Lá ëa optimism faica sís. Ëa nihilism estel ó: i hanyalië ya vanda pellallo lá varya ilya nat epë, ar yando i vá hehtien i polië ya hanquentamme landanna polë carë canta valda lá.
 
-Qui capítulo ná cendaina mára, lá quetë ilya nat er ar an sina ilya nat lavaina. I exë: an ilya nat cé harya ovantë, úma harmë ná er incident pitya. Ilya réna, ilya exë, ilya lantië ar ilya envinyatië ahya ranta i lé yassë Potential para hyana rimbë accidental rimbëllo ya polë colë mauya-cárië.
+Qui cendë ná cendaina mára, lá quetë ilya nat er ar an sina ilya nat lavaina. I exë: an ilya nat cé harya ovantë, úma harmë ná er incident pitya. Ilya réna, ilya exë, ilya lantië ar ilya envinyatië ahya ranta i lé yassë Potential para hyana rimbë accidental rimbëllo ya polë colë mauya-cárië.
 
 *I núra námiéo yallo cuilë-isto, tengwë ar Ideal polir tulë cenna*
 
@@ -36,13 +38,13 @@ Ilya quén ná ve mentando er i Minno mi carma hirniëo; lá mentando áyanë hy
 
 I pointa hroa ná i caurë lá carë naicë airë. Naicë lá ná mára an ná naicë. Harya tengwë er írë ná ahyaina mauya-cáriënna, órinna ar canta ya lá ata-cara sa blindavë. I sanwë-patar lá quetë `ilya nat ná mára`. Quetë nat urda lá: yando mi i ya lá ná mára, Potential polë lelya ter réna, ista i valë ar yesta menelë ana canta valda lá.
 
-Pantalië sina ná maura an varya i capítulo ú ahyala áyanë túlalta mi lé raica. I quetta Eru lá ná yantaina pahtien i maquetta, mal estien i núra yallo i maquetta panta. Qui Eru ná cendaina ve túrë pella ya erya ilya nat, i sanwë-patar ahya lusta. Qui Eru esta Potential immo, Ëa polë ná cendaina lá er ve metta, mal ve nómë yassë námië ná cestaina, harmaina, parmaina ar maquetaina ahyalien canta mauya-cárië amba.
+Pantalië sina ná maura an varya i cendë ú ahyala áyanë túlalta mi lé raica. I quetta Eru lá ná yantaina pahtien i maquetta, mal estien i núra yallo i maquetta panta. Qui Eru ná cendaina ve túrë pella ya erya ilya nat, i sanwë-patar ahya lusta. Qui Eru esta Potential immo, Ëa polë ná cendaina lá er ve metta, mal ve nómë yassë námië ná cestaina, harmaina, parmaina ar maquetaina ahyalien canta mauya-cárië amba.
 
 An sina i caurë Eruva lá ná drama i Eäo carien naicë airë. Lá ná yando quetë úmárië maura ar an sina lavaina. I hyanatië tanca ná sina: ambar ya harya lérië, exë ar consequence lá polë ná er tana poitalë ya né manwa epë. Mauya harya haiya imbe mana polë ná ar mana mauya ná. Mi i haiya tana nolmë cuina ontë, mal yando sillo mauya-cárië yesta.
 
 Sina yando i ovantë imbe i Min ar i Rimbë. Rimbë lá avá i erussë; ná i lé er yassë erussë pusta ná sanwë lusta ar ahya omentienna. Quanta ya lá polë omenta exë, loica, hlarë, harma, cilë ar entulë lemya quanta er ve sanwë. Canta cuina maura ceneli rimbi, an er ter ceneli rimbi Potential polë para mana lá mauya ata-carina ar mana ná valda varyien.
 
-Capítulo sina yando panya réna máriéva ilya i sanwë-patar: ú naicelë ahya airë an er ëa. Írë quén ná harmaina, lá mauya quetë i harma né mára an tana i Quanta nat. Tana nauva crueltë nurtaina ve metafísica. I quetë er ya ná cauma ná: apa harma, i mauya-cárië lá ná hehta sa mi ú-tengwë, mal ahya sa astarmënna, envinyatienna, órinna ar varyalië ú ata-carië. Sís yesta i menelë Potentialllo ana Ideal.
+Cendë sina yando panya réna máriéva ilya i sanwë-patar: ú naicelë ahya airë an er ëa. Írë quén ná harmaina, lá mauya quetë i harma né mára an tana i Quanta nat. Tana nauva crueltë nurtaina ve pella hroava qech. I quetë er ya ná cauma ná: apa harma, i mauya-cárië lá ná hehta sa mi ú-tengwë, mal ahya sa astarmënna, envinyatienna, órinna ar varyalië ú ata-carië. Sís yesta i menelë Potentialllo ana Ideal.
 
 ## Segment review gate
 

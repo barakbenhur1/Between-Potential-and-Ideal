@@ -1,0 +1,18 @@
+{
+  "segment": 340,
+  "id": "340-creation-optimum-recursion",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "creation-as-responsible-relinquishment",
+    "potential-excess-vs-ideal-selection-vs-optimal-faithful-form",
+    "single-axis-vs-harmonic-optimum",
+    "named-works-as-examples-not-authorities",
+    "creative-recursion-returning-to-living-center"
+  ],
+  "summary": "The creative and structural distinctions are preserved. Both drafts require specialist revision for extensive foreign-language contamination, mixed-script contamination, terminology, morphology, and idiomatic syntax."
+}

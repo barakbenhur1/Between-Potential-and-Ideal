@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 400
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -16,7 +17,7 @@ publication: forbidden
 
 Engineering asks ma i structure will stand. Architecture asks manen person will live inside i ya stands.
 
-> **Architecture = Structure + Use + Context + Human Meaning**
+> **Architecture = Structure + Use + Conditions appearanceo + Human Meaning**
 
 Room lá ná merely volume. Proposes behavior. Corridor decides manen people meet hya avoid one another. Window ná relation imbe inside ar outside. Door ná decision about boundary. Good house lá only protects i body; gives i form lifeo place appearien.
 
@@ -48,7 +49,7 @@ Light changes wall ú moving sa. Enlarges room ú extending sa. Makes dust, dept
 
 > **f_external ≈ f_n**
 
-Bridge polë carry large load ar still ná endangered by repeated force at wrong frequency. Strength lá ná er magnitude. Yá i maquetta ná rhythm.
+Bridge polë carry large load ar still ná endangered by repeated force at wrong rate oscillationo. Strength lá ná er magnitude. Yá i maquetta ná rhythm.
 
 > **Resonance = When the world pushes in the rhythm the structure already fears**
 

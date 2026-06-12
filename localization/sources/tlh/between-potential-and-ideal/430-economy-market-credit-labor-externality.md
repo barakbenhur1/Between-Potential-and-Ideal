@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 430
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -12,13 +13,13 @@ publication: forbidden
 
 *market, credit, debt, labor, profit, externality je*
 
-### 7. Market: mirror, Qun 'oHbe'
+### 7. Market: mIllogh, Qun 'oHbe'
 
 > **Market = Distributed Information System**
 
-prices, transactions, supply, demand je vegh distributed information process-laH market. ghot wa' leghlaHbe'bogh Dochmey leghlaH. 'ach mirror 'oH market'e'; conscience 'oHbe'.
+prices, transactions, supply, demand je vegh distributed information process-laH market. ghot wa' leghlaHbe'bogh Dochmey leghlaH. 'ach mIllogh 'oH market'e'; conscience 'oHbe'.
 
-> **Market = Mirror**
+> **Market = mIllogh**
 >
 > **Market ≠ God**
 
@@ -52,7 +53,7 @@ tool idol moj, toy'nISbogh human being lIjDI'.
 
 > **Labor = Human Potential Embodied in Time**
 
-vumwI' output neH producebe'. time, attention, skill, fatigue, risk, responsibility, years of learning, body/mind erosion je nob. vaj labor cost neH 'oHbe'. testimony 'oH.
+vumwI' output neH producebe'. time, attention, skill, fatigue, risk, responsibility, years of learning, body/mind erosion je nob. vaj labor cost neH 'oHbe'. vumwI' yInDaj 'angbogh Degh 'oH.
 
 > **Human Meaning of Wage = Price + Recognition**
 

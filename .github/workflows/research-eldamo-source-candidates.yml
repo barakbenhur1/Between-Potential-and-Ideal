@@ -1,0 +1,20 @@
+name: Research Eldamo Source Candidates
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract pinned Eldamo entries for tamma and pusta
+        env:
+          SCRIPT_SHA: ${{ github.sha }}
+        run: |
+          curl --fail --silent --show-error \
+            "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${SCRIPT_SHA}/tools/extract_eldamo_source_candidates.py" \
+            --output /tmp/extract_eldamo_source_candidates.py
+          python3 /tmp/extract_eldamo_source_candidates.py tamma pusta

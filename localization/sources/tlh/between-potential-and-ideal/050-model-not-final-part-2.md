@@ -3,6 +3,8 @@ document_id: between-potential-and-ideal
 language: tlh
 segment: 050
 status: draft
+linguistic_review: specialist-revision-active
+review_record: localization/reviews/between-potential-and-ideal/050-model-not-final-part-2-review.md
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -10,15 +12,15 @@ publication: forbidden
 
 ## pat 'oH, maqghach Qav 'oHbe' — 'ay' cha'
 
-### 5. ghantoH, QeD, metaphysics je
+### 5. ghantoH, QeD, Hap Hur qech je
 
 rut energy, weight, field, medium, horizon, information, system, recursion, boundary je rur mu'mey lo' pat. QeDvo' 'op, meqvo' 'op, QubQeDvo' 'op, Hol motlhvo' 'op je. vaj poH Hoch yu'nISlu': QeD mu' 'oH'a'? pat ghantoH 'oH'a'? inspiration neH 'oH'a'? patlhmoHmeH Hol neH 'oH'a'?
 
-ghantoH tobghach 'oHbe'. lugh, wovmoH, lo'laH je ghantoH, 'ach experiment, mI' QeD theorem, measurement je quv SuqlaHbe'. rarghach 'anglaH; tlhapbogh qo' teH toblaHbe'.
+ghantoH tobghach 'oHbe'. lugh, wovmoH, lo'laH je ghantoH, 'ach experiment, mI' QeD chut tob, measurement je quv SuqlaHbe'. rarghach 'anglaH; tlhapbogh qo' teH toblaHbe'.
 
 QubQeDvaD QeD Deghmey warehouse 'oHbe' HapQeD'e'. HapQeD lo'chugh pat, yepnIS: qech `tob`meH lo'nISbe'; cosmology QaQ pagh mIgh chut mojmoHnISbe'; quantum QeD qa' lalDan mojmoHnISbe'; qIjbogh QemjIq pegh HochvaD ghantoH tlhab mojmoHnISbe'.
 
-metaphysics jatlhDI' pat, metaphysics jatlh 'e' ngu'nIS. honestyvam pujmoHbe'; earnbe'bogh quv nIHbe'meH Qan. serious mojmeH lab coat tuqnISbe' metaphysics Qu' pabtaHbogh.
+Hap Hur qech jatlhDI' pat, Hap Hur qech jatlh 'e' ngu'nIS. honestyvam pujmoHbe'; earnbe'bogh quv nIHbe'meH Qan. serious mojmeH lab coat tuqnISbe' Hap Hur qech Qu' pabtaHbogh.
 
 ### 6. mevlaHbogh pat
 
@@ -34,11 +36,11 @@ mevlaHbe'chugh, pat 'oHbe'choH. qo' teHvo' 'oH'egh Qanbogh system moj. pat Optim
 
 pat nungbe' yIn. ghot ghajbe' pat. ghot yInbogh pat'egh tobmeH lo'laHbe'.
 
-patDaq 'elDI' ghot, 'oy', chenmoHghach, testimony, SIQghach je, qech valmoHmeH Hap raw' bIHbe'. overusevo' QannISbogh mung yInbogh bIH. pat wovmoHlaH ghantoH, 'ach prisoner mojmoHlaHbe'.
+patDaq 'elDI' ghot, 'oy', chenmoHghach, ghot QIch, SIQghach je, qech valmoHmeH Hap raw' bIHbe'. overusevo' QannISbogh mung yInbogh bIH. pat wovmoHlaH ghantoH, 'ach prisoner mojmoHlaHbe'.
 
-testimony De' neH 'oHbe'. mung yInboghvo' paw. chuq, DIl, porgh, qawghach, QIHlaHghach je qeng. testimonyvo' `qech` neH tlhapbogh pat, mung polbe'chugh, ethics chIl.
+ghot QIch De' neH 'oHbe'. mung yInboghvo' paw. chuq, DIl, porgh, qawghach, QIHlaHghach je qeng. ghot QIchvo' `qech` neH tlhapbogh pat, mung polbe'chugh, ghob chIl.
 
-testimonyvo' nuq ghojlaHlu' neH yu'be' pat Qu' pabtaHbogh; nuq tlhapnISbe'lu' yu' je. pat lonmeH pung 'ay' 'oH: lughlaw'meH Hoch lo'meH nID lon.
+ghot QIchvo' nuq ghojlaHlu' neH yu'be' pat Qu' pabtaHbogh; nuq tlhapnISbe'lu' yu' je. pat lonmeH pung 'ay' 'oH: lughlaw'meH Hoch lo'meH nID lon.
 
 ### 8. AI 'ej tlhoy luqbogh Hol
 
@@ -46,7 +48,7 @@ pat nIDmeH jan chu' 'oH AI'e', qech nIv law' teHbogh pat nIv puS rur jatlhmoHlaH
 
 vaj pat pojmeH jan mojlaH AI, 'ach overclaim polish machine mojlaH je. consistency nuDmeH boQlaH, domain confusion tu'meH, versions compare, tlhoy tInbogh Hol ngu'meH, QapHa'ghach mark. 'ach discipline Hutlhchugh, pat QobmoHlaH: smooth law', luq law', Qu' pab puS.
 
-pat Qav law' rurmoHmeH Qu' 'oHbe' AI Qu' pabtaHbogh'e'; veHDaj qIjchu'meH boQmeH 'oH. mirror, nuDmeH jan je rur toy'nIS; quv mung rurbe' 'ej yInbogh judgment tambe'.
+pat Qav law' rurmoHmeH Qu' 'oHbe' AI Qu' pabtaHbogh'e'; veHDaj qIjchu'meH boQmeH 'oH. leghmeH jan, nuDmeH jan je rur toy'nIS; quv mung rurbe' 'ej yInbogh judgment tambe'.
 
 vaj AI lo'lu'DI' pat nID rap lo'nIS: Qu' pabghach law'moH'a' jan, pagh Hol confidence neH law'moH'a'?
 
@@ -58,29 +60,29 @@ patDaq gher'ID Hoch Qapchugh, Qu' pabghach chIl. pat tobchugh 'oy' 'ej pat tobch
 
 nuq pat QaghmoHlaH, pujmoHlaH, tI'laH 'e' Sovbe'chugh, pat yInbogh 'oHbe'; meq patlhmoHlu'pu'bogh 'oH. chuqlaw'laH, 'ach immunity tlhoy ghaj. qo' jangmeH Daq nobbe'.
 
-vaj QapHa'laHbogh Daq SovnIS pat. pojghach, tI'ghach, vuSghach, rut rejectghach je chaw'nIS. tI'laHghach theoryvaD Qob 'oHbe'; yIn taH theory 'e' 'ang.
+vaj QapHa'laHbogh Daq SovnIS pat. pojghach, tI'ghach, vuSghach, rut lajQo'ghach je chaw'nIS. tI'laHghach qech patvaD Qob 'oHbe'; yIn taH qech pat 'e' 'ang.
 
-### 10. tulghach ghajbogh nihilism
+### 10. tulghach ghajbogh pagh lo'laHghach qech
 
-lay' lo'taHvIS nihilism qIlbe' pat. Qu' lonmeH meq mojmoH nihilism 'e' tem.
+lay' lo'taHvIS pagh lo'laHghach qech qIlbe' pat. Qu' lonmeH meq mojmoH pagh lo'laHghach qech 'e' tem.
 
 Hoch lay'lu', Hoch QaQvaD Hechlu', 'oy' lughmoHlu', qo' QaQ pagh mIgh chut ghajpa' chenmoHlu', Ideal Qapbej 'e' jatlhbe'. qech tu'lu'be', He tu'lu'be', Qu' tu'lu'be', nIDmeH meq tu'lu'be', tulghach tu'lu'be' 'e' jatlhbe' je.
 
 Daq Qatlh law' qengmeH nID: Sovchu'ghach Qav tu'lu'be', 'ach Qu' tu'lu'. lay' tu'lu'be', 'ach DuH tu'lu'. toDghach toblu'pu' tu'lu'be', 'ach lurgh lo'laH tu'lu'. qo' ghajghach tu'lu'be', 'ach qo'vaD ngebbe'meH Qu' tu'lu'.
 
-meqvammo' pat 'oH, maqghach Qav 'oHbe'. certainty mojbe' tulghach. despair mojbe' nihilism. jojDaq Qam pat: Ideal Qapbej 'e' tobbe', 'ach proof Hutlhghach SaHbe'ghach chaw' mojmoHbe'.
+meqvammo' pat 'oH, maqghach Qav 'oHbe'. Sovchu'ghach mojbe' tulghach. tulHa'ghach mojbe' pagh lo'laHghach qech. jojDaq Qam pat: Ideal Qapbej 'e' tobbe', 'ach tobghach Hutlhghach SaHbe'ghach chaw' mojmoHbe'.
 
 ### 11. Qavghach: toDuj HemHa'ghach je
 
 vaj yepmeH taghghach neH 'oHbe' 'ay'vam'e'. Hoch latlh QapmeH ghu'mey cher. pat lajchugh laDwI', HarnISbe'; nuDnIS. rejectchugh, rejectghach lo'laHlaH, pImghach puj, transition nomqu', ghantoH quv nIH, pagh 'IHqu'bogh HolDaq ghot ngabbogh Daq 'angchugh.
 
-cha' fidelity pol pat: theory toDujvaD fidelity, pojghach HemHa'ghachvaD fidelity je. toDuj Hutlhchugh, QonoSmey ghomHa' neH tu'lu'. HemHa'ghach Hutlhchugh, pat'egh immunity tlhoy nobbogh system tu'lu'.
+cha' matlhghach pol pat: qech pat toDujvaD matlhghach, pojghach HemHa'ghachvaD matlhghach je. toDuj Hutlhchugh, QonoSmey ghomHa' neH tu'lu'. HemHa'ghach Hutlhchugh, pat'egh Qan'eghghach tlhoy nobbogh system tu'lu'.
 
-cha' HoSmey polmeH Ideal ghaj 'ay'vam: ngebbe'bogh tulghach, despair 'oHbe'bogh pojghach, qo' ghajbe'bogh 'ach qo'vaD Qu' pabtaHbogh pat.
+cha' HoSmey polmeH Ideal ghaj 'ay'vam: ngebbe'bogh tulghach, tulHa'ghach 'oHbe'bogh pojghach, qo' ghajbe'bogh 'ach qo'vaD Qu' pabtaHbogh pat.
 
-### mung discipline
+### mung pabghach
 
-QapmeH mungmey, yepmeH mu'mey je: theory'egh qechmeyDaj je lo' 'ay'vam — Potential, Ideal, Optimal, mung yInbogh, chuq, pojghach, lonmeH pung je. QeD toblu'pu'bogh, lalDan chu', pat SoQ je rur theory 'angbe'. pat laDmeH nuDmeH je ghu'mey Del, ghantoH tobghach je, tulghach certainty je, patlhmoHmeH Hol qo' ghajghach je mISbe'meH.
+QapmeH mungmey, yepmeH mu'mey je: qech pat'egh qechmeyDaj je lo' 'ay'vam — Potential, Ideal, Optimal, mung yInbogh, chuq, pojghach, lonmeH pung je. QeD toblu'pu'bogh, lalDan chu', pat SoQ je rur qech pat 'angbe'. pat laDmeH nuDmeH je ghu'mey Del, ghantoH tobghach je, tulghach Sovchu'ghach je, patlhmoHmeH Hol qo' ghajghach je mISbe'meH.
 
 ## Segment review gate
 

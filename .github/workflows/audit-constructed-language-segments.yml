@@ -5,8 +5,21 @@ on:
     branches: [main]
     paths:
       - "tools/audit_constructed_language_segments.py"
+      - "tools/validate_external_specialist_reviews.py"
+      - "tools/validate_external_specialist_review_substance.py"
+      - "tools/preflight_external_specialist_review.py"
+      - "tools/test_validate_external_specialist_reviews.py"
+      - "tools/test_validate_external_specialist_review_substance.py"
+      - "tools/test_external_specialist_review_templates.py"
+      - "tools/test_external_review_handoff.py"
+      - "tools/test_preflight_external_specialist_review.py"
       - "localization/sources/tlh/**"
       - "localization/sources/qya/**"
+      - "localization/reviews/between-potential-and-ideal/020-external-*.md"
+      - "localization/reviews/between-potential-and-ideal/020-tamma-pusta-source-trace-r3.md"
+      - "localization/reviews/between-potential-and-ideal/020-nonreplacement-source-trace-r3.md"
+      - "localization/reviews/between-potential-and-ideal/020-tlh-source-ledger-trace-r3.md"
+      - "localization/reviews/between-potential-and-ideal/020-specialist-status.json"
       - ".github/workflows/audit-constructed-language-segments.yml"
   workflow_dispatch:
 
@@ -14,17 +27,50 @@ permissions:
   contents: read
 
 jobs:
+  template-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
+          show-progress: false
+          sparse-checkout: |
+            tools/validate_external_specialist_reviews.py
+            tools/validate_external_specialist_review_substance.py
+            tools/test_external_specialist_review_templates.py
+            localization/reviews/between-potential-and-ideal/020-external-qya-review-response-template-r2.md
+            localization/reviews/between-potential-and-ideal/020-external-tlh-review-response-template-r2.md
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Test complete specialist response templates
+        run: python3 tools/test_external_specialist_review_templates.py
+
   audit:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
+          show-progress: false
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
       - name: Audit all paired segments
         run: python3 tools/audit_constructed_language_segments.py
+      - name: Test specialist review intake states
+        run: python3 tools/test_validate_external_specialist_reviews.py
+      - name: Test specialist review substance validator
+        run: python3 tools/test_validate_external_specialist_review_substance.py
+      - name: Test standalone specialist review preflight
+        run: python3 tools/test_preflight_external_specialist_review.py
+      - name: Test external-review handoff contract
+        run: python3 tools/test_external_review_handoff.py
+      - name: Validate external specialist review intake
+        run: python3 tools/validate_external_specialist_reviews.py
+      - name: Validate external specialist review substance
+        run: python3 tools/validate_external_specialist_review_substance.py
       - uses: actions/upload-artifact@v4
         with:
           name: constructed-language-paired-audit

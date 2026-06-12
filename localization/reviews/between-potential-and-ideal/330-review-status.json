@@ -1,0 +1,18 @@
+{
+  "segment": 330,
+  "id": "330-contextuality-source-ai-ending",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "context-vs-subjectivism-or-relativism",
+    "source-to-action-evidence-path",
+    "AI-operational-context-vs-quantum-explanation",
+    "truth-with-disclosed-conditions",
+    "recursive-context-definition"
+  ],
+  "summary": "The contextual, evidential, AI-operational, and recursive safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, terminology, morphology, and idiomatic syntax."
+}

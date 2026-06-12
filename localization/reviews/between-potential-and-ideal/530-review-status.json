@@ -1,0 +1,20 @@
+{
+  "segment": 530,
+  "id": "530-gravity-holes-radiation",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "gravity-as-physical-structure-not-will-or-morality",
+    "limitation-as-possible-condition-without-all-limits-being-good",
+    "black-holes-as-geometric-contraction",
+    "white-holes-as-hypothetical-limited-images",
+    "Hawking-particle-account-as-instructional-image",
+    "scientific-caution-about-vacuum-particle-radiation-observer-and-horizon",
+    "structural-precedence-without-more-real-claim"
+  ],
+  "summary": "The gravity, contraction, horizon, black-hole, white-hole, radiation, particle, observer, appearance, and anti-overreach safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, terminology, morphology, and idiomatic syntax."
+}

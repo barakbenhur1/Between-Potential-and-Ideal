@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "segment": 20,
+  "round": 2,
+  "stage": "relational-room-source-expansion",
+  "status": "research-recorded",
+  "approved": false,
+  "publication": "forbidden",
+  "source_record": "localization/reviews/between-potential-and-ideal/020-round-2-source-expansion-relational-room.md",
+  "title_architecture": "localization/reviews/between-potential-and-ideal/020-round-2-title-architecture.md",
+  "sentence_frame_matrix": "localization/reviews/between-potential-and-ideal/020-round-2-sentence-frame-matrix.md",
+  "retained_research_directions": [
+    "nome-place-or-location",
+    "hye-another-person-pronoun-direction",
+    "quen-explicit-person-direction",
+    "varya-protect-verbal-direction",
+    "cauma-protection-or-shelter-anchor",
+    "ara-beside-direction",
+    "lisse-grace-under-VT44-18-only"
+  ],
+  "explicit_non_decisions": [
+    "no-inflected-form-for-for-another-approved",
+    "no-relational-room-phrase-approved",
+    "no-protection-sentence-approved",
+    "no-subtitle-approved",
+    "no-source-file-change",
+    "no-linguistic-approval"
+  ],
+  "acceptance": {
+    "source_expansion_recorded": true,
+    "primary_sources_traced_for_all_directions": false,
+    "pronoun_or_noun_case_paradigm_verified": false,
+    "relational_room_frame_completed": false,
+    "protection_frame_completed": false,
+    "three_context_tests_passed": false,
+    "independent_review_complete": false,
+    "approved": false
+  },
+  "next_action": "trace primary-source and paradigm evidence before filling one relational-room frame with exact sources, literal parse and idiomatic back-translation"
+}

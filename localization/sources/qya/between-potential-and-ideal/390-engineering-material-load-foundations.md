@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 390
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -16,7 +17,7 @@ publication: forbidden
 
 _Image description draft: engineered system yassë Potential becomes structure, channeling, testing ar repair._
 
-From outside, engineering looks ve discipline calculationo: loads, dimensions, materials, codes, safety factors, forces, sections ar drawings. Architecture looks ve discipline formo: lines, facades, spaces, light, movement, proportion ar beauty.
+From outside, engineering looks ve discipline calculationo: loads, dimensions, materials, codes, ratios yar hehtar room erroren, forces, sections ar drawings. Architecture looks ve discipline formo: lines, facades, spaces, light, movement, proportion ar beauty.
 
 Mal under both stands i same maquetta:
 
@@ -56,13 +57,13 @@ Structure ná tested lá írë drawn, mal írë something leans on sa. Person st
 
 Qui demand exceeds i relevant capacity, i structure enters zone failureo, damageo hya limit-state violationo. Mal capacity changes, demand changes, materials age ar uses mutate. Engineering lá ná er i maquetta ma structure stands now; ná ma polë continue standing mi time.
 
-### 4. Safety factor: admission that we are not God
+### 4. Ratio ya hehta room erroren: admission that we are not God
 
-> **Factor of Safety = Capacity / Demand**
+> **Ratio ya hehta room erroren = Capacity / Demand**
 
 Ratio simplified sina lá replaces codes, load factors, material factors, limit states ar probabilistic reasoning. Mal philosophical forceerya ná clear: avá design exactly at i edge.
 
-Safety factor ná mathematical humility. Quetë: perhaps measurement ná wrong; perhaps material lá nauva perfect; perhaps use nauva harsher; perhaps load ya lá predicted arrives. Dangerous Ideal quetë: `I calculated, therefore I know.` Living Ideal quetë: `I calculated, therefore I know yassë leave room an error.`
+Ratio ya hehta room erroren ná mathematical humility. Quetë: perhaps measurement ná wrong; perhaps material lá nauva perfect; perhaps use nauva harsher; perhaps load ya lá predicted arrives. Dangerous Ideal quetë: `I calculated, therefore I know.` Living Ideal quetë: `I calculated, therefore I know yassë leave room an error.`
 
 ### 5. Stress ar strain: manen matter says it hurts
 

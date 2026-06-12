@@ -3,6 +3,7 @@ document_id: between-potential-and-ideal
 language: qya
 segment: 310
 status: draft
+linguistic_review: specialist-revision-active
 source_document: site/files/between-potential-and-ideal-en.md
 semantic_cross_check: site/files/between-potential-and-ideal-he.md
 publication: forbidden
@@ -10,21 +11,21 @@ publication: forbidden
 
 ## Locality, Non-locality ar Contextuality — Ranta Minya
 
-*Correlation lá ná message, ar context lá ná noise ara i answer*
+*Correlation lá ná message, ar i conditions i answero lá nar noise*
 
 ![Locality, Non-locality, and Contextuality](../../../figures/chapter-locality-nonlocality-contextuality-v2.png)
 
-_Image description draft: local ar non-local relations, measurement, context ar correlations yar lá nar messages._
+_Image description draft: local ar non-local relations, measurement, i conditions yassen tana ná cendaina, ar correlations yar lá nar messages._
 
-Correlation lá ná message, ar context lá ná noise ara i answer. Sin nar i attë warnings ú yar locality, non-locality ar contextuality lá polir ná used responsibly. Capítulo sina lá cesta prove i theory ter quantum mechanics, ar lá cesta carë Bell, Kochen-Specker, Bohmian mechanics hya measurement philosophical slogans. Cesta parma sello discipline appearanceo: mana polë ná quétina natten írë i lé yassë ná measured, maquetaina ar carna appear ná ranta i conditions i answero?
+Correlation lá ná message, ar i conditions i answero lá nar noise. Sin nar i attë warnings ú yar locality, non-locality ar contextuality lá polir ná used responsibly. Cendë sina lá cesta prove i theory ter quantum mechanics, ar lá cesta carë Bell, Kochen-Specker, Bohmian mechanics hya measurement philosophical slogans. Cesta parma sello discipline appearanceo: mana polë ná quétina natten írë i lé yassë ná measured, maquetaina ar carna appear ná ranta i conditions i answero?
 
-Non-locality lá ná telepathy, lá instant message, ar lá permission quetien ilya nat affects ilya nat. I no-signalling principle ná safeguard maura: correlation polë ná non-classical ú ahyala communication channel. Contextuality lá ná relativism ar lá claim lá ëa truth. Parma lesson subtle: ëar lúmi yassen mana polë ná quétina responsibly depends conditions measuremento, lambë, assumptions ar relational structure yassë i result appears.
+Non-locality lá ná telepathy, lá instant message, ar lá permission quetien ilya nat affects ilya nat. I no-signalling principle ná safeguard maura: correlation polë ná non-classical ú ahyala tië communicationo. Contextuality lá ná relativism ar lá claim lá ëa truth. Parma lesson subtle: ëar lúmi yassen mana polë ná quétina responsibly depends conditions measuremento, lambë, assumptions ar relational structure yassë i result appears.
 
-Mi sense sina, capítulo lá ná quantum tenna hlarë deep. Ná quantum er insofar as maura precision. Potential lá ná `ilya nat possible`; Ideal lá ná `truth ú context`; Optimal lá ná answer ya auta conditionsryar. Optimal ná answer ya ista i context yassë works.
+Mi sense sina, cendë lá ná quantum tenna hlarë deep. Ná quantum er insofar as maura precision. Potential lá ná `ilya nat possible`; Ideal lá ná `truth ú i conditions yassë quétina`; Optimal lá ná answer ya auta conditionsryar. Optimal ná answer ya ista i conditions yassen works.
 
 ### 1. Locality: responsibility yesta somewhere
 
-Locality minyavë ná physical concept, mal mi capítulo sina yando anta structural lesson careful: quetien responsibly, mauya ista yallo quetë. Location lá ná er limitation. Yando ná condition responsibilityo. Quén ya quetë ve from nowhere risks quetien ilya natten while carrying conditions of nothing.
+Locality minyavë ná physical concept, mal mi cendë sina yando anta structural lesson careful: quetien responsibly, mauya ista yallo quetë. Location lá ná er limitation. Yando ná condition responsibilityo. Quén ya quetë ve from nowhere risks quetien ilya natten while carrying conditions of nothing.
 
 Mi theory, i living source lá ná divine observer pella i system. Ná situated source: hröa, lambë, memory, tools, maquetta, limitation ar possibility erroro. Situatedness sina lá carë sa less real. Carë sa more responsible, an mauya quetë yallo quetë ar mana lá polë cenë sello.
 
@@ -36,11 +37,11 @@ Ideal lá ná view without place. Ideal ú place polë ahya voice ya auta cuilë
 
 Quantum non-locality ná concept delicate, lá license mysticism. Lá mean instant messaging, lá prove telepathy, lá prove ilya freely affects ilya, ar lá carë i world voluntary web meanings.
 
-I methodological safeguard maura ná no-signalling: quantum correlations polir ná non-classical, mal lá polir ná used sendien controlled information faster than light. Correlation lá ná communication channel. Relation lá ná control. Dependence lá necessarily ná direct moral responsibility.
+I methodological safeguard maura ná no-signalling: quantum correlations polir ná non-classical, mal lá polir ná used sendien controlled information faster than light. Correlation lá ná tië communicationo. Relation lá ná control. Dependence lá necessarily ná direct moral responsibility.
 
 Quetë sina matters yando pella physics. Mi cuilë ar society, easy ná yontien relation ó message, correlation ó cause, resemblance ó meaning, statistical dependence ó responsibility. I theory mauya avoid i same loica: i fact attë nat nar connected lá mean min speaks for i other.
 
-Potential lá ná network yassë ilya possibility sends message ilya exenna. Ná field yassë possibilities polir appear under conditions. Ideal lá ná expansion ilya connections ilya directions, mal clarification mana connections nar worthy, mi mana context ar under mana responsibility.
+Potential lá ná network yassë ilya possibility sends message ilya exenna. Ná field yassë possibilities polir appear under conditions. Ideal lá ná expansion ilya connections ilya directions, mal clarification mana connections nar worthy, mi mana conditions ar under mana responsibility.
 
 ### 3. Bell: boundary intuition local-classical
 

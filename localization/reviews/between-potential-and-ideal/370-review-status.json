@@ -1,0 +1,18 @@
+{
+  "segment": 370,
+  "id": "370-art-of-potential",
+  "review_type": "paired-linguistic-first-pass",
+  "status": "first-pass-complete",
+  "outcome": "revision-required",
+  "languages": ["tlh", "qya"],
+  "publication": "forbidden",
+  "source_parity": "passed",
+  "protected_distinctions": [
+    "source-risk-form-and-responsible-deletion",
+    "no-romanticizing-imperfection",
+    "AI-tool-extending-or-replacing-formation",
+    "canon-as-memory-tested-through-time",
+    "market-as-enabling-and-deforming-not-final-judge"
+  ],
+  "summary": "The artistic, source, AI, canon, and market safeguards are preserved. Both drafts require specialist revision for extensive foreign-language contamination, terminology, morphology, and idiomatic syntax."
+}

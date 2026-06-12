@@ -1,0 +1,86 @@
+{
+  "schema_version": 5,
+  "document_id": "between-potential-and-ideal",
+  "segment": 20,
+  "stage": "specialist-source-validation-round-2",
+  "publication": "forbidden",
+  "approval_effect": "test-only",
+  "language_profile": "Late-Quenya-first",
+  "source_control": {
+    "canonical_english": "site/files/between-potential-and-ideal-en.md",
+    "semantic_result": "Use explicit dialogue and path clauses; do not use an abstract relation noun or a metaphysical remain predicate."
+  },
+  "decisions": [
+    {
+      "concept": "closed-routes",
+      "form": "har- / lemya- / ser- / mar- / ovantë",
+      "decision": "rejected-for-current-frame",
+      "source_basis": "round-2 remain and relation assessments",
+      "limits": "Locational persistence and unsupported compact relation wording do not express the required distinction."
+    },
+    {
+      "concept": "directed-speech",
+      "form": "quet- plus explicit recipient",
+      "decision": "primary-sources-recorded",
+      "source_basis": "PE17/40 and related sources; VT41/11,13; PM/401; dative VT6/14 and VT43/37",
+      "limits": "Every recipient form remains subject to clause-level parsing."
+    },
+    {
+      "concept": "living-participant",
+      "form": "coirëa quén; dative i coirëa quenen",
+      "decision": "approved-for-controlled-tests",
+      "source_basis": "coirëa PM/399; quén PE19/93 and WJ/361,372,393,407",
+      "limits": "Literal meaning is living person, not an abstract lexical translation of source."
+    },
+    {
+      "concept": "animate-anaphor",
+      "form": "sena",
+      "decision": "rejected-for-prime-intellect",
+      "source_basis": "VT49/14 and the round-2 adversarial review",
+      "limits": "Using an animate pronoun would silently classify Prime Intellect as animate."
+    },
+    {
+      "concept": "reverse-directed-speech",
+      "form": "I coirëa quén quetë Prime Intellect-enna.",
+      "decision": "preferred-review-notation",
+      "source_basis": "proper-name allative speech construction Elendilenna at PM/401",
+      "limits": "The hyphen is review notation; final suffix styling on the protected English name remains unresolved."
+    },
+    {
+      "concept": "agency-path",
+      "form": "I coirëa quén lelya tierya.",
+      "decision": "internal-review-pass-for-tests",
+      "source_basis": "lelya- WJ/363; tië Late-Quenya sources including UT/22; -rya PE17 and VT49 sources",
+      "limits": "tierya is a documented formation rather than a directly attested whole form and still needs external review."
+    },
+    {
+      "concept": "governing-pattern-anchor",
+      "form": "Cantië",
+      "decision": "three-context-pass-for-tests",
+      "source_basis": "NM/287-288; 020-cantie-test.md; 020-three-context-results-round-2.md",
+      "limits": "It means pattern and does not independently express transformation, grace, release, distance, or the complete title."
+    },
+    {
+      "concept": "unsupported-title-derivation",
+      "form": "Ahyaliëo",
+      "decision": "rejected-pending-documentation",
+      "source_basis": "ahya- is sourced at PM/395, but the abstract noun and genitive chain are not documented",
+      "limits": "Use a transparent verbal extension instead."
+    }
+  ],
+  "acceptance": {
+    "closed_unsafe_routes": true,
+    "primary_dialogue_sources_entered": true,
+    "primary_path_sources_entered": true,
+    "living_participant_expression_approved": true,
+    "directed_speech_pair_internally_parsed": true,
+    "agency_path_clause_internally_parsed": true,
+    "internal_adversarial_review_complete": true,
+    "cantie_three_context_anchor_passed": true,
+    "external_independent_review_complete": false,
+    "complete_main_title_selected": false,
+    "production_source_changed": false,
+    "segment_approved": false
+  },
+  "next_action": "Source and test a transparent verbal main-title extension based on ahya-. Do not reuse Ahyaliëo and do not change production text before external specialist review."
+}
