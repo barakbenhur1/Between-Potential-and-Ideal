@@ -5,6 +5,7 @@ import json, re, sys
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "localization/documents"
 CONFIG = ROOT / "localization/config.json"
+TRANSLATION_MANIFEST = ROOT / "localization/translation-manifest.json"
 SEGMENT_RE = re.compile(r"^(\d+)-.+\.md$")
 
 
@@ -25,6 +26,11 @@ def front_matter(path):
 
 def main():
     config = json.loads(CONFIG.read_text(encoding="utf-8"))
+    release = json.loads(TRANSLATION_MANIFEST.read_text(encoding="utf-8"))
+    beta_languages = set(release.get("completed_languages", []))
+    beta_disclosed = bool(release.get("review_disclosure"))
+    beta_release = release.get("status") == "public-release-built" and beta_disclosed
+
     errors, warnings = [], []
     contracts = sorted(DOCS.glob("*.json"))
     if not contracts:
@@ -77,15 +83,22 @@ def main():
                     errors.append(f"{segment_rel}: language mismatch")
                 if meta.get("publication") != "forbidden" and not lang_cfg.get("publish"):
                     errors.append(f"{segment_rel}: draft segment must declare publication: forbidden")
-                if lang_cfg.get("publish") and meta.get("status") != "approved":
-                    errors.append(f"{segment_rel}: published language requires approved segment")
-                elif meta.get("status") != "approved":
-                    warnings.append(f"{segment_rel}: status={meta.get('status', 'missing')}")
+
+                status = meta.get("status", "missing")
+                if lang_cfg.get("publish") and status != "approved":
+                    if beta_release and language in beta_languages:
+                        warnings.append(
+                            f"{segment_rel}: public beta status={status}; independent linguistic approval remains pending"
+                        )
+                    else:
+                        errors.append(f"{segment_rel}: published final language requires approved segment")
+                elif status != "approved":
+                    warnings.append(f"{segment_rel}: status={status}")
             if numbers != sorted(numbers):
                 errors.append(f"{contract_path.name}: {language} segments are not numerically ordered")
 
     if warnings:
-        print(f"WARNINGS: {len(warnings)} draft segment statuses")
+        print(f"WARNINGS: {len(warnings)} non-final segment statuses")
         for item in warnings:
             print("-", item)
     if errors:
@@ -93,7 +106,7 @@ def main():
         for item in errors:
             print("-", item)
         return 1
-    print(f"OK: localized document contracts valid ({len(contracts)} contract(s)).")
+    print(f"OK: localized document contracts valid ({len(contracts)} contract(s)); public beta statuses remain explicitly non-final.")
     return 0
 
 
