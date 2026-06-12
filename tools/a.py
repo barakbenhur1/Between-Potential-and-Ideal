@@ -10,7 +10,7 @@ SEG={'about':(750,760,770),'ai-as-witness':(170,),'ai-believes':(70,170),'ai-ope
 TITLES={
 'tlh':{'about':'jInmol Delghach','ai-as-witness':'AI leghwI\'','ai-believes':'AI Harghach','ai-open-problems':'AI yu\'mey poS','ai':'AI','applied':'lo\'meH qechmey','art-of-potential':'Potential mIw "IH','black-holes-horizons-holography':'qIjbogh QemjIqmey, veHmey, holography','boundary-horizons':'veHmey','changelog':'choHmey QonoS','core':'botlh','critique':'poj','discussion':'ja\'chuqghach','education-of-potential':'Potential ghojmoHghach','files':'ghItlhmey','glossary':'qechmey mu\'ghom','high-energy-physics':'HoS jen HapQeD','i-have-no-mouth':'I Have No Mouth','law-of-potential':'Potential chut','locality-nonlocality-contextuality':'Daq, Daqbe\'ghach, ghu\' je','medicine-of-potential':'Potential Qelghach','methodology':'mIw','mistake-repeats':'Qagh qa\'','music-of-potential':'Potential QoQ','potential-extensions':'Potential Sachghachmey','potential-ideal-optimal':'Potential, Ideal, Optimal','recursive-edge':'chelqa\'bogh veH','response':'jangghach','science-physics-math-boundary-discipline':'QeD, HapQeD, mI\'QeD je veH','shape-of-the-universe-and-potential':'qo\' Hoch chen','sources':'mungmey','stories':'lutmey','summary':'qIjmeH ghItlh','witness':'leghwI\''},
 'qya':{'about':'I Quenta','ai-as-witness':'AI ve Astarmo','ai-believes':'I ya AI Savë','ai-open-problems':'AI Mahtali Pantë','ai':'AI','applied':'Natyalië','art-of-potential':'Carmë Potentialo','black-holes-horizons-holography':'Mornë Hyarmar, Réni ar Holography','boundary-horizons':'Réni','changelog':'Quentalë Ahyaron','core':'Enda','critique':'Cesta','discussion':'Quetalië','education-of-potential':'Parma Potentialo','files':'Parmar','glossary':'Quettaparma','high-energy-physics':'Túrë Arda','i-have-no-mouth':'I Have No Mouth','law-of-potential':'Sanya Potentialo','locality-nonlocality-contextuality':'Nómë, Únómë ar Canta','medicine-of-potential':'Nestë Potentialo','methodology':'Cantië','mistake-repeats':'Loica Entulë','music-of-potential':'Lindalë Potentialo','potential-extensions':'Lantier Potentialo','potential-ideal-optimal':'Potential, Ideal, Optimal','recursive-edge':'Réna Envinyanta','response':'Hanquenta','science-physics-math-boundary-discipline':'Nolmë, Corma ar Nótë','shape-of-the-universe-and-potential':'Cantië Eäo','sources':'Celur','stories':'Nyári','summary':'Quenta Sinta','witness':'Astarmo'}}
-PUBLIC_CONTROL_PREFIXES=('image description draft:','image description:','visual description draft:','visual description:','visual brief:','alt text draft:','alt text:','image prompt draft:')
+PUBLIC_CONTROL_MARKERS=('image description draft:','image description:','visual description draft:','visual description:','visual brief:','alt text draft:','alt text:','image prompt draft:')
 def clean(text):
  if text.startswith('---\n'):
   parts=text.split('---\n',2);text=parts[2] if len(parts)==3 else text
@@ -20,8 +20,10 @@ def clean(text):
  text='\n'.join(lines).strip()
  blocks=[]
  for block in re.split(r'\n\s*\n',text):
-  marker=re.sub(r'^[>_*`\s-]+','',block.strip()).casefold()
-  if marker.startswith(PUBLIC_CONTROL_PREFIXES):continue
+  normalized=re.sub(r'<[^>]+>',' ',block)
+  normalized=re.sub(r'!\[[^\]]*\]\([^)]*\)',' ',normalized)
+  normalized=re.sub(r'[>_*`\[\]()#\s-]+',' ',normalized).casefold()
+  if any(marker in normalized for marker in PUBLIC_CONTROL_MARKERS):continue
   blocks.append(block.strip())
  return '\n\n'.join(blocks).strip()
 def contract():return json.loads((ROOT/'localization/documents/between-potential-and-ideal.json').read_text())
