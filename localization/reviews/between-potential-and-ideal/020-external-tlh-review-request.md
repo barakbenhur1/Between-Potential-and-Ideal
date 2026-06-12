@@ -25,6 +25,16 @@ Add one completed immutable response file:
 
 `020-external-tlh-review-response-r2.md`
 
+Before opening a pull request, run:
+
+```bash
+python3 tools/preflight_external_specialist_review.py \
+  --language tlh \
+  --response /path/to/020-external-tlh-review-response-r2.md
+```
+
+The preflight uses the same structural and substantive validators as CI. A `PASS` confirms intake validity only; it grants no linguistic approval and permits no production change or publication.
+
 Do not edit the authoritative status file or production translation sources.
 A valid contribution will enter `valid-awaiting-status-sync`; that means the
 review was received and validated, not that it was approved for production.
