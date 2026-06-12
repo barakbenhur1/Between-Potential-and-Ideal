@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import json
 import re
 import sys
 import unittest
@@ -20,6 +21,16 @@ GENERIC_EVIDENCE = (
 )
 
 
+def set_blank_field(text: str, key: str, value: str) -> str:
+    """Set one blank Markdown field, including a field at end-of-file."""
+
+    pattern = rf"(?m)^{re.escape(key)}:[ \t]*$"
+    updated, count = re.subn(pattern, f"{key}: {value}", text, count=1)
+    if count != 1:
+        raise AssertionError(f"expected exactly one blank field for {key!r}, found {count}")
+    return updated
+
+
 def fill_blank_labels(section_text: str) -> str:
     """Fill every blank field and numbered answer in one review section."""
 
@@ -27,7 +38,11 @@ def fill_blank_labels(section_text: str) -> str:
         label = match.group(1)
         return f"{label}: {GENERIC_EVIDENCE}"
 
-    return re.sub(r"^([^#|\n][^:\n]{0,180}):\s*$", replace, section_text, flags=re.M)
+    return re.sub(
+        r"(?m)^([^#|\n][^:\n]{0,180}):[ \t]*$",
+        replace,
+        section_text,
+    )
 
 
 def replace_section(text: str, heading: str, transform) -> str:
@@ -63,18 +78,14 @@ def completed_response(spec: intake.ReviewSpec) -> str:
         "Status: blank response template. This file is not a review and grants no approval.",
         "Status: completed synthetic contract-test response.",
     )
-    text = text.replace("Reviewer:\n", "Reviewer: Contract Test Reviewer\n", 1)
-    text = text.replace("Review date:\n", "Review date: 2026-06-12\n", 1)
-    text = text.replace(
-        f"{spec.expertise_key}:\n",
-        f"{spec.expertise_key}: Long-form specialist expertise with direct primary-source access.\n",
-        1,
+    text = set_blank_field(text, "Reviewer", "Contract Test Reviewer")
+    text = set_blank_field(text, "Review date", "2026-06-12")
+    text = set_blank_field(
+        text,
+        spec.expertise_key,
+        "Long-form specialist expertise with direct primary-source access.",
     )
-    text = text.replace(
-        "Reviewed packet commit:\n",
-        f"Reviewed packet commit: {intake.PACKET_COMMIT}\n",
-        1,
-    )
+    text = set_blank_field(text, "Reviewed packet commit", intake.PACKET_COMMIT)
 
     for item_id in spec.item_ids:
         if item_id == "TLH-07":
@@ -82,35 +93,35 @@ def completed_response(spec: intake.ReviewSpec) -> str:
             continue
 
         def transform(section_text: str) -> str:
-            section_text = section_text.replace(
-                "Decision:\n",
-                "Decision: INSUFFICIENT EVIDENCE\n",
-                1,
+            section_text = set_blank_field(
+                section_text,
+                "Decision",
+                "INSUFFICIENT EVIDENCE",
             )
             return fill_blank_labels(section_text)
 
         text = replace_section(text, item_id, transform)
 
     def fill_overall(section_text: str) -> str:
-        section_text = section_text.replace(
-            "Complete title candidate:\n",
-            "Complete title candidate: INSUFFICIENT EVIDENCE\n",
-            1,
+        section_text = set_blank_field(
+            section_text,
+            "Complete title candidate",
+            "INSUFFICIENT EVIDENCE",
         )
-        section_text = section_text.replace(
-            "Opening proposition architecture:\n",
-            "Opening proposition architecture: INSUFFICIENT EVIDENCE\n",
-            1,
+        section_text = set_blank_field(
+            section_text,
+            "Opening proposition architecture",
+            "INSUFFICIENT EVIDENCE",
         )
-        section_text = section_text.replace(
-            "Blocking findings:\n",
-            "Blocking findings: Primary or canonical evidence remains insufficient for production approval.\n",
-            1,
+        section_text = set_blank_field(
+            section_text,
+            "Blocking findings",
+            "Primary or canonical evidence remains insufficient for production approval.",
         )
-        section_text = section_text.replace(
-            "Reviewer signature/name:\n",
-            "Reviewer signature/name: Contract Test Reviewer\n",
-            1,
+        section_text = set_blank_field(
+            section_text,
+            "Reviewer signature/name",
+            "Contract Test Reviewer",
         )
         return section_text
 
@@ -135,8 +146,15 @@ class ExternalSpecialistTemplateContractTests(unittest.TestCase):
                 response = completed_response(spec)
                 structure_errors, structure_details = intake.validate_response(spec, response)
                 substance_errors, substance_details = substance.validate_response(spec, response)
-                self.assertEqual([], structure_errors, structure_details)
-                self.assertEqual([], substance_errors, substance_details)
+                if structure_errors or substance_errors:
+                    diagnostic = {
+                        "language": spec.lang,
+                        "structure_errors": structure_errors,
+                        "structure_details": structure_details,
+                        "substance_errors": substance_errors,
+                        "substance_details": substance_details,
+                    }
+                    self.fail(json.dumps(diagnostic, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":
