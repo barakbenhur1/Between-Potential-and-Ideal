@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Extract compact source-candidate records from a pinned Eldamo XML snapshot."""
+"""Extract compact records from a pinned Eldamo XML snapshot."""
 
 from __future__ import annotations
 
 import argparse
 import json
+import re
 import urllib.request
 import xml.etree.ElementTree as ET
 
@@ -13,21 +14,7 @@ DEFAULT_URL = (
     "4071c9caa95caca905c96af2505d5252045e2aaa/src/data/eldamo-data.xml"
 )
 FORM_KEYS = ("v", "value", "word", "form")
-RECORD_KEYS = (
-    "l",
-    "v",
-    "value",
-    "word",
-    "form",
-    "gloss",
-    "speech",
-    "mark",
-    "source",
-    "ref",
-    "rule",
-    "from",
-    "to",
-)
+RECORD_KEYS = ("l", "v", "value", "word", "form", "gloss", "speech", "mark")
 SOURCE_KEYS = ("source", "ref", "page", "locator", "work", "v", "l", "gloss", "mark")
 
 
@@ -43,28 +30,51 @@ def selected(attributes: dict[str, str], keys: tuple[str, ...]) -> dict[str, str
     return {key: attributes[key] for key in keys if key in attributes}
 
 
-def compact_text(element: ET.Element, limit: int = 180) -> str:
+def compact_text(element: ET.Element, limit: int = 160) -> str:
     value = " ".join(part.strip() for part in element.itertext() if part.strip())
     return " ".join(value.split())[:limit]
 
 
-def is_exact_form(element: ET.Element, term: str) -> bool:
-    wanted = normalized(term)
-    return any(
-        value and normalized(value) == wanted
-        for key in FORM_KEYS
-        if (value := element.attrib.get(key)) is not None
-    )
+def source_refs(record: ET.Element) -> list[dict[str, object]]:
+    refs: list[dict[str, object]] = []
+    seen: set[str] = set()
+    for descendant in record.iter():
+        name = local_name(descendant.tag)
+        attributes = dict(descendant.attrib)
+        if name not in {"ref", "source"} and "source" not in attributes and "ref" not in attributes:
+            continue
+        item: dict[str, object] = {"tag": name, "attributes": selected(attributes, SOURCE_KEYS)}
+        text = compact_text(descendant)
+        if text:
+            item["text"] = text
+        identity = json.dumps(item, ensure_ascii=False, sort_keys=True)
+        if identity in seen:
+            continue
+        seen.add(identity)
+        refs.append(item)
+        if len(refs) >= 16:
+            break
+    return refs
 
 
-def enclosing_record(
-    element: ET.Element,
-    parents: dict[ET.Element, ET.Element],
-) -> ET.Element:
+def record_summary(record: ET.Element, matched: ET.Element | None = None) -> dict[str, object]:
+    result: dict[str, object] = {
+        "record_tag": local_name(record.tag),
+        "record_attributes": selected(dict(record.attrib), RECORD_KEYS),
+        "source_refs": source_refs(record),
+    }
+    if matched is not None:
+        result["matched_element"] = {
+            "tag": local_name(matched.tag),
+            "attributes": selected(dict(matched.attrib), RECORD_KEYS),
+        }
+    return result
+
+
+def enclosing_record(element: ET.Element, parents: dict[ET.Element, ET.Element]) -> ET.Element:
     current = element
     while True:
-        name = local_name(current.tag)
-        if name in {"word", "entry"}:
+        if local_name(current.tag) in {"word", "entry"}:
             return current
         if "l" in current.attrib and "v" in current.attrib:
             return current
@@ -74,128 +84,109 @@ def enclosing_record(
         current = parent
 
 
-def language_path(
-    record: ET.Element,
+def exact_matches(
+    root: ET.Element,
     parents: dict[ET.Element, ET.Element],
+    term: str,
+    max_records: int,
 ) -> list[dict[str, object]]:
-    path: list[dict[str, object]] = []
-    current = parents.get(record)
-    while current is not None:
-        name = local_name(current.tag)
-        if name in {"language", "language-cat"}:
-            path.append({"tag": name, "attributes": dict(current.attrib)})
-        current = parents.get(current)
-    path.reverse()
-    return path
-
-
-def source_refs(record: ET.Element) -> list[dict[str, object]]:
-    refs: list[dict[str, object]] = []
+    wanted = normalized(term)
+    records: list[dict[str, object]] = []
     seen: set[str] = set()
-    for descendant in record.iter():
-        name = local_name(descendant.tag)
-        attributes = dict(descendant.attrib)
-        relevant = (
-            name in {"ref", "source"}
-            or "source" in attributes
-            or "ref" in attributes
-        )
-        if not relevant:
+    for element in root.iter():
+        values = [element.attrib.get(key) for key in FORM_KEYS]
+        if not any(value and normalized(value) == wanted for value in values):
             continue
-        item: dict[str, object] = {
-            "tag": name,
-            "attributes": selected(attributes, SOURCE_KEYS),
-        }
-        text = compact_text(descendant)
-        if text:
-            item["text"] = text
-        identity = json.dumps(item, ensure_ascii=False, sort_keys=True)
+        record = enclosing_record(element, parents)
+        identity = ET.tostring(record, encoding="unicode")
         if identity in seen:
             continue
         seen.add(identity)
-        refs.append(item)
-        if len(refs) >= 25:
+        records.append(record_summary(record, element))
+        if len(records) >= max_records:
             break
-    return refs
+    return records
 
 
-def extract(url: str, terms: list[str], max_records: int) -> list[dict[str, object]]:
-    request = urllib.request.Request(
-        url,
-        headers={"User-Agent": "Between-Potential-and-Ideal-source-audit"},
-    )
-    with urllib.request.urlopen(request, timeout=90) as response:
-        payload = response.read()
+def combined_gloss(record: ET.Element) -> str:
+    values: list[str] = []
+    for element in record.iter():
+        gloss = element.attrib.get("gloss")
+        if gloss:
+            values.append(gloss)
+    return " | ".join(values)
 
-    root = ET.fromstring(payload)
-    parents = {child: parent for parent in root.iter() for child in parent}
-    output: list[dict[str, object]] = []
 
-    for term in terms:
-        exact_elements = [element for element in root.iter() if is_exact_form(element, term)]
-        records: list[dict[str, object]] = []
-        seen: set[str] = set()
-        for element in exact_elements:
-            record = enclosing_record(element, parents)
-            identity = ET.tostring(record, encoding="unicode")
-            if identity in seen:
-                continue
-            seen.add(identity)
-            records.append(
-                {
-                    "record_tag": local_name(record.tag),
-                    "record_attributes": selected(dict(record.attrib), RECORD_KEYS),
-                    "matched_element": {
-                        "tag": local_name(element.tag),
-                        "attributes": selected(dict(element.attrib), RECORD_KEYS),
-                    },
-                    "language_path": language_path(record, parents),
-                    "source_refs": source_refs(record),
-                }
-            )
-            if len(records) >= max_records:
-                break
-        output.append(
-            {
-                "term": term,
-                "exact_element_count": len(exact_elements),
-                "record_count": len(seen),
-                "records_returned": len(records),
-                "records": records,
-            }
-        )
-
-    print(
-        "ELDAMO_META="
-        + json.dumps(
-            {"source_url": url, "byte_count": len(payload)},
-            ensure_ascii=False,
-            separators=(",", ":"),
-        )
-    )
-    for result in output:
-        summary = {key: value for key, value in result.items() if key != "records"}
-        print("ELDAMO_TERM=" + json.dumps(summary, ensure_ascii=False, separators=(",", ":")))
-        for index, record in enumerate(result["records"], start=1):
-            print(
-                "ELDAMO_RECORD="
-                + json.dumps(
-                    {"term": result["term"], "index": index, **record},
-                    ensure_ascii=False,
-                    separators=(",", ":"),
-                )
-            )
-    return output
+def gloss_matches(
+    root: ET.Element,
+    pattern: str,
+    languages: set[str],
+    max_records: int,
+) -> list[dict[str, object]]:
+    matcher = re.compile(pattern, re.IGNORECASE)
+    records: list[dict[str, object]] = []
+    for record in root.iter():
+        if local_name(record.tag) != "word" or record.attrib.get("l") not in languages:
+            continue
+        glosses = combined_gloss(record)
+        hit = matcher.search(glosses)
+        if not hit:
+            continue
+        summary = record_summary(record)
+        summary["matched_gloss"] = hit.group(0)
+        summary["all_glosses"] = glosses[:500]
+        records.append(summary)
+        if len(records) >= max_records:
+            break
+    return records
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("terms", nargs="*", default=["tamma", "pusta"])
+    parser.add_argument("terms", nargs="*")
+    parser.add_argument("--gloss-regex")
+    parser.add_argument("--languages", default="q,mq")
     parser.add_argument("--url", default=DEFAULT_URL)
-    parser.add_argument("--max-records", type=int, default=12)
+    parser.add_argument("--max-records", type=int, default=40)
     args = parser.parse_args()
 
-    extract(args.url, args.terms, max(1, args.max_records))
+    request = urllib.request.Request(
+        args.url,
+        headers={"User-Agent": "Between-Potential-and-Ideal-source-audit"},
+    )
+    with urllib.request.urlopen(request, timeout=90) as response:
+        payload = response.read()
+    root = ET.fromstring(payload)
+    parents = {child: parent for parent in root.iter() for child in parent}
+    limit = max(1, args.max_records)
+
+    print("ELDAMO_META=" + json.dumps({"source_url": args.url, "byte_count": len(payload)}, separators=(",", ":")))
+
+    if args.gloss_regex:
+        languages = {item.strip() for item in args.languages.split(",") if item.strip()}
+        records = gloss_matches(root, args.gloss_regex, languages, limit)
+        print(
+            "ELDAMO_GLOSS_TERM="
+            + json.dumps(
+                {
+                    "pattern": args.gloss_regex,
+                    "languages": sorted(languages),
+                    "records_returned": len(records),
+                },
+                ensure_ascii=False,
+                separators=(",", ":"),
+            )
+        )
+        for index, record in enumerate(records, start=1):
+            print("ELDAMO_GLOSS_RECORD=" + json.dumps({"index": index, **record}, ensure_ascii=False, separators=(",", ":")))
+        return 0
+
+    terms = args.terms or ["tamma", "pusta"]
+    for term in terms:
+        records = exact_matches(root, parents, term, limit)
+        print("ELDAMO_TERM=" + json.dumps({"term": term, "records_returned": len(records)}, ensure_ascii=False, separators=(",", ":")))
+        for index, record in enumerate(records, start=1):
+            print("ELDAMO_RECORD=" + json.dumps({"term": term, "index": index, **record}, ensure_ascii=False, separators=(",", ":")))
     return 0
 
 
