@@ -1,3 +1,24 @@
 from pathlib import Path
-
-ROOT = Path(__file__).resolve().parents[1]
+import a as D
+import test_write_small as S
+import tmp_segments_430_450 as R
+ROOT=D.ROOT
+SITE=D.SITE
+BASE_URL=D.BASE_URL
+LANGUAGES=D.LANGUAGES
+PACKAGES=D.PACKAGES
+PAGE_SLUGS=D.PAGES
+source_route=S.route
+hreflang_links=S.alternates
+strip_front_matter=D.clean
+def assemble_main(lang):
+ data=D.contract()
+ parts=[D.clean((ROOT/data['canonical_targets'][lang]).read_text(encoding='utf-8'))]
+ parts.extend(D.clean((ROOT/path).read_text(encoding='utf-8')) for path in data['source_segments'][lang])
+ return '\n\n'.join(item for item in parts if item)+'\n'
+def write_package(lang,package,body):
+ folder=SITE/'files'/lang
+ required=[folder/f'{package}-{lang}.{ext}' for ext in ('html','pdf','docx','md','txt')]
+ missing=[path for path in required if not path.is_file() or path.stat().st_size==0]
+ if missing:raise RuntimeError('Incomplete package: '+', '.join(str(path.relative_to(ROOT)) for path in missing))
+def write_pages(lang):R.write_pages(lang)
