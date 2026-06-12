@@ -36,10 +36,12 @@ COPY = {
     "tlh": {
         "warning": "mughghachvam beta 'oH; Hol po'wI' nuDghach taH.",
         "review": "Hol po'wI' nuDghach",
+        "files": "ghItlh naQ laDlaHlu' HTML, PDF, DOCX, Markdown, TXT je lo'taHvIS.",
     },
     "qya": {
         "warning": "I quentalë quanta ná sí laitanwa ve public beta. I lambë ná Neo-Quenya, ar i metta parmaquetalië lemya carienna.",
         "review": "Lambë parmaquetalië",
+        "files": "I quentalë quanta polë cenda mi HTML, PDF, DOCX, Markdown ar TXT.",
     },
 }
 
@@ -65,6 +67,21 @@ THUMBNAILS = {
     "sources": "thumb_methodology.png",
     "critique": "thumb_core.png",
 }
+
+EXCERPT_CONTROL_MARKERS = (
+    "image description draft:",
+    "image description:",
+    "visual description draft:",
+    "visual description:",
+    "visual brief:",
+    "alt text:",
+    "translation control note",
+    "editorial note:",
+    "production note:",
+    "source note:",
+    "segment review gate",
+    "placeholder review gate",
+)
 
 
 def route(lang, slug=None):
@@ -135,7 +152,7 @@ def head(lang, title, slug, prefix, home=False):
         f'<link rel="canonical" href="{BASE}{route(lang, slug)}">{alternates(slug)}'
         f'<link rel="stylesheet" href="{style}">'
         f'<link rel="stylesheet" href="{prefix}styles.css?v=20260604-tabbar-dimensions-v2">'
-        f'<link rel="stylesheet" href="{prefix}assets/bpi-four-language-localization.css?v=20260612-full-site-v2">'
+        f'<link rel="stylesheet" href="{prefix}assets/bpi-four-language-localization.css?v=20260612-full-site-v3">'
         "</head>"
     )
 
@@ -171,6 +188,8 @@ def thumbnail(slug):
 
 
 def excerpt(lang, slug, limit=360):
+    if slug == "files":
+        return COPY[lang]["files"]
     text = D.body(lang, slug)
     for block in re.split(r"\n\s*\n", text):
         candidate = block.strip()
@@ -181,6 +200,9 @@ def excerpt(lang, slug, limit=360):
         candidate = re.sub(r"^\s*(?:[-+*]|\d+\.)\s+", "", candidate)
         candidate = BeautifulSoup(candidate, "html.parser").get_text(" ", strip=True)
         candidate = re.sub(r"\s+", " ", candidate).strip()
+        lowered = candidate.casefold()
+        if any(marker in lowered for marker in EXCERPT_CONTROL_MARKERS):
+            continue
         if len(candidate) < 70:
             continue
         if len(candidate) <= limit:
