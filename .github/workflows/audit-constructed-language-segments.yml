@@ -7,10 +7,12 @@ on:
       - "tools/audit_constructed_language_segments.py"
       - "tools/validate_external_specialist_reviews.py"
       - "tools/validate_external_specialist_review_substance.py"
+      - "tools/preflight_external_specialist_review.py"
       - "tools/test_validate_external_specialist_reviews.py"
       - "tools/test_validate_external_specialist_review_substance.py"
       - "tools/test_external_specialist_review_templates.py"
       - "tools/test_external_review_handoff.py"
+      - "tools/test_preflight_external_specialist_review.py"
       - "localization/sources/tlh/**"
       - "localization/sources/qya/**"
       - "localization/reviews/between-potential-and-ideal/020-external-*.md"
@@ -61,6 +63,8 @@ jobs:
         run: python3 tools/test_validate_external_specialist_reviews.py
       - name: Test specialist review substance validator
         run: python3 tools/test_validate_external_specialist_review_substance.py
+      - name: Test standalone specialist review preflight
+        run: python3 tools/test_preflight_external_specialist_review.py
       - name: Test external-review handoff contract
         run: python3 tools/test_external_review_handoff.py
       - name: Validate external specialist review intake
