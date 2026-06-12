@@ -1,8 +1,8 @@
 {
-  "schema_version": 18,
+  "schema_version": 19,
   "segment": 20,
-  "stage": "specialist-body-source-gating",
-  "status": "bilingual-internal-candidates-body-blueprint-complete-external-review-pending",
+  "stage": "specialist-opening-proposition-source-gating",
+  "status": "opening-output-and-agency-contrast-complete-capability-worth-pending",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -42,6 +42,11 @@
   "round_2_bilingual_candidate_checkpoint": "localization/reviews/between-potential-and-ideal/020-bilingual-candidate-checkpoint-r2.md",
   "round_2_body_revision_blueprint": "localization/reviews/between-potential-and-ideal/020-body-revision-blueprint-r2.md",
   "round_2_draft_supersession_register": "localization/reviews/between-potential-and-ideal/020-draft-supersession-register-r2.json",
+  "round_2_opening_source_gate": "localization/reviews/between-potential-and-ideal/020-opening-proposition-source-gate-r2.md",
+  "round_2_processing_referent_decision": "localization/reviews/between-potential-and-ideal/020-processing-referent-decision-r2.md",
+  "round_2_information_output_decision": "localization/reviews/between-potential-and-ideal/020-information-output-decision-r2.md",
+  "round_2_opening_output_action_test": "localization/reviews/between-potential-and-ideal/020-opening-output-action-test-r2.md",
+  "round_2_opening_output_agency_contrast": "localization/reviews/between-potential-and-ideal/020-opening-output-agency-contrast-r2.md",
   "qya_cantie_short_label_test": "localization/reviews/between-potential-and-ideal/020-cantie-test.md",
   "qya_cantie_philosophical_frame_blocker": "localization/reviews/between-potential-and-ideal/020-cantie-philosophical-frame-blocker.md",
   "current_audit_state": {
@@ -79,6 +84,11 @@
     "localization/reviews/between-potential-and-ideal/020-bilingual-candidate-checkpoint-r2.md",
     "localization/reviews/between-potential-and-ideal/020-body-revision-blueprint-r2.md",
     "localization/reviews/between-potential-and-ideal/020-draft-supersession-register-r2.json",
+    "localization/reviews/between-potential-and-ideal/020-opening-proposition-source-gate-r2.md",
+    "localization/reviews/between-potential-and-ideal/020-processing-referent-decision-r2.md",
+    "localization/reviews/between-potential-and-ideal/020-information-output-decision-r2.md",
+    "localization/reviews/between-potential-and-ideal/020-opening-output-action-test-r2.md",
+    "localization/reviews/between-potential-and-ideal/020-opening-output-agency-contrast-r2.md",
     "localization/glossaries/segment-020-specialist-terms.md"
   ],
   "acceptance": {
@@ -108,6 +118,13 @@
     "bilingual_internal_semantic_parity_documented": true,
     "body_paragraph_semantic_map_complete": true,
     "superseded_draft_register_complete": true,
+    "opening_source_semantic_parity_complete": true,
+    "opening_processing_referent_resolved": true,
+    "opening_generic_information_noun_not_required": true,
+    "opening_output_action_tests_complete": true,
+    "opening_output_agency_contrast_complete": true,
+    "opening_capability_moral_worth_gate_complete": false,
+    "opening_restraint_nonreplacement_gate_complete": false,
     "opening_proposition_source_gate_complete": false,
     "external_qya_review_complete": false,
     "external_tlh_review_complete": false,
@@ -123,7 +140,7 @@
     "independent_second_review_complete": false,
     "approved": false
   },
-  "next_action": "source-gate the opening proposition in both languages under 020-body-revision-blueprint-r2.md, recording exact lexical and grammar dependencies without modifying production source",
+  "next_action": "source-gate capability separately from moral worth in the opening proposition; select no single adjective or predicate for both and keep production source unchanged",
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
