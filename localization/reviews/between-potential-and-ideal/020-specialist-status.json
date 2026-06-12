@@ -1,9 +1,9 @@
 {
-  "schema_version": 28,
-  "previous_schema_checkpoint": "9d182c8fb028ed83d6d9d2c28d91516e843f950c",
+  "schema_version": 29,
+  "previous_schema_checkpoint": "075613124d9c1067f9fd95353623ecd0a139090e",
   "segment": 20,
   "stage": "specialist-external-review-requested",
-  "status": "external-review-requests-open-qya-source-locators-traced-responses-pending",
+  "status": "external-review-requests-open-qya-source-and-nonreplacement-traces-complete-responses-pending",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -20,6 +20,7 @@
     "qya_template": "localization/reviews/between-potential-and-ideal/020-external-qya-review-response-template-r2.md",
     "tlh_template": "localization/reviews/between-potential-and-ideal/020-external-tlh-review-response-template-r2.md",
     "qya_source_trace_addendum": "localization/reviews/between-potential-and-ideal/020-tamma-pusta-source-trace-r3.md",
+    "qya_nonreplacement_source_trace": "localization/reviews/between-potential-and-ideal/020-nonreplacement-source-trace-r3.md",
     "qya_issue": 10,
     "tlh_issue": 11
   },
@@ -34,11 +35,13 @@
     "template_contract": "verified-for-both-languages"
   },
   "source_trace": {
-    "document": "localization/reviews/between-potential-and-ideal/020-tamma-pusta-source-trace-r3.md",
+    "tamma_pusta_document": "localization/reviews/between-potential-and-ideal/020-tamma-pusta-source-trace-r3.md",
+    "nonreplacement_document": "localization/reviews/between-potential-and-ideal/020-nonreplacement-source-trace-r3.md",
     "extractor": "tools/extract_eldamo_source_candidates.py",
     "manual_workflow": ".github/workflows/research-eldamo-source-candidates.yml",
     "upstream_commit": "4071c9caa95caca905c96af2505d5252045e2aaa",
-    "research_workflow_run_id": 27390250564,
+    "exact_form_research_run_id": 27390250564,
+    "nonreplacement_research_run_id": 27390739730,
     "result": "success"
   },
   "current_audit_state": {
@@ -55,22 +58,22 @@
     "translation_fragments_total": 228
   },
   "verified_gate_runs": {
-    "head_sha": "23fcd4afef07c15481df196654bca6c57110f296",
+    "head_sha": "a0191021fb653df03656844e42d5c9a234e3bd32",
     "audit_constructed_language_segments": {
-      "workflow_run_id": 27390407031,
-      "run_number": 548,
+      "workflow_run_id": 27390861468,
+      "run_number": 554,
       "result": "success",
       "template_contract_job": "success",
       "full_audit_job": "success"
     },
     "release_guard": {
-      "workflow_run_id": 27390407037,
-      "run_number": 1421,
+      "workflow_run_id": 27390861484,
+      "run_number": 1427,
       "result": "success"
     },
     "export_review_snapshot": {
-      "workflow_run_id": 27390407034,
-      "run_number": 562,
+      "workflow_run_id": 27390861473,
+      "run_number": 568,
       "result": "success"
     }
   },
@@ -103,9 +106,13 @@
     "external_review_substance_regression_tests_enforced": true,
     "eldamo_source_trace_reproducible": true,
     "qya_issue_source_trace_addendum_posted": true,
+    "qya_issue_nonreplacement_trace_posted": true,
     "opening_tamma_generic_tool_locator_traced": true,
     "opening_pusta_stop_locator_traced": true,
     "opening_pusta_late_profile_compatibility_established": false,
+    "opening_nonreplacement_gloss_search_reproducible": true,
+    "opening_safe_late_quenya_replacement_lexeme_found": false,
+    "opening_neuro_candidate_admitted": false,
     "external_qya_review_complete": false,
     "external_tlh_review_complete": false,
     "opening_stop_control_qya_primary_source_complete": false,
@@ -131,13 +138,14 @@
     "independent Klingon specialist response in issue 11",
     "direct verification and semantic ruling for tamma at PE17/108.0404",
     "direct verification and Late-profile ruling for pusta- at Ety/PUS.006 and Ety/PUS.042",
-    "specialist decision on direct nonreplacement versus role separation",
+    "external specialist decision on whether explicit role separation sufficiently preserves nonreplacement",
+    "separately sourced direct nonreplacement construction if role separation is rejected",
     "language-specific correction intake",
     "bilingual parity rerun",
     "body revision and complete source parity",
     "independent second review"
   ],
-  "next_action": "Monitor issues 10 and 11. Require direct primary-source verification and explicit period decisions for traced QYA locators before any form is promoted. After a valid response arrives, synchronize only that language status flag, resolve accepted corrections, rerun bilingual parity, and keep production source unchanged.",
+  "next_action": "Monitor issues 10 and 11. The refined pinned q/mq search found no safe Late Quenya direct replacement lexeme; Middle Quenya neuro means follower or successor and is not admitted. Require the external reviewer to decide whether the explicit role sequence is sufficient or provide a separately sourced construction. Keep production source unchanged.",
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
