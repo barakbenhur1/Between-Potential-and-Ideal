@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "document_id": "between-potential-and-ideal",
+  "segment": 20,
+  "round": 2,
+  "stage": "specialist-draft-supersession",
+  "publication": "forbidden",
+  "production_source_changed": false,
+  "authoritative_controls": [
+    "localization/reviews/between-potential-and-ideal/020-semantic-rewrite-blueprint.md",
+    "localization/reviews/between-potential-and-ideal/020-bilingual-candidate-checkpoint-r2.md",
+    "localization/reviews/between-potential-and-ideal/020-body-revision-blueprint-r2.md",
+    "localization/reviews/between-potential-and-ideal/020-source-decisions-round-2.json",
+    "localization/reviews/between-potential-and-ideal/020-specialist-status.json"
+  ],
+  "current_internal_title_candidates": {
+    "qya": "localization/reviews/between-potential-and-ideal/020-qya-title-candidate-r2.md",
+    "tlh": "localization/reviews/between-potential-and-ideal/020-tlh-title-candidate-r2.md"
+  },
+  "review_drafts": [
+    {
+      "path": "localization/reviews/between-potential-and-ideal/020-rewrite-v2-drafting-packet.md",
+      "status": "superseded-for-active-wording",
+      "retained_use": "semantic-history-only",
+      "reason": "Contains title and paragraph candidates that predate the round-2 dialogue, agency, title, and adversarial decisions. Forms such as Ahyatiëo, Nómë Exen, Daq pol, SeH lonqang, and provisional living-source wording are not current candidates."
+    },
+    {
+      "path": "localization/reviews/between-potential-and-ideal/020-five-stages-v2-qya.md",
+      "status": "superseded-for-active-wording",
+      "retained_use": "five-stage-semantic-coverage-only",
+      "reason": "Contains rejected or unresolved directions including handë, réna as an abstract relation-space solution, celu cuina, relation, process, meaning, and unreviewed derivations."
+    },
+    {
+      "path": "localization/reviews/between-potential-and-ideal/020-five-stages-v2-tlh.md",
+      "status": "superseded-for-active-wording",
+      "retained_use": "five-stage-semantic-coverage-only",
+      "reason": "Contains physical chuq extensions, provisional living-source wording, English tokens, and distinctions that are not yet canonically source-gated."
+    },
+    {
+      "path": "localization/reviews/between-potential-and-ideal/020-laws-conclusion-v2.md",
+      "status": "superseded-for-active-wording",
+      "retained_use": "laws-and-conclusion-semantic-coverage-only",
+      "reason": "Contains visible English placeholders and unresolved constructions including conditions, completion, sterilize, disappearing, information, raw material, only, Responsibility, and provisional source terminology."
+    },
+    {
+      "path": "localization/reviews/between-potential-and-ideal/020-title-candidates.md",
+      "status": "historical-candidate-comparison",
+      "retained_use": "rejection-history-and-source-context",
+      "reason": "Predates the complete round-2 internal candidates and includes structures that are no longer active."
+    },
+    {
+      "path": "localization/reviews/between-potential-and-ideal/020-title-pattern-workbench.md",
+      "status": "historical-test-architecture",
+      "retained_use": "test-design-only",
+      "reason": "The test architecture remains informative, but candidate selection has advanced to the bilingual round-2 checkpoint."
+    },
+    {
+      "path": "localization/reviews/between-potential-and-ideal/020-title-candidate-tests.md",
+      "status": "historical-applied-title-assessment",
+      "retained_use": "rejection-evidence-only",
+      "reason": "Assesses the currently applied source titles, both of which are excluded from the active candidate set."
+    }
+  ],
+  "closed_routes": {
+    "qya": [
+      "Ahyaliëo",
+      "Haiyava",
+      "hairië-under-default-profile",
+      "har-for-identity-persistence",
+      "lemya-for-identity-persistence",
+      "ser-for-identity-persistence",
+      "mar-for-identity-persistence",
+      "harya-or-possession-of-person",
+      "ovantë",
+      "sena-for-Prime-Intellect"
+    ],
+    "tlh": [
+      "pung-chuq-je-choHmeH-chut",
+      "physical-He-title-route",
+      "reciprocal-chuq-as-relation",
+      "causative-choHmoHbogh-default"
+    ]
+  },
+  "selection_rule": "A tool or reviewer must prefer authoritative_controls and current_internal_title_candidates. Superseded review drafts may supply semantic history only and must not supply production wording.",
+  "next_action": "source-gate the opening proposition paragraph by paragraph under 020-body-revision-blueprint-r2.md; keep production sources unchanged",
+  "approved": false
+}
