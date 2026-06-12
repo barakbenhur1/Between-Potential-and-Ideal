@@ -1,8 +1,8 @@
 {
-  "schema_version": 22,
+  "schema_version": 23,
   "segment": 20,
   "stage": "specialist-external-review-preparation",
-  "status": "external-review-packet-complete-responses-pending",
+  "status": "external-review-packet-and-response-templates-complete-responses-pending",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -53,6 +53,8 @@
   "round_2_tamma_pusta_source_boundary": "localization/reviews/between-potential-and-ideal/020-tamma-pusta-source-boundary-r2.md",
   "round_2_opening_nonreplacement_gate": "localization/reviews/between-potential-and-ideal/020-opening-nonreplacement-gate-r2.md",
   "round_2_external_specialist_review_packet": "localization/reviews/between-potential-and-ideal/020-external-specialist-review-packet-r2.md",
+  "round_2_external_qya_response_template": "localization/reviews/between-potential-and-ideal/020-external-qya-review-response-template-r2.md",
+  "round_2_external_tlh_response_template": "localization/reviews/between-potential-and-ideal/020-external-tlh-review-response-template-r2.md",
   "qya_cantie_short_label_test": "localization/reviews/between-potential-and-ideal/020-cantie-test.md",
   "qya_cantie_philosophical_frame_blocker": "localization/reviews/between-potential-and-ideal/020-cantie-philosophical-frame-blocker.md",
   "current_audit_state": {
@@ -65,17 +67,17 @@
     "specialist_approval_pending": true
   },
   "verified_gate_runs": {
-    "head_sha": "fc1867f8e94bf588d8e3f2d9954207444a5083f8",
+    "head_sha": "addce7c5b812275b6fcb5568054c96e1b9dafec6",
     "audit_constructed_language_segments": {
-      "workflow_run_id": 27386874785,
+      "workflow_run_id": 27387057325,
       "result": "success"
     },
     "release_guard": {
-      "workflow_run_id": 27386874853,
+      "workflow_run_id": 27387057321,
       "result": "success"
     },
     "export_review_snapshot": {
-      "workflow_run_id": 27386874784,
+      "workflow_run_id": 27387057330,
       "result": "success"
     }
   },
@@ -101,6 +103,8 @@
     "localization/reviews/between-potential-and-ideal/020-tamma-pusta-source-boundary-r2.md",
     "localization/reviews/between-potential-and-ideal/020-opening-nonreplacement-gate-r2.md",
     "localization/reviews/between-potential-and-ideal/020-external-specialist-review-packet-r2.md",
+    "localization/reviews/between-potential-and-ideal/020-external-qya-review-response-template-r2.md",
+    "localization/reviews/between-potential-and-ideal/020-external-tlh-review-response-template-r2.md",
     "localization/glossaries/segment-020-specialist-terms.md"
   ],
   "acceptance": {
@@ -145,6 +149,8 @@
     "opening_direct_nonreplacement_lexical_complete": false,
     "opening_explicit_negative_nonreplacement_complete": false,
     "external_specialist_review_packet_complete": true,
+    "external_qya_response_template_complete": true,
+    "external_tlh_response_template_complete": true,
     "external_qya_review_complete": false,
     "external_tlh_review_complete": false,
     "opening_restraint_nonreplacement_gate_complete": false,
@@ -161,7 +167,7 @@
     "independent_second_review_complete": false,
     "approved": false
   },
-  "next_action": "obtain independent Neo-Quenya and Klingon specialist responses using 020-external-specialist-review-packet-r2.md; record immutable review files, resolve corrections one language at a time, rerun bilingual parity, and keep production source unchanged",
+  "next_action": "obtain independent Neo-Quenya and Klingon specialist responses using the prepared packet and language-specific templates; record completed responses as immutable review files, resolve corrections one language at a time, rerun bilingual parity, and keep production source unchanged",
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
