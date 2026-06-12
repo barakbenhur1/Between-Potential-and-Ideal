@@ -14,6 +14,8 @@ LIVE = "https://between-potential-and-ideal.onrender.com"
 RELEASE_COMMIT = "89827cfe127ace4c18c426fbb8eb338be2f94578"
 STATUS_PATH = ROOT / "site/localization-public-beta-production-status.json"
 MANIFEST_PATH = ROOT / "localization/beta-release-manifest.json"
+TLH_REVIEW_URL = "https://github.com/barakbenhur1/Between-Potential-and-Ideal/issues/11"
+QYA_REVIEW_URL = "https://github.com/barakbenhur1/Between-Potential-and-Ideal/issues/10"
 
 
 def fetch(path: str) -> dict:
@@ -22,7 +24,7 @@ def fetch(path: str) -> dict:
         try:
             request = urllib.request.Request(
                 LIVE + path,
-                headers={"User-Agent": "bpi-production-verifier/1.0"},
+                headers={"User-Agent": "bpi-production-verifier/1.1"},
             )
             with urllib.request.urlopen(request, timeout=180) as response:
                 body = response.read()
@@ -53,13 +55,42 @@ def as_text(record: dict) -> str:
     return record["body"].decode("utf-8", errors="replace")
 
 
+def parse_json(record: dict) -> dict:
+    try:
+        return json.loads(as_text(record))
+    except Exception:
+        return {}
+
+
+def wait_for_current_deployment(target_commit: str) -> tuple[dict, dict, dict]:
+    build = fetch("/build-info.json")
+    tlh_gateway = fetch("/tlh.html")
+    qya_gateway = fetch("/qya.html")
+    for attempt in range(90):
+        build_data = parse_json(build)
+        if (
+            build_data.get("commit") == target_commit
+            and TLH_REVIEW_URL in as_text(tlh_gateway)
+            and QYA_REVIEW_URL in as_text(qya_gateway)
+        ):
+            break
+        if attempt < 89:
+            time.sleep(10)
+            build = fetch("/build-info.json")
+            tlh_gateway = fetch("/tlh.html")
+            qya_gateway = fetch("/qya.html")
+    return build, tlh_gateway, qya_gateway
+
+
 def main() -> int:
+    target_commit = subprocess.check_output(
+        ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
+    ).strip()
+    build, tlh_gateway, qya_gateway = wait_for_current_deployment(target_commit)
+
     paths = {
         "home": "/",
-        "build": "/build-info.json",
         "sitemap": "/sitemap.xml",
-        "tlh_gateway": "/tlh.html",
-        "qya_gateway": "/qya.html",
         "cover_image": "/figures/cover_philosophical_recursion_whole_diagram.png",
     }
     for language in ("tlh", "qya"):
@@ -69,14 +100,13 @@ def main() -> int:
             )
 
     records = {name: fetch(path) for name, path in paths.items()}
+    records["build"] = build
+    records["tlh_gateway"] = tlh_gateway
+    records["qya_gateway"] = qya_gateway
+
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
     expected = {entry["path"]: entry for entry in manifest["files"]}
-
-    build_data = {}
-    try:
-        build_data = json.loads(as_text(records["build"]))
-    except Exception:
-        pass
+    build_data = parse_json(records["build"])
 
     deployed_commit = str(build_data.get("commit", ""))
     deployed_contains_release = False
@@ -91,6 +121,7 @@ def main() -> int:
         "home_http_200": records["home"]["http_code"] == 200,
         "home_has_beta_links": "localization-public-beta-links:start" in as_text(records["home"]),
         "build_http_200": records["build"]["http_code"] == 200,
+        "deployed_build_matches_target": deployed_commit == target_commit,
         "deployed_build_contains_release": deployed_contains_release,
         "sitemap_http_200": records["sitemap"]["http_code"] == 200,
         "sitemap_has_beta_routes": all(
@@ -102,8 +133,12 @@ def main() -> int:
                 "/files/qya/between-potential-and-ideal-qya.html",
             )
         ),
+        "tlh_gateway_http_200": records["tlh_gateway"]["http_code"] == 200,
         "tlh_gateway_disclosure": "not presented as canonical Klingon" in as_text(records["tlh_gateway"]),
+        "tlh_gateway_has_review_link": TLH_REVIEW_URL in as_text(records["tlh_gateway"]),
+        "qya_gateway_http_200": records["qya_gateway"]["http_code"] == 200,
         "qya_gateway_disclosure": "modern reconstruction" in as_text(records["qya_gateway"]),
+        "qya_gateway_has_review_link": QYA_REVIEW_URL in as_text(records["qya_gateway"]),
         "cover_image_http_200": records["cover_image"]["http_code"] == 200,
     }
 
@@ -142,7 +177,8 @@ def main() -> int:
     payload = {
         "status": "verified" if verified else "failed",
         "production_verified": verified,
-        "verification_scope": "gateways, sitemap, image, and exact manifest parity for all five formats in both languages",
+        "verification_scope": "current deployed commit, gateways and review links, sitemap, image, and exact manifest parity for all five formats in both languages",
+        "target_commit": target_commit,
         "required_release_commit": RELEASE_COMMIT,
         "deployed_build": build_data,
         "recorded_at_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
