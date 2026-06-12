@@ -8,14 +8,21 @@ import build_localization_beta as B
 
 
 _original_strip_front_matter = B.strip_front_matter
+_original_assemble = B.assemble
 
 
 def strip_front_matter_and_controls(text, path):
     return D.clean(_original_strip_front_matter(text, path))
 
 
+def assemble_public_package(language, contract):
+    text = _original_assemble(language, contract)
+    return text.replace("../../../figures/", "../../figures/")
+
+
 B.strip_front_matter = strip_front_matter_and_controls
 B.strip_review_gate = D.clean
+B.assemble = assemble_public_package
 
 
 if __name__ == "__main__":
