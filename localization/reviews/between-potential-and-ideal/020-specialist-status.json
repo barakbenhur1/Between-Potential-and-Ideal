@@ -1,8 +1,8 @@
 {
-  "schema_version": 24,
+  "schema_version": 25,
   "segment": 20,
   "stage": "specialist-external-review-preparation",
-  "status": "external-review-packet-templates-and-intake-validation-complete-responses-pending",
+  "status": "external-review-packet-templates-and-structure-substance-intake-validation-complete-responses-pending",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -56,6 +56,8 @@
   "round_2_external_qya_response_template": "localization/reviews/between-potential-and-ideal/020-external-qya-review-response-template-r2.md",
   "round_2_external_tlh_response_template": "localization/reviews/between-potential-and-ideal/020-external-tlh-review-response-template-r2.md",
   "external_review_intake_validator": "tools/validate_external_specialist_reviews.py",
+  "external_review_substance_validator": "tools/validate_external_specialist_review_substance.py",
+  "external_review_substance_tests": "tools/test_validate_external_specialist_review_substance.py",
   "external_review_intake_workflow": ".github/workflows/audit-constructed-language-segments.yml",
   "qya_cantie_short_label_test": "localization/reviews/between-potential-and-ideal/020-cantie-test.md",
   "qya_cantie_philosophical_frame_blocker": "localization/reviews/between-potential-and-ideal/020-cantie-philosophical-frame-blocker.md",
@@ -67,7 +69,7 @@
     "heading_findings": 0,
     "mechanically_clear": true,
     "specialist_approval_pending": true,
-    "external_review_intake": "responses-pending-validator-enforced"
+    "external_review_intake": "responses-pending-structure-and-substance-validators-enforced"
   },
   "verified_gate_runs": {
     "head_sha": "c0d71d714f1271bf2941da02911f67aba828ae47",
@@ -155,6 +157,8 @@
     "external_qya_response_template_complete": true,
     "external_tlh_response_template_complete": true,
     "external_review_intake_validator_enforced": true,
+    "external_review_substance_validator_enforced": true,
+    "external_review_substance_regression_tests_enforced": true,
     "external_qya_review_complete": false,
     "external_tlh_review_complete": false,
     "opening_restraint_nonreplacement_gate_complete": false,
@@ -171,7 +175,7 @@
     "independent_second_review_complete": false,
     "approved": false
   },
-  "next_action": "obtain independent Neo-Quenya and Klingon specialist responses using the prepared packet and language-specific templates; validated intake now rejects incomplete, unsigned, wrong-commit, source-free, or status-mismatched responses; resolve accepted corrections one language at a time, rerun bilingual parity, and keep production source unchanged",
+  "next_action": "obtain independent Neo-Quenya and Klingon specialist responses using the prepared packet and language-specific templates; structure validation rejects incomplete, unsigned, wrong-commit, source-free, or status-mismatched responses, while substance validation additionally rejects placeholders, future or invalid dates, mismatched signatures, unexplained rejection or insufficiency, incomplete numbered answers, and non-auditable source ledgers; resolve accepted corrections one language at a time, rerun bilingual parity, and keep production source unchanged",
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
