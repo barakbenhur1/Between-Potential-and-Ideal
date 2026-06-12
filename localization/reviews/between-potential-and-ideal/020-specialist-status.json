@@ -81,23 +81,23 @@
     "translation_fragments_total": 228
   },
   "verified_gate_runs": {
-    "head_sha": "8876bdfe9bfba466d80ba366ea8a54796e922f01",
+    "head_sha": "c89ef4239976d2790e10d01d072328fd9b25ab79",
     "audit_constructed_language_segments": {
-      "workflow_run_id": 27392049358,
-      "run_number": 570,
+      "workflow_run_id": 27392156496,
+      "run_number": 575,
       "result": "success",
       "template_contract_job": "success",
       "full_audit_job": "success",
       "handoff_contract_step": "success"
     },
     "release_guard": {
-      "workflow_run_id": 27392049360,
-      "run_number": 1443,
+      "workflow_run_id": 27392156469,
+      "run_number": 1448,
       "result": "success"
     },
     "export_review_snapshot": {
-      "workflow_run_id": 27392049378,
-      "run_number": 584,
+      "workflow_run_id": 27392156462,
+      "run_number": 589,
       "result": "success"
     }
   },
