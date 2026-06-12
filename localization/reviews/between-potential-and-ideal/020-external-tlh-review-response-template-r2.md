@@ -174,7 +174,7 @@ Current role sequence:
 - `vang yInbogh ghot.`
 - `vang yInbogh ghot 'e' chaw' Prime Intellect.`
 
-Decision on role-sequence sufficiency:
+Decision:
 
 Direct “replace / take another's place / act instead of” construction, if any:
 
