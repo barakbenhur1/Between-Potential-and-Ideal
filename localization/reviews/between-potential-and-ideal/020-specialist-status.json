@@ -1,8 +1,8 @@
 {
-  "schema_version": 19,
+  "schema_version": 20,
   "segment": 20,
-  "stage": "specialist-opening-proposition-source-gating",
-  "status": "opening-output-and-agency-contrast-complete-capability-worth-pending",
+  "stage": "specialist-opening-restraint-source-gating",
+  "status": "opening-capability-and-agency-complete-qya-stop-source-and-nonreplacement-pending",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -47,6 +47,10 @@
   "round_2_information_output_decision": "localization/reviews/between-potential-and-ideal/020-information-output-decision-r2.md",
   "round_2_opening_output_action_test": "localization/reviews/between-potential-and-ideal/020-opening-output-action-test-r2.md",
   "round_2_opening_output_agency_contrast": "localization/reviews/between-potential-and-ideal/020-opening-output-agency-contrast-r2.md",
+  "round_2_opening_capability_worth_gate": "localization/reviews/between-potential-and-ideal/020-opening-capability-worth-gate-r2.md",
+  "round_2_opening_moral_conduct_gate": "localization/reviews/between-potential-and-ideal/020-opening-moral-conduct-gate-r2.md",
+  "round_2_opening_stop_control_gate": "localization/reviews/between-potential-and-ideal/020-opening-stop-control-gate-r2.md",
+  "round_2_tamma_pusta_source_boundary": "localization/reviews/between-potential-and-ideal/020-tamma-pusta-source-boundary-r2.md",
   "qya_cantie_short_label_test": "localization/reviews/between-potential-and-ideal/020-cantie-test.md",
   "qya_cantie_philosophical_frame_blocker": "localization/reviews/between-potential-and-ideal/020-cantie-philosophical-frame-blocker.md",
   "current_audit_state": {
@@ -89,6 +93,10 @@
     "localization/reviews/between-potential-and-ideal/020-information-output-decision-r2.md",
     "localization/reviews/between-potential-and-ideal/020-opening-output-action-test-r2.md",
     "localization/reviews/between-potential-and-ideal/020-opening-output-agency-contrast-r2.md",
+    "localization/reviews/between-potential-and-ideal/020-opening-capability-worth-gate-r2.md",
+    "localization/reviews/between-potential-and-ideal/020-opening-moral-conduct-gate-r2.md",
+    "localization/reviews/between-potential-and-ideal/020-opening-stop-control-gate-r2.md",
+    "localization/reviews/between-potential-and-ideal/020-tamma-pusta-source-boundary-r2.md",
     "localization/glossaries/segment-020-specialist-terms.md"
   ],
   "acceptance": {
@@ -123,7 +131,12 @@
     "opening_generic_information_noun_not_required": true,
     "opening_output_action_tests_complete": true,
     "opening_output_agency_contrast_complete": true,
-    "opening_capability_moral_worth_gate_complete": false,
+    "opening_capability_moral_worth_gate_complete": true,
+    "opening_moral_conduct_agency_gate_complete": true,
+    "opening_stop_control_klingon_internal_complete": true,
+    "opening_stop_control_qya_primary_source_complete": false,
+    "opening_tamma_generic_tool_primary_source_complete": false,
+    "qya_hanquet_rejected_as_fan_invented": true,
     "opening_restraint_nonreplacement_gate_complete": false,
     "opening_proposition_source_gate_complete": false,
     "external_qya_review_complete": false,
@@ -140,7 +153,7 @@
     "independent_second_review_complete": false,
     "approved": false
   },
-  "next_action": "source-gate capability separately from moral worth in the opening proposition; select no single adjective or predicate for both and keep production source unchanged",
+  "next_action": "trace the exact Tolkien primary source and period for qya pusta-; then source-gate explicit nonreplacement in both languages without modifying production source",
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
