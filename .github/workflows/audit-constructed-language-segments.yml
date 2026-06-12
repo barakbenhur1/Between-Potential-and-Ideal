@@ -6,6 +6,7 @@ on:
     paths:
       - "tools/audit_constructed_language_segments.py"
       - "tools/validate_external_specialist_reviews.py"
+      - "tools/validate_external_specialist_review_substance.py"
       - "localization/sources/tlh/**"
       - "localization/sources/qya/**"
       - "localization/reviews/between-potential-and-ideal/020-external-*-review-response*.md"
@@ -30,6 +31,8 @@ jobs:
         run: python3 tools/audit_constructed_language_segments.py
       - name: Validate external specialist review intake
         run: python3 tools/validate_external_specialist_reviews.py
+      - name: Validate external specialist review substance
+        run: python3 tools/validate_external_specialist_review_substance.py
       - uses: actions/upload-artifact@v4
         with:
           name: constructed-language-paired-audit
