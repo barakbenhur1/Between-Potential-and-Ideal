@@ -1,0 +1,150 @@
+name: Verify Localization Public Beta Production
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/verify-localization-public-beta-production.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: verify-localization-public-beta-production
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Verify deployed beta entry points, documents, downloads, and assets
+        env:
+          LIVE_URL: https://between-potential-and-ideal.onrender.com
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/bpi-live
+
+          fetch() {
+            local name="$1"
+            local path="$2"
+            curl --silent --show-error --location \
+              --connect-timeout 20 --max-time 120 \
+              --retry 4 --retry-all-errors --retry-delay 3 \
+              --dump-header "/tmp/bpi-live/${name}.headers" \
+              --output "/tmp/bpi-live/${name}.body" \
+              --write-out '%{http_code}\n%{content_type}\n%{size_download}\n%{url_effective}\n' \
+              "${LIVE_URL}${path}" > "/tmp/bpi-live/${name}.meta"
+          }
+
+          fetch home /
+          fetch build /build-info.json
+          fetch tlh_gateway /tlh.html
+          fetch qya_gateway /qya.html
+          fetch tlh_document /files/tlh/between-potential-and-ideal-tlh.html
+          fetch qya_document /files/qya/between-potential-and-ideal-qya.html
+          fetch tlh_pdf /files/tlh/between-potential-and-ideal-tlh.pdf
+          fetch qya_pdf /files/qya/between-potential-and-ideal-qya.pdf
+          fetch cover_image /figures/cover_philosophical_recursion_whole_diagram.png
+
+          export TARGET_SHA="$(git rev-parse HEAD)"
+          python3 - <<'PY'
+          from __future__ import annotations
+
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          live = Path('/tmp/bpi-live')
+
+          def record(name: str) -> dict:
+              meta = (live / f'{name}.meta').read_text(encoding='utf-8').splitlines()
+              body = (live / f'{name}.body').read_bytes()
+              headers = (live / f'{name}.headers').read_text(encoding='utf-8', errors='replace')
+              return {
+                  'http_code': int(meta[0]) if meta and meta[0].isdigit() else 0,
+                  'content_type': meta[1] if len(meta) > 1 else '',
+                  'downloaded_bytes': int(float(meta[2])) if len(meta) > 2 and meta[2] else len(body),
+                  'effective_url': meta[3] if len(meta) > 3 else '',
+                  'headers_excerpt': headers[-1000:],
+                  'body': body,
+              }
+
+          checks = {name: record(name) for name in (
+              'home', 'build', 'tlh_gateway', 'qya_gateway', 'tlh_document',
+              'qya_document', 'tlh_pdf', 'qya_pdf', 'cover_image'
+          )}
+
+          def text(name: str) -> str:
+              return checks[name]['body'].decode('utf-8', errors='replace')
+
+          build_data = {}
+          try:
+              build_data = json.loads(text('build'))
+          except Exception:
+              pass
+
+          assertions = {
+              'home_http_200': checks['home']['http_code'] == 200,
+              'home_has_beta_links': 'localization-public-beta-links:start' in text('home'),
+              'build_http_200': checks['build']['http_code'] == 200,
+              'build_is_public_beta_release': build_data.get('short_commit') == '89827cf',
+              'tlh_gateway_http_200': checks['tlh_gateway']['http_code'] == 200,
+              'tlh_gateway_disclosure': 'PUBLIC BETA' in text('tlh_gateway') and 'not presented as canonical Klingon' in text('tlh_gateway'),
+              'qya_gateway_http_200': checks['qya_gateway']['http_code'] == 200,
+              'qya_gateway_disclosure': 'PUBLIC BETA' in text('qya_gateway') and 'modern reconstruction' in text('qya_gateway'),
+              'tlh_document_http_200': checks['tlh_document']['http_code'] == 200,
+              'tlh_document_is_full_html': checks['tlh_document']['downloaded_bytes'] > 300_000 and '<title>Between Potential and Ideal — tlhIngan Hol Public Beta</title>' in text('tlh_document'),
+              'tlh_document_disclosure': 'Public Beta' in text('tlh_document') and 'not presented as canonical Klingon' in text('tlh_document'),
+              'qya_document_http_200': checks['qya_document']['http_code'] == 200,
+              'qya_document_is_full_html': checks['qya_document']['downloaded_bytes'] > 340_000 and '<title>Between Potential and Ideal — Neo-Quenya Public Beta</title>' in text('qya_document'),
+              'qya_document_disclosure': 'Public Beta' in text('qya_document') and 'modern reconstruction' in text('qya_document'),
+              'tlh_pdf_http_200': checks['tlh_pdf']['http_code'] == 200 and checks['tlh_pdf']['body'].startswith(b'%PDF'),
+              'qya_pdf_http_200': checks['qya_pdf']['http_code'] == 200 and checks['qya_pdf']['body'].startswith(b'%PDF'),
+              'cover_image_http_200': checks['cover_image']['http_code'] == 200 and checks['cover_image']['downloaded_bytes'] > 1000,
+          }
+
+          routes = {}
+          for name, item in checks.items():
+              routes[name] = {key: value for key, value in item.items() if key != 'body'}
+
+          payload = {
+              'status': 'verified' if all(assertions.values()) else 'failed',
+              'production_verified': all(assertions.values()),
+              'target_commit': os.environ['TARGET_SHA'],
+              'deployed_build': build_data,
+              'recorded_at_utc': datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
+              'assertions': assertions,
+              'routes': routes,
+          }
+          Path('site/localization-public-beta-production-status.json').write_text(
+              json.dumps(payload, ensure_ascii=False, indent=2) + '\n',
+              encoding='utf-8',
+          )
+
+          failed = [name for name, passed in assertions.items() if not passed]
+          print(json.dumps(payload, ensure_ascii=False, indent=2))
+          if failed:
+              print('FAILED ASSERTIONS:', ', '.join(failed))
+              raise SystemExit(1)
+          PY
+
+      - name: Commit authoritative production verification
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          test -f site/localization-public-beta-production-status.json
+          git add site/localization-public-beta-production-status.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Record authoritative public beta production verification"
+          git push origin HEAD:main
