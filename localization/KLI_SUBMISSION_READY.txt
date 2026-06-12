@@ -1,0 +1,21 @@
+Subject: Bounded independent Klingon review request — segment 020
+
+Hello,
+
+I maintain a clearly disclosed Public Beta Klingon edition of Between Potential and Ideal. I am seeking an independent, evidence-based review of one bounded segment, not approval of the complete edition.
+
+The review request, immutable packet references, response template, exact submission path, and preflight instructions are collected here:
+
+https://github.com/barakbenhur1/Between-Potential-and-Ideal/issues/11
+
+A concise one-page handoff is available here:
+
+https://github.com/barakbenhur1/Between-Potential-and-Ideal/blob/main/localization/reviews/between-potential-and-ideal/020-EXTERNAL-SPECIALIST-HANDOFF.md
+
+The requested review requires Okrand-canonical lexical and grammatical evidence, back-translations, and alternate-reading analysis. The live edition remains labelled Public Beta and is not presented as canonical Klingon.
+
+Could you direct this request to an appropriate experienced reviewer or tell me the correct KLI community channel for it?
+
+Thank you,
+Barak Ben Hur
+https://github.com/barakbenhur1
