@@ -31,6 +31,10 @@ def read(name: str) -> str:
     return (REVIEW_DIR / FILES[name]).read_text(encoding="utf-8")
 
 
+def repository_path(name: str) -> str:
+    return f"localization/reviews/between-potential-and-ideal/{FILES[name]}"
+
+
 class ExternalReviewHandoffTests(unittest.TestCase):
     def test_all_handoff_files_exist(self) -> None:
         missing = [filename for filename in FILES.values() if not (REVIEW_DIR / filename).is_file()]
@@ -73,20 +77,32 @@ class ExternalReviewHandoffTests(unittest.TestCase):
         status = json.loads(read("status"))
         packet = status["review_packet"]
         self.assertEqual(PACKET_COMMIT, packet["commit"])
-        self.assertEqual(
-            f"localization/reviews/between-potential-and-ideal/{FILES['packet']}",
-            packet["packet"],
-        )
-        self.assertEqual(
-            f"localization/reviews/between-potential-and-ideal/{FILES['qya_template']}",
-            packet["qya_template"],
-        )
-        self.assertEqual(
-            f"localization/reviews/between-potential-and-ideal/{FILES['tlh_template']}",
-            packet["tlh_template"],
-        )
+
+        expected_paths = {
+            "packet": "packet",
+            "submission_guide": "submission_guide",
+            "request_index": "request_index",
+            "supplemental_evidence_index": "supplemental_index",
+            "qya_request": "qya_request",
+            "tlh_request": "tlh_request",
+            "qya_template": "qya_template",
+            "tlh_template": "tlh_template",
+            "qya_source_trace_addendum": "qya_exact_trace",
+            "qya_nonreplacement_source_trace": "qya_nonreplacement_trace",
+            "tlh_source_ledger_trace": "tlh_trace",
+        }
+        for status_key, file_key in expected_paths.items():
+            with self.subTest(status_key=status_key):
+                self.assertEqual(repository_path(file_key), packet[status_key])
+
         self.assertEqual(10, packet["qya_issue"])
         self.assertEqual(11, packet["tlh_issue"])
+        self.assertEqual(
+            "tools/test_external_review_handoff.py",
+            status["review_validation"]["handoff_contract_tests"],
+        )
+        self.assertTrue(status["acceptance"]["external_review_supplemental_evidence_index_complete"])
+        self.assertTrue(status["acceptance"]["external_review_handoff_contract_verified"])
 
 
 if __name__ == "__main__":
