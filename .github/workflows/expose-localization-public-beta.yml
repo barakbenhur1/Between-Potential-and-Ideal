@@ -9,6 +9,7 @@ on:
       - site/qya.html
       - site/files/tlh/**
       - site/files/qya/**
+      - localization/beta-release-manifest.json
       - tools/expose_localization_beta.py
       - .github/workflows/expose-localization-public-beta.yml
   workflow_dispatch:
@@ -31,9 +32,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Add public beta links and sitemap records
+      - name: Add public beta links and normalize package assets
         run: python3 tools/expose_localization_beta.py
-      - name: Verify entry points
+      - name: Verify entry points and beta images
         run: |
           test -s site/tlh.html
           test -s site/qya.html
@@ -41,14 +42,23 @@ jobs:
           grep -q "localization-public-beta-links:start" site/index.html
           grep -q "tlh.html" site/sitemap.xml
           grep -q "qya.html" site/sitemap.xml
-      - name: Commit public entry points
+          python3 tools/audit_images_exist.py
+      - name: Commit public entry points and normalized packages
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/en.html site/index.html site/sitemap.xml
+          git add \
+            site/en.html \
+            site/index.html \
+            site/sitemap.xml \
+            site/files/tlh/between-potential-and-ideal-tlh.html \
+            site/files/tlh/between-potential-and-ideal-tlh.md \
+            site/files/qya/between-potential-and-ideal-qya.html \
+            site/files/qya/between-potential-and-ideal-qya.md \
+            localization/beta-release-manifest.json
           if git diff --cached --quiet; then
-            echo "Public beta entry points are current."
+            echo "Public beta entry points and packages are current."
             exit 0
           fi
-          git commit -m "Expose Klingon and Neo-Quenya public beta entry points"
+          git commit -m "Repair public beta image paths"
           git push origin HEAD:localization-release-resolved
