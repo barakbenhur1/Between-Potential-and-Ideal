@@ -5,6 +5,8 @@ on:
     paths:
       - tools/build_localized_public_release.py
       - tools/build_localized_public_release_core.py
+      - tools/build_localization_beta.py
+      - tools/build_localization_public_packages.py
       - tools/temporary.txt
       - tools/test_write_small.py
       - tools/tmp_segments_430_450.py
@@ -27,7 +29,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: python3 -m pip install --disable-pip-version-check markdown beautifulsoup4
+      - run: python3 -m pip install --disable-pip-version-check markdown beautifulsoup4 python-docx reportlab
+      - name: Rebuild synchronized document packages
+        run: python3 tools/build_localization_public_packages.py
       - name: Build complete language sites
         run: python3 tools/build_localized_public_release.py
       - name: Verify parity
@@ -39,15 +43,34 @@ jobs:
           test -s site/qya.html
           grep -q 'pages/tlh/summary.html' site/tlh.html
           grep -q 'pages/qya/summary.html' site/qya.html
+          grep -q 'hero-cta-row' site/tlh.html
+          grep -q 'hero-cta-row' site/qya.html
           grep -q 'hreflang="tlh"' site/en.html
           grep -q 'hreflang="qya"' site/index.html
           test -s localization/site-language-parity-manifest.json
+          test -s localization/beta-release-manifest.json
+          for lang in tlh qya; do
+            for ext in html pdf docx md txt; do
+              test -s "site/files/$lang/between-potential-and-ideal-$lang.$ext"
+            done
+          done
+          if grep -R -i -E 'image description draft:|visual description draft:|alt text draft:|image prompt draft:' \
+            site/pages/tlh site/pages/qya \
+            site/files/tlh/between-potential-and-ideal-tlh.html \
+            site/files/tlh/between-potential-and-ideal-tlh.md \
+            site/files/tlh/between-potential-and-ideal-tlh.txt \
+            site/files/qya/between-potential-and-ideal-qya.html \
+            site/files/qya/between-potential-and-ideal-qya.md \
+            site/files/qya/between-potential-and-ideal-qya.txt; then
+            echo 'Editorial image-description draft leaked into a public localized output.' >&2
+            exit 1
+          fi
           python3 tools/audit_images_exist.py
-      - name: Commit generated sites
+      - name: Commit generated sites and packages
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site localization/config.json localization/translation-manifest.json localization/site-language-parity-manifest.json
+          git add site localization/config.json localization/translation-manifest.json localization/site-language-parity-manifest.json localization/beta-release-manifest.json
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Publish full Klingon and Neo-Quenya site editions"
+          git commit -m "Publish synchronized Klingon and Neo-Quenya editions"
           git push origin HEAD:main
