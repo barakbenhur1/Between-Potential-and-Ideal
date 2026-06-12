@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REVIEW_DIR = ROOT / "localization/reviews/between-potential-and-ideal"
 PACKET_COMMIT = "fc1867f8e94bf588d8e3f2d9954207444a5083f8"
+PREFLIGHT_TOOL = "tools/preflight_external_specialist_review.py"
 
 FILES = {
     "request_index": "020-external-review-request-index.md",
@@ -39,6 +40,7 @@ class ExternalReviewHandoffTests(unittest.TestCase):
     def test_all_handoff_files_exist(self) -> None:
         missing = [filename for filename in FILES.values() if not (REVIEW_DIR / filename).is_file()]
         self.assertEqual([], missing)
+        self.assertTrue((ROOT / PREFLIGHT_TOOL).is_file())
 
     def test_request_index_exposes_supplemental_evidence(self) -> None:
         text = read("request_index")
@@ -46,6 +48,14 @@ class ExternalReviewHandoffTests(unittest.TestCase):
         self.assertIn(PACKET_COMMIT, text)
         self.assertIn("pre-answer specialist decisions", text)
         self.assertIn("amend the packet", text)
+
+    def test_submission_guide_documents_both_preflight_commands(self) -> None:
+        text = read("submission_guide")
+        self.assertIn(PREFLIGHT_TOOL, text)
+        self.assertIn("--language qya", text)
+        self.assertIn("--language tlh", text)
+        self.assertIn("--json", text)
+        self.assertIn("does not grant linguistic approval", text)
 
     def test_qya_request_exposes_both_current_traces(self) -> None:
         text = read("qya_request")
@@ -97,10 +107,16 @@ class ExternalReviewHandoffTests(unittest.TestCase):
 
         self.assertEqual(10, packet["qya_issue"])
         self.assertEqual(11, packet["tlh_issue"])
+        self.assertEqual(PREFLIGHT_TOOL, status["review_validation"]["preflight_tool"])
+        self.assertEqual(
+            "tools/test_preflight_external_specialist_review.py",
+            status["review_validation"]["preflight_tests"],
+        )
         self.assertEqual(
             "tools/test_external_review_handoff.py",
             status["review_validation"]["handoff_contract_tests"],
         )
+        self.assertTrue(status["acceptance"]["external_review_local_preflight_complete"])
         self.assertTrue(status["acceptance"]["external_review_supplemental_evidence_index_complete"])
         self.assertTrue(status["acceptance"]["external_review_handoff_contract_verified"])
 
