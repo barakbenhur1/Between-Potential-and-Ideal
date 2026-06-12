@@ -1,0 +1,54 @@
+name: Expose Localization Public Beta
+
+on:
+  push:
+    branches:
+      - localization-release-resolved
+    paths:
+      - site/tlh.html
+      - site/qya.html
+      - site/files/tlh/**
+      - site/files/qya/**
+      - tools/expose_localization_beta.py
+      - .github/workflows/expose-localization-public-beta.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: expose-localization-public-beta
+  cancel-in-progress: true
+
+jobs:
+  expose-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: localization-release-resolved
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Add public beta links and sitemap records
+        run: python3 tools/expose_localization_beta.py
+      - name: Verify entry points
+        run: |
+          test -s site/tlh.html
+          test -s site/qya.html
+          grep -q "localization-public-beta-links:start" site/en.html
+          grep -q "localization-public-beta-links:start" site/index.html
+          grep -q "tlh.html" site/sitemap.xml
+          grep -q "qya.html" site/sitemap.xml
+      - name: Commit public entry points
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/en.html site/index.html site/sitemap.xml
+          if git diff --cached --quiet; then
+            echo "Public beta entry points are current."
+            exit 0
+          fi
+          git commit -m "Expose Klingon and Neo-Quenya public beta entry points"
+          git push origin HEAD:localization-release-resolved
