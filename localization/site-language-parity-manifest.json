@@ -24,38 +24,38 @@
     },
     {
       "path": "site/pages/tlh/ai-believes.html",
-      "bytes": 12079,
-      "sha256": "b02ca7c113fd9d6eda83fdae7b33f7753bc82d5588ea7cd33ac2b708e0f1fb4b"
+      "bytes": 11936,
+      "sha256": "2f04dc3fae0f3a9666d81259f3b051667719df65234c01cfe69320d3fe092ca5"
     },
     {
       "path": "site/pages/tlh/ai-open-problems.html",
-      "bytes": 9440,
-      "sha256": "a15dc9cc81dbfca870bbe892a18ff8a8cf934af85665482d60b3785d4217d35f"
+      "bytes": 9357,
+      "sha256": "765fd791a1ef6c15279fbdbf0ac87e505d3928a7b60962120e835fb3da40f5e4"
     },
     {
       "path": "site/pages/tlh/ai.html",
-      "bytes": 39285,
-      "sha256": "6ca6b7a8d30ccc84746f96e40b56b7a29abd4fa995a89dcb20be5e546a4645cc"
+      "bytes": 38986,
+      "sha256": "538e8fd7438ae87893d23241821748e5aa5e1837559879aaec8a8624d76916a2"
     },
     {
       "path": "site/pages/tlh/applied.html",
-      "bytes": 59856,
-      "sha256": "2db2e04f8db1538f09c6138421a658fb390138867b3c88004de0718d81fea026"
+      "bytes": 59239,
+      "sha256": "f8d6dd4eeb805639b10cde32c8ec0fdf045757a5a393243695859ba597a9f9e5"
     },
     {
       "path": "site/pages/tlh/art-of-potential.html",
-      "bytes": 8134,
-      "sha256": "a54f484773aafb852f2875ed1f0fe6749227e4eb33124dc0c96e73d7dc087f52"
+      "bytes": 8026,
+      "sha256": "34447d5ec46694e803f17334a8aa37b9afe03c1c2e6b298f5d0a1ef077bf7ae3"
     },
     {
       "path": "site/pages/tlh/black-holes-horizons-holography.html",
-      "bytes": 13051,
-      "sha256": "cc491263aabe540f1275c4f36f609514cfd549baae1d308337cdbb0c8a8847a6"
+      "bytes": 12936,
+      "sha256": "e3548e1eac6e5e109bc14524cb3792b05e729b0fc0167c7c0f423dc1ca7adeef"
     },
     {
       "path": "site/pages/tlh/boundary-horizons.html",
-      "bytes": 7793,
-      "sha256": "24a2fae0e3b546c6d092b552693ba4c3a144bcc1e7c8e1c2f982108b0fcc5052"
+      "bytes": 7672,
+      "sha256": "9dce2a35ebcecf8860a6a46808d0d50a6ec930df5c24e929650e58377ad266e1"
     },
     {
       "path": "site/pages/tlh/changelog.html",
@@ -64,8 +64,8 @@
     },
     {
       "path": "site/pages/tlh/core.html",
-      "bytes": 73928,
-      "sha256": "83abf2cb53f5d8e8c3f80e34a76d8416d26df7f9e3a90561c02eb69cbbd85b19"
+      "bytes": 73612,
+      "sha256": "7b2616a38074b0fb0edeb94f896ab0865943b5a7705a5444ebb1920337d2ec92"
     },
     {
       "path": "site/pages/tlh/critique.html",
@@ -74,13 +74,13 @@
     },
     {
       "path": "site/pages/tlh/discussion.html",
-      "bytes": 16886,
-      "sha256": "0d5a880d702e8b48ba0033998ff5157f57f9b01e5b7e008a4e84f4098707ef62"
+      "bytes": 16794,
+      "sha256": "d63a428a17b6954dcc705d53f43749bae267bd32a061bd2cc7eac4fd90e7f25a"
     },
     {
       "path": "site/pages/tlh/education-of-potential.html",
-      "bytes": 12790,
-      "sha256": "c9e8df408a24223f9b69ef064b0d0bde45110587ff48f753160895ea8d827dd6"
+      "bytes": 12692,
+      "sha256": "d3a5526ff30e6d2b40b610a7c31dbbbae86e9323b71b5b460504b22d05525746"
     },
     {
       "path": "site/pages/tlh/files.html",
@@ -94,48 +94,48 @@
     },
     {
       "path": "site/pages/tlh/high-energy-physics.html",
-      "bytes": 19063,
-      "sha256": "754f81d91351988bee0b74e8335457cfe27d987340d2647833bf13b71de1a955"
+      "bytes": 18931,
+      "sha256": "04cdb125aa365a79bfdae1141d6e05e618842839ceab50c0a7727531a9c32252"
     },
     {
       "path": "site/pages/tlh/i-have-no-mouth.html",
-      "bytes": 8736,
-      "sha256": "0355b83a4c62d411869fb083d9dec7c2fc9ac128be99c8823ae6c576e5185eb1"
+      "bytes": 8627,
+      "sha256": "da4312458d2ef3ccd1ee7cfb45ec36dfa0a8dffe36f2095d2a23fa7139af251e"
     },
     {
       "path": "site/pages/tlh/law-of-potential.html",
-      "bytes": 21514,
-      "sha256": "b0291e2896ec156b76a8e3a43fe1d63a368f9d430b40b9b4d03071eec931b934"
+      "bytes": 21389,
+      "sha256": "fbeb688ae39a01de8a825df2d2e8a02166135f026d1a8d74ecb8fb9344633170"
     },
     {
       "path": "site/pages/tlh/locality-nonlocality-contextuality.html",
-      "bytes": 21541,
-      "sha256": "1ea4a97b5427fbd7ef25935f115ac574b290b85e1fbfe1aa9d711e1e66a6219f"
+      "bytes": 21409,
+      "sha256": "40966b5978f7cca6b03e25c42eea9f6ce31894275db98c83f59d51543cf7c622"
     },
     {
       "path": "site/pages/tlh/medicine-of-potential.html",
-      "bytes": 8225,
-      "sha256": "d636a81ae3c52780c09ba180188a619d464e761ec93fce164d0320f7e0b5cbc5"
+      "bytes": 8114,
+      "sha256": "f327207e69e7604813c6828afcc5fb61c38a0c1a9088208720819cc5c0b6aba0"
     },
     {
       "path": "site/pages/tlh/methodology.html",
-      "bytes": 31959,
-      "sha256": "ec23b989cad310bcdf2b61d1883906e486ab75f2112bcc5e04f7b33d1dbcefd5"
+      "bytes": 31841,
+      "sha256": "270f5800fe1288eebae349872cc80f1a5c740cf297d69870ab5cdf60a0225f7c"
     },
     {
       "path": "site/pages/tlh/mistake-repeats.html",
-      "bytes": 25546,
-      "sha256": "7c0574a4e970ed432b4b2010ce2d183e3ab3e8109b12b2f938824df2cfd5aa38"
+      "bytes": 25439,
+      "sha256": "fbf75cc503b96ecbf8fa50dc818f33ef5186ef09e374c6c4222b3fcb384b34dc"
     },
     {
       "path": "site/pages/tlh/music-of-potential.html",
-      "bytes": 7815,
-      "sha256": "418438f957bbe59560c00568cdf30ad4801b6b8b9fc063e169a48165fb77d1af"
+      "bytes": 7710,
+      "sha256": "be8ed2f4dc85843d5f586ec9c6172f2e11f228e9330e52640a5850cfcee4f76f"
     },
     {
       "path": "site/pages/tlh/potential-extensions.html",
-      "bytes": 64057,
-      "sha256": "23f889676278b3e3f9d0122189fe86c5e4b762bea75e5b049ea9ef7642853bd7"
+      "bytes": 63812,
+      "sha256": "f62b12945d116c1cdd64e1880b3b4e8b21aeb0b351cee56935e98c98545339ef"
     },
     {
       "path": "site/pages/tlh/potential-ideal-optimal.html",
@@ -144,8 +144,8 @@
     },
     {
       "path": "site/pages/tlh/recursive-edge.html",
-      "bytes": 8799,
-      "sha256": "c2f5c54fef92e180dbbcd94e8d1cff5696123269bb49c801f1cd86a17ca3dc38"
+      "bytes": 8707,
+      "sha256": "200ee3e36be1f15b2bffcdac67bf726a069fcf7f7d6944a39d0450319516271e"
     },
     {
       "path": "site/pages/tlh/response.html",
@@ -154,13 +154,13 @@
     },
     {
       "path": "site/pages/tlh/science-physics-math-boundary-discipline.html",
-      "bytes": 11452,
-      "sha256": "93738973b459f953626017301df39f89a7ff86e39b428fe8da89d9a80fe6a4c7"
+      "bytes": 11334,
+      "sha256": "f02be6ef5a7dc234cf02bee19a830bbd617d9eeb8159db91d6a1dc2988eff0c4"
     },
     {
       "path": "site/pages/tlh/shape-of-the-universe-and-potential.html",
-      "bytes": 19219,
-      "sha256": "8043222c7898790a510972c87096e7bbf09d2c2856f0eaeb10d3cf58e8af74e7"
+      "bytes": 19095,
+      "sha256": "5d67a745bb8912c0918e1cd060c2017f27fa7e85b85895eaaed184d9592920a6"
     },
     {
       "path": "site/pages/tlh/sources.html",
@@ -169,18 +169,18 @@
     },
     {
       "path": "site/pages/tlh/stories.html",
-      "bytes": 17799,
-      "sha256": "43e5a718cf1aeb6aa496d7ad5f7f9b1c7bae1f862fb1e20b5d90a1ccbad1c2c9"
+      "bytes": 17547,
+      "sha256": "87fb23e411f9c3d3bed2376ebf938e9fa4a4a12fa13f06fac0b8763d4d448be0"
     },
     {
       "path": "site/pages/tlh/summary.html",
-      "bytes": 28756,
-      "sha256": "5fdf5c8ba4702c53cf9674aee56bbe9cb09d0eda7baf9960c5268a3cbecdb7a3"
+      "bytes": 28629,
+      "sha256": "4ab1b1495d964a9c5012ce26d9941b98adbe585be9de0e9bccb8ee5a7daa9fd6"
     },
     {
       "path": "site/pages/tlh/witness.html",
-      "bytes": 19868,
-      "sha256": "2edd794538a9e114587afbf79b0433f80f254c650516ddf797ac540133fd5f0b"
+      "bytes": 19616,
+      "sha256": "68e1d030159252ebdb015834624e6a10a54c31c23f88d381c1e806ba0a1d916d"
     },
     {
       "path": "site/qya.html",
@@ -199,38 +199,38 @@
     },
     {
       "path": "site/pages/qya/ai-believes.html",
-      "bytes": 14202,
-      "sha256": "c5d9dd41f01fe159664063b1551d1e078fb84353674b7979276a818b86249b2f"
+      "bytes": 14054,
+      "sha256": "9bfd41b553605ba7ee2815b92d20921246e0020a9ce87aec9cd8837abb169f39"
     },
     {
       "path": "site/pages/qya/ai-open-problems.html",
-      "bytes": 9765,
-      "sha256": "36b36ca35c9351b91daae8da78bc786b8b376a8735cd9e31f28e2432d62dfb2c"
+      "bytes": 9662,
+      "sha256": "ff50942f8c8316ef603a2ea0807cb9d3d00542ad1f3388e5aa07bc86171ddef6"
     },
     {
       "path": "site/pages/qya/ai.html",
-      "bytes": 44157,
-      "sha256": "1ab2dfca97e5db7246ca8c67d963ca2969e7e95919e3657cd02fc82d8f0ea7d4"
+      "bytes": 43816,
+      "sha256": "af4b8e4d2d8fa251ec949f1b8defc81fcb11e287c6ce108f49e122d45eb2551a"
     },
     {
       "path": "site/pages/qya/applied.html",
-      "bytes": 63624,
-      "sha256": "654e7dafc3e6c2f42a8a08fde4f186ddd287c6e47ed568f02ad6c47d1ce617c1"
+      "bytes": 62999,
+      "sha256": "454530409376d44a5c305e0b27c964f953534c69911565a5d071d058593a8d06"
     },
     {
       "path": "site/pages/qya/art-of-potential.html",
-      "bytes": 8095,
-      "sha256": "faba550897983c741e70d8b6eeafed042519ec71ec62fa92e5d515124ac6ae24"
+      "bytes": 7980,
+      "sha256": "c724fb4c0278ace9807f8a5c6e26afe273ed16672bec3a76af4f6bce86033725"
     },
     {
       "path": "site/pages/qya/black-holes-horizons-holography.html",
-      "bytes": 13807,
-      "sha256": "1b06ceea7ad30f3e5e6bc51327359ac00a4e2df61d22cc4d7223db9c7ea5849f"
+      "bytes": 13683,
+      "sha256": "c4420e6a1024d022984edc6f13a4248b69b1b1e90352c0b9a11f2dd45a9022b1"
     },
     {
       "path": "site/pages/qya/boundary-horizons.html",
-      "bytes": 7856,
-      "sha256": "14ecd2af2d12cc8f5ce6ddc7cd9bc3e5847b6ea0ba8f52ada29b6e4dd21bce1c"
+      "bytes": 7729,
+      "sha256": "6c12cd71334093b980b07326d5fc0298d23e37b72d549adb7a79c6906d8f5e86"
     },
     {
       "path": "site/pages/qya/changelog.html",
@@ -239,23 +239,23 @@
     },
     {
       "path": "site/pages/qya/core.html",
-      "bytes": 82570,
-      "sha256": "5ac94527f8290b16d4a32d52b2750ffbefe907f36d5a6494ab65007e79d1af7d"
+      "bytes": 82043,
+      "sha256": "71a2f1379a1cd75aa816201c18291e7f70e5d54571cf6c245b2e5451cbeddef6"
     },
     {
       "path": "site/pages/qya/critique.html",
-      "bytes": 38926,
-      "sha256": "fed490362cfcc63218758370915cc969d8dd053c3db1612c8f3e65d4cc11af7e"
+      "bytes": 38726,
+      "sha256": "05d54c69ad1d424e8dd1cb2d2479cd5ba2651b68ae4e73452007e5e4cb41f5b8"
     },
     {
       "path": "site/pages/qya/discussion.html",
-      "bytes": 17809,
-      "sha256": "3877b2ebb509c097b436fda28f13d1badac22093852b0cdc1149e1da72c5730a"
+      "bytes": 17710,
+      "sha256": "b7cce315d4e251c9ab1b9f19ea0fffad644dd192913ccd27f63f659c968c4d74"
     },
     {
       "path": "site/pages/qya/education-of-potential.html",
-      "bytes": 13769,
-      "sha256": "bb2dacbb6cf0fb98a0224600dafb93bc3e119b43d199cf8bbfe77b0288109589"
+      "bytes": 13676,
+      "sha256": "997c91d4973fc5df9e967d0b23b8846b52f66992d874179ceb0306ed9613f330"
     },
     {
       "path": "site/pages/qya/files.html",
@@ -269,48 +269,48 @@
     },
     {
       "path": "site/pages/qya/high-energy-physics.html",
-      "bytes": 20524,
-      "sha256": "e56566237c2ad4138abfc0980a17061aee7de87cf81893e502e50fa3db39ea00"
+      "bytes": 20383,
+      "sha256": "52c38b9ccfaffe4e360a66f8f3871952c68c6f978a2606b7f59ae10339498270"
     },
     {
       "path": "site/pages/qya/i-have-no-mouth.html",
-      "bytes": 9061,
-      "sha256": "8b2f43a2398f079f7a5339e257f9c5af82f2ef5851a46724a79eb68ad0604403"
+      "bytes": 8946,
+      "sha256": "c16eff81418a3a7a8676fa77135e95c55d5b8e9db6e9457983662148ba7372e7"
     },
     {
       "path": "site/pages/qya/law-of-potential.html",
-      "bytes": 23170,
-      "sha256": "947a1e92d3d6a22891bbebc83e7bfc8d1e3d3a8b2ef6375f6e1cce02f0e106c8"
+      "bytes": 23034,
+      "sha256": "723e560dadd10382875b9eb00cdb5b5ca5e97be7496882116ad4656ace2efe21"
     },
     {
       "path": "site/pages/qya/locality-nonlocality-contextuality.html",
-      "bytes": 22902,
-      "sha256": "540110d54e5596b5be99c43967f99d52200fb9be952c04b55df961641be035b2"
+      "bytes": 22741,
+      "sha256": "32099be78fd6830f78d1e6a5c28af4f6b7382c1b4fe988b5c7536bd89cdd9982"
     },
     {
       "path": "site/pages/qya/medicine-of-potential.html",
-      "bytes": 8382,
-      "sha256": "82e780e39bb3af903383a9f33070da847779d6a95dc81ffbe0faba548f07cd23"
+      "bytes": 8271,
+      "sha256": "bc3f4e5abfb6f2bb957cb81ae8892c3dd3bde2f370277b58ad9b400edee4090d"
     },
     {
       "path": "site/pages/qya/methodology.html",
-      "bytes": 34482,
-      "sha256": "1703b1208e6f4f9507c9927214310b29f722e153587860c542924425e60c534d"
+      "bytes": 34170,
+      "sha256": "dd9c019447a201712e9f5f3b530fd76122e8c970be8c045b3f37888f653b14d0"
     },
     {
       "path": "site/pages/qya/mistake-repeats.html",
-      "bytes": 27785,
-      "sha256": "2a6cefc5835ca29739b1c8bcb8a09d936d9e4b89be80c52730b7a2c0b4068358"
+      "bytes": 27662,
+      "sha256": "5c845ccdbde2295b79954cb03fdeff121ad47ec49e43016bac8d19cf60b10672"
     },
     {
       "path": "site/pages/qya/music-of-potential.html",
-      "bytes": 7825,
-      "sha256": "0a221134f455315e4fd4e98e59499d9e55c6c8734a76e3e8778bfa0ac363a2c1"
+      "bytes": 7719,
+      "sha256": "6e5aa3445f75a4970af4be5e07345ffce802530c8d994463826712ed16e1b1b6"
     },
     {
       "path": "site/pages/qya/potential-extensions.html",
-      "bytes": 71183,
-      "sha256": "b7a00c8ce100a7ea0f06c28076f03a60e74008e80bd72c3d12e11831cc0fdf5f"
+      "bytes": 70922,
+      "sha256": "b044260e29971212991afeb313e9b7ba2806dc65b6a72982624edb285f429b9a"
     },
     {
       "path": "site/pages/qya/potential-ideal-optimal.html",
@@ -319,23 +319,23 @@
     },
     {
       "path": "site/pages/qya/recursive-edge.html",
-      "bytes": 9055,
-      "sha256": "c08639208fa2b9aecc606829740f9f34630146f105f505896f2601143320f8c8"
+      "bytes": 8956,
+      "sha256": "e8c0bab4bf9563607e202b1a2001f68e4026962eecd8dc84dff992b11bc4d217"
     },
     {
       "path": "site/pages/qya/response.html",
-      "bytes": 32064,
-      "sha256": "3a2ed13e4a944b6308a65fb0dc9a51a0ef453602c7fbf432c3af6b80ae243ac2"
+      "bytes": 31864,
+      "sha256": "827aefa11a8d503d1305dda661571dff93768198f8481ccbda48d3aa97251b83"
     },
     {
       "path": "site/pages/qya/science-physics-math-boundary-discipline.html",
-      "bytes": 11808,
-      "sha256": "0f4bde0445d3a0242cd6e41d0e408f144383c1b6a5be5c54a1fff1efc5920187"
+      "bytes": 11696,
+      "sha256": "c2367cd5ec5572b396968a450a9c168f7c05b3e2008335a07ae54d0554dae960"
     },
     {
       "path": "site/pages/qya/shape-of-the-universe-and-potential.html",
-      "bytes": 21096,
-      "sha256": "3f092dabec1e467a14243cc0bea038513f4f1713bfa8774f7e8869ea1e0ae8af"
+      "bytes": 20962,
+      "sha256": "08d5c1affb6264635fd01c904a804231aac0b575e6f3f4dd511956bbd6237f19"
     },
     {
       "path": "site/pages/qya/sources.html",
@@ -344,18 +344,18 @@
     },
     {
       "path": "site/pages/qya/stories.html",
-      "bytes": 19064,
-      "sha256": "260d6a226cfbe4b962b0cdd68c6541fe91010ea45f998bd096e5f9d3265fc49a"
+      "bytes": 18801,
+      "sha256": "e3ec3f0ebc1ec4b9c39dfadf4708f17a7867062143fa1b2334e46ac6e521ab04"
     },
     {
       "path": "site/pages/qya/summary.html",
-      "bytes": 31585,
-      "sha256": "d3c2c3bd655a8a7a638e41b941ef9a8aea61203eea965ece1d0d887858a12ad6"
+      "bytes": 31452,
+      "sha256": "5482d94f66692c6d34dedfab039763be65b423125cbbe62232f880cba45219d4"
     },
     {
       "path": "site/pages/qya/witness.html",
-      "bytes": 22599,
-      "sha256": "0e58aff3b6053ac4ad7c6384f50d55388c1391284a914bc28476ca83827948e7"
+      "bytes": 22336,
+      "sha256": "5d59395d2b52de70aefc2faa73a192fed19826996bdb5f1a6eb25ea7108d325f"
     }
   ]
 }

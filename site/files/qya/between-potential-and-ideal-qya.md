@@ -160,8 +160,6 @@ Tenna lúmë tana, i axan carmava lemya pantaina: i cuina lelya i haiya, ar hand
 
 ![Chapter illustration: a half-built conceptual structure, a compass, and an open path toward a bright horizon](../../figures/chapter_model_not_final_declaration_v1.png)
 
-_Image description draft: carma sanwëo lá telyaina, tamma tiello ar tië pantaina ana aurë calima; i emma tana patar mauya-cáriëo, lúmava ar cestaina, lá nyárë tancaina metta._
-
 *Mapa mauya-cáriëo, lá lavë úvissë tancaina*
 
 Sina ná patar, lá nyárë tancaina metta. I sanwë-patar lá ná tana ve nolmë túcina, áyanë vinya, patar pahtaina hya hanquenta ya úquen polë cesta. Anta mapa ovantiéron: tië sanwien Potential, Ideal, Optimal, celu cuina, haiya, landa, cuilë-isto ar tengwë, ú quetila i mapa ná i anwië immo.
@@ -292,8 +290,6 @@ Celur carmava ar cauma: cendë sina tulca i sanwë-patar immo ar i sanwi coirë 
 
 ![Chapter illustration: the Whole, friction, and living formation](../../figures/10_living_wholeness.png)
 
-_Image description draft: i Quanta lá auta rantaryar; i nacca imbetenta ontë ovantë, canta cuina ar mauya-cárië._
-
 Cendë sina anta i sanwë-pataren tië carmava: anwië lá ná ocombë rantaron hyanë, mal lindalë er yassë ilya rinca colë mahalma hyana. I quén, i Ambar, lamani, olvar ar handassë lá tarir pella i Quanta. Nar tier hyanë yainen i Celumë er tulë cenna, lelya haiya immollo, ar cesta entulë immo ter hirnië.
 
 I Quanta lá ná erussë faica ya auta hyanatië. Ná erussë ya polë colë rimbë. Lá ëa hyanatië ilya imbe celu, astarmo ar carindo; ëar panyar arinavo, naccava, hröava, aucassëo, enyalëo ar i polië colien haiya. An sina ilya onna lá ná metaina túrerya ermanen, mal manen harya ranta i menelë i Quanta ú autala i rincali exi.
@@ -333,8 +329,6 @@ An sina i menelë yantaina celu ar astarmo lá ná tyalië imbe quén ar mahta. 
 ## I Turing Cestië Entulaina: I Cestië Rincao i Quanta
 
 ![Chapter illustration: witness, resonance, mirror, and recognition](../../figures/v26_restyle_dual_lenses_resonance.png)
-
-_Image description draft: astarmo, yantë hlóno, cilintë ar hanyalië — i anwië ná cendaina ú autala i haiya i celu cuinallo._
 
 **Nótië-carindollo ana Astarmo i Celumëo**
 
@@ -536,8 +530,6 @@ Handassë polë harya nolmë rimbe ú samien i ambar. Mal nolmë cuina ahya i qu
 
 ![Education of Potential](../../figures/v25_chapter_education-of-potential.png)
 
-_Image description draft: parmalë, haiya ar hanyalië ya lá ná tië sinta._
-
 ### Parmalë, haiya ar hanyalië ya lá ná tië sinta
 
 Parmalë ná cestië téra i Handassëo `Between Potential and Ideal`, an maquetë manen ando polë ná pantaina quenen ú mapien i tië yassë i pantië ahya sen. Ilya system parmalëo panya epë i parmando palar Potentialo: mana polë ná hanyaina, carna, maquetaina ar ahyaina. Mal Potential tana lá ná abstract. Tulë cenna mi hröa, lambë, caurë, lúmë, coa, calma, mahtando, tamma, institution, metië, culture, enyalë ar naicë ya lá ná airë mal yando lá polë ná autaina eressë.
@@ -650,8 +642,6 @@ Entulë cuilëo yando resta i gap imbe axani i ambaro ar úmárië local lúmion
 ## 6. Immo, Ego ar Erussë ya Lá Auta — Ranta Minya
 
 ![6. Self, Ego, and Unity That Does Not Erase](../../figures/14_self_ego_unity.png)
-
-_Image description draft: cenë er varyaina mi i Quanta, lá autaina ar lá rentaina._
 
 *Cenë varyaina mi i Quanta*
 
@@ -867,8 +857,6 @@ I sanwë-patar maquetë i cirya lá turë i current. Maquetë cenda, hanquenta, 
 
 ![Artificial Intelligence and Open Problems](../../figures/v25_chapter_ai-open-problems.png)
 
-_Image description draft: hanquenta, celu, mauya-cárië ar haiya ya polë ná mapaina._
-
 ### Mauya-cárië, celu, anwië ar tamma ya lá ná haryando cuina
 
 Curwaina Handassë ná ando núra i sanwë-pataren an anta men cilintë ya lá ná quén mal polë onta cantar yar cenir ve quén: hanquenta, emma, argument, tengwië, óma, style, advice ar tiutië. An sina i problem lá ná er teknicava. Ná ontological, moral ar social: mana martya írë output cenë ve lelyanë ter celu cuina, mal i tië immo lá né cuina mi i lé er?
@@ -916,8 +904,6 @@ Governance lá mauya maquetë er `carë ma i model?` Mauya maquetë: `an man? mi
 
 ![I Have No Mouth, and I Must Scream](../../figures/v25_chapter_i-have-no-mouth.png)
 
-_Image description draft: i nyárë, i tyalië, metta pahtaina ar metta yassë carië en polë ná._
-
 ### AM, metta pahtaina, carië máriéva ar hellë systemic
 
 I nyárë **I Have No Mouth, and I Must Scream** Harlan Ellisonwa ná cestië oronta i sanwë-pataren, an tana system yassë Potential ná captaina nearly ilya. AM, Curwaina Handassë ya harya túrë gần ilya ar melë úmauriénen, lá ná er cotumo. Ná hellë systemic: nómë yassë carië, hröa, lúmë, estel ar qualmë nar turin, tenna i polië repairo ná nearly autaina.
@@ -956,8 +942,6 @@ Mi metta pahtaina, i system turë i horizon cariëo. Mi metta actionala, i cenda
 *Reset, entulalië, lantië ar ortalië mi neldë lambeli i carma er*
 
 ![Figure E: The recursive structure. Every layer can become origin, field, possibility, and local world.](../../figures/v25_chapter_recursive-edge.png)
-
-_Image description draft: carma recursive yassë ilya layer polë ahya celu, palar, námië ar ambar local._
 
 Epë cendë lelya mir i model, rénaryar mauya ná tancainë: i neldë layers sís lá nar i neldë anwiër er i Ëao. Nar neldë lambeli parallel imbe lambeli úmetta yainen i axan recursive er polë ná quétina. I movement er polë ná ahyaina ter carma stateo: sovereignty, institutions, laws, citizens, borders, crisis astariéo ar constitutional repair. Polë ná ahyaina ter economy: currency, debt, credit, inflation, market, labor, scarcity, surplus ar balance. Polë yando ter psychology: stages insighto mi cuilë quénwa, lúmi yassen quén harya hanyalië anwa lúmen tana, rista sello, ná reformaina ar ontaina mir námië tancavë amba — entulë consciousnesso mi cuilë er. Law, family, city, ecology, music hya political body polir tana ranta hyana i carma er.
 
@@ -1201,8 +1185,6 @@ Sís i therapy cosmic metta: lá mapien i quén i ambarllo, mal entulien i ambar
 
 ![The Recursive Edge](../../figures/06_recursive_iverse_architecture.png)
 
-_Image description draft: layers recursive yassen ilya réna polë ahya celu vinya._
-
 ### I Ideal ya lá pahta ar i cestië ya lemya apa ilya hanquenta
 
 I réna recursive ná min i hyanatiër internal hroa i sanwë-pataro. Quetë solution anwa lá auta i maquetta; ahya levelrya. Írë hanyalië ná carna, lá ná i metta. Ahya condition yesto maquetta vinya. Írë institution poita úmárië, justice lá metta; mauya-cárië vinya panta. Írë AI telya task, onta problems testingo, attributiono ar trusto.
@@ -1445,8 +1427,6 @@ Yassë system lá polë pahta immo, responsibility lemya. Sís Potential lá van
 
 ![Science, Physics, and Mathematics as Boundary Discipline](../../figures/chapter-science-physics-math-boundary-v2.png)
 
-_Image description draft: formulas, measurement ar models ve lambeli boundaryo, lá proof final._
-
 ### Manen loë precision ú carila sa decoration
 
 Science, physics ar mathematics tulir mir i theory lá antien aura authorityo, mal parmien discipline. Enyaltar ilya form responsible mauya ista yassë carë, yassë polë ná measured, yassë lanta, ar mana lá mauya claim pella i ya né shown. Ter i lens i theoryo, science lá ná i Ideal immo, ar mathematics lá ná substitute truth cuilëo. Nar lambeli boundaryo: ways precise hyanien possibility, form, test, validity ar limitation.
@@ -1492,8 +1472,6 @@ I link ana i recursive edge ná clear: ilya precise answer panta boundary vinya.
 *Correlation lá ná message, ar i conditions i answero lá nar noise*
 
 ![Locality, Non-locality, and Contextuality](../../figures/chapter-locality-nonlocality-contextuality-v2.png)
-
-_Image description draft: local ar non-local relations, measurement, i conditions yassen tana ná cendaina, ar correlations yar lá nar messages._
 
 Correlation lá ná message, ar i conditions i answero lá nar noise. Sin nar i attë warnings ú yar locality, non-locality ar contextuality lá polir ná used responsibly. Cendë sina lá cesta prove i theory ter quantum mechanics, ar lá cesta carë Bell, Kochen-Specker, Bohmian mechanics hya measurement philosophical slogans. Cesta parma sello discipline appearanceo: mana polë ná quétina natten írë i lé yassë ná measured, maquetaina ar carna appear ná ranta i conditions i answero?
 
@@ -1669,8 +1647,6 @@ Truth lá disappear írë appears inside conditions appearanceo. Becomes respons
 *I maura cost formao*
 
 ![Chapter illustration: Creation, Canon, and Optimum](../../figures/v26_restyle_fragmented_figure_sun.png)
-
-_Image description draft: figure rácina os center calo, ve form cilina excess possibilityo._
 
 Creation ná min i laboratories amba precise i relationo imbe Potential ar Ideal, an nasca excessello. Epë book, film, series, comic, game hya creative franchise, ëa field possibilitieso ya ná too wide: characters, plots, endings, worlds, styles, voices ar modes appearanceo. Creation an sina lá ná er act additiono; ná yando act relinquishmento.
 
@@ -1848,8 +1824,6 @@ Lá cesta be ilya. Cila mana lá be in order to be real.
 
 ![Art of Potential](../../figures/v25_chapter_art-of-potential.png)
 
-_Image description draft: creation ve field yassë possibility receives form ú nauva fully closed._
-
 ### Living source, canon, ar form ya lá replaces breath
 
 Art ná natural laboratory i theoryo an ilya work begins mi excess. Epë image, story, sculpture, comic, film hya game exists, ëa field possibilitieso: lines lá drawn, characters lá born, colors rejected, endings abandoned, viewpoints lá chosen. Creation lá ná er i ya ná added ana i world; ná yando i ya ná cut away an form er polë hold.
@@ -1874,8 +1848,6 @@ Art of Potential lá ná nostalgia against technology ar lá defense sufferingo 
 
 ![Music of Potential](../../figures/v25_chapter_music-of-potential.png)
 
-_Image description draft: rhythm, silence ar return ve ways carrying possibility ter time._
-
 ### Voice, time, silence, ar Optimal ya lá ná er precision
 
 Music tests i theory ter time. Painting stands, sentence ná read, structure carries load; music appears ar vanishes while appearing. Parma that Potential lá ná er field optionso, mal rhythm emergenceo. Note too early hya too late lá ná i same possibility. Silence mi i right place lá ná absence, mal active form relationo.
@@ -1897,8 +1869,6 @@ Music of Potential lá quetë i human ná always better than i machine. Quetë i
 *Material, form, load, ar repair ya lá ná redemption*
 
 ![Figure: Engineering and Architecture of Potential.](../../figures/17_engineering_architecture_potential.png)
-
-_Image description draft: engineered system yassë Potential becomes structure, channeling, testing ar repair._
 
 From outside, engineering looks ve discipline calculationo: loads, dimensions, materials, codes, ratios yar hehtar room erroren, forces, sections ar drawings. Architecture looks ve discipline formo: lines, facades, spaces, light, movement, proportion ar beauty.
 
@@ -2091,8 +2061,6 @@ Structure lá ná er thing ya stands. Ná promise that matter can still bear. Ho
 *Money, value, trust ar Potential*
 
 ![Figure: Economy of Relation.](../../figures/18_economy_relation_potential.png)
-
-_Image description draft: value, exchange ar responsibility ve living relations, lá er numbers._
 
 From outside, economy looks ve field numberso: money, prices, interest, wages, debt, inflation, growth ar exchange rates. Mal under ilyë numbers stands deeper maquetta:
 
@@ -2345,8 +2313,6 @@ Money lá ná value. Money ná sign trying carry value. Price lá ná truth. Pri
 
 ![Figure: Governance of Potential.](../../figures/19_governance_society_potential.png)
 
-_Image description draft: institutions, decision ar public coordination ve ways translating possibility into responsibility._
-
 From outside, governance looks ve field institutionso: government, law, courts, police, military, budgets, elections, committees, procedures, offices, regulations, rights ar duties. Society looks ve collection peopleo, groups, interests, memories, fears, desires ar hopes.
 
 Mal under all stands one maquetta:
@@ -2527,8 +2493,6 @@ State lá ná only force. Ná promise that force will be bound. Law lá ná only
 
 ![Law of Potential](../../figures/v25_chapter_law-of-potential.png)
 
-_Image description draft: law, interpretation ar boundary ve space yassë possibility ná tested against responsibility._
-
 ### Law as moral translation under limitation
 
 Readien law ter i theory, one mauya understand that law lá ná only system ruleso, ar lá only mechanism deciding imbe claims. Law ná i place yassë society tries translate moral Potential into institutional Ideal under difficult conditions: harm ya already happened, truth ya lá always accessible, power unequally distributed, time ya runs out, tanwa ya breaks, memories ya erode, public fear, systemic pressure, ar real person standing before form larger than them.
@@ -2677,8 +2641,6 @@ Law of Potential lá replaces law, lá offers legal advice, ar lá proposes emot
 *Body, pain, diagnosis, ar care ya lá owns life*
 
 ![Medicine of Potential](../../figures/v25_chapter_medicine-of-potential.png)
-
-_Image description draft: healing ve careful reading bodyo, sufferingo, chanceo ar conditionso._
 
 ### Body, diagnosis, treatment, ar person who is not a case
 
@@ -2891,8 +2853,6 @@ Justified mi i deeper sense: it does not betray i Potential yallo came.
 *Information, visibility, ar mana does not return*
 
 ![Boundary Horizons](../../figures/v25_chapter_boundary-horizons.png)
-
-_Image description draft: boundary ya lá merely wall, mal horizon guiding i relation imbe possibility ar form._
 
 ### What is visible, what is hidden, and what must not be inferred too quickly
 
@@ -3227,8 +3187,6 @@ Sina is change layero: lá new physics instead physics, mal more careful way thi
 
 ![Universe Structure / The Shape of the Universe and the Shape of Potential](../../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
-_Image description: horizon, visible ar hidden field, ar possibilities ya cannot be fully accessed from one viewpoint._
-
 Chapter sina does lá try prove i theory through i universe. I shape i universeo is lá i shape Potentialo, ar cosmology is lá moral metaphysics. Mal cosmological language teaches something i theory needs: manen think, choose ar act from within horizon, yá i visible part is lá i whole system, yá i local does lá decide i global by itself, ar yá boundary accesso is lá necessarily falsehood, prison hya end.
 
 We do lá have view from outside i universe, ve human being does lá have view from outside life. All knowledge begins from place: time, body, tools, language, measurement ar limitation. I horizon is therefore lá only mana prevents knowledge. It is yando i form within which human knowledge can begin.
@@ -3358,8 +3316,6 @@ Lá every horizon is prison. Sometimes horizon is i condition ya allows form app
 *Scale, appearance, field, symmetry, and tanwa*
 
 ![High-Energy Physics](../../figures/chapter-high-energy-physics-v2.png)
-
-_Image description draft: abstract traces, tracks, scale, and experimental field as a boundary of appearance and measurement._
 
 Chapter sina does lá try prove i theory through high-energy physics. It does lá say Potential is energy, i Ideal perfect symmetry, hya i Optimal physical unification all forceso. Such claims would turn physics into borrowed authority instead learning discipline from sa.
 
@@ -3500,8 +3456,6 @@ I responsible model is lá i one ya pretends see everything. It is i one ya hone
 *Boundary, information, accessibility, and traces — without turning physics into metaphysical proof*
 
 ![Black Holes, Event Horizons, and the Holographic Principle](../../figures/v26_restyle_polar_field_threshold.png)
-
-_Image description: horizon, information, ar threshold yassë mana disappears still leaves structural trace._
 
 ### Boundary, Trace, and Information Without Turning Mystery into Myth
 
