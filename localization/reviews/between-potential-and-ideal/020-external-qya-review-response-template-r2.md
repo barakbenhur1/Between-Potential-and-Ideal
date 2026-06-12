@@ -214,7 +214,7 @@ Current role sequence:
 - `Prime Intellect quetë.`
 - `I coirëa quén lerta lelya tierya.`
 
-Decision on role-sequence sufficiency:
+Decision:
 
 Direct “replace / instead of / take another's place” construction, if any:
 
