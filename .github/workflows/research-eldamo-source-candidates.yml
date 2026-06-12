@@ -22,6 +22,6 @@ jobs:
             "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${SCRIPT_SHA}/tools/extract_eldamo_source_candidates.py" \
             --output /tmp/extract_eldamo_source_candidates.py
           python3 /tmp/extract_eldamo_source_candidates.py \
-            --gloss-regex 'replace|replacement|substitut|instead|in place of|take.*place|supplant|stand in' \
+            --gloss-regex '(^| )replace($|[ ,;.])|replaced|replacement|replacing|replaces|substitut|instead|in place of|supplant|take the place of|exchange|swap|change places|successor|succeed|stand in for' \
             --languages q,mq \
             --max-records 80
