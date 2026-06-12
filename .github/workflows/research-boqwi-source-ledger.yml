@@ -1,0 +1,24 @@
+name: Research boQwI Source Ledger
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/research-boqwi-source-ledger.yml"
+      - "tools/extract_boqwi_source_ledger.py"
+
+permissions:
+  contents: read
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
+          show-progress: false
+          sparse-checkout: tools/extract_boqwi_source_ledger.py
+          sparse-checkout-cone-mode: false
+      - name: Extract source ledger from pinned boQwI data
+        run: python3 tools/extract_boqwi_source_ledger.py
