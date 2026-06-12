@@ -1,9 +1,16 @@
 {
   "status": "failed",
   "production_verified": false,
-  "verification_scope": "deployed descendant of target, gateways and review links, sitemap, image, and exact manifest parity for all five formats in both languages",
-  "target_commit": "843050a0bf6160c26122cd7b6a8c1b1f92814d83",
+  "verification_scope": "live routes, localized gateway disclosures and review links, sitemap, image, exact repository manifest parity for both gateways and all five formats in both languages, with build-info metadata recorded as advisory evidence",
+  "target_commit": "70b4835b8de99050f9987a3e6a1702ad0b6ed8e8",
   "required_release_commit": "89827cfe127ace4c18c426fbb8eb338be2f94578",
+  "deployment_evidence": {
+    "metadata_contains_target": false,
+    "metadata_contains_release": true,
+    "content_matches_repository": false,
+    "target_evidenced_by_metadata_or_content": false,
+    "note": "Exact live SHA-256 and byte parity for the current gateway and package manifest is authoritative when Render build-info metadata is stale or cached."
+  },
   "deployed_build": {
     "project": "Between Potential and Ideal",
     "branch": "main",
@@ -14,20 +21,18 @@
     "build_info_mode": "generated-from-current-git-head",
     "deployment_verification_note": "Triggers Render auto-deploy after the verified public-beta merge. The deployed build regenerates this file from its current Git HEAD."
   },
-  "recorded_at_utc": "2026-06-12T18:54:44+00:00",
+  "recorded_at_utc": "2026-06-12T19:51:23+00:00",
   "assertions": {
     "home_http_200": true,
     "home_has_beta_links": true,
     "build_http_200": true,
-    "deployed_build_contains_target": false,
-    "deployed_build_contains_release": true,
     "sitemap_http_200": true,
     "sitemap_has_beta_routes": true,
     "tlh_gateway_http_200": true,
     "tlh_gateway_disclosure": false,
     "tlh_gateway_has_review_link": true,
     "qya_gateway_http_200": true,
-    "qya_gateway_disclosure": false,
+    "qya_gateway_disclosure": true,
     "qya_gateway_has_review_link": true,
     "cover_image_http_200": true,
     "tlh_html_http_200": true,
@@ -60,6 +65,10 @@
     "qya_txt_http_200": true,
     "qya_txt_exact_size": true,
     "qya_txt_exact_sha256": true,
+    "tlh_gateway_exact_size": true,
+    "tlh_gateway_exact_sha256": true,
+    "qya_gateway_exact_size": true,
+    "qya_gateway_exact_sha256": true,
     "tlh_html_disclosure": true,
     "qya_html_disclosure": true,
     "tlh_pdf_magic": true,
@@ -67,7 +76,9 @@
     "tlh_docx_magic": true,
     "qya_docx_magic": true,
     "tlh_md_disclosure": true,
-    "qya_md_disclosure": true
+    "qya_md_disclosure": true,
+    "deployed_target_evidenced": false,
+    "release_lineage_evidenced": true
   },
   "routes": {
     "home": {
@@ -183,14 +194,16 @@
       "content_type": "text/html",
       "downloaded_bytes": 12834,
       "sha256": "068fb26db7f9f8aef82ecc8ebfc9ef0415b3fc60c99ffe20e37441f9e61f4f28",
-      "effective_url": "https://between-potential-and-ideal.onrender.com/tlh.html"
+      "effective_url": "https://between-potential-and-ideal.onrender.com/tlh.html",
+      "manifest_path": "site/tlh.html"
     },
     "qya_gateway": {
       "http_code": 200,
       "content_type": "text/html",
       "downloaded_bytes": 12035,
       "sha256": "17bdddf17813a957e0885919056c27c69ccc5e08f47f0c752588dc9bafe469f4",
-      "effective_url": "https://between-potential-and-ideal.onrender.com/qya.html"
+      "effective_url": "https://between-potential-and-ideal.onrender.com/qya.html",
+      "manifest_path": "site/qya.html"
     }
   }
 }
