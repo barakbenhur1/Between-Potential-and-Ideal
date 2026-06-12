@@ -18,23 +18,22 @@ The original release deployment was verified for route availability, disclosure 
 
 - Obsolete PR #5 closed without merge.
 - Issues #10 and #11 updated to reflect the live Public Beta state.
-- Reviewer links added to the Klingon and Neo-Quenya gateway pages in the repository.
-- Production verifier expanded to check reviewer links and accept a deployed descendant of the target revision.
-- Repository README updated with live editions and review paths.
-- Official outreach routes and ready-to-send messages documented in `localization/SPECIALIST_OUTREACH.md`.
-- Single reviewer entry point created at `localization/reviews/between-potential-and-ideal/020-EXTERNAL-SPECIALIST-HANDOFF.md`.
-- Final completion boundary recorded in `localization/REVIEW_COMPLETION_CHECKLIST.md`.
+- Reviewer links added to both language gateway pages in the repository.
+- Production verifier expanded to check reviewer links and deployed descendants.
+- README, outreach plan, reviewer handoff, and completion checklist added.
+- Neo-Quenya routing request sent through the documented official email route.
 
 ## Open external dependencies
 
 1. Independent Neo-Quenya response for issue #10.
-2. Independent Klingon response for issue #11.
-3. Authoritative production-status refresh confirming that the public gateway pages include the reviewer links added after the original release verification.
+2. Klingon request submission through an official KLI form, Discord, or subscribed discussion group.
+3. Independent Klingon response for issue #11.
+4. Production-status refresh for the post-release reviewer links.
 
-The first two items require independent human specialists. Their absence is not unfinished translation work and must not be replaced by an invented approval.
+These are external dependencies, not unfinished translation work.
 
 ## Current next action
 
-Circulate the prepared outreach messages through the documented official routes and accept only responses that satisfy the response template and pass `tools/preflight_external_specialist_review.py`.
+Monitor the Neo-Quenya thread, submit the prepared Klingon request through an official KLI channel, and accept only responses that pass `tools/preflight_external_specialist_review.py`.
 
 No speculative translation edits are authorized while no valid specialist response exists.
