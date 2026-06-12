@@ -1,8 +1,8 @@
 {
-  "schema_version": 17,
+  "schema_version": 18,
   "segment": 20,
-  "stage": "specialist-source-validation",
-  "status": "bilingual-internal-test-candidates-external-review-pending",
+  "stage": "specialist-body-source-gating",
+  "status": "bilingual-internal-candidates-body-blueprint-complete-external-review-pending",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -40,6 +40,8 @@
   "round_2_tlh_three_context_results": "localization/reviews/between-potential-and-ideal/020-tlh-three-context-results-r2.md",
   "round_2_tlh_adversarial_review": "localization/reviews/between-potential-and-ideal/020-tlh-adversarial-review-r2.md",
   "round_2_bilingual_candidate_checkpoint": "localization/reviews/between-potential-and-ideal/020-bilingual-candidate-checkpoint-r2.md",
+  "round_2_body_revision_blueprint": "localization/reviews/between-potential-and-ideal/020-body-revision-blueprint-r2.md",
+  "round_2_draft_supersession_register": "localization/reviews/between-potential-and-ideal/020-draft-supersession-register-r2.json",
   "qya_cantie_short_label_test": "localization/reviews/between-potential-and-ideal/020-cantie-test.md",
   "qya_cantie_philosophical_frame_blocker": "localization/reviews/between-potential-and-ideal/020-cantie-philosophical-frame-blocker.md",
   "current_audit_state": {
@@ -75,6 +77,8 @@
     "localization/reviews/between-potential-and-ideal/020-tlh-three-context-results-r2.md",
     "localization/reviews/between-potential-and-ideal/020-tlh-adversarial-review-r2.md",
     "localization/reviews/between-potential-and-ideal/020-bilingual-candidate-checkpoint-r2.md",
+    "localization/reviews/between-potential-and-ideal/020-body-revision-blueprint-r2.md",
+    "localization/reviews/between-potential-and-ideal/020-draft-supersession-register-r2.json",
     "localization/glossaries/segment-020-specialist-terms.md"
   ],
   "acceptance": {
@@ -102,6 +106,9 @@
     "tlh_complete_main_title_selected": false,
     "bilingual_internal_test_candidates_complete": true,
     "bilingual_internal_semantic_parity_documented": true,
+    "body_paragraph_semantic_map_complete": true,
+    "superseded_draft_register_complete": true,
+    "opening_proposition_source_gate_complete": false,
     "external_qya_review_complete": false,
     "external_tlh_review_complete": false,
     "source_validation_complete": false,
@@ -116,7 +123,7 @@
     "independent_second_review_complete": false,
     "approved": false
   },
-  "next_action": "prepare a bounded segment-020 body-revision blueprint mapped paragraph by paragraph to the bilingual semantic controls; do not modify production source before external Neo-Quenya and Klingon specialist reviews",
+  "next_action": "source-gate the opening proposition in both languages under 020-body-revision-blueprint-r2.md, recording exact lexical and grammar dependencies without modifying production source",
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
