@@ -19,4 +19,4 @@ jobs:
           curl --fail --silent --show-error \
             "https://raw.githubusercontent.com/barakbenhur1/Between-Potential-and-Ideal/b64e76e739c6a170372bc73a93595b5ed3002ef5/tools/extract_boqwi_source_ledger.py" \
             --output /tmp/extract_boqwi_source_ledger.py
-          python3 /tmp/extract_boqwi_source_ledger.py -- jatlh -laH SeH -pa' mev
+          python3 /tmp/extract_boqwi_source_ledger.py -- jatlh -laH SeH "-pa'" mev
