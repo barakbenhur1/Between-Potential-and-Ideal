@@ -2,20 +2,18 @@
 
 Updated: 2026-06-12
 
-## Published state
+The canonical localization and review status is now maintained in:
 
-- Klingon and Neo-Quenya are live as Public Beta editions.
-- Release commit: `89827cfe127ace4c18c426fbb8eb338be2f94578`.
-- Production status: `site/localization-public-beta-production-status.json` reports `production_verified: true`.
-- All 77 sections and all five formats per language are published.
+`localization/CURRENT_STATUS.md`
 
-## Open reviews
+Use that file for the overall completion state, remaining external dependencies, and current next action.
+
+## External review summary
 
 - Neo-Quenya segment 020: issue #10 — awaiting an independent specialist response.
 - Klingon segment 020: issue #11 — awaiting an independent specialist response.
-
-## Next action
-
-Accept only responses that pass `tools/preflight_external_specialist_review.py`. After a valid response, review the evidence, prepare a dedicated correction pull request, regenerate every affected format and the release manifest, rerun release QA, and verify production again.
+- Single reviewer handoff: `localization/reviews/between-potential-and-ideal/020-EXTERNAL-SPECIALIST-HANDOFF.md`.
+- Outreach routes and prepared messages: `localization/SPECIALIST_OUTREACH.md`.
+- Completion boundary: `localization/REVIEW_COMPLETION_CHECKLIST.md`.
 
 Public Beta publication does not claim independent specialist approval. No speculative source change is authorized while the specialist responses are absent.
