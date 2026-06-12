@@ -1,9 +1,9 @@
 {
-  "schema_version": 29,
-  "previous_schema_checkpoint": "075613124d9c1067f9fd95353623ecd0a139090e",
+  "schema_version": 30,
+  "previous_schema_checkpoint": "7f7505ba0639499b5842bab8c6c1c61b2aabe589",
   "segment": 20,
   "stage": "specialist-external-review-requested",
-  "status": "external-review-requests-open-qya-source-and-nonreplacement-traces-complete-responses-pending",
+  "status": "external-review-requests-open-qya-and-tlh-secondary-source-traces-complete-responses-pending",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -21,6 +21,7 @@
     "tlh_template": "localization/reviews/between-potential-and-ideal/020-external-tlh-review-response-template-r2.md",
     "qya_source_trace_addendum": "localization/reviews/between-potential-and-ideal/020-tamma-pusta-source-trace-r3.md",
     "qya_nonreplacement_source_trace": "localization/reviews/between-potential-and-ideal/020-nonreplacement-source-trace-r3.md",
+    "tlh_source_ledger_trace": "localization/reviews/between-potential-and-ideal/020-tlh-source-ledger-trace-r3.md",
     "qya_issue": 10,
     "tlh_issue": 11
   },
@@ -34,15 +35,30 @@
     "contributor_state": "valid-awaiting-status-sync",
     "template_contract": "verified-for-both-languages"
   },
-  "source_trace": {
-    "tamma_pusta_document": "localization/reviews/between-potential-and-ideal/020-tamma-pusta-source-trace-r3.md",
-    "nonreplacement_document": "localization/reviews/between-potential-and-ideal/020-nonreplacement-source-trace-r3.md",
-    "extractor": "tools/extract_eldamo_source_candidates.py",
-    "manual_workflow": ".github/workflows/research-eldamo-source-candidates.yml",
-    "upstream_commit": "4071c9caa95caca905c96af2505d5252045e2aaa",
-    "exact_form_research_run_id": 27390250564,
-    "nonreplacement_research_run_id": 27390739730,
-    "result": "success"
+  "source_traces": {
+    "qya": {
+      "documents": [
+        "localization/reviews/between-potential-and-ideal/020-tamma-pusta-source-trace-r3.md",
+        "localization/reviews/between-potential-and-ideal/020-nonreplacement-source-trace-r3.md"
+      ],
+      "extractor": "tools/extract_eldamo_source_candidates.py",
+      "manual_workflow": ".github/workflows/research-eldamo-source-candidates.yml",
+      "upstream_commit": "4071c9caa95caca905c96af2505d5252045e2aaa",
+      "exact_form_research_run_id": 27390250564,
+      "nonreplacement_research_run_id": 27390739730,
+      "result": "success"
+    },
+    "tlh": {
+      "document": "localization/reviews/between-potential-and-ideal/020-tlh-source-ledger-trace-r3.md",
+      "extractor": "tools/extract_boqwi_source_ledger.py",
+      "manual_workflow": ".github/workflows/research-boqwi-source-ledger.yml",
+      "application_commit": "b57e987c4e08d77a0310cd6814aa63d8e23d6c4c",
+      "data_commit": "e2d0a8a0e061a67b1ae342913cdd487a6af20baa",
+      "data_release": "2026.01.03a",
+      "full_research_run_id": 27391280728,
+      "remaining_entries_run_id": 27391384706,
+      "result": "success"
+    }
   },
   "current_audit_state": {
     "repository_mechanically_clear_pairs": 77,
@@ -58,22 +74,22 @@
     "translation_fragments_total": 228
   },
   "verified_gate_runs": {
-    "head_sha": "a0191021fb653df03656844e42d5c9a234e3bd32",
+    "head_sha": "3f39221a29250e85a1c50b35224261e2090e6ace",
     "audit_constructed_language_segments": {
-      "workflow_run_id": 27390861468,
-      "run_number": 554,
+      "workflow_run_id": 27391531017,
+      "run_number": 562,
       "result": "success",
       "template_contract_job": "success",
       "full_audit_job": "success"
     },
     "release_guard": {
-      "workflow_run_id": 27390861484,
-      "run_number": 1427,
+      "workflow_run_id": 27391531039,
+      "run_number": 1435,
       "result": "success"
     },
     "export_review_snapshot": {
-      "workflow_run_id": 27390861473,
-      "run_number": 568,
+      "workflow_run_id": 27391531033,
+      "run_number": 576,
       "result": "success"
     }
   },
@@ -113,6 +129,11 @@
     "opening_nonreplacement_gloss_search_reproducible": true,
     "opening_safe_late_quenya_replacement_lexeme_found": false,
     "opening_neuro_candidate_admitted": false,
+    "boqwi_source_ledger_trace_reproducible": true,
+    "tlh_issue_source_ledger_trace_posted": true,
+    "tlh_source_locator_candidates_traced": true,
+    "tlh_homographs_separated": true,
+    "tlh_direct_okrand_source_verification_complete": false,
     "external_qya_review_complete": false,
     "external_tlh_review_complete": false,
     "opening_stop_control_qya_primary_source_complete": false,
@@ -138,14 +159,15 @@
     "independent Klingon specialist response in issue 11",
     "direct verification and semantic ruling for tamma at PE17/108.0404",
     "direct verification and Late-profile ruling for pusta- at Ety/PUS.006 and Ety/PUS.042",
-    "external specialist decision on whether explicit role separation sufficiently preserves nonreplacement",
-    "separately sourced direct nonreplacement construction if role separation is rejected",
+    "external Neo-Quenya decision on role-separation sufficiency",
+    "direct Okrand-source verification for every traced Klingon form",
+    "external Klingon rulings on mIw breadth, sentence-as-object naturalness, voluntary mev, stop-before-control, and role-separation sufficiency",
     "language-specific correction intake",
     "bilingual parity rerun",
     "body revision and complete source parity",
     "independent second review"
   ],
-  "next_action": "Monitor issues 10 and 11. The refined pinned q/mq search found no safe Late Quenya direct replacement lexeme; Middle Quenya neuro means follower or successor and is not admitted. Require the external reviewer to decide whether the explicit role sequence is sufficient or provide a separately sourced construction. Keep production source unchanged.",
+  "next_action": "Monitor issues 10 and 11. Both language tracks now have reproducible secondary source traces, but no primary-source or specialist approval. Require direct verification of the named Tolkien and Okrand passages and explicit construction-level rulings. After a valid response arrives, synchronize only that language status flag, resolve accepted corrections, rerun bilingual parity, and keep production source unchanged.",
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
