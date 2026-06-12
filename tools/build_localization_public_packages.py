@@ -17,7 +17,11 @@ def strip_front_matter_and_controls(text, path):
 
 def assemble_public_package(language, contract):
     text = _original_assemble(language, contract)
-    return text.replace("../../../figures/", "../../figures/")
+    text = text.replace("../../../figures/", "../../figures/")
+    return text.replace(
+        "v25_chapter-boundary-horizons.png",
+        "v25_chapter_boundary-horizons.png",
+    )
 
 
 B.strip_front_matter = strip_front_matter_and_controls
