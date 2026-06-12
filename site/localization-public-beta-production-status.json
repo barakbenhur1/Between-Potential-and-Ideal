@@ -1,0 +1,100 @@
+{
+  "status": "verified",
+  "production_verified": true,
+  "target_commit": "570e982f91f401d9ecbc95bd36ac3566fd51b26b",
+  "deployed_build": {
+    "project": "Between Potential and Ideal",
+    "branch": "main",
+    "commit": "89827cfe127ace4c18c426fbb8eb338be2f94578",
+    "short_commit": "89827cf",
+    "generated_at_utc": "2026-06-12T04:46:00+00:00",
+    "source": "production deploy trigger for Klingon and Neo-Quenya public beta release",
+    "build_info_mode": "generated-from-current-git-head",
+    "deployment_verification_note": "Triggers Render auto-deploy after the verified public-beta merge. The deployed build regenerates this file from its current Git HEAD."
+  },
+  "recorded_at_utc": "2026-06-12T05:06:12+00:00",
+  "assertions": {
+    "home_http_200": true,
+    "home_has_beta_links": true,
+    "build_http_200": true,
+    "build_is_public_beta_release": true,
+    "tlh_gateway_http_200": true,
+    "tlh_gateway_disclosure": true,
+    "qya_gateway_http_200": true,
+    "qya_gateway_disclosure": true,
+    "tlh_document_http_200": true,
+    "tlh_document_is_full_html": true,
+    "tlh_document_disclosure": true,
+    "qya_document_http_200": true,
+    "qya_document_is_full_html": true,
+    "qya_document_disclosure": true,
+    "tlh_pdf_http_200": true,
+    "qya_pdf_http_200": true,
+    "cover_image_http_200": true
+  },
+  "routes": {
+    "home": {
+      "http_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "downloaded_bytes": 23626,
+      "effective_url": "https://between-potential-and-ideal.onrender.com/",
+      "headers_excerpt": "HTTP/2 200 \ndate: Fri, 12 Jun 2026 05:06:10 GMT\ncontent-type: text/html; charset=utf-8\ncache-control: public, max-age=0, s-maxage=300\ncf-cache-status: MISS\nlast-modified: Fri, 12 Jun 2026 04:58:35 UTC\nrndr-id: 0e1ac1d1-1aa8-4cfe\nserver: cloudflare\nstrict-transport-security: max-age=315360000; includeSubdomains; preload\nvary: Accept-Encoding\nvary: Accept-Encoding\nx-content-type-options: nosniff\netag: W/\"ba160b9666457fdbf507e1301814e27f\"\ncf-ray: a0a6531d6dbdee11-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n"
+    },
+    "build": {
+      "http_code": 200,
+      "content_type": "application/json",
+      "downloaded_bytes": 518,
+      "effective_url": "https://between-potential-and-ideal.onrender.com/build-info.json",
+      "headers_excerpt": "HTTP/2 200 \ndate: Fri, 12 Jun 2026 05:06:10 GMT\ncontent-type: application/json\ncache-control: public, max-age=0, s-maxage=300\ncf-cache-status: MISS\nlast-modified: Fri, 12 Jun 2026 04:58:32 UTC\nrndr-id: 5ff0cd77-c455-49e6\nserver: cloudflare\nstrict-transport-security: max-age=315360000; includeSubdomains; preload\nvary: Accept-Encoding\nvary: Accept-Encoding\nx-content-type-options: nosniff\netag: W/\"acb711bc02298866df21d9b6ae6305e5\"\ncf-ray: a0a6531ee8861060-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n"
+    },
+    "tlh_gateway": {
+      "http_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "downloaded_bytes": 1774,
+      "effective_url": "https://between-potential-and-ideal.onrender.com/tlh.html",
+      "headers_excerpt": "HTTP/2 200 \ndate: Fri, 12 Jun 2026 05:06:10 GMT\ncontent-type: text/html; charset=utf-8\ncache-control: public, max-age=0, s-maxage=300\ncf-cache-status: MISS\nlast-modified: Fri, 12 Jun 2026 04:58:35 UTC\nrndr-id: dda777b1-f764-40ed\nserver: cloudflare\nstrict-transport-security: max-age=315360000; includeSubdomains; preload\nvary: Accept-Encoding\nvary: Accept-Encoding\nx-content-type-options: nosniff\netag: W/\"7c70b3ffa4b8b6f044c3f2c75ed4bf59\"\ncf-ray: a0a6532059202305-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n"
+    },
+    "qya_gateway": {
+      "http_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "downloaded_bytes": 1802,
+      "effective_url": "https://between-potential-and-ideal.onrender.com/qya.html",
+      "headers_excerpt": "HTTP/2 200 \ndate: Fri, 12 Jun 2026 05:06:10 GMT\ncontent-type: text/html; charset=utf-8\ncache-control: public, max-age=0, s-maxage=300\ncf-cache-status: MISS\nlast-modified: Fri, 12 Jun 2026 04:58:35 UTC\nrndr-id: d83c8da6-eb3a-4cc9\nserver: cloudflare\nstrict-transport-security: max-age=315360000; includeSubdomains; preload\nvary: Accept-Encoding\nvary: Accept-Encoding\nx-content-type-options: nosniff\netag: W/\"f384f4521db19024965a3556693433da\"\ncf-ray: a0a65321ade56162-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n"
+    },
+    "tlh_document": {
+      "http_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "downloaded_bytes": 334921,
+      "effective_url": "https://between-potential-and-ideal.onrender.com/files/tlh/between-potential-and-ideal-tlh.html",
+      "headers_excerpt": "HTTP/2 200 \ndate: Fri, 12 Jun 2026 05:06:11 GMT\ncontent-type: text/html; charset=utf-8\ncache-control: public, max-age=0, s-maxage=300\ncf-cache-status: MISS\nlast-modified: Fri, 12 Jun 2026 04:58:35 UTC\nrndr-id: 539eb932-24f8-4faa\nserver: cloudflare\nstrict-transport-security: max-age=315360000; includeSubdomains; preload\nvary: Accept-Encoding\nvary: Accept-Encoding\nx-content-type-options: nosniff\netag: W/\"d4ea7051f7f22a8c4d94d1e02fd79532\"\ncf-ray: a0a65322e8cfeaff-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n"
+    },
+    "qya_document": {
+      "http_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "downloaded_bytes": 370826,
+      "effective_url": "https://between-potential-and-ideal.onrender.com/files/qya/between-potential-and-ideal-qya.html",
+      "headers_excerpt": "HTTP/2 200 \ndate: Fri, 12 Jun 2026 05:06:11 GMT\ncontent-type: text/html; charset=utf-8\ncache-control: public, max-age=0, s-maxage=300\ncf-cache-status: MISS\nlast-modified: Fri, 12 Jun 2026 04:58:35 UTC\nrndr-id: 28ef85ef-56cd-4247\nserver: cloudflare\nstrict-transport-security: max-age=315360000; includeSubdomains; preload\nvary: Accept-Encoding\nvary: Accept-Encoding\nx-content-type-options: nosniff\netag: W/\"718703a9cd7d4928f8f3afe757c31926\"\ncf-ray: a0a65324cccab7ac-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n"
+    },
+    "tlh_pdf": {
+      "http_code": 200,
+      "content_type": "application/pdf",
+      "downloaded_bytes": 337023,
+      "effective_url": "https://between-potential-and-ideal.onrender.com/files/tlh/between-potential-and-ideal-tlh.pdf",
+      "headers_excerpt": "HTTP/2 200 \ndate: Fri, 12 Jun 2026 05:06:11 GMT\ncontent-type: application/pdf\ncontent-length: 337023\ncache-control: public, max-age=0, s-maxage=300\naccept-ranges: bytes\netag: \"9630c558d447870e773c6f6a497921d2\"\nlast-modified: Fri, 12 Jun 2026 04:58:35 UTC\nrndr-id: c7ad0ca9-e6f3-4563\nserver: cloudflare\nstrict-transport-security: max-age=315360000; includeSubdomains; preload\nvary: Accept-Encoding\nx-content-type-options: nosniff\ncf-cache-status: MISS\ncf-ray: a0a65326fae5ead8-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n"
+    },
+    "qya_pdf": {
+      "http_code": 200,
+      "content_type": "application/pdf",
+      "downloaded_bytes": 346937,
+      "effective_url": "https://between-potential-and-ideal.onrender.com/files/qya/between-potential-and-ideal-qya.pdf",
+      "headers_excerpt": "HTTP/2 200 \ndate: Fri, 12 Jun 2026 05:06:12 GMT\ncontent-type: application/pdf\ncontent-length: 346937\ncache-control: public, max-age=0, s-maxage=300\naccept-ranges: bytes\netag: \"7b11d6b06f584740294a2fa3f92a6ffc\"\nlast-modified: Fri, 12 Jun 2026 04:58:35 UTC\nrndr-id: 6bf7bf1c-8f3e-4d20\nserver: cloudflare\nstrict-transport-security: max-age=315360000; includeSubdomains; preload\nvary: Accept-Encoding\nx-content-type-options: nosniff\ncf-cache-status: MISS\ncf-ray: a0a65328df82e82e-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n"
+    },
+    "cover_image": {
+      "http_code": 200,
+      "content_type": "image/png",
+      "downloaded_bytes": 3874222,
+      "effective_url": "https://between-potential-and-ideal.onrender.com/figures/cover_philosophical_recursion_whole_diagram.png",
+      "headers_excerpt": "HTTP/2 200 \ndate: Fri, 12 Jun 2026 05:06:12 GMT\ncontent-type: image/png\ncontent-length: 3874222\ncache-control: public, max-age=0, s-maxage=300\naccept-ranges: bytes\netag: \"ab350207cef3d4cde69123c4bc7f2a64\"\nlast-modified: Fri, 12 Jun 2026 04:58:32 UTC\nrndr-id: f61fe490-059f-4b06\nserver: cloudflare\nstrict-transport-security: max-age=315360000; includeSubdomains; preload\nvary: Accept-Encoding\nx-content-type-options: nosniff\ncf-cache-status: MISS\ncf-ray: a0a6532aaa167fb0-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n"
+    }
+  }
+}
