@@ -53,6 +53,14 @@ A reviewer must:
 
 The supplemental traces may be cited as reproducible search aids, but they cannot by themselves satisfy a template field that requires direct primary or canonical verification.
 
+## Local preflight
+
+Before opening a pull request, run the completed response through:
+
+`tools/preflight_external_specialist_review.py`
+
+Use `--language qya` for Neo-Quenya or `--language tlh` for Klingon. The command runs the same structural and substantive validators used by CI. A successful result confirms intake validity only and grants no linguistic approval or publication permission.
+
 ## Submission boundary
 
 Submit only one completed language-specific response file under `localization/reviews/between-potential-and-ideal/`:
