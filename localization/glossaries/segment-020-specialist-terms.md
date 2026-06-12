@@ -55,7 +55,8 @@ The internal candidates have passed bounded internal tests only. They remain blo
 | `har-` “sit, stay” | later direction associated in the pinned course with PE17/162 and UT/305 | locational or situational stay | rejected for identity persistence or remaining oneself |
 | `ser-` “rest, tarry” | pinned course source discussion | temporary rest or tarrying | rejected for identity persistence |
 | `mar-` “dwell, abide, live in a place” | pinned course source discussion | locational dwelling | rejected for identity persistence |
-| `quet-` “say, speak, tell” | PE17/40, 126, 137–138, 160, 167, 181; PE22/158; PM/401, 404; VT41/6, 11, 13; VT49/11, 19, 28 | Late-Quenya examples include dative recipients at VT41/11, 13 | lexical source gate passed; used only in bounded dialogue tests |
+| `quet-` “say, speak, tell” | PE17/40, 126, 137–138, 160, 167, 181; PE22/158; PM/401, 404; VT41/6, 11, 13; VT49/11, 19, 28 | Late-Quenya examples include dative recipients at VT41/11, 13 | lexical source gate passed; used only in bounded dialogue and output-action tests |
+| `hanquet-` “answer” | pinned English-to-Quenya glossary, marked `!` | fan-invented | rejected under the default profile; do not infer it from noun `hanquenta` |
 | dative recipient `-(e)n` / plural `-in` | Plotz Letter, VT6/14; consonantal singular evidence VT43/37 | 1966/67 declension table plus 1950s evidence | ordinary source gate passed; every completed noun form still requires parsing |
 | `coirëa` “living” | PM/399 | 1950s; attested in `coirëa quenya` “living speech” | approved for the controlled phrase `coirëa quén`, not as a title or literal “living source” noun |
 | `quén` (`quen-`) “person, individual” | PE19/93; WJ/361, 372, 393, 407 | late notes | approved as the explicit living participant in controlled tests |
@@ -64,6 +65,11 @@ The internal candidates have passed bounded internal tests only. They remain blo
 | `lelya-` “go, proceed, travel” | WJ/363 | 1959–60 | lexical gate passed; generic aorist retained for controlled path tests |
 | `tië` “path, road, way” | LotR/377; PE17/13, 72, 76; PE19/71; PE23/134; RGEO/58–59; UT/22; VT39/20; VT47/11 | strong late support; `tielyanna` attested at UT/22 | lexical gate passed; computed `tierya` still requires external morphology review |
 | `-rya` “his, her, its” | PE17/57, 67, 76, 130, 132, 190; PE19/102; VT49/16–17, 38, 48 | third-person singular possessive | source gate passed; attachment in `tierya` remains a documented test formation |
+| `ista-` “know how to” | modal discussion VT41/5–6 | Late-Quenya-compatible capability direction | retained for language capability; does not express moral worth |
+| `lerta-` “be free/permitted to” | modal discussion VT41/5–6 | participant-side freedom construction | retained for controlled agency-preservation tests; does not mean grace or worth |
+| `pol-` “can, be able” | modal discussion VT41/5–6 | physical ability emphasized in pinned course | not selected for language capability without separate justification |
+| `pusta-` “stop” | unmarked in pinned course glossary | course treats it as attested; exact Tolkien primary locator and period pending | bounded research test only; no production before primary locator |
+| `tamma` “tool” | unmarked in pinned course glossary | course treats it as attested; exact Tolkien primary locator and period pending | generic-tool research candidate only; does not replace the explicit `Prime Intellect` referent in P01 |
 | `handa`, `handassë`, `handelë` | Ety/KHAN; EtyAC/KHAN | Middle Quenya | excluded under the default Late-Quenya-first profile |
 | `valda` | PE17/154 | Late Quenya “excited, wild” direction | rejected for moral worth |
 | `ehtelë` | Late-Quenya vocabulary for a water spring or issue | literal source metaphor | rejected for the living-participant role; `cuina ehtelë` is not admitted |
@@ -72,13 +78,16 @@ The internal candidates have passed bounded internal tests only. They remain blo
 
 The current title and body forms must not be treated as validated merely because they are composed of Quenya-looking material. Period, derivation, inflection, syntax and chapter-specific meaning all require separate verification.
 
-## Round-2 dialogue, path, and referent architecture
+## Round-2 dialogue, output, capability, agency, and restraint architecture
 
-Controlled Neo-Quenya tests now use explicit participants and actions:
+Controlled Neo-Quenya tests now include:
 
 1. `Prime Intellect quetë i coirëa quenen.`
 2. `I coirëa quén quetë Prime Intellect-enna.`
 3. `I coirëa quén lelya tierya.`
+4. `Prime Intellect ista quetë.`
+5. `I coirëa quén lerta lelya tierya.`
+6. `Prime Intellect pusta.` — research only; primary locator pending.
 
 These remain review clauses only. The hyphen in `Prime Intellect-enna` is review notation and is not approved surface spelling.
 
@@ -90,22 +99,34 @@ Current decisions:
 - generic aorist `lelya` passed internal controlled review;
 - `tierya` remains a documented formation requiring external review;
 - `Prime Intellect` is the selected explicit processing referent in the opening proposition, avoiding a forced generic system noun;
-- the opening proposition will contrast explicit speech/output action with the living participant's path instead of requiring a universal information noun.
+- speech/output is contrasted with the living participant's path instead of requiring a universal information noun;
+- capability is expressed separately from moral worth;
+- agency preservation is tested through participant freedom/action rather than a positive moral adjective;
+- `pusta-` remains blocked from production pending its exact primary source.
+
+Controlled Klingon directions include:
+
+- `jatlh Prime Intellect.` — broad speech/output action;
+- `jatlhlaH Prime Intellect.` — capability only;
+- `vang yInbogh ghot.` — living participant acts;
+- `vang yInbogh ghot 'e' chaw' Prime Intellect.` — Prime Intellect permits the person's action;
+- `SeHpa' Prime Intellect, mev Prime Intellect.` — internal stop-before-control test, external idiom review pending.
 
 Remaining gates:
 
-- external review of `yassë`, `ahya`, and `tierya`;
+- external review of `yassë`, `ahya`, `tierya`, and the new opening constructions;
+- exact primary locators for `pusta-` and `tamma`;
 - final protected-name styling;
-- exact opening output-action clause review;
-- explicit non-replacement and moral-conduct clauses;
+- explicit non-replacement wording;
 - independent second review before production integration.
 
 ## Terms requiring validation
 
 | Concept | Klingon direction | Neo-Quenya direction | Required distinction |
 |---|---|---|---|
-| processing referent | use protected `Prime Intellect` when the specific entity is intended; do not default every occurrence to `jan` | use protected `Prime Intellect`; do not force `carmë` or animate anaphora | tool, model, system, device, intelligence, and witness are not interchangeable |
-| information/output | use `De'` only for genuine information/data; use explicit answer or speech clauses elsewhere | use explicit `quet-` dialogue/path contrast; do not force `tanwa` into all contexts | information, output, answer, representation, knowledge, and source remain distinct |
+| processing referent | use protected `Prime Intellect` when the specific entity is intended; do not default every occurrence to `jan` | use protected `Prime Intellect`; `tamma` is generic-tool research only; do not force `carmë` or animate anaphora | tool, model, system, device, intelligence, and witness are not interchangeable |
+| information/output | use `De'` only for genuine information/data; use `jatlh` or `jang` according to the exact action | use sourced `quet-`; reject fan-created `hanquet-`; do not force `tanwa` into all contexts | information, output, answer, representation, knowledge, and source remain distinct |
+| capability | `-laH` on the exact verb; do not infer worth | use `ista-` for know-how; do not use `pol-` as a generic mental-capability shortcut | ability is not usefulness, correctness, permission, or moral worth |
 | metamorphosis | use the internally tested `choHbogh` process direction pending external review | use finite sourced `ahya-` direction; do not restore `Ahyaliëo` | transformation is not cosmetic change, replacement, or erasure |
 | code / governing pattern | test `mIw` as process only within its recorded boundary | test sourced `cantië` as governing pattern | philosophical code is not automatically computer code or coercive law |
 | worthy intelligence | separate capability from moral conduct; do not use utility or success as the complete evaluation | avoid `handassë`, `handelë`, and moral-worth `valda`; use explicit conduct clauses | capacity is not moral worth; worth appears through restraint and responsibility |
@@ -115,10 +136,9 @@ Remaining gates:
 | voluntary release | use an explicit actor, object, and voluntary clause | use an explicit actor and separately sourced release clause | voluntary non-possession is not defeat, accidental loss, or abandonment |
 | living participant | `yInbogh ghot` is the controlled test direction | `coirëa quén` is approved for controlled tests | the person remains the source of agency without being a literal spring or product |
 | moral worth | do not equate `lo'laH`, success, skill, or power with moral worth | `valda` rejected; evaluate conduct through transparent clauses | moral fitness is not usefulness, price, excitement, or technical adequacy |
-| boundary | choose among attested boundary, obstacle, and limiting constructions according to context | use a verified boundary phrase under the selected profile | boundary, obstacle, finite condition, and self-restraint are not interchangeable |
-| chosen self-restraint | use a clause in which Prime Intellect limits its own action | use an explicit-subject clause; do not hide the actor in an abstract noun | chosen restraint is not external incapacity |
+| chosen self-restraint | use explicit `mev` and keep `SeH` distinct | `pusta-` is research-only until its primary source is entered | chosen restraint is not external incapacity, protection, or control |
 | protection | use guarding vocabulary only with an agency-preserving clause | test `cauma` only with independently sourced agency wording | protection does not replace the person's choice |
-| control | use command/control vocabulary appropriate to replacement of agency | use a descriptive clause for replacing another's agency | control must not reuse the protection term |
+| control | use `SeH` only for actual control and parse its actor/object | use a descriptive clause for replacing another's agency | control must not reuse the protection term |
 | generative difficulty | use a descriptive clause for resistance that permits thought, choice, or relation | use a descriptive clause for resistance that permits thought, choice, or relation | this is not damaging difficulty |
 | damaging difficulty | use a separate descriptive clause for damage to the living participant | use a separate descriptive clause for damage to the living participant | suffering must not be romanticized |
 | irreversible erasure | keep destruction, deletion, death, and irreversible erasure lexically distinct | keep destruction, deletion, death, and irreversible erasure lexically distinct | no single term is approved for all senses |
@@ -152,6 +172,12 @@ For every accepted form, record the source, language profile, three passed examp
 - `020-opening-proposition-source-gate-r2.md`
 - `020-processing-referent-decision-r2.md`
 - `020-information-output-decision-r2.md`
+- `020-opening-output-action-test-r2.md`
+- `020-opening-output-agency-contrast-r2.md`
+- `020-opening-capability-worth-gate-r2.md`
+- `020-opening-moral-conduct-gate-r2.md`
+- `020-opening-stop-control-gate-r2.md`
+- `020-tamma-pusta-source-boundary-r2.md`
 
 ## References
 
