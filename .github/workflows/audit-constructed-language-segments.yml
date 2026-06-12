@@ -9,6 +9,7 @@ on:
       - "tools/validate_external_specialist_review_substance.py"
       - "tools/test_validate_external_specialist_reviews.py"
       - "tools/test_validate_external_specialist_review_substance.py"
+      - "tools/test_external_specialist_review_templates.py"
       - "localization/sources/tlh/**"
       - "localization/sources/qya/**"
       - "localization/reviews/between-potential-and-ideal/020-external-*-review-response*.md"
@@ -35,6 +36,8 @@ jobs:
         run: python3 tools/test_validate_external_specialist_reviews.py
       - name: Test specialist review substance validator
         run: python3 tools/test_validate_external_specialist_review_substance.py
+      - name: Test complete specialist response templates
+        run: python3 tools/test_external_specialist_review_templates.py
       - name: Validate external specialist review intake
         run: python3 tools/validate_external_specialist_reviews.py
       - name: Validate external specialist review substance
