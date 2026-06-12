@@ -7,6 +7,7 @@ on:
       - tools/build_localized_public_release_core.py
       - tools/build_localization_beta.py
       - tools/build_localization_public_packages.py
+      - tools/expose_localization_beta.py
       - tools/temporary.txt
       - tools/test_write_small.py
       - tools/tmp_segments_430_450.py
@@ -34,6 +35,8 @@ jobs:
         run: python3 tools/build_localization_public_packages.py
       - name: Build complete language sites
         run: python3 tools/build_localized_public_release.py
+      - name: Reapply public beta entry points
+        run: python3 tools/expose_localization_beta.py
       - name: Verify localized page parity
         run: |
           set -euo pipefail
@@ -47,6 +50,12 @@ jobs:
           grep -q 'hero-cta-row' site/qya.html
           grep -q 'hreflang="tlh"' site/en.html
           grep -q 'hreflang="qya"' site/index.html
+          grep -q 'localization-public-beta-links:start' site/index.html
+          grep -q 'localization-public-beta-links:start' site/en.html
+          grep -q 'href="tlh.html"' site/index.html
+          grep -q 'href="qya.html"' site/index.html
+          grep -q 'href="tlh.html"' site/en.html
+          grep -q 'href="qya.html"' site/en.html
       - name: Verify synchronized download packages
         run: |
           set -euo pipefail
