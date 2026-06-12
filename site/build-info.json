@@ -1,10 +1,10 @@
 {
   "project": "Between Potential and Ideal",
   "branch": "main",
-  "commit": "7d8c1351ded625e7452e974293c955374a88c964",
-  "short_commit": "7d8c135",
-  "generated_at_utc": "2026-06-06T07:23:27+00:00",
-  "source": "deploy trigger after verified Hebrew mobile grid parity v5",
+  "commit": "89827cfe127ace4c18c426fbb8eb338be2f94578",
+  "short_commit": "89827cf",
+  "generated_at_utc": "2026-06-12T04:46:00+00:00",
+  "source": "production deploy trigger for Klingon and Neo-Quenya public beta release",
   "build_info_mode": "generated-from-current-git-head",
-  "deployment_verification_note": "Hebrew mobile uses the same two-row grid geometry and 12px side spacing as the approved English reference. Navigation remains RTL, wraps, and has no horizontal scrolling. English and desktop selectors are unchanged."
+  "deployment_verification_note": "Triggers Render auto-deploy after the verified public-beta merge. The deployed build regenerates this file from its current Git HEAD."
 }
