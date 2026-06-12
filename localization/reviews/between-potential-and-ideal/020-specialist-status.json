@@ -1,9 +1,9 @@
 {
-  "schema_version": 30,
-  "previous_schema_checkpoint": "7f7505ba0639499b5842bab8c6c1c61b2aabe589",
+  "schema_version": 31,
+  "previous_schema_checkpoint": "4ac67bc2ff6291af21581412d1ab4afd60106270",
   "segment": 20,
   "stage": "specialist-external-review-requested",
-  "status": "external-review-requests-open-qya-and-tlh-secondary-source-traces-complete-responses-pending",
+  "status": "external-review-requests-open-current-supplemental-evidence-indexed-responses-pending",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -11,12 +11,17 @@
     "qya": "Late-Quenya-first"
   },
   "title_policy": "localize-in-both-target-languages",
-  "protected_proper_names": ["Prime Intellect"],
+  "protected_proper_names": [
+    "Prime Intellect"
+  ],
   "review_packet": {
     "commit": "fc1867f8e94bf588d8e3f2d9954207444a5083f8",
     "packet": "localization/reviews/between-potential-and-ideal/020-external-specialist-review-packet-r2.md",
     "submission_guide": "localization/reviews/between-potential-and-ideal/020-external-review-submission-guide.md",
     "request_index": "localization/reviews/between-potential-and-ideal/020-external-review-request-index.md",
+    "supplemental_evidence_index": "localization/reviews/between-potential-and-ideal/020-external-review-supplemental-evidence-index-r3.md",
+    "qya_request": "localization/reviews/between-potential-and-ideal/020-external-qya-review-request.md",
+    "tlh_request": "localization/reviews/between-potential-and-ideal/020-external-tlh-review-request.md",
     "qya_template": "localization/reviews/between-potential-and-ideal/020-external-qya-review-response-template-r2.md",
     "tlh_template": "localization/reviews/between-potential-and-ideal/020-external-tlh-review-response-template-r2.md",
     "qya_source_trace_addendum": "localization/reviews/between-potential-and-ideal/020-tamma-pusta-source-trace-r3.md",
@@ -31,9 +36,11 @@
     "substance_validator": "tools/validate_external_specialist_review_substance.py",
     "substance_tests": "tools/test_validate_external_specialist_review_substance.py",
     "template_contract_tests": "tools/test_external_specialist_review_templates.py",
+    "handoff_contract_tests": "tools/test_external_review_handoff.py",
     "workflow": ".github/workflows/audit-constructed-language-segments.yml",
     "contributor_state": "valid-awaiting-status-sync",
-    "template_contract": "verified-for-both-languages"
+    "template_contract": "verified-for-both-languages",
+    "handoff_contract": "verified-current-packet-templates-requests-and-supplemental-traces"
   },
   "source_traces": {
     "qya": {
@@ -74,22 +81,23 @@
     "translation_fragments_total": 228
   },
   "verified_gate_runs": {
-    "head_sha": "3f39221a29250e85a1c50b35224261e2090e6ace",
+    "head_sha": "8876bdfe9bfba466d80ba366ea8a54796e922f01",
     "audit_constructed_language_segments": {
-      "workflow_run_id": 27391531017,
-      "run_number": 562,
+      "workflow_run_id": 27392049358,
+      "run_number": 570,
       "result": "success",
       "template_contract_job": "success",
-      "full_audit_job": "success"
+      "full_audit_job": "success",
+      "handoff_contract_step": "success"
     },
     "release_guard": {
-      "workflow_run_id": 27391531039,
-      "run_number": 1435,
+      "workflow_run_id": 27392049360,
+      "run_number": 1443,
       "result": "success"
     },
     "export_review_snapshot": {
-      "workflow_run_id": 27391531033,
-      "run_number": 576,
+      "workflow_run_id": 27392049378,
+      "run_number": 584,
       "result": "success"
     }
   },
@@ -111,11 +119,17 @@
     "external_tlh_response_template_complete": true,
     "external_review_submission_guide_complete": true,
     "external_review_request_index_complete": true,
+    "external_review_supplemental_evidence_index_complete": true,
     "external_qya_review_request_open": true,
     "external_tlh_review_request_open": true,
+    "external_qya_review_request_current_evidence_linked": true,
+    "external_tlh_review_request_current_evidence_linked": true,
+    "external_review_supplemental_index_posted_to_qya_issue": true,
+    "external_review_supplemental_index_posted_to_tlh_issue": true,
     "external_review_contributor_safe_intake_complete": true,
     "external_review_nonreplacement_decision_fields_aligned": true,
     "external_review_template_contract_verified": true,
+    "external_review_handoff_contract_verified": true,
     "external_review_intake_validator_enforced": true,
     "external_review_intake_regression_tests_enforced": true,
     "external_review_substance_validator_enforced": true,
@@ -167,7 +181,7 @@
     "body revision and complete source parity",
     "independent second review"
   ],
-  "next_action": "Monitor issues 10 and 11. Both language tracks now have reproducible secondary source traces, but no primary-source or specialist approval. Require direct verification of the named Tolkien and Okrand passages and explicit construction-level rulings. After a valid response arrives, synchronize only that language status flag, resolve accepted corrections, rerun bilingual parity, and keep production source unchanged.",
+  "next_action": "Monitor issues 10 and 11. The immutable packet, current requests, templates, and supplemental source traces now have one CI-verified handoff path, but no primary-source or specialist approval. Require direct verification of the named Tolkien and Okrand passages and explicit construction-level rulings. After a valid response arrives, synchronize only that language status flag, resolve accepted corrections, rerun bilingual parity, and keep production source unchanged.",
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
