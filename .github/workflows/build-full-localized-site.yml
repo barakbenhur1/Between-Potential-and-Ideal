@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
-          fetch-depth: 0
+          fetch-depth: 1
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -34,7 +34,7 @@ jobs:
         run: python3 tools/build_localization_public_packages.py
       - name: Build complete language sites
         run: python3 tools/build_localized_public_release.py
-      - name: Verify parity
+      - name: Verify localized page parity
         run: |
           set -euo pipefail
           test "$(find site/pages/tlh -maxdepth 1 -name '*.html' | wc -l | tr -d ' ')" = 34
@@ -47,6 +47,9 @@ jobs:
           grep -q 'hero-cta-row' site/qya.html
           grep -q 'hreflang="tlh"' site/en.html
           grep -q 'hreflang="qya"' site/index.html
+      - name: Verify synchronized download packages
+        run: |
+          set -euo pipefail
           test -s localization/site-language-parity-manifest.json
           test -s localization/beta-release-manifest.json
           for lang in tlh qya; do
@@ -54,6 +57,9 @@ jobs:
               test -s "site/files/$lang/between-potential-and-ideal-$lang.$ext"
             done
           done
+      - name: Reject leaked editorial image notes
+        run: |
+          set -euo pipefail
           if grep -R -i -E 'image description draft:|visual description draft:|alt text draft:|image prompt draft:' \
             site/pages/tlh site/pages/qya \
             site/files/tlh/between-potential-and-ideal-tlh.html \
@@ -65,7 +71,8 @@ jobs:
             echo 'Editorial image-description draft leaked into a public localized output.' >&2
             exit 1
           fi
-          python3 tools/audit_images_exist.py
+      - name: Audit referenced images
+        run: python3 tools/audit_images_exist.py
       - name: Commit generated sites and packages
         run: |
           git config user.name "github-actions[bot]"
