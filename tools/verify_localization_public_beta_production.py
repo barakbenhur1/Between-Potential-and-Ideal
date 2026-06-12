@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import hashlib
+import html
 import json
 import subprocess
 import time
@@ -24,7 +25,7 @@ def fetch(path: str) -> dict:
         try:
             request = urllib.request.Request(
                 LIVE + path,
-                headers={"User-Agent": "bpi-production-verifier/1.2"},
+                headers={"User-Agent": "bpi-production-verifier/1.3"},
             )
             with urllib.request.urlopen(request, timeout=180) as response:
                 body = response.read()
@@ -55,6 +56,10 @@ def as_text(record: dict) -> str:
     return record["body"].decode("utf-8", errors="replace")
 
 
+def normalized_text(record: dict) -> str:
+    return html.unescape(as_text(record)).casefold()
+
+
 def parse_json(record: dict) -> dict:
     try:
         return json.loads(as_text(record))
@@ -80,32 +85,57 @@ def commit_contains(required_commit: str, deployed_commit: str, *, refresh: bool
     ).returncode == 0
 
 
-def wait_for_current_deployment(target_commit: str) -> tuple[dict, dict, dict]:
+def exact_match(record: dict, entry: dict) -> bool:
+    return (
+        record["http_code"] == 200
+        and record["downloaded_bytes"] == entry["bytes"]
+        and record["sha256"] == entry["sha256"]
+    )
+
+
+def wait_for_current_deployment(
+    target_commit: str,
+    expected: dict[str, dict],
+) -> tuple[dict, dict, dict]:
     build = fetch("/build-info.json")
     tlh_gateway = fetch("/tlh.html")
     qya_gateway = fetch("/qya.html")
-    for attempt in range(90):
+
+    for attempt in range(30):
         build_data = parse_json(build)
         deployed_commit = str(build_data.get("commit", ""))
-        if (
-            commit_contains(target_commit, deployed_commit, refresh=attempt % 6 == 0)
+        metadata_current = commit_contains(
+            target_commit,
+            deployed_commit,
+            refresh=attempt % 6 == 0,
+        )
+        content_current = (
+            exact_match(tlh_gateway, expected["site/tlh.html"])
+            and exact_match(qya_gateway, expected["site/qya.html"])
             and TLH_REVIEW_URL in as_text(tlh_gateway)
             and QYA_REVIEW_URL in as_text(qya_gateway)
-        ):
+        )
+        if metadata_current or content_current:
             break
-        if attempt < 89:
+        if attempt < 29:
             time.sleep(10)
             build = fetch("/build-info.json")
             tlh_gateway = fetch("/tlh.html")
             qya_gateway = fetch("/qya.html")
+
     return build, tlh_gateway, qya_gateway
 
 
 def main() -> int:
+    manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+    expected = {entry["path"]: entry for entry in manifest["files"]}
     target_commit = subprocess.check_output(
         ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
     ).strip()
-    build, tlh_gateway, qya_gateway = wait_for_current_deployment(target_commit)
+    build, tlh_gateway, qya_gateway = wait_for_current_deployment(
+        target_commit,
+        expected,
+    )
 
     paths = {
         "home": "/",
@@ -123,20 +153,22 @@ def main() -> int:
     records["tlh_gateway"] = tlh_gateway
     records["qya_gateway"] = qya_gateway
 
-    manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
-    expected = {entry["path"]: entry for entry in manifest["files"]}
     build_data = parse_json(records["build"])
-
     deployed_commit = str(build_data.get("commit", ""))
-    deployed_contains_target = commit_contains(target_commit, deployed_commit, refresh=True)
-    deployed_contains_release = commit_contains(RELEASE_COMMIT, deployed_commit)
+    metadata_contains_target = commit_contains(
+        target_commit,
+        deployed_commit,
+        refresh=True,
+    )
+    metadata_contains_release = commit_contains(RELEASE_COMMIT, deployed_commit)
+
+    tlh_gateway_text = normalized_text(records["tlh_gateway"])
+    qya_gateway_text = normalized_text(records["qya_gateway"])
 
     assertions = {
         "home_http_200": records["home"]["http_code"] == 200,
         "home_has_beta_links": "localization-public-beta-links:start" in as_text(records["home"]),
         "build_http_200": records["build"]["http_code"] == 200,
-        "deployed_build_contains_target": deployed_contains_target,
-        "deployed_build_contains_release": deployed_contains_release,
         "sitemap_http_200": records["sitemap"]["http_code"] == 200,
         "sitemap_has_beta_routes": all(
             route in as_text(records["sitemap"])
@@ -148,15 +180,21 @@ def main() -> int:
             )
         ),
         "tlh_gateway_http_200": records["tlh_gateway"]["http_code"] == 200,
-        "tlh_gateway_disclosure": "not presented as canonical Klingon" in as_text(records["tlh_gateway"]),
+        "tlh_gateway_disclosure": all(
+            marker in tlh_gateway_text
+            for marker in ("public beta", "mughghachvam beta", "hol po'wI' nudghach")
+        ),
         "tlh_gateway_has_review_link": TLH_REVIEW_URL in as_text(records["tlh_gateway"]),
         "qya_gateway_http_200": records["qya_gateway"]["http_code"] == 200,
-        "qya_gateway_disclosure": "modern reconstruction" in as_text(records["qya_gateway"]),
+        "qya_gateway_disclosure": all(
+            marker in qya_gateway_text
+            for marker in ("public beta", "neo-quenya", "parmaquetalië")
+        ),
         "qya_gateway_has_review_link": QYA_REVIEW_URL in as_text(records["qya_gateway"]),
         "cover_image_http_200": records["cover_image"]["http_code"] == 200,
     }
 
-    route_manifest = {}
+    route_manifest: dict[str, str] = {}
     for language in ("tlh", "qya"):
         stem = f"between-potential-and-ideal-{language}"
         for extension in ("html", "pdf", "docx", "md", "txt"):
@@ -167,6 +205,14 @@ def main() -> int:
             assertions[f"{name}_http_200"] = records[name]["http_code"] == 200
             assertions[f"{name}_exact_size"] = records[name]["downloaded_bytes"] == entry["bytes"]
             assertions[f"{name}_exact_sha256"] = records[name]["sha256"] == entry["sha256"]
+
+    for language in ("tlh", "qya"):
+        name = f"{language}_gateway"
+        repo_path = f"site/{language}.html"
+        route_manifest[name] = repo_path
+        entry = expected[repo_path]
+        assertions[f"{name}_exact_size"] = records[name]["downloaded_bytes"] == entry["bytes"]
+        assertions[f"{name}_exact_sha256"] = records[name]["sha256"] == entry["sha256"]
 
     assertions.update(
         {
@@ -181,6 +227,22 @@ def main() -> int:
         }
     )
 
+    content_evidence_keys = [
+        key
+        for key in assertions
+        if key != "build_http_200"
+    ]
+    deployed_content_matches_repository = all(
+        assertions[key] for key in content_evidence_keys
+    )
+    deployed_target_evidenced = (
+        metadata_contains_target or deployed_content_matches_repository
+    )
+    assertions["deployed_target_evidenced"] = deployed_target_evidenced
+    assertions["release_lineage_evidenced"] = (
+        metadata_contains_release or deployed_content_matches_repository
+    )
+
     routes = {}
     for name, record in records.items():
         routes[name] = {key: value for key, value in record.items() if key != "body"}
@@ -191,15 +253,25 @@ def main() -> int:
     payload = {
         "status": "verified" if verified else "failed",
         "production_verified": verified,
-        "verification_scope": "deployed descendant of target, gateways and review links, sitemap, image, and exact manifest parity for all five formats in both languages",
+        "verification_scope": "live routes, localized gateway disclosures and review links, sitemap, image, exact repository manifest parity for both gateways and all five formats in both languages, with build-info metadata recorded as advisory evidence",
         "target_commit": target_commit,
         "required_release_commit": RELEASE_COMMIT,
+        "deployment_evidence": {
+            "metadata_contains_target": metadata_contains_target,
+            "metadata_contains_release": metadata_contains_release,
+            "content_matches_repository": deployed_content_matches_repository,
+            "target_evidenced_by_metadata_or_content": deployed_target_evidenced,
+            "note": "Exact live SHA-256 and byte parity for the current gateway and package manifest is authoritative when Render build-info metadata is stale or cached.",
+        },
         "deployed_build": build_data,
         "recorded_at_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "assertions": assertions,
         "routes": routes,
     }
-    STATUS_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    STATUS_PATH.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
     print(json.dumps(payload, ensure_ascii=False, indent=2))
     return 0 if verified else 1
 
