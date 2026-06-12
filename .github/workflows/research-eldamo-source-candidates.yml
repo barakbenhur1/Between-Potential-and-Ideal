@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/research-eldamo-source-candidates.yml"
+      - "tools/extract_eldamo_source_candidates.py"
 
 permissions:
   contents: read
@@ -13,89 +14,11 @@ jobs:
   extract:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
+          show-progress: false
+          sparse-checkout: tools/extract_eldamo_source_candidates.py
+          sparse-checkout-cone-mode: false
       - name: Extract pinned Eldamo entries for tamma and pusta
-        env:
-          ELDAMO_URL: https://raw.githubusercontent.com/pfstrack/eldamo/4071c9caa95caca905c96af2505d5252045e2aaa/src/data/eldamo-data.xml
-        run: |
-          python3 - <<'PY'
-          import json
-          import os
-          import re
-          import urllib.request
-          import xml.etree.ElementTree as ET
-
-          terms = ("tamma", "pusta")
-          request = urllib.request.Request(
-              os.environ["ELDAMO_URL"],
-              headers={"User-Agent": "Between-Potential-and-Ideal-source-audit"},
-          )
-          with urllib.request.urlopen(request, timeout=60) as response:
-              payload = response.read()
-
-          root = ET.fromstring(payload)
-          parents = {child: parent for parent in root.iter() for child in parent}
-
-          def local_name(tag: str) -> str:
-              return tag.rsplit("}", 1)[-1]
-
-          def searchable(element: ET.Element) -> str:
-              parts = [local_name(element.tag)]
-              parts.extend(f"{key}={value}" for key, value in element.attrib.items())
-              if element.text:
-                  parts.append(element.text)
-              return " ".join(parts)
-
-          def enclosing_record(element: ET.Element) -> ET.Element:
-              current = element
-              preferred = {"word", "entry", "phrase", "root", "ref"}
-              while current in parents:
-                  if local_name(current.tag) in preferred and (
-                      "v" in current.attrib
-                      or "value" in current.attrib
-                      or "word" in current.attrib
-                      or local_name(current.tag) in {"word", "entry"}
-                  ):
-                      return current
-                  current = parents[current]
-              return element
-
-          report = {
-              "source_url": os.environ["ELDAMO_URL"],
-              "byte_count": len(payload),
-              "matches": {},
-          }
-
-          for term in terms:
-              records = []
-              seen = set()
-              exact = re.compile(rf"(?<![A-Za-zÀ-ÖØ-öø-ÿ]){re.escape(term)}(?![A-Za-zÀ-ÖØ-öø-ÿ])", re.I)
-              for element in root.iter():
-                  if not exact.search(searchable(element)):
-                      continue
-                  record = enclosing_record(element)
-                  serialized = ET.tostring(record, encoding="unicode")
-                  key = serialized
-                  if key in seen:
-                      continue
-                  seen.add(key)
-                  chain = []
-                  current = record
-                  while current is not None and len(chain) < 8:
-                      chain.append({
-                          "tag": local_name(current.tag),
-                          "attributes": dict(current.attrib),
-                      })
-                      current = parents.get(current)
-                  records.append({
-                      "matched_element": {
-                          "tag": local_name(element.tag),
-                          "attributes": dict(element.attrib),
-                          "text": (element.text or "").strip()[:500],
-                      },
-                      "ancestor_chain": chain,
-                      "record_xml": serialized[:20000],
-                  })
-              report["matches"][term] = records
-
-          print(json.dumps(report, ensure_ascii=False, indent=2))
-          PY
+        run: python3 tools/extract_eldamo_source_candidates.py tamma pusta
