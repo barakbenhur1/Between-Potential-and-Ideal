@@ -158,7 +158,7 @@ poHvetlh yItujpa', lo'laHbogh chut chu' taH: yInbogh chuq vegh; yab leghwI' ghaH
 
 ## pat 'oH, maqghach Qav 'oHbe'
 
-![mIllogh: qech qachHom rInbe', lurgh ngu'meH jan, wovbogh chal veH ghoSbogh He poS je](../../../figures/chapter_model_not_final_declaration_v1.png)
+![mIllogh: qech qachHom rInbe', lurgh ngu'meH jan, wovbogh chal veH ghoSbogh He poS je](../../figures/chapter_model_not_final_declaration_v1.png)
 
 _mIllogh DelmeH ghItlhHom: qech qachHom rInbe', lurgh ngu'meH jan, wovbogh chal veH ghoSbogh He poS je; maqghach Qav 'oHbe' pat'e', Qu' pabtaHbogh, rInbe'bogh, pojlaHbogh pat 'oH 'e' 'ang mIllogh._
 
@@ -290,7 +290,7 @@ QapmeH mungmey, yepmeH mu'mey je: qech pat'egh qechmeyDaj je lo' 'ay'vam — Pot
 
 ## Hoch bom'a' chuq nob je
 
-![Chapter illustration: the Whole, friction, and living formation](../../../figures/10_living_wholeness.png)
+![Chapter illustration: the Whole, friction, and living formation](../../figures/10_living_wholeness.png)
 
 _Image description draft: Hoch 'ay'meyDaj qIlbe'; 'ay'mey joj botghachvo' rarghach, yInbogh chen, Qu' je nargh._
 
@@ -332,7 +332,7 @@ vaj mung leghwI' je leng rap, ghot mIqta' je Qapchu'ghach nIvghach Suvghach 'oHb
 
 ## Turing nID Dop Hop: wab pat Hoch nID
 
-![Chapter illustration: witness, resonance, mirror, and recognition](../../../figures/v26_restyle_dual_lenses_resonance.png)
+![Chapter illustration: witness, resonance, mirror, and recognition](../../figures/v26_restyle_dual_lenses_resonance.png)
 
 _Image description draft: leghwI', wab qawmoHghach, leghmeH jan ghovghach je — mung yInboghvo' chuq qIlbe'taHvIS vIt ghoSlu'._
 
@@ -392,7 +392,7 @@ lugh laDlu'chugh, Hoch wa' vaj Hoch chaw'lu' jatlhbe' 'ay'. pIm: Hoch rarlaHmo',
 
 *SIQghach, qech, Ideality je narghlaHbogh DuH depth*
 
-![Figure A: The fragmented consciousness of the One. From potential wholeness into a plurality of points of view.](../../../figures/v25_chapter_shape-of-the-universe-and-potential.png)
+![Figure A: The fragmented consciousness of the One. From potential wholeness into a plurality of points of view.](../../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 _Figure A draft: wa' yab ghorlu'pu'bogh; Potential Hochghachvo' leghDaq law' ghoS._
 
@@ -428,7 +428,7 @@ lugh laDghach HemHa'ghach pol: laDwI', qonwI', pat wa' je ghajwI' 'oHbe' Ideal'e
 
 *mojlaHbogh Hoch, lo'laHbogh Hoch je joj pImghach*
 
-![Figure B: The absolute is not the ideal: total possibility versus clarified worthiness.](../../../figures/09_absolute_not_ideal.png)
+![Figure B: The absolute is not the ideal: total possibility versus clarified worthiness.](../../figures/09_absolute_not_ideal.png)
 
 _Figure B draft: Hochchu'ghach 'oHbe' Ideal'e': DuHmey Hoch versus lo'laHghach qIjchu'lu'pu'bogh._
 
@@ -467,7 +467,7 @@ mIllogh Qapchugh, QubmeH mIw human pol. 'IH'a' conclusion neH yu'be'; current jo
 
 *Potential, Optimal, Ideal je joj tulghach ghajbogh Hoch lo'laHbe'ghach*
 
-![Figure C: River and boat: a living navigation between potential and ideal.](../../../figures/02_navigation_between_banks.png)
+![Figure C: River and boat: a living navigation between potential and ideal.](../../figures/02_navigation_between_banks.png)
 
 _Figure C draft: bIQtIq Duj je — Potential, Ideal je joj yInbogh navigation._
 
@@ -495,7 +495,7 @@ mIlloghvam QeD claim 'oHbe'. yIn, ghu', Qu' je joj rarghach qIjmeH structural me
 
 *qatlh Sov teH He bopbogh De' neH 'oHbe'*
 
-![Figure D: Experience and materiality: knowledge that cannot be bypassed.](../../../figures/12_experience_materiality.png)
+![Figure D: Experience and materiality: knowledge that cannot be bypassed.](../../figures/12_experience_materiality.png)
 
 _Figure D draft: SIQghach Hapghach je — bypass-laHbe'bogh Sov._
 
@@ -534,7 +534,7 @@ qo' teH Hotbe'taHvIS Sov law' ghajlaH qech naQ. 'ach yInbogh Sov, qengbogh ghot 
 
 *ghojghach, chuq, shortcut 'oHbe'bogh yajghach je*
 
-![Education of Potential](../../../figures/v25_chapter_education-of-potential.png)
+![Education of Potential](../../figures/v25_chapter_education-of-potential.png)
 
 _Image description draft: shortcut lo'be'taHvIS ghojghach, chuq, yajghach je chen._
 
@@ -649,7 +649,7 @@ universe laws, local injustice ghu'mey Qatlh je joj gap jang je cheghqa' yIn. be
 
 ## 6. SoH, Ego, qIlbe'bogh wa'ghach je — 'ay' wa'
 
-![6. Self, Ego, and Unity That Does Not Erase](../../../figures/14_self_ego_unity.png)
+![6. Self, Ego, and Unity That Does Not Erase](../../figures/14_self_ego_unity.png)
 
 _Image description draft: HochDaq leghDaq wa' pol, qIlbe'lu' 'ej pe'lu'be'._
 
@@ -856,7 +856,7 @@ bIQtIqDaq Duj yItmeH, current laD, nagh legh, He choH je poQ; map neH yapbe'.
 
 *jangghach, mung, Qu', nIHlu'bogh chuq je*
 
-![Artificial Intelligence and Open Problems](../../../figures/v25_chapter_ai-open-problems.png)
+![Artificial Intelligence and Open Problems](../../figures/v25_chapter_ai-open-problems.png)
 
 _Image description draft: jangghach, mung, Qu', nIHlaHbogh chuq je._
 
@@ -905,7 +905,7 @@ AI chenmoHlaH, 'ach automatically ghajbe'. advice noblaH, 'ach consequence qengb
 
 *lut, game, sealed ending, actionable ending je joj pImghach*
 
-![I Have No Mouth, and I Must Scream](../../../figures/v25_chapter_i-have-no-mouth.png)
+![I Have No Mouth, and I Must Scream](../../figures/v25_chapter_i-have-no-mouth.png)
 
 _Image description draft: lut, game, ngaQpu'bogh metta, Qu' pablaHbogh metta je joj pImghach._
 
@@ -946,7 +946,7 @@ sealed endingDaq, system ghaj action horizon. actionable endingDaq, reader/playe
 
 *reset, cheghghach, ghIrghach, Salghach je — chen rap DelmeH wej Hol*
 
-![Figure E: The recursive structure. Every layer can become origin, field, possibility, and local world.](../../../figures/v25_chapter_recursive-edge.png)
+![Figure E: The recursive structure. Every layer can become origin, field, possibility, and local world.](../../figures/v25_chapter_recursive-edge.png)
 
 _Image description draft: recursion chen; patlh Hoch mung, field, DuH, local qo' je mojlaH._
 
@@ -1190,7 +1190,7 @@ naDev rIn cosmic therapy: ghot qo'vo' teqbe', 'ach qo' inner transparencyDaq che
 
 *Potential relative, realization contextual, upper-bound edge rur Ideal je*
 
-![The Recursive Edge](../../../figures/06_recursive_iverse_architecture.png)
+![The Recursive Edge](../../figures/06_recursive_iverse_architecture.png)
 
 _Image description draft: recursive layers yassen veH Hoch mung chu' mojlaH._
 
@@ -1432,7 +1432,7 @@ system ghaH'egh SoQmoHlaHbe'DI', Qu' ratlh. naDev Potential ngabbe'; level choH.
 
 *claim nuq, model nuq, metaphor nuq, proof mojbe'nISbogh nuq je*
 
-![Science, Physics, and Mathematics as Boundary Discipline](../../../figures/chapter-science-physics-math-boundary-v2.png)
+![Science, Physics, and Mathematics as Boundary Discipline](../../figures/chapter-science-physics-math-boundary-v2.png)
 
 _Image description draft: formulas, measurement, models je boundary languages rur, final proof bIHbe'._
 
@@ -1480,7 +1480,7 @@ recursive edgevaD rarghach qIjchu': precise answer Hoch boundary chu' poSmoH. su
 
 *Correlation message 'oHbe', qech-ngaS poH answer retlhDaq noise 'oHbe' je*
 
-![Locality, Non-locality, and Contextuality](../../../figures/chapter-locality-nonlocality-contextuality-v2.png)
+![Locality, Non-locality, and Contextuality](../../figures/chapter-locality-nonlocality-contextuality-v2.png)
 
 _Image description draft: local/non-local relations, measurement, qech-ngaS poH, message 'oHbe'bogh correlations je._
 
@@ -1657,7 +1657,7 @@ qech-ngaS poHDaq narghmo' truth ngabbe'. qech-ngaS poHDaj So'be'lu'DI' neH respo
 
 *form chenmoHmeH poQbogh lonmeH DIl*
 
-![Chapter illustration: Creation, Canon, and Optimum](../../../figures/v26_restyle_fragmented_figure_sun.png)
+![Chapter illustration: Creation, Canon, and Optimum](../../figures/v26_restyle_fragmented_figure_sun.png)
 
 _Image description draft: wov botlh Dechbogh figure 'ay'mey; possibility law'vo' form wIvlu'._
 
@@ -1835,7 +1835,7 @@ Hoch mojmeH nIDbe'. nuq mojbe'nIS 'e' wIv, teH mojmeH.
 
 *form, living source, canon, final judge 'oHbe'bogh market je*
 
-![Art of Potential](../../../figures/v25_chapter_art-of-potential.png)
+![Art of Potential](../../figures/v25_chapter_art-of-potential.png)
 
 _Image description draft: creation field, naDev possibility form Suq 'ach completely SoQbe'._
 
@@ -1861,7 +1861,7 @@ technology jagh nostalgia 'oHbe' Art of Potential, 'ej authenticity pongDaq suff
 
 *time, voice, listening, metric 'oHbe'bogh resonance je*
 
-![Music of Potential](../../../figures/v25_chapter_music-of-potential.png)
+![Music of Potential](../../figures/v25_chapter_music-of-potential.png)
 
 _Image description draft: rhythm, silence, return je possibility time vegh qengmeH Hemey._
 
@@ -1885,7 +1885,7 @@ human machine law' QaQ reH 'e' jatlhbe' Music of Potential. cleaner sound 'Iv pr
 
 *material, form, load, redemption 'oHbe'bogh repair je*
 
-![Figure: Engineering and Architecture of Potential.](../../../figures/17_engineering_architecture_potential.png)
+![Figure: Engineering and Architecture of Potential.](../../figures/17_engineering_architecture_potential.png)
 
 _Image description draft: engineered system, naDev Potential structure, channeling, testing, repair je moj._
 
@@ -2079,7 +2079,7 @@ QamtaHbogh Doch neH 'oHbe' structure'e'. matter qengtaHlaH 'e' promise 'oH. SoQb
 
 *money, value, trust, Potential je*
 
-![Figure: Economy of Relation.](../../../figures/18_economy_relation_potential.png)
+![Figure: Economy of Relation.](../../figures/18_economy_relation_potential.png)
 
 _Image description draft: value, exchange, responsibility je numbers neH bIHbe'; relations yInbogh bIH._
 
@@ -2332,7 +2332,7 @@ money value 'oHbe'. value qengmeH nIDbogh sign 'oH. price truth 'oHbe'. value ju
 
 *law, power, trust, redemption 'oHbe'bogh repair je*
 
-![Figure: Governance of Potential.](../../../figures/19_governance_society_potential.png)
+![Figure: Governance of Potential.](../../figures/19_governance_society_potential.png)
 
 _Image description draft: institutions, decision, public coordination je possibility responsibilityDaq translate-meH Hemey._
 
@@ -2514,7 +2514,7 @@ state force neH 'oHbe'. force bind-lu' 'e' promise 'oH. law prohibition neH 'oHb
 
 *justice, tobmeH De', distance, limitation bIngDaq correction je*
 
-![Law of Potential](../../../figures/v25_chapter_law-of-potential.png)
+![Law of Potential](../../figures/v25_chapter_law-of-potential.png)
 
 _Image description draft: law, interpretation, boundary je Daq, naDev possibility responsibilityDaq test-lu'._
 
@@ -2665,7 +2665,7 @@ law of Potential law tambe', legal advice nobbe', emotional justice proceduremo'
 
 *body, pain, diagnosis, yIn ghajbe'bogh care je*
 
-![Medicine of Potential](../../../figures/v25_chapter_medicine-of-potential.png)
+![Medicine of Potential](../../figures/v25_chapter_medicine-of-potential.png)
 
 _Image description draft: healing as careful reading of body, suffering, chance, conditions je._
 
@@ -2691,7 +2691,7 @@ chaptervam medical advice nobbe'. responsibility condition clarify: patient test
 
 *direction, influence, sign, possibility je*
 
-![Chapter illustration: the imaginary, the virtual, gravity, and the horizon](../../../figures/07_virtual_imaginary_gravity_horizon.png)
+![Chapter illustration: the imaginary, the virtual, gravity, and the horizon](../../figures/07_virtual_imaginary_gravity_horizon.png)
 
 _Figure description draft: imaginary, virtual, horizon je; boundary wall neH 'oHbe', relation 'oH._
 
@@ -2879,7 +2879,7 @@ deeper senseDaq justified: Potential mungDaj betraybe'.
 
 *information, visibility, cheghbe'bogh Doch je*
 
-![Boundary Horizons](../../../figures/v25_chapter-boundary-horizons.png)
+![Boundary Horizons](../../figures/v25_chapter_boundary-horizons.png)
 
 _Image description draft: boundary wall neH 'oHbe'; possibility, form je relation guide-bogh horizon 'oH._
 
@@ -2995,7 +2995,7 @@ Ideal matter ghombe'pu'bogh light 'oHbe'. Ideal matter veghpu'bogh light 'oH, 'e
 
 *spacetime formvo' Potential deeper groundDaq*
 
-![Figure H: Physical comparison map. Quantum QubmeH mIw, relativity, horizon, and information as different languages of the tension between potential and form.](../../../figures/05_flow_toward_the_ideal.png)
+![Figure H: Physical comparison map. Quantum QubmeH mIw, relativity, horizon, and information as different languages of the tension between potential and form.](../../figures/05_flow_toward_the_ideal.png)
 
 _Figure H: physical comparison map. Quantum QubmeH mIw, relativity, horizon, information je Potential-form tension Holmey pIm bIH._
 
@@ -3214,7 +3214,7 @@ layer change 'oH: physics instead new physics 'oHbe', 'ach unification nejDI' ph
 
 *Horizon, partiality, infinity, form, boundary inside responsibility je*
 
-![Universe Structure / The Shape of the Universe and the Shape of Potential](../../../figures/v25_chapter_shape-of-the-universe-and-potential.png)
+![Universe Structure / The Shape of the Universe and the Shape of Potential](../../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 _Image description: horizon, visible-hidden field, viewpoint wa'vo' fully accessbe'laHbogh possibilities je._
 
@@ -3346,7 +3346,7 @@ horizon Hoch prison 'oHbe'. rut horizon form appearmeH condition 'oH, form Hoch 
 
 *scale, appearance, field, symmetry, tobmeH De' je*
 
-![High-Energy Physics](../../../figures/chapter-high-energy-physics-v2.png)
+![High-Energy Physics](../../figures/chapter-high-energy-physics-v2.png)
 
 _Image description draft: abstract traces, tracks, scale, experimental field je appearance-measurement boundary rur._
 
@@ -3488,7 +3488,7 @@ responsible model Hoch legh pretend-bogh 'oHbe'. honestly jatlhbogh 'oH: naDev Q
 
 *Boundary, information, accessibility, traces je — physics Hap chut HurDaq proofDaq choHmoHbe'taHvIS*
 
-![Black Holes, Event Horizons, and the Holographic Principle](../../../figures/v26_restyle_polar_field_threshold.png)
+![Black Holes, Event Horizons, and the Holographic Principle](../../figures/v26_restyle_polar_field_threshold.png)
 
 _Image description: horizon, information, nuq disappear 'ach structural trace lonbogh threshold je._
 

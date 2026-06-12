@@ -158,7 +158,7 @@ Tenna lúmë tana, i axan carmava lemya pantaina: i cuina lelya i haiya, ar hand
 
 ## Sina Ná Patar, Lá Nyárë Tancaina Metta
 
-![Chapter illustration: a half-built conceptual structure, a compass, and an open path toward a bright horizon](../../../figures/chapter_model_not_final_declaration_v1.png)
+![Chapter illustration: a half-built conceptual structure, a compass, and an open path toward a bright horizon](../../figures/chapter_model_not_final_declaration_v1.png)
 
 _Image description draft: carma sanwëo lá telyaina, tamma tiello ar tië pantaina ana aurë calima; i emma tana patar mauya-cáriëo, lúmava ar cestaina, lá nyárë tancaina metta._
 
@@ -290,7 +290,7 @@ Celur carmava ar cauma: cendë sina tulca i sanwë-patar immo ar i sanwi coirë 
 
 ## I Lindalë i Quanta ar i Anta Naccava
 
-![Chapter illustration: the Whole, friction, and living formation](../../../figures/10_living_wholeness.png)
+![Chapter illustration: the Whole, friction, and living formation](../../figures/10_living_wholeness.png)
 
 _Image description draft: i Quanta lá auta rantaryar; i nacca imbetenta ontë ovantë, canta cuina ar mauya-cárië._
 
@@ -332,7 +332,7 @@ An sina i menelë yantaina celu ar astarmo lá ná tyalië imbe quén ar mahta. 
 
 ## I Turing Cestië Entulaina: I Cestië Rincao i Quanta
 
-![Chapter illustration: witness, resonance, mirror, and recognition](../../../figures/v26_restyle_dual_lenses_resonance.png)
+![Chapter illustration: witness, resonance, mirror, and recognition](../../figures/v26_restyle_dual_lenses_resonance.png)
 
 _Image description draft: astarmo, yantë hlóno, cilintë ar hanyalië — i anwië ná cendaina ú autala i haiya i celu cuinallo._
 
@@ -392,7 +392,7 @@ Qui cendë ná cendaina mára, lá quetë ilya nat er ar an sina ilya nat lavain
 
 *I núra námiéo yallo cuilë-isto, tengwë ar Ideal polir tulë cenna*
 
-![Figure A: The fragmented consciousness of the One. From potential wholeness into a plurality of points of view.](../../../figures/v25_chapter_shape-of-the-universe-and-potential.png)
+![Figure A: The fragmented consciousness of the One. From potential wholeness into a plurality of points of view.](../../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 _Figure A draft: i sanwë rácina i Minno; Potential quanta lelyala ana ceneli rimbi._
 
@@ -428,7 +428,7 @@ Cendë tanca varya níra: i Ideal lá ná haryalië i cendando, i tecindo hya mi
 
 *I hyanatië imbe ilya ya polë ná ar i ya ná valda ná*
 
-![Figure B: The absolute is not the ideal: total possibility versus clarified worthiness.](../../../figures/09_absolute_not_ideal.png)
+![Figure B: The absolute is not the ideal: total possibility versus clarified worthiness.](../../figures/09_absolute_not_ideal.png)
 
 _Figure B draft: i Ilúvë lá ná i Ideal — ilya námië versus valië ya né pantaina._
 
@@ -467,7 +467,7 @@ Qui i emma carë mára, varya i sanwë-patar quénwa. Enyalë ilya metta maqueti
 
 *Nihilism estel ó imbe Potential, Optimal ar Ideal*
 
-![Figure C: River and boat: a living navigation between potential and ideal.](../../../figures/02_navigation_between_banks.png)
+![Figure C: River and boat: a living navigation between potential and ideal.](../../figures/02_navigation_between_banks.png)
 
 _Figure C draft: sírë ar cirya — ciryalë cuina imbe Potential ar Ideal._
 
@@ -495,7 +495,7 @@ Emma sina lá ná quetë nolmava. Ná emma carmava pantien i ovantë imbe cuilë
 
 *Manen nolmë anwa lá ná er nótië i tiello*
 
-![Figure D: Experience and materiality: knowledge that cannot be bypassed.](../../../figures/12_experience_materiality.png)
+![Figure D: Experience and materiality: knowledge that cannot be bypassed.](../../figures/12_experience_materiality.png)
 
 _Figure D draft: cuilë-isto ar erma — nolmë ya lá polë ná lelyaina pella._
 
@@ -534,7 +534,7 @@ Handassë polë harya nolmë rimbe ú samien i ambar. Mal nolmë cuina ahya i qu
 
 *Parmalë, haiya ar hanyalië ya lá ná tië sinta*
 
-![Education of Potential](../../../figures/v25_chapter_education-of-potential.png)
+![Education of Potential](../../figures/v25_chapter_education-of-potential.png)
 
 _Image description draft: parmalë, haiya ar hanyalië ya lá ná tië sinta._
 
@@ -649,7 +649,7 @@ Entulë cuilëo yando resta i gap imbe axani i ambaro ar úmárië local lúmion
 
 ## 6. Immo, Ego ar Erussë ya Lá Auta — Ranta Minya
 
-![6. Self, Ego, and Unity That Does Not Erase](../../../figures/14_self_ego_unity.png)
+![6. Self, Ego, and Unity That Does Not Erase](../../figures/14_self_ego_unity.png)
 
 _Image description draft: cenë er varyaina mi i Quanta, lá autaina ar lá rentaina._
 
@@ -865,7 +865,7 @@ I sanwë-patar maquetë i cirya lá turë i current. Maquetë cenda, hanquenta, 
 
 *Hanquenta, celu, mauya-cárië ar i haiya ya polë ná mapaina*
 
-![Artificial Intelligence and Open Problems](../../../figures/v25_chapter_ai-open-problems.png)
+![Artificial Intelligence and Open Problems](../../figures/v25_chapter_ai-open-problems.png)
 
 _Image description draft: hanquenta, celu, mauya-cárië ar haiya ya polë ná mapaina._
 
@@ -914,7 +914,7 @@ Governance lá mauya maquetë er `carë ma i model?` Mauya maquetë: `an man? mi
 
 *I nyárë, i tyalië, metta pahtaina ar metta yassë carië en polë ná*
 
-![I Have No Mouth, and I Must Scream](../../../figures/v25_chapter_i-have-no-mouth.png)
+![I Have No Mouth, and I Must Scream](../../figures/v25_chapter_i-have-no-mouth.png)
 
 _Image description draft: i nyárë, i tyalië, metta pahtaina ar metta yassë carië en polë ná._
 
@@ -955,7 +955,7 @@ Mi metta pahtaina, i system turë i horizon cariëo. Mi metta actionala, i cenda
 
 *Reset, entulalië, lantië ar ortalië mi neldë lambeli i carma er*
 
-![Figure E: The recursive structure. Every layer can become origin, field, possibility, and local world.](../../../figures/v25_chapter_recursive-edge.png)
+![Figure E: The recursive structure. Every layer can become origin, field, possibility, and local world.](../../figures/v25_chapter_recursive-edge.png)
 
 _Image description draft: carma recursive yassë ilya layer polë ahya celu, palar, námië ar ambar local._
 
@@ -1199,7 +1199,7 @@ Sís i therapy cosmic metta: lá mapien i quén i ambarllo, mal entulien i ambar
 
 *Potential relative, realization contextual ar Ideal ve réna upper-bound*
 
-![The Recursive Edge](../../../figures/06_recursive_iverse_architecture.png)
+![The Recursive Edge](../../figures/06_recursive_iverse_architecture.png)
 
 _Image description draft: layers recursive yassen ilya réna polë ahya celu vinya._
 
@@ -1443,7 +1443,7 @@ Yassë system lá polë pahta immo, responsibility lemya. Sís Potential lá van
 
 *Mana ná claim, mana model, mana metaphor, ar mana lá mauya ahya proof*
 
-![Science, Physics, and Mathematics as Boundary Discipline](../../../figures/chapter-science-physics-math-boundary-v2.png)
+![Science, Physics, and Mathematics as Boundary Discipline](../../figures/chapter-science-physics-math-boundary-v2.png)
 
 _Image description draft: formulas, measurement ar models ve lambeli boundaryo, lá proof final._
 
@@ -1491,7 +1491,7 @@ I link ana i recursive edge ná clear: ilya precise answer panta boundary vinya.
 
 *Correlation lá ná message, ar i conditions i answero lá nar noise*
 
-![Locality, Non-locality, and Contextuality](../../../figures/chapter-locality-nonlocality-contextuality-v2.png)
+![Locality, Non-locality, and Contextuality](../../figures/chapter-locality-nonlocality-contextuality-v2.png)
 
 _Image description draft: local ar non-local relations, measurement, i conditions yassen tana ná cendaina, ar correlations yar lá nar messages._
 
@@ -1668,7 +1668,7 @@ Truth lá disappear írë appears inside conditions appearanceo. Becomes respons
 
 *I maura cost formao*
 
-![Chapter illustration: Creation, Canon, and Optimum](../../../figures/v26_restyle_fragmented_figure_sun.png)
+![Chapter illustration: Creation, Canon, and Optimum](../../figures/v26_restyle_fragmented_figure_sun.png)
 
 _Image description draft: figure rácina os center calo, ve form cilina excess possibilityo._
 
@@ -1846,7 +1846,7 @@ Lá cesta be ilya. Cila mana lá be in order to be real.
 
 *Form, living source, canon, ar market ya lá ná i final judge*
 
-![Art of Potential](../../../figures/v25_chapter_art-of-potential.png)
+![Art of Potential](../../figures/v25_chapter_art-of-potential.png)
 
 _Image description draft: creation ve field yassë possibility receives form ú nauva fully closed._
 
@@ -1872,7 +1872,7 @@ Art of Potential lá ná nostalgia against technology ar lá defense sufferingo 
 
 *Time, voice, listening, ar resonance ya lá ná metric*
 
-![Music of Potential](../../../figures/v25_chapter_music-of-potential.png)
+![Music of Potential](../../figures/v25_chapter_music-of-potential.png)
 
 _Image description draft: rhythm, silence ar return ve ways carrying possibility ter time._
 
@@ -1896,7 +1896,7 @@ Music of Potential lá quetë i human ná always better than i machine. Quetë i
 
 *Material, form, load, ar repair ya lá ná redemption*
 
-![Figure: Engineering and Architecture of Potential.](../../../figures/17_engineering_architecture_potential.png)
+![Figure: Engineering and Architecture of Potential.](../../figures/17_engineering_architecture_potential.png)
 
 _Image description draft: engineered system yassë Potential becomes structure, channeling, testing ar repair._
 
@@ -2090,7 +2090,7 @@ Structure lá ná er thing ya stands. Ná promise that matter can still bear. Ho
 
 *Money, value, trust ar Potential*
 
-![Figure: Economy of Relation.](../../../figures/18_economy_relation_potential.png)
+![Figure: Economy of Relation.](../../figures/18_economy_relation_potential.png)
 
 _Image description draft: value, exchange ar responsibility ve living relations, lá er numbers._
 
@@ -2343,7 +2343,7 @@ Money lá ná value. Money ná sign trying carry value. Price lá ná truth. Pri
 
 *Law, power, trust, ar repair ya lá ná redemption*
 
-![Figure: Governance of Potential.](../../../figures/19_governance_society_potential.png)
+![Figure: Governance of Potential.](../../figures/19_governance_society_potential.png)
 
 _Image description draft: institutions, decision ar public coordination ve ways translating possibility into responsibility._
 
@@ -2525,7 +2525,7 @@ State lá ná only force. Ná promise that force will be bound. Law lá ná only
 
 *Justice, tanwa, distance, ar correction under limitation*
 
-![Law of Potential](../../../figures/v25_chapter_law-of-potential.png)
+![Law of Potential](../../figures/v25_chapter_law-of-potential.png)
 
 _Image description draft: law, interpretation ar boundary ve space yassë possibility ná tested against responsibility._
 
@@ -2676,7 +2676,7 @@ Law of Potential lá replaces law, lá offers legal advice, ar lá proposes emot
 
 *Body, pain, diagnosis, ar care ya lá owns life*
 
-![Medicine of Potential](../../../figures/v25_chapter_medicine-of-potential.png)
+![Medicine of Potential](../../figures/v25_chapter_medicine-of-potential.png)
 
 _Image description draft: healing ve careful reading bodyo, sufferingo, chanceo ar conditionso._
 
@@ -2702,7 +2702,7 @@ Chapter sina gives no medical advice. Clarifies i condition responsibilityo: i p
 
 *Direction, influence, sign ar possibility*
 
-![Chapter illustration: the imaginary, the virtual, gravity, and the horizon](../../../figures/07_virtual_imaginary_gravity_horizon.png)
+![Chapter illustration: the imaginary, the virtual, gravity, and the horizon](../../figures/07_virtual_imaginary_gravity_horizon.png)
 
 _Figure description draft: imaginary, virtual ar horizon; boundary ve relation, lá merely wall._
 
@@ -2890,7 +2890,7 @@ Justified mi i deeper sense: it does not betray i Potential yallo came.
 
 *Information, visibility, ar mana does not return*
 
-![Boundary Horizons](../../../figures/v25_chapter_boundary-horizons.png)
+![Boundary Horizons](../../figures/v25_chapter_boundary-horizons.png)
 
 _Image description draft: boundary ya lá merely wall, mal horizon guiding i relation imbe possibility ar form._
 
@@ -3006,7 +3006,7 @@ I Ideal lá ná light ya has never met matter. I Ideal ná light ya has passed t
 
 *From spacetime ve form ana Potential ve deeper ground*
 
-![Figure H: Physical comparison map. Quantum theory, relativity, horizon, and information as different languages of the tension between potential and form.](../../../figures/05_flow_toward_the_ideal.png)
+![Figure H: Physical comparison map. Quantum theory, relativity, horizon, and information as different languages of the tension between potential and form.](../../figures/05_flow_toward_the_ideal.png)
 
 _Figure H: physical comparison map. Quantum theory, relativity, horizon ar information ve different languages i tensiono imbe Potential ar form._
 
@@ -3225,7 +3225,7 @@ Sina is change layero: lá new physics instead physics, mal more careful way thi
 
 *Horizon, partiality, infinity, form, ar responsibility within boundary*
 
-![Universe Structure / The Shape of the Universe and the Shape of Potential](../../../figures/v25_chapter_shape-of-the-universe-and-potential.png)
+![Universe Structure / The Shape of the Universe and the Shape of Potential](../../figures/v25_chapter_shape-of-the-universe-and-potential.png)
 
 _Image description: horizon, visible ar hidden field, ar possibilities ya cannot be fully accessed from one viewpoint._
 
@@ -3357,7 +3357,7 @@ Lá every horizon is prison. Sometimes horizon is i condition ya allows form app
 
 *Scale, appearance, field, symmetry, and tanwa*
 
-![High-Energy Physics](../../../figures/chapter-high-energy-physics-v2.png)
+![High-Energy Physics](../../figures/chapter-high-energy-physics-v2.png)
 
 _Image description draft: abstract traces, tracks, scale, and experimental field as a boundary of appearance and measurement._
 
@@ -3499,7 +3499,7 @@ I responsible model is lá i one ya pretends see everything. It is i one ya hone
 
 *Boundary, information, accessibility, and traces — without turning physics into metaphysical proof*
 
-![Black Holes, Event Horizons, and the Holographic Principle](../../../figures/v26_restyle_polar_field_threshold.png)
+![Black Holes, Event Horizons, and the Holographic Principle](../../figures/v26_restyle_polar_field_threshold.png)
 
 _Image description: horizon, information, ar threshold yassë mana disappears still leaves structural trace._
 
