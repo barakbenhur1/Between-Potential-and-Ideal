@@ -46,15 +46,35 @@ GATEWAYS = [
 ]
 
 META_RE = re.compile(r"<meta\b[^>]*>", re.I | re.S)
+LINK_RE = re.compile(r"<link\b[^>]*>", re.I | re.S)
 NAME_RE = re.compile(r"\bname\s*=\s*[\"']description[\"']", re.I)
 CONTENT_RE = re.compile(r"\bcontent\s*=\s*[\"']([^\"']{40,})[\"']", re.I | re.S)
 
 
 def has_meta_description(text: str) -> bool:
-    for tag in META_RE.findall(text):
-        if NAME_RE.search(tag) and CONTENT_RE.search(tag):
+    return any(NAME_RE.search(tag) and CONTENT_RE.search(tag) for tag in META_RE.findall(text))
+
+
+def has_link(text: str, *, rel: str, href: str) -> bool:
+    for tag in LINK_RE.findall(text):
+        rel_match = re.search(r"\brel\s*=\s*[\"']([^\"']+)[\"']", tag, re.I)
+        href_match = re.search(r"\bhref\s*=\s*[\"']([^\"']+)[\"']", tag, re.I)
+        if not rel_match or not href_match:
+            continue
+        rel_tokens = {token.casefold() for token in rel_match.group(1).split()}
+        if rel.casefold() in rel_tokens and href_match.group(1) == href:
             return True
     return False
+
+
+def has_language_control(text: str) -> bool:
+    return bool(
+        re.search(
+            r'class\s*=\s*[\"'][^\"']*(?:language-switch|bpi-language-menu)[^\"']*[\"']',
+            text,
+            re.I,
+        )
+    )
 
 
 def write_report(items, errors):
@@ -64,7 +84,6 @@ def write_report(items, errors):
         json.dumps(payload, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
-
     lines = [
         "# Gateway Pages Audit",
         "",
@@ -75,12 +94,14 @@ def write_report(items, errors):
     ]
     if errors:
         lines.append("## Errors")
-        for error in errors:
-            lines.append(f"- {error}")
+        lines.extend(f"- {error}" for error in errors)
         lines.append("")
     lines.append("## Pages")
     for item in items:
-        lines.append(f"- `{item['path']}` — missing fragments: {len(item['missing_fragments'])}; meta description: `{item['has_meta_description']}`")
+        lines.append(
+            f"- `{item['path']}` — missing checks: {len(item['missing_fragments'])}; "
+            f"meta description: `{item['has_meta_description']}`"
+        )
     (REPORT_DIR / "gateway_pages_audit.md").write_text("\n".join(lines), encoding="utf-8")
 
 
@@ -104,7 +125,6 @@ def main() -> int:
         text = path.read_text(encoding="utf-8", errors="ignore")
         lang = item["lang"]
         opposite = "en" if lang == "he" else "he"
-
         required_fragments = [
             f'lang="{lang}"',
             "<title>",
@@ -112,12 +132,10 @@ def main() -> int:
             'property="og:description"',
             'name="twitter:card"',
             'name="author"',
-            f'rel="canonical" href="{item["canonical"]}"',
             f'hreflang="{lang}"',
             f'hreflang="{opposite}"',
             'hreflang="x-default"',
             item["alternate"],
-            'class="language-switch"',
             'id="main"',
         ]
         for fragment in required_fragments:
@@ -125,13 +143,19 @@ def main() -> int:
                 page_result["missing_fragments"].append(fragment)
                 errors.append(f"{path} missing fragment: {fragment}")
 
+        if not has_link(text, rel="canonical", href=item["canonical"]):
+            page_result["missing_fragments"].append("canonical link")
+            errors.append(f"{path} missing canonical link: {item['canonical']}")
+        if not has_language_control(text):
+            page_result["missing_fragments"].append("language control")
+            errors.append(f"{path} missing language switch/menu control")
+
         page_result["has_meta_description"] = has_meta_description(text)
         if not page_result["has_meta_description"]:
             errors.append(f"{path} missing useful meta description")
         items.append(page_result)
 
     write_report(items, errors)
-
     if errors:
         print("FAIL: gateway pages audit found issues")
         for error in errors:
