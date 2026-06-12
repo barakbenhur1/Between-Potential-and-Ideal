@@ -12,6 +12,10 @@ on:
       - site/sitemap.xml
       - site/files/tlh/**
       - site/files/qya/**
+  workflow_run:
+    workflows: ["Build Full Localized Site"]
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -23,6 +27,7 @@ concurrency:
 
 jobs:
   verify:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
