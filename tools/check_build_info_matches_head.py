@@ -30,18 +30,6 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 P = ROOT / "site" / "build-info.json"
-TOOLS = ROOT / "tools"
-
-
-def install_current_qa_checks() -> None:
-    for source, target in (
-        ("check_gateway_pages_replacement.py", "check_gateway_pages.py"),
-        ("check_files_language_labels_replacement.py", "check_files_language_labels.py"),
-    ):
-        source_path = TOOLS / source
-        target_path = TOOLS / target
-        if source_path.is_file():
-            target_path.write_text(source_path.read_text(encoding="utf-8"), encoding="utf-8")
 
 
 def run(cmd: list[str]) -> str:
@@ -52,7 +40,6 @@ def run(cmd: list[str]) -> str:
 
 
 def main() -> int:
-    install_current_qa_checks()
     errors: list[str] = []
     warnings: list[str] = []
 
