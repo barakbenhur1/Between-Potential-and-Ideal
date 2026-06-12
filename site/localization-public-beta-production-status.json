@@ -1,14 +1,14 @@
 {
-  "status": "failed",
-  "production_verified": false,
+  "status": "verified",
+  "production_verified": true,
   "verification_scope": "live routes, localized gateway disclosures and review links, sitemap, image, exact repository manifest parity for both gateways and all five formats in both languages, with build-info metadata recorded as advisory evidence",
-  "target_commit": "70b4835b8de99050f9987a3e6a1702ad0b6ed8e8",
+  "target_commit": "1bb5c9e8e9c14c753c93eb7ad1434ea137ad7953",
   "required_release_commit": "89827cfe127ace4c18c426fbb8eb338be2f94578",
   "deployment_evidence": {
     "metadata_contains_target": false,
     "metadata_contains_release": true,
-    "content_matches_repository": false,
-    "target_evidenced_by_metadata_or_content": false,
+    "content_matches_repository": true,
+    "target_evidenced_by_metadata_or_content": true,
     "note": "Exact live SHA-256 and byte parity for the current gateway and package manifest is authoritative when Render build-info metadata is stale or cached."
   },
   "deployed_build": {
@@ -21,7 +21,7 @@
     "build_info_mode": "generated-from-current-git-head",
     "deployment_verification_note": "Triggers Render auto-deploy after the verified public-beta merge. The deployed build regenerates this file from its current Git HEAD."
   },
-  "recorded_at_utc": "2026-06-12T19:51:23+00:00",
+  "recorded_at_utc": "2026-06-12T20:28:57+00:00",
   "assertions": {
     "home_http_200": true,
     "home_has_beta_links": true,
@@ -29,7 +29,7 @@
     "sitemap_http_200": true,
     "sitemap_has_beta_routes": true,
     "tlh_gateway_http_200": true,
-    "tlh_gateway_disclosure": false,
+    "tlh_gateway_disclosure": true,
     "tlh_gateway_has_review_link": true,
     "qya_gateway_http_200": true,
     "qya_gateway_disclosure": true,
@@ -77,7 +77,7 @@
     "qya_docx_magic": true,
     "tlh_md_disclosure": true,
     "qya_md_disclosure": true,
-    "deployed_target_evidenced": false,
+    "deployed_target_evidenced": true,
     "release_lineage_evidenced": true
   },
   "routes": {
