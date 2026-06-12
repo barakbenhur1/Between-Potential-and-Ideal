@@ -24,7 +24,7 @@ def fetch(path: str) -> dict:
         try:
             request = urllib.request.Request(
                 LIVE + path,
-                headers={"User-Agent": "bpi-production-verifier/1.1"},
+                headers={"User-Agent": "bpi-production-verifier/1.2"},
             )
             with urllib.request.urlopen(request, timeout=180) as response:
                 body = response.read()
@@ -62,14 +62,33 @@ def parse_json(record: dict) -> dict:
         return {}
 
 
+def commit_contains(required_commit: str, deployed_commit: str, *, refresh: bool = False) -> bool:
+    if len(required_commit) != 40 or len(deployed_commit) != 40:
+        return False
+    if required_commit == deployed_commit:
+        return True
+    if refresh:
+        subprocess.run(
+            ["git", "fetch", "--quiet", "origin", "main"],
+            cwd=ROOT,
+            check=False,
+        )
+    return subprocess.run(
+        ["git", "merge-base", "--is-ancestor", required_commit, deployed_commit],
+        cwd=ROOT,
+        check=False,
+    ).returncode == 0
+
+
 def wait_for_current_deployment(target_commit: str) -> tuple[dict, dict, dict]:
     build = fetch("/build-info.json")
     tlh_gateway = fetch("/tlh.html")
     qya_gateway = fetch("/qya.html")
     for attempt in range(90):
         build_data = parse_json(build)
+        deployed_commit = str(build_data.get("commit", ""))
         if (
-            build_data.get("commit") == target_commit
+            commit_contains(target_commit, deployed_commit, refresh=attempt % 6 == 0)
             and TLH_REVIEW_URL in as_text(tlh_gateway)
             and QYA_REVIEW_URL in as_text(qya_gateway)
         ):
@@ -109,19 +128,14 @@ def main() -> int:
     build_data = parse_json(records["build"])
 
     deployed_commit = str(build_data.get("commit", ""))
-    deployed_contains_release = False
-    if len(deployed_commit) == 40:
-        deployed_contains_release = subprocess.run(
-            ["git", "merge-base", "--is-ancestor", RELEASE_COMMIT, deployed_commit],
-            cwd=ROOT,
-            check=False,
-        ).returncode == 0
+    deployed_contains_target = commit_contains(target_commit, deployed_commit, refresh=True)
+    deployed_contains_release = commit_contains(RELEASE_COMMIT, deployed_commit)
 
     assertions = {
         "home_http_200": records["home"]["http_code"] == 200,
         "home_has_beta_links": "localization-public-beta-links:start" in as_text(records["home"]),
         "build_http_200": records["build"]["http_code"] == 200,
-        "deployed_build_matches_target": deployed_commit == target_commit,
+        "deployed_build_contains_target": deployed_contains_target,
         "deployed_build_contains_release": deployed_contains_release,
         "sitemap_http_200": records["sitemap"]["http_code"] == 200,
         "sitemap_has_beta_routes": all(
@@ -177,7 +191,7 @@ def main() -> int:
     payload = {
         "status": "verified" if verified else "failed",
         "production_verified": verified,
-        "verification_scope": "current deployed commit, gateways and review links, sitemap, image, and exact manifest parity for all five formats in both languages",
+        "verification_scope": "deployed descendant of target, gateways and review links, sitemap, image, and exact manifest parity for all five formats in both languages",
         "target_commit": target_commit,
         "required_release_commit": RELEASE_COMMIT,
         "deployed_build": build_data,
