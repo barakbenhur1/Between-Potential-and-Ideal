@@ -1,3 +1,53 @@
 name: Build Full Localized Site
-on: workflow_dispatch
-jobs: {}
+on:
+  push:
+    branches: [main]
+    paths:
+      - tools/build_localized_public_release.py
+      - tools/build_localized_public_release_core.py
+      - tools/temporary.txt
+      - tools/test_write_small.py
+      - tools/tmp_segments_430_450.py
+      - tools/a.py
+      - .github/workflows/build-full-localized-site.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: build-full-localized-site
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python3 -m pip install --disable-pip-version-check markdown beautifulsoup4
+      - name: Build complete language sites
+        run: python3 tools/build_localized_public_release.py
+      - name: Verify parity
+        run: |
+          set -euo pipefail
+          test "$(find site/pages/tlh -maxdepth 1 -name '*.html' | wc -l | tr -d ' ')" = 34
+          test "$(find site/pages/qya -maxdepth 1 -name '*.html' | wc -l | tr -d ' ')" = 34
+          test -s site/tlh.html
+          test -s site/qya.html
+          grep -q 'pages/tlh/summary.html' site/tlh.html
+          grep -q 'pages/qya/summary.html' site/qya.html
+          grep -q 'hreflang="tlh"' site/en.html
+          grep -q 'hreflang="qya"' site/index.html
+          test -s localization/site-language-parity-manifest.json
+          python3 tools/audit_images_exist.py
+      - name: Commit generated sites
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site localization/config.json localization/translation-manifest.json localization/site-language-parity-manifest.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Publish full Klingon and Neo-Quenya site editions"
+          git push origin HEAD:main
