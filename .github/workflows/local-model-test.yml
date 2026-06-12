@@ -2,6 +2,8 @@ name: Draft Constructed-Language Translation Locally
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
 
 permissions:
   contents: read
@@ -11,7 +13,15 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  acknowledge-push:
+    if: ${{ github.event_name == 'push' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm manual-only local model workflow
+        run: echo "Local model generation is manual-only; no model job is required for this push."
+
   draft:
+    if: ${{ github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -39,13 +49,13 @@ jobs:
               job = sorted(Path('reports/localization/ai-jobs').glob(f'translate-*-{lang}-*.json'))[0]
               data = json.loads(job.read_text(encoding='utf-8'))
               prompt = f'''Translate the COMPLETE SOURCE into {targets[lang]}
-Return only Markdown. Preserve every paragraph and structural element. Never summarize, omit, repeat filler, or explain.
+          Return only Markdown. Preserve every paragraph and structural element. Never summarize, omit, repeat filler, or explain.
 
-GLOSSARY:
-{data['glossary']}
+          GLOSSARY:
+          {data['glossary']}
 
-SOURCE:
-{data['source']}'''
+          SOURCE:
+          {data['source']}'''
               result = subprocess.run(
                   ['ollama', 'run', 'qwen2.5:1.5b', prompt],
                   check=True,
