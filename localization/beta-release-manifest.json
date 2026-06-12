@@ -26,17 +26,17 @@
     {
       "path": "site/files/tlh/between-potential-and-ideal-tlh.docx",
       "bytes": 144225,
-      "sha256": "b039274cc2abfb8f753746ab7358ac67921b272d052712ac9f9e2e907a4b9d69"
+      "sha256": "9d841d1fd1e82cce067eb180b85e64fc66b15d70d68d5a279f09c480e5ca4092"
     },
     {
       "path": "site/files/tlh/between-potential-and-ideal-tlh.pdf",
       "bytes": 334688,
-      "sha256": "242447d130b5f3770e1a880f2af1342424df8f74e2d49967d12b6009dc86437a"
+      "sha256": "8aaa5619cb16f0d2ccaaab808b6ab68c98a1f43df310a9316a6b4ee4ac0b0f98"
     },
     {
       "path": "site/tlh.html",
-      "bytes": 1774,
-      "sha256": "8dea4aba7fe1141866ed486a343d5125b80f1d8c2789e9e5c3ecb4c2e4cb66f5"
+      "bytes": 12834,
+      "sha256": "068fb26db7f9f8aef82ecc8ebfc9ef0415b3fc60c99ffe20e37441f9e61f4f28"
     },
     {
       "path": "site/files/qya/between-potential-and-ideal-qya.md",
@@ -56,17 +56,17 @@
     {
       "path": "site/files/qya/between-potential-and-ideal-qya.docx",
       "bytes": 154034,
-      "sha256": "e9b98248d180fbfbbba7a8000d81ff4cefbaaaff9c811d76c83150639a6dc108"
+      "sha256": "7fc3ae81ce064358020c91ae47345267dce6cad85dc31677ec1019dda8497c22"
     },
     {
       "path": "site/files/qya/between-potential-and-ideal-qya.pdf",
       "bytes": 344394,
-      "sha256": "f7bc06f20911e2ee73f9c7b4602f9798c07da6f6db2624bc744d213b8361ac14"
+      "sha256": "0053319ed8a93157d3be372735242baa52df588b9f46d3e0172f794bca8f5cc1"
     },
     {
       "path": "site/qya.html",
-      "bytes": 1802,
-      "sha256": "e1080d9a5419a9c78e142151cc4eb11eb11380b9574699933929a50d9e730d8f"
+      "bytes": 12035,
+      "sha256": "17bdddf17813a957e0885919056c27c69ccc5e08f47f0c752588dc9bafe469f4"
     }
   ]
 }
