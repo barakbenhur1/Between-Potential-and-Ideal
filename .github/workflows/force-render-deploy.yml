@@ -5,12 +5,14 @@ on:
     branches: [main]
     paths:
       - .github/workflows/force-render-deploy.yml
-      - site/assets/bpi-home-black-theme-v1.css
-      - site/assets/bpi-home-dark-cards-v2.css
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: force-render-public-beta-deploy
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -21,7 +23,7 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Trigger Render deploy and capture full result
+      - name: Trigger Render deploy and verify public beta routes
         env:
           RENDER_DEPLOY_HOOK_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
           RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
@@ -63,26 +65,44 @@ jobs:
           else
             METHOD="none"
             STATUS="missing_render_secret"
-            RESPONSE="No repository or environment secret named RENDER_DEPLOY_HOOK_URL, RENDER_DEPLOY_HOOK, RENDER_API_KEY, or RENDER_API_TOKEN is available to this workflow."
+            RESPONSE="No repository secret named RENDER_DEPLOY_HOOK_URL, RENDER_DEPLOY_HOOK, RENDER_API_KEY, or RENDER_API_TOKEN is available."
           fi
 
-          LIVE_HTML="$(curl --silent --show-error --location --max-time 30 "${LIVE_URL}/" 2>&1 || true)"
-          LIVE_BUILD="$(curl --silent --show-error --location --max-time 30 "${LIVE_URL}/build-info.json" 2>&1 || true)"
-          LIVE_THEME="$(curl --silent --show-error --location --max-time 30 "${LIVE_URL}/assets/bpi-home-black-theme-v1.css?v=20260606-home-black-theme-v5" 2>&1 || true)"
-          LIVE_CARDS="$(curl --silent --show-error --location --max-time 30 "${LIVE_URL}/assets/bpi-home-dark-cards-v2.css?v=20260606-home-dark-cards-v5" 2>&1 || true)"
+          # Give Render a bounded opportunity to publish, then capture the actual live result.
+          LIVE_HOME=""
+          LIVE_BUILD=""
+          LIVE_TLH=""
+          LIVE_QYA=""
+          LIVE_TLH_DOC=""
+          LIVE_QYA_DOC=""
+          for attempt in $(seq 1 24); do
+            LIVE_HOME="$(curl --silent --show-error --location --max-time 30 "${LIVE_URL}/" 2>&1 || true)"
+            LIVE_BUILD="$(curl --silent --show-error --location --max-time 30 "${LIVE_URL}/build-info.json" 2>&1 || true)"
+            LIVE_TLH="$(curl --silent --show-error --location --max-time 30 "${LIVE_URL}/tlh.html" 2>&1 || true)"
+            LIVE_QYA="$(curl --silent --show-error --location --max-time 30 "${LIVE_URL}/qya.html" 2>&1 || true)"
+            LIVE_TLH_DOC="$(curl --silent --show-error --location --max-time 30 "${LIVE_URL}/files/tlh/between-potential-and-ideal-tlh.html" 2>&1 || true)"
+            LIVE_QYA_DOC="$(curl --silent --show-error --location --max-time 30 "${LIVE_URL}/files/qya/between-potential-and-ideal-qya.html" 2>&1 || true)"
+            if printf '%s' "$LIVE_TLH" | grep -q 'PUBLIC BETA' \
+              && printf '%s' "$LIVE_QYA" | grep -q 'PUBLIC BETA' \
+              && printf '%s' "$LIVE_TLH_DOC" | grep -q 'linguistic review ongoing' \
+              && printf '%s' "$LIVE_QYA_DOC" | grep -q 'linguistic review ongoing'; then
+              break
+            fi
+            sleep 10
+          done
 
-          if printf '%s' "$LIVE_HTML" | grep -q 'home-dark-cards-v5'; then LIVE_HTML_REFERENCES_V5=true; else LIVE_HTML_REFERENCES_V5=false; fi
-          if printf '%s' "$LIVE_HTML" | grep -q 'בינה מלאכותית כעדות'; then LIVE_HAS_CURRENT_NAV=true; else LIVE_HAS_CURRENT_NAV=false; fi
-          if printf '%s' "$LIVE_THEME" | grep -q 'bpi-home-dark-cards-v2.css'; then LIVE_THEME_IMPORTS_DARK_CARDS=true; else LIVE_THEME_IMPORTS_DARK_CARDS=false; fi
-          if printf '%s' "$LIVE_CARDS" | grep -q 'color:#63d4cf'; then LIVE_CARDS_HAS_TYPOGRAPHY_V5=true; else LIVE_CARDS_HAS_TYPOGRAPHY_V5=false; fi
-          if printf '%s' "$LIVE_CARDS" | grep -q 'p:nth-of-type(8)'; then LIVE_CARDS_HAS_POSITIONAL_RULES=true; else LIVE_CARDS_HAS_POSITIONAL_RULES=false; fi
+          if printf '%s' "$LIVE_HOME" | grep -q 'localization-public-beta-links:start'; then LIVE_HOME_HAS_BETA_LINKS=true; else LIVE_HOME_HAS_BETA_LINKS=false; fi
+          if printf '%s' "$LIVE_TLH" | grep -q 'PUBLIC BETA'; then LIVE_TLH_OK=true; else LIVE_TLH_OK=false; fi
+          if printf '%s' "$LIVE_QYA" | grep -q 'PUBLIC BETA'; then LIVE_QYA_OK=true; else LIVE_QYA_OK=false; fi
+          if printf '%s' "$LIVE_TLH_DOC" | grep -q 'linguistic review ongoing'; then LIVE_TLH_DOC_OK=true; else LIVE_TLH_DOC_OK=false; fi
+          if printf '%s' "$LIVE_QYA_DOC" | grep -q 'linguistic review ongoing'; then LIVE_QYA_DOC_OK=true; else LIVE_QYA_DOC_OK=false; fi
 
-          export STATUS RESPONSE HTTP_CODE METHOD TARGET_SHA TARGET_SHORT LIVE_BUILD LIVE_HTML_REFERENCES_V5 LIVE_HAS_CURRENT_NAV LIVE_THEME_IMPORTS_DARK_CARDS LIVE_CARDS_HAS_TYPOGRAPHY_V5 LIVE_CARDS_HAS_POSITIONAL_RULES
+          export STATUS RESPONSE HTTP_CODE METHOD TARGET_SHA TARGET_SHORT LIVE_BUILD LIVE_HOME_HAS_BETA_LINKS LIVE_TLH_OK LIVE_QYA_OK LIVE_TLH_DOC_OK LIVE_QYA_DOC_OK
           python3 - <<'PY'
           import json, os
           from datetime import datetime, timezone
           from pathlib import Path
-          b=lambda n: os.environ.get(n,'').lower()=='true'
+          boolean=lambda name: os.environ.get(name,'').lower()=='true'
           payload={
             'status':os.environ.get('STATUS',''),
             'method':os.environ.get('METHOD',''),
@@ -92,13 +112,20 @@ jobs:
             'service_id':'srv-d821i5ugvqtc73d98dtg',
             'recorded_at_utc':datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
             'response':os.environ.get('RESPONSE','')[:8000],
-            'live_html_references_v5':b('LIVE_HTML_REFERENCES_V5'),
-            'live_has_current_navigation':b('LIVE_HAS_CURRENT_NAV'),
-            'live_theme_imports_dark_cards':b('LIVE_THEME_IMPORTS_DARK_CARDS'),
-            'live_cards_has_typography_v5':b('LIVE_CARDS_HAS_TYPOGRAPHY_V5'),
-            'live_cards_has_positional_rules':b('LIVE_CARDS_HAS_POSITIONAL_RULES'),
+            'live_home_has_beta_links':boolean('LIVE_HOME_HAS_BETA_LINKS'),
+            'live_tlh_gateway_ok':boolean('LIVE_TLH_OK'),
+            'live_qya_gateway_ok':boolean('LIVE_QYA_OK'),
+            'live_tlh_document_ok':boolean('LIVE_TLH_DOC_OK'),
+            'live_qya_document_ok':boolean('LIVE_QYA_DOC_OK'),
             'live_build_info_response':os.environ.get('LIVE_BUILD','')[:8000],
           }
+          payload['production_verified']=all([
+            payload['live_home_has_beta_links'],
+            payload['live_tlh_gateway_ok'],
+            payload['live_qya_gateway_ok'],
+            payload['live_tlh_document_ok'],
+            payload['live_qya_document_ok'],
+          ])
           Path('site/render-deploy-status.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           PY
 
@@ -110,7 +137,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site/render-deploy-status.json
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Record live homepage typography v5 verification"
+          git commit -m "Record public beta production deployment verification"
           git push origin HEAD:main
 
-# diagnostic-trigger: 2026-06-06-v5
+# diagnostic-trigger: 2026-06-12-public-beta-v1
