@@ -1,8 +1,8 @@
 {
-  "schema_version": 23,
+  "schema_version": 24,
   "segment": 20,
   "stage": "specialist-external-review-preparation",
-  "status": "external-review-packet-and-response-templates-complete-responses-pending",
+  "status": "external-review-packet-templates-and-intake-validation-complete-responses-pending",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -55,6 +55,8 @@
   "round_2_external_specialist_review_packet": "localization/reviews/between-potential-and-ideal/020-external-specialist-review-packet-r2.md",
   "round_2_external_qya_response_template": "localization/reviews/between-potential-and-ideal/020-external-qya-review-response-template-r2.md",
   "round_2_external_tlh_response_template": "localization/reviews/between-potential-and-ideal/020-external-tlh-review-response-template-r2.md",
+  "external_review_intake_validator": "tools/validate_external_specialist_reviews.py",
+  "external_review_intake_workflow": ".github/workflows/audit-constructed-language-segments.yml",
   "qya_cantie_short_label_test": "localization/reviews/between-potential-and-ideal/020-cantie-test.md",
   "qya_cantie_philosophical_frame_blocker": "localization/reviews/between-potential-and-ideal/020-cantie-philosophical-frame-blocker.md",
   "current_audit_state": {
@@ -64,20 +66,21 @@
     "body_findings": 0,
     "heading_findings": 0,
     "mechanically_clear": true,
-    "specialist_approval_pending": true
+    "specialist_approval_pending": true,
+    "external_review_intake": "responses-pending-validator-enforced"
   },
   "verified_gate_runs": {
-    "head_sha": "addce7c5b812275b6fcb5568054c96e1b9dafec6",
+    "head_sha": "c0d71d714f1271bf2941da02911f67aba828ae47",
     "audit_constructed_language_segments": {
-      "workflow_run_id": 27387057325,
+      "workflow_run_id": 27388165156,
       "result": "success"
     },
     "release_guard": {
-      "workflow_run_id": 27387057321,
+      "workflow_run_id": 27388165176,
       "result": "success"
     },
     "export_review_snapshot": {
-      "workflow_run_id": 27387057330,
+      "workflow_run_id": 27388165200,
       "result": "success"
     }
   },
@@ -151,6 +154,7 @@
     "external_specialist_review_packet_complete": true,
     "external_qya_response_template_complete": true,
     "external_tlh_response_template_complete": true,
+    "external_review_intake_validator_enforced": true,
     "external_qya_review_complete": false,
     "external_tlh_review_complete": false,
     "opening_restraint_nonreplacement_gate_complete": false,
@@ -167,7 +171,7 @@
     "independent_second_review_complete": false,
     "approved": false
   },
-  "next_action": "obtain independent Neo-Quenya and Klingon specialist responses using the prepared packet and language-specific templates; record completed responses as immutable review files, resolve corrections one language at a time, rerun bilingual parity, and keep production source unchanged",
+  "next_action": "obtain independent Neo-Quenya and Klingon specialist responses using the prepared packet and language-specific templates; validated intake now rejects incomplete, unsigned, wrong-commit, source-free, or status-mismatched responses; resolve accepted corrections one language at a time, rerun bilingual parity, and keep production source unchanged",
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
