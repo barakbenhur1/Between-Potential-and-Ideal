@@ -24,6 +24,9 @@ Updated: 2026-06-12
 - [x] Public GitHub issue opened for Klingon review.
 - [x] One-page handoff and snapshot download prepared.
 - [x] Outreach routes and ready-to-send messages documented.
+- [x] Neo-Quenya routing request sent.
+- [x] Conditional monitoring enabled for replies and review activity.
+- [ ] Klingon request submitted through an official KLI channel.
 - [ ] Independent Neo-Quenya response received.
 - [ ] Independent Klingon response received.
 
@@ -37,7 +40,7 @@ Updated: 2026-06-12
 
 ## Definition of completion
 
-The translation and Public Beta publication project is operationally complete. The two unchecked specialist-response items are external review dependencies, not unfinished translation work.
+The translation and Public Beta publication project is operationally complete. The unchecked items are external dependencies, not unfinished translation work.
 
 When a valid response arrives:
 
