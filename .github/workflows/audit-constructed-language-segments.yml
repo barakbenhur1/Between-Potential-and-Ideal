@@ -7,6 +7,7 @@ on:
       - "tools/audit_constructed_language_segments.py"
       - "tools/validate_external_specialist_reviews.py"
       - "tools/validate_external_specialist_review_substance.py"
+      - "tools/test_validate_external_specialist_reviews.py"
       - "tools/test_validate_external_specialist_review_substance.py"
       - "localization/sources/tlh/**"
       - "localization/sources/qya/**"
@@ -30,6 +31,8 @@ jobs:
           python-version: "3.11"
       - name: Audit all paired segments
         run: python3 tools/audit_constructed_language_segments.py
+      - name: Test specialist review intake states
+        run: python3 tools/test_validate_external_specialist_reviews.py
       - name: Test specialist review substance validator
         run: python3 tools/test_validate_external_specialist_review_substance.py
       - name: Validate external specialist review intake
