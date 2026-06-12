@@ -1,8 +1,8 @@
 {
-  "schema_version": 20,
+  "schema_version": 21,
   "segment": 20,
-  "stage": "specialist-opening-restraint-source-gating",
-  "status": "opening-capability-and-agency-complete-qya-stop-source-and-nonreplacement-pending",
+  "stage": "specialist-opening-restraint-and-nonreplacement-gating",
+  "status": "role-based-nonreplacement-complete-direct-lexical-and-qya-stop-source-pending",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -51,6 +51,7 @@
   "round_2_opening_moral_conduct_gate": "localization/reviews/between-potential-and-ideal/020-opening-moral-conduct-gate-r2.md",
   "round_2_opening_stop_control_gate": "localization/reviews/between-potential-and-ideal/020-opening-stop-control-gate-r2.md",
   "round_2_tamma_pusta_source_boundary": "localization/reviews/between-potential-and-ideal/020-tamma-pusta-source-boundary-r2.md",
+  "round_2_opening_nonreplacement_gate": "localization/reviews/between-potential-and-ideal/020-opening-nonreplacement-gate-r2.md",
   "qya_cantie_short_label_test": "localization/reviews/between-potential-and-ideal/020-cantie-test.md",
   "qya_cantie_philosophical_frame_blocker": "localization/reviews/between-potential-and-ideal/020-cantie-philosophical-frame-blocker.md",
   "current_audit_state": {
@@ -63,17 +64,17 @@
     "specialist_approval_pending": true
   },
   "verified_gate_runs": {
-    "head_sha": "95f65b0f017f2c21d7a16313c059b392401e67bf",
+    "head_sha": "4144421b7615e9e05ab509cb291ee2ce6ed50bd5",
     "audit_constructed_language_segments": {
-      "workflow_run_id": 27384489515,
+      "workflow_run_id": 27386436844,
       "result": "success"
     },
     "release_guard": {
-      "workflow_run_id": 27384489520,
+      "workflow_run_id": 27386436843,
       "result": "success"
     },
     "export_review_snapshot": {
-      "workflow_run_id": 27384489508,
+      "workflow_run_id": 27386436842,
       "result": "success"
     }
   },
@@ -97,6 +98,7 @@
     "localization/reviews/between-potential-and-ideal/020-opening-moral-conduct-gate-r2.md",
     "localization/reviews/between-potential-and-ideal/020-opening-stop-control-gate-r2.md",
     "localization/reviews/between-potential-and-ideal/020-tamma-pusta-source-boundary-r2.md",
+    "localization/reviews/between-potential-and-ideal/020-opening-nonreplacement-gate-r2.md",
     "localization/glossaries/segment-020-specialist-terms.md"
   ],
   "acceptance": {
@@ -137,6 +139,9 @@
     "opening_stop_control_qya_primary_source_complete": false,
     "opening_tamma_generic_tool_primary_source_complete": false,
     "qya_hanquet_rejected_as_fan_invented": true,
+    "opening_nonreplacement_role_architecture_complete": true,
+    "opening_direct_nonreplacement_lexical_complete": false,
+    "opening_explicit_negative_nonreplacement_complete": false,
     "opening_restraint_nonreplacement_gate_complete": false,
     "opening_proposition_source_gate_complete": false,
     "external_qya_review_complete": false,
@@ -153,7 +158,7 @@
     "independent_second_review_complete": false,
     "approved": false
   },
-  "next_action": "trace the exact Tolkien primary source and period for qya pusta-; then source-gate explicit nonreplacement in both languages without modifying production source",
+  "next_action": "trace the exact Tolkien primary source and period for qya pusta- and source an independently valid instead-of or replacement construction; if no direct construction is safe, obtain external specialist judgment on whether the explicit role sequence is sufficient",
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
