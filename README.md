@@ -1,10 +1,26 @@
 # Between Potential and Ideal
 
-A static site for the bilingual theory project **Between Potential and Ideal / בין פוטנציאל לאידיאל**.
+A static publication site for **Between Potential and Ideal / בין פוטנציאל לאידיאל**, with Hebrew and English core editions and clearly disclosed constructed-language Public Beta editions.
 
 Live site:
 
 - https://between-potential-and-ideal.onrender.com
+
+## Constructed-language Public Beta editions
+
+Complete Public Beta editions are live in all 77 mapped sections and in HTML, PDF, DOCX, Markdown, and plain text:
+
+- Klingon (`tlhIngan Hol`): https://between-potential-and-ideal.onrender.com/tlh.html
+- Neo-Quenya: https://between-potential-and-ideal.onrender.com/qya.html
+
+These editions do not claim independent specialist approval. Current review status and the correction workflow are recorded in `localization/EXTERNAL_REVIEW_STATUS.md`.
+
+Independent bounded reviews of segment 020 are open:
+
+- Neo-Quenya: https://github.com/barakbenhur1/Between-Potential-and-Ideal/issues/10
+- Klingon: https://github.com/barakbenhur1/Between-Potential-and-Ideal/issues/11
+
+Production verification is recorded in `site/localization-public-beta-production-status.json`. The verifier checks the deployed revision, both review links, sitemap coverage, disclosure text, image availability, and exact manifest size and SHA-256 parity for all five formats in both languages.
 
 ## Current repository structure
 
