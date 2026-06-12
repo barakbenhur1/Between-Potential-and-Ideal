@@ -2,8 +2,9 @@
 """Validate immutable external specialist review intake for segment 020.
 
 Missing review responses are a legitimate pending state. Once a response file is
-added, however, it must be complete enough to audit and the authoritative status
-file must agree with the validated intake state.
+added, it must be complete enough to audit. A valid response may arrive before
+the maintainer synchronizes the authoritative status flag; that intermediate
+state is accepted without granting approval or publication.
 """
 
 from __future__ import annotations
@@ -82,7 +83,6 @@ def selected_decision(text: str, key: str = "Decision") -> str:
     if value in ALLOWED_DECISIONS:
         return value
 
-    # Also permit a response that marks exactly one of the template options.
     block = re.search(
         rf"^{re.escape(key)}:\s*$\n(.*?)(?=^[A-Z][^\n:]*:\s*|^##\s+|\Z)",
         text,
@@ -100,6 +100,23 @@ def selected_decision(text: str, key: str = "Decision") -> str:
 
 def nonempty_after_label(section_text: str, key: str) -> bool:
     return bool(field(section_text, key))
+
+
+def reconcile_status(response_valid: bool, status_complete: bool) -> tuple[str, bool, list[str]]:
+    """Return intake state, validity, and status-sync errors.
+
+    A valid response is accepted before the maintainer flips the authoritative
+    status flag. The reverse is never allowed: a true status flag without a
+    valid immutable response remains a blocking error.
+    """
+
+    if response_valid:
+        if status_complete:
+            return "valid", True, []
+        return "valid-awaiting-status-sync", True, []
+    if status_complete:
+        return "invalid", False, ["status flag is true but response validation failed"]
+    return "invalid", False, []
 
 
 def validate_response(spec: ReviewSpec, text: str) -> tuple[list[str], dict]:
@@ -280,34 +297,35 @@ def main() -> int:
             errors, details = validate_response(spec, response_text)
             row.update(details)
             row["errors"].extend(errors)
-            row["valid"] = not row["errors"]
-            row["state"] = "valid" if row["valid"] else "invalid"
-            if row["valid"] and not status_complete:
-                row["errors"].append(
-                    f"validated response exists but {spec.status_flag} is not true"
-                )
+            state, valid, sync_errors = reconcile_status(not row["errors"], status_complete)
+            row["state"] = state
+            row["valid"] = valid
+            for error in sync_errors:
+                row["errors"].append(f"{spec.status_flag}: {error}")
+            if row["errors"]:
                 row["valid"] = False
-                row["state"] = "status-mismatch"
-            if not row["valid"] and status_complete:
-                row["errors"].append(
-                    f"{spec.status_flag}=true but response validation failed"
-                )
+                if row["state"] == "valid-awaiting-status-sync":
+                    row["state"] = "invalid"
 
         all_errors.extend(f"{spec.lang}: {error}" for error in row["errors"])
         rows.append(row)
 
     both_valid = all(row["valid"] for row in rows)
-    if status.get("approved") is True and not both_valid:
-        all_errors.append("segment approved=true before both external reviews validate")
+    both_status_complete = all(row["status_complete"] for row in rows)
+    if status.get("approved") is True and not (both_valid and both_status_complete):
+        all_errors.append(
+            "segment approved=true before both external reviews validate and status flags synchronize"
+        )
     if status.get("publication") != "forbidden":
         all_errors.append("segment 020 publication must remain forbidden at review-intake stage")
 
     result = {
-        "schema_version": 1,
+        "schema_version": 2,
         "segment": 20,
         "packet_commit": PACKET_COMMIT,
         "responses": rows,
         "both_external_reviews_valid": both_valid,
+        "both_status_flags_complete": both_status_complete,
         "publication_approved": False,
         "errors": all_errors,
     }
@@ -321,6 +339,7 @@ def main() -> int:
         "",
         f"Packet commit: `{PACKET_COMMIT}`",
         f"Both external reviews valid: **{str(both_valid).lower()}**",
+        f"Both status flags complete: **{str(both_status_complete).lower()}**",
         "Publication approved: **false**",
         "",
         "| Language | Response | State | Status flag | Errors |",
@@ -345,6 +364,7 @@ def main() -> int:
                 "qya": rows[0].get("state"),
                 "tlh": rows[1].get("state"),
                 "both_valid": both_valid,
+                "both_status_complete": both_status_complete,
                 "errors": len(all_errors),
             }
         )
