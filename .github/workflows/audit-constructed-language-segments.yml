@@ -21,6 +21,26 @@ permissions:
   contents: read
 
 jobs:
+  template-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
+          show-progress: false
+          sparse-checkout: |
+            tools/validate_external_specialist_reviews.py
+            tools/validate_external_specialist_review_substance.py
+            tools/test_external_specialist_review_templates.py
+            localization/reviews/between-potential-and-ideal/020-external-qya-review-response-template-r2.md
+            localization/reviews/between-potential-and-ideal/020-external-tlh-review-response-template-r2.md
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Test complete specialist response templates
+        run: python3 tools/test_external_specialist_review_templates.py
+
   audit:
     runs-on: ubuntu-latest
     steps:
@@ -37,8 +57,6 @@ jobs:
         run: python3 tools/test_validate_external_specialist_reviews.py
       - name: Test specialist review substance validator
         run: python3 tools/test_validate_external_specialist_review_substance.py
-      - name: Test complete specialist response templates
-        run: python3 tools/test_external_specialist_review_templates.py
       - name: Validate external specialist review intake
         run: python3 tools/validate_external_specialist_reviews.py
       - name: Validate external specialist review substance
