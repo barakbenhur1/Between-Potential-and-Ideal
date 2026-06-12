@@ -5,8 +5,11 @@ on:
     branches: [main]
     paths:
       - "tools/audit_constructed_language_segments.py"
+      - "tools/validate_external_specialist_reviews.py"
       - "localization/sources/tlh/**"
       - "localization/sources/qya/**"
+      - "localization/reviews/between-potential-and-ideal/020-external-*-review-response*.md"
+      - "localization/reviews/between-potential-and-ideal/020-specialist-status.json"
       - ".github/workflows/audit-constructed-language-segments.yml"
   workflow_dispatch:
 
@@ -25,6 +28,8 @@ jobs:
           python-version: "3.11"
       - name: Audit all paired segments
         run: python3 tools/audit_constructed_language_segments.py
+      - name: Validate external specialist review intake
+        run: python3 tools/validate_external_specialist_reviews.py
       - uses: actions/upload-artifact@v4
         with:
           name: constructed-language-paired-audit
