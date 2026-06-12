@@ -10,9 +10,10 @@ This is a request for review, not a claim of endorsement. No organization or ind
 
 Current project state:
 
-- Publication and next-action status: `localization/EXTERNAL_REVIEW_STATUS.md`
+- Canonical project status: `localization/CURRENT_STATUS.md`
 - Neo-Quenya review request: GitHub issue #10
 - Klingon review request: GitHub issue #11
+- Single reviewer handoff: `localization/reviews/between-potential-and-ideal/020-EXTERNAL-SPECIALIST-HANDOFF.md`
 - Production proof: `site/localization-public-beta-production-status.json`
 
 ## Klingon outreach order
@@ -25,7 +26,7 @@ Official route:
 
 `https://www.kli.org/about-klingon/contact-the-kli/`
 
-Do not imply that the KLI sponsors or endorses the project. Ask for routing first.
+The official page provides a JavaScript contact form plus Facebook and Discord routes. It does not publish a direct email address. Do not guess an address or imply that the KLI sponsors or endorses the project.
 
 ### 2. KLI email discussion group
 
@@ -111,8 +112,9 @@ Record actual contact attempts only after they occur.
 
 | Date | Language | Channel | Recipient or group | Result | Follow-up |
 |---|---|---|---|---|---|
-| — | — | — | — | No outreach sent yet | — |
+| 2026-06-12 | Neo-Quenya | Email | Elvish Linguistic Fellowship (`Aelfwine@elvish.org`), CC Mythopoeic Society communications | Sent successfully from `barakbenhur@gmail.com`; no bounce or reply recorded at the time of this update | Monitor the existing Gmail thread; record any reply before treating it as review intake |
+| 2026-06-12 | Klingon | KLI official contact routes | Klingon Language Institute | Not sent: the official page exposes a JavaScript form, Facebook, and Discord but no public direct email address; no address was guessed | Submit the prepared Klingon message through the official KLI form or Discord, then record the actual attempt here |
 
 ## Intake rule
 
-An informal comment, chat response, or expression of interest is not a completed specialist review. Only a response that follows the issue instructions and passes `tools/preflight_external_specialist_review.py` enters the formal intake workflow.
+An informal comment, chat response, routing reply, or expression of interest is not a completed specialist review. Only a response that follows the issue instructions and passes `tools/preflight_external_specialist_review.py` enters the formal intake workflow.
