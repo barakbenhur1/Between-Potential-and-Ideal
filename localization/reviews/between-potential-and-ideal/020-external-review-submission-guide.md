@@ -12,6 +12,12 @@ Packet:
 
 `localization/reviews/between-potential-and-ideal/020-external-specialist-review-packet-r2.md`
 
+Also consult the current supplemental evidence index:
+
+`localization/reviews/between-potential-and-ideal/020-external-review-supplemental-evidence-index-r3.md`
+
+The supplemental traces reduce source-search ambiguity only. They do not replace direct Tolkien or Okrand source inspection and do not pre-answer any decision.
+
 ## Submission paths
 
 ### Neo-Quenya
@@ -32,6 +38,30 @@ All paths are under:
 
 `localization/reviews/between-potential-and-ideal/`
 
+## Local preflight before opening a pull request
+
+Run the same structural and substantive checks used by CI against the completed local file.
+
+Neo-Quenya:
+
+```bash
+python3 tools/preflight_external_specialist_review.py \
+  --language qya \
+  --response /path/to/020-external-qya-review-response-r2.md
+```
+
+Klingon:
+
+```bash
+python3 tools/preflight_external_specialist_review.py \
+  --language tlh \
+  --response /path/to/020-external-tlh-review-response-r2.md
+```
+
+For a machine-readable report, append `--json`.
+
+A successful preflight prints `PASS` and the required final repository filename. It validates intake only; it does not grant linguistic approval, synchronize the authoritative status, alter production, authorize merging, or permit publication.
+
 ## Contributor boundary
 
 External reviewers must not edit:
@@ -39,7 +69,8 @@ External reviewers must not edit:
 - `020-specialist-status.json`;
 - production translation sources;
 - title or body publication files;
-- the review packet or blank templates.
+- the review packet or blank templates;
+- supplemental source traces.
 
 A structurally and substantively valid response is accepted by CI as
 `valid-awaiting-status-sync`. That state means only that the immutable review
