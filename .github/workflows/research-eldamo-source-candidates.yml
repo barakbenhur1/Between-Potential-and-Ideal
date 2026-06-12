@@ -1,7 +1,11 @@
 name: Research Eldamo Source Candidates
 
 on:
-  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/research-eldamo-source-candidates.yml"
+      - "tools/extract_eldamo_source_candidates.py"
 
 permissions:
   contents: read
@@ -10,11 +14,14 @@ jobs:
   extract:
     runs-on: ubuntu-latest
     steps:
-      - name: Extract pinned Eldamo entries for tamma and pusta
+      - name: Search pinned Eldamo entries for nonreplacement candidates
         env:
-          SCRIPT_SHA: ${{ github.sha }}
+          SCRIPT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         run: |
           curl --fail --silent --show-error \
             "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${SCRIPT_SHA}/tools/extract_eldamo_source_candidates.py" \
             --output /tmp/extract_eldamo_source_candidates.py
-          python3 /tmp/extract_eldamo_source_candidates.py tamma pusta
+          python3 /tmp/extract_eldamo_source_candidates.py \
+            --gloss-regex 'replace|replacement|substitut|instead|in place of|take.*place|supplant|stand in' \
+            --languages q,mq \
+            --max-records 80
