@@ -73,6 +73,13 @@ jobs:
           fi
       - name: Audit referenced images
         run: python3 tools/audit_images_exist.py
+      - name: Upload missing-image report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: localized-missing-image-report
+          path: reports/audit_images_exist.json
+          if-no-files-found: ignore
       - name: Commit generated sites and packages
         run: |
           git config user.name "github-actions[bot]"
