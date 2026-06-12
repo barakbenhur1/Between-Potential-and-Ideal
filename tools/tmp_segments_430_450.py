@@ -1,61 +1,19 @@
-from pathlib import Path
-
-MARKER = "\n## Segment review gate"
-
-
-def update(path_string: str, replacements: list[tuple[str, str]]) -> None:
-    path = Path(path_string)
-    text = path.read_text(encoding="utf-8")
-    if "linguistic_review:" not in text:
-        text = text.replace(
-            "status: draft\n",
-            "status: draft\nlinguistic_review: specialist-revision-active\n",
-            1,
-        )
-    body, gate = text.split(MARKER, 1)
-    for old, new in replacements:
-        if old not in body:
-            raise RuntimeError(f"missing expected text in {path_string}: {old!r}")
-        body = body.replace(old, new)
-    path.write_text(body + MARKER + gate, encoding="utf-8")
-
-
-update(
-    "localization/sources/tlh/between-potential-and-ideal/430-economy-market-credit-labor-externality.md",
-    [
-        ("mirror", "mIllogh"),
-        ("testimony", "yInDaj bopbogh QIch"),
-    ],
-)
-update(
-    "localization/sources/qya/between-potential-and-ideal/430-economy-market-credit-labor-externality.md",
-    [],
-)
-update(
-    "localization/sources/tlh/between-potential-and-ideal/440-economy-inequality-crisis-repair.md",
-    [
-        ("wealth time, safety, education", "wealth time, QobHa'ghach, education"),
-        ("market mirror ratlhtaH'a'?", "market mIllogh ratlhtaH'a'?"),
-        ("theory economic law nI'", "QubmeH mIw economic law nI'"),
-    ],
-)
-update(
-    "localization/sources/qya/between-potential-and-ideal/440-economy-inequality-crisis-repair.md",
-    [("Wealth polë buy time, safety, education", "Wealth polë buy time, varnassë, education")],
-)
-update(
-    "localization/sources/tlh/between-potential-and-ideal/450-governance-law-legitimacy-elections.md",
-    [
-        ("State of nature", "chut Hutlhbogh ghu'"),
-        ("state of nature", "chut Hutlhbogh ghu'"),
-        ("identities", "ghaH'egh pongmey"),
-    ],
-)
-update(
-    "localization/sources/qya/between-potential-and-ideal/450-governance-law-legitimacy-elections.md",
-    [
-        ("State of Nature", "I ghuo ú law"),
-        ("State of nature", "I ghuo ú law"),
-        ("state of nature", "i ghuo ú law"),
-    ],
-)
+import html,re
+import markdown
+import a as D
+import test_write_small as S
+SITE=D.SITE
+def body_html(lang,slug):
+ if slug=='files':return S.downloads(lang,'../../')
+ if slug=='changelog':return '<h2>2026-06-12</h2><p>77 mapped sections, 34 public pages and five document formats.</p>'
+ rendered=markdown.markdown(D.body(lang,slug),extensions=['extra','tables','fenced_code','sane_lists'],output_format='html5')
+ rendered=re.sub(r'(?:\.\./)+figures/','../../figures/',rendered)
+ return re.sub(r'(?<![./])figures/','../../figures/',rendered)
+def write_page(lang,slug):
+ title=D.title(lang,slug)
+ siblings=''.join(f'<a href="{other}.html">{html.escape(D.title(lang,other))}</a>' for other in D.PAGES if other!=slug)
+ doc=f'<!doctype html><html lang="{lang}" dir="ltr">{S.head(lang,title,slug,"../../")}<body class="public-page design-prompt-theme section-{slug}">{S.header(lang,slug,"../../")}<main class="site-main" id="main"><nav class="breadcrumbs"><a href="../../{lang}.html">{S.NAMES[lang]}</a><span>›</span><span>{html.escape(title)}</span></nav>{S.note(lang)}<section class="page-title media-page-title"><div class="page-title-head"><img class="page-title-mark" src="../../figures/thumb_core.png" alt="{html.escape(title)}"><h1>{html.escape(title)}</h1></div></section><section class="reader-layout"><article class="reader-card long-read tone-card bpi-localized-content">{body_html(lang,slug)}</article></section><section class="reader-card"><div class="bpi-localized-link-grid">{siblings}</div></section></main><footer class="site-footer"><p>Between Potential and Ideal — {S.NAMES[lang]} Public Beta</p></footer></body></html>'
+ path=SITE/'pages'/lang/f'{slug}.html';path.parent.mkdir(parents=True,exist_ok=True);path.write_text(doc,encoding='utf-8')
+def write_pages(lang):
+ S.write_home(lang)
+ for slug in D.PAGES:write_page(lang,slug)
