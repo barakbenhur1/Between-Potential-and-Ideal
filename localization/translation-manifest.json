@@ -1,1 +1,46 @@
-{"schema_version":2,"status":"inventory-complete-translation-pending","source_languages":["en","he"],"target_languages":["tlh","qya"],"required_formats":["html","pdf","docx","md","txt"],"public_pages_source":"site/sitemap.xml","derive_all_page_pairs":true,"document_packages":["between-potential-and-ideal","between-potential-and-ideal-editorial","between-potential-and-ideal-tightened","editorial-report","stories-before-thought","the-nauseating-truth","what-ai-believes","when-i-am-also-you","reverse-turing-conversation"],"publication_gate":{"languages_visible_before_completion":false,"same_page_language_switch_required":true,"all_source_pages_must_exist":true,"all_target_pages_must_exist":true,"all_formats_required_for_each_download_package":true,"seo_and_hreflang_required":true,"mobile_and_desktop_qa_required":true}}
+{
+  "schema_version": 2,
+  "status": "public-release-built",
+  "source_languages": [
+    "en",
+    "he"
+  ],
+  "target_languages": [
+    "tlh",
+    "qya"
+  ],
+  "required_formats": [
+    "html",
+    "pdf",
+    "docx",
+    "md",
+    "txt"
+  ],
+  "public_pages_source": "site/sitemap.xml",
+  "derive_all_page_pairs": true,
+  "document_packages": [
+    "between-potential-and-ideal",
+    "between-potential-and-ideal-editorial",
+    "between-potential-and-ideal-tightened",
+    "editorial-report",
+    "stories-before-thought",
+    "the-nauseating-truth",
+    "what-ai-believes",
+    "when-i-am-also-you",
+    "reverse-turing-conversation"
+  ],
+  "publication_gate": {
+    "languages_visible_before_completion": false,
+    "same_page_language_switch_required": true,
+    "all_source_pages_must_exist": true,
+    "all_target_pages_must_exist": true,
+    "all_formats_required_for_each_download_package": true,
+    "seo_and_hreflang_required": true,
+    "mobile_and_desktop_qa_required": true
+  },
+  "completed_languages": [
+    "tlh",
+    "qya"
+  ],
+  "review_disclosure": "Machine-assisted experimental editions; not represented as expert linguistic certification."
+}

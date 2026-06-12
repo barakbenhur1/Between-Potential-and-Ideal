@@ -37,7 +37,8 @@
       "pages_dir": "site/pages/tlh",
       "files_dir": "site/files/tlh",
       "translation_profile": "conservative standard Klingon in Latin transcription",
-      "publish": false
+      "publish": true,
+      "publication_note": "machine-assisted experimental edition; automated structural QA complete"
     },
     "qya": {
       "label": "Neo-Quenya",
@@ -47,7 +48,8 @@
       "pages_dir": "site/pages/qya",
       "files_dir": "site/files/qya",
       "translation_profile": "conservative Neo-Quenya with explicit disclosure",
-      "publish": false
+      "publish": true,
+      "publication_note": "machine-assisted experimental edition; automated structural QA complete"
     }
   },
   "publication_requirements": {
