@@ -1,8 +1,8 @@
 {
-  "schema_version": 16,
+  "schema_version": 17,
   "segment": 20,
   "stage": "specialist-source-validation",
-  "status": "complete-qya-test-candidate-external-review-pending",
+  "status": "bilingual-internal-test-candidates-external-review-pending",
   "approved": false,
   "publication": "forbidden",
   "language_profiles": {
@@ -10,7 +10,9 @@
     "qya": "Late-Quenya-first"
   },
   "title_policy": "localize-in-both-target-languages",
-  "protected_proper_names": ["Prime Intellect"],
+  "protected_proper_names": [
+    "Prime Intellect"
+  ],
   "revision_plan": "localization/reviews/between-potential-and-ideal/020-specialist-revision-plan.md",
   "terminology_supplement": "localization/glossaries/segment-020-specialist-terms.md",
   "candidate_validation": "localization/reviews/between-potential-and-ideal/020-candidate-validation.json",
@@ -34,6 +36,10 @@
   "round_2_ahya_title_review": "localization/reviews/between-potential-and-ideal/020-ahya-title-review.md",
   "round_2_lisse_subtitle_test": "localization/reviews/between-potential-and-ideal/020-lisse-subtitle-test.md",
   "round_2_qya_title_candidate": "localization/reviews/between-potential-and-ideal/020-qya-title-candidate-r2.md",
+  "round_2_tlh_title_candidate": "localization/reviews/between-potential-and-ideal/020-tlh-title-candidate-r2.md",
+  "round_2_tlh_three_context_results": "localization/reviews/between-potential-and-ideal/020-tlh-three-context-results-r2.md",
+  "round_2_tlh_adversarial_review": "localization/reviews/between-potential-and-ideal/020-tlh-adversarial-review-r2.md",
+  "round_2_bilingual_candidate_checkpoint": "localization/reviews/between-potential-and-ideal/020-bilingual-candidate-checkpoint-r2.md",
   "qya_cantie_short_label_test": "localization/reviews/between-potential-and-ideal/020-cantie-test.md",
   "qya_cantie_philosophical_frame_blocker": "localization/reviews/between-potential-and-ideal/020-cantie-philosophical-frame-blocker.md",
   "current_audit_state": {
@@ -45,10 +51,20 @@
     "mechanically_clear": true,
     "specialist_approval_pending": true
   },
-  "verified_audit_run": {
-    "workflow_run_id": 27342127814,
-    "head_sha": "2e534c1879890bfe8417be61e6ef26497b103929",
-    "result": "success"
+  "verified_gate_runs": {
+    "head_sha": "95f65b0f017f2c21d7a16313c059b392401e67bf",
+    "audit_constructed_language_segments": {
+      "workflow_run_id": 27384489515,
+      "result": "success"
+    },
+    "release_guard": {
+      "workflow_run_id": 27384489520,
+      "result": "success"
+    },
+    "export_review_snapshot": {
+      "workflow_run_id": 27384489508,
+      "result": "success"
+    }
   },
   "review_blocker_sources": [
     "localization/reviews/between-potential-and-ideal/020-source-decisions-round-2.json",
@@ -56,16 +72,19 @@
     "localization/reviews/between-potential-and-ideal/020-clause-adversarial-review-round-2.md",
     "localization/reviews/between-potential-and-ideal/020-ahya-title-review.md",
     "localization/reviews/between-potential-and-ideal/020-qya-title-candidate-r2.md",
+    "localization/reviews/between-potential-and-ideal/020-tlh-three-context-results-r2.md",
+    "localization/reviews/between-potential-and-ideal/020-tlh-adversarial-review-r2.md",
+    "localization/reviews/between-potential-and-ideal/020-bilingual-candidate-checkpoint-r2.md",
     "localization/glossaries/segment-020-specialist-terms.md"
   ],
   "acceptance": {
     "source_evidence_round_1_complete": true,
-    "three_context_results_round_2_recorded": true,
+    "qya_three_context_results_round_2_recorded": true,
     "qya_cantie_three_context_anchor_passed": true,
     "qya_har_identity_persistence_rejected": true,
     "qya_abstract_relation_noun_admitted": false,
     "qya_dialogue_and_path_sources_complete": true,
-    "qya_living_participant_expression_approved": true,
+    "qya_living_participant_expression_approved_for_tests": true,
     "qya_test_clauses_internally_parsed": true,
     "qya_internal_adversarial_review_complete": true,
     "qya_sena_for_prime_intellect_rejected": true,
@@ -75,6 +94,16 @@
     "qya_complete_main_title_selected": false,
     "qya_pm395_sense_boundary_confirmed": false,
     "qya_title_styling_review_complete": false,
+    "tlh_complete_target_language_test_candidate": true,
+    "tlh_three_context_results_recorded": true,
+    "tlh_internal_adversarial_review_complete": true,
+    "tlh_unsafe_meh_route_rejected": true,
+    "tlh_sentence_as_object_scope_retained_for_tests": true,
+    "tlh_complete_main_title_selected": false,
+    "bilingual_internal_test_candidates_complete": true,
+    "bilingual_internal_semantic_parity_documented": true,
+    "external_qya_review_complete": false,
+    "external_tlh_review_complete": false,
     "source_validation_complete": false,
     "title_terms_resolved": false,
     "complete_target_language_title_candidates": false,
@@ -87,7 +116,7 @@
     "independent_second_review_complete": false,
     "approved": false
   },
-  "next_action": "confirm the PM/395 sense boundary for ahya-, externally review yassë and tierya, then build the first fully sourced Klingon title candidate; do not modify production source",
+  "next_action": "prepare a bounded segment-020 body-revision blueprint mapped paragraph by paragraph to the bilingual semantic controls; do not modify production source before external Neo-Quenya and Klingon specialist reviews",
   "first_pass_complete_pairs": 77,
   "approved_pairs": 0,
   "revision_required_pairs": 77
