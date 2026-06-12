@@ -21,12 +21,13 @@ The original release deployment was verified for route availability, disclosure 
 - Reviewer links added to both language gateway pages in the repository.
 - Production verifier expanded to check reviewer links and deployed descendants.
 - README, outreach plan, reviewer handoff, and completion checklist added.
-- Neo-Quenya routing request sent through the documented official email route.
+- Neo-Quenya routing request sent to the documented official scholarly contacts; no bounce or reply is currently recorded.
+- Daily conditional monitoring enabled for email replies, GitHub review activity, submitted response files, and production-verification changes.
 
 ## Open external dependencies
 
 1. Independent Neo-Quenya response for issue #10.
-2. Klingon request submission through an official KLI form, Discord, or subscribed discussion group.
+2. Klingon request submission through an official KLI form, Discord, or subscribed discussion group. KLI publishes no direct email address on its official contact page, so no address was guessed.
 3. Independent Klingon response for issue #11.
 4. Production-status refresh for the post-release reviewer links.
 
@@ -34,6 +35,6 @@ These are external dependencies, not unfinished translation work.
 
 ## Current next action
 
-Monitor the Neo-Quenya thread, submit the prepared Klingon request through an official KLI channel, and accept only responses that pass `tools/preflight_external_specialist_review.py`.
+The automated monitor will report new replies, review submissions, relevant issue activity, or a production-status update. The only manual action still required is submitting the prepared Klingon request through an official KLI web or community channel.
 
-No speculative translation edits are authorized while no valid specialist response exists.
+Accept only responses that pass `tools/preflight_external_specialist_review.py`. No speculative translation edits are authorized while no valid specialist response exists.
