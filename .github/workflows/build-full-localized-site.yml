@@ -1,0 +1,3 @@
+name: Build Full Localized Site
+on: workflow_dispatch
+jobs: {}
