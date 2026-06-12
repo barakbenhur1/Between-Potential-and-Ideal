@@ -77,7 +77,7 @@ class SpecialistReviewSubstanceTests(unittest.TestCase):
             f"| form{i} | meaning | TBD | ... | unknown | note |"
             for i in range(14)
         ]
-        errors = substance.validate_source_ledger("\n".join(rows))
+        errors = substance.validate_ledger("\n".join(rows))
         self.assertGreaterEqual(len(errors), 14)
 
 
