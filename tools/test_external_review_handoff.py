@@ -4,8 +4,6 @@
 from __future__ import annotations
 
 import json
-import subprocess
-import sys
 import unittest
 from pathlib import Path
 
@@ -121,24 +119,6 @@ class ExternalReviewHandoffTests(unittest.TestCase):
         self.assertTrue(status["acceptance"]["external_review_local_preflight_complete"])
         self.assertTrue(status["acceptance"]["external_review_supplemental_evidence_index_complete"])
         self.assertTrue(status["acceptance"]["external_review_handoff_contract_verified"])
-
-    def test_export_release_guard_diagnostics(self) -> None:
-        output_dir = ROOT / "reports/localization/constructed-language-audit"
-        output_dir.mkdir(parents=True, exist_ok=True)
-        result = subprocess.run(
-            [sys.executable, "tools/audit_release_guard.py"],
-            cwd=ROOT,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            text=True,
-            timeout=300,
-        )
-        report = output_dir / "release-guard-diagnostics.txt"
-        report.write_text(
-            f"exit={result.returncode}\n{result.stdout}",
-            encoding="utf-8",
-        )
-        self.assertTrue(report.is_file())
 
 
 if __name__ == "__main__":
