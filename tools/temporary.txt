@@ -1,4 +1,5 @@
 from pathlib import Path
+import hashlib,json
 import a as D
 import test_write_small as S
 import tmp_segments_430_450 as R
@@ -16,9 +17,19 @@ def assemble_main(lang):
  parts=[D.clean((ROOT/data['canonical_targets'][lang]).read_text(encoding='utf-8'))]
  parts.extend(D.clean((ROOT/path).read_text(encoding='utf-8')) for path in data['source_segments'][lang])
  return '\n\n'.join(item for item in parts if item)+'\n'
+def package_bodies(lang):
+ path=SITE/'files'/lang/f'between-potential-and-ideal-{lang}.md'
+ return {PACKAGES[0]:path.read_text(encoding='utf-8') if path.is_file() else assemble_main(lang)}
 def write_package(lang,package,body):
  folder=SITE/'files'/lang
  required=[folder/f'{package}-{lang}.{ext}' for ext in ('html','pdf','docx','md','txt')]
  missing=[path for path in required if not path.is_file() or path.stat().st_size==0]
  if missing:raise RuntimeError('Incomplete package: '+', '.join(str(path.relative_to(ROOT)) for path in missing))
 def write_pages(lang):R.write_pages(lang)
+def write_release_manifest():
+ items=[]
+ for lang in LANGUAGES:
+  for path in [SITE/f'{lang}.html',*sorted((SITE/'pages'/lang).glob('*.html'))]:
+   data=path.read_bytes();items.append({'path':path.relative_to(ROOT).as_posix(),'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
+ out=ROOT/'localization/site-language-parity-manifest.json'
+ out.write_text(json.dumps({'schema_version':1,'release_channel':'public-beta-full-site','languages':list(LANGUAGES),'pages_per_language':35,'files':items},indent=2)+'\n',encoding='utf-8')
