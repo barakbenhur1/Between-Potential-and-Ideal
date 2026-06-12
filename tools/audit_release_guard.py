@@ -1,5 +1,11 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import json
 import subprocess
 import sys
+from datetime import datetime, timezone
+from pathlib import Path
 
 CHECKS = [
     ["python3", "tools/check_no_root_junk_files.py"],
@@ -43,19 +49,62 @@ CHECKS = [
     ["python3", "tools/audit_extended_localization_parity.py"],
 ]
 
-
-def run(cmd):
-    print("\n==>", " ".join(cmd))
-    result = subprocess.run(cmd)
-    if result.returncode != 0:
-        raise SystemExit(result.returncode)
+ROOT = Path(__file__).resolve().parents[1]
+REPORT_PATH = ROOT / "reports" / "production_next" / "release_guard_results.json"
 
 
-def main():
-    for cmd in CHECKS:
-        run(cmd)
+def run(cmd: list[str]) -> dict:
+    print("\n==>", " ".join(cmd), flush=True)
+    result = subprocess.run(
+        cmd,
+        cwd=ROOT,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+    )
+    if result.stdout:
+        print(result.stdout, end="" if result.stdout.endswith("\n") else "\n")
+    if result.stderr:
+        print(result.stderr, end="" if result.stderr.endswith("\n") else "\n", file=sys.stderr)
+    return {
+        "command": cmd,
+        "returncode": result.returncode,
+        "ok": result.returncode == 0,
+        "stdout_tail": "\n".join(result.stdout.splitlines()[-80:]),
+        "stderr_tail": "\n".join(result.stderr.splitlines()[-80:]),
+    }
+
+
+def main() -> int:
+    results = [run(cmd) for cmd in CHECKS]
+    failures = [result for result in results if not result["ok"]]
+
+    REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "generated_at_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
+        "status": "passed" if not failures else "failed",
+        "checks_total": len(results),
+        "checks_passed": len(results) - len(failures),
+        "checks_failed": len(failures),
+        "failed_commands": [" ".join(result["command"]) for result in failures],
+        "results": results,
+    }
+    REPORT_PATH.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+    if failures:
+        print("\nFAIL: release guard failed checks:")
+        for result in failures:
+            print(f"- {' '.join(result['command'])} (exit {result['returncode']})")
+        print(f"Detailed report: {REPORT_PATH.relative_to(ROOT)}")
+        return 1
+
     print("\nOK: release guard passed.")
+    print(f"Detailed report: {REPORT_PATH.relative_to(ROOT)}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
