@@ -14,11 +14,11 @@ jobs:
   extract:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
-          show-progress: false
-          sparse-checkout: tools/extract_eldamo_source_candidates.py
-          sparse-checkout-cone-mode: false
       - name: Extract pinned Eldamo entries for tamma and pusta
-        run: python3 tools/extract_eldamo_source_candidates.py tamma pusta
+        env:
+          SCRIPT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          curl --fail --silent --show-error \
+            "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${SCRIPT_SHA}/tools/extract_eldamo_source_candidates.py" \
+            --output /tmp/extract_eldamo_source_candidates.py
+          python3 /tmp/extract_eldamo_source_candidates.py tamma pusta
