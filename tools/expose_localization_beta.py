@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Expose completed localization beta packages without claiming final approval."""
+"""Expose completed localization packages without adding a homepage beta banner."""
 
 from __future__ import annotations
 
@@ -15,38 +15,35 @@ START = "<!-- localization-public-beta-links:start -->"
 END = "<!-- localization-public-beta-links:end -->"
 
 
-def beta_bar(language: str) -> str:
-    if language == "he":
-        label = "תרגומי בטא ציבוריים"
-        detail = "התרגומים המלאים עדיין בביקורת לשונית"
-    else:
-        label = "Public beta translations"
-        detail = "Complete editions; linguistic review is still ongoing"
-    return (
-        f'{START}<aside aria-label="{label}" style="padding:.75rem 1rem;text-align:center;'
-        'background:#211b0e;color:#fff7db;border-bottom:2px solid #f2c45e">'
-        f'<strong>{label}:</strong> <a href="tlh.html" style="color:#8edcff">tlhIngan Hol</a> · '
-        f'<a href="qya.html" style="color:#8edcff">Neo-Quenya</a> '
-        f'<small>— {detail}</small></aside>{END}'
-    )
-
-
-def patch_home(path: Path, language: str) -> None:
-    text = path.read_text(encoding="utf-8")
-    if START in text and END in text:
+def remove_legacy_beta_banner(text: str) -> str:
+    while START in text and END in text:
         before, rest = text.split(START, 1)
         _, after = rest.split(END, 1)
         text = before + after
-    bar = beta_bar(language)
-    if "</header>" not in text:
-        raise RuntimeError(f"Missing header close in {path.relative_to(ROOT)}")
-    text = text.replace("</header>", "</header>" + bar, 1)
+    return text
+
+
+def patch_home(path: Path) -> None:
+    text = remove_legacy_beta_banner(path.read_text(encoding="utf-8"))
     alternates = (
         '<link href="https://between-potential-and-ideal.onrender.com/tlh.html" hreflang="tlh" rel="alternate"/>'
         '<link href="https://between-potential-and-ideal.onrender.com/qya.html" hreflang="qya" rel="alternate"/>'
     )
     if 'hreflang="tlh"' not in text:
         text = text.replace("</head>", alternates + "</head>", 1)
+    required = (
+        'class="bpi-language-menu"',
+        'href="/index.html"',
+        'href="/en.html"',
+        'href="/tlh.html"',
+        'href="/qya.html"',
+        'class="bpi-language-menu-icon"',
+    )
+    missing = [marker for marker in required if marker not in text]
+    if missing:
+        raise RuntimeError(
+            f"Four-language menu is incomplete in {path.relative_to(ROOT)}: " + ", ".join(missing)
+        )
     path.write_text(text, encoding="utf-8")
 
 
@@ -116,10 +113,12 @@ def main() -> int:
         raise RuntimeError("Missing beta outputs: " + ", ".join(missing))
     changed = normalize_beta_assets()
     refresh_beta_manifest()
-    patch_home(SITE / "index.html", "he")
-    patch_home(SITE / "en.html", "en")
+    patch_home(SITE / "index.html")
+    patch_home(SITE / "en.html")
     patch_sitemap()
-    print(f"Exposed public beta editions and normalized {len(changed)} package files.")
+    print(
+        f"Exposed localized editions without a homepage beta banner and normalized {len(changed)} package files."
+    )
     return 0
 
 
