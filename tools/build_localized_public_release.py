@@ -54,7 +54,7 @@ def menu_block(current: str, slug: str | None, asset_prefix: str) -> str:
         '<span class="bpi-language-menu-icon" aria-hidden="true">🌐</span>'
         f'<span class="bpi-language-menu-current">{html.escape(names[current])}</span>'
         '</summary>'
-        f'<div class="bpi-language-menu-panel'>{"".join(links)}</div>'
+        f'<div class="bpi-language-menu-panel">{"".join(links)}</div>'
         '</details>'
     )
 
