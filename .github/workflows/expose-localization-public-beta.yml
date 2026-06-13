@@ -32,14 +32,23 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Add public beta links and normalize package assets
+      - name: Expose localized editions without a homepage beta banner
         run: python3 tools/expose_localization_beta.py
-      - name: Verify entry points and beta images
+      - name: Verify entry points, language menu, and localized images
         run: |
+          set -euo pipefail
           test -s site/tlh.html
           test -s site/qya.html
-          grep -q "localization-public-beta-links:start" site/en.html
-          grep -q "localization-public-beta-links:start" site/index.html
+          ! grep -q "localization-public-beta-links:start" site/en.html
+          ! grep -q "localization-public-beta-links:start" site/index.html
+          for page in site/index.html site/en.html; do
+            grep -q 'class="bpi-language-menu"' "$page"
+            grep -q 'class="bpi-language-menu-icon"' "$page"
+            grep -q 'href="/index.html"' "$page"
+            grep -q 'href="/en.html"' "$page"
+            grep -q 'href="/tlh.html"' "$page"
+            grep -q 'href="/qya.html"' "$page"
+          done
           grep -q "tlh.html" site/sitemap.xml
           grep -q "qya.html" site/sitemap.xml
           python3 tools/audit_images_exist.py
@@ -57,8 +66,8 @@ jobs:
             site/files/qya/between-potential-and-ideal-qya.md \
             localization/beta-release-manifest.json
           if git diff --cached --quiet; then
-            echo "Public beta entry points and packages are current."
+            echo "Localized entry points and packages are current."
             exit 0
           fi
-          git commit -m "Repair public beta image paths"
+          git commit -m "Expose four-language menu without beta banner"
           git push origin HEAD:localization-release-resolved
