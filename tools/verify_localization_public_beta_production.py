@@ -17,6 +17,7 @@ STATUS_PATH = ROOT / "site/localization-public-beta-production-status.json"
 MANIFEST_PATH = ROOT / "localization/beta-release-manifest.json"
 TLH_REVIEW_URL = "https://github.com/barakbenhur1/Between-Potential-and-Ideal/issues/11"
 QYA_REVIEW_URL = "https://github.com/barakbenhur1/Between-Potential-and-Ideal/issues/10"
+LEGACY_BANNER_MARKER = "localization-public-beta-links:start"
 
 
 def fetch(path: str) -> dict:
@@ -25,7 +26,7 @@ def fetch(path: str) -> dict:
         try:
             request = urllib.request.Request(
                 LIVE + path,
-                headers={"User-Agent": "bpi-production-verifier/1.3"},
+                headers={"User-Agent": "bpi-production-verifier/1.4"},
             )
             with urllib.request.urlopen(request, timeout=180) as response:
                 body = response.read()
@@ -93,11 +94,32 @@ def exact_match(record: dict, entry: dict) -> bool:
     )
 
 
+def has_four_language_menu(record: dict) -> bool:
+    text = as_text(record)
+    return all(
+        marker in text
+        for marker in (
+            'class="bpi-language-menu"',
+            'class="bpi-language-menu-icon"',
+            'href="/index.html"',
+            'href="/en.html"',
+            'href="/tlh.html"',
+            'href="/qya.html"',
+        )
+    )
+
+
+def has_no_legacy_beta_banner(record: dict) -> bool:
+    return LEGACY_BANNER_MARKER not in as_text(record)
+
+
 def wait_for_current_deployment(
     target_commit: str,
     expected: dict[str, dict],
-) -> tuple[dict, dict, dict]:
+) -> tuple[dict, dict, dict, dict, dict]:
     build = fetch("/build-info.json")
+    home = fetch("/")
+    home_en = fetch("/en.html")
     tlh_gateway = fetch("/tlh.html")
     qya_gateway = fetch("/qya.html")
 
@@ -110,7 +132,11 @@ def wait_for_current_deployment(
             refresh=attempt % 6 == 0,
         )
         content_current = (
-            exact_match(tlh_gateway, expected["site/tlh.html"])
+            has_four_language_menu(home)
+            and has_four_language_menu(home_en)
+            and has_no_legacy_beta_banner(home)
+            and has_no_legacy_beta_banner(home_en)
+            and exact_match(tlh_gateway, expected["site/tlh.html"])
             and exact_match(qya_gateway, expected["site/qya.html"])
             and TLH_REVIEW_URL in as_text(tlh_gateway)
             and QYA_REVIEW_URL in as_text(qya_gateway)
@@ -120,10 +146,12 @@ def wait_for_current_deployment(
         if attempt < 29:
             time.sleep(10)
             build = fetch("/build-info.json")
+            home = fetch("/")
+            home_en = fetch("/en.html")
             tlh_gateway = fetch("/tlh.html")
             qya_gateway = fetch("/qya.html")
 
-    return build, tlh_gateway, qya_gateway
+    return build, home, home_en, tlh_gateway, qya_gateway
 
 
 def main() -> int:
@@ -132,13 +160,12 @@ def main() -> int:
     target_commit = subprocess.check_output(
         ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
     ).strip()
-    build, tlh_gateway, qya_gateway = wait_for_current_deployment(
+    build, home, home_en, tlh_gateway, qya_gateway = wait_for_current_deployment(
         target_commit,
         expected,
     )
 
     paths = {
-        "home": "/",
         "sitemap": "/sitemap.xml",
         "cover_image": "/figures/cover_philosophical_recursion_whole_diagram.png",
     }
@@ -150,6 +177,8 @@ def main() -> int:
 
     records = {name: fetch(path) for name, path in paths.items()}
     records["build"] = build
+    records["home"] = home
+    records["home_en"] = home_en
     records["tlh_gateway"] = tlh_gateway
     records["qya_gateway"] = qya_gateway
 
@@ -167,10 +196,14 @@ def main() -> int:
 
     assertions = {
         "home_http_200": records["home"]["http_code"] == 200,
-        "home_has_beta_links": "localization-public-beta-links:start" in as_text(records["home"]),
+        "home_en_http_200": records["home_en"]["http_code"] == 200,
+        "home_has_four_language_menu": has_four_language_menu(records["home"]),
+        "home_en_has_four_language_menu": has_four_language_menu(records["home_en"]),
+        "home_has_no_beta_banner": has_no_legacy_beta_banner(records["home"]),
+        "home_en_has_no_beta_banner": has_no_legacy_beta_banner(records["home_en"]),
         "build_http_200": records["build"]["http_code"] == 200,
         "sitemap_http_200": records["sitemap"]["http_code"] == 200,
-        "sitemap_has_beta_routes": all(
+        "sitemap_has_localized_routes": all(
             route in as_text(records["sitemap"])
             for route in (
                 "/tlh.html",
@@ -182,7 +215,7 @@ def main() -> int:
         "tlh_gateway_http_200": records["tlh_gateway"]["http_code"] == 200,
         "tlh_gateway_disclosure": all(
             marker in tlh_gateway_text
-            for marker in ("public beta", "mughghachvam beta", "hol po'wI' nudghach")
+            for marker in ("public beta", "mughghachvam beta", "hol po'wi' nudghach")
         ),
         "tlh_gateway_has_review_link": TLH_REVIEW_URL in as_text(records["tlh_gateway"]),
         "qya_gateway_http_200": records["qya_gateway"]["http_code"] == 200,
@@ -227,17 +260,11 @@ def main() -> int:
         }
     )
 
-    content_evidence_keys = [
-        key
-        for key in assertions
-        if key != "build_http_200"
-    ]
+    content_evidence_keys = [key for key in assertions if key != "build_http_200"]
     deployed_content_matches_repository = all(
         assertions[key] for key in content_evidence_keys
     )
-    deployed_target_evidenced = (
-        metadata_contains_target or deployed_content_matches_repository
-    )
+    deployed_target_evidenced = metadata_contains_target or deployed_content_matches_repository
     assertions["deployed_target_evidenced"] = deployed_target_evidenced
     assertions["release_lineage_evidenced"] = (
         metadata_contains_release or deployed_content_matches_repository
@@ -253,7 +280,7 @@ def main() -> int:
     payload = {
         "status": "verified" if verified else "failed",
         "production_verified": verified,
-        "verification_scope": "live routes, localized gateway disclosures and review links, sitemap, image, exact repository manifest parity for both gateways and all five formats in both languages, with build-info metadata recorded as advisory evidence",
+        "verification_scope": "four-language globe menus without a homepage beta banner, localized gateway disclosures and review links, sitemap, image, and exact repository manifest parity for both gateways and all five formats in both localized editions",
         "target_commit": target_commit,
         "required_release_commit": RELEASE_COMMIT,
         "deployment_evidence": {
@@ -261,7 +288,7 @@ def main() -> int:
             "metadata_contains_release": metadata_contains_release,
             "content_matches_repository": deployed_content_matches_repository,
             "target_evidenced_by_metadata_or_content": deployed_target_evidenced,
-            "note": "Exact live SHA-256 and byte parity for the current gateway and package manifest is authoritative when Render build-info metadata is stale or cached.",
+            "note": "Exact live content checks are authoritative when Render build-info metadata is stale or cached.",
         },
         "deployed_build": build_data,
         "recorded_at_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
