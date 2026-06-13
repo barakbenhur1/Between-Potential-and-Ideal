@@ -1,15 +1,15 @@
 {
-  "status": "verified",
-  "production_verified": true,
-  "verification_scope": "live routes, localized gateway disclosures and review links, sitemap, image, exact repository manifest parity for both gateways and all five formats in both languages, with build-info metadata recorded as advisory evidence",
-  "target_commit": "1bb5c9e8e9c14c753c93eb7ad1434ea137ad7953",
+  "status": "failed",
+  "production_verified": false,
+  "verification_scope": "four-language globe menus without a homepage beta banner, localized gateway disclosures and review links, sitemap, image, and exact repository manifest parity for both gateways and all five formats in both localized editions",
+  "target_commit": "1a12560892842fc3528e6c8ec82d9781291ae135",
   "required_release_commit": "89827cfe127ace4c18c426fbb8eb338be2f94578",
   "deployment_evidence": {
     "metadata_contains_target": false,
     "metadata_contains_release": true,
-    "content_matches_repository": true,
-    "target_evidenced_by_metadata_or_content": true,
-    "note": "Exact live SHA-256 and byte parity for the current gateway and package manifest is authoritative when Render build-info metadata is stale or cached."
+    "content_matches_repository": false,
+    "target_evidenced_by_metadata_or_content": false,
+    "note": "Exact live content checks are authoritative when Render build-info metadata is stale or cached."
   },
   "deployed_build": {
     "project": "Between Potential and Ideal",
@@ -21,13 +21,17 @@
     "build_info_mode": "generated-from-current-git-head",
     "deployment_verification_note": "Triggers Render auto-deploy after the verified public-beta merge. The deployed build regenerates this file from its current Git HEAD."
   },
-  "recorded_at_utc": "2026-06-12T20:28:57+00:00",
+  "recorded_at_utc": "2026-06-13T07:27:27+00:00",
   "assertions": {
     "home_http_200": true,
-    "home_has_beta_links": true,
+    "home_en_http_200": true,
+    "home_has_four_language_menu": true,
+    "home_en_has_four_language_menu": true,
+    "home_has_no_beta_banner": true,
+    "home_en_has_no_beta_banner": true,
     "build_http_200": true,
     "sitemap_http_200": true,
-    "sitemap_has_beta_routes": true,
+    "sitemap_has_localized_routes": true,
     "tlh_gateway_http_200": true,
     "tlh_gateway_disclosure": true,
     "tlh_gateway_has_review_link": true,
@@ -43,7 +47,7 @@
     "tlh_pdf_exact_sha256": true,
     "tlh_docx_http_200": true,
     "tlh_docx_exact_size": true,
-    "tlh_docx_exact_sha256": true,
+    "tlh_docx_exact_sha256": false,
     "tlh_md_http_200": true,
     "tlh_md_exact_size": true,
     "tlh_md_exact_sha256": true,
@@ -58,7 +62,7 @@
     "qya_pdf_exact_sha256": true,
     "qya_docx_http_200": true,
     "qya_docx_exact_size": true,
-    "qya_docx_exact_sha256": true,
+    "qya_docx_exact_sha256": false,
     "qya_md_http_200": true,
     "qya_md_exact_size": true,
     "qya_md_exact_sha256": true,
@@ -77,17 +81,10 @@
     "qya_docx_magic": true,
     "tlh_md_disclosure": true,
     "qya_md_disclosure": true,
-    "deployed_target_evidenced": true,
+    "deployed_target_evidenced": false,
     "release_lineage_evidenced": true
   },
   "routes": {
-    "home": {
-      "http_code": 200,
-      "content_type": "text/html",
-      "downloaded_bytes": 24102,
-      "sha256": "bf7d04e12286f333cc35994e95bf3767c63e0d2881a1c5d3cc2ff5bf48adb25e",
-      "effective_url": "https://between-potential-and-ideal.onrender.com/"
-    },
     "sitemap": {
       "http_code": 200,
       "content_type": "application/xml",
@@ -114,7 +111,7 @@
       "http_code": 200,
       "content_type": "application/pdf",
       "downloaded_bytes": 334688,
-      "sha256": "8aaa5619cb16f0d2ccaaab808b6ab68c98a1f43df310a9316a6b4ee4ac0b0f98",
+      "sha256": "2c0b7413171b35b1ac722bbfe1119bb1e301dc739026b86071eae3276bd0b979",
       "effective_url": "https://between-potential-and-ideal.onrender.com/files/tlh/between-potential-and-ideal-tlh.pdf",
       "manifest_path": "site/files/tlh/between-potential-and-ideal-tlh.pdf"
     },
@@ -154,7 +151,7 @@
       "http_code": 200,
       "content_type": "application/pdf",
       "downloaded_bytes": 344394,
-      "sha256": "0053319ed8a93157d3be372735242baa52df588b9f46d3e0172f794bca8f5cc1",
+      "sha256": "45966516218b9c001163fa5663f9df84174964601cc0d3380ed5fd5581c46268",
       "effective_url": "https://between-potential-and-ideal.onrender.com/files/qya/between-potential-and-ideal-qya.pdf",
       "manifest_path": "site/files/qya/between-potential-and-ideal-qya.pdf"
     },
@@ -188,6 +185,20 @@
       "downloaded_bytes": 518,
       "sha256": "924a5bb6ba1d05e14eb44b469f5cd24523bda68d3a6275aa41c902305776c1b1",
       "effective_url": "https://between-potential-and-ideal.onrender.com/build-info.json"
+    },
+    "home": {
+      "http_code": 200,
+      "content_type": "text/html",
+      "downloaded_bytes": 23812,
+      "sha256": "67250caab70ba23e0f728280c5a2c8b2362d001bc92dfe88748c075dd6c3fcf6",
+      "effective_url": "https://between-potential-and-ideal.onrender.com/"
+    },
+    "home_en": {
+      "http_code": 200,
+      "content_type": "text/html",
+      "downloaded_bytes": 20433,
+      "sha256": "a52e4dcc6a1026d09c4e331aba226638d0ce042a5e6c9a867fe3625f930d6d88",
+      "effective_url": "https://between-potential-and-ideal.onrender.com/en.html"
     },
     "tlh_gateway": {
       "http_code": 200,
