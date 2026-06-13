@@ -2,7 +2,7 @@
   "status": "verified",
   "production_verified": true,
   "verification_scope": "four-language globe menus without a homepage beta banner, localized gateway disclosures and review links, sitemap, image, exact byte/SHA parity for stable files, and normalized ZIP-content parity for DOCX packages",
-  "target_commit": "96ee823e38752ba90b8caae46fcfb0b711bbcf39",
+  "target_commit": "8b8ffb3d3488bcb445691ef8df63222768c75ded",
   "required_release_commit": "89827cfe127ace4c18c426fbb8eb338be2f94578",
   "deployment_evidence": {
     "metadata_contains_target": false,
@@ -21,7 +21,7 @@
     "build_info_mode": "generated-from-current-git-head",
     "deployment_verification_note": "Triggers Render auto-deploy after the verified public-beta merge. The deployed build regenerates this file from its current Git HEAD."
   },
-  "recorded_at_utc": "2026-06-13T07:29:48+00:00",
+  "recorded_at_utc": "2026-06-13T07:51:04+00:00",
   "assertions": {
     "home_http_200": true,
     "home_en_http_200": true,
@@ -111,7 +111,7 @@
       "http_code": 200,
       "content_type": "application/pdf",
       "downloaded_bytes": 334688,
-      "sha256": "2c0b7413171b35b1ac722bbfe1119bb1e301dc739026b86071eae3276bd0b979",
+      "sha256": "7d1d88e657db0fd0a38064eb37993449f94f4a867d8cfea2b7623ab809a2b939",
       "effective_url": "https://between-potential-and-ideal.onrender.com/files/tlh/between-potential-and-ideal-tlh.pdf",
       "manifest_path": "site/files/tlh/between-potential-and-ideal-tlh.pdf"
     },
@@ -119,7 +119,7 @@
       "http_code": 200,
       "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
       "downloaded_bytes": 144225,
-      "sha256": "3d33d533db652bddf11c5b4c2bdfcf81733c404f58754f41306ea1f557c1d5d2",
+      "sha256": "3e15193539b0f4a2cf3e1f84905e2f5d24e37c9cde448c2d72cbb7de9d21cae7",
       "effective_url": "https://between-potential-and-ideal.onrender.com/files/tlh/between-potential-and-ideal-tlh.docx",
       "manifest_path": "site/files/tlh/between-potential-and-ideal-tlh.docx"
     },
@@ -151,7 +151,7 @@
       "http_code": 200,
       "content_type": "application/pdf",
       "downloaded_bytes": 344394,
-      "sha256": "45966516218b9c001163fa5663f9df84174964601cc0d3380ed5fd5581c46268",
+      "sha256": "1831a27f22e0e062e252dea6681fdbad33d60c1062291ea8ee54b55d0425c3ad",
       "effective_url": "https://between-potential-and-ideal.onrender.com/files/qya/between-potential-and-ideal-qya.pdf",
       "manifest_path": "site/files/qya/between-potential-and-ideal-qya.pdf"
     },
@@ -159,7 +159,7 @@
       "http_code": 200,
       "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
       "downloaded_bytes": 154034,
-      "sha256": "ec64e1b126e8aeb317618126cfb4be4fdefaf96c60d5e92a51fceb3f9700ef85",
+      "sha256": "ac1f7ee0de8690096f830748911360de7f30f17f811f7fc518fd5fb031defa31",
       "effective_url": "https://between-potential-and-ideal.onrender.com/files/qya/between-potential-and-ideal-qya.docx",
       "manifest_path": "site/files/qya/between-potential-and-ideal-qya.docx"
     },
@@ -189,30 +189,30 @@
     "home": {
       "http_code": 200,
       "content_type": "text/html",
-      "downloaded_bytes": 23812,
-      "sha256": "67250caab70ba23e0f728280c5a2c8b2362d001bc92dfe88748c075dd6c3fcf6",
+      "downloaded_bytes": 23937,
+      "sha256": "4e1facfba6d01a683ccde06657d8e424a9d2d0d4fa48b717eed7b909a1824c94",
       "effective_url": "https://between-potential-and-ideal.onrender.com/"
     },
     "home_en": {
       "http_code": 200,
       "content_type": "text/html",
-      "downloaded_bytes": 20433,
-      "sha256": "a52e4dcc6a1026d09c4e331aba226638d0ce042a5e6c9a867fe3625f930d6d88",
+      "downloaded_bytes": 20558,
+      "sha256": "8a0e9f0bff6443f22503218d81045a5b2e3b4ff180eee8e1ad72e2b9184574d1",
       "effective_url": "https://between-potential-and-ideal.onrender.com/en.html"
     },
     "tlh_gateway": {
       "http_code": 200,
       "content_type": "text/html",
-      "downloaded_bytes": 12834,
-      "sha256": "068fb26db7f9f8aef82ecc8ebfc9ef0415b3fc60c99ffe20e37441f9e61f4f28",
+      "downloaded_bytes": 11724,
+      "sha256": "83607be94024e9ca5c9169d845bd826958211984cded3086750338fc0e61da2c",
       "effective_url": "https://between-potential-and-ideal.onrender.com/tlh.html",
       "manifest_path": "site/tlh.html"
     },
     "qya_gateway": {
       "http_code": 200,
       "content_type": "text/html",
-      "downloaded_bytes": 12035,
-      "sha256": "17bdddf17813a957e0885919056c27c69ccc5e08f47f0c752588dc9bafe469f4",
+      "downloaded_bytes": 12185,
+      "sha256": "be02389da699ef66a287f3a443a845bc102d85bfaceef89d3a1566122264b438",
       "effective_url": "https://between-potential-and-ideal.onrender.com/qya.html",
       "manifest_path": "site/qya.html"
     }
