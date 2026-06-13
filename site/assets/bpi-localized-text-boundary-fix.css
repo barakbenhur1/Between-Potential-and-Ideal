@@ -1,4 +1,4 @@
-/* Prevent the localized gold hero title from crossing the hero card boundary. */
+/* Keep the localized gold hero title inside the card without clipping descenders. */
 html:is([lang="tlh"],[lang="qya"]) body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 {
   box-sizing: border-box !important;
   display: block !important;
@@ -6,15 +6,15 @@ html:is([lang="tlh"],[lang="qya"]) body.public-page.bpi-home-page main#main.site
   max-width: calc(100% - 32px) !important;
   min-width: 0 !important;
   margin-inline: auto !important;
-  padding-inline: 0.08em !important;
-  overflow: hidden !important;
+  padding: 0.04em 0.08em 0.2em !important;
+  overflow: visible !important;
   white-space: normal !important;
   overflow-wrap: normal !important;
   word-break: normal !important;
   hyphens: none !important;
   text-wrap: balance !important;
   font-size: clamp(2.55rem, 4.65vw, 4.7rem) !important;
-  line-height: 1.06 !important;
+  line-height: 1.16 !important;
   letter-spacing: -0.025em !important;
   text-align: center !important;
 }
@@ -31,13 +31,14 @@ html:is([lang="tlh"],[lang="qya"]) body.public-page.bpi-home-page main#main.site
   box-sizing: border-box !important;
   max-width: 100% !important;
   min-width: 0 !important;
+  padding-bottom: 0.08em !important;
+  overflow: visible !important;
   white-space: normal !important;
   overflow-wrap: normal !important;
   word-break: normal !important;
   transform: none !important;
   translate: none !important;
   margin: 0 !important;
-  padding: 0 !important;
 }
 
 html:is([lang="tlh"],[lang="qya"]) body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 .home-line:not(:last-child)::after {
@@ -48,7 +49,7 @@ html:is([lang="tlh"],[lang="qya"]) body.public-page.bpi-home-page main#main.site
 html:is([lang="tlh"],[lang="qya"]) body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1::after {
   box-sizing: border-box !important;
   max-width: 100% !important;
-  overflow: hidden !important;
+  overflow: visible !important;
   white-space: normal !important;
   overflow-wrap: normal !important;
   word-break: normal !important;
@@ -59,8 +60,8 @@ html:is([lang="tlh"],[lang="qya"]) body.public-page.bpi-home-page main#main.site
   html[lang="tlh"] body.public-page.bpi-home-page main#main.site-main > section.hero.concise-hero > h1 {
     width: min(100%, 10.5ch) !important;
     max-width: calc(100% - 12px) !important;
-    padding-inline: 0 !important;
+    padding: 0.04em 0 0.18em !important;
     font-size: clamp(2.05rem, 9vw, 3.3rem) !important;
-    line-height: 1.08 !important;
+    line-height: 1.14 !important;
   }
 }
