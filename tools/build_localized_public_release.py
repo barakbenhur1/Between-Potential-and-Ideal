@@ -11,6 +11,8 @@ from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 CORE_PATH = ROOT / "tools" / "build_localized_public_release_core.py"
+RUNTIME_GUARD_ID = "bpi-four-language-runtime-guard"
+RUNTIME_GUARD_VERSION = "20260613-v1"
 
 
 def load_core():
@@ -46,13 +48,13 @@ def menu_block(current: str, slug: str | None, asset_prefix: str) -> str:
         )
     return (
         f'<link id="bpi-four-language-localization" rel="stylesheet" '
-        f'href="{asset_prefix}assets/bpi-four-language-localization.css?v=20260613-v2">'
+        f'href="{asset_prefix}assets/bpi-four-language-localization.css?v=20260613-v3">'
         '<details class="bpi-language-menu">'
         '<summary aria-label="Choose language">'
         '<span class="bpi-language-menu-icon" aria-hidden="true">🌐</span>'
         f'<span class="bpi-language-menu-current">{html.escape(names[current])}</span>'
         '</summary>'
-        f'<div class="bpi-language-menu-panel">{"".join(links)}</div>'
+        f'<div class="bpi-language-menu-panel'>{"".join(links)}</div>'
         '</details>'
     )
 
@@ -72,13 +74,13 @@ def patch_existing_page(path: Path, language: str, slug: str | None, asset_prefi
     soup.head.append(default)
     old_stylesheet = soup.find("link", id="bpi-four-language-localization")
     if old_stylesheet:
-        old_stylesheet["href"] = f"{asset_prefix}assets/bpi-four-language-localization.css?v=20260613-v2"
+        old_stylesheet["href"] = f"{asset_prefix}assets/bpi-four-language-localization.css?v=20260613-v3"
     else:
         stylesheet = soup.new_tag(
             "link",
             id="bpi-four-language-localization",
             rel="stylesheet",
-            href=f"{asset_prefix}assets/bpi-four-language-localization.css?v=20260613-v2",
+            href=f"{asset_prefix}assets/bpi-four-language-localization.css?v=20260613-v3",
         )
         soup.head.append(stylesheet)
     header = soup.find("header", class_="site-header")
@@ -104,17 +106,51 @@ def write_shared_css() -> None:
     path = SITE / "assets" / "bpi-four-language-localization.css"
     path.write_text(
         """
-.bpi-language-menu{position:relative;justify-self:end;z-index:2000;font-family:inherit}
+.bpi-language-menu{position:relative;grid-column:3;justify-self:end;align-self:center;z-index:2000;font-family:inherit}
 .bpi-language-menu>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:42px;padding:.62rem .9rem;border:1px solid rgba(242,196,94,.52);border-radius:999px;background:rgba(5,8,13,.9);color:#f2c45e;font-weight:800;white-space:nowrap;box-shadow:0 8px 28px rgba(0,0,0,.3)}
 .bpi-language-menu>summary::-webkit-details-marker{display:none}.bpi-language-menu>summary::after{content:'▾';font-size:.74em;opacity:.82}.bpi-language-menu[open]>summary::after{content:'▴'}
 .bpi-language-menu-icon{font-size:1.08rem;line-height:1;transform:translateY(-.02em)}.bpi-language-menu-current{unicode-bidi:isolate}
 .bpi-language-menu-panel{position:absolute;inset-inline-end:0;top:calc(100% + .55rem);display:grid;min-width:190px;padding:.5rem;border:1px solid rgba(255,255,255,.18);border-radius:16px;background:#080c13;box-shadow:0 18px 60px rgba(0,0,0,.58)}
 .bpi-language-menu-panel a{display:block;padding:.72rem .82rem;border-radius:11px;color:#e9edf5;text-decoration:none;font-weight:700;text-align:start}.bpi-language-menu-panel a:hover,.bpi-language-menu-panel a:focus-visible,.bpi-language-menu-panel a[aria-current='page']{background:rgba(242,196,94,.13);color:#f2c45e}
 .bpi-localized-content{max-width:980px;margin:clamp(1rem,3vw,2rem) auto;padding:clamp(1.1rem,4vw,2.3rem);overflow-wrap:anywhere}.bpi-localized-content .language-status-note{margin:0 0 1.35rem;padding:1rem 1.1rem;color:#d9e1ed}.bpi-localized-content h2,.bpi-localized-content h3,.bpi-localized-content h4{scroll-margin-top:8rem}.bpi-localized-content img{max-width:100%;height:auto;border-radius:18px}.bpi-localized-download-grid{margin-top:clamp(1rem,3vw,2rem)}.bpi-document-main{max-width:1100px;margin-inline:auto;padding:clamp(1rem,4vw,3rem)}.bpi-localized-opening{margin-top:clamp(1rem,4vw,3rem)}
-@media(max-width:860px){.site-header .bpi-language-menu{order:2;align-self:center;justify-self:center}.bpi-language-menu-panel{position:fixed;left:1rem;right:1rem;top:auto;bottom:1rem;min-width:0;grid-template-columns:repeat(2,minmax(0,1fr));z-index:10000}.bpi-language-menu-panel a{text-align:center}.bpi-localized-content{padding:1rem}}
+@media(max-width:860px){.site-header .bpi-language-menu{order:3;grid-column:auto;align-self:center;justify-self:center}.bpi-language-menu-panel{position:fixed;left:1rem;right:1rem;top:auto;bottom:1rem;min-width:0;grid-template-columns:repeat(2,minmax(0,1fr));z-index:10000}.bpi-language-menu-panel a{text-align:center}.bpi-localized-content{padding:1rem}}
 """.strip() + "\n",
         encoding="utf-8",
     )
+
+
+def install_runtime_guard() -> None:
+    from bs4 import BeautifulSoup
+
+    candidates = list(SITE.glob("*.html"))
+    candidates.extend((SITE / "pages").glob("*/*.html"))
+
+    for path in candidates:
+        soup = BeautifulSoup(path.read_text(encoding="utf-8"), "html.parser")
+        if not soup.body or not soup.find("header", class_="site-header"):
+            continue
+        alternates = {
+            tag.get("hreflang")
+            for tag in soup.head.find_all("link", rel="alternate")
+            if tag.get("hreflang")
+        }
+        if not {"he", "en", "tlh", "qya"}.issubset(alternates):
+            continue
+
+        old = soup.find("script", id=RUNTIME_GUARD_ID)
+        if old:
+            old.decompose()
+
+        depth = len(path.relative_to(SITE).parents) - 1
+        asset_prefix = "../" * depth
+        script = soup.new_tag(
+            "script",
+            id=RUNTIME_GUARD_ID,
+            src=f"{asset_prefix}assets/bpi-four-language-runtime-guard.js?v={RUNTIME_GUARD_VERSION}",
+        )
+        script["defer"] = ""
+        soup.body.append(script)
+        path.write_text(str(soup), encoding="utf-8")
 
 
 def update_sitemap() -> None:
@@ -183,6 +219,7 @@ def main() -> int:
             B.write_package(language, package, bodies[package])
         B.write_pages(language)
     patch_existing_languages()
+    install_runtime_guard()
     update_sitemap()
     update_search_index()
     update_metadata()
