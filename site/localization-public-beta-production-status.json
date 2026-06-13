@@ -1,15 +1,15 @@
 {
-  "status": "failed",
-  "production_verified": false,
-  "verification_scope": "four-language globe menus without a homepage beta banner, localized gateway disclosures and review links, sitemap, image, and exact repository manifest parity for both gateways and all five formats in both localized editions",
-  "target_commit": "1a12560892842fc3528e6c8ec82d9781291ae135",
+  "status": "verified",
+  "production_verified": true,
+  "verification_scope": "four-language globe menus without a homepage beta banner, localized gateway disclosures and review links, sitemap, image, exact byte/SHA parity for stable files, and normalized ZIP-content parity for DOCX packages",
+  "target_commit": "96ee823e38752ba90b8caae46fcfb0b711bbcf39",
   "required_release_commit": "89827cfe127ace4c18c426fbb8eb338be2f94578",
   "deployment_evidence": {
     "metadata_contains_target": false,
     "metadata_contains_release": true,
-    "content_matches_repository": false,
-    "target_evidenced_by_metadata_or_content": false,
-    "note": "Exact live content checks are authoritative when Render build-info metadata is stale or cached."
+    "content_matches_repository": true,
+    "target_evidenced_by_metadata_or_content": true,
+    "note": "Exact live content checks are authoritative when Render build-info metadata is stale or cached. DOCX ZIP timestamps are ignored while entry names and uncompressed contents are compared exactly."
   },
   "deployed_build": {
     "project": "Between Potential and Ideal",
@@ -21,7 +21,7 @@
     "build_info_mode": "generated-from-current-git-head",
     "deployment_verification_note": "Triggers Render auto-deploy after the verified public-beta merge. The deployed build regenerates this file from its current Git HEAD."
   },
-  "recorded_at_utc": "2026-06-13T07:27:27+00:00",
+  "recorded_at_utc": "2026-06-13T07:29:48+00:00",
   "assertions": {
     "home_http_200": true,
     "home_en_http_200": true,
@@ -47,7 +47,7 @@
     "tlh_pdf_exact_sha256": true,
     "tlh_docx_http_200": true,
     "tlh_docx_exact_size": true,
-    "tlh_docx_exact_sha256": false,
+    "tlh_docx_normalized_zip_sha256": true,
     "tlh_md_http_200": true,
     "tlh_md_exact_size": true,
     "tlh_md_exact_sha256": true,
@@ -62,7 +62,7 @@
     "qya_pdf_exact_sha256": true,
     "qya_docx_http_200": true,
     "qya_docx_exact_size": true,
-    "qya_docx_exact_sha256": false,
+    "qya_docx_normalized_zip_sha256": true,
     "qya_md_http_200": true,
     "qya_md_exact_size": true,
     "qya_md_exact_sha256": true,
@@ -81,7 +81,7 @@
     "qya_docx_magic": true,
     "tlh_md_disclosure": true,
     "qya_md_disclosure": true,
-    "deployed_target_evidenced": false,
+    "deployed_target_evidenced": true,
     "release_lineage_evidenced": true
   },
   "routes": {
@@ -119,7 +119,7 @@
       "http_code": 200,
       "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
       "downloaded_bytes": 144225,
-      "sha256": "9d841d1fd1e82cce067eb180b85e64fc66b15d70d68d5a279f09c480e5ca4092",
+      "sha256": "3d33d533db652bddf11c5b4c2bdfcf81733c404f58754f41306ea1f557c1d5d2",
       "effective_url": "https://between-potential-and-ideal.onrender.com/files/tlh/between-potential-and-ideal-tlh.docx",
       "manifest_path": "site/files/tlh/between-potential-and-ideal-tlh.docx"
     },
@@ -159,7 +159,7 @@
       "http_code": 200,
       "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
       "downloaded_bytes": 154034,
-      "sha256": "7fc3ae81ce064358020c91ae47345267dce6cad85dc31677ec1019dda8497c22",
+      "sha256": "ec64e1b126e8aeb317618126cfb4be4fdefaf96c60d5e92a51fceb3f9700ef85",
       "effective_url": "https://between-potential-and-ideal.onrender.com/files/qya/between-potential-and-ideal-qya.docx",
       "manifest_path": "site/files/qya/between-potential-and-ideal-qya.docx"
     },
