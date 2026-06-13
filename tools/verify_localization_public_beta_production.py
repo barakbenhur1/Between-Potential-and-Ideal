@@ -3,10 +3,12 @@ from __future__ import annotations
 
 import hashlib
 import html
+import io
 import json
 import subprocess
 import time
 import urllib.request
+import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -26,7 +28,7 @@ def fetch(path: str) -> dict:
         try:
             request = urllib.request.Request(
                 LIVE + path,
-                headers={"User-Agent": "bpi-production-verifier/1.4"},
+                headers={"User-Agent": "bpi-production-verifier/1.5"},
             )
             with urllib.request.urlopen(request, timeout=180) as response:
                 body = response.read()
@@ -66,6 +68,23 @@ def parse_json(record: dict) -> dict:
         return json.loads(as_text(record))
     except Exception:
         return {}
+
+
+def normalized_zip_hash(payload: bytes) -> str:
+    """Hash ZIP entry names and contents while ignoring container timestamps."""
+    digest = hashlib.sha256()
+    try:
+        with zipfile.ZipFile(io.BytesIO(payload)) as archive:
+            for name in sorted(archive.namelist()):
+                if name.endswith("/"):
+                    continue
+                digest.update(name.encode("utf-8"))
+                digest.update(b"\0")
+                digest.update(archive.read(name))
+                digest.update(b"\0")
+    except zipfile.BadZipFile:
+        return ""
+    return digest.hexdigest()
 
 
 def commit_contains(required_commit: str, deployed_commit: str, *, refresh: bool = False) -> bool:
@@ -237,7 +256,15 @@ def main() -> int:
             entry = expected[repo_path]
             assertions[f"{name}_http_200"] = records[name]["http_code"] == 200
             assertions[f"{name}_exact_size"] = records[name]["downloaded_bytes"] == entry["bytes"]
-            assertions[f"{name}_exact_sha256"] = records[name]["sha256"] == entry["sha256"]
+            if extension == "docx":
+                local_payload = (ROOT / repo_path).read_bytes()
+                assertions[f"{name}_normalized_zip_sha256"] = (
+                    normalized_zip_hash(records[name]["body"])
+                    == normalized_zip_hash(local_payload)
+                    != ""
+                )
+            else:
+                assertions[f"{name}_exact_sha256"] = records[name]["sha256"] == entry["sha256"]
 
     for language in ("tlh", "qya"):
         name = f"{language}_gateway"
@@ -280,7 +307,7 @@ def main() -> int:
     payload = {
         "status": "verified" if verified else "failed",
         "production_verified": verified,
-        "verification_scope": "four-language globe menus without a homepage beta banner, localized gateway disclosures and review links, sitemap, image, and exact repository manifest parity for both gateways and all five formats in both localized editions",
+        "verification_scope": "four-language globe menus without a homepage beta banner, localized gateway disclosures and review links, sitemap, image, exact byte/SHA parity for stable files, and normalized ZIP-content parity for DOCX packages",
         "target_commit": target_commit,
         "required_release_commit": RELEASE_COMMIT,
         "deployment_evidence": {
@@ -288,7 +315,7 @@ def main() -> int:
             "metadata_contains_release": metadata_contains_release,
             "content_matches_repository": deployed_content_matches_repository,
             "target_evidenced_by_metadata_or_content": deployed_target_evidenced,
-            "note": "Exact live content checks are authoritative when Render build-info metadata is stale or cached.",
+            "note": "Exact live content checks are authoritative when Render build-info metadata is stale or cached. DOCX ZIP timestamps are ignored while entry names and uncompressed contents are compared exactly.",
         },
         "deployed_build": build_data,
         "recorded_at_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
