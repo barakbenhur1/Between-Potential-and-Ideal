@@ -12,9 +12,11 @@ Release merge:
 
 `89827cfe127ace4c18c426fbb8eb338be2f94578`
 
-The public site now presents Hebrew, English, tlhIngan Hol, and Neo-Quenya through one globe language switcher in the header. The obsolete homepage Public Beta banner has been removed and is explicitly rejected by the build and production-verification gates.
+The public site presents Hebrew, English, tlhIngan Hol, and Neo-Quenya through one globe language switcher in the header. The obsolete homepage Public Beta banner has been removed and is explicitly rejected by the build and production-verification gates.
 
-The live deployment is verified for both four-language menus, absence of the legacy banner, route availability, disclosure text on the localized editions, reviewer links, sitemap entries, file signatures, exact byte/SHA parity for stable formats, and normalized ZIP-content parity for DOCX packages. The authoritative result is recorded in `site/localization-public-beta-production-status.json` with `production_verified: true` for target commit `96ee823e38752ba90b8caae46fcfb0b711bbcf39`.
+A legacy navigation script was found replacing the four-language menu after page load with the previous Hebrew/English-only control. The conflict is repaired by `site/assets/bpi-four-language-runtime-guard.js`, loaded after the legacy script on every eligible page. It preserves the globe menu and all four language choices at runtime.
+
+The live deployment is verified for both four-language menus, absence of the legacy banner, route availability, disclosure text on the localized editions, reviewer links, sitemap entries, file signatures, exact byte/SHA parity for stable formats, and normalized ZIP-content parity for DOCX packages. The authoritative result is recorded in `site/localization-public-beta-production-status.json` with `production_verified: true` for generated target commit `8b8ffb3d3488bcb445691ef8df63222768c75ded`.
 
 ## Completed after publication
 
@@ -22,6 +24,7 @@ The live deployment is verified for both four-language menus, absence of the leg
 - Issues #10 and #11 updated to reflect the live Public Beta state.
 - Reviewer links added to both language gateway pages in the repository.
 - One consistent globe language switcher added for all four languages.
+- The Hebrew/English-only runtime replacement was repaired.
 - Legacy Public Beta banner removed from the Hebrew and English homepages.
 - Rebuild and exposure workflows prevent the banner from returning.
 - Production verifier checks the four-language menus and rejects the legacy banner.
