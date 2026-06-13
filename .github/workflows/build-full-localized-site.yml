@@ -35,9 +35,9 @@ jobs:
         run: python3 tools/build_localization_public_packages.py
       - name: Build complete language sites
         run: python3 tools/build_localized_public_release.py
-      - name: Reapply public beta entry points
+      - name: Reapply localized entry points without beta banner
         run: python3 tools/expose_localization_beta.py
-      - name: Verify localized page parity
+      - name: Verify localized page parity and four-language menu
         run: |
           set -euo pipefail
           test "$(find site/pages/tlh -maxdepth 1 -name '*.html' | wc -l | tr -d ' ')" = 34
@@ -50,12 +50,16 @@ jobs:
           grep -q 'hero-cta-row' site/qya.html
           grep -q 'hreflang="tlh"' site/en.html
           grep -q 'hreflang="qya"' site/index.html
-          grep -q 'localization-public-beta-links:start' site/index.html
-          grep -q 'localization-public-beta-links:start' site/en.html
-          grep -q 'href="tlh.html"' site/index.html
-          grep -q 'href="qya.html"' site/index.html
-          grep -q 'href="tlh.html"' site/en.html
-          grep -q 'href="qya.html"' site/en.html
+          ! grep -q 'localization-public-beta-links:start' site/index.html
+          ! grep -q 'localization-public-beta-links:start' site/en.html
+          for page in site/index.html site/en.html; do
+            grep -q 'class="bpi-language-menu"' "$page"
+            grep -q 'class="bpi-language-menu-icon"' "$page"
+            grep -q 'href="/index.html"' "$page"
+            grep -q 'href="/en.html"' "$page"
+            grep -q 'href="/tlh.html"' "$page"
+            grep -q 'href="/qya.html"' "$page"
+          done
       - name: Verify synchronized download packages
         run: |
           set -euo pipefail
@@ -95,5 +99,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site localization/config.json localization/translation-manifest.json localization/site-language-parity-manifest.json localization/beta-release-manifest.json
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Publish synchronized Klingon and Neo-Quenya editions"
+          git commit -m "Publish four-language globe menu without beta banner"
           git push origin HEAD:main
