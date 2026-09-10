@@ -1,6 +1,21 @@
 (function () {
   'use strict';
 
+  function installCloudflareWebAnalytics() {
+    if (document.querySelector('script[data-cf-beacon]')) return;
+
+    const script = document.createElement('script');
+    script.type = 'module';
+    script.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    script.setAttribute(
+      'data-cf-beacon',
+      '{"token":"bd8de7e8a0eb4a1baa17a0c65acdc135"}'
+    );
+    document.head.appendChild(script);
+  }
+
+  installCloudflareWebAnalytics();
+
   const heItems = [
     ['בית', 'index.html', 'index'],
     ['תקציר', 'summary.html', 'summary'],
