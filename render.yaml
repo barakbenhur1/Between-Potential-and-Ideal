@@ -7,3 +7,7 @@ services:
     buildCommand: python3 tools/update_build_info.py
     staticPublishPath: ./site
     autoDeployTrigger: commit
+    routes:
+      - type: rewrite
+        source: /api/site-performance
+        destination: https://cloudflareinsights.com/cdn-cgi/rum
