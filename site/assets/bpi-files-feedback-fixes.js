@@ -9,7 +9,7 @@
     script.src = 'https://static.cloudflareinsights.com/beacon.min.js';
     script.setAttribute(
       'data-cf-beacon',
-      '{"token":"bd8de7e8a0eb4a1baa17a0c65acdc135"}'
+      '{"token":"0c5c250fdbbb4c7daa51ac992d260007"}'
     );
     document.head.appendChild(script);
   }

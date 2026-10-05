@@ -51,7 +51,7 @@ jobs:
           from pathlib import Path
           import re
 
-          token = 'bd8de7e8a0eb4a1baa17a0c65acdc135'
+          token = '0c5c250fdbbb4c7daa51ac992d260007'
           snippet = (
               '<!-- Cloudflare Web Analytics -->'
               '<script id="bpi-cloudflare-web-analytics" type="module" '
@@ -84,7 +84,7 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
 
-          token = 'bd8de7e8a0eb4a1baa17a0c65acdc135'
+          token = '0c5c250fdbbb4c7daa51ac992d260007'
           targets = sorted(Path('site').glob('*.html'))
           targets += sorted(Path('site/pages').rglob('*.html'))
           missing = []
