@@ -22,6 +22,7 @@ on:
       - site/assets/bpi-he-mobile-header-only-v2.css
       - site/assets/bpi-home-black-theme-v1.css
       - site/assets/bpi-home-dark-cards-v2.css
+      - site/assets/runtime-performance-v1.js
       - .github/workflows/stabilize-public-nav-source.yml
 
 permissions:
@@ -55,8 +56,8 @@ jobs:
           snippet = (
               '<!-- Cloudflare Web Analytics -->'
               '<script id="bpi-cloudflare-web-analytics" type="module" '
-              'src="https://static.cloudflareinsights.com/beacon.min.js" '
-              f'data-cf-beacon=\'{{"token":"{token}"}}\'></script>'
+              'src="/assets/runtime-performance-v1.js" '
+              f'data-cf-beacon=\'{{"token":"{token}","send":{{"to":"/api/site-performance"}}}}\'></script>'
               '<!-- End Cloudflare Web Analytics -->'
           )
           own_block = re.compile(
@@ -91,7 +92,10 @@ jobs:
           for path in targets:
               text = path.read_text(encoding='utf-8')
               if '</head>' in text.lower() and (
-                  'id="bpi-cloudflare-web-analytics"' not in text or token not in text
+                  'id="bpi-cloudflare-web-analytics"' not in text
+                  or token not in text
+                  or '/assets/runtime-performance-v1.js' not in text
+                  or '/api/site-performance' not in text
               ):
                   missing.append(str(path))
           if missing:
