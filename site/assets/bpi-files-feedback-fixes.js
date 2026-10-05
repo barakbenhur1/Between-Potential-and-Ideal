@@ -6,7 +6,7 @@
 
     const script = document.createElement('script');
     script.type = 'module';
-    script.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    script.src = '/assets/runtime-performance-v1.js';
     script.setAttribute(
       'data-cf-beacon',
       '{"token":"0c5c250fdbbb4c7daa51ac992d260007"}'
