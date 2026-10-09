@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
+from html.parser import HTMLParser
 from pathlib import Path
-import re
 import sys
 
-# These public gateway pages use the current single-language-switch header,
-# not the retired bpi-language-menu component.
+# Gateway pages use the current header language-switch, not the retired
+# bpi-language-menu component. Check actual paired targets, not class text alone.
 PAIRS = (
     ("site/pages/he/glossary.html", "../en/glossary-en.html"),
     ("site/pages/en/glossary-en.html", "../he/glossary.html"),
@@ -25,6 +25,19 @@ REQUIRED = (
 )
 
 
+class LanguageSwitchParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.targets = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag != "a":
+            return
+        values = dict(attrs)
+        if "language-switch" in (values.get("class") or "").split():
+            self.targets.append(values.get("href"))
+
+
 def main():
     errors = []
     for filename, expected_href in PAIRS:
@@ -37,15 +50,13 @@ def main():
             if marker not in text:
                 errors.append(f"{filename}: {marker}")
 
-        # Verify the language switch actually links to the paired edition,
-        # rather than merely checking that an obsolete CSS class appears.
-        links = re.findall(r'<a\\b[^>]*\\bclass=["\\\']language-switch["\\\'][^>]*>', text, re.I)
-        valid_links = [
-            tag for tag in links
-            if re.search(r'\\bhref=["\\\']' + re.escape(expected_href) + r'["\\\']', tag)
-        ]
-        if len(valid_links) != 1:
-            errors.append(f"{filename}: expected exactly one language-switch to {expected_href}")
+        parser = LanguageSwitchParser()
+        parser.feed(text)
+        if parser.targets != [expected_href]:
+            errors.append(
+                f"{filename}: expected one language switch to {expected_href}, "
+                f"found {parser.targets}"
+            )
         elif not (path.parent / expected_href).is_file():
             errors.append(f"{filename}: missing language switch target {expected_href}")
 
