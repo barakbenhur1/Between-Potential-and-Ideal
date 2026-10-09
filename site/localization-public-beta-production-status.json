@@ -2,7 +2,7 @@
   "status": "failed",
   "production_verified": false,
   "verification_scope": "four-language globe menus without a homepage beta banner, localized gateway disclosures and review links, sitemap, image, exact byte/SHA parity for stable files, and normalized ZIP-content parity for DOCX packages",
-  "target_commit": "1db9c972581dec5b2a8dfa7efe7e504c1809bc16",
+  "target_commit": "48315854909af971666d5cc1e98e425e682ec8e0",
   "required_release_commit": "89827cfe127ace4c18c426fbb8eb338be2f94578",
   "deployment_evidence": {
     "metadata_contains_target": false,
@@ -21,7 +21,7 @@
     "build_info_mode": "generated-from-current-git-head",
     "deployment_verification_note": "Triggers Render auto-deploy after the verified public-beta merge. The deployed build regenerates this file from its current Git HEAD."
   },
-  "recorded_at_utc": "2026-10-05T10:40:28+00:00",
+  "recorded_at_utc": "2026-10-09T22:30:02+00:00",
   "assertions": {
     "home_http_200": true,
     "home_en_http_200": true,
@@ -69,10 +69,10 @@
     "qya_txt_http_200": true,
     "qya_txt_exact_size": true,
     "qya_txt_exact_sha256": true,
-    "tlh_gateway_exact_size": false,
-    "tlh_gateway_exact_sha256": false,
-    "qya_gateway_exact_size": false,
-    "qya_gateway_exact_sha256": false,
+    "tlh_gateway_exact_size": true,
+    "tlh_gateway_exact_sha256": true,
+    "qya_gateway_exact_size": true,
+    "qya_gateway_exact_sha256": true,
     "tlh_html_disclosure": true,
     "qya_html_disclosure": true,
     "tlh_pdf_magic": true,
@@ -189,30 +189,30 @@
     "home": {
       "http_code": 200,
       "content_type": "text/html",
-      "downloaded_bytes": 23724,
-      "sha256": "89260fe56bab4dd35d61f160d81a9fcb5f91bcbc47dde980d135342aefce9ca2",
+      "downloaded_bytes": 23744,
+      "sha256": "0cde9625d0b6bc7527df31e58546d463494c5f11c0b53e476ea6afc48445d041",
       "effective_url": "https://between-potential-and-ideal.onrender.com/"
     },
     "home_en": {
       "http_code": 200,
       "content_type": "text/html",
-      "downloaded_bytes": 20361,
-      "sha256": "b9912e67e5e06f63ebe9a30c75594d3dd846a54ef433e347d0a01e05f1947035",
+      "downloaded_bytes": 20381,
+      "sha256": "37e28c702f0b0fe09866a8893296421ca8fd0a6f2c07625093d52614cb55da9f",
       "effective_url": "https://between-potential-and-ideal.onrender.com/en.html"
     },
     "tlh_gateway": {
       "http_code": 200,
       "content_type": "text/html",
-      "downloaded_bytes": 11979,
-      "sha256": "c80e82ab5aa55087b6573d0e61c9002920ff7517ddcf8ebe4fcd3bb2c11c18cb",
+      "downloaded_bytes": 11999,
+      "sha256": "8e4e03ba941e605fca3d7d40e6b1ab56b41171482093eca623d096906baf1287",
       "effective_url": "https://between-potential-and-ideal.onrender.com/tlh.html",
       "manifest_path": "site/tlh.html"
     },
     "qya_gateway": {
       "http_code": 200,
       "content_type": "text/html",
-      "downloaded_bytes": 12440,
-      "sha256": "fd642219c694dfc056c4707e921355d2b619d994bcd946bc18dad28f3efe55d3",
+      "downloaded_bytes": 12460,
+      "sha256": "13129ac03c7b56551f553d4a1c8d02e808612e9759cacf3fa6511ddb153698fa",
       "effective_url": "https://between-potential-and-ideal.onrender.com/qya.html",
       "manifest_path": "site/qya.html"
     }
