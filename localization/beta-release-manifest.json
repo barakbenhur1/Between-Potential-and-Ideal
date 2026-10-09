@@ -35,8 +35,8 @@
     },
     {
       "path": "site/tlh.html",
-      "bytes": 11724,
-      "sha256": "83607be94024e9ca5c9169d845bd826958211984cded3086750338fc0e61da2c"
+      "bytes": 11999,
+      "sha256": "8e4e03ba941e605fca3d7d40e6b1ab56b41171482093eca623d096906baf1287"
     },
     {
       "path": "site/files/qya/between-potential-and-ideal-qya.md",
@@ -65,8 +65,8 @@
     },
     {
       "path": "site/qya.html",
-      "bytes": 12185,
-      "sha256": "be02389da699ef66a287f3a443a845bc102d85bfaceef89d3a1566122264b438"
+      "bytes": 12460,
+      "sha256": "13129ac03c7b56551f553d4a1c8d02e808612e9759cacf3fa6511ddb153698fa"
     }
   ]
 }
