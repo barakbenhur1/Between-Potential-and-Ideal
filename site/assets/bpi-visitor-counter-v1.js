@@ -17,7 +17,7 @@
           mode: 'cors',
           credentials: 'omit',
           keepalive: true,
-          cache: 'no-store'
+          referrerPolicy: 'no-referrer'
         }).catch(() => {});
       } catch {
         // Analytics must never interfere with the site.
