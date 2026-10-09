@@ -1,0 +1,29 @@
+name: MongoDB visitor counter tests
+
+on:
+  pull_request:
+    paths:
+      - 'visitor-counter/**'
+      - '.github/workflows/visitor-counter-tests.yml'
+  push:
+    paths:
+      - 'visitor-counter/**'
+      - '.github/workflows/visitor-counter-tests.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax checks
+        run: |
+          node --check visitor-counter/lib.mjs
+          node --check visitor-counter/server.mjs
+      - name: Unit tests
+        run: node --test visitor-counter/test/*.test.mjs
