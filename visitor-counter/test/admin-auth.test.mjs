@@ -12,7 +12,7 @@ test('admin session is signed, expires, and rotates with password', () => {
   assert.equal(verifySession(cookie, salt, secret, now + SESSION_MS), false);
   assert.equal(verifySession(cookie, salt, 'changed-token', now + 10_000), false);
   assert.equal(verifySession(cookie, 'different-salt', secret, now + 10_000), false);
-  assert.equal(verifySession(cookie.slice(0, -1) + 'f', salt, secret, now + 10_000), false);
+  assert.equal(verifySession(cookie.slice(0, -1) + (cookie.endsWith('f') ? 'e' : 'f'), salt, secret, now + 10_000), false);
   assert.equal(verifySession('bad', salt, secret, now), false);
 });
 
