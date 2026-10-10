@@ -1,4 +1,4 @@
-# MongoDB visitor counter (not deployed yet)
+# MongoDB visitor counter
 
 A minimal, separate Node server for **Between Potential and Ideal**.
 It never changes the Render static site's HTML, design, routes or hosting.
@@ -9,6 +9,38 @@ Preparation only. Deployment requires a MongoDB Atlas cluster, a dedicated
 `readWrite` DB user, secure Render environment variables and a separate
 Web Service. **Do not point production pages at this service until /health and
 /stats are verified.**
+
+
+## Private analytics dashboard
+
+Once the Node service is deployed, open:
+
+`https://bpi-visitor-counter.onrender.com/admin`
+
+The dashboard displays today's count (UTC), the last 7 UTC calendar days, a
+daily chart, and the total since installation. It requires the existing
+`STATS_ADMIN_TOKEN` from **Render → bpi-visitor-counter → Environment**.
+Never paste the token into a URL, repository or chat.
+
+The login form sends the token to the backend using a same-origin HTTPS POST.
+The response sets an 8-hour signed `__Host-bpi_admin` cookie with
+`HttpOnly; Secure; SameSite=Strict`. It is invalidated if the admin token or
+visitor salt rotates; the logout button expires the browser cookie. The secret
+is **never** saved in localStorage/sessionStorage or embedded in frontend
+HTML or JavaScript. Admin JSON requests require a valid session; the
+existing `/stats` Bearer-token endpoint remains supported.
+
+The HTML is served by the **counter service**, not the Render static site,
+so it can use same-origin, secure cookies without exposing a cross-origin
+private statistics endpoint. No external JavaScript, fonts or trackers are
+loaded by the dashboard. The admin route has a restrictive Content Security
+Policy and a no-index directive. Admin pages are not linked in public
+navigation. The dashboard does not generate a visitor count itself.
+
+**Deployment note:** Check that Render's `bpi-visitor-counter` service
+actually deploys the updated branch/commit. It was initially configured to
+track `feature/mongodb-visitor-counter`, not `main`. Update its tracked
+branch to `main` in Render settings when possible to avoid drift.
 
 ## Privacy and counting
 

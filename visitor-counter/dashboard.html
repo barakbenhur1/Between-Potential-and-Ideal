@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <title>סטטיסטיקות מבקרים | בין פוטנציאל לאידיאל</title>
+  <link rel="stylesheet" href="/admin/style.css">
+  <script src="/admin/app.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">✦</span><span>בין פוטנציאל לאידיאל <small>ניהול האתר</small></span></div>
+      <a class="site-link" href="https://between-potential-and-ideal.onrender.com/" rel="noreferrer">חזרה לאתר <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <section class="introduction">
+      <div class="eyebrow"><span class="live-dot" aria-hidden="true"></span> נתוני ביקורים · MongoDB Atlas</div>
+      <h1>סטטיסטיקות מבקרים</h1>
+      <p>תצוגה פרטית של ביקורים ייחודיים משוערים, לאחר מניעת ספירה חוזרת בתוך 24 שעות.</p>
+    </section>
+
+    <section id="login-panel" class="login-panel card" hidden>
+      <div class="lock-symbol" aria-hidden="true">◈</div>
+      <h2>כניסה למנהל האתר</h2>
+      <p>הנתונים מוגנים. יש להזין את קוד הניהול <code>STATS_ADMIN_TOKEN</code> מהגדרות Render.</p>
+      <form id="login-form" autocomplete="off">
+        <label for="admin-token">קוד ניהול</label>
+        <div class="login-row">
+          <input id="admin-token" name="admin-token" type="password" minlength="24" required autocomplete="off" spellcheck="false" placeholder="הזן את קוד הניהול" aria-describedby="privacy-note">
+          <button id="login-button" class="primary" type="submit">הצג סטטיסטיקות</button>
+        </div>
+      </form>
+      <p id="login-error" class="error" role="alert" hidden></p>
+      <p id="privacy-note" class="microcopy">הקוד נשלח רק לשרת המונה ואינו נשמר בדפדפן. ההתחברות תקפה עד 8 שעות.</p>
+    </section>
+
+    <section id="dashboard-panel" hidden aria-label="נתוני מבקרים">
+      <div class="toolbar">
+        <span class="connected"><span class="live-dot" aria-hidden="true"></span> התחברות מאובטחת</span>
+        <div class="toolbar-actions">
+          <button id="refresh-button" type="button" class="secondary">↻ רענון נתונים</button>
+          <button id="logout-button" type="button" class="quiet">התנתק</button>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <article class="card metric">
+          <span class="metric-label">היום <span class="metric-hint">UTC</span></span>
+          <strong id="today-count" class="metric-value">—</strong>
+          <span class="metric-foot">מאז 00:00 לפי שעון UTC</span>
+        </article>
+        <article class="card metric">
+          <span class="metric-label">7 הימים האחרונים</span>
+          <strong id="week-count" class="metric-value">—</strong>
+          <span class="metric-foot">כולל היום</span>
+        </article>
+        <article class="card metric emphasis">
+          <span class="metric-label">סך הכול מאז התקנת המונה</span>
+          <strong id="total-count" class="metric-value">—</strong>
+          <span class="metric-foot">ביקורים שנספרו בפועל</span>
+        </article>
+      </div>
+
+      <section class="card chart-section" aria-labelledby="chart-title">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">שבעת הימים האחרונים</span>
+            <h2 id="chart-title">מגמת ביקורים יומית</h2>
+          </div>
+          <span class="legend"><span aria-hidden="true" class="legend-line"></span> ביקורים שנספרו</span>
+        </div>
+        <div id="chart" class="chart" role="img" aria-label="גרף מספר ביקורים בכל אחד משבעת הימים האחרונים"></div>
+        <div class="table-scroll">
+          <table>
+            <caption>מספר הביקורים לפי יום ב־UTC</caption>
+            <thead><tr><th scope="col">תאריך</th><th scope="col">ביקורים</th></tr></thead>
+            <tbody id="daily-rows"></tbody>
+          </table>
+        </div>
+      </section>
+      <p id="last-updated" class="updated" aria-live="polite"></p>
+      <p id="dashboard-error" class="error" role="alert" hidden></p>
+    </section>
+
+    <p id="loading" class="loading" role="status">טוען נתונים מאובטחים…</p>
+    <footer>
+      <span>הספירה התחילה עם הפעלת המונה — אין נתוני עבר.</span>
+      <span>הנתונים משוערים ואינם כוללים ביקורים שנחסמו או ללא JavaScript.</span>
+    </footer>
+  </main>
+</body>
+</html>
